@@ -1,0 +1,22 @@
+{
+  "name": "quill",
+  "version": "0.0.1",
+  "description": "Proyecto modular. Web scraper con sistema de tickets utilizando IA, tiene funciones de calendario, reservaciones, acceso a Google Calendar, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "siiau"
+  ],
+  "author": "Edgar Omar Monreal Zambrano & Kevin Uriel Gaona Padilla",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "puppeteer": "^24.4.0",
+    "random-useragent": "^0.5.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

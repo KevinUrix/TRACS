@@ -37,7 +37,7 @@ const waitTable = async (page, timeout = 5000) => {
     try {
         console.log("Esperando a que la tabla esté disponible...");
         await page.waitForSelector('table', { timeout });
-        await page.waitForNetworkIdle({ idleTime: 500, timeout });
+        await page.waitForNetworkIdle({ idleTime: 900, timeout });
     } catch (error) {
         console.error(`Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
     }
@@ -107,7 +107,7 @@ const processForm = async (page, ciclo, cup, edifp, filter) => {
 };
 
 
-const main = async () => {
+const scrapeData = async () => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
     
@@ -122,5 +122,4 @@ const main = async () => {
     await browser.close();
 };
 
-
-main();
+module.exports = { scrapeData };

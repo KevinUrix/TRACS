@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import Calendar from './components/interfaz_calendar/calendar';  // Importamos Calendar
+import Reports from './components/interfaz_reports/reports';    // Importamos Reports
 
-function App() {
+export default function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Función para mostrar/ocultar la barra lateral
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    </head>
+    <Router>
+      <div className="bg-gray-100 flex">
+
+        {/* Contenido principal */}
+        <div className="flex flex-col w-full">
+          {/* Rutas */}
+          <Routes>
+            <Route path="/" element={<Calendar />} />
+            <Route path="/reportes" element={<Reports />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  </>
   );
 }
-
-export default App;

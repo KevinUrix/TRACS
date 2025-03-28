@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
-
+const fs = require('fs');
+const path = require('path');
 
 const randomUserAgent = () => {
     const userAgents = [
@@ -43,57 +44,74 @@ const waitTable = async (page, timeout = 5000) => {
     }
 };
 
-
-const getHTML = async (page) => {
-    return await page.content();
-};
-
-
-const filterRows = ($, edificeName) => {
+const extractData = ($, buildingName) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
-    
+    let results = [];
+    let lastCourse = "";
+
     $('tr').each((_, row) => {
+        let course = $(row).find('td.tddatos').eq(2).text().trim(); // Obtiene el td que contiene la materia
         const table = $(row).find('table.td1');
         const professors = $(row).find('td.tdprofesor');
 
+        if (course) {
+            lastCourse = course; // Si existe la materia, actualizar la última válida
+        } else {
+            course = lastCourse; // Si no hay materia en el td, usa la última materia válida
+        }
+
         if (table.length) {
             table.find('tr').each((_, tableRow) => {
-                const containsEdificeName = $(tableRow).find('td').toArray().some(cell => $(cell).text().includes(edificeName));
+                if (!$(tableRow).find('td').toArray().some(cell => $(cell).text().includes(buildingName))) return;
                 
-                if (!containsEdificeName) return;
+                const cells = $(tableRow).find('td')
+                    .toArray()
+                    .map(cell => $(cell).text().trim())
+                    .filter(text => text !== "01" && !datePattern.test(text));
+
+                if (cells.length < 4) return;
                 
-                const cells = $(tableRow).find('td').toArray().map(cell => $(cell).text().trim());
-                
-                console.log(cells.filter(text => text !== "01" && !datePattern.test(text)).join(","), professors.eq(1).text().trim());
+                const formattedData = {
+                    "schedule": cells[0],
+                    "days": cells[1],
+                    "building": cells[2],
+                    "classroom": cells[3],
+                    "course": course
+                };
+
+                results.push({
+                    data: formattedData,
+                    professor: professors.eq(1).text().trim()
+                });
+                // console.log(cells.filter(text => text !== "01" && !datePattern.test(text)).join(","), course, professors.eq(1).text().trim());
             });
         }
     });
+    return results
 };
 
 
 const processForm = async (page, ciclo, cup, edifp, filter) => {
     await fillForm(page, ciclo, cup, edifp);
+    let allData = [];
     
     while (true) {
-        // Usamos la función waitTable con el timeout por defecto de 15 segundos
         await waitTable(page); 
-        
-        let html = await getHTML(page);
-        let $ = cheerio.load(html);
+        let $ = cheerio.load(await page.content());
         
         if ($('table').length === 0) {
             console.error("Error: No se encontró la tabla en la página");
             break;
         }
         
-        filterRows($, filter);
+        allData = allData.concat(extractData($, filter));
 
         try {
-            const nextButton = await page.waitForSelector('input[value="500 Próximos"]', { timeout: 2000 }).catch(() => null);
+            const nextButton = await page.$('input[value="500 Próximos"]');
 
             if (nextButton) {
                 console.log("Botón encontrado. Esperando 5 segundos antes de hacer clic...");
-                await page.waitForTimeout(50000);
+                await page.waitForTimeout(5000);
                 await nextButton.click();
             } else {
                 console.log("No hay más páginas disponibles.");
@@ -104,22 +122,35 @@ const processForm = async (page, ciclo, cup, edifp, filter) => {
             break;
         }
     }
+    return allData;
 };
 
 
 const scrapeData = async () => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
+    const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
+    let buildingName = "DUCT1";
+    const fileName = `${buildingName}.json`
+    const filePath = path.join(__dirname, './data/', fileName);
     
-    await page.goto('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', { waitUntil: 'domcontentloaded' });
-    await processForm(page, "202510", "D", "DUCT1", "DUCT1");
+    const fetchData = async (edifp) => {
+        await page.goto(url, { waitUntil: 'domcontentloaded' });
+        return await processForm(page, "202510", "D", edifp, edifp);
+    };
+    
+
+    const result = {
+        DUCT1: await fetchData(buildingName)
+    };
     
     console.log("===============================================");
     
-    await page.goto('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', { waitUntil: 'domcontentloaded' });
-    await processForm(page, "202510", "D", "DUCT2", "DUCT2");
+    // await page.goto('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', { waitUntil: 'domcontentloaded' });
+    // await processForm(page, "202510", "D", "DUCT2", "DUCT2");
     
     await browser.close();
+    fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
 };
 
 module.exports = { scrapeData };

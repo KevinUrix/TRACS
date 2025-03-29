@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Calendar from './components/interfaz_calendar/calendar';  // Importamos Calendar
 import Reports from './components/interfaz_reports/reports';    // Importamos Reports
+import Login from './components/interfaz_login/login';
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -21,7 +22,8 @@ export default function App() {
         <div className="flex flex-col w-full">
           {/* Rutas */}
           <Routes>
-            <Route path="/" element={<Calendar />} />
+            <Route path='/' element={<Login />} />
+            <Route path="/calendario" element={<Calendar />} />
             <Route path="/reportes" element={<Reports />} />
           </Routes>
         </div>

@@ -10,7 +10,7 @@ export default function Sidebar({ sidebarOpen, onToggleSidebar }) {
     >
       <ul>
         <li className="p-2 hover:bg-blue-500 cursor-pointer">
-          <Link to="/" className="block w-full h-full">Inicio</Link>
+          <Link to="/calendario" className="block w-full h-full">Inicio</Link>
         </li>
         <li className="p-2 hover:bg-blue-500 cursor-pointer">
           <Link to="/reportes" className="block w-full h-full">Reportes</Link>

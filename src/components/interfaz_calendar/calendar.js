@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Sidebar from '../sidebar';
 import CalendarLogic from './calendarLogic';
+import Navbar from './navbar_calendar'; // Importa el nuevo componente
+import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function Calendar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,28 +20,14 @@ export default function Calendar() {
   return (
     <>
       <div className="calendar-container">
-        {/* Sidebar: se pasa el estado y el manejador de eventos */}
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
-
         <div className="main-content">
-          <nav className="navbar">
-            <button onClick={toggleSidebar} className="sidebar-toggle">
-              ☰
-            </button>
-            <h1 className="navbar-title">Calendario de Edificios</h1>
-            <input
-              type="text"
-              placeholder="Buscar..."
-              className="search-input"
-            />
-          </nav>
-
+          <Navbar toggleSidebar={toggleSidebar} />
           <CalendarLogic
             onUpdateCicle={setSelectedCicle}
             onUpdateBuilding={setSelectedBuilding}
             onUpdateDay={setSelectedDay}
           />
-
           <div className="table-container">
             <table className="schedule-table">
               <thead>
@@ -50,7 +38,6 @@ export default function Calendar() {
                   ))}
                 </tr>
               </thead>
-
               <tbody>
                 {hours.map((hour) => (
                   <tr key={hour} className="table-row">

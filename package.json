@@ -1,22 +1,42 @@
 {
-  "name": "quill",
-  "version": "0.0.1",
-  "description": "Proyecto modular. Web scraper con sistema de tickets utilizando IA, tiene funciones de calendario, reservaciones, acceso a Google Calendar, etc.",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [
-    "siiau"
-  ],
-  "author": "Edgar Omar Monreal Zambrano & Kevin Uriel Gaona Padilla",
-  "license": "MIT",
+  "name": "quill-react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
     "cheerio": "^1.0.0",
     "puppeteer": "^24.4.0",
-    "random-useragent": "^0.5.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "jest": "^29.7.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

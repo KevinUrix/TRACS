@@ -1,0 +1,139 @@
+/* calendar.css */
+
+/* Container del calendario */
+.calendar-container {
+  display: flex;
+  background-color: #f3f4f6; /* Gris claro */
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem; /* Para que no se sobreponga con el navbar */
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #2563eb; /* Azul */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  gap: 1rem; /* Espaciado entre elementos */
+}
+
+.navbar-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-grow: 1; /* Esto centra el título al distribuir el espacio disponible */
+  text-align: center; /* Asegura que el texto esté centrado */
+  margin-left: 80px; /* Mueve el título un poco más a la derecha */
+}
+
+.navbar-reports .navbar-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-grow: 1; /* Esto centra el título al distribuir el espacio disponible */
+  text-align: center; /* Asegura que el texto esté centrado */
+  margin-left: 0px; /* Mueve el título un poco más a la derecha */
+}
+
+.sidebar-toggle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
+/* Barra de búsqueda */
+.search-input {
+  padding: 0.5rem 0.75rem; /* Reduce el padding para menos espacio */
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: all 0.3s ease;
+  max-width: 250px; /* Ajusta el tamaño del input */
+  width: 100%; /* Se ajusta para aprovechar el espacio disponible */
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 2px #2563eb; /* Aplica un "anillo" de 2px alrededor del input */
+}
+
+/* Contenedor de la tabla */
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  padding: 1.5rem 2rem;
+}
+
+/* Tabla */
+.schedule-table {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #f3f4f6;
+}
+
+.table-cell {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.table-row:hover {
+  background-color: #f1f5f9;
+}
+
+/*Esta parte es para calendarLogic*/
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.select-container select {
+  padding: 0.5rem 1.25rem; /* Ajuste de padding */
+  border: 1px solid #d1d5db; /* Borde gris claro */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  text-align: left;
+  padding-left: 0.5rem; /* Se acomoda el texto a la izquierda */
+}
+
+.select-container .cicle-select {
+  background-color: #cce4ff; /* Azul claro para ciclo */
+  width: 300px;  /* Ajusta el ancho del select de ciclo */
+}
+
+.select-container .building-select {
+  background-color: #d2f7d2; /* Verde claro para edificio */
+  width: 300px;  /* Ajusta el ancho del select de edificio */
+}
+
+.select-container .day-select {
+  background-color: #fff8cc; /* Amarillo claro para día */
+}
+
+.select-container span {
+  font-size: 1rem; /* Tamaño del emoji */
+  display: inline-block;
+  vertical-align: middle; /* Alineación vertical con el texto */
+}

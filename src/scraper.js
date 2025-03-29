@@ -34,19 +34,34 @@ const fillForm = async (page, ciclo, cup, edifp) => {
 };
 
 
-const waitTable = async (page, timeout = 5000) => {
+const waitTable = async (page, timeout = 5000, maxAttempts = 3) => {
+    let attempt = 0;
+    let tableFound = false;
+
+    while (attempt < maxAttempts && !tableFound) {
     try {
-        console.log("Esperando a que la tabla esté disponible...");
+        console.log(`Esperando a que la tabla esté disponible... Intento ${attempt + 1} de ${maxAttempts}`);
+        
         await page.waitForFunction(() => {
             return document.querySelector('table') !== null && document.querySelector('table').rows.length > 0;
         }, { timeout });
 
         await page.waitForNetworkIdle({ idleTime: 1000, timeout });
+        tableFound = true;
     } catch (error) {
-        console.error(`${error} Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
+        console.error(`Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
+        attempt++;
 
-        /* A futuro, implementar un while por si llega a haber un error. */
+        if (attempt < maxAttempts) {
+            console.log("Reintentando...");
+        } else {
+            console.log("Se alcanzó el número máximo de intentos.");
+        }
     }
+    if (!tableFound) {
+        console.error("La tabla no se encontró después de múltiples intentos.");
+    }
+}
 };
 
 const extractData = ($, buildingName) => {
@@ -135,7 +150,7 @@ const scrapeData = async () => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
     const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
-    let buildingName = "DLAQ";
+    let buildingName = "DEDQ";
     const fileName = `${buildingName}.json`
     const filePath = path.join(__dirname, '../data/', fileName);
     
@@ -146,7 +161,7 @@ const scrapeData = async () => {
     
 
     const result = {
-        DLAQ: await fetchData(buildingName)
+        DEDQ: await fetchData(buildingName)
     };
     
     console.log("===============================================");

@@ -7,6 +7,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCicle, setSelectedCicle] = useState('');
   const [cicle, setCicle] = useState([]);
+  const [building, setBuilding] = useState([]);
 
   // Se verifica el día de la semana en el que estamos.
   useEffect(() => {
@@ -18,11 +19,31 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   }, [onUpdateDay]);
 
   useEffect(() => {
-    // Cargar los datos del JSON local
+    //  CICLOS
+    // 
+    // Cargar los datos del JSON por API con fetch
+    // fetch("http://localhost:3030/")
+    // 
+    // 
+    // Modificar el fetch para obtener datos locales
     fetch("data/selects/cicles.json")
         .then(response => response.json())
         .then(data => setCicle(data))
         .catch(error => console.error("Error cargando los ciclos:", error));
+  }, []);
+
+  // EDIFICIOS
+  useEffect(() => {
+    fetch("data/selects/buildings.json")
+        .then(response => response.json())
+        .then(data => {
+          const buildings = data.edifp || [];
+          const lastTwo = buildings.slice(-2); // Obtenemos las últimas dos opciones
+          const rest = buildings.slice(0, -2); // Las opciones faltantes
+          const newBuildingsOrder = [...lastTwo, ...rest];
+          setBuilding(newBuildingsOrder);
+        })
+        .catch(error => console.error("Error cargando los edificios:", error));
   }, []);
 
   const handleCicleChange = (e) => {
@@ -63,8 +84,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
           className="building-select"
         >
           <option value="" disabled>Selecciona un edificio</option>
-          <option value="Edificio 1">Edificio 1</option>
-          <option value="Edificio 2">Edificio 2</option>
+          {building.map((building, index) => (
+            <option key={index} value={building}>{building}</option>
+          ))}
         </select>
         <span>🏢</span>
       </div>

@@ -1,0 +1,884 @@
+{
+  "DEDN": [
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "AUTOMATIZACION"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "AUTOMATIZACION"
+      },
+      "professor": "CAMARENA MENDEZ, JOSE OCTAVIO"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "AUTOMATIZACION"
+      },
+      "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "AUTOMATIZACION"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "0900-1255",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "AUTOMATIZACION"
+      },
+      "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "CIRCUITOS ANALOGICOS I"
+      },
+      "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
+    },
+    {
+      "data": {
+        "schedule": "0700-1055",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "CIRCUITOS ELECTRICOS"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1100-1455",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "CIRCUITOS ELECTRICOS"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "ELECTRONICA DE POTENCIA"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "FUNDAMENTOS DE ELECTRONICA"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1700-1855",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "FUNDAMENTOS DE ELECTRONICA"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1400-1755",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "INSTRUMENTACION"
+      },
+      "professor": "GOMEZ MORALES, LEOBARDO"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE07",
+        "course": "INSTRUMENTACION PARA SISTEMAS FOTONICOS"
+      },
+      "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "HERNANDEZ URIBE, RUBEN ERNESTO"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "MARQUEZ GUTIERREZ, MANUEL"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . . J . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": ". . . J . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LHI01",
+        "course": "LABORATORIO DE HIDRAULICA I"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ GUTIERREZ, MANUEL"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . . J . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". . . J . .",
+        "building": "DEDN",
+        "classroom": "LHI02",
+        "course": "LABORATORIO DE HIDRAULICA II"
+      },
+      "professor": "MARTINEZ ZARATE, NASHIELI"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . . J . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "MORGADO CASTILLO, ROBERTO NESTOR"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "NUÑEZ RUELAS, GABRIEL ARTURO"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "LHI03",
+        "course": "LABORATORIO DE HIDRAULICA III"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+    },
+    {
+      "data": {
+        "schedule": "1700-1855",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1700-1855",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+      },
+      "professor": "CEJA VILLANUEVA, ARACELI"
+    },
+    {
+      "data": {
+        "schedule": "1700-1855",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": "L . . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": ". . I . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "MARQUEZ SOTO, ABEL"
+    },
+    {
+      "data": {
+        "schedule": "1700-1855",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . . . .",
+        "building": "DEDN",
+        "classroom": "",
+        "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+      },
+      "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "MATEMATICAS AVANZADAS"
+      },
+      "professor": "CERVANTES LOZANO, FRANCISCO JOEL"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE02",
+        "course": "OPTICA DE FOURIER"
+      },
+      "professor": "CERVANTES LOZANO, FRANCISCO JOEL"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "PROBABILIDAD Y PROCESOS ESTOCASTICOS"
+      },
+      "professor": "OBREGON PULIDO, GUILLERMO"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "PROTOCOLOS DE COMUNICACIONES"
+      },
+      "professor": "MONTIEL MENA, RICARDO"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+    },
+    {
+      "data": {
+        "schedule": "0700-0755",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+    },
+    {
+      "data": {
+        "schedule": "0700-0755",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+      },
+      "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "A002",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
+      },
+      "professor": "GARCIA GUTIERREZ, VICTOR"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE02",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
+      },
+      "professor": "LANDA HORTA, DANIEL OMAR"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+      },
+      "professor": "GOMEZ MORALES, LEOBARDO"
+    },
+    {
+      "data": {
+        "schedule": "0700-1055",
+        "days": ". . . . . S",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE04",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+      },
+      "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "0700-1055",
+        "days": ". . . . V .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+      },
+      "professor": "PACHECO PADILLA, LUIS MANUEL"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+      },
+      "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE02",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+      },
+      "professor": "OCAMPO ARELLANO, OCTAVIO"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE02",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "A002",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+      },
+      "professor": "GARCIA GUTIERREZ, VICTOR"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "ESTRADA MARMOLEJO, RUBEN"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE02",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+      },
+      "professor": "RIOS SALCEDO, SERGIO ARTURO"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "A001",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "CASILLAS DE LA TORRE, SERGIO"
+    },
+    {
+      "data": {
+        "schedule": "1500-1655",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      },
+      "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
+    },
+    {
+      "data": {
+        "schedule": "0700-0855",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "A002",
+        "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+      },
+      "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SEÑALES Y SISTEMAS"
+      },
+      "professor": "CARRASCO ALVAREZ, ROBERTO"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "SISTEMAS DE MEDICION"
+      },
+      "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+    },
+    {
+      "data": {
+        "schedule": "1100-1255",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE02",
+        "course": "SISTEMAS DE MEDICION"
+      },
+      "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SISTEMAS DE MEDICION"
+      },
+      "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+    },
+    {
+      "data": {
+        "schedule": "1900-2055",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE06",
+        "course": "SISTEMAS DE MEDICION"
+      },
+      "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SISTEMAS DE MEDICION"
+      },
+      "professor": "MATEOS ORTEGA, HECTOR"
+    },
+    {
+      "data": {
+        "schedule": "0900-1055",
+        "days": ". M . J . .",
+        "building": "DEDN",
+        "classroom": "LE05",
+        "course": "SISTEMAS ELECTRONICOS"
+      },
+      "professor": "GOMEZ MORALES, LEOBARDO"
+    },
+    {
+      "data": {
+        "schedule": "1300-1455",
+        "days": "L . I . . .",
+        "building": "DEDN",
+        "classroom": "LE03",
+        "course": "SISTEMAS OPTICOS Y POLARIZACION DE LA LUZ"
+      },
+      "professor": "SERRANO GARCIA, DAVID IGNACIO"
+    }
+  ]
+}

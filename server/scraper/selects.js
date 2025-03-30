@@ -23,4 +23,46 @@ const extractCicle = async () => {
     
 };
 
-module.exports = { extractCicle };
+// 
+// 
+// 
+// 
+// 
+
+
+const getBuildings = (folderPath) => {
+  try {
+    return fs.readdirSync(folderPath)
+      .filter(file => fs.lstatSync(path.join(folderPath, file)).isFile())
+      .map(file => path.parse(file).name); // Extraer solo el nombre sin la extensión
+  } catch (err) {
+    console.error('Error al leer la carpeta:', err);
+    return [];
+  }
+};
+
+// Guarda los nombres en un JSON
+const saveJSON = (fileNames, outputFilePath) => {
+    const jsonData = {
+      edifp: fileNames
+    };
+  
+    fs.writeFileSync(outputFilePath, JSON.stringify(jsonData, null, 2), 'utf-8');
+};
+
+const getBuildingsSelect = () => {
+    const folderPath = '../data/buildings/';
+    // const outputFilePath = '../data/selects/buildings.json';
+    const outputFilePath = '../../public/data/selects/buildings.json';
+
+
+    const fileNames = getBuildings(folderPath);
+    if (fileNames.length > 0) {
+        saveJSON(fileNames, outputFilePath);
+    } else {
+        console.log('No se encontraron archivos para guardar.');
+    }
+};
+
+
+module.exports = { extractCicle, getBuildingsSelect };

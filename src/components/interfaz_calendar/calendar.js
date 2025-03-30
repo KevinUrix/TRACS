@@ -8,7 +8,7 @@ export default function Calendar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedCicle, setSelectedCicle] = useState('Cicle 1');
   const [selectedDay, setSelectedDay] = useState('Lunes');
-  const [selectedBuilding, setSelectedBuilding] = useState('Edificio 1');
+  const [selectedBuilding, setSelectedBuilding] = useState('DUCT1');
   const [classrooms, setClassrooms] = useState([]);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
@@ -19,7 +19,7 @@ export default function Calendar() {
   });
 
 
-  useEffect(() => {
+  /*useEffect(() => {
     //  
     // SALONES
     // 
@@ -28,7 +28,19 @@ export default function Calendar() {
         .then(response => response.json())
         .then(data => setClassrooms(data))
         .catch(error => console.error("Error cargando los salones:", error));
-  }, []);
+  }, []);*/
+
+  useEffect(() => {
+    if (selectedBuilding) {
+      // Construimos el nombre del archivo JSON dinámicamente según el edificio seleccionado
+      const buildingFile = `data/classrooms/${selectedBuilding}.json`;
+  
+      fetch(buildingFile)
+        .then(response => response.json())
+        .then(data => setClassrooms(data))
+        .catch(error => console.error("Error cargando los salones:", error));
+    }
+  }, [selectedBuilding]); // Se ejecuta cuando `selectedBuilding` cambia
 
   return (
     <>
@@ -58,8 +70,8 @@ export default function Calendar() {
                 {hours.map((hour) => (
                   <tr key={hour} className="table-row">
                     <td className="table-cell font-semibold">{hour}</td>
-                    {Array.from({ length: 10 }, (_, i) => (
-                      <td key={i} className="table-cell text-gray-700"></td>
+                    {classrooms.map((_, index) => (  // Se generan celdas según los salones disponibles
+                      <td key={index} className="table-cell text-gray-700"></td>
                     ))}
                   </tr>
                 ))}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Sidebar from '../sidebar';
 import CalendarLogic from './calendarLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
@@ -9,6 +9,7 @@ export default function Calendar() {
   const [selectedCicle, setSelectedCicle] = useState('Cicle 1');
   const [selectedDay, setSelectedDay] = useState('Lunes');
   const [selectedBuilding, setSelectedBuilding] = useState('Edificio 1');
+  const [classrooms, setClassrooms] = useState([]);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -16,6 +17,18 @@ export default function Calendar() {
     const hour = i + 7;
     return `${hour <= 12 ? hour : hour - 12}:00 ${hour < 12 ? 'AM' : 'PM'}`;
   });
+
+
+  useEffect(() => {
+    //  
+    // SALONES
+    // 
+    // MODIFICAR ESTE FETCH SI QUIERES OBTENER OTROS SALONES
+    fetch("data/classrooms/DUCT1.json")
+        .then(response => response.json())
+        .then(data => setClassrooms(data))
+        .catch(error => console.error("Error cargando los salones:", error));
+  }, []);
 
   return (
     <>
@@ -33,9 +46,12 @@ export default function Calendar() {
               <thead>
                 <tr className="table-header">
                   <th className="table-cell">Hora</th>
-                  {Array.from({ length: 10 }, (_, i) => (
-                    <th key={i} className="table-cell">Salón {i + 1}</th>
+                  {classrooms.map((classroom, index) => (
+                    <th key={index} className="table-cell">{classroom}</th>
                   ))}
+                  {/* {Array.from({ length: 10 }, (_, i) => (
+                    <th key={i} className="table-cell">Salón {i + 1}</th>
+                  ))} */}
                 </tr>
               </thead>
               <tbody>

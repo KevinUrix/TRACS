@@ -6,6 +6,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCicle, setSelectedCicle] = useState('');
+  const [cicle, setCicle] = useState([]);
 
   // Se verifica el día de la semana en el que estamos.
   useEffect(() => {
@@ -15,6 +16,14 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
     setSelectedDay(days[dayOfWeek]);
     onUpdateDay(days[dayOfWeek]);
   }, [onUpdateDay]);
+
+  useEffect(() => {
+    // Cargar los datos del JSON local
+    fetch("data/selects/cicles.json")
+        .then(response => response.json())
+        .then(data => setCicle(data))
+        .catch(error => console.error("Error cargando los ciclos:", error));
+  }, []);
 
   const handleCicleChange = (e) => {
     setSelectedCicle(e.target.value);
@@ -40,10 +49,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
           className="cicle-select"
         >
           <option value="" disabled>Selecciona un ciclo</option>
-          <option value="Cicle 1">2025-A</option>
-          <option value="Cicle 2">2024-B</option>
-          <option value="Cicle 3">2024-A</option>
-          <option value="Cicle 4">2023-B</option>
+            {cicle.map((cicle) => (
+              <option key={cicle.value} value={cicle.value}>{cicle.text}</option>
+            ))}
         </select>
         <span>📅</span>
       </div>

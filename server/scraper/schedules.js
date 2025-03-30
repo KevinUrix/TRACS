@@ -1,28 +1,7 @@
-const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-
-const randomUserAgent = () => {
-    const userAgents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/89.0",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"
-    ];
-    return userAgents[Math.floor(Math.random() * userAgents.length)];
-};
-
-
-const configureBrowser = async () => {
-    return await puppeteer.launch({
-        headless: true,
-        args: [
-            "--disable-gpu",
-            `--user-agent=${randomUserAgent()}`
-        ]
-    });
-};
+const { configureBrowser } = require('./browserUtils');
 
 
 const fillForm = async (page, ciclo, cup, edifp) => {
@@ -39,29 +18,29 @@ const waitTable = async (page, timeout = 5000, maxAttempts = 3) => {
     let tableFound = false;
 
     while (attempt < maxAttempts && !tableFound) {
-    try {
-        console.log(`Esperando a que la tabla esté disponible... Intento ${attempt + 1} de ${maxAttempts}`);
-        
-        await page.waitForFunction(() => {
-            return document.querySelector('table') !== null && document.querySelector('table').rows.length > 0;
-        }, { timeout });
+        try {
+            console.log(`Esperando a que la tabla esté disponible... Intento ${attempt + 1} de ${maxAttempts}`);
+            
+            await page.waitForFunction(() => {
+                return document.querySelector('table') !== null && document.querySelector('table').rows.length > 0;
+            }, { timeout });
 
-        await page.waitForNetworkIdle({ idleTime: 1000, timeout });
-        tableFound = true;
-    } catch (error) {
-        console.error(`Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
-        attempt++;
+            await page.waitForNetworkIdle({ idleTime: 1000, timeout });
+            tableFound = true;
+        } catch (error) {
+            console.error(`Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
+            attempt++;
 
-        if (attempt < maxAttempts) {
-            console.log("Reintentando...");
-        } else {
-            console.log("Se alcanzó el número máximo de intentos.");
+            if (attempt < maxAttempts) {
+                console.log("Reintentando...");
+            } else {
+                console.log("Se alcanzó el número máximo de intentos.");
+            }
+        }
+        if (!tableFound) {
+            console.error("La tabla no se encontró después de múltiples intentos.");
         }
     }
-    if (!tableFound) {
-        console.error("La tabla no se encontró después de múltiples intentos.");
-    }
-}
 };
 
 const extractData = ($, buildingName) => {
@@ -150,9 +129,9 @@ const scrapeData = async () => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
     const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
-    let buildingName = "DEDQ";
+    let buildingName = "DUCT2";
     const fileName = `${buildingName}.json`
-    const filePath = path.join(__dirname, '../data/', fileName);
+    const filePath = path.join(__dirname, '../../public/data/buildings/', fileName);
     
     const fetchData = async (edifp) => {
         await page.goto(url, { waitUntil: 'domcontentloaded' });
@@ -161,7 +140,7 @@ const scrapeData = async () => {
     
 
     const result = {
-        DEDQ: await fetchData(buildingName)
+        DUCT2: await fetchData(buildingName)
     };
     
     console.log("===============================================");

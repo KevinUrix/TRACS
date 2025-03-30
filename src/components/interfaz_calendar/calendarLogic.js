@@ -8,14 +8,23 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   const [selectedCicle, setSelectedCicle] = useState('');
   const [cicle, setCicle] = useState([]);
   const [building, setBuilding] = useState([]);
+  const dayMappings = {
+    "Domingo": "D",
+    "Lunes": "L",
+    "Martes": "M",
+    "Miércoles": "I",
+    "Jueves": "J",
+    "Viernes": "V",
+    "Sábado": "S"
+  };
+
 
   // Se verifica el día de la semana en el que estamos.
   useEffect(() => {
     const today = new Date();
-    const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
     const dayOfWeek = today.getDay();
-    setSelectedDay(days[dayOfWeek]);
-    onUpdateDay(days[dayOfWeek]);
+    setSelectedDay(dayMappings[dayOfWeek]);
+    onUpdateDay(dayMappings[dayOfWeek]);
   }, [onUpdateDay]);
 
   useEffect(() => {
@@ -58,7 +67,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
 
   const handleDayChange = (e) => {
     setSelectedDay(e.target.value);
-    onUpdateDay(e.target.value);
+    onUpdateDay(dayMappings[e.target.value]);
   };
 
   return (
@@ -91,15 +100,15 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
         <span>🏢</span>
       </div>
       <div className="select-container">
-        <select
-          value={selectedDay}
-          onChange={handleDayChange}
-          className="day-select"
-        >
-          {['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
-            <option key={day} value={day}>{day}</option>
-          ))}
-        </select>
+      <select
+        value={selectedDay}
+        onChange={handleDayChange}
+        className="day-select"
+      >
+        {['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
+          <option key={day} value={day}>{day}</option>
+        ))}
+      </select>
         <span>📆</span>
       </div>
 

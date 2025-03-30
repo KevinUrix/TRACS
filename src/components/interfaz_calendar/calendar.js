@@ -10,6 +10,7 @@ export default function Calendar() {
   const [selectedDay, setSelectedDay] = useState('Lunes');
   const [selectedBuilding, setSelectedBuilding] = useState('Edificio 1');
   const [classrooms, setClassrooms] = useState([]);
+  const [schedule, setSchedule] = useState([]);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -20,15 +21,32 @@ export default function Calendar() {
 
 
   useEffect(() => {
-    //  
-    // SALONES
-    // 
-    // MODIFICAR ESTE FETCH SI QUIERES OBTENER OTROS SALONES
-    fetch("data/classrooms/DUCT1.json")
+    if (selectedBuilding) {
+      // Nombre del JSON dinámico según el edificio seleccionado
+      const buildingFile = `data/classrooms/${selectedBuilding}.json`;
+  
+      fetch(buildingFile)
         .then(response => response.json())
         .then(data => setClassrooms(data))
         .catch(error => console.error("Error cargando los salones:", error));
-  }, []);
+    }
+  }, [selectedBuilding]);
+
+
+  useEffect(() => {
+    const buildingFile = `data/buildings/${selectedBuilding}.json`;
+
+    fetch(buildingFile)
+      .then(response => response.json())
+      .then(data => {
+        if (data[selectedBuilding]) {
+          setSchedule(data[selectedBuilding]);
+        } else {
+          console.error("No se encontró la clave para el edificio seleccionado.");
+        }
+      })
+      .catch(error => console.error("Error cargando los horarios:", error));
+  }, [selectedBuilding]);
 
   return (
     <>
@@ -49,20 +67,50 @@ export default function Calendar() {
                   {classrooms.map((classroom, index) => (
                     <th key={index} className="table-cell">{classroom}</th>
                   ))}
-                  {/* {Array.from({ length: 10 }, (_, i) => (
-                    <th key={i} className="table-cell">Salón {i + 1}</th>
-                  ))} */}
                 </tr>
               </thead>
               <tbody>
-                {hours.map((hour) => (
-                  <tr key={hour} className="table-row">
-                    <td className="table-cell font-semibold">{hour}</td>
-                    {Array.from({ length: 10 }, (_, i) => (
-                      <td key={i} className="table-cell text-gray-700"></td>
-                    ))}
-                  </tr>
-                ))}
+                {hours.map((hour) => {
+                  // Convertir la hora de la tabla a formato de 24 horas
+                  const [hourPart, period] = hour.split(' ');
+                  let currentHour = parseInt(hourPart.split(':')[0], 10);
+
+                  if (period === 'PM' && currentHour !== 12) currentHour += 12;
+                  if (period === 'AM' && currentHour === 12) currentHour = 0;
+
+                  return (
+                    <tr key={hour} className="table-row">
+                      <td className="table-cell font-semibold">{hour}</td>
+                      {classrooms.map((classroom, index) => {
+                        // Filtrar cursos según el día seleccionado
+                        const matchingCourse = schedule.find(scheduleItem => {
+                          const [startTime, endTime] = scheduleItem.data.schedule.split('-');
+                          const startHour = parseInt(startTime.substring(0, 2), 10);
+                          const endHour = parseInt(endTime.substring(0, 2), 10);
+
+                          // Verificar si el curso está en el día seleccionado
+                          const days = scheduleItem.data.days.split(' ');
+                          const isCourseOnSelectedDay = days.includes(selectedDay); 
+
+                          return (
+                            currentHour >= startHour &&
+                            currentHour < endHour &&
+                            scheduleItem.data.classroom === classroom &&
+                            isCourseOnSelectedDay
+                          );
+                        });
+
+                        return (
+                          <td key={index} className="table-cell text-gray-700">
+                            {matchingCourse ? matchingCourse.data.course : ""}
+                            <br/>
+                            {matchingCourse ? matchingCourse.professor : ""}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

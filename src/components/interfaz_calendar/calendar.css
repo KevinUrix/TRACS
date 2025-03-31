@@ -81,11 +81,11 @@
 
 /* Tabla */
 .schedule-table {
-  width: 100%;
   border: 1px solid #d1d5db;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
+  table-layout: fixed; /* Evita que las columnas se expandan */
 }
 
 .table-header {
@@ -94,12 +94,85 @@
 
 .table-cell {
   border: 1px solid #d1d5db;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.5rem;
   text-align: center;
 }
 
 .table-row:hover {
   background-color: #f1f5f9;
+}
+
+.schedule-table th, .schedule-table td {
+  min-width: 120px;
+  max-width: 140px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Recorta el texto si es muy largo */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Esto ajusta la altura de la hilera que contiene hora, y los demas salones. */
+.schedule-table thead th:not(:first-child) {
+  height: 100px; /* Ajusta la altura según necesidad */
+  min-height: 80px;
+  max-height: 80px;
+}
+/*--------------------------------------------------------------*/
+
+.schedule-table tr {
+  height: 60px; /* Ajusta según necesidad */
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Fija el ancho de la columna de horas */
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  width: 120px !important; /* Ajusta el ancho según necesidad */
+  min-width: 120px !important;
+  max-width: 120px !important;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f3f4f6; /* Opcional: darle un color de fondo diferente */
+}
+
+/* Fija el ancho de las columnas de las aulas, solo las que muestran la info, no la primera */
+.schedule-table th:not(:first-child),
+.schedule-table td:not(:first-child) {
+  /*width: 100px; /* Ajusta el tamaño según necesidad */
+  min-width: 400px;
+  max-width: 400px; /*Tamaño máximo, actualizara de manera utomatica para mostrar información*/
+  height: 250px;
+  text-align: center;
+}
+
+/* Colores para las celdas con horarios */
+.table-cell.occupied-1 {
+  background-color: #16a085;
+}
+.table-cell.occupied-2 {
+  background-color: #27ae60;
+}
+.table-cell.occupied-3 {
+  background-color: #2980b9;
+}
+.table-cell.occupied-4 {
+  background-color: #8e44ad;
+}
+.table-cell.occupied-5 {
+  background-color: #2c3e50;
+}
+.table-cell.occupied-6 {
+  background-color: #d35400;
+}
+.table-cell.occupied-7 {
+  background-color: #c0392b ;
+}
+.table-cell.occupied-8 {
+  background-color: #ffc6ff;
 }
 
 /*Esta parte es para calendarLogic*/

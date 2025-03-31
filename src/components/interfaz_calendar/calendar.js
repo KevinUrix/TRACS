@@ -94,17 +94,28 @@ export default function Calendar() {
 
                           return (
                             currentHour >= startHour &&
-                            currentHour < endHour &&
+                            currentHour <= endHour &&
                             scheduleItem.data.classroom === classroom &&
                             isCourseOnSelectedDay
                           );
                         });
 
+                        const backgroundColor = matchingCourse
+                        ? `hsl(${(matchingCourse.data.course.length * 37) % 360}, 80%, 75%)`
+                        : 'white';
+
                         return (
-                          <td key={index} className="table-cell text-gray-700">
+                          <td key={index} 
+                          className={`table-cell ${matchingCourse ? 'occupied-cell' : ''}`}
+                          style={{ backgroundColor }}>
                             {matchingCourse ? matchingCourse.data.course : ""}
                             <br/>
                             {matchingCourse ? matchingCourse.professor : ""}
+                            <br/>
+                            {matchingCourse ? `Aula: ${matchingCourse.data.classroom}` : ""}
+                            <br/>
+                            {matchingCourse ? `Horario: ${matchingCourse.data.schedule.replace(
+                              /(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2-$3:$4")}`: ""}
                           </td>
                         );
                       })}

@@ -22,9 +22,10 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   // Se verifica el día de la semana en el que estamos.
   useEffect(() => {
     const today = new Date();
-    const dayOfWeek = today.getDay();
-    setSelectedDay(dayMappings[dayOfWeek]);
-    onUpdateDay(dayMappings[dayOfWeek]);
+    const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const dayName = daysOfWeek[today.getDay()];
+    setSelectedDay(dayName);
+    onUpdateDay(dayMappings[dayName]); 
   }, [onUpdateDay]);
 
   useEffect(() => {

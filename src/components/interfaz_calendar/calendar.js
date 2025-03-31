@@ -8,7 +8,7 @@ export default function Calendar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedCicle, setSelectedCicle] = useState('Cicle 1');
   const [selectedDay, setSelectedDay] = useState('Lunes');
-  const [selectedBuilding, setSelectedBuilding] = useState('Edificio 1');
+  const [selectedBuilding, setSelectedBuilding] = useState('DUCT1');
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
 

@@ -1,11 +1,13 @@
 {
-  "DEDT": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "0900-1055",
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7607",
+        "students": 40,
         "course": "ACONDICIONAMIENTO DE BIOSEÑALES Y BIOIMAGENES"
       },
       "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
@@ -16,6 +18,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7607",
+        "students": 40,
         "course": "ACONDICIONAMIENTO DE BIOSEÑALES Y BIOIMAGENES"
       },
       "professor": "GARCIA MANZO, RICARDO EMMANUEL"
@@ -26,6 +30,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I9909",
+        "students": 22,
         "course": "ACTUADORES"
       },
       "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -36,6 +42,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I9909",
+        "students": 9,
         "course": "ACTUADORES"
       },
       "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -46,6 +54,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "V1136",
+        "students": 10,
         "course": "ALGORITMOS BIO-INSPIRADOS"
       },
       "professor": "LOPEZ FRANCO, CARLOS ALBERTO"
@@ -56,6 +66,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7588",
+        "students": 30,
         "course": "ANALISIS DEL MOVIMIENTO"
       },
       "professor": "OSUNA CARRASCO, LAURA PAULINA"
@@ -66,6 +78,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7588",
+        "students": 40,
         "course": "ANALISIS DEL MOVIMIENTO"
       },
       "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
@@ -76,6 +90,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7588",
+        "students": 38,
         "course": "ANALISIS DEL MOVIMIENTO"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -86,6 +102,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7588",
+        "students": 38,
         "course": "ANALISIS DEL MOVIMIENTO"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -96,6 +114,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7588",
+        "students": 38,
         "course": "ANALISIS DEL MOVIMIENTO"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -106,6 +126,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7588",
+        "students": 38,
         "course": "ANALISIS DEL MOVIMIENTO"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -116,6 +138,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7590",
+        "students": 38,
         "course": "ANATOMIA MECANICA I"
       },
       "professor": "MARTINEZ BRITO, MARCO AURELIO"
@@ -126,6 +150,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7590",
+        "students": 4,
         "course": "ANATOMIA MECANICA I"
       },
       "professor": "CURIEL LOPEZ, FATIMA BELEN"
@@ -136,6 +162,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7590",
+        "students": 36,
         "course": "ANATOMIA MECANICA I"
       },
       "professor": "TORO CASTILLO, MARIA DEL CARMEN"
@@ -146,6 +174,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7590",
+        "students": 35,
         "course": "ANATOMIA MECANICA I"
       },
       "professor": "PEREZ PADILLA, NAYELI ARELI"
@@ -156,6 +186,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7592",
+        "students": 36,
         "course": "ANATOMIA MECANICA II"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -166,6 +198,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7592",
+        "students": 16,
         "course": "ANATOMIA MECANICA II"
       },
       "professor": "CURIEL LOPEZ, FATIMA BELEN"
@@ -176,6 +210,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7592",
+        "students": 35,
         "course": "ANATOMIA MECANICA II"
       },
       "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
@@ -186,6 +222,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7592",
+        "students": 24,
         "course": "ANATOMIA MECANICA II"
       },
       "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
@@ -196,6 +234,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "IB149",
+        "students": 16,
         "course": "APLICACIONES DE LA MECANICA CUANTICA"
       },
       "professor": "SANTIAGO HERNANDEZ, ALBERTO"
@@ -206,6 +246,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "IL381",
+        "students": 29,
         "course": "APRENDIZAJE MAQUINA"
       },
       "professor": "ESCOBAR CUEVAS, HECTOR JOAQUIN"
@@ -216,6 +258,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "IH375",
+        "students": 6,
         "course": "BIOESTADISTICA"
       },
       "professor": "HERNANDEZ MONTELONGO, JESUS JACOBO"
@@ -226,6 +270,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "IH377",
+        "students": 8,
         "course": "BIOINGENIERIA Y SISTEMAS METABOLICOS"
       },
       "professor": "PRECIAT GONZALEZ, GERMAN ANDRES"
@@ -236,6 +282,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "IH379",
+        "students": 3,
         "course": "BIOMATEMATICAS"
       },
       "professor": "HERNANDEZ MONTELONGO, JESUS JACOBO"
@@ -246,6 +294,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7594",
+        "students": 29,
         "course": "BIOMATERIALES"
       },
       "professor": "HERNANDEZ MONTELONGO, ROSAURA"
@@ -256,6 +306,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7594",
+        "students": 19,
         "course": "BIOMATERIALES"
       },
       "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
@@ -266,6 +318,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7594",
+        "students": 35,
         "course": "BIOMATERIALES"
       },
       "professor": "HERNANDEZ MONTELONGO, ROSAURA"
@@ -276,6 +330,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7595",
+        "students": 16,
         "course": "BIOSENSORES Y TRANSDUCTORES"
       },
       "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -286,6 +342,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7595",
+        "students": 35,
         "course": "BIOSENSORES Y TRANSDUCTORES"
       },
       "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
@@ -296,6 +354,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7595",
+        "students": 13,
         "course": "BIOSENSORES Y TRANSDUCTORES"
       },
       "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
@@ -306,6 +366,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7595",
+        "students": 30,
         "course": "BIOSENSORES Y TRANSDUCTORES"
       },
       "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -316,6 +378,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "IB125",
+        "students": 33,
         "course": "CIRCUITOS ANALOGICOS I"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -326,6 +390,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7277",
+        "students": 30,
         "course": "CIRCUITOS ANALOGICOS I"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -336,6 +402,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7277",
+        "students": 30,
         "course": "CIRCUITOS ANALOGICOS I"
       },
       "professor": "LUQUE CHANG, ALBERTO"
@@ -346,6 +414,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7277",
+        "students": 30,
         "course": "CIRCUITOS ANALOGICOS I"
       },
       "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -356,6 +426,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "IB126",
+        "students": 22,
         "course": "CIRCUITOS ANALOGICOS II"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -366,6 +438,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7279",
+        "students": 29,
         "course": "CIRCUITOS ANALOGICOS II"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -376,6 +450,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7279",
+        "students": 11,
         "course": "CIRCUITOS ANALOGICOS II"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -386,6 +462,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7279",
+        "students": 23,
         "course": "CIRCUITOS ANALOGICOS II"
       },
       "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -396,6 +474,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7279",
+        "students": 18,
         "course": "CIRCUITOS ANALOGICOS II"
       },
       "professor": "PADILLA CANTOYA, IVAN RODRIGO"
@@ -406,6 +486,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7280",
+        "students": 18,
         "course": "CIRCUITOS DIGITALES"
       },
       "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -416,6 +498,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7280",
+        "students": 28,
         "course": "CIRCUITOS DIGITALES"
       },
       "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
@@ -426,6 +510,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7280",
+        "students": 8,
         "course": "CIRCUITOS DIGITALES"
       },
       "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -436,6 +522,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7280",
+        "students": 27,
         "course": "CIRCUITOS DIGITALES"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -446,6 +534,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I7587",
+        "students": 18,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -456,6 +546,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "IB127",
+        "students": 39,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "CASAS ORDAZ, ANGEL"
@@ -466,6 +558,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7587",
+        "students": 11,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -476,6 +570,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7587",
+        "students": 30,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -486,6 +582,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7587",
+        "students": 30,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -496,6 +594,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7587",
+        "students": 9,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -506,6 +606,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I7587",
+        "students": 30,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -516,6 +618,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7282",
+        "students": 10,
         "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
       },
       "professor": "MARTINEZ SILVA, MARTIN JAVIER"
@@ -526,6 +630,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7282",
+        "students": 6,
         "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
       },
       "professor": "OCAMPO ARELLANO, OCTAVIO"
@@ -536,6 +642,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7282",
+        "students": 23,
         "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
       },
       "professor": "MARTINEZ SILVA, MARTIN JAVIER"
@@ -546,6 +654,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7282",
+        "students": 31,
         "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
       },
       "professor": "VELAZQUEZ MORA, EDUARDO"
@@ -556,6 +666,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7282",
+        "students": 13,
         "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
       },
       "professor": "RUIZ PALACIOS, MARIA SUSANA"
@@ -566,6 +678,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7282",
+        "students": 25,
         "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
       },
       "professor": "MARTINEZ SILVA, MARTIN JAVIER"
@@ -576,6 +690,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "IL346",
+        "students": 7,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
@@ -586,6 +702,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "IL346",
+        "students": 26,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
@@ -596,6 +714,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "IL346",
+        "students": 26,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
@@ -606,6 +726,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "IL346",
+        "students": 26,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
@@ -616,6 +738,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "IL346",
+        "students": 26,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
@@ -626,6 +750,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "IL346",
+        "students": 30,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -636,6 +762,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "IL346",
+        "students": 30,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -646,6 +774,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "IL346",
+        "students": 21,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -656,6 +786,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "IL346",
+        "students": 31,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -666,6 +798,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "IL346",
+        "students": 23,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -676,6 +810,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "IL346",
+        "students": 30,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GARCIA RAMIREZ, MARIO ALBERTO"
@@ -686,6 +822,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "IL346",
+        "students": 29,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GONZALEZ JIMENEZ, JOANA"
@@ -696,6 +834,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "IL346",
+        "students": 30,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -706,6 +846,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "IL346",
+        "students": 31,
         "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
       },
       "professor": "GONZALEZ JIMENEZ, JOANA"
@@ -716,6 +858,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "IB139",
+        "students": 25,
         "course": "COMUNICACIONES OPTICAS I"
       },
       "professor": "GONZALEZ ROMERO, JAIME RICARDO"
@@ -726,6 +870,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7413",
+        "students": 30,
         "course": "DINAMICA"
       },
       "professor": "GUZMAN HERNANDEZ, JOSE"
@@ -736,6 +882,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I9889",
+        "students": 14,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -746,6 +894,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7262",
+        "students": 14,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -756,6 +906,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I9889",
+        "students": 17,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -766,6 +918,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7262",
+        "students": 29,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -776,6 +930,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7262",
+        "students": 13,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -786,6 +942,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7262",
+        "students": 25,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -796,6 +954,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7262",
+        "students": 14,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -806,6 +966,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7262",
+        "students": 23,
         "course": "DISEÑO DE INTERFACES"
       },
       "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
@@ -816,6 +978,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7283",
+        "students": 30,
         "course": "DISEÑO DE TARJETAS DE EVALUACION"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -826,6 +990,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I7283",
+        "students": 29,
         "course": "DISEÑO DE TARJETAS DE EVALUACION"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -836,6 +1002,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7283",
+        "students": 12,
         "course": "DISEÑO DE TARJETAS DE EVALUACION"
       },
       "professor": "GOMEZ MORALES, LEOBARDO"
@@ -846,6 +1014,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7283",
+        "students": 22,
         "course": "DISEÑO DE TARJETAS DE EVALUACION"
       },
       "professor": "CASILLAS DE LA TORRE, SERGIO"
@@ -856,6 +1026,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7284",
+        "students": 24,
         "course": "DISEÑO DE TRANSCEPTORES"
       },
       "professor": "RUIZ PALACIOS, MARIA SUSANA"
@@ -866,6 +1038,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7284",
+        "students": 32,
         "course": "DISEÑO DE TRANSCEPTORES"
       },
       "professor": "MARTINEZ SILVA, MARTIN JAVIER"
@@ -876,6 +1050,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7284",
+        "students": 10,
         "course": "DISEÑO DE TRANSCEPTORES"
       },
       "professor": "RUIZ PALACIOS, MARIA SUSANA"
@@ -886,6 +1062,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7284",
+        "students": 22,
         "course": "DISEÑO DE TRANSCEPTORES"
       },
       "professor": "MARTINEZ SILVA, MARTIN JAVIER"
@@ -896,6 +1074,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7284",
+        "students": 30,
         "course": "DISEÑO DE TRANSCEPTORES"
       },
       "professor": "MARTINEZ SILVA, MARTIN JAVIER"
@@ -906,6 +1086,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "IL384",
+        "students": 50,
         "course": "DISEÑO DE VIDEO JUEGOS"
       },
       "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
@@ -916,6 +1098,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "IB142",
+        "students": 11,
         "course": "DISEÑO OPTICO"
       },
       "professor": "SANTIAGO HERNANDEZ, ALBERTO"
@@ -926,6 +1110,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "V0817",
+        "students": 29,
         "course": "DISEÑO VISUAL 3D"
       },
       "professor": "PEREZ PADILLA, NAYELI ARELI"
@@ -936,6 +1122,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7598",
+        "students": 30,
         "course": "DISPOSITIVOS ELECTRONICOS"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -946,6 +1134,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7598",
+        "students": 30,
         "course": "DISPOSITIVOS ELECTRONICOS"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -956,6 +1146,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7598",
+        "students": 15,
         "course": "DISPOSITIVOS ELECTRONICOS"
       },
       "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
@@ -966,6 +1158,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7598",
+        "students": 24,
         "course": "DISPOSITIVOS ELECTRONICOS"
       },
       "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
@@ -976,6 +1170,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7596",
+        "students": 12,
         "course": "ELECTROFISIOLOGIA MOLECULAR I"
       },
       "professor": "PRECIAT GONZALEZ, GERMAN ANDRES"
@@ -986,6 +1182,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7596",
+        "students": 35,
         "course": "ELECTROFISIOLOGIA MOLECULAR I"
       },
       "professor": "RODRIGUEZ GOMEZ, FLOR DEL CARMEN"
@@ -996,6 +1194,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7596",
+        "students": 35,
         "course": "ELECTROFISIOLOGIA MOLECULAR I"
       },
       "professor": "TORO CASTILLO, MARIA DEL CARMEN"
@@ -1006,6 +1206,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7597",
+        "students": 25,
         "course": "ELECTROFISIOLOGIA MOLECULAR II"
       },
       "professor": "LOPEZ FRANCO, ADRIANA LISET"
@@ -1016,6 +1218,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7597",
+        "students": 29,
         "course": "ELECTROFISIOLOGIA MOLECULAR II"
       },
       "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
@@ -1026,6 +1230,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "I7597",
+        "students": 35,
         "course": "ELECTROFISIOLOGIA MOLECULAR II"
       },
       "professor": "LOPEZ FRANCO, ADRIANA LISET"
@@ -1036,6 +1242,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7436",
+        "students": 20,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
@@ -1046,6 +1254,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7436",
+        "students": 20,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
@@ -1056,6 +1266,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7436",
+        "students": 20,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
@@ -1066,6 +1278,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7436",
+        "students": 20,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
@@ -1076,6 +1290,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7436",
+        "students": 19,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
@@ -1086,6 +1302,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7436",
+        "students": 24,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -1096,6 +1314,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7436",
+        "students": 24,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -1106,6 +1326,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7436",
+        "students": 24,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -1116,6 +1338,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7436",
+        "students": 24,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -1126,6 +1350,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7436",
+        "students": 29,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -1136,6 +1362,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7436",
+        "students": 22,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -1146,6 +1374,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7436",
+        "students": 22,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -1156,6 +1386,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7436",
+        "students": 22,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -1166,6 +1398,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7436",
+        "students": 22,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -1176,6 +1410,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I7436",
+        "students": 15,
         "course": "ELECTRONICA ANALOGICA Y DIGITAL"
       },
       "professor": "GARCIA RAMIREZ, MARIO ALBERTO"
@@ -1186,6 +1422,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7263",
+        "students": 25,
         "course": "ELECTRONICA DE POTENCIA"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -1196,6 +1434,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I9890",
+        "students": 31,
         "course": "ELECTRONICA DE POTENCIA"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1206,6 +1446,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I9890",
+        "students": 13,
         "course": "ELECTRONICA DE POTENCIA"
       },
       "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -1216,6 +1458,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7263",
+        "students": 26,
         "course": "ELECTRONICA DE POTENCIA"
       },
       "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -1226,6 +1470,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7263",
+        "students": 17,
         "course": "ELECTRONICA DE POTENCIA"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -1236,6 +1482,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7372",
+        "students": 10,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -1246,6 +1494,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I7372",
+        "students": 34,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -1256,6 +1506,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7372",
+        "students": 36,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "WARIO VAZQUEZ, FERNANDO"
@@ -1266,6 +1518,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7372",
+        "students": 30,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1276,6 +1530,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7372",
+        "students": 30,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1286,6 +1542,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7372",
+        "students": 30,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1296,6 +1554,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7372",
+        "students": 30,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1306,6 +1566,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7372",
+        "students": 27,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "VELAZQUEZ MORA, EDUARDO"
@@ -1316,6 +1578,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7372",
+        "students": 35,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1326,6 +1590,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7372",
+        "students": 35,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1336,6 +1602,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7372",
+        "students": 35,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1346,6 +1614,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7372",
+        "students": 35,
         "course": "ELECTRONICA INDUSTRIAL"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -1356,6 +1626,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "IB128",
+        "students": 21,
         "course": "ELECTRONICA INTEGRADA"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -1366,6 +1638,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7599",
+        "students": 42,
         "course": "ELECTRONICA INTEGRADA"
       },
       "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -1376,6 +1650,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7599",
+        "students": 31,
         "course": "ELECTRONICA INTEGRADA"
       },
       "professor": "VELASCO RIVERA, JORGE"
@@ -1386,6 +1662,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I7599",
+        "students": 33,
         "course": "ELECTRONICA INTEGRADA"
       },
       "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
@@ -1396,6 +1674,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "IL341",
+        "students": 35,
         "course": "ETICA Y LEGISLACION"
       },
       "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -1406,6 +1686,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "LT251",
+        "students": 35,
         "course": "EXPRESION ORAL Y ESCRITA"
       },
       "professor": "LOPEZ FRANCO, ADRIANA LISET"
@@ -1416,6 +1698,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "IB143",
+        "students": 18,
         "course": "FIBRAS OPTICAS"
       },
       "professor": "SANTIAGO HERNANDEZ, HECTOR"
@@ -1426,6 +1710,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7440",
+        "students": 20,
         "course": "FORMACION EMPRESARIAL"
       },
       "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -1436,6 +1722,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7440",
+        "students": 20,
         "course": "FORMACION EMPRESARIAL"
       },
       "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -1446,6 +1734,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7440",
+        "students": 20,
         "course": "FORMACION EMPRESARIAL"
       },
       "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -1456,6 +1746,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7440",
+        "students": 20,
         "course": "FORMACION EMPRESARIAL"
       },
       "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -1466,6 +1758,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "IB144",
+        "students": 12,
         "course": "FOTOMETRIA"
       },
       "professor": "SANTIAGO HERNANDEZ, ALBERTO"
@@ -1476,6 +1770,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "V3690",
+        "students": 29,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
@@ -1486,6 +1782,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "V3690",
+        "students": 25,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
@@ -1496,6 +1794,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "V3690",
+        "students": 29,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -1506,6 +1806,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "V3690",
+        "students": 22,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -1516,6 +1818,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "V3690",
+        "students": 25,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
@@ -1526,6 +1830,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "V3690",
+        "students": 18,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "MONTES RUELAS, J. JESUS"
@@ -1536,6 +1842,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V3690",
+        "students": 21,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -1546,6 +1854,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "V3690",
+        "students": 25,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
@@ -1556,6 +1866,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7601",
+        "students": 33,
         "course": "IMAGENOLOGIA MEDICA"
       },
       "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -1566,6 +1878,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I7601",
+        "students": 14,
         "course": "IMAGENOLOGIA MEDICA"
       },
       "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -1576,6 +1890,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7601",
+        "students": 36,
         "course": "IMAGENOLOGIA MEDICA"
       },
       "professor": "ALVAREZ PADILLA, FRANCISCO JAVIER"
@@ -1586,6 +1902,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "V0709",
+        "students": 33,
         "course": "INDUCCION A LA INGENIERIA"
       },
       "professor": "ZAMORA RAMOS, VICTOR MANUEL"
@@ -1596,6 +1914,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "V0709",
+        "students": 35,
         "course": "INDUCCION A LA INGENIERIA"
       },
       "professor": "ALMAGUER GOMEZ, CITLALLI"
@@ -1606,6 +1926,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V3684",
+        "students": 35,
         "course": "INDUCCION UNIVERSITARIA"
       },
       "professor": "VALDIVIA CHAVEZ, DULCE ANGELICA"
@@ -1616,6 +1938,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "V3684",
+        "students": 35,
         "course": "INDUCCION UNIVERSITARIA"
       },
       "professor": "GILDO ORTIZ, LORENZO"
@@ -1626,6 +1950,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "V0730",
+        "students": 35,
         "course": "INFORMATICA ADMINISTRATIVA"
       },
       "professor": "RETAMOZA VEGA, PATRICIA DEL ROSARIO"
@@ -1636,6 +1962,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "V0717",
+        "students": 35,
         "course": "INGENIERIA Y SUSTENTABILIDAD"
       },
       "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
@@ -1646,6 +1974,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "IL351",
+        "students": 34,
         "course": "INNOVACION Y TECNOLOGIA"
       },
       "professor": "CAMPA MOLINA, JORGE"
@@ -1656,6 +1986,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "I7602",
+        "students": 24,
         "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
       },
       "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -1666,6 +1998,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "I7602",
+        "students": 36,
         "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
       },
       "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -1676,6 +2010,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7602",
+        "students": 36,
         "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -1686,6 +2022,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7287",
+        "students": 29,
         "course": "INSTRUMENTACION"
       },
       "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -1696,6 +2034,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I7287",
+        "students": 8,
         "course": "INSTRUMENTACION"
       },
       "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -1706,6 +2046,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7287",
+        "students": 34,
         "course": "INSTRUMENTACION"
       },
       "professor": "VEGA MAGDALENO, GUSTAVO DANIEL"
@@ -1716,6 +2058,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7605",
+        "students": 36,
         "course": "INSTRUMENTACION DIAGNOSTICA Y TERAPEUTICA"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -1726,6 +2070,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7605",
+        "students": 19,
         "course": "INSTRUMENTACION DIAGNOSTICA Y TERAPEUTICA"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -1736,6 +2082,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7605",
+        "students": 30,
         "course": "INSTRUMENTACION DIAGNOSTICA Y TERAPEUTICA"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -1746,6 +2094,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7603",
+        "students": 22,
         "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
       },
       "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -1756,6 +2106,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7603",
+        "students": 34,
         "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
       },
       "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -1766,6 +2118,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7603",
+        "students": 36,
         "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
       },
       "professor": "BORRAYO CARBAJAL, ERNESTO"
@@ -1776,6 +2130,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7603",
+        "students": 22,
         "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
       },
       "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
@@ -1786,6 +2142,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7604",
+        "students": 16,
         "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
       },
       "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -1796,6 +2154,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7604",
+        "students": 35,
         "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
       },
       "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
@@ -1806,6 +2166,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7604",
+        "students": 9,
         "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
       },
       "professor": "GONZALEZ ORTEGA, ELENA"
@@ -1816,6 +2178,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7604",
+        "students": 34,
         "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
       },
       "professor": "MENDEZ PALOS, EDUARDO"
@@ -1826,6 +2190,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "ET334",
+        "students": 38,
         "course": "INSTRUMENTACION MEDICA III"
       },
       "professor": "QUIROZ PEREZ, ERIKA LIZETH"
@@ -1836,6 +2202,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "ET334",
+        "students": 36,
         "course": "INSTRUMENTACION MEDICA III"
       },
       "professor": "QUIROZ PEREZ, ERIKA LIZETH"
@@ -1846,6 +2214,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7606",
+        "students": 33,
         "course": "INSTRUMENTACION Y TECNICAS DE REHABILITACION"
       },
       "professor": "MENDEZ PALOS, EDUARDO"
@@ -1856,6 +2226,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I7606",
+        "students": 20,
         "course": "INSTRUMENTACION Y TECNICAS DE REHABILITACION"
       },
       "professor": "MARTINEZ BRITO, MARCO AURELIO"
@@ -1866,6 +2238,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7606",
+        "students": 40,
         "course": "INSTRUMENTACION Y TECNICAS DE REHABILITACION"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -1876,6 +2250,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "ET333",
+        "students": 17,
         "course": "INSTRUMENTACION MEDICA II"
       },
       "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
@@ -1886,6 +2262,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "IL342",
+        "students": 39,
         "course": "INTRODUCCION A LA INGENIERIA"
       },
       "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -1896,6 +2274,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "IB148",
+        "students": 19,
         "course": "MECANICA CUANTICA"
       },
       "professor": "SANTIAGO HERNANDEZ, ALBERTO"
@@ -1906,6 +2286,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "IB134",
+        "students": 22,
         "course": "MECANICA TEORICA"
       },
       "professor": "CERVANTES LOZANO, FRANCISCO JOEL"
@@ -1916,6 +2298,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "IB150",
+        "students": 12,
         "course": "METODOS MATEMATICOS DE LA FISICA"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -1926,6 +2310,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "IB151",
+        "students": 9,
         "course": "OPTICA ELECTROMAGNETICA"
       },
       "professor": "SANTIAGO HERNANDEZ, ALBERTO"
@@ -1936,6 +2322,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "IB152",
+        "students": 16,
         "course": "OPTICA GEOMETRICA"
       },
       "professor": "MORA NUÑEZ, AZAEL DE JESUS"
@@ -1946,6 +2334,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "IB153",
+        "students": 12,
         "course": "OPTICA NO LINEAL"
       },
       "professor": "ALMAGUER GOMEZ, CITLALLI"
@@ -1956,6 +2346,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7609",
+        "students": 19,
         "course": "PROCESAMIENTO DE BIOIMAGENES"
       },
       "professor": "GARCIA MANZO, RICARDO EMMANUEL"
@@ -1966,6 +2358,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7609",
+        "students": 40,
         "course": "PROCESAMIENTO DE BIOIMAGENES"
       },
       "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
@@ -1976,6 +2370,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I7609",
+        "students": 20,
         "course": "PROCESAMIENTO DE BIOIMAGENES"
       },
       "professor": "RAMIREZ HERNANDEZ, NORMA"
@@ -1986,6 +2382,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "I7608",
+        "students": 41,
         "course": "PROCESAMIENTO DE BIOSEÑALES"
       },
       "professor": "FLORES NUÑEZ, JORGE LUIS"
@@ -1996,6 +2394,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7608",
+        "students": 31,
         "course": "PROCESAMIENTO DE BIOSEÑALES"
       },
       "professor": "RAMIREZ HERNANDEZ, NORMA"
@@ -2006,6 +2406,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7608",
+        "students": 28,
         "course": "PROCESAMIENTO DE BIOSEÑALES"
       },
       "professor": "RAMIREZ HERNANDEZ, NORMA"
@@ -2016,6 +2418,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7265",
+        "students": 39,
         "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
       },
       "professor": "CASAS ORDAZ, ANGEL"
@@ -2026,6 +2430,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I9891",
+        "students": 35,
         "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
       },
       "professor": "SANTOS ARCE, STEWART RENE"
@@ -2036,6 +2442,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I9891",
+        "students": 36,
         "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
       },
       "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -2046,6 +2454,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7265",
+        "students": 36,
         "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
       },
       "professor": "CARRASCO ALVAREZ, ROBERTO"
@@ -2056,6 +2466,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7265",
+        "students": 38,
         "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
       },
       "professor": "CASILLAS DE LA TORRE, SERGIO"
@@ -2066,6 +2478,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "IL385",
+        "students": 53,
         "course": "PROGRAMACION DE GRAFICOS 3D"
       },
       "professor": "SILVA MARES, OSCAR GREGORIO"
@@ -2076,6 +2490,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7266",
+        "students": 34,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -2086,6 +2502,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I9894",
+        "students": 33,
         "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
       },
       "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
@@ -2096,6 +2514,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7268",
+        "students": 19,
         "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
       },
       "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
@@ -2106,6 +2526,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I9892",
+        "students": 26,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -2116,6 +2538,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7266",
+        "students": 34,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -2126,6 +2550,8 @@
         "days": ". . I . V .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I9892",
+        "students": 34,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "HERNANDEZ RUIZ, CARLOS MANUEL"
@@ -2136,6 +2562,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I7266",
+        "students": 41,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "GARCIA ARREOLA, ALICIA"
@@ -2146,6 +2574,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I7268",
+        "students": 32,
         "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
       },
       "professor": "GARCIA ARREOLA, ALICIA"
@@ -2156,6 +2586,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7266",
+        "students": 18,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "MORAN LOZA, JOSE MIGUEL"
@@ -2166,6 +2598,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7266",
+        "students": 29,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "PATIÑO RUIZ, ROBERTO"
@@ -2176,6 +2610,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7268",
+        "students": 14,
         "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
       },
       "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -2186,6 +2622,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7266",
+        "students": 11,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "GALVEZ LOPEZ, HECTOR ALEJANDRO"
@@ -2196,6 +2634,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "IL376",
+        "students": 35,
         "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "CASAS ORDAZ, ANGEL"
@@ -2206,6 +2646,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "I7610",
+        "students": 25,
         "course": "PROTESIS Y ORTESIS"
       },
       "professor": "PAREDES, OMAR"
@@ -2216,6 +2658,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "I7610",
+        "students": 40,
         "course": "PROTESIS Y ORTESIS"
       },
       "professor": "VELEZ PEREZ, HUGO ABRAHAM"
@@ -2226,6 +2670,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7610",
+        "students": 23,
         "course": "PROTESIS Y ORTESIS"
       },
       "professor": "PAREDES, OMAR"
@@ -2236,6 +2682,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7288",
+        "students": 8,
         "course": "PROTOCOLOS DE COMUNICACIONES"
       },
       "professor": "VELAZQUEZ MORA, EDUARDO"
@@ -2246,6 +2694,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7288",
+        "students": 29,
         "course": "PROTOCOLOS DE COMUNICACIONES"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -2256,6 +2706,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I7288",
+        "students": 16,
         "course": "PROTOCOLOS DE COMUNICACIONES"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -2266,6 +2718,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2276,6 +2730,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2286,6 +2742,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2296,6 +2754,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2306,6 +2766,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2316,6 +2778,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2326,6 +2790,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2336,6 +2802,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2346,6 +2814,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2356,6 +2826,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2366,6 +2838,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2376,6 +2850,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2386,6 +2862,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2396,6 +2874,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2406,6 +2886,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2416,6 +2898,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2426,6 +2910,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2436,6 +2922,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2446,6 +2934,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2456,6 +2946,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2466,6 +2958,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A022",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2476,6 +2970,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2486,6 +2982,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2496,6 +2994,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2506,6 +3006,8 @@
         "days": ". . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "V0818",
+        "students": 29,
         "course": "PROYECTO SUSTENTABLE"
       },
       "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2516,6 +3018,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "IB156",
+        "students": 10,
         "course": "RADIOMETRIA"
       },
       "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
@@ -2526,6 +3030,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I7270",
+        "students": 19,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -2536,6 +3042,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "I7270",
+        "students": 29,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -2546,6 +3054,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I7270",
+        "students": 10,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
@@ -2556,6 +3066,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7270",
+        "students": 17,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
@@ -2566,6 +3078,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7270",
+        "students": 29,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -2576,6 +3090,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I9896",
+        "students": 32,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -2586,6 +3102,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I9896",
+        "students": 30,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -2596,6 +3114,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I9896",
+        "students": 19,
         "course": "REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -2606,6 +3126,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "ET339",
+        "students": 17,
         "course": "SEGURIDAD E INSTALACIONES HOSPITALARIAS"
       },
       "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -2616,6 +3138,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I9899",
+        "students": 21,
         "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -2626,6 +3150,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I9893",
+        "students": 30,
         "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -2636,6 +3162,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "I9893",
+        "students": 32,
         "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "MORA NUÑEZ, AZAEL DE JESUS"
@@ -2646,6 +3174,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I9893",
+        "students": 23,
         "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "LUQUE CHANG, ALBERTO"
@@ -2656,6 +3186,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I9895",
+        "students": 30,
         "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -2666,6 +3198,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I9897",
+        "students": 31,
         "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -2676,6 +3210,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I9897",
+        "students": 19,
         "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -2686,6 +3222,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7591",
+        "students": 39,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA I"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -2696,6 +3234,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7589",
+        "students": 34,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANALISIS DEL MOVIMIENTO"
       },
       "professor": "OSUNA CARRASCO, LAURA PAULINA"
@@ -2706,6 +3246,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I7589",
+        "students": 20,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANALISIS DEL MOVIMIENTO"
       },
       "professor": "SALIDO RUIZ, RICARDO ANTONIO"
@@ -2716,6 +3258,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7593",
+        "students": 35,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
       },
       "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
@@ -2726,6 +3270,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7591",
+        "students": 18,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA I"
       },
       "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -2736,6 +3282,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "I7591",
+        "students": 35,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA I"
       },
       "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -2746,6 +3294,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7593",
+        "students": 35,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
       },
       "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
@@ -2756,6 +3306,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I7589",
+        "students": 23,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANALISIS DEL MOVIMIENTO"
       },
       "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
@@ -2766,6 +3318,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A018",
+        "code": "I7589",
+        "students": 12,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANALISIS DEL MOVIMIENTO"
       },
       "professor": "PEREZ PADILLA, NAYELI ARELI"
@@ -2776,6 +3330,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7591",
+        "students": 18,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA I"
       },
       "professor": "CURIEL LOPEZ, FATIMA BELEN"
@@ -2786,6 +3342,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7593",
+        "students": 7,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
       },
       "professor": "CURIEL LOPEZ, FATIMA BELEN"
@@ -2796,6 +3354,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "I7593",
+        "students": 35,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
       },
       "professor": "MARTINEZ BRITO, MARCO AURELIO"
@@ -2806,6 +3366,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A020",
+        "code": "I7278",
+        "students": 18,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -2816,6 +3378,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7278",
+        "students": 19,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
       },
       "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -2826,6 +3390,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7267",
+        "students": 12,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -2836,6 +3402,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7281",
+        "students": 10,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
       },
       "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
@@ -2846,6 +3414,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7281",
+        "students": 23,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
       },
       "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
@@ -2856,6 +3426,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7290",
+        "students": 17,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -2866,6 +3438,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I7281",
+        "students": 20,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
       },
       "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
@@ -2876,6 +3450,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "I7281",
+        "students": 22,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
       },
       "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
@@ -2886,6 +3462,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7290",
+        "students": 11,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -2896,6 +3474,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I7281",
+        "students": 12,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
       },
       "professor": "GOMEZ MORALES, LEOBARDO"
@@ -2906,6 +3486,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "I7271",
+        "students": 19,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -2916,6 +3498,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I7271",
+        "students": 20,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
@@ -2926,6 +3510,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I7273",
+        "students": 21,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "CASILLAS ZAMORA, ANTONIO"
@@ -2936,6 +3522,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "IG413",
+        "students": 10,
         "course": "SEMINARIO TESIS DE MAESTRIA II"
       },
       "professor": "CAMARENA MENDEZ, JOSE OCTAVIO"
@@ -2946,6 +3534,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "I7272",
+        "students": 27,
         "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
@@ -2956,6 +3546,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7272",
+        "students": 21,
         "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -2966,6 +3558,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I9898",
+        "students": 41,
         "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "WARIO VAZQUEZ, FERNANDO"
@@ -2976,6 +3570,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "I7272",
+        "students": 13,
         "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -2986,6 +3582,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7272",
+        "students": 9,
         "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "CASILLAS DE LA TORRE, SERGIO"
@@ -2996,6 +3594,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7272",
+        "students": 26,
         "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "CASILLAS ZAMORA, ANTONIO"
@@ -3006,6 +3606,8 @@
         "days": "L . . . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "IG666",
+        "students": 7,
         "course": "SEÑALES EN ELECTROFISIOLOGIA"
       },
       "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
@@ -3016,6 +3618,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I7289",
+        "students": 4,
         "course": "SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -3026,6 +3630,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "I7289",
+        "students": 7,
         "course": "SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -3036,6 +3642,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "I7289",
+        "students": 21,
         "course": "SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "AVALOS ALVAREZ, OMAR"
@@ -3046,6 +3654,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I7289",
+        "students": 27,
         "course": "SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "AVALOS ALVAREZ, OMAR"
@@ -3056,6 +3666,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "I7289",
+        "students": 21,
         "course": "SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -3066,6 +3678,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7291",
+        "students": 27,
         "course": "SISTEMAS DE COMUNICACIONES II"
       },
       "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
@@ -3076,6 +3690,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7291",
+        "students": 15,
         "course": "SISTEMAS DE COMUNICACIONES II"
       },
       "professor": "CARRILLO DIAZ, RAUL"
@@ -3086,6 +3702,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "I7291",
+        "students": 22,
         "course": "SISTEMAS DE COMUNICACIONES II"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -3096,6 +3714,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I7291",
+        "students": 28,
         "course": "SISTEMAS DE COMUNICACIONES II"
       },
       "professor": "CARRASCO ALVAREZ, ROBERTO"
@@ -3106,6 +3726,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "IB158",
+        "students": 17,
         "course": "SISTEMAS DE ILUMINACION"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -3116,6 +3738,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A015",
+        "code": "IB136",
+        "students": 32,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "MORA NUÑEZ, AZAEL DE JESUS"
@@ -3126,6 +3750,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7292",
+        "students": 26,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -3136,6 +3762,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "I7292",
+        "students": 30,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -3146,6 +3774,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "I7292",
+        "students": 12,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -3156,6 +3786,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A005",
+        "code": "IB137",
+        "students": 18,
         "course": "SISTEMAS DE RADIOFRECUENCIA"
       },
       "professor": "OCAMPO ARELLANO, OCTAVIO"
@@ -3166,6 +3798,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "IL363",
+        "students": 29,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
@@ -3176,6 +3810,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "IL363",
+        "students": 24,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "RAYGOZA PANDURO, JUAN JOSE"
@@ -3186,6 +3822,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "IL363",
+        "students": 31,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
@@ -3196,6 +3834,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "IL363",
+        "students": 42,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "RAYGOZA PANDURO, JUAN JOSE"
@@ -3206,6 +3846,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A013",
+        "code": "IL363",
+        "students": 40,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "VELAZQUEZ MORA, EDUARDO"
@@ -3216,6 +3858,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "IL363",
+        "students": 31,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -3226,6 +3870,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "IL363",
+        "students": 35,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
@@ -3236,6 +3882,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A006",
+        "code": "IL363",
+        "students": 34,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
@@ -3246,6 +3894,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "IL363",
+        "students": 31,
         "course": "SISTEMAS DIGITALES"
       },
       "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
@@ -3256,6 +3906,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A014",
+        "code": "I7600",
+        "students": 9,
         "course": "SISTEMAS ELECTRONICOS"
       },
       "professor": "QUIROGA ROJAS, JOSE VLADIMIR"
@@ -3266,6 +3918,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7600",
+        "students": 39,
         "course": "SISTEMAS ELECTRONICOS"
       },
       "professor": "VELASCO RIVERA, JORGE"
@@ -3276,6 +3930,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A016",
+        "code": "I7600",
+        "students": 31,
         "course": "SISTEMAS ELECTRONICOS"
       },
       "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
@@ -3286,6 +3942,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7418",
+        "students": 0,
         "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
       },
       "professor": "MARTINEZ RUIZ, FRANCISCO"
@@ -3296,6 +3954,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7418",
+        "students": 0,
         "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
       },
       "professor": "MARTINEZ RUIZ, FRANCISCO"
@@ -3306,6 +3966,8 @@
         "days": ". M . . . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7418",
+        "students": 0,
         "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
       },
       "professor": "MARTINEZ RUIZ, FRANCISCO"
@@ -3316,6 +3978,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "I7418",
+        "students": 0,
         "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
       },
       "professor": "MARTINEZ RUIZ, FRANCISCO"
@@ -3326,6 +3990,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "V1682",
+        "students": 4,
         "course": "TEORIA ELECTROMAGNETICA"
       },
       "professor": "SANTIAGO HERNANDEZ, HECTOR"
@@ -3336,6 +4002,8 @@
         "days": ". . . J . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "IB138",
+        "students": 16,
         "course": "TEORIA ELECTROMAGNETICA I"
       },
       "professor": "ALMAGUER GOMEZ, CITLALLI"
@@ -3346,6 +4014,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A003",
+        "code": "IB160",
+        "students": 18,
         "course": "TEORIA ELECTROMAGNETICA II"
       },
       "professor": "SERRANO GARCIA, DAVID IGNACIO"
@@ -3356,6 +4026,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "ET355",
+        "students": 7,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA VI"
       },
       "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
@@ -3366,6 +4038,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "ET353",
+        "students": 24,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
       },
       "professor": "RIVERA TELLO, SERGIO IVAN"
@@ -3376,6 +4050,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A021",
+        "code": "ET351",
+        "students": 34,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA II"
       },
       "professor": "RIVERA TELLO, SERGIO IVAN"
@@ -3386,6 +4062,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A023",
+        "code": "ET340",
+        "students": 32,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -3396,6 +4074,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "ET352",
+        "students": 33,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA III"
       },
       "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
@@ -3406,6 +4086,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A019",
+        "code": "ET355",
+        "students": 5,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA VI"
       },
       "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
@@ -3416,6 +4098,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A017",
+        "code": "ET340",
+        "students": 10,
         "course": "TOPICOS DE INGENIERIA BIOMEDICA"
       },
       "professor": "GONZALEZ ORTEGA, ELENA"
@@ -3426,6 +4110,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "V0262",
+        "students": 3,
         "course": "TOPICOS SELECTOS EN APRENDIZAJE MAQUINA"
       },
       "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
@@ -3436,6 +4122,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A024",
+        "code": "ET418",
+        "students": 16,
         "course": "TOPICOS SELECTOS EN COMPUTACION"
       },
       "professor": "MORAN LOZA, JOSE MIGUEL"
@@ -3446,6 +4134,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "ET412",
+        "students": 21,
         "course": "TOPICOS SELECTOS EN COMUNICACIONES"
       },
       "professor": "ALMAGUER GOMEZ, CITLALLI"
@@ -3456,6 +4146,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A012",
+        "code": "ET412",
+        "students": 16,
         "course": "TOPICOS SELECTOS EN COMUNICACIONES"
       },
       "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
@@ -3466,6 +4158,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A008",
+        "code": "ET417",
+        "students": 31,
         "course": "TOPICOS SELECTOS EN ELECTRONICA"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -3476,6 +4170,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "ET416",
+        "students": 0,
         "course": "TOPICOS SELECTOS EN INSTRUMENTACION"
       },
       "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -3486,6 +4182,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A004",
+        "code": "ET414",
+        "students": 19,
         "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -3496,6 +4194,8 @@
         "days": ". . . . V .",
         "building": "DEDT",
         "classroom": "A011",
+        "code": "ET414",
+        "students": 22,
         "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -3506,6 +4206,8 @@
         "days": ". M . J . .",
         "building": "DEDT",
         "classroom": "A010",
+        "code": "ET414",
+        "students": 9,
         "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
       },
       "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
@@ -3516,6 +4218,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A009",
+        "code": "I7294",
+        "students": 25,
         "course": "VERIFICACION DE CIRCUITOS DIGITALES"
       },
       "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -3526,6 +4230,8 @@
         "days": ". . . . . S",
         "building": "DEDT",
         "classroom": "A001",
+        "code": "I7294",
+        "students": 5,
         "course": "VERIFICACION DE CIRCUITOS DIGITALES"
       },
       "professor": "HERNANDEZ HERNANDEZ, HECTOR"
@@ -3536,6 +4242,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A002",
+        "code": "I7294",
+        "students": 13,
         "course": "VERIFICACION DE CIRCUITOS DIGITALES"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -3546,6 +4254,8 @@
         "days": "L . I . . .",
         "building": "DEDT",
         "classroom": "A007",
+        "code": "IH397",
+        "students": 7,
         "course": "VISION COMPUTACIONAL"
       },
       "professor": "SANTOS ARCE, STEWART RENE"

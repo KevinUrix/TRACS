@@ -1,11 +1,13 @@
 {
-  "DEDI": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "1500-1655",
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I6133",
+        "students": 30,
         "course": "ANALISIS BROMATOLOGICOS"
       },
       "professor": "TREJO PEREA, NESTOR ALFREDO"
@@ -16,6 +18,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6133",
+        "students": 30,
         "course": "ANALISIS BROMATOLOGICOS"
       },
       "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -26,6 +30,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6133",
+        "students": 24,
         "course": "ANALISIS BROMATOLOGICOS"
       },
       "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -36,6 +42,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6133",
+        "students": 30,
         "course": "ANALISIS BROMATOLOGICOS"
       },
       "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -46,6 +54,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I3292",
+        "students": 31,
         "course": "BIOQUIMICA DE ALIMENTOS"
       },
       "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
@@ -56,6 +66,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7493",
+        "students": 22,
         "course": "BIOQUIMICA ESTRUCTURAL I"
       },
       "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -66,6 +78,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I7526",
+        "students": 12,
         "course": "CIENCIA DE LOS POLIMEROS"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -76,6 +90,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7522",
+        "students": 18,
         "course": "DEONTOLOGIA QUIMICA"
       },
       "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -86,6 +102,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7500",
+        "students": 30,
         "course": "ELECTROQUIMICA I"
       },
       "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -96,6 +114,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5856",
+        "students": 11,
         "course": "ELECTROQUIMICA I"
       },
       "professor": "MARTINEZ MARTINEZ, FERNANDO"
@@ -106,6 +126,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6995",
+        "students": 3,
         "course": "ESPECTROSCOPIA Y METODOS DE SEPARACION"
       },
       "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -116,6 +138,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6925",
+        "students": 35,
         "course": "ESTRUCTURA MOLECULAR"
       },
       "professor": "RENTERIA URQUIZA, MAITE"
@@ -126,6 +150,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6925",
+        "students": 34,
         "course": "ESTRUCTURA MOLECULAR"
       },
       "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -136,6 +162,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I3285",
+        "students": 17,
         "course": "FISICOQUIMICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -146,6 +174,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I3285",
+        "students": 29,
         "course": "FISICOQUIMICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -156,6 +186,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I3285",
+        "students": 29,
         "course": "FISICOQUIMICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -166,6 +198,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I3285",
+        "students": 29,
         "course": "FISICOQUIMICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -176,6 +210,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I3285",
+        "students": 29,
         "course": "FISICOQUIMICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -186,6 +222,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6928",
+        "students": 20,
         "course": "FISICOQUIMICA I"
       },
       "professor": "ESCALANTE VAZQUEZ, JOSE INES"
@@ -196,6 +234,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6928",
+        "students": 19,
         "course": "FISICOQUIMICA I"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -206,6 +246,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6928",
+        "students": 19,
         "course": "FISICOQUIMICA I"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -216,6 +258,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6928",
+        "students": 19,
         "course": "FISICOQUIMICA I"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -226,6 +270,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6928",
+        "students": 19,
         "course": "FISICOQUIMICA I"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -236,6 +282,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6128",
+        "students": 18,
         "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -246,6 +294,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6128",
+        "students": 25,
         "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
       },
       "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -256,6 +306,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6128",
+        "students": 13,
         "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -266,6 +318,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6128",
+        "students": 16,
         "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -276,6 +330,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6131",
+        "students": 26,
         "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -286,6 +342,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7492",
+        "students": 20,
         "course": "FISICOQUIMICA III"
       },
       "professor": "DIAMANTI, AIKATERINI"
@@ -296,6 +354,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7492",
+        "students": 20,
         "course": "FISICOQUIMICA III"
       },
       "professor": "DIAMANTI, AIKATERINI"
@@ -306,6 +366,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7492",
+        "students": 20,
         "course": "FISICOQUIMICA III"
       },
       "professor": "DIAMANTI, AIKATERINI"
@@ -316,6 +378,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7492",
+        "students": 20,
         "course": "FISICOQUIMICA III"
       },
       "professor": "DIAMANTI, AIKATERINI"
@@ -326,6 +390,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5813",
+        "students": 25,
         "course": "FISICOQUIMICA PARA INGENIEROS II"
       },
       "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -336,6 +402,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I5812",
+        "students": 14,
         "course": "FISICOQUIMICA PARA INGENIEROS I"
       },
       "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -346,6 +414,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5812",
+        "students": 14,
         "course": "FISICOQUIMICA PARA INGENIEROS I"
       },
       "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -356,6 +426,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I5812",
+        "students": 14,
         "course": "FISICOQUIMICA PARA INGENIEROS I"
       },
       "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -366,6 +438,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5812",
+        "students": 14,
         "course": "FISICOQUIMICA PARA INGENIEROS I"
       },
       "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -376,6 +450,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I5812",
+        "students": 22,
         "course": "FISICOQUIMICA PARA INGENIEROS I"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -386,6 +462,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5812",
+        "students": 23,
         "course": "FISICOQUIMICA PARA INGENIEROS I"
       },
       "professor": "BARCENA SOTO, MAXIMILIANO"
@@ -396,6 +474,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "V3846",
+        "students": 19,
         "course": "FUNDAMENTOS DE QUIMICA"
       },
       "professor": "RODRIGUEZ BETANCOURTT, VERONICA MARIA"
@@ -406,6 +486,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7494",
+        "students": 34,
         "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
       },
       "professor": "BADILLO CAMACHO, JESSICA"
@@ -416,6 +498,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7494",
+        "students": 33,
         "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
       },
       "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -426,6 +510,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7494",
+        "students": 33,
         "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
       },
       "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -436,6 +522,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7494",
+        "students": 33,
         "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
       },
       "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -446,6 +534,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7494",
+        "students": 33,
         "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
       },
       "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -456,6 +546,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7510",
+        "students": 8,
         "course": "INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -466,6 +558,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7510",
+        "students": 8,
         "course": "INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -476,6 +570,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7510",
+        "students": 8,
         "course": "INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -486,6 +582,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7510",
+        "students": 8,
         "course": "INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -496,6 +594,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I7510",
+        "students": 24,
         "course": "INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "VELAZQUEZ JUAREZ, GILBERTO"
@@ -506,6 +606,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I3290",
+        "students": 22,
         "course": "INTRODUCCION A LA BIOQUIMICA"
       },
       "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
@@ -516,6 +618,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7557",
+        "students": 22,
         "course": "INTRODUCCIN A LA CARACTERIZACION DE POLIMEROS"
       },
       "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
@@ -526,6 +630,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I7556",
+        "students": 9,
         "course": "INTRODUCCION AL ANALISIS BROMATOLOGICO"
       },
       "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -536,6 +642,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5822",
+        "students": 34,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -546,6 +654,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5822",
+        "students": 35,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -556,6 +666,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5822",
+        "students": 35,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -566,6 +678,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5822",
+        "students": 35,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -576,6 +690,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5822",
+        "students": 35,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -586,6 +702,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5822",
+        "students": 37,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -596,6 +714,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -606,6 +726,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -616,6 +738,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -626,6 +750,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -636,6 +762,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -646,6 +774,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -656,6 +786,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -666,6 +798,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -676,6 +810,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5822",
+        "students": 33,
         "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -686,6 +822,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7512",
+        "students": 11,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -696,6 +834,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7512",
+        "students": 11,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -706,6 +846,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7512",
+        "students": 11,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -716,6 +858,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7512",
+        "students": 11,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -726,6 +870,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I7508",
+        "students": 16,
         "course": "LABORATORIO DE QUIMICA ANALITICA II"
       },
       "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -736,6 +882,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7507",
+        "students": 23,
         "course": "LABORATORIO DE QUIMICA ANALITICA I"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -746,6 +894,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7527",
+        "students": 10,
         "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -756,6 +906,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7527",
+        "students": 10,
         "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -766,6 +918,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7527",
+        "students": 10,
         "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -776,6 +930,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7527",
+        "students": 10,
         "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -786,6 +942,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7523",
+        "students": 20,
         "course": "QUIMICA AMBIENTAL"
       },
       "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -796,6 +954,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7504",
+        "students": 35,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -806,6 +966,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6127",
+        "students": 30,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -816,6 +978,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -826,6 +990,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -836,6 +1002,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -846,6 +1014,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I7504",
+        "students": 33,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -856,6 +1026,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -866,6 +1038,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -876,6 +1050,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -886,6 +1062,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -896,6 +1074,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -906,6 +1086,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 24,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -916,6 +1098,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6127",
+        "students": 32,
         "course": "QUIMICA ANALITICA I"
       },
       "professor": "RIVERA CORONADO, GLORIA PAULINA"
@@ -926,6 +1110,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -936,6 +1122,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -946,6 +1134,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -956,6 +1146,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -966,6 +1158,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -976,6 +1170,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -986,6 +1182,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -996,6 +1194,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -1006,6 +1206,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6130",
+        "students": 30,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -1016,6 +1218,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7506",
+        "students": 18,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -1026,6 +1230,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7506",
+        "students": 18,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -1036,6 +1242,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7506",
+        "students": 18,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -1046,6 +1254,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7506",
+        "students": 18,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -1056,6 +1266,8 @@
         "days": ". . . . . S",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6130",
+        "students": 36,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
@@ -1066,6 +1278,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6130",
+        "students": 36,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
@@ -1076,6 +1290,8 @@
         "days": ". . . . . S",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6130",
+        "students": 36,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
@@ -1086,6 +1302,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6130",
+        "students": 36,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
@@ -1096,6 +1314,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I6130",
+        "students": 36,
         "course": "QUIMICA ANALITICA II"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1106,6 +1326,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1116,6 +1338,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1126,6 +1350,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1136,6 +1362,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1146,6 +1374,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1156,6 +1386,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1166,6 +1398,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1176,6 +1410,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1186,6 +1422,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6132",
+        "students": 36,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -1196,6 +1434,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6132",
+        "students": 29,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -1206,6 +1446,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6132",
+        "students": 35,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1216,6 +1458,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6132",
+        "students": 35,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1226,6 +1470,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6132",
+        "students": 35,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1236,6 +1482,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6132",
+        "students": 35,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1246,6 +1494,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6132",
+        "students": 34,
         "course": "QUIMICA ANALITICA III"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -1256,6 +1506,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7415",
+        "students": 31,
         "course": "QUIMICA BASICA"
       },
       "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -1266,6 +1518,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7415",
+        "students": 33,
         "course": "QUIMICA BASICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1276,6 +1530,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7415",
+        "students": 33,
         "course": "QUIMICA BASICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1286,6 +1542,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7415",
+        "students": 33,
         "course": "QUIMICA BASICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1296,6 +1554,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7415",
+        "students": 33,
         "course": "QUIMICA BASICA"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1306,6 +1566,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I7356",
+        "students": 27,
         "course": "QUIMICA BASICA"
       },
       "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -1316,6 +1578,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I7415",
+        "students": 33,
         "course": "QUIMICA BASICA"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -1326,6 +1590,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7356",
+        "students": 34,
         "course": "QUIMICA BASICA"
       },
       "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -1336,6 +1602,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6988",
+        "students": 1,
         "course": "QUIMICA COMPUTACIONAL"
       },
       "professor": "DIAMANTI, AIKATERINI"
@@ -1346,6 +1614,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "IC676",
+        "students": 34,
         "course": "QUIMICA DE SUELOS"
       },
       "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -1356,6 +1626,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "IC676",
+        "students": 34,
         "course": "QUIMICA DE SUELOS"
       },
       "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -1366,6 +1638,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "IC676",
+        "students": 34,
         "course": "QUIMICA DE SUELOS"
       },
       "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -1376,6 +1650,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "IC676",
+        "students": 34,
         "course": "QUIMICA DE SUELOS"
       },
       "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -1386,6 +1662,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I7541",
+        "students": 7,
         "course": "QUIMICA DEL ESTADO SOLIDO"
       },
       "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -1396,6 +1674,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "IC601",
+        "students": 31,
         "course": "QUIMICA EN LA INGENIERIA CIVIL"
       },
       "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -1406,6 +1686,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "IC601",
+        "students": 31,
         "course": "QUIMICA EN LA INGENIERIA CIVIL"
       },
       "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -1416,6 +1698,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "IC601",
+        "students": 31,
         "course": "QUIMICA EN LA INGENIERIA CIVIL"
       },
       "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -1426,6 +1710,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "IC601",
+        "students": 31,
         "course": "QUIMICA EN LA INGENIERIA CIVIL"
       },
       "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -1436,6 +1722,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "IC601",
+        "students": 30,
         "course": "QUIMICA EN LA INGENIERIA CIVIL"
       },
       "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -1446,6 +1734,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6921",
+        "students": 35,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1456,6 +1746,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6921",
+        "students": 35,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1466,6 +1758,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -1476,6 +1770,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -1486,6 +1782,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -1496,6 +1794,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -1506,6 +1806,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6921",
+        "students": 35,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1516,6 +1818,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6921",
+        "students": 35,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1526,6 +1830,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1536,6 +1842,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1546,6 +1854,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6921",
+        "students": 33,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -1556,6 +1866,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1566,6 +1878,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1576,6 +1890,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I6122",
+        "students": 36,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1586,6 +1902,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5803",
+        "students": 40,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -1596,6 +1914,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5803",
+        "students": 26,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
@@ -1606,6 +1926,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5803",
+        "students": 26,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
@@ -1616,6 +1938,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5803",
+        "students": 26,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
@@ -1626,6 +1950,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5803",
+        "students": 26,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
@@ -1636,6 +1962,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -1646,6 +1974,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -1656,6 +1986,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -1666,6 +1998,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5803",
+        "students": 38,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -1676,6 +2010,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -1686,6 +2022,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -1696,6 +2034,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6122",
+        "students": 37,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MATA MUNGUIA, AIDE"
@@ -1706,6 +2046,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6122",
+        "students": 37,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MATA MUNGUIA, AIDE"
@@ -1716,6 +2058,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6122",
+        "students": 37,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MATA MUNGUIA, AIDE"
@@ -1726,6 +2070,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6122",
+        "students": 37,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "MATA MUNGUIA, AIDE"
@@ -1736,6 +2082,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -1746,6 +2094,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5803",
+        "students": 30,
         "course": "QUIMICA GENERAL I"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -1756,6 +2106,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1766,6 +2118,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1776,6 +2130,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6126",
+        "students": 36,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -1786,6 +2142,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1796,6 +2154,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1806,6 +2166,8 @@
         "days": "L . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6923",
+        "students": 30,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -1816,6 +2178,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6923",
+        "students": 30,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -1826,6 +2190,8 @@
         "days": "L . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6923",
+        "students": 30,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -1836,6 +2202,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6923",
+        "students": 30,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -1846,6 +2214,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5804",
+        "students": 35,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -1856,6 +2226,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5804",
+        "students": 35,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -1866,6 +2238,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5804",
+        "students": 35,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -1876,6 +2250,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I5804",
+        "students": 35,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -1886,6 +2262,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 33,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1896,6 +2274,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 33,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1906,6 +2286,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6923",
+        "students": 32,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -1916,6 +2298,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6923",
+        "students": 32,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -1926,6 +2310,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 33,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1936,6 +2322,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 33,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1946,6 +2334,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6923",
+        "students": 32,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -1956,6 +2346,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6923",
+        "students": 32,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -1966,6 +2358,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6126",
+        "students": 22,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1976,6 +2370,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6126",
+        "students": 22,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1986,6 +2382,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6126",
+        "students": 22,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -1996,6 +2394,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6126",
+        "students": 22,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -2006,6 +2406,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "RIOS DONATO, NELY"
@@ -2016,6 +2418,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "RIOS DONATO, NELY"
@@ -2026,6 +2430,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6126",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
@@ -2036,6 +2442,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6126",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
@@ -2046,6 +2454,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6126",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
@@ -2056,6 +2466,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I6126",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
@@ -2066,6 +2478,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "RIOS DONATO, NELY"
@@ -2076,6 +2490,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 31,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "RIOS DONATO, NELY"
@@ -2086,6 +2502,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA HERRERA, PEDRO ARTURO"
@@ -2096,6 +2514,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA HERRERA, PEDRO ARTURO"
@@ -2106,6 +2526,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA HERRERA, PEDRO ARTURO"
@@ -2116,6 +2538,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "HERRERA HERRERA, PEDRO ARTURO"
@@ -2126,6 +2550,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6126",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -2136,6 +2562,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -2146,6 +2574,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -2156,6 +2586,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -2166,6 +2598,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5804",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -2176,6 +2610,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6126",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2186,6 +2622,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6126",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2196,6 +2634,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6126",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2206,6 +2646,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6126",
+        "students": 34,
         "course": "QUIMICA GENERAL II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2216,6 +2658,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I3278",
+        "students": 34,
         "course": "QUIMICA INORGANICA"
       },
       "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -2226,6 +2670,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7482",
+        "students": 24,
         "course": "QUIMICA INORGANICA I"
       },
       "professor": "RENTERIA URQUIZA, MAITE"
@@ -2236,6 +2682,8 @@
         "days": ". M . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7491",
+        "students": 23,
         "course": "QUIMICA INORGANICA II"
       },
       "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -2246,6 +2694,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7491",
+        "students": 16,
         "course": "QUIMICA INORGANICA II"
       },
       "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
@@ -2256,6 +2706,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I7517",
+        "students": 25,
         "course": "QUIMICA MACROMOLECULAR"
       },
       "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
@@ -2266,6 +2718,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7517",
+        "students": 25,
         "course": "QUIMICA MACROMOLECULAR"
       },
       "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
@@ -2276,6 +2730,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I7517",
+        "students": 11,
         "course": "QUIMICA MACROMOLECULAR"
       },
       "professor": "FLORES MEJIA, JORGE"
@@ -2286,6 +2742,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2296,6 +2754,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2306,6 +2766,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2316,6 +2778,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2326,6 +2790,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2336,6 +2802,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2346,6 +2814,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2356,6 +2826,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2366,6 +2838,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I3282",
+        "students": 34,
         "course": "QUIMICA ORGANICA"
       },
       "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2376,6 +2850,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I5805",
+        "students": 36,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "CID HERNANDEZ, MARGARITA"
@@ -2386,6 +2862,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I6124",
+        "students": 36,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -2396,6 +2874,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6124",
+        "students": 36,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -2406,6 +2886,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I6124",
+        "students": 36,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -2416,6 +2898,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6124",
+        "students": 36,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -2426,6 +2910,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5805",
+        "students": 33,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -2436,6 +2922,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5805",
+        "students": 33,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -2446,6 +2934,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5805",
+        "students": 33,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -2456,6 +2946,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I5805",
+        "students": 33,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -2466,6 +2958,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6124",
+        "students": 30,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -2476,6 +2970,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I6124",
+        "students": 36,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -2486,6 +2982,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I5805",
+        "students": 33,
         "course": "QUIMICA ORGANICA I"
       },
       "professor": "GONZALEZ CRUZ, RICARDO"
@@ -2496,6 +2994,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6129",
+        "students": 18,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2506,6 +3006,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6129",
+        "students": 18,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2516,6 +3018,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6129",
+        "students": 18,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2526,6 +3030,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6129",
+        "students": 18,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2536,6 +3042,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6129",
+        "students": 32,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -2546,6 +3054,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6129",
+        "students": 32,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -2556,6 +3066,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6129",
+        "students": 32,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -2566,6 +3078,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I6129",
+        "students": 32,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -2576,6 +3090,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I5806",
+        "students": 31,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "MOSCOSO SANCHEZ, FRANCISCO JAVIER"
@@ -2586,6 +3102,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6129",
+        "students": 27,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2596,6 +3114,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6129",
+        "students": 27,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2606,6 +3126,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6129",
+        "students": 27,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2616,6 +3138,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6129",
+        "students": 27,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2626,6 +3150,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2636,6 +3162,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2646,6 +3174,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2656,6 +3186,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2666,6 +3198,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2676,6 +3210,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2686,6 +3222,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2696,6 +3234,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2706,6 +3246,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I5806",
+        "students": 17,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -2716,6 +3258,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "I6129",
+        "students": 27,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -2726,6 +3270,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I5806",
+        "students": 27,
         "course": "QUIMICA ORGANICA II"
       },
       "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -2736,6 +3282,8 @@
         "days": ". . . J . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7540",
+        "students": 25,
         "course": "QUIMICA ORGANOMETALICA"
       },
       "professor": "CORTES LLAMAS, SARA ANGELICA"
@@ -2746,6 +3294,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7551",
+        "students": 9,
         "course": "QUIMIOMETRIA"
       },
       "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -2756,6 +3306,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A001",
+        "code": "I7487",
+        "students": 36,
         "course": "SEMINARIO DE INDUCCION"
       },
       "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -2766,6 +3318,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7550",
+        "students": 6,
         "course": "TALLER DE ANALISIS ESPECTROSCOPICO"
       },
       "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
@@ -2776,6 +3330,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I6911",
+        "students": 20,
         "course": "TALLER DE MATEMATICAS APLICADAS A LA QUIMICA"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2786,6 +3342,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6911",
+        "students": 25,
         "course": "TALLER DE MATEMATICAS APLICADAS A LA QUIMICA"
       },
       "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -2796,6 +3354,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I7524",
+        "students": 22,
         "course": "TALLER DE QUIMICA AMBIENTAL"
       },
       "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -2806,6 +3366,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7515",
+        "students": 19,
         "course": "TALLER DE SEGUIMIENTO DE MODULO IV"
       },
       "professor": "RANGEL SALAS, IRMA IDALIA"
@@ -2816,6 +3378,8 @@
         "days": "L . . . . .",
         "building": "DEDI",
         "classroom": "A008",
+        "code": "I7499",
+        "students": 10,
         "course": "TALLER DE SEGUIMIENTO DE MODULO II"
       },
       "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -2826,6 +3390,8 @@
         "days": ". . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6927",
+        "students": 14,
         "course": "TALLER DE SEGUIMIENTO DE MODULO I"
       },
       "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -2836,6 +3402,8 @@
         "days": ". . . . V .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I6927",
+        "students": 8,
         "course": "TALLER DE SEGUIMIENTO DE MODULO I"
       },
       "professor": "CORTES ROMERO, CELSO"
@@ -2846,6 +3414,8 @@
         "days": ". M . . . .",
         "building": "DEDI",
         "classroom": "A006",
+        "code": "I6927",
+        "students": 11,
         "course": "TALLER DE SEGUIMIENTO DE MODULO I"
       },
       "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
@@ -2856,6 +3426,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A002",
+        "code": "IL665",
+        "students": 2,
         "course": "TEMAS SELECTOS EN BIOQUIMICA II"
       },
       "professor": "VELAZQUEZ JUAREZ, GILBERTO"
@@ -2866,6 +3438,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A005",
+        "code": "I7488",
+        "students": 28,
         "course": "TEORIA DE QUIMICA ORGANICA II"
       },
       "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -2876,6 +3450,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I7488",
+        "students": 26,
         "course": "TEORIA DE QUIMICA ORGANICA II"
       },
       "professor": "LOPEZ REYES, MORELIA EUNICE"
@@ -2886,6 +3462,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7481",
+        "students": 27,
         "course": "TEORIA DE QUIMICA ORGANICA I"
       },
       "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
@@ -2896,6 +3474,8 @@
         "days": ". M . J . .",
         "building": "DEDI",
         "classroom": "A007",
+        "code": "I7481",
+        "students": 27,
         "course": "TEORIA DE QUIMICA ORGANICA I"
       },
       "professor": "LOPEZ REYES, MORELIA EUNICE"
@@ -2906,6 +3486,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A003",
+        "code": "I7481",
+        "students": 27,
         "course": "TEORIA DE QUIMICA ORGANICA I"
       },
       "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
@@ -2916,6 +3498,8 @@
         "days": "L . I . . .",
         "building": "DEDI",
         "classroom": "A004",
+        "code": "I7489",
+        "students": 23,
         "course": "TEORIA DE QUIMICA ORGANICA III"
       },
       "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"

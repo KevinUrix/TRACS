@@ -1,11 +1,13 @@
 {
-  "DEDY": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "1100-1255",
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I7004",
+        "students": 2,
         "course": "ALIMENTOS FUNCIONALES"
       },
       "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -16,6 +18,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I6153",
+        "students": 31,
         "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
       },
       "professor": "MACIAS LAMAS, ADRIANA MACARIA"
@@ -26,6 +30,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I6153",
+        "students": 30,
         "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
       },
       "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
@@ -36,6 +42,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I6153",
+        "students": 30,
         "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
       },
       "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
@@ -46,6 +54,8 @@
         "days": "L . . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0775",
+        "students": 8,
         "course": "ANALISIS DE SUPERFICIES"
       },
       "professor": "VAZQUEZ LEPE, MILTON OSWALDO"
@@ -56,6 +66,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6936",
+        "students": 2,
         "course": "BIOQUIMICA AVANZADA"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -66,6 +78,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6936",
+        "students": 2,
         "course": "BIOQUIMICA AVANZADA"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -76,6 +90,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6936",
+        "students": 2,
         "course": "BIOQUIMICA AVANZADA"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -86,6 +102,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6936",
+        "students": 2,
         "course": "BIOQUIMICA AVANZADA"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -96,6 +114,8 @@
         "days": ". . I . V .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL637",
+        "students": 5,
         "course": "BIOQUIMICA AVANZADA"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -106,6 +126,8 @@
         "days": ". M . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0771",
+        "students": 1,
         "course": "CIENCIA DE MATERIALES DE PELICULAS DELGADAS"
       },
       "professor": "BLANCO ALONSO, OSCAR"
@@ -116,6 +138,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "IL645",
+        "students": 1,
         "course": "CINETICA QUIMICA AVANZADA"
       },
       "professor": "BARCENA SOTO, MAXIMILIANO"
@@ -126,6 +150,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0795",
+        "students": 2,
         "course": "CORROSION"
       },
       "professor": "FLORES MARTINEZ, MARTIN"
@@ -136,6 +162,8 @@
         "days": ". M . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0767",
+        "students": 1,
         "course": "DISEÑO Y MODELADO DE DISPOSITIVOS SEMICONDUCTORES"
       },
       "professor": "GUILLEN BONILLA, HECTOR"
@@ -146,6 +174,8 @@
         "days": ". M . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0739",
+        "students": 7,
         "course": "ESTRUCTURA Y CARACTERIZACION DE MATERIALES"
       },
       "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -156,6 +186,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I7509",
+        "students": 13,
         "course": "INSTRUMENTACION QUIMICA ANALITICA I"
       },
       "professor": "GALLEGOS CASTILLO, SAUL"
@@ -166,6 +198,8 @@
         "days": "L M I J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0777",
+        "students": 3,
         "course": "INTERACCION DE LA RADIACION CON LA MATERIA"
       },
       "professor": "CASTAÑEDA PAREDES, EDUARDO"
@@ -176,6 +210,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "LQM01",
+        "code": "I7498",
+        "students": 18,
         "course": "LABORATORIO DE BIOQUIMICA ESTRUCTURAL I"
       },
       "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -186,6 +222,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "LQM01",
+        "code": "I7498",
+        "students": 19,
         "course": "LABORATORIO DE BIOQUIMICA ESTRUCTURAL I"
       },
       "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -196,6 +234,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "LQM01",
+        "code": "I7498",
+        "students": 16,
         "course": "LABORATORIO DE BIOQUIMICA ESTRUCTURAL I"
       },
       "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -206,6 +246,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7501",
+        "students": 17,
         "course": "LABORATORIO DE ELECTROQUIMICA I"
       },
       "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
@@ -216,6 +258,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7501",
+        "students": 21,
         "course": "LABORATORIO DE ELECTROQUIMICA I"
       },
       "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
@@ -226,6 +270,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7501",
+        "students": 21,
         "course": "LABORATORIO DE ELECTROQUIMICA I"
       },
       "professor": "GONZALEZ CRUZ, RICARDO"
@@ -236,6 +282,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7503",
+        "students": 28,
         "course": "LABORATORIO DE FISICOQUIMICA III"
       },
       "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -246,6 +294,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7502",
+        "students": 16,
         "course": "LABORATORIO DE FISICOQUIMICA II"
       },
       "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -256,6 +306,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7486",
+        "students": 20,
         "course": "LABORATORIO DE FISICOQUIMICA I"
       },
       "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -266,6 +318,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7486",
+        "students": 20,
         "course": "LABORATORIO DE FISICOQUIMICA I"
       },
       "professor": "MATA MUNGUIA, AIDE"
@@ -276,6 +330,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7502",
+        "students": 22,
         "course": "LABORATORIO DE FISICOQUIMICA II"
       },
       "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -286,6 +342,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7503",
+        "students": 30,
         "course": "LABORATORIO DE FISICOQUIMICA III"
       },
       "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -296,6 +354,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7502",
+        "students": 22,
         "course": "LABORATORIO DE FISICOQUIMICA II"
       },
       "professor": "SANCHEZ JIMENEZ, CECILIA"
@@ -306,6 +366,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "LQM02",
+        "code": "I7486",
+        "students": 16,
         "course": "LABORATORIO DE FISICOQUIMICA I"
       },
       "professor": "GONZALEZ CRUZ, RICARDO"
@@ -316,6 +378,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "LQM03",
+        "code": "I7512",
+        "students": 20,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
       },
       "professor": "HERRERA SALGADO, PRISCILA"
@@ -326,6 +390,8 @@
         "days": ". . . . . S",
         "building": "DEDY",
         "classroom": "LQM03",
+        "code": "I7511",
+        "students": 18,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
       },
       "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
@@ -336,6 +402,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "LQM03",
+        "code": "I7511",
+        "students": 14,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
       },
       "professor": "GALLEGOS CASTILLO, SAUL"
@@ -346,6 +414,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "LQM03",
+        "code": "I7511",
+        "students": 21,
         "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
       },
       "professor": "GALLEGOS CASTILLO, SAUL"
@@ -356,6 +426,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0738",
+        "students": 7,
         "course": "MATEMATICAS PARA MATERIALES"
       },
       "professor": "RUELAS LEPE, RUBEN"
@@ -366,6 +438,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0793",
+        "students": 4,
         "course": "METALURGIA FISICA"
       },
       "professor": "RODRIGUEZ DE ANDA, EDUARDO"
@@ -376,6 +450,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "LQM03",
+        "code": "I3304",
+        "students": 15,
         "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
       },
       "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -386,6 +462,8 @@
         "days": ". . I . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0766",
+        "students": 2,
         "course": "OPTICA DE MATERIALES"
       },
       "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
@@ -396,6 +474,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0770",
+        "students": 1,
         "course": "PROCESAMIENTO Y CARACTERIZACION DE PELICULAS DELGADAS"
       },
       "professor": "RIVERA TELLO, CESAR DANIEL"
@@ -406,6 +486,8 @@
         "days": "L . . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0740",
+        "students": 7,
         "course": "PROPIEDADES DE MATERIALES I"
       },
       "professor": "BRAVO BARCENAS, DAVID ISRAEL"
@@ -416,6 +498,8 @@
         "days": ". M . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0741",
+        "students": 4,
         "course": "PROPIEDADES DE MATERIALES II"
       },
       "professor": "CEBALLOS SANCHEZ, OSCAR"
@@ -426,6 +510,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL635",
+        "students": 5,
         "course": "QUIMICA INORGANICA"
       },
       "professor": "CORTES LLAMAS, SARA ANGELICA"
@@ -436,6 +522,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL635",
+        "students": 5,
         "course": "QUIMICA INORGANICA"
       },
       "professor": "CORTES LLAMAS, SARA ANGELICA"
@@ -446,6 +534,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL635",
+        "students": 5,
         "course": "QUIMICA INORGANICA"
       },
       "professor": "CORTES LLAMAS, SARA ANGELICA"
@@ -456,6 +546,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL635",
+        "students": 5,
         "course": "QUIMICA INORGANICA"
       },
       "professor": "CORTES LLAMAS, SARA ANGELICA"
@@ -466,6 +558,8 @@
         "days": "L . . J . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL636",
+        "students": 4,
         "course": "QUIMICA ORGANICA AVANZADA I"
       },
       "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
@@ -476,6 +570,8 @@
         "days": ". . . . . S",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6980",
+        "students": 2,
         "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION II"
       },
       "professor": "GOMEZ SALAZAR, SERGIO"
@@ -486,6 +582,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6983",
+        "students": 3,
         "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION V"
       },
       "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -496,6 +594,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "F0305",
+        "students": 7,
         "course": "SEMINARIO DE AVANCE DE TESIS III"
       },
       "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -506,6 +606,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "F0303",
+        "students": 5,
         "course": "SEMINARIO DE AVANCE DE TESIS I"
       },
       "professor": "RENTERIA URQUIZA, MAITE"
@@ -516,6 +618,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "F0304",
+        "students": 6,
         "course": "SEMINARIO DE AVANCE DE TESIS II"
       },
       "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -526,6 +630,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I8479",
+        "students": 1,
         "course": "SEMINARIO DE INVESTIGACION EN QUIMICA II"
       },
       "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -536,6 +642,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL652",
+        "students": 2,
         "course": "SEMINARIO DE INVESTIGACION EN QUIMICA I"
       },
       "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
@@ -546,6 +654,8 @@
         "days": ". . I . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0746",
+        "students": 6,
         "course": "SEMINARIO DI"
       },
       "professor": "SANTANA ARANDA, MIGUEL ANGEL"
@@ -556,6 +666,8 @@
         "days": ". . I . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0747",
+        "students": 7,
         "course": "SEMINARIO DII"
       },
       "professor": "GILDO ORTIZ, LORENZO"
@@ -566,6 +678,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0748",
+        "students": 2,
         "course": "SEMINARIO DIII"
       },
       "professor": "GOMEZ ROSAS, GILBERTO"
@@ -576,6 +690,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0749",
+        "students": 2,
         "course": "SEMINARIO DIV"
       },
       "professor": "VAZQUEZ LEPE, MILTON OSWALDO"
@@ -586,6 +702,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0750",
+        "students": 2,
         "course": "SEMINARIO DV"
       },
       "professor": "BLANCO ALONSO, OSCAR"
@@ -596,6 +714,8 @@
         "days": ". M I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0742",
+        "students": 7,
         "course": "SEMINARIO I"
       },
       "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
@@ -606,6 +726,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0743",
+        "students": 4,
         "course": "SEMINARIO II"
       },
       "professor": "JIMENEZ ALEMAN, OMAR"
@@ -616,6 +738,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0744",
+        "students": 5,
         "course": "SEMINARIO III"
       },
       "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
@@ -626,6 +750,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0744",
+        "students": 5,
         "course": "SEMINARIO III"
       },
       "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
@@ -636,6 +762,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0744",
+        "students": 5,
         "course": "SEMINARIO III"
       },
       "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
@@ -646,6 +774,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0744",
+        "students": 5,
         "course": "SEMINARIO III"
       },
       "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
@@ -656,6 +786,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0745",
+        "students": 6,
         "course": "SEMINARIO IV"
       },
       "professor": "SAUCEDO FLORES, EMMANUEL"
@@ -666,6 +798,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0745",
+        "students": 6,
         "course": "SEMINARIO IV"
       },
       "professor": "SAUCEDO FLORES, EMMANUEL"
@@ -676,6 +810,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0745",
+        "students": 6,
         "course": "SEMINARIO IV"
       },
       "professor": "SAUCEDO FLORES, EMMANUEL"
@@ -686,6 +822,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0745",
+        "students": 6,
         "course": "SEMINARIO IV"
       },
       "professor": "SAUCEDO FLORES, EMMANUEL"
@@ -696,6 +834,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I6166",
+        "students": 26,
         "course": "TECNOLOGIA FARMACEUTICA I"
       },
       "professor": "SANCHEZ REYES, JULIAN ALFREDO"
@@ -706,6 +846,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I6167",
+        "students": 25,
         "course": "TECNOLOGIA FARMACEUTICA II"
       },
       "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
@@ -716,6 +858,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "I6167",
+        "students": 28,
         "course": "TECNOLOGIA FARMACEUTICA II"
       },
       "professor": "AVALOS SALGADO, FELIPE ALEXIS"
@@ -726,6 +870,8 @@
         "days": ". M . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0794",
+        "students": 1,
         "course": "TEMAS SELECTOS DE METALURGIA"
       },
       "professor": "RODRIGUEZ DE ANDA, EDUARDO"
@@ -736,6 +882,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0774",
+        "students": 2,
         "course": "TEMAS SELECTOS DE PELICULAS DELGADAS"
       },
       "professor": "SANCHEZ MARTINEZ, ARACELI"
@@ -746,6 +894,8 @@
         "days": ". M . J . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0787",
+        "students": 1,
         "course": "TEMAS SELECTOS DE POLIMEROS I"
       },
       "professor": "CISNEROS LOPEZ, ERICK OMAR"
@@ -756,6 +906,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I7014",
+        "students": 5,
         "course": "TEMAS SELECTOS EN FISICOQUIMICA"
       },
       "professor": "GOMEZ SALAZAR, SERGIO"
@@ -766,6 +918,8 @@
         "days": ". . . . . S",
         "building": "DEDY",
         "classroom": "",
+        "code": "IL657",
+        "students": 2,
         "course": "TEMAS SELECTOS EN QUIMICA DE POLIMEROS II"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -776,6 +930,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL660",
+        "students": 3,
         "course": "TEMAS SELECTOS EN QUIMICA INORGANICA I"
       },
       "professor": "DELGADO JAIME, MARIO ULISES"
@@ -786,6 +942,8 @@
         "days": "L . I . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL659",
+        "students": 7,
         "course": "TEMAS SELECTOS EN QUIMICA ORGANICA"
       },
       "professor": "MANRIQUEZ GONZALEZ, RICARDO"
@@ -796,6 +954,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL638",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "OROZCO GUAREÑO, EULOGIO"
@@ -806,6 +966,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL638",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "OROZCO GUAREÑO, EULOGIO"
@@ -816,6 +978,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL638",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "OROZCO GUAREÑO, EULOGIO"
@@ -826,6 +990,8 @@
         "days": ". . . J . .",
         "building": "DEDY",
         "classroom": "A002",
+        "code": "IL638",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "OROZCO GUAREÑO, EULOGIO"
@@ -836,6 +1002,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -846,6 +1014,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -856,6 +1026,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -866,6 +1038,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -876,6 +1050,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -886,6 +1062,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -896,6 +1074,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -906,6 +1086,8 @@
         "days": ". . I . . .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -916,6 +1098,8 @@
         "days": ". . . . V .",
         "building": "DEDY",
         "classroom": "A001",
+        "code": "I6930",
+        "students": 1,
         "course": "TERMODINAMICA QUIMICA AVANZADA"
       },
       "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
@@ -926,6 +1110,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0799",
+        "students": 0,
         "course": "TRIBOLOGIA"
       },
       "professor": "FLORES MARTINEZ, MARTIN"
@@ -936,6 +1122,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0799",
+        "students": 0,
         "course": "TRIBOLOGIA"
       },
       "professor": "FLORES MARTINEZ, MARTIN"
@@ -946,6 +1134,8 @@
         "days": ". M . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0799",
+        "students": 0,
         "course": "TRIBOLOGIA"
       },
       "professor": "FLORES MARTINEZ, MARTIN"
@@ -956,6 +1146,8 @@
         "days": "L . . . . .",
         "building": "DEDY",
         "classroom": "",
+        "code": "H0799",
+        "students": 0,
         "course": "TRIBOLOGIA"
       },
       "professor": "FLORES MARTINEZ, MARTIN"

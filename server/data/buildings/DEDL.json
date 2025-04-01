@@ -1,11 +1,13 @@
 {
-  "DEDL": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "1500-1655",
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7429",
+        "students": 17,
         "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
       },
       "professor": "MORA DURAN, JUAN CARLOS"
@@ -16,6 +18,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7429",
+        "students": 17,
         "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
       },
       "professor": "TRINIDAD MUÑOZ, SERGIO MIGUEL"
@@ -26,6 +30,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7478",
+        "students": 7,
         "course": "DISEÑO DE MAQUINAS"
       },
       "professor": "ALBORES MONTOYA, ELIASIN ALEJANDRO"
@@ -36,6 +42,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "LC01",
+        "code": "I7568",
+        "students": 23,
         "course": "DISEÑO Y MANUFACTURA CAD-CAM"
       },
       "professor": "RUELAS LEPE, RUBEN"
@@ -46,6 +54,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 15,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -56,6 +66,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 12,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "ULLOA LEAÑO, CARLOS ALBERTO"
@@ -66,6 +78,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 15,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -76,6 +90,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 11,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "ULLOA LEAÑO, CARLOS ALBERTO"
@@ -86,6 +102,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 15,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "GALLARDO SANCHEZ, MANUEL ALBERTO"
@@ -96,6 +114,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 11,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "ULLOA LEAÑO, CARLOS ALBERTO"
@@ -106,6 +126,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 15,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "MARTINEZ ZARATE, NASHIELI"
@@ -116,6 +138,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 15,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "ULLOA LEAÑO, CARLOS ALBERTO"
@@ -126,6 +150,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "IC615",
+        "students": 15,
         "course": "LABORATORIO DE CONCRETO"
       },
       "professor": "GALLARDO SANCHEZ, MANUEL ALBERTO"
@@ -136,6 +162,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "V2359",
+        "students": 6,
         "course": "LABORATORIO DE GEOTECNIA"
       },
       "professor": "GALAVIZ GONZALEZ, JOSE ROBERTO"
@@ -146,6 +174,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "EM03",
+        "code": "V2367",
+        "students": 7,
         "course": "LABORATORIO DE MATERIALES"
       },
       "professor": "LIMON COVARRUBIAS, PEDRO"
@@ -156,6 +186,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 19,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "PEREZ ORTEGA, JESUS MIGUEL"
@@ -166,6 +198,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 21,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "PEREZ ORTEGA, JESUS MIGUEL"
@@ -176,6 +210,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 24,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -186,6 +222,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 24,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -196,6 +234,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 24,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -206,6 +246,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 24,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -216,6 +258,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "LM03",
+        "code": "I7383",
+        "students": 21,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
@@ -226,6 +270,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 23,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "LEON RANGEL, ALVARO"
@@ -236,6 +282,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 21,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "CARRILLO CASTILLO, JOSE NIEVES"
@@ -246,6 +294,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "LM01",
+        "code": "I7383",
+        "students": 21,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "CARRILLO CASTILLO, JOSE NIEVES"
@@ -256,6 +306,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "LM02",
+        "code": "I7383",
+        "students": 19,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
@@ -266,6 +318,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "LM02",
+        "code": "I7383",
+        "students": 19,
         "course": "LABORATORIO DE METROLOGIA"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -276,6 +330,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM04",
+        "code": "IC619",
+        "students": 20,
         "course": "LABORATORIO DE PAVIMENTOS"
       },
       "professor": "BERNAL LOMELI, JOSE RAUL"
@@ -286,6 +342,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM04",
+        "code": "IC619",
+        "students": 21,
         "course": "LABORATORIO DE PAVIMENTOS"
       },
       "professor": "ULLOA LEAÑO, CARLOS ALBERTO"
@@ -296,6 +354,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "EM04",
+        "code": "IC619",
+        "students": 21,
         "course": "LABORATORIO DE PAVIMENTOS"
       },
       "professor": "BERNAL LOMELI, JOSE RAUL"
@@ -306,6 +366,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "EM04",
+        "code": "IC619",
+        "students": 21,
         "course": "LABORATORIO DE PAVIMENTOS"
       },
       "professor": "MARTINEZ ZARATE, NASHIELI"
@@ -316,6 +378,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "EM04",
+        "code": "IC619",
+        "students": 21,
         "course": "LABORATORIO DE PAVIMENTOS"
       },
       "professor": "SILVA GONZALEZ, JOSE ALFREDO"
@@ -326,6 +390,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM04",
+        "code": "IC619",
+        "students": 13,
         "course": "LABORATORIO DE PAVIMENTOS"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -336,6 +402,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 17,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -346,6 +414,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 18,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -356,6 +426,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 17,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "ACEVES BOJORQUEZ, RAUL"
@@ -366,6 +438,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 17,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -376,6 +450,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 18,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -386,6 +462,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 17,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -396,6 +474,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 17,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -406,6 +486,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7451",
+        "students": 17,
         "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
       },
       "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -416,6 +498,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "BERNAL LOMELI, JOSE RAUL"
@@ -426,6 +510,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -436,6 +522,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 11,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -446,6 +534,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "MARTINEZ ZARATE, NASHIELI"
@@ -456,6 +546,8 @@
         "days": "L . . . . .",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -466,6 +558,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "BERNAL LOMELI, JOSE RAUL"
@@ -476,6 +570,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "EM01",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -486,6 +582,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC592",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS I"
       },
       "professor": "CABELLO SUAREZ, LAURA YESSENIA"
@@ -496,6 +594,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "MORGADO CASTILLO, ROBERTO NESTOR"
@@ -506,6 +606,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 11,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -516,6 +618,8 @@
         "days": ". . . . V .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 11,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -526,6 +630,8 @@
         "days": ". . . J . .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 11,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
@@ -536,6 +642,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 13,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
@@ -546,6 +654,8 @@
         "days": ". . . . . S",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 15,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
@@ -556,6 +666,8 @@
         "days": ". . I . . .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 13,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -566,6 +678,8 @@
         "days": ". M . . . .",
         "building": "DEDL",
         "classroom": "EM02",
+        "code": "IC595",
+        "students": 16,
         "course": "LABORATORIO DE SUELOS II"
       },
       "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -576,6 +690,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7566",
+        "students": 9,
         "course": "ROBOTICA INDUSTRIAL"
       },
       "professor": "HERNANDEZ DE LEON, JOSE ESTEBAN"
@@ -586,6 +702,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 22,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "CARRILLO CASTILLO, JOSE NIEVES"
@@ -596,6 +714,8 @@
         "days": "L . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 18,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "VELEZ BARRAGAN, EDUARDO ENRIQUE"
@@ -606,6 +726,8 @@
         "days": "L . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 22,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "AVALOS VERGARA, FERNANDO DANIEL"
@@ -616,6 +738,8 @@
         "days": "L . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 20,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "AGUILAR ROSALES, JOEL"
@@ -626,6 +750,8 @@
         "days": "L . I . . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 20,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "VELEZ BARRAGAN, EDUARDO ENRIQUE"
@@ -636,6 +762,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 22,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
@@ -646,6 +774,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 20,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "AVALOS VERGARA, FERNANDO DANIEL"
@@ -656,6 +786,8 @@
         "days": ". M . J . .",
         "building": "DEDL",
         "classroom": "",
+        "code": "I7446",
+        "students": 21,
         "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
       },
       "professor": "AVALOS VERGARA, FERNANDO DANIEL"

@@ -1,11 +1,13 @@
 {
-  "DEDN": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "1100-1255",
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7274",
+        "students": 30,
         "course": "AUTOMATIZACION"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -16,6 +18,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "I7274",
+        "students": 13,
         "course": "AUTOMATIZACION"
       },
       "professor": "CAMARENA MENDEZ, JOSE OCTAVIO"
@@ -26,6 +30,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "I7274",
+        "students": 8,
         "course": "AUTOMATIZACION"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -36,6 +42,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7274",
+        "students": 25,
         "course": "AUTOMATIZACION"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -46,6 +54,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7274",
+        "students": 20,
         "course": "AUTOMATIZACION"
       },
       "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -56,6 +66,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I7277",
+        "students": 23,
         "course": "CIRCUITOS ANALOGICOS I"
       },
       "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -66,6 +78,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "I7587",
+        "students": 0,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -76,6 +90,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "I7587",
+        "students": 16,
         "course": "CIRCUITOS ELECTRICOS"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -86,6 +102,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7263",
+        "students": 28,
         "course": "ELECTRONICA DE POTENCIA"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -96,6 +114,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "V3690",
+        "students": 20,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -106,6 +126,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "V3690",
+        "students": 14,
         "course": "FUNDAMENTOS DE ELECTRONICA"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -116,6 +138,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7287",
+        "students": 23,
         "course": "INSTRUMENTACION"
       },
       "professor": "GOMEZ MORALES, LEOBARDO"
@@ -126,6 +150,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE07",
+        "code": "IB145",
+        "students": 14,
         "course": "INSTRUMENTACION PARA SISTEMAS FOTONICOS"
       },
       "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -136,6 +162,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 12,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -146,6 +174,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 13,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -156,6 +186,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "HERNANDEZ URIBE, RUBEN ERNESTO"
@@ -166,6 +198,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "MARQUEZ GUTIERREZ, MANUEL"
@@ -176,6 +210,8 @@
         "days": ". . . J . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -186,6 +222,8 @@
         "days": ". . . J . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -196,6 +234,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -206,6 +246,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 14,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -216,6 +258,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LHI01",
+        "code": "IC598",
+        "students": 11,
         "course": "LABORATORIO DE HIDRAULICA I"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -226,6 +270,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ GUTIERREZ, MANUEL"
@@ -236,6 +282,8 @@
         "days": ". . . J . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
@@ -246,6 +294,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -256,6 +306,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -266,6 +318,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 12,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -276,6 +330,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 11,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -286,6 +342,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -296,6 +354,8 @@
         "days": ". . . J . .",
         "building": "DEDN",
         "classroom": "LHI02",
+        "code": "IC610",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA II"
       },
       "professor": "MARTINEZ ZARATE, NASHIELI"
@@ -306,6 +366,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 16,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -316,6 +378,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 16,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -326,6 +390,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 16,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -336,6 +402,8 @@
         "days": ". . . J . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 16,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -346,6 +414,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 16,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "MORGADO CASTILLO, ROBERTO NESTOR"
@@ -356,6 +426,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 16,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "NUÑEZ RUELAS, GABRIEL ARTURO"
@@ -366,6 +438,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 12,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -376,6 +450,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "LHI03",
+        "code": "IC617",
+        "students": 15,
         "course": "LABORATORIO DE HIDRAULICA III"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -386,6 +462,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 11,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
@@ -396,6 +474,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 17,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
@@ -406,6 +486,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 18,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
@@ -416,6 +498,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 18,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -426,6 +510,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 18,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -436,6 +522,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 18,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -446,6 +534,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 18,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -456,6 +546,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7450",
+        "students": 18,
         "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
       },
       "professor": "CEJA VILLANUEVA, ARACELI"
@@ -466,6 +558,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 17,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -476,6 +570,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 18,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -486,6 +582,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 18,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -496,6 +594,8 @@
         "days": "L . . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 18,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -506,6 +606,8 @@
         "days": ". . I . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 18,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -516,6 +618,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 18,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "MARQUEZ SOTO, ABEL"
@@ -526,6 +630,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 13,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
@@ -536,6 +642,8 @@
         "days": ". M . . . .",
         "building": "DEDN",
         "classroom": "",
+        "code": "I7445",
+        "students": 16,
         "course": "LABORATORIO DE MECANICA DE FLUIDOS"
       },
       "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
@@ -546,6 +654,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "V1681",
+        "students": 1,
         "course": "MATEMATICAS AVANZADAS"
       },
       "professor": "CERVANTES LOZANO, FRANCISCO JOEL"
@@ -556,6 +666,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE02",
+        "code": "V1703",
+        "students": 0,
         "course": "OPTICA DE FOURIER"
       },
       "professor": "CERVANTES LOZANO, FRANCISCO JOEL"
@@ -566,6 +678,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "IF540",
+        "students": 4,
         "course": "PROBABILIDAD Y PROCESOS ESTOCASTICOS"
       },
       "professor": "OBREGON PULIDO, GUILLERMO"
@@ -576,6 +690,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I7288",
+        "students": 21,
         "course": "PROTOCOLOS DE COMUNICACIONES"
       },
       "professor": "MONTIEL MENA, RICARDO"
@@ -586,6 +702,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "I9899",
+        "students": 13,
         "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -596,6 +714,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "I9899",
+        "students": 13,
         "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -606,6 +726,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "I9899",
+        "students": 13,
         "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -616,6 +738,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "I9899",
+        "students": 13,
         "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -626,6 +750,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I9897",
+        "students": 18,
         "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -636,6 +762,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "A002",
+        "code": "I7278",
+        "students": 21,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -646,6 +774,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE02",
+        "code": "I7278",
+        "students": 24,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
       },
       "professor": "LANDA HORTA, DANIEL OMAR"
@@ -656,6 +786,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7275",
+        "students": 23,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -666,6 +798,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7275",
+        "students": 11,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
       },
       "professor": "GOMEZ MORALES, LEOBARDO"
@@ -676,6 +810,8 @@
         "days": ". . . . . S",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7275",
+        "students": 14,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -686,6 +822,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE04",
+        "code": "I7275",
+        "students": 19,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
       },
       "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
@@ -696,6 +834,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7275",
+        "students": 18,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -706,6 +846,8 @@
         "days": ". . . . V .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I7290",
+        "students": 18,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -716,6 +858,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7275",
+        "students": 14,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
       },
       "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
@@ -726,6 +870,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE02",
+        "code": "I7290",
+        "students": 11,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
       },
       "professor": "OCAMPO ARELLANO, OCTAVIO"
@@ -736,6 +882,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE02",
+        "code": "I7273",
+        "students": 21,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
@@ -746,6 +894,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "A002",
+        "code": "I7271",
+        "students": 21,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -756,6 +906,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I7273",
+        "students": 9,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -766,6 +918,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE02",
+        "code": "I7271",
+        "students": 12,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -776,6 +930,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "A001",
+        "code": "I7273",
+        "students": 19,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "CASILLAS DE LA TORRE, SERGIO"
@@ -786,6 +942,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "I7273",
+        "students": 13,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
       },
       "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -796,6 +954,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "A002",
+        "code": "I7271",
+        "students": 19,
         "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -806,6 +966,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "IF542",
+        "students": 4,
         "course": "SEÑALES Y SISTEMAS"
       },
       "professor": "CARRASCO ALVAREZ, ROBERTO"
@@ -816,6 +978,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I7292",
+        "students": 29,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -826,6 +990,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE02",
+        "code": "I7292",
+        "students": 12,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -836,6 +1002,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "I7292",
+        "students": 22,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -846,6 +1014,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE06",
+        "code": "I7292",
+        "students": 30,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -856,6 +1026,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7292",
+        "students": 23,
         "course": "SISTEMAS DE MEDICION"
       },
       "professor": "MATEOS ORTEGA, HECTOR"
@@ -866,6 +1038,8 @@
         "days": ". M . J . .",
         "building": "DEDN",
         "classroom": "LE05",
+        "code": "I7600",
+        "students": 13,
         "course": "SISTEMAS ELECTRONICOS"
       },
       "professor": "GOMEZ MORALES, LEOBARDO"
@@ -876,6 +1050,8 @@
         "days": "L . I . . .",
         "building": "DEDN",
         "classroom": "LE03",
+        "code": "V1697",
+        "students": 3,
         "course": "SISTEMAS OPTICOS Y POLARIZACION DE LA LUZ"
       },
       "professor": "SERRANO GARCIA, DAVID IGNACIO"

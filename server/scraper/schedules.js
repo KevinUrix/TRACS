@@ -46,18 +46,33 @@ const waitTable = async (page, timeout = 5000, maxAttempts = 3) => {
 const extractData = ($, buildingName) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
     let results = [];
+    let lastCode = "";
     let lastCourse = "";
+    let lastSpots = "";
+    let lastAvailable = "";
 
     $('tr').each((_, row) => {
+        let code = $(row).find('td.tddatos').eq(1).text().trim(); // Obtiene el td que contiene la clave
         let course = $(row).find('td.tddatos').eq(2).text().trim(); // Obtiene el td que contiene la materia
+        let spots = $(row).find('td.tddatos').eq(5).text().trim(); // Obtiene el td que contiene los cupos
+        let available = $(row).find('td.tddatos').eq(6).text().trim(); // Obtiene el td que contiene los disponibles
         const table = $(row).find('table.td1');
         const professors = $(row).find('td.tdprofesor');
 
         if (course) {
-            lastCourse = course; // Si existe la materia, actualizar la última válida
+            lastCode = code; // Si existe la materia, actualizar la última válida
+            lastCourse = course;
+            lastSpots = spots;
+            lastAvailable = available;
         } else {
             course = lastCourse; // Si no hay materia en el td, usa la última materia válida
+            code = lastCode;
+            course = lastCourse;
+            spots = lastSpots;
+            available = lastAvailable;
         }
+
+        const students = spots - available;
 
         if (table.length) {
             table.find('tr').each((_, tableRow) => {
@@ -75,6 +90,8 @@ const extractData = ($, buildingName) => {
                     "days": cells[1],
                     "building": cells[2],
                     "classroom": cells[3],
+                    "code": code,
+                    "students": students,
                     "course": course
                 };
 
@@ -129,7 +146,7 @@ const scrapeData = async () => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
     const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
-    let buildingName = "DUCT2";
+    let buildingName = "DEDZZ";
     const fileName = `${buildingName}.json`
     const filePath = path.join(__dirname, '../../public/data/buildings/', fileName);
     

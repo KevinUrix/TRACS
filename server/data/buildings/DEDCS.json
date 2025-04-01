@@ -1,11 +1,13 @@
 {
-  "DEDCS": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "1100-1255",
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS07",
+        "code": "I7414",
+        "students": 30,
         "course": "ELECTROMAGNETISMO PARA INGENIERIA"
       },
       "professor": "VEGA LOPEZ, LORENA"
@@ -16,6 +18,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "IB082",
+        "students": 15,
         "course": "LABORATORIO DE CARACTERIZACION DE MATERIALES II"
       },
       "professor": "CISNEROS LOPEZ, ERICK OMAR"
@@ -26,6 +30,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS05",
+        "code": "IB081",
+        "students": 18,
         "course": "LABORATORIO DE CARACTERIZACION DE MATERIALES I"
       },
       "professor": "MICHEL URIBE, CARLOS RAFAEL"
@@ -36,6 +42,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CAMELO AVEDOY, VLADIMIR"
@@ -46,6 +54,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "ROSALIO CUEVAS, SAMUEL"
@@ -56,6 +66,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
@@ -66,6 +78,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I7351",
+        "students": 20,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "NAVARRETE NAVARRETE, FELIPE"
@@ -76,6 +90,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I7351",
+        "students": 20,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "AVIÑA RAMIREZ, EDUARDO"
@@ -86,6 +102,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I7351",
+        "students": 21,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "AVIÑA RAMIREZ, EDUARDO"
@@ -96,6 +114,8 @@
         "days": ". . . . . S",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "AVIÑA RAMIREZ, EDUARDO"
@@ -106,6 +126,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -116,6 +138,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -126,6 +150,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7351",
+        "students": 19,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CAMELO AVEDOY, VLADIMIR"
@@ -136,6 +162,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "IB064",
+        "students": 15,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CEBALLOS SANCHEZ, OSCAR"
@@ -146,6 +174,8 @@
         "days": ". . . . . S",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "IB064",
+        "students": 15,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CEBALLOS SANCHEZ, OSCAR"
@@ -156,6 +186,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "IF876",
+        "students": 14,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "ORTIZ BAÑUELOS, ALMA DELIA"
@@ -166,6 +198,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "IB064",
+        "students": 15,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CEBALLOS SANCHEZ, OSCAR"
@@ -176,6 +210,8 @@
         "days": ". . . . . S",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "IB064",
+        "students": 15,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "CEBALLOS SANCHEZ, OSCAR"
@@ -186,6 +222,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I5995",
+        "students": 21,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "MONTES CABRERA, GUSTAVO"
@@ -196,6 +234,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "IF876",
+        "students": 11,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
@@ -206,6 +246,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5995",
+        "students": 23,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "NAVARRETE NAVARRETE, FELIPE"
@@ -216,6 +258,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I5995",
+        "students": 24,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "NAVARRETE NAVARRETE, FELIPE"
@@ -226,6 +270,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "IF876",
+        "students": 11,
         "course": "LABORATORIO DE ELECTROMAGNETISMO"
       },
       "professor": "RAMIREZ ORTEGA, JORGE ALBERTO"
@@ -236,6 +282,8 @@
         "days": "L . I . . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I6006",
+        "students": 21,
         "course": "LABORATORIO DE ELECTRONICA BASICA"
       },
       "professor": "GOMEZ ROSAS, GILBERTO"
@@ -246,6 +294,8 @@
         "days": ". . I . V .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I6006",
+        "students": 24,
         "course": "LABORATORIO DE ELECTRONICA BASICA"
       },
       "professor": "VAZQUEZ MERCADO, LILIANA"
@@ -256,6 +306,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS07",
+        "code": "IB083",
+        "students": 17,
         "course": "LABORATORIO DE ENSAYE DE MATERIALES"
       },
       "professor": "CISNEROS LOPEZ, ERICK OMAR"
@@ -266,6 +318,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I6016",
+        "students": 24,
         "course": "LABORATORIO DE FISICA I"
       },
       "professor": "ORTIZ BAÑUELOS, ALMA DELIA"
@@ -276,6 +330,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I6016",
+        "students": 21,
         "course": "LABORATORIO DE FISICA I"
       },
       "professor": "KEMP, SIMON NICHOLAS"
@@ -286,6 +342,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I6024",
+        "students": 24,
         "course": "LABORATORIO DE FISICA II"
       },
       "professor": "CEBALLOS SANCHEZ, OSCAR"
@@ -296,6 +354,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I6024",
+        "students": 25,
         "course": "LABORATORIO DE FISICA II"
       },
       "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
@@ -306,6 +366,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I6029",
+        "students": 24,
         "course": "LABORATORIO DE FISICA III"
       },
       "professor": "CEJA ANDRADE, ISRAEL"
@@ -316,6 +378,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS05",
+        "code": "I6029",
+        "students": 16,
         "course": "LABORATORIO DE FISICA III"
       },
       "professor": "MORALES BAUTISTA, JACOB"
@@ -326,6 +390,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS07",
+        "code": "I6004",
+        "students": 15,
         "course": "LABORATORIO DE FISICA MODERNA"
       },
       "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
@@ -336,6 +402,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "I6004",
+        "students": 15,
         "course": "LABORATORIO DE FISICA MODERNA"
       },
       "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -346,6 +414,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "I6004",
+        "students": 18,
         "course": "LABORATORIO DE FISICA MODERNA"
       },
       "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -356,6 +426,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I5988",
+        "students": 24,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -366,6 +438,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I7354",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "DIAZ GUEVARA, JUAN JESUS"
@@ -376,6 +450,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5988",
+        "students": 19,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "RAMOS LARIOS, GERARDO"
@@ -386,6 +462,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5808",
+        "students": 19,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -396,6 +474,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I7354",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
@@ -406,6 +486,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5808",
+        "students": 19,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -416,6 +498,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5988",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -426,6 +510,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I5808",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -436,6 +522,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I7354",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -446,6 +534,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5988",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -456,6 +546,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I5988",
+        "students": 22,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
@@ -466,6 +558,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I5808",
+        "students": 17,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -476,6 +570,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I7354",
+        "students": 22,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -486,6 +582,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I5988",
+        "students": 24,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "GAETA VERDIN, MARIO BOLIVAR"
@@ -496,6 +594,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I5808",
+        "students": 17,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "ROSALIO CUEVAS, SAMUEL"
@@ -506,6 +606,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7354",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
@@ -516,6 +618,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7354",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "RAMOS LARIOS, GERARDO"
@@ -526,6 +630,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I5988",
+        "students": 4,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -536,6 +642,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I5808",
+        "students": 14,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -546,6 +654,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I7354",
+        "students": 22,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -556,6 +666,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I5808",
+        "students": 17,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "CAMELO AVEDOY, VLADIMIR"
@@ -566,6 +678,8 @@
         "days": ". . . . . S",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "I5988",
+        "students": 15,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "AVIÑA RAMIREZ, EDUARDO"
@@ -576,6 +690,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I5808",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "GARCIA GUADALUPE, MARIO ENRIQUE"
@@ -586,6 +702,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7354",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "RAMIREZ ORTEGA, JORGE ALBERTO"
@@ -596,6 +714,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7354",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRETE NAVARRETE, LUIS"
@@ -606,6 +726,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I5808",
+        "students": 17,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
@@ -616,6 +738,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7354",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
@@ -626,6 +750,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "I7354",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "GARCIA GUADALUPE, MARIO ENRIQUE"
@@ -636,6 +762,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "FS110",
+        "students": 20,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "DE ANDA RAMIREZ, FRANCISCO JOSE"
@@ -646,6 +774,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "FS110",
+        "students": 12,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
@@ -656,6 +786,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS01",
+        "code": "FS110",
+        "students": 21,
         "course": "LABORATORIO DE MECANICA"
       },
       "professor": "ALCALA GUTIERREZ, JAIME"
@@ -666,6 +798,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I6918",
+        "students": 19,
         "course": "LABORATORIOS DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
       },
       "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
@@ -676,6 +810,8 @@
         "days": "L . . . . .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "I5998",
+        "students": 7,
         "course": "LABORATORIO DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
       },
       "professor": "IBARRA TORRES, JUAN CARLOS"
@@ -686,6 +822,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I5998",
+        "students": 21,
         "course": "LABORATORIO DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
       },
       "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
@@ -696,6 +834,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I6918",
+        "students": 20,
         "course": "LABORATORIOS DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
       },
       "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
@@ -706,6 +846,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I5998",
+        "students": 13,
         "course": "LABORATORIO DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
       },
       "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
@@ -716,6 +858,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I6918",
+        "students": 17,
         "course": "LABORATORIOS DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
       },
       "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
@@ -726,6 +870,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS05",
+        "code": "IB084",
+        "students": 17,
         "course": "LABORATORIO DE PROCESAMIENTO DE MATERIALES"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -736,6 +882,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS05",
+        "code": "IB085",
+        "students": 16,
         "course": "LABORATORIO DE SINTESIS DE MATERIALES"
       },
       "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
@@ -746,6 +894,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS13",
+        "code": "I6096",
+        "students": 16,
         "course": "MICROSCOPIA ELECTRONICA"
       },
       "professor": "CEJA ANDRADE, ISRAEL"
@@ -756,6 +906,8 @@
         "days": ". M . J . .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "I6019",
+        "students": 27,
         "course": "OPTICA"
       },
       "professor": "IBARRA TORRES, JUAN CARLOS"
@@ -766,6 +918,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "I6019",
+        "students": 29,
         "course": "OPTICA"
       },
       "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -776,6 +930,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS07",
+        "code": "I7417",
+        "students": 33,
         "course": "OPTICA Y ACUSTICA"
       },
       "professor": "PELAYO PELAYO, ALMA LUCIA"
@@ -786,6 +942,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS07",
+        "code": "IB086",
+        "students": 13,
         "course": "PROCESAMIENTO DE MATERIALES"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -796,6 +954,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS05",
+        "code": "IB086",
+        "students": 13,
         "course": "PROCESAMIENTO DE MATERIALES"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -806,6 +966,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS07",
+        "code": "IB086",
+        "students": 13,
         "course": "PROCESAMIENTO DE MATERIALES"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -816,6 +978,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS05",
+        "code": "IB086",
+        "students": 13,
         "course": "PROCESAMIENTO DE MATERIALES"
       },
       "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -826,6 +990,8 @@
         "days": ". . . . V .",
         "building": "DEDCS",
         "classroom": "LFS03",
+        "code": "I6916",
+        "students": 15,
         "course": "TALLER DE FISICA APLICADA A LA QUIMICA"
       },
       "professor": "ZAMUDIO OJEDA, ADALBERTO"
@@ -836,6 +1002,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS06",
+        "code": "I6916",
+        "students": 21,
         "course": "TALLER DE FISICA APLICADA A LA QUIMICA"
       },
       "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
@@ -846,6 +1014,8 @@
         "days": ". . I . . .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "IC672",
+        "students": 17,
         "course": "TALLER DE OPTICA GEOMETRICA"
       },
       "professor": "SANTIAGO HERNANDEZ, ALBERTO"
@@ -856,6 +1026,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS08",
+        "code": "IC672",
+        "students": 21,
         "course": "TALLER DE OPTICA GEOMETRICA"
       },
       "professor": "GAETA VERDIN, MARIO BOLIVAR"
@@ -866,6 +1038,8 @@
         "days": ". M . . . .",
         "building": "DEDCS",
         "classroom": "LFS04",
+        "code": "IB138",
+        "students": 16,
         "course": "TEORIA ELECTROMAGNETICA I"
       },
       "professor": "ALMAGUER GOMEZ, CITLALLI"
@@ -876,6 +1050,8 @@
         "days": ". . . J . .",
         "building": "DEDCS",
         "classroom": "LFS02",
+        "code": "I3283",
+        "students": 29,
         "course": "FISICA II ( ELECTROMAGNETISMO,OPTICA Y ACUSTICA )"
       },
       "professor": "SALAZAR ZEPEDA, MARTIN HUGO"

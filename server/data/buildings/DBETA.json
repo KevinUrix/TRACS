@@ -1,11 +1,13 @@
 {
-  "DBETA": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "0900-1055",
         "days": ". M . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL378",
+        "students": 24,
         "course": "ADMINISTRACION DE REDES"
       },
       "professor": "REYNOSO GOMEZ, BLANCA LORENA"
@@ -16,6 +18,8 @@
         "days": ". . . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL378",
+        "students": 25,
         "course": "ADMINISTRACION DE REDES"
       },
       "professor": "BARBA VENEGAS, MIGUEL ANGEL"
@@ -26,6 +30,8 @@
         "days": ". . I . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL378",
+        "students": 25,
         "course": "ADMINISTRACION DE REDES"
       },
       "professor": "SANCHEZ SALAZAR, LUIS IGNACIO"
@@ -36,6 +42,8 @@
         "days": ". M . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL380",
+        "students": 21,
         "course": "INTERCONEXION DE REDES"
       },
       "professor": "BARBA VENEGAS, MIGUEL ANGEL"
@@ -46,6 +54,8 @@
         "days": ". M . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL379",
+        "students": 25,
         "course": "PROGRAMACION DE APLICACIONES DE REDES"
       },
       "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
@@ -56,6 +66,8 @@
         "days": ". M . . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL379",
+        "students": 25,
         "course": "PROGRAMACION DE APLICACIONES DE REDES"
       },
       "professor": "SANCHEZ SALAZAR, LUIS IGNACIO"
@@ -66,6 +78,8 @@
         "days": "L . . . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 25,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
@@ -76,6 +90,8 @@
         "days": ". . I . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "SOTO SANCHEZ, JOSE DE JESUS"
@@ -86,6 +102,8 @@
         "days": "L . I . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "REYNOSO GOMEZ, BLANCA LORENA"
@@ -96,6 +114,8 @@
         "days": ". M . . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
@@ -106,6 +126,8 @@
         "days": "L . . . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
@@ -116,6 +138,8 @@
         "days": ". M . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 23,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "BARBA VENEGAS, MIGUEL ANGEL"
@@ -126,6 +150,8 @@
         "days": ". . . . V .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 26,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "MORALES RAMIREZ, THELMA ISABEL"
@@ -136,6 +162,8 @@
         "days": ". . I . V .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "BARBA VENEGAS, MIGUEL ANGEL"
@@ -146,6 +174,8 @@
         "days": "L . . . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 21,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "SANCHEZ SALAZAR, LUIS IGNACIO"
@@ -156,6 +186,8 @@
         "days": ". . . . V .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 22,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "ARGAEZ REA, JUAN ALEJANDRO"
@@ -166,6 +198,8 @@
         "days": ". . I . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 21,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "ARGAEZ REA, JUAN ALEJANDRO"
@@ -176,6 +210,8 @@
         "days": "L . . . . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
@@ -186,6 +222,8 @@
         "days": ". . . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "IL364",
+        "students": 24,
         "course": "REDES DE COMPUTADORAS"
       },
       "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
@@ -196,6 +234,8 @@
         "days": ". M . J . .",
         "building": "DBETA",
         "classroom": "LC01",
+        "code": "I7042",
+        "students": 37,
         "course": "SIMULACION POR COMPUTADORA"
       },
       "professor": "PEREZ CISNEROS, MARCO ANTONIO"

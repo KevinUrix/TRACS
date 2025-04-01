@@ -1,11 +1,13 @@
 {
-  "DEDW": [
+  "DUCT2": [
     {
       "data": {
         "schedule": "1700-1855",
         "days": "L . I . . .",
         "building": "DEDW",
         "classroom": "A003",
+        "code": "IF544",
+        "students": 0,
         "course": "ANALISIS Y EXPLORACION DE DATOS"
       },
       "professor": "ZALDIVAR NAVARRO, DANIEL"
@@ -16,6 +18,8 @@
         "days": ". M . J . .",
         "building": "DEDW",
         "classroom": "LC02",
+        "code": "V1139",
+        "students": 14,
         "course": "APRENDIZAJE DE MAQUINA"
       },
       "professor": "ARANA DANIEL, NANCY GUADALUPE"
@@ -26,6 +30,8 @@
         "days": ". M . J . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "IC681",
+        "students": 25,
         "course": "CALCULO DIFERENCIAL E INTEGRAL"
       },
       "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -36,6 +42,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "IC681",
+        "students": 25,
         "course": "CALCULO DIFERENCIAL E INTEGRAL"
       },
       "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -46,6 +54,8 @@
         "days": ". M . J . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "IC681",
+        "students": 25,
         "course": "CALCULO DIFERENCIAL E INTEGRAL"
       },
       "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -56,6 +66,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "IC681",
+        "students": 25,
         "course": "CALCULO DIFERENCIAL E INTEGRAL"
       },
       "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -66,6 +78,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "IB074",
+        "students": 25,
         "course": "CARACTERIZACION DE MATERIALES II"
       },
       "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
@@ -76,6 +90,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6007",
+        "students": 22,
         "course": "COMPUTO CIENTIFICO II"
       },
       "professor": "MUÑOZ VILLEGAS, SUSANA"
@@ -86,6 +102,8 @@
         "days": ". . . . V .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7516",
+        "students": 20,
         "course": "DISEÑO DE EXPERIMENTOS"
       },
       "professor": "FIGUEROA MONTAÑO, ARTURO"
@@ -96,6 +114,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6021",
+        "students": 11,
         "course": "DISEÑO Y EVALUACION DE RECURSOS EDUCATIVOS"
       },
       "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -106,6 +126,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "I6910",
+        "students": 16,
         "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
       },
       "professor": "MENDOZA SANTOS, ROSA DELIA"
@@ -116,6 +138,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "I6910",
+        "students": 12,
         "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
       },
       "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -126,6 +150,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -136,6 +162,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -146,6 +174,8 @@
         "days": ". . . . V .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -156,6 +186,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -166,6 +198,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -176,6 +210,8 @@
         "days": ". . . . V .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -186,6 +222,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -196,6 +234,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -206,6 +246,8 @@
         "days": ". . . . V .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6013",
+        "students": 30,
         "course": "ELECTRODINAMICA"
       },
       "professor": "PERAZA ALVAREZ, AMERICO"
@@ -216,6 +258,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6914",
+        "students": 14,
         "course": "ELECTROMAGNETISMO"
       },
       "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
@@ -226,6 +270,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7414",
+        "students": 17,
         "course": "ELECTROMAGNETISMO PARA INGENIERIA"
       },
       "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
@@ -236,6 +282,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7414",
+        "students": 17,
         "course": "ELECTROMAGNETISMO PARA INGENIERIA"
       },
       "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
@@ -246,6 +294,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7414",
+        "students": 17,
         "course": "ELECTROMAGNETISMO PARA INGENIERIA"
       },
       "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
@@ -256,6 +306,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7414",
+        "students": 17,
         "course": "ELECTROMAGNETISMO PARA INGENIERIA"
       },
       "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
@@ -266,6 +318,8 @@
         "days": ". . . . V .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "IB078",
+        "students": 17,
         "course": "ESTRUCTURA CRISTALINA"
       },
       "professor": "MICHEL URIBE, CARLOS RAFAEL"
@@ -276,6 +330,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "IB079",
+        "students": 17,
         "course": "ESTRUCTURA ELECTRONICA EN LOS MATERIALES"
       },
       "professor": "BRAVO SANCHEZ, MARIELA"
@@ -286,6 +342,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "IB079",
+        "students": 17,
         "course": "ESTRUCTURA ELECTRONICA EN LOS MATERIALES"
       },
       "professor": "BRAVO SANCHEZ, MARIELA"
@@ -296,6 +354,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "IB079",
+        "students": 17,
         "course": "ESTRUCTURA ELECTRONICA EN LOS MATERIALES"
       },
       "professor": "BRAVO SANCHEZ, MARIELA"
@@ -306,6 +366,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "IB079",
+        "students": 17,
         "course": "ESTRUCTURA ELECTRONICA EN LOS MATERIALES"
       },
       "professor": "BRAVO SANCHEZ, MARIELA"
@@ -316,6 +378,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6023",
+        "students": 30,
         "course": "METODOS MATEMATICOS DE LA FISICA"
       },
       "professor": "ACEVES DE LA CRUZ, FERMIN"
@@ -326,6 +390,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "I7020",
+        "students": 10,
         "course": "METODOS MATEMATICOS III"
       },
       "professor": "CERVANTES LOMELI, ADRIAN"
@@ -336,6 +402,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "MT101",
+        "students": 29,
         "course": "PRECALCULO"
       },
       "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -346,6 +414,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "I6920",
+        "students": 32,
         "course": "PROBABILIDAD Y ESTADISTICA"
       },
       "professor": "MARTINEZ VAZQUEZ, RICARDO"
@@ -356,6 +426,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A001",
+        "code": "IB067",
+        "students": 40,
         "course": "PROBABILIDAD Y ESTADISTICA"
       },
       "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
@@ -366,6 +438,8 @@
         "days": "L . I . . .",
         "building": "DEDW",
         "classroom": "LC02",
+        "code": "V1159",
+        "students": 1,
         "course": "ROBOTICA II"
       },
       "professor": "HERNANDEZ BARRAGAN, JOSE DE JESUS"
@@ -376,6 +450,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "LC03",
+        "code": "V1161",
+        "students": 1,
         "course": "SISTEMAS COMPLEJOS"
       },
       "professor": "RODRIGUEZ CASTELLANOS, DAVID ISRAEL"
@@ -386,6 +462,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6108",
+        "students": 13,
         "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
       },
       "professor": "GORIN, THOMAS"
@@ -396,6 +474,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6108",
+        "students": 13,
         "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
       },
       "professor": "GORIN, THOMAS"
@@ -406,6 +486,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6108",
+        "students": 13,
         "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
       },
       "professor": "GORIN, THOMAS"
@@ -416,6 +498,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6108",
+        "students": 13,
         "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
       },
       "professor": "GORIN, THOMAS"
@@ -426,6 +510,8 @@
         "days": ". M . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7355",
+        "students": 20,
         "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
       },
       "professor": "ALCALA GUTIERREZ, JAIME"
@@ -436,6 +522,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7352",
+        "students": 20,
         "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
       },
       "professor": "PONCE DUEÑAS, ALEJANDRO"
@@ -446,6 +534,8 @@
         "days": ". . . . V .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6915",
+        "students": 22,
         "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
       },
       "professor": "MUÑOZ VILLEGAS, SUSANA"
@@ -456,6 +546,8 @@
         "days": ". . . J . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7352",
+        "students": 20,
         "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
       },
       "professor": "ZAMUDIO OJEDA, ADALBERTO"
@@ -466,6 +558,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6913",
+        "students": 18,
         "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
       },
       "professor": "GUZMAN HERNANDEZ, JOSE"
@@ -476,6 +570,8 @@
         "days": ". . I . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I6913",
+        "students": 21,
         "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
       },
       "professor": "SANCHEZ MARTINEZ, ARACELI"
@@ -486,6 +582,8 @@
         "days": "L . . . . .",
         "building": "DEDW",
         "classroom": "A002",
+        "code": "I7293",
+        "students": 11,
         "course": "TEORIA ELECTROMAGNETICA"
       },
       "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
@@ -496,6 +594,8 @@
         "days": ". M . J . .",
         "building": "DEDW",
         "classroom": "LC01",
+        "code": "V1169",
+        "students": 1,
         "course": "TOPICOS SELECTOS EN ROBOTICA MOVIL"
       },
       "professor": "LOPEZ FRANCO, CARLOS ALBERTO"

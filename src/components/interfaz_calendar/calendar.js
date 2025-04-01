@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import Sidebar from '../sidebar';
 import CalendarLogic from './calendarLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
+import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function Calendar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [selectedCicle, setSelectedCicle] = useState('Cicle 1');
+  const [selectedCicle, setSelectedCicle] = useState('');
   const [selectedDay, setSelectedDay] = useState('Lunes');
-  const [selectedBuilding, setSelectedBuilding] = useState('DUCT1');
+  const [selectedBuilding, setSelectedBuilding] = useState('');
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
 
@@ -101,21 +102,20 @@ export default function Calendar() {
                         });
 
                         const backgroundColor = matchingCourse
-                        ? `hsl(${(matchingCourse.data.course.length * 37) % 360}, 80%, 75%)`
+                        ? `hsl(${((matchingCourse.data.course.length + matchingCourse.professor.length * 17) * 37) % 360}, 80%, 75%)`
                         : 'white';
 
                         return (
                           <td key={index} 
-                          className={`table-cell ${matchingCourse ? 'occupied-cell' : ''}`}
-                          style={{ backgroundColor }}>
-                            {matchingCourse ? matchingCourse.data.course : ""}
+                            className={`table-cell ${matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'}`}
+                            style={{ backgroundColor }}>
+                            {matchingCourse ? matchingCourse.data.course : <ReserveButton />}
                             <br/>
                             {matchingCourse ? matchingCourse.professor : ""}
                             <br/>
                             {matchingCourse ? `Aula: ${matchingCourse.data.classroom}` : ""}
                             <br/>
-                            {matchingCourse ? `Horario: ${matchingCourse.data.schedule.replace(
-                              /(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2-$3:$4")}`: ""}
+                            {matchingCourse ? `Horario: ${matchingCourse.data.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2-$3:$4")}` : ""}
                           </td>
                         );
                       })}

@@ -149,31 +149,53 @@
   text-align: center;
 }
 
-/* Colores para las celdas con horarios */
-.table-cell.occupied-1 {
-  background-color: #16a085;
+/* Estilos para celdas ocupadas */
+.occupied-cell {
+  background-color: var(--occupied-color, #ffcccb); /* Color predeterminado */
+  color: black; 
+  font-weight: bold;
+  text-align: center;
 }
-.table-cell.occupied-2 {
-  background-color: #27ae60;
+
+/* Estilos para celdas vacías */
+.empty-cell {
+  background-color: white;
+  color: black;
 }
-.table-cell.occupied-3 {
-  background-color: #2980b9;
+
+/* Diferentes colores para distintas materias */
+.course-color-1 { background-color: #16a085; } 
+.course-color-2 { background-color: #27ae60; } 
+.course-color-3 { background-color: #2980b9; } 
+.course-color-4 { background-color: #8e44ad; } 
+.course-color-5 { background-color: #2c3e50; } 
+.course-color-6 { background-color: #d35400; } 
+.course-color-7 { background-color: #c0392b; } 
+.course-color-8 { background-color: #ffc6ff; } /* Rosa pastel */
+.course-color-9 { background-color: #ffb5a7; } /* Coral claro */
+.course-color-10 { background-color: #ffe5d9; } /* Durazno pastel */
+.course-color-11 { background-color: #d8e2dc; } /* Verde grisáceo */
+.course-color-12 { background-color: #a5a58d; } /* Verde olivo */
+.course-color-13 { background-color: #6b705c; } /* Verde oscuro */
+.course-color-14 { background-color: #ffe066; } /* Amarillo intenso */
+.course-color-15 { background-color: #faa307; } /* Naranja fuerte */
+/*------------------------------------------------------------------------------------------------*/
+
+.reserve-button {
+  background-color: #4490c0; /* Azul claro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 50px; /* Ajusta el margen superior */
 }
-.table-cell.occupied-4 {
-  background-color: #8e44ad;
+
+.reserve-button:hover {
+  background-color: #5DADE2; /* Al pasar el mouse */
 }
-.table-cell.occupied-5 {
-  background-color: #2c3e50;
-}
-.table-cell.occupied-6 {
-  background-color: #d35400;
-}
-.table-cell.occupied-7 {
-  background-color: #c0392b ;
-}
-.table-cell.occupied-8 {
-  background-color: #ffc6ff;
-}
+
 
 /*Esta parte es para calendarLogic*/
 

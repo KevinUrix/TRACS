@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -35,18 +35,18 @@
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
-  flex-grow: 1; /* Esto centra el título al distribuir el espacio disponible */
-  text-align: center; /* Asegura que el texto esté centrado */
-  margin-left: 80px; /* Mueve el título un poco más a la derecha */
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 5rem;
 }
 
 .navbar-reports .navbar-title {
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
-  flex-grow: 1; /* Esto centra el título al distribuir el espacio disponible */
-  text-align: center; /* Asegura que el texto esté centrado */
-  margin-left: 0px; /* Mueve el título un poco más a la derecha */
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 0rem;
 }
 
 .sidebar-toggle {
@@ -59,17 +59,17 @@
 
 /* Barra de búsqueda */
 .search-input {
-  padding: 0.5rem 0.75rem; /* Reduce el padding para menos espacio */
+  padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
   border: 1px solid #d1d5db;
   outline: none;
   transition: all 0.3s ease;
-  max-width: 250px; /* Ajusta el tamaño del input */
-  width: 100%; /* Se ajusta para aprovechar el espacio disponible */
+  max-width: 15.625rem;
+  width: 100%;
 }
 
 .search-input:focus {
-  box-shadow: 0 0 0 2px #2563eb; /* Aplica un "anillo" de 2px alrededor del input */
+  box-shadow: 0 0 0 0.125rem #2563eb;
 }
 
 /* Contenedor de la tabla */
@@ -83,9 +83,9 @@
 .schedule-table {
   border: 1px solid #d1d5db;
   background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
-  table-layout: fixed; /* Evita que las columnas se expandan */
+  table-layout: fixed;
 }
 
 .table-header {
@@ -103,24 +103,22 @@
 }
 
 .schedule-table th, .schedule-table td {
-  min-width: 120px;
-  max-width: 140px;
+  min-width: 7.5rem;
+  max-width: 8.75rem;
   text-align: center;
   overflow: hidden;
-  text-overflow: ellipsis; /* Recorta el texto si es muy largo */
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-/* Esto ajusta la altura de la hilera que contiene hora, y los demas salones. */
 .schedule-table thead th:not(:first-child) {
-  height: 100px; /* Ajusta la altura según necesidad */
-  min-height: 80px;
-  max-height: 80px;
+  height: 6.25rem;
+  min-height: 5rem;
+  max-height: 5rem;
 }
-/*--------------------------------------------------------------*/
 
 .schedule-table tr {
-  height: 60px; /* Ajusta según necesidad */
+  height: 3.75rem;
 }
 
 .table-container {
@@ -128,36 +126,31 @@
   max-width: 100%;
 }
 
-/* Fija el ancho de la columna de horas */
 .schedule-table th:first-child,
 .schedule-table td:first-child {
-  width: 120px !important; /* Ajusta el ancho según necesidad */
-  min-width: 120px !important;
-  max-width: 120px !important;
+  width: 7.5rem !important;
+  min-width: 7.5rem !important;
+  max-width: 7.5rem !important;
   text-align: center;
   font-weight: bold;
-  background-color: #f3f4f6; /* Opcional: darle un color de fondo diferente */
+  background-color: #f3f4f6;
 }
 
-/* Fija el ancho de las columnas de las aulas, solo las que muestran la info, no la primera */
 .schedule-table th:not(:first-child),
 .schedule-table td:not(:first-child) {
-  /*width: 100px; /* Ajusta el tamaño según necesidad */
-  min-width: 400px;
-  max-width: 400px; /*Tamaño máximo, actualizara de manera utomatica para mostrar información*/
-  height: 250px;
+  min-width: 25rem;
+  max-width: 25rem;
+  height: 15.625rem;
   text-align: center;
 }
 
-/* Estilos para celdas ocupadas */
 .occupied-cell {
-  background-color: var(--occupied-color, #ffcccb); /* Color predeterminado */
-  color: black; 
+  background-color: var(--occupied-color, #ffcccb);
+  color: black;
   font-weight: bold;
   text-align: center;
 }
 
-/* Estilos para celdas vacías */
 .empty-cell {
   background-color: white;
   color: black;
@@ -182,22 +175,19 @@
 /*------------------------------------------------------------------------------------------------*/
 
 .reserve-button {
-  background-color: #4490c0; /* Azul claro */
+  background-color: #4490c0;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 0.625rem;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 50px; /* Ajusta el margen superior */
+  margin-top: 3.125rem;
 }
 
 .reserve-button:hover {
-  background-color: #5DADE2; /* Al pasar el mouse */
+  background-color: #5DADE2;
 }
-
-
-/*Esta parte es para calendarLogic*/
 
 .select-container {
   display: flex;
@@ -206,29 +196,29 @@
 }
 
 .select-container select {
-  padding: 0.5rem 1.25rem; /* Ajuste de padding */
-  border: 1px solid #d1d5db; /* Borde gris claro */
-  border-radius: 0.5rem; /* Bordes redondeados */
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
   text-align: left;
-  padding-left: 0.5rem; /* Se acomoda el texto a la izquierda */
+  padding-left: 0.5rem;
 }
 
 .select-container .cicle-select {
-  background-color: #cce4ff; /* Azul claro para ciclo */
-  width: 300px;  /* Ajusta el ancho del select de ciclo */
+  background-color: #cce4ff;
+  width: 18.75rem;
 }
 
 .select-container .building-select {
-  background-color: #d2f7d2; /* Verde claro para edificio */
-  width: 300px;  /* Ajusta el ancho del select de edificio */
+  background-color: #d2f7d2;
+  width: 18.75rem;
 }
 
 .select-container .day-select {
-  background-color: #fff8cc; /* Amarillo claro para día */
+  background-color: #fff8cc;
 }
 
 .select-container span {
-  font-size: 1rem; /* Tamaño del emoji */
+  font-size: 1rem;
   display: inline-block;
-  vertical-align: middle; /* Alineación vertical con el texto */
+  vertical-align: middle;
 }

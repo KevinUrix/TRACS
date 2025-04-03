@@ -7,7 +7,7 @@ const { configureBrowser } = require('./browserUtils');
 const fillForm = async (page, ciclo, cup, edifp) => {
     await page.select('select[name="ciclop"]', ciclo.toString());
     await page.select('select[name="cup"]', cup);
-    await page.type('input[name="edifp"]', edifp);
+    // await page.type('input[name="edifp"]', edifp);
     await page.click('input[name="mostrarp"][value="500"]');
     await page.click('#idConsultar');
 };
@@ -43,7 +43,7 @@ const waitTable = async (page, timeout = 5000, maxAttempts = 3) => {
     }
 };
 
-const extractData = ($, buildingName) => {
+const extractData = ($) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
     let results = [];
     let lastCode = "";
@@ -76,7 +76,7 @@ const extractData = ($, buildingName) => {
 
         if (table.length) {
             table.find('tr').each((_, tableRow) => {
-                if (!$(tableRow).find('td').toArray().some(cell => $(cell).text().includes(buildingName))) return;
+                
                 
                 const cells = $(tableRow).find('td')
                     .toArray()
@@ -107,8 +107,8 @@ const extractData = ($, buildingName) => {
 };
 
 
-const processForm = async (page, ciclo, cup, edifp, filter) => {
-    await fillForm(page, ciclo, cup, edifp);
+const processForm = async (page, ciclo, cup) => {
+    await fillForm(page, ciclo, cup);
     let allData = [];
     
     while (true) {
@@ -120,7 +120,7 @@ const processForm = async (page, ciclo, cup, edifp, filter) => {
             break;
         }
         
-        allData = allData.concat(extractData($, filter));
+        allData = allData.concat(extractData($));
 
         try {
             const nextButton = await page.$('input[value="500 Próximos"]');
@@ -146,18 +146,20 @@ const scrapeData = async () => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
     const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
-    let buildingName = "DEDG";
-    const fileName = `${buildingName}.json`
+    // let buildingName = "DEDG";
+    let cicle = "202510"
+    let uni = "D"
+    const fileName = 'CUCEI.json'
     const filePath = path.join(__dirname, '../../public/data/buildings/', fileName);
     
-    const fetchData = async (edifp) => {
+    const fetchData = async () => {
         await page.goto(url, { waitUntil: 'domcontentloaded' });
-        return await processForm(page, "202510", "D", edifp, edifp);
+        return await processForm(page, cicle, uni);
     };
     
 
     const result = {
-        DEDG: await fetchData(buildingName)
+        cicle: await fetchData()
     };
     
     console.log("===============================================");

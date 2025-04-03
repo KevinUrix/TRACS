@@ -31,6 +31,26 @@
   gap: 1rem; /* Espaciado entre elementos */
 }
 
+th {
+  position: sticky;
+  top: 0px; /* Ajusta según el alto de tu navbar */
+  z-index: 8;
+}
+
+th, tr.table-header, thead {
+  position: sticky;
+  top: 0px; /* Ajusta según la altura del navbar */
+  background-color: #fff; /* Fondo blanco fijo */
+  background-clip: padding-box; /* Asegura que el fondo cubra toda la celda */
+  z-index: 8; /* Asegura que esté encima de otras celdas */
+  will-change: transform; /* Asegura que el navegador renderice bien el movimiento */
+}
+
+thead {
+  background-color: #f3f4f6; /* Oculta la estela */
+
+}
+
 .navbar-title {
   color: white;
   font-size: 1.25rem;
@@ -68,6 +88,11 @@
   width: 100%;
 }
 
+.flex.space-x-6.my-10.pl-6.mt-10 {
+  position: static !important; /* Asegura que NO sea sticky */
+  z-index: 1; /* Asegura que se quede detrás del thead */
+}
+
 .search-input:focus {
   box-shadow: 0 0 0 0.125rem #2563eb;
 }
@@ -75,8 +100,11 @@
 /* Contenedor de la tabla */
 .table-container {
   overflow-x: auto;
+  overflow-y: auto;
+    scrollbar-width: none; /* Oculta scroll en Firefox */
   width: 100%;
   padding: 1.5rem 2rem;
+  height: calc(100vh - 60px); 
 }
 
 /* Tabla */
@@ -84,7 +112,7 @@
   border: 1px solid #d1d5db;
   background-color: white;
   box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
-  border-collapse: collapse;
+  border-collapse: separate;
   table-layout: fixed;
 }
 
@@ -108,7 +136,7 @@
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .schedule-table thead th:not(:first-child) {
@@ -121,12 +149,16 @@
   height: 3.75rem;
 }
 
-.table-container {
-  overflow-x: auto;
-  max-width: 100%;
+
+.schedule-table th:first-child {
+  width: 7.5rem !important;
+  min-width: 7.5rem !important;
+  max-width: 7.5rem !important;
+  text-align: center;
+  font-weight: bold;
+  /* background-color: #f3f4f6; */
 }
 
-.schedule-table th:first-child,
 .schedule-table td:first-child {
   width: 7.5rem !important;
   min-width: 7.5rem !important;
@@ -145,14 +177,14 @@
 }
 
 .occupied-cell {
-  background-color: var(--occupied-color, #ffcccb);
+  /* background-color: var(--occupied-color, #ffcccb); */
   color: black;
   font-weight: bold;
   text-align: center;
 }
 
 .empty-cell {
-  background-color: white;
+  /* background-color: white; */
   color: black;
 }
 
@@ -173,6 +205,10 @@
 .course-color-14 { background-color: #ffe066; } /* Amarillo intenso */
 .course-color-15 { background-color: #faa307; } /* Naranja fuerte */
 /*------------------------------------------------------------------------------------------------*/
+
+.w-64 {
+  z-index: 9;
+}
 
 .reserve-button {
   background-color: #4490c0;

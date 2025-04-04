@@ -54,7 +54,7 @@ export default function Calendar() {
       <div className="calendar-container">
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
         <div className="main-content">
-          <Navbar toggleSidebar={toggleSidebar} />
+          <Navbar toggleSidebar={toggleSidebar} schedule={schedule} />
           <CalendarLogic
             onUpdateCicle={setSelectedCicle}
             onUpdateBuilding={setSelectedBuilding}

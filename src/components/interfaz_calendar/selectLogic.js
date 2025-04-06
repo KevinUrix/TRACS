@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import InstructionsButton from './instructionsButton'; // Importa el componente
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle }) {
+export default function SelectLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCicle, setSelectedCicle] = useState('');

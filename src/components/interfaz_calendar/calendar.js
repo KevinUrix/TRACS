@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Sidebar from '../sidebar';
-import CalendarLogic from './calendarLogic';
+import SelectLogic from './selectLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
 import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
@@ -55,7 +55,7 @@ export default function Calendar() {
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
         <div className="main-content">
           <Navbar toggleSidebar={toggleSidebar} />
-          <CalendarLogic
+          <SelectLogic
             onUpdateCicle={setSelectedCicle}
             onUpdateBuilding={setSelectedBuilding}
             onUpdateDay={setSelectedDay}

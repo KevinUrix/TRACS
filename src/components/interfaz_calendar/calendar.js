@@ -15,12 +15,17 @@ export default function Calendar() {
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
-  const hours = Array.from({ length: 15 }, (_, i) => {
+  const hours = Array.from({ length: 14 }, (_, i) => {
     const hour = i + 7;
     return `${hour <= 12 ? hour : hour - 12}:00 ${hour < 12 ? 'AM' : 'PM'}`;
   });
 
 
+  const handleSaveReservation = (reservationData) => {
+    // Aquí puedes guardar la reserva en el estado o enviar los datos a un servidor
+    console.log('Reserva guardada:', reservationData);
+  };
+  
   useEffect(() => {
     if (selectedBuilding) {
       // Nombre del JSON dinámico según el edificio seleccionado
@@ -109,7 +114,13 @@ export default function Calendar() {
                           <td key={index} 
                             className={`table-cell ${matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'}`}
                             style={{ backgroundColor }}>
-                            {matchingCourse ? matchingCourse.data.course : <ReserveButton />}
+                            {matchingCourse ? matchingCourse.data.course : <ReserveButton
+                              selectedBuilding={selectedBuilding}
+                              selectedDay={selectedDay}
+                              selectedHour={hour} // Esto puede ser el valor de la hora en la fila de la tabla
+                              classroom={classroom} // Esto puede ser el nombre del aula en la columna
+                              onSaveReservation={handleSaveReservation} // Esta función debe encargarse de guardar la reserva
+                            />}
                             <br/>
                             {matchingCourse ? matchingCourse.professor : ""}
                             <br/>

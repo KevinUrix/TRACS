@@ -37,7 +37,7 @@
   font-weight: bold;
   flex-grow: 1;
   text-align: center;
-  margin-left: 5rem;
+  margin-left: 14rem; /* Aplicar lo mismo para reports despues*/
 }
 
 .navbar-reports .navbar-title {
@@ -256,3 +256,157 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+/*Formulario*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.modal {
+  background-color: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  width: 480px;
+  max-width: 85%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50px);
+  animation: modalSlideIn 0.5s ease-out;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.modal h2 {
+  text-align: center;
+  color: #222;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal form label {
+  text-align: left;
+  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal form select {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.modal form input{
+  align-items: center;
+  margin-left: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  width: 50%;
+}
+
+.modal form input:focus,
+.modal form select:focus {
+  border-color: #66b3ff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(102, 179, 255, 0.5);
+}
+
+.modal .time-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.modal .time-inputs input {
+  width: 48%;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.modal-buttons button {
+  padding: 14px 26px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 48%;
+}
+
+.modal-buttons .cancel-button {
+  background-color: #ff4d4d; /* Rojo para el botón de cancelar */
+}
+
+.modal-buttons .cancel-button:hover {
+  background-color: #e60000; /* Rojo más oscuro en hover */
+}
+
+.modal-buttons .cancel-button:active {
+  transform: translateY(0);
+}
+
+.modal-buttons .submit-button {
+  background-color: #66b3ff; /* Azul para el botón de aceptar */
+}
+
+.modal-buttons .submit-button:hover {
+  background-color: #3388cc; /* Azul más oscuro en hover */
+}
+
+.modal-buttons .submit-button:active {
+  transform: translateY(0);
+}
+
+
+/* Animaciones 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}*/

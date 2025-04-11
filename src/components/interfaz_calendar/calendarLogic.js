@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import InstructionsButton from './instructionsButton'; // Importa el componente
+import DownloadButton from './downloadButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle }) {
@@ -112,6 +113,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
       </select>
         <span>📆</span>
       </div>
+
+      <DownloadButton/>
+
 
       {/* Componente InstructionsButton */}
       <InstructionsButton />

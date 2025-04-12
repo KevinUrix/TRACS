@@ -1,46 +1,7 @@
+const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-const { configureBrowser } = require('../config/browserUtils');
-
-const fillForm = async (page, ciclo, cup, edifp) => {
-    await page.select('select[name="ciclop"]', ciclo.toString());
-    await page.select('select[name="cup"]', cup);
-    await page.type('input[name="edifp"]', edifp);
-    await page.click('input[name="mostrarp"][value="500"]');
-    await page.click('#idConsultar');
-};
-
-
-const waitTable = async (page, timeout = 5000, maxAttempts = 3) => {
-    let attempt = 0;
-    let tableFound = false;
-
-    while (attempt < maxAttempts && !tableFound) {
-        try {
-            console.log(`Esperando a que la tabla esté disponible... Intento ${attempt + 1} de ${maxAttempts}`);
-            
-            await page.waitForFunction(() => {
-                return document.querySelector('table') !== null && document.querySelector('table').rows.length > 0;
-            }, { timeout });
-
-            await page.waitForNetworkIdle({ idleTime: 500, timeout });
-            tableFound = true;
-        } catch (error) {
-            console.error(`Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
-            attempt++;
-
-            if (attempt < maxAttempts) {
-                console.log("Reintentando...");
-            } else {
-                console.log("Se alcanzó el número máximo de intentos.");
-            }
-        }
-        if (!tableFound) {
-            console.error("La tabla no se encontró después de múltiples intentos.");
-        }
-    }
-};
 
 const extractData = ($, buildingName) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
@@ -105,69 +66,33 @@ const extractData = ($, buildingName) => {
     return results
 };
 
-
-const processForm = async (page, ciclo, cup, edifp, filter) => {
-    await fillForm(page, ciclo, cup, edifp);
-    let allData = [];
-    
-    while (true) {
-        await waitTable(page); 
-        let $ = cheerio.load(await page.content());
-        
-        if ($('table').length === 0) {
-            console.error("Error: No se encontró la tabla en la página");
-            break;
-        }
-        
-        allData = allData.concat(extractData($, filter));
-
-        try {
-            const nextButton = await page.$('input[value="500 Próximos"]');
-
-            if (nextButton) {
-                console.log("Botón encontrado. Esperando 5 segundos antes de hacer clic...");
-                await page.waitForSelector('input[value="500 Próximos"]:not([disabled])');
-                await nextButton.click();
-            } else {
-                console.log("No hay más páginas disponibles.");
-                break;
-            }
-        } catch (error) {
-            console.error("Error al intentar hacer clic en '500 Próximos'", error);
-            break;
-        }
-    }
-    return allData;
-};
-
-
 const scrapeData = async (cycle, edifp) => {
-    const browser = await configureBrowser();
-    const page = await browser.newPage();
-    const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
-    // const fileName = `${buildingName}.json`
-    // const filePath = path.join(__dirname, '../../public/data/buildings/', fileName);
-    
-    const fetchData = async (edifp) => {
-        await page.goto(url, { waitUntil: 'domcontentloaded' });
-        return await processForm(page, cycle, "D", edifp, edifp);
-    };
-    
+    const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
 
-    // const result = {
-    //     buildingName: await fetchData(buildingName)
-    // };
-    
-    console.log("===============================================");
-    
-    // await page.goto('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', { waitUntil: 'domcontentloaded' });
-    // await processForm(page, "202510", "D", "DUCT2", "DUCT2");
-    
-    const result = await fetchData(edifp);
-    await browser.close();
-    // fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
-    return result;
+    const formData = new URLSearchParams({
+        ciclop: cycle,
+        cup: 'D',
+        edifp,
+        mostrarp: '6000'
+    });
 
+    try {
+        const response = await axios.post(url, formData.toString(), {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        });
+
+        const $ = cheerio.load(response.data);
+        const data = extractData($, edifp);
+        return data;
+
+    } catch (err) {
+        console.error(`Error al obtener datos de ${edifp}:`, err.message);
+        return [];
+    }
 };
+
+
 
 module.exports = { scrapeData };

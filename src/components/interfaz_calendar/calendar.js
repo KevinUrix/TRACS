@@ -48,7 +48,6 @@ export default function Calendar() {
         console.log("📡 Respuesta del backend:", response);
 
         const data = await response.json();
-        console.log("aaa")
   
         if (data[selectedBuilding]) {
           setSchedule(data[selectedBuilding]);

@@ -1,7 +1,11 @@
 import { useState } from 'react';
 
-export default function DownloadButton() {
+export default function DownloadButton({ onDownload }) {
+  
   const [showDownload, setShowDownload] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [downloadStatus, setDownloadStatus] = useState('');
+  
 
   const toggleDownload = () => {
     setShowDownload(!showDownload);
@@ -13,6 +17,7 @@ export default function DownloadButton() {
         className="bg-green-400 text-black rounded-full px-10 py-1 shadow-md"
         title="Descargar datos"
         onClick={toggleDownload}
+        id="createJSON"
       >
         <img src="/downloadArrow.png" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
       </button>
@@ -26,12 +31,27 @@ export default function DownloadButton() {
               <li>Selecciona un edificio.</li>
               <li>Elige el día de la semana.</li>
             </ul>
+
             <button
               onClick={toggleDownload}
               className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
             >
               Cerrar
             </button>
+
+            {/* Agregar el botón de descarga con feedback */}
+            <button
+              onClick={onDownload}
+              disabled={isLoading}
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+            >
+              {isLoading ? 'Descargando...' : 'Descargar JSON de todos los edificios'}
+            </button>
+
+            {/* Mostrar mensaje de estado */}
+            {downloadStatus && (
+              <p className="mt-2 text-sm text-gray-600">{downloadStatus}</p>
+            )}
           </div>
         </div>
       )}

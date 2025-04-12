@@ -9,6 +9,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   const [selectedCycle, setSelectedCycle] = useState('');
   const [cicle, setCicle] = useState([]);
   const [building, setBuilding] = useState([]);
+  
+
+
   const dayMappings = {
     "Domingo": "D",
     "Lunes": "L",
@@ -72,6 +75,29 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
     onUpdateDay(dayMappings[e.target.value]);
   };
 
+
+  const handleDownload = async () => {
+      if (!selectedCycle) {
+        alert('Por favor, selecciona un ciclo.');
+        return;
+      }
+  
+      try {
+        const res = await fetch(`http://localhost:3001/api/descargar-json?cycle=${selectedCycle}`);
+        const result = await res.json();
+  
+        if (result.success) {
+          alert('Los archivos JSON se han descargado correctamente.');
+        } else {
+          alert('Hubo un error al descargar los archivos.');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('Error de conexión con el servidor.');
+      }
+    };
+
+
   return (
     <div className="flex space-x-6 my-10 pl-6 mt-10">
       <div className="select-container">
@@ -114,7 +140,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
         <span>📆</span>
       </div>
 
-      <DownloadButton/>
+      <DownloadButton onDownload={handleDownload}/>
 
 
       {/* Componente InstructionsButton */}

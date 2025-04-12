@@ -1,30 +1,20 @@
 const express = require('express');
-const cors = require('cors');  // Importa el módulo cors
-const { scrapeData } = require('./schedules');
+const cors = require('cors');
+const scheduleRoutes = require('../routes/scheduleRoutes');
+const downloadRoutes = require('../routes/downloadRoutes');
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());  // Esto habilita CORS para todas las rutas
-
+// Middlewares
+app.use(cors());
 app.use(express.json());
 
-app.get('/api/schedule', async (req, res) => {
-  const { cycle, buildingName } = req.query;
+// Rutas
+app.use('/api', scheduleRoutes);
+app.use('/api', downloadRoutes);
 
-  if (!cycle || !buildingName) {
-    return res.status(400).json({ error: "Faltan parámetros 'cycle' o 'buildingName'" });
-  }
-
-  console.log(cycle, buildingName);
-
-  try {
-    const data = await scrapeData(cycle, buildingName);
-    res.json({ [buildingName]: data });
-  } catch (error) {
-    res.status(500).json({ error: "Error al obtener los datos" });
-  }
-});
-
+// Inicia el servidor
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
 });

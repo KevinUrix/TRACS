@@ -1,0 +1,542 @@
+[
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7493",
+      "students": 12,
+      "course": "BIOQUIMICA ESTRUCTURAL I"
+    },
+    "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5857",
+      "students": 8,
+      "course": "ELECTROQUIMICA II"
+    },
+    "professor": "CASILLAS SANTANA, NORBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I6131",
+      "students": 20,
+      "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
+    },
+    "professor": "CORTES ORTEGA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5812",
+      "students": 18,
+      "course": "FISICOQUIMICA PARA INGENIEROS I"
+    },
+    "professor": "CORTES ORTEGA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5813",
+      "students": 17,
+      "course": "FISICOQUIMICA PARA INGENIEROS II"
+    },
+    "professor": "CORTES ORTEGA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "IF873",
+      "students": 19,
+      "course": "FUNDAMENTOS DE QUIMICA"
+    },
+    "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7510",
+      "students": 18,
+      "course": "INSTRUMENTACION QUIMICA ANALITICA II"
+    },
+    "professor": "VELAZQUEZ JUAREZ, GILBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1800-1855",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7508",
+      "students": 19,
+      "course": "LABORATORIO DE QUIMICA ANALITICA II"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". M . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6924",
+      "students": 31,
+      "course": "LABORATORIO DE QUIMICA GENERAL II"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6924",
+      "students": 29,
+      "course": "LABORATORIO DE QUIMICA GENERAL II"
+    },
+    "professor": "RIOS DONATO, NELY"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6924",
+      "students": 30,
+      "course": "LABORATORIO DE QUIMICA GENERAL II"
+    },
+    "professor": "RIOS DONATO, NELY"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": "L . . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "IB065",
+      "students": 4,
+      "course": "LABORATORIO DE QUIMICA GENERAL"
+    },
+    "professor": "GARCIA URIOSTEGUI, LORENA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6922",
+      "students": 28,
+      "course": "LABORATORIO DE QUIMICA GENERAL I"
+    },
+    "professor": "RIOS DONATO, NELY"
+  },
+  {
+    "data": {
+      "schedule": "1600-1855",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6922",
+      "students": 31,
+      "course": "LABORATORIO DE QUIMICA GENERAL I"
+    },
+    "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6922",
+      "students": 34,
+      "course": "LABORATORIO DE QUIMICA GENERAL I"
+    },
+    "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1155",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I6922",
+      "students": 30,
+      "course": "LABORATORIO DE QUIMICA GENERAL I"
+    },
+    "professor": "MORAN SALAZAR, RENE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1200-1455",
+      "days": "L . . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7484",
+      "students": 23,
+      "course": "LABORATORIO DE QUIMICA INORGANICA I"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": "L . . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7484",
+      "students": 25,
+      "course": "LABORATORIO DE QUIMICA INORGANICA I"
+    },
+    "professor": "MANCILLA ALCANTAR, ADELINA"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7484",
+      "students": 25,
+      "course": "LABORATORIO DE QUIMICA INORGANICA I"
+    },
+    "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". M . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7497",
+      "students": 19,
+      "course": "LABORATORIO DE QUIMICA INORGANICA II"
+    },
+    "professor": "ROSAS SANCHEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7497",
+      "students": 22,
+      "course": "LABORATORIO DE QUIMICA INORGANICA II"
+    },
+    "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7497",
+      "students": 22,
+      "course": "LABORATORIO DE QUIMICA INORGANICA II"
+    },
+    "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7518",
+      "students": 22,
+      "course": "LABORATORIO DE QUIMICA MACROMOLECULAR"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7518",
+      "students": 19,
+      "course": "LABORATORIO DE QUIMICA MACROMOLECULAR"
+    },
+    "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I7518",
+      "students": 22,
+      "course": "LABORATORIO DE QUIMICA MACROMOLECULAR"
+    },
+    "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 26,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". M . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 24,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 28,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 19,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": "L . . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 26,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "MORAN SALAZAR, RENE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 16,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "CID HERNANDEZ, MARGARITA"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 17,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". M . . . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "code": "I5811",
+      "students": 24,
+      "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
+    },
+    "professor": "CETINA CORONA, ABRAHAM FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7506",
+      "students": 26,
+      "course": "QUIMICA ANALITICA II"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7519",
+      "students": 29,
+      "course": "QUIMICA DE LOS ALIMENTOS I"
+    },
+    "professor": "BARROS CASTILLO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7519",
+      "students": 29,
+      "course": "QUIMICA DE LOS ALIMENTOS I"
+    },
+    "professor": "BARROS CASTILLO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7519",
+      "students": 29,
+      "course": "QUIMICA DE LOS ALIMENTOS I"
+    },
+    "professor": "BARROS CASTILLO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I7519",
+      "students": 29,
+      "course": "QUIMICA DE LOS ALIMENTOS I"
+    },
+    "professor": "BARROS CASTILLO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5803",
+      "students": 25,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5803",
+      "students": 25,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5803",
+      "students": 25,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5803",
+      "students": 25,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I6923",
+      "students": 23,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I3278",
+      "students": 34,
+      "course": "QUIMICA INORGANICA"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "code": "I5806",
+      "students": 27,
+      "course": "QUIMICA ORGANICA II"
+    },
+    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  }
+]

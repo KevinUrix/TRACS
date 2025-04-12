@@ -1,12 +1,12 @@
 const { scrapeData } = require('../scraper/schedules');
-// const buildings = require('../config/buildings')
+const buildings = require('../config/buildings');
 const fs = require('fs');
 const path = require('path');
 
-const buildings = ['DEDQ']
+const saveAllToFiles = async (cycle, outputDirBase = '../../public/data/buildings/') => {
+  const outputDir = path.join(outputDirBase, cycle);
 
-const saveAllToFiles = async (cycle, outputDir = '../../public/data/example/') => {
-
+  // Verificar si la carpeta del ciclo existe, si no, se crea
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }

@@ -45,7 +45,6 @@ export default function Calendar() {
     const fetchSchedule = async () => {
       try {
         const response = await fetch(`http://localhost:3001/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
-        console.log("📡 Respuesta del backend:", response);
 
         const data = await response.json();
   

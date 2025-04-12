@@ -1,5 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
+const iconv = require('iconv-lite');
 const fs = require('fs');
 const path = require('path');
 
@@ -79,11 +80,13 @@ const scrapeData = async (cycle, edifp) => {
     try {
         const response = await axios.post(url, formData.toString(), {
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            }
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            responseType: 'arraybuffer'
         });
 
-        const $ = cheerio.load(response.data);
+        const decodedData = iconv.decode(response.data, 'latin1'); 
+        const $ = cheerio.load(decodedData);
         const data = extractData($, edifp);
         return data;
 

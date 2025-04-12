@@ -1,8 +1,7 @@
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-const { configureBrowser } = require('./browserUtils');
-
+const { configureBrowser } = require('../config/browserUtils');
 
 const fillForm = async (page, ciclo, cup, edifp) => {
     await page.select('select[name="ciclop"]', ciclo.toString());
@@ -25,7 +24,7 @@ const waitTable = async (page, timeout = 5000, maxAttempts = 3) => {
                 return document.querySelector('table') !== null && document.querySelector('table').rows.length > 0;
             }, { timeout });
 
-            await page.waitForNetworkIdle({ idleTime: 1000, timeout });
+            await page.waitForNetworkIdle({ idleTime: 500, timeout });
             tableFound = true;
         } catch (error) {
             console.error(`Error: La tabla no apareció a tiempo después de ${timeout / 1000} segundos.`);
@@ -81,7 +80,7 @@ const extractData = ($, buildingName) => {
                 const cells = $(tableRow).find('td')
                     .toArray()
                     .map(cell => $(cell).text().trim())
-                    .filter(text => text !== "01" && !datePattern.test(text));
+                    .filter(text => text !== "01" && text !== "04" && !datePattern.test(text));
 
                 if (cells.length < 4) return;
                 
@@ -142,31 +141,33 @@ const processForm = async (page, ciclo, cup, edifp, filter) => {
 };
 
 
-const scrapeData = async () => {
+const scrapeData = async (cycle, edifp) => {
     const browser = await configureBrowser();
     const page = await browser.newPage();
     const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
-    let buildingName = "DEDG";
-    const fileName = `${buildingName}.json`
-    const filePath = path.join(__dirname, '../../public/data/buildings/', fileName);
+    // const fileName = `${buildingName}.json`
+    // const filePath = path.join(__dirname, '../../public/data/buildings/', fileName);
     
     const fetchData = async (edifp) => {
         await page.goto(url, { waitUntil: 'domcontentloaded' });
-        return await processForm(page, "202510", "D", edifp, edifp);
+        return await processForm(page, cycle, "D", edifp, edifp);
     };
     
 
-    const result = {
-        DEDG: await fetchData(buildingName)
-    };
+    // const result = {
+    //     buildingName: await fetchData(buildingName)
+    // };
     
     console.log("===============================================");
     
     // await page.goto('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', { waitUntil: 'domcontentloaded' });
     // await processForm(page, "202510", "D", "DUCT2", "DUCT2");
     
+    const result = await fetchData(edifp);
     await browser.close();
-    fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
+    // fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
+    return result;
+
 };
 
 module.exports = { scrapeData };

@@ -7,7 +7,7 @@ import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function Calendar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [selectedCicle, setSelectedCicle] = useState('');
+  const [selectedCycle, setSelectedCycle] = useState('');
   const [selectedDay, setSelectedDay] = useState('Lunes');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [classrooms, setClassrooms] = useState([]);
@@ -40,19 +40,29 @@ export default function Calendar() {
 
 
   useEffect(() => {
-    const buildingFile = `data/buildings/${selectedBuilding}.json`;
+    if (!selectedCycle || !selectedBuilding) return;
+  
+    const fetchSchedule = async () => {
+      try {
+        const response = await fetch(`http://localhost:3001/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
+        console.log("📡 Respuesta del backend:", response);
 
-    fetch(buildingFile)
-      .then(response => response.json())
-      .then(data => {
+        const data = await response.json();
+        console.log("aaa")
+  
         if (data[selectedBuilding]) {
           setSchedule(data[selectedBuilding]);
         } else {
           console.error("No se encontró la clave para el edificio seleccionado.");
         }
-      })
-      .catch(error => console.error("Error cargando los horarios:", error));
-  }, [selectedBuilding]);
+      } catch (error) {
+        console.error("Error cargando los horarios:", error);
+      }
+    };
+  
+    fetchSchedule();
+  }, [selectedCycle, selectedBuilding]);
+  
 
   return (
     <>
@@ -61,7 +71,7 @@ export default function Calendar() {
         <div className="main-content">
           <Navbar toggleSidebar={toggleSidebar} schedule={schedule} />
           <CalendarLogic
-            onUpdateCicle={setSelectedCicle}
+            onUpdateCicle={setSelectedCycle}
             onUpdateBuilding={setSelectedBuilding}
             onUpdateDay={setSelectedDay}
           />

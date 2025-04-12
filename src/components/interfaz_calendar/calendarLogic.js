@@ -6,7 +6,7 @@ import './calendar.css'; // Importa el archivo de estilos CSS
 export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
-  const [selectedCicle, setSelectedCicle] = useState('');
+  const [selectedCycle, setSelectedCycle] = useState('');
   const [cicle, setCicle] = useState([]);
   const [building, setBuilding] = useState([]);
   const dayMappings = {
@@ -58,7 +58,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   }, []);
 
   const handleCicleChange = (e) => {
-    setSelectedCicle(e.target.value);
+    setSelectedCycle(e.target.value);
     onUpdateCicle(e.target.value);
   };
 
@@ -76,7 +76,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
     <div className="flex space-x-6 my-10 pl-6 mt-10">
       <div className="select-container">
         <select
-          value={selectedCicle}
+          value={selectedCycle}
           onChange={handleCicleChange}
           className="cicle-select"
         >

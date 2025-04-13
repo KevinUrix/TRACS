@@ -77,25 +77,30 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
 
 
   const handleDownload = async () => {
-      if (!selectedCycle) {
-        alert('Por favor, selecciona un ciclo.');
-        return;
+    if (!selectedCycle) {
+      alert('Por favor, selecciona un ciclo.');
+      return;
+    }
+  
+    try {
+      const res = await fetch(`http://localhost:3001/api/descargar-json?cycle=${selectedCycle}`);
+  
+      if (!res.ok) {
+        throw new Error(`Error HTTP: ${res.status}`);
       }
   
-      try {
-        const res = await fetch(`http://localhost:3001/api/descargar-json?cycle=${selectedCycle}`);
-        const result = await res.json();
+      const result = await res.json();
   
-        if (result.success) {
-          alert('Los archivos JSON se han descargado correctamente.');
-        } else {
-          alert('Hubo un error al descargar los archivos.');
-        }
-      } catch (error) {
-        console.error(error);
-        alert('Error de conexión con el servidor.');
+      if (result.success) {
+        alert('Los archivos JSON se han descargado correctamente.');
+      } else {
+        alert('Hubo un error al descargar los archivos.');
       }
-    };
+    } catch (error) {
+      console.log("Descargando . . .")
+    }
+  };
+  
 
 
   return (

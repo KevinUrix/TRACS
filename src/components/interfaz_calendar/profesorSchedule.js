@@ -13,9 +13,9 @@ const dayNames = {
 // Orden correcto de los días para presentación
 const dayOrder = ['L', 'M', 'I', 'J', 'V', 'S', 'D'];
 
-export default function ProfessorSchedule({ professorSchedule, selectedDay }) {
+export default function ProfessorSchedule({ professorSchedule, selectedCycle }) {
   if (!professorSchedule || professorSchedule.length === 0) {
-    return <p>No se encontraron horarios para este profesor en {selectedDay}.</p>;
+    return <p>No se encontraron horarios para este profesor {selectedCycle}.</p>;
   }
 
   const groupedSchedules = professorSchedule.reduce((acc, course) => {

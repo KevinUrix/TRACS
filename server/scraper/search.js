@@ -1,10 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
-const fs = require('fs');
-const path = require('path');
 
-const extractData = ($, buildingName) => {
+const extractData = ($) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
     let results = [];
     let lastNrc = "";
@@ -41,7 +39,7 @@ const extractData = ($, buildingName) => {
 
         if (table.length) {
             table.find('tr').each((_, tableRow) => {
-                if (!$(tableRow).find('td').toArray().some(cell => $(cell).text().includes(buildingName))) return;
+                if (!$(tableRow).find('td').toArray().some(cell => $(cell).text())) return;
                 
                 const cells = $(tableRow).find('td')
                     .toArray()
@@ -49,7 +47,6 @@ const extractData = ($, buildingName) => {
                     .filter(text => text !== "01" && text !== "04" && !datePattern.test(text));
 
                 if (cells.length < 4) return;
-                
                 if (cells[2] === "") return;
                 
                 const formattedData = {
@@ -74,14 +71,13 @@ const extractData = ($, buildingName) => {
     return results
 };
 
-const scrapeData = async (cycle, edifp) => {
+const searchProfessor = async (cycle) => {
     const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
 
     const formData = new URLSearchParams({
         ciclop: cycle,
         cup: 'D',
-        edifp,
-        mostrarp: '6000'
+        mostrarp: '7000'
     });
 
     try {
@@ -94,15 +90,15 @@ const scrapeData = async (cycle, edifp) => {
 
         const decodedData = iconv.decode(response.data, 'latin1'); 
         const $ = cheerio.load(decodedData);
-        const data = extractData($, edifp);
+        const data = extractData($);
         return data;
 
     } catch (err) {
-        console.error(`Error al obtener datos de ${edifp}:`, err.message);
+        console.error(`Error al obtener datos del ciclo - ${cycle}:`, err.message);
         return [];
     }
 };
 
 
 
-module.exports = { scrapeData };
+module.exports = { searchProfessor };

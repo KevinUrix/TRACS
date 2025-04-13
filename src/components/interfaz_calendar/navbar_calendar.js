@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import ProfessorSchedule from './profesorSchedule';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function Navbar({ toggleSidebar, schedule }) {
+
+
+export default function Navbar({ toggleSidebar, selectedCycle}) {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
@@ -13,20 +15,31 @@ export default function Navbar({ toggleSidebar, schedule }) {
     navigate('/');
   };
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     if (!searchTerm.trim()) {
       setFilteredSchedule([]);
       setShowPopup(false);
       return;
     }
-
-    const filtered = schedule.filter((item) =>
-      item.professor.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    setFilteredSchedule(filtered);
-    setShowPopup(filtered.length > 0);
+  
+    try {
+      const response = await fetch(`http://localhost:3001/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}`);
+      const data = await response.json();
+  
+      if (data.length > 0) {
+        setFilteredSchedule(data);
+        setShowPopup(true);
+      } else {
+        setFilteredSchedule([]);
+        setShowPopup(true);
+      }
+    } catch (error) {
+      console.error("Error al buscar el profesor:", error);
+      setFilteredSchedule([]);
+      setShowPopup(false);
+    }
   };
+  
 
   return (
     <>
@@ -53,7 +66,7 @@ export default function Navbar({ toggleSidebar, schedule }) {
         <div className="popup-overlay" onClick={() => setShowPopup(false)}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
-            <ProfessorSchedule professorSchedule={filteredSchedule} />
+            <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle}/>
           </div>
         </div>
       )}

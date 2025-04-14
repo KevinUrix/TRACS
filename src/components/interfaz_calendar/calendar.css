@@ -159,20 +159,26 @@
 
 /* Diferentes colores para distintas materias */
 .course-color-1 { background-color: #16a085; } 
-.course-color-2 { background-color: #27ae60; } 
+.course-color-2 { background-color: #37955e; } 
 .course-color-3 { background-color: #2980b9; } 
 .course-color-4 { background-color: #8e44ad; } 
 .course-color-5 { background-color: #2c3e50; } 
 .course-color-6 { background-color: #d35400; } 
-.course-color-7 { background-color: #c0392b; } 
+.course-color-7 { background-color: #aa5046; } 
 .course-color-8 { background-color: #ffc6ff; } /* Rosa pastel */
 .course-color-9 { background-color: #ffb5a7; } /* Coral claro */
 .course-color-10 { background-color: #ffe5d9; } /* Durazno pastel */
 .course-color-11 { background-color: #d8e2dc; } /* Verde grisáceo */
 .course-color-12 { background-color: #a5a58d; } /* Verde olivo */
-.course-color-13 { background-color: #6b705c; } /* Verde oscuro */
+.course-color-13 { background-color: #8e9b67; } /* Verde oscuro */
 .course-color-14 { background-color: #ffe066; } /* Amarillo intenso */
 .course-color-15 { background-color: #faa307; } /* Naranja fuerte */
+.course-color-16 { background-color: #78cbb9;}
+.course-color-17 { background-color: #c18cb9;}
+.course-color-18 { background-color: #9f78cb;}
+.course-color-19 { background-color: #b8c37b;}
+.course-color-20 { background-color: #b379a4;}
+.course-color-21 { background-color: #788fcb;}
 /*------------------------------------------------------------------------------------------------*/
 
 .reserve-button {
@@ -350,6 +356,12 @@
 }
 
 .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.modal-buttons-download {
   display: flex;
   justify-content: space-between;
   gap: 15px;

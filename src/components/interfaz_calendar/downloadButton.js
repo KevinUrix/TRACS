@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function DownloadButton({ onDownload }) {
   
@@ -30,21 +31,23 @@ export default function DownloadButton({ onDownload }) {
               <li>Selecciona un ciclo.</li>
               <li>Presiona el botón color azul.</li>
             </ul>
-            <button
-              onClick={toggleDownload}
-              className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
-            >
-              Cerrar
-            </button>
+            <div className="modal-buttons-download">
+              <button
+                onClick={toggleDownload}
+                className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
+              >
+                Cerrar
+              </button>
 
-            {/* Agregar el botón de descarga con feedback */}
-            <button
-              onClick={onDownload}
-              disabled={isLoading}
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
-            >
-              {isLoading ? 'Descargando...' : 'Descargar JSON de todos los edificios'}
-            </button>
+              {/* Agregar el botón de descarga con feedback */}
+              <button
+                onClick={onDownload}
+                disabled={isLoading}
+                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+              >
+                {isLoading ? 'Descargando...' : 'Descargar JSON de todos los edificios'}
+              </button>
+            </div>
 
             {/* Mostrar mensaje de estado */}
             {downloadStatus && (

@@ -115,7 +115,12 @@ export default function Calendar() {
                         });
 
                         const backgroundColor = matchingCourse
-                        ? `hsl(${((matchingCourse.data.course.length + matchingCourse.professor.length * 17) * 37) % 360}, 80%, 75%)`
+                        ? `hsl(${(
+                            (matchingCourse.data.course.length +
+                             matchingCourse.professor.length * 17 +
+                             matchingCourse.data.nrc * 1 // puedes ajustar el peso si lo deseas
+                            ) * 37
+                          ) % 360}, 80%, 75%)`
                         : 'white';
 
                         return (
@@ -135,6 +140,8 @@ export default function Calendar() {
                             {matchingCourse ? `Clave: ${matchingCourse.data.code}` : ""}
                             <br/>
                             {matchingCourse ? `Alumnos: ${matchingCourse.data.students}` : ""}
+                            <br/>
+                            {matchingCourse ? `Nrc: ${matchingCourse.data.nrc}` : ""}
                           </td>
                         );
                       })}

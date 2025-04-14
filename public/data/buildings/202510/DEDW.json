@@ -495,6 +495,58 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "134054",
+      "code": "I6108",
+      "students": 13,
+      "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
+    },
+    "professor": "GORIN, THOMAS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "134054",
+      "code": "I6108",
+      "students": 13,
+      "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
+    },
+    "professor": "GORIN, THOMAS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "134054",
+      "code": "I6108",
+      "students": 13,
+      "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
+    },
+    "professor": "GORIN, THOMAS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "134054",
+      "code": "I6108",
+      "students": 13,
+      "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
+    },
+    "professor": "GORIN, THOMAS"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDW",
@@ -521,19 +573,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDW",
-      "classroom": "A002",
-      "nrc": "60833",
-      "code": "I7352",
-      "students": 20,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
-    },
-    "professor": "ZAMUDIO OJEDA, ADALBERTO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDW",
@@ -544,6 +583,19 @@
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
     "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60833",
+      "code": "I7352",
+      "students": 20,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "ZAMUDIO OJEDA, ADALBERTO"
   },
   {
     "data": {

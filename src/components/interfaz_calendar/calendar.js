@@ -68,11 +68,13 @@ export default function Calendar() {
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
         <div className="main-content">
           <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} />
-          <CalendarLogic
-            onUpdateCicle={setSelectedCycle}
-            onUpdateBuilding={setSelectedBuilding}
-            onUpdateDay={setSelectedDay}
-          />
+          <div className="select-content">
+            <CalendarLogic
+              onUpdateCicle={setSelectedCycle}
+              onUpdateBuilding={setSelectedBuilding}
+              onUpdateDay={setSelectedDay}
+            />
+          </div>
           <div className="table-container">
             <table className="schedule-table">
               <thead>

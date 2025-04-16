@@ -87,7 +87,7 @@
   /*height: 100%;*/
   max-width: 200vh;
   max-height: 80vh;
-  padding: 0rem 2rem;
+  padding: 0rem 0rem;
 }
 
 /*------------------ Tabla base ------------------*/
@@ -99,13 +99,28 @@
   border-collapse: separate;
   table-layout: fixed;
 }
-/*------------------ Cabecera fija horizontal ------------------*/
+/*------------------ Cabecera fija vertical ------------------*/
 .schedule-table thead th {
   position: sticky;
   top: 0;
   z-index: 4; /* Para que esté por encima del resto */
   background-color: #f3f4f6;
 }
+
+/* Fijar la primera columna */
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3; /* Asegura que quede encima de las otras celdas */
+  background-color: #f3f4f6;
+  border-right: 1px solid #d1d5db;
+}
+
+.schedule-table thead th:first-child { /* fija el cuadro de hora */
+  position: absolute;
+}
+
 
 .schedule-table th,
 .schedule-table td {
@@ -117,11 +132,11 @@
 
 /*------------------ Cabecera ------------------*/
 .table-header {
-  background-color: #d1d5db;
+  background-color: #f3f4f6;
 }
 
 .schedule-table thead th:not(:first-child) {
-  height: 5rem;
+  height: 6rem;
 
 }
 
@@ -134,9 +149,9 @@
 
 .schedule-table th:first-child,
 .schedule-table td:first-child {
-  width: 7.5rem !important;
-  min-width: 7.5rem !important;
-  max-width: 7.5rem !important;
+  width: 8rem !important;
+  min-width: 8rem !important;
+  max-width: 8rem !important;
   font-weight: bold;
   background-color: #f3f4f6;
 }

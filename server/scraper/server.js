@@ -3,6 +3,7 @@ const cors = require('cors');
 const scheduleRoutes = require('../routes/scheduleRoutes');
 const downloadRoutes = require('../routes/downloadRoutes');
 const searchRoutes = require('../routes/searchRoutes');
+const reservationsRoutes = require('../routes/reservationsRoutes')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use('/api', scheduleRoutes);
 app.use('/api', downloadRoutes);
 app.use('/api', searchRoutes);
+app.use('/api', reservationsRoutes);
 
 // Inicia el servidor
 app.listen(PORT, () => {

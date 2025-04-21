@@ -1,12 +1,12 @@
-import { use, useState } from 'react';
-import './calendar.css'; // Importa el archivo de estilos CSS
+import { useState } from 'react';
+import './calendar.css'; 
 
 export default function ReserveButton({
+  selectedCycle,
   selectedBuilding,
   selectedDay,
   selectedHour,
   classroom,
-  onSaveReservation,
 }) {
   // Función para convertir la hora en formato de 12 horas (AM/PM) a formato de 24 horas
   const convertTo24HourFormat = (time) => {
@@ -38,7 +38,7 @@ export default function ReserveButton({
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [course, setCourse] = useState('');
-  const [clave, setClave] = useState('');
+  const [code, setCode] = useState('');
   const [professor, setProfessor] = useState('');
   const [startTime, setStartTime] = useState(convertTo24HourFormat(selectedHour));
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
@@ -52,20 +52,47 @@ export default function ReserveButton({
     setIsModalOpen(false);
   };
 
+  const onSaveReservation = async (reservationData) => {
+    try {
+      const response = await fetch(`http://localhost:3001/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(reservationData),
+      });
+  
+      if (!response.ok) throw new Error('Error al guardar la reserva');
+      alert('Reserva guardada con éxito');
+    } catch (error) {
+      console.error(error);
+      alert('Hubo un problema al guardar la reserva');
+    }
+  };
+
+  
   const handleSave = () => {
+    const schedule = `${startTime.replace(':', '')}-${endTime.replace(':', '')}`;
     const reservationData = {
-      course,
-      clave,
-      professor,
+      schedule,
+      days: selectedDay,
       building: selectedBuilding,
       classroom,
-      day: selectedDay,
+      code,
+      course,
       date: reservationDate,
-      startTime,
-      endTime,
+      professor,
     };
-
+    
     onSaveReservation(reservationData);
+
+    // Resetear los estados después de guardar
+    setCourse('');
+    setCode('');
+    setProfessor('');
+    setStartTime(convertTo24HourFormat(selectedHour));
+    setEndTime(addMinutes(startTime, 55));
+    setReservationDate(getTodayDate());
     handleCloseModal();
   };
 
@@ -93,8 +120,8 @@ export default function ReserveButton({
                 Clave:
                 <input
                   type="text"
-                  value={clave}
-                  onChange={(e) => setClave(e.target.value)}
+                  value={code}
+                  onChange={(e) => setCode(e.target.value)}
                   required
                 />
               </label>

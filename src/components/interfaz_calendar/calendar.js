@@ -130,6 +130,7 @@ export default function Calendar() {
                             className={`table-cell ${matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'}`}
                             style={{ backgroundColor }}>
                             {matchingCourse ? matchingCourse.data.course : <ReserveButton
+                              selectedCycle={selectedCycle}
                               selectedBuilding={selectedBuilding}
                               selectedDay={selectedDay}
                               selectedHour={hour} // Esto puede ser el valor de la hora en la fila de la tabla

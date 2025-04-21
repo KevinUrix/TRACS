@@ -7,14 +7,12 @@ const saveReservation = (req, res) => {
   const filePath = path.join(__dirname, `../../public/data/${cycle}/${buildingName}.json`);
 
   try {
-    // Verifica si el archivo existe
     if (!fs.existsSync(filePath)) {
       // Si el archivo no existe, crear uno con un objeto vacío
-      fs.mkdirSync(path.dirname(filePath), { recursive: true }); // Crear la carpeta si no existe
-      fs.writeFileSync(filePath, JSON.stringify({ data: [] }, null, 2)); // Crear archivo vacío
+      fs.mkdirSync(path.dirname(filePath), { recursive: true });
+      fs.writeFileSync(filePath, JSON.stringify({ data: [] }, null, 2));
     }
 
-    // Lee el archivo JSON
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     let currentData = { data: [] };
 
@@ -31,7 +29,6 @@ const saveReservation = (req, res) => {
     // Agrega la nueva reserva a los datos existentes
     currentData.data.push(reservationData);
 
-    // Guarda los datos actualizados en el archivo
     fs.writeFileSync(filePath, JSON.stringify(currentData, null, 2));
 
     // Responde con éxito

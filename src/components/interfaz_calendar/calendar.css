@@ -126,8 +126,6 @@
 .schedule-table td {
   text-align: center;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /*------------------ Cabecera ------------------*/
@@ -170,6 +168,10 @@
   color: black;
   font-weight: bold;
   text-align: center;
+
+  white-space: normal !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .empty-cell {
@@ -183,6 +185,29 @@
 }
 
 /*---------------------------------------------------------------------------*/
+.professor-name {
+  color: #ffffff; /* azul */
+  font-size: 1rem;
+
+}
+
+.course-name {
+  color: #dcf70b; /* gris oscuro */
+}
+
+.course-code {
+  color: #dcf70b; /* verde */
+}
+
+.course-students {
+  color: #dcf70b; /* naranja */
+}
+
+.course-nrc {
+  color: #dcf70b; /* rojo */
+}
+
+/*---------------------------------------------------------------------*/
 .w-64 {
   z-index: 9;
 }

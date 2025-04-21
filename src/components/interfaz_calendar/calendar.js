@@ -116,35 +116,57 @@ export default function Calendar() {
                           );
                         });
 
-                        const backgroundColor = matchingCourse
-                        ? `hsl(${(
+                        let hue = 0;
+
+                        if (matchingCourse) {
+                          hue = (
                             (matchingCourse.data.course.length +
                              matchingCourse.professor.length * 17 +
-                             matchingCourse.data.nrc * 1 // puedes ajustar el peso si lo deseas
-                            ) * 37
-                          ) % 360}, 80%, 75%)`
-                        : 'white';
+                             matchingCourse.data.nrc * 1) * 37
+                          ) % 360;
+                        
+                          const forbiddenHueRanges = [
+                            [45, 65],     // Amarillo
+                            [66, 140],    // Verde lima
+                            //[141, 169],   // Verde fuerte
+                            //[170, 200],   // Aqua / Cyan
+                            //[300, 345]    // Fucsia / Rosa
+                          ];
+                        
+                          const isForbidden = (h) =>
+                            forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
+                        
+                          while (isForbidden(hue)) {
+                            hue = (hue + 31) % 360; // Desfasamos en pasos no múltiplos del rango para evitar bucles infinitos
+                          }
+                        }
+                        
+                        const backgroundColor = matchingCourse
+                          ? `hsl(${hue}, 50%, 50%)` // Saturación alta y luminosidad más baja para evitar tonos pastel
+                          : 'white';
 
                         return (
                           <td key={index} 
                             className={`table-cell ${matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'}`}
                             style={{ backgroundColor }}>
-                            {matchingCourse ? matchingCourse.data.course : <ReserveButton
+                            {matchingCourse ? (
+                            <>
+                              <div className="professor-name">{matchingCourse.professor}</div>
+                              <div className="course-name">{matchingCourse.data.course}</div>
+                              <div className="course-code">Clave: {matchingCourse.data.code}</div>
+                              <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
+                              <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div>
+                            </>
+                          ) : (
+                            <ReserveButton
                               selectedCycle={selectedCycle}
                               selectedBuilding={selectedBuilding}
                               selectedDay={selectedDay}
-                              selectedHour={hour} // Esto puede ser el valor de la hora en la fila de la tabla
-                              classroom={classroom} // Esto puede ser el nombre del aula en la columna
-                              onSaveReservation={handleSaveReservation} // Esta función debe encargarse de guardar la reserva
-                            />}
-                            <br/>
-                            {matchingCourse ? matchingCourse.professor : ""}
-                            <br/>
-                            {matchingCourse ? `Clave: ${matchingCourse.data.code}` : ""}
-                            <br/>
-                            {matchingCourse ? `Alumnos: ${matchingCourse.data.students}` : ""}
-                            <br/>
-                            {matchingCourse ? `Nrc: ${matchingCourse.data.nrc}` : ""}
+                              selectedHour={hour}
+                              classroom={classroom}
+                              onSaveReservation={handleSaveReservation}
+                            />
+                          )}
                           </td>
                         );
                       })}

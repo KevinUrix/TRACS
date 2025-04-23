@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "schedule": "1600-1655",
+      "days": "I",
+      "building": "DUCT1",
+      "classroom": "LC01",
+      "code": "ppp",
+      "course": "hola prueba",
+      "date": "2025-04-23",
+      "professor": "Kevin"
+    },
+    {
+      "schedule": "1300-1355",
+      "days": "I",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "code": "d",
+      "course": "d",
+      "date": "2025-04-23",
+      "professor": "d"
+    },
+    {
+      "schedule": "1700-1755",
+      "days": "I",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "code": "d",
+      "course": "d",
+      "date": "2025-04-23",
+      "professor": "d"
+    },
+    {
+      "schedule": "1700-1755",
+      "days": "I",
+      "building": "DUCT1",
+      "classroom": "LC08",
+      "code": "d",
+      "course": "d",
+      "date": "2025-04-23",
+      "professor": "d"
+    }
+  ]
+}

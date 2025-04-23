@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import InstructionsButton from './instructionsButton'; // Importa el componente
 import DownloadButton from './downloadButton';
+import ViewReservationsButton from './viewReservationsButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle }) {
@@ -102,6 +103,34 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   };
   
 
+  const [allReservations, setAllReservations] = useState([]);
+
+  useEffect(() => {
+    if (!selectedCycle || !selectedBuilding) return;
+
+    const path = `data/${selectedCycle}/${selectedBuilding}.json`;
+
+    const fetchReservations = async () => {
+      try {
+        const response = await fetch(path);
+
+        if (!response.ok) {
+          throw new Error(`No se pudo cargar el archivo: ${path}`);
+        }
+
+        const json = await response.json();
+
+        // json.data contiene el arreglo de reservas
+        setAllReservations(json.data || []);
+      } catch (err) {
+        console.error("Error cargando reservas:", err);
+        setAllReservations([]);
+      }
+    };
+
+    fetchReservations();
+  }, [selectedCycle, selectedBuilding]);
+
 
   return (
     <div className="flex space-x-6 my-10 pl-6 mt-10">
@@ -146,6 +175,12 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
       </div>
 
       <DownloadButton onDownload={handleDownload}/>
+
+      <ViewReservationsButton
+        allReservations={allReservations}
+        selectedCycle={selectedCycle}
+        selectedBuilding={selectedBuilding}
+      />
 
 
       {/* Componente InstructionsButton */}

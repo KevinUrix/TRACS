@@ -10,8 +10,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   const [selectedCycle, setSelectedCycle] = useState('');
   const [cicle, setCicle] = useState([]);
   const [building, setBuilding] = useState([]);
+  const [allReservations, setAllReservations] = useState([]);
   
-
+  
 
   const dayMappings = {
     "Domingo": "D",
@@ -101,35 +102,32 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
       console.log("Descargando . . .")
     }
   };
+
+  const refetchReservations = async () => {
+    if (!selectedCycle || !selectedBuilding) return;
+  
+    const path = `data/reservations/${selectedCycle}/${selectedBuilding}.json`;
+  
+    try {
+      const response = await fetch(path);
+  
+      if (!response.ok) {
+        throw new Error(`No se pudo cargar el archivo: ${path}`);
+      }
+  
+      const json = await response.json();
+      setAllReservations(json.data || []);
+    } catch (err) {
+      console.error("Error cargando reservas:", err);
+      setAllReservations([]);
+    }
+  };
   
 
-  const [allReservations, setAllReservations] = useState([]);
 
   useEffect(() => {
-    if (!selectedCycle || !selectedBuilding) return;
-
-    const path = `data/${selectedCycle}/${selectedBuilding}.json`;
-
-    const fetchReservations = async () => {
-      try {
-        const response = await fetch(path);
-
-        if (!response.ok) {
-          throw new Error(`No se pudo cargar el archivo: ${path}`);
-        }
-
-        const json = await response.json();
-
-        // json.data contiene el arreglo de reservas
-        setAllReservations(json.data || []);
-      } catch (err) {
-        console.error("Error cargando reservas:", err);
-        setAllReservations([]);
-      }
-    };
-
-    fetchReservations();
-  }, [selectedCycle, selectedBuilding]);
+    refetchReservations();
+  }, [selectedCycle, selectedBuilding]);  
 
 
   return (
@@ -176,12 +174,14 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
 
       <DownloadButton onDownload={handleDownload}/>
 
-      <ViewReservationsButton
-        allReservations={allReservations}
-        selectedCycle={selectedCycle}
-        selectedBuilding={selectedBuilding}
-      />
-
+      <div className="-ml-6">
+        <ViewReservationsButton
+          allReservations={allReservations}
+          selectedCycle={selectedCycle}
+          selectedBuilding={selectedBuilding}
+          refetchReservations={refetchReservations}
+        />
+      </div>
 
       {/* Componente InstructionsButton */}
       <InstructionsButton />

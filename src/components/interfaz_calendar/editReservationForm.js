@@ -1,0 +1,129 @@
+import React, { useState, useEffect } from 'react';
+import './calendar.css'; // Importa el archivo de estilos CSS
+
+export default function EditReservationForm({ reservation, onSave, onCancel }) {
+  const [course, setCourse] = useState('');
+  const [professor, setProfessor] = useState('');
+  const [date, setDate] = useState('');
+  const [days, setDays] = useState('');
+  const [schedule, setSchedule] = useState('');
+  const [classroom, setClassroom] = useState('');
+
+  useEffect(() => {
+    if (reservation) {
+      setCourse(reservation.course);
+      setProfessor(reservation.professor);
+      setDate(reservation.date);
+      setDays(reservation.days);
+      setSchedule(reservation.schedule);
+      setClassroom(reservation.classroom);
+    }
+  }, [reservation]);
+
+  const handleSave = () => {
+    const updatedReservation = { professor, course, date, days, schedule, classroom };
+    onSave(updatedReservation);
+  };
+
+  return (
+    <div className="modal-overlay" onClick={onCancel}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <h2><strong>Modificar reserva</strong></h2>
+        <form onSubmit={(e) => e.preventDefault()}>
+          <div>
+            <label>Profesor:</label>
+            <input
+              type="text"
+              value={professor}
+              onChange={(e) => setProfessor(e.target.value)}
+            />
+          </div>
+          <div>
+            <label>Materia:</label>
+            <input
+              type="text"
+              value={course}
+              onChange={(e) => setCourse(e.target.value)}
+            />
+          </div>
+          <div>
+            <label>Fecha:</label>
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            />
+          </div>
+          <div className='select-container'>
+            <label>Día:</label>
+            <select className="day-select2" value={days} onChange={(e) => setDays(e.target.value)}>
+                <option value="">Selecciona un día</option>
+                <option value="L">Lunes</option>
+                <option value="M">Martes</option>
+                <option value="I">Miércoles</option>
+                <option value="J">Jueves</option>
+                <option value="V">Viernes</option>
+                <option value="S">Sábado</option>
+            </select>
+            </div>
+          <div>
+            <label>Horario:</label>
+            <input
+              type="text"
+              value={schedule}
+              onChange={(e) => setSchedule(e.target.value)}
+              disabled
+            />
+          </div>
+          <div>
+            <label>Salón:</label>
+            <input
+              type="text"
+              value={classroom}
+              onChange={(e) => setClassroom(e.target.value)}
+              disabled
+            />
+          </div>
+          <div className="flex items-center gap-4">
+                <label className="inline-flex items-center gap-2">
+                  Siempre:
+                  <input
+                    type="radio"
+                    name="tipoReserva"
+                    value="siempre"
+                    required
+                    className="translate-y-[1px]"
+                  />
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  Temporal:
+                  <input
+                    type="radio"
+                    name="tipoReserva"
+                    value="temporal"
+                    required
+                    className="translate-y-[1px]"
+                  />
+                </label>
+              </div>
+          <div className="mt-4 flex justify-end gap-2">
+            <button
+              type="button"
+              className="px-4 py-2 bg-blue-500 text-white rounded-md"
+              onClick={handleSave}
+            >
+              Guardar
+            </button>
+            <button
+              type="button"
+              className="px-4 py-2 bg-gray-500 text-white rounded-md"
+              onClick={onCancel}
+            >
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}

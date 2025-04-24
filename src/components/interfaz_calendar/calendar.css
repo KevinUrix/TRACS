@@ -244,7 +244,6 @@
   padding: 0.3125rem 0.625rem;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 3.125rem;
 }
 
 .reserve-button:hover {
@@ -458,6 +457,13 @@
   transform: translateY(0);
 }
 
+
+/*------------------------------------------------------*/
+
+.select-container .day-select2 {
+  width: 12rem;
+  background-color: #fefefe;
+}
 
 /* Animaciones 
 @keyframes fadeIn {

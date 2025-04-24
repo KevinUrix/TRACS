@@ -184,6 +184,28 @@ export default function ReserveButton({
                   required
                 />
               </label>
+              <div className="flex items-center gap-4">
+                <label className="inline-flex items-center gap-2">
+                  Siempre:
+                  <input
+                    type="radio"
+                    name="tipoReserva"
+                    value="siempre"
+                    required
+                    className="translate-y-[1px]"
+                  />
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  Temporal:
+                  <input
+                    type="radio"
+                    name="tipoReserva"
+                    value="temporal"
+                    required
+                    className="translate-y-[1px]"
+                  />
+                </label>
+              </div>
               <div className="modal-buttons">
                 <button className="cancel-button" onClick={handleCloseModal}>
                   Cancelar

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import EditReservationForm from './editReservationForm'; // Importamos el formulario
 
 const dayNames = {
   L: 'Lunes',
@@ -26,8 +27,8 @@ function translateDays(daysString) {
 export default function ViewReservationsButton({ allReservations, selectedCycle, selectedBuilding, refetchReservations }) {
   const [showPopup, setShowPopup] = useState(false);
   const [filteredReservations, setFilteredReservations] = useState([]);
+  const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
 
-  // Actualiza filteredReservations cuando allReservations cambia
   useEffect(() => {
     if (Array.isArray(allReservations)) {
       setFilteredReservations(allReservations);
@@ -42,7 +43,25 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
     }
     setShowPopup(true);
   };
-  
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setSelectedReservation(null); // Cerrar y limpiar la reserva seleccionada
+  };
+
+  const handleModify = (res) => {
+    setSelectedReservation(res); // Al presionar "Modificar", se selecciona la reserva
+  };
+
+  const handleSaveReservation = (updatedReservation) => {
+    // Aquí deberías hacer la lógica de actualización en el backend si es necesario.
+    console.log('Reserva actualizada:', updatedReservation);
+    // Luego actualiza el estado de las reservas
+    setFilteredReservations(filteredReservations.map((res) =>
+      res.course === updatedReservation.course ? updatedReservation : res
+    ));
+    closePopup();
+  };
 
   const deleteReservation = async (reserva) => {
     const params = new URLSearchParams({
@@ -83,21 +102,20 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
     }
   };
 
-  
 
   return (
     <>
       <button
         onClick={openPopup}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-500 text-black rounded-full px-3 py-1 shadow-md text-white"
       >
-        Ver Reservas
+        <b>Ver Reservas</b>
       </button>
 
       {showPopup && (
-        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+        <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
+            <button className="close-popup" onClick={closePopup}>✖</button>
             <h3>Reservas para ciclo {selectedCycle}, edificio {selectedBuilding}:</h3>
             <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />
 
@@ -108,13 +126,26 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
                 {filteredReservations.map((res, idx) => (
                   <li key={idx}>
                     <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
-                    <strong>Materia:</strong> {res.course}<br />
-                    <strong>Profesor:</strong> {res.professor}<br />
-                    <strong>Día:</strong> {translateDays(res.days)}<br />
-                    <strong>Horario:</strong> {res.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 - $3:$4")}<br />
-                    <strong>Salón:</strong> {res.classroom}<br />
-                    <button className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md" onClick={() => deleteReservation(res)}>Eliminar</button>
-                    <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Modificar</button>
+                    <b>Profesor:</b> {res.professor}<br />
+                    <b>Materia:</b> {res.course}<br />
+                    <b>Fecha:</b> {res.date} <br />
+                    <b>Día:</b> {translateDays(res.days)}<br />
+                    <b>Horario:</b> {res.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 - $3:$4")}<br />
+                    <b>Salón:</b> {res.classroom}<br />
+                    <div className="mt-4 flex justify-end gap-2">
+                      <button
+                        className="px-4 py-2 bg-red-500 text-white rounded-md"
+                        onClick={() => deleteReservation(res)}
+                      >
+                        Eliminar
+                      </button>
+                      <button
+                        className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                        onClick={() => handleModify(res)} // Abrir el formulario de modificación
+                      >
+                        Modificar
+                      </button>
+                    </div>
                     <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
                   </li>
                 ))}
@@ -122,6 +153,15 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
             )}
           </div>
         </div>
+      )}
+
+      {/* Si se seleccionó una reserva, mostrar el formulario */}
+      {selectedReservation && (
+        <EditReservationForm
+          reservation={selectedReservation}
+          onSave={handleSaveReservation}
+          onCancel={closePopup}
+        />
       )}
     </>
   );

@@ -23,7 +23,7 @@ export default function Navbar({ toggleSidebar, selectedCycle}) {
     }
   
     try {
-      const response = await fetch(`http://localhost:3001/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}`);
+      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}`);
       const data = await response.json();
   
       if (data.length > 0) {

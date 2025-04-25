@@ -12,7 +12,8 @@ export default function Calendar() {
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
-
+  const [reservations, setReservations] = useState([]);
+  
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   const hours = Array.from({ length: 14 }, (_, i) => {
@@ -22,14 +23,14 @@ export default function Calendar() {
 
 
   const handleSaveReservation = (reservationData) => {
-    // Aquí puedes guardar la reserva en el estado o enviar los datos a un servidor
+    setReservations(prev => [...prev, reservationData]);
     console.log('Reserva guardada:', reservationData);
   };
   
   useEffect(() => {
     if (selectedBuilding) {
       // Nombre del JSON dinámico según el edificio seleccionado
-      const buildingFile = `data/classrooms/${selectedBuilding}.json`;
+      const buildingFile = `/api/classrooms?buildingName=${selectedBuilding}`;
   
       fetch(buildingFile)
         .then(response => response.json())
@@ -46,7 +47,7 @@ export default function Calendar() {
   
     const loadLocalSchedule = async () => {
       try {
-        const localResponse = await fetch(`/data/buildings/${selectedCycle}/${selectedBuilding}.json`);
+        const localResponse = await fetch(`/api/local-schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
         if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
   
         const localData = await localResponse.json();
@@ -85,7 +86,7 @@ export default function Calendar() {
   
       // Intentar obtener desde el backend
       try {
-        const response = await fetch(`http://localhost:3001/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
+        const response = await fetch(`/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
   
         const data = await response.json();
@@ -108,14 +109,13 @@ export default function Calendar() {
     fetchSchedule();
   }, [selectedCycle, selectedBuilding]);
 
-  const [reservations, setReservations] = useState([]);
 
     useEffect(() => {
       if (!selectedCycle || !selectedBuilding) return;
 
       const fetchReservations = async () => {
         try {
-          const response = await fetch(`/data/reservations/${selectedCycle}/${selectedBuilding}.json`);
+          const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
           if (!response.ok) throw new Error("Archivo de reservas no encontrado");
           
           const json = await response.json();

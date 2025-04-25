@@ -3,7 +3,7 @@ const buildings = require('../config/buildings');
 const fs = require('fs');
 const path = require('path');
 
-const saveAllToFiles = async (cycle, outputDirBase = '../../public/data/buildings/') => {
+const saveAllToFiles = async (cycle, outputDirBase = '../data/buildings/') => {
   const outputDir = path.join(outputDirBase, cycle);
 
   // Verificar si la carpeta del ciclo existe, si no, se crea

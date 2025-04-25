@@ -55,7 +55,7 @@ export default function ReserveButton({
 
   const onSaveReservation = async (reservationData) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

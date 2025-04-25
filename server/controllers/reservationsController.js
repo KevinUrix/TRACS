@@ -7,19 +7,13 @@ const path = require('path');
 const saveReservation = async (req, res) => {
   const { cycle, buildingName } = req.query;
   const reservationData = req.body;
-  const filePath = path.join(__dirname, `../../public/data/reservations/${cycle}/${buildingName}.json`);
+  const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
   if (!reservationData || !reservationData.course || !reservationData.professor) {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
   }
 
   try {
-    try {
-      await fs.access(filePath);
-    } catch (error) {
-      await fs.mkdir(path.dirname(filePath), { recursive: true });
-      await fs.writeFile(filePath, JSON.stringify({ data: [] }, null, 2));
-    }
 
     const fileContent = await fs.readFile(filePath, 'utf-8');
     let currentData = { data: [] };
@@ -45,6 +39,12 @@ const saveReservation = async (req, res) => {
     // Responde con éxito
     res.status(201).json({ message: 'Reserva guardada con éxito' });
   } catch (error) {
+    if (error.code === 'ENOENT') {
+      await fs.mkdir(path.dirname(filePath), { recursive: true });
+      await fs.writeFile(filePath, JSON.stringify({ data: [] }, null, 2));
+      return saveReservation(req, res);  // Llamada recursiva para guardar después de crear el archivo
+    }
+    
     console.error("Error al guardar la reserva:", error);
     res.status(500).json({ error: 'Hubo un error al guardar la reserva' });
   }
@@ -55,15 +55,10 @@ const saveReservation = async (req, res) => {
 // BORRAR RESERVAS
 //
 const deleteReservation = async (req, res) => {
-  const { cycle, buildingName, professor, schedule, date, duration } = req.query;
-  const filePath = path.join(__dirname, `../../public/data/reservations/${cycle}/${buildingName}.json`);
+  const { cycle, buildingName, professor, schedule, date } = req.query;
+  const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
   try {
-    try {
-      await fs.access(filePath);
-    } catch (error) {
-      return res.status(404).json({ error: 'Archivo no encontrado' });
-    }
 
     const fileContent = await fs.readFile(filePath, 'utf-8');
     let currentData = JSON.parse(fileContent);
@@ -89,6 +84,11 @@ const deleteReservation = async (req, res) => {
 
     res.json({ message: 'Reservas eliminadas con éxito' });
   } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log(`Archivo no encontrado para: ${cycle} - ${buildingName}`);
+      return res.status(404).json({ message: 'No hay reservas para este ciclo y edificio' });
+    }
+    
     console.error("Error al eliminar la reserva:", error.message);
     res.status(500).json({ error: 'Error interno al eliminar la reserva' });
   }
@@ -106,14 +106,9 @@ const updateReservation = async (req, res) => {
     return res.status(400).json({ error: 'Faltan datos obligatorios para la reserva' });
   }
 
-  const filePath = path.join(__dirname, `../../public/data/reservations/${cycle}/${buildingName}.json`);
+  const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
   try {
-    try {
-      await fs.access(filePath);
-    } catch (error) {
-      return res.status(404).json({ error: 'Archivo de reservas no encontrado' });
-    }
 
     const fileContent = await fs.readFile(filePath, 'utf-8');
     let currentData = JSON.parse(fileContent);
@@ -150,8 +145,41 @@ const updateReservation = async (req, res) => {
 
     res.json({ message: 'Reserva actualizada con éxito' });
   } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log(`Archivo no encontrado para: ${cycle} - ${buildingName}`);
+      return res.status(404).json({ message: 'No hay reservas para este ciclo y edificio' });
+    }
+
     console.error("Error al actualizar la reserva:", error.message);
     res.status(500).json({ error: 'Error interno al actualizar la reserva' });
+  }
+};
+
+
+//
+// OBTENER RESERVAS
+//
+const getReservations = async (req, res) => {
+  const { cycle, buildingName } = req.query;
+
+  if (!cycle || !buildingName) {
+    return res.status(400).json({ error: 'No se recibió el ciclo, el edificio o ambos' });
+  }
+
+  const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
+
+  try {
+    const data = await fs.readFile(filePath, 'utf8');
+    const localSchedule = JSON.parse(data);
+    res.json(localSchedule);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log(`Archivo no encontrado para: ${cycle} - ${buildingName}`);
+      return res.status(404).json({ message: 'No hay reservas para este ciclo y edificio' });
+    }
+
+    console.error('Error al leer la reserva:', error.message);
+    res.status(500).json({ error: 'No se pudieron cargar las reservas' });
   }
 };
 
@@ -160,4 +188,5 @@ module.exports = {
   saveReservation,
   deleteReservation,
   updateReservation,
+  getReservations,
 };

@@ -1,6 +1,4 @@
 const { searchProfessor } = require('../scraper/search');
-const buildings = require('../config/buildings'); // arreglo con nombres de edificios
-// const pLimit = require('p-limit');
 
 const normalizeName = (name) => {
   return name
@@ -16,7 +14,7 @@ const matchesName = (fullName, query) => {
   const normalizedFullName = normalizeName(fullName);
   const normalizedQuery = normalizeName(query);
 
-  // Si el query normalizado queda vacío, no hacer match
+  // Si el query normalizado queda vacío, no hace match
   if (!normalizedQuery) return false;
 
   return normalizedQuery

@@ -4,7 +4,7 @@ const iconv = require('iconv-lite');
 const NodeCache = require('node-cache');
 
 // Crear instancia de caché
-const cache = new NodeCache({ stdTTL: 3600, checkperiod: 120 });
+const cache = new NodeCache({ stdTTL: 43200, checkperiod: 120 });
 
 const extractData = ($) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
@@ -119,7 +119,6 @@ const searchProfessor = async (cycle) => {
         return [];
     }
 };
-
 
 
 module.exports = { searchProfessor };

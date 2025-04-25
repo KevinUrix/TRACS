@@ -36,13 +36,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
 
   useEffect(() => {
     //  CICLOS
-    // 
-    // Cargar los datos del JSON por API con fetch
-    // fetch("http://localhost:3030/")
-    // 
-    // 
-    // Modificar el fetch para obtener datos locales
-    fetch("data/selects/cicles.json")
+    fetch("/api/cycles")
         .then(response => response.json())
         .then(data => setCicle(data))
         .catch(error => console.error("Error cargando los ciclos:", error));
@@ -50,7 +44,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
 
   // EDIFICIOS
   useEffect(() => {
-    fetch("data/selects/buildings.json")
+    fetch("/api/buildings")
         .then(response => response.json())
         .then(data => {
           const buildings = data.edifp || [];
@@ -85,7 +79,7 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
     }
   
     try {
-      const res = await fetch(`http://localhost:3001/api/descargar-json?cycle=${selectedCycle}`);
+      const res = await fetch(`/api/descargar-json?cycle=${selectedCycle}`);
   
       if (!res.ok) {
         throw new Error(`Error HTTP: ${res.status}`);
@@ -106,29 +100,31 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   const refetchReservations = async () => {
     if (!selectedCycle || !selectedBuilding) return;
   
-    const path = `data/reservations/${selectedCycle}/${selectedBuilding}.json`;
+    const path = `/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`;
   
     try {
       const response = await fetch(path);
-  
+    
       if (!response.ok) {
         if (response.status === 404) {
           console.warn(`No hay reservas guardadas para ${selectedBuilding} en el ciclo ${selectedCycle}.`);
-          setAllReservations([]);
-          return;
+        } else if (response.status === 400) {
+          console.warn(`Error de parámetros: ${response.error}`);
+        } else {
+          console.error(`Error del servidor: ${response.error}`);
         }
-        throw new Error(`No se pudo cargar el archivo: ${path}`);
+    
+        setAllReservations([]);
+        return;
       }
-  
+    
       const json = await response.json();
       setAllReservations(json.data || []);
     } catch (err) {
-      console.error("Error cargando reservas:", err);
+      console.error("Error de red o formato:", err);
       setAllReservations([]);
-    }
+    }  
   };
-  
-
   useEffect(() => {
     refetchReservations();
   }, [selectedCycle, selectedBuilding]);

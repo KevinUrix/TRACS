@@ -1,8 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
-const fs = require('fs');
-const path = require('path');
 
 const extractData = ($, buildingName) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
@@ -102,7 +100,6 @@ const scrapeData = async (cycle, edifp) => {
         return [];
     }
 };
-
 
 
 module.exports = { scrapeData };

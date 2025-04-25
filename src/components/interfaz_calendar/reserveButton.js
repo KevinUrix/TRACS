@@ -99,6 +99,41 @@ export default function ReserveButton({
     handleCloseModal();
   };
 
+  const dayLetterMap = {
+    L: 0,
+    M: 1,
+    I: 2,
+    J: 3,
+    V: 4,
+    S: 5,
+  };
+
+  const handleDateChange = (e) => {
+    const selectedDate = new Date(e.target.value);
+    const selectedDateDay = selectedDate.getDay(); // 0 (Dom) a 6 (Sáb)
+    const expectedDay = dayLetterMap[selectedDay];
+  
+    // Si la letra del día no está en el mapa
+    if (expectedDay === undefined) {
+      alert(`El día seleccionado (${selectedDay}) no es válido.`);
+      setReservationDate(getTodayDate());
+      return;
+    }
+  
+    // Mostrar en consola para depuración
+    console.log("Letra seleccionada:", selectedDay);
+    console.log("Día esperado (num):", expectedDay);
+    console.log("Día de la fecha elegida:", selectedDateDay);
+  
+    // Validar
+    if (selectedDateDay !== expectedDay) {
+      alert(`Por favor selecciona una fecha que caiga en el día correspondiente (${selectedDay}).`);
+      setReservationDate(getTodayDate());
+    } else {
+      setReservationDate(e.target.value);
+    }
+  };
+
   return (
     <>
       <button className="reserve-button" onClick={handleOpenModal}>
@@ -138,14 +173,6 @@ export default function ReserveButton({
                 />
               </label>
               <label>
-                Edificio:
-                <input
-                  type="text"
-                  value={selectedBuilding}
-                  disabled
-                />
-              </label>
-              <label>
                 Salón:
                 <input
                   type="text"
@@ -166,7 +193,7 @@ export default function ReserveButton({
                 <input
                   type="date"
                   value={reservationDate}
-                  onChange={(e) => setReservationDate(e.target.value)}
+                  onChange={handleDateChange}
                   required
                 />
               </label>
@@ -184,7 +211,7 @@ export default function ReserveButton({
                   type="time"
                   value={endTime}
                   onChange={(e) => setEndTime(e.target.value)}
-                  required
+                  disabled
                 />
               </label>
               <div className="flex items-center gap-4">

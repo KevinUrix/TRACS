@@ -108,6 +108,31 @@ export default function Calendar() {
     fetchSchedule();
   }, [selectedCycle, selectedBuilding]);
 
+  const [reservations, setReservations] = useState([]);
+
+    useEffect(() => {
+      if (!selectedCycle || !selectedBuilding) return;
+
+      const fetchReservations = async () => {
+        try {
+          const response = await fetch(`/data/reservations/${selectedCycle}/${selectedBuilding}.json`);
+          if (!response.ok) throw new Error("Archivo de reservas no encontrado");
+          
+          const json = await response.json();
+          if (Array.isArray(json.data)) {
+            setReservations(json.data);
+          } else {
+            console.error("Formato incorrecto de reservas");
+          }
+        } catch (error) {
+          console.error("Error al cargar reservas:", error);
+          setReservations([]);
+        }
+      };
+
+      fetchReservations();
+    }, [selectedCycle, selectedBuilding]);
+
 
   return (
     <>
@@ -143,8 +168,25 @@ export default function Calendar() {
 
                   return (
                     <tr key={hour} className="table-row">
-                      <td className="table-cell font-semibold">{hour}</td>
+                      <td className="table-cell">{hour}</td>
                       {classrooms.map((classroom, index) => {
+
+
+                        // Primero buscar si hay una reserva
+                        const matchingReservation = reservations.find(res => {
+                          const [startTime, endTime] = res.schedule.split('-');
+                          const startHour = parseInt(startTime.substring(0, 2), 10);
+                          const endHour = parseInt(endTime.substring(0, 2), 10);
+                          const days = res.days.split(' ');
+
+                          const isOnDay = days.includes(selectedDay.charAt(0)); // solo usa la inicial (e.g. 'Lunes' -> 'L')
+                          return (
+                            currentHour >= startHour &&
+                            currentHour <= endHour &&
+                            res.classroom === classroom &&
+                            isOnDay
+                          );
+                        });
                         // Filtrar cursos según el día seleccionado
                         const matchingCourse = schedule.find(scheduleItem => {
                           const [startTime, endTime] = scheduleItem.data.schedule.split('-');
@@ -190,36 +232,46 @@ export default function Calendar() {
                         
                         const backgroundColor = matchingCourse
                           ? `hsl(${hue}, 50%, 50%)` // Saturación alta y luminosidad más baja para evitar tonos pastel
-                          : 'white';
+                          :  matchingReservation
+                            ? '#0a304b' // azul tailwind 500
+                            : 'white';
+
 
                         return (
                           <td key={index} 
-                            className={`table-cell ${matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'}`}
+                            className={`table-cell font-semibold ${matchingReservation ? 'reserved-cell' : (matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell')}`}
                             style={{ backgroundColor }}>
-                            {matchingCourse ? (
-                            <>
-                              <div className="professor-name">{matchingCourse.professor}</div>
-                              <div className="course-name">{matchingCourse.data.course}</div>
-                              <div className="course-code">Clave: {matchingCourse.data.code}</div>
-                              <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
-                              <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div>
-                            </>
-                          ) : (
-                            <ReserveButton
-                              selectedCycle={selectedCycle}
-                              selectedBuilding={selectedBuilding}
-                              selectedDay={selectedDay}
-                              selectedHour={hour}
-                              classroom={classroom}
-                              onSaveReservation={handleSaveReservation}
-                            />
-                          )}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  );
-                })}
+                            {matchingReservation ? (
+                                          <>
+                                            <div className="professor-name">{matchingReservation.professor}</div>
+                                            <div className="course-name">{matchingReservation.course}</div>
+                                            <div className="course-code">Clave: {matchingReservation.code}</div>
+                                            <div className="course-date">Fecha: {matchingReservation.date}</div>
+                                          </>
+                                        ) : matchingCourse ? (
+                                          <>
+                                            <div className="professor-name">{matchingCourse.professor}</div>
+                                            <div className="course-name">{matchingCourse.data.course}</div>
+                                            <div className="course-code">Clave: {matchingCourse.data.code}</div>
+                                            <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
+                                            <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div>
+                                          </>
+                                        ) : (
+                                          <ReserveButton
+                                            selectedCycle={selectedCycle}
+                                            selectedBuilding={selectedBuilding}
+                                            selectedDay={selectedDay}
+                                            selectedHour={hour}
+                                            classroom={classroom}
+                                            onSaveReservation={handleSaveReservation}
+                                          />
+                                        )}
+                                      </td>
+                                    );
+                                  })}
+                                </tr>
+                              );
+                            })}
               </tbody>
             </table>
           </div>

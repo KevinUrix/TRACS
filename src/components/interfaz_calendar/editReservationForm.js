@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function EditReservationFofrm({ reservation, onSave, onCancel, selectedBuilding }) {
+export default function EditReservationForm({ reservation, onSave, onCancel, selectedBuilding }) {
   const [course, setCourse] = useState('');
   const [professor, setProfessor] = useState('');
   const [date, setDate] = useState('');
@@ -27,6 +27,28 @@ export default function EditReservationFofrm({ reservation, onSave, onCancel, se
   const handleSave = () => {
     const updatedReservation = { professor, course, date, days, schedule, classroom, duration, building: selectedBuilding, code};
     onSave(updatedReservation);
+  };
+
+  const dayLetterMap = {
+    L: 0, // Lunes
+    M: 1, // Martes
+    I: 2, // Miércoles
+    J: 3, // Jueves
+    V: 4, // Viernes
+    S: 5, // Sábado
+  };
+
+  const handleDateChange = (e) => {
+    const selectedDate = new Date(e.target.value);
+    const selectedDateDay = selectedDate.getDay(); // número del 0 al 6
+    const expectedDay = dayLetterMap[days]; // Por ejemplo, "L" = 1
+
+    if (selectedDateDay !== expectedDay) {
+      alert(`Por favor selecciona una fecha que caiga en el día correspondiente (${days}).`);
+      setDate(reservation.date); // Restablecer la fecha a la original si la validación falla
+    } else {
+      setDate(e.target.value);
+    }
   };
 
   return (
@@ -64,12 +86,12 @@ export default function EditReservationFofrm({ reservation, onSave, onCancel, se
             <input
               type="date"
               value={date}
-              onChange={(e) => setDate(e.target.value)}
+              onChange={handleDateChange}
             />
           </div>
           <div className='select-container'>
             <label>Día:</label>
-            <select className="day-select2" value={days} onChange={(e) => setDays(e.target.value)}>
+            <select className="day-select2" value={days} onChange={(e) => setDays(e.target.value)} disabled>
                 <option value="">Selecciona un día</option>
                 <option value="L">Lunes</option>
                 <option value="M">Martes</option>

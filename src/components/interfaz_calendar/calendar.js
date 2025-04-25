@@ -60,6 +60,7 @@ export default function Calendar() {
         }
       } catch (error) {
         console.error("Error al cargar archivo local de respaldo:", error);
+        setSchedule([]);
       }
     };
   

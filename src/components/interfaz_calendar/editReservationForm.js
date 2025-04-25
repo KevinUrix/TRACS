@@ -1,27 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function EditReservationForm({ reservation, onSave, onCancel }) {
+export default function EditReservationFofrm({ reservation, onSave, onCancel, selectedBuilding }) {
   const [course, setCourse] = useState('');
   const [professor, setProfessor] = useState('');
   const [date, setDate] = useState('');
+  const [code, setCode] = useState('');
   const [days, setDays] = useState('');
   const [schedule, setSchedule] = useState('');
   const [classroom, setClassroom] = useState('');
+  const [duration, setDuration] = useState('');
 
   useEffect(() => {
     if (reservation) {
       setCourse(reservation.course);
+      setCode(reservation.code);
       setProfessor(reservation.professor);
       setDate(reservation.date);
       setDays(reservation.days);
       setSchedule(reservation.schedule);
       setClassroom(reservation.classroom);
+      setDuration(reservation.duration || 'Temporal');
     }
   }, [reservation]);
 
   const handleSave = () => {
-    const updatedReservation = { professor, course, date, days, schedule, classroom };
+    const updatedReservation = { professor, course, date, days, schedule, classroom, duration, building: selectedBuilding, code};
     onSave(updatedReservation);
   };
 
@@ -46,6 +50,15 @@ export default function EditReservationForm({ reservation, onSave, onCancel }) {
               onChange={(e) => setCourse(e.target.value)}
             />
           </div>
+          <label>
+            Clave:
+            <input
+              type="text"
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              required
+            />
+          </label>
           <div>
             <label>Fecha:</label>
             <input
@@ -90,7 +103,9 @@ export default function EditReservationForm({ reservation, onSave, onCancel }) {
                   <input
                     type="radio"
                     name="tipoReserva"
-                    value="siempre"
+                    value="Siempre"
+                    checked={duration === "Siempre"}
+                    onChange={(e) => setDuration(e.target.value)}
                     required
                     className="translate-y-[1px]"
                   />
@@ -100,7 +115,9 @@ export default function EditReservationForm({ reservation, onSave, onCancel }) {
                   <input
                     type="radio"
                     name="tipoReserva"
-                    value="temporal"
+                    value="Temporal"
+                    checked={duration === 'Temporal'}
+                    onChange={(e) => setDuration(e.target.value)}
                     required
                     className="translate-y-[1px]"
                   />

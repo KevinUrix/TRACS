@@ -42,25 +42,71 @@ export default function Calendar() {
   useEffect(() => {
     if (!selectedCycle || !selectedBuilding) return;
   
-    const fetchSchedule = async () => {
-      try {
-        const response = await fetch(`http://localhost:3001/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
-
-        const data = await response.json();
+    const cacheKey = `schedule_${selectedCycle}_${selectedBuilding}`;
   
-        if (data[selectedBuilding]) {
-          setSchedule(data[selectedBuilding]);
+    const loadLocalSchedule = async () => {
+      try {
+        const localResponse = await fetch(`/data/buildings/${selectedCycle}/${selectedBuilding}.json`);
+        if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
+  
+        const localData = await localResponse.json();
+  
+        if (Array.isArray(localData)) {
+          setSchedule(localData);
+          sessionStorage.setItem(cacheKey, JSON.stringify(localData));
+          console.warn("Horario cargado desde archivo local.");
         } else {
-          console.error("No se encontró la clave para el edificio seleccionado.");
+          console.error("El archivo local no contiene un array válido:", localData);
         }
       } catch (error) {
-        console.error("Error cargando los horarios:", error);
+        console.error("Error al cargar archivo local de respaldo:", error);
+      }
+    };
+  
+    const fetchSchedule = async () => {
+      // Intentar obtener del caché
+      const cachedSchedule = sessionStorage.getItem(cacheKey);
+  
+      if (cachedSchedule) {
+        try {
+          const cachedData = JSON.parse(cachedSchedule);
+          if (Array.isArray(cachedData) && cachedData.length > 0) {
+            console.log("Usando caché para el horario");
+            setSchedule(cachedData);
+            return;
+          } else {
+            console.warn("El caché está vacío o no es un array, recargando datos...");
+          }
+        } catch (error) {
+          console.error("Error al parsear datos del caché:", error);
+        }
+      }
+  
+      // Intentar obtener desde el backend
+      try {
+        const response = await fetch(`http://localhost:3001/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
+        if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
+  
+        const data = await response.json();
+        const scheduleData = data[selectedBuilding];
+  
+        if (Array.isArray(scheduleData) && scheduleData.length > 0) {
+          setSchedule(scheduleData);
+          sessionStorage.setItem(cacheKey, JSON.stringify(scheduleData));
+          console.log("Horario cargado desde el backend.");
+        } else {
+          console.warn("Respuesta vacía del backend. Cargando desde archivo local...");
+          await loadLocalSchedule();
+        }
+      } catch (error) {
+        console.error("Error al obtener datos desde el backend:", error);
+        await loadLocalSchedule();
       }
     };
   
     fetchSchedule();
   }, [selectedCycle, selectedBuilding]);
-  
+
 
   return (
     <>

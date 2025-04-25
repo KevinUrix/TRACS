@@ -53,26 +53,47 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
     setSelectedReservation(res); // Al presionar "Modificar", se selecciona la reserva
   };
 
-  const handleSaveReservation = (updatedReservation) => {
-    // Aquí deberías hacer la lógica de actualización en el backend si es necesario.
-    console.log('Reserva actualizada:', updatedReservation);
-    // Luego actualiza el estado de las reservas
-    setFilteredReservations(filteredReservations.map((res) =>
-      res.course === updatedReservation.course ? updatedReservation : res
-    ));
-    closePopup();
+  const handleSaveReservation = async (updatedReservation) => {
+    try {
+      const params = new URLSearchParams({
+        originalSchedule: selectedReservation.schedule,
+        cycle: selectedCycle,
+        buildingName: selectedBuilding,
+        originalProfessor: selectedReservation.professor,
+        originalDate: selectedReservation.date,
+        originalDuration: selectedReservation.duration,
+      });
+  
+      const res = await fetch(`/api/reservations?${params.toString()}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedReservation)
+      });
+  
+      if (!res.ok) throw new Error('Error al actualizar la reserva');
+  
+      alert('Reserva modificada correctamente');
+  
+      if (refetchReservations) await refetchReservations();
+  
+      closePopup();
+    } catch (err) {
+      console.error(err);
+      alert('Hubo un error al modificar la reserva');
+    }
   };
+  
 
-  const deleteReservation = async (reserva) => {
+  const deleteReservation = async (reservation) => {
     const params = new URLSearchParams({
       cycle: selectedCycle,
       buildingName: selectedBuilding,
-      professor: reserva.professor,
-      schedule: reserva.schedule,
-      date: reserva.date
+      professor: reservation.professor,
+      schedule: reservation.schedule,
+      date: reservation.date,
     });
 
-    const confirmDelete = window.confirm(`¿Estás seguro de eliminar la reserva de ${reserva.course}?`);
+    const confirmDelete = window.confirm(`¿Estás seguro de eliminar la reserva de ${reservation.course}?`);
     if (!confirmDelete) return;
 
     try {
@@ -89,10 +110,10 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
 
       const updated = filteredReservations.filter(r =>
         !(
-          r.professor === reserva.professor &&
-          r.schedule === reserva.schedule &&
-          r.date === reserva.date &&
-          r.building === reserva.building
+          r.professor === reservation.professor &&
+          r.schedule === reservation.schedule &&
+          r.date === reservation.date &&
+          r.building === reservation.building
         )
       );
       setFilteredReservations(updated);
@@ -107,7 +128,7 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
     <>
       <button
         onClick={openPopup}
-        className="bg-blue-500 text-black rounded-full px-3 py-1 shadow-md text-white"
+        className="bg-blue-500 rounded-full px-3 py-1 shadow-md text-white"
       >
         <b>Ver Reservas</b>
       </button>
@@ -132,6 +153,7 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
                     <b>Día:</b> {translateDays(res.days)}<br />
                     <b>Horario:</b> {res.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 - $3:$4")}<br />
                     <b>Salón:</b> {res.classroom}<br />
+                    <b>Duración:</b> {res.duration}<br />
                     <div className="mt-4 flex justify-end gap-2">
                       <button
                         className="px-4 py-2 bg-red-500 text-white rounded-md"
@@ -161,6 +183,7 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
           reservation={selectedReservation}
           onSave={handleSaveReservation}
           onCancel={closePopup}
+          selectedBuilding={selectedBuilding}
         />
       )}
     </>

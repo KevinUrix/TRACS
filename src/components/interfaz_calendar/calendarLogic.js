@@ -112,6 +112,11 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
       const response = await fetch(path);
   
       if (!response.ok) {
+        if (response.status === 404) {
+          console.warn(`No hay reservas guardadas para ${selectedBuilding} en el ciclo ${selectedCycle}.`);
+          setAllReservations([]);
+          return;
+        }
         throw new Error(`No se pudo cargar el archivo: ${path}`);
       }
   
@@ -124,10 +129,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
   };
   
 
-
   useEffect(() => {
     refetchReservations();
-  }, [selectedCycle, selectedBuilding]);  
+  }, [selectedCycle, selectedBuilding]);
 
 
   return (

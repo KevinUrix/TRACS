@@ -1,6 +1,10 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
+const NodeCache = require('node-cache');
+
+// Crear instancia de caché
+const cache = new NodeCache({ stdTTL: 3600, checkperiod: 120 });
 
 const extractData = ($) => {
     const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
@@ -72,6 +76,14 @@ const extractData = ($) => {
 };
 
 const searchProfessor = async (cycle) => {
+    const cacheKey = `schedule-${cycle}`; // Clave para el caché
+    const cachedData = cache.get(cacheKey);
+    
+    if (cachedData) {
+        console.log("Datos obtenidos desde el caché.");
+        return cachedData;
+    }
+
     const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
 
     const formData = new URLSearchParams({
@@ -91,6 +103,15 @@ const searchProfessor = async (cycle) => {
         const decodedData = iconv.decode(response.data, 'latin1'); 
         const $ = cheerio.load(decodedData);
         const data = extractData($);
+
+        // Solo almacenar en caché si hay datos
+        if (data.length > 0) {
+            cache.set(cacheKey, data);
+            console.log("Datos obtenidos y almacenados en caché.");
+        } else {
+            console.warn("No se encontraron datos válidos, no se guardarán en caché.");
+        }
+
         return data;
 
     } catch (err) {

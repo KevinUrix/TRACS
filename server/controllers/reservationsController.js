@@ -1,6 +1,9 @@
 const fs = require('fs').promises;
 const path = require('path');
 
+//
+// GUARDAR RESERVAS
+//
 const saveReservation = async (req, res) => {
   const { cycle, buildingName } = req.query;
   const reservationData = req.body;
@@ -37,7 +40,6 @@ const saveReservation = async (req, res) => {
 
     // Agrega la nueva reserva a los datos existentes
     currentData.data.push(reservationData);
-
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
     // Responde con éxito
@@ -49,8 +51,11 @@ const saveReservation = async (req, res) => {
 };
 
 
+//
+// BORRAR RESERVAS
+//
 const deleteReservation = async (req, res) => {
-  const { cycle, buildingName, professor, schedule, date } = req.query;
+  const { cycle, buildingName, professor, schedule, date, duration } = req.query;
   const filePath = path.join(__dirname, `../../public/data/reservations/${cycle}/${buildingName}.json`);
 
   try {
@@ -69,19 +74,17 @@ const deleteReservation = async (req, res) => {
     }
 
     // Filtrar las reservas que NO coincidan con los criterios
-    const filteredReservations = currentData.data.filter(reserva => {
+    const filteredReservations = currentData.data.filter(reservation => {
       return !(
-        reserva.schedule === schedule &&
-        reserva.building === buildingName &&
-        reserva.date === date &&
-        reserva.professor === professor
+        reservation.schedule === schedule &&
+        reservation.building === buildingName &&
+        reservation.date === date &&
+        reservation.professor === professor
       );
     });
 
     // Si no quedan reservas después del filtrado, aseguramos que `data` sea un array vacío
     currentData.data = filteredReservations;
-
-    // Escribir el archivo con el formato correcto de un array
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
     res.json({ message: 'Reservas eliminadas con éxito' });
@@ -92,7 +95,69 @@ const deleteReservation = async (req, res) => {
 };
 
 
+//
+// EDITAR RESERVAS
+//
+const updateReservation = async (req, res) => {
+  const { cycle, buildingName, originalProfessor, originalSchedule, originalDate} = req.query;
+  const updatedData = req.body;
+
+  if (!updatedData || !updatedData.course || !updatedData.professor) {
+    return res.status(400).json({ error: 'Faltan datos obligatorios para la reserva' });
+  }
+
+  const filePath = path.join(__dirname, `../../public/data/reservations/${cycle}/${buildingName}.json`);
+
+  try {
+    try {
+      await fs.access(filePath);
+    } catch (error) {
+      return res.status(404).json({ error: 'Archivo de reservas no encontrado' });
+    }
+
+    const fileContent = await fs.readFile(filePath, 'utf-8');
+    let currentData = JSON.parse(fileContent);
+
+    if (!Array.isArray(currentData.data)) {
+      currentData.data = [];
+    }
+
+    const index = currentData.data.findIndex(res =>
+      res.professor === originalProfessor &&
+      res.schedule === originalSchedule &&
+      res.date === originalDate
+    );
+
+    if (index === -1) {
+      return res.status(404).json({ error: 'Reserva no encontrada para modificar' });
+    }
+
+    // Reemplazar la reserva en el índice encontrado
+    const orderedReservation = {
+      schedule: updatedData.schedule,
+      days: updatedData.days,
+      building: updatedData.building,
+      classroom: updatedData.classroom,
+      code: updatedData.code,
+      course: updatedData.course,
+      date: updatedData.date,
+      duration: updatedData.duration,
+      professor: updatedData.professor,
+    };
+    currentData.data[index] = orderedReservation;
+
+    await fs.writeFile(filePath, JSON.stringify(currentData, null, 2), 'utf-8');
+
+    res.json({ message: 'Reserva actualizada con éxito' });
+  } catch (error) {
+    console.error("Error al actualizar la reserva:", error.message);
+    res.status(500).json({ error: 'Error interno al actualizar la reserva' });
+  }
+};
+
+
 module.exports = {
   saveReservation,
   deleteReservation,
+  updateReservation,
 };

@@ -43,6 +43,7 @@ export default function ReserveButton({
   const [startTime, setStartTime] = useState(convertTo24HourFormat(selectedHour));
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
   const [reservationDate, setReservationDate] = useState(getTodayDate());
+  const [duration, setDuration] = useState('');
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -81,6 +82,7 @@ export default function ReserveButton({
       code,
       course,
       date: reservationDate,
+      duration,
       professor,
     };
     
@@ -90,6 +92,7 @@ export default function ReserveButton({
     setCourse('');
     setCode('');
     setProfessor('');
+    setDuration('');
     setStartTime(convertTo24HourFormat(selectedHour));
     setEndTime(addMinutes(startTime, 55));
     setReservationDate(getTodayDate());
@@ -108,6 +111,15 @@ export default function ReserveButton({
             <h2>Reservar Aula</h2>
             <form>
               <label>
+                Maestro:
+                <input
+                  type="text"
+                  value={professor}
+                  onChange={(e) => setProfessor(e.target.value)}
+                  required
+                />
+              </label>
+              <label>
                 Materia:
                 <input
                   type="text"
@@ -122,15 +134,6 @@ export default function ReserveButton({
                   type="text"
                   value={code}
                   onChange={(e) => setCode(e.target.value)}
-                  required
-                />
-              </label>
-              <label>
-                Maestro:
-                <input
-                  type="text"
-                  value={professor}
-                  onChange={(e) => setProfessor(e.target.value)}
                   required
                 />
               </label>
@@ -190,7 +193,9 @@ export default function ReserveButton({
                   <input
                     type="radio"
                     name="tipoReserva"
-                    value="siempre"
+                    value="Siempre"
+                    checked={duration === 'Siempre'}
+                    onChange={(e) => setDuration(e.target.value)}
                     required
                     className="translate-y-[1px]"
                   />
@@ -200,7 +205,9 @@ export default function ReserveButton({
                   <input
                     type="radio"
                     name="tipoReserva"
-                    value="temporal"
+                    value="Temporal"
+                    checked={duration === 'Temporal'}
+                    onChange={(e) => setDuration(e.target.value)}
                     required
                     className="translate-y-[1px]"
                   />

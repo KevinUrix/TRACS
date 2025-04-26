@@ -21,11 +21,57 @@ export default function Calendar() {
     return `${hour <= 12 ? hour : hour - 12}:00 ${hour < 12 ? 'AM' : 'PM'}`;
   });
 
-
-  const handleSaveReservation = (reservationData) => {
-    setReservations(prev => [...prev, reservationData]);
-    console.log('Reserva guardada:', reservationData);
+  const fetchReservations = async () => {
+    if (!selectedCycle || !selectedBuilding) return;
+  
+    const path = `/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`;
+  
+    try {
+      const response = await fetch(path);
+    
+      if (!response.ok) {
+        if (response.status === 404) {
+          console.warn(`No hay reservas guardadas para ${selectedBuilding} en el ciclo ${selectedCycle}.`);
+        } else if (response.status === 400) {
+          console.warn(`Error de parámetros: ${response.error}`);
+        } else {
+          console.error(`Error del servidor: ${response.error}`);
+        }
+    
+        setReservations([]);
+        return;
+      }
+    
+      const json = await response.json();
+      setReservations(json.data || []);
+    } catch (err) {
+      console.error("Error de red o formato:", err);
+      setReservations([]);
+    }  
   };
+
+
+  const handleSaveReservation = async (reservationData) => {
+    console.log('Reserva guardada:', reservationData);
+  
+    try {
+      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(reservationData),
+      });
+  
+      if (!response.ok) throw new Error('Error al guardar la reserva');
+      alert('Reserva guardada con éxito');
+      fetchReservations();
+    } catch (error) {
+      console.error(error);
+      alert('Hubo un problema al guardar la reserva');
+    }
+  };
+  
   
   useEffect(() => {
     if (selectedBuilding) {
@@ -112,24 +158,6 @@ export default function Calendar() {
 
     useEffect(() => {
       if (!selectedCycle || !selectedBuilding) return;
-
-      const fetchReservations = async () => {
-        try {
-          const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
-          if (!response.ok) throw new Error("Archivo de reservas no encontrado");
-          
-          const json = await response.json();
-          if (Array.isArray(json.data)) {
-            setReservations(json.data);
-          } else {
-            console.error("Formato incorrecto de reservas");
-          }
-        } catch (error) {
-          console.error("Error al cargar reservas:", error);
-          setReservations([]);
-        }
-      };
-
       fetchReservations();
     }, [selectedCycle, selectedBuilding]);
 
@@ -145,6 +173,8 @@ export default function Calendar() {
               onUpdateCicle={setSelectedCycle}
               onUpdateBuilding={setSelectedBuilding}
               onUpdateDay={setSelectedDay}
+              fetchReservations={fetchReservations}
+              reservations={reservations}
             />
           </div>
           <div className="table-container">

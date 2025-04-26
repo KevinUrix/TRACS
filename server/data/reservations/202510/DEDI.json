@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "schedule": "1400-1455",
+      "schedule": "0800-0855",
       "days": "V",
-      "building": "DUCT1",
-      "classroom": "LC02",
+      "building": "DEDI",
+      "classroom": "A002",
       "code": "PRUEBA",
       "course": "PRUEBA",
       "date": "2025-04-25",
@@ -12,15 +12,15 @@
       "professor": "PRUEBA"
     },
     {
-      "schedule": "1300-1355",
+      "schedule": "0700-0755",
       "days": "V",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "code": "AAA",
-      "course": "AAA",
+      "building": "DEDI",
+      "classroom": "A001",
+      "code": "A",
+      "course": "A",
       "date": "2025-04-25",
       "duration": "Temporal",
-      "professor": "AAA"
+      "professor": "A"
     }
   ]
 }

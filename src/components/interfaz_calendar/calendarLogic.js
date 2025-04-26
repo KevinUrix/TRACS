@@ -4,13 +4,13 @@ import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle }) {
+export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle, fetchReservations, reservations }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCycle, setSelectedCycle] = useState('');
   const [cicle, setCicle] = useState([]);
   const [building, setBuilding] = useState([]);
-  const [allReservations, setAllReservations] = useState([]);
+  // const [allReservations, setAllReservations] = useState([]);
   
   
 
@@ -97,37 +97,9 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
     }
   };
 
-  const refetchReservations = async () => {
-    if (!selectedCycle || !selectedBuilding) return;
-  
-    const path = `/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`;
-  
-    try {
-      const response = await fetch(path);
-    
-      if (!response.ok) {
-        if (response.status === 404) {
-          console.warn(`No hay reservas guardadas para ${selectedBuilding} en el ciclo ${selectedCycle}.`);
-        } else if (response.status === 400) {
-          console.warn(`Error de parámetros: ${response.error}`);
-        } else {
-          console.error(`Error del servidor: ${response.error}`);
-        }
-    
-        setAllReservations([]);
-        return;
-      }
-    
-      const json = await response.json();
-      setAllReservations(json.data || []);
-    } catch (err) {
-      console.error("Error de red o formato:", err);
-      setAllReservations([]);
-    }  
-  };
-  useEffect(() => {
-    refetchReservations();
-  }, [selectedCycle, selectedBuilding]);
+  // useEffect(() => {
+  //   fetchReservations();
+  // }, [selectedCycle, selectedBuilding]);
 
 
   return (
@@ -176,10 +148,10 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
 
       <div className="-ml-6">
         <ViewReservationsButton
-          allReservations={allReservations}
+          reservations={reservations}
           selectedCycle={selectedCycle}
           selectedBuilding={selectedBuilding}
-          refetchReservations={refetchReservations}
+          fetchReservations={fetchReservations}
         />
       </div>
 

@@ -7,6 +7,7 @@ export default function ReserveButton({
   selectedDay,
   selectedHour,
   classroom,
+  onSaveReservation
 }) {
   // Función para convertir la hora en formato de 12 horas (AM/PM) a formato de 24 horas
   const convertTo24HourFormat = (time) => {
@@ -51,24 +52,6 @@ export default function ReserveButton({
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-  };
-
-  const onSaveReservation = async (reservationData) => {
-    try {
-      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(reservationData),
-      });
-  
-      if (!response.ok) throw new Error('Error al guardar la reserva');
-      alert('Reserva guardada con éxito');
-    } catch (error) {
-      console.error(error);
-      alert('Hubo un problema al guardar la reserva');
-    }
   };
 
   

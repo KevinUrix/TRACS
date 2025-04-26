@@ -24,22 +24,22 @@ function translateDays(daysString) {
   return sorted.map((char) => dayNames[char]).join(', ');
 }
 
-export default function ViewReservationsButton({ allReservations, selectedCycle, selectedBuilding, refetchReservations }) {
+export default function ViewReservationsButton({ reservations, selectedCycle, selectedBuilding, fetchReservations }) {
   const [showPopup, setShowPopup] = useState(false);
   const [filteredReservations, setFilteredReservations] = useState([]);
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
 
   useEffect(() => {
-    if (Array.isArray(allReservations)) {
-      setFilteredReservations(allReservations);
+    if (Array.isArray(reservations)) {
+      setFilteredReservations(reservations);
     } else {
-      console.error('allReservations no es un array');
+      console.error('reservations no es un array');
     }
-  }, [allReservations]);
+  }, [reservations]);
 
   const openPopup = async () => {
-    if (refetchReservations) {
-      await refetchReservations();
+    if (fetchReservations) {
+      await fetchReservations();
     }
     setShowPopup(true);
   };
@@ -74,7 +74,7 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
   
       alert('Reserva modificada correctamente');
   
-      if (refetchReservations) await refetchReservations();
+      if (fetchReservations) await fetchReservations();
   
       closePopup();
     } catch (err) {
@@ -117,6 +117,7 @@ export default function ViewReservationsButton({ allReservations, selectedCycle,
         )
       );
       setFilteredReservations(updated);
+      fetchReservations();
     } catch (err) {
       console.error("Error al eliminar:", err);
       alert("Hubo un error al eliminar la reserva.");

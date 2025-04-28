@@ -21,6 +21,28 @@
       "date": "2025-04-25",
       "duration": "Temporal",
       "professor": "AAA"
+    },
+    {
+      "schedule": "1700-1755",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "d",
+      "course": "d",
+      "date": "2025-04-28",
+      "duration": "Temporal",
+      "professor": "d"
+    },
+    {
+      "schedule": "1900-1955",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC05",
+      "code": "fg",
+      "course": "fgfg",
+      "date": "2025-04-28",
+      "duration": "Siempre",
+      "professor": "gfgfdg"
     }
   ]
 }

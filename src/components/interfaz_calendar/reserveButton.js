@@ -44,7 +44,8 @@ export default function ReserveButton({
   const [startTime, setStartTime] = useState(convertTo24HourFormat(selectedHour));
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
   const [reservationDate, setReservationDate] = useState(getTodayDate());
-  const [duration, setDuration] = useState('');
+  const [duration, setDuration] = useState('Temporal');
+  const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('Sí');
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -67,6 +68,7 @@ export default function ReserveButton({
       date: reservationDate,
       duration,
       professor,
+      createInGoogleCalendar, // <-- Aquí agregamos la opción
     };
     
     onSaveReservation(reservationData);
@@ -197,31 +199,61 @@ export default function ReserveButton({
                   disabled
                 />
               </label>
-              <div className="flex items-center gap-4">
-                <label className="inline-flex items-center gap-2">
-                  Siempre:
-                  <input
-                    type="radio"
-                    name="tipoReserva"
-                    value="Siempre"
-                    checked={duration === 'Siempre'}
-                    onChange={(e) => setDuration(e.target.value)}
-                    required
-                    className="translate-y-[1px]"
-                  />
-                </label>
-                <label className="inline-flex items-center gap-2">
-                  Temporal:
-                  <input
-                    type="radio"
-                    name="tipoReserva"
-                    value="Temporal"
-                    checked={duration === 'Temporal'}
-                    onChange={(e) => setDuration(e.target.value)}
-                    required
-                    className="translate-y-[1px]"
-                  />
-                </label>
+              <div className="flex flex-col items-start gap-2 mb-4">
+                <span className="font-semibold">Duración de la reserva:</span>
+                <div className="flex gap-4">
+                  <label className="inline-flex items-center gap-2">
+                    Siempre:
+                    <input
+                      type="radio"
+                      name="tipoReserva"
+                      value="Siempre"
+                      checked={duration === 'Siempre'}
+                      onChange={(e) => setDuration(e.target.value)}
+                      required
+                      className="translate-y-[1px]"
+                    />
+                  </label>
+                  <label className="inline-flex items-center gap-2">
+                    Temporal:
+                    <input
+                      type="radio"
+                      name="tipoReserva"
+                      value="Temporal"
+                      checked={duration === 'Temporal'}
+                      onChange={(e) => setDuration(e.target.value)}
+                      required
+                      className="translate-y-[1px]"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div className="flex flex-col items-start gap-2 mb-4">
+                <span className="font-semibold">Crear reserva en Google Calendar:</span>
+                <div className="flex gap-4">
+                  <label className="inline-flex items-center gap-2">
+                    Sí:
+                    <input
+                      type="radio"
+                      name="googleCalendar"
+                      value="Sí"
+                      checked={createInGoogleCalendar === 'Sí'}
+                      onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
+                      className="translate-y-[1px]"
+                    />
+                  </label>
+                  <label className="inline-flex items-center gap-2">
+                    No:
+                    <input
+                      type="radio"
+                      name="googleCalendar"
+                      value="No"
+                      checked={createInGoogleCalendar === 'No'}
+                      onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
+                      className="translate-y-[1px]"
+                    />
+                  </label>
+                </div>
               </div>
               <div className="modal-buttons">
                 <button className="cancel-button" onClick={handleCloseModal}>

@@ -26,12 +26,14 @@ export default function InstructionsButton() {
               <li>Selecciona un edificio.</li>
               <li>Elige el día de la semana.</li>
             </ul>
-            <button
-              onClick={toggleInstructions}
-              className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
-            >
-              Cerrar
-            </button>
+            <div className="flex justify-center">
+              <button
+                onClick={toggleInstructions}
+                className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
+              >
+                Cerrar
+              </button>
+            </div>
           </div>
         </div>
       )}

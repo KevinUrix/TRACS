@@ -1,0 +1,1263 @@
+[
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "154536",
+      "code": "IF541",
+      "students": 4,
+      "course": "ALGEBRA LINEAL AVANZADA"
+    },
+    "professor": "ARANA DANIEL, NANCY GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "117633",
+      "code": "I6153",
+      "students": 21,
+      "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
+    },
+    "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "194759",
+      "code": "IK695",
+      "students": 2,
+      "course": "ANALISIS DE RIESGOS"
+    },
+    "professor": "CABRERA DIAZ, ELISA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "209758",
+      "code": "IL381",
+      "students": 40,
+      "course": "APRENDIZAJE MAQUINA"
+    },
+    "professor": "AVILA CARDENAS, KARLA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L M I . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "223326",
+      "code": "IL381",
+      "students": 29,
+      "course": "APRENDIZAJE MAQUINA"
+    },
+    "professor": "ESCOBAR CUEVAS, HECTOR JOAQUIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "223326",
+      "code": "IL381",
+      "students": 29,
+      "course": "APRENDIZAJE MAQUINA"
+    },
+    "professor": "ESCOBAR CUEVAS, HECTOR JOAQUIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L M I . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "223326",
+      "code": "IL381",
+      "students": 29,
+      "course": "APRENDIZAJE MAQUINA"
+    },
+    "professor": "ESCOBAR CUEVAS, HECTOR JOAQUIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "223326",
+      "code": "IL381",
+      "students": 29,
+      "course": "APRENDIZAJE MAQUINA"
+    },
+    "professor": "ESCOBAR CUEVAS, HECTOR JOAQUIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "182089",
+      "code": "I6125",
+      "students": 30,
+      "course": "BIOESTADISTICA"
+    },
+    "professor": "FRANCO ARROYO, NOEL NOE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "178759",
+      "code": "IK863",
+      "students": 0,
+      "course": "BIOESTADISTICA"
+    },
+    "professor": "RAMOS IBARRA, JOSE ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "201916",
+      "code": "I6148",
+      "students": 26,
+      "course": "BIOFARMACIA Y FARMACOCINETICA"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A012",
+      "nrc": "210564",
+      "code": "IK690",
+      "students": 1,
+      "course": "BIOINFORMATICA"
+    },
+    "professor": "MACIAS RODRIGUEZ, MARIA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "178762",
+      "code": "IK862",
+      "students": 0,
+      "course": "BIOLOGIA MOLECULAR"
+    },
+    "professor": "BALCAZAR LOPEZ, EDGAR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDZ2",
+      "classroom": "A023",
+      "nrc": "216229",
+      "code": "V2315",
+      "students": 4,
+      "course": "BIOLOGIA MOLECULAR"
+    },
+    "professor": "GURROLA DIAZ, CARMEN MAGDALENA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "124845",
+      "code": "I6178",
+      "students": 26,
+      "course": "BIOTECNOLOGIA"
+    },
+    "professor": "CAVAZOS GARDUÑO, ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "209781",
+      "code": "V0817",
+      "students": 29,
+      "course": "DISEÑO VISUAL 3D"
+    },
+    "professor": "PEREZ PADILLA, NAYELI ARELI"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "209781",
+      "code": "V0817",
+      "students": 29,
+      "course": "DISEÑO VISUAL 3D"
+    },
+    "professor": "PEREZ PADILLA, NAYELI ARELI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "209781",
+      "code": "V0817",
+      "students": 29,
+      "course": "DISEÑO VISUAL 3D"
+    },
+    "professor": "PEREZ PADILLA, NAYELI ARELI"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "209781",
+      "code": "V0817",
+      "students": 29,
+      "course": "DISEÑO VISUAL 3D"
+    },
+    "professor": "PEREZ PADILLA, NAYELI ARELI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "79434",
+      "code": "I6995",
+      "students": 3,
+      "course": "ESPECTROSCOPIA Y METODOS DE SEPARACION"
+    },
+    "professor": "ROSAS SANCHEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "76918",
+      "code": "I6142",
+      "students": 36,
+      "course": "FARMACOLOGIA II"
+    },
+    "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "76918",
+      "code": "I6142",
+      "students": 36,
+      "course": "FARMACOLOGIA II"
+    },
+    "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "76918",
+      "code": "I6142",
+      "students": 36,
+      "course": "FARMACOLOGIA II"
+    },
+    "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "76918",
+      "code": "I6142",
+      "students": 36,
+      "course": "FARMACOLOGIA II"
+    },
+    "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "137202",
+      "code": "I6142",
+      "students": 32,
+      "course": "FARMACOLOGIA II"
+    },
+    "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "92251",
+      "code": "I5812",
+      "students": 19,
+      "course": "FISICOQUIMICA PARA INGENIEROS I"
+    },
+    "professor": "OROZCO GUAREÑO, EULOGIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "152793",
+      "code": "I5812",
+      "students": 23,
+      "course": "FISICOQUIMICA PARA INGENIEROS I"
+    },
+    "professor": "MUÑOZ GARCIA, RUBEN OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "42390",
+      "code": "I6137",
+      "students": 32,
+      "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
+    },
+    "professor": "MEZA RIOS, ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "223771",
+      "code": "IL340",
+      "students": 13,
+      "course": "FUNDAMENTOS DE FISICA"
+    },
+    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "190401",
+      "code": "IK686",
+      "students": 1,
+      "course": "GENOTOXICIDAD ALIMENTARIA"
+    },
+    "professor": "FRANCO RODRIGUEZ, NANCY ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "187374",
+      "code": "IK697",
+      "students": 4,
+      "course": "HACCP Y SISTEMAS DE CONTROLES PREVENTIVOS"
+    },
+    "professor": "RODRIGUEZ GARCIA, MA OFELIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "211883",
+      "code": "V0730",
+      "students": 35,
+      "course": "INFORMATICA ADMINISTRATIVA"
+    },
+    "professor": "QUIROZ PEREZ, ERIKA LIZETH"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "211888",
+      "code": "V0730",
+      "students": 30,
+      "course": "INFORMATICA ADMINISTRATIVA"
+    },
+    "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "209782",
+      "code": "V0717",
+      "students": 0,
+      "course": "INGENIERIA Y SUSTENTABILIDAD"
+    },
+    "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "178168",
+      "code": "IK694",
+      "students": 4,
+      "course": "INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "PEREZ MONTAÑO, JULIA AURORA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "178168",
+      "code": "IK694",
+      "students": 4,
+      "course": "INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "PEREZ MONTAÑO, JULIA AURORA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "178168",
+      "code": "IK694",
+      "students": 4,
+      "course": "INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "PEREZ MONTAÑO, JULIA AURORA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "178168",
+      "code": "IK694",
+      "students": 4,
+      "course": "INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "PEREZ MONTAÑO, JULIA AURORA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "189723",
+      "code": "I6145",
+      "students": 28,
+      "course": "MICROBIOLOGIA"
+    },
+    "professor": "CHAVARIN SALAZAR, DANIEL IGNACIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "38459",
+      "code": "PT129",
+      "students": 22,
+      "course": "MICROBIOLOGIA DE LOS ALIMENTOS"
+    },
+    "professor": "MARIN MOLINA, ANA LAURA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "42521",
+      "code": "I6135",
+      "students": 31,
+      "course": "MORFOLOGIA"
+    },
+    "professor": "PESQUEDA CENDEJAS, LADY KAREN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A013",
+      "nrc": "191427",
+      "code": "IK692",
+      "students": 3,
+      "course": "NANOSISTEMAS APLICADAS A LA INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "SILVA JARA, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A012",
+      "nrc": "191427",
+      "code": "IK692",
+      "students": 3,
+      "course": "NANOSISTEMAS APLICADAS A LA INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "SILVA JARA, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A013",
+      "nrc": "191427",
+      "code": "IK692",
+      "students": 3,
+      "course": "NANOSISTEMAS APLICADAS A LA INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "SILVA JARA, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A012",
+      "nrc": "191427",
+      "code": "IK692",
+      "students": 3,
+      "course": "NANOSISTEMAS APLICADAS A LA INOCUIDAD ALIMENTARIA"
+    },
+    "professor": "SILVA JARA, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "117683",
+      "code": "I6141",
+      "students": 32,
+      "course": "PARASITOLOGIA"
+    },
+    "professor": "MARIN MOLINA, ANA LAURA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "206027",
+      "code": "V0818",
+      "students": 29,
+      "course": "PROYECTO SUSTENTABLE"
+    },
+    "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "140747",
+      "code": "I7519",
+      "students": 30,
+      "course": "QUIMICA DE LOS ALIMENTOS I"
+    },
+    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "137219",
+      "code": "I7525",
+      "students": 18,
+      "course": "QUIMICA DE LOS ALIMENTOS II"
+    },
+    "professor": "BARROS CASTILLO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "104259",
+      "code": "I7537",
+      "students": 19,
+      "course": "QUIMICA DE LOS PRODUCTOS NATURALES"
+    },
+    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "63401",
+      "code": "I7482",
+      "students": 27,
+      "course": "QUIMICA INORGANICA I"
+    },
+    "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "199979",
+      "code": "IK687",
+      "students": 5,
+      "course": "QUIMICA INSTRUMENTAL"
+    },
+    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "199979",
+      "code": "IK687",
+      "students": 5,
+      "course": "QUIMICA INSTRUMENTAL"
+    },
+    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "199979",
+      "code": "IK687",
+      "students": 5,
+      "course": "QUIMICA INSTRUMENTAL"
+    },
+    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "199979",
+      "code": "IK687",
+      "students": 5,
+      "course": "QUIMICA INSTRUMENTAL"
+    },
+    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "63974",
+      "code": "I6935",
+      "students": 5,
+      "course": "QUIMICA ORGANICA AVANZADA I"
+    },
+    "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "112062",
+      "code": "I6124",
+      "students": 36,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "42627",
+      "code": "I5806",
+      "students": 30,
+      "course": "QUIMICA ORGANICA II"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "223191",
+      "code": "IL383",
+      "students": 36,
+      "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A013",
+      "nrc": "187375",
+      "code": "IK679",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
+    },
+    "professor": "ANAYA ESPARZA, LUIS MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "182096",
+      "code": "IK678",
+      "students": 6,
+      "course": "SEMINARIO DE AVANCE DE TESIS II"
+    },
+    "professor": "CABRERA DIAZ, ELISA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "172777",
+      "code": "IJ741",
+      "students": 4,
+      "course": "SEMINARIO DE INVESTIGACION"
+    },
+    "professor": "CAVAZOS GARDUÑO, ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "103849",
+      "code": "I7039",
+      "students": 33,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL I"
+    },
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0800-0955",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A023",
+      "nrc": "216230",
+      "code": "V2338",
+      "students": 4,
+      "course": "SEMINARIO DE TESIS I"
+    },
+    "professor": "ZEPEDA MORALES, ADELAIDA SARA MINIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "103817",
+      "code": "I6165",
+      "students": 30,
+      "course": "SEMINARIO DE TUTORIA DE EGRESO"
+    },
+    "professor": "MARTINEZ CARDENAS, CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "125000",
+      "code": "I6163",
+      "students": 30,
+      "course": "SEMINARIO DE TUTORIA INTERMEDIA II"
+    },
+    "professor": "OROZCO HERNANDEZ, LAURA OFELIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "84957",
+      "code": "I6216",
+      "students": 20,
+      "course": "SINTESIS DE FARMACOS"
+    },
+    "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A012",
+      "nrc": "178167",
+      "code": "IK676",
+      "students": 10,
+      "course": "SISTEMAS DE GESTION DE LA INOCUIDAD"
+    },
+    "professor": "RODRIGUEZ GARCIA, MA OFELIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "211874",
+      "code": "I9913",
+      "students": 22,
+      "course": "SISTEMAS INTELIGENTES I"
+    },
+    "professor": "RUZ CANUL, MARIO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "83851",
+      "code": "I6166",
+      "students": 28,
+      "course": "TECNOLOGIA FARMACEUTICA I"
+    },
+    "professor": "BARAJAS MENDOZA, MARIA ANTONIETA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "79464",
+      "code": "I7013",
+      "students": 1,
+      "course": "TEMA SELECTOS EN BIOQUIMICA"
+    },
+    "professor": "CORDOVA LOPEZ, JESUS ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "118765",
+      "code": "I6046",
+      "students": 16,
+      "course": "TOPICOS DE FISICA CUANTICA"
+    },
+    "professor": "KLIMOV, ANDREI"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A023",
+      "nrc": "216218",
+      "code": "V2330",
+      "students": 4,
+      "course": "TOPICOS SELECTOS EN BIOQUIMICA MOLECULAR A"
+    },
+    "professor": "ZEPEDA MORALES, ADELAIDA SARA MINIA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A013",
+      "nrc": "182092",
+      "code": "IK680",
+      "students": 3,
+      "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "MARTINEZ CHAVEZ, LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "182092",
+      "code": "IK680",
+      "students": 3,
+      "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "MARTINEZ CHAVEZ, LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A013",
+      "nrc": "182092",
+      "code": "IK680",
+      "students": 3,
+      "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "MARTINEZ CHAVEZ, LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "182092",
+      "code": "IK680",
+      "students": 3,
+      "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "MARTINEZ CHAVEZ, LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "191428",
+      "code": "IK684",
+      "students": 1,
+      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "SERRANO NIÑO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "191428",
+      "code": "IK684",
+      "students": 1,
+      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "SERRANO NIÑO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "191428",
+      "code": "IK684",
+      "students": 1,
+      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "SERRANO NIÑO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "191428",
+      "code": "IK684",
+      "students": 1,
+      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "SERRANO NIÑO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "117641",
+      "code": "I6175",
+      "students": 29,
+      "course": "TOXICOLOGIA APLICADA"
+    },
+    "professor": "MUÑOZ ALMAGUER, MARIA LUISA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "172776",
+      "code": "IJ740",
+      "students": 4,
+      "course": "TOXICOLOGIA DE ALIMENTOS"
+    },
+    "professor": "NOA PEREZ, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "172776",
+      "code": "IJ740",
+      "students": 4,
+      "course": "TOXICOLOGIA DE ALIMENTOS"
+    },
+    "professor": "NOA PEREZ, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "172776",
+      "code": "IJ740",
+      "students": 4,
+      "course": "TOXICOLOGIA DE ALIMENTOS"
+    },
+    "professor": "NOA PEREZ, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "172776",
+      "code": "IJ740",
+      "students": 4,
+      "course": "TOXICOLOGIA DE ALIMENTOS"
+    },
+    "professor": "NOA PEREZ, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "124826",
+      "code": "I6172",
+      "students": 30,
+      "course": "VALIDACION DE PROCESOS Y METODOS ANALITICOS"
+    },
+    "professor": "DE ALMEIDA CUNHA, NELSON BRUNO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "138831",
+      "code": "I6172",
+      "students": 30,
+      "course": "VALIDACION DE PROCESOS Y METODOS ANALITICOS"
+    },
+    "professor": "GARCIA LEMUS, CUAUHTEMOC RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1755",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A023",
+      "nrc": "216234",
+      "code": "V2320",
+      "students": 3,
+      "course": "VIAS DE SEÑALIZACION Y TRANSDUCCION DE SEÑALES CELULARES"
+    },
+    "professor": "TORO CASTILLO, MARIA DEL CARMEN"
+  }
+]

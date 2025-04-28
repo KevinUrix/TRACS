@@ -2,14 +2,23 @@ import { useState } from 'react';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function DownloadButton({ onDownload }) {
-  
   const [showDownload, setShowDownload] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [downloadStatus, setDownloadStatus] = useState('');
-  
 
   const toggleDownload = () => {
-    setShowDownload(!showDownload);
+    if (!isLoading) {
+      setShowDownload(!showDownload);
+    }
+  };
+
+  const handleDownload = async () => {
+    setIsLoading(true);
+    try {
+      await onDownload();
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -20,7 +29,7 @@ export default function DownloadButton({ onDownload }) {
         onClick={toggleDownload}
         id="createJSON"
       >
-        <img src="/downloadArrow.png" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
+        <img src="/downloadArrow.png" alt="¡Descargar!" className="h-6 w-6" />
       </button>
 
       {showDownload && (
@@ -31,25 +40,31 @@ export default function DownloadButton({ onDownload }) {
               <li>Selecciona un ciclo.</li>
               <li>Presiona el botón color azul.</li>
             </ul>
-            <div className="modal-buttons-download">
+            <div className="modal-buttons-download flex gap-4 mt-4">
+              {/* Botón Cancelar */}
               <button
                 onClick={toggleDownload}
-                className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
+                disabled={isLoading}
+                className={`px-4 py-2 rounded-md ${
+                  isLoading ? 'bg-red-300 cursor-not-allowed' : 'bg-red-500'
+                } text-white`}
               >
-                Cerrar
+                {isLoading ? 'Espera...' : 'Cerrar'}
               </button>
 
-              {/* Agregar el botón de descarga con feedback */}
+              {/* Botón Descargar */}
               <button
-                onClick={onDownload}
+                onClick={handleDownload}
                 disabled={isLoading}
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+                className={`px-4 py-2 rounded-md ${
+                  isLoading ? 'bg-blue-300 cursor-not-allowed' : 'bg-blue-500'
+                } text-white`}
               >
                 {isLoading ? 'Descargando...' : 'Descargar JSON de todos los edificios'}
               </button>
             </div>
 
-            {/* Mostrar mensaje de estado */}
+            {/* Mostrar mensaje de estado si existe */}
             {downloadStatus && (
               <p className="mt-2 text-sm text-gray-600">{downloadStatus}</p>
             )}

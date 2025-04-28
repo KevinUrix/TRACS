@@ -115,10 +115,12 @@
   z-index: 3; /* Asegura que quede encima de las otras celdas */
   background-color: #f3f4f6;
   border-right: 1px solid #d1d5db;
+
+  height: 10rem;
 }
 
 .schedule-table thead th:first-child { /* fija el cuadro de hora */
-  position: absolute;
+  position:sticky;
 }
 
 
@@ -126,6 +128,7 @@
 .schedule-table td {
   text-align: center;
   overflow: hidden;
+  vertical-align: middle;
 }
 
 /*------------------ Cabecera ------------------*/
@@ -159,7 +162,7 @@
 .schedule-table td:not(:first-child) {
   min-width: 25rem;
   max-width: 25rem;
-  height: 15.625rem;
+  height: 10rem;
 }
 
 /*------------------ Estados de celda ------------------*/
@@ -183,6 +186,7 @@
 .table-row:hover {
   background-color: #f1f5f9;
 }
+
 
 /*---------------------------------------------------------------------------*/
 .professor-name {

@@ -161,6 +161,8 @@ export default function Calendar() {
       fetchReservations();
     }, [selectedCycle, selectedBuilding]);
 
+  const renderedCells = {}; // <<< Esto es nuevo, afuera del return, para registrar qué (hora, salón) ya se pintó
+
 
   return (
     <>
@@ -181,7 +183,7 @@ export default function Calendar() {
             <table className="schedule-table">
               <thead>
                 <tr className="table-header">
-                  <th className="table-cell">Hora</th>
+                  <th className="table-cell"></th> {/*Aquí antes estaba Hora*/}
                   {classrooms.map((classroom, index) => (
                     <th key={index} className="table-cell">{classroom}</th>
                   ))}
@@ -189,7 +191,6 @@ export default function Calendar() {
               </thead>
               <tbody>
                 {hours.map((hour) => {
-                  // Convertir la hora de la tabla a formato de 24 horas
                   const [hourPart, period] = hour.split(' ');
                   let currentHour = parseInt(hourPart.split(':')[0], 10);
 
@@ -200,16 +201,19 @@ export default function Calendar() {
                     <tr key={hour} className="table-row">
                       <td className="table-cell">{hour}</td>
                       {classrooms.map((classroom, index) => {
+                        const cellKey = `${currentHour}-${classroom}`;
 
+                        // No renderizar si ya se pintó por rowspan
+                        if (renderedCells[cellKey]) return null;
 
-                        // Primero buscar si hay una reserva
+                        // Buscar si hay reserva
                         const matchingReservation = reservations.find(res => {
                           const [startTime, endTime] = res.schedule.split('-');
                           const startHour = parseInt(startTime.substring(0, 2), 10);
                           const endHour = parseInt(endTime.substring(0, 2), 10);
                           const days = res.days.split(' ');
 
-                          const isOnDay = days.includes(selectedDay.charAt(0)); // solo usa la inicial (e.g. 'Lunes' -> 'L')
+                          const isOnDay = days.includes(selectedDay.charAt(0));
                           return (
                             currentHour >= startHour &&
                             currentHour <= endHour &&
@@ -217,13 +221,13 @@ export default function Calendar() {
                             isOnDay
                           );
                         });
-                        // Filtrar cursos según el día seleccionado
+
+                        // Buscar si hay curso
                         const matchingCourse = schedule.find(scheduleItem => {
                           const [startTime, endTime] = scheduleItem.data.schedule.split('-');
                           const startHour = parseInt(startTime.substring(0, 2), 10);
                           const endHour = parseInt(endTime.substring(0, 2), 10);
 
-                          // Verificar si el curso está en el día seleccionado
                           const days = scheduleItem.data.days.split(' ');
                           const isCourseOnSelectedDay = days.includes(selectedDay); 
 
@@ -236,72 +240,96 @@ export default function Calendar() {
                         });
 
                         let hue = 0;
-
                         if (matchingCourse) {
                           hue = (
                             (matchingCourse.data.course.length +
-                             matchingCourse.professor.length * 17 +
-                             matchingCourse.data.nrc * 1) * 37
+                            matchingCourse.professor.length * 17 +
+                            matchingCourse.data.nrc * 1) * 37
                           ) % 360;
-                        
+
                           const forbiddenHueRanges = [
-                            [45, 65],     // Amarillo
-                            [66, 140],    // Verde lima
-                            //[141, 169],   // Verde fuerte
-                            //[170, 200],   // Aqua / Cyan
-                            //[300, 345]    // Fucsia / Rosa
+                            [45, 65],
+                            [66, 140],
                           ];
-                        
                           const isForbidden = (h) =>
                             forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
-                        
+
                           while (isForbidden(hue)) {
-                            hue = (hue + 31) % 360; // Desfasamos en pasos no múltiplos del rango para evitar bucles infinitos
+                            hue = (hue + 31) % 360;
                           }
                         }
-                        
+
                         const backgroundColor = matchingCourse
-                          ? `hsl(${hue}, 50%, 50%)` // Saturación alta y luminosidad más baja para evitar tonos pastel
-                          :  matchingReservation
-                            ? '#0a304b' // azul tailwind 500
+                          ? `hsl(${hue}, 50%, 50%)`
+                          : matchingReservation
+                            ? '#0a304b'
                             : 'white';
 
+                        let rowspan = 1;
+
+                        // Calcular rowspan si es curso o reserva
+                        if (matchingCourse) {
+                          const [start, end] = matchingCourse.data.schedule.split('-');
+                          const startHour = parseInt(start.substring(0, 2), 10);
+                          const endHour = parseInt(end.substring(0, 2), 10);
+                          rowspan = endHour - startHour + 1;
+
+                          // Marcar horas ya renderizadas
+                          for (let h = startHour; h <= endHour; h++) {
+                            renderedCells[`${h}-${classroom}`] = true;
+                          }
+                        } else if (matchingReservation) {
+                          const [start, end] = matchingReservation.schedule.split('-');
+                          const startHour = parseInt(start.substring(0, 2), 10);
+                          const endHour = parseInt(end.substring(0, 2), 10);
+                          rowspan = endHour - startHour + 1;
+
+                          for (let h = startHour; h <= endHour; h++) {
+                            renderedCells[`${h}-${classroom}`] = true;
+                          }
+                        }
 
                         return (
-                          <td key={index} 
-                            className={`table-cell font-semibold ${matchingReservation ? 'reserved-cell' : (matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell')}`}
-                            style={{ backgroundColor }}>
+                          <td
+                            key={index}
+                            className={`table-cell font-semibold ${
+                              matchingReservation ? 'reserved-cell' : (
+                                matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'
+                              )}`}
+                            style={{ backgroundColor }}
+                            rowSpan={rowspan}
+                          >
                             {matchingReservation ? (
-                                          <>
-                                            <div className="professor-name">{matchingReservation.professor}</div>
-                                            <div className="course-name">{matchingReservation.course}</div>
-                                            <div className="course-code">Clave: {matchingReservation.code}</div>
-                                            <div className="course-date">Fecha: {matchingReservation.date}</div>
-                                          </>
-                                        ) : matchingCourse ? (
-                                          <>
-                                            <div className="professor-name">{matchingCourse.professor}</div>
-                                            <div className="course-name">{matchingCourse.data.course}</div>
-                                            <div className="course-code">Clave: {matchingCourse.data.code}</div>
-                                            <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
-                                            <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div>
-                                          </>
-                                        ) : (
-                                          <ReserveButton
-                                            selectedCycle={selectedCycle}
-                                            selectedBuilding={selectedBuilding}
-                                            selectedDay={selectedDay}
-                                            selectedHour={hour}
-                                            classroom={classroom}
-                                            onSaveReservation={handleSaveReservation}
-                                          />
-                                        )}
-                                      </td>
-                                    );
-                                  })}
-                                </tr>
-                              );
-                            })}
+                              <>
+                                <div className="professor-name">{matchingReservation.professor}</div>
+                                <div className="course-name">{matchingReservation.course}</div>
+                                <div className="course-code">Clave: {matchingReservation.code}</div>
+                                <div className="course-date">Fecha: {matchingReservation.date}</div>
+                              </>
+                            ) : matchingCourse ? (
+                              <>
+                                <div className="professor-name">{matchingCourse.professor}</div>
+                                <div className="course-name">{matchingCourse.data.course}</div>
+                                <div className="course-code">Clave: {matchingCourse.data.code}</div>
+                                <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
+                                <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div>
+                              </>
+                            ) : (
+                              <ReserveButton
+                                selectedCycle={selectedCycle}
+                                selectedBuilding={selectedBuilding}
+                                selectedDay={selectedDay}
+                                selectedHour={hour}
+                                classroom={classroom}
+                                onSaveReservation={handleSaveReservation}
+                              />
+                            )}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

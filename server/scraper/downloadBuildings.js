@@ -1,5 +1,8 @@
 const { scrapeData } = require('../scraper/schedules');
-const buildings = require('../config/buildings');
+
+const buildingsData = require('../config/buildings');
+const buildings = buildingsData.edifp;
+
 const fs = require('fs');
 const path = require('path');
 

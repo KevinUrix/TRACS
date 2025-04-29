@@ -96,7 +96,7 @@
   border: 1px solid #d1d5db;
   background-color: white;
   box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
-  border-collapse: separate;
+  border-collapse:separate;
   table-layout: fixed;
 }
 /*------------------ Cabecera fija vertical ------------------*/
@@ -116,8 +116,21 @@
   background-color: #f3f4f6;
   border-right: 1px solid #d1d5db;
 
-  height: 10rem;
+  /*height: 8rem;*/
 }
+
+/* Celdas no horarias (salones) */
+.schedule-table th:not(:first-child),
+.schedule-table td:not(:first-child) { /* Ancho y alto de las columnas y filas de info de salones */
+  min-width: 25rem;
+  max-width: 25rem;
+  
+  /*height: 8rem;*/
+}
+
+/*.schedule-table tr {
+  height: 8rem;
+}*/
 
 .schedule-table thead th:first-child { /* fija el cuadro de hora */
   position:sticky;
@@ -136,33 +149,28 @@
   background-color: #f3f4f6;
 }
 
-.schedule-table thead th:not(:first-child) {
-  height: 6rem;
-
-}
-
 /*------------------ Celdas ------------------*/
 .table-cell {
   border: 1px solid #d1d5db;
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
   text-align: center;
+
+  height: 10rem;
+}
+
+.schedule-table thead tr:first-child th { /*Modifica unicamente la fila de los nombres de los salones (altura)*/
+  height: 6rem; /* o la altura que necesites */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .schedule-table th:first-child,
-.schedule-table td:first-child {
-  width: 8rem !important;
-  min-width: 8rem !important;
-  max-width: 8rem !important;
+.schedule-table td:first-child { /* Ancho de la columna de horas */
+  width: 9rem !important;
+  min-width: 9rem !important;
+  max-width: 9rem !important;
   font-weight: bold;
   background-color: #f3f4f6;
-}
-
-/* Celdas no horarias (salones) */
-.schedule-table th:not(:first-child),
-.schedule-table td:not(:first-child) {
-  min-width: 25rem;
-  max-width: 25rem;
-  height: 10rem;
 }
 
 /*------------------ Estados de celda ------------------*/

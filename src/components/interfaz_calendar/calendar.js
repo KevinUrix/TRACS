@@ -183,7 +183,7 @@ export default function Calendar() {
             <table className="schedule-table">
               <thead>
                 <tr className="table-header">
-                  <th className="table-cell"></th> {/*Aquí antes estaba Hora*/}
+                  <th className="table-cell">Hora</th> {/*Aquí antes estaba Hora*/}
                   {classrooms.map((classroom, index) => (
                     <th key={index} className="table-cell">{classroom}</th>
                   ))}

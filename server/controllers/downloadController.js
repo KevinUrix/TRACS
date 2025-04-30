@@ -9,8 +9,9 @@ const getDownloads = async (req, res) => {
       return res.status(400).json({ success: false, error: "Falta el parámetro 'cycle'" });
     }
 
-    await saveAllToFiles(cycle);
-    res.status(200).json({ success: true });
+    const resultSummary = await saveAllToFiles(cycle);
+    res.status(200).json({ success: true, result: resultSummary });
+
   } catch (err) {
     console.error(err);
     res.status(500).json({ success: false, error: err.message });

@@ -157,58 +157,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A006",
-      "nrc": "42265",
-      "code": "I5991",
-      "students": 27,
-      "course": "ALGEBRA LINEAL I"
-    },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDZ1",
-      "classroom": "A006",
-      "nrc": "42265",
-      "code": "I5991",
-      "students": 27,
-      "course": "ALGEBRA LINEAL I"
-    },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A006",
-      "nrc": "42265",
-      "code": "I5991",
-      "students": 27,
-      "course": "ALGEBRA LINEAL I"
-    },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDZ1",
-      "classroom": "A006",
-      "nrc": "42265",
-      "code": "I5991",
-      "students": 27,
-      "course": "ALGEBRA LINEAL I"
-    },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
-  },
-  {
-    "data": {
       "schedule": "1600-1755",
       "days": ". M . J . .",
       "building": "DEDZ1",
@@ -352,19 +300,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDZ1",
-      "classroom": "A011",
-      "nrc": "205026",
-      "code": "V1148",
-      "students": 0,
-      "course": "APRENDIZAJE AUTOMATICO"
-    },
-    "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDZ1",
@@ -375,6 +310,19 @@
       "course": "APRENDIZAJE AUTOMATICO"
     },
     "professor": "ALVAREZ PADILLA, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ1",
+      "classroom": "A011",
+      "nrc": "205026",
+      "code": "V1148",
+      "students": 0,
+      "course": "APRENDIZAJE AUTOMATICO"
+    },
+    "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
   },
   {
     "data": {
@@ -638,19 +586,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1755",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A007",
-      "nrc": "137232",
-      "code": "IC681",
-      "students": 24,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDZ1",
@@ -690,6 +625,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1755",
+      "days": "L . . . . .",
+      "building": "DEDZ1",
+      "classroom": "A007",
+      "nrc": "137232",
+      "code": "IC681",
+      "students": 24,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDZ1",
@@ -716,6 +664,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A009",
+      "nrc": "43815",
+      "code": "I7421",
+      "students": 36,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "CORONA SANCHEZ, JUAN CARLOS"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDZ1",
@@ -729,16 +690,42 @@
   },
   {
     "data": {
-      "schedule": "1100-1155",
-      "days": ". . . . V .",
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
       "building": "DEDZ1",
-      "classroom": "A009",
-      "nrc": "43815",
-      "code": "I7421",
-      "students": 36,
+      "classroom": "A005",
+      "nrc": "137229",
+      "code": "IC578",
+      "students": 32,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "CORONA SANCHEZ, JUAN CARLOS"
+    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDZ1",
+      "classroom": "A007",
+      "nrc": "137229",
+      "code": "IC578",
+      "students": 32,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A006",
+      "nrc": "137229",
+      "code": "IC578",
+      "students": 32,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
   },
   {
     "data": {
@@ -830,45 +817,6 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A005",
-      "nrc": "137229",
-      "code": "IC578",
-      "students": 32,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDZ1",
-      "classroom": "A007",
-      "nrc": "137229",
-      "code": "IC578",
-      "students": 32,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDZ1",
-      "classroom": "A006",
-      "nrc": "137229",
-      "code": "IC578",
-      "students": 32,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
   },
   {
     "data": {
@@ -2269,7 +2217,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2282,7 +2230,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2295,7 +2243,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2308,7 +2256,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2321,7 +2269,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2334,7 +2282,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2347,7 +2295,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2360,7 +2308,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -2373,7 +2321,7 @@
       "classroom": "A004",
       "nrc": "109269",
       "code": "I6012",
-      "students": 23,
+      "students": 22,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -3101,7 +3049,7 @@
       "classroom": "A007",
       "nrc": "189659",
       "code": "IG738",
-      "students": 35,
+      "students": 34,
       "course": "PRECALCULO"
     },
     "professor": "CORDOVA GONZALEZ, VERONICA ILIANA"
@@ -3127,7 +3075,7 @@
       "classroom": "A007",
       "nrc": "200723",
       "code": "IG738",
-      "students": 40,
+      "students": 39,
       "course": "PRECALCULO"
     },
     "professor": "CORONA SANCHEZ, JUAN CARLOS"

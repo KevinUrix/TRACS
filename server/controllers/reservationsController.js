@@ -174,7 +174,7 @@ const getReservations = async (req, res) => {
     res.json(localSchedule);
   } catch (error) {
     if (error.code === 'ENOENT') {
-      console.log(`Archivo no encontrado para: ${cycle} - ${buildingName}`);
+      console.log(`Archivo de reservas no encontrado para: ${cycle} - ${buildingName}`);
       return res.status(404).json({ message: 'No hay reservas para este ciclo y edificio' });
     }
 

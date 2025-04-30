@@ -2,25 +2,12 @@
   {
     "data": {
       "schedule": "1300-1459",
-      "days": "L . I . . .",
-      "building": "DEDA",
-      "classroom": "SPB01",
-      "nrc": "216414",
-      "code": "V0452",
-      "students": 0,
-      "course": "ANALISIS DE LA BIOMASA VEGETAL"
-    },
-    "professor": "MEZA CONTRERAS, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1459",
-      "days": ". M . J . .",
+      "days": "L . . J . .",
       "building": "DEDA",
       "classroom": "SPB01",
       "nrc": "197905",
       "code": "V0458",
-      "students": 2,
+      "students": 0,
       "course": "CIENCIA Y TECNOLOGIA DE CELULOSA"
     },
     "professor": "ANZALDO HERNANDEZ, JOSE"
@@ -33,7 +20,7 @@
       "classroom": "SPB-02",
       "nrc": "199574",
       "code": "V0451",
-      "students": 1,
+      "students": 0,
       "course": "ESTRUCTURA Y CALIDAD DE BIOMATERIALES SUSTENTABLES"
     },
     "professor": "SILVA GUZMAN, JOSE ANTONIO"
@@ -46,10 +33,23 @@
       "classroom": "SPB-02",
       "nrc": "17776",
       "code": "H0515",
-      "students": 4,
+      "students": 0,
       "course": "ESTRUCTURA Y CALIDAD DE LA MADERA"
     },
     "professor": "SILVA GUZMAN, JOSE ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1459",
+      "days": ". . I . . .",
+      "building": "DEDA",
+      "classroom": "SPB01",
+      "nrc": "61257",
+      "code": "H0522",
+      "students": 0,
+      "course": "FISICOQUIMICA DE SUPERFICIES"
+    },
+    "professor": "TORIZ GONZALEZ, GUILLERMO"
   },
   {
     "data": {
@@ -59,7 +59,7 @@
       "classroom": "SPB01",
       "nrc": "199562",
       "code": "V0450",
-      "students": 1,
+      "students": 0,
       "course": "INTRODUCCION A LA NANOCIENCIA Y NANOTECNOLOGIA"
     },
     "professor": "RAMIREZ BARRAGAN, CARLOS ALBERTO"
@@ -67,12 +67,12 @@
   {
     "data": {
       "schedule": "1100-1259",
-      "days": ". . . . V .",
+      "days": "L . . . V .",
       "building": "DEDA",
       "classroom": "SPB01",
       "nrc": "205099",
       "code": "V0461",
-      "students": 1,
+      "students": 0,
       "course": "MATERIALES COMPUESTOS"
     },
     "professor": "TORRES RENDON, JOSE GUILLERMO"
@@ -80,15 +80,41 @@
   {
     "data": {
       "schedule": "1100-1259",
+      "days": ". M . . . .",
+      "building": "DEDA",
+      "classroom": "SPB-02",
+      "nrc": "04015",
+      "code": "H0518",
+      "students": 0,
+      "course": "SEMINARIO CIENTIFICO I"
+    },
+    "professor": "BERNABE ANTONIO, ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1259",
+      "days": ". . . J . .",
+      "building": "DEDA",
+      "classroom": "SPB-02",
+      "nrc": "04016",
+      "code": "H0519",
+      "students": 0,
+      "course": "SEMINARIO CIENTIFICO II"
+    },
+    "professor": "ROBLEDO ORTIZ, JORGE RAMON"
+  },
+  {
+    "data": {
+      "schedule": "1100-1259",
       "days": ". . . J . .",
       "building": "DEDA",
       "classroom": "SPB01",
-      "nrc": "216415",
-      "code": "V0472",
-      "students": 2,
-      "course": "SEMINARIO DE AVANCE DE TESIS V"
+      "nrc": "209585",
+      "code": "V0470",
+      "students": 0,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
     },
-    "professor": "LOMELI RAMIREZ, MARIA GUADALUPE"
+    "professor": "BERNABE ANTONIO, ANTONIO"
   },
   {
     "data": {
@@ -105,13 +131,26 @@
   },
   {
     "data": {
+      "schedule": "1300-1459",
+      "days": ". . . . V .",
+      "building": "DEDA",
+      "classroom": "SPB01",
+      "nrc": "199566",
+      "code": "V0468",
+      "students": 0,
+      "course": "SEMINARIO DE AVANCE DE TESIS I"
+    },
+    "professor": "RODRIGUEZ ANDA, RAUL"
+  },
+  {
+    "data": {
       "schedule": "0900-1029",
       "days": ". M . . . .",
       "building": "DEDA",
       "classroom": "SPB-02",
       "nrc": "17784",
       "code": "H0517",
-      "students": 4,
+      "students": 0,
       "course": "SEMINARIO SOBRE CREATIVIDAD"
     },
     "professor": "SAUCEDO CORONA, ALMA ROSA"
@@ -119,28 +158,41 @@
   {
     "data": {
       "schedule": "1100-1259",
-      "days": "L . I . . .",
+      "days": ". M . . . .",
       "building": "DEDA",
-      "classroom": "SPB-02",
-      "nrc": "76006",
-      "code": "H0531",
-      "students": 2,
-      "course": "TECNOLOGIA DE PRODUCTOS CON BASE EN MADERA"
+      "classroom": "SPB01",
+      "nrc": "199567",
+      "code": "V0464",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN APROVECHAMIENTO QUIMICO Y BIOTECNOLOGICO DE RECURSOS SUSTENTABLES"
     },
-    "professor": "SILVA GUZMAN, JOSE ANTONIO"
+    "professor": "GARCIA ENRIQUEZ, SALVADOR"
   },
   {
     "data": {
       "schedule": "1100-1259",
-      "days": ". M . . . .",
+      "days": ". . I . . .",
       "building": "DEDA",
       "classroom": "SPB01",
       "nrc": "04045",
       "code": "H0538",
-      "students": 1,
+      "students": 0,
       "course": "TOPICOS SELECTOS EN CELULOSA Y PAPEL"
     },
-    "professor": "GARCIA ENRIQUEZ, SALVADOR"
+    "professor": "ANZALDO HERNANDEZ, JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1459",
+      "days": ". M . . . .",
+      "building": "DEDA",
+      "classroom": "SPB01",
+      "nrc": "197906",
+      "code": "V0467",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN CIENCIA DE BIOPOLIMEROS Y MATERIALES BIODEGRADABLES"
+    },
+    "professor": "ROBLEDO ORTIZ, JORGE RAMON"
   },
   {
     "data": {
@@ -150,9 +202,22 @@
       "classroom": "SPB-02",
       "nrc": "04046",
       "code": "H0539",
-      "students": 4,
+      "students": 0,
       "course": "TOPICOS SELECTOS EN FISICA DE LA MADERA"
     },
     "professor": "SILVA GUZMAN, JOSE ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1059",
+      "days": ". M . . . .",
+      "building": "DEDA",
+      "classroom": "SPB01",
+      "nrc": "04051",
+      "code": "H0540",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN QUIMICA DE LA MADERA"
+    },
+    "professor": "GONZALEZ GARCIA, YOLANDA"
   }
 ]

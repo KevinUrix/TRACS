@@ -88,14 +88,29 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
       const result = await res.json();
   
       if (result.success) {
-        alert('Los archivos JSON se han descargado correctamente.');
+        const summary = result.result;
+        let message = '✅ Los archivos JSON se han descargado correctamente.\n\n';
+        message += `Éxito: ${summary.success.length} edificios\n`;
+        message += `Saltados: ${summary.skipped.length} edificios (sin datos)\n`;
+        message += `Fallidos: ${summary.failed.length} edificios\n`;
+  
+        if (summary.failed.length > 0) {
+          message += '\nDetalles de errores:\n';
+          summary.failed.forEach(failure => {
+            message += `${failure.building}: ${failure.error}\n`;
+          });
+        }
+  
+        alert(message);
       } else {
-        alert('Hubo un error al descargar los archivos.');
+        alert(`⚠️ Hubo un error al descargar los archivos: ${result.error || "Error desconocido"}`);
       }
     } catch (error) {
-      console.log("Descargando . . .")
+      console.error("❌ Error durante la descarga:", error);
+      alert(`❌ Error inesperado: ${error.message}`);
     }
   };
+  
 
   // useEffect(() => {
   //   fetchReservations();

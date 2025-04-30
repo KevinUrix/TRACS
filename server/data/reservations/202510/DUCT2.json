@@ -10,6 +10,18 @@
       "date": "2025-04-25",
       "duration": "Temporal",
       "professor": "PRUEBA"
+    },
+    {
+      "schedule": "0700-0755",
+      "days": "V",
+      "building": "DUCT2",
+      "classroom": "LC02",
+      "code": "PRUEBA",
+      "course": "prueba",
+      "date": "2025-04-30",
+      "duration": "Temporal",
+      "professor": "PRUEBA",
+      "createInGoogleCalendar": "Sí"
     }
   ]
 }

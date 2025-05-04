@@ -4,7 +4,7 @@ import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle, fetchReservations, reservations }) {
+export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle, fetchReservations, reservations }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCycle, setSelectedCycle] = useState('');
@@ -110,11 +110,6 @@ export default function CalendarLogic({ onUpdateBuilding, onUpdateDay, onUpdateC
       alert(`❌ Error inesperado: ${error.message}`);
     }
   };
-  
-
-  // useEffect(() => {
-  //   fetchReservations();
-  // }, [selectedCycle, selectedBuilding]);
 
 
   return (

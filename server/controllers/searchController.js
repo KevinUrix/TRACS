@@ -4,9 +4,9 @@ const normalizeName = (name) => {
   return name
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, '')   // quitar tildes
-    .replace(/[^a-z\sñ]/g, '')         // permitir letras, espacios y ñ
-    .replace(/\s+/g, ' ')              // reducir espacios múltiples
+    .replace(/[\u0300-\u036f]/g, '')   // quita las tildes
+    .replace(/[^a-z\sñ]/g, '')         // permite letras, espacios y ñ
+    .replace(/\s+/g, ' ')              // reduce espacios múltiples
     .trim();
 };
 

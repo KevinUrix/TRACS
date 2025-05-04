@@ -11,7 +11,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
   const [building, setBuilding] = useState('');
   const [classroom, setClassroom] = useState('');
   const [duration, setDuration] = useState('');
-  const [editInGoogleCalendar, setEditInGoogleCalendar] = useState('Sí');
+  const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('');
+  const [googleEventId, setGoogleEventId] = useState('');
 
   useEffect(() => {
     if (reservation) {
@@ -24,11 +25,14 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
       setBuilding(reservation.building)
       setClassroom(reservation.classroom);
       setDuration(reservation.duration || 'Temporal');
+      setCreateInGoogleCalendar(reservation.createInGoogleCalendar);
     }
+    if (reservation.googleEventId)
+      setGoogleEventId(reservation.googleEventId);
   }, [reservation]);
 
   const handleSave = () => {
-    const updatedReservation = { professor, course, date, days, schedule,classroom, duration, building: selectedBuilding, code};
+    const updatedReservation = { professor, course, date, days, schedule, classroom, duration, building: selectedBuilding, code, createInGoogleCalendar};
     onSave(updatedReservation);
   };
 
@@ -188,33 +192,6 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                       checked={duration === 'Temporal'}
                       onChange={(e) => setDuration(e.target.value)}
                       required
-                      className="translate-y-[1px]"
-                    />
-                  </label>
-                </div>
-              </div>
-              <div className="flex flex-col items-start gap-2 mb-4">
-                <span className="font-semibold">Crear reserva en Google Calendar:</span>
-                <div className="flex gap-4">
-                  <label className="inline-flex items-center gap-2">
-                    Sí:
-                    <input
-                      type="radio"
-                      name="googleCalendar"
-                      value="Sí"
-                      checked={editInGoogleCalendar === 'Sí'}
-                      onChange={(e) => setEditInGoogleCalendar(e.target.value)}
-                      className="translate-y-[1px]"
-                    />
-                  </label>
-                  <label className="inline-flex items-center gap-2">
-                    No:
-                    <input
-                      type="radio"
-                      name="googleCalendar"
-                      value="No"
-                      checked={editInGoogleCalendar === 'No'}
-                      onChange={(e) => setEditInGoogleCalendar(e.target.value)}
                       className="translate-y-[1px]"
                     />
                   </label>

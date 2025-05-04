@@ -25,3 +25,4 @@ yarn-error.log*
 *.code-workspace
 .env
 server/data/googleTokens.json
+.vscode/

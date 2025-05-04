@@ -13,28 +13,33 @@ const getOAuth2Client = async () => {
   const tokensPath = path.join(__dirname, '../data/googleTokens.json');
   const dirPath = path.dirname(tokensPath);
 
-  // Asegurar que la carpeta exista
+  // Asegura que la carpeta exista
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
   }
 
   try {
-    const tokens = JSON.parse(fs.readFileSync(tokensPath, 'utf-8'));
+    // Verifica si el archivo existe y no está vacío
+    const rawData = fs.readFileSync(tokensPath, 'utf-8');
+    if (!rawData.trim()) {
+      throw new Error('El archivo de tokens está vacío');
+    }
+    const tokens = JSON.parse(rawData);
 
     if (!tokens || !tokens.access_token || !tokens.refresh_token) {
       throw new Error('No se encontraron tokens de Google');
     }
 
     const now = Date.now();
-    const bufferTime = 60 * 1000; // 1 minuto de margen
+    const bufferTime = 60 * 1000; // 1 minuto de margen para el buffer
 
     if (tokens.expiry_date && tokens.expiry_date <= now + bufferTime) {
       console.log('El access_token está caducado o por caducar, renovando...');
 
-      // Refrescar el access_token usando el refresh_token
+      // Refresca el access_token usando el refresh_token
       const { tokens: newTokens } = await oAuth2Client.refreshToken(tokens.refresh_token);
 
-      // Asegurar que el refresh_token anterior se conserve si no se devuelve en la respuesta
+      // Asegura que el refresh_token anterior se conserve si no se devuelve en la respuesta
       newTokens.refresh_token = newTokens.refresh_token || tokens.refresh_token;
 
       oAuth2Client.setCredentials(newTokens);

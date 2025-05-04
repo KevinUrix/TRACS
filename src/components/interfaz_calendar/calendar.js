@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Sidebar from '../sidebar';
-import CalendarLogic from './calendarLogic';
+import SelectsLogic from './selectsLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
 import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
@@ -13,7 +13,7 @@ export default function Calendar() {
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
-  const renderedCells = {}; // <<< Esto es nuevo, afuera del return, para registrar qué (hora, salón) ya se pintó
+  const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -54,7 +54,7 @@ export default function Calendar() {
 
   const handleSaveReservation = async (reservationData) => {
     try {
-      // Verificación de autenticación solo si se requiere Google Calendar
+      // Verificación de autenticación, solo si se requiere Google Calendar
       if (String(reservationData.createInGoogleCalendar) === 'true') {
         console.log('>> Se decidió CREAR evento en Google Calendar');
   
@@ -194,7 +194,7 @@ export default function Calendar() {
         <div className="main-content">
           <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} />
           <div className="select-content">
-            <CalendarLogic
+            <SelectsLogic
               onUpdateCicle={setSelectedCycle}
               onUpdateBuilding={setSelectedBuilding}
               onUpdateDay={setSelectedDay}

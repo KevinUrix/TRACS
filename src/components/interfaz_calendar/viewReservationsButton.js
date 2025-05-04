@@ -62,7 +62,22 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         originalProfessor: selectedReservation.professor,
         originalDate: selectedReservation.date,
         originalDuration: selectedReservation.duration,
+        originalcreateInGoogleCalendar: selectedReservation.createInGoogleCalendar,
       });
+      
+      if (selectedReservation.googleEventId)
+        params.append('originalGoogleEventId', selectedReservation.googleEventId);
+      
+      if (selectedReservation.googleEventId) {
+        const authStatusRes = await fetch('/api/google/status');
+        const authStatus = await authStatusRes.json();
+  
+        if (!authStatus.authenticated) {
+          console.log('>> Usuario no autenticado para modificar evento, redirigiendo...');
+          window.location.href = 'http://localhost:3001/api/google/auth';
+          return;
+        }
+      }
   
       const res = await fetch(`/api/reservations?${params.toString()}`, {
         method: 'PUT',
@@ -93,10 +108,22 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
       date: reservation.date,
     });
 
-    const confirmDelete = window.confirm(`¿Estás seguro de eliminar la reserva de ${reservation.course}?`);
+    const confirmDelete = window.confirm(`¿Estás seguro de eliminar la reserva de ${reservation.professor}?`);
     if (!confirmDelete) return;
 
     try {
+
+      if (reservation.googleEventId) {
+        const authStatusRes = await fetch('/api/google/status');
+        const authStatus = await authStatusRes.json();
+  
+        if (!authStatus.authenticated) {
+          console.log('>> Usuario no autenticado para borrar evento, redirigiendo...');
+          window.location.href = 'http://localhost:3001/api/google/auth';
+          return;
+        }
+      }
+
       const res = await fetch(`/api/reservations?${params.toString()}`, {
         method: 'DELETE',
       });

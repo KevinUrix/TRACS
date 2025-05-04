@@ -48,13 +48,25 @@ const createGoogleEvent = async (reservationData, tokens) => {
   };
 
   // (Opcional) Recurrencia semanal si aplica
-  if (reservationData.duration === 'Siempre' && Array.isArray(reservationData.days)) {
-    const dayMap = {
-      L: 'MO', M: 'TU', I: 'WE', J: 'TH', V: 'FR', S: 'SA', D: 'SU'
-    };
+  if (reservationData.duration === 'Siempre' && reservationData.days) {
+    const dayMap = { L: 'MO', M: 'TU', I: 'WE', J: 'TH', V: 'FR', S: 'SA', D: 'SU' };
 
-    const byDay = reservationData.days.map(d => dayMap[d]).join(',');
-    event.recurrence = [`RRULE:FREQ=WEEKLY;BYDAY=${byDay}`];
+    // Convierte 'days' en un arreglo
+    const daysArray = Array.isArray(reservationData.days) ? reservationData.days : reservationData.days.split('');
+    const byDay = daysArray.map(d => dayMap[d]).join(',');
+
+    // Calcula la fecha de finalización
+    const startDateTime = new Date(`${reservationData.date}T${startHour}:00`);
+    const endRecurrenceDate = new Date(startDateTime);
+    endRecurrenceDate.setMonth(endRecurrenceDate.getMonth() + 4); // 4 meses de duración
+
+    // Formatea la fecha de finalización en formato YYYYMMDD
+    const untilDate = endRecurrenceDate.toISOString().split('T')[0].replace(/-/g, '');
+
+    // Establece la recurrencia semanal
+    event.recurrence = [
+      `RRULE:FREQ=WEEKLY;BYDAY=${byDay};UNTIL=${untilDate}T000000Z`
+    ];
   }
 
   try {
@@ -62,7 +74,6 @@ const createGoogleEvent = async (reservationData, tokens) => {
       calendarId: 'primary',
       resource: event,
     });
-    // console.log('Evento creado:', res.data);
     return res.data.id;
   } catch (error) {
     console.error('Error al crear el evento en Google Calendar:', error);

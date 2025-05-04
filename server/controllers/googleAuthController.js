@@ -9,6 +9,10 @@ const oauth2Client = new OAuth2Client(
   process.env.GOOGLE_REDIRECT_URI
 );
 
+
+//
+// Generación de URL para autenticación
+//
 const generateAuthUrl = () => {
   const authUrl = oauth2Client.generateAuthUrl({
     access_type: 'offline',
@@ -20,6 +24,10 @@ const generateAuthUrl = () => {
   return authUrl;
 };
 
+
+//
+// Callback
+//
 const handleGoogleCallback = async (req, res) => {
   const { code } = req.query;
 
@@ -53,6 +61,10 @@ const handleGoogleCallback = async (req, res) => {
   }
 };
 
+
+//
+// Obtener Tokens
+//
 const getSavedTokens = async () => {
   const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
 

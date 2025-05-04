@@ -76,7 +76,7 @@ export default function ReserveButton({
     setDuration('');
     setStartTime(convertTo24HourFormat(selectedHour));
     setEndTime(addMinutes(startTime, 55));
-    setReservationDate(getTodayDate()); /* Anteriormente para poner la fecha en automatico: setReservationDate(getTodayDate()); */
+    setReservationDate(getTodayDate()); /* Anteriormente para poner la fecha en automatico */
     handleCloseModal();
   };
 
@@ -123,11 +123,6 @@ export default function ReserveButton({
       setReservationDate(getTodayDate());
       return;
     }
-  
-    // Mostrar en consola para depuración
-    console.log("Letra seleccionada:", selectedDay);
-    console.log("Día esperado (num):", expectedDay);
-    console.log("Día de la fecha elegida:", selectedDateDay);
   
     // Validar
     /*if (selectedDateDay !== expectedDay) {

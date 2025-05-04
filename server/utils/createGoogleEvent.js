@@ -13,7 +13,7 @@ const createGoogleEvent = async (reservationData, tokens) => {
   }
 
   if (reservationData.createInGoogleCalendar !== 'true') {
-    return res.status(200).json({ message: 'Reserva creada localmente. No se añadió a Google Calendar.' });
+    return null;
   }
 
   const oAuth2Client = new OAuth2Client(

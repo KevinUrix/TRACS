@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { generateAuthUrl, handleGoogleCallback, getSavedTokens } = require('../controllers/googleAuthController');
-const { createEvent } = require('../controllers/googleEventController');
+// const { createEvent } = require('../controllers/googleEventController');
 
 // Ruta para generar la URL de autorización de Google
 router.get('/auth', (req, res) => {
@@ -13,8 +13,8 @@ router.get('/auth', (req, res) => {
 router.get('/oauth2callback', handleGoogleCallback);
 
 // Ruta para verificar si el usuario está autenticado (tokens guardados)
-router.get('/status', (req, res) => {
-  const tokens = getSavedTokens();
+router.get('/status', async (req, res) => {
+  const tokens = await getSavedTokens();
   if (tokens && tokens.access_token) {
     res.json({ authenticated: true });
   } else {
@@ -22,7 +22,7 @@ router.get('/status', (req, res) => {
   }
 });
 
-// Ruta para crear un evento en Google Calendar
-router.post('/create-event', createEvent);
+// // Ruta para crear un evento en Google Calendar
+// router.post('/create-event', createEvent);
 
 module.exports = router;

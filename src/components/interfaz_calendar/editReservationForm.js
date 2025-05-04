@@ -52,6 +52,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
     }
   };
 
+  const isFormIncomplete = !professor || !course || !code || !date;
+
   return (
     <div className="modal-overlay" onClick={onCancel}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -176,20 +178,21 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                   </label>
                 </div>
               </div>
-          <div className="mt-4 flex justify-end gap-2">
+          <div className="modal-buttons">
             <button
               type="button"
-              className="px-4 py-2 bg-blue-500 text-white rounded-md"
-              onClick={handleSave}
-            >
-              Guardar
-            </button>
-            <button
-              type="button"
-              className="px-4 py-2 bg-gray-500 text-white rounded-md"
+              className="cancel-button"
               onClick={onCancel}
             >
               Cancelar
+            </button>
+            <button
+              type="button"
+              disabled={isFormIncomplete}
+              className={`save-button ${isFormIncomplete ? 'disabled' : ''}`}
+              onClick={handleSave}
+            >
+              Guardar
             </button>
           </div>
         </form>

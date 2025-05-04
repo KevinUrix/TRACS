@@ -53,13 +53,11 @@ export default function Calendar() {
 
 
   const handleSaveReservation = async (reservationData) => {
-    console.log('handleSaveReservation ejecutado con:', reservationData);
-    console.log('Valor original de createInGoogleCalendar:', reservationData.createInGoogleCalendar);
+    try {
+      // Verificación de autenticación solo si se requiere Google Calendar
+      if (String(reservationData.createInGoogleCalendar) === 'true') {
+        console.log('>> Se decidió CREAR evento en Google Calendar');
   
-    if (String(reservationData.createInGoogleCalendar) === 'true') {
-      console.log('>> Se decidió CREAR evento en Google Calendar');
-      
-      try {
         const authStatusRes = await fetch('/api/google/status');
         const authStatus = await authStatusRes.json();
   
@@ -68,51 +66,35 @@ export default function Calendar() {
           window.location.href = 'http://localhost:3001/api/google/auth';
           return;
         }
-      } catch (err) {
-        console.error('Error al verificar autenticación:', err);
+      } else {
+        console.log('>> NO se debe crear evento en Google Calendar');
+      }
+  
+      // Envío de reserva
+      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(reservationData),
+      });
+  
+      const result = await response.json();
+  
+      if (!response.ok) {
+        console.error('Error desde el servidor:', result.error || 'Error desconocido');
+        alert(`Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
         return;
       }
   
-      try {
-        console.log('>> Enviando petición a crear evento en Google');
-        const eventResponse = await fetch('/api/google/create-event', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(reservationData),
-        });
+      console.log('>> Reserva guardada con éxito:', result);
+      alert('Reserva guardada con éxito');
   
-        if (!eventResponse.ok) throw new Error('Error al crear el evento');
-  
-        console.log('>> Evento creado, guardando reserva en BD');
-        const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(reservationData),
-        });
-  
-        if (!response.ok) throw new Error('Error al guardar la reserva');
-        fetchReservations();
-      } catch (error) {
-        console.error('Error en creación de evento o guardado:', error);
-      }
-    } else {
-      console.log('>> NO se debe crear evento en Google Calendar');
-  
-      try {
-        const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(reservationData),
-        });
-  
-        if (!response.ok) throw new Error('Error al guardar la reserva');
-        fetchReservations();
-      } catch (error) {
-        console.error('Hubo un problema al guardar la reserva:', error);
-      }
+      // Refrescar reservas después del guardado
+      fetchReservations();
+    } catch (err) {
+      console.error('Error en el proceso de guardar reserva:', err);
+      alert('Ocurrió un error al guardar la reserva. Revisa la consola.');
     }
   };
-  
 
 
   useEffect(() => {

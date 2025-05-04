@@ -1,21 +1,24 @@
 const { OAuth2Client } = require('google-auth-library');
 require('dotenv').config();
-const oauth2Client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_REDIRECT_URI);
 const fs = require('fs');
 const path = require('path');
 
+const oauth2Client = new OAuth2Client(
+  process.env.GOOGLE_CLIENT_ID,
+  process.env.GOOGLE_CLIENT_SECRET,
+  process.env.GOOGLE_REDIRECT_URI
+);
 
-// Ruta para generar la URL de autorización de Google
 const generateAuthUrl = () => {
   const authUrl = oauth2Client.generateAuthUrl({
-    access_type: 'offline', // Necesario para obtener un refresh_token
+    access_type: 'offline',
     prompt: 'consent',
-    scope: process.env.GOOGLE_CALENDAR_SCOPES,
+    scope: process.env.GOOGLE_CALENDAR_SCOPES?.split(',') || [
+      'https://www.googleapis.com/auth/calendar',
+    ],
   });
   return authUrl;
 };
-
-// Ruta de callback para recibir el código y obtener los tokens
 
 const handleGoogleCallback = async (req, res) => {
   const { code } = req.query;
@@ -40,6 +43,7 @@ const handleGoogleCallback = async (req, res) => {
     const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
     await fs.promises.writeFile(tokensFilePath, JSON.stringify(tokens, null, 2));
 
+    console.log('>> Tokens guardados exitosamente');
     return res.redirect('http://localhost:3000/calendario');
   } catch (error) {
     console.error('Error al obtener tokens:', error);
@@ -49,11 +53,9 @@ const handleGoogleCallback = async (req, res) => {
   }
 };
 
-
-// Recuperar los tokens guardados
 const getSavedTokens = async () => {
   const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
-  
+
   try {
     if (!fs.existsSync(tokensFilePath)) {
       console.error('El archivo googleTokens.json no existe');
@@ -67,14 +69,11 @@ const getSavedTokens = async () => {
       return null;
     }
 
-    const tokens = JSON.parse(fileContent);
-    return tokens;
+    return JSON.parse(fileContent);
   } catch (error) {
     console.error('No se pudieron leer los tokens:', error.message);
     return null;
   }
 };
-
-
 
 module.exports = { generateAuthUrl, handleGoogleCallback, getSavedTokens };

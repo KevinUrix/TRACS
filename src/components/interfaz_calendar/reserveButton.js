@@ -46,7 +46,7 @@ export default function ReserveButton({
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
   const [reservationDate, setReservationDate] = useState(''); /* Para poner la fecha en automatico: useState(getTodayDate()); anteriormente*/
   const [duration, setDuration] = useState('Temporal');
-  const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('Sí');
+  const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -162,6 +162,14 @@ export default function ReserveButton({
                 />
               </label>
               <label>
+                Edificio:
+                <input
+                  type="text"
+                  value={selectedBuilding}
+                  disabled
+                />
+              </label>
+              <label>
                 Salón:
                 <input
                   type="text"
@@ -240,8 +248,8 @@ export default function ReserveButton({
                     <input
                       type="radio"
                       name="googleCalendar"
-                      value="Sí"
-                      checked={createInGoogleCalendar === 'Sí'}
+                      value="true"
+                      checked={createInGoogleCalendar === 'true'}
                       onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
                       className="translate-y-[1px]"
                     />
@@ -251,8 +259,8 @@ export default function ReserveButton({
                     <input
                       type="radio"
                       name="googleCalendar"
-                      value="No"
-                      checked={createInGoogleCalendar === 'No'}
+                      value="false"
+                      checked={createInGoogleCalendar === 'false'}
                       onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
                       className="translate-y-[1px]"
                     />

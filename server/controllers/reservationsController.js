@@ -1,5 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
+const { getOAuth2Client } = require('../utils/googleOAuthClient');
+const { createGoogleEvent } = require('../utils/createGoogleEvent');
 
 //
 // GUARDAR RESERVAS
@@ -14,38 +16,50 @@ const saveReservation = async (req, res) => {
   }
 
   try {
-
-    const fileContent = await fs.readFile(filePath, 'utf-8');
+    // Leer archivo actual (si existe)
     let currentData = { data: [] };
+    try {
+      const fileContent = await fs.readFile(filePath, 'utf-8');
+      if (fileContent.trim()) {
+        const parsed = JSON.parse(fileContent);
+        currentData.data = Array.isArray(parsed.data) ? parsed.data : [];
+      }
+    } catch (readErr) {
+      console.warn('Archivo inexistente o corrupto, se inicializa vacío');
+    }
 
-    // Si el archivo tiene contenido, intenta parsearlo, si no, mantiene el array vacío
-    if (fileContent.trim() !== '') {
+    // Crear evento en Google Calendar si corresponde
+    if (reservationData.createInGoogleCalendar) {
       try {
-        currentData = JSON.parse(fileContent);
-        
-        if (!Array.isArray(currentData.data)) {
-          currentData.data = [];
+        const oAuth2Client = await getOAuth2Client();
+        const tokens = oAuth2Client.credentials;
+
+        if (!tokens || !tokens.access_token) {
+          console.warn('Usuario no autenticado en Google, no se crea evento');
+        } else {
+          const googleEventId = await createGoogleEvent(reservationData, tokens);
+          if (googleEventId) {
+            reservationData.googleEventId = googleEventId;
+            console.log('Evento creado en Google Calendar:', googleEventId);
+          }
         }
-      } catch (error) {
-        console.error("Error al parsear el archivo JSON:", error.message);
-        currentData = { data: [] }; // Si el archivo tiene un formato incorrecto, inicializamos con datos vacíos
+      } catch (calendarErr) {
+        console.error('Error al crear evento en Google Calendar:', calendarErr);
+        // No se interrumpe la reserva si Google falla
       }
     }
 
-    // Agrega la nueva reserva a los datos existentes
+    // Guardar reserva
     currentData.data.push(reservationData);
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
-    // Responde con éxito
-    res.status(201).json({ message: 'Reserva guardada con éxito' });
+    res.status(201).json({
+      message: 'Reserva guardada con éxito',
+      googleEventId: reservationData.googleEventId || null,
+    });
   } catch (error) {
-    if (error.code === 'ENOENT') {
-      await fs.mkdir(path.dirname(filePath), { recursive: true });
-      await fs.writeFile(filePath, JSON.stringify({ data: [] }, null, 2));
-      return saveReservation(req, res);  // Llamada recursiva para guardar después de crear el archivo
-    }
-    
-    console.error("Error al guardar la reserva:", error);
+    console.error('Error al guardar reserva:', error);
     res.status(500).json({ error: 'Hubo un error al guardar la reserva' });
   }
 };

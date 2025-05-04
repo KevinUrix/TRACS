@@ -150,6 +150,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
                     <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
                     <b>Profesor:</b> {res.professor}<br />
                     <b>Materia:</b> {res.course}<br />
+                    <b>Edificio:</b> {res.building}<br />
                     <b>Clave:</b> {res.code}<br />
                     <b>Fecha:</b> {res.date} <br />
                     <b>Día:</b> {translateDays(res.days)}<br />

@@ -13,6 +13,7 @@ export default function Calendar() {
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
+  const renderedCells = {}; // <<< Esto es nuevo, afuera del return, para registrar qué (hora, salón) ya se pintó
   
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -52,27 +53,50 @@ export default function Calendar() {
 
 
   const handleSaveReservation = async (reservationData) => {
-    console.log('Reserva guardada:', reservationData);
-  
     try {
+      // Verificación de autenticación solo si se requiere Google Calendar
+      if (String(reservationData.createInGoogleCalendar) === 'true') {
+        console.log('>> Se decidió CREAR evento en Google Calendar');
+  
+        const authStatusRes = await fetch('/api/google/status');
+        const authStatus = await authStatusRes.json();
+  
+        if (!authStatus.authenticated) {
+          console.log('>> Usuario no autenticado, redirigiendo...');
+          window.location.href = 'http://localhost:3001/api/google/auth';
+          return;
+        }
+      } else {
+        console.log('>> NO se debe crear evento en Google Calendar');
+      }
+  
+      // Envío de reserva
       const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reservationData),
       });
   
-      if (!response.ok) throw new Error('Error al guardar la reserva');
+      const result = await response.json();
+  
+      if (!response.ok) {
+        console.error('Error desde el servidor:', result.error || 'Error desconocido');
+        alert(`Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
+        return;
+      }
+  
+      console.log('>> Reserva guardada con éxito:', result);
       alert('Reserva guardada con éxito');
+  
+      // Refrescar reservas después del guardado
       fetchReservations();
-    } catch (error) {
-      console.error(error);
-      alert('Hubo un problema al guardar la reserva');
+    } catch (err) {
+      console.error('Error en el proceso de guardar reserva:', err);
+      alert('Ocurrió un error al guardar la reserva. Revisa la consola.');
     }
   };
-  
-  
+
+
   useEffect(() => {
     if (selectedBuilding) {
       // Nombre del JSON dinámico según el edificio seleccionado
@@ -161,7 +185,6 @@ export default function Calendar() {
       fetchReservations();
     }, [selectedCycle, selectedBuilding]);
 
-  const renderedCells = {}; // <<< Esto es nuevo, afuera del return, para registrar qué (hora, salón) ya se pintó
 
 
   return (
@@ -183,7 +206,7 @@ export default function Calendar() {
             <table className="schedule-table">
               <thead>
                 <tr className="table-header">
-                  <th className="table-cell">Hora</th> {/*Aquí antes estaba Hora*/}
+                  <th className="table-cell">Hora</th>
                   {classrooms.map((classroom, index) => (
                     <th key={index} className="table-cell">{classroom}</th>
                   ))}

@@ -346,7 +346,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; /* <-- cambiar aquí */
-  padding-top: 130px; /* <-- agregar para controlar la distancia */
+  padding-top: 80px; /* <-- agregar para controlar la distancia */
   z-index: 1000;
   animation: fadeIn 0.4s ease-out;
 }
@@ -478,6 +478,11 @@
 .save-button.disabled {
   opacity: 0.6;
   cursor: not-allowed;
+  background-color: #d79f05;
+}
+
+.save-button.disabled:hover{
+  background-color: #6f5101;
 }
 
 .save-button {

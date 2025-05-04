@@ -8,6 +8,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
   const [code, setCode] = useState('');
   const [days, setDays] = useState('');
   const [schedule, setSchedule] = useState('');
+  const [building, setBuilding] = useState('');
   const [classroom, setClassroom] = useState('');
   const [duration, setDuration] = useState('');
   const [editInGoogleCalendar, setEditInGoogleCalendar] = useState('Sí');
@@ -20,13 +21,14 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
       setDate(reservation.date);
       setDays(reservation.days);
       setSchedule(reservation.schedule);
+      setBuilding(reservation.building)
       setClassroom(reservation.classroom);
       setDuration(reservation.duration || 'Temporal');
     }
   }, [reservation]);
 
   const handleSave = () => {
-    const updatedReservation = { professor, course, date, days, schedule, classroom, duration, building: selectedBuilding, code};
+    const updatedReservation = { professor, course, date, days, schedule,classroom, duration, building: selectedBuilding, code};
     onSave(updatedReservation);
   };
 
@@ -39,14 +41,45 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
     S: 5, // Sábado
   };
 
+  // Función para encontrar la próxima fecha válida para el día esperado
+  const findNextValidDate = (baseDate, expectedDay) => {
+    const date = new Date(baseDate);
+  
+    // Verificar si baseDate es una fecha válida
+    if (isNaN(date.getTime())) {
+      console.error("Fecha base inválida:", baseDate);
+      return null; // O alguna fecha predeterminada como 'Invalid date'
+    }
+  
+    // Asegurarse de que expectedDay es un valor válido (0-6)
+    if (expectedDay < 0 || expectedDay > 6) {
+      console.error("Día esperado inválido:", expectedDay);
+      return null; // O una fecha predeterminada
+    }
+  
+    // Ajuste de fecha al día esperado
+    while (date.getDay() !== expectedDay) {
+      date.setDate(date.getDate() + 1);
+    }
+  
+    return date.toISOString().split('T')[0]; // YYYY-MM-DD
+  };
+
   const handleDateChange = (e) => {
     const selectedDate = new Date(e.target.value);
     const selectedDateDay = selectedDate.getDay(); // número del 0 al 6
     const expectedDay = dayLetterMap[days]; // Por ejemplo, "L" = 1
 
+    if (expectedDay === undefined) {
+      alert(`El día seleccionado (${days}) no es válido.`);
+      setDate('');
+      return;
+    }
+
     if (selectedDateDay !== expectedDay) {
-      alert(`Por favor selecciona una fecha que caiga en el día correspondiente (${days}).`);
-      setDate(reservation.date); // Restablecer la fecha a la original si la validación falla
+      const correctedDate = findNextValidDate(selectedDate, expectedDay);
+      alert(`La fecha ha sido ajustada al próximo ${days}: ${correctedDate}`);
+      setDate(correctedDate);
     } else {
       setDate(e.target.value);
     }
@@ -110,6 +143,15 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
               type="text"
               value={schedule}
               onChange={(e) => setSchedule(e.target.value)}
+              disabled
+            />
+          </div>
+          <div>
+            <label>Edificio:</label>
+            <input
+              type="text"
+              value={building}
+              onChange={(e) => setBuilding(e.target.value)}
               disabled
             />
           </div>

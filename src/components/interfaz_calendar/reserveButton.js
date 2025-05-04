@@ -30,12 +30,7 @@ export default function ReserveButton({
 
   // Obtener fecha actual en formato YYYY-MM-DD
   const getTodayDate = () => {
-    const today = new Date(); /* La dejo así para que regrese valores predeterminados al seleccionar fechas erroneas (YYYY-MM-DD)
-    
-    /*const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');*/
-    return ``; /* Con esto se regresa la fecha del día de hoy si uno se equivoca: ${yyyy}-${mm}-${dd}*/
+    return ''; // Regresa una cadena vacía si no deseas una fecha predeterminada
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,7 +39,7 @@ export default function ReserveButton({
   const [professor, setProfessor] = useState('');
   const [startTime, setStartTime] = useState(convertTo24HourFormat(selectedHour));
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
-  const [reservationDate, setReservationDate] = useState(''); /* Para poner la fecha en automatico: useState(getTodayDate()); anteriormente*/
+  const [reservationDate, setReservationDate] = useState(getTodayDate()); /* Para poner la fecha en automatico: useState(getTodayDate()); anteriormente*/
   const [duration, setDuration] = useState('Temporal');
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
 
@@ -81,7 +76,7 @@ export default function ReserveButton({
     setDuration('');
     setStartTime(convertTo24HourFormat(selectedHour));
     setEndTime(addMinutes(startTime, 55));
-    setReservationDate(''); /* Anteriormente para poner la fecha en automatico: setReservationDate(getTodayDate()); */
+    setReservationDate(getTodayDate()); /* Anteriormente para poner la fecha en automatico: setReservationDate(getTodayDate()); */
     handleCloseModal();
   };
 
@@ -94,11 +89,34 @@ export default function ReserveButton({
     S: 5,
   };
 
+  const findNextValidDate = (baseDate, expectedDay) => {
+    const date = new Date(baseDate);
+  
+    // Verificar si baseDate es una fecha válida
+    if (isNaN(date.getTime())) {
+      console.error("Fecha base inválida:", baseDate);
+      return null; // O alguna fecha predeterminada como 'Invalid date'
+    }
+  
+    // Asegurarse de que expectedDay es un valor válido (0-6)
+    if (expectedDay < 0 || expectedDay > 6) {
+      console.error("Día esperado inválido:", expectedDay);
+      return null; // O una fecha predeterminada
+    }
+  
+    // Ajuste de fecha al día esperado
+    while (date.getDay() !== expectedDay) {
+      date.setDate(date.getDate() + 1);
+    }
+  
+    return date.toISOString().split('T')[0]; // YYYY-MM-DD
+  };
+
   const handleDateChange = (e) => {
     const selectedDate = new Date(e.target.value);
-    const selectedDateDay = selectedDate.getDay(); // 0 (Dom) a 6 (Sáb)
+    const selectedDateDay = selectedDate.getDay();
     const expectedDay = dayLetterMap[selectedDay];
-  
+
     // Si la letra del día no está en el mapa
     if (expectedDay === undefined) {
       alert(`El día seleccionado (${selectedDay}) no es válido.`);
@@ -112,9 +130,17 @@ export default function ReserveButton({
     console.log("Día de la fecha elegida:", selectedDateDay);
   
     // Validar
-    if (selectedDateDay !== expectedDay) {
-      alert(`Por favor selecciona una fecha que caiga en el día correspondiente (${selectedDay}).`);
+    /*if (selectedDateDay !== expectedDay) {
+      alert(`Por favor selecciona una fecha que caiga en el día correspondiente (${selectedDay}).`); // Anteriormente para regresarte al día si no escogias el mismo.
       setReservationDate(getTodayDate());
+    } else {
+      setReservationDate(e.target.value);
+    }*/
+
+    if (selectedDateDay !== expectedDay) { //Corrige la fecha a la mas cercana con el día corres pondiente.
+      const correctedDate = findNextValidDate(selectedDate, expectedDay);
+      alert(`La fecha ha sido ajustada al próximo ${selectedDay}: ${correctedDate}`);
+      setReservationDate(correctedDate);
     } else {
       setReservationDate(e.target.value);
     }

@@ -30,11 +30,12 @@ export default function ReserveButton({
 
   // Obtener fecha actual en formato YYYY-MM-DD
   const getTodayDate = () => {
-    const today = new Date();
-    const yyyy = today.getFullYear();
+    const today = new Date(); /* La dejo así para que regrese valores predeterminados al seleccionar fechas erroneas (YYYY-MM-DD)
+    
+    /*const yyyy = today.getFullYear();
     const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
-    return `${yyyy}-${mm}-${dd}`;
+    const dd = String(today.getDate()).padStart(2, '0');*/
+    return ``; /* Con esto se regresa la fecha del día de hoy si uno se equivoca: ${yyyy}-${mm}-${dd}*/
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function ReserveButton({
   const [professor, setProfessor] = useState('');
   const [startTime, setStartTime] = useState(convertTo24HourFormat(selectedHour));
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
-  const [reservationDate, setReservationDate] = useState(getTodayDate());
+  const [reservationDate, setReservationDate] = useState(''); /* Para poner la fecha en automatico: useState(getTodayDate()); anteriormente*/
   const [duration, setDuration] = useState('Temporal');
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('Sí');
 
@@ -80,7 +81,7 @@ export default function ReserveButton({
     setDuration('');
     setStartTime(convertTo24HourFormat(selectedHour));
     setEndTime(addMinutes(startTime, 55));
-    setReservationDate(getTodayDate());
+    setReservationDate(''); /* Anteriormente para poner la fecha en automatico: setReservationDate(getTodayDate()); */
     handleCloseModal();
   };
 
@@ -118,6 +119,9 @@ export default function ReserveButton({
       setReservationDate(e.target.value);
     }
   };
+
+  const isFormIncomplete = !professor || !course || !code || !reservationDate || !duration;
+
 
   return (
     <>
@@ -259,7 +263,12 @@ export default function ReserveButton({
                 <button className="cancel-button" onClick={handleCloseModal}>
                   Cancelar
                 </button>
-                <button className="submit-button" onClick={handleSave}>
+                <button
+                  type="button"
+                  onClick={handleSave}
+                  disabled={isFormIncomplete}
+                  className={`save-button ${isFormIncomplete ? 'disabled' : ''}`}
+                >
                   Guardar
                 </button>
               </div>

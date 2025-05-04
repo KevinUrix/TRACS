@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
+const { createGoogleEvent } = require('../utils/createGoogleEvent');
 
 //
 // GUARDAR RESERVAS
@@ -32,12 +33,26 @@ const saveReservation = async (req, res) => {
       }
     }
 
+    let googleEventId = null;
+    if (reservationData.createInGoogleCalendar) {
+      try {
+        googleEventId = await createGoogleEvent(reservationData);
+      } catch (calendarError) {
+        console.error('Error al crear evento en Google Calendar:', calendarError.message);
+      }
+    }
+
+    if (googleEventId) {
+      reservationData.googleEventId = googleEventId;
+    }
+
     // Agrega la nueva reserva a los datos existentes
     currentData.data.push(reservationData);
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
+
     // Responde con éxito
-    res.status(201).json({ message: 'Reserva guardada con éxito' });
+    res.status(201).json({ message: 'Reserva guardada con éxito', googleEventId: googleEventId || null });
   } catch (error) {
     if (error.code === 'ENOENT') {
       await fs.mkdir(path.dirname(filePath), { recursive: true });

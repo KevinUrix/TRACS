@@ -13,6 +13,7 @@ export default function Calendar() {
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
+  const renderedCells = {}; // <<< Esto es nuevo, afuera del return, para registrar qué (hora, salón) ya se pintó
   
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -52,27 +53,68 @@ export default function Calendar() {
 
 
   const handleSaveReservation = async (reservationData) => {
-    console.log('Reserva guardada:', reservationData);
+    console.log('handleSaveReservation ejecutado con:', reservationData);
+    console.log('Valor original de createInGoogleCalendar:', reservationData.createInGoogleCalendar);
   
-    try {
-      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(reservationData),
-      });
+    if (String(reservationData.createInGoogleCalendar) === 'true') {
+      console.log('>> Se decidió CREAR evento en Google Calendar');
+      
+      try {
+        const authStatusRes = await fetch('/api/google/status');
+        const authStatus = await authStatusRes.json();
   
-      if (!response.ok) throw new Error('Error al guardar la reserva');
-      alert('Reserva guardada con éxito');
-      fetchReservations();
-    } catch (error) {
-      console.error(error);
-      alert('Hubo un problema al guardar la reserva');
+        if (!authStatus.authenticated) {
+          console.log('>> Usuario no autenticado, redirigiendo...');
+          window.location.href = 'http://localhost:3001/api/google/auth';
+          return;
+        }
+      } catch (err) {
+        console.error('Error al verificar autenticación:', err);
+        return;
+      }
+  
+      try {
+        console.log('>> Enviando petición a crear evento en Google');
+        const eventResponse = await fetch('/api/google/create-event', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(reservationData),
+        });
+  
+        if (!eventResponse.ok) throw new Error('Error al crear el evento');
+  
+        console.log('>> Evento creado, guardando reserva en BD');
+        const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(reservationData),
+        });
+  
+        if (!response.ok) throw new Error('Error al guardar la reserva');
+        fetchReservations();
+      } catch (error) {
+        console.error('Error en creación de evento o guardado:', error);
+      }
+    } else {
+      console.log('>> NO se debe crear evento en Google Calendar');
+  
+      try {
+        const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(reservationData),
+        });
+  
+        if (!response.ok) throw new Error('Error al guardar la reserva');
+        fetchReservations();
+      } catch (error) {
+        console.error('Hubo un problema al guardar la reserva:', error);
+      }
     }
   };
   
-  
+
+
   useEffect(() => {
     if (selectedBuilding) {
       // Nombre del JSON dinámico según el edificio seleccionado
@@ -161,7 +203,6 @@ export default function Calendar() {
       fetchReservations();
     }, [selectedCycle, selectedBuilding]);
 
-  const renderedCells = {}; // <<< Esto es nuevo, afuera del return, para registrar qué (hora, salón) ya se pintó
 
 
   return (
@@ -183,7 +224,7 @@ export default function Calendar() {
             <table className="schedule-table">
               <thead>
                 <tr className="table-header">
-                  <th className="table-cell">Hora</th> {/*Aquí antes estaba Hora*/}
+                  <th className="table-cell">Hora</th>
                   {classrooms.map((classroom, index) => (
                     <th key={index} className="table-cell">{classroom}</th>
                   ))}

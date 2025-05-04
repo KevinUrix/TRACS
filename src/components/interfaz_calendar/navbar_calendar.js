@@ -24,6 +24,19 @@ export default function Navbar({ toggleSidebar, selectedCycle}) {
   
     try {
       const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}`);
+
+      if (!response.ok) {
+        if (response.status === 400) {
+          console.warn(`Error de parámetros: ${response.error}`);
+          alert("Seleccione un ciclo para realizar una búsqueda.");
+        } else {
+          console.error(`Error del servidor: ${response.error}`);
+        }
+        setFilteredSchedule([]);
+        setShowPopup(false);
+        return;
+      }
+
       const data = await response.json();
   
       if (data.length > 0) {

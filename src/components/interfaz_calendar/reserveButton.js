@@ -73,7 +73,6 @@ export default function ReserveButton({
     setCourse('');
     setCode('');
     setProfessor('');
-    setDuration('');
     setStartTime(convertTo24HourFormat(selectedHour));
     setEndTime(addMinutes(startTime, 55));
     setReservationDate(getTodayDate()); /* Anteriormente para poner la fecha en automatico */

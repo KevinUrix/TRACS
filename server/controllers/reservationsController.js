@@ -29,6 +29,31 @@ const saveReservation = async (req, res) => {
       console.warn('Archivo inexistente o corrupto, se inicializa vacío');
     }
 
+    // Verifica duplicados por fecha, horario y salón
+    const alreadyExists = currentData.data.find(res => {
+      const sameDate = res.date?.trim() === reservationData.date?.trim();
+      const sameSchedule = res.schedule?.trim() === reservationData.schedule?.trim();
+      const sameClassroom = res.classroom?.trim().toUpperCase() === reservationData.classroom?.trim().toUpperCase();
+
+      const isDuplicate = sameDate && sameSchedule && sameClassroom;
+
+      if (isDuplicate) {
+        console.warn('Reserva duplicada detectada:', {
+          existente: res,
+          nueva: reservationData
+        });
+      }
+
+      return isDuplicate;
+    });
+
+    if (alreadyExists) {
+      return res.status(409).json({
+        error: 'Ya existe una reserva para esta fecha, horario y aula',
+      });
+    }
+
+
     // Crea evento en Google Calendar si corresponde
     if (reservationData.createInGoogleCalendar) {
       try {

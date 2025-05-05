@@ -101,8 +101,12 @@ export default function Calendar() {
       const result = await response.json();
   
       if (!response.ok) {
-        console.error('Error desde el servidor:', result.error || 'Error desconocido');
-        alert(`Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
+        if (response.status === 409) {
+          alert('⚠️ Ya existe una reserva para esta fecha, horario y aula.');
+        } else {
+          console.error('Error desde el servidor:', result.error || 'Error desconocido');
+          alert(`❌ Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
+        }
         return;
       }
   
@@ -201,10 +205,10 @@ export default function Calendar() {
   }, [selectedCycle, selectedBuilding]);
 
 
-    useEffect(() => {
-      if (!selectedCycle || !selectedBuilding) return;
-      fetchReservations();
-    }, [selectedCycle, selectedBuilding]);
+  useEffect(() => {
+    if (!selectedCycle || !selectedBuilding) return;
+    fetchReservations();
+  }, [selectedCycle, selectedBuilding]);
 
 
 

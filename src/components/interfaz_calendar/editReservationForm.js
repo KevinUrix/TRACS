@@ -14,6 +14,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('');
   const [googleEventId, setGoogleEventId] = useState('');
 
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     if (reservation) {
       setCourse(reservation.course);
@@ -26,6 +28,9 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
       setClassroom(reservation.classroom);
       setDuration(reservation.duration || 'Temporal');
       setCreateInGoogleCalendar(reservation.createInGoogleCalendar);
+
+      setIsLoading(false); // Ya cargó
+
     }
     if (reservation.googleEventId)
       setGoogleEventId(reservation.googleEventId);
@@ -95,6 +100,9 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
     <div className="modal-overlay" onClick={onCancel}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <h2>Modificar reserva</h2>
+        {isLoading ? (
+          <div className="modal"><p>Cargando...</p></div>
+        ) : (
         <form onSubmit={(e) => e.preventDefault()}>
           <div>
             <label>Profesor:</label>
@@ -215,6 +223,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             </button>
           </div>
         </form>
+        )}
       </div>
     </div>
   );

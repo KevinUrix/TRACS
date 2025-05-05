@@ -14,6 +14,27 @@ export default function Calendar() {
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
+  const today = new Date();
+
+  // Obtener el día de la semana (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
+  const dayOfWeek = today.getDay();
+  const startOfWeek = new Date(today);
+  startOfWeek.setDate(today.getDate() - dayOfWeek); // Domingo anterior
+
+  const endOfWeek = new Date(startOfWeek);
+  endOfWeek.setDate(startOfWeek.getDate() + 7); // Domingo siguiente
+
+  // Formatear a YYYY-MM-DD
+  const startDateString = startOfWeek.toISOString().split('T')[0];
+  const endDateString = endOfWeek.toISOString().split('T')[0];
+
+  function isInThisWeek(dateString) {
+    return dateString >= startDateString && dateString <= endDateString;
+  }
+
+  function isSameOrBeforeWeekStart(dateString) {
+    return dateString <= endDateString;
+  }
   
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -237,12 +258,18 @@ export default function Calendar() {
                           const days = res.days.split(' ');
 
                           const isOnDay = days.includes(selectedDay.charAt(0));
+
+                          const isTemporalValid = res.duration === "Temporal" && isInThisWeek(res.date);
+                          const isSiempreValid = res.duration === "Siempre" && isSameOrBeforeWeekStart(res.date);
+
                           return (
                             currentHour >= startHour &&
                             currentHour <= endHour &&
                             res.classroom === classroom &&
-                            isOnDay
+                            isOnDay &&
+                            (isTemporalValid || isSiempreValid)
                           );
+
                         });
 
                         // Buscar si hay curso

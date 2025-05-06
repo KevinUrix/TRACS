@@ -197,14 +197,20 @@ export default function ReserveButton({
                   disabled
                 />
               </label>
-              <label>
-                Día/s:
-                <input
-                  type="text"
-                  value={selectedDay}
-                  disabled
-                />
-              </label>
+              <div className='select-container'>
+                <label>
+                  Día/s:
+                  <select className='day-select2'type="text" value={selectedDay} disabled>
+                    <option value="">Selecciona un día</option>
+                    <option value="L">Lunes</option>
+                    <option value="M">Martes</option>
+                    <option value="I">Miércoles</option>
+                    <option value="J">Jueves</option>
+                    <option value="V">Viernes</option>
+                    <option value="S">Sábado</option>
+                  </select>
+                </label>
+              </div>
               <label>
                 Fecha:
                 <input

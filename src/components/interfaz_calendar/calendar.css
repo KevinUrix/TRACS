@@ -410,6 +410,27 @@
   width: 50%;
 }
 
+.modal form input .input-horario{ /*No se usa aún*/
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  width: 10%;
+}
+
+/*------------- Para el select de formulario de creación y edición -----------------*/
+
+.select-container .day-select2 {
+  margin-left: 1rem;
+  width: 12rem;
+  background-color: #fefefe;
+}
+
+/*------------------------------*/
+
 .modal form input:focus,
 .modal form select:focus {
   border-color: #66b3ff;
@@ -500,11 +521,6 @@
 
 
 /*------------------------------------------------------*/
-
-.select-container .day-select2 {
-  width: 12rem;
-  background-color: #fefefe;
-}
 
 /* Animaciones 
 @keyframes fadeIn {

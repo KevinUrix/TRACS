@@ -91,7 +91,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   
       if (fetchReservations) await fetchReservations();
   
-      closePopup();
+      closeEditForm();
     } catch (err) {
       console.error(err);
       alert('Hubo un error al modificar la reserva');
@@ -149,6 +149,10 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
       console.error("Error al eliminar:", err);
       alert("Hubo un error al eliminar la reserva.");
     }
+  };
+
+  const closeEditForm = () => {
+    setSelectedReservation(null);
   };
 
 
@@ -212,7 +216,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         <EditReservationForm
           reservation={selectedReservation}
           onSave={handleSaveReservation}
-          onCancel={closePopup}
+          onCancel={closeEditForm} // ← Solo cierra el formulario
           selectedBuilding={selectedBuilding}
         />
       )}

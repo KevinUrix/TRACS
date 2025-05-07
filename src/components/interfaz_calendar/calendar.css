@@ -4,6 +4,7 @@
 .calendar-container {
   display: flex;
   background-color: #f3f4f6; /* Gris claro */
+  height: 100vh;
 }
 
 /* Main content */
@@ -86,7 +87,6 @@
   /*width: 100%;*/
   /*height: 100%;*/
   max-width: 200vh;
-  max-height: 80vh;
   padding: 0rem 0rem;
 }
 

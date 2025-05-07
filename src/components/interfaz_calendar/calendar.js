@@ -356,17 +356,16 @@ export default function Calendar() {
                             {matchingReservation ? (
                               <>
                                 <div className="professor-name">{matchingReservation.professor}</div>
-                                <div className="course-name">{matchingReservation.course}</div>
-                                <div className="course-code">Clave: {matchingReservation.code}</div>
+                                <div className="course-name"> {matchingReservation.code} {matchingReservation.course}</div>
                                 <div className="course-date">Fecha: {matchingReservation.date}</div>
                               </>
                             ) : matchingCourse ? (
                               <>
                                 <div className="professor-name">{matchingCourse.professor}</div>
-                                <div className="course-name">{matchingCourse.data.course}</div>
-                                <div className="course-code">Clave: {matchingCourse.data.code}</div>
+                                <div className="course-name"> {matchingCourse.data.code} {matchingCourse.data.course}</div>
+                                {/* <div className="course-code">Clave: </div> */}
                                 <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
-                                <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div>
+                                {/* <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div> */}
                               </>
                             ) : (
                               <ReserveButton

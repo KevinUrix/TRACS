@@ -96,6 +96,12 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
 
   const isFormIncomplete = !professor || !course || !code || !date;
 
+  const handleInputChange = (setter) => (e) => {
+    const value = e.target.value;
+    const valid = /^[\w\sáéíóúÁÉÍÓÚñÑ]*$/; // Acepta letras, números, espacios y acentos
+    if (valid.test(value)) setter(value);
+  };
+
   return (
     <div className="modal-overlay" onClick={onCancel}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -109,7 +115,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             <input
               type="text"
               value={professor}
-              onChange={(e) => setProfessor(e.target.value)}
+              onChange={handleInputChange(setProfessor)}
             />
           </div>
           <div>
@@ -117,7 +123,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             <input
               type="text"
               value={course}
-              onChange={(e) => setCourse(e.target.value)}
+              onChange={handleInputChange(setCourse)}
             />
           </div>
           <label>
@@ -125,7 +131,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             <input
               type="text"
               value={code}
-              onChange={(e) => setCode(e.target.value)}
+              onChange={handleInputChange(setCode)}
               required
             />
           </label>

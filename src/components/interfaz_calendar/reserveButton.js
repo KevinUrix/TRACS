@@ -142,6 +142,12 @@ export default function ReserveButton({
 
   const isFormIncomplete = !professor || !course || !code || !reservationDate || !duration;
 
+  const handleInputChange = (setter) => (e) => {
+    const value = e.target.value;
+    const valid = /^[\w\sáéíóúÁÉÍÓÚñÑ]*$/; // Acepta letras, números, espacios y acentos
+    if (valid.test(value)) setter(value);
+  };
+
 
   return (
     <>
@@ -159,7 +165,7 @@ export default function ReserveButton({
                 <input
                   type="text"
                   value={professor}
-                  onChange={(e) => setProfessor(e.target.value)}
+                  onChange={handleInputChange(setProfessor)}
                   required
                 />
               </label>
@@ -168,7 +174,7 @@ export default function ReserveButton({
                 <input
                   type="text"
                   value={course}
-                  onChange={(e) => setCourse(e.target.value)}
+                  onChange={handleInputChange(setCourse)}
                   required
                 />
               </label>
@@ -177,7 +183,7 @@ export default function ReserveButton({
                 <input
                   type="text"
                   value={code}
-                  onChange={(e) => setCode(e.target.value)}
+                  onChange={handleInputChange(setCode)}
                   required
                 />
               </label>

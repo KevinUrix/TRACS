@@ -122,9 +122,9 @@
 
 /* Celdas no horarias (salones) */
 .schedule-table th:not(:first-child),
-.schedule-table td:not(:first-child) { /* Ancho y alto de las columnas y filas de info de salones */
-  min-width: 25rem;
-  max-width: 25rem;
+.schedule-table td:not(:first-child) { /* Ancho de las columnas y filas de info de salones */
+  min-width: 22rem;
+  max-width: 22rem;
   
   /*height: 8rem;*/
 }

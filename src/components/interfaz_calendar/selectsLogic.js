@@ -124,6 +124,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     }
   };
 
+  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
     <div className="flex space-x-6 my-10 pl-6 mt-10">
@@ -174,7 +175,9 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         <span>📆</span>
       </div>
 
-      <DownloadButton onDownload={handleDownload}/>
+      {userRole === 'superuser' && (
+        <DownloadButton onDownload={handleDownload} />
+      )}
 
       <div className="-ml-6">
         <ViewReservationsButton

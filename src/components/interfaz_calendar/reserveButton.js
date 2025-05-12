@@ -148,12 +148,14 @@ export default function ReserveButton({
     if (valid.test(value)) setter(value);
   };
 
+  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
     <>
+    {userRole === 'superuser' && (
       <button className="reserve-button" onClick={handleOpenModal}>
         R
-      </button>
+      </button>)}
 
       {isModalOpen && (
         <div className="modal-overlay">

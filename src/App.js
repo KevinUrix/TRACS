@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Calendar from './components/interfaz_calendar/calendar';  // Importamos Calendar
 import Reports from './components/interfaz_reports/reports';    // Importamos Reports
 import Login from './components/interfaz_login/login';
+import Registro from './components/interfaz_login/registro';
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,6 +23,7 @@ export default function App() {
           {/* Rutas */}
           <Routes>
             <Route path='/' element={<Login />} />
+            <Route path='/registro' element={<Registro />}/>
             <Route path="/calendario" element={<Calendar />} />
             <Route path="/reportes" element={<Reports />} />
           </Routes>

@@ -14,6 +14,19 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 require('dotenv').config();
 
+// Para SQL
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const { Pool } = require('pg');
+
+const pool = new Pool({
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  port: 5432,
+});
+
 // Middlewares
 app.use(cors());
 app.use(express.json());
@@ -28,6 +41,45 @@ app.use('/api', localScheduleRoutes);
 app.use('/api', cyclesRoutes);
 app.use('/api', buildingsRoutes);
 app.use('/api/google', googleAuthRoutes);
+
+/*---------------- SQL -----------------------*/
+// Ruta para registrar usuario
+app.post('/api/register', async (req, res) => {
+  const { username, password } = req.body;
+  try {
+    const hash = await bcrypt.hash(password, 10);
+    await pool.query('INSERT INTO users (username, password) VALUES ($1, $2)', [username, hash]);
+    res.status(201).json({ message: 'Usuario registrado' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Error al registrar usuario' });
+  }
+});
+
+// Ruta para iniciar sesión
+app.post('/api/login', async (req, res) => {
+  const { username, password } = req.body;
+  try {
+    const result = await pool.query('SELECT * FROM users WHERE username = $1', [username]);
+    if (result.rows.length === 0) return res.status(400).json({ error: 'Usuario no encontrado' });
+
+    const valid = await bcrypt.compare(password, result.rows[0].password);
+    if (!valid) return res.status(401).json({ error: 'Contraseña incorrecta' });
+
+    const user = result.rows[0];
+
+    const token = jwt.sign(
+      { id: user.id, username: user.username, role: user.role },
+      process.env.JWT_SECRET,
+      { expiresIn: '1h' }
+    );
+    //const token = jwt.sign({ id: result.rows[0].id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    res.json({ token });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Error en login' });
+  }
+});
 
 // Inicia el servidor
 app.listen(PORT, () => {

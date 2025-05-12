@@ -1,27 +1,60 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { jwtDecode } from 'jwt-decode';
 
 export default function Login() {
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    console.log('Usuario:', usuario);
-    console.log('Password:', password);
-    // Lógica de autenticación aquí
-    navigate('/calendario');
+
+    try {
+      const res = await fetch('http://localhost:3001/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: usuario, password }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.error || 'Error al iniciar sesión');
+        return;
+      }
+
+      localStorage.setItem('token', data.token);
+
+      // Decodifica el token y guarda el rol
+      const decoded = jwtDecode(data.token);
+      localStorage.setItem('role', decoded.role); // Ahora puedes usarlo para mostrar/ocultar cosas
+
+      navigate('/calendario');
+    } catch (err) {
+      console.error('Error de red:', err);
+      setError('No se pudo conectar con el servidor');
+    }
+  };
+
+  const goToSignup = () => {
+    navigate('/registro');
   };
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80">
         <h2 className="text-2xl font-bold mb-4">Iniciar Sesión</h2>
+
+        {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
+
         <div className="mb-4">
           <label className="block text-gray-700 font-semibold mb-2">Usuario</label>
           <input
-            type="usuario"
+            type="text"
             value={usuario}
             onChange={(e) => setUsuario(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -42,9 +75,16 @@ export default function Login() {
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 mb-2"
         >
           Iniciar Sesión
+        </button>
+        <button
+          type="button"
+          onClick={goToSignup}
+          className="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300"
+        >
+          Registrarse
         </button>
       </form>
     </div>

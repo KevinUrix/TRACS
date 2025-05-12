@@ -155,6 +155,8 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
     setSelectedReservation(null);
   };
 
+  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
+
 
   return (
     <>
@@ -189,18 +191,22 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
                     <b>Salón:</b> {res.classroom}<br />
                     <b>Duración:</b> {res.duration}<br />
                     <div className="mt-4 flex justify-end gap-2">
-                      <button
-                        className="px-4 py-2 bg-red-500 text-white rounded-md"
-                        onClick={() => deleteReservation(res)}
-                      >
-                        Eliminar
-                      </button>
-                      <button
-                        className="px-4 py-2 bg-blue-500 text-white rounded-md"
-                        onClick={() => handleModify(res)} // Abrir el formulario de modificación
-                      >
-                        Modificar
-                      </button>
+                      {userRole === 'superuser' && (
+                        <button
+                          className="px-4 py-2 bg-red-500 text-white rounded-md"
+                          onClick={() => deleteReservation(res)}
+                        >
+                          Eliminar
+                        </button>
+                      )}
+                      {userRole === 'superuser' && (
+                        <button
+                          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                          onClick={() => handleModify(res)} // Abrir el formulario de modificación
+                        >
+                          Modificar
+                        </button>
+                    )}
                     </div>
                     <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
                   </li>

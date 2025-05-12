@@ -7,6 +7,9 @@ const buildingsData = require('../config/buildings');
 // Formato de fecha
 const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
 
+// Mecanismo de bloqueo para evitar duplicación en scraping en segundo plano
+const activeBackgroundScraping = new Set();
+
 // Función para extraer datos del HTML
 const extractData = ($, buildingName) => {
     const results = [];
@@ -63,32 +66,32 @@ const extractData = ($, buildingName) => {
     return results;
 };
 
-// Función para pausar un tiempo determinado
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// Función para iniciar el scraping en segundo plano y almacenar en caché con retraso
+// Scraping en segundo plano (background)
 const backgroundScraping = async (cycle, skipEdifp = null) => {
-
     for (const building of buildingsData.edifp) {
         const edifp = building.value;
         
-        if (edifp === skipEdifp) continue;
+        if (edifp === skipEdifp || activeBackgroundScraping.has(edifp)) continue;
+
+        activeBackgroundScraping.add(edifp);
 
         const cacheKey = `schedule-${cycle}-building-${edifp}`;
         if (cache.get(cacheKey)) {
-            console.log(`Ya en caché: ${edifp}`);
+            activeBackgroundScraping.delete(edifp);
             continue;
         }
 
-        const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
-        const formData = new URLSearchParams({
-            ciclop: cycle,
-            cup: 'D',
-            edifp,
-            mostrarp: '7000'
-        });
-
         try {
+            const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
+            const formData = new URLSearchParams({
+                ciclop: cycle,
+                cup: 'D',
+                edifp,
+                mostrarp: '7000'
+            });
+
             const response = await axios.post(url, formData.toString(), {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 responseType: 'arraybuffer'
@@ -103,16 +106,17 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
                 console.log(`Datos de ${edifp} almacenados en caché en segundo plano.`);
             }
 
-            // Pausar 350ms antes de la siguiente petición
             await delay(350);
 
         } catch (err) {
             console.error(`Error al hacer scraping de ${edifp}:`, err.message);
+        } finally {
+            activeBackgroundScraping.delete(edifp);
         }
     }
 };
 
-// Función principal para hacer scraping y manejar caché
+// Scraping principal (directo al usuario)
 const scrapeData = async (cycle, edifp) => {
     const cacheKey = `schedule-${cycle}-building-${edifp}`;
     const cachedSchedules = cache.get(cacheKey);
@@ -146,6 +150,7 @@ const scrapeData = async (cycle, edifp) => {
             cache.set(cacheKey, data);
         }
 
+        // Iniciar el scraping en segundo plano para los demás
         backgroundScraping(cycle, edifp);
 
         return data;
@@ -157,4 +162,3 @@ const scrapeData = async (cycle, edifp) => {
 };
 
 module.exports = { scrapeData };
-

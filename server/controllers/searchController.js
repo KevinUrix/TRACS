@@ -1,23 +1,25 @@
-const { searchProfessor } = require('../scraper/search');
+const cache = require('../scraper/cache');
 
+// Normalización del nombre del profesor
 const normalizeName = (name) => {
   return name
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, '')   // quita las tildes
-    .replace(/[^a-z\sñ]/g, '')         // permite letras, espacios y ñ
-    .replace(/\s+/g, ' ')              // reduce espacios múltiples
+    .replace(/[\u0300-\u036f]/g, '')  // Elimina las tildes
+    .replace(/[^a-z\sñ]/g, '')        // Permite letras, espacios y ñ
+    .replace(/\s+/g, ' ')             // Reduce espacios múltiples
     .trim();
 };
 
+// Verificación de coincidencias entre los nombres
 const matchesName = (fullName, normalizedQuery) => {
-  // Si el query normalizado queda vacío, no hace match
   if (!normalizedQuery) return false;
   return normalizedQuery
     .split(' ')
     .every(q => fullName.includes(q));
 };
 
+// Función de búsqueda
 const getSearch = async (req, res) => {
   const professorName = req.query.name;
   const cycle = req.query.cycle;
@@ -34,19 +36,44 @@ const getSearch = async (req, res) => {
   }
 
   try {
-    const data = await searchProfessor(cycle);
-    const results = data.filter(item => {
-      const normalizedFullName = normalizeName(item.professor);
-      return matchesName(normalizedFullName, normalizedQuery);
-    });
+    let results = [];
+    // Obtener todas las claves del caché
+    const cacheKeys = cache.keys();
+    // Procesar todas las claves que corresponden al ciclo
+    const cycleCacheKeyPrefix = `schedule-${cycle}-building-`;
 
-    // Si se recibe un edificio, primero coloca esos resultados
+    for (let cacheKey of cacheKeys) {
+      // Procesar solo los cachés que corresponden al ciclo
+      if (cacheKey.startsWith(cycleCacheKeyPrefix)) {
+        const data = cache.get(cacheKey);
+
+        if (data && Array.isArray(data)) {
+          // Filtra los resultados que coinciden con el nombre del profesor
+          const filteredResults = data.filter(item => {
+            const normalizedFullName = normalizeName(item.professor);
+            const match = matchesName(normalizedFullName, normalizedQuery);
+            return match;
+          });
+
+          // Agregar al array de resultados
+          results.push(...filteredResults);
+        }
+      }
+    }
+
+    // Ordenar solo si se recibió un building
     if (building) {
       results.sort((a, b) => {
         const aInBuilding = a.data.building === building ? -1 : 1;
         const bInBuilding = b.data.building === building ? -1 : 1;
         return aInBuilding - bInBuilding;
       });
+    }
+
+    // Enviar los resultados
+    if (results.length === 0) {
+      console.log('No se encontraron resultados para este profesor.');
+      return res.json({ message: 'No se encontraron horarios para este profesor.' });
     }
 
     res.json(results);

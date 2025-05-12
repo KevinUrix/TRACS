@@ -1,23 +1,19 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
-const NodeCache = require('node-cache');
+const cache = require('./cache');
+const buildingsData = require('../config/buildings');
 
-
-// Crear instancia de caché
-const cache = new NodeCache({ stdTTL: 43200, checkperiod: 120 });
-
-// Expresión regular para fechas
+// Formato de fecha
 const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
 
+// Función para extraer datos del HTML
 const extractData = ($, buildingName) => {
     const results = [];
-    let lastValidRow = { nrc: "", code: "", course: "", spots: "", available: "" };
+    let lastValidRow = { nrc: '', code: '', course: '', spots: '', available: '' };
 
     $('tr').each((_, row) => {
         const columns = $(row).find('td.tddatos');
-
-        // Extraemos datos de la fila
         const nrc = columns.eq(0).text().trim() || lastValidRow.nrc;
         const code = columns.eq(1).text().trim() || lastValidRow.code;
         const course = columns.eq(2).text().trim() || lastValidRow.course;
@@ -25,14 +21,10 @@ const extractData = ($, buildingName) => {
         const available = columns.eq(6).text().trim() || lastValidRow.available;
 
         if (course) {
-            // Actualizamos los valores válidos
             lastValidRow = { nrc, code, course, spots, available };
         }
 
-        // Calculamos estudiantes solo si los valores son válidos
         const students = parseInt(spots) - parseInt(available);
-
-        // Obtenemos la tabla y los profesores
         const table = $(row).find('table.td1');
         const professor = $(row).find('td.tdprofesor').eq(1).text().trim();
 
@@ -42,28 +34,27 @@ const extractData = ($, buildingName) => {
                 if (!$(tableRow).find('td').toArray().some(cell => $(cell).text().includes(buildingName))) {
                     return null;
                 }
-
                 const cells = $(tableRow).find('td')
                     .toArray()
                     .map(cell => $(cell).text().trim())
-                    .filter(text => text !== "01" && text !== "04" && !datePattern.test(text));
+                    .filter(text => text !== '01' && text !== '04' && !datePattern.test(text));
 
                 if (cells.length >= 4 && cells[2] && cells[3]) {
                     return {
                         data: {
-                            "schedule": cells[0],
-                            "days": cells[1],
-                            "building": cells[2],
-                            "classroom": cells[3],
-                            "nrc": nrc,
-                            "code": code,
-                            "students": students,
-                            "course": course
+                            schedule: cells[0],
+                            days: cells[1],
+                            building: cells[2],
+                            classroom: cells[3],
+                            nrc,
+                            code,
+                            students,
+                            course
                         },
                         professor
                     };
                 }
-            }).filter(Boolean); // Removemos valores nulos
+            }).filter(Boolean);
 
             results.push(...formattedRows);
         }
@@ -72,18 +63,68 @@ const extractData = ($, buildingName) => {
     return results;
 };
 
+// Función para pausar un tiempo determinado
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// Función para iniciar el scraping en segundo plano y almacenar en caché con retraso
+const backgroundScraping = async (cycle, skipEdifp = null) => {
+
+    for (const building of buildingsData.edifp) {
+        const edifp = building.value;
+        
+        if (edifp === skipEdifp) continue;
+
+        const cacheKey = `schedule-${cycle}-building-${edifp}`;
+        if (cache.get(cacheKey)) {
+            console.log(`Ya en caché: ${edifp}`);
+            continue;
+        }
+
+        const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
+        const formData = new URLSearchParams({
+            ciclop: cycle,
+            cup: 'D',
+            edifp,
+            mostrarp: '7000'
+        });
+
+        try {
+            const response = await axios.post(url, formData.toString(), {
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                responseType: 'arraybuffer'
+            });
+
+            const decodedData = iconv.decode(response.data, 'latin1');
+            const $ = cheerio.load(decodedData);
+            const data = extractData($, edifp);
+
+            if (data.length > 0) {
+                cache.set(cacheKey, data);
+                console.log(`Datos de ${edifp} almacenados en caché en segundo plano.`);
+            }
+
+            // Pausar 350ms antes de la siguiente petición
+            await delay(350);
+
+        } catch (err) {
+            console.error(`Error al hacer scraping de ${edifp}:`, err.message);
+        }
+    }
+};
+
+// Función principal para hacer scraping y manejar caché
 const scrapeData = async (cycle, edifp) => {
     const cacheKey = `schedule-${cycle}-building-${edifp}`;
     const cachedSchedules = cache.get(cacheKey);
 
     if (cachedSchedules) {
-        console.log("Datos obtenidos desde el caché.");
+        console.log('Datos obtenidos desde el caché.');
         return cachedSchedules;
     }
 
-    const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
+    console.log('Datos no encontrados en caché, iniciando scraping principal...');
 
+    const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
     const formData = new URLSearchParams({
         ciclop: cycle,
         cup: 'D',
@@ -93,31 +134,27 @@ const scrapeData = async (cycle, edifp) => {
 
     try {
         const response = await axios.post(url, formData.toString(), {
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             responseType: 'arraybuffer'
         });
 
-        const decodedData = iconv.decode(response.data, 'latin1'); 
+        const decodedData = iconv.decode(response.data, 'latin1');
         const $ = cheerio.load(decodedData);
         const data = extractData($, edifp);
 
-        // Solo almacenar en caché si hay datos
         if (data.length > 0) {
             cache.set(cacheKey, data);
-            console.log("Datos obtenidos y almacenados en caché.");
-        } else {
-            console.warn("No se encontraron datos válidos, no se guardarán en caché.");
         }
+
+        backgroundScraping(cycle, edifp);
 
         return data;
 
     } catch (err) {
-        console.error(`Error al obtener datos de ${edifp}:`, err.message);
+        console.error(`Error al hacer scraping de ${edifp}:`, err.message);
         return [];
     }
 };
 
-
 module.exports = { scrapeData };
+

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ProfessorSchedule from './profesorSchedule';
+import ProfessorSchedule from './professorSchedule';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 
 
-export default function Navbar({ toggleSidebar, selectedCycle}) {
+export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}) {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
@@ -23,12 +23,16 @@ export default function Navbar({ toggleSidebar, selectedCycle}) {
     }
   
     try {
-      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}`);
+      if (!selectedCycle) {
+        alert("Seleccione un ciclo para realizar una búsqueda.");
+        return;
+      }
+      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}`);
 
       if (!response.ok) {
         if (response.status === 400) {
           console.warn(`Error de parámetros: ${response.error}`);
-          alert("Seleccione un ciclo para realizar una búsqueda.");
+          alert('Error de parámetros. Ingrese un valor valido para la busqueda.')
         } else {
           console.error(`Error del servidor: ${response.error}`);
         }

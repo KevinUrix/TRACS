@@ -4,12 +4,13 @@ import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCicle, fetchReservations, reservations }) {
+export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCycle, fetchReservations, reservations }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCycle, setSelectedCycle] = useState('');
-  const [cicle, setCicle] = useState([]);
+  const [cycle, setCycle] = useState([]);
   const [building, setBuilding] = useState([]);
+  const [loadingCycle, setLoadingCycle] = useState(false);
   // const [allReservations, setAllReservations] = useState([]);
   
   
@@ -29,18 +30,30 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCi
   useEffect(() => {
     const today = new Date();
     const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-    const dayName = daysOfWeek[today.getDay()];
+    const dayName = today.getDay() === 0 ? "Lunes" : daysOfWeek[today.getDay()];
     setSelectedDay(dayName);
     onUpdateDay(dayMappings[dayName]); 
   }, [onUpdateDay]);
 
+
+  // CICLOS
   useEffect(() => {
-    //  CICLOS
-    fetch("/api/cycles")
-        .then(response => response.json())
-        .then(data => setCicle(data))
-        .catch(error => console.error("Error cargando los ciclos:", error));
+    const fetchCycles = async () => {
+      setLoadingCycle(true);
+      try {
+        const response = await fetch("/api/cycles");
+        const data = await response.json();
+        setCycle(data);
+      } catch (error) {
+        console.error("Error cargando los ciclos:", error);
+      } finally {
+        setLoadingCycle(false);
+      }
+    };
+  
+    fetchCycles();
   }, []);
+  
 
   // EDIFICIOS
   useEffect(() => {
@@ -56,9 +69,9 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCi
         .catch(error => console.error("Error cargando los edificios:", error));
   }, []);
 
-  const handleCicleChange = (e) => {
+  const handleCycleChange = (e) => {
     setSelectedCycle(e.target.value);
-    onUpdateCicle(e.target.value);
+    onUpdateCycle(e.target.value);
   };
 
   const handleBuildingChange = (e) => {
@@ -117,13 +130,20 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCi
       <div className="select-container">
         <select
           value={selectedCycle}
-          onChange={handleCicleChange}
-          className="cicle-select"
+          onChange={handleCycleChange}
+          className="cycle-select"
+          disabled={loadingCycle}
         >
-          <option value="" disabled>Selecciona un ciclo</option>
-            {cicle.map((cicle) => (
-              <option key={cicle.value} value={cicle.value}>{cicle.text}</option>
-            ))}
+          {loadingCycle ? (
+            <option value="">Cargando ciclos...</option> // Mensaje de carga
+          ) : (
+            <>
+              <option value="" disabled>Selecciona un ciclo</option>
+              {cycle.map((cycle) => (
+                <option key={cycle.value} value={cycle.value}>{cycle.text}</option>
+              ))}
+            </>
+          )}
         </select>
         <span>📅</span>
       </div>
@@ -135,9 +155,9 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCi
           className="building-select"
         >
           <option value="" disabled>Selecciona un edificio</option>
-          {building.map((building, index) => (
-            <option key={index} value={building}>{building}</option>
-          ))}
+            {building.map((building, index) => (
+              <option key={index} value={building.value}>{building.text}</option>
+            ))}
         </select>
         <span>🏢</span>
       </div>
@@ -147,7 +167,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCi
         onChange={handleDayChange}
         className="day-select"
       >
-        {['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
+        {['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
           <option key={day} value={day}>{day}</option>
         ))}
       </select>

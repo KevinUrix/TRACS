@@ -86,7 +86,6 @@
   overflow: auto;
   /*width: 100%;*/
   /*height: 100%;*/
-  max-width: 200vh;
   padding: 0rem 0rem;
 }
 
@@ -290,7 +289,7 @@
   padding-left: 0.5rem;
 }
 
-.select-container .cicle-select {
+.select-container .cycle-select {
   background-color: #cce4ff;
   width: 18.75rem;
 }

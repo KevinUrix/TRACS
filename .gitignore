@@ -26,3 +26,4 @@ yarn-error.log*
 .env
 server/data/googleTokens.json
 .vscode/
+ngrok.exe

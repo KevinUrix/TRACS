@@ -6,79 +6,72 @@ const NodeCache = require('node-cache');
 // Crear instancia de caché
 const cache = new NodeCache({ stdTTL: 43200, checkperiod: 120 });
 
+// Expresión regular para fechas
+const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
+
+// Función para extraer datos de cada fila
 const extractData = ($) => {
-    const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
-    let results = [];
-    let lastNrc = "";
-    let lastCode = "";
-    let lastCourse = "";
-    let lastSpots = "";
-    let lastAvailable = "";
+    const results = [];
+    let lastValidRow = { nrc: "", code: "", course: "", spots: "", available: "" };
 
     $('tr').each((_, row) => {
-        let nrc = $(row).find('td.tddatos').eq(0).text().trim(); // Obtiene el td que contiene el nrc
-        let code = $(row).find('td.tddatos').eq(1).text().trim(); // Obtiene el td que contiene la clave
-        let course = $(row).find('td.tddatos').eq(2).text().trim(); // Obtiene el td que contiene la materia
-        let spots = $(row).find('td.tddatos').eq(5).text().trim(); // Obtiene el td que contiene los cupos
-        let available = $(row).find('td.tddatos').eq(6).text().trim(); // Obtiene el td que contiene los disponibles
-        const table = $(row).find('table.td1');
-        const professors = $(row).find('td.tdprofesor');
+        const columns = $(row).find('td.tddatos');
+
+        // Extraemos datos de la fila
+        const nrc = columns.eq(0).text().trim() || lastValidRow.nrc;
+        const code = columns.eq(1).text().trim() || lastValidRow.code;
+        const course = columns.eq(2).text().trim() || lastValidRow.course;
+        const spots = columns.eq(5).text().trim() || lastValidRow.spots;
+        const available = columns.eq(6).text().trim() || lastValidRow.available;
 
         if (course) {
-            lastNrc = nrc;
-            lastCode = code; // Si existe la materia, actualizar la última válida
-            lastCourse = course;
-            lastSpots = spots;
-            lastAvailable = available;
-        } else {
-            nrc = lastNrc;
-            course = lastCourse; // Si no hay materia en el td, usa la última materia válida
-            code = lastCode;
-            course = lastCourse;
-            spots = lastSpots;
-            available = lastAvailable;
+            // Actualizamos los valores válidos
+            lastValidRow = { nrc, code, course, spots, available };
         }
 
-        const students = spots - available;
+        // Calculamos estudiantes solo si los valores son válidos
+        const students = parseInt(spots) - parseInt(available);
+
+        // Obtenemos la tabla y los profesores
+        const table = $(row).find('table.td1');
+        const professor = $(row).find('td.tdprofesor').eq(1).text().trim();
 
         if (table.length) {
-            table.find('tr').each((_, tableRow) => {
-                if (!$(tableRow).find('td').toArray().some(cell => $(cell).text())) return;
-                
-                const cells = $(tableRow).find('td')
+            const rows = table.find('tr').toArray();
+            const formattedRows = rows.map(row => {
+                const cells = $(row).find('td')
                     .toArray()
                     .map(cell => $(cell).text().trim())
                     .filter(text => text !== "01" && text !== "04" && !datePattern.test(text));
 
-                if (cells.length < 4) return;
-                if (cells[2] === "") return;
-                
-                const formattedData = {
-                    "schedule": cells[0],
-                    "days": cells[1],
-                    "building": cells[2],
-                    "classroom": cells[3],
-                    "nrc": nrc,
-                    "code": code,
-                    "students": students,
-                    "course": course
-                };
+                if (cells.length >= 4 && cells[2] && cells[3]) {
+                    return {
+                        data: {
+                            "schedule": cells[0],
+                            "days": cells[1],
+                            "building": cells[2],
+                            "classroom": cells[3],
+                            "nrc": nrc,
+                            "code": code,
+                            "students": students,
+                            "course": course
+                        },
+                        professor
+                    };
+                }
+            }).filter(Boolean); // Removemos valores nulos
 
-                results.push({
-                    data: formattedData,
-                    professor: professors.eq(1).text().trim()
-                });
-                // console.log(cells.filter(text => text !== "01" && !datePattern.test(text)).join(","), course, professors.eq(1).text().trim());
-            });
+            results.push(...formattedRows);
         }
     });
-    return results
+
+    return results;
 };
 
 const searchProfessor = async (cycle) => {
-    const cacheKey = `schedule-${cycle}`; // Clave para el caché
+    const cacheKey = `schedule-${cycle}`;
     const cachedData = cache.get(cacheKey);
-    
+
     if (cachedData) {
         console.log("Datos obtenidos desde el caché.");
         return cachedData;
@@ -100,7 +93,7 @@ const searchProfessor = async (cycle) => {
             responseType: 'arraybuffer'
         });
 
-        const decodedData = iconv.decode(response.data, 'latin1'); 
+        const decodedData = iconv.decode(response.data, 'latin1');
         const $ = cheerio.load(decodedData);
         const data = extractData($);
 
@@ -119,6 +112,5 @@ const searchProfessor = async (cycle) => {
         return [];
     }
 };
-
 
 module.exports = { searchProfessor };

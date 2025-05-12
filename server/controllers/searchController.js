@@ -10,40 +10,44 @@ const normalizeName = (name) => {
     .trim();
 };
 
-const matchesName = (fullName, query) => {
-  const normalizedFullName = normalizeName(fullName);
-  const normalizedQuery = normalizeName(query);
-
+const matchesName = (fullName, normalizedQuery) => {
   // Si el query normalizado queda vacío, no hace match
   if (!normalizedQuery) return false;
-
   return normalizedQuery
     .split(' ')
-    .every(q => normalizedFullName.includes(q));
+    .every(q => fullName.includes(q));
 };
 
 const getSearch = async (req, res) => {
   const professorName = req.query.name;
   const cycle = req.query.cycle;
-  console.log(professorName, cycle);
+  const building = req.query.buildingName || '';
+  console.log(professorName, cycle, building);
 
   if (!professorName || !cycle) {
     return res.status(400).json({ error: 'Faltan parámetros: name y cycle son requeridos' });
   }
 
-  // Verifica si el nombre es válido después de normalizar
   const normalizedQuery = normalizeName(professorName);
   if (!normalizedQuery) {
     return res.status(400).json({ error: 'Término de búsqueda inválido' });
   }
 
   try {
-    const results = [];
     const data = await searchProfessor(cycle);
-    const filtered = data.filter(item =>
-      matchesName(item.professor, professorName)
-    );
-    results.push(...filtered);
+    const results = data.filter(item => {
+      const normalizedFullName = normalizeName(item.professor);
+      return matchesName(normalizedFullName, normalizedQuery);
+    });
+
+    // Si se recibe un edificio, primero coloca esos resultados
+    if (building) {
+      results.sort((a, b) => {
+        const aInBuilding = a.data.building === building ? -1 : 1;
+        const bInBuilding = b.data.building === building ? -1 : 1;
+        return aInBuilding - bInBuilding;
+      });
+    }
 
     res.json(results);
   } catch (error) {
@@ -52,6 +56,4 @@ const getSearch = async (req, res) => {
   }
 };
 
-
 module.exports = { getSearch };
-

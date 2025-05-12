@@ -19,11 +19,12 @@ const getOAuth2Client = async () => {
   }
 
   try {
-    // Verifica si el archivo existe y no está vacío
     const rawData = fs.readFileSync(tokensPath, 'utf-8');
+
     if (!rawData.trim()) {
       throw new Error('El archivo de tokens está vacío');
     }
+
     const tokens = JSON.parse(rawData);
 
     if (!tokens || !tokens.access_token || !tokens.refresh_token) {
@@ -31,16 +32,34 @@ const getOAuth2Client = async () => {
     }
 
     const now = Date.now();
-    const bufferTime = 60 * 1000; // 1 minuto de margen para el buffer
-
-    if (tokens.expiry_date && tokens.expiry_date <= now + bufferTime) {
-      console.log('El access_token está caducado o por caducar, renovando...');
+    const bufferTime = 5 * 60 * 1000; // 5 minutos de buffer para asegurar la renovación
+    
+    // **Fix del expiry_date**:
+    if (!tokens.expiry_date || tokens.expiry_date < now) {
+      console.log('expiry_date inválido o expirado. Renovando...');
 
       // Refresca el access_token usando el refresh_token
       const { tokens: newTokens } = await oAuth2Client.refreshToken(tokens.refresh_token);
 
-      // Asegura que el refresh_token anterior se conserve si no se devuelve en la respuesta
+      // Asegura que el refresh_token se conserve si no se devuelve
       newTokens.refresh_token = newTokens.refresh_token || tokens.refresh_token;
+
+      // Calcula un nuevo expiry_date si no viene en la respuesta
+      const expiresIn = newTokens.expires_in ? newTokens.expires_in * 1000 : 3600 * 1000;
+      newTokens.expiry_date = now + expiresIn;
+
+      oAuth2Client.setCredentials(newTokens);
+
+      // Guarda los tokens actualizados correctamente
+      await fs.promises.writeFile(tokensPath, JSON.stringify(newTokens, null, 2));
+      console.log('Tokens renovados correctamente');
+    } else if (tokens.expiry_date <= now + bufferTime) {
+      console.log('El access_token está por caducar, renovando...');
+
+      const { tokens: newTokens } = await oAuth2Client.refreshToken(tokens.refresh_token);
+      newTokens.refresh_token = newTokens.refresh_token || tokens.refresh_token;
+      const expiresIn = newTokens.expires_in ? newTokens.expires_in * 1000 : 3600 * 1000;
+      newTokens.expiry_date = now + expiresIn;
 
       oAuth2Client.setCredentials(newTokens);
       await fs.promises.writeFile(tokensPath, JSON.stringify(newTokens, null, 2));
@@ -48,8 +67,9 @@ const getOAuth2Client = async () => {
     } else {
       oAuth2Client.setCredentials(tokens);
     }
+
   } catch (err) {
-    console.error('Error al cargar o renovar los tokens:', err);
+    console.error('Error al cargar o renovar los tokens:', err.message);
     throw new Error('No se pudieron cargar los tokens');
   }
 

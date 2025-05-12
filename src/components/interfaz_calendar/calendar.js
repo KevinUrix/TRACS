@@ -217,10 +217,10 @@ export default function Calendar() {
       <div className="calendar-container">
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
         <div className="main-content">
-          <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} />
+          <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} selectedBuilding={selectedBuilding}/>
           <div className="select-content">
             <SelectsLogic
-              onUpdateCicle={setSelectedCycle}
+              onUpdateCycle={setSelectedCycle}
               onUpdateBuilding={setSelectedBuilding}
               onUpdateDay={setSelectedDay}
               fetchReservations={fetchReservations}

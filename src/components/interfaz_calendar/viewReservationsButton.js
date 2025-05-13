@@ -28,7 +28,8 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   const [showPopup, setShowPopup] = useState(false);
   const [filteredReservations, setFilteredReservations] = useState([]);
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
-
+  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
+  
   useEffect(() => {
     if (Array.isArray(reservations)) {
       setFilteredReservations(reservations);
@@ -155,7 +156,6 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
     setSelectedReservation(null);
   };
 
-  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
 
   return (
@@ -191,7 +191,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
                     <b>Salón:</b> {res.classroom}<br />
                     <b>Duración:</b> {res.duration}<br />
                     <div className="mt-4 flex justify-end gap-2">
-                      {userRole === 'superuser' && (
+                      {(userRole === 'superuser' || userRole === 'user') && (
                         <button
                           className="px-4 py-2 bg-red-500 text-white rounded-md"
                           onClick={() => deleteReservation(res)}
@@ -199,7 +199,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
                           Eliminar
                         </button>
                       )}
-                      {userRole === 'superuser' && (
+                      {(userRole === 'superuser' || userRole === 'user') && (
                         <button
                           className="px-4 py-2 bg-blue-500 text-white rounded-md"
                           onClick={() => handleModify(res)} // Abrir el formulario de modificación

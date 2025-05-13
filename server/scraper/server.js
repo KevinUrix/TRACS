@@ -42,6 +42,7 @@ app.use('/api', cyclesRoutes);
 app.use('/api', buildingsRoutes);
 app.use('/api/google', googleAuthRoutes);
 
+
 /*---------------- SQL -----------------------*/
 // Ruta para registrar usuario
 app.post('/api/register', async (req, res) => {
@@ -51,6 +52,9 @@ app.post('/api/register', async (req, res) => {
     await pool.query('INSERT INTO users (username, password) VALUES ($1, $2)', [username, hash]);
     res.status(201).json({ message: 'Usuario registrado' });
   } catch (err) {
+    if (err.code === '23505') {
+      return res.status(409).json({ error: 'Ese usuario se encuentra en uso. Seleccione otro.' });
+    }
     console.error(err);
     res.status(500).json({ error: 'Error al registrar usuario' });
   }
@@ -80,6 +84,7 @@ app.post('/api/login', async (req, res) => {
     res.status(500).json({ error: 'Error en login' });
   }
 });
+
 
 // Inicia el servidor
 app.listen(PORT, () => {

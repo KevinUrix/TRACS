@@ -12,6 +12,7 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}
   const [showPopup, setShowPopup] = useState(false);
 
   const handleLogout = () => {
+    localStorage.removeItem('role');
     navigate('/');
   };
 

@@ -12,7 +12,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:3001/api/login', {
+      const res = await fetch('/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,8 +32,19 @@ export default function Login() {
       // Decodifica el token y guarda el rol
       const decoded = jwtDecode(data.token);
       localStorage.setItem('role', decoded.role); // Ahora puedes usarlo para mostrar/ocultar cosas
+      
+      const savedState = sessionStorage.getItem('reservationState');
+      if (savedState) {
+        const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
 
-      navigate('/calendario');
+        // Redirigir al calendario y enviar el estado
+        navigate(`/`, {
+          state: { selectedCycle, selectedBuilding, selectedDay }
+        });
+      } else {
+        navigate('/');
+      }
+
     } catch (err) {
       console.error('Error de red:', err);
       setError('No se pudo conectar con el servidor');

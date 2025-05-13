@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import './calendar.css'; 
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import './calendar.css';
 
 export default function ReserveButton({
   selectedCycle,
@@ -43,8 +45,22 @@ export default function ReserveButton({
   const [duration, setDuration] = useState('Temporal');
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
 
+  const navigate = useNavigate();
+  const userRole = localStorage.getItem("role");
+
+    // Verificación de permisos al abrir la modal
   const handleOpenModal = () => {
-    setIsModalOpen(true);
+    if (userRole === 'superuser' || userRole === 'user') {
+      setIsModalOpen(true);
+    } else {
+      toast.error('Necesitas iniciar sesión para realizar una reserva.');
+      sessionStorage.setItem('reservationState', JSON.stringify({
+        selectedCycle,
+        selectedBuilding,
+        selectedDay,
+      }));
+      navigate('/login');
+    }
   };
 
   const handleCloseModal = () => {
@@ -148,14 +164,12 @@ export default function ReserveButton({
     if (valid.test(value)) setter(value);
   };
 
-  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
-
   return (
     <>
-    {userRole === 'superuser' && (
+    
       <button className="reserve-button" onClick={handleOpenModal}>
         R
-      </button>)}
+      </button>
 
       {isModalOpen && (
         <div className="modal-overlay">

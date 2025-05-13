@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import Sidebar from '../sidebar';
 import SelectsLogic from './selectsLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
@@ -15,6 +17,43 @@ export default function Calendar() {
   const [reservations, setReservations] = useState([]);
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
+  const location = useLocation();
+
+  /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
+  useEffect(() => {
+    if (location.state) {
+      setSelectedCycle(location.state.selectedCycle);
+      setSelectedBuilding(location.state.selectedBuilding);
+      setSelectedDay(location.state.selectedDay);
+    }
+  }, [location.state]);
+
+  useEffect(() => {
+    const savedState = sessionStorage.getItem('reservationState');
+    if (savedState) {
+      const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
+  
+      setSelectedCycle(selectedCycle);
+      setSelectedBuilding(selectedBuilding);
+      setSelectedDay(selectedDay);
+
+      // Limpiar sessionStorage después de usarlo
+      sessionStorage.removeItem('reservationState');
+    }
+  }, []); // Se ejecuta solo una vez cuando el componente se monta
+
+  useEffect(() => {
+    // Verifica si en la URL está el parámetro "fromGoogle"
+    const params = new URLSearchParams(location.search);
+    if (params.get('fromGoogle') === 'true') {
+      toast.success('¡Sesión iniciada con Google! Ya puedes realizar tu reserva en Google Calendar.');
+      
+      // Limpia el parámetro de la URL para que no aparezca siempre
+      params.delete('fromGoogle');
+      window.history.replaceState({}, '', `${location.pathname}`);
+    }
+  }, [location]);
+  
 
   // Obtener el día de la semana (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
   const dayOfWeek = today.getDay();
@@ -83,8 +122,18 @@ export default function Calendar() {
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
-          console.log('>> Usuario no autenticado, redirigiendo...');
-          window.location.href = 'http://localhost:3001/api/google/auth';
+          toast.info('Redirigiéndote para iniciar sesión en Google...', {
+            autoClose: 1000,
+            closeOnClick: true,
+          });
+          sessionStorage.setItem('reservationState', JSON.stringify({
+            selectedCycle,
+            selectedBuilding,
+            selectedDay,
+          }));
+          setTimeout(() => {
+            window.location.href = 'http://localhost:3001/api/google/auth';
+          }, 1300);
           return;
         }
       } else {

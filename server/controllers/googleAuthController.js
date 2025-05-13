@@ -52,7 +52,7 @@ const handleGoogleCallback = async (req, res) => {
     await fs.promises.writeFile(tokensFilePath, JSON.stringify(tokens, null, 2));
 
     console.log('>> Tokens guardados exitosamente');
-    return res.redirect('http://localhost:3000/calendario');
+    return res.redirect('http://localhost:3000/?fromGoogle=true');
   } catch (error) {
     console.error('Error al obtener tokens:', error);
     if (!res.headersSent) {

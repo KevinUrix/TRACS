@@ -18,7 +18,7 @@ export default function Registro() {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/api/register', {
+      const res = await fetch('/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: usuario, password }),
@@ -33,7 +33,7 @@ export default function Registro() {
 
       setSuccess('Usuario registrado con éxito');
       setError('');
-      setTimeout(() => navigate('/'), 1500);
+      setTimeout(() => navigate('/login'), 1500);
     } catch (err) {
       console.error('Error de red:', err);
       setError('No se pudo conectar con el servidor');

@@ -52,7 +52,7 @@ export default function Login() {
   };
 
   const goToSignup = () => {
-    navigate('/registro');
+    navigate('/');
   };
 
   return (
@@ -67,7 +67,12 @@ export default function Login() {
           <input
             type="text"
             value={usuario}
-            onChange={(e) => setUsuario(e.target.value)}
+            onChange={(e) => {
+              const val = e.target.value;
+              // Solo letras, números y guion bajo
+              const filtered = val.replace(/[^a-z0-9_]/g, '');
+              setUsuario(filtered);
+            }}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Ingresa tu nombre de usuario"
             required
@@ -78,7 +83,12 @@ export default function Login() {
           <input
             type="password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => {
+              const val = e.target.value;
+              // Solo letras, números y algunos símbolos comunes para contraseñas
+              const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
+              setPassword(filtered);
+            }}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Ingresa tu contraseña"
             required
@@ -90,13 +100,13 @@ export default function Login() {
         >
           Iniciar Sesión
         </button>
-        <button
+        {<button
           type="button"
           onClick={goToSignup}
           className="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300"
         >
-          Registrarse
-        </button>
+          Cancelar
+        </button>}
       </form>
     </div>
   );

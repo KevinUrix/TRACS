@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProfessorSchedule from './professorSchedule';
 import './calendar.css'; // Importa el archivo de estilos CSS
@@ -10,10 +10,24 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  // Verifica si hay sesión activa al montar el componente
+  useEffect(() => {
+      const role = localStorage.getItem('role');
+      setIsLoggedIn(!!role);
+    }, []);
+  
   const handleLogout = () => {
-    localStorage.removeItem('role');
-    navigate('/');
+      localStorage.removeItem('role');
+      localStorage.removeItem('token');
+      setIsLoggedIn(false);
+      navigate('/');
+    };
+
+  const handleLoginRedirect = () => {
+    navigate('/login');
   };
 
   const handleSearch = async () => {
@@ -74,9 +88,15 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}
             onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
           />
         </div>
-        <button onClick={handleLogout} className="logout-button">
-          <img src="/iniciar-sesion.png" alt="Cerrar sesión" className="w-8 h-8" />
+        {isLoggedIn ? (
+        <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
+          <img src="/cerrar-sesion.png" alt="Cerrar sesión" className="w-8 h-8" />
         </button>
+      ) : (
+        <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
+          <img src="/iniciar-sesion.png" alt="Iniciar sesión" className="w-8 h-8" />
+        </button>
+      )}
       </nav>
 
       {/* Popup de horarios */}

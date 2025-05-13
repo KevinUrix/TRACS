@@ -33,7 +33,7 @@ export default function Registro() {
 
       setSuccess('Usuario registrado con éxito');
       setError('');
-      setTimeout(() => navigate('/login'), 1500);
+      setTimeout(() => navigate('/crud'), 1500);
     } catch (err) {
       console.error('Error de red:', err);
       setError('No se pudo conectar con el servidor');
@@ -41,23 +41,28 @@ export default function Registro() {
   };
 
   const handleCancel = () => {
-    navigate('/');
+    navigate('/crud');
   };
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-80">
-        <h2 className="text-2xl font-bold mb-4">Registrarse</h2>
+        <h2 className="text-2xl font-bold mb-4">Registrar Usuario</h2>
 
         {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
         {success && <div className="mb-4 text-green-600 font-semibold">{success}</div>}
 
         <div className="mb-4">
-          <label className="block text-gray-700 font-semibold mb-2">Usuario</label>
+          <label className="block text-gray-700 font-semibold mb-2">Nombre de usuario</label>
           <input
             type="text"
             value={usuario}
-            onChange={(e) => setUsuario(e.target.value)}
+            onChange={(e) => {
+              const val = e.target.value;
+              // Solo letras, números y guion bajo
+              const filtered = val.replace(/[^a-z0-9_]/g, '');
+              setUsuario(filtered);
+            }}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Nombre de usuario"
             required
@@ -69,7 +74,12 @@ export default function Registro() {
           <input
             type="password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => {
+              const val = e.target.value;
+              // Solo letras, números y algunos símbolos comunes para contraseñas
+              const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
+              setPassword(filtered);
+            }}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Contraseña"
             required
@@ -81,7 +91,12 @@ export default function Registro() {
           <input
             type="password"
             value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
+            onChange={(e) => {
+              const val = e.target.value;
+              // Solo letras, números y algunos símbolos comunes para contraseñas
+              const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
+              setConfirmPassword(filtered);
+            }}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Repite la contraseña"
             required

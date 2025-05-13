@@ -6,6 +6,7 @@ import Calendar from './components/interfaz_calendar/calendar';  // Importamos C
 import Reports from './components/interfaz_reports/reports';    // Importamos Reports
 import Login from './components/interfaz_login/login';
 import Registro from './components/interfaz_login/registro';
+import Crud from './components/interfaz_login/crud';
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -28,6 +29,7 @@ export default function App() {
             <Route path='/registro' element={<Registro />}/>
             <Route path="/calendario" element={<Calendar />} />
             <Route path="/reportes" element={<Reports />} />
+            <Route path='/crud' element={<Crud />} />
             <Route path="/login" element={<Login />} />
 
           </Routes>

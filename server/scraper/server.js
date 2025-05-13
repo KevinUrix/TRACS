@@ -85,6 +85,29 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
+// Obtenemos todos lo usuarios de la tabla users.
+app.get('/api/users', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT id, username, role FROM users');
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: 'Error al obtener usuarios' });
+  }
+});
+
+// Cambiamos el rol del usuario seleccionado.
+app.put('/api/users/:id/role', async (req, res) => {
+  const { id } = req.params;
+  const { role } = req.body;
+
+  try {
+    await pool.query('UPDATE users SET role = $1 WHERE id = $2', [role, id]);
+    res.json({ message: 'Rol actualizado correctamente' });
+  } catch (err) {
+    res.status(500).json({ error: 'Error al actualizar rol' });
+  }
+});
+
 
 // Inicia el servidor
 app.listen(PORT, () => {

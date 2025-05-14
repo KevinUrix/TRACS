@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
+import { toast } from 'react-toastify';
+
 
 export default function NavbarReports({ toggleSidebar }) {
   const navigate = useNavigate();
@@ -16,6 +18,7 @@ export default function NavbarReports({ toggleSidebar }) {
       localStorage.removeItem('role');
       localStorage.removeItem('token');
       setIsLoggedIn(false);
+      toast.success('Se ha cerrado la sesión.');
       navigate('/');
     };
   

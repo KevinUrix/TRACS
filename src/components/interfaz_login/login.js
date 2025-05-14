@@ -1,12 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
+import { toast } from 'react-toastify';
 
 export default function Login() {
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  
+    useEffect(() => {
+      const userRole = localStorage.getItem('role');
+  
+      if (userRole === 'superuser' || userRole === 'user') {
+        toast.error('Te sesión sigue activa.');
+        navigate('/');
+      }
+    }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -32,16 +42,23 @@ export default function Login() {
       // Decodifica el token y guarda el rol
       const decoded = jwtDecode(data.token);
       localStorage.setItem('role', decoded.role); // Ahora puedes usarlo para mostrar/ocultar cosas
+      localStorage.setItem('username', decoded.username);
       
       const savedState = sessionStorage.getItem('reservationState');
+
       if (savedState) {
         const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
-
+        toast.success('Se ha iniciado la sesión.', {
+          position: 'top-center'
+        });
         // Redirigir al calendario y enviar el estado
         navigate(`/`, {
           state: { selectedCycle, selectedBuilding, selectedDay }
         });
       } else {
+        toast.success('Se ha iniciado la sesión.', {
+          position: 'top-center'
+        });
         navigate('/');
       }
 
@@ -69,6 +86,15 @@ export default function Login() {
             value={usuario}
             onChange={(e) => {
               const val = e.target.value;
+              const lastChar = val.slice(-1);
+
+              if (lastChar.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
+                toast.error('Usuario sólo admite letras minúsculas.', {
+                  autoClose: 1000,
+                  closeOnClick: true,
+                });
+              }
+
               // Solo letras, números y guion bajo
               const filtered = val.replace(/[^a-z0-9_]/g, '');
               setUsuario(filtered);

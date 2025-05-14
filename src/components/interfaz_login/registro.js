@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 
 export default function Registro() {
   const [usuario, setUsuario] = useState('');
@@ -8,6 +10,15 @@ export default function Registro() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const userRole = localStorage.getItem('role');
+    
+    if (userRole !== 'superuser') {
+      toast.error('Debes está logeado para entrar a esta página.');
+        navigate('/login');
+    }
+  }, [navigate]);
 
   const handleRegister = async (e) => {
     e.preventDefault();

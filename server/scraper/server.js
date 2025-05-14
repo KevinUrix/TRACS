@@ -87,8 +87,9 @@ app.post('/api/login', async (req, res) => {
 
 // Obtenemos todos lo usuarios de la tabla users.
 app.get('/api/users', async (req, res) => {
+  const {exclude} = req.query;
   try {
-    const result = await pool.query('SELECT id, username, role FROM users');
+    const result = await pool.query("SELECT id, username, role FROM users WHERE username != $1", [exclude]);
     res.json(result.rows);
   } catch (err) {
     res.status(500).json({ error: 'Error al obtener usuarios' });

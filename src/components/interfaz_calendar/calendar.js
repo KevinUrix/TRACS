@@ -18,6 +18,7 @@ export default function Calendar() {
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
+  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
   useEffect(() => {
@@ -264,9 +265,11 @@ export default function Calendar() {
   return (
     <>
       <div className="calendar-container">
+      {(userRole === 'superuser' || userRole === 'user') && (
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
+      )}
         <div className="main-content">
-          <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} selectedBuilding={selectedBuilding}/>
+          <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
             <SelectsLogic
               onUpdateCycle={setSelectedCycle}

@@ -2,16 +2,19 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProfessorSchedule from './professorSchedule';
 import './calendar.css'; // Importa el archivo de estilos CSS
+import { toast } from 'react-toastify';
 
 
 
-export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}) {
+export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding, selectedDay}) {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const userRole = localStorage.getItem("role");
+
 
   // Verifica si hay sesión activa al montar el componente
   useEffect(() => {
@@ -20,13 +23,19 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}
     }, []);
   
   const handleLogout = () => {
-      localStorage.removeItem('role');
-      localStorage.removeItem('token');
-      setIsLoggedIn(false);
-      navigate('/');
-    };
+    localStorage.removeItem('role');
+    localStorage.removeItem('token');
+    setIsLoggedIn(false);
+    toast.success('Se ha cerrado la sesión.');
+    navigate('/');
+  };
 
   const handleLoginRedirect = () => {
+    sessionStorage.setItem('reservationState', JSON.stringify({
+      selectedCycle,
+      selectedBuilding,
+      selectedDay,
+    }));
     navigate('/login');
   };
 
@@ -42,7 +51,7 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}
         alert("Seleccione un ciclo para realizar una búsqueda.");
         return;
       }
-      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}`);
+      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
 
       if (!response.ok) {
         if (response.status === 400) {
@@ -76,7 +85,9 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding}
   return (
     <>
       <nav className="navbar">
-        <button onClick={toggleSidebar} className="sidebar-toggle">☰</button>
+        {(userRole === 'superuser' || userRole === 'user') && (
+          <button onClick={toggleSidebar} className="sidebar-toggle">☰</button>
+        )}
         <h1 className="navbar-title">Calendario de Edificios</h1>
         <div className="search-container">
           <input

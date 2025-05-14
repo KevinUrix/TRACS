@@ -24,9 +24,11 @@ export default function Sidebar({ sidebarOpen, onToggleSidebar }) {
           <Link to="/crud" className="block w-full h-full">CRUD</Link>
         </li>
         )}
+        {(userRole === 'superuser') && (
         <li className="p-2 hover:bg-blue-500 cursor-pointer">
           <span className="block w-full h-full">Configuración</span>
         </li>
+        )}
       </ul>
     </div>
   );

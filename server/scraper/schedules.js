@@ -106,7 +106,7 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
                 console.log(`Datos de ${edifp} almacenados en caché en segundo plano.`);
             }
 
-            await delay(450);
+            await delay(100);
 
         } catch (err) {
             console.error(`Error al hacer scraping de ${edifp}:`, err.message);
@@ -147,6 +147,7 @@ const scrapeData = async (cycle, edifp) => {
         const data = extractData($, edifp);
 
         if (data.length > 0) {
+            console.log(`Datos de ${edifp} obtenidos y almacenados en caché.`);
             cache.set(cacheKey, data);
         }
 

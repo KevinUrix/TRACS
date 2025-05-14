@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../interfaz_calendar/calendar.css';
+import { toast } from 'react-toastify';
 
-export default function NavbarCrud({ toggleSidebar }) {
+export default function NavbarCrud({ toggleSidebar, selectedCycle, selectedBuilding, selectedDay }) {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -16,10 +17,16 @@ export default function NavbarCrud({ toggleSidebar }) {
     localStorage.removeItem('role');
     localStorage.removeItem('token');
     setIsLoggedIn(false);
+    toast.success('Se ha cerrado la sesión.');
     navigate('/');
   };
 
   const handleLoginRedirect = () => {
+    // sessionStorage.setItem('reservationState', JSON.stringify({
+    //   selectedCycle,
+    //   selectedBuilding,
+    //   selectedDay,
+    // }));
     navigate('/login');
   };
 

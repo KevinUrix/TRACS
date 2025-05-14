@@ -24,7 +24,8 @@ const getSearch = async (req, res) => {
   const professorName = req.query.name;
   const cycle = req.query.cycle;
   const building = req.query.buildingName || '';
-  console.log(professorName, cycle, building);
+  const day = req.query.day || '';
+  console.log(professorName, cycle, building, day);
 
   if (!professorName || !cycle) {
     return res.status(400).json({ error: 'Faltan parámetros: name y cycle son requeridos' });
@@ -69,6 +70,43 @@ const getSearch = async (req, res) => {
         return aInBuilding - bInBuilding;
       });
     }
+
+    const dayPriority = {
+      'L': 1,
+      'M': 2,
+      'I': 3,
+      'J': 4,
+      'V': 5,
+      'S': 6,
+      '.': 7 
+    };
+
+    // Ordenamiento por día
+    results.sort((a, b) => {
+      const aDays = a.data.days.split(' ').filter(d => d !== '.' && d !== '');
+      const bDays = b.data.days.split(' ').filter(d => d !== '.' && d !== '');
+
+      // Si el día que se busca existe en el array, se le da la mayor prioridad.
+      const aHasSelectedDay = aDays.includes(day);
+      const bHasSelectedDay = bDays.includes(day);
+
+      if (aHasSelectedDay && !bHasSelectedDay) return -1;
+      if (!aHasSelectedDay && bHasSelectedDay) return 1;
+
+      // Si no hay coincidencia, se ordena por prioridad normal
+      const aBestDay = aDays.reduce((min, d) => {
+        const priority = dayPriority[d] ?? 7;
+        return Math.min(min, priority);
+      }, 7);
+
+      const bBestDay = bDays.reduce((min, d) => {
+        const priority = dayPriority[d] ?? 7;
+        return Math.min(min, priority);
+      }, 7);
+
+      return aBestDay - bBestDay;
+    });
+
 
     // Enviar los resultados
     if (results.length === 0) {

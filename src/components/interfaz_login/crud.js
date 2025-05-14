@@ -9,10 +9,22 @@ export default function Crud() {
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
   const navigate = useNavigate();
+  const username = localStorage.getItem("username"); // Para obtener el usuario.
+
+  useEffect(() => {
+    const userRole = localStorage.getItem('role');
+    
+    if (userRole !== 'superuser') {
+      navigate('/');
+    }
+  }, [navigate]);
+
 
   // Cargar usuarios al montar
   useEffect(() => {
-    fetch('http://localhost:3001/api/users')
+    const excludedUser = username;
+  
+    fetch(`/api/users?exclude=${excludedUser}`)
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => console.error('Error al obtener usuarios:', err));
@@ -21,7 +33,7 @@ export default function Crud() {
   // Actualizar rol
   const handleRoleChange = async (id, newRole) => {
     try {
-      const res = await fetch(`http://localhost:3001/api/users/${id}/role`, {
+      const res = await fetch(`/api/users/${id}/role`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

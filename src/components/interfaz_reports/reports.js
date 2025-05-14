@@ -1,12 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 import Sidebar from '../sidebar'; // Asegúrate de que el import sea correcto
 import TicketForm from './ticketForm';
 import TicketList from './ticketList';
 import Navbar from './navbar_reports'; // Importa el nuevo componente
 
+
 export default function Reports() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [tickets, setTickets] = useState([]);
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    const userRole = localStorage.getItem('role');
+
+    if (userRole !== 'superuser' && userRole !== 'user') {
+      toast.error('Debes está logeado para entrar a esta página.');
+      navigate('/login');
+    }
+  }, [navigate]);
 
   // Función para mostrar/ocultar la barra lateral
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);

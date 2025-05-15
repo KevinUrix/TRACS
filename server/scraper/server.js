@@ -109,6 +109,19 @@ app.put('/api/users/:id/role', async (req, res) => {
   }
 });
 
+// Eliminar usuario por ID
+app.delete('/api/users/:id', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    await pool.query('DELETE FROM users WHERE id = $1', [id]);
+    res.json({ message: 'Usuario eliminado correctamente' });
+  } catch (err) {
+    console.error('Error al eliminar usuario:', err);
+    res.status(500).json({ error: 'Error al eliminar usuario' });
+  }
+});
+
 
 // Inicia el servidor
 app.listen(PORT, () => {

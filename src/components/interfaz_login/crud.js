@@ -2,17 +2,19 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../sidebar';
 import NavbarCrud from './navbar_crud';
+import { toast } from 'react-toastify';
 
 export default function Crud() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [users, setUsers] = useState([]);
-
   const [showModal, setShowModal] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
   const [pendingRole, setPendingRole] = useState('');
-
+  const [buildings, setBuildings] = useState([]);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [showDeleteModalBuilding, setShowDeleteModalBuilding] = useState(false);
   const [userToDelete, setUserToDelete] = useState(null);
+  const [buildingToDelete, setBuildingToDelete] = useState(null);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
   const navigate = useNavigate();
@@ -20,24 +22,12 @@ export default function Crud() {
 
   useEffect(() => {
     const userRole = localStorage.getItem('role');
-    
     if (userRole !== 'superuser') {
       navigate('/');
     }
   }, [navigate]);
 
-
-  // Cargar usuarios al montar
-  useEffect(() => {
-    const excludedUser = username;
-  
-    fetch(`/api/users?exclude=${excludedUser}`)
-      .then((res) => res.json())
-      .then((data) => setUsers(data))
-      .catch((err) => console.error('Error al obtener usuarios:', err));
-  }, []);
-
-   const handleConfirmChange = async () => {
+  const handleConfirmChange = async () => {
     if (!selectedUser) return;
 
     await handleRoleChange(selectedUser.id, pendingRole);
@@ -57,6 +47,52 @@ export default function Crud() {
     setPendingRole(newRole);
     setShowModal(true);
   };
+
+  const handleDeleteUser = (user) => {
+    setUserToDelete(user);
+    setShowDeleteModal(true);
+  };
+
+  const handleDeleteBuilding = (building) => {
+    setBuildingToDelete(building);
+    setShowDeleteModalBuilding(true);
+  };
+  
+  const cancelDeleteUser = () => {
+    setShowDeleteModal(false);
+    setUserToDelete(null);
+  };
+  
+  const cancelDeleteBuilding = () => {
+    setShowDeleteModalBuilding(false);
+    setBuildingToDelete(null);
+  };
+
+
+  // Cargar usuarios al montar
+  useEffect(() => {
+    const excludedUser = username;
+    fetch(`/api/users?exclude=${excludedUser}`)
+      .then((res) => res.json())
+      .then((data) => setUsers(data))
+      .catch((err) => console.error('Error al obtener usuarios:', err));
+  }, []);
+
+
+  // EDIFICIOS
+  useEffect(() => {
+    fetch("/api/buildings")
+        .then(response => response.json())
+        .then(data => {
+          const buildings = data.edifp || [];
+          const lastTwo = buildings.slice(-2); // Obtenemos las últimas dos opciones
+          const rest = buildings.slice(0, -2); // Las opciones faltantes
+          const newBuildingsOrder = [...lastTwo, ...rest];
+          setBuildings(newBuildingsOrder);
+        })
+        .catch(error => console.error("Error cargando los edificios:", error));
+  }, []);
+
 
   // Actualizar rol
   const handleRoleChange = async (id, newRole) => {
@@ -80,14 +116,39 @@ export default function Crud() {
     }
   };
 
-  const handleDeleteUser = (user) => {
-    setUserToDelete(user);
-    setShowDeleteModal(true);
+
+  // ELIMINAR EDIFICIO
+  const confirmDeleteBuilding = async () => {
+    if (!buildingToDelete) return;
+    
+    const params = new URLSearchParams({
+      buildingName: buildingToDelete.value,
+      buildingText: buildingToDelete.text
+    });
+
+    try {
+      const res = await fetch(`/api/buildings?${params.toString()}`, {
+        method: 'DELETE',
+      });
+
+      if (res.ok) {
+        setBuildings((prevBuildings) => prevBuildings.filter((building) => building.value !== buildingToDelete.value));
+        toast.success('Se eliminó correctamente.');
+      } else {
+        console.error('Fallo al eliminar edificio');
+      }
+    } catch (err) {
+      console.error("Error al eliminar:", err);
+      alert("Hubo un error al eliminar el edificio.");
+    } finally {
+      setShowDeleteModalBuilding(false);
+      setBuildingToDelete(null);
+    }
   };
+
 
   const confirmDeleteUser = async () => {
     if (!userToDelete) return;
-
     try {
       const res = await fetch(`/api/users/${userToDelete.id}`, {
         method: 'DELETE',
@@ -105,24 +166,6 @@ export default function Crud() {
       setUserToDelete(null);
     }
   };
-
-  const cancelDelete = () => {
-    setShowDeleteModal(false);
-    setUserToDelete(null);
-  };
-
-  const [buildings, setBuildings] = useState([
-    { id: 1, name: 'Edificio A', alias: 'A' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-    { id: 2, name: 'Edificio B', alias: 'B' },
-  ]);
 
   return (
     <div className="bg-gray-100 flex">
@@ -192,7 +235,6 @@ export default function Crud() {
             <h2 className="text-2xl font-bold mb-4 text-center">Lista de Edificios</h2>
             <div className="flex justify-end mb-4">
               <button
-                //onClick={() => navigate('/registro')}
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
               >
                 Agregar
@@ -208,15 +250,19 @@ export default function Crud() {
                   </tr>
                 </thead>
                 <tbody>
-                  {buildings.map((building) => (
-                    <tr key={building.id} className="border-b">
-                      <td className="py-2 px-4">{building.name}</td>
-                      <td className="py-2 px-4">{building.alias}</td>
+                  {buildings.map((building, index) => (
+                    <tr key={index} className="border-b">
+                      <td className="py-2 px-4">{building.value}</td>
+                      <td className="py-2 px-4">{building.text}</td>
                       <td className="py-2 px-4">
-                        <button className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transition mr-2">
+                        <button
+                          onClick={() => handleDeleteUser(building)}
+                          className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transition mr-2">
                           Editar
                         </button>
-                        <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition">
+                        <button 
+                          onClick={() => handleDeleteBuilding(building)}
+                          className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition">
                           Eliminar
                         </button>
                       </td>
@@ -270,13 +316,37 @@ export default function Crud() {
             </p>
             <div className="flex justify-end gap-4">
               <button
-                onClick={cancelDelete}
+                onClick={cancelDeleteUser}
                 className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
               >
                 Cancelar
               </button>
               <button
                 onClick={confirmDeleteUser}
+                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+              >
+                Eliminar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {showDeleteModalBuilding && (
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80">
+            <h3 className="text-lg font-bold mb-4">¿Eliminar edificio?</h3>
+            <p className="mb-6">
+              ¿Estás seguro de eliminar el edificio <strong>{buildingToDelete?.value}</strong>? Esta acción no se puede deshacer.
+            </p>
+            <div className="flex justify-end gap-4">
+              <button
+                onClick={cancelDeleteBuilding}
+                className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={confirmDeleteBuilding}
                 className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
               >
                 Eliminar

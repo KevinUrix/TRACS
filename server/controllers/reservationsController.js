@@ -172,7 +172,6 @@ const updateReservation = async (req, res) => {
   const { cycle, buildingName, originalProfessor, originalSchedule, originalDate, originalGoogleEventId } = req.query;
 
   const updatedData = req.body;
-  console.log(updatedData)
 
   if (!updatedData || !updatedData.course || !updatedData.professor) {
     return res.status(400).json({ error: 'Faltan datos obligatorios para la reserva' });

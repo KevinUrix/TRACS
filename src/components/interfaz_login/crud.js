@@ -114,15 +114,17 @@ export default function Crud() {
   // EDIFICIOS
   useEffect(() => {
     fetch("/api/buildings")
-        .then(response => response.json())
-        .then(data => {
-          const buildings = data.edifp || [];
-          const lastTwo = buildings.slice(-2); // Obtenemos las últimas dos opciones
-          const rest = buildings.slice(0, -2); // Las opciones faltantes
-          const newBuildingsOrder = [...lastTwo, ...rest];
-          setBuildings(newBuildingsOrder);
-        })
-        .catch(error => console.error("Error cargando los edificios:", error));
+      .then(response => response.json())
+      .then(data => {
+        const buildings = data.edifp || [];
+        const prioritized = buildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
+        const rest = buildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
+        
+        // Combinamos y actualizamos el estado
+        const newBuildingsOrder = [...prioritized, ...rest];
+        setBuildings(newBuildingsOrder);
+      })
+      .catch(error => console.error("Error cargando los edificios:", error));
   }, []);
 
 

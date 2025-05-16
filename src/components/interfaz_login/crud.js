@@ -13,8 +13,13 @@ export default function Crud() {
   const [buildings, setBuildings] = useState([]);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showDeleteModalBuilding, setShowDeleteModalBuilding] = useState(false);
+  const [showEditModalBuilding, setShowEditModalBuilding] = useState(false);
+  const [showAddModalBuilding, setShowAddModalBuilding] = useState(false);
   const [userToDelete, setUserToDelete] = useState(null);
   const [buildingToDelete, setBuildingToDelete] = useState(null);
+  const [buildingToEdit, setBuildingToEdit] = useState(null);
+  const [originalBuilding, setOriginalBuilding] = useState(null);
+  const [buildingToAdd, setBuildingToAdd] = useState(null);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
   const navigate = useNavigate();
@@ -58,6 +63,16 @@ export default function Crud() {
     setShowDeleteModalBuilding(true);
   };
   
+  const handleEditBuilding = (building) => {
+    setBuildingToEdit(building);
+    setOriginalBuilding(building);
+    setShowEditModalBuilding(true);
+  };
+
+  const handleAddBuilding = () => {
+    setShowAddModalBuilding(true);
+  };
+
   const cancelDeleteUser = () => {
     setShowDeleteModal(false);
     setUserToDelete(null);
@@ -67,6 +82,23 @@ export default function Crud() {
     setShowDeleteModalBuilding(false);
     setBuildingToDelete(null);
   };
+
+  const cancelEditBuilding = () => {
+    setShowEditModalBuilding(false);
+    setBuildingToEdit(null);
+    setOriginalBuilding(null);
+  };
+
+  const cancelAddBuilding = () => {
+    setShowAddModalBuilding(false);
+    setBuildingToAdd(null);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setBuildingToEdit((prev) => ({ ...prev, [name]: value }));
+  };
+
 
 
   // Cargar usuarios al montar
@@ -113,6 +145,52 @@ export default function Crud() {
       }
     } catch (err) {
       console.error('Error al actualizar el rol:', err);
+    }
+  };
+
+
+  const handleSaveEditBuilding = async () => {
+    if (!buildingToEdit.value || !buildingToEdit.text) {
+      toast.error("Todos los campos son obligatorios");
+      return;
+    }
+
+    const params = new URLSearchParams({
+      buildingName: originalBuilding.value,
+      buildingText: originalBuilding.text
+    });
+
+    const cleanedBuildingData = {
+      value: buildingToEdit.value,
+      text: buildingToEdit.text,
+    };
+
+    try {
+      const res = await fetch(`/api/buildings?${params.toString()}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cleanedBuildingData),
+      });
+
+      if (res.ok) {
+        setBuildings((prev) =>
+          prev.map((building) =>
+            building.value === originalBuilding.value && building.text === originalBuilding.text
+              ? { ...building, ...cleanedBuildingData }
+              : building
+          )
+        );
+        toast.success("Edificio actualizado correctamente");
+      } else {
+        toast.error("Error al actualizar el edificio");
+      }
+    } catch (error) {
+      console.error("Error al actualizar el edificio:", error);
+    } finally {
+      setShowEditModalBuilding(false);
+      setBuildingToEdit(null);
     }
   };
 
@@ -164,6 +242,43 @@ export default function Crud() {
     } finally {
       setShowDeleteModal(false);
       setUserToDelete(null);
+    }
+  };
+
+
+  const handleSaveBuilding = async () => {
+    if (!buildingToAdd) return;
+
+    const params = new URLSearchParams({
+      buildingName: buildingToAdd.value,
+      buildingText: buildingToAdd.text
+    });
+
+    try {
+      const response = await fetch(`/api/buildings`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          value: buildingToAdd.value,
+          text: buildingToAdd.text,
+        }),
+      });
+  
+      const result = await response.json();
+  
+      if (!response.ok) {
+        console.error('Error desde el servidor:', result.error || 'Error desconocido');
+        toast.error('Error al agregar el edificio.')
+        return;
+      } else {
+        setBuildings(prev => [...prev, buildingToAdd]);
+        toast.success("Edificio agregado correctamente");
+      }
+    } catch (err) {
+      console.error("Error al agregar el edificio:", err);
+    } finally {
+      setShowAddModalBuilding(false);
+      setBuildingToAdd(null);
     }
   };
 
@@ -236,8 +351,9 @@ export default function Crud() {
             <div className="flex justify-end mb-4">
               <button
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                onClick={handleAddBuilding}
               >
-                Agregar
+                Agregar nuevo edificio
               </button>
             </div>
             <div className="max-h-96 overflow-y-auto rounded-lg shadow"> {/* Manejamos el tamaño de la tabla */}
@@ -256,7 +372,7 @@ export default function Crud() {
                       <td className="py-2 px-4">{building.text}</td>
                       <td className="py-2 px-4">
                         <button
-                          onClick={() => handleDeleteUser(building)}
+                          onClick={() => handleEditBuilding(building)}
                           className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transition mr-2">
                           Editar
                         </button>
@@ -350,6 +466,77 @@ export default function Crud() {
                 className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
               >
                 Eliminar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {showEditModalBuilding && (
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80">
+            <h3 className="text-lg font-bold mb-4">Modificar Edificio</h3>
+            <input
+              name="value"
+              value={buildingToEdit.value}
+              onChange={handleInputChange}
+              placeholder="Nombre del Edificio"
+              className="w-full mb-3 p-2 border rounded"
+            />
+            <input
+              name="text"
+              value={buildingToEdit.text}
+              onChange={handleInputChange}
+              placeholder="Seudónimo"
+              className="w-full mb-3 p-2 border rounded"
+            />
+            <div className="flex justify-center gap-4">
+              <button
+                onClick={cancelEditBuilding}
+                className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={handleSaveEditBuilding}
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              >
+                Guardar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {showAddModalBuilding && (
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80">
+            <h3 className="text-lg font-bold mb-4">Agregar Edificio</h3>
+            <input
+              name="value"
+              value={buildingToAdd?.value ?? ''}
+              onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, value: e.target.value }))}
+              placeholder="Nombre del Edificio"
+              className="w-full mb-3 p-2 border rounded"
+            />
+
+            <input
+              name="text"
+              value={buildingToAdd?.text ?? ''}
+              onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, text: e.target.value }))}
+              placeholder="Seudónimo"
+              className="w-full mb-3 p-2 border rounded"
+            />
+            <div className="flex justify-center gap-4">
+              <button
+                onClick={cancelAddBuilding}
+                className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={handleSaveBuilding}
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              >
+                Guardar
               </button>
             </div>
           </div>

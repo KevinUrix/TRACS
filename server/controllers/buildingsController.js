@@ -6,9 +6,7 @@ const path = require('path');
 // OBTENER EDIFICIOS
 //
 const getBuildings = async (req, res) => {
-
   const filePath = path.join(__dirname, `../config/buildings.json`);
-
   try {
     const data = await fs.readFile(filePath, 'utf8');
     const buildings = JSON.parse(data);
@@ -56,7 +54,6 @@ const deleteBuilding = async (req, res) => {
     if (error.code === 'ENOENT') {
       return res.status(404).json({ message: 'No hay edificios' });
     }
-
     console.error("Error al eliminar el edificio:", error.message);
     res.status(500).json({ error: 'Error interno al eliminar el edificio' });
   }
@@ -64,14 +61,14 @@ const deleteBuilding = async (req, res) => {
 
 
 //
-// EDITAR RESERVAS
+// EDITAR EDIFICIO
 //
 const updateBuilding = async (req, res) => {
   const { buildingName, buildingText } = req.query;
   const updatedData = req.body;
 
   if (!updatedData || !updatedData.value || !updatedData.text) {
-    return res.status(400).json({ error: 'Faltan datos obligatorios para la reserva' });
+    return res.status(400).json({ error: 'Faltan datos obligatorios para el edificio' });
   }
 
   const filePath = path.join(__dirname, `../config/buildings.json`);
@@ -102,20 +99,61 @@ const updateBuilding = async (req, res) => {
     currentData.edifp[index] = orderedBuilding;
 
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2), 'utf-8');
-    res.json({ message: 'Reserva actualizada con éxito' });
+    res.json({ message: 'Edificio actualizado con éxito' });
   } catch (error) {
     if (error.code === 'ENOENT') {
       console.log(`Registro no encontrado - buildings`);
       return res.status(404).json({ message: 'No existe el edificio' });
     }
-
     console.error("Error al actualizar el edificio:", error.message);
     res.status(500).json({ error: 'Error interno al actualizar el edificio' });
   }
 };
 
+
+//
+// GUARDAR EDIFICIO
+//
+const saveBuilding = async (req, res) => {
+  const buildingData = req.body;
+  const filePath = path.join(__dirname, `../config/buildings.json`);
+
+  if (!buildingData || !buildingData.value || !buildingData.text) {
+    return res.status(400).json({ error: 'Faltan datos obligatorios' });
+  }
+
+  try {
+    // Leer archivo actual (si existe)
+    let currentData = { edifp: [] };
+    try {
+      const fileContent = await fs.readFile(filePath, 'utf-8');
+      if (fileContent.trim()) {
+        const parsed = JSON.parse(fileContent);
+        currentData.edifp = Array.isArray(parsed.edifp) ? parsed.edifp : [];
+      }
+    } catch (readErr) {
+      console.warn('Archivo inexistente o corrupto, se inicializa vacío');
+    }
+
+    // Guardamos la reserva
+    currentData.edifp.push(buildingData);
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
+    await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
+
+    res.status(201).json({
+      message: 'Edificio guardado con éxito',
+    });
+
+  } catch (error) {
+    console.error('Error al guardar edificio:', error);
+    res.status(500).json({ error: 'Hubo un error al guardar el edificio' });
+  }
+};
+
+
 module.exports = {
   getBuildings,
   deleteBuilding,
-  updateBuilding
+  updateBuilding,
+  saveBuilding
 };

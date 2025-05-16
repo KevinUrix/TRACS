@@ -41,7 +41,7 @@ export default function ReserveButton({
   const [professor, setProfessor] = useState('');
   const [startTime, setStartTime] = useState(convertTo24HourFormat(selectedHour));
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
-  const [reservationDate, setReservationDate] = useState(getTodayDate()); /* Para poner la fecha en automatico: useState(getTodayDate()); anteriormente*/
+  const [reservationDate, setReservationDate] = useState(getTodayDate()); /* Para poner la fecha en automatico*/
   const [duration, setDuration] = useState('Temporal');
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
 

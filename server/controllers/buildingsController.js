@@ -70,8 +70,11 @@ const updateBuilding = async (req, res) => {
   if (!updatedData || !updatedData.value || !updatedData.text) {
     return res.status(400).json({ error: 'Faltan datos obligatorios para el edificio' });
   }
-
+  
   const filePath = path.join(__dirname, `../config/buildings.json`);
+  const classroomsPath = path.join(__dirname, `../config/classrooms`);
+  const oldFilePath = path.join(classroomsPath, `${buildingName}.json`);
+  const newFilePath = path.join(classroomsPath, `${updatedData.value}.json`);
 
   try {
     const fileContent = await fs.readFile(filePath, 'utf-8');
@@ -88,6 +91,15 @@ const updateBuilding = async (req, res) => {
 
     if (index === -1) {
       return res.status(404).json({ error: 'Edificio no encontrado para modificar' });
+    }
+
+
+    // Si existe el archivo con el nombre antiguo, lo renombramos
+    if (await fs.access(oldFilePath).then(() => true).catch(() => false)) {
+      await fs.rename(oldFilePath, newFilePath);
+      console.log(`Archivo renombrado: ${oldFilePath} -> ${newFilePath}`);
+    } else {
+      console.warn(`El archivo ${oldFilePath} no existe, no se pudo renombrar.`);
     }
 
     // Reemplazar la reserva en el índice encontrado
@@ -117,13 +129,14 @@ const updateBuilding = async (req, res) => {
 const saveBuilding = async (req, res) => {
   const buildingData = req.body;
   const filePath = path.join(__dirname, `../config/buildings.json`);
+  const classroomsPath = path.join(__dirname, `../config/classrooms`);
+  const classroomFile = path.join(classroomsPath, `${buildingData.value}.json`);
 
   if (!buildingData || !buildingData.value || !buildingData.text) {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
   }
 
   try {
-    // Leer archivo actual (si existe)
     let currentData = { edifp: [] };
     try {
       const fileContent = await fs.readFile(filePath, 'utf-8');
@@ -135,20 +148,29 @@ const saveBuilding = async (req, res) => {
       console.warn('Archivo inexistente o corrupto, se inicializa vacío');
     }
 
-    // Guardamos la reserva
     currentData.edifp.push(buildingData);
     await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
-    res.status(201).json({
-      message: 'Edificio guardado con éxito',
-    });
+    // Crear el archivo del edificio
+    await fs.mkdir(classroomsPath, { recursive: true });
+    try {
+      await fs.access(classroomFile);
+      console.log(`El archivo ${buildingData.value}.json ya existe, no se sobreescribirá.`);
+    } catch {
+      await fs.writeFile(classroomFile, JSON.stringify([], null, 2));
+      console.log(`Archivo ${buildingData.value}.json creado correctamente.`);
+    }
 
+    res.status(201).json({
+      message: 'Edificio y su archivo de aulas guardados con éxito',
+    });
   } catch (error) {
     console.error('Error al guardar edificio:', error);
     res.status(500).json({ error: 'Hubo un error al guardar el edificio' });
   }
 };
+
 
 
 module.exports = {

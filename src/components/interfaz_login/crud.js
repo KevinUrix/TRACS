@@ -148,7 +148,7 @@ export default function Crud() {
     }
   };
 
-
+  // EDITAR EDIFICIO
   const handleSaveEditBuilding = async () => {
     if (!buildingToEdit.value || !buildingToEdit.text) {
       toast.error("Todos los campos son obligatorios");

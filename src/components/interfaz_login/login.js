@@ -84,6 +84,7 @@ export default function Login() {
           <input
             type="text"
             value={usuario}
+            maxLength={20}
             onChange={(e) => {
               const val = e.target.value;
               const lastChar = val.slice(-1);
@@ -98,6 +99,13 @@ export default function Login() {
               // Solo letras, números y guion bajo
               const filtered = val.replace(/[^a-z0-9_]/g, '');
               setUsuario(filtered);
+              
+              if (filtered.length >= 20) {
+                toast.info('Máximo de 20 caracteres alcanzado.', {
+                  autoClose: 1000,
+                  closeOnClick: true,
+                });
+              }
             }}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Ingresa tu nombre de usuario"

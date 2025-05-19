@@ -66,21 +66,22 @@ const extractData = ($, buildingName) => {
     return results;
 };
 
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
 // Scraping en segundo plano (background)
 const backgroundScraping = async (cycle, skipEdifp = null) => {
-    for (const building of buildingsData.edifp) {
-        const edifp = building.value;
+    const chunkSize = 6;
+    for (let i = 0; i < buildingsData.edifp.length; i += chunkSize) {
+        const chunk = buildingsData.edifp.slice(i, i + chunkSize);
         
-        if (edifp === skipEdifp || activeBackgroundScraping.has(edifp)) continue;
+        await Promise.all(chunk.map(async (building) => {
+        const edifp = building.value;
+        if (edifp === skipEdifp || activeBackgroundScraping.has(edifp)) return;
 
         activeBackgroundScraping.add(edifp);
 
         const cacheKey = `schedule-${cycle}-building-${edifp}`;
         if (cache.get(cacheKey)) {
             activeBackgroundScraping.delete(edifp);
-            continue;
+            return;
         }
 
         try {
@@ -106,14 +107,14 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
                 console.log(`Datos de ${edifp} almacenados en caché en segundo plano.`);
             }
 
-            await delay(100);
 
         } catch (err) {
             console.error(`Error al hacer scraping de ${edifp}:`, err.message);
         } finally {
             activeBackgroundScraping.delete(edifp);
         }
-    }
+    }));
+}
 };
 
 // Scraping principal (directo al usuario)

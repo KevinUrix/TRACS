@@ -34,7 +34,7 @@ export default function TicketsList({ building, refresh, onRefresh}) {
 
 
     fetchTickets();
-  }, [building, refresh, onRefresh]);
+  }, [building, refresh]);
 
   const paginatedTickets = tickets.slice(
     (currentPage - 1) * ticketsPerPage,

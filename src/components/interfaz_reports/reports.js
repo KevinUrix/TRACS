@@ -141,7 +141,7 @@ export default function Reports() {
       {/* Lista de tickets */}
       {selectedBuilding && (
         <div className="bg-white p-4 rounded-lg shadow-md">
-          <TicketsList building={selectedBuilding} refresh={refreshTickets} onRefresh={toggleRefresh} />
+          <TicketsList building={selectedBuilding} refresh={refreshTickets} onRefresh={() => setRefreshTickets(prev => !prev)} />
         </div>
       )}
     </div>

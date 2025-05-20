@@ -122,6 +122,90 @@ app.delete('/api/users/:id', async (req, res) => {
   }
 });
 
+/*---------------------------- Tickets --------------------------------*/
+
+// Crear un ticket nuevo
+app.post('/api/tickets', async (req, res) => {
+  const { building, room, report } = req.body;
+
+  if (!building || !report) {
+    return res.status(400).json({ error: 'Edificio y reporte son obligatorios' });
+  }
+
+  try {
+    const result = await pool.query(
+      'INSERT INTO tickets (building, room, report) VALUES ($1, $2, $3) RETURNING *',
+      [building, room || null, report]
+    );
+    res.status(201).json(result.rows[0]);
+  } catch (err) {
+    console.error('Error al guardar ticket:', err);
+    res.status(500).json({ error: 'Error al guardar el ticket' });
+  }
+});
+
+// Obtener tickets filtrados por edificio
+app.get('/api/tickets/:building', async (req, res) => {
+  const { building } = req.params;
+
+  try {
+    const result = await pool.query(
+      'SELECT * FROM tickets WHERE building = $1 ORDER BY created_at DESC',
+      [building]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    console.error('Error al obtener tickets:', err);
+    res.status(500).json({ error: 'Error al obtener tickets' });
+  }
+});
+
+// Actualizar un ticket existente
+app.put('/api/tickets/:id', async (req, res) => {
+  const { id } = req.params;
+  const { room, report } = req.body;
+
+  if (!report) {
+    return res.status(400).json({ error: 'El campo "report" es obligatorio' });
+  }
+
+  try {
+    const result = await pool.query(
+      'UPDATE tickets SET room = $1, report = $2 WHERE id = $3 RETURNING *',
+      [room || null, report, id]
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Ticket no encontrado' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error('Error al actualizar ticket:', err);
+    res.status(500).json({ error: 'Error al actualizar ticket' });
+  }
+});
+
+// Eliminar un ticket por ID
+app.delete('/api/tickets/:id', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const result = await pool.query('DELETE FROM tickets WHERE id = $1 RETURNING *', [id]);
+
+    if (result.rowCount === 0) {
+      return res.status(404).json({ error: 'Ticket no encontrado' });
+    }
+
+    res.json({ message: 'Ticket eliminado correctamente' });
+  } catch (err) {
+    console.error('Error al eliminar ticket:', err);
+    res.status(500).json({ error: 'Error al eliminar el ticket' });
+  }
+});
+
+
+
 
 // Inicia el servidor
 app.listen(PORT, () => {

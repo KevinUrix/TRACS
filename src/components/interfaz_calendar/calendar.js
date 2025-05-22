@@ -307,14 +307,29 @@ export default function Calendar() {
                         if (renderedCells[cellKey]) return null;
 
                         // Buscar si hay reserva
-                        const matchingReservation = reservations.find(res => {
+                        const hasClassThisHour = schedule.some(course => {
+                          const [courseStart, courseEnd] = course.data.schedule.split('-');
+                          const courseStartHour = parseInt(courseStart.substring(0, 2), 10);
+                          const courseEndHour = parseInt(courseEnd.substring(0, 2), 10);
+                          const courseDays = course.data.days.split(' ');
+                          const isCourseOnSelectedDay = courseDays.includes(selectedDay);
+
+                          return (
+                            isCourseOnSelectedDay &&
+                            course.data.classroom === classroom &&
+                            currentHour >= courseStartHour &&
+                            currentHour <= courseEndHour
+                          );
+                        });
+
+                        // Buscar reservas que aplican a esta hora (sin clases)
+                        const matchingReservation = !hasClassThisHour ? reservations.find(res => {
                           const [startTime, endTime] = res.schedule.split('-');
                           const startHour = parseInt(startTime.substring(0, 2), 10);
                           const endHour = parseInt(endTime.substring(0, 2), 10);
                           const days = res.days.split(' ');
 
                           const isOnDay = days.includes(selectedDay.charAt(0));
-
                           const isTemporalValid = res.duration === "Temporal" && isInThisWeek(res.date);
                           const isSiempreValid = res.duration === "Siempre" && isSameOrBeforeWeekStart(res.date);
 
@@ -325,9 +340,7 @@ export default function Calendar() {
                             isOnDay &&
                             (isTemporalValid || isSiempreValid)
                           );
-
-                        });
-
+                        }) : null;
                         // Buscar si hay curso
                         const matchingCourse = schedule.find(scheduleItem => {
                           const [startTime, endTime] = scheduleItem.data.schedule.split('-');
@@ -367,13 +380,14 @@ export default function Calendar() {
 
                         const backgroundColor = matchingCourse
                           ? `hsl(${hue}, 50%, 50%)`
-                          : matchingReservation
+                          : matchingReservation && !matchingCourse
                             ? '#0a304b'
                             : 'white';
 
                         let rowspan = 1;
+                        let showReservation = false;
 
-                        // Calcular rowspan si es curso o reserva
+                        // Solo cursos pueden tener rowspan > 1
                         if (matchingCourse) {
                           const [start, end] = matchingCourse.data.schedule.split('-');
                           const startHour = parseInt(start.substring(0, 2), 10);
@@ -385,39 +399,53 @@ export default function Calendar() {
                             renderedCells[`${h}-${classroom}`] = true;
                           }
                         } else if (matchingReservation) {
-                          const [start, end] = matchingReservation.schedule.split('-');
-                          const startHour = parseInt(start.substring(0, 2), 10);
-                          const endHour = parseInt(end.substring(0, 2), 10);
-                          rowspan = endHour - startHour + 1;
+                          // Para reservas, verificar que no haya clase en ninguna hora del rango
+                          const [resStart, resEnd] = matchingReservation.schedule.split('-');
+                          const resStartHour = parseInt(resStart.substring(0, 2), 10);
+                          const resEndHour = parseInt(resEnd.substring(0, 2), 10);
+                          
+                          // Verificar que no haya clases en todo el rango de la reserva
+                          const hasAnyClassInRange = schedule.some(course => {
+                            const [courseStart, courseEnd] = course.data.schedule.split('-');
+                            const courseStartHour = parseInt(courseStart.substring(0, 2), 10);
+                            const courseEndHour = parseInt(courseEnd.substring(0, 2), 10);
+                            const courseDays = course.data.days.split(' ');
+                            const isCourseOnSelectedDay = courseDays.includes(selectedDay);
 
-                          for (let h = startHour; h <= endHour; h++) {
-                            renderedCells[`${h}-${classroom}`] = true;
-                          }
+                            return (
+                              isCourseOnSelectedDay &&
+                              course.data.classroom === classroom &&
+                              ((courseStartHour >= resStartHour && courseStartHour <= resEndHour) ||
+                              (courseEndHour >= resStartHour && courseEndHour <= resEndHour) ||
+                              (resStartHour >= courseStartHour && resEndHour <= courseEndHour))
+                            );
+                          });
+
+                          showReservation = !hasAnyClassInRange;
                         }
 
                         return (
+
                           <td
                             key={index}
                             className={`table-cell font-semibold ${
-                              matchingReservation ? 'reserved-cell' : (
+                              showReservation ? 'reserved-cell' : (
                                 matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'
                               )}`}
-                            style={{ backgroundColor }}
+                            style={{ backgroundColor: matchingCourse ? `hsl(${hue}, 50%, 50%)` : showReservation ? '#0a304b' : 'white' }}
                             rowSpan={rowspan}
                           >
-                            {matchingReservation ? (
+                            {showReservation ? (
                               <>
                                 <div className="professor-name">{matchingReservation.professor}</div>
-                                <div className="course-name"> {matchingReservation.code} {matchingReservation.course}</div>
+                                <div className="course-name">{matchingReservation.code} {matchingReservation.course}</div>
                                 <div className="course-date">Fecha: {matchingReservation.date}</div>
                               </>
                             ) : matchingCourse ? (
                               <>
                                 <div className="professor-name">{matchingCourse.professor}</div>
-                                <div className="course-name"> {matchingCourse.data.code} {matchingCourse.data.course}</div>
-                                {/* <div className="course-code">Clave: </div> */}
+                                <div className="course-name">{matchingCourse.data.code} {matchingCourse.data.course}</div>
                                 <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
-                                {/* <div className="course-nrc">NRC: {matchingCourse.data.nrc}</div> */}
                               </>
                             ) : (
                               <ReserveButton

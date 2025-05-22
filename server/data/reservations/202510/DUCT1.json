@@ -23,6 +23,30 @@
       "duration": "Temporal",
       "professor": "adsf",
       "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "I",
+      "building": "DUCT1",
+      "classroom": "LC05",
+      "code": "A",
+      "course": "A",
+      "date": "2025-05-21",
+      "duration": "Temporal",
+      "professor": "A",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "I",
+      "building": "DUCT1",
+      "classroom": "LC08",
+      "code": "a",
+      "course": "a",
+      "date": "2025-05-21",
+      "duration": "Temporal",
+      "professor": "a",
+      "createInGoogleCalendar": "false"
     }
   ]
 }

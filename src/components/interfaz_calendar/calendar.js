@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { handlePrint } from './utils';
 import Sidebar from '../sidebar';
 import SelectsLogic from './selectsLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
@@ -261,7 +262,6 @@ export default function Calendar() {
   }, [selectedCycle, selectedBuilding]);
 
 
-
   return (
     <>
       <div className="calendar-container">
@@ -279,16 +279,26 @@ export default function Calendar() {
               reservations={reservations}
             />
           </div>
+          {/* MODIFICAR ESTO */}
+          <button onClick={() => handlePrint(selectedBuilding, selectedDay, selectedCycle)} className="print-button">
+            Imprimir tabla
+          </button>
           <div className="table-container">
-            <table className="schedule-table">
+            <table className="schedule-table" id="schedule-table">
               <thead>
                 <tr className="table-header">
                   <th className="table-cell">Hora</th>
                   {classrooms.map((classroom, index) => (
-                    <th key={index} className="table-cell">{classroom}</th>
+                    <th
+                      key={index}
+                      className={`table-cell print-col-${Math.floor(index / 9)}`}
+                    >
+                      {classroom}
+                    </th>
                   ))}
                 </tr>
               </thead>
+
               <tbody>
                 {hours.map((hour) => {
                   const [hourPart, period] = hour.split(' ');

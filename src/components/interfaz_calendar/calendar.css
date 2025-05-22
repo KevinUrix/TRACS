@@ -204,7 +204,6 @@
   color: #ffffff; 
   font-size: 1rem;
   font-weight: 650;
-
 }
 
 .course-name {
@@ -548,3 +547,48 @@
     transform: translateY(0);
   }
 }*/
+
+@media print {
+  th[class^="print-col-"],
+  td[class^="print-col-"] {
+    display: none;
+  }
+
+  /* Mostrar solo las columnas del bloque 0 */
+  .print-page-1 th.print-col-0,
+  .print-page-1 td.print-col-0,
+  ...
+  {
+    display: table-cell;
+  }
+}
+/* 
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .calendar-container, 
+  .calendar-container * {
+    visibility: visible;
+  }
+  
+  .calendar-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .sidebar, 
+  .print-button, 
+  .select-content,
+  .navbar {
+    display: none !important;
+  }
+  
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+} */

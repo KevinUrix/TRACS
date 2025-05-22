@@ -12,6 +12,7 @@ export default function DownloadButton({ onDownload }) {
     }
   };
 
+
   const handleDownload = async () => {
     setIsLoading(true);
     try {

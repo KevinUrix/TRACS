@@ -4,11 +4,19 @@ const { google } = require('googleapis');
 const { getOAuth2Client } = require('../utils/googleOAuthClient');
 const { createGoogleEvent } = require('../utils/createGoogleEvent');
 
+const mapBuildingName = (name) => {
+  if (name === 'DUCT1') return 'Alfa';
+  if (name === 'DUCT2') return 'Beta';
+  if (name === 'DBETA') return 'CISCO';
+  return name;
+};
+
 //
 // GUARDAR RESERVAS
 //
 const saveReservation = async (req, res) => {
   const { cycle, buildingName } = req.query;
+  const mappedBuildingName = mapBuildingName(buildingName);
   const reservationData = req.body;
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
@@ -63,7 +71,7 @@ const saveReservation = async (req, res) => {
         if (!tokens || !tokens.access_token) {
           console.warn('Usuario no autenticado en Google, no se crea evento');
         } else {
-          const googleEventId = await createGoogleEvent(reservationData, tokens);
+          const googleEventId = await createGoogleEvent(reservationData, tokens, mappedBuildingName);
           if (googleEventId) {
             reservationData.googleEventId = googleEventId;
             console.log('Evento creado en Google Calendar:', googleEventId);
@@ -96,6 +104,7 @@ const saveReservation = async (req, res) => {
 //
 const deleteReservation = async (req, res) => {
   const { cycle, buildingName, professor, schedule, date } = req.query;
+  const mappedBuildingName = mapBuildingName(buildingName);
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
   try {
@@ -120,11 +129,21 @@ const deleteReservation = async (req, res) => {
         const oAuth2Client = await getOAuth2Client();
         const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
 
+        // Obtener lista de calendarios
+        const calendarListResponse = await calendar.calendarList.list();
+        const calendars = calendarListResponse.data.items || [];
+
+        // Buscar calendario que contenga buildingName en su nombre
+        const targetCalendar = calendars.find(cal =>
+          cal.summary.toLowerCase().includes(mappedBuildingName.toLowerCase())
+        );
+        const calendarId = targetCalendar ? targetCalendar.id : 'primary';
+
         for (const reservation of toDelete) {
           if (reservation.googleEventId) {
             try {
               await calendar.events.delete({
-                calendarId: 'primary',
+                calendarId,
                 eventId: reservation.googleEventId,
               });
               console.log(`Evento ${reservation.googleEventId} eliminado de Google Calendar`);
@@ -133,6 +152,7 @@ const deleteReservation = async (req, res) => {
             }
           }
         }
+
       } catch (err) {
         console.warn('No se pudo autenticar con Google para eliminar eventos:', err.message);
       }
@@ -161,15 +181,13 @@ const deleteReservation = async (req, res) => {
   }
 };
 
-module.exports = { deleteReservation };
-
-
 
 //
 // EDITAR RESERVAS
 //
 const updateReservation = async (req, res) => {
   const { cycle, buildingName, originalProfessor, originalSchedule, originalDate, originalGoogleEventId } = req.query;
+  const mappedBuildingName = mapBuildingName(buildingName);
 
   const updatedData = req.body;
 
@@ -274,11 +292,22 @@ const updateReservation = async (req, res) => {
           ];
         }
 
+        // Obtener lista de calendarios
+        const calendarListResponse = await calendar.calendarList.list();
+        const calendars = calendarListResponse.data.items || [];
+
+        // Buscar calendario que contenga buildingName en su nombre
+        const targetCalendar = calendars.find(cal =>
+          cal.summary.toLowerCase().includes(mappedBuildingName.toLowerCase())
+        );
+        const calendarId = targetCalendar ? targetCalendar.id : 'primary';
+
         await calendar.events.update({
-          calendarId: 'primary',
+          calendarId,
           eventId: originalGoogleEventId,
           resource: event,
         });
+
 
         console.log(`Evento ${originalGoogleEventId} actualizado en Google Calendar`);
       } catch (err) {

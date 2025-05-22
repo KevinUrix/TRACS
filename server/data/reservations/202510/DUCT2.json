@@ -1,17 +1,16 @@
 {
   "data": [
     {
-      "schedule": "1300-1355",
-      "days": "L",
+      "schedule": "0700-0755",
+      "days": "J",
       "building": "DUCT2",
-      "classroom": "LC05",
-      "code": "CACHE",
-      "course": "CACHE",
-      "date": "2025-05-12",
+      "classroom": "LC04",
+      "code": "DSADAS",
+      "course": "ASAD",
+      "date": "2025-05-22",
       "duration": "Temporal",
-      "professor": "PRUEBA CACHE",
-      "createInGoogleCalendar": "true",
-      "googleEventId": "nmnh228i74d8md6jc09huu5bmo"
+      "professor": "PRUEB",
+      "createInGoogleCalendar": "false"
     }
   ]
 }

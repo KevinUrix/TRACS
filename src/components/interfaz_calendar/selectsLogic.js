@@ -94,6 +94,21 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       .catch(error => console.error("Error cargando los edificios:", error));
   }, []);
 
+  useEffect(() => {
+    if (selectedBuilding) {
+      const displayName = {
+        DUCT1: "Alfa",
+        DUCT2: "Beta",
+        DBETA: "CISCO"
+      }[selectedBuilding] || selectedBuilding;
+
+      document.title = displayName;
+    } else {
+      document.title = "Quill";
+    }
+  }, [selectedBuilding]);
+
+
   const handleCycleChange = (e) => {
     setSelectedCycle(e.target.value);
     onUpdateCycle(e.target.value);

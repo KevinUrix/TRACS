@@ -7,7 +7,16 @@ const formatTime = (timeStr) => {
   return `${timeStr.slice(0, 2)}:${timeStr.slice(2)}`;
 };
 
-const createGoogleEvent = async (reservationData, tokens) => {
+const mapBuildingName = (name) => {
+  if (name === 'DUCT1') return 'Alfa';
+  if (name === 'DUCT2') return 'Beta';
+  if (name === 'DBETA') return 'CISCO';
+  return name;
+};
+
+const createGoogleEvent = async (reservationData, tokens, buildingName) => {
+  const mappedBuildingName = mapBuildingName(buildingName);
+
   if (!tokens) {
     throw new Error('No se encontraron tokens de Google');
   }
@@ -32,6 +41,19 @@ const createGoogleEvent = async (reservationData, tokens) => {
   const [startRaw, endRaw] = reservationData.schedule.split('-');
   const startHour = formatTime(startRaw);
   const endHour = formatTime(endRaw);
+
+  const calendarListResponse = await calendar.calendarList.list();
+  const calendars = calendarListResponse.data.items || [];
+
+  const targetCalendar = calendars.find(cal =>
+    cal.summary.toLowerCase().includes(mappedBuildingName.toLowerCase())
+  );
+  
+  if (!targetCalendar) {
+    console.warn(`No se encontró calendario con nombre "${buildingName}". Se usará calendario 'primary'.`);
+  }
+
+const calendarId = targetCalendar ? targetCalendar.id : 'primary';
 
   const event = {
     summary: reservationData.professor,
@@ -71,7 +93,7 @@ const createGoogleEvent = async (reservationData, tokens) => {
 
   try {
     const res = await calendar.events.insert({
-      calendarId: 'primary',
+      calendarId,
       resource: event,
     });
     return res.data.id;

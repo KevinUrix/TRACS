@@ -3,6 +3,9 @@ import { useLocation } from 'react-router-dom';
 import InstructionsButton from './instructionsButton'; // Importa el componente
 import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
+import PrintButton from './printButton';
+import { handlePrint } from './utils';
+
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCycle, fetchReservations, reservations }) {
@@ -228,8 +231,19 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         />
       </div>
 
-      {/* Componente InstructionsButton */}
-      <InstructionsButton />
+      <div className="-ml-6">
+        <PrintButton
+          selectedBuilding={selectedBuilding}
+          selectedDay={selectedDay}
+          selectedCycle={selectedCycle}
+          onPrint={handlePrint}
+        />
+      </div>
+
+      <div className="-ml-6">
+        {/* Componente InstructionsButton */}
+        <InstructionsButton />
+      </div>
     </div>
   );
 }

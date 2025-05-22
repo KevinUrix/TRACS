@@ -268,7 +268,7 @@ export default function Calendar() {
       {(userRole === 'superuser' || userRole === 'user') && (
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
       )}
-        <div className="main-content">
+        <div className="main-content background-image-container">
           <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
             <SelectsLogic
@@ -279,10 +279,6 @@ export default function Calendar() {
               reservations={reservations}
             />
           </div>
-          {/* MODIFICAR ESTO */}
-          <button onClick={() => handlePrint(selectedBuilding, selectedDay, selectedCycle)} className="print-button">
-            Imprimir tabla
-          </button>
           <div className="table-container">
             <table className="schedule-table" id="schedule-table">
               <thead>

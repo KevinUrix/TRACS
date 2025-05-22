@@ -5,6 +5,24 @@
   display: flex;
   background-color: #f3f4f6; /* Gris claro */
   height: 100vh;
+  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+}
+
+.background-image-container {
+  position: relative;
+  z-index: 0;
+}
+
+.background-image-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:url('/public/cucei-logo.webp');
+  background-size: 50% 500px;
+  background-position: 55% center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* Cambia este valor entre 0 y 1 */
+  z-index: -1;
 }
 
 /* Main content */
@@ -13,6 +31,7 @@
   flex-direction: column;
   width: 100%;
   margin-top: 4rem; /* Para que no se sobreponga con el navbar */
+  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
 }
 
 /* Select content */
@@ -38,6 +57,7 @@
   right: 0;
   z-index: 10;
   gap: 1rem; /* Espaciado entre elementos */
+  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
 }
 
 .navbar-title {
@@ -556,39 +576,8 @@
 
   /* Mostrar solo las columnas del bloque 0 */
   .print-page-1 th.print-col-0,
-  .print-page-1 td.print-col-0,
-  ...
+  .print-page-1 td.print-col-0
   {
     display: table-cell;
   }
 }
-/* 
-@media print {
-  body * {
-    visibility: hidden;
-  }
-  
-  .calendar-container, 
-  .calendar-container * {
-    visibility: visible;
-  }
-  
-  .calendar-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .sidebar, 
-  .print-button, 
-  .select-content,
-  .navbar {
-    display: none !important;
-  }
-  
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-} */

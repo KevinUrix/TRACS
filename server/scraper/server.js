@@ -144,6 +144,18 @@ app.post('/api/tickets', async (req, res) => {
   }
 });
 
+// Obtener todos los tickets (sin filtro de edificio)
+app.get('/api/tickets', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM tickets ORDER BY created_at DESC');
+    res.json(result.rows);
+  } catch (err) {
+    console.error('Error al obtener todos los tickets:', err);
+    res.status(500).json({ error: 'Error al obtener los tickets' });
+  }
+});
+
+
 // Obtener tickets filtrados por edificio
 app.get('/api/tickets/:building', async (req, res) => {
   const { building } = req.params;

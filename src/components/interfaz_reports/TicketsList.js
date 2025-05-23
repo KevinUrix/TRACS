@@ -11,16 +11,16 @@ export default function TicketsList({ building, refresh, onRefresh}) {
   const totalPages = Math.ceil(tickets.length / ticketsPerPage);
 
   useEffect(() => {
-    if (!building) {
-      setTickets([]);
-      return;
-    }
-
     const fetchTickets = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/tickets/${encodeURIComponent(building)}`);
+        const url = building
+          ? `/api/tickets/${encodeURIComponent(building)}`
+          : `/api/tickets`;
+
+        const res = await fetch(url);
         if (!res.ok) throw new Error('Error al cargar tickets');
+
         const data = await res.json();
         setTickets(data);
         setCurrentPage(1);
@@ -31,7 +31,6 @@ export default function TicketsList({ building, refresh, onRefresh}) {
         setLoading(false);
       }
     };
-
 
     fetchTickets();
   }, [building, refresh]);
@@ -85,21 +84,30 @@ export default function TicketsList({ building, refresh, onRefresh}) {
 
   return (
     <div className="p-4">
-      <h2 className="text-xl font-semibold mb-4">Tickets para {building}</h2>
+      <h2 className="text-xl font-semibold mb-4">
+        {building ? `Tickets para ${building}` : 'Todos los tickets'}
+      </h2>
 
       {loading && <p>Cargando tickets...</p>}
-      {!loading && tickets.length === 0 && <p>No hay tickets para este edificio.</p>}
+      {!loading && tickets.length === 0 && (
+          <p>
+            {building
+              ? 'No hay tickets para este edificio.'
+              : 'No hay tickets registrados.'}
+          </p>
+      )}
 
       {!loading && tickets.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {paginatedTickets.map(({ id, room, report, created_at }) => (
+            {paginatedTickets.map(({ id, building, room, report, created_at }) => (
               <div key={id} onClick={() =>
-                  setSelectedTicket({ id, room, report, created_at })
+                  setSelectedTicket({ id, building, room, report, created_at })
                 }
                 className="bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100"
                 >
 
+                <p><strong>Edificio:</strong> {building}</p>
                 <p><strong>Salón:</strong> {room}</p>
                 <p className="truncate"><strong>Reporte:</strong> {report}</p>
                 <p className="text-sm text-gray-500 mt-2">
@@ -134,6 +142,18 @@ export default function TicketsList({ building, refresh, onRefresh}) {
           <div className="bg-white rounded p-6 w-full max-w-md">
             <h3 className="text-lg font-semibold mb-4">Editar ticket</h3>
 
+            <label className="block mb-2">
+              Edificio:
+              <input
+                type="text"
+                name="building"
+                value={selectedTicket.building}
+                onChange={handleChange}
+                className="border rounded w-full px-2 py-1 mt-1"
+                disabled
+              />
+            </label>
+            
             <label className="block mb-2">
               Salón:
               <input

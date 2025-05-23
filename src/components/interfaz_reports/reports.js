@@ -139,11 +139,13 @@ export default function Reports() {
       </div>
 
       {/* Lista de tickets */}
-      {selectedBuilding && (
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <TicketsList building={selectedBuilding} refresh={refreshTickets} onRefresh={() => setRefreshTickets(prev => !prev)} />
-        </div>
-      )}
+      <div className="bg-white p-4 rounded-lg shadow-md">
+        <TicketsList
+          building={selectedBuilding} // puede estar vacío
+          refresh={refreshTickets}
+          onRefresh={() => setRefreshTickets(prev => !prev)}
+        />
+      </div>
     </div>
 
     {/* Modal de nuevo ticket */}
@@ -155,9 +157,9 @@ export default function Reports() {
           <div className="mb-4">
             <label className="block mb-1 text-sm font-medium">Edificio</label>
             <select 
-              value={selectedBuilding} 
-              disabled 
+              value={selectedBuilding}  
               className="w-full p-2 border border-gray-300 rounded bg-gray-100 text-gray-600"
+              disabled
             >
               <option>{selectedBuilding || 'Selecciona un edificio'}</option>
             </select>

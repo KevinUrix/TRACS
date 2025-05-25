@@ -93,6 +93,16 @@
   width: 18.75rem;
 }
 
+.select-container .status-select {
+  background-color: #f0e398;
+  width: 12rem;
+}
+
+.select-container .category-select {
+  background-color: #98d8f0;
+  width: 12rem;
+}
+
 .select-container span {
   font-size: 1rem;
   display: inline-block;

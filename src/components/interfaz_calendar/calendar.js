@@ -265,7 +265,7 @@ export default function Calendar() {
   return (
     <>
       <div className="calendar-container">
-      {(userRole === 'superuser' || userRole === 'user') && (
+      {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
         <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
       )}
         <div className="main-content background-image-container">

@@ -14,7 +14,7 @@ export default function Sidebar({ sidebarOpen, onToggleSidebar }) {
         <li className="p-2 hover:bg-blue-500 cursor-pointer">
           <Link to="/calendario" className="block w-full h-full">Inicio</Link>
         </li>
-        {(userRole === 'superuser' || userRole === 'user') && (
+        {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
         <li className="p-2 hover:bg-blue-500 cursor-pointer">
           <Link to="/reportes" className="block w-full h-full">Reportes</Link>
         </li>

@@ -126,16 +126,18 @@ app.delete('/api/users/:id', async (req, res) => {
 
 // Crear un ticket nuevo
 app.post('/api/tickets', async (req, res) => {
-  const { building, room, report } = req.body;
+  const { building, room, title, category, priority, report, created_by } = req.body;
 
-  if (!building || !report) {
-    return res.status(400).json({ error: 'Edificio y reporte son obligatorios' });
+  if (!building || !report || !title || !priority || !category || !created_by) {
+    return res.status(400).json({ error: 'Faltan campos obligatorios' });
   }
 
   try {
     const result = await pool.query(
-      'INSERT INTO tickets (building, room, report) VALUES ($1, $2, $3) RETURNING *',
-      [building, room || null, report]
+      `INSERT INTO tickets (building, room, title, category, priority, report, created_by)
+       VALUES ($1, $2, $3, $4, $5, $6, $7)
+       RETURNING *`,
+      [building, room || null, title, category, priority, report, created_by]
     );
     res.status(201).json(result.rows[0]);
   } catch (err) {
@@ -175,21 +177,42 @@ app.get('/api/tickets/:building', async (req, res) => {
 // Actualizar un ticket existente
 app.put('/api/tickets/:id', async (req, res) => {
   const { id } = req.params;
-  const { room, report } = req.body;
+  const {
+    room,
+    report,
+    status,
+    category,
+    modified_by,  // nuevo campo
+  } = req.body;
 
   if (!report) {
     return res.status(400).json({ error: 'El campo "report" es obligatorio' });
   }
 
   try {
-    const result = await pool.query(
-      'UPDATE tickets SET room = $1, report = $2 WHERE id = $3 RETURNING *',
-      [room || null, report, id]
-    );
+    // Ver si el estado cambió para actualizar el campo status_changed_at
+    const previous = await pool.query('SELECT status FROM tickets WHERE id = $1', [id]);
 
-    if (result.rows.length === 0) {
+    if (previous.rows.length === 0) {
       return res.status(404).json({ error: 'Ticket no encontrado' });
     }
+
+    const prevStatus = previous.rows[0].status;
+    const statusChanged = status && status !== prevStatus;
+    const statusChangedAt = statusChanged ? new Date() : null;
+
+    const result = await pool.query(
+      `UPDATE tickets SET
+        room = $1,
+        report = $2,
+        status = $3,
+        category = $4,
+        modified_by = $5,
+        status_changed_at = CASE WHEN $6 THEN $7 ELSE status_changed_at END
+      WHERE id = $8
+      RETURNING *`,
+      [room || null, report, status, category, modified_by, statusChanged, statusChangedAt, id]
+    );
 
     res.json(result.rows[0]);
   } catch (err) {

@@ -324,8 +324,9 @@ export default function Crud() {
                         onChange={(e) => handleSelectChange(user, e.target.value)}
                         className="border border-gray-300 rounded px-2 py-1"
                       >
-                        <option value="user">user</option>
-                        <option value="superuser">superuser</option>
+                        <option value="user">User</option>
+                        <option value="superuser">Super_user</option>
+                        <option value="tecnico">Técnico</option>
                       </select>
                     </td>
                     <td className="py-2 px-4">

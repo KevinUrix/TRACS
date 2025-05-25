@@ -1,14 +1,25 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
-export default function TicketsList({ building, refresh, onRefresh}) {
+export default function TicketsList({ building, refresh, onRefresh, statusFilter, categoryFilter}) {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(false);
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
   const [currentPage, setCurrentPage] = useState(1);
 
   const ticketsPerPage = 9;
-  const totalPages = Math.ceil(tickets.length / ticketsPerPage);
+
+  const filteredTickets = tickets.filter(ticket => {
+  const matchesStatus =
+    statusFilter.toLowerCase() === 'todos' || ticket.status.toLowerCase() === statusFilter.toLowerCase();
+  const matchesCategory =
+    categoryFilter.toLowerCase() === 'todos' || ticket.category.toLowerCase() === categoryFilter.toLowerCase();
+  return matchesStatus && matchesCategory;
+});
+
+  const totalPages = Math.max(1, Math.ceil(filteredTickets.length / ticketsPerPage));
+
+  const currentUser = localStorage.getItem('username') || 'Desconocido'; // o el nombre que uses
 
   useEffect(() => {
     const fetchTickets = async () => {
@@ -35,7 +46,8 @@ export default function TicketsList({ building, refresh, onRefresh}) {
     fetchTickets();
   }, [building, refresh]);
 
-  const paginatedTickets = tickets.slice(
+  // Paginar tickets filtrados
+  const paginatedTickets = filteredTickets.slice(
     (currentPage - 1) * ticketsPerPage,
     currentPage * ticketsPerPage
   );
@@ -49,12 +61,20 @@ export default function TicketsList({ building, refresh, onRefresh}) {
   // Actualizar ticket
   const handleSave = async () => {
     try {
+
+      const updatedTicket = {
+        ...selectedTicket,
+        modified_by: currentUser,
+        status_changed_at: new Date().toISOString()
+      };
+
       const res = await fetch(`/api/tickets/${selectedTicket.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(selectedTicket),
+        body: JSON.stringify(updatedTicket),
       });
       if (!res.ok) throw new Error('Error al actualizar ticket');
+
       toast.success('Ticket actualizado');
       setSelectedTicket(null);
       onRefresh();
@@ -81,12 +101,17 @@ export default function TicketsList({ building, refresh, onRefresh}) {
     }
   };
 
+  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
     <div className="p-4">
       <h2 className="text-xl font-semibold mb-4">
         {building ? `Tickets para ${building}` : 'Todos los tickets'}
       </h2>
+
+      {!loading && tickets.length > 0 && filteredTickets.length === 0 && (
+        <p>No se encontraron tickets con los filtros aplicados.</p>
+      )}
 
       {loading && <p>Cargando tickets...</p>}
       {!loading && tickets.length === 0 && (
@@ -100,16 +125,34 @@ export default function TicketsList({ building, refresh, onRefresh}) {
       {!loading && tickets.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {paginatedTickets.map(({ id, building, room, report, created_at }) => (
+            {paginatedTickets.map(({ id, building, room, title, report, created_at, created_by, status, category }) => (
               <div key={id} onClick={() =>
-                  setSelectedTicket({ id, building, room, report, created_at })
+                  setSelectedTicket({ id, building, room, title, report, created_at, created_by, status, category })
                 }
                 className="bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100"
                 >
 
                 <p><strong>Edificio:</strong> {building}</p>
                 <p><strong>Salón:</strong> {room}</p>
+                <p><strong>Titulo:</strong> {title}</p>
                 <p className="truncate"><strong>Reporte:</strong> {report}</p>
+                <p>
+                  <strong>Categoría:</strong>{' '}
+                  <span className={category === 'Mantenimiento'? 'text-yellow-600': category === 'Limpieza'? 'text-green-600': category === 'Tecnico'? 'text-blue-600': 'text-gray-600'
+                    }
+                  >
+                    {category}
+                  </span>
+                </p>
+                <p>
+                  <strong>Estado:</strong>{' '}
+                  <span className={status === 'Abierto'? 'text-red-600': status === 'En Proceso'? 'text-yellow-600': status === 'Cerrado'? 'text-green-600': 'text-gray-600'
+                    }
+                  >
+                    {status}
+                  </span>
+                </p>
+                <p><strong>Creador:</strong> {created_by}</p>
                 <p className="text-sm text-gray-500 mt-2">
                   Fecha: {new Date(created_at).toLocaleString()}
                 </p>
@@ -174,7 +217,39 @@ export default function TicketsList({ building, refresh, onRefresh}) {
                 onChange={handleChange}
                 className="border rounded w-full px-2 py-1 mt-1"
                 rows={4}
+                disabled={userRole === 'user'}
               />
+            </label>
+
+            <label className="block mb-2">
+              Categoría:
+              <select
+                name="category"
+                value={selectedTicket.category}
+                onChange={handleChange}
+                className="border rounded w-full px-2 py-1 mt-1"
+                disabled={userRole === 'user'}
+              >
+                <option value="" disabled>-- Selecciona una categoría --</option>
+                <option value="Mantenimiento">Mantenimiento</option>
+                <option value="Limpieza">Limpieza</option>
+                <option value="Tecnico">Técnico</option>
+              </select>
+            </label>
+
+            <label className="block mb-2">
+              Estado:
+              <select
+                name="status"
+                value={selectedTicket.status}
+                onChange={handleChange}
+                className="border rounded w-full px-2 py-1 mt-1"
+                disabled={userRole === 'user'}
+              >
+                <option value="Abierto">Abierto</option>
+                <option value="En Proceso">En Proceso</option>
+                <option value="Cerrado">Cerrado</option>
+              </select>
             </label>
 
             <div className="flex justify-end gap-2 mt-4">
@@ -186,13 +261,23 @@ export default function TicketsList({ building, refresh, onRefresh}) {
               </button>
               <button
                 onClick={handleDelete}
-                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                className={`px-4 py-2 rounded text-white ${
+                  userRole === 'user'
+                    ? 'bg-red-300 cursor-not-allowed'
+                    : 'bg-red-500 hover:bg-red-600'
+                }`}
+                disabled={userRole === 'user'}
               >
                 Borrar
               </button>
               <button
                 onClick={handleSave}
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                className={`px-4 py-2 rounded text-white ${
+                  userRole === 'user'
+                    ? 'bg-blue-300 cursor-not-allowed'
+                    : 'bg-blue-600 hover:bg-blue-700'
+                }`}
+                disabled={userRole === 'user'}
               >
                 Guardar
               </button>

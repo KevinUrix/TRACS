@@ -85,7 +85,7 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding,
   return (
     <>
       <nav className="navbar">
-        {(userRole === 'superuser' || userRole === 'user') && (
+        {(userRole === 'superuser' || userRole === 'user' || userRole  === 'tecnico') && (
           <button onClick={toggleSidebar} className="sidebar-toggle">☰</button>
         )}
         <h1 className="navbar-title">Calendario de Edificios</h1>

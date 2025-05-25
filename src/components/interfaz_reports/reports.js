@@ -16,11 +16,19 @@ export default function Reports() {
   const [showForm, setShowForm] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState('');
   const [reportText, setReportText] = useState('');
+
+  const [title, setTitle] = useState('');
+  const [priority, setPriority] = useState(''); // Ej: Baja, Media, Alta
+  const [category, setCategory] = useState('');
+  
   const [refreshTickets, setRefreshTickets] = useState(false);
   const [refresh, setRefresh] = useState(false);
   const toggleRefresh = () => setRefresh(prev => !prev);
 
   const [classrooms, setClassrooms] = useState([]);
+
+  const [statusFilter, setStatusFilter] = useState('Todos');
+  const [categoryFilter, setCategoryFilter] = useState('Todos');
 
   const handleSaveTicket = async () => {
     if (!selectedBuilding) {
@@ -31,11 +39,17 @@ export default function Reports() {
       toast.error('El reporte no puede estar vacío');
       return;
     }
+    // Guardamos el usuario para agregarlo como creador.
+    const creator = localStorage.getItem('username') || 'Desconocido';
 
     const ticket = {
       building: selectedBuilding,
       room: selectedRoom || null,
+      title: title.trim(),
+      category: category.trim(),
+      priority,
       report: reportText.trim(),
+      created_by: creator,
     };
 
     try {
@@ -58,6 +72,9 @@ export default function Reports() {
       setShowForm(false);
       setReportText('');
       setSelectedRoom('');
+      setTitle('');
+      setCategory('');
+      setPriority('');
 
       // Forzar recarga de tickets:
       setRefreshTickets(prev => !prev);
@@ -72,6 +89,9 @@ export default function Reports() {
     setShowForm(false);
     setReportText('');
     setSelectedRoom('');
+    setTitle('');
+    setPriority('');
+    setCategory('');
   };
 
   const handleBuildingChange = (e) => {
@@ -82,7 +102,7 @@ export default function Reports() {
   useEffect(() => {
     const userRole = localStorage.getItem('role');
 
-    if (userRole !== 'superuser' && userRole !== 'user') {
+    if (userRole !== 'superuser' && userRole !== 'user' && userRole !== 'tecnico') {
       toast.error('Debes está logeado para entrar a esta página.');
       navigate('/login');
     }
@@ -125,6 +145,30 @@ export default function Reports() {
           onChange={handleBuildingChange} 
         />
 
+        <div className="select-container">
+          <select
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value)}
+            className='status-select'
+          >
+            <option value="Todos">Todos los estados</option>
+            <option value="Abierto">Abierto</option>
+            <option value="En Proceso">En proceso</option>
+            <option value="Cerrado">Cerrado</option>
+          </select>
+
+          <select
+            value={categoryFilter}
+            onChange={(e) => setCategoryFilter(e.target.value)}
+            className='category-select'
+          >
+            <option value="Todos">Todas las categorias</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+            <option value="Limpieza">Limpieza</option>
+            <option value="Tecnico">Técnico</option>
+          </select>
+        </div>
+
         {selectedBuilding && (
           <button
             onClick={() => setShowForm(true)}
@@ -144,6 +188,8 @@ export default function Reports() {
           building={selectedBuilding} // puede estar vacío
           refresh={refreshTickets}
           onRefresh={() => setRefreshTickets(prev => !prev)}
+          statusFilter={statusFilter}
+          categoryFilter={categoryFilter} // nuevo prop
         />
       </div>
     </div>
@@ -172,13 +218,24 @@ export default function Reports() {
               onChange={(e) => setSelectedRoom(e.target.value)} 
               className="w-full p-2 border border-gray-300 rounded"
             >
-              <option value="">Selecciona un salón</option>
+              <option value="" disabled>Selecciona un salón</option>
               {classrooms.map((room, index) => (
                 <option key={index} value={room}>
                   {room}
                 </option>
               ))}
             </select>
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 text-sm font-medium">Título</label>
+            <input 
+              type="text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              className="w-full p-2 border border-gray-300 rounded"
+              placeholder="Ej. Problema con el proyector"
+            />
           </div>
 
           <div className="mb-4">
@@ -190,6 +247,34 @@ export default function Reports() {
               rows="3"
               placeholder="Escribe el reporte aquí..."
             ></textarea>
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 text-sm font-medium">Categoría</label>
+            <select 
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="w-full p-2 border border-gray-300 rounded"
+            >
+              <option value="" disabled>Selecciona una categoría</option>
+              <option value="Mantenimiento">Mantenimiento</option>
+              <option value="Limpieza">Limpieza</option>
+              <option value="Tecnico">Técnico</option>
+            </select>
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 text-sm font-medium">Prioridad</label>
+            <select 
+              value={priority}
+              onChange={(e) => setPriority(e.target.value)}
+              className="w-full p-2 border border-gray-300 rounded"
+            >
+              <option value="" disabled>Selecciona el nivel de prioridad</option>
+              <option value="Baja">Baja</option>
+              <option value="Media">Media</option>
+              <option value="Alta">Alta</option>
+            </select>
           </div>
 
           <div className="flex justify-end space-x-2">

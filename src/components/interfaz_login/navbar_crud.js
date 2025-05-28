@@ -37,11 +37,11 @@ export default function NavbarCrud({ toggleSidebar, selectedCycle, selectedBuild
 
       {isLoggedIn ? (
         <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
-          <img src="/cerrar-sesion.png" alt="Cerrar sesión" className="w-8 h-8" />
+          <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
         </button>
       ) : (
         <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
-          <img src="/iniciar-sesion.png" alt="Iniciar sesión" className="w-8 h-8" />
+          <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
         </button>
       )}
     </nav>

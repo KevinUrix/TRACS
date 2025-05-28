@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../sidebar'; // Asegúrate de que el import sea correcto
 import Navbar from './navbar_reports'; // Importa el nuevo componente
-import BuildingSelect from './BuildingSelect';
+import BuildingSelect from './buildingSelect';
 import './reports.css'; // Importa el archivo de estilos CSS
 
 import TicketsList from './TicketsList';
@@ -217,6 +217,7 @@ export default function Reports() {
               value={selectedRoom} 
               onChange={(e) => setSelectedRoom(e.target.value)} 
               className="w-full p-2 border border-gray-300 rounded"
+              required
             >
               <option value="" disabled>Selecciona un salón</option>
               {classrooms.map((room, index) => (
@@ -249,7 +250,7 @@ export default function Reports() {
             ></textarea>
           </div>
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label className="block mb-1 text-sm font-medium">Categoría</label>
             <select 
               value={category}
@@ -276,7 +277,7 @@ export default function Reports() {
               <option value="Alta">Alta</option>
             </select>
           </div>
-
+ */}
           <div className="flex justify-end space-x-2">
             <button 
               onClick={handleCancel} 

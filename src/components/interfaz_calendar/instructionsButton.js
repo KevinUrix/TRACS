@@ -14,7 +14,7 @@ export default function InstructionsButton() {
         title="Mostrar instrucciones"
         onClick={toggleInstructions}
       >
-        <img src="/exclamacion.png" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
+        <img src="/exclamacion.webp" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
       </button>
 
       {showInstructions && (

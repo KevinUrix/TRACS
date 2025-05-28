@@ -164,7 +164,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         onClick={openPopup}
         className="bg-blue-500 rounded-full px-3 py-1 shadow-md text-white"
       >
-        <b>Ver Reservas</b>
+        <b>Ver Reservas 📇</b>
       </button>
 
       {showPopup && (

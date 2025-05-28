@@ -30,7 +30,7 @@ export default function DownloadButton({ onDownload }) {
         onClick={toggleDownload}
         id="createJSON"
       >
-        <img src="/downloadArrow.png" alt="¡Descargar!" className="h-6 w-6" />
+        <img src="/downloadArrow.webp" alt="¡Descargar!" className="h-6 w-6" />
       </button>
 
       {showDownload && (

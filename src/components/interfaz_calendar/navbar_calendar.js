@@ -92,7 +92,7 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding,
         <div className="search-container">
           <input
             type="text"
-            placeholder="Buscar maestro..."
+            placeholder="🔎 Buscar maestro..."
             className="search-input"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -101,11 +101,11 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding,
         </div>
         {isLoggedIn ? (
         <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
-          <img src="/cerrar-sesion.png" alt="Cerrar sesión" className="w-8 h-8" />
+          <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
         </button>
       ) : (
         <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
-          <img src="/iniciar-sesion.png" alt="Iniciar sesión" className="w-8 h-8" />
+          <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
         </button>
       )}
       </nav>

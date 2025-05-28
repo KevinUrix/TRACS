@@ -24,11 +24,19 @@ async function trainFromDatabase() {
     priorityClassifier.docs = [];
 
     const catResult = await pool.query('SELECT report, category FROM tickets WHERE category IS NOT NULL');
+    
+    function extractSecondaryCategory(category) {
+      const match = category.match(/\((.*?)\)/);
+      return match ? match[1] : category;
+    }
+
     catResult.rows.forEach(({ report, category }) => {
       if (report && category) {
-        categoryClassifier.addDocument(report.toLowerCase(), category);
+        const cleanCategory = extractSecondaryCategory(category.toLowerCase());
+        categoryClassifier.addDocument(report.toLowerCase(), cleanCategory);
       }
     });
+
     categoryClassifier.train();
     await new Promise((resolve, reject) => {
       categoryClassifier.save(categoryModelPath, (err) => {
@@ -98,13 +106,32 @@ async function loadModelsFromDisk() {
   }
 }
 
+function capitalizeFirstLetter(str) {
+  if (!str) return '';
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
 
 function classifyTicket({ building, room, title, report }) {
   const text = `${building} ${room || ''} ${title || ''} ${report}`.toLowerCase();
-  const category = categoryClassifier.classify(report.toLowerCase());
-  const priority = priorityClassifier.classify(text);
-  return { category, priority };
+  const rawCategory = categoryClassifier.classify(report.toLowerCase());
+  const rawPriority = priorityClassifier.classify(text);
+
+  let category = rawCategory;
+  let secondaryCategory = null;
+
+  if (rawCategory === 'software' || rawCategory === 'hardware') {
+    category = 'técnico';
+    secondaryCategory = rawCategory;
+  }
+
+  // Capitalizamos el resultado final
+  category = capitalizeFirstLetter(category);
+  secondaryCategory = secondaryCategory ? capitalizeFirstLetter(secondaryCategory) : null;
+  const priority = capitalizeFirstLetter(rawPriority);
+
+  return { category, secondaryCategory, priority };
 }
+
 
 module.exports = {
   trainFromDatabase,

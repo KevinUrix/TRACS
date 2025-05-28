@@ -165,7 +165,8 @@ export default function Reports() {
             <option value="Todos">Todas las categorias</option>
             <option value="Mantenimiento">Mantenimiento</option>
             <option value="Limpieza">Limpieza</option>
-            <option value="Tecnico">Técnico</option>
+            <option value="Técnico (Hardware)">Técnico (Hardware)</option>
+            <option value="Técnico (Software)">Técnico (Software)</option>
           </select>
         </div>
 

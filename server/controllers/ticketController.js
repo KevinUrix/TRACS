@@ -13,10 +13,12 @@ const pool = new Pool({
 
 exports.createTicket = async (req, res) => {
   const { building, room, title, report, created_by } = req.body;
-  const { category, priority } = classifyTicket({ building, room, title, report });
+  const { category, secondaryCategory, priority } = classifyTicket({ building, room, title, report });
+  const fullCategory = secondaryCategory ? `${category} (${secondaryCategory})` : category;
+
   // const { building, room, title, category, priority, report, created_by } = req.body;
 
-  if (!building || !report || !title || !priority || !category || !created_by) {
+  if (!building || !report || !title || !priority || !fullCategory || !created_by) {
     return res.status(400).json({ error: 'Faltan campos obligatorios' });
   }
 
@@ -25,7 +27,7 @@ exports.createTicket = async (req, res) => {
       `INSERT INTO tickets (building, room, title, category, priority, report, created_by)
        VALUES ($1, $2, $3, $4, $5, $6, $7)
        RETURNING *`,
-      [building, room || null, title, category, priority, report, created_by]
+      [building, room || null, title, fullCategory, priority, report, created_by]
     );
     res.status(201).json(result.rows[0]);
   } catch (err) {

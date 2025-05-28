@@ -52,6 +52,12 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     currentPage * ticketsPerPage
   );
 
+  // Resetea a página 1 cuando cambien los filtros
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [statusFilter, categoryFilter]);
+
+
   // Manejar cambios en el formulario de edición
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -125,9 +131,9 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       {!loading && tickets.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {paginatedTickets.map(({ id, building, room, title, report, created_at, created_by, status, category }) => (
+            {paginatedTickets.map(({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by }) => (
               <div key={id} onClick={() =>
-                  setSelectedTicket({ id, building, room, title, report, created_at, created_by, status, category })
+                  setSelectedTicket({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by })
                 }
                 className="bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100"
                 >
@@ -138,7 +144,13 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 <p className="truncate"><strong>Reporte:</strong> {report}</p>
                 <p>
                   <strong>Categoría:</strong>{' '}
-                  <span className={category === 'Mantenimiento'? 'text-yellow-600': category === 'Limpieza'? 'text-green-600': category === 'Tecnico'? 'text-blue-600': 'text-gray-600'
+                  <span
+                    className={
+                      category.includes('Mantenimiento') ? 'text-yellow-600' :
+                      category.includes('Limpieza') ? 'text-green-600' :
+                      category.includes('Hardware') ? 'text-blue-700' :
+                      category.includes('Software') ? 'text-indigo-700' :
+                      'text-gray-600'
                     }
                   >
                     {category}
@@ -152,7 +164,20 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     {status}
                   </span>
                 </p>
+                <p>
+                  <strong>Prioridad:</strong>{' '}
+                  <span className={priority === 'Alta'? 'text-red-600': priority === 'Media'? 'text-yellow-600': priority === 'Baja'? 'text-green-600': 'text-gray-600'
+                    }
+                  >
+                    {priority}
+                  </span>
+                </p>
                 <p><strong>Creador:</strong> {created_by}</p>
+                {modified_by && (
+                  <p>
+                    <strong>{status === 'Cerrado' ? 'Cerrado por:' : 'Modificado por:'}</strong> {modified_by}
+                  </p>
+                )}
                 <p className="text-sm text-gray-500 mt-2">
                   Fecha: {new Date(created_at).toLocaleString()}
                 </p>
@@ -233,7 +258,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 <option value="" disabled>-- Selecciona una categoría --</option>
                 <option value="Mantenimiento">Mantenimiento</option>
                 <option value="Limpieza">Limpieza</option>
-                <option value="Tecnico">Técnico</option>
+                <option value="Técnico (Hardware)">Técnico (Hardware)</option>
+                <option value="Técnico (Software)">Técnico (Software)</option>
               </select>
             </label>
 

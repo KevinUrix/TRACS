@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { generateAuthUrl, handleGoogleCallback, getSavedTokens } = require('../controllers/googleAuthController');
+const { generateAuthUrl, handleGoogleCallback, getSavedTokens, reauth } = require('../controllers/googleAuthController');
 // const { createEvent } = require('../controllers/googleEventController');
 
 // Ruta para generar la URL de autorización de Google
@@ -21,6 +21,8 @@ router.get('/status', async (req, res) => {
     res.json({ authenticated: false });
   }
 });
+
+router.get('/reauth', reauth);
 
 // // Ruta para crear un evento en Google Calendar
 // router.post('/create-event', createEvent);

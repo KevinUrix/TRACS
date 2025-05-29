@@ -154,7 +154,21 @@ export default function Calendar() {
       if (!response.ok) {
         if (response.status === 409) {
           alert('⚠️ Ya existe una reserva para esta fecha, horario y aula.');
-        } else {
+        } else if (response.status === 500) {
+            toast.info('Tokens invalidos.\nRedirigiéndote para iniciar sesión en Google...', {
+            autoClose: 1000,
+            closeOnClick: true,
+          });
+          sessionStorage.setItem('reservationState', JSON.stringify({
+            selectedCycle,
+            selectedBuilding,
+            selectedDay,
+          }));
+          setTimeout(() => {
+            window.location.href = 'http://localhost:3001/api/google/reauth';
+          }, 1300);
+        } 
+        else {
           console.error('Error desde el servidor:', result.error || 'Error desconocido');
           alert(`❌ Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
         }

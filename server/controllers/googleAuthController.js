@@ -39,10 +39,14 @@ const handleGoogleCallback = async (req, res) => {
     const { tokens } = await oauth2Client.getToken(code);
     oauth2Client.setCredentials(tokens);
 
-    if (!tokens.refresh_token) {
-      const oldTokens = await getSavedTokens();
-      tokens.refresh_token = oldTokens?.refresh_token || null;
+    const oldTokens = await getSavedTokens();
+
+    if (!tokens.refresh_token && oldTokens?.refresh_token) {
+      tokens.refresh_token = oldTokens.refresh_token;
+    } else if (!tokens.refresh_token) {
+      throw new Error('No se obtuvo refresh_token y no hay uno guardado anteriormente');
     }
+
 
     if (!tokens || Object.keys(tokens).length === 0) {
       throw new Error('Tokens recibidos están vacíos');
@@ -88,4 +92,17 @@ const getSavedTokens = async () => {
   }
 };
 
-module.exports = { generateAuthUrl, handleGoogleCallback, getSavedTokens };
+//
+// Reautentica al usuario en caso de tokens malos
+//
+const reauth = (req, res) => {
+  const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
+  if (fs.existsSync(tokensFilePath)) {
+    fs.unlinkSync(tokensFilePath);
+  }
+  const authUrl = generateAuthUrl();
+  res.redirect(authUrl);
+};
+
+
+module.exports = { generateAuthUrl, handleGoogleCallback, getSavedTokens, reauth };

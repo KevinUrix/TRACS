@@ -80,6 +80,7 @@ const saveReservation = async (req, res) => {
       } catch (calendarErr) {
         console.error('Error al crear evento en Google Calendar:', calendarErr);
         // No se interrumpe la reserva si Google falla
+        return res.status(500).json({ error: 'No se pudo crear evento en Google Calendar' });
       }
     }
 

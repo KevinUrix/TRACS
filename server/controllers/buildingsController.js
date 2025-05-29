@@ -97,7 +97,7 @@ const updateBuilding = async (req, res) => {
     // Si existe el archivo con el nombre antiguo, lo renombramos
     if (await fs.access(oldFilePath).then(() => true).catch(() => false)) {
       await fs.rename(oldFilePath, newFilePath);
-      console.log(`Archivo renombrado: ${oldFilePath} -> ${newFilePath}`);
+      console.log(`Archivo de salones renombrado: ${buildingName} -> ${updatedData.value}`);
     } else {
       console.warn(`El archivo ${oldFilePath} no existe, no se pudo renombrar.`);
     }

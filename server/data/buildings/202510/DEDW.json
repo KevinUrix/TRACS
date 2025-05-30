@@ -33,7 +33,7 @@
       "classroom": "A001",
       "nrc": "137233",
       "code": "IC681",
-      "students": 25,
+      "students": 26,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -46,7 +46,7 @@
       "classroom": "A001",
       "nrc": "137233",
       "code": "IC681",
-      "students": 25,
+      "students": 26,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -59,7 +59,7 @@
       "classroom": "A001",
       "nrc": "137233",
       "code": "IC681",
-      "students": 25,
+      "students": 26,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -72,7 +72,7 @@
       "classroom": "A001",
       "nrc": "137233",
       "code": "IC681",
-      "students": 25,
+      "students": 26,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -98,7 +98,7 @@
       "classroom": "A002",
       "nrc": "42326",
       "code": "I6007",
-      "students": 22,
+      "students": 21,
       "course": "COMPUTO CIENTIFICO II"
     },
     "professor": "MUÑOZ VILLEGAS, SUSANA"
@@ -163,7 +163,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -176,7 +176,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -189,7 +189,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -202,7 +202,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -215,7 +215,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -228,7 +228,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -241,7 +241,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -254,7 +254,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -267,7 +267,7 @@
       "classroom": "A002",
       "nrc": "109270",
       "code": "I6013",
-      "students": 30,
+      "students": 29,
       "course": "ELECTRODINAMICA"
     },
     "professor": "PERAZA ALVAREZ, AMERICO"
@@ -340,12 +340,25 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "131993",
+      "code": "IC581",
+      "students": 29,
+      "course": "ESTATICA"
+    },
+    "professor": "JUAREZ AMADOR, LUCIA IVONNE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDW",
       "classroom": "A002",
       "nrc": "136324",
       "code": "IB078",
-      "students": 17,
+      "students": 16,
       "course": "ESTRUCTURA CRISTALINA"
     },
     "professor": "MICHEL URIBE, CARLOS RAFAEL"
@@ -423,7 +436,7 @@
       "classroom": "A001",
       "nrc": "88750",
       "code": "I7020",
-      "students": 10,
+      "students": 9,
       "course": "METODOS MATEMATICOS III"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -501,7 +514,7 @@
       "classroom": "A002",
       "nrc": "134054",
       "code": "I6108",
-      "students": 13,
+      "students": 8,
       "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
     },
     "professor": "ORTEGA ROSALES, HUGO ADRIAN"
@@ -514,7 +527,7 @@
       "classroom": "A002",
       "nrc": "134054",
       "code": "I6108",
-      "students": 13,
+      "students": 8,
       "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
     },
     "professor": "ORTEGA ROSALES, HUGO ADRIAN"
@@ -527,7 +540,7 @@
       "classroom": "A002",
       "nrc": "134054",
       "code": "I6108",
-      "students": 13,
+      "students": 8,
       "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
     },
     "professor": "ORTEGA ROSALES, HUGO ADRIAN"
@@ -540,7 +553,7 @@
       "classroom": "A002",
       "nrc": "134054",
       "code": "I6108",
-      "students": 13,
+      "students": 8,
       "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
     },
     "professor": "ORTEGA ROSALES, HUGO ADRIAN"

@@ -131,26 +131,13 @@
   },
   {
     "data": {
-      "schedule": "0800-0955",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "",
-      "nrc": "77404",
-      "code": "I5969",
-      "students": 7,
-      "course": "ALGEBRA LINEAL NUMERICA"
-    },
-    "professor": "LICEA SALAZAR, JUAN ANTONIO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDR",
       "classroom": "A001",
       "nrc": "174592",
       "code": "I6030",
-      "students": 34,
+      "students": 33,
       "course": "ALGEBRA MULTILINEAL"
     },
     "professor": "LUNA ARELLANO, MAYRA LORENA"
@@ -189,7 +176,7 @@
       "classroom": "A001",
       "nrc": "42294",
       "code": "I6009",
-      "students": 25,
+      "students": 24,
       "course": "CALCULO AVANZADO PARA FISICA"
     },
     "professor": "MONTES NAVARRO, MARIANA SARAHI"
@@ -514,7 +501,7 @@
       "classroom": "A004",
       "nrc": "42296",
       "code": "I5800",
-      "students": 18,
+      "students": 17,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
@@ -540,7 +527,7 @@
       "classroom": "A003",
       "nrc": "42305",
       "code": "I6121",
-      "students": 39,
+      "students": 33,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -553,7 +540,7 @@
       "classroom": "A003",
       "nrc": "42305",
       "code": "I6121",
-      "students": 39,
+      "students": 33,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -566,7 +553,7 @@
       "classroom": "A003",
       "nrc": "42305",
       "code": "I6121",
-      "students": 39,
+      "students": 33,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -579,7 +566,7 @@
       "classroom": "A003",
       "nrc": "42305",
       "code": "I6121",
-      "students": 39,
+      "students": 33,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -592,7 +579,7 @@
       "classroom": "A001",
       "nrc": "42306",
       "code": "I6121",
-      "students": 37,
+      "students": 36,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "RODRIGUEZ GUTIERREZ, JORGE LUIS"
@@ -657,7 +644,7 @@
       "classroom": "A002",
       "nrc": "42337",
       "code": "I5874",
-      "students": 20,
+      "students": 18,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
@@ -716,19 +703,6 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "",
-      "nrc": "83782",
-      "code": "I7347",
-      "students": 28,
-      "course": "ESTADISTICA"
-    },
-    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDR",
@@ -761,7 +735,7 @@
       "classroom": "A004",
       "nrc": "145646",
       "code": "IC600",
-      "students": 27,
+      "students": 26,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PELAYO PELAYO, ALMA LUCIA"
@@ -774,7 +748,7 @@
       "classroom": "A001",
       "nrc": "145646",
       "code": "IC600",
-      "students": 27,
+      "students": 26,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PELAYO PELAYO, ALMA LUCIA"
@@ -787,7 +761,7 @@
       "classroom": "A004",
       "nrc": "145646",
       "code": "IC600",
-      "students": 27,
+      "students": 26,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PELAYO PELAYO, ALMA LUCIA"
@@ -800,7 +774,7 @@
       "classroom": "A001",
       "nrc": "145646",
       "code": "IC600",
-      "students": 27,
+      "students": 26,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PELAYO PELAYO, ALMA LUCIA"
@@ -917,7 +891,7 @@
       "classroom": "A003",
       "nrc": "189645",
       "code": "I5247",
-      "students": 38,
+      "students": 37,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "ELIZALDE CAMINO, FERNANDO"
@@ -956,7 +930,7 @@
       "classroom": "A001",
       "nrc": "200721",
       "code": "I5247",
-      "students": 40,
+      "students": 39,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "FLORES SANDOVAL, MIRIAM ILEANA"
@@ -1177,7 +1151,7 @@
       "classroom": "A001",
       "nrc": "189654",
       "code": "IG738",
-      "students": 41,
+      "students": 40,
       "course": "PRECALCULO"
     },
     "professor": "MARQUEZ FRAUSTO, TERESA GABRIELA"
@@ -1268,7 +1242,7 @@
       "classroom": "A004",
       "nrc": "218603",
       "code": "IG738",
-      "students": 40,
+      "students": 39,
       "course": "PRECALCULO"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
@@ -1593,7 +1567,7 @@
       "classroom": "LC11",
       "nrc": "60092",
       "code": "I7267",
-      "students": 11,
+      "students": 9,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "MORAN LOZA, JOSE MIGUEL"
@@ -1671,7 +1645,7 @@
       "classroom": "LC11",
       "nrc": "59702",
       "code": "I7267",
-      "students": 23,
+      "students": 22,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "LUQUE CHANG, ALBERTO"
@@ -1723,7 +1697,7 @@
       "classroom": "LC09",
       "nrc": "59967",
       "code": "I7281",
-      "students": 19,
+      "students": 20,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -1749,7 +1723,7 @@
       "classroom": "LC06",
       "nrc": "78965",
       "code": "I7273",
-      "students": 16,
+      "students": 18,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "PLASCENCIA LOPEZ, JOSUE ADAIR"
@@ -1918,7 +1892,7 @@
       "classroom": "LC11",
       "nrc": "206130",
       "code": "ET418",
-      "students": 32,
+      "students": 31,
       "course": "TOPICOS SELECTOS EN COMPUTACION"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
@@ -1957,7 +1931,7 @@
       "classroom": "LC11",
       "nrc": "104791",
       "code": "I7294",
-      "students": 18,
+      "students": 17,
       "course": "VERIFICACION DE CIRCUITOS DIGITALES"
     },
     "professor": "CARRION CORTES, JOSE MARIO"

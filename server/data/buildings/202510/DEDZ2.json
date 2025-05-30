@@ -118,19 +118,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "178759",
-      "code": "IK863",
-      "students": 0,
-      "course": "BIOESTADISTICA"
-    },
-    "professor": "RAMOS IBARRA, JOSE ROBERTO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDZ2",
@@ -258,19 +245,6 @@
       "course": "BIOINFORMATICA"
     },
     "professor": "MACIAS RODRIGUEZ, MARIA ESTHER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "178762",
-      "code": "IK862",
-      "students": 0,
-      "course": "BIOLOGIA MOLECULAR"
-    },
-    "professor": "BALCAZAR LOPEZ, EDGAR"
   },
   {
     "data": {
@@ -449,7 +423,7 @@
       "classroom": "A008",
       "nrc": "152793",
       "code": "I5812",
-      "students": 23,
+      "students": 22,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "MUÑOZ GARCIA, RUBEN OCTAVIO"
@@ -495,19 +469,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1255",
-      "days": ". . I . . .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "187374",
-      "code": "IK697",
-      "students": 4,
-      "course": "HACCP Y SISTEMAS DE CONTROLES PREVENTIVOS"
-    },
-    "professor": "RODRIGUEZ GARCIA, MA OFELIA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDZ2",
@@ -531,19 +492,6 @@
       "course": "INFORMATICA ADMINISTRATIVA"
     },
     "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
-  },
-  {
-    "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "209782",
-      "code": "V0717",
-      "students": 0,
-      "course": "INGENIERIA Y SUSTENTABILIDAD"
-    },
-    "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
   },
   {
     "data": {
@@ -722,7 +670,7 @@
       "classroom": "A008",
       "nrc": "140747",
       "code": "I7519",
-      "students": 30,
+      "students": 29,
       "course": "QUIMICA DE LOS ALIMENTOS I"
     },
     "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -782,35 +730,9 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "199979",
-      "code": "IK687",
-      "students": 5,
-      "course": "QUIMICA INSTRUMENTAL"
-    },
-    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDZ2",
       "classroom": "A014",
-      "nrc": "199979",
-      "code": "IK687",
-      "students": 5,
-      "course": "QUIMICA INSTRUMENTAL"
-    },
-    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "",
       "nrc": "199979",
       "code": "IK687",
       "students": 5,
@@ -852,7 +774,7 @@
       "classroom": "A008",
       "nrc": "42627",
       "code": "I5806",
-      "students": 30,
+      "students": 29,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -982,7 +904,7 @@
       "classroom": "A012",
       "nrc": "178167",
       "code": "IK676",
-      "students": 10,
+      "students": 9,
       "course": "SISTEMAS DE GESTION DE LA INOCUIDAD"
     },
     "professor": "RODRIGUEZ GARCIA, MA OFELIA"
@@ -999,19 +921,6 @@
       "course": "SISTEMAS INTELIGENTES I"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "A006",
-      "nrc": "83851",
-      "code": "I6166",
-      "students": 28,
-      "course": "TECNOLOGIA FARMACEUTICA I"
-    },
-    "professor": "BARAJAS MENDOZA, MARIA ANTONIETA"
   },
   {
     "data": {
@@ -1034,7 +943,7 @@
       "classroom": "A008",
       "nrc": "118765",
       "code": "I6046",
-      "students": 16,
+      "students": 15,
       "course": "TOPICOS DE FISICA CUANTICA"
     },
     "professor": "KLIMOV, ANDREI"
@@ -1103,58 +1012,6 @@
       "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
     },
     "professor": "MARTINEZ CHAVEZ, LILIANA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1355",
-      "days": ". . I . . .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "191428",
-      "code": "IK684",
-      "students": 1,
-      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
-    },
-    "professor": "SERRANO NIÑO, JULIO CESAR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "191428",
-      "code": "IK684",
-      "students": 1,
-      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
-    },
-    "professor": "SERRANO NIÑO, JULIO CESAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1355",
-      "days": ". . I . . .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "191428",
-      "code": "IK684",
-      "students": 1,
-      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
-    },
-    "professor": "SERRANO NIÑO, JULIO CESAR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDZ2",
-      "classroom": "",
-      "nrc": "191428",
-      "code": "IK684",
-      "students": 1,
-      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
-    },
-    "professor": "SERRANO NIÑO, JULIO CESAR"
   },
   {
     "data": {
@@ -1258,6 +1115,6 @@
       "students": 3,
       "course": "VIAS DE SEÑALIZACION Y TRANSDUCCION DE SEÑALES CELULARES"
     },
-    "professor": "TORO CASTILLO, MARIA DEL CARMEN"
+    "professor": "ZEPEDA MORALES, ADELAIDA SARA MINIA"
   }
 ]

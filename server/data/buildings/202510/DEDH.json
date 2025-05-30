@@ -67,19 +67,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDH",
-      "classroom": "",
-      "nrc": "158573",
-      "code": "I6174",
-      "students": 26,
-      "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
-    },
-    "professor": "VAZQUEZ PAULINO, OLGA DELI"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDH",
       "classroom": "LCL01",
@@ -115,44 +102,5 @@
       "course": "LABORATORIO DE MICROBIOLOGIA CLINICA"
     },
     "professor": "CHAVARIN SALAZAR, DANIEL IGNACIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDH",
-      "classroom": "",
-      "nrc": "79493",
-      "code": "I7507",
-      "students": 24,
-      "course": "LABORATORIO DE QUIMICA ANALITICA I"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "1400-1655",
-      "days": ". . . J . .",
-      "building": "DEDH",
-      "classroom": "",
-      "nrc": "90585",
-      "code": "I7508",
-      "students": 25,
-      "course": "LABORATORIO DE QUIMICA ANALITICA II"
-    },
-    "professor": "CID HERNANDEZ, MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "1600-1855",
-      "days": ". . . . V .",
-      "building": "DEDH",
-      "classroom": "",
-      "nrc": "152805",
-      "code": "I7508",
-      "students": 19,
-      "course": "LABORATORIO DE QUIMICA ANALITICA II"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
   }
 ]

@@ -18,6 +18,10 @@ export default function Login() {
       }
     }, [navigate]);
 
+  useEffect(() => {
+    document.title = "Quill - Login";
+  }, []);
+
   const handleLogin = async (e) => {
     e.preventDefault();
 

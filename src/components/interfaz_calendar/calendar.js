@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { handlePrint } from './utils';
+import { pastelColors } from './utils';
 import Sidebar from '../sidebar';
 import SelectsLogic from './selectsLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
@@ -16,6 +16,11 @@ export default function Calendar() {
   const [classrooms, setClassrooms] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
+  const [isStatisticMode, setIsStatisticMode] = useState(false);
+  const [buildings, setBuildings] = useState([]);
+  const [fullSchedule, setFullSchedule] = useState({});
+
+
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
@@ -186,6 +191,21 @@ export default function Calendar() {
     }
   };
 
+  useEffect(() => {
+  fetch("/api/buildings")
+    .then(response => response.json())
+    .then(data => {
+      const buildings = data.edifp || [];
+      const prioritized = buildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
+      const rest = buildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
+
+      const newBuildingsOrder = [...prioritized, ...rest];
+      setBuildings(newBuildingsOrder); // Aquí cambias
+    })
+    .catch(error => console.error("Error cargando los edificios:", error));
+}, []);
+
+
 
   useEffect(() => {
     if (selectedBuilding) {
@@ -276,6 +296,76 @@ export default function Calendar() {
   }, [selectedCycle, selectedBuilding]);
 
 
+  //
+  // Fetch para obtener el número de alumnos
+  //
+  useEffect(() => {
+  if (!selectedCycle || !isStatisticMode || !selectedBuilding) return;
+
+  const cacheKey = `full_schedule_${selectedCycle}`;
+  const cached = sessionStorage.getItem(cacheKey);
+
+  if (cached) {
+    try {
+      const parsed = JSON.parse(cached);
+      console.log("Usando caché para todos los edificios");
+      setFullSchedule(parsed);
+      return;
+    } catch (error) {
+      console.warn("Error al parsear caché de todos los edificios, recargando...");
+    }
+  }
+
+  const fetchAllBuildingsSchedules = async () => {
+    try {
+      const buildingValues = buildings.map(b => b.value);
+
+      const fetches = buildingValues.map(async (buildingName) => {
+        const response = await fetch(`/api/schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
+        if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
+        const data = await response.json();
+        return { buildingName, data: data[buildingName] || [] };
+      });
+
+      const results = await Promise.all(fetches);
+
+      const allSchedules = results.reduce((acc, { buildingName, data }) => {
+        acc[buildingName] = data;
+        return acc;
+      }, {});
+
+      setFullSchedule(allSchedules);
+      sessionStorage.setItem(cacheKey, JSON.stringify(allSchedules));
+      console.log("Horario cargado y guardado en caché");
+
+    } catch (error) {
+      console.error("Error al obtener horarios para todos los edificios:", error);
+      setFullSchedule({});
+    }
+  };
+
+  fetchAllBuildingsSchedules();
+
+  }, [selectedCycle, isStatisticMode, selectedBuilding, buildings]);
+
+  useEffect(() => {
+    if (isStatisticMode) {
+      document.title = "Quill - Conteo de Alumnos";
+    }
+    else if (selectedBuilding) {
+      const displayName = {
+        DUCT1: "Alfa",
+        DUCT2: "Beta",
+        DBETA: "CISCO"
+      }[selectedBuilding] || selectedBuilding;
+
+      document.title = `Quill - ${displayName}`;
+    } else {
+      document.title = "Quill";
+    }
+  }, [isStatisticMode, selectedBuilding]);
+
+
   return (
     <>
       <div className="calendar-container">
@@ -291,6 +381,8 @@ export default function Calendar() {
               onUpdateDay={setSelectedDay}
               fetchReservations={fetchReservations}
               reservations={reservations}
+              isStatisticMode={isStatisticMode}
+              setIsStatisticMode={setIsStatisticMode}
             />
           </div>
           <div className="table-container">
@@ -298,19 +390,64 @@ export default function Calendar() {
               <thead>
                 <tr className="table-header">
                   <th className="table-cell">Hora</th>
-                  {classrooms.map((classroom, index) => (
-                    <th
-                      key={index}
-                      className={`table-cell print-col-${Math.floor(index / 9)}`}
-                    >
-                      {classroom}
-                    </th>
+                  {isStatisticMode
+                    ? buildings.map((building, index) => (
+                        <th key={index} className="table-cell">{building.value}</th>
+                      ))
+                    : 
+                  classrooms.map((classroom, index) => (
+                    <th key={index} className={`table-cell print-col-${Math.floor(index / 9)}`}>{classroom}</th>
                   ))}
                 </tr>
               </thead>
 
               <tbody>
-                {hours.map((hour) => {
+                {isStatisticMode ? (
+                  hours.map((hour) => {
+                    const [hourPart, period] = hour.split(' ');
+                    let currentHour = parseInt(hourPart.split(':')[0], 10);
+                    if (period === 'PM' && currentHour !== 12) currentHour += 12;
+                    if (period === 'AM' && currentHour === 12) currentHour = 0;
+
+                    return (
+                      <tr key={`stat-${hour}`}>
+                        <td className="table-cell">{hour}</td>
+                        {buildings.map((building, index) => {
+                          const colorClass = pastelColors[index % pastelColors.length];
+                          const scheduleForBuilding = fullSchedule[building.value] || [];
+                          const seen = new Set();
+
+                          const studentCount = scheduleForBuilding.reduce((total, course) => {
+                            const key = JSON.stringify(course.data);
+                            if (seen.has(key)) return total;
+                            seen.add(key);
+                            
+                            const [start, end] = course.data.schedule.split('-');
+                            const startHour = parseInt(start.substring(0, 2), 10);
+                            const endHour = parseInt(end.substring(0, 2), 10);
+                            const courseDays = course.data.days.split(' ');
+                            const isCourseOnDay = courseDays.includes(selectedDay);
+                            
+                            const isDuringHour = currentHour >= startHour && currentHour <= endHour;
+
+                            if (isDuringHour && isCourseOnDay) {
+                              return total + parseInt(course.data.students || 0, 10);
+                            }
+                            return total;
+                          }, 0);
+
+                          return (
+                            <td key={building.value} className={`table-cell font-bold text-blue-600 ${colorClass}`}>
+                              {studentCount}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    );
+                  })
+                ) :
+                (
+                hours.map((hour) => {
                   const [hourPart, period] = hour.split(' ');
                   let currentHour = parseInt(hourPart.split(':')[0], 10);
 
@@ -320,6 +457,7 @@ export default function Calendar() {
                   return (
                     <tr key={hour} className="table-row">
                       <td className="table-cell">{hour}</td>
+                      
                       {classrooms.map((classroom, index) => {
                         const cellKey = `${currentHour}-${classroom}`;
 
@@ -482,7 +620,7 @@ export default function Calendar() {
                       })}
                     </tr>
                   );
-                })}
+                }))}
               </tbody>
             </table>
           </div>

@@ -30,6 +30,10 @@ export default function Reports() {
   const [statusFilter, setStatusFilter] = useState('Todos');
   const [categoryFilter, setCategoryFilter] = useState('Todos');
 
+  useEffect(() => {
+    document.title = "Quill - Reportes";
+  }, []);
+
   const handleSaveTicket = async () => {
     if (!selectedBuilding) {
       toast.error('Selecciona un edificio antes de guardar');

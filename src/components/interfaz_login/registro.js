@@ -20,6 +20,10 @@ export default function Registro() {
     }
   }, [navigate]);
 
+  useEffect(() => {
+    document.title = "Quill - Registro";
+  }, []);
+
   const handleRegister = async (e) => {
     e.preventDefault();
 

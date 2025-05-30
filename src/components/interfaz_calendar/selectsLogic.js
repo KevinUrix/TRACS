@@ -4,17 +4,19 @@ import InstructionsButton from './instructionsButton'; // Importa el componente
 import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
 import PrintButton from './printButton';
+import StatisticButton from './statisticButton';
 import { handlePrint } from './utils';
 
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCycle, fetchReservations, reservations }) {
+export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCycle, fetchReservations, reservations, isStatisticMode, setIsStatisticMode }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCycle, setSelectedCycle] = useState('');
   const [cycle, setCycle] = useState([]);
   const [building, setBuilding] = useState([]);
   const [loadingCycle, setLoadingCycle] = useState(false);
+
   // const [allReservations, setAllReservations] = useState([]);
   const location = useLocation();
 
@@ -96,21 +98,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       })
       .catch(error => console.error("Error cargando los edificios:", error));
   }, []);
-
-  useEffect(() => {
-    if (selectedBuilding) {
-      const displayName = {
-        DUCT1: "Alfa",
-        DUCT2: "Beta",
-        DBETA: "CISCO"
-      }[selectedBuilding] || selectedBuilding;
-
-      document.title = displayName;
-    } else {
-      document.title = "Quill";
-    }
-  }, [selectedBuilding]);
-
 
   const handleCycleChange = (e) => {
     setSelectedCycle(e.target.value);
@@ -237,6 +224,15 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           selectedDay={selectedDay}
           selectedCycle={selectedCycle}
           onPrint={handlePrint}
+        />
+      </div>
+
+      <div className="-ml-6">
+        <StatisticButton
+          isStatisticMode={isStatisticMode}
+          setIsStatisticMode={setIsStatisticMode}
+          selectedCycle={selectedCycle}
+          selectedBuilding={selectedBuilding}
         />
       </div>
 

@@ -32,6 +32,10 @@ export default function Crud() {
     }
   }, [navigate]);
 
+  useEffect(() => {
+    document.title = "Quill - CRUD";
+  }, []);
+
   const handleConfirmChange = async () => {
     if (!selectedUser) return;
 

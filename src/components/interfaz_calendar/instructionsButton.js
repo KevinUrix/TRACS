@@ -10,7 +10,7 @@ export default function InstructionsButton() {
   return (
     <div className="relative">
       <button
-        className="bg-blue-400 text-black rounded-full px-3 py-1 shadow-md"
+        className="bg-indigo-400 hover:bg-indigo-500 text-black rounded-full px-3 py-1 shadow-md transition duration-200"
         title="Mostrar instrucciones"
         onClick={toggleInstructions}
       >

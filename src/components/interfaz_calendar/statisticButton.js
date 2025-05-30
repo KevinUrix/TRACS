@@ -10,8 +10,8 @@ export default function StatisticButton({ isStatisticMode, setIsStatisticMode, s
   };
 
   return (
-    <button onClick={handleClick} className="btn-statistic bg-pink-600 rounded-full px-3 py-1 shadow-md text-white">
-      {isStatisticMode ? 'Volver a vista normal 📆' : 'Conteo de alumnos 📊'}
+    <button onClick={handleClick} className="bg-pink-600 hover:bg-pink-700 rounded-full px-4 py-2 shadow-md text-white transition duration-200">
+      <b>{isStatisticMode ? 'Volver a vista normal 📆' : 'Conteo de alumnos 📊'}</b>
     </button>
   );
 }

@@ -437,7 +437,7 @@ export default function Calendar() {
                           }, 0);
 
                           return (
-                            <td key={building.value} className={`table-cell font-bold text-blue-600 ${colorClass}`}>
+                            <td key={building.value} className={`table-cell font-bold text-4l text-blue-600 ${colorClass}`}>
                               {studentCount}
                             </td>
                           );

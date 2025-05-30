@@ -97,14 +97,14 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
 
   const containsDuct1 = Array.from(header.children).some(th => th.textContent.trim() === "DUCT1");
   // Define el título según esa condición
-  const titleText = containsDuct1 ? "Conteo de alumnos" : `Horario ${selectedBuilding}`;
+  const titleText = containsDuct1 ? "Conteo de alumnos" : `Horario - ${selectedBuilding}`;
 
 
   printWindow.document.write(`
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Horario ${selectedBuilding}</title>
+        <title>${titleText}</title>
         <style>
           @page {
             size: landscape;

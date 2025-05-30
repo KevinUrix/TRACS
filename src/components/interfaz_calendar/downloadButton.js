@@ -25,13 +25,25 @@ export default function DownloadButton({ onDownload }) {
   return (
     <div className="relative">
       <button
+        className="bg-green-400 hover:bg-green-500 rounded-full px-10 py-2 shadow-md text-white transition duration-200 flex items-center justify-center space-x-2"
+        title="Descargar datos"
+        onClick={toggleDownload}
+        id="createJSON"
+        >
+        <b>JSON</b>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+          d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+      </svg>
+      </button>
+      {/* <button
         className="bg-green-400 text-black rounded-full px-10 py-1 shadow-md"
         title="Descargar datos"
         onClick={toggleDownload}
         id="createJSON"
       >
         <img src="/downloadArrow.webp" alt="¡Descargar!" className="h-6 w-6" />
-      </button>
+      </button> */}
 
       {showDownload && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">

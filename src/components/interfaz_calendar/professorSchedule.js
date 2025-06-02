@@ -58,17 +58,11 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
           <ul>
             {groupedSchedules[professor].map((course, index, arr) => (
               <li key={index}>
-                <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
-                  <strong>Materia:</strong> {course.data.course}
-                  <br />
-                  <strong>Día:</strong> {translateDays(course.data.days)}
-                  <br />
-                  <strong>Horario:</strong> {course.data.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2-$3:$4")}
-                  <br />
-                  <strong>Edificio:</strong> {course.data.building}
-                  <br />
-                  <strong>Salón:</strong> {course.data.classroom}
-                <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
+                  <div><b>Materia:</b> {course.data.course}</div>
+                  <div><b>Dia/s:</b> {translateDays(course.data.days)}</div>
+                  <div><b>Horario:</b> {course.data.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2-$3:$4")}</div>
+                  <div><b>Edificio:</b> {course.data.building}</div>
+                  <div><b>Salón:</b> {course.data.classroom}</div>
               </li>
             ))}
           </ul>

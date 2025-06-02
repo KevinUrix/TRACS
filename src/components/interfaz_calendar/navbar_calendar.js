@@ -3,10 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import ProfessorSchedule from './professorSchedule';
 import './calendar.css'; // Importa el archivo de estilos CSS
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
-
-export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding, selectedDay}) {
+export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
@@ -15,6 +16,7 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding,
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const userRole = localStorage.getItem("role");
 
+  const location = useLocation();
 
   // Verifica si hay sesión activa al montar el componente
   useEffect(() => {
@@ -80,34 +82,43 @@ export default function Navbar({ toggleSidebar, selectedCycle, selectedBuilding,
       setShowPopup(false);
     }
   };
-  
 
   return (
     <>
       <nav className="navbar">
-        {(userRole === 'superuser' || userRole === 'user' || userRole  === 'tecnico') && (
-          <button onClick={toggleSidebar} className="sidebar-toggle">☰</button>
-        )}
-        <h1 className="navbar-title">Calendario de Edificios</h1>
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="🔎 Buscar maestro..."
-            className="search-input"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-          />
+        <Link to="/" className="navbar-brand">Quill</Link>
+        <div className='navbar-container'>
+          {(userRole === 'superuser' || userRole === 'user' || userRole  === 'tecnico') && (
+            <div className="nav-links">
+              <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Inicio</Link>
+              {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
+                <Link to="/reportes" className="nav-link">Reportes</Link>
+              )}
+              {(userRole === 'superuser') && (
+                <Link to="/crud" className="nav-link">CRUD</Link>
+              )}
+            </div>
+          )}
         </div>
-        {isLoggedIn ? (
-        <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
-          <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
-        </button>
-      ) : (
-        <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
-          <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
-        </button>
-      )}
+          <div className="search-container">
+            <input
+              type="text"
+              placeholder="🔎 Buscar maestro..."
+              className="search-input"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+            />
+          </div>
+            {isLoggedIn ? (
+            <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
+              <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
+            </button>
+          ) : (
+            <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
+              <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
+            </button>
+          )}
       </nav>
 
       {/* Popup de horarios */}

@@ -15,10 +15,11 @@
 }
 
 /* Navbar */
-.navbar {
+
+.navbar-reports {
   width: 100%;
-  background-color: #2563eb; /* Azul */
-  padding: 1rem;
+  background-color: #1e3a8a; /* Azul más oscuro, más corporativo */
+  padding: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,82 +30,116 @@
   right: 0;
   z-index: 10;
   gap: 1rem; /* Espaciado entre elementos */
+  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
 }
 
-.navbar-title {
-  color: white;
-  font-size: 1.25rem;
+.navbar-brand-reports{
+  font-size: 24px;
   font-weight: bold;
-  flex-grow: 1;
-  text-align: center;
-  margin-left: 14rem; /* Aplicar lo mismo para reports despues*/
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.navbar-reports .navbar-title {
+.navbar-brand:hover {
+  color: #8abbee; /* o el color que prefieras */
+}
+
+.navbar-container-reports {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  gap: 1rem; /* Espaciado entre elementos */
+  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+}
+
+.nav-reports-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-reports-link {
+  font-size: 1.2rem;
+  text-decoration: none;
   color: white;
-  font-size: 1.25rem;
   font-weight: bold;
-  flex-grow: 1;
-  text-align: center;
-  margin-left: 0rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem; /* Redondeado suave tipo cápsula */
+  transition: background-color 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar-toggle {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: none;
-  border: none;
+.nav-reports-link:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido */
 }
 
-/* Barra de búsqueda */
-.search-input {
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid #d1d5db;
-  outline: none;
-  transition: all 0.3s ease;
-  max-width: 15.625rem;
-  width: 100%;
-}
-
-.search-input:focus {
-  box-shadow: 0 0 0 0.125rem #2563eb;
+.nav-reports-link.active {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /*-------------------------------------------------------*/
 
-.select-container {
+.select-container-reports {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.select-container select {
-  padding: 0.5rem 1.25rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  text-align: left;
-  padding-left: 0.5rem;
-}
-
-.select-container .building-select {
-  background-color: #d2f7d2;
-  width: 18.75rem;
-}
-
-.select-container .status-select {
-  background-color: #f0e398;
-  width: 12rem;
-}
-
-.select-container .category-select {
-  background-color: #98d8f0;
-  width: 12rem;
-}
-
-.select-container span {
+.select-container-reports select {
+  appearance: none;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
   font-size: 1rem;
-  display: inline-block;
-  vertical-align: middle;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.select-container-reports select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  background-color: #f9f9f9;
+}
+
+.select-container select:hover {
+  background-color: #f3f4f6;
+}
+
+.select-container-reports .building-select {
+  background-color: #e7fce7;
+  border-color: #a5d6a7;
+}
+
+.select-container-reports .status-select {
+  background-color: #fffacc;
+  border-color: #fff176;
+}
+
+.select-container-reports .category-select {
+  background-color: #e0f0ff;
+  border-color: #90caf9;
+}
+
+.select-container-reports span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
 }

@@ -180,35 +180,33 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
               <ul>
                 {filteredReservations.map((res, idx) => (
                   <li key={idx}>
-                    <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
-                    <b>Profesor:</b> {res.professor}<br />
-                    <b>Materia:</b> {res.course}<br />
-                    <b>Edificio:</b> {res.building}<br />
-                    <b>Clave:</b> {res.code}<br />
-                    <b>Fecha:</b> {res.date} <br />
-                    <b>Día:</b> {translateDays(res.days)}<br />
-                    <b>Horario:</b> {res.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 - $3:$4")}<br />
-                    <b>Salón:</b> {res.classroom}<br />
-                    <b>Duración:</b> {res.duration}<br />
-                    <div className="mt-4 flex justify-end gap-2">
+                    <div><b>Profesor:</b> {res.professor}</div>
+                    <div><b>Materia:</b> {res.course}</div>
+                    <div><b>Edificio:</b> {res.building}</div>
+                    <div><b>Clave:</b> {res.code}</div>
+                    <div><b>Fecha:</b> {res.date}</div>
+                    <div><b>Día:</b> {translateDays(res.days)}</div>
+                    <div><b>Horario:</b> {res.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 - $3:$4")}</div>
+                    <div><b>Salón:</b> {res.classroom}</div>
+                    <div><b>Duración:</b> {res.duration}</div>
+                    <div className="mt-4">
                       {(userRole === 'superuser' || userRole === 'user') && (
-                        <button
-                          className="px-4 py-2 bg-red-500 text-white rounded-md"
-                          onClick={() => deleteReservation(res)}
-                        >
-                          Eliminar
-                        </button>
+                        <>
+                          <button
+                            className="px-4 py-2 bg-red-500 text-white rounded-md"
+                            onClick={() => deleteReservation(res)}
+                          >
+                            Eliminar
+                          </button>
+                          <button
+                            className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                            onClick={() => handleModify(res)}
+                          >
+                            Modificar
+                          </button>
+                        </>
                       )}
-                      {(userRole === 'superuser' || userRole === 'user') && (
-                        <button
-                          className="px-4 py-2 bg-blue-500 text-white rounded-md"
-                          onClick={() => handleModify(res)} // Abrir el formulario de modificación
-                        >
-                          Modificar
-                        </button>
-                    )}
                     </div>
-                    <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
                   </li>
                 ))}
               </ul>

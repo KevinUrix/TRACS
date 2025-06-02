@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../interfaz_calendar/calendar.css';
+import '../interfaz_reports/reports.css';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-export default function NavbarCrud({ toggleSidebar, selectedCycle, selectedBuilding, selectedDay }) {
+export default function NavbarCrud({}) {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const userRole = localStorage.getItem("role");
+  const location = useLocation();
 
   // Verifica si hay sesión activa al montar el componente
   useEffect(() => {
@@ -31,19 +35,32 @@ export default function NavbarCrud({ toggleSidebar, selectedCycle, selectedBuild
   };
 
   return (
-    <nav className="navbar navbar-reports">
-      <button onClick={toggleSidebar} className="sidebar-toggle">☰</button>
-      <h1 className="navbar-title">CRUD</h1>
-
-      {isLoggedIn ? (
-        <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
-          <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
-        </button>
-      ) : (
-        <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
-          <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
-        </button>
-      )}
+    <nav className="navbar-reports">
+      <Link to="/" className="navbar-brand-reports">Quill</Link>
+      <div className='navbar-container-reports'>
+        {(userRole === 'superuser' || userRole === 'user' || userRole  === 'tecnico') && (
+            <div className="nav-reports-links">
+              <Link to="/" className="nav-reports-link">Inicio</Link>
+              {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
+                <Link to="/reportes" className="nav-reports-link">Reportes</Link>
+              )}
+              {(userRole === 'superuser') && (
+                <Link to="/crud" className={`nav-reports-link ${location.pathname === '/crud' ? 'active' : ''}`}>CRUD</Link>
+              )}
+            </div>
+          )}
+      </div>
+      <div className='separate-container'>
+        {isLoggedIn ? (
+          <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
+            <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
+          </button>
+        ) : (
+          <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
+            <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
+          </button>
+        )}
+      </div>
     </nav>
   );
 }

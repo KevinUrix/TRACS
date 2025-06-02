@@ -1,3 +1,40 @@
 {
-  "data": []
+  "data": [
+    {
+      "schedule": "0700-0755",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "d",
+      "course": "d",
+      "date": "2025-06-02",
+      "duration": "Temporal",
+      "professor": "Jose",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0800-0855",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "asdf",
+      "course": "asdf",
+      "date": "2025-06-02",
+      "duration": "Temporal",
+      "professor": "asdf",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1300-1355",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "dfdff",
+      "course": "dfdff",
+      "date": "2025-06-02",
+      "duration": "Temporal",
+      "professor": "fffdfd",
+      "createInGoogleCalendar": "false"
+    }
+  ]
 }

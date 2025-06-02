@@ -290,10 +290,9 @@ export default function Crud() {
 
   return (
     <div className="bg-gray-100 flex">
-      <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
 
       <div className="flex flex-col w-full">
-        <NavbarCrud toggleSidebar={toggleSidebar} />
+        <NavbarCrud/>
 
         <div className="p-36 min-h-screen bg-gray-100">
           <h2 className="text-2xl font-bold mb-4 text-center">Administrar Usuarios</h2>

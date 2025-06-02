@@ -20,7 +20,7 @@ export default function BuildingSelect({ selectedBuilding, onChange }) {
   return (
     <div className="flex space-x-6 my-10 pl-0 mt-10">
 
-        <div className="select-container">
+        <div className="select-container-reports">
         <select
             value={selectedBuilding}
             onChange={onChange}

@@ -176,53 +176,58 @@ export default function ReserveButton({
           <div className="modal">
             <h2>Reservar Aula</h2>
             <form>
-              <label>
+              <label className='font-semibold'>
                 Maestro:
                 <input
                   type="text"
                   value={professor}
                   onChange={handleInputChange(setProfessor)}
                   required
+                  className="w-64 p-2 border border-gray-300 rounded"
                 />
               </label>
-              <label>
+              <label className='font-semibold'>
                 Materia:
                 <input
                   type="text"
                   value={course}
                   onChange={handleInputChange(setCourse)}
                   required
+                  className="w-64 p-2 border border-gray-300 rounded"
                 />
               </label>
-              <label>
+              <label className='font-semibold'>
                 Clave:
                 <input
                   type="text"
                   value={code}
                   onChange={handleInputChange(setCode)}
                   required
+                  className="w-48 p-2 border border-gray-300 rounded"
                 />
               </label>
-              <label>
+              <label className='font-semibold'>
                 Edificio:
                 <input
                   type="text"
                   value={selectedBuilding}
+                  className="w-48 p-2 border border-gray-300 rounded"
                   disabled
                 />
               </label>
-              <label>
+              <label className='font-semibold'>
                 Salón:
                 <input
                   type="text"
                   value={classroom}
+                  className="w-48 p-2 border border-gray-300 rounded"
                   disabled
                 />
               </label>
               <div className='select-container'>
-                <label>
+                <label className='font-semibold'>
                   Día/s:
-                  <select className='day-select2'type="text" value={selectedDay} disabled>
+                  <select className='select'type="text" value={selectedDay} disabled>
                     <option value="">Selecciona un día</option>
                     <option value="L">Lunes</option>
                     <option value="M">Martes</option>
@@ -233,87 +238,95 @@ export default function ReserveButton({
                   </select>
                 </label>
               </div>
-              <label>
+              <label className='font-semibold'>
                 Fecha:
                 <input
                   type="date"
                   value={reservationDate}
                   onChange={handleDateChange}
+                  className="w-48 p-2 border border-gray-300 rounded"
                   required
                 />
               </label>
-              <label>
-                Hora de inicio:
-                <input
-                  type="time"
-                  value={startTime}
-                  disabled
-                />
-              </label>
-              <label>
-                Hora de finalización:
-                <input
-                  type="time"
-                  value={endTime}
-                  onChange={(e) => setEndTime(e.target.value)}
-                  disabled
-                />
-              </label>
-              <div className="flex flex-col items-start gap-2 mb-4">
-                <span className="font-semibold">Duración de la reserva:</span>
-                <div className="flex gap-4">
-                  <label className="inline-flex items-center gap-2">
-                    Siempre:
-                    <input
-                      type="radio"
-                      name="tipoReserva"
-                      value="Siempre"
-                      checked={duration === 'Siempre'}
-                      onChange={(e) => setDuration(e.target.value)}
-                      required
-                      className="translate-y-[1px]"
-                    />
-                  </label>
-                  <label className="inline-flex items-center gap-2">
-                    Temporal:
-                    <input
-                      type="radio"
-                      name="tipoReserva"
-                      value="Temporal"
-                      checked={duration === 'Temporal'}
-                      onChange={(e) => setDuration(e.target.value)}
-                      required
-                      className="translate-y-[1px]"
-                    />
-                  </label>
-                </div>
+              <div className="flex items-center gap-4">
+                <label className="flex items-center gap-2 font-semibold">
+                  Hora de inicio:
+                  <input
+                    type="time"
+                    value={startTime}
+                    className="w-32 p-2 border border-gray-300 rounded"
+                    disabled
+                  />
+                </label>
+
+                <label className="flex items-center gap-2 font-semibold">
+                  Hora de cierre:
+                  <input
+                    type="time"
+                    value={endTime}
+                    onChange={(e) => setEndTime(e.target.value)}
+                    className="w-32 p-2 border border-gray-300 rounded"
+                    disabled
+                  />
+                </label>
               </div>
-              <div className="flex flex-col items-start gap-2 mb-4">
-                <span className="font-semibold">Crear reserva en Google Calendar:</span>
-                <div className="flex gap-4">
-                  <label className="inline-flex items-center gap-2">
-                    Sí:
-                    <input
-                      type="radio"
-                      name="googleCalendar"
-                      value="true"
-                      checked={createInGoogleCalendar === 'true'}
-                      onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
-                      className="translate-y-[1px]"
-                    />
-                  </label>
-                  <label className="inline-flex items-center gap-2">
-                    No:
-                    <input
-                      type="radio"
-                      name="googleCalendar"
-                      value="false"
-                      checked={createInGoogleCalendar === 'false'}
-                      onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
-                      className="translate-y-[1px]"
-                    />
-                  </label>
+                <div className="flex flex-col items-start gap-2 mb-4">
+                  <span className="font-semibold">Duración de la reserva:</span>
+                  <div className="flex gap-4">
+                    <label className="inline-flex items-center gap-2">
+                      Siempre:
+                      <input
+                        type="radio"
+                        name="tipoReserva"
+                        value="Siempre"
+                        checked={duration === 'Siempre'}
+                        onChange={(e) => setDuration(e.target.value)}
+                        required
+                        className="translate-y-[1px]"
+                      />
+                    </label>
+                    <label> | </label>
+                    <label className="inline-flex items-center gap-2">
+                      Temporal:
+                      <input
+                        type="radio"
+                        name="tipoReserva"
+                        value="Temporal"
+                        checked={duration === 'Temporal'}
+                        onChange={(e) => setDuration(e.target.value)}
+                        required
+                        className="translate-y-[1px]"
+                      />
+                    </label>
+                  </div>
                 </div>
+                <div className="flex flex-col items-start gap-2 mb-4">
+                  <span className="font-semibold">Crear reserva en Google Calendar:</span>
+                  <div className="flex gap-4">
+                    <label className="inline-flex items-center gap-2">
+                      Sí:
+                      <input
+                        type="radio"
+                        name="googleCalendar"
+                        value="true"
+                        checked={createInGoogleCalendar === 'true'}
+                        onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
+                        className="translate-y-[1px]"
+                      />
+                    </label>
+                    <label> | </label>
+                    <label className="inline-flex items-center gap-2">
+                      No:
+                      <input
+                        type="radio"
+                        name="googleCalendar"
+                        value="false"
+                        checked={createInGoogleCalendar === 'false'}
+                        onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
+                        className="translate-y-[1px]"
+                      />
+                    </label>
+                  </div>
               </div>
               <div className="modal-buttons">
                 <button className="cancel-button" onClick={handleCloseModal}>

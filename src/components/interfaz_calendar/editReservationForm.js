@@ -111,40 +111,43 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
         ) : (
         <form onSubmit={(e) => e.preventDefault()}>
           <div>
-            <label>Profesor:</label>
+            <label className="font-semibold">Profesor:</label>
             <input
               type="text"
               value={professor}
               onChange={handleInputChange(setProfessor)}
+              className="w-64 p-2 border border-gray-300 rounded"
             />
           </div>
           <div>
-            <label>Materia:</label>
+            <label className="font-semibold">Materia:</label>
             <input
               type="text"
               value={course}
               onChange={handleInputChange(setCourse)}
+              className="w-64 p-2 border border-gray-300 rounded"
             />
           </div>
-          <label>
+          <label className="font-semibold">
             Clave:
             <input
               type="text"
               value={code}
               onChange={handleInputChange(setCode)}
               required
+              className="w-48 p-2 border border-gray-300 rounded" // ancho de 16rem
             />
           </label>
           <div>
-            <label>Fecha:</label>
+            <label className="font-semibold">Fecha:</label>
             <input
               type="date"
               value={date}
               onChange={handleDateChange}
             />
           </div>
-          <div className='select-container'>
-            <label>Día:</label>
+          <div className='select-container-d'>
+            <label className="font-semibold">Día:</label>
             <select className="day-select2" value={days} onChange={(e) => setDays(e.target.value)} disabled>
                 <option value="">Selecciona un día</option>
                 <option value="L">Lunes</option>
@@ -154,9 +157,9 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                 <option value="V">Viernes</option>
                 <option value="S">Sábado</option>
             </select>
-            </div>
+          </div>
           <div>
-            <label>Horario:</label>
+            <label className="font-semibold" >Horario:</label>
             <input
               type="text"
               value={schedule}
@@ -165,7 +168,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             />
           </div>
           <div>
-            <label>Edificio:</label>
+            <label className="font-semibold">Edificio:</label>
             <input
               type="text"
               value={building}
@@ -174,7 +177,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             />
           </div>
           <div>
-            <label>Salón:</label>
+            <label className="font-semibold">Salón:</label>
             <input
               type="text"
               value={classroom}
@@ -186,7 +189,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
             <span className="font-semibold">Duración de la reserva:</span>
             <div className="flex gap-4">
                   <label className="inline-flex items-center gap-2">
-                    Siempre:
+                    Siempre
                     <input
                       type="radio"
                       name="tipoReserva"
@@ -197,8 +200,9 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                       className="translate-y-[1px]"
                     />
                   </label>
+                  <label> | </label>
                   <label className="inline-flex items-center gap-2">
-                    Temporal:
+                    Temporal
                     <input
                       type="radio"
                       name="tipoReserva"

@@ -2,14 +2,12 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
-import Sidebar from '../sidebar';
 import SelectsLogic from './selectsLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
 import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function Calendar() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedCycle, setSelectedCycle] = useState('');
   const [selectedDay, setSelectedDay] = useState('Lunes');
   const [selectedBuilding, setSelectedBuilding] = useState('');
@@ -81,8 +79,6 @@ export default function Calendar() {
   function isSameOrBeforeWeekStart(dateString) {
     return dateString <= endDateString;
   }
-  
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   const hours = Array.from({ length: 14 }, (_, i) => {
     const hour = i + 7;
@@ -369,11 +365,8 @@ export default function Calendar() {
   return (
     <>
       <div className="calendar-container">
-      {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
-        <Sidebar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
-      )}
         <div className="main-content background-image-container">
-          <Navbar toggleSidebar={toggleSidebar} selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
+          <Navbar selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
             <SelectsLogic
               onUpdateCycle={setSelectedCycle}

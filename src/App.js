@@ -9,10 +9,6 @@ import Registro from './components/interfaz_login/registro';
 import Crud from './components/interfaz_login/crud';
 
 export default function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  // Función para mostrar/ocultar la barra lateral
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   return (
     <>

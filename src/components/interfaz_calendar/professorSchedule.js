@@ -44,7 +44,7 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
   };
 
   return (
-    <div className="professor-schedule-popup">
+    <>
       <strong>
         <h3>Horarios encontrados:</h3>
       </strong>
@@ -55,14 +55,15 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
           <strong>
             <h4>{professor}</h4>
           </strong>
+          <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />
           <ul>
             {groupedSchedules[professor].map((course, index, arr) => (
               <li key={index}>
                   <div><b>Materia:</b> {course.data.course}</div>
                   <div><b>Dia/s:</b> {translateDays(course.data.days)}</div>
-                  <div><b>Horario:</b> {course.data.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2-$3:$4")}</div>
                   <div><b>Edificio:</b> {course.data.building}</div>
                   <div><b>Salón:</b> {course.data.classroom}</div>
+                  <div><b>Horario:</b> {course.data.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 -$3:$4")}</div>
               </li>
             ))}
           </ul>
@@ -71,6 +72,6 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
           )}
         </div>
       ))}
-    </div>
+    </>
   );
 }

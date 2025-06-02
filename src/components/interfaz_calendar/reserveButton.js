@@ -175,7 +175,7 @@ export default function ReserveButton({
         <div className="modal-overlay">
           <div className="modal">
             <h2>Reservar Aula</h2>
-            <form>
+            <form className='form'>
               <label className='font-semibold'>
                 Maestro:
                 <input

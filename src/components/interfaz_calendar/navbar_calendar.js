@@ -100,15 +100,26 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
             </div>
           )}
         </div>
-          <div className="search-container">
+          <div className="search-container flex items-center gap-2">
             <input
               type="text"
-              placeholder="🔎 Buscar maestro..."
+              placeholder="Buscar maestro..."
               className="search-input"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
             />
+            <button
+              onClick={handleSearch}
+              className="search-button p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-white"
+              title="Buscar"
+            >
+              <img
+                src="/lupa.webp"
+                alt="Buscar"
+                className="w-8 h-8"
+              />
+            </button>
           </div>
             {isLoggedIn ? (
             <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
@@ -124,7 +135,7 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
       {/* Popup de horarios */}
       {showPopup && (
         <div className="popup-overlay" onClick={() => setShowPopup(false)}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+          <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
             <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
             <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle}/>
           </div>

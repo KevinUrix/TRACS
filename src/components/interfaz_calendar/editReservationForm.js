@@ -109,7 +109,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
         {isLoading ? (
           <div className="modal"><p>Cargando...</p></div>
         ) : (
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form className='form' onSubmit={(e) => e.preventDefault()}>
           <div>
             <label className="font-semibold">Profesor:</label>
             <input

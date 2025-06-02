@@ -160,16 +160,21 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
 
   return (
     <>
-      <button
-        onClick={openPopup}
-        className="bg-blue-500 hover:bg-blue-600 rounded-full px-4 py-2 shadow-md text-white transition duration-200"
-      >
-        <b>Ver reservas 📇</b>
-      </button>
+      <div className="relative group">
+        <button
+          onClick={openPopup}
+          className="bg-blue-500 hover:bg-blue-600 rounded-full px-4 py-2 shadow-md text-white transition duration-200"
+        >
+          <b>Ver reservas 📇</b>
+        </button>
+        <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10">
+          Ver reservas filtradas por ciclo y edificio.
+        </span>
+      </div>
 
       {showPopup && (
         <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+          <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
             <button className="close-popup" onClick={closePopup}>✖</button>
             <h3>Reservas para ciclo {selectedCycle}, edificio {selectedBuilding}:</h3>
             <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />

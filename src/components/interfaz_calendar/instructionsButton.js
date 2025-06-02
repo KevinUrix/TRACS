@@ -9,13 +9,17 @@ export default function InstructionsButton() {
 
   return (
     <div className="relative">
-      <button
-        className="bg-indigo-400 hover:bg-indigo-500 text-black rounded-full px-3 py-1 shadow-md transition duration-200"
-        title="Mostrar instrucciones"
-        onClick={toggleInstructions}
-      >
-        <img src="/exclamacion.webp" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
-      </button>
+      <div className="relative group">
+        <button
+          className="bg-indigo-400 hover:bg-indigo-500 text-black rounded-full px-3 py-1 shadow-md transition duration-200"
+          onClick={toggleInstructions}
+        >
+          <img src="/exclamacion.webp" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
+        </button>
+        <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10">
+          Instrucciones simples y creditos.
+        </span>
+      </div>
 
       {showInstructions && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">

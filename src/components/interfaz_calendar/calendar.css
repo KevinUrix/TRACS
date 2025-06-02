@@ -1,6 +1,9 @@
 /* calendar.css */
 body{
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Container del calendario */
@@ -124,13 +127,12 @@ body{
   border: 1px solid #d1d5db;
   outline: none;
   transition: all 0.3s ease;
-  max-width: 15.625rem;
-  width: 100%;
-  margin-left: 74rem; /* Aplicar lo mismo para reports despues*/
+  width: 18rem;
+  /*margin-left: 74rem; /* Aplicar lo mismo para reports despues*/
 }
 
 .search-container{
-  margin-left: 5rem;
+  margin-left: 70rem;
 }
 
 .search-input:focus {
@@ -334,7 +336,7 @@ body{
   outline: none;
   border-color: #4f46e5;
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
-  background-color: #f9f9f9; /* Si alejas el mouse, se cambia el color del select y sus opciones.*/
+  background-color: #ffffff; /* Si alejas el mouse, se cambia el color del select y sus opciones.*/
 }
 
 .select-container select:hover {
@@ -375,14 +377,14 @@ body{
   justify-content: center;
   align-items: center;
   z-index: 30;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 }
 
 .popup-content {
   background: #ffffff;
   padding: 2rem 2.5rem;
   border-radius: 1rem;
-  max-width: 900px;
+  max-width: 55rem; /* Equivale a 880 px, antes era 900px.*/
   width: 95%;
   max-height: 85vh;
   overflow-y: auto;
@@ -409,7 +411,7 @@ body{
   background-color: #f8fafc;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #367bd0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem 2rem;
@@ -422,14 +424,29 @@ body{
 
 .close-popup {
   position: absolute;
-  top: 20px;
-  right: 25px;
-  background: transparent;
-  font-size: 1.5rem;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef4ff;
+  border: 1px solid #1e293b;
+  border-radius: 9999px;
   color: #1e293b;
-  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
+
+.close-popup:hover {
+  background-color: #1e293b;
+  color: white;
+  transform: scale(1.05);
+}
+
 
 .popup-content .mt-4 {
   grid-column: span 2;
@@ -455,13 +472,16 @@ body{
   padding-top: 80px; /* <-- agregar para controlar la distancia */
   z-index: 1000;
   animation: fadeIn 0.4s ease-out;
+  backdrop-filter: blur(1px);
 }
 
 .modal {
   background: white;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  /*font-family: 'Georgia', 'Times New Roman', serif;*/
+  border: 2px solid #1e293b;
   width: 100%;
   max-width: 600px;
   /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
@@ -544,13 +564,13 @@ select:focus {
   transform: translateY(1px);
 }
 
-form {
+.form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem 2rem;
 }
 
-form label {
+.form label {
   margin-bottom: 0;
 }
 

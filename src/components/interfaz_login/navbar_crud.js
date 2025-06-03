@@ -4,6 +4,7 @@ import '../interfaz_reports/reports.css';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import LoginLogoutButton from '../LoginLogoutButton';
 
 export default function NavbarCrud({}) {
   const navigate = useNavigate();
@@ -26,11 +27,6 @@ export default function NavbarCrud({}) {
   };
 
   const handleLoginRedirect = () => {
-    // sessionStorage.setItem('reservationState', JSON.stringify({
-    //   selectedCycle,
-    //   selectedBuilding,
-    //   selectedDay,
-    // }));
     navigate('/login');
   };
 
@@ -50,17 +46,11 @@ export default function NavbarCrud({}) {
             </div>
           )}
       </div>
-      <div className='separate-container'>
-        {isLoggedIn ? (
-          <button onClick={handleLogout} className="logout-button flex items-center gap-2" title="Cerrar sesión">
-            <img src="/cerrar-sesion.webp" alt="Cerrar sesión" className="w-8 h-8" />
-          </button>
-        ) : (
-          <button onClick={handleLoginRedirect} className="logout-button flex items-center gap-2" title="Iniciar sesión">
-            <img src="/iniciar-sesion.webp" alt="Iniciar sesión" className="w-8 h-8" />
-          </button>
-        )}
-      </div>
+        <LoginLogoutButton
+                isLoggedIn={isLoggedIn}
+                handleLogout={handleLogout}
+                handleLoginRedirect={handleLoginRedirect}
+              />
     </nav>
   );
 }

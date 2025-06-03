@@ -158,7 +158,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
-    <div className="flex space-x-6 my-10 pl-6 mt-10">
+    <div className="flex space-x-6 my-5 pl-6 mt-10">
       <div className="select-container">
         <select
           value={selectedCycle}
@@ -178,9 +178,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           )}
         </select>
         <span>📅</span>
-      </div>
-
-      <div className="select-container">
         <select
           value={selectedBuilding}
           onChange={handleBuildingChange}
@@ -192,18 +189,16 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
             ))}
         </select>
         <span>🏢</span>
-      </div>
-      <div className="select-container">
-      <select
-        value={selectedDay}
-        onChange={handleDayChange}
-        className="day-select"
-      >
-        {['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
-          <option key={day} value={day}>{day}</option>
-        ))}
-      </select>
-        <span>📆</span>
+        <select
+          value={selectedDay}
+          onChange={handleDayChange}
+          className="day-select"
+        >
+          {['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
+            <option key={day} value={day}>{day}</option>
+          ))}
+        </select>
+          <span>📆</span>
       </div>
 
       {userRole === 'superuser' && (

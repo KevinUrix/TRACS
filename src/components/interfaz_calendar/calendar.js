@@ -368,7 +368,7 @@ export default function Calendar() {
         <div className="main-content background-image-container">
           <Navbar selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
-            <div className="bg-gray-200 rounded-lg shadow-md">
+            <div className="bg-gray-200 rounded-lg shadow-md z-2">
               <SelectsLogic
                 onUpdateCycle={setSelectedCycle}
                 onUpdateBuilding={setSelectedBuilding}

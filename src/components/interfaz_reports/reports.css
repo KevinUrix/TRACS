@@ -20,7 +20,7 @@ body{
   background-image: url('/public/centro_cucei.webp');
   background-size: cover;
   background-position: center;
-  filter: blur(2px) brightness(75%);
+  filter: blur(4px) brightness(75%);
   z-index: 1; /* Para que quede detrás del formulario */
 }
 
@@ -48,7 +48,7 @@ body{
   right: 0;
   z-index: 10;
   gap: 1rem; /* Espaciado entre elementos */
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  overflow: visible;
 }
 
 .navbar-brand-reports{
@@ -142,18 +142,18 @@ body{
 }
 
 .select-container-reports .building-select {
-  background-color: #e7fce7;
-  border-color: #a5d6a7;
+  background-color: #b2fcb2;
+  border-color: #72d276;
 }
 
 .select-container-reports .status-select {
-  background-color: #fffacc;
-  border-color: #fff176;
+  background-color: #fff7aa;
+  border-color: #feee56;
 }
 
 .select-container-reports .category-select {
-  background-color: #e0f0ff;
-  border-color: #90caf9;
+  background-color: #a9d4fc;
+  border-color: #64b6fa;
 }
 
 .select-container-reports span {

@@ -13,7 +13,7 @@ export default function Login() {
       const userRole = localStorage.getItem('role');
   
       if (userRole === 'superuser' || userRole === 'user') {
-        toast.error('Te sesión sigue activa.');
+        toast.error('Tu sesión sigue activa.');
         navigate('/');
       }
     }, [navigate]);

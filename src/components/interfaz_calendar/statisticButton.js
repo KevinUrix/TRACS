@@ -15,7 +15,7 @@ export default function StatisticButton({ isStatisticMode, setIsStatisticMode, s
         <b>{isStatisticMode ? 'Volver a vista normal 📆' : 'Conteo de alumnos 📊'}</b>
       </button>
       <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10">
-        {isStatisticMode ? 'Volver a tabla de clases.' : 'Mostrar contador de alumnos por edificio.'}
+        {isStatisticMode ? 'Volver a tabla de clases.' : 'Mostrar contador de alumnos por ciclo y edificio.'}
       </span>
     </div>
   );

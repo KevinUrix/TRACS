@@ -66,7 +66,7 @@ body{
   right: 0;
   z-index: 10;
   gap: 1rem; /* Espaciado entre elementos */
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  overflow: visible;        /* El contenido "explota" hacia afuera, esto sirve para menús o cosas desplegables. */
 }
 
 .navbar-brand {
@@ -317,6 +317,7 @@ body{
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap; /* por si se reduce el tamaño de la pantalla */
 }
 
 .select-container select {
@@ -348,18 +349,18 @@ body{
 
 /* Colores personalizados */
 .select-container .cycle-select {
-  background-color: #e0f0ff;
-  border-color: #90caf9;
+  background-color: #a9d4fc;
+  border-color: #64b6fa;
 }
 
 .select-container .building-select {
-  background-color: #e7fce7;
-  border-color: #a5d6a7;
+  background-color: #b2fcb2;
+  border-color: #72d276;
 }
 
 .select-container .day-select {
-  background-color: #fffacc;
-  border-color: #fff176;
+  background-color: #fff7aa;
+  border-color: #feee56;
 }
 
 .select-container span {
@@ -689,7 +690,40 @@ select:focus {
   border: 2px solid rgb(54, 79, 119);
 }
 
+/*-----------------------------------------*/
 
+.lupa-button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lupa-button:hover {
+  transform: scale(1.2); /* Aumente el tamaño del ícono cuando pones el mouse encima */
+}
+
+/* src/components/LoginLogoutButton.css */
+
+.logout-button:hover {
+  transform: scale(1.2);
+}
+
+.logout-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-menu {
+  min-width: 10rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: 1rem;
+  z-index: 9999;
+}
 
 
 /*------------------------------------------------------*/

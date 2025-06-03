@@ -309,7 +309,7 @@ export default function Crud() {
                     Registrar nuevo usuario
                   </button>
                 </div>
-                <div className="max-h-96 min-h-96 overflow-y-auto rounded-lg shadow">
+                <div className={`max-h-96 min-h-96 ${users.length < 7 ? 'overflow-y-hidden' : 'overflow-y-auto'} rounded-lg shadow`}>
                   <table className="min-w-full bg-white">
                     <thead className="sticky top-0 bg-gray-200 z-1">
                       <tr className="bg-gray-200 text-gray-700">
@@ -354,6 +354,19 @@ export default function Crud() {
                           </td>
                         </tr>
                       )}
+                      {users.length < 7 &&
+                        Array.from({ length: 7 - users.length }).map((_, index) => (
+                          <tr key={`empty-${index}`} className="border-b invisible select-none pointer-events-none">
+                            <td className="py-2 px-4 invisible">&nbsp;</td>
+                            <td className="py-2 px-4 invisible">&nbsp;</td>
+                            <td className="py-2 px-4 invisible"><button
+                              className="px-3 py-1 rounded"
+                            >
+                              &nbsp;
+                            </button></td>
+                          </tr>
+                        ))}
+
                     </tbody>
                   </table>
                 </div>

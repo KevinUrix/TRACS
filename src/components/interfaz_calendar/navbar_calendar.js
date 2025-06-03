@@ -42,6 +42,10 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
   };
 
   const handleSearch = async () => {
+    if (!selectedBuilding || !selectedCycle) {
+      toast.error('Debes seleccionar un ciclo y un edificio para realizar la búsqueda.');
+      return;
+    }
     if (!searchTerm.trim()) {
       setFilteredSchedule([]);
       setShowPopup(false);

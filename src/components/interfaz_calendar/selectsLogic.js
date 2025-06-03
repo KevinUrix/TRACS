@@ -6,6 +6,7 @@ import ViewReservationsButton from './viewReservationsButton';
 import PrintButton from './printButton';
 import StatisticButton from './statisticButton';
 import { handlePrint } from './utils';
+import { toast } from 'react-toastify';
 
 import './calendar.css'; // Importa el archivo de estilos CSS
 
@@ -117,7 +118,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
 
   const handleDownload = async () => {
     if (!selectedCycle) {
-      alert('Por favor, selecciona un ciclo.');
+      toast.error('Debes seleccionar un ciclo.');
       return;
     }
   

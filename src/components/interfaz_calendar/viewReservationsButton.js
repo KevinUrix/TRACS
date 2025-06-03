@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import EditReservationForm from './editReservationForm'; // Importamos el formulario
+import { toast } from 'react-toastify';
 
 const dayNames = {
   L: 'Lunes',
@@ -39,6 +40,10 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   }, [reservations]);
 
   const openPopup = async () => {
+    if (!selectedBuilding || !selectedCycle) {
+      toast.error('Debes seleccionar un ciclo y un edificio.');
+      return;
+    }
     if (fetchReservations) {
       await fetchReservations();
     }

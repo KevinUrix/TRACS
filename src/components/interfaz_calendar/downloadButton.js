@@ -38,7 +38,7 @@ export default function DownloadButton({ onDownload }) {
           </svg>
         </button>
           <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10">
-            Descargar archivos de actualización al servidor, en base a ciclo escolar.
+            Descargar archivos de actualización al servidor, con base en el ciclo escolar.
           </span>
       </div>
       {/* <button

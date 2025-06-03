@@ -76,9 +76,16 @@ export default function Login() {
     navigate('/');
   };
 
-  return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80">
+return (
+  <div className="relative h-screen w-screen">
+    {/* Fondo con imagen difuminada */}
+    <div
+      className="bg-blurred"
+    ></div>
+
+    {/* Capa frontal (formulario) */}
+    <div className="relative flex justify-center items-center h-full">
+      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10">
         <h2 className="text-2xl font-bold mb-4">Iniciar Sesión</h2>
 
         {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
@@ -92,18 +99,14 @@ export default function Login() {
             onChange={(e) => {
               const val = e.target.value;
               const lastChar = val.slice(-1);
-
               if (lastChar.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
                 toast.error('Usuario sólo admite letras minúsculas.', {
                   autoClose: 1000,
                   closeOnClick: true,
                 });
               }
-
-              // Solo letras, números y guion bajo
               const filtered = val.replace(/[^a-z0-9_]/g, '');
               setUsuario(filtered);
-              
               if (filtered.length >= 20) {
                 toast.info('Máximo de 20 caracteres alcanzado.', {
                   autoClose: 1000,
@@ -116,6 +119,7 @@ export default function Login() {
             required
           />
         </div>
+
         <div className="mb-4">
           <label className="block text-gray-700 font-semibold mb-2">Contraseña</label>
           <input
@@ -123,7 +127,6 @@ export default function Login() {
             value={password}
             onChange={(e) => {
               const val = e.target.value;
-              // Solo letras, números y algunos símbolos comunes para contraseñas
               const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
               setPassword(filtered);
             }}
@@ -132,20 +135,24 @@ export default function Login() {
             required
           />
         </div>
+
         <button
           type="submit"
           className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 mb-2"
         >
           Iniciar Sesión
         </button>
-        {<button
+
+        <button
           type="button"
           onClick={goToSignup}
           className="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300"
         >
           Cancelar
-        </button>}
+        </button>
       </form>
     </div>
-  );
+  </div>
+);
+
 }

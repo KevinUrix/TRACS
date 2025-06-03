@@ -52,7 +52,7 @@ export default function DownloadButton({ onDownload }) {
 
       {showDownload && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs"style={{boxShadow: '0 10px 30px rgba(0, 0, 0, 0.25)',border: '2px solid #1e293b'}}>
+          <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs custom-shadow-border">
             <h2 className="font-semibold">Instrucciones de Uso</h2>
             <ul className="list-disc list-inside">
               <li>Selecciona un ciclo.</li>

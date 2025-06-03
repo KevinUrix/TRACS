@@ -7,7 +7,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
   const [currentPage, setCurrentPage] = useState(1);
 
-  const ticketsPerPage = 9;
+  const ticketsPerPage = 6;
 
   const filteredTickets = tickets.filter(ticket => {
   const matchesStatus =
@@ -111,7 +111,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   return (
     <div className="p-4">
-      <h2 className="text-xl font-semibold mb-4">
+      <h2 className="text-xl font-semibold mb-4 text-center">
         {building ? `Tickets para ${building}` : 'Todos los tickets'}
       </h2>
 
@@ -135,7 +135,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               <div key={id} onClick={() =>
                   setSelectedTicket({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by })
                 }
-                className="bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100"
+                className="bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100 custom-shadow-border-reports"
                 >
 
                 <p><strong>Edificio:</strong> {building}</p>

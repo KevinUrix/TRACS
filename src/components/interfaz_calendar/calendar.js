@@ -368,15 +368,17 @@ export default function Calendar() {
         <div className="main-content background-image-container">
           <Navbar selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
-            <SelectsLogic
-              onUpdateCycle={setSelectedCycle}
-              onUpdateBuilding={setSelectedBuilding}
-              onUpdateDay={setSelectedDay}
-              fetchReservations={fetchReservations}
-              reservations={reservations}
-              isStatisticMode={isStatisticMode}
-              setIsStatisticMode={setIsStatisticMode}
-            />
+            <div className="bg-gray-200 rounded-lg shadow-md">
+              <SelectsLogic
+                onUpdateCycle={setSelectedCycle}
+                onUpdateBuilding={setSelectedBuilding}
+                onUpdateDay={setSelectedDay}
+                fetchReservations={fetchReservations}
+                reservations={reservations}
+                isStatisticMode={isStatisticMode}
+                setIsStatisticMode={setIsStatisticMode}
+              />
+            </div>
           </div>
           <div className="table-container">
             <table className="schedule-table" id="schedule-table">

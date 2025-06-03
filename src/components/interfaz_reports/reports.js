@@ -135,66 +135,69 @@ export default function Reports() {
   return (
     <div className="bg-gray-100 flex min-h-screen">
 
-      <div className="main-content flex-1 flex flex-col">
+      <div className="main-content flex-2 flex flex-col">
         <NavbarReports/>
 
-        <div className="p-6 max-w-7xl mx-auto w-full">
-          {/* Selector de edificio y botón de agregar */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
-            <BuildingSelect 
-              selectedBuilding={selectedBuilding} 
-              onChange={handleBuildingChange} 
-            />
+          <div className="p-2 max-w-7xl mx-auto w-full">
+              {/* Selector de edificio y botón de agregar */}
+            <div className="select-container-reports flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+              {/* Edificio a la izquierda */}
+              <BuildingSelect
+                selectedBuilding={selectedBuilding}
+                onChange={handleBuildingChange}
+                className="building-select"
+              />
 
-            <div className="select-container-reports">
-              <select
-                value={statusFilter}
-                onChange={(e) => setStatusFilter(e.target.value)}
-                className='status-select'
-              >
-                <option value="Todos">Todos los estados</option>
-                <option value="Abierto">Abierto</option>
-                <option value="En Proceso">En proceso</option>
-                <option value="Cerrado">Cerrado</option>
-              </select>
+              {/* Contenedor para los dos selects juntos a la derecha */}
+              <div className="flex gap-4">
+                <select
+                  value={categoryFilter}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
+                  className="category-select"
+                >
+                  <option value="Todos">Todas las categorias</option>
+                  <option value="Mantenimiento">Mantenimiento</option>
+                  <option value="Limpieza">Limpieza</option>
+                  <option value="Técnico (Hardware)">Técnico (Hardware)</option>
+                  <option value="Técnico (Software)">Técnico (Software)</option>
+                </select>
 
-              <select
-                value={categoryFilter}
-                onChange={(e) => setCategoryFilter(e.target.value)}
-                className='category-select'
-              >
-                <option value="Todos">Todas las categorias</option>
-                <option value="Mantenimiento">Mantenimiento</option>
-                <option value="Limpieza">Limpieza</option>
-                <option value="Técnico (Hardware)">Técnico (Hardware)</option>
-                <option value="Técnico (Software)">Técnico (Software)</option>
-              </select>
+                <select
+                  value={statusFilter}
+                  onChange={(e) => setStatusFilter(e.target.value)}
+                  className="status-select"
+                >
+                  <option value="Todos">Todos los estados</option>
+                  <option value="Abierto">Abierto</option>
+                  <option value="En Proceso">En proceso</option>
+                  <option value="Cerrado">Cerrado</option>
+                </select>
+              </div>
+              {selectedBuilding && (
+                  <button
+                    onClick={() => setShowForm(true)}
+                    className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-3 shadow transition-transform hover:scale-105"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
+                    </svg>
+                    Agregar Ticket
+                  </button>
+                )}
+              </div>
             </div>
-
-            {selectedBuilding && (
-              <button
-                onClick={() => setShowForm(true)}
-                className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-3 shadow transition-transform hover:scale-105"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
-                </svg>
-                Agregar Ticket
-              </button>
-            )}
+            {/* Lista de tickets */}
+            {/* Lista de tickets */}
+           <div className="bg-white p-4 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border-reports"> 
+              <TicketsList
+                building={selectedBuilding} // puede estar vacío
+                refresh={refreshTickets}
+                onRefresh={() => setRefreshTickets(prev => !prev)}
+                statusFilter={statusFilter}
+                categoryFilter={categoryFilter} // nuevo prop
+              />
+            </div>
           </div>
-
-          {/* Lista de tickets */}
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <TicketsList
-              building={selectedBuilding} // puede estar vacío
-              refresh={refreshTickets}
-              onRefresh={() => setRefreshTickets(prev => !prev)}
-              statusFilter={statusFilter}
-              categoryFilter={categoryFilter} // nuevo prop
-            />
-          </div>
-        </div>
 
         {/* Modal de nuevo ticket */}
         {showForm && (
@@ -298,6 +301,5 @@ export default function Reports() {
           </div>
         )}
       </div>
-    </div>
   );
 }

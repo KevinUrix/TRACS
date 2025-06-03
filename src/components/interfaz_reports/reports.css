@@ -13,6 +13,17 @@ body{
   margin-top: 4rem; /* Para que no se sobreponga con el navbar */
 }
 
+/* archivo: styles.css o App.css */
+.bg-blurred {
+  position: absolute;
+  inset: 0;
+  background-image: url('/public/centro_cucei.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px) brightness(75%);
+  z-index: 1; /* Para que quede detrás del formulario */
+}
+
 /* Select content */
 .select-content {
   display: flex;
@@ -105,7 +116,7 @@ body{
 
 .select-container-reports select {
   appearance: none;
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.6rem;
   font-size: 1rem;
@@ -149,4 +160,9 @@ body{
   font-size: 1rem;
   color: #333;
   font-weight: 500;
+}
+
+.custom-shadow-border-reports {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgb(54, 79, 119);
 }

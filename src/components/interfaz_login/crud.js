@@ -295,119 +295,121 @@ export default function Crud() {
         <NavbarCrud/>
 
         <div className="pt-32 px-8 min-h-screen bg-gray-100">
-          <h2 className="text-2xl font-bold mb-8 text-center">Administración</h2>
-          <div className="flex flex-row gap-8">
-            {/* Tabla de Usuarios */}
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold mb-4 text-center">Usuarios</h3>
-              <div className="flex justify-end mb-4">
-                <button
-                  onClick={() => navigate('/registro')}
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                  Registrar nuevo usuario
-                </button>
-              </div>
-              <div className="max-h-96 overflow-y-auto rounded-lg shadow">
-                <table className="min-w-full bg-white">
-                  <thead className="sticky top-0 bg-gray-200 z-1">
-                    <tr className="bg-gray-200 text-gray-700">
-                      <th className="py-2 px-4 text-left">Usuario</th>
-                      <th className="py-2 px-4 text-left">Rol</th>
-                      <th className="py-2 px-4 text-left">Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {users.map((user) => (
-                      <tr key={user.id} className="border-b">
-                        <td className="py-2 px-4">{user.username}</td>
-                        <td className="py-2 px-4">
-                          <select
-                            value={
-                              selectedUser && selectedUser.id === user.id && pendingRole
-                                ? pendingRole
-                                : user.role
-                            }
-                            onChange={(e) => handleSelectChange(user, e.target.value)}
-                            className="border border-gray-300 rounded px-2 py-1"
-                          >
-                            <option value="user">User</option>
-                            <option value="superuser">Super_user</option>
-                            <option value="tecnico">Técnico</option>
-                          </select>
-                        </td>
-                        <td className="py-2 px-4">
-                          <button
-                            onClick={() => handleDeleteUser(user)}
-                            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
-                          >
-                            Eliminar
-                          </button>
-                        </td>
+          <div className="bg-white p-4 rounded-lg shadow-md custom-shadow-border-reports"> {/* Cuadro blanco para encapsular todo.*/}
+            <h2 className="text-2xl font-bold mb-8 text-center">Administración</h2>
+            <div className="flex flex-row gap-8">
+              {/* Tabla de Usuarios */}
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-4 text-center">Usuarios</h3>
+                <div className="flex justify-end mb-4">
+                  <button
+                    onClick={() => navigate('/registro')}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                  >
+                    Registrar nuevo usuario
+                  </button>
+                </div>
+                <div className="max-h-96 min-h-96 overflow-y-auto rounded-lg shadow">
+                  <table className="min-w-full bg-white">
+                    <thead className="sticky top-0 bg-gray-200 z-1">
+                      <tr className="bg-gray-200 text-gray-700">
+                        <th className="py-2 px-4 text-left">Usuario</th>
+                        <th className="py-2 px-4 text-left">Rol</th>
+                        <th className="py-2 px-4 text-left">Acciones</th>
                       </tr>
-                    ))}
-                    {users.length === 0 && (
-                      <tr>
-                        <td colSpan="3" className="text-center py-4 text-gray-500">
-                          No hay usuarios registrados
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {users.map((user) => (
+                        <tr key={user.id} className="border-b">
+                          <td className="py-2 px-4">{user.username}</td>
+                          <td className="py-2 px-4">
+                            <select
+                              value={
+                                selectedUser && selectedUser.id === user.id && pendingRole
+                                  ? pendingRole
+                                  : user.role
+                              }
+                              onChange={(e) => handleSelectChange(user, e.target.value)}
+                              className="border border-gray-300 rounded px-2 py-1"
+                            >
+                              <option value="user">User</option>
+                              <option value="superuser">Super_user</option>
+                              <option value="tecnico">Técnico</option>
+                            </select>
+                          </td>
+                          <td className="py-2 px-4">
+                            <button
+                              onClick={() => handleDeleteUser(user)}
+                              className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                            >
+                              Eliminar
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                      {users.length === 0 && (
+                        <tr>
+                          <td colSpan="3" className="text-center py-4 text-gray-500">
+                            No hay usuarios registrados
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
 
-            {/* Tabla de Edificios */}
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold mb-4 text-center">Edificios</h3>
-              <div className="flex justify-end mb-4">
-                <button
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                  onClick={handleAddBuilding}
-                >
-                  Agregar nuevo edificio
-                </button>
-              </div>
-              <div className="max-h-96 overflow-y-auto rounded-lg shadow">
-                <table className="min-w-full bg-white">
-                  <thead className="sticky top-0 bg-gray-200 z-1">
-                    <tr className="text-gray-700">
-                      <th className="py-2 px-4 text-left">Edificio</th>
-                      <th className="py-2 px-4 text-left">Seudónimo</th>
-                      <th className="py-2 px-4 text-left">Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {buildings.map((building, index) => (
-                      <tr key={index} className="border-b">
-                        <td className="py-2 px-4">{building.value}</td>
-                        <td className="py-2 px-4">{building.text}</td>
-                        <td className="py-2 px-4">
-                          <button
-                            onClick={() => handleEditBuilding(building)}
-                            className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transition mr-2"
-                          >
-                            Editar
-                          </button>
-                          <button
-                            onClick={() => handleDeleteBuilding(building)}
-                            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
-                          >
-                            Eliminar
-                          </button>
-                        </td>
+              {/* Tabla de Edificios */}
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-4 text-center">Edificios</h3>
+                <div className="flex justify-end mb-4">
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                    onClick={handleAddBuilding}
+                  >
+                    Agregar nuevo edificio
+                  </button>
+                </div>
+                <div className="max-h-96 min-h-96 overflow-y-auto rounded-lg shadow">
+                  <table className="min-w-full bg-white">
+                    <thead className="sticky top-0 bg-gray-200 z-1">
+                      <tr className="text-gray-700">
+                        <th className="py-2 px-4 text-left">Edificio</th>
+                        <th className="py-2 px-4 text-left">Seudónimo</th>
+                        <th className="py-2 px-4 text-left">Acciones</th>
                       </tr>
-                    ))}
-                    {buildings.length === 0 && (
-                      <tr>
-                        <td colSpan="3" className="text-center py-4 text-gray-500">
-                          No hay edificios registrados
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {buildings.map((building, index) => (
+                        <tr key={index} className="border-b">
+                          <td className="py-2 px-4">{building.value}</td>
+                          <td className="py-2 px-4">{building.text}</td>
+                          <td className="py-2 px-4">
+                            <button
+                              onClick={() => handleEditBuilding(building)}
+                              className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transition mr-2"
+                            >
+                              Editar
+                            </button>
+                            <button
+                              onClick={() => handleDeleteBuilding(building)}
+                              className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                            >
+                              Eliminar
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                      {buildings.length === 0 && (
+                        <tr>
+                          <td colSpan="3" className="text-center py-4 text-gray-500">
+                            No hay edificios registrados
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -416,7 +418,7 @@ export default function Crud() {
       {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80" style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.25)', border: '2px solid #1e293b',}}>
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
             <h3 className="text-lg font-bold mb-4">¿Confirmar cambio de rol?</h3>
             <p className="mb-6">
               ¿Estás seguro de cambiar el rol de <strong>{selectedUser?.username}</strong> a{' '}
@@ -441,7 +443,7 @@ export default function Crud() {
       )}
       {showDeleteModal && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80" style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.25)', border: '2px solid #1e293b',}}>
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
             <h3 className="text-lg font-bold mb-4">¿Eliminar usuario?</h3>
             <p className="mb-6">
               ¿Estás seguro de eliminar al usuario <strong>{userToDelete?.username}</strong>? Esta acción no se puede deshacer.
@@ -465,7 +467,7 @@ export default function Crud() {
       )}
       {showDeleteModalBuilding && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80" style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.25)', border: '2px solid #1e293b',}}>
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
             <h3 className="text-lg font-bold mb-4">¿Eliminar edificio?</h3>
             <p className="mb-6">
               ¿Estás seguro de eliminar el edificio <strong>{buildingToDelete?.value}</strong>? Esta acción no se puede deshacer.
@@ -489,7 +491,7 @@ export default function Crud() {
       )}
       {showEditModalBuilding && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80" style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.25)', border: '2px solid #1e293b',}}>
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
             <h3 className="text-lg font-bold mb-4">Modificar Edificio</h3>
             <label className="block text-gray-700 font-medium mb-1" htmlFor="value">
               Nombre del Edificio:
@@ -530,8 +532,8 @@ export default function Crud() {
       )}
       {showAddModalBuilding && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80" style={{ boxShadow: '0 10px 30px rgba(0, 0, 0, 0.25)', border: '2px solid #1e293b',}}>
-            <h3 className="text-lg font-bold mb-4">Agregar Edificio</h3>
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
+            <h3 className="text-lg font-bold mb-4 custom-shadow-border">Agregar Edificio</h3>
             <input
               name="value"
               value={buildingToAdd?.value ?? ''}

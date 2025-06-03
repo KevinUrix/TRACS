@@ -21,15 +21,18 @@ body{
 
 .background-image-container::before {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0;
-  background-image:url('/public/cucei-logo.webp');
-  background-size: 50% 500px;
-  background-position: 55% center;
+  background-image: url('/public/cucei-logo.webp'); /* <- ruta corregida */
+  background-size: 40rem;              /* Tamaño fijo en píxeles */
+  background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.2; /* Cambia este valor entre 0 y 1 */
+  opacity: 0.3;
   z-index: -1;
+  pointer-events: none;
+  user-select: none;
 }
+
 
 /* Main content */
 .main-content {
@@ -680,6 +683,12 @@ select:focus {
 .save-button:active {
   transform: translateY(0);
 }
+
+.custom-shadow-border {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgb(54, 79, 119);
+}
+
 
 
 

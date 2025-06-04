@@ -1,29 +1,27 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import ProfessorSchedule from './professorSchedule';
-import './calendar.css'; // Importa el archivo de estilos CSS
+import '../interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import LoginLogoutButton from '../LoginLogoutButton';
 
 export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
   const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const userRole = localStorage.getItem("role");
+  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
-  
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const userRole = localStorage.getItem("role");
 
-  const location = useLocation();
 
-  // Verifica si hay sesión activa al montar el componente
   useEffect(() => {
-      const role = localStorage.getItem('role');
-      setIsLoggedIn(!!role);
-    }, []);
-  
+    const role = localStorage.getItem('role');
+    setIsLoggedIn(!!role);
+  }, []);
+
   const handleLogout = () => {
     localStorage.removeItem('role');
     localStorage.removeItem('token');
@@ -53,16 +51,10 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
     }
   
     try {
-      if (!selectedCycle) {
-        alert("Seleccione un ciclo para realizar una búsqueda.");
-        return;
-      }
       const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
-
       if (!response.ok) {
         if (response.status === 400) {
-          console.warn(`Error de parámetros: ${response.error}`);
-          alert('Error de parámetros. Ingrese un valor valido para la busqueda.')
+          alert('Error de parámetros. Ingrese un valor válido para la búsqueda.');
         } else {
           console.error(`Error del servidor: ${response.error}`);
         }
@@ -70,9 +62,7 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
         setShowPopup(false);
         return;
       }
-
       const data = await response.json();
-  
       if (data.length > 0) {
         setFilteredSchedule(data);
         setShowPopup(true);
@@ -89,26 +79,49 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
 
   return (
     <>
-      <nav className="navbar">
-        <Link to="/" className="navbar-brand">Quill</Link>
-        <div className='navbar-container'>
-          {(userRole === 'superuser' || userRole === 'user' || userRole  === 'tecnico') && (
-            <div className="nav-links">
+      <nav className="navbar flex items-center justify-between px-6 bg-white shadow relative">
+        {/* Logo Quill a la izquierda */}
+        <div className="flex items-center flex-shrink-0">
+          <Link to="/" className="navbar-brand">Quill</Link>
+        </div>
+
+        {/* Botón hamburguesa para pantallas pequeñas */}
+        <button
+          className="hamburger md:hidden focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg className="icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+            {menuOpen ? (
+              <path d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            )}
+          </svg>
+        </button>
+
+        {/* Contenedor central y derecho - oculto en móvil */}
+        <div className="hidden md:flex flex-1 justify-center items-center gap-8">
+          {/* Links centrados */}
+          {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
+            <div className="flex gap-6">
               <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Inicio</Link>
               {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
                 <Link to="/reportes" className="nav-link">Reportes</Link>
               )}
-              {(userRole === 'superuser') && (
+              {userRole === 'superuser' && (
                 <Link to="/crud" className="nav-link">CRUD</Link>
               )}
             </div>
           )}
+
+          {/* Buscador justo a la derecha de los links */}
         </div>
-          <div className="search-container flex items-center gap-2">
+        <div className="search-container">
             <input
               type="text"
               placeholder="Buscar maestro..."
-              className="search-input"
+              className="search-input px-3 py-2 border rounded"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
@@ -118,18 +131,74 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
               className="search-button p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-white"
               title="Buscar"
             >
-              <img
-                src="/lupa.webp"
-                alt="Buscar"
-                className="lupa-button w-8 h-8"
-              />
+              <img src="/lupa.webp" alt="Buscar" className="w-6 h-6" />
             </button>
-          </div>
+        </div>
+
+        {/* Botón login/logout a la derecha extrema (oculto en móvil) */}
+        <div className="hidden md:flex flex-shrink-0">
           <LoginLogoutButton
             isLoggedIn={isLoggedIn}
             handleLogout={handleLogout}
             handleLoginRedirect={handleLoginRedirect}
           />
+        </div>
+
+        {/* Menú hamburguesa desplegado en móvil */}
+        {menuOpen && (
+          <div className="mobile-menu">
+            {/* Links y botón logout/login */}
+            {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
+              <>
+                <div className="menu-row">
+                  <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                    Inicio
+                  </Link>
+
+                  <LoginLogoutButton
+                    isLoggedIn={isLoggedIn}
+                    handleLogout={() => { handleLogout(); setMenuOpen(false); }}
+                    handleLoginRedirect={() => { handleLoginRedirect(); setMenuOpen(false); }}
+                  />
+                </div>
+                {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
+                  <Link to="/reportes" className="nav-link" onClick={() => setMenuOpen(false)}>Reportes</Link>
+                )}
+                {userRole === 'superuser' && (
+                  <Link to="/crud" className="nav-link" onClick={() => setMenuOpen(false)}>CRUD</Link>
+                )}
+              </>
+            )}
+
+            {/* Input y botón búsqueda en menú vertical */}
+            <div className="flex gap-2 mt-2">
+              <input
+                type="text"
+                placeholder="Buscar maestro..."
+                className="search-input flex-grow px-3 py-2 border rounded"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && (handleSearch(), setMenuOpen(false))}
+              />
+              <button
+                onClick={() => { handleSearch(); setMenuOpen(false); }}
+                className="search-button p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-white"
+                title="Buscar"
+              >
+                <img src="/lupa.webp" alt="Buscar" className="w-6 h-6" />
+              </button>
+                {!isLoggedIn && (
+                  <div className="flex gap-6 pl-16">
+                    <LoginLogoutButton
+                      isLoggedIn={isLoggedIn}
+                      handleLogout={() => { handleLogout(); setMenuOpen(false); }}
+                      handleLoginRedirect={() => { handleLoginRedirect(); setMenuOpen(false); }}
+                    />
+                  </div>
+                )}
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Popup de horarios */}
@@ -137,7 +206,7 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
         <div className="popup-overlay" onClick={() => setShowPopup(false)}>
           <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
             <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
-            <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle}/>
+            <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle} />
           </div>
         </div>
       )}

@@ -893,9 +893,10 @@ select:focus {
     white-space: nowrap;
     padding: 0 1rem;
     gap: 1rem;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
     margin-bottom: 0rem;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
   }
 
   .select-container {
@@ -918,7 +919,18 @@ select:focus {
     height: 4px; /* 🔹 Más delgado que el normal (~16px) */
   }
   .selects-container-responsive::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 4px;
+    background-color: #888;
+    border-radius: 4px;
+  }
+  .span-info {
+    display: none;
+  }
 }
+
+@media (max-width: 1550px) and (orientation: landscape){
+  .selects-container-responsive {
+    margin-top: 1.5rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0rem;
+  }
 }

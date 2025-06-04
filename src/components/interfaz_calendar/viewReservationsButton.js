@@ -172,7 +172,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         >
           <b>Ver reservas 📇</b>
         </button>
-        <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10">
+        <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10 span-info">
           Ver reservas filtradas por ciclo y edificio.
         </span>
       </div>

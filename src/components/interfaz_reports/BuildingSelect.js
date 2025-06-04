@@ -31,7 +31,6 @@ export default function BuildingSelect({ selectedBuilding, onChange }) {
             </option>
             ))}
         </select>
-        <span className="ml-2">🏢</span>
     </div>
   );
 }

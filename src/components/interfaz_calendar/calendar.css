@@ -52,52 +52,59 @@ body{
 }
 
 /* Navbar */
+
 .navbar {
   width: 100%;
-  background-color: #1e3a8a; /* Azul más oscuro, más corporativo */
-  padding: 1rem;
+  background-color: #1e3a8a;
+  padding: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 10;
-  gap: 1rem; /* Espaciado entre elementos */
-  overflow: visible;        /* El contenido "explota" hacia afuera, esto sirve para menús o cosas desplegables. */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 
 .navbar-brand:hover {
   color: #8abbee; /* o el color que prefieras */
 }
 
-.navbar-container {
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #4b5563;
+}
+
+.navbar-center {
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  justify-content: center;
   align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  gap: 1rem; /* Espaciado entre elementos */
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  gap: 2rem;
 }
 
 .nav-links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 2rem;
 }
@@ -105,14 +112,11 @@ body{
 .nav-link {
   font-size: 1.2rem;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 2rem; /* Redondeado suave tipo cápsula */
   transition: background-color 0.3s ease;
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .nav-link:hover {
@@ -120,26 +124,124 @@ body{
 }
 
 .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.25);;
+  /*border-bottom: 2px solid #1e293b;*/
 }
 
-/* Barra de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
 .search-input {
   padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
   border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
   outline: none;
-  transition: all 0.3s ease;
-  width: 18rem;
-  /*margin-left: 74rem; /* Aplicar lo mismo para reports despues*/
-}
-
-.search-container{
-  margin-left: 70rem;
+  width: 15rem;
+  transition: border-color 0.2s ease;
 }
 
 .search-input:focus {
-  box-shadow: 0 0 0 0.125rem #2563eb;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+}
+
+.search-button {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: #1e3a8a;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #506d9d;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+.navbar-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 2rem;         /* equivalente a w-8 */
+  height: 2rem;        /* equivalente a h-8 */
+  color: #ffffff;      /* equivalente a text-gray-700 de Tailwind */
+}
+
+/* Menú hamburguesa móvil */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #182f6e;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  border-top: 1px solid #111827;
+  z-index: 1000;
+  align-items: flex-start; /* clave para que los hijos no se estiren */
+}
+
+.mobile-menu .nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.375rem; /* opcional para redondear */
+}
+
+
+.logout-container {
+  display: flex;
+  align-self: flex-end; /* 👈 esto empuja el botón a la derecha */
+  margin-top: 0.5rem;   /* opcional: espacio respecto al link anterior */
+}
+
+.menu-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-search-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-center {
+    display: none;
+  }
+
+  .navbar-right {
+    display: none;
+  }
 }
 
 /*------------------ Contenedor de la tabla ------------------*/
@@ -760,17 +862,63 @@ select:focus {
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* @media (max-width: 640px) {
   .select-responsive {
-    margin-left: 1.5rem; /* Solo se aplica a pantallas pequeñas */
+    margin-left: 1.5rem; 
   }
   .selects-container-responsive {
     height: 20vh;
-    max-height: 40vh;
+    max-height: 20vh;
     overflow-y: auto;
     overflow-x: auto;
     margin-top: 1.3rem;
     margin-bottom: 0rem;
   }
+} */
 
+/* Pantallas pequeñas en horizontal: una fila + scroll horizontal */
+@media (max-width: 1550px) {
+  .selects-container-responsive {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0 1rem;
+    gap: 1rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .select-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: nowrap;
+  }
+
+  .select-responsive {
+    min-width: max-content;
+    margin-left: 0;
+    flex-shrink: 0;
+  }
+
+  .selects-container-responsive > div {
+    flex-shrink: 0;
+  }
+  .selects-container-responsive::-webkit-scrollbar {
+    height: 4px; /* 🔹 Más delgado que el normal (~16px) */
+  }
+  .selects-container-responsive::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
 }

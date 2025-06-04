@@ -34,9 +34,9 @@ body{
 
 /* Navbar */
 
-.navbar-reports {
+/*.navbar-reports {
   width: 100%;
-  background-color: #1e3a8a; /* Azul más oscuro, más corporativo */
+  background-color: #1e3a8a; /* Azul más oscuro, más corporativo 
   padding: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ body{
   left: 0;
   right: 0;
   z-index: 10;
-  gap: 1rem; /* Espaciado entre elementos */
+  gap: 1rem; /* Espaciado entre elementos 
   overflow: visible;
 }
 
@@ -61,7 +61,7 @@ body{
 }
 
 .navbar-brand:hover {
-  color: #8abbee; /* o el color que prefieras */
+  color: #8abbee; /* o el color que prefieras 
 }
 
 .navbar-container-reports {
@@ -72,8 +72,8 @@ body{
   left: 0;
   right: 0;
   z-index: 10;
-  gap: 1rem; /* Espaciado entre elementos */
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  gap: 1rem; /* Espaciado entre elementos 
+  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera 
 }
 
 .nav-reports-links {
@@ -90,7 +90,7 @@ body{
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 2rem; /* Redondeado suave tipo cápsula */
+  border-radius: 2rem; /* Redondeado suave tipo cápsula 
   transition: background-color 0.3s ease;
   height: 100%;
   display: flex;
@@ -98,7 +98,7 @@ body{
 }
 
 .nav-reports-link:hover {
-  background-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido */
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido 
 }
 
 .nav-reports-link.active {

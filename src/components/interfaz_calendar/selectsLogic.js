@@ -190,7 +190,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         <select
           value={selectedDay}
           onChange={handleDayChange}
-          className="day-selects sm:w-auto select-responsive"
+          className="day-select sm:w-auto select-responsive"
         >
           {['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
             <option key={day} value={day}>{day} ☀️</option>

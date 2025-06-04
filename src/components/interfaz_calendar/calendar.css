@@ -316,7 +316,6 @@ body{
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1rem;
   flex-wrap: wrap; /* por si se reduce el tamaño de la pantalla */
 }
 
@@ -759,4 +758,19 @@ select:focus {
   {
     display: table-cell;
   }
+}
+
+@media (max-width: 800px) {
+  .select-responsive {
+    margin-left: 1.5rem; /* Solo se aplica a pantallas pequeñas */
+  }
+  .selects-container-responsive {
+    height: 20vh;
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 1.3rem;
+    margin-bottom: 0rem;
+  }
+
 }

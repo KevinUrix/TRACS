@@ -158,47 +158,44 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
-    <div className="flex space-x-6 my-5 pl-6 mt-10">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-4 my-5 sm:pl-6 mt-10 items-start space-x-6 selects-container-responsive">
       <div className="select-container">
         <select
           value={selectedCycle}
           onChange={handleCycleChange}
-          className="cycle-select"
+          className="cycle-select sm:w-auto select-responsive"
           disabled={loadingCycle}
         >
           {loadingCycle ? (
-            <option value="">Cargando ciclos...</option> // Mensaje de carga
+            <option value="">Cargando ciclos...⌛</option> // Mensaje de carga
           ) : (
             <>
-              <option value="" disabled>Selecciona un ciclo</option>
+              <option value="" disabled>Selecciona un ciclo 📅</option>
               {cycle.map((cycle) => (
                 <option key={cycle.value} value={cycle.value}>{cycle.text}</option>
               ))}
             </>
           )}
         </select>
-        <span>📅</span>
         <select
           value={selectedBuilding}
           onChange={handleBuildingChange}
-          className="building-select"
+          className="building-select sm:w-auto select-responsive"
         >
-          <option value="" disabled>Selecciona un edificio</option>
+          <option value="" disabled>Selecciona un edificio 🏢</option>
             {building.map((building, index) => (
               <option key={index} value={building.value}>{building.text}</option>
             ))}
         </select>
-        <span>🏢</span>
         <select
           value={selectedDay}
           onChange={handleDayChange}
-          className="day-select"
+          className="day-selects sm:w-auto select-responsive"
         >
           {['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'].map((day) => (
-            <option key={day} value={day}>{day}</option>
+            <option key={day} value={day}>{day} ☀️</option>
           ))}
         </select>
-          <span>📆</span>
       </div>
 
       {userRole === 'superuser' && (

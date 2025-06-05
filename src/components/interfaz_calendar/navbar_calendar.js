@@ -15,6 +15,7 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
+  const [isLoadingPopup, setIsLoadingPopup] = useState(false);
 
 
   useEffect(() => {
@@ -51,7 +52,12 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
     }
   
     try {
+      setIsLoadingPopup(true);
+      
       const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
+
+      setIsLoadingPopup(false);
+
       if (!response.ok) {
         if (response.status === 400) {
           alert('Error de parámetros. Ingrese un valor válido para la búsqueda.');
@@ -73,6 +79,7 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
     } catch (error) {
       console.error("Error al buscar el profesor:", error);
       setFilteredSchedule([]);
+      setIsLoadingPopup(false);
       setShowPopup(false);
     }
   };
@@ -202,11 +209,17 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
       </nav>
 
       {/* Popup de horarios */}
-      {showPopup && (
-        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+      {(isLoadingPopup || showPopup) && (
+        <div className="popup-overlay" onClick={() => {if (!isLoadingPopup) setShowPopup(false);}}>
           <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
-            <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
-            <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle} />
+            {isLoadingPopup ? (
+              <p className="text-lg font-semibold text-center">Espere un momento . . . ⏳</p>
+            ) : (
+              <>
+                <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
+                <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle} />
+              </>
+            )}
           </div>
         </div>
       )}

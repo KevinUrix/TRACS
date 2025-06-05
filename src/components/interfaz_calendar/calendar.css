@@ -859,10 +859,10 @@ select:focus {
     flex-shrink: 0;
   }
   .selects-container-responsive::-webkit-scrollbar {
-    height: 4px; /* 🔹 Más delgado que el normal (~16px) */
+    height: 8px; /* 🔹 Más delgado que el normal (~16px) */
   }
   .selects-container-responsive::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: rgba(136, 136, 136, 0.9); /* 0.5 es la opacidad */
     border-radius: 4px;
   }
   .span-info {

@@ -1,14 +1,17 @@
 const cache = require('../scraper/cache');
+const { scrapeData } = require('../scraper/schedules');
+const buildingsData = require('../config/buildings');
+const buildings = buildingsData.edifp;
 
 // Normalización del nombre del profesor
 const normalizeName = (name) => {
   return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, '')  // Elimina las tildes
-    .replace(/[^a-z\sñ]/g, '')        // Permite letras, espacios y ñ
-    .replace(/\s+/g, ' ')             // Reduce espacios múltiples
-    .trim();
+  .toLowerCase()
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, '')  // Elimina las tildes
+  .replace(/[^a-z\sñ]/g, '')        // Permite letras, espacios y ñ
+  .replace(/\s+/g, ' ')             // Reduce espacios múltiples
+  .trim();
 };
 
 // Verificación de coincidencias entre los nombres
@@ -17,21 +20,21 @@ const matchesName = (fullName, normalizedQuery) => {
   return normalizedQuery
     .split(' ')
     .every(q => fullName.includes(q));
-};
+  };
+  
+  // Función de búsqueda
+  const getSearch = async (req, res) => {
+    const professorName = req.query.name;
+    const cycle = req.query.cycle;
+    const building = req.query.buildingName || '';
+    const day = req.query.day || '';
+    console.log(professorName, cycle, building, day);
+    
+    if (!professorName || !cycle) {
+      return res.status(400).json({ error: 'Faltan parámetros: name y cycle son requeridos' });
+    }
 
-// Función de búsqueda
-const getSearch = async (req, res) => {
-  const professorName = req.query.name;
-  const cycle = req.query.cycle;
-  const building = req.query.buildingName || '';
-  const day = req.query.day || '';
-  console.log(professorName, cycle, building, day);
-
-  if (!professorName || !cycle) {
-    return res.status(400).json({ error: 'Faltan parámetros: name y cycle son requeridos' });
-  }
-
-  const normalizedQuery = normalizeName(professorName);
+    const normalizedQuery = normalizeName(professorName);
   if (!normalizedQuery) {
     return res.status(400).json({ error: 'Término de búsqueda inválido' });
   }
@@ -42,8 +45,18 @@ const getSearch = async (req, res) => {
     const cacheKeys = cache.keys();
     // Procesar todas las claves que corresponden al ciclo
     const cycleCacheKeyPrefix = `schedule-${cycle}-building-`;
+    // Verifica si hay match con alguna de las key
+    const matchingCacheKeys = cacheKeys.filter(key => key.startsWith(cycleCacheKeyPrefix));
 
-    for (let cacheKey of cacheKeys) {
+    if (matchingCacheKeys.length < buildings.length) {
+      console.log(`No se encontraron todos los edificios en caché, haciendo scraping para la búsqueda.`);
+      await scrapeData(cycle, building);
+      await new Promise(resolve => setTimeout(resolve, 10000));
+    }
+
+    const updatedCacheKeys = cache.keys();
+
+    for (let cacheKey of updatedCacheKeys) {
       // Procesar solo los cachés que corresponden al ciclo
       if (cacheKey.startsWith(cycleCacheKeyPrefix)) {
         const data = cache.get(cacheKey);

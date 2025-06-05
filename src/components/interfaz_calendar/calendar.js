@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
 import SelectsLogic from './selectsLogic';
 import Navbar from './navbar_calendar'; // Importa el nuevo componente
-import ReserveButton from './reserveButton';
+import ReserveButton2 from './reserveButton2';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function Calendar() {
@@ -601,7 +601,7 @@ export default function Calendar() {
                                 <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
                               </>
                             ) : (
-                              <ReserveButton
+                              <ReserveButton2
                                 selectedCycle={selectedCycle}
                                 selectedBuilding={selectedBuilding}
                                 selectedDay={selectedDay}

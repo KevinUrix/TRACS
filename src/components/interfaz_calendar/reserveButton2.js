@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './calendar.css';
 
-export default function ReserveButton({
+export default function ReserveButton2({
   selectedCycle,
   selectedBuilding,
   selectedDay,
@@ -67,6 +67,11 @@ export default function ReserveButton({
     setIsModalOpen(false);
   };
 
+  document.querySelectorAll('input, select').forEach(el => {
+    el.addEventListener('focus', () => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
   
   const handleSave = () => {
     const schedule = `${startTime.replace(':', '')}-${endTime.replace(':', '')}`;
@@ -166,34 +171,37 @@ export default function ReserveButton({
 
   return (
     <>
-    
-      <button className="reserve-button" onClick={handleOpenModal}>
-        R
-      </button>
+    <button className="reserve-button" onClick={handleOpenModal}>
+    R
+  </button>
 
-      {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <h2>Reservar Aula</h2>
-            <form className='form'>
+  {isModalOpen && (
+    <div className="modal-overlay">
+      <div className="modal">
+        <h2>Reservar Aula</h2>
+
+        <form className="form">
+          <div className="form-grid">
               <label className='font-semibold'>
                 Maestro:
                 <input
                   type="text"
                   value={professor}
                   onChange={handleInputChange(setProfessor)}
+                  className='w-78'
+                  maxLength={30}
                   required
-                  className="w-64 p-2 border border-gray-300 rounded"
                 />
               </label>
+            <div className="flex items-center gap-4">
               <label className='font-semibold'>
                 Materia:
                 <input
                   type="text"
                   value={course}
                   onChange={handleInputChange(setCourse)}
+                  maxLength={30}
                   required
-                  className="w-64 p-2 border border-gray-300 rounded"
                 />
               </label>
               <label className='font-semibold'>
@@ -202,54 +210,57 @@ export default function ReserveButton({
                   type="text"
                   value={code}
                   onChange={handleInputChange(setCode)}
+                  className='w-24'
                   required
-                  className="w-48 p-2 border border-gray-300 rounded"
                 />
               </label>
+            </div>
+            <div className="flex items-center gap-4">
               <label className='font-semibold'>
                 Edificio:
                 <input
                   type="text"
                   value={selectedBuilding}
-                  className="w-48 p-2 border border-gray-300 rounded"
+                  className='w-32'
                   disabled
                 />
               </label>
+
               <label className='font-semibold'>
                 Salón:
                 <input
                   type="text"
                   value={classroom}
-                  className="w-48 p-2 border border-gray-300 rounded"
+                  className='w-32'
                   disabled
                 />
               </label>
-              <div className='select-container'>
-                <label className='font-semibold'>
-                  Día/s:
-                  <select className='select'type="text" value={selectedDay} disabled>
-                    <option value="">Selecciona un día</option>
-                    <option value="L">Lunes</option>
-                    <option value="M">Martes</option>
-                    <option value="I">Miércoles</option>
-                    <option value="J">Jueves</option>
-                    <option value="V">Viernes</option>
-                    <option value="S">Sábado</option>
-                  </select>
-                </label>
-              </div>
+            </div>
+            <div className="flex items-center gap-4">
               <label className='font-semibold'>
-                Fecha:
-                <input
-                  type="date"
-                  value={reservationDate}
-                  onChange={handleDateChange}
-                  className="w-48 p-2 border border-gray-300 rounded"
-                  required
-                />
+                    Fecha:
+                    <input
+                    type="date"
+                    value={reservationDate}
+                    onChange={handleDateChange}
+                    className="w-48 p-2 border rounded"
+                    required
+                    />
               </label>
-              <div className="flex items-center gap-4">
-                <label className="flex items-center gap-2 font-semibold">
+              <label className='font-semibold'>
+                Día:
+                <select value={selectedDay} type="text" disabled className='w-32'>
+                  <option value="">Selecciona un día</option>
+                  <option value="L">Lunes</option>
+                  <option value="M">Martes</option>
+                  <option value="I">Miércoles</option>
+                  <option value="J">Jueves</option>
+                  <option value="V">Viernes</option>
+                </select>
+              </label>
+            </div>
+            <div className="flex items-center gap-4">
+                <label className="flex gap-1 font-semibold">
                   Hora de inicio:
                   <input
                     type="time"
@@ -259,7 +270,7 @@ export default function ReserveButton({
                   />
                 </label>
 
-                <label className="flex items-center gap-2 font-semibold">
+                <label className="flex gap-1 font-semibold">
                   Hora de cierre:
                   <input
                     type="time"
@@ -269,12 +280,12 @@ export default function ReserveButton({
                     disabled
                   />
                 </label>
-              </div>
-                <div className="flex flex-col items-start gap-2 mb-4">
-                  <span className="font-semibold">Duración de la reserva:</span>
-                  <div className="flex gap-4">
-                    <label className="inline-flex items-center gap-2">
-                      Siempre:
+            </div>
+            <div className="flex flex-col items-start gap-2 mb-4">
+                <span className="font-semibold">Duración de la reserva</span>
+                <div className="flex items-center gap-4">
+                  <label className="inline-flex items-center gap-2">
+                      Siempre
                       <input
                         type="radio"
                         name="tipoReserva"
@@ -285,9 +296,8 @@ export default function ReserveButton({
                         className="translate-y-[1px]"
                       />
                     </label>
-                    <label> | </label>
                     <label className="inline-flex items-center gap-2">
-                      Temporal:
+                      Temporal
                       <input
                         type="radio"
                         name="tipoReserva"
@@ -298,12 +308,10 @@ export default function ReserveButton({
                         className="translate-y-[1px]"
                       />
                     </label>
-                  </div>
                 </div>
-                <div className="flex flex-col items-start gap-2 mb-4">
-                  <span className="font-semibold">Crear reserva en Google Calendar:</span>
-                  <div className="flex gap-4">
-                    <label className="inline-flex items-center gap-2">
+                <span className="font-semibold">Crear reserva en Google Calendar:</span>
+                <div className="flex items-center pl-5 gap-14">
+                  <label className="inline-flex items-center gap-2">
                       Sí:
                       <input
                         type="radio"
@@ -314,8 +322,7 @@ export default function ReserveButton({
                         className="translate-y-[1px]"
                       />
                     </label>
-                    <label> | </label>
-                    <label className="inline-flex items-center gap-2">
+                  <label className="inline-flex items-center gap-2">
                       No:
                       <input
                         type="radio"
@@ -325,26 +332,26 @@ export default function ReserveButton({
                         onChange={(e) => setCreateInGoogleCalendar(e.target.value)}
                         className="translate-y-[1px]"
                       />
-                    </label>
-                  </div>
+                  </label>
+                </div>
               </div>
-              <div className="modal-buttons">
-                <button className="cancel-button" onClick={handleCloseModal}>
-                  Cancelar
-                </button>
-                <button
-                  type="button"
-                  onClick={handleSave}
-                  disabled={isFormIncomplete}
-                  className={`save-button ${isFormIncomplete ? 'disabled' : ''}`}
-                >
-                  Guardar
-                </button>
-              </div>
-            </form>
           </div>
-        </div>
-      )}
+          <div className="modal-buttons">
+            <button
+              type="button"
+              className="cancel-button"
+              onClick={handleCloseModal}
+            >
+              Cancelar
+            </button>
+            <button type="button" onClick={handleSave} disabled={isFormIncomplete} className={`save-button ${isFormIncomplete ? 'disabled' : ''}`}>
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  )}
     </>
   );
 }

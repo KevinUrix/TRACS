@@ -65,7 +65,7 @@ export default function DownloadButton({ onDownload }) {
                 disabled={isLoading}
                 className={`px-4 py-2 rounded-md ${
                   isLoading ? 'bg-red-300 cursor-not-allowed' : 'bg-red-500'
-                } text-white`}
+                } text-white  hover:bg-red-600 transition duration-200`}
               >
                 {isLoading ? 'Espera...' : 'Cerrar'}
               </button>
@@ -76,9 +76,9 @@ export default function DownloadButton({ onDownload }) {
                 disabled={isLoading}
                 className={`px-4 py-2 rounded-md ${
                   isLoading ? 'bg-blue-300 cursor-not-allowed' : 'bg-blue-500'
-                } text-white`}
+                } text-white whitespace-normal break-words hover:bg-blue-600 transition duration-200`}
               >
-                {isLoading ? 'Descargando...' : 'Descargar JSON de todos los edificios'}
+                {isLoading ? 'Descargando...' : 'Descargar JSONS'}
               </button>
             </div>
 

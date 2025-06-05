@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import EditReservationForm from './editReservationForm'; // Importamos el formulario
+import EditReservationForm2 from './editReservationForm2'; // Importamos el formulario
 import { toast } from 'react-toastify';
 
 const dayNames = {
@@ -161,8 +161,6 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
     setSelectedReservation(null);
   };
 
-
-
   return (
     <>
       <div className="relative group">
@@ -181,7 +179,9 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
             <button className="close-popup" onClick={closePopup}>✖</button>
+
             <h3>Reservas para ciclo {selectedCycle}, edificio {selectedBuilding}:</h3>
+            
             <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />
 
             {filteredReservations.length === 0 ? (
@@ -227,7 +227,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
 
       {/* Si se seleccionó una reserva, mostrar el formulario */}
       {selectedReservation && (
-        <EditReservationForm
+        <EditReservationForm2
           reservation={selectedReservation}
           onSave={handleSaveReservation}
           onCancel={closeEditForm} // ← Solo cierra el formulario

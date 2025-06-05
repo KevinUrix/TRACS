@@ -3914,19 +3914,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "204866",
-      "code": "IL364",
-      "students": 23,
-      "course": "REDES DE COMPUTADORAS"
-    },
-    "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -3963,32 +3950,6 @@
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "ARGAEZ REA, JUAN ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A007",
-      "nrc": "216556",
-      "code": "IL364",
-      "students": 24,
-      "course": "REDES DE COMPUTADORAS"
-    },
-    "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "216558",
-      "code": "IL364",
-      "students": 24,
-      "course": "REDES DE COMPUTADORAS"
-    },
-    "professor": "RIVERA AGUILAR, BEATRIZ ADRIANA"
   },
   {
     "data": {
@@ -4148,19 +4109,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDX",
-      "classroom": "A012",
-      "nrc": "125020",
-      "code": "I7286",
-      "students": 40,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE CONTROL"
-    },
-    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
-  },
-  {
-    "data": {
       "schedule": "1100-1455",
       "days": ". . . . . S",
       "building": "DEDX",
@@ -4171,58 +4119,6 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "124874",
-      "code": "I5914",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "124874",
-      "code": "I5914",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "124874",
-      "code": "I5914",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "124874",
-      "code": "I5914",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
   },
   {
     "data": {
@@ -4239,6 +4135,58 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "124874",
+      "code": "I5914",
+      "students": 35,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A014",
+      "nrc": "124874",
+      "code": "I5914",
+      "students": 35,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "124874",
+      "code": "I5914",
+      "students": 35,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A014",
+      "nrc": "124874",
+      "code": "I5914",
+      "students": 35,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDX",
@@ -4246,19 +4194,6 @@
       "nrc": "119908",
       "code": "I7039",
       "students": 20,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL I"
-    },
-    "professor": "RUZ CANUL, MARIO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "130032",
-      "code": "I7039",
-      "students": 29,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL I"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
@@ -4275,6 +4210,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A002",
+      "nrc": "130032",
+      "code": "I7039",
+      "students": 29,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL I"
+    },
+    "professor": "RUZ CANUL, MARIO ANTONIO"
   },
   {
     "data": {
@@ -4694,19 +4642,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A013",
-      "nrc": "204877",
-      "code": "IL366",
-      "students": 37,
-      "course": "SISTEMAS OPERATIVOS"
-    },
-    "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDX",
@@ -4717,6 +4652,19 @@
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A013",
+      "nrc": "204877",
+      "code": "IL366",
+      "students": 37,
+      "course": "SISTEMAS OPERATIVOS"
+    },
+    "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
   },
   {
     "data": {
@@ -4760,19 +4708,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". . I . V .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "147819",
-      "code": "I7029",
-      "students": 19,
-      "course": "SISTEMAS OPERATIVOS"
-    },
-    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDX",
       "classroom": "A023",
@@ -4782,6 +4717,19 @@
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . V .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "147819",
+      "code": "I7029",
+      "students": 19,
+      "course": "SISTEMAS OPERATIVOS"
+    },
+    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
   },
   {
     "data": {

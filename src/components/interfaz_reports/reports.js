@@ -142,9 +142,9 @@ export default function Reports() {
       <div className="main-content flex-2 flex flex-col">
         <NavbarReports/>
 
-          <div className="p-2 max-w-7xl mx-auto w-full">
+          <div className="p-2 mt-6 max-w-7xl mx-auto w-full">
               {/* Selector de edificio y botón de agregar */}
-            <div className="select-container-reports flex flex-col md:flex-row items-center justify-between gap-4 mb-1">
+            <div className="p-4 select-container-reports flex flex-col md:flex-row items-center justify-between gap-4 mb-1">
               {/* Edificio a la izquierda */}
               <BuildingSelect
                 selectedBuilding={selectedBuilding}

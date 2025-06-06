@@ -162,14 +162,21 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 </div>
 
                 <h2 className="text-xl font-bold text-blue-900 mt-4 mb-2 line-clamp-1">{title}</h2>
-                <div className="flex gap-32 mb-2">
+                <div className="flex gap-28 mb-2">
                   <p><strong>Edificio:</strong> {building}</p>
                   <p><strong>Salón:</strong> {room}</p>
                 </div>
                 <div className='mb-2'>
-                  <p><strong>Situación:</strong></p>
-                  <p className="line-clamp-3">{report}</p>
+                    <p><strong>Situación:</strong></p>
+                    <textarea
+                        type="text"
+                        className="w-full p-2 border border-gray-300 rounded resize-none"
+                        disabled
+                        value={report}
+                        rows={3}
+                    />
                 </div>
+
                 <div className="flex gap-32 mt-2 mb-2">
                    <p>
                       <strong>Prioridad:</strong>{' '}
@@ -256,6 +263,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 onChange={handleChange}
                 className='border rounded w-full px-2 py-1 mt-1'
                 maxLength={50}
+                disabled={userRole === 'user'}
               ></input>
             </label>
 

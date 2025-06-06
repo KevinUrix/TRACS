@@ -39,6 +39,10 @@ export default function Reports() {
       toast.error('Selecciona un edificio antes de guardar');
       return;
     }
+    if (!selectedRoom) {
+      toast.error('Selecciona un salón antes de guardar');
+      return;
+    }
     if (!reportText.trim()) {
       toast.error('El reporte no puede estar vacío');
       return;
@@ -48,7 +52,7 @@ export default function Reports() {
 
     const ticket = {
       building: selectedBuilding,
-      room: selectedRoom || null,
+      room: selectedRoom,
       title: title.trim(),
       category: category.trim(),
       priority,
@@ -99,8 +103,8 @@ export default function Reports() {
   };
 
   const handleBuildingChange = (e) => {
-  setSelectedBuilding(e.target.value);
-  // Puedes hacer algo adicional aquí si necesitas usar el edificio en el form o ticketList
+    setSelectedBuilding(e.target.value);
+    // Puedes hacer algo adicional aquí si necesitas usar el edificio en el form o ticketList
   };
 
   useEffect(() => {
@@ -140,7 +144,7 @@ export default function Reports() {
 
           <div className="p-2 max-w-7xl mx-auto w-full">
               {/* Selector de edificio y botón de agregar */}
-            <div className="select-container-reports flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+            <div className="select-container-reports flex flex-col md:flex-row items-center justify-between gap-4 mb-1">
               {/* Edificio a la izquierda */}
               <BuildingSelect
                 selectedBuilding={selectedBuilding}
@@ -148,32 +152,32 @@ export default function Reports() {
                 className="building-select"
               />
 
-              {/* Contenedor para los dos selects juntos a la derecha */}
-              <div className="flex gap-4">
-                <select
-                  value={categoryFilter}
-                  onChange={(e) => setCategoryFilter(e.target.value)}
-                  className="category-select"
-                >
-                  <option value="Todos">Todas las categorias</option>
-                  <option value="Mantenimiento">Mantenimiento</option>
-                  <option value="Limpieza">Limpieza</option>
-                  <option value="Técnico (Hardware)">Técnico (Hardware)</option>
-                  <option value="Técnico (Software)">Técnico (Software)</option>
-                </select>
+                {/* Contenedor para los dos selects juntos a la derecha */}
+                <div className="flex gap-4">
+                  <select
+                    value={categoryFilter}
+                    onChange={(e) => setCategoryFilter(e.target.value)}
+                    className="category-select"
+                  >
+                    <option value="Todos">Todas las categorias</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                    <option value="Limpieza">Limpieza</option>
+                    <option value="Técnico (Hardware)">Técnico (Hardware)</option>
+                    <option value="Técnico (Software)">Técnico (Software)</option>
+                  </select>
 
-                <select
-                  value={statusFilter}
-                  onChange={(e) => setStatusFilter(e.target.value)}
-                  className="status-select"
-                >
-                  <option value="Todos">Todos los estados</option>
-                  <option value="Abierto">Abierto</option>
-                  <option value="En Proceso">En proceso</option>
-                  <option value="Cerrado">Cerrado</option>
-                </select>
-              </div>
-              {selectedBuilding && (
+                  <select
+                    value={statusFilter}
+                    onChange={(e) => setStatusFilter(e.target.value)}
+                    className="status-select"
+                  >
+                    <option value="Todos">Todos los estados</option>
+                    <option value="Abierto">Abierto</option>
+                    <option value="En Proceso">En proceso</option>
+                    <option value="Cerrado">Cerrado</option>
+                  </select>
+                </div>
+                {selectedBuilding && (
                   <button
                     onClick={() => setShowForm(true)}
                     className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-3 shadow transition-transform hover:scale-105"
@@ -187,8 +191,7 @@ export default function Reports() {
               </div>
             </div>
             {/* Lista de tickets */}
-            {/* Lista de tickets */}
-           <div className="bg-white p-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border-reports"> 
+           <div className="bg-white p-2 mb-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border-reports"> 
               <TicketsList
                 building={selectedBuilding} // puede estar vacío
                 refresh={refreshTickets}
@@ -202,87 +205,62 @@ export default function Reports() {
         {/* Modal de nuevo ticket */}
         {showForm && (
           <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded shadow-md w-96">
-              <h2 className="text-lg font-semibold mb-4">Nuevo Ticket</h2>
+            <div className="bg-white p-6 rounded shadow-md w-96 custom-shadow-border-reports">
+              <h2 className="text-lg font-semibold mb-4 text-center">Nuevo Ticket</h2>
 
-              <div className="mb-4">
-                <label className="block mb-1 text-sm font-medium">Edificio</label>
-                <select 
-                  value={selectedBuilding}  
-                  className="w-full p-2 border border-gray-300 rounded bg-gray-100 text-gray-600"
-                  disabled
-                >
-                  <option>{selectedBuilding || 'Selecciona un edificio'}</option>
-                </select>
+              <div className="flex gap-4 mb-4">
+                <div>
+                  <label className="block mb-1 font-medium">Edificio</label>
+                  <select 
+                    value={selectedBuilding}  
+                    className="w-32 p-2 border border-gray-300 rounded"
+                    disabled
+                  >
+                    <option>{selectedBuilding || 'Selecciona un edificio'}</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block mb-1 font-medium">Salón</label>
+                  <select
+                    value={selectedRoom}
+                    onChange={(e) => setSelectedRoom(e.target.value)}
+                    className="w-42 p-2 border border-gray-300 rounded"
+                    required
+                  >
+                    <option value="" disabled>Selecciona un salón...</option>
+                    {classrooms.map((room, index) => (
+                      <option key={index} value={room}>
+                        {room}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               <div className="mb-4">
-                <label className="block mb-1 text-sm font-medium">Salón</label>
-                <select 
-                  value={selectedRoom} 
-                  onChange={(e) => setSelectedRoom(e.target.value)} 
-                  className="w-full p-2 border border-gray-300 rounded"
-                  required
-                >
-                  <option value="" disabled>Selecciona un salón</option>
-                  {classrooms.map((room, index) => (
-                    <option key={index} value={room}>
-                      {room}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="mb-4">
-                <label className="block mb-1 text-sm font-medium">Título</label>
+                <label className="block mb-1 font-medium">Título</label>
                 <input 
                   type="text"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   className="w-full p-2 border border-gray-300 rounded"
                   placeholder="Ej. Problema con el proyector"
+                  maxLength={50}
                 />
               </div>
 
               <div className="mb-4">
-                <label className="block mb-1 text-sm font-medium">Reporte</label>
+                <label className="block mb-1 font-medium">Reporte</label>
                 <textarea 
                   value={reportText}
                   onChange={(e) => setReportText(e.target.value)}
                   className="w-full p-2 border border-gray-300 rounded resize-none"
                   rows="3"
                   placeholder="Escribe el reporte aquí..."
+                  maxLength={500}
                 ></textarea>
               </div>
-
-              {/* <div className="mb-4">
-                <label className="block mb-1 text-sm font-medium">Categoría</label>
-                <select 
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded"
-                >
-                  <option value="" disabled>Selecciona una categoría</option>
-                  <option value="Mantenimiento">Mantenimiento</option>
-                  <option value="Limpieza">Limpieza</option>
-                  <option value="Tecnico">Técnico</option>
-                </select>
-              </div>
-
-              <div className="mb-4">
-                <label className="block mb-1 text-sm font-medium">Prioridad</label>
-                <select 
-                  value={priority}
-                  onChange={(e) => setPriority(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded"
-                >
-                  <option value="" disabled>Selecciona el nivel de prioridad</option>
-                  <option value="Baja">Baja</option>
-                  <option value="Media">Media</option>
-                  <option value="Alta">Alta</option>
-                </select>
-              </div>
-    */}
               <div className="flex justify-end space-x-2">
                 <button 
                   onClick={handleCancel} 

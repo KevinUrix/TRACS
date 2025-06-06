@@ -63,7 +63,7 @@ exports.getTicketsByBuilding = async (req, res) => {
 
 exports.updateTicket = async (req, res) => {
   const { id } = req.params;
-  const { room, report, status, category, modified_by } = req.body;
+  const { room, title, report, status, category, modified_by } = req.body;
 
   if (!report) {
     return res.status(400).json({ error: 'El campo "report" es obligatorio' });
@@ -83,14 +83,15 @@ exports.updateTicket = async (req, res) => {
     const result = await pool.query(
       `UPDATE tickets SET
         room = $1,
-        report = $2,
-        status = $3,
-        category = $4,
-        modified_by = $5,
-        status_changed_at = CASE WHEN $6 THEN $7 ELSE status_changed_at END
-      WHERE id = $8
+        title = $2,
+        report = $3,
+        status = $4,
+        category = $5,
+        modified_by = $6,
+        status_changed_at = CASE WHEN $7 THEN $8 ELSE status_changed_at END
+      WHERE id = $9
       RETURNING *`,
-      [room || null, report, status, category, modified_by, statusChanged, statusChangedAt, id]
+      [room || null,title, report, status, category, modified_by, statusChanged, statusChangedAt, id]
     );
 
     res.json(result.rows[0]);

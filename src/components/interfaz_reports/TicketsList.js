@@ -130,54 +130,60 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
       {!loading && tickets.length > 0 && (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-4">
             {paginatedTickets.map(({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by }) => (
               <div key={id} onClick={() =>
                   setSelectedTicket({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by })
                 }
-                className="bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100 custom-shadow-border-reports"
+                className="relative bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100 custom-shadow-border-reports z-2 w-98 h-88"
                 >
-
-                <p><strong>Edificio:</strong> {building}</p>
-                <p><strong>Salón:</strong> {room}</p>
-                <p><strong>Titulo:</strong> {title}</p>
-                <p className="truncate"><strong>Reporte:</strong> {report}</p>
-                <p>
-                  <strong>Categoría:</strong>{' '}
-                  <span
-                    className={
-                      category.includes('Mantenimiento') ? 'text-yellow-600' :
-                      category.includes('Limpieza') ? 'text-green-600' :
-                      category.includes('Hardware') ? 'text-blue-700' :
-                      category.includes('Software') ? 'text-indigo-700' :
-                      'text-gray-600'
-                    }
-                  >
-                    {category}
-                  </span>
-                </p>
-                <p>
-                  <strong>Estado:</strong>{' '}
-                  <span className={status === 'Abierto'? 'text-red-600': status === 'En Proceso'? 'text-yellow-600': status === 'Cerrado'? 'text-green-600': 'text-gray-600'
-                    }
-                  >
-                    {status}
-                  </span>
-                </p>
-                <p>
-                  <strong>Prioridad:</strong>{' '}
-                  <span className={priority === 'Alta'? 'text-red-600': priority === 'Media'? 'text-yellow-600': priority === 'Baja'? 'text-green-600': 'text-gray-600'
-                    }
-                  >
-                    {priority}
-                  </span>
-                </p>
-                <p><strong>Creador:</strong> {created_by}</p>
-                {modified_by && (
-                  <p>
-                    <strong>{status === 'Cerrado' ? 'Cerrado por:' : 'Modificado por:'}</strong> {modified_by}
+                {/* CATEGORÍA ESTILO ETIQUETA ROJA */}
+                <div
+                  className={`
+                    absolute -left-3 px-8 py-2 rounded-br text-white font-semibold rounded 
+                    ${category.includes('Mantenimiento') ? 'bg-yellow-600' :
+                      category.includes('Limpieza') ? 'bg-green-600' :
+                      category.includes('Hardware') ? 'bg-red-600' :
+                      category.includes('Software') ? 'bg-indigo-700' :
+                      'bg-blue-700'}
+                  `}
+                >
+                  {category}
+                </div>
+                <div className="relative flex gap-6 mt-2 ml-28 mb-2">
+                  <p className='text-right  w-full text-lg'>
+                    <strong></strong>{' '}
+                    <span className={status === 'Abierto'? 'text-red-600': status === 'En Proceso'? 'text-yellow-600': status === 'Cerrado'? 'text-green-600': 'text-gray-600'
+                      }
+                    >
+                      {status}
+                    </span>
                   </p>
-                )}
+                </div>
+
+                <h2 className="text-xl font-bold text-blue-900 mt-4 mb-2 line-clamp-1">{title}</h2>
+                <div className="flex gap-32 mb-2">
+                  <p><strong>Edificio:</strong> {building}</p>
+                  <p><strong>Salón:</strong> {room}</p>
+                </div>
+                <div className='mb-2'>
+                  <p><strong>Situación:</strong></p>
+                  <p className="line-clamp-3">{report}</p>
+                </div>
+                <div className="flex gap-32 mt-2 mb-2">
+                   <p>
+                      <strong>Prioridad:</strong>{' '}
+                      <span className={priority === 'Alta'? 'text-red-600': priority === 'Media'? 'text-yellow-600': priority === 'Baja'? 'text-green-600': 'text-gray-600'
+                        }
+                      >
+                        {priority}
+                      </span>
+                    </p>
+                    <p>
+                      <strong>{modified_by ? (status === 'Cerrado' ? 'Cerrado por:' : 'Modificado por:') : 'Creador:'}</strong>{' '}
+                      {modified_by || created_by}
+                    </p>
+                </div>
                 <p className="text-sm text-gray-500 mt-2">
                   Fecha: {new Date(created_at).toLocaleString()}
                 </p>
@@ -206,77 +212,99 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       )}
     {/* Modal para ver/editar ticket */}
       {selectedTicket && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white rounded p-6 w-full max-w-md">
-            <h3 className="text-lg font-semibold mb-4">Editar ticket</h3>
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded shadow-md w-96">
+            <h2 className="text-lg font-semibold mb-4 text-center">
+              {userRole === 'user' && 'Vista completa'}
+              {userRole === 'tecnico' && 'Editar ticket'}
+              {userRole === 'superuser' && 'Editar ticket'}
+              {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo Ticket'}
+            </h2>
 
-            <label className="block mb-2">
-              Edificio:
+            <div className="flex gap-4 mb-4">
+              <label className="block mb-1 font-medium">
+                Edificio:
+                <input
+                  type="text"
+                  name="building"
+                  value={selectedTicket.building}
+                  onChange={handleChange}
+                  className="w-32 border rounded px-2 py-1 mt-1"
+                  disabled
+                />
+              </label>
+              
+              <label className="block mb-1 font-medium">
+                Salón:
+                <input
+                  type="text"
+                  name="room"
+                  value={selectedTicket.room}
+                  onChange={handleChange}
+                  className="border rounded w-full px-2 py-1 mt-1"
+                  disabled
+                />
+              </label>
+            </div>
+
+            <label className="block mb-1 font-medium">
+              Titulo:
               <input
-                type="text"
-                name="building"
-                value={selectedTicket.building}
+                type='text'
+                name='title'
+                value={selectedTicket.title}
                 onChange={handleChange}
-                className="border rounded w-full px-2 py-1 mt-1"
-                disabled
-              />
-            </label>
-            
-            <label className="block mb-2">
-              Salón:
-              <input
-                type="text"
-                name="room"
-                value={selectedTicket.room}
-                onChange={handleChange}
-                className="border rounded w-full px-2 py-1 mt-1"
-                disabled
-              />
+                className='border rounded w-full px-2 py-1 mt-1'
+                maxLength={50}
+              ></input>
             </label>
 
-            <label className="block mb-2">
+            <label className="block mb-1 font-medium">
               Reporte:
               <textarea
                 name="report"
                 value={selectedTicket.report}
                 onChange={handleChange}
-                className="border rounded w-full px-2 py-1 mt-1"
+                className="w-full p-2 border border-gray-300 rounded resize-none"
                 rows={4}
+                maxLength={500}
                 disabled={userRole === 'user'}
               />
             </label>
 
-            <label className="block mb-2">
-              Categoría:
-              <select
-                name="category"
-                value={selectedTicket.category}
-                onChange={handleChange}
-                className="border rounded w-full px-2 py-1 mt-1"
-                disabled={userRole === 'user'}
-              >
-                <option value="" disabled>-- Selecciona una categoría --</option>
-                <option value="Mantenimiento">Mantenimiento</option>
-                <option value="Limpieza">Limpieza</option>
-                <option value="Técnico (Hardware)">Técnico (Hardware)</option>
-                <option value="Técnico (Software)">Técnico (Software)</option>
-              </select>
-            </label>
+            <div className="flex gap-4 mb-6">
+              <label className="block mb-1 font-medium">
+                Categoría:
+                <select
+                  name="category"
+                  value={selectedTicket.category}
+                  onChange={handleChange}
+                  className="border rounded w-32 px-2 py-1 mt-1"
+                  disabled={userRole === 'user'}
+                >
+                  <option value="" disabled>-- Selecciona una categoría --</option>
+                  <option value="Mantenimiento">Mantenimiento</option>
+                  <option value="Limpieza">Limpieza</option>
+                  <option value="Técnico (Hardware)">Técnico (Hardware)</option>
+                  <option value="Técnico (Software)">Técnico (Software)</option>
+                </select>
+              </label>
 
-            <label className="block mb-2">
-              Estado:
-              <select
-                name="status"
-                value={selectedTicket.status}
-                onChange={handleChange}
-                className="border rounded w-full px-2 py-1 mt-1"
-                disabled={userRole === 'user'}
-              >
-                <option value="Abierto">Abierto</option>
-                <option value="En Proceso">En Proceso</option>
-                <option value="Cerrado">Cerrado</option>
-              </select>
-            </label>
+              <label className="block mb-1 font-medium">
+                Estado:
+                <select
+                  name="status"
+                  value={selectedTicket.status}
+                  onChange={handleChange}
+                  className="border rounded w-32 px-2 py-1 mt-1"
+                  disabled={userRole === 'user'}
+                >
+                  <option value="Abierto">Abierto</option>
+                  <option value="En Proceso">En Proceso</option>
+                  <option value="Cerrado">Cerrado</option>
+                </select>
+              </label>
+            </div>
 
             <div className="flex justify-end gap-2 mt-4">
               <button

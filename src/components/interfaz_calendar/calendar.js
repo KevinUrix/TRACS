@@ -365,7 +365,7 @@ export default function Calendar() {
   return (
     <>
       <div className="calendar-container">
-        <div className="main-content background-image-container">
+        <div className="main-content">
           <Navbar selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
             <div className="bg-gray-200 rounded-lg shadow-md z-2">
@@ -380,7 +380,7 @@ export default function Calendar() {
               />
             </div>
           </div>
-          <div className="table-container">
+          <div className="table-container mt-1">
             <table className="schedule-table" id="schedule-table">
               <thead>
                 <tr className="table-header">

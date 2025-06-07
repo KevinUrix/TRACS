@@ -206,7 +206,8 @@ export default function Reports() {
         {showForm && (
           <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
             <div className="bg-white p-6 rounded shadow-md w-96 custom-shadow-border-reports">
-              <h2 className="text-lg font-semibold mb-4 text-center">Nuevo Ticket</h2>
+              <h2 className="text-lg font-semibold mb-4 text-center text-blue-900">Nuevo Ticket</h2>
+              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
               <div className="flex gap-4 mb-4">
                 <div>
@@ -261,6 +262,7 @@ export default function Reports() {
                   maxLength={500}
                 ></textarea>
               </div>
+              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
               <div className="flex justify-end space-x-2">
                 <button 
                   onClick={handleCancel} 

@@ -111,9 +111,10 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   return (
     <div className="p-4">
-      <h2 className="text-xl font-semibold mb-4 text-center">
+      <h2 className="text-2xl font-semibold mb-4 text-center">
         {building ? `Tickets para ${building}` : 'Todos los tickets'}
       </h2>
+      <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
       {!loading && tickets.length > 0 && filteredTickets.length === 0 && (
         <p>No se encontraron tickets con los filtros aplicados.</p>
@@ -137,7 +138,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 }
                 className="relative bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100 custom-shadow-border-reports z-2 w-98 h-88"
                 >
-                {/* CATEGORÍA ESTILO ETIQUETA ROJA */}
+                {/* CATEGORÍA ESTILO ETIQUETA */}
                 <div
                   className={`
                     absolute -left-3 px-8 py-2 rounded-br text-white font-semibold rounded 
@@ -151,9 +152,12 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   {category}
                 </div>
                 <div className="relative flex gap-6 mt-2 ml-28 mb-2">
-                  <p className='text-right  w-full text-lg'>
-                    <strong></strong>{' '}
-                    <span className={status === 'Abierto'? 'text-red-600': status === 'En Proceso'? 'text-yellow-600': status === 'Cerrado'? 'text-green-600': 'text-gray-600'
+                  <p className='text-right  w-full text-lg font-semibold'>
+                    <span className=
+                    {
+                        status === 'Abierto'? 'text-red-600': 
+                        status === 'En Proceso'? 'text-yellow-600': 
+                        status === 'Cerrado'? 'text-green-600': 'text-gray-600'
                       }
                     >
                       {status}
@@ -167,36 +171,46 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   <p><strong>Salón:</strong> {room}</p>
                 </div>
                 <div className='mb-2'>
-                    <p><strong>Situación:</strong></p>
+                    <p><strong>Reporte:</strong></p>
                     <textarea
                         type="text"
-                        className="w-full p-2 border border-gray-300 rounded resize-none"
-                        disabled
+                        className="w-full p-2 border border-gray-300 rounded resize-none custom-border-text-area"
                         value={report}
                         rows={3}
                     />
                 </div>
 
-                <div className="flex gap-32 mt-2 mb-2">
-                   <p>
-                      <strong>Prioridad:</strong>{' '}
-                      <span className={priority === 'Alta'? 'text-red-600': priority === 'Media'? 'text-yellow-600': priority === 'Baja'? 'text-green-600': 'text-gray-600'
-                        }
-                      >
-                        {priority}
-                      </span>
+                <div className="grid grid-cols-2 gap-4 mt-2 mb-2 sm:gap-10">
+                  <div>
+                    <p><strong>Prioridad:</strong></p>
+                    <p className={
+                      priority === 'Alta' ? 'text-red-600' :
+                      priority === 'Media' ? 'text-yellow-600' :
+                      priority === 'Baja' ? 'text-green-600' :
+                      'text-gray-600'
+                    }>
+                      {priority}
                     </p>
-                    <p>
-                      <strong>{modified_by ? (status === 'Cerrado' ? 'Cerrado por:' : 'Modificado por:') : 'Creador:'}</strong>{' '}
-                      {modified_by || created_by}
+                  </div>
+                  <div className='pl-8 sm:pl-2 md:pl-8'>
+                    <p className='sm:px-0'>
+                      <strong>
+                        {modified_by
+                          ? (status === 'Cerrado' ? 'Cerrado por:' : 'Modificado por:')
+                          : 'Creador:'}
+                      </strong>
                     </p>
+                    <p className='sm:px-0'>{modified_by || created_by}</p>
+                  </div>
                 </div>
+
                 <p className="text-sm text-gray-500 mt-2">
                   Fecha: {new Date(created_at).toLocaleString()}
                 </p>
               </div>
             ))}
           </div>
+          <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
           <div className="flex justify-center items-center gap-4 mt-6">
             <button
@@ -220,13 +234,14 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     {/* Modal para ver/editar ticket */}
       {selectedTicket && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded shadow-md w-96">
-            <h2 className="text-lg font-semibold mb-4 text-center">
+          <div className="bg-white p-6 rounded shadow-md custom-shadow-border-reports w-96">
+            <h2 className="text-2xl font-semibold mb-4 text-center text-blue-900">
               {userRole === 'user' && 'Vista completa'}
               {userRole === 'tecnico' && 'Editar ticket'}
               {userRole === 'superuser' && 'Editar ticket'}
               {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo Ticket'}
             </h2>
+            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
             <div className="flex gap-4 mb-4">
               <label className="block mb-1 font-medium">
@@ -280,7 +295,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               />
             </label>
 
-            <div className="flex gap-4 mb-6">
+            <div className="flex gap-4 mb-4">
               <label className="block mb-1 font-medium">
                 Categoría:
                 <select
@@ -313,6 +328,21 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 </select>
               </label>
             </div>
+            <label className="block mb-1 font-medium">
+                Prioridad:
+            </label>
+                <select
+                  name="priority"
+                  value={selectedTicket.priority}
+                  onChange={handleChange}
+                  className="border rounded w-32 px-2 py-1 mt-1 mb-2"
+                  disabled={userRole === 'user'}
+                >
+                  <option value="Baja">Baja</option>
+                  <option value="Media">Media</option>
+                  <option value="Alta">Alta</option>
+                </select>
+            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
             <div className="flex justify-end gap-2 mt-4">
               <button

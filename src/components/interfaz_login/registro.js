@@ -65,7 +65,7 @@ export default function Registro() {
         className="bg-blurred"
     ></div>
       <div className="relative flex justify-center items-center h-full">
-        <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10">
+        <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border-reports">
           <h2 className="text-2xl font-bold mb-4">Registrar Usuario</h2>
 
           {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}

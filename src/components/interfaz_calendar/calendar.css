@@ -6,6 +6,32 @@ body{
   overflow-x: hidden;
 }
 
+/* IMPORTANTE NO MODIFICAR, son para los formularios, son globales */
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+input,
+select {
+  padding: 0.5rem 0.75rem;
+  /*margin-top: 0.5rem;*/
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus, textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
 /* Container del calendario */
 .calendar-container {
   display: flex;
@@ -608,31 +634,6 @@ body{
   color: #1e293b;
   text-align: center;
 }
-/* IMPORTANTE NO MODIFICAR, son para los formularios, son globales */
-
-form label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  text-align: left;
-}
-
-input,
-select {
-  padding: 0.5rem 0.75rem;
-  /*margin-top: 0.5rem;*/
-  border: 1px solid #cbd5e1;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-input:focus,
-select:focus {
-  border-color: #2563eb;
-  outline: none;
-}
 /*-----------------------------*/
 
 .select-container-d {
@@ -731,7 +732,7 @@ select:focus {
 
 .custom-shadow-border {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  border: 2px solid rgb(54, 79, 119);
+  border: 3px solid rgb(54, 79, 119);
 }
 
 /*-----------------------------------------*/
@@ -810,20 +811,6 @@ select:focus {
     display: none !important;
   }
 }
-
-/* @media (max-width: 640px) {
-  .select-responsive {
-    margin-left: 1.5rem; 
-  }
-  .selects-container-responsive {
-    height: 20vh;
-    max-height: 20vh;
-    overflow-y: auto;
-    overflow-x: auto;
-    margin-top: 1.3rem;
-    margin-bottom: 0rem;
-  }
-} */
 
 /* Pantallas pequeñas en horizontal: una fila + scroll horizontal */
 @media (max-width: 1550px) {

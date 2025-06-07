@@ -63,7 +63,7 @@ exports.getTicketsByBuilding = async (req, res) => {
 
 exports.updateTicket = async (req, res) => {
   const { id } = req.params;
-  const { room, title, report, status, category, modified_by } = req.body;
+  const { room, title, report, status, category, priority, modified_by } = req.body;
 
   if (!report) {
     return res.status(400).json({ error: 'El campo "report" es obligatorio' });
@@ -87,11 +87,12 @@ exports.updateTicket = async (req, res) => {
         report = $3,
         status = $4,
         category = $5,
-        modified_by = $6,
-        status_changed_at = CASE WHEN $7 THEN $8 ELSE status_changed_at END
-      WHERE id = $9
+        priority = $6,
+        modified_by = $7,
+        status_changed_at = CASE WHEN $8 THEN $9 ELSE status_changed_at END
+      WHERE id = $10
       RETURNING *`,
-      [room || null,title, report, status, category, modified_by, statusChanged, statusChangedAt, id]
+      [room || null,title, report, status, category, priority, modified_by, statusChanged, statusChangedAt, id]
     );
 
     res.json(result.rows[0]);

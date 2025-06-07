@@ -123,7 +123,7 @@ body{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-position: right 0.75rem center;
   background-repeat: no-repeat;
-  background-size: 1rem;
+  background-size: 1.5rem;
   background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   padding-right: 2.5rem;
   cursor: pointer;
@@ -136,7 +136,7 @@ body{
   background-color: #f9f9f9;
 }
 
-.select-container select:hover {
+.select-container-reports select:hover {
   background-color: #f3f4f6;
 }
 
@@ -146,8 +146,8 @@ body{
 }
 
 .select-container-reports .status-select {
-  background-color: #fff7aa;
-  border-color: #feee56;
+  background-color: #ffdaaa;
+  border-color: #feb856;
 }
 
 .select-container-reports .category-select {
@@ -164,4 +164,12 @@ body{
 .custom-shadow-border-reports {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   border: 3px solid rgb(54, 79, 119);
+}
+
+.custom-border-text-area{
+  border: 3px solid rgb(54, 79, 119);
+}
+
+.custom-border-text-area::selection {
+    background-color: transparent;
 }

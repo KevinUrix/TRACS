@@ -295,6 +295,7 @@ export default function Crud() {
         <NavbarCrud/>
 
         <div className="pt-32 px-8 min-h-screen bg-gray-100">
+          
           <div className="bg-white p-4 rounded-lg shadow-md custom-shadow-border-reports"> {/* Cuadro blanco para encapsular todo.*/}
             <h2 className="text-2xl font-bold mb-8 text-center">Administración</h2>
             <div className="flex flex-row gap-8">
@@ -515,6 +516,7 @@ export default function Crud() {
               onChange={handleInputChange}
               placeholder="Nombre del Edificio"
               className="w-full mb-3 p-2 border rounded"
+              maxLength={10}
             />
             <label className="block text-gray-700 font-medium mb-1" htmlFor="value">
               Seudónimo libre del Edificio:
@@ -525,6 +527,7 @@ export default function Crud() {
               onChange={handleInputChange}
               placeholder="Seudónimo"
               className="w-full mb-3 p-2 border rounded"
+              maxLength={10}
             />
             <div className="flex justify-center gap-4">
               <button

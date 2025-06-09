@@ -142,9 +142,9 @@ export default function Reports() {
       <div className="main-content flex-2 flex flex-col">
         <NavbarReports/>
 
-          <div className="p-2 mt-6 max-w-7xl mx-auto w-full">
+          <div className="p-2 mt-0 sm:mt-0 md:mt-1 lg:mt-6 max-w-7xl mx-auto w-full overflow-x-auto overflow-y-hidden">
               {/* Selector de edificio y botón de agregar */}
-            <div className="p-4 select-container-reports flex flex-col md:flex-row items-center justify-between gap-4 mb-1">
+            <div className="p-4 select-container-reports flex md:flex-row items-center justify-between gap-4 mb-1 sm:flex-row">
               {/* Edificio a la izquierda */}
               <BuildingSelect
                 selectedBuilding={selectedBuilding}
@@ -153,7 +153,6 @@ export default function Reports() {
               />
 
                 {/* Contenedor para los dos selects juntos a la derecha */}
-                <div className="flex gap-4">
                   <select
                     value={categoryFilter}
                     onChange={(e) => setCategoryFilter(e.target.value)}
@@ -176,11 +175,10 @@ export default function Reports() {
                     <option value="En Proceso">En proceso 🟠</option>
                     <option value="Cerrado">Cerrado 🟢</option>
                   </select>
-                </div>
                 {selectedBuilding && (
                   <button
                     onClick={() => setShowForm(true)}
-                    className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-3 shadow transition-transform hover:scale-105"
+                    className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-2.5 shadow transition-transform hover:scale-105 whitespace-nowrap"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
@@ -204,79 +202,81 @@ export default function Reports() {
 
         {/* Modal de nuevo ticket */}
         {showForm && (
-          <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded shadow-md w-96 custom-shadow-border-reports">
-              <h2 className="text-lg font-semibold mb-4 text-center text-blue-900">Nuevo Ticket</h2>
-              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+          <div className="modal-overlay">
+            <div className="modal">
+              <form>
+                  <h2 className="text-lg font-semibold mb-4 text-center text-blue-900">Nuevo Ticket</h2>
+                <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
-              <div className="flex gap-4 mb-4">
-                <div>
-                  <label className="block mb-1 font-medium">Edificio</label>
-                  <select 
-                    value={selectedBuilding}  
-                    className="w-32 p-2 border border-gray-300 rounded"
-                    disabled
-                  >
-                    <option>{selectedBuilding || 'Selecciona un edificio'}</option>
-                  </select>
+                <div className="flex gap-4 mb-4">
+                  <div>
+                    <label className="block mb-1 font-bold">Edificio:</label>
+                    <select 
+                      value={selectedBuilding}  
+                      className="w-full mr-48 px-2 py-1 mt-1"
+                      disabled
+                    >
+                      <option>{selectedBuilding || 'Selecciona un edificio'}</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block mb-1 font-bold">Salón:</label>
+                    <select
+                      value={selectedRoom}
+                      onChange={(e) => setSelectedRoom(e.target.value)}
+                      className="w-full px-2 py-1 mt-1"
+                      required
+                    >
+                      <option value="" disabled>Selecciona un salón...</option>
+                      {classrooms.map((room, index) => (
+                        <option key={index} value={room}>
+                          {room}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
 
-                <div>
-                  <label className="block mb-1 font-medium">Salón</label>
-                  <select
-                    value={selectedRoom}
-                    onChange={(e) => setSelectedRoom(e.target.value)}
-                    className="w-42 p-2 border border-gray-300 rounded"
-                    required
-                  >
-                    <option value="" disabled>Selecciona un salón...</option>
-                    {classrooms.map((room, index) => (
-                      <option key={index} value={room}>
-                        {room}
-                      </option>
-                    ))}
-                  </select>
+                <div className="mb-4">
+                  <label className="block mb-1 font-bold">Título:</label>
+                  <input 
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    className="w-full px-2 py-1 mt-1"
+                    placeholder="Ej. Problema con el proyector"
+                    maxLength={50}
+                  />
                 </div>
-              </div>
 
-              <div className="mb-4">
-                <label className="block mb-1 font-medium">Título</label>
-                <input 
-                  type="text"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded"
-                  placeholder="Ej. Problema con el proyector"
-                  maxLength={50}
-                />
-              </div>
-
-              <div className="mb-4">
-                <label className="block mb-1 font-medium">Reporte</label>
-                <textarea 
-                  value={reportText}
-                  onChange={(e) => setReportText(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded resize-none"
-                  rows="3"
-                  placeholder="Escribe el reporte aquí..."
-                  maxLength={500}
-                ></textarea>
-              </div>
-              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
-              <div className="flex justify-end space-x-2">
-                <button 
-                  onClick={handleCancel} 
-                  className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-                >
-                  Cancelar
-                </button>
-                <button 
-                  onClick={handleSaveTicket} 
-                  className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                >
-                  Guardar Ticket
-                </button>
-              </div>
+                <div className="mb-4">
+                  <label className="block mb-1 font-bold">Reporte:</label>
+                  <textarea 
+                    value={reportText}
+                    onChange={(e) => setReportText(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded resize-none"
+                    rows={3}
+                    placeholder="Escribe el reporte aquí..."
+                    maxLength={500}
+                  ></textarea>
+                </div>
+                <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+                <div className="flex justify-end space-x-2">
+                  <button 
+                    onClick={handleCancel} 
+                    className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+                  >
+                    Cancelar
+                  </button>
+                  <button 
+                    onClick={handleSaveTicket} 
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  >
+                    Guardar Ticket
+                  </button>
+                </div>
+              </form> 
             </div>
           </div>
         )}

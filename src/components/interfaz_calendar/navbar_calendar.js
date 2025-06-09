@@ -134,12 +134,26 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
             />
             <button
               onClick={handleSearch}
-              className="search-button p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-white"
+              className="search-button ml-2 p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-black"
               title="Buscar"
             >
-              <img src="/lupa.webp" alt="Buscar" className="w-6 h-6" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
+                />
+              </svg>
             </button>
         </div>
+
         </div>
 
         {/* Botón login/logout a la derecha extrema (oculto en móvil) */}
@@ -187,13 +201,26 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && (handleSearch(), setMenuOpen(false))}
               />
-              <button
-                onClick={() => { handleSearch(); setMenuOpen(false); }}
-                className="search-button p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-white"
-                title="Buscar"
-              >
-                <img src="/lupa.webp" alt="Buscar" className="w-6 h-6" />
-              </button>
+               <button
+                  onClick={handleSearch}
+                  className="search-button ml-2 p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-black"
+                  title="Buscar"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-10 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
+                    />
+                  </svg>
+                </button>
                 {!isLoggedIn && (
                   <div className="flex gap-6 pl-16">
                     <LoginLogoutButton
@@ -211,7 +238,7 @@ export default function Navbar({selectedCycle, selectedBuilding, selectedDay}) {
       {/* Popup de horarios */}
       {(isLoadingPopup || showPopup) && (
         <div className="popup-overlay" onClick={() => {if (!isLoadingPopup) setShowPopup(false);}}>
-          <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
+          <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg" onClick={(e) => e.stopPropagation()}>
             {isLoadingPopup ? (
               <p className="text-lg font-semibold text-center">Espere un momento . . . ⏳</p>
             ) : (

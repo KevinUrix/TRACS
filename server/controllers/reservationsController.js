@@ -63,7 +63,7 @@ const saveReservation = async (req, res) => {
 
 
     // Crea evento en Google Calendar si corresponde
-    if (reservationData.createInGoogleCalendar) {
+    if (reservationData.createInGoogleCalendar === "true") {
       try {
         const oAuth2Client = await getOAuth2Client();
         const tokens = oAuth2Client.credentials;

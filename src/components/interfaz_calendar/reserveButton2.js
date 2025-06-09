@@ -189,8 +189,8 @@ export default function ReserveButton2({
                   type="text"
                   value={professor}
                   onChange={handleInputChange(setProfessor)}
-                  className='w-78'
-                  maxLength={30}
+                  className='w-full p-2 border border-gray-300'
+                  maxLength={40}
                   required
                 />
               </label>
@@ -201,7 +201,8 @@ export default function ReserveButton2({
                   type="text"
                   value={course}
                   onChange={handleInputChange(setCourse)}
-                  maxLength={30}
+                  className='w-full mr-28 border border-gray-300'
+                  maxLength={120}
                   required
                 />
               </label>
@@ -211,7 +212,8 @@ export default function ReserveButton2({
                   type="text"
                   value={code}
                   onChange={handleInputChange(setCode)}
-                  className='w-24'
+                  className='w-full border border-gray-300'
+                  maxLength={10}
                   required
                 />
               </label>
@@ -244,13 +246,13 @@ export default function ReserveButton2({
                     type="date"
                     value={reservationDate}
                     onChange={handleDateChange}
-                    className="w-48 p-2 border rounded"
+                    className="w-48 p-2 border"
                     required
                     />
               </label>
               <label className='font-semibold'>
                 Día:
-                <select value={selectedDay} type="text" disabled className='w-32'>
+                <select value={selectedDay} type="text" disabled className='w-full pt-2 pb-2'>
                   <option value="">Selecciona un día</option>
                   <option value="L">Lunes</option>
                   <option value="M">Martes</option>
@@ -261,23 +263,23 @@ export default function ReserveButton2({
               </label>
             </div>
             <div className="flex items-center gap-4">
-                <label className="flex gap-1 font-semibold">
-                  Hora de inicio:
+                <label className="flex gap-1 font-semibold text-center">
+                  Hora de inicio
                   <input
                     type="time"
                     value={startTime}
-                    className="w-32 p-2 border border-gray-300 rounded"
+                    className="w-full p-2 border border-gray-300"
                     disabled
                   />
                 </label>
 
-                <label className="flex gap-1 font-semibold">
-                  Hora de cierre:
+                <label className="flex gap-1 font-semibold text-center">
+                  Hora de cierre
                   <input
                     type="time"
                     value={endTime}
                     onChange={(e) => setEndTime(e.target.value)}
-                    className="w-32 p-2 border border-gray-300 rounded"
+                    className="w-full p-2 border border-gray-300"
                     disabled
                   />
                 </label>

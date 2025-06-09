@@ -82,7 +82,7 @@ select:focus, textarea:focus {
 .navbar {
   width: 100%;
   background-color: #1e3a8a;
-  padding: 1.2rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -735,6 +735,10 @@ select:focus, textarea:focus {
   border: 3px solid rgb(54, 79, 119);
 }
 
+.custom-shadow-crud {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
 /*-----------------------------------------*/
 
 .lupa-button{
@@ -859,7 +863,7 @@ select:focus, textarea:focus {
 
 @media (max-width: 1550px) and (orientation: landscape){
   .selects-container-responsive {
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
     padding-bottom: 0.2rem;
     margin-bottom: 0rem;
   }
@@ -873,4 +877,11 @@ select:focus, textarea:focus {
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
+
+@media (max-width: 1143px) {
+  .delete-button-buildings {
+    margin-top: 0.2rem;
+  }
+}
+
 

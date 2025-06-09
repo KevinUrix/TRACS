@@ -24,7 +24,7 @@ export default function BuildingSelect({ selectedBuilding, onChange }) {
             onChange={onChange}
             className="building-select"
         >
-            <option value="">Todos los edificios</option>
+            <option value="">Todos los edificios 🏢</option>
             {building.map((b, index) => (
             <option key={index} value={b.value}>
                 {b.text}

@@ -20,9 +20,13 @@ body{
   background-image: url('/public/centro_cucei.webp');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   filter: blur(4px) brightness(75%);
-  z-index: 1; /* Para que quede detrás del formulario */
+  z-index: 1;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
+
 
 /* Select content */
 .select-content {
@@ -172,4 +176,15 @@ body{
 
 .custom-border-text-area::selection {
     background-color: transparent;
+}
+
+.book-style {
+  clip-path: polygon(
+    0 0,         /* esquina superior izquierda */
+    90% 0,       /* casi la esquina superior derecha */
+    100% 50%,    /* pico central derecho */
+    90% 100%,    /* casi esquina inferior derecha */
+    0 100%       /* esquina inferior izquierda */
+  );
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }

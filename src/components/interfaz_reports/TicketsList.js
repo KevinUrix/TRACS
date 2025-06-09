@@ -111,7 +111,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-semibold mb-4 text-center">
+      <h2 className="text-2xl font-semibold mb-4 text-center tracking-wide">
         {building ? `Tickets para ${building}` : 'Todos los tickets'}
       </h2>
       <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
@@ -141,7 +141,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 {/* CATEGORÍA ESTILO ETIQUETA */}
                 <div
                   className={`
-                    absolute -left-3 px-8 py-2 rounded-br text-white font-semibold rounded 
+                    absolute -left-3 px-8 py-2 rounded-br text-white font-semibold rounded book-style 
                     ${category.includes('Mantenimiento') ? 'bg-yellow-600' :
                       category.includes('Limpieza') ? 'bg-green-600' :
                       category.includes('Hardware') ? 'bg-red-600' :
@@ -180,7 +180,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mt-2 mb-2 sm:gap-10">
+                <div className="grid grid-cols-2 gap-4 mt-2 mb-2 sm:gap-10 lg:gap-10 md:gap-10">
                   <div>
                     <p><strong>Prioridad:</strong></p>
                     <p className={

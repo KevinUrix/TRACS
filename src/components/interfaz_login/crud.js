@@ -297,21 +297,22 @@ export default function Crud() {
         <div className="pt-32 px-8 min-h-screen bg-gray-100">
           
           <div className="bg-white p-4 rounded-lg shadow-md custom-shadow-border-reports"> {/* Cuadro blanco para encapsular todo.*/}
-            <h2 className="text-2xl font-bold mb-8 text-center">Administración</h2>
-            <div className="flex flex-row gap-8">
+            <h2 className="text-3xl font-bold mb-8 tracking-wide text-center">Administración</h2>
+            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }}  />
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-8">
               {/* Tabla de Usuarios */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-4 text-center">Usuarios</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center text-blue-800">USUARIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
                     onClick={() => navigate('/registro')}
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                    className="bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 transition"
                   >
                     Registrar nuevo usuario
                   </button>
                 </div>
                 <div className={`max-h-96 min-h-96 ${users.length < 7 ? 'overflow-y-hidden' : 'overflow-y-auto'} rounded-lg shadow`}>
-                  <table className="min-w-full bg-white">
+                  <table className="min-w-full bg-white border border-gray-200">
                     <thead className="sticky top-0 bg-gray-200 z-1">
                       <tr className="bg-gray-200 text-gray-700">
                         <th className="py-2 px-4 text-left">Usuario</th>
@@ -319,9 +320,9 @@ export default function Crud() {
                         <th className="py-2 px-4 text-left">Acciones</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='divide-y divide-gray-200'>
                       {users.map((user) => (
-                        <tr key={user.id} className="border-b">
+                        <tr key={user.id} className="border-b hover:bg-gray-50">
                           <td className="py-2 px-4">{user.username}</td>
                           <td className="py-2 px-4">
                             <select
@@ -331,19 +332,19 @@ export default function Crud() {
                                   : user.role
                               }
                               onChange={(e) => handleSelectChange(user, e.target.value)}
-                              className="border border-gray-300 rounded px-2 py-1"
+                              className="px-3 py-1.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-indigo-500 text-sm text-gray-800 bg-white"
                             >
-                              <option value="user">User</option>
-                              <option value="superuser">Super_user</option>
+                              <option value="user">Usuario</option>
+                              <option value="superuser">Super usuario</option>
                               <option value="tecnico">Técnico</option>
                             </select>
                           </td>
-                          <td className="py-2 px-4">
+                          <td className="py-2.5 px-4">
                             <button
                               onClick={() => handleDeleteUser(user)}
-                              className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                              className="bg-red-500 text-white px-3 py-1.5 rounded hover:bg-red-600 transition w-28"
                             >
-                              Eliminar
+                              🗑️ Eliminar
                             </button>
                           </td>
                         </tr>
@@ -358,9 +359,9 @@ export default function Crud() {
                       {users.length < 7 &&
                         Array.from({ length: 7 - users.length }).map((_, index) => (
                           <tr key={`empty-${index}`} className="border-b invisible select-none pointer-events-none">
-                            <td className="py-2 px-4 invisible">&nbsp;</td>
-                            <td className="py-2 px-4 invisible">&nbsp;</td>
-                            <td className="py-2 px-4 invisible"><button
+                            <td className="py-2 px-4">&nbsp;</td>
+                            <td className="py-2 px-4">&nbsp;</td>
+                            <td className="py-2 px-4"><button
                               className="px-3 py-1 rounded"
                             >
                               &nbsp;
@@ -375,41 +376,41 @@ export default function Crud() {
 
               {/* Tabla de Edificios */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-4 text-center">Edificios</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center text-blue-800">EDIFICIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                    className="w-[170px] bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 transition"
                     onClick={handleAddBuilding}
                   >
                     Agregar nuevo edificio
                   </button>
                 </div>
                 <div className="max-h-96 min-h-96 overflow-y-auto rounded-lg shadow">
-                  <table className="min-w-full bg-white">
+                  <table className="min-w-full bg-white border border-gray-200">
                     <thead className="sticky top-0 bg-gray-200 z-1">
                       <tr className="text-gray-700">
-                        <th className="py-2 px-4 text-left">Edificio</th>
+                        <th className="py-2 px-4 text-left">Edificios</th>
                         <th className="py-2 px-4 text-left">Seudónimo</th>
                         <th className="py-2 px-4 text-left">Acciones</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className=''>
                       {buildings.map((building, index) => (
-                        <tr key={index} className="border-b">
+                        <tr key={index} className="border-b hover:bg-gray-50">
                           <td className="py-2 px-4">{building.value}</td>
                           <td className="py-2 px-4">{building.text}</td>
-                          <td className="py-2 px-4">
+                          <td className="py-2.5 px-4">
                             <button
                               onClick={() => handleEditBuilding(building)}
-                              className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transition mr-2"
+                              className="bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700 transition mr-2 edit-button-buildings w-28"
                             >
-                              Editar
+                              ✏️ Editar
                             </button>
                             <button
                               onClick={() => handleDeleteBuilding(building)}
-                              className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                              className="bg-red-500 text-white px-3 py-1.5 rounded hover:bg-red-600 transition delete-button-buildings w-28"
                             >
-                              Eliminar
+                              🗑️ Eliminar
                             </button>
                           </td>
                         </tr>
@@ -447,7 +448,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={handleConfirmChange}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               >
                 Sí
               </button>
@@ -538,7 +539,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={handleSaveEditBuilding}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               >
                 Guardar
               </button>
@@ -549,7 +550,7 @@ export default function Crud() {
       {showAddModalBuilding && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
-            <h3 className="text-lg font-bold mb-4 custom-shadow-border">Agregar Edificio</h3>
+            <h3 className="text-lg font-bold mb-4 text-center">Agregar Edificio</h3>
             <input
               name="value"
               value={buildingToAdd?.value ?? ''}
@@ -574,7 +575,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={handleSaveBuilding}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               >
                 Guardar
               </button>

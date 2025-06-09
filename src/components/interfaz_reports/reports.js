@@ -159,11 +159,11 @@ export default function Reports() {
                     onChange={(e) => setCategoryFilter(e.target.value)}
                     className="category-select"
                   >
-                    <option value="Todos">Todas las categorias</option>
-                    <option value="Mantenimiento">Mantenimiento</option>
-                    <option value="Limpieza">Limpieza</option>
-                    <option value="Técnico (Hardware)">Técnico (Hardware)</option>
-                    <option value="Técnico (Software)">Técnico (Software)</option>
+                    <option value="Todos">Todas las categorias 🌐</option>
+                    <option value="Mantenimiento">Mantenimiento 🛠️</option>
+                    <option value="Limpieza">Limpieza 🧹</option>
+                    <option value="Técnico (Hardware)">Técnico (Hardware) 🖥️</option>
+                    <option value="Técnico (Software)">Técnico (Software) 🧑‍💻</option>
                   </select>
 
                   <select
@@ -171,10 +171,10 @@ export default function Reports() {
                     onChange={(e) => setStatusFilter(e.target.value)}
                     className="status-select"
                   >
-                    <option value="Todos">Todos los estados</option>
-                    <option value="Abierto">Abierto</option>
-                    <option value="En Proceso">En proceso</option>
-                    <option value="Cerrado">Cerrado</option>
+                    <option value="Todos">Todos los estados 🔃</option>
+                    <option value="Abierto">Abierto 🔴</option>
+                    <option value="En Proceso">En proceso 🟠</option>
+                    <option value="Cerrado">Cerrado 🟢</option>
                   </select>
                 </div>
                 {selectedBuilding && (

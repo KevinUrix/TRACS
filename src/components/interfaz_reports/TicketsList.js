@@ -7,7 +7,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
   const [currentPage, setCurrentPage] = useState(1);
 
-  const ticketsPerPage = 6;
+  const ticketsPerPage = 9;
 
   const filteredTickets = tickets.filter(ticket => {
   const matchesStatus =
@@ -131,7 +131,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
       {!loading && tickets.length > 0 && (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
             {paginatedTickets.map(({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by }) => (
               <div key={id} onClick={() =>
                   setSelectedTicket({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by })
@@ -192,7 +192,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                       {priority}
                     </p>
                   </div>
-                  <div className='pl-8 sm:pl-2 md:pl-8'>
+                  <div className='pl-8 sm:pl-2 md:pl-3'>
                     <p className='sm:px-0'>
                       <strong>
                         {modified_by
@@ -233,147 +233,151 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       )}
     {/* Modal para ver/editar ticket */}
       {selectedTicket && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded shadow-md custom-shadow-border-reports w-96">
-            <h2 className="text-2xl font-semibold mb-4 text-center text-blue-900">
-              {userRole === 'user' && 'Vista completa'}
-              {userRole === 'tecnico' && 'Editar ticket'}
-              {userRole === 'superuser' && 'Editar ticket'}
-              {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo Ticket'}
-            </h2>
-            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+        <div className="modal-overlay">
+          <div className="modal">
+            <form>
+                <h2>
+                {userRole === 'user' && 'Vista completa'}
+                {userRole === 'tecnico' && 'Editar ticket'}
+                {userRole === 'superuser' && 'Editar ticket'}
+                {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo Ticket'}
+              </h2>
+              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
-            <div className="flex gap-4 mb-4">
-              <label className="block mb-1 font-medium">
-                Edificio:
+              <div className="flex gap-4 mb-4">
+                <label className="block mb-1 font-medium font-bold">
+                  Edificio:
+                  <input
+                    type="text"
+                    name="building"
+                    value={selectedTicket.building}
+                    onChange={handleChange}
+                    className="w-full px-2 py-1 mt-1"
+                    disabled
+                  />
+                </label>
+                
+                <label className="block mb-1 font-medium font-bold">
+                  Salón:
+                  <input
+                    type="text"
+                    name="room"
+                    value={selectedTicket.room}
+                    onChange={handleChange}
+                    className="w-full px-2 py-1 mt-1"
+                    disabled
+                  />
+                </label>
+              </div>
+
+              <label className="block mb-1 font-medium font-bold">
+                Titulo:
                 <input
-                  type="text"
-                  name="building"
-                  value={selectedTicket.building}
+                  type='text'
+                  name='title'
+                  value={selectedTicket.title}
                   onChange={handleChange}
-                  className="w-32 border rounded px-2 py-1 mt-1"
-                  disabled
+                  className='w-full px-2 py-1 mt-1'
+                  maxLength={50}
+                  disabled={userRole === 'user'}
+                ></input>
+              </label>
+
+              <label className="block mb-1 font-medium font-bold">
+                Reporte:
+                <textarea
+                  name="report"
+                  value={selectedTicket.report}
+                  onChange={handleChange}
+                  className="w-full p-2 border border-gray-300 rounded resize-none"
+                  rows={4}
+                  maxLength={500}
+                  disabled={userRole === 'user'}
+                  readOnly
                 />
               </label>
-              
-              <label className="block mb-1 font-medium">
-                Salón:
-                <input
-                  type="text"
-                  name="room"
-                  value={selectedTicket.room}
-                  onChange={handleChange}
-                  className="border rounded w-full px-2 py-1 mt-1"
-                  disabled
-                />
+
+              <div className="flex gap-4 mb-4">
+                <label className="block mb-1 font-medium font-bold">
+                  Categoría:
+                  <select
+                    name="category"
+                    value={selectedTicket.category}
+                    onChange={handleChange}
+                    className="w-full px-2 py-1 mt-1"
+                    disabled={userRole === 'user'}
+                  >
+                    <option value="" disabled>-- Selecciona una categoría --</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                    <option value="Limpieza">Limpieza</option>
+                    <option value="Técnico (Hardware)">Técnico (Hardware)</option>
+                    <option value="Técnico (Software)">Técnico (Software)</option>
+                  </select>
+                </label>
+
+                <label className="block mb-1 font-medium font-bold">
+                  Estado:
+                  <select
+                    name="status"
+                    value={selectedTicket.status}
+                    onChange={handleChange}
+                    className="w-full px-2 py-1 mt-1"
+                    disabled={userRole === 'user'}
+                  >
+                    <option value="Abierto">Abierto</option>
+                    <option value="En Proceso">En Proceso</option>
+                    <option value="Cerrado">Cerrado</option>
+                  </select>
+                </label>
+              </div>
+              <label className="block mb-1 font-medium font-bold">
+                  Prioridad:
               </label>
-            </div>
+                  <select
+                    name="priority"
+                    value={selectedTicket.priority}
+                    onChange={handleChange}
+                    className="border rounded w-32 px-2 py-1 mt-1 mb-2"
+                    disabled={userRole === 'user'}
+                  >
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                  </select>
+              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
-            <label className="block mb-1 font-medium">
-              Titulo:
-              <input
-                type='text'
-                name='title'
-                value={selectedTicket.title}
-                onChange={handleChange}
-                className='border rounded w-full px-2 py-1 mt-1'
-                maxLength={50}
-                disabled={userRole === 'user'}
-              ></input>
-            </label>
-
-            <label className="block mb-1 font-medium">
-              Reporte:
-              <textarea
-                name="report"
-                value={selectedTicket.report}
-                onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded resize-none"
-                rows={4}
-                maxLength={500}
-                disabled={userRole === 'user'}
-              />
-            </label>
-
-            <div className="flex gap-4 mb-4">
-              <label className="block mb-1 font-medium">
-                Categoría:
-                <select
-                  name="category"
-                  value={selectedTicket.category}
-                  onChange={handleChange}
-                  className="border rounded w-32 px-2 py-1 mt-1"
+              <div className="flex justify-end gap-2 mt-4">
+                <button
+                  onClick={() => setSelectedTicket(null)}
+                  className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleDelete}
+                  className={`px-4 py-2 rounded text-white ${
+                    userRole === 'user'
+                      ? 'bg-red-300 cursor-not-allowed'
+                      : 'bg-red-500 hover:bg-red-600'
+                  }`}
                   disabled={userRole === 'user'}
                 >
-                  <option value="" disabled>-- Selecciona una categoría --</option>
-                  <option value="Mantenimiento">Mantenimiento</option>
-                  <option value="Limpieza">Limpieza</option>
-                  <option value="Técnico (Hardware)">Técnico (Hardware)</option>
-                  <option value="Técnico (Software)">Técnico (Software)</option>
-                </select>
-              </label>
-
-              <label className="block mb-1 font-medium">
-                Estado:
-                <select
-                  name="status"
-                  value={selectedTicket.status}
-                  onChange={handleChange}
-                  className="border rounded w-32 px-2 py-1 mt-1"
+                  Borrar
+                </button>
+                <button
+                  onClick={handleSave}
+                  className={`px-4 py-2 rounded text-white ${
+                    userRole === 'user'
+                      ? 'bg-blue-300 cursor-not-allowed'
+                      : 'bg-blue-600 hover:bg-blue-700'
+                  }`}
                   disabled={userRole === 'user'}
                 >
-                  <option value="Abierto">Abierto</option>
-                  <option value="En Proceso">En Proceso</option>
-                  <option value="Cerrado">Cerrado</option>
-                </select>
-              </label>
-            </div>
-            <label className="block mb-1 font-medium">
-                Prioridad:
-            </label>
-                <select
-                  name="priority"
-                  value={selectedTicket.priority}
-                  onChange={handleChange}
-                  className="border rounded w-32 px-2 py-1 mt-1 mb-2"
-                  disabled={userRole === 'user'}
-                >
-                  <option value="Baja">Baja</option>
-                  <option value="Media">Media</option>
-                  <option value="Alta">Alta</option>
-                </select>
-            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
-
-            <div className="flex justify-end gap-2 mt-4">
-              <button
-                onClick={() => setSelectedTicket(null)}
-                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={handleDelete}
-                className={`px-4 py-2 rounded text-white ${
-                  userRole === 'user'
-                    ? 'bg-red-300 cursor-not-allowed'
-                    : 'bg-red-500 hover:bg-red-600'
-                }`}
-                disabled={userRole === 'user'}
-              >
-                Borrar
-              </button>
-              <button
-                onClick={handleSave}
-                className={`px-4 py-2 rounded text-white ${
-                  userRole === 'user'
-                    ? 'bg-blue-300 cursor-not-allowed'
-                    : 'bg-blue-600 hover:bg-blue-700'
-                }`}
-                disabled={userRole === 'user'}
-              >
-                Guardar
-              </button>
-            </div>
+                  Guardar
+                </button>
+              </div>
+            </form>
+            
           </div>
         </div>
       )}

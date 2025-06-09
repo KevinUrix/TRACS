@@ -56,7 +56,7 @@ export default function DownloadButton({ onDownload }) {
             <h2 className="font-semibold">Instrucciones de Uso</h2>
             <ul className="list-disc list-inside">
               <li>Selecciona un ciclo.</li>
-              <li>Presiona el botón color azul.</li>
+              <li>Presiona "Descargar JSONS".</li>
             </ul>
             <div className="modal-buttons-download flex gap-4 mt-4">
               {/* Botón Cancelar */}

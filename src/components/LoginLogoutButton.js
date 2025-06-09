@@ -21,7 +21,7 @@ const LoginLogoutButton = ({ isLoggedIn, handleLogout, handleLoginRedirect }) =>
       title={isLoggedIn ? 'Cerrar sesión' : 'Iniciar sesión'}
     >
       <img
-        src={isLoggedIn ? '/cerrar-sesion.webp' : '/iniciar-sesion.webp'}
+        src={isLoggedIn ? '/cerrar-sesion.svg' : '/iniciar-sesion.svg'}
         alt={isLoggedIn ? 'Cerrar sesión' : 'Iniciar sesión'}
         className="w-10 h-10"
       />

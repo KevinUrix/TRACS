@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /* calendar.css */
 body{
   font-family: 'Inter', sans-serif;
@@ -515,12 +517,11 @@ select:focus, textarea:focus {
   background: #ffffff;
   padding: 2rem 2.5rem;
   border-radius: 1rem;
-  max-width: 55rem; /* Equivale a 880 px, antes era 900px.*/
+  max-width: 45rem;
   width: 95%;
   max-height: 85vh;
   overflow-y: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  /*font-family: 'Georgia', 'Times New Roman', serif;*/
   border: 2px solid #1e293b;
 }
 
@@ -624,6 +625,8 @@ select:focus, textarea:focus {
   border: 2px solid #1e293b;
   width: 95%;
   max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
   /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
@@ -777,7 +780,7 @@ select:focus, textarea:focus {
 
 /*------------------------------------------------------*/
 
-/* Animaciones 
+/* Animaciones */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -787,6 +790,10 @@ select:focus, textarea:focus {
   }
 }
 
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
 @keyframes modalSlideIn {
   from {
     transform: translateY(-50px);
@@ -794,7 +801,7 @@ select:focus, textarea:focus {
   to {
     transform: translateY(0);
   }
-}*/
+}
 
 @media print {
   th[class^="print-col-"],
@@ -867,15 +874,6 @@ select:focus, textarea:focus {
     padding-bottom: 0.2rem;
     margin-bottom: 0rem;
   }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.3s ease-out;
 }
 
 @media (max-width: 1143px) {

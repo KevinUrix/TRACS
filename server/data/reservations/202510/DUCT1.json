@@ -5,9 +5,9 @@
       "days": "L",
       "building": "DUCT1",
       "classroom": "LC06",
-      "code": "d",
-      "course": "d",
-      "date": "2025-06-02",
+      "code": "I5502",
+      "course": "Seminario de Solución de Problemas de Inteligencia Artificial II",
+      "date": "2025-06-09",
       "duration": "Temporal",
       "professor": "Jose",
       "createInGoogleCalendar": "false"
@@ -34,6 +34,43 @@
       "date": "2025-06-02",
       "duration": "Temporal",
       "professor": "Sanchez Rosario Patricia",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1300-1355",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "asdfadsfad",
+      "course": "sdfasdfasdf afd asdfasdf asdf",
+      "date": "2025-06-09",
+      "duration": "Temporal",
+      "professor": "lajsfdñlkajsdñlfkjañlskdfj",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1700-1755",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "d",
+      "course": "d",
+      "date": "2025-06-09",
+      "duration": "Temporal",
+      "professor": "M",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "hnosdquh083fkug2qf7ivh40do"
+    },
+    {
+      "schedule": "1800-1855",
+      "days": "L",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "fd",
+      "course": "fd",
+      "date": "2025-06-09",
+      "duration": "Temporal",
+      "professor": "d",
       "createInGoogleCalendar": "false"
     }
   ]

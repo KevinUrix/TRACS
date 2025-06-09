@@ -136,8 +136,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             type="text"
                             value={professor}
                             onChange={handleInputChange(setProfessor)}
-                            className='w-78'
-                            maxLength={30}
+                            className='w-full'
+                            maxLength={40}
                             required
                         />
                     </label>
@@ -148,7 +148,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             type="text"
                             value={course}
                             onChange={handleInputChange(setCourse)}
-                            maxLength={30}
+                            className='w-full mr-28 border border-gray-300 rounded'
+                            maxLength={120}
                             required
                             />
                         </label>
@@ -158,7 +159,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             type="text"
                             value={code}
                             onChange={handleInputChange(setCode)}
-                            className='w-24'
+                            className='w-full'
+                            maxLength={10}
                             required
                             />
                         </label>
@@ -197,7 +199,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                         </label>
                         <label className='font-semibold'>
                             Día:
-                            <select value={days} onChange={(e) => setDays(e.target.value)} disabled className='w-32'>
+                            <select value={days} onChange={(e) => setDays(e.target.value)} disabled className='w-full pt-2 pb-2'>
                             <option value="">Selecciona un día</option>
                             <option value="L">Lunes</option>
                             <option value="M">Martes</option>
@@ -214,7 +216,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             type="text"
                             value={formattedStart}
                             disabled
-                            className="w-32 p-2 border border-gray-300 rounded"
+                            className="w-full p-2 border border-gray-300"
                             />
                         </label>
 
@@ -224,7 +226,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             type="text"
                             value={formattedEnd}
                             disabled
-                            className="w-32 p-2 border border-gray-300 rounded"
+                            className="w-full p-2 border border-gray-300"
                             />
                         </label>
                     </div>

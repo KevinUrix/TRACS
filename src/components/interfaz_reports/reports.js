@@ -178,8 +178,8 @@ export default function Reports() {
                 {selectedBuilding && (
                   <button
                     onClick={() => setShowForm(true)}
-                    className="flex-shrink-0 whitespace-nowrap flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2 shadow transition-transform hover:scale-105"
-                  >
+                    className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-2.5 shadow transition-transform hover:scale-105 whitespace-nowrap"
+                  >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
                     </svg>
@@ -210,7 +210,7 @@ export default function Reports() {
 
                 <div className="flex gap-4 mb-4">
                   <div>
-                    <label className="block mb-1 font-medium font-bold">Edificio:</label>
+                    <label className="block mb-1 font-bold">Edificio:</label>
                     <select 
                       value={selectedBuilding}  
                       className="w-full mr-48 px-2 py-1 mt-1"
@@ -221,7 +221,7 @@ export default function Reports() {
                   </div>
 
                   <div>
-                    <label className="block mb-1 font-medium font-bold">Salón:</label>
+                    <label className="block mb-1 font-bold">Salón:</label>
                     <select
                       value={selectedRoom}
                       onChange={(e) => setSelectedRoom(e.target.value)}
@@ -239,7 +239,7 @@ export default function Reports() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="block mb-1 font-medium font-bold">Título:</label>
+                  <label className="block mb-1 font-bold">Título:</label>
                   <input 
                     type="text"
                     value={title}
@@ -251,7 +251,7 @@ export default function Reports() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="block mb-1 font-medium font-bold">Reporte:</label>
+                  <label className="block mb-1 font-bold">Reporte:</label>
                   <textarea 
                     value={reportText}
                     onChange={(e) => setReportText(e.target.value)}

@@ -72,6 +72,84 @@
       "duration": "Temporal",
       "professor": "d",
       "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0800-0855",
+      "days": "M",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "TOKENS",
+      "course": "TOKENS",
+      "date": "2025-06-10",
+      "duration": "Temporal",
+      "professor": "TOKENS",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "ucqo65tqiltj04n3s658uogbv4"
+    },
+    {
+      "schedule": "0700-0755",
+      "days": "M",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "TOKEN 2",
+      "course": "TOKEN 2",
+      "date": "2025-06-10",
+      "duration": "Temporal",
+      "professor": "TOKEN 2",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "4h1l2sash5dar9dh40kh9hc95o"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "M",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "code": "EDGAR",
+      "course": "EDGAR",
+      "date": "2025-06-10",
+      "duration": "Temporal",
+      "professor": "EDGAR",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "g5ukufvhbdmqjhisapr5a1uj0s"
+    },
+    {
+      "schedule": "1200-1255",
+      "days": "M",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "code": "PRUEBA2",
+      "course": "PRUEBA2",
+      "date": "2025-06-10",
+      "duration": "Temporal",
+      "professor": "PRUEBA4",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "jcav7fjpv8ef0cuhrpmns2fp2g"
+    },
+    {
+      "schedule": "1300-1355",
+      "days": "M",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "code": "LUCY",
+      "course": "LUCY",
+      "date": "2025-06-10",
+      "duration": "Temporal",
+      "professor": "LUCY",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "ir0h2hvinueee80q51ljm55l2k"
+    },
+    {
+      "schedule": "1300-1355",
+      "days": "M",
+      "building": "DUCT1",
+      "classroom": "LC05",
+      "code": "PRUEBA2",
+      "course": "PRUEBA2",
+      "date": "2025-06-10",
+      "duration": "Temporal",
+      "professor": "PRUEBA22",
+      "createInGoogleCalendar": "true",
+      "googleEventId": "5t2bql2ajdjf7vii5f1mrotnb4"
     }
   ]
 }

@@ -77,7 +77,7 @@ export default function Login() {
   };
 
 return (
-  <div className="relative h-screen w-screen">
+  <div className="relative h-screen w-screen bg-black">
     {/* Fondo con imagen difuminada */}
     <div
       className="bg-blurred"

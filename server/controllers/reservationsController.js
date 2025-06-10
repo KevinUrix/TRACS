@@ -15,7 +15,7 @@ const mapBuildingName = (name) => {
 // GUARDAR RESERVAS
 //
 const saveReservation = async (req, res) => {
-  const { cycle, buildingName } = req.query;
+  const { cycle, buildingName, user } = req.query;
   const mappedBuildingName = mapBuildingName(buildingName);
   const reservationData = req.body;
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
@@ -65,7 +65,7 @@ const saveReservation = async (req, res) => {
     // Crea evento en Google Calendar si corresponde
     if (reservationData.createInGoogleCalendar === "true") {
       try {
-        const oAuth2Client = await getOAuth2Client();
+        const oAuth2Client = await getOAuth2Client(user);
         const tokens = oAuth2Client.credentials;
 
         if (!tokens || !tokens.access_token) {
@@ -104,7 +104,7 @@ const saveReservation = async (req, res) => {
 // BORRAR RESERVAS
 //
 const deleteReservation = async (req, res) => {
-  const { cycle, buildingName, professor, schedule, date } = req.query;
+  const { cycle, buildingName, professor, schedule, date, user } = req.query;
   const mappedBuildingName = mapBuildingName(buildingName);
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
@@ -127,7 +127,7 @@ const deleteReservation = async (req, res) => {
     // Si hay eventos para borrar en Google Calendar
     if (toDelete.length > 0) {
       try {
-        const oAuth2Client = await getOAuth2Client();
+        const oAuth2Client = await getOAuth2Client(user);
         const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
 
         // Obtener lista de calendarios
@@ -187,7 +187,7 @@ const deleteReservation = async (req, res) => {
 // EDITAR RESERVAS
 //
 const updateReservation = async (req, res) => {
-  const { cycle, buildingName, originalProfessor, originalSchedule, originalDate, originalGoogleEventId } = req.query;
+  const { cycle, buildingName, originalProfessor, originalSchedule, originalDate, originalGoogleEventId, user } = req.query;
   const mappedBuildingName = mapBuildingName(buildingName);
 
   const updatedData = req.body;
@@ -240,7 +240,7 @@ const updateReservation = async (req, res) => {
     // Actualiza evento en Google Calendar si se existe el ID del evento
     if (originalGoogleEventId) {
       try {
-        const oAuth2Client = await getOAuth2Client();
+        const oAuth2Client = await getOAuth2Client(user);
         const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
 
         const [startRaw, endRaw] = updatedData.schedule.split('-');

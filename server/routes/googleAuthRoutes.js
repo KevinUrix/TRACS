@@ -5,7 +5,10 @@ const { generateAuthUrl, handleGoogleCallback, getSavedTokens, reauth } = requir
 
 // Ruta para generar la URL de autorización de Google
 router.get('/auth', (req, res) => {
-  const authUrl = generateAuthUrl();
+  const { user } = req.query;
+  if (!user) return res.status(400).send('Falta parámetro "user"');
+
+  const authUrl = generateAuthUrl(user);
   res.redirect(authUrl);
 });
 
@@ -14,7 +17,10 @@ router.get('/oauth2callback', handleGoogleCallback);
 
 // Ruta para verificar si el usuario está autenticado (tokens guardados)
 router.get('/status', async (req, res) => {
-  const tokens = await getSavedTokens();
+  const { user } = req.query;
+  if (!user) return res.status(400).json({ authenticated: false, error: 'Usuario no especificado' });
+
+  const tokens = await getSavedTokens(user);
   if (tokens && tokens.access_token) {
     res.json({ authenticated: true });
   } else {

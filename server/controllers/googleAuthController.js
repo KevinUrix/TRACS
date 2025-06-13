@@ -13,13 +13,14 @@ const oauth2Client = new OAuth2Client(
 //
 // Generación de URL para autenticación
 //
-const generateAuthUrl = () => {
+const generateAuthUrl = (user) => {
   const authUrl = oauth2Client.generateAuthUrl({
     access_type: 'offline',
     prompt: 'consent',
     scope: process.env.GOOGLE_CALENDAR_SCOPES?.split(',') || [
       'https://www.googleapis.com/auth/calendar',
     ],
+    state: user,
   });
   return authUrl;
 };
@@ -29,7 +30,8 @@ const generateAuthUrl = () => {
 // Callback
 //
 const handleGoogleCallback = async (req, res) => {
-  const { code } = req.query;
+  const { code, state } = req.query;
+  const user = state;
 
   if (!code) {
     return res.status(400).send('Código de autorización no proporcionado');
@@ -39,7 +41,7 @@ const handleGoogleCallback = async (req, res) => {
     const { tokens } = await oauth2Client.getToken(code);
     oauth2Client.setCredentials(tokens);
 
-    const oldTokens = await getSavedTokens();
+    const oldTokens = await getSavedTokens(user);
 
     if (!tokens.refresh_token && oldTokens?.refresh_token) {
       tokens.refresh_token = oldTokens.refresh_token;
@@ -52,7 +54,7 @@ const handleGoogleCallback = async (req, res) => {
       throw new Error('Tokens recibidos están vacíos');
     }
 
-    const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
+    const tokensFilePath = path.join(__dirname, `../data/tokens/${user}Tokens.json`);
     await fs.promises.writeFile(tokensFilePath, JSON.stringify(tokens, null, 2));
 
     console.log('>> Tokens guardados exitosamente');
@@ -69,8 +71,8 @@ const handleGoogleCallback = async (req, res) => {
 //
 // Obtener Tokens
 //
-const getSavedTokens = async () => {
-  const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
+const getSavedTokens = async (user) => {
+  const tokensFilePath = path.join(__dirname, `../data/tokens/${user}Tokens.json`);
 
   try {
     if (!fs.existsSync(tokensFilePath)) {
@@ -96,11 +98,12 @@ const getSavedTokens = async () => {
 // Reautentica al usuario en caso de tokens malos
 //
 const reauth = (req, res) => {
-  const tokensFilePath = path.join(__dirname, '../data/googleTokens.json');
+  const { user } = req.query;
+  const tokensFilePath = path.join(__dirname, `../data/tokens/${user}Tokens.json`);
   if (fs.existsSync(tokensFilePath)) {
     fs.unlinkSync(tokensFilePath);
   }
-  const authUrl = generateAuthUrl();
+  const authUrl = generateAuthUrl(user);
   res.redirect(authUrl);
 };
 

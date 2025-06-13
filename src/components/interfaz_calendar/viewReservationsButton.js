@@ -30,6 +30,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   const [filteredReservations, setFilteredReservations] = useState([]);
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
   const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
+  const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
   
   useEffect(() => {
     if (Array.isArray(reservations)) {
@@ -69,18 +70,19 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         originalDate: selectedReservation.date,
         originalDuration: selectedReservation.duration,
         originalcreateInGoogleCalendar: selectedReservation.createInGoogleCalendar,
+        user: user,
       });
       
       if (selectedReservation.googleEventId)
         params.append('originalGoogleEventId', selectedReservation.googleEventId);
       
       if (selectedReservation.googleEventId) {
-        const authStatusRes = await fetch('/api/google/status');
+        const authStatusRes = await fetch(`/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
           console.log('>> Usuario no autenticado para modificar evento, redirigiendo...');
-          window.location.href = 'http://localhost:3001/api/google/auth';
+          window.location.href = `http://localhost:3001/api/google/auth?user=${user}`;
           return;
         }
       }
@@ -112,6 +114,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
       professor: reservation.professor,
       schedule: reservation.schedule,
       date: reservation.date,
+      user: user,
     });
 
     const confirmDelete = window.confirm(`¿Estás seguro de eliminar la reserva de ${reservation.professor}?`);
@@ -120,12 +123,12 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
     try {
 
       if (reservation.googleEventId) {
-        const authStatusRes = await fetch('/api/google/status');
+        const authStatusRes = await fetch(`/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
           console.log('>> Usuario no autenticado para borrar evento, redirigiendo...');
-          window.location.href = 'http://localhost:3001/api/google/auth';
+          window.location.href = `http://localhost:3001/api/google/auth?user=${user}`;
           return;
         }
       }

@@ -22,7 +22,7 @@ export default function Calendar() {
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
-  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
+  const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
 
   /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
   useEffect(() => {
@@ -121,7 +121,7 @@ export default function Calendar() {
       if (String(reservationData.createInGoogleCalendar) === 'true') {
         console.log('>> Se decidió CREAR evento en Google Calendar');
   
-        const authStatusRes = await fetch('/api/google/status');
+        const authStatusRes = await fetch(`/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
@@ -135,7 +135,7 @@ export default function Calendar() {
             selectedDay,
           }));
           setTimeout(() => {
-            window.location.href = 'http://localhost:3001/api/google/auth';
+            window.location.href = `http://localhost:3001/api/google/auth?user=${user}`;
           }, 1300);
           return;
         }
@@ -144,7 +144,7 @@ export default function Calendar() {
       }
   
       // Envío de reserva
-      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`, {
+      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}&user=${user}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reservationData),
@@ -166,7 +166,7 @@ export default function Calendar() {
             selectedDay,
           }));
           setTimeout(() => {
-            window.location.href = 'http://localhost:3001/api/google/reauth';
+            window.location.href = `http://localhost:3001/api/google/reauth?user=${user}`;
           }, 1300);
         } 
         else {

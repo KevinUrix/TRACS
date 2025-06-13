@@ -3,19 +3,27 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
 
-const getOAuth2Client = async () => {
+const getOAuth2Client = async (user) => {
+  if (!user) throw new Error('Usuario no especificado');
+
   const oAuth2Client = new OAuth2Client(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
     process.env.GOOGLE_REDIRECT_URI
   );
 
-  const tokensPath = path.join(__dirname, '../data/googleTokens.json');
+  const tokensPath = path.join(__dirname, `../data/tokens/${user}Tokens.json`);
   const dirPath = path.dirname(tokensPath);
 
   // Asegura que la carpeta exista
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
+  }
+
+  // Si no existe el archivo, lo crea vacío
+  if (!fs.existsSync(tokensPath)) {
+    fs.writeFileSync(tokensPath, '{}');
+    console.warn(`Archivo de tokens creado vacío para el usuario: ${user}`);
   }
 
   try {

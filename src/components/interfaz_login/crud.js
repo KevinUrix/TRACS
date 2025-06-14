@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from '../sidebar';
-import NavbarCrud from './navbar_crud';
+//import NavbarCrud from './navbar_crud';
+import NavbarGlobal from '../NavbarGlobal';
 import { toast } from 'react-toastify';
 
 export default function Crud() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [users, setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
@@ -21,7 +20,6 @@ export default function Crud() {
   const [originalBuilding, setOriginalBuilding] = useState(null);
   const [buildingToAdd, setBuildingToAdd] = useState(null);
 
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
   const navigate = useNavigate();
   const username = localStorage.getItem("username"); // Para obtener el usuario.
 
@@ -292,7 +290,7 @@ export default function Crud() {
     <div className="bg-gray-100 flex">
 
       <div className="flex flex-col w-full">
-        <NavbarCrud/>
+        <NavbarGlobal/>
 
         <div className="pt-32 px-8 min-h-screen bg-gray-100">
           

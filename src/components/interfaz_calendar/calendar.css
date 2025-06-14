@@ -777,6 +777,17 @@ select:focus, textarea:focus {
   z-index: 9999;
 }
 
+.config-button:hover {
+  transform: scale(1.2);
+}
+
+.config-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
 
 /*------------------------------------------------------*/
 

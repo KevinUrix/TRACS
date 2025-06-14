@@ -3,7 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
 import SelectsLogic from './selectsLogic';
-import Navbar from './navbar_calendar'; // Importa el nuevo componente
+//import Navbar from './navbar_calendar'; // Importa el nuevo componente
+import NavbarGlobal from '../NavbarGlobal';
 import ReserveButton2 from './reserveButton2';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
@@ -366,7 +367,7 @@ export default function Calendar() {
     <>
       <div className="calendar-container">
         <div className="main-content">
-          <Navbar selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
+          <NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
           <div className="select-content">
             <div className="bg-gray-200 rounded-lg shadow-md z-2">
               <SelectsLogic

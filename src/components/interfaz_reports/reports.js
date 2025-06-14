@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import Navbar from './navbar_reports'; // Importa el nuevo componente
 import BuildingSelect from './BuildingSelect';
 import './reports.css'; // Importa el archivo de estilos CSS
 
 import TicketsList from './TicketsList';
-import NavbarReports from './navbar_reports';
+//import NavbarReports from './navbar_reports';
+
+import NavbarGlobal from '../NavbarGlobal';
 
 export default function Reports() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
   const [selectedBuilding, setSelectedBuilding] = useState('');
 
@@ -22,8 +22,8 @@ export default function Reports() {
   const [category, setCategory] = useState('');
   
   const [refreshTickets, setRefreshTickets] = useState(false);
-  const [refresh, setRefresh] = useState(false);
-  const toggleRefresh = () => setRefresh(prev => !prev);
+  //const [refresh, setRefresh] = useState(false);
+  //const toggleRefresh = () => setRefresh(prev => !prev);
 
   const [classrooms, setClassrooms] = useState([]);
 
@@ -140,7 +140,7 @@ export default function Reports() {
     <div className="bg-gray-100 flex min-h-screen">
 
       <div className="main-content flex-2 flex flex-col">
-        <NavbarReports/>
+        <NavbarGlobal/>
 
           <div className="p-2 mt-0 sm:mt-0 md:mt-1 lg:mt-6 max-w-7xl mx-auto w-full overflow-x-auto overflow-y-hidden">
               {/* Selector de edificio y botón de agregar */}

@@ -7,6 +7,7 @@ import Reports from './components/interfaz_reports/reports';    // Importamos Re
 import Login from './components/interfaz_login/login';
 import Registro from './components/interfaz_login/registro';
 import Crud from './components/interfaz_login/crud';
+import AccountConfig from './components/AccountConfig';
 
 export default function App() {
 
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/reportes" element={<Reports />} />
             <Route path='/crud' element={<Crud />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/configuracion" element={<AccountConfig />} />
 
           </Routes>
         </div>

@@ -85,3 +85,95 @@ exports.deleteUser = async (req, res) => {
     res.status(500).json({ error: 'Error al eliminar usuario' });
   }
 };
+
+// Obtener datos del usuario actual
+exports.getUserInfo = async (req, res) => {
+  try {
+    const userId = req.user.id;
+
+    const result = await pool.query(
+      'SELECT username, role FROM users WHERE id = $1',
+      [userId]
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'Usuario no encontrado' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error('Error al obtener usuario:', err);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+};
+
+// Cambiar nombre de usuario
+exports.updateUsername = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const { newUsername } = req.body;
+
+    const exists = await pool.query(
+      'SELECT id FROM users WHERE username = $1 AND id <> $2',
+      [newUsername, userId]
+    );
+
+    if (exists.rows.length > 0) {
+      return res.status(409).json({ message: 'Nombre de usuario ya está en uso' });
+    }
+
+    await pool.query(
+      'UPDATE users SET username = $1 WHERE id = $2',
+      [newUsername, userId]
+    );
+
+    res.json({ message: 'Nombre de usuario actualizado correctamente' });
+  } catch (err) {
+    console.error('Error al actualizar nombre de usuario:', err);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+};
+
+// Cambiar contraseña
+exports.updatePassword = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const { currentPassword, newPassword, confirmPassword } = req.body;
+
+    if (newPassword !== confirmPassword) {
+      return res.status(400).json({ message: 'Las nuevas contraseñas no coinciden' });
+    }
+
+    const result = await pool.query(
+      'SELECT password FROM users WHERE id = $1',
+      [userId]
+    );
+
+    const user = result.rows[0];
+
+    // Verifica que la contraseña actual sea correcta
+    const isMatch = await bcrypt.compare(currentPassword, user.password);
+    if (!isMatch) {
+      return res.status(401).json({ message: 'Contraseña actual incorrecta' });
+    }
+
+    // Verifica que la nueva contraseña no sea la misma que la actual
+    const isSame = await bcrypt.compare(newPassword, user.password);
+    if (isSame) {
+      return res.status(400).json({ message: 'La nueva contraseña no puede ser igual a la actual' });
+    }
+
+    const hashed = await bcrypt.hash(newPassword, 10);
+
+    await pool.query(
+      'UPDATE users SET password = $1 WHERE id = $2',
+      [hashed, userId]
+    );
+
+    res.json({ message: 'Contraseña actualizada correctamente' });
+  } catch (err) {
+    console.error('Error al actualizar contraseña:', err);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+};
+

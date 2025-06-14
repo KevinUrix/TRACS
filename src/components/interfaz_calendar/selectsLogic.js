@@ -7,6 +7,7 @@ import PrintButton from './printButton';
 import StatisticButton from './statisticButton';
 import { handlePrint } from './utils';
 import { toast } from 'react-toastify';
+import SearchProfessor from './SearchProfessor';
 
 import './calendar.css'; // Importa el archivo de estilos CSS
 
@@ -158,7 +159,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
-    <div className="flex flex-col sm:flex-row flex-wrap gap-4 my-5 sm:pl-6 mt-8 items-start space-x-6 selects-container-responsive">
+    <div className="flex flex-col sm:flex-row flex-wrap -gap-1 my-5 sm:pl-6 mt-8 items-start space-x-6 selects-container-responsive">
       <div className="select-container">
         <select
           value={selectedCycle}
@@ -229,9 +230,14 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         />
       </div>
 
-      <div className="-ml-6">
-        {/* Componente InstructionsButton */}
-        <InstructionsButton />
+      <div className='-ml-2'>
+        <SearchProfessor
+          selectedCycle={selectedCycle}
+          selectedBuilding={selectedBuilding}
+          selectedDay={selectedDay}
+        
+        />
+
       </div>
     </div>
   );

@@ -170,6 +170,7 @@ select:focus, textarea:focus {
   outline: none;
   width: 15rem;
   transition: border-color 0.2s ease;
+  margin-top: -0.1rem;
 }
 
 .search-input:focus {
@@ -480,6 +481,7 @@ select:focus, textarea:focus {
 .select-container .cycle-select {
   background-color: #a9d4fc;
   border-color: #64b6fa;
+
 }
 
 .select-container .building-select {

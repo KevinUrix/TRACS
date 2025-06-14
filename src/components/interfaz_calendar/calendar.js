@@ -367,7 +367,7 @@ export default function Calendar() {
     <>
       <div className="calendar-container">
         <div className="main-content">
-          <NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>
+          {/*<NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>*/}
           <div className="select-content">
             <div className="bg-gray-200 rounded-lg shadow-md z-2">
               <SelectsLogic

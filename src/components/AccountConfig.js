@@ -97,7 +97,7 @@ export default function AccountConfig() {
   return (
     <div className="bg-gray-100 flex min-h-screen">
         <div className="main-content flex-2 flex flex-col">
-            <NavbarGlobal/>
+            {/*<NavbarGlobal/>*/}
             <div className="max-w-xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Configuración de Cuenta</h2>
 

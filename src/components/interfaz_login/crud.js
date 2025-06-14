@@ -290,7 +290,7 @@ export default function Crud() {
     <div className="bg-gray-100 flex">
 
       <div className="flex flex-col w-full">
-        <NavbarGlobal/>
+        {/*<NavbarGlobal/>*/}
 
         <div className="pt-32 px-8 min-h-screen bg-gray-100">
           

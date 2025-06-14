@@ -95,19 +95,30 @@ export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedD
         </div>
 
         {/* Botón hamburguesa para pantallas pequeñas */}
-        <button
-          className="hamburger md:hidden focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <svg className="icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-            {menuOpen ? (
-              <path d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path d="M3 12h18M3 6h18M3 18h18" />
-            )}
-          </svg>
-        </button>
+        {isLoggedIn ? (
+          <button
+            className="hamburger md:hidden focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg className="icon" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+              {menuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M3 12h18M3 6h18M3 18h18" />
+              )}
+            </svg>
+          </button>
+        ) : (
+          // Mostrar botón de login directamente si no está logueado
+          <div className="md:hidden">
+            <LoginLogoutButton
+              isLoggedIn={false}
+              handleLogout={handleLogout}
+              handleLoginRedirect={handleLoginRedirect}
+            />
+          </div>
+        )}
 
         {/* Contenedor central y derecho - oculto en móvil */}
         <div className="mr-28 hidden md:flex flex-1 justify-center items-center gap-8">
@@ -123,41 +134,6 @@ export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedD
               )}
             </div>
           )}
-
-          {/* Buscador justo a la derecha de los links */}
-        {!['/reportes', '/crud', '/configuracion', 'login', 'registro',].includes(location.pathname) && (
-          <div className="search-container">
-            <input
-              type="text"
-              placeholder="Buscar maestro..."
-              className="search-input px-3 border rounded"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-            />
-            <button
-              onClick={handleSearch}
-              className="search-button ml-2 p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-black"
-              title="Buscar"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-10 h-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
-                />
-              </svg>
-            </button>
-          </div>
-        )}
-
         </div>
 
         {/* Botón login/logout a la derecha extrema (oculto en móvil) */}
@@ -197,41 +173,6 @@ export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedD
                 )}
               </>
             )}
-
-            {/* Input y botón búsqueda en menú vertical */}
-            {!['/reportes', '/crud', '/configuracion', 'login', 'registro'].includes(location.pathname) && (
-              <div className="flex gap-2 mt-2">
-                <input
-                  type="text"
-                  placeholder="Buscar maestro..."
-                  className="search-input flex-grow px-3 border rounded"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && (handleSearch(), setMenuOpen(false))}
-                />
-                <button
-                  onClick={handleSearch}
-                  className="search-button ml-2 p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-black"
-                  title="Buscar"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            )}
-
             {!isLoggedIn && (
                   <div className="flex gap-6 pl-16">
                     <LoginLogoutButton
@@ -244,22 +185,6 @@ export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedD
           </div>
         )}
       </nav>
-
-      {/* Popup de horarios */}
-      {(isLoadingPopup || showPopup) && (
-        <div className="popup-overlay" onClick={() => {if (!isLoadingPopup) setShowPopup(false);}}>
-          <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg" onClick={(e) => e.stopPropagation()}>
-            {isLoadingPopup ? (
-              <p className="text-lg font-semibold text-center">Espere un momento . . . ⏳</p>
-            ) : (
-              <>
-                <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
-                <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle} />
-              </>
-            )}
-          </div>
-        </div>
-      )}
     </>
   );
 }

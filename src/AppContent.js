@@ -1,4 +1,4 @@
-{/*// AppContent.jsx
+// AppContent.jsx
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,23 +17,14 @@ export default function AppContent() {
   const hideNavbarRoutes = ['/login', '/registro'];
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
-  const [message, setMessage] = useState('');
-  const [setBuildingNav, setSelectedBuildingNav] = useState('');
-  const [setCycleNav, setSelectedCycleNav] = useState('');
-  const [setDayNav, setSelectedDayNav] = useState('Lunes');
-
-
   return (
     <>
       <div className="bg-gray-100 flex">
-        {!shouldHideNavbar && <NavbarGlobal message={message}/>}
+        {!shouldHideNavbar && <NavbarGlobal/>}
 
         <div className="flex flex-col w-full">
           <Routes>
-            <Route path='/' element={<Calendar setCycleNav={setSelectedCycleNav}
-                setBuildingNav={setSelectedBuildingNav}
-                setDayNav={setSelectedDayNav}
-             />} />
+            <Route path='/' element={<Calendar />} />
             <Route path='/registro' element={<Registro />} />
             <Route path="/reportes" element={<Reports />} />
             <Route path='/crud' element={<Crud />} />
@@ -56,4 +47,4 @@ export default function AppContent() {
       />
     </>
   );
-}*/}
+}

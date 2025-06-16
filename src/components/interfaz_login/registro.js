@@ -27,6 +27,15 @@ export default function Registro() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
+    // Validar contraseña mínima
+    if (password.length < 5) {
+      toast.error('La contraseña debe tener al menos 5 caracteres.', {
+        autoClose: 1500,
+        closeOnClick: true,
+      });
+      return;
+    }
+
     if (password !== confirmPassword) {
       setError('Las contraseñas no coinciden');
       return;
@@ -111,19 +120,10 @@ export default function Registro() {
               type="password"
               value={password}
               maxLength={50}
-              minLength={5}
               onChange={(e) => {
                 const val = e.target.value;
-                // Solo letras, números y algunos símbolos comunes para contraseñas
                 const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
                 setPassword(filtered);
-
-                if (filtered.length < 5) {
-                  toast.error('La contraseña debe tener al menos 5 caracteres.', {
-                    autoClose: 1000,
-                    closeOnClick: true,
-                  });
-                }
               }}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Contraseña"

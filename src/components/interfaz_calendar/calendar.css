@@ -71,6 +71,29 @@ select:focus, textarea:focus {
   overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
 }
 
+.main-content2 {
+  display: grid;
+  grid-template-columns: 1fr;            /* Por defecto en móvil */
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 8rem;                      /* Espacio para el navbar */
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .main-content2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content2 {
+    grid-template-columns: 2fr 1fr 1fr;   /* Dos columnas para izquierda, una para derecha */
+  }
+}
+
+
 /* Select content */
 .select-content {
   display: flex;

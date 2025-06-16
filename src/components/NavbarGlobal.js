@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
-import ProfessorSchedule from '../components/interfaz_calendar/professorSchedule';
 import '../components/interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
 import { toast } from 'react-toastify';
 import LoginLogoutButton from './LoginLogoutButton';
@@ -12,12 +11,6 @@ export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedD
   const userRole = localStorage.getItem("role");
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredSchedule, setFilteredSchedule] = useState([]);
-  const [showPopup, setShowPopup] = useState(false);
-  const [isLoadingPopup, setIsLoadingPopup] = useState(false);
-
 
   useEffect(() => {
     const role = localStorage.getItem('role');
@@ -39,50 +32,6 @@ export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedD
       selectedDay,
     }));
     navigate('/login');
-  };
-
-  const handleSearch = async () => {
-    if (!selectedBuilding || !selectedCycle) {
-      toast.error('Debes seleccionar un ciclo y un edificio para realizar la búsqueda.');
-      return;
-    }
-    if (!searchTerm.trim()) {
-      setFilteredSchedule([]);
-      setShowPopup(false);
-      return;
-    }
-  
-    try {
-      setIsLoadingPopup(true);
-      
-      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
-
-      setIsLoadingPopup(false);
-
-      if (!response.ok) {
-        if (response.status === 400) {
-          alert('Error de parámetros. Ingrese un valor válido para la búsqueda.');
-        } else {
-          console.error(`Error del servidor: ${response.error}`);
-        }
-        setFilteredSchedule([]);
-        setShowPopup(false);
-        return;
-      }
-      const data = await response.json();
-      if (data.length > 0) {
-        setFilteredSchedule(data);
-        setShowPopup(true);
-      } else {
-        setFilteredSchedule([]);
-        setShowPopup(true);
-      }
-    } catch (error) {
-      console.error("Error al buscar el profesor:", error);
-      setFilteredSchedule([]);
-      setIsLoadingPopup(false);
-      setShowPopup(false);
-    }
   };
 
   return (

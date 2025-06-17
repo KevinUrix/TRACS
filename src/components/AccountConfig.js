@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
+
 import axios from 'axios';
 import '../components/interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
 
@@ -19,20 +20,13 @@ export default function AccountConfig() {
     const [showPasswords, setShowPasswords] = useState(false);
 
     const navigate = useNavigate();
-
-   useEffect(() => {
-       const userRole = localStorage.getItem('role');
-   
-       if (userRole !== 'superuser' && userRole !== 'user' && userRole !== 'tecnico') {
-         navigate('/');
-       }
-     }, [navigate]);
     
-    useEffect(() => {
-      document.title = "Quill - Configuración";
-    }, []);
 
-    // Obtener datos del usuario al cargar el componente
+  useEffect(() => {
+    document.title = "Quill - Configuración";
+  }, []);
+
+  // Obtener datos del usuario al cargar el componente
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
@@ -44,7 +38,6 @@ export default function AccountConfig() {
       } catch (err) {
         console.error(err);
         console.log(localStorage.getItem('token'));
-
       }
     };
 
@@ -129,29 +122,29 @@ export default function AccountConfig() {
       {/* Columna izquierda: Configuración de cuenta */}
       <div className="ml-5 mr-5 mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl text-blue-900 text-center font-bold mb-4">Configuración de Cuenta</h2>
-        <hr className="my-4 border-t-2 border-blue-900" />
-        <p className="mb-4">Configura algunos datos de tu cuenta.</p>
+        <hr className="my-4 border-t-2 border-blue-900 mb-7" />
+        <p className="mb-4 text-center text-xl">Configura algunos datos de tu cuenta.</p>
 
         {/* Mostrar rol y usuario actual */}
-        <div className="mb-6">
+        <div className="mb-7 text-xl text-center">
           <p><strong>Nombre:</strong> {userInfo.username}</p>
           <p><strong>Rol:</strong> {userInfo.role}</p>
         </div>
 
         {/* Cambiar nombre de usuario */}
-        <form onSubmit={handleUsernameChange} className="mb-6">
-          <div className='mb-2'>
-            <h3 className="font-semibold mb-2">Cambiar nombre de usuario</h3>
+        <form onSubmit={handleUsernameChange} className="mb-6 justify-items-center">
+          <div className="mb-4 w-full max-w-sm">
+            <h3 className="font-semibold mb-2 text-xl text-center">Cambiar nombre de usuario</h3>
             <input
               type="text"
-              className="w-86 p-2 border rounded"
+              className="p-3 border rounded w-full text-lg"
               value={newUsername}
               onChange={(e) => {
                 const val = e.target.value;
                 const lastChar = val.slice(-1);
                 if (lastChar.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
                   toast.error('Usuario sólo admite letras minúsculas.', {
-                    autoClose: 2000,
+                    autoClose: 1000,
                     closeOnClick: true,
                   });
                 }
@@ -169,7 +162,7 @@ export default function AccountConfig() {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded w-full text-lg"
           >
             Guardar nuevo nombre
           </button>
@@ -178,17 +171,17 @@ export default function AccountConfig() {
           )}
         </form>
 
-        <hr className="my-4 border-t-2 border-gray-300" />
+        <hr className="my-4 border-t-2 border-gray-300 mb-7" />
 
         {/* Cambiar contraseña */}
-        <form onSubmit={handlePasswordChange}>
-          <h3 className="font-semibold mb-2">Cambiar contraseña</h3>
+        <form onSubmit={handlePasswordChange}   className="flex flex-col items-center w-full max-w-md mx-auto">
+          <h3 className="font-semibold mb-2 text-xl">Cambiar contraseña</h3>
 
-          <div className="mb-2">
+          <div className="mb-4 flex items-center w-full max-w-sm">
             <input
               type={showPasswords ? 'text' : 'password'}
               placeholder="Contraseña actual"
-              className="w-68 p-2 border rounded"
+              className="w-68 p-3 border rounded w-full text-lg"
               value={currentPassword}
               onChange={(e) => setCurrentPassword(e.target.value)}
               required
@@ -212,11 +205,11 @@ export default function AccountConfig() {
             </button>
           </div>
 
-          <div className="mb-2">
+          <div className="mb-4 w-full max-w-sm">
             <input
               type={showPasswords ? 'text' : 'password'}
               placeholder="Nueva contraseña"
-              className="w-68 p-2 border rounded"
+              className="w-full p-3 border rounded text-lg"
               value={newPassword}
               onChange={(e) => {
                 const val = e.target.value;
@@ -228,11 +221,11 @@ export default function AccountConfig() {
             />
           </div>
 
-          <div className="mb-2 flex items-center gap-2">
+          <div className="mb-4 w-full max-w-sm">
             <input
               type={showPasswords ? 'text' : 'password'}
               placeholder="Confirmar nueva contraseña"
-              className="w-68 p-2 border rounded"
+              className="w-full p-3 border rounded text-lg"
               value={confirmPassword}
               onChange={(e) => {
                 const val = e.target.value;
@@ -246,7 +239,7 @@ export default function AccountConfig() {
 
           <button
             type="submit"
-            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+            className="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded text-lg"
           >
             Cambiar contraseña
           </button>

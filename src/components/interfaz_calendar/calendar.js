@@ -221,12 +221,13 @@ export default function Calendar() {
     if (!selectedCycle || !selectedBuilding) return;
   
     const cacheKey = `schedule_${selectedCycle}_${selectedBuilding}`;
-  
+    
     const loadLocalSchedule = async () => {
       try {
         const localResponse = await fetch(`/api/local-schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
+        alert("PRUEBA")
         if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
-  
+        
         const localData = await localResponse.json();
   
         if (Array.isArray(localData)) {
@@ -258,6 +259,7 @@ export default function Calendar() {
           }
         } catch (error) {
           console.error("Error al parsear datos del caché:", error);
+          setSchedule([]);
         }
       }
   

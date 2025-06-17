@@ -12,6 +12,7 @@ function authMiddleware(req, res, next) {
     req.user = decoded;
     next();
   } catch (err) {
+    console.error('Error al verificar token:', err.message);
     res.status(403).json({ message: 'Token inválido' });
   }
 }

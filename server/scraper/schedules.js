@@ -114,7 +114,7 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
             activeBackgroundScraping.delete(edifp);
         }
     }));
-}
+    }
 };
 
 // Scraping principal (directo al usuario)
@@ -123,7 +123,7 @@ const scrapeData = async (cycle, edifp) => {
     const cachedSchedules = cache.get(cacheKey);
 
     if (cachedSchedules) {
-        console.log('Datos obtenidos desde el caché.');
+        console.log(`Datos de ${edifp} obtenidos desde el caché.`);
         return cachedSchedules;
     }
 

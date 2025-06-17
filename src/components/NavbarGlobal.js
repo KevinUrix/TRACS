@@ -5,32 +5,22 @@ import { toast } from 'react-toastify';
 import LoginLogoutButton from './LoginLogoutButton';
 import AccountConfigButton from './AccountConfigButton';
 
-export default function NavbarGlobal({selectedCycle, selectedBuilding, selectedDay}) {
+export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setUserRole}) {
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const userRole = localStorage.getItem("role");
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const role = localStorage.getItem('role');
-    setIsLoggedIn(!!role);
-  }, []);
-
   const handleLogout = () => {
     localStorage.removeItem('role');
+    localStorage.removeItem('username');
     localStorage.removeItem('token');
     setIsLoggedIn(false);
+    setUserRole(null);
     toast.success('Se ha cerrado la sesión.');
     navigate('/');
   };
 
   const handleLoginRedirect = () => {
-    sessionStorage.setItem('reservationState', JSON.stringify({
-      selectedCycle,
-      selectedBuilding,
-      selectedDay,
-    }));
     navigate('/login');
   };
 

@@ -107,15 +107,6 @@ export default function Reports() {
     // Puedes hacer algo adicional aquí si necesitas usar el edificio en el form o ticketList
   };
 
-  useEffect(() => {
-    const userRole = localStorage.getItem('role');
-
-    if (userRole !== 'superuser' && userRole !== 'user' && userRole !== 'tecnico') {
-      toast.error('Debes está logeado para entrar a esta página.');
-      navigate('/login');
-    }
-  }, [navigate]);
-
 
   useEffect(() => {
     if (!selectedBuilding) return;

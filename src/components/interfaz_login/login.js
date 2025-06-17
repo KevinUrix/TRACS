@@ -12,7 +12,7 @@ export default function Login() {
     useEffect(() => {
       const userRole = localStorage.getItem('role');
   
-      if (userRole === 'superuser' || userRole === 'user') {
+      if (userRole === 'superuser' || userRole === 'user' || userRole === "tecnico") {
         toast.error('Tu sesión sigue activa.');
         navigate('/');
       }
@@ -52,17 +52,13 @@ export default function Login() {
 
       if (savedState) {
         const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
-        toast.success('Se ha iniciado la sesión.', {
-          position: 'top-center'
-        });
+        toast.success('Se ha iniciado la sesión.');
         // Redirigir al calendario y enviar el estado
         navigate(`/`, {
           state: { selectedCycle, selectedBuilding, selectedDay }
         });
       } else {
-        toast.success('Se ha iniciado la sesión.', {
-          position: 'top-center'
-        });
+        toast.success('Se ha iniciado la sesión.');
         navigate('/');
       }
 

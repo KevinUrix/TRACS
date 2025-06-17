@@ -15,8 +15,8 @@ export default function Registro() {
     const userRole = localStorage.getItem('role');
     
     if (userRole !== 'superuser') {
-      toast.error('Debes está logeado para entrar a esta página.');
-        navigate('/login');
+      toast.error('Debes ser super usuario para ver esta página.');
+      navigate('/login');
     }
   }, [navigate]);
 

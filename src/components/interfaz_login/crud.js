@@ -25,8 +25,9 @@ export default function Crud() {
 
   useEffect(() => {
     const userRole = localStorage.getItem('role');
-    if (userRole !== 'superuser') {
-      navigate('/');
+    if (userRole !== 'superuser' && userRole !== null) {
+      toast.error('Debes ser super usuario para ver esta página.');
+      navigate('/login');
     }
   }, [navigate]);
 

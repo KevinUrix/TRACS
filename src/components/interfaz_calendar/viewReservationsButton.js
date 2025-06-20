@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import EditReservationForm2 from './editReservationForm2'; // Importamos el formulario
+import EditReservationForm from './editReservationForm'; // Importamos el formulario
 import { toast } from 'react-toastify';
 
 const dayNames = {
@@ -230,7 +230,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
 
       {/* Si se seleccionó una reserva, mostrar el formulario */}
       {selectedReservation && (
-        <EditReservationForm2
+        <EditReservationForm
           reservation={selectedReservation}
           onSave={handleSaveReservation}
           onCancel={closeEditForm} // ← Solo cierra el formulario

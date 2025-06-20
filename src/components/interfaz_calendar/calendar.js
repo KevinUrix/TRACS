@@ -5,7 +5,7 @@ import { pastelColors } from './utils';
 import SelectsLogic from './selectsLogic';
 //import Navbar from './navbar_calendar'; // Importa el nuevo componente
 import NavbarGlobal from '../NavbarGlobal';
-import ReserveButton2 from './reserveButton2';
+import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
 export default function Calendar() {
@@ -24,6 +24,8 @@ export default function Calendar() {
   const today = new Date();
   const location = useLocation();
   const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
+
+
 
   /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
   useEffect(() => {
@@ -604,7 +606,7 @@ export default function Calendar() {
                                 <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
                               </>
                             ) : (
-                              <ReserveButton2
+                              <ReserveButton
                                 selectedCycle={selectedCycle}
                                 selectedBuilding={selectedBuilding}
                                 selectedDay={selectedDay}

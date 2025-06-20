@@ -29,7 +29,14 @@ exports.createTicket = async (req, res) => {
        RETURNING *`,
       [building, room || null, title, fullCategory, priority, report, created_by]
     );
-    res.status(201).json(result.rows[0]);
+
+    const newTicket = result.rows[0];
+
+    // Emitimos evento a los clientes conectados
+    const io = req.app.get('io');
+    io.emit('new-ticket', newTicket); // Evento global
+    
+    res.status(201).json(newTicket);
   } catch (err) {
     console.error('Error al guardar ticket:', err);
     res.status(500).json({ error: 'Error al guardar el ticket' });

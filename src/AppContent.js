@@ -5,6 +5,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { jwtDecode } from 'jwt-decode';
 import { toast } from 'react-toastify';
+import socket from './socket';
+
 
 
 import Calendar from './components/interfaz_calendar/calendar';
@@ -61,6 +63,46 @@ export default function AppContent() {
       navigate('/login');
     }
   }, [location.pathname, navigate]);
+
+
+  /* SOCKET.io: TICKETS */
+  useEffect(() => {
+    const currentUser = localStorage.getItem('username');
+    const onNewTicket = (ticket) => {
+      // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
+      if (ticket.created_by !== currentUser) {
+      console.log('🎟️ Nuevo ticket recibido:', ticket);
+      toast.success(`🎟️ Nuevo ticket en ${ticket.building} creado por ${ticket.created_by}`);
+      }
+    };
+
+    socket.on('new-ticket', onNewTicket);
+
+    return () => {
+      socket.off('new-ticket', onNewTicket);
+    };
+  }, []);
+
+
+  /* SOCKET.io: RESERVAS */
+  useEffect(() => {
+    const handleNewReservation = (reservation) => {
+      console.log('Reserva recibida por socket:', reservation); 
+      toast.success(`Nueva reserva en ${reservation.building} (${reservation.classroom})`);
+    };
+
+    socket.on('new-reservation', handleNewReservation);
+
+    return () => {
+      socket.off('new-reservation', handleNewReservation);
+    };
+  }, []);
+
+
+  // SOLO PARA DESARROLLO
+  useEffect(() => {
+    window.socket = socket;
+  }, []);
 
 
   return (

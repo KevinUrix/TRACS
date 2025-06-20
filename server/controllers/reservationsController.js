@@ -89,6 +89,10 @@ const saveReservation = async (req, res) => {
     await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
+    // SOCKET
+    const io = req.app.get('io');
+    io.emit('new-reservation', reservationData);
+
     res.status(201).json({
       message: 'Reserva guardada con éxito',
       googleEventId: reservationData.googleEventId || null,

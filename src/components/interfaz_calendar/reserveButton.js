@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './calendar.css';
 
-export default function ReserveButton2({
+export default function ReserveButton({
   selectedCycle,
   selectedBuilding,
   selectedDay,
@@ -50,7 +50,7 @@ export default function ReserveButton2({
 
     // Verificación de permisos al abrir la modal
   const handleOpenModal = () => {
-    if (userRole === 'superuser' || userRole === 'user') {
+    if (userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') {
       setIsModalOpen(true);
     } else {
       toast.error('Necesitas iniciar sesión para realizar una reserva.');

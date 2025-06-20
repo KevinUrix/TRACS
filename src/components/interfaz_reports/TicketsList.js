@@ -177,6 +177,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                         className="w-full p-2 border border-gray-300 rounded resize-none custom-border-text-area"
                         value={report}
                         rows={3}
+                        readOnly
                     />
                 </div>
 
@@ -245,7 +246,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
               <div className="flex gap-4 mb-4">
-                <label className="block mb-1 font-medium font-bold">
+                <label className="block mb-1 font-bold">
                   Edificio:
                   <input
                     type="text"
@@ -257,7 +258,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   />
                 </label>
                 
-                <label className="block mb-1 font-medium font-bold">
+                <label className="block mb-1 font-bold">
                   Salón:
                   <input
                     type="text"
@@ -270,7 +271,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 </label>
               </div>
 
-              <label className="block mb-1 font-medium font-bold">
+              <label className="block mb-1 font-bold">
                 Titulo:
                 <input
                   type='text'
@@ -283,7 +284,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 ></input>
               </label>
 
-              <label className="block mb-1 font-medium font-bold">
+              <label className="block mb-1 font-bold">
                 Reporte:
                 <textarea
                   name="report"
@@ -298,7 +299,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               </label>
 
               <div className="flex gap-4 mb-4">
-                <label className="block mb-1 font-medium font-bold">
+                <label className="block mb-1 font-bold">
                   Categoría:
                   <select
                     name="category"
@@ -315,7 +316,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   </select>
                 </label>
 
-                <label className="block mb-1 font-medium font-bold">
+                <label className="block mb-1 font-bold">
                   Estado:
                   <select
                     name="status"
@@ -330,7 +331,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   </select>
                 </label>
               </div>
-              <label className="block mb-1 font-medium font-bold">
+              <label className="block mb-1 font-bold">
                   Prioridad:
               </label>
                   <select
@@ -346,38 +347,37 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   </select>
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
-              <div className="flex justify-end gap-2 mt-4">
-                <button
-                  onClick={() => setSelectedTicket(null)}
-                  className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-                >
-                  Cancelar
-                </button>
-                <button
-                  onClick={handleDelete}
-                  className={`px-4 py-2 rounded text-white ${
-                    userRole === 'user'
-                      ? 'bg-red-300 cursor-not-allowed'
-                      : 'bg-red-500 hover:bg-red-600'
-                  }`}
-                  disabled={userRole === 'user'}
-                >
-                  Borrar
-                </button>
-                <button
-                  onClick={handleSave}
-                  className={`px-4 py-2 rounded text-white ${
-                    userRole === 'user'
-                      ? 'bg-blue-300 cursor-not-allowed'
-                      : 'bg-blue-600 hover:bg-blue-700'
-                  }`}
-                  disabled={userRole === 'user'}
-                >
-                  Guardar
-                </button>
-              </div>
             </form>
-            
+            <div className="flex justify-end gap-2 mt-4">
+              <button
+                onClick={() => setSelectedTicket(null)}
+                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={handleDelete}
+                className={`px-4 py-2 rounded text-white ${
+                  userRole === 'user'
+                    ? 'bg-red-300 cursor-not-allowed'
+                    : 'bg-red-500 hover:bg-red-600'
+                }`}
+                disabled={userRole === 'user'}
+              >
+                Borrar
+              </button>
+              <button
+                onClick={handleSave}
+                className={`px-4 py-2 rounded text-white ${
+                  userRole === 'user'
+                    ? 'bg-blue-300 cursor-not-allowed'
+                    : 'bg-blue-600 hover:bg-blue-700'
+                }`}
+                disabled={userRole === 'user'}
+              >
+                Guardar
+              </button>
+            </div>
           </div>
         </div>
       )}

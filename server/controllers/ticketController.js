@@ -1,4 +1,5 @@
 require('dotenv').config();
+const axios = require('axios');
 const { Pool } = require('pg');
 const { classifyTicket } = require('../utils/aiClassifier');
 
@@ -33,8 +34,8 @@ exports.createTicket = async (req, res) => {
     const newTicket = result.rows[0];
 
     // Emitimos evento a los clientes conectados
-    const io = req.app.get('io');
-    io.emit('new-ticket', newTicket); // Evento global
+    await axios.post('http://localhost:3002/notify', {type: 'new-ticket', data: newTicket});
+
     
     res.status(201).json(newTicket);
   } catch (err) {

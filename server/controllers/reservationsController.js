@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
+const axios = require('axios');
 const { google } = require('googleapis');
 const { getOAuth2Client } = require('../utils/googleOAuthClient');
 const { createGoogleEvent } = require('../utils/createGoogleEvent');
@@ -90,8 +91,7 @@ const saveReservation = async (req, res) => {
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
     // SOCKET
-    const io = req.app.get('io');
-    io.emit('new-reservation', reservationData);
+    await axios.post('http://localhost:3002/notify', {type: 'new-reservation', data: reservationData});
 
     res.status(201).json({
       message: 'Reserva guardada con éxito',

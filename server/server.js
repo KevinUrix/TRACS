@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
-const socketIo = require('socket.io');
 
 const { loadModelsFromDisk, trainFromDatabase } = require('./utils/aiClassifier');
 const scheduleRoutes = require('./routes/scheduleRoutes');
@@ -19,12 +18,6 @@ const trainRoutes = require('./routes/trainRoutes');
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIo(server, {
-  cors: {
-    origin: '*',
-    methods: ['GET', 'POST']
-  }
-});
 
 const PORT = process.env.PORT || 3001;
 require('dotenv').config();
@@ -32,16 +25,6 @@ require('dotenv').config();
 // Middlewares
 app.use(cors());
 app.use(express.json());
-
-// Socket
-io.on('connection', (socket) => {
-  console.log('🟢 Cliente conectado vía Socket.IO');
-
-  socket.on('disconnect', () => {
-    console.log('🔴 Cliente desconectado');
-  });
-});
-app.set('io', io);
 
 // Rutas
 app.use('/api', scheduleRoutes);

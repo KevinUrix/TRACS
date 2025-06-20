@@ -198,6 +198,18 @@
       "duration": "Temporal",
       "professor": "PRUEBA",
       "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0700-0755",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "prueba",
+      "course": "prueba",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "Prueba",
+      "createInGoogleCalendar": "false"
     }
   ]
 }

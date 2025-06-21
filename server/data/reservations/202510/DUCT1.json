@@ -342,6 +342,30 @@
       "duration": "Temporal",
       "professor": "A",
       "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0700-0755",
+      "days": "S",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "code": "D",
+      "course": "Ddd",
+      "date": "2025-06-21",
+      "duration": "Temporal",
+      "professor": "Doble",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0800-0855",
+      "days": "S",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "code": "DDD",
+      "course": "DDD",
+      "date": "2025-06-21",
+      "duration": "Temporal",
+      "professor": "DDD",
+      "createInGoogleCalendar": "false"
     }
   ]
 }

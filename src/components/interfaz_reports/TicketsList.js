@@ -64,8 +64,12 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     setSelectedTicket((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Actualizar ticket
+   // Actualizar ticket
+  const [isSaving, setIsSaving] = useState(false);
   const handleSave = async () => {
+    if (isSaving) return; // Evita clics múltiples
+    setIsSaving(true); // Inicia la "protección"
+    
     try {
 
       const updatedTicket = {
@@ -87,6 +91,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     } catch (error) {
       console.error(error);
       toast.error('Error al actualizar el ticket');
+    } finally {
+      setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -294,7 +300,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   rows={4}
                   maxLength={500}
                   disabled={userRole === 'user'}
-                  readOnly
+                  readOnly={userRole === 'user'}
                 />
               </label>
 
@@ -345,39 +351,43 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     <option value="Media">Media</option>
                     <option value="Alta">Alta</option>
                   </select>
+              <div className="flex justify-end gap-2 mt-4">
+                <button
+                  type='button'
+                  onClick={() => setSelectedTicket(null)}
+                  className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type='button'
+                  onClick={handleDelete}
+                  className={`px-4 py-2 rounded text-white ${
+                    userRole === 'user'
+                      ? 'bg-red-300 cursor-not-allowed'
+                      : 'bg-red-500 hover:bg-red-600'
+                  }`}
+                  disabled={userRole === 'user'}
+                >
+                  Borrar
+                </button>
+                <button
+                  type='button'
+                  onClick={handleSave}
+                  className={`px-4 py-2 rounded text-white ${
+                    userRole === 'user'
+                      ? 'bg-blue-300 cursor-not-allowed'
+                      : 'bg-blue-600 hover:bg-blue-700'
+                  }`}
+                  disabled={userRole === 'user'|| isSaving}
+                >
+                  Guardar
+                </button>
+              </div>
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
 
             </form>
-            <div className="flex justify-end gap-2 mt-4">
-              <button
-                onClick={() => setSelectedTicket(null)}
-                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={handleDelete}
-                className={`px-4 py-2 rounded text-white ${
-                  userRole === 'user'
-                    ? 'bg-red-300 cursor-not-allowed'
-                    : 'bg-red-500 hover:bg-red-600'
-                }`}
-                disabled={userRole === 'user'}
-              >
-                Borrar
-              </button>
-              <button
-                onClick={handleSave}
-                className={`px-4 py-2 rounded text-white ${
-                  userRole === 'user'
-                    ? 'bg-blue-300 cursor-not-allowed'
-                    : 'bg-blue-600 hover:bg-blue-700'
-                }`}
-                disabled={userRole === 'user'}
-              >
-                Guardar
-              </button>
-            </div>
+            
           </div>
         </div>
       )}

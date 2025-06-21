@@ -27,6 +27,8 @@ export default function AppContent() {
   const [userRole, setUserRole] = useState(localStorage.getItem('role'));
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
+  const superUserRoutes = ['/crud', '/registro'];
+  const userRoutes = ['/crud', '/configuracion', '/registro', '/reportes'];
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -43,11 +45,19 @@ export default function AppContent() {
           setIsLoggedIn(false);
           setUserRole(null);
           navigate('/');
+          return
         }
-        else {
-          setIsLoggedIn(true);
-          setUserRole(localStorage.getItem('role'));
-        }
+        setIsLoggedIn(true);
+        setUserRole(decoded.role);
+
+        if (superUserRoutes.includes(location.pathname) && decoded.role !== 'superuser') {
+          toast.error('Debes ser super usuario para ver esta página.');
+          navigate('/');
+        }
+        else if (location.pathname === '/login' && decoded.role !== null) {
+          toast.error('Tu sesión sigue activa.');
+          navigate('/');
+        }
       } catch (error) {
         console.error('Token inválido:', error);
         localStorage.removeItem('token');
@@ -58,12 +68,12 @@ export default function AppContent() {
         setUserRole(null);
         navigate('/login');
       }
-    } else if (!hideNavbarRoutes.includes(location.pathname) && (location.pathname !== '/' && location.pathname !== '/calendario') ) {
+    } else if (userRoutes.includes(location.pathname) && (location.pathname !== '/' && location.pathname !== '/calendario')) {
       setIsLoggedIn(false);
       setUserRole(null);
       toast.error('Debes está logeado para entrar a esta página.');
       navigate('/login');
-    }
+    }
   }, [location.pathname, navigate]);
 
 

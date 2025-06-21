@@ -1,16 +1,12 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
 import BuildingSelect from './BuildingSelect';
 import './reports.css'; // Importa el archivo de estilos CSS
 
 import TicketsList from './TicketsList';
 //import NavbarReports from './navbar_reports';
 
-import NavbarGlobal from '../NavbarGlobal';
-
 export default function Reports() {
-  const navigate = useNavigate();
   const [selectedBuilding, setSelectedBuilding] = useState('');
 
   const [showForm, setShowForm] = useState(false);
@@ -34,7 +30,13 @@ export default function Reports() {
     document.title = "Quill - Reportes";
   }, []);
 
+  const [isSaving, setIsSaving] = useState(false);
+
   const handleSaveTicket = async () => {
+
+    if (isSaving) return; // Evita clics múltiples
+    setIsSaving(true); // Inicia la "protección"
+
     if (!selectedBuilding) {
       toast.error('Selecciona un edificio antes de guardar');
       return;
@@ -90,6 +92,8 @@ export default function Reports() {
     } catch (error) {
       console.error('Error al guardar ticket:', error);
       toast.error('No se pudo guardar el ticket');
+    } finally {
+      setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -168,6 +172,7 @@ export default function Reports() {
                   </select>
                 {selectedBuilding && (
                   <button
+                    type='button'
                     onClick={() => setShowForm(true)}
                     className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-2.5 shadow transition-transform hover:scale-105 whitespace-nowrap"
                   >
@@ -252,22 +257,26 @@ export default function Reports() {
                     maxLength={500}
                   ></textarea>
                 </div>
+
+                <div className="flex justify-end space-x-2">
+                  <button
+                    type='button' 
+                    onClick={handleCancel} 
+                    className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    type='button' 
+                    onClick={handleSaveTicket} 
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    disabled={isSaving}
+                  >
+                    Guardar Ticket
+                  </button>
+                </div>
                 <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
               </form> 
-              <div className="flex justify-end space-x-2">
-                <button 
-                  onClick={handleCancel} 
-                  className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-                >
-                  Cancelar
-                </button>
-                <button 
-                  onClick={handleSaveTicket} 
-                  className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                >
-                  Guardar Ticket
-                </button>
-              </div>
             </div>
           </div>
         )}

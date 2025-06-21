@@ -177,7 +177,7 @@ export default function AccountConfig() {
         <form onSubmit={handlePasswordChange}   className="flex flex-col items-center w-full max-w-md mx-auto">
           <h3 className="font-semibold mb-2 text-xl">Cambiar contraseña</h3>
 
-          <div className="mb-4 flex items-center w-full max-w-sm">
+          <div className="relative mb-4 flex items-center w-full max-w-sm">
             <input
               type={showPasswords ? 'text' : 'password'}
               placeholder="Contraseña actual"
@@ -190,7 +190,7 @@ export default function AccountConfig() {
               type="button"
               title={showPasswords ? "Ocultar contraseña" : "Mostrar contraseña"}
               onClick={() => setShowPasswords((prev) => !prev)}
-              className="ml-2 p-3 hover:bg-gray-300 rounded"
+              className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-600 hover:text-gray-900"
             >
               {showPasswords ? (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

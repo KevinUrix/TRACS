@@ -20,7 +20,7 @@ exports.register = async (req, res) => {
     res.status(201).json({ message: 'Usuario registrado' });
   } catch (err) {
     if (err.code === '23505') {
-      return res.status(409).json({ error: 'Ese usuario se encuentra en uso. Seleccione otro.' });
+      return res.status(409).json({ error: 'Ese usuario se encuentra en uso.' });
     }
     console.error(err);
     res.status(500).json({ error: 'Error al registrar usuario' });

@@ -259,6 +259,7 @@ export default function ReserveButton({
                   <option value="I">Miércoles</option>
                   <option value="J">Jueves</option>
                   <option value="V">Viernes</option>
+                  <option value="S">Sabado</option>
                 </select>
               </label>
             </div>

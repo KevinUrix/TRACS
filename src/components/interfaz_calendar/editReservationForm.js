@@ -9,8 +9,6 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
   const [days, setDays] = useState('');
 
   const [schedule, setSchedule] = useState('');
-  const [startTime, setStartTime] = useState('');
-  const [endTime, setEndTime] = useState('');
 
   const [building, setBuilding] = useState('');
   const [classroom, setClassroom] = useState('');

@@ -14,20 +14,15 @@ export default function Registro() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const userRole = localStorage.getItem('role');
-    
-    if (userRole !== 'superuser') {
-      toast.error('Debes ser super usuario para ver esta página.');
-      navigate('/login');
-    }
-  }, [navigate]);
-
-  useEffect(() => {
     document.title = "Quill - Registro";
   }, []);
 
+  const [isSaving, setIsSaving] = useState(false);
   const handleRegister = async (e) => {
     e.preventDefault();
+
+    if (isSaving) return; // Evita clics múltiples
+    setIsSaving(true); // Inicia la "protección"
 
     // Validar contraseña mínima
     if (password.length < 5) {
@@ -57,12 +52,15 @@ export default function Registro() {
         return;
       }
 
-      setSuccess('Usuario registrado con éxito');
+      //setSuccess('Usuario registrado con éxito');
+      toast.success('Usuario registrado con éxito');
       setError('');
-      setTimeout(() => navigate('/crud'), 1500);
+      setTimeout(() => navigate('/crud'), 0);
     } catch (err) {
       console.error('Error de red:', err);
       setError('No se pudo conectar con el servidor');
+    } finally {
+      setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -76,7 +74,7 @@ export default function Registro() {
         className="bg-blurred"
     ></div>
       <div className="relative flex justify-center items-center min-h-screen py-7">
-        <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border-reports">
+        <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-90 z-10 custom-shadow-border-reports">
           <h2 className="text-2xl font-bold mb-4">Registrar Usuario</h2>
 
           {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
@@ -118,44 +116,44 @@ export default function Registro() {
 
           <div className="mb-4">
             <label className="block text-gray-700 font-semibold mb-2">Contraseña</label>
-            <div className="flex">
-            <input
-              type={showPasswords ? 'text' : 'password'}
-              value={password}
-              maxLength={50}
-              onChange={(e) => {
-                const val = e.target.value;
-                const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
-                setPassword(filtered);
-              }}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Contraseña"
-              required
-            />
-            <button
-              type="button"
-              title={showPasswords ? "Ocultar contraseña" : "Mostrar contraseña"}
-              onClick={() => setShowPasswords((prev) => !prev)}
-              className="ml-2 p-3 hover:bg-gray-300 rounded"
-            >
-              {showPasswords ? (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-5.523 0-10-5-10-5s2.879-3.82 6.863-4.826M15 12a3 3 0 11-6 0 3 3 0 016 0zM3 3l18 18" />
-                </svg>
-              ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z" />
-                </svg>
-              )}
-            </button>
+            <div className="relative">
+              <input
+                type={showPasswords ? 'text' : 'password'}
+                value={password}
+                maxLength={50}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
+                  setPassword(filtered);
+                }}
+                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Contraseña"
+                required
+              />
+              <button
+                type="button"
+                title={showPasswords ? "Ocultar contraseña" : "Mostrar contraseña"}
+                onClick={() => setShowPasswords((prev) => !prev)}
+                className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-600 hover:text-gray-900"
+              >
+                {showPasswords ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-5.523 0-10-5-10-5s2.879-3.82 6.863-4.826M15 12a3 3 0 11-6 0 3 3 0 016 0zM3 3l18 18" />
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
 
           <div className="mb-4">
             <label className="block text-gray-700 font-semibold mb-2">Confirmar Contraseña</label>
             <input
-              type="password"
+              type={showPasswords ? 'text' : 'password'}
               value={confirmPassword}
               onChange={(e) => {
                 const val = e.target.value;
@@ -172,6 +170,7 @@ export default function Registro() {
           <button
             type="submit"
             className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300 mb-2"
+            disabled={isSaving}
           >
             Crear cuenta
           </button>

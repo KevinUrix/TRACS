@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 //import NavbarCrud from './navbar_crud';
-import NavbarGlobal from '../NavbarGlobal';
 import { toast } from 'react-toastify';
 
 export default function Crud() {
@@ -22,14 +21,6 @@ export default function Crud() {
 
   const navigate = useNavigate();
   const username = localStorage.getItem("username"); // Para obtener el usuario.
-
-  useEffect(() => {
-    const userRole = localStorage.getItem('role');
-    if (userRole !== 'superuser' && userRole !== null) {
-      toast.error('Debes ser super usuario para ver esta página.');
-      navigate('/login');
-    }
-  }, [navigate]);
 
   useEffect(() => {
     document.title = "Quill - CRUD";

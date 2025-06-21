@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
 import SelectsLogic from './selectsLogic';
 //import Navbar from './navbar_calendar'; // Importa el nuevo componente
-import NavbarGlobal from '../NavbarGlobal';
 import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 

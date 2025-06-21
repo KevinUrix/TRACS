@@ -9,15 +9,6 @@ export default function Login() {
   const [error, setError] = useState('');
   const [showPasswords, setShowPasswords] = useState(false);
   const navigate = useNavigate();
-  
-    useEffect(() => {
-      const userRole = localStorage.getItem('role');
-  
-      if (userRole === 'superuser' || userRole === 'user' || userRole === "tecnico") {
-        toast.error('Tu sesión sigue activa.');
-        navigate('/');
-      }
-    }, [navigate]);
 
   useEffect(() => {
     document.title = "Quill - Login";
@@ -119,7 +110,7 @@ return (
 
         <div className="mb-4">
           <label className="block text-gray-700 font-semibold mb-2">Contraseña</label>
-          <div className='flex'>
+          <div className='relative'>
           <input
             type={showPasswords ? 'text' : 'password'}
             value={password}
@@ -136,7 +127,7 @@ return (
             type="button"
             title={showPasswords ? "Ocultar contraseña" : "Mostrar contraseña"}
             onClick={() => setShowPasswords((prev) => !prev)}
-            className="ml-2 p-3 hover:bg-gray-300 rounded"
+            className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-600 hover:text-gray-900"
           >
             {showPasswords ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

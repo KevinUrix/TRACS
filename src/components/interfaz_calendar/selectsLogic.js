@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import InstructionsButton from './instructionsButton'; // Importa el componente
 import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
 import PrintButton from './printButton';

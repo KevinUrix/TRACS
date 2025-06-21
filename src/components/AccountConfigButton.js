@@ -1,6 +1,5 @@
 // src/components/AccountConfigButton.js
-import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 import './interfaz_calendar/calendar.css';
 
@@ -11,12 +10,12 @@ export default function AccountConfigButton({ className = '' }) {
   return (
     <button
       onClick={() => navigate('/configuracion')}
-      className={`config-button mt-2 mr-8 text-black transition ${className}`}
+      className={`config-button mt-2 mr-8 text-white transition ${className}`}
       title="Configuración de cuenta"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-10 h-10 text-blue-300"
+        className="w-10 h-10 text-white"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

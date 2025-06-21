@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
 import '../components/interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
 import { toast } from 'react-toastify';
@@ -29,7 +29,6 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
       <nav className="navbar flex items-center justify-between px-6 bg-white shadow relative">
         {/* Logo Quill a la izquierda */}
         <div className="flex items-center flex-shrink-0">
-          {isLoggedIn && <AccountConfigButton className="hidden md:flex"/>}
           <Link to="/" className="navbar-brand">Quill</Link>
         </div>
 
@@ -60,7 +59,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
         )}
 
         {/* Contenedor central y derecho - oculto en móvil */}
-        <div className="mr-28 hidden md:flex flex-1 justify-center items-center gap-8">
+        <div className="ml-20 hidden md:flex flex-1 justify-center items-center gap-8">
           {/* Links centrados */}
           {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
             <div className="flex gap-6">
@@ -77,6 +76,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
 
         {/* Botón login/logout a la derecha extrema (oculto en móvil) */}
         <div className="hidden md:flex flex-shrink-0">
+          {isLoggedIn && <AccountConfigButton className="hidden md:flex"/>}
           <LoginLogoutButton
             isLoggedIn={isLoggedIn}
             handleLogout={handleLogout}

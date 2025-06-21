@@ -1,0 +1,54 @@
+[
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L M I J V .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "235104",
+      "code": "IL356",
+      "students": 8,
+      "course": "BASES DE DATOS ()"
+    },
+    "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": "L M I J V .",
+      "building": "DUCT2",
+      "classroom": "LC03",
+      "nrc": "235110",
+      "code": "V0731",
+      "students": 10,
+      "course": "ESTRUCTURAS DE DATOS ()"
+    },
+    "professor": "ORTEGA SANCHEZ, NOE"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DUCT2",
+      "classroom": "LC05",
+      "nrc": "235112",
+      "code": "I5288",
+      "students": 17,
+      "course": "FUNDAMENTOS DE PROGRAMACION ()"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DUCT2",
+      "classroom": "LC03",
+      "nrc": "235113",
+      "code": "IL352",
+      "students": 9,
+      "course": "PROGRAMACION ESTRUCTURADA ()"
+    },
+    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
+  }
+]

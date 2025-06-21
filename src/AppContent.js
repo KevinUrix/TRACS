@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { jwtDecode } from 'jwt-decode';
 import { toast } from 'react-toastify';
+import { Toaster} from 'sonner';
 import socket from './socket';
 
 
@@ -16,6 +17,7 @@ import Registro from './components/interfaz_login/registro';
 import Crud from './components/interfaz_login/crud';
 import AccountConfig from './components/AccountConfig';
 import NavbarGlobal from './components/NavbarGlobal';
+import { notifyTicket, notifyReserva } from './notificacions';
 
 export default function AppContent() {
   const navigate = useNavigate();
@@ -71,9 +73,11 @@ export default function AppContent() {
     const onNewTicket = (ticket) => {
       // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
       if (ticket.created_by !== currentUser) {
-      console.log('🎟️ Nuevo ticket recibido:', ticket);
-      toast.success(`🎟️ Nuevo ticket en ${ticket.building} creado por ${ticket.created_by}`);
+        notifyTicket(`🎟️ Nuevo ticket recibido`, ticket);
       }
+      // QUITAR COMENTARIO PARA MOSTRAR A TODOS
+      // notifyTicket(`🎟️ Nuevo ticket recibido`, ticket);
+      console.log('🎟️ Nuevo ticket recibido:', ticket);
     };
 
     socket.on('new-ticket', onNewTicket);
@@ -88,7 +92,7 @@ export default function AppContent() {
   useEffect(() => {
     const handleNewReservation = (reservation) => {
       console.log('Reserva recibida por socket:', reservation); 
-      toast.success(`Nueva reserva en ${reservation.building} (${reservation.classroom})`);
+      notifyReserva(`✅ Nueva reserva`, reservation);
     };
 
     socket.on('new-reservation', handleNewReservation);
@@ -132,6 +136,12 @@ export default function AppContent() {
         draggable
         pauseOnHover
         theme="colored"
+      />
+      <Toaster
+      richColors
+      position='bottom-right'
+      duration={4000}
+      expand
       />
     </>
   );

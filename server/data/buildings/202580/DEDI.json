@@ -1,0 +1,275 @@
+[
+  {
+    "data": {
+      "schedule": "1100-1555",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A004",
+      "nrc": "175187",
+      "code": "I7490",
+      "students": 4,
+      "course": "FISICOQUIMICA II ()"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "149426",
+      "code": "I6928",
+      "students": 14,
+      "course": "FISICOQUIMICA I ()"
+    },
+    "professor": "ORTEGA CORDOVA, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "00137",
+      "code": "I6128",
+      "students": 18,
+      "course": "FISICOQUIMICA I PARA FARMACEUTICOS ()"
+    },
+    "professor": "ORTEGA CORDOVA, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1955",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A004",
+      "nrc": "46643",
+      "code": "I6131",
+      "students": 22,
+      "course": "FISICOQUIMICA II PARA FARMACEUTICOS ()"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "87284",
+      "code": "I5812",
+      "students": 18,
+      "course": "FISICOQUIMICA PARA INGENIEROS I ()"
+    },
+    "professor": "ORTEGA CORDOVA, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A004",
+      "nrc": "86998",
+      "code": "I5813",
+      "students": 9,
+      "course": "FISICOQUIMICA PARA INGENIEROS II ()"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": "L . I . V .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "212727",
+      "code": "I7504",
+      "students": 20,
+      "course": "QUIMICA ANALITICA I ()"
+    },
+    "professor": "VELAZQUEZ JUAREZ, GILBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": "L . I . V .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "149427",
+      "code": "I7506",
+      "students": 18,
+      "course": "QUIMICA ANALITICA II ()"
+    },
+    "professor": "TREVIÑO ORTIZ, RAQUEL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1355",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A005",
+      "nrc": "84157",
+      "code": "I6132",
+      "students": 30,
+      "course": "QUIMICA ANALITICA III ()"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "1200-1555",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A001",
+      "nrc": "84735",
+      "code": "I6122",
+      "students": 30,
+      "course": "QUIMICA GENERAL I ()"
+    },
+    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A001",
+      "nrc": "116082",
+      "code": "I5803",
+      "students": 30,
+      "course": "QUIMICA GENERAL I ()"
+    },
+    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": "L M I J V .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "00208",
+      "code": "I5804",
+      "students": 8,
+      "course": "QUIMICA GENERAL II ()"
+    },
+    "professor": "SAAVEDRA AYALA, LUIS ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". M . . V .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "149430",
+      "code": "I7513",
+      "students": 22,
+      "course": "TALLER DE SEGUIMIENTO DE MODULO III ()"
+    },
+    "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . V .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "235086",
+      "code": "I7488",
+      "students": 29,
+      "course": "TEORIA DE QUIMICA ORGANICA II ()"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". M . J . .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "235086",
+      "code": "I7488",
+      "students": 29,
+      "course": "TEORIA DE QUIMICA ORGANICA II ()"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . V .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "235086",
+      "code": "I7488",
+      "students": 29,
+      "course": "TEORIA DE QUIMICA ORGANICA II ()"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". M . J . .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "235086",
+      "code": "I7488",
+      "students": 29,
+      "course": "TEORIA DE QUIMICA ORGANICA II ()"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . J V .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "235087",
+      "code": "I7489",
+      "students": 6,
+      "course": "TEORIA DE QUIMICA ORGANICA III ()"
+    },
+    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . . . S",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "235087",
+      "code": "I7489",
+      "students": 6,
+      "course": "TEORIA DE QUIMICA ORGANICA III ()"
+    },
+    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . J V .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "235087",
+      "code": "I7489",
+      "students": 6,
+      "course": "TEORIA DE QUIMICA ORGANICA III ()"
+    },
+    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . . . S",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "235087",
+      "code": "I7489",
+      "students": 6,
+      "course": "TEORIA DE QUIMICA ORGANICA III ()"
+    },
+    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+  }
+]

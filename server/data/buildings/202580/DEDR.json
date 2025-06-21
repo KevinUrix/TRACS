@@ -1,0 +1,54 @@
+[
+  {
+    "data": {
+      "schedule": "0900-1355",
+      "days": "L M I J V .",
+      "building": "DEDR",
+      "classroom": "A001",
+      "nrc": "205938",
+      "code": "IL344",
+      "students": 10,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL ()"
+    },
+    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1555",
+      "days": "L M I J V .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "235152",
+      "code": "IL344",
+      "students": 7,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL ()"
+    },
+    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L M I J V .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "212714",
+      "code": "V0710",
+      "students": 10,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL ()"
+    },
+    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "212719",
+      "code": "V0711",
+      "students": 4,
+      "course": "MATEMATICAS DISCRETAS ()"
+    },
+    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
+  }
+]

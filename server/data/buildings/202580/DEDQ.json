@@ -1,0 +1,93 @@
+[
+  {
+    "data": {
+      "schedule": "0800-0955",
+      "days": "L M I J V .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "235094",
+      "code": "I3311",
+      "students": 12,
+      "course": "ADMINISTRACION DE RECURSOS HUMANOS ()"
+    },
+    "professor": "GONZALEZ GUTIERREZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1800-1955",
+      "days": "L M I J V .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "235095",
+      "code": "I3325",
+      "students": 19,
+      "course": "COMERCIO EXTERIOR ()"
+    },
+    "professor": "HUESCA PEREZ, JESUS HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1330",
+      "days": "L M I J . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "161921",
+      "code": "I3323",
+      "students": 11,
+      "course": "FINANZAS ()"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L M I J V .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "235096",
+      "code": "IF916",
+      "students": 10,
+      "course": "LIDERAZGO Y COACHING ()"
+    },
+    "professor": "GOMEZ SANCHEZ, ROGELIO VICENTE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L M I J V .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "134730",
+      "code": "I7375",
+      "students": 23,
+      "course": "LOGISTICA Y CADENA DE SUMINISTRO ()"
+    },
+    "professor": "SERRATOS MACIAS, MARCO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L M I J V .",
+      "building": "DEDQ",
+      "classroom": "A003",
+      "nrc": "161924",
+      "code": "I7377",
+      "students": 27,
+      "course": "PLANEACION Y CONTROL DE LA PRODUCCION II ()"
+    },
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L M I J V .",
+      "building": "DEDQ",
+      "classroom": "A004",
+      "nrc": "235097",
+      "code": "IF503",
+      "students": 12,
+      "course": "SERVICIO LOGISTICO AL CLIENTE ()"
+    },
+    "professor": "VARGAS RAMOS, EDNA MARIA LUISA"
+  }
+]

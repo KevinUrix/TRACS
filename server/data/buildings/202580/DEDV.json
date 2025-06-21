@@ -1,0 +1,158 @@
+[
+  {
+    "data": {
+      "schedule": "1200-1555",
+      "days": "L M I J V .",
+      "building": "DEDV",
+      "classroom": "A004",
+      "nrc": "115628",
+      "code": "I5802",
+      "students": 18,
+      "course": "ALGEBRA LINEAL ()"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1600-1855",
+      "days": "L M I J . .",
+      "building": "DEDV",
+      "classroom": "A016",
+      "nrc": "205946",
+      "code": "I7413",
+      "students": 11,
+      "course": "DINAMICA ()"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L M I J V .",
+      "building": "DEDV",
+      "classroom": "A002",
+      "nrc": "115634",
+      "code": "I5874",
+      "students": 19,
+      "course": "DISEÑO DE EXPERIMENTOS ()"
+    },
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": "L M I J . .",
+      "building": "DEDV",
+      "classroom": "A016",
+      "nrc": "175023",
+      "code": "IC591",
+      "students": 12,
+      "course": "ELECTROMAGNETISMO ()"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I J . .",
+      "building": "DEDV",
+      "classroom": "A016",
+      "nrc": "135208",
+      "code": "I5993",
+      "students": 28,
+      "course": "ELECTROMAGNETISMO ()"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": "L M I J . .",
+      "building": "DEDV",
+      "classroom": "A001",
+      "nrc": "212725",
+      "code": "IL340",
+      "students": 9,
+      "course": "FUNDAMENTOS DE FISICA ()"
+    },
+    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L . I . V .",
+      "building": "DEDV",
+      "classroom": "A014",
+      "nrc": "205941",
+      "code": "IF874",
+      "students": 5,
+      "course": "MECANICA ()"
+    },
+    "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1200-1355",
+      "days": "L M I . . .",
+      "building": "DEDV",
+      "classroom": "A012",
+      "nrc": "235076",
+      "code": "I6912",
+      "students": 4,
+      "course": "MECANICA ()"
+    },
+    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L M I J V .",
+      "building": "DEDV",
+      "classroom": "A003",
+      "nrc": "205939",
+      "code": "IG738",
+      "students": 34,
+      "course": "PRECALCULO ()"
+    },
+    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
+  },
+  {
+    "data": {
+      "schedule": "0700-1155",
+      "days": "L M I J V .",
+      "building": "DEDV",
+      "classroom": "A004",
+      "nrc": "59334",
+      "code": "I5799",
+      "students": 18,
+      "course": "PRECALCULO ()"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1755",
+      "days": "L M I J V .",
+      "building": "DEDV",
+      "classroom": "A003",
+      "nrc": "59336",
+      "code": "I5799",
+      "students": 13,
+      "course": "PRECALCULO ()"
+    },
+    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L . I J . .",
+      "building": "DEDV",
+      "classroom": "A015",
+      "nrc": "235077",
+      "code": "I6018",
+      "students": 29,
+      "course": "TERMODINAMICA ()"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
+  }
+]

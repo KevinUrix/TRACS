@@ -210,6 +210,138 @@
       "duration": "Temporal",
       "professor": "Prueba",
       "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0800-0855",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "toast",
+      "course": "toast",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "toast",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "TOAST",
+      "course": "TOAST2",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "TOAST2",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1200-1255",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "toast",
+      "course": "toast",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "toast",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "code": "PRUEBA",
+      "course": "PRUEBA",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "PRUEBAP",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1200-1255",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "code": "A",
+      "course": "A",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "A",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1300-1355",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "code": "A",
+      "course": "A",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "A",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC01",
+      "code": "DASDA",
+      "course": "TOAST",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "TOASY",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1200-1255",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC01",
+      "code": "DSADAS",
+      "course": "DSADAS",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "PRUEB",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0700-0755",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "E",
+      "course": "A",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "A",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "0800-0855",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "A",
+      "course": "A",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "A",
+      "createInGoogleCalendar": "false"
+    },
+    {
+      "schedule": "1100-1155",
+      "days": "V",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "code": "A",
+      "course": "A",
+      "date": "2025-06-20",
+      "duration": "Temporal",
+      "professor": "A",
+      "createInGoogleCalendar": "false"
     }
   ]
 }

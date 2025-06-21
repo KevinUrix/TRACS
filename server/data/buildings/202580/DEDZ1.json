@@ -1,0 +1,28 @@
+[
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": "L M I J V .",
+      "building": "DEDZ1",
+      "classroom": "A003",
+      "nrc": "212736",
+      "code": "I7606",
+      "students": 6,
+      "course": "INSTRUMENTACION Y TECNICAS DE REHABILITACION ()"
+    },
+    "professor": "SOTELO RODRIGUEZ, MOISES"
+  },
+  {
+    "data": {
+      "schedule": "1000-1500",
+      "days": ". M . J . .",
+      "building": "DEDZ1",
+      "classroom": "A008",
+      "nrc": "212738",
+      "code": "I6172",
+      "students": 30,
+      "course": "VALIDACION DE PROCESOS Y METODOS ANALITICOS ()"
+    },
+    "professor": "GARCIA LEMUS, CUAUHTEMOC RAUL"
+  }
+]

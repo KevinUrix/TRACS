@@ -1,0 +1,41 @@
+[
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L M I J V .",
+      "building": "DEDX",
+      "classroom": "A002",
+      "nrc": "235137",
+      "code": "IL353",
+      "students": 5,
+      "course": "ADMINISTRACION DE PROYECTOS TECNOLOGICOS ()"
+    },
+    "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "235103",
+      "code": "IL365",
+      "students": 2,
+      "course": "ARQUITECTURA DE COMPUTADORAS ()"
+    },
+    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": "L M I J V .",
+      "building": "DEDX",
+      "classroom": "A001",
+      "nrc": "235149",
+      "code": "IL368",
+      "students": 21,
+      "course": "SEGURIDAD EN LA INFORMACION ()"
+    },
+    "professor": "ZEPEDA GOMEZ, JOVAN RICARDO"
+  }
+]

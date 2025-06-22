@@ -1,5 +1,5 @@
 // AppContent.jsx
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,7 +28,7 @@ export default function AppContent() {
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   const superUserRoutes = ['/crud', '/registro'];
-  const userRoutes = ['/crud', '/configuracion', '/registro', '/reportes'];
+  const userRoutes = ['/crud', '/configuracion', '/registro', '/reportes'];
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -38,9 +38,7 @@ export default function AppContent() {
         const now = Date.now() / 1000; // en segundos
 
         if (decoded.exp < now) {
-          localStorage.removeItem('token');
-          localStorage.removeItem('username');
-          localStorage.removeItem('role');
+          localStorage.clear();
           toast.error('Tu sesión ha expirado. Inicia sesión otra vez.');
           setIsLoggedIn(false);
           setUserRole(null);
@@ -51,29 +49,27 @@ export default function AppContent() {
         setUserRole(decoded.role);
 
         if (superUserRoutes.includes(location.pathname) && decoded.role !== 'superuser') {
-          toast.error('Debes ser super usuario para ver esta página.');
+          toast.error(`Debes ser 'Super usuario' para acceder esta página.`);
           navigate('/');
-        }
-        else if (location.pathname === '/login' && decoded.role !== null) {
+        }
+        else if (location.pathname === '/login') {
           toast.error('Tu sesión sigue activa.');
           navigate('/');
-        }
+        }
       } catch (error) {
         console.error('Token inválido:', error);
-        localStorage.removeItem('token');
-        localStorage.removeItem('username');
-        localStorage.removeItem('role');
+        localStorage.clear();
         toast.error('Sesión inválida. Vuelve a iniciar sesión.');
         setIsLoggedIn(false);
         setUserRole(null);
-        navigate('/login');
+        navigate('/');
       }
-    } else if (userRoutes.includes(location.pathname) && (location.pathname !== '/' && location.pathname !== '/calendario')) {
+    } else if (userRoutes.includes(location.pathname)) {
       setIsLoggedIn(false);
       setUserRole(null);
-      toast.error('Debes está logeado para entrar a esta página.');
-      navigate('/login');
-    }
+      toast.error('Debes iniciar sesión para acceder a esta página.');
+      navigate('/');
+    }
   }, [location.pathname, navigate]);
 
 
@@ -127,12 +123,19 @@ export default function AppContent() {
         <div className="flex flex-col w-full">
           <Routes>
             <Route path='/' element={<Calendar />} />
-            <Route path='/registro' element={<Registro />} />
-            <Route path="/reportes" element={<Reports />} />
-            <Route path='/crud' element={<Crud />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/configuracion" element={<AccountConfig />} />
-          </Routes>
+
+            {isLoggedIn && (
+              <>
+                <Route path='/reportes' element={<Reports />} />
+                <Route path='/crud' element={userRole === 'superuser' ? <Crud /> : <Navigate to="/" />} />
+                <Route path='/registro' element={userRole === 'superuser' ? <Registro /> : <Navigate to="/" />} />
+                <Route path='/configuracion' element={<AccountConfig />} />
+              </>
+            )}
+
+
+            <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <Login />}/>
+            </Routes>
         </div>
       </div>
       <ToastContainer

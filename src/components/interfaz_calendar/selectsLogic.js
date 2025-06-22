@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import DownloadButton from './downloadButton';
 import ViewReservationsButton from './viewReservationsButton';
 import PrintButton from './printButton';
+import InstructionsButton from './intructionsButton';
 import StatisticButton from './statisticButton';
 import { handlePrint } from './utils';
 import { toast } from 'react-toastify';
@@ -17,6 +18,8 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   const [cycle, setCycle] = useState([]);
   const [building, setBuilding] = useState([]);
   const [loadingCycle, setLoadingCycle] = useState(false);
+  const role = localStorage.getItem('role');
+
 
   // const [allReservations, setAllReservations] = useState([]);
   const location = useLocation();
@@ -228,6 +231,12 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           selectedBuilding={selectedBuilding}
         />
       </div>
+
+      {role !== 'superuser' && (
+        <div className="-ml-6">
+          <InstructionsButton />
+        </div>
+      )}
 
       <div className='-ml-2'>
         <SearchProfessor

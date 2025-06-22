@@ -27,6 +27,6 @@ io.on('connection', (socket) => {
   console.log('🟢 Cliente conectado al microservicio');
 });
 
-server.listen(3002, () => {
+server.listen(3002, '0.0.0.0', () => {
   console.log('✅ Microservicio de notificaciones activo en puerto 3002');
 });

@@ -11,11 +11,23 @@ export default function InstructionsButton() {
     <div className="relative">
       <div className="relative group">
         <button
-          className="bg-indigo-400 hover:bg-indigo-500 text-black rounded-full px-3 py-1 shadow-md transition duration-200"
+          className="bg-indigo-400 hover:bg-indigo-500 text-gray-800 rounded-full px-3 py-1 shadow-md transition duration-200"
           onClick={toggleInstructions}
         >
-          <img src="/exclamacion.webp" alt="!" className="h-6 w-6" /> {/* Imagen de advertencia desde la carpeta public */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2.5" />
+            <line x1="12" y1="6" x2="12" y2="13" stroke="currentColor" strokeWidth="3" />
+            <circle cx="12" cy="16" r="1" fill="currentColor" />
+          </svg>
         </button>
+
         <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10 span-info">
           Instrucciones simples y créditos.
         </span>

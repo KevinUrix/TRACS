@@ -99,6 +99,7 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
   // Define el título según esa condición
   const titleText = containsDuct1 ? "Conteo de alumnos" : `Horario - ${selectedBuilding}`;
 
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   printWindow.document.write(`
     <!DOCTYPE html>
@@ -216,7 +217,7 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
         <script>
           setTimeout(() => {
             window.print();
-            window.close();
+            ${isMobile ? '' : 'window.close();'}
           }, 300);
         </script>
       </body>

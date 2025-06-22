@@ -106,6 +106,10 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
                 cache.set(cacheKey, data);
                 console.log(`Datos de ${edifp} almacenados en caché en segundo plano.`);
             }
+            else {
+                cache.set(cacheKey, []);
+                console.log(`Datos de ${edifp} almacenados en caché en segundo plano - Vacios.`);
+            }
 
 
         } catch (err) {
@@ -150,6 +154,10 @@ const scrapeData = async (cycle, edifp) => {
         if (data.length > 0) {
             console.log(`Datos de ${edifp} obtenidos y almacenados en caché.`);
             cache.set(cacheKey, data);
+        }
+        else {
+            cache.set(cacheKey, []);
+            console.log(`Datos de ${edifp} obtenidos y almacenados en caché. - Vacios.`);
         }
 
         // Iniciar el scraping en segundo plano para los demás

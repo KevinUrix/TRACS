@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
+const path = require('path');
 
 const { loadModelsFromDisk, trainFromDatabase } = require('./utils/aiClassifier');
 const scheduleRoutes = require('./routes/scheduleRoutes');
@@ -42,10 +43,18 @@ app.use('/api', trainRoutes);
 app.use('/api', userRoutes);
 app.use('/api/tickets', ticketRoutes);
 
+/* // Host - build
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
+}); */
+
 (async () => {
   // await trainFromDatabase();
   await loadModelsFromDisk();
-
+  
   server.listen(PORT, () => {
     console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
   });

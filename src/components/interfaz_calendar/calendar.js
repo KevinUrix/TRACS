@@ -226,7 +226,6 @@ export default function Calendar() {
     const loadLocalSchedule = async () => {
       try {
         const localResponse = await fetch(`/api/local-schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
-        alert("PRUEBA")
         if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
         
         const localData = await localResponse.json();

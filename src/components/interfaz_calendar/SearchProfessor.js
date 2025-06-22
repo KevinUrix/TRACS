@@ -36,6 +36,11 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
       }
 
       const data = await response.json();
+      if (!Array.isArray(data)) {
+        setFilteredSchedule([]);
+        setShowPopup(true);
+        return;
+      }
       setFilteredSchedule(data);
       setShowPopup(true);
     } catch (error) {

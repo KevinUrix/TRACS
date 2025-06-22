@@ -1,6 +1,6 @@
 const cache = require('../scraper/cache');
 const { scrapeData } = require('../scraper/schedules');
-const buildingsData = require('../config/buildings');
+const buildingsData = require('../config/buildings.json');
 const buildings = buildingsData.edifp;
 
 // Normalización del nombre del profesor
@@ -48,10 +48,22 @@ const matchesName = (fullName, normalizedQuery) => {
     // Verifica si hay match con alguna de las key
     const matchingCacheKeys = cacheKeys.filter(key => key.startsWith(cycleCacheKeyPrefix));
 
-    if (matchingCacheKeys.length < buildings.length) {
-      console.log(`No se encontraron todos los edificios en caché, haciendo scraping para la búsqueda.`);
-      await scrapeData(cycle, building);
-      await new Promise(resolve => setTimeout(resolve, 10000));
+    // Extraer nombres de edificios desde las claves cacheadas
+    const cachedBuildings = matchingCacheKeys.map(key =>
+      key.replace(cycleCacheKeyPrefix, '')
+    );
+
+    // Filtrar los edificios que aún no están cacheados (ni siquiera array un vacío)
+    const buildingsToScrape = buildings.filter(building => !cachedBuildings.includes(building.value));
+
+    if (buildingsToScrape.length > 0) {
+      await new Promise(resolve => setTimeout(resolve, 7000));
+
+      console.log(`${buildingsToScrape.length} edificios no están cacheados. Se procederá a scrapear.`);
+
+      for (const building of buildingsToScrape) {
+        await scrapeData(cycle, building.value);
+      }
     }
 
     const updatedCacheKeys = cache.keys();

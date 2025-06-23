@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import ProfessorSchedule from './professorSchedule';
 import { toast } from 'react-toastify';
+import API_URL from '../../config/api';
+import ProfessorSchedule from './professorSchedule';
 
 export default function SearchProfessor({ selectedCycle, selectedBuilding, selectedDay }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -21,7 +22,7 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
 
     try {
       setIsLoadingPopup(true);
-      const response = await fetch(`/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
+      const response = await fetch(`${API_URL}/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
       setIsLoadingPopup(false);
 
       if (!response.ok) {

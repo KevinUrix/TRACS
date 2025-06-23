@@ -34,7 +34,7 @@ exports.createTicket = async (req, res) => {
     const newTicket = result.rows[0];
 
     // Emitimos evento a los clientes conectados
-    await axios.post('http://localhost:3002/notify', {type: 'new-ticket', data: newTicket});
+    await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-ticket', data: newTicket});
 
     
     res.status(201).json(newTicket);

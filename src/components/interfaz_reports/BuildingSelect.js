@@ -1,12 +1,14 @@
-// components/BuildingSelect.jsx
 import { useState, useEffect } from 'react';
+import API_URL from '../../config/api';
 import "./reports.css"
+
+
 
 export default function BuildingSelect({ selectedBuilding, onChange }) {
   const [building, setBuilding] = useState([]);
 
   useEffect(() => {
-    fetch("/api/buildings")
+    fetch(`${API_URL}/api/buildings`)
       .then((res) => res.json())
       .then((data) => {
         const buildings = data.edifp || [];

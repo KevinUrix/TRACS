@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import EditReservationForm from './editReservationForm'; // Importamos el formulario
+import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import API_URL from '../../config/api';
+import EditReservationForm from './editReservationForm'; // Importamos el formulario
 
 const dayNames = {
   L: 'Lunes',
@@ -77,17 +78,17 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         params.append('originalGoogleEventId', selectedReservation.googleEventId);
       
       if (selectedReservation.googleEventId) {
-        const authStatusRes = await fetch(`/api/google/status?user=${user}`);
+        const authStatusRes = await fetch(`${API_URL}/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
           console.log('>> Usuario no autenticado para modificar evento, redirigiendo...');
-          window.location.href = `http://localhost:3001/api/google/auth?user=${user}`;
+          window.location.href = `${API_URL}/api/google/auth?user=${user}`;
           return;
         }
       }
   
-      const res = await fetch(`/api/reservations?${params.toString()}`, {
+      const res = await fetch(`${API_URL}/api/reservations?${params.toString()}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedReservation)
@@ -123,17 +124,17 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
     try {
 
       if (reservation.googleEventId) {
-        const authStatusRes = await fetch(`/api/google/status?user=${user}`);
+        const authStatusRes = await fetch(`${API_URL}/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
           console.log('>> Usuario no autenticado para borrar evento, redirigiendo...');
-          window.location.href = `http://localhost:3001/api/google/auth?user=${user}`;
+          window.location.href = `${API_URL}/api/google/auth?user=${user}`;
           return;
         }
       }
 
-      const res = await fetch(`/api/reservations?${params.toString()}`, {
+      const res = await fetch(`${API_URL}/api/reservations?${params.toString()}`, {
         method: 'DELETE',
       });
 

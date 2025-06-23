@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import { useState, useEffect } from 'react';
+import API_URL from '../../config/api';
 
 export default function TicketsList({ building, refresh, onRefresh, statusFilter, categoryFilter}) {
   const [tickets, setTickets] = useState([]);
@@ -26,8 +27,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       setLoading(true);
       try {
         const url = building
-          ? `/api/tickets/${encodeURIComponent(building)}`
-          : `/api/tickets`;
+          ? `${API_URL}/api/tickets/${encodeURIComponent(building)}`
+          : `${API_URL}/api/tickets`;
 
         const res = await fetch(url);
         if (!res.ok) throw new Error('Error al cargar tickets');
@@ -78,7 +79,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
         status_changed_at: new Date().toISOString()
       };
 
-      const res = await fetch(`/api/tickets/${selectedTicket.id}`, {
+      const res = await fetch(`${API_URL}/api/tickets/${selectedTicket.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedTicket),
@@ -100,7 +101,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const handleDelete = async () => {
     if (!window.confirm('¿Seguro que quieres borrar este ticket?')) return;
     try {
-      const res = await fetch(`/api/tickets/${selectedTicket.id}`, {
+      const res = await fetch(`${API_URL}/api/tickets/${selectedTicket.id}`, {
         method: 'DELETE',
       });
       if (!res.ok) throw new Error('Error al borrar ticket');

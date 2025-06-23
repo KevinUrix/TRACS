@@ -1,7 +1,8 @@
+import { jwtDecode } from 'jwt-decode';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { jwtDecode } from 'jwt-decode';
 import { toast } from 'react-toastify';
+import API_URL from '../../config/api';
 
 export default function Login() {
   const [usuario, setUsuario] = useState('');
@@ -18,7 +19,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

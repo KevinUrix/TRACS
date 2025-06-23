@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import DownloadButton from './downloadButton';
-import ViewReservationsButton from './viewReservationsButton';
-import PrintButton from './printButton';
-import InstructionsButton from './intructionsButton';
-import StatisticButton from './statisticButton';
 import { handlePrint } from './utils';
 import { toast } from 'react-toastify';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import API_URL from '../../config/api';
+import DownloadButton from './downloadButton';
+import InstructionsButton from './instructionsButton';
+import PrintButton from './printButton';
 import SearchProfessor from './SearchProfessor';
+import StatisticButton from './statisticButton';
+import ViewReservationsButton from './viewReservationsButton';
 
 import './calendar.css'; // Importa el archivo de estilos CSS
 
@@ -73,7 +74,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     const fetchCycles = async () => {
       setLoadingCycle(true);
       try {
-        const response = await fetch("/api/cycles");
+        const response = await fetch(`${API_URL}/api/cycles`);
         const data = await response.json();
         setCycle(data);
       } catch (error) {
@@ -89,7 +90,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
 
   // EDIFICIOS
   useEffect(() => {
-    fetch("/api/buildings")
+    fetch(`${API_URL}/api/buildings`)
       .then(response => response.json())
       .then(data => {
         const buildings = data.edifp || [];
@@ -126,7 +127,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     }
   
     try {
-      const res = await fetch(`/api/descargar-json?cycle=${selectedCycle}`);
+      const res = await fetch(`${API_URL}/api/descargar-json?cycle=${selectedCycle}`);
   
       if (!res.ok) {
         throw new Error(`Error HTTP: ${res.status}`);
@@ -184,6 +185,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           value={selectedBuilding}
           onChange={handleBuildingChange}
           className="building-select sm:w-auto select-responsive"
+          disabled={!selectedCycle}
         >
           <option value="" disabled>Selecciona un edificio 🏢</option>
             {building.map((building, index) => (

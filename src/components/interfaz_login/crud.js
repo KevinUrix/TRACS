@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-//import NavbarCrud from './navbar_crud';
 import { toast } from 'react-toastify';
+import API_URL from '../../config/api';
 
 export default function Crud() {
   const [users, setUsers] = useState([]);
@@ -98,7 +98,7 @@ export default function Crud() {
   // Cargar usuarios al montar
   useEffect(() => {
     const excludedUser = username;
-    fetch(`/api/users?exclude=${excludedUser}`)
+    fetch(`${API_URL}/api/users?exclude=${excludedUser}`)
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => console.error('Error al obtener usuarios:', err));
@@ -107,7 +107,7 @@ export default function Crud() {
 
   // EDIFICIOS
   useEffect(() => {
-    fetch("/api/buildings")
+    fetch(`${API_URL}/api/buildings`)
       .then(response => response.json())
       .then(data => {
         const buildings = data.edifp || [];
@@ -125,7 +125,7 @@ export default function Crud() {
   // Actualizar rol
   const handleRoleChange = async (id, newRole) => {
     try {
-      const res = await fetch(`/api/users/${id}/role`, {
+      const res = await fetch(`${API_URL}/api/users/${id}/role`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -162,7 +162,7 @@ export default function Crud() {
     };
 
     try {
-      const res = await fetch(`/api/buildings?${params.toString()}`, {
+      const res = await fetch(`${API_URL}/api/buildings?${params.toString()}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -201,7 +201,7 @@ export default function Crud() {
     });
 
     try {
-      const res = await fetch(`/api/buildings?${params.toString()}`, {
+      const res = await fetch(`${API_URL}/api/buildings?${params.toString()}`, {
         method: 'DELETE',
       });
 
@@ -224,7 +224,7 @@ export default function Crud() {
   const confirmDeleteUser = async () => {
     if (!userToDelete) return;
     try {
-      const res = await fetch(`/api/users/${userToDelete.id}`, {
+      const res = await fetch(`${API_URL}/api/users/${userToDelete.id}`, {
         method: 'DELETE',
       });
 
@@ -251,7 +251,7 @@ export default function Crud() {
     });
 
     try {
-      const response = await fetch(`/api/buildings`, {
+      const response = await fetch(`${API_URL}/api/buildings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

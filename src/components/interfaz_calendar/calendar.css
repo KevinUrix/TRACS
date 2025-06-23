@@ -512,6 +512,10 @@ select:focus, textarea:focus {
   border-color: #72d276;
 }
 
+.building-select::disabled {
+  cursor: not-allowed;
+}
+
 .select-container .day-select {
   background-color: #fff7aa;
   border-color: #feee56;

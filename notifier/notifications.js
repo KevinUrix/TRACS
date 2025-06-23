@@ -2,6 +2,8 @@ const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 
+const PORT = process.env.PORT || process.env.SOCKET_PORT || 3002;
+
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -25,8 +27,13 @@ app.post('/notify', (req, res) => {
 
 io.on('connection', (socket) => {
   console.log('🟢 Cliente conectado al microservicio');
+  
+  socket.on('disconnect', () => {
+    console.log('🔴 Cliente desconectado');
+  });
 });
 
-server.listen(3002, '0.0.0.0', () => {
-  console.log('✅ Microservicio de notificaciones activo en puerto 3002');
+
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`✅ Microservicio de notificaciones activo en puerto ${PORT}`);
 });

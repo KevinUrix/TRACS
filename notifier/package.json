@@ -1,0 +1,13 @@
+{
+  "name": "notifier",
+  "version": "1.0.0",
+  "description": "Microservicio de notificaciones con Socket.IO",
+  "main": "notifications.js",
+  "scripts": {
+    "start": "node notifications.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}

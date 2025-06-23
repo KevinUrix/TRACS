@@ -1,7 +1,7 @@
-// src/components/AccountConfig.js
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import API_URL from '../config/api';
 
 
 import axios from 'axios';
@@ -30,7 +30,7 @@ export default function AccountConfig() {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const res = await axios.get('/api/info', {
+        const res = await axios.get(`${API_URL}/api/info`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         setUserInfo(res.data);
@@ -57,7 +57,7 @@ export default function AccountConfig() {
 
     try {
       const res = await axios.put(
-        '/api/account/username',
+        `${API_URL}/api/account/username`,
         { newUsername },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
@@ -96,7 +96,7 @@ export default function AccountConfig() {
 
     try {
       const res = await axios.put(
-        '/api/account/password',
+        `${API_URL}/api/account/password`,
         { currentPassword, newPassword: cleanedNewPassword, confirmPassword: cleanedConfirmPassword },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }

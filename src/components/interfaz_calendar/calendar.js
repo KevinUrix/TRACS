@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
+import API_URL from '../../config/api';
 import SelectsLogic from './selectsLogic';
-//import Navbar from './navbar_calendar'; // Importa el nuevo componente
 import ReserveButton from './reserveButton';
 import './calendar.css'; // Importa el archivo de estilos CSS
 
@@ -90,7 +90,7 @@ export default function Calendar() {
   const fetchReservations = async () => {
     if (!selectedCycle || !selectedBuilding) return;
   
-    const path = `/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`;
+    const path = `${API_URL}/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`;
   
     try {
       const response = await fetch(path);
@@ -123,7 +123,7 @@ export default function Calendar() {
       if (String(reservationData.createInGoogleCalendar) === 'true') {
         console.log('>> Se decidió CREAR evento en Google Calendar');
   
-        const authStatusRes = await fetch(`/api/google/status?user=${user}`);
+        const authStatusRes = await fetch(`${API_URL}/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
@@ -131,13 +131,15 @@ export default function Calendar() {
             autoClose: 1000,
             closeOnClick: true,
           });
-          sessionStorage.setItem('reservationState', JSON.stringify({
-            selectedCycle,
-            selectedBuilding,
-            selectedDay,
-          }));
+          if (selectedCycle && selectedBuilding && selectedDay) {
+            sessionStorage.setItem('reservationState', JSON.stringify({
+              selectedCycle,
+              selectedBuilding,
+              selectedDay,
+            }));
+          }
           setTimeout(() => {
-            window.location.href = `http://localhost:3001/api/google/auth?user=${user}`;
+            window.location.href = `${API_URL}/api/google/auth?user=${user}`;
           }, 1300);
           return;
         }
@@ -146,7 +148,7 @@ export default function Calendar() {
       }
   
       // Envío de reserva
-      const response = await fetch(`/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}&user=${user}`, {
+      const response = await fetch(`${API_URL}/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}&user=${user}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reservationData),
@@ -162,13 +164,15 @@ export default function Calendar() {
             autoClose: 1000,
             closeOnClick: true,
           });
-          sessionStorage.setItem('reservationState', JSON.stringify({
-            selectedCycle,
-            selectedBuilding,
-            selectedDay,
-          }));
+          if (selectedCycle && selectedBuilding && selectedDay) {
+            sessionStorage.setItem('reservationState', JSON.stringify({
+              selectedCycle,
+              selectedBuilding,
+              selectedDay,
+            }));
+          }
           setTimeout(() => {
-            window.location.href = `http://localhost:3001/api/google/reauth?user=${user}`;
+            window.location.href = `${API_URL}/api/google/reauth?user=${user}`;
           }, 1300);
         } 
         else {
@@ -190,7 +194,7 @@ export default function Calendar() {
   };
 
   useEffect(() => {
-  fetch("/api/buildings")
+  fetch(`${API_URL}/api/buildings`)
     .then(response => response.json())
     .then(data => {
       const buildings = data.edifp || [];
@@ -208,7 +212,7 @@ export default function Calendar() {
   useEffect(() => {
     if (selectedBuilding) {
       // Nombre del JSON dinámico según el edificio seleccionado
-      const buildingFile = `/api/classrooms?buildingName=${selectedBuilding}`;
+      const buildingFile = `${API_URL}/api/classrooms?buildingName=${selectedBuilding}`;
   
       fetch(buildingFile)
         .then(response => response.json())
@@ -225,7 +229,7 @@ export default function Calendar() {
     
     const loadLocalSchedule = async () => {
       try {
-        const localResponse = await fetch(`/api/local-schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
+        const localResponse = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
         if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
         
         const localData = await localResponse.json();
@@ -265,7 +269,7 @@ export default function Calendar() {
   
       // Intentar obtener desde el backend
       try {
-        const response = await fetch(`/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
+        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
   
         const data = await response.json();
@@ -320,7 +324,7 @@ export default function Calendar() {
       const buildingValues = buildings.map(b => b.value);
 
       const fetches = buildingValues.map(async (buildingName) => {
-        const response = await fetch(`/api/schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
+        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
         const data = await response.json();
         return { buildingName, data: data[buildingName] || [] };

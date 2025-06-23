@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import { useState, useEffect } from 'react';
 import BuildingSelect from './BuildingSelect';
+import TicketsList from './TicketsList';
+import API_URL from '../../config/api';
+
 import './reports.css'; // Importa el archivo de estilos CSS
 
-import TicketsList from './TicketsList';
-//import NavbarReports from './navbar_reports';
 
 export default function Reports() {
   const [selectedBuilding, setSelectedBuilding] = useState('');
@@ -63,7 +64,7 @@ export default function Reports() {
     };
 
     try {
-      const response = await fetch('/api/tickets', {
+      const response = await fetch(`${API_URL}/api/tickets`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(ticket),
@@ -117,7 +118,7 @@ export default function Reports() {
 
     const fetchClassrooms = async () => {
       try {
-        const res = await fetch(`/api/classrooms?buildingName=${selectedBuilding}`);
+        const res = await fetch(`${API_URL}/api/classrooms?buildingName=${selectedBuilding}`);
         if (!res.ok) throw new Error('No se pudo cargar la lista de salones');
         const data = await res.json();
         setClassrooms(data);
@@ -139,7 +140,7 @@ export default function Reports() {
 
           <div className="p-2 mt-0 sm:mt-0 md:mt-1 lg:mt-6 max-w-7xl mx-auto w-full overflow-x-auto overflow-y-hidden">
               {/* Selector de edificio y botón de agregar */}
-            <div className="p-4 select-container-reports flex md:flex-row items-center justify-between gap-4 mb-1 sm:flex-row">
+            <div className="p-4 select-container-reports flex md:flex-row items-center justify-between gap-4 mb-1 sm:flex-row">
               {/* Edificio a la izquierda */}
               <BuildingSelect
                 selectedBuilding={selectedBuilding}
@@ -185,16 +186,16 @@ export default function Reports() {
               </div>
             </div>
             {/* Lista de tickets */}
-           <div className="bg-white p-2 mb-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border-reports"> 
-              <TicketsList
-                building={selectedBuilding} // puede estar vacío
-                refresh={refreshTickets}
-                onRefresh={() => setRefreshTickets(prev => !prev)}
-                statusFilter={statusFilter}
-                categoryFilter={categoryFilter} // nuevo prop
-              />
-            </div>
+          <div className="bg-white p-2 mb-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border-reports"> 
+            <TicketsList
+              building={selectedBuilding} // puede estar vacío
+              refresh={refreshTickets}
+              onRefresh={() => setRefreshTickets(prev => !prev)}
+              statusFilter={statusFilter}
+              categoryFilter={categoryFilter} // nuevo prop
+            />
           </div>
+        </div>
 
         {/* Modal de nuevo ticket */}
         {showForm && (
@@ -280,6 +281,6 @@ export default function Reports() {
             </div>
           </div>
         )}
-      </div>
+    </div>
   );
 }

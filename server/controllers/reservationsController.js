@@ -21,7 +21,7 @@ const saveReservation = async (req, res) => {
   const reservationData = req.body;
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
-  if (!reservationData || !reservationData.course || !reservationData.professor) {
+  if (!reservationData || !reservationData.course || !reservationData.professor || !cycle || !buildingName) {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
   }
 
@@ -91,7 +91,7 @@ const saveReservation = async (req, res) => {
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
     // SOCKET
-    await axios.post('http://localhost:3002/notify', {type: 'new-reservation', data: reservationData});
+    await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: reservationData});
 
     res.status(201).json({
       message: 'Reserva guardada con éxito',

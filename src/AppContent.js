@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { jwtDecode } from 'jwt-decode';
+import { notifyTicket, notifyReserva } from './utils/notificacions';
 import { toast } from 'react-toastify';
 import { Toaster} from 'sonner';
-import socket from './socket';
+import socket from './utils/socket';
 
 
 
@@ -17,7 +18,6 @@ import Registro from './components/interfaz_login/registro';
 import Crud from './components/interfaz_login/crud';
 import AccountConfig from './components/AccountConfig';
 import NavbarGlobal from './components/NavbarGlobal';
-import { notifyTicket, notifyReserva } from './notificacions';
 
 export default function AppContent() {
   const navigate = useNavigate();

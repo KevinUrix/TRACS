@@ -63,10 +63,15 @@ export default function AccountConfig() {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         }
       );
+
       setUsernameMessage(res.data.message);
       setUserInfo((prev) => ({ ...prev, username: newUsername }));
     } catch (err) {
       if (err.response) {
+        if (err.response.status === 403) {
+          navigate("/");
+          return;
+        }
         setUsernameMessage(err.response.data.message);
       } else {
         setUsernameMessage('Error al actualizar nombre de usuario');
@@ -108,6 +113,10 @@ export default function AccountConfig() {
       setConfirmPassword('');
     } catch (err) {
       if (err.response) {
+        if (err.response.status === 403) {
+          navigate("/");
+          return;
+        }
         setPasswordMessage(err.response.data.message);
       } else {
         setPasswordMessage('Error al cambiar contraseña');
@@ -174,12 +183,12 @@ export default function AccountConfig() {
         <hr className="my-4 border-t-2 border-gray-300 mb-7" />
 
         {/* Cambiar contraseña */}
-        <form onSubmit={handlePasswordChange}   className="flex flex-col items-center w-full max-w-md mx-auto">
+        <form onSubmit={handlePasswordChange} className="flex flex-col items-center w-full max-w-md mx-auto">
           <h3 className="font-semibold mb-2 text-xl">Cambiar contraseña</h3>
 
           <div className="relative mb-4 flex items-center w-full max-w-sm">
             <input
-              type={showPasswords ? 'text' : 'password'}
+              type={'text'}
               placeholder="Contraseña actual"
               className="w-68 p-3 border rounded w-full text-lg"
               value={currentPassword}
@@ -207,7 +216,7 @@ export default function AccountConfig() {
 
           <div className="mb-4 w-full max-w-sm">
             <input
-              type={showPasswords ? 'text' : 'password'}
+              type={'password'}
               placeholder="Nueva contraseña"
               className="w-full p-3 border rounded text-lg"
               value={newPassword}
@@ -223,7 +232,7 @@ export default function AccountConfig() {
 
           <div className="mb-4 w-full max-w-sm">
             <input
-              type={showPasswords ? 'text' : 'password'}
+              type={'password'}
               placeholder="Confirmar nueva contraseña"
               className="w-full p-3 border rounded text-lg"
               value={confirmPassword}

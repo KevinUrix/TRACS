@@ -21,7 +21,7 @@ const saveReservation = async (req, res) => {
   const reservationData = req.body;
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
-  if (!reservationData || !reservationData.course || !reservationData.professor || !cycle || !buildingName) {
+  if (!reservationData || !reservationData.course || !reservationData.professor || !cycle || !buildingName || !user) {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
   }
 
@@ -196,7 +196,7 @@ const updateReservation = async (req, res) => {
 
   const updatedData = req.body;
 
-  if (!updatedData || !updatedData.course || !updatedData.professor) {
+  if (!updatedData || !updatedData.course || !updatedData.professor || !cycle || !buildingName || !user) {
     return res.status(400).json({ error: 'Faltan datos obligatorios para la reserva' });
   }
 

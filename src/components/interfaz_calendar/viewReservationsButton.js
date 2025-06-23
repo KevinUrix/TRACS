@@ -83,7 +83,13 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   
         if (!authStatus.authenticated) {
           console.log('>> Usuario no autenticado para modificar evento, redirigiendo...');
-          window.location.href = `${API_URL}/api/google/auth?user=${user}`;
+          toast.info('Redirigiéndote para iniciar sesión en Google...', {
+            autoClose: 1000,
+            closeOnClick: true,
+          });
+          setTimeout(() => {
+            window.location.href = `${API_URL}/api/google/auth?user=${user}`;
+          }, 1300);
           return;
         }
       }
@@ -129,7 +135,13 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   
         if (!authStatus.authenticated) {
           console.log('>> Usuario no autenticado para borrar evento, redirigiendo...');
-          window.location.href = `${API_URL}/api/google/auth?user=${user}`;
+          toast.info('Redirigiéndote para iniciar sesión en Google...', {
+            autoClose: 1000,
+            closeOnClick: true,
+          });
+          setTimeout(() => {
+            window.location.href = `${API_URL}/api/google/auth?user=${user}`;
+          }, 1300);
           return;
         }
       }

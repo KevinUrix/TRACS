@@ -1,4 +1,5 @@
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import API_URL from '../../config/api';
 
@@ -7,16 +8,18 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const [loading, setLoading] = useState(false);
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [isSaving, setIsSaving] = useState(false);
+  const navigate = useNavigate();
+  
   const ticketsPerPage = 9;
 
   const filteredTickets = tickets.filter(ticket => {
-  const matchesStatus =
-    statusFilter.toLowerCase() === 'todos' || ticket.status.toLowerCase() === statusFilter.toLowerCase();
-  const matchesCategory =
-    categoryFilter.toLowerCase() === 'todos' || ticket.category.toLowerCase() === categoryFilter.toLowerCase();
-  return matchesStatus && matchesCategory;
-});
+    const matchesStatus =
+      statusFilter.toLowerCase() === 'todos' || ticket.status.toLowerCase() === statusFilter.toLowerCase();
+    const matchesCategory =
+      categoryFilter.toLowerCase() === 'todos' || ticket.category.toLowerCase() === categoryFilter.toLowerCase();
+      return matchesStatus && matchesCategory;
+  });
 
   const totalPages = Math.max(1, Math.ceil(filteredTickets.length / ticketsPerPage));
 
@@ -65,8 +68,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     setSelectedTicket((prev) => ({ ...prev, [name]: value }));
   };
 
-   // Actualizar ticket
-  const [isSaving, setIsSaving] = useState(false);
+  // Actualizar ticket
   const handleSave = async () => {
     if (isSaving) return; // Evita clics múltiples
     setIsSaving(true); // Inicia la "protección"
@@ -81,10 +83,20 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
       const res = await fetch(`${API_URL}/api/tickets/${selectedTicket.id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        },
         body: JSON.stringify(updatedTicket),
       });
-      if (!res.ok) throw new Error('Error al actualizar ticket');
+
+      if (!res.ok) {
+        if (res.status === 403) {
+          navigate("/");
+          return;
+        }
+        throw new Error('Error al actualizar ticket');
+      }
 
       toast.success('Ticket actualizado');
       setSelectedTicket(null);
@@ -103,8 +115,18 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     try {
       const res = await fetch(`${API_URL}/api/tickets/${selectedTicket.id}`, {
         method: 'DELETE',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
       });
-      if (!res.ok) throw new Error('Error al borrar ticket');
+      
+      if (!res.ok) {
+        if (res.status === 403) {
+          navigate("/");
+          return;
+        }
+        throw new Error('Error al borrar ticket');
+      }
       toast.success('Ticket borrado');
       setSelectedTicket(null);
       onRefresh();

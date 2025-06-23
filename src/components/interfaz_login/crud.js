@@ -129,6 +129,7 @@ export default function Crud() {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`
         },
         body: JSON.stringify({ role: newRole }),
       });
@@ -138,6 +139,13 @@ export default function Crud() {
         setUsers((prev) =>
           prev.map((user) => (user.id === id ? { ...user, role: newRole } : user))
         );
+        toast.success(`Se ha cambiado el rol del usuario correctamente`);
+      }
+      else {
+        if (res.status === 403) {
+          navigate("/");
+          return;
+        }
       }
     } catch (err) {
       console.error('Error al actualizar el rol:', err);
@@ -166,6 +174,7 @@ export default function Crud() {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem('token')}`
         },
         body: JSON.stringify(cleanedBuildingData),
       });
@@ -180,6 +189,10 @@ export default function Crud() {
         );
         toast.success("Edificio actualizado correctamente");
       } else {
+        if (res.status === 403) {
+          navigate("/");
+          return;
+        }
         toast.error("Error al actualizar el edificio");
       }
     } catch (error) {
@@ -203,13 +216,20 @@ export default function Crud() {
     try {
       const res = await fetch(`${API_URL}/api/buildings?${params.toString()}`, {
         method: 'DELETE',
+        headers: { 
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
       });
 
       if (res.ok) {
         setBuildings((prevBuildings) => prevBuildings.filter((building) => building.value !== buildingToDelete.value));
         toast.success('Se eliminó correctamente.');
       } else {
-        console.error('Fallo al eliminar edificio');
+        if (res.status === 403) {
+          navigate("/");
+          return;
+        }
+        toast.error('Fallo al eliminar edificio');
       }
     } catch (err) {
       console.error("Error al eliminar:", err);
@@ -226,15 +246,25 @@ export default function Crud() {
     try {
       const res = await fetch(`${API_URL}/api/users/${userToDelete.id}`, {
         method: 'DELETE',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
       });
 
       if (res.ok) {
         setUsers((prevUsers) => prevUsers.filter((u) => u.id !== userToDelete.id));
+        toast.error('Se ha eliminado el usuario');
       } else {
-        console.error('Fallo al eliminar usuario');
+        if (res.status === 403) {
+          navigate("/");
+          return;
+        }
+        toast.error('Fallo al eliminar usuario');
+        return;
       }
     } catch (err) {
       console.error('Error al eliminar usuario:', err);
+      toast.error('Error al eliminar usuario');
     } finally {
       setShowDeleteModal(false);
       setUserToDelete(null);
@@ -245,15 +275,13 @@ export default function Crud() {
   const handleSaveBuilding = async () => {
     if (!buildingToAdd) return;
 
-    const params = new URLSearchParams({
-      buildingName: buildingToAdd.value,
-      buildingText: buildingToAdd.text
-    });
-
     try {
       const response = await fetch(`${API_URL}/api/buildings`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        },
         body: JSON.stringify({
           value: buildingToAdd.value,
           text: buildingToAdd.text,
@@ -263,15 +291,19 @@ export default function Crud() {
       const result = await response.json();
   
       if (!response.ok) {
-        console.error('Error desde el servidor:', result.error || 'Error desconocido');
-        toast.error('Error al agregar el edificio.')
+        if (response.status === 403) {
+          navigate("/");
+          return;
+        }
+        console.error('Error desde el servidor:', result?.error || 'Error desconocido');
+        toast.error('Error al agregar el edificio.');
         return;
-      } else {
-        setBuildings(prev => [...prev, buildingToAdd]);
-        toast.success("Edificio agregado correctamente");
       }
+      setBuildings(prev => [...prev, buildingToAdd]);
+      toast.success("Edificio agregado correctamente");
     } catch (err) {
       console.error("Error al agregar el edificio:", err);
+      toast.error('Error al agregar el edificio.');
     } finally {
       setShowAddModalBuilding(false);
       setBuildingToAdd(null);

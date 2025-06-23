@@ -10,6 +10,7 @@ export default function Login() {
   const [error, setError] = useState('');
   const [showPasswords, setShowPasswords] = useState(false);
   const navigate = useNavigate();
+  const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
     document.title = "Quill - Login";
@@ -17,6 +18,9 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    if (isSaving) return; // Evita clics múltiples
+    setIsSaving(true); // Inicia la "protección"
 
     try {
       const res = await fetch(`${API_URL}/api/login`, {
@@ -59,6 +63,9 @@ export default function Login() {
       console.error('Error de red:', err);
       setError('No se pudo conectar con el servidor');
     }
+    finally {
+      setIsSaving(false); // Vuelve a permitir guardar
+    }
   };
 
   const goToSignup = () => {
@@ -74,7 +81,7 @@ return (
 
     {/* Capa frontal (formulario) */}
     <div className="relative flex justify-center items-center h-full">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border-reports">
+      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border-reports" autocomplete="off">
         <h2 className="text-2xl font-bold mb-4">Iniciar Sesión</h2>
 
         {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
@@ -147,6 +154,7 @@ return (
         <button
           type="submit"
           className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 mb-2"
+          disabled={isSaving}
         >
           Iniciar Sesión
         </button>

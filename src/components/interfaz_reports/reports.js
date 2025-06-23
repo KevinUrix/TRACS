@@ -1,5 +1,6 @@
 import { toast } from 'react-toastify';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import BuildingSelect from './BuildingSelect';
 import TicketsList from './TicketsList';
 import API_URL from '../../config/api';
@@ -26,6 +27,7 @@ export default function Reports() {
 
   const [statusFilter, setStatusFilter] = useState('Todos');
   const [categoryFilter, setCategoryFilter] = useState('Todos');
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.title = "Quill - Reportes";
@@ -66,12 +68,19 @@ export default function Reports() {
     try {
       const response = await fetch(`${API_URL}/api/tickets`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        },
         body: JSON.stringify(ticket),
       });
 
       if (!response.ok) {
         const errorData = await response.json();
+        if (response.status === 403) {
+          navigate("/");
+          return;
+        }
         throw new Error(errorData.error || 'Error al guardar ticket');
       }
 

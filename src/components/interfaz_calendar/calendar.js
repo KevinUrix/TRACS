@@ -204,7 +204,10 @@ export default function Calendar() {
       const newBuildingsOrder = [...prioritized, ...rest];
       setBuildings(newBuildingsOrder); // Aquí cambias
     })
-    .catch(error => console.error("Error cargando los edificios:", error));
+    .catch(error => {
+      console.error("Error cargando los edificios:", error);
+      toast.error("Se ha detectado un error en el servidor.");
+    });
 }, []);
 
 
@@ -215,9 +218,18 @@ export default function Calendar() {
       const buildingFile = `${API_URL}/api/classrooms?buildingName=${selectedBuilding}`;
   
       fetch(buildingFile)
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
         .then(data => setClassrooms(data))
-        .catch(error => console.error("Error cargando los salones:", error));
+        .catch(error => {
+          console.error("Error cargando los salones:", error);
+          toast.error("No se encontraron salones. Por favor, reinicia la página.");
+        });
+        
     }
   }, [selectedBuilding]);
 

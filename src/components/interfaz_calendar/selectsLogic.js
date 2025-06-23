@@ -127,10 +127,17 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     }
   
     try {
-      const res = await fetch(`${API_URL}/api/descargar-json?cycle=${selectedCycle}`);
+      const res = await fetch(`${API_URL}/api/descargar-json?cycle=${selectedCycle}`,
+        {
+          headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+        }
+      );
   
       if (!res.ok) {
-        throw new Error(`Error HTTP: ${res.status}`);
+        if (res.status === 403) {
+          toast.error("Se ha cerrado tu sesión. Vuelve a iniciarla.");
+          throw new Error(`Error HTTP: ${res.status}`);
+        }
       }
   
       const result = await res.json();

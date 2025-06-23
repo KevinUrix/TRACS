@@ -11,14 +11,14 @@ export default function Registro() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [showPasswords, setShowPasswords] = useState(false);
-
+  const [isSaving, setIsSaving] = useState(false);
+  
   const navigate = useNavigate();
 
   useEffect(() => {
     document.title = "Quill - Registro";
   }, []);
 
-  const [isSaving, setIsSaving] = useState(false);
   const handleRegister = async (e) => {
     e.preventDefault();
 
@@ -42,18 +42,22 @@ export default function Registro() {
     try {
       const res = await fetch(`${API_URL}/api/register`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('token')}` },
         body: JSON.stringify({ username: usuario, password }),
       });
 
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.error || 'Error al registrar usuario');
+        if (res.status === 403) {
+          navigate("/");
+        }
+        else {
+          setError(data.error || 'Error al registrar usuario');
+        }
         return;
       }
 
-      //setSuccess('Usuario registrado con éxito');
       toast.success('Usuario registrado con éxito');
       setError('');
       setTimeout(() => navigate('/crud'), 0);

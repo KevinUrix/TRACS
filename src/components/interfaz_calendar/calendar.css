@@ -928,3 +928,20 @@ select:focus, textarea:focus {
   }
 }
 
+/* Oculta el botón "ojo" en Microsoft Edge e Internet Explorer */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* Oculta en Safari (WebKit) */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none;
+}
+
+/* Safari iOS también puede requerir esto */
+input[type="password"] {
+  appearance: none;
+  -webkit-appearance: none;
+}

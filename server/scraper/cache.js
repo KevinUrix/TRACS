@@ -30,4 +30,21 @@ const set = async (key, value, ttl = DEFAULT_TTL) => {
   }
 };
 
-module.exports = { get, set };
+const keys = async (pattern = '*') => {
+  try {
+    const localKeys = Array.from(localCache.keys());
+
+    if (isRedisReady()) {
+      const redisKeys = await redis.keys(pattern);
+      const allKeys = new Set([...redisKeys, ...localKeys]); // eliminar duplicados
+      return Array.from(allKeys);
+    }
+
+    return localKeys;
+  } catch (err) {
+    console.error('Error al obtener claves del caché:', err);
+    return Array.from(localCache.keys());
+  }
+};
+
+module.exports = { get, set, keys };

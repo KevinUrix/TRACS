@@ -42,7 +42,7 @@ const matchesName = (fullName, normalizedQuery) => {
   try {
     let results = [];
     // Obtener todas las claves del caché
-    const cacheKeys = cache.keys();
+    const cacheKeys = await cache.keys();
     // Procesar todas las claves que corresponden al ciclo
     const cycleCacheKeyPrefix = `schedule-${cycle}-building-`;
     // Verifica si hay match con alguna de las key
@@ -66,12 +66,12 @@ const matchesName = (fullName, normalizedQuery) => {
       }
     }
 
-    const updatedCacheKeys = cache.keys();
+    const updatedCacheKeys = await cache.keys();
 
     for (let cacheKey of updatedCacheKeys) {
       // Procesar solo los cachés que corresponden al ciclo
       if (cacheKey.startsWith(cycleCacheKeyPrefix)) {
-        const data = cache.get(cacheKey);
+        const data = await cache.get(cacheKey);
 
         if (data && Array.isArray(data)) {
           // Filtra los resultados que coinciden con el nombre del profesor

@@ -135,6 +135,8 @@ export default function AppContent() {
 
 
             <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <Login />}/>
+
+            <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </div>
       </div>

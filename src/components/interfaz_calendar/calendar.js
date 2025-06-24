@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
@@ -17,8 +17,8 @@ export default function Calendar() {
   const [isStatisticMode, setIsStatisticMode] = useState(false);
   const [buildings, setBuildings] = useState([]);
   const [fullSchedule, setFullSchedule] = useState({});
-
-
+  
+  
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
@@ -49,6 +49,33 @@ export default function Calendar() {
     }
   }, []); // Se ejecuta solo una vez cuando el componente se monta
 
+
+  /* ---------- GUARDA ESTADOS ANTES DE CAMBIAR DE PÁGINA ---------- */
+  // Guarda el estado cada vez que cambie de la raíz a otra página
+  useEffect(() => {
+    const isOnRoot = location.pathname === '/';
+    const isComplete = selectedCycle && selectedBuilding && selectedDay;
+
+    if (!isOnRoot || !isComplete) return;
+
+    sessionStorage.setItem('reservationState', JSON.stringify({
+      selectedCycle,
+      selectedBuilding,
+      selectedDay,
+    }));
+  }, [selectedCycle, selectedBuilding, selectedDay, location.pathname]);
+  
+
+  // Guarda el estado antes de redirigirte a Google
+  const saveReservationState = () => {
+    if (selectedCycle && selectedBuilding && selectedDay) {
+      sessionStorage.setItem('reservationState', JSON.stringify({
+        selectedCycle,
+        selectedBuilding,
+        selectedDay,
+      }));
+    }
+  };
   useEffect(() => {
     // Verifica si en la URL está el parámetro "fromGoogle"
     const params = new URLSearchParams(location.search);
@@ -117,6 +144,7 @@ export default function Calendar() {
   };
 
 
+  // Creación de reservas
   const handleSaveReservation = async (reservationData) => {
     try {
       // Verificación de autenticación, solo si se requiere Google Calendar
@@ -131,13 +159,7 @@ export default function Calendar() {
             autoClose: 1000,
             closeOnClick: true,
           });
-          if (selectedCycle && selectedBuilding && selectedDay) {
-            sessionStorage.setItem('reservationState', JSON.stringify({
-              selectedCycle,
-              selectedBuilding,
-              selectedDay,
-            }));
-          }
+          saveReservationState();
           setTimeout(() => {
             window.location.href = `${API_URL}/api/google/auth?user=${user}`;
           }, 1300);
@@ -164,13 +186,7 @@ export default function Calendar() {
             autoClose: 1000,
             closeOnClick: true,
           });
-          if (selectedCycle && selectedBuilding && selectedDay) {
-            sessionStorage.setItem('reservationState', JSON.stringify({
-              selectedCycle,
-              selectedBuilding,
-              selectedDay,
-            }));
-          }
+          saveReservationState();
           setTimeout(() => {
             window.location.href = `${API_URL}/api/google/reauth?user=${user}`;
           }, 1300);
@@ -193,6 +209,7 @@ export default function Calendar() {
     }
   };
 
+  // Obtener edificios - Al cargar el componente
   useEffect(() => {
   fetch(`${API_URL}/api/buildings`)
     .then(response => response.json())
@@ -208,7 +225,7 @@ export default function Calendar() {
       console.error("Error cargando los edificios:", error);
       toast.error("Se ha detectado un error en el servidor.");
     });
-}, []);
+  }, []);
 
 
 

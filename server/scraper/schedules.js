@@ -79,7 +79,9 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
         activeBackgroundScraping.add(edifp);
 
         const cacheKey = `schedule-${cycle}-building-${edifp}`;
-        if (cache.get(cacheKey)) {
+        const alreadyCached = await cache.get(cacheKey);
+
+        if (alreadyCached) {
             activeBackgroundScraping.delete(edifp);
             return;
         }
@@ -103,12 +105,12 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
             const data = extractData($, edifp);
 
             if (data.length > 0) {
-                cache.set(cacheKey, data);
-                console.log(`Datos de ${edifp} almacenados en caché en segundo plano.`);
+                await cache.set(cacheKey, data);
+                console.log(`Datos de ${cycle} - ${edifp} almacenados en caché en segundo plano.`);
             }
             else {
-                cache.set(cacheKey, []);
-                console.log(`Datos de ${edifp} almacenados en caché en segundo plano - Vacios.`);
+                await cache.set(cacheKey, []);
+                console.log(`Datos de ${cycle} - ${edifp} almacenados en caché en segundo plano - Vacios.`);
             }
 
 
@@ -124,10 +126,10 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
 // Scraping principal (directo al usuario)
 const scrapeData = async (cycle, edifp) => {
     const cacheKey = `schedule-${cycle}-building-${edifp}`;
-    const cachedSchedules = cache.get(cacheKey);
+    const cachedSchedules = await cache.get(cacheKey);
 
     if (cachedSchedules) {
-        console.log(`Datos de ${edifp} obtenidos desde el caché.`);
+        console.log(`Datos de ${cycle} - ${edifp} obtenidos desde el caché.`);
         return cachedSchedules;
     }
 
@@ -152,12 +154,12 @@ const scrapeData = async (cycle, edifp) => {
         const data = extractData($, edifp);
 
         if (data.length > 0) {
-            console.log(`Datos de ${edifp} obtenidos y almacenados en caché.`);
-            cache.set(cacheKey, data);
+            console.log(`Datos de ${cycle} - ${edifp} obtenidos y almacenados en caché.`);
+            await cache.set(cacheKey, data);
         }
         else {
-            cache.set(cacheKey, []);
-            console.log(`Datos de ${edifp} obtenidos y almacenados en caché. - Vacios.`);
+            await cache.set(cacheKey, []);
+            console.log(`Datos de ${cycle} - ${edifp} obtenidos y almacenados en caché. - Vacios.`);
         }
 
         // Iniciar el scraping en segundo plano para los demás

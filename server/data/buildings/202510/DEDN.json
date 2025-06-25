@@ -119,6 +119,19 @@
   {
     "data": {
       "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "223234",
+      "code": "V3690",
+      "students": 28,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDN",
       "classroom": "LE04",
@@ -154,6 +167,19 @@
       "course": "INSTRUMENTACION"
     },
     "professor": "GOMEZ MORALES, LEOBARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE07",
+      "nrc": "164962",
+      "code": "IB145",
+      "students": 14,
+      "course": "INSTRUMENTACION PARA SISTEMAS FOTONICOS"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
   },
   {
     "data": {
@@ -664,19 +690,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDN",
-      "classroom": "LE04",
-      "nrc": "43424",
-      "code": "I7275",
-      "students": 19,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
-    },
-    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDN",
@@ -700,19 +713,6 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
     },
     "professor": "PACHECO PADILLA, LUIS MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDN",
-      "classroom": "LE05",
-      "nrc": "43425",
-      "code": "I7275",
-      "students": 14,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
-    },
-    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
   },
   {
     "data": {
@@ -742,19 +742,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDN",
-      "classroom": "A002",
-      "nrc": "91621",
-      "code": "I7271",
-      "students": 21,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
-    },
-    "professor": "GARCIA GUTIERREZ, VICTOR"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . I . . .",
       "building": "DEDN",
@@ -765,6 +752,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "A002",
+      "nrc": "91621",
+      "code": "I7271",
+      "students": 21,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
   },
   {
     "data": {

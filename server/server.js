@@ -18,6 +18,10 @@ const ticketRoutes = require('./routes/ticketRoutes');
 const trainRoutes = require('./routes/trainRoutes');
 require('dotenv').config();
 
+//Cache
+const redis = require('./utils/redisClient');
+const cache = require('./scraper/cache');
+
 const app = express();
 const server = http.createServer(app);
 
@@ -50,6 +54,16 @@ app.use(express.static(buildPath));
 app.get('*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
+
+// Sincroniza el caché local (node) con redis si redis llegó a fallar
+redis.on('ready', () => {
+  console.log('🔄 Redis listo. Sincronizando localCache...');
+  cache.syncLocalCacheToRedis()
+    .then(() => console.log('✅ Sincronización finalizada'))
+    .catch(err => console.error('❌ Error durante la sincronización:', err.message));
+});
+
+
 
 (async () => {
   // await trainFromDatabase();

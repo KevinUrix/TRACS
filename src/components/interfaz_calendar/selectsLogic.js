@@ -71,22 +71,43 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
 
   // CICLOS
   useEffect(() => {
-    const fetchCycles = async () => {
-      setLoadingCycle(true);
-      try {
-        const response = await fetch(`${API_URL}/api/cycles`);
-        const data = await response.json();
-        setCycle(data);
-      } catch (error) {
-        console.error("Error cargando los ciclos:", error);
-      } finally {
-        setLoadingCycle(false);
-      }
-    };
-  
+  const cacheKey = 'cycles_cache';
+
+  // Intentar cargar ciclos del sessionStorage
+  const cachedCycles = sessionStorage.getItem(cacheKey);
+
+  if (cachedCycles) {
+    try {
+      const parsed = JSON.parse(cachedCycles);
+      setCycle(parsed);
+      return; // Si ya hay cache, no hacemos fetch
+    } catch (error) {
+      console.warn('Cache de ciclos corrupto, se elimina y se recarga', error);
+      sessionStorage.removeItem(cacheKey);
+    }
+  }
+
+  // Si no hay cache válido, hacemos fetch
+  const fetchCycles = async () => {
+    setLoadingCycle(true);
+    try {
+      const response = await fetch(`${API_URL}/api/cycles`);
+      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+      const data = await response.json();
+      setCycle(data);
+
+      // Guardar en sessionStorage para futuros usos
+      sessionStorage.setItem(cacheKey, JSON.stringify(data));
+    } catch (error) {
+      console.error("Error cargando los ciclos:", error);
+    } finally {
+      setLoadingCycle(false);
+    }
+  };
+
     fetchCycles();
   }, []);
-  
+
 
   // EDIFICIOS
   useEffect(() => {

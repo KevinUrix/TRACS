@@ -1120,28 +1120,15 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . I . . .",
+      "days": "L . . . . .",
       "building": "DEDX",
-      "classroom": "A022",
-      "nrc": "200221",
-      "code": "IL354",
-      "students": 23,
+      "classroom": "A019",
+      "nrc": "210904",
+      "code": "V0731",
+      "students": 21,
       "course": "ESTRUCTURAS DE DATOS"
     },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "200222",
-      "code": "IL354",
-      "students": 26,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
   },
   {
     "data": {
@@ -1154,20 +1141,7 @@
       "students": 24,
       "course": "ESTRUCTURAS DE DATOS"
     },
-    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "210904",
-      "code": "V0731",
-      "students": 21,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
   },
   {
     "data": {
@@ -3754,7 +3728,7 @@
       "students": 24,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
-    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
   },
   {
     "data": {

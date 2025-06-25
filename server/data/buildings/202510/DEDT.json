@@ -378,19 +378,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A018",
-      "nrc": "137317",
-      "code": "I7595",
-      "students": 13,
-      "course": "BIOSENSORES Y TRANSDUCTORES"
-    },
-    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -739,19 +726,6 @@
       "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
     },
     "professor": "MARTINEZ SILVA, MARTIN JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A002",
-      "nrc": "194941",
-      "code": "IL346",
-      "students": 7,
-      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
-    },
-    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
   },
   {
     "data": {
@@ -1246,19 +1220,6 @@
       "course": "DISPOSITIVOS ELECTRONICOS"
     },
     "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A009",
-      "nrc": "147811",
-      "code": "I7598",
-      "students": 24,
-      "course": "DISPOSITIVOS ELECTRONICOS"
-    },
-    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
   },
   {
     "data": {
@@ -1796,19 +1757,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A010",
-      "nrc": "159475",
-      "code": "I7599",
-      "students": 33,
-      "course": "ELECTRONICA INTEGRADA"
-    },
-    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDT",
       "classroom": "A002",
@@ -1935,19 +1883,6 @@
       "course": "FUNDAMENTOS DE ELECTRONICA"
     },
     "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A022",
-      "nrc": "223234",
-      "code": "V3690",
-      "students": 28,
-      "course": "FUNDAMENTOS DE ELECTRONICA"
-    },
-    "professor": "CARRILLO DIAZ, RAUL"
   },
   {
     "data": {
@@ -2328,19 +2263,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A021",
-      "nrc": "97742",
-      "code": "I7604",
-      "students": 35,
-      "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
-    },
-    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDT",
@@ -2627,19 +2549,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A003",
-      "nrc": "85740",
-      "code": "I7265",
-      "students": 39,
-      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
-    },
-    "professor": "CASAS ORDAZ, ANGEL"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDT",
@@ -2650,6 +2559,19 @@
       "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
     },
     "professor": "SANTOS ARCE, STEWART RENE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "85740",
+      "code": "I7265",
+      "students": 39,
+      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
+    },
+    "professor": "CASAS ORDAZ, ANGEL"
   },
   {
     "data": {
@@ -2747,19 +2669,6 @@
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDT",
-      "classroom": "A006",
-      "nrc": "120479",
-      "code": "I9892",
-      "students": 26,
-      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
-    },
-    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDT",
       "classroom": "A009",
       "nrc": "43398",
       "code": "I7266",
@@ -2770,16 +2679,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . V .",
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
       "building": "DEDT",
-      "classroom": "A023",
-      "nrc": "158797",
+      "classroom": "A006",
+      "nrc": "120479",
       "code": "I9892",
-      "students": 33,
+      "students": 26,
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
-    "professor": "HERNANDEZ RUIZ, CARLOS MANUEL"
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
   },
   {
     "data": {
@@ -2793,6 +2702,19 @@
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "GARCIA ARREOLA, ALICIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDT",
+      "classroom": "A023",
+      "nrc": "158797",
+      "code": "I9892",
+      "students": 33,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "HERNANDEZ RUIZ, CARLOS MANUEL"
   },
   {
     "data": {
@@ -3410,19 +3332,6 @@
       "schedule": "1700-1855",
       "days": ". M . J . .",
       "building": "DEDT",
-      "classroom": "A014",
-      "nrc": "133339",
-      "code": "I9893",
-      "students": 30,
-      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
-    },
-    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDT",
       "classroom": "A009",
       "nrc": "143403",
       "code": "I9899",
@@ -3430,6 +3339,19 @@
       "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "133339",
+      "code": "I9893",
+      "students": 30,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
   },
   {
     "data": {
@@ -3537,19 +3459,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A017",
-      "nrc": "60994",
-      "code": "I7593",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
-    },
-    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDT",
@@ -3573,32 +3482,6 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA I"
     },
     "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A017",
-      "nrc": "99176",
-      "code": "I7593",
-      "students": 34,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
-    },
-    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A020",
-      "nrc": "138654",
-      "code": "I7589",
-      "students": 23,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANALISIS DEL MOVIMIENTO"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   },
   {
     "data": {

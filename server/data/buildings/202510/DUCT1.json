@@ -1717,19 +1717,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "200221",
-      "code": "IL354",
-      "students": 23,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DUCT1",
@@ -1740,19 +1727,6 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "200222",
-      "code": "IL354",
-      "students": 26,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   },
   {
     "data": {
@@ -1896,19 +1870,6 @@
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "NAVARRO VELAZQUEZ, MARIO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "189631",
-      "code": "I5288",
-      "students": 15,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   },
   {
     "data": {
@@ -2770,58 +2731,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DUCT1",
@@ -2874,29 +2783,55 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DUCT1",
       "classroom": "LC03",
-      "nrc": "187176",
+      "nrc": "187175",
       "code": "IF906",
-      "students": 21,
+      "students": 19,
       "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
-      "schedule": "1600-1655",
+      "schedule": "1000-1055",
       "days": ". . I . . .",
       "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "187176",
+      "classroom": "LC03",
+      "nrc": "187175",
       "code": "IF906",
-      "students": 21,
+      "students": 19,
       "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "187175",
+      "code": "IF906",
+      "students": 19,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
+    },
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "187175",
+      "code": "IF906",
+      "students": 19,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
+    },
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
@@ -2923,6 +2858,32 @@
       "course": "LABORATORIO DE SIMULACION"
     },
     "professor": "GOMEZ PADILLA, ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "187176",
+      "code": "IF906",
+      "students": 21,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
+    },
+    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC07",
+      "nrc": "187176",
+      "code": "IF906",
+      "students": 21,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
+    },
+    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
   },
   {
     "data": {
@@ -3433,19 +3394,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "204899",
-      "code": "V0716",
-      "students": 24,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "0700-1055",
       "days": ". . . . V .",
       "building": "DUCT1",
@@ -3482,19 +3430,6 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "193708",
-      "code": "IL352",
-      "students": 25,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   },
   {
     "data": {
@@ -3693,19 +3628,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "88626",
-      "code": "I5909",
-      "students": 24,
-      "course": "PROGRAMACION PARA INTERNET"
-    },
-    "professor": "LOPEZ FRANCO, MICHEL EMANUEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DUCT1",
@@ -3716,6 +3638,19 @@
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MARTINEZ SOLTERO, ERASMO GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "nrc": "88626",
+      "code": "I5909",
+      "students": 24,
+      "course": "PROGRAMACION PARA INTERNET"
+    },
+    "professor": "LOPEZ FRANCO, MICHEL EMANUEL"
   },
   {
     "data": {
@@ -3849,19 +3784,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1655",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "178650",
-      "code": "IB130",
-      "students": 40,
-      "course": "SEMINARIO DE PROBLEMAS DE ESTRUCTURA DE DATOS I"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DUCT1",
@@ -3875,16 +3797,55 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
       "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "42744",
-      "code": "I5883",
-      "students": 4,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION"
+      "classroom": "LC03",
+      "nrc": "92948",
+      "code": "I5904",
+      "students": 24,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
     },
-    "professor": "MORALES LOPEZ, LUIS ANGEL"
+    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "nrc": "92948",
+      "code": "I5904",
+      "students": 24,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
+    },
+    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "92948",
+      "code": "I5904",
+      "students": 24,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
+    },
+    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "nrc": "92948",
+      "code": "I5904",
+      "students": 24,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
+    },
+    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
   },
   {
     "data": {
@@ -3901,55 +3862,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
       "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "92948",
-      "code": "I5904",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
+      "classroom": "LC07",
+      "nrc": "42744",
+      "code": "I5883",
+      "students": 4,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION"
     },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "92948",
-      "code": "I5904",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "92948",
-      "code": "I5904",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "92948",
-      "code": "I5904",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
+    "professor": "MORALES LOPEZ, LUIS ANGEL"
   },
   {
     "data": {
@@ -3979,19 +3901,6 @@
   },
   {
     "data": {
-      "schedule": "0800-1155",
-      "days": ". . . . . S",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "131879",
-      "code": "I7034",
-      "students": 20,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS OPERATIVOS DE RED"
-    },
-    "professor": "MUÑOZ PIZANO, KARLA LIZETTE"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DUCT1",
@@ -4015,6 +3924,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL II"
     },
     "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . . S",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "131879",
+      "code": "I7034",
+      "students": 20,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS OPERATIVOS DE RED"
+    },
+    "professor": "MUÑOZ PIZANO, KARLA LIZETTE"
   },
   {
     "data": {

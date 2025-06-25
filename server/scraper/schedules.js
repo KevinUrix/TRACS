@@ -96,7 +96,10 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
             });
 
             const response = await axios.post(url, formData.toString(), {
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36'
+                },
                 responseType: 'arraybuffer'
             });
 
@@ -120,6 +123,7 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
             activeBackgroundScraping.delete(edifp);
         }
     }));
+        await new Promise(res => setTimeout(res, 100));
     }
 };
 
@@ -145,8 +149,10 @@ const scrapeData = async (cycle, edifp) => {
 
     try {
         const response = await axios.post(url, formData.toString(), {
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            responseType: 'arraybuffer'
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' ,
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36'
+            },
+            responseType: 'arraybuffer',
         });
 
         const decodedData = iconv.decode(response.data, 'latin1');

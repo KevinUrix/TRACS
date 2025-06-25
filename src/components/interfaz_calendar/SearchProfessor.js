@@ -46,6 +46,7 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
       setShowPopup(true);
     } catch (error) {
       console.error("Error al buscar el profesor:", error);
+      toast.error("Error al buscar el profesor");
       setFilteredSchedule([]);
       setIsLoadingPopup(false);
       setShowPopup(false);

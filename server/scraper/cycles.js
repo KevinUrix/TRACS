@@ -6,7 +6,13 @@ const scrapeCycles = async () => {
     const url = 'http://consulta.siiau.udg.mx/wco/sspseca.forma_consulta';
 
     try {
-        const response = await axios.get(url, { responseType: 'arraybuffer' });
+        const response = await axios.get(url,
+            {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36'
+            },
+            responseType: 'arraybuffer'
+        });
         const decodedData = iconv.decode(response.data, 'latin1');
         const $ = cheerio.load(decodedData);
 

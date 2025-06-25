@@ -3537,19 +3537,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDZ1",
-      "classroom": "A006",
-      "nrc": "42731",
-      "code": "I5896",
-      "students": 15,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS II"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDZ1",
@@ -3589,19 +3576,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . . J . .",
-      "building": "DEDZ1",
-      "classroom": "A012",
-      "nrc": "164289",
-      "code": "IG249",
-      "students": 6,
-      "course": "SEMINARIO DE TESIS DE MAESTRIA I"
-    },
-    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDZ1",
@@ -3625,6 +3599,19 @@
       "course": "SEMINARIO DE TESIS DE MAESTRIA II"
     },
     "professor": "CHAVEZ CHAVEZ, ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . J . .",
+      "building": "DEDZ1",
+      "classroom": "A012",
+      "nrc": "164289",
+      "code": "IG249",
+      "students": 6,
+      "course": "SEMINARIO DE TESIS DE MAESTRIA I"
+    },
+    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
   },
   {
     "data": {

@@ -6566,19 +6566,6 @@
   },
   {
     "data": {
-      "schedule": "1600-1855",
-      "days": ". M . . . .",
-      "building": "DEDE",
-      "classroom": "LQ01",
-      "nrc": "90842",
-      "code": "I7496",
-      "students": 8,
-      "course": "LABORATORIO DE QUIMICA ORGANICA III"
-    },
-    "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
-  },
-  {
-    "data": {
       "schedule": "1100-1355",
       "days": ". . I . . .",
       "building": "DEDE",
@@ -6683,19 +6670,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDE",
-      "classroom": "A014B",
-      "nrc": "104043",
-      "code": "I5831",
-      "students": 20,
-      "course": "LABORATORIO DE TRANSFERENCIA DE MASA"
-    },
-    "professor": "MEZA GARCIA, ALFREDO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDE",
@@ -6704,6 +6678,19 @@
       "code": "I5833",
       "students": 20,
       "course": "LABORATORIO DE TRANSFERENCIA DE CALOR"
+    },
+    "professor": "MEZA GARCIA, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDE",
+      "classroom": "A014B",
+      "nrc": "104043",
+      "code": "I5831",
+      "students": 20,
+      "course": "LABORATORIO DE TRANSFERENCIA DE MASA"
     },
     "professor": "MEZA GARCIA, ALFREDO"
   },

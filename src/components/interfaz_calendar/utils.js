@@ -202,8 +202,11 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
           .bg-pink-100 { background-color: #fce7f3; }
           .bg-gray-100 { background-color: #f3f4f6; }
           .bg-purple-200 { background-color: #ddd6fe; }
+          .bg-gray-200 { background-color: #e5e7eb; }
+          .bg-gray-300 { background-color: #d1d5db }
 
           .text-blue-600 { color: #2563eb; }
+          .text-green-600 { color: #16a34a; }
           .font-bold { font-weight: bold; }
         </style>
       </head>

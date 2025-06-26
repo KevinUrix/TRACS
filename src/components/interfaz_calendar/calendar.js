@@ -402,6 +402,7 @@ export default function Calendar() {
     <>
       <div className="calendar-container">
         <div className="main-content">
+        {/* <div className="main-content background-image-container"> */}
           {/*<NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>*/}
           <div className="select-content">
             <div className="bg-gray-200 rounded-lg shadow-md z-2">
@@ -422,9 +423,14 @@ export default function Calendar() {
                 <tr className="table-header">
                   <th className="table-cell">Hora</th>
                   {isStatisticMode
-                    ? buildings.map((building, index) => (
-                        <th key={index} className="table-cell">{building.value}</th>
-                      ))
+                    ? (
+                      <>
+                        {buildings.map((building, index) => (
+                          <th key={index} className="table-cell">{building.value}</th>
+                        ))}
+                        <th className="table-cell">Total por hora</th>
+                      </>
+                    )
                     : 
                   classrooms.map((classroom, index) => (
                     <th key={index} className={`table-cell print-col-${Math.floor(index / 9)}`}>{classroom}</th>
@@ -434,12 +440,14 @@ export default function Calendar() {
 
               <tbody>
                 {isStatisticMode ? (
-                  hours.map((hour) => {
+                  <>
+                  {hours.map((hour) => {
                     const [hourPart, period] = hour.split(' ');
                     let currentHour = parseInt(hourPart.split(':')[0], 10);
                     if (period === 'PM' && currentHour !== 12) currentHour += 12;
                     if (period === 'AM' && currentHour === 12) currentHour = 0;
 
+                    let  totalForHour = 0;
                     return (
                       <tr key={`stat-${hour}`}>
                         <td className="table-cell">{hour}</td>
@@ -466,16 +474,86 @@ export default function Calendar() {
                             }
                             return total;
                           }, 0);
-
+                          
+                          totalForHour += studentCount;
                           return (
                             <td key={building.value} className={`table-cell font-bold text-4l text-blue-600 ${colorClass}`}>
                               {studentCount}
                             </td>
                           );
                         })}
+                        <td className={`table-cell font-bold text-4l text-green-600 bg-gray-200`}>{totalForHour}</td>
                       </tr>
                     );
-                  })
+                  })}
+                  <tr key="total-row">
+                    <td className="table-cell font-bold">Total por día</td>
+                    {buildings.map((building, index) => {
+                      const scheduleForBuilding = fullSchedule[building.value] || [];
+                      const seen = new Set();
+
+                      const totalForBuilding = scheduleForBuilding.reduce((total, course) => {
+                        const key = JSON.stringify(course.data);
+                        if (seen.has(key)) return total;
+                        seen.add(key);
+
+                        const courseDays = course.data.days.split(' ');
+                        const isCourseOnDay = courseDays.includes(selectedDay);
+
+                        if (isCourseOnDay) {
+                          const [start, end] = course.data.schedule.split('-');
+                          const startHour = parseInt(start.substring(0, 2), 10);
+                          const endHour = parseInt(end.substring(0, 2), 10);
+                          const hourSpan = endHour - startHour + 1;
+
+                          return total + (parseInt(course.data.students || 0, 10) * hourSpan);
+                        }
+
+                        return total;
+                      }, 0);
+
+                      return (
+                        <td
+                          key={building.value}
+                          className={`table-cell font-bold text-green-600 bg-gray-200`}
+                        >
+                          {totalForBuilding}
+                        </td>
+                      );
+                    })}
+
+                    {/* Total general del día */}
+                    <td className="table-cell font-bold text-green-700 bg-gray-300">
+                      {buildings.reduce((grandTotal, building) => {
+                        const schedule = fullSchedule[building.value] || [];
+                        const seen = new Set();
+
+                        const buildingTotal = schedule.reduce((total, course) => {
+                          const key = JSON.stringify(course.data);
+                          if (seen.has(key)) return total;
+                          seen.add(key);
+
+                          const courseDays = course.data.days.split(' ');
+                          const isCourseOnDay = courseDays.includes(selectedDay);
+
+                          if (isCourseOnDay) {
+                            const [start, end] = course.data.schedule.split('-');
+                            const startHour = parseInt(start.substring(0, 2), 10);
+                            const endHour = parseInt(end.substring(0, 2), 10);
+                            const hourSpan = endHour - startHour + 1;
+
+                            return total + (parseInt(course.data.students || 0, 10) * hourSpan);
+                          }
+
+                          return total;
+                        }, 0);
+
+                        return grandTotal + buildingTotal;
+                      }, 0)}
+                    </td>
+                  </tr>
+                  </>
+
                 ) :
                 (
                 hours.map((hour) => {

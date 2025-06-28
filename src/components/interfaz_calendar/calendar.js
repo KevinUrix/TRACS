@@ -17,6 +17,7 @@ export default function Calendar() {
   const [isStatisticMode, setIsStatisticMode] = useState(false);
   const [buildings, setBuildings] = useState([]);
   const [fullSchedule, setFullSchedule] = useState({});
+  const cellColorMapRef = useRef({});
   
   
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
@@ -76,6 +77,7 @@ export default function Calendar() {
       }));
     }
   };
+
   useEffect(() => {
     // Verifica si en la URL está el parámetro "fromGoogle"
     const params = new URLSearchParams(location.search);
@@ -87,7 +89,7 @@ export default function Calendar() {
       window.history.replaceState({}, '', `${location.pathname}`);
     }
   }, [location]);
-  
+
 
   // Obtener el día de la semana (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
   const dayOfWeek = today.getDay();
@@ -317,7 +319,6 @@ export default function Calendar() {
         await loadLocalSchedule();
       }
     };
-  
     fetchSchedule();
   }, [selectedCycle, selectedBuilding]);
 
@@ -624,32 +625,43 @@ export default function Calendar() {
                             isCourseOnSelectedDay
                           );
                         });
+                        
+                        /* --------------- Coloreado de celdas ---------------- */
+                        const forbiddenHueRanges = [
+                          [40, 150],
+                          [200, 210],
+                        ];
 
+                        const isForbidden = (h) =>
+                          forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
+
+                        const goldenAngle = 137.5;
                         let hue = 0;
+
                         if (matchingCourse) {
-                          hue = (
-                            (matchingCourse.data.course.length +
-                            matchingCourse.professor.length * 17 +
-                            matchingCourse.data.nrc * 1) * 37
-                          ) % 360;
+                          const key = `${matchingCourse?.data?.course}|${matchingCourse?.professor}|${matchingCourse?.data?.nrc}|${matchingCourse?.data?.classroom}`;
 
-                          const forbiddenHueRanges = [
-                            [45, 65],
-                            [66, 140],
-                          ];
-                          const isForbidden = (h) =>
-                            forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
+                          if (cellColorMapRef.current[key]) {
+                            hue = cellColorMapRef.current[key]; // ya existe
+                          } else {
+                            const seed =
+                              matchingCourse.data.course.length +
+                              matchingCourse.professor.length * 17 +
+                              matchingCourse.data.nrc * 1 +
+                              Date.now() * 1000;
 
-                          while (isForbidden(hue)) {
-                            hue = (hue + 31) % 360;
+                            hue = seed % 360;
+
+                            // Usa Golden Angle hasta que encuentre un hue válido
+                            let attempts = 0;
+                            while (isForbidden(hue) && attempts < 10) {
+                              hue = (hue + goldenAngle) % 360;
+                              attempts++;
+                            }
+                            cellColorMapRef.current[key] = hue;
                           }
                         }
-
-                        const backgroundColor = matchingCourse
-                          ? `hsl(${hue}, 50%, 50%)`
-                          : matchingReservation && !matchingCourse
-                            ? '#0a304b'
-                            : 'white';
+                        /* Fin del coloreado de celdas */
 
                         let rowspan = 1;
                         let showReservation = false;
@@ -690,7 +702,6 @@ export default function Calendar() {
 
                           showReservation = !hasAnyClassInRange;
                         }
-
                         return (
 
                           <td
@@ -699,7 +710,7 @@ export default function Calendar() {
                               showReservation ? 'reserved-cell' : (
                                 matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'
                               )}`}
-                            style={{ backgroundColor: matchingCourse ? `hsl(${hue}, 50%, 50%)` : showReservation ? '#0a304b' : 'white' }}
+                            style={{ backgroundColor: matchingCourse ? `hsl(${hue}, 50%, 46%)` : showReservation ? '#0a304b' : 'white' }}
                             rowSpan={rowspan}
                           >
                             {showReservation ? (

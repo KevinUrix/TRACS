@@ -23,8 +23,7 @@ export default function Registro() {
     e.preventDefault();
 
     if (isSaving) return; // Evita clics múltiples
-    setIsSaving(true); // Inicia la "protección"
-
+    
     // Validar contraseña mínima
     if (password.length < 5) {
       toast.error('La contraseña debe tener al menos 5 caracteres.', {
@@ -33,11 +32,13 @@ export default function Registro() {
       });
       return;
     }
-
+    
     if (password !== confirmPassword) {
       setError('Las contraseñas no coinciden');
       return;
     }
+    
+    setIsSaving(true); // Inicia la "protección"
 
     try {
       const res = await fetch(`${API_URL}/api/register`, {
@@ -51,6 +52,10 @@ export default function Registro() {
       if (!res.ok) {
         if (res.status === 403) {
           navigate("/");
+        }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
         }
         else {
           setError(data.error || 'Error al registrar usuario');

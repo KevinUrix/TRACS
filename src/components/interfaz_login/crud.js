@@ -146,6 +146,11 @@ export default function Crud() {
           navigate("/");
           return;
         }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
+          return;
+        }
       }
     } catch (err) {
       console.error('Error al actualizar el rol:', err);
@@ -193,6 +198,11 @@ export default function Crud() {
           navigate("/");
           return;
         }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
+          return;
+        }
         toast.error("Error al actualizar el edificio");
       }
     } catch (error) {
@@ -229,6 +239,11 @@ export default function Crud() {
           navigate("/");
           return;
         }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
+          return;
+        }
         toast.error('Fallo al eliminar edificio');
       }
     } catch (err) {
@@ -259,6 +274,11 @@ export default function Crud() {
           navigate("/");
           return;
         }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
+          return;
+        }
         toast.error('Fallo al eliminar usuario');
         return;
       }
@@ -276,7 +296,7 @@ export default function Crud() {
     if (!buildingToAdd) return;
 
     try {
-      const response = await fetch(`${API_URL}/api/buildings`, {
+      const res = await fetch(`${API_URL}/api/buildings`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -288,11 +308,16 @@ export default function Crud() {
         }),
       });
   
-      const result = await response.json();
+      const result = await res.json();
   
-      if (!response.ok) {
-        if (response.status === 403) {
+      if (!res.ok) {
+        if (res.status === 403) {
           navigate("/");
+          return;
+        }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
           return;
         }
         console.error('Error desde el servidor:', result?.error || 'Error desconocido');

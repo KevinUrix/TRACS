@@ -5,6 +5,12 @@ function authMiddleware(req, res, next) {
   const token = authHeader && authHeader.split(' ')[1];
 
   if (!token) return res.status(401).json({ message: 'Token requerido' });
+  
+  // Verificar si el token tiene un formato correcto
+  if (token.split('.').length !== 3) {
+    console.error('Error al verificar token:', err.message);
+    return res.status(400).json({ message: 'Token malformado' });
+  }
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);

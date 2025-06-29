@@ -26,6 +26,11 @@ export default function Calendar() {
   const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
 
 
+  /* ---------- LIMPIAR COLORES - CADA REINICIO ---------- */
+  useEffect(() => {
+    cellColorMapRef.current = {};
+  }, []);
+
 
   /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
   useEffect(() => {

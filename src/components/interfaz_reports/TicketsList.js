@@ -95,6 +95,11 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           navigate("/");
           return;
         }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
+          return;
+        }
         throw new Error('Error al actualizar ticket');
       }
 
@@ -123,6 +128,11 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       if (!res.ok) {
         if (res.status === 403) {
           navigate("/");
+          return;
+        }
+        else if (res.status === 400) {
+          localStorage.removeItem('token');
+          window.location.href = '/';
           return;
         }
         throw new Error('Error al borrar ticket');

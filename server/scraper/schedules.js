@@ -7,8 +7,9 @@ const buildingsData = require('../config/buildings');
 // Formato de fecha
 const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
 
-// Mecanismo de bloqueo para evitar duplicación en scraping en segundo plano
+// Mecanismo de bloqueo para evitar duplicación en scraping en segundo plano y principal
 const activeBackgroundScraping = new Set();
+const activeScraping = new Set();
 
 // Función para extraer datos del HTML
 const extractData = ($, buildingName) => {
@@ -74,15 +75,17 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
         
         await Promise.all(chunk.map(async (building) => {
         const edifp = building.value;
-        if (edifp === skipEdifp || activeBackgroundScraping.has(edifp)) return;
+        const scrapeKey = `${cycle}-${edifp}`;
 
-        activeBackgroundScraping.add(edifp);
+        if (edifp === skipEdifp || activeBackgroundScraping.has(scrapeKey)) return;
+
+        activeBackgroundScraping.add(scrapeKey);
 
         const cacheKey = `schedule-${cycle}-building-${edifp}`;
         const alreadyCached = await cache.get(cacheKey);
 
         if (alreadyCached) {
-            activeBackgroundScraping.delete(edifp);
+            activeBackgroundScraping.delete(scrapeKey);
             return;
         }
 
@@ -120,22 +123,33 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
         } catch (err) {
             console.error(`Error al hacer scraping de ${edifp}:`, err.message);
         } finally {
-            activeBackgroundScraping.delete(edifp);
+            activeBackgroundScraping.delete(scrapeKey);
         }
     }));
-        await new Promise(res => setTimeout(res, 100));
+        await new Promise(res => setTimeout(res, 200));
     }
 };
 
 // Scraping principal (directo al usuario)
 const scrapeData = async (cycle, edifp) => {
+    const scrapeKey = `${cycle}-${edifp}`;
+
+    // Esperar si ya hay otro scraping en curso para este edificio
+    while (activeScraping.has(scrapeKey)) {
+        console.log(`Esperando a que termine el scraping directo de ${scrapeKey}`);
+        await new Promise(resolve => setTimeout(resolve, 300));
+    }
+    activeScraping.add(scrapeKey);
+    
     const cacheKey = `schedule-${cycle}-building-${edifp}`;
     const cachedSchedules = await cache.get(cacheKey);
 
     if (cachedSchedules) {
         console.log(`Datos de ${cycle} - ${edifp} obtenidos desde el caché.`);
+        activeScraping.delete(scrapeKey);
         return cachedSchedules;
     }
+
 
     console.log('Datos no encontrados en caché, iniciando scraping principal...');
 
@@ -176,6 +190,8 @@ const scrapeData = async (cycle, edifp) => {
     } catch (err) {
         console.error(`Error al hacer scraping de ${edifp}:`, err.message);
         return [];
+    } finally {
+        activeScraping.delete(scrapeKey);
     }
 };
 

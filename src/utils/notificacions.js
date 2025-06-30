@@ -6,6 +6,7 @@ export const notifyReserva = (mensaje, reservation) => {
       <div>
         <p>📍 Edificio: {reservation.building} ({reservation.classroom}).</p>
         <p>📖 Profesor: {reservation.professor}.</p>
+        {reservation.user && <p>👤 Usuario: {reservation.user}</p>}
       </div>
     ),
     style: {

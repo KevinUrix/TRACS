@@ -91,7 +91,7 @@ const saveReservation = async (req, res) => {
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
     // SOCKET
-    await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: reservationData});
+    await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}});
 
     res.status(201).json({
       message: 'Reserva guardada con éxito',

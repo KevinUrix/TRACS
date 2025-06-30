@@ -54,11 +54,12 @@ export default function ReserveButton({
       setIsModalOpen(true);
     } else {
       toast.error('Necesitas iniciar sesión para realizar una reserva.');
-      sessionStorage.setItem('reservationState', JSON.stringify({
-        selectedCycle,
-        selectedBuilding,
-        selectedDay,
-      }));
+      if (selectedCycle && selectedBuilding) {
+        sessionStorage.setItem('reservationState', JSON.stringify({
+          selectedCycle,
+          selectedBuilding,
+        }));
+      }
       navigate('/login');
     }
   };

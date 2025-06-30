@@ -29,7 +29,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     if (location.state) {
       setSelectedCycle(location.state.selectedCycle);
       setSelectedBuilding(location.state.selectedBuilding);
-      setSelectedDay(location.state.selectedDay);
     }
   }, [location.state]);
 
@@ -38,11 +37,10 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     // Recuperar el estado de los selects desde sessionStorage
     const savedState = sessionStorage.getItem('reservationState');
     if (savedState) {
-      const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
+      const { selectedCycle, selectedBuilding } = JSON.parse(savedState);
   
       setSelectedCycle(selectedCycle);
       setSelectedBuilding(selectedBuilding);
-      setSelectedDay(selectedDay);
     }
   }, []); // Se ejecuta solo una vez cuando el componente se monta
   

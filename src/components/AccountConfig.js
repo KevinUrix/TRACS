@@ -37,7 +37,6 @@ export default function AccountConfig() {
         setNewUsername(res.data.username);
       } catch (err) {
         console.error(err);
-        console.log(localStorage.getItem('token'));
       }
     };
 
@@ -66,6 +65,11 @@ export default function AccountConfig() {
 
       setUsernameMessage(res.data.message);
       setUserInfo((prev) => ({ ...prev, username: newUsername }));
+      localStorage.clear();
+      toast.success("Se cerrará su sesión.",  {autoClose: 300});
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 800);
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
@@ -111,6 +115,11 @@ export default function AccountConfig() {
       setCurrentPassword('');
       setNewPassword('');
       setConfirmPassword('');
+      localStorage.clear();
+      toast.success("Se cerrará su sesión.", {autoClose: 300});
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 800);
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
@@ -141,7 +150,7 @@ export default function AccountConfig() {
         </div>
 
         {/* Cambiar nombre de usuario */}
-        <form onSubmit={handleUsernameChange} className="mb-6 justify-items-center">
+        <form onSubmit={handleUsernameChange} className="mb-6 flex flex-col items-center w-full max-w-md mx-auto">
           <div className="mb-4 w-full max-w-sm">
             <h3 className="font-semibold mb-2 text-xl text-center">Cambiar nombre de usuario</h3>
             <input
@@ -171,7 +180,7 @@ export default function AccountConfig() {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded w-full text-lg"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 max-w-sm rounded text-lg"
           >
             Guardar nuevo nombre
           </button>
@@ -188,7 +197,7 @@ export default function AccountConfig() {
 
           <div className="relative mb-4 flex items-center w-full max-w-sm">
             <input
-              type={'text'}
+              type={showPasswords ? 'text' : 'password'}
               placeholder="Contraseña actual"
               className="w-68 p-3 border rounded w-full text-lg"
               value={currentPassword}

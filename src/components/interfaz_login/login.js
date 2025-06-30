@@ -48,11 +48,11 @@ export default function Login() {
       const savedState = sessionStorage.getItem('reservationState');
 
       if (savedState) {
-        const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
+        const { selectedCycle, selectedBuilding } = JSON.parse(savedState);
         toast.success('Se ha iniciado la sesión.');
         // Redirigir al calendario y enviar el estado
         navigate(`/`, {
-          state: { selectedCycle, selectedBuilding, selectedDay }
+          state: { selectedCycle, selectedBuilding }
         });
       } else {
         toast.success('Se ha iniciado la sesión.');

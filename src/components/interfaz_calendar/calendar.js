@@ -37,18 +37,16 @@ export default function Calendar() {
     if (location.state) {
       setSelectedCycle(location.state.selectedCycle);
       setSelectedBuilding(location.state.selectedBuilding);
-      setSelectedDay(location.state.selectedDay);
     }
   }, [location.state]);
 
   useEffect(() => {
     const savedState = sessionStorage.getItem('reservationState');
     if (savedState) {
-      const { selectedCycle, selectedBuilding, selectedDay } = JSON.parse(savedState);
+      const { selectedCycle, selectedBuilding } = JSON.parse(savedState);
   
       setSelectedCycle(selectedCycle);
       setSelectedBuilding(selectedBuilding);
-      setSelectedDay(selectedDay);
 
       // Limpiar sessionStorage después de usarlo
       sessionStorage.removeItem('reservationState');
@@ -60,25 +58,23 @@ export default function Calendar() {
   // Guarda el estado cada vez que cambie de la raíz a otra página
   useEffect(() => {
     const isOnRoot = location.pathname === '/';
-    const isComplete = selectedCycle && selectedBuilding && selectedDay;
+    const isComplete = selectedCycle && selectedBuilding;
 
     if (!isOnRoot || !isComplete) return;
 
     sessionStorage.setItem('reservationState', JSON.stringify({
       selectedCycle,
       selectedBuilding,
-      selectedDay,
     }));
   }, [selectedCycle, selectedBuilding, selectedDay, location.pathname]);
   
 
   // Guarda el estado antes de redirigirte a Google
   const saveReservationState = () => {
-    if (selectedCycle && selectedBuilding && selectedDay) {
+    if (selectedCycle && selectedBuilding) {
       sessionStorage.setItem('reservationState', JSON.stringify({
         selectedCycle,
         selectedBuilding,
-        selectedDay,
       }));
     }
   };
@@ -640,7 +636,7 @@ export default function Calendar() {
                         const isForbidden = (h) =>
                           forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
 
-                        const goldenAngle = 137.5;
+                        const goldenAngle = 137.508;
                         let hue = 0;
 
                         if (matchingCourse) {

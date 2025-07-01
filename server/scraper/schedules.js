@@ -42,7 +42,8 @@ const extractData = ($, buildingName) => {
                     .toArray()
                     .map(cell => $(cell).text().trim())
                     .filter(text => {
-                        const inRange = Number(text) >= 1 && Number(text) <= 9 && text.length === 2 && text.startsWith('0');
+                        if (!text) return false;
+                        const inRange = Number(text) >= 0 && Number(text) <= 9 && text.length <= 2 && text.startsWith('0');
                         return !inRange && !datePattern.test(text);
                     });
 

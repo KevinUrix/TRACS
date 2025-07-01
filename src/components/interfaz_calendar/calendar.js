@@ -404,22 +404,20 @@ export default function Calendar() {
               // 1. Caso: es un array directo
               if (Array.isArray(data)) {
                 scheduleData = data;
-                await new Promise(res => setTimeout(res, 100));
               }
               // 2. Caso: formato estándar { data: [...], error: false }
               else if (Array.isArray(data?.data) && !data?.error) {
                 scheduleData = data.data;
-                await new Promise(res => setTimeout(res, 500));
               }
               // 3. Caso: { buildingName: [...] }
               else if (data && Array.isArray(data[buildingName])) {
                 scheduleData = data[buildingName];
-                await new Promise(res => setTimeout(res, 100));
+                await new Promise(res => setTimeout(res, 50));
               }
               // 4. Caso: { buildingName: { data: [...], error: false } }
               else if (data?.[buildingName]?.data && Array.isArray(data[buildingName].data)) {
                 scheduleData = data[buildingName].data;
-                await new Promise(res => setTimeout(res, 100));
+                await new Promise(res => setTimeout(res, 500));
               }
 
               if (Array.isArray(scheduleData) && scheduleData.length === 0) {
@@ -430,7 +428,6 @@ export default function Calendar() {
             } catch (error) {
               console.error(`Error al obtener datos desde el backend para ${buildingName}:`, error);
               const fallbackData = await loadLocalSchedule(buildingName);
-              await new Promise(res => setTimeout(res, 200));
               results.push({ buildingName, data: fallbackData || [] });
             }
           }
@@ -446,9 +443,13 @@ export default function Calendar() {
         const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
 
         if (existingKeys.length >= 2) {
-          for (let i = 0; i <= existingKeys.length - 2; i++) {
-            sessionStorage.removeItem(existingKeys[0]);
-          }
+          existingKeys.forEach(key => sessionStorage.removeItem(key));
+        }
+
+        const allEmpty = !Object.values(allSchedules).some(arr => Array.isArray(arr) && arr.length > 0);
+        if (allEmpty) {
+          console.warn("❌ Todos los horarios están vacíos. No se guardará en caché.");
+          return;
         }
 
         sessionStorage.setItem(cacheKey, JSON.stringify(allSchedules));

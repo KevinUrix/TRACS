@@ -14,6 +14,71 @@
   },
   {
     "data": {
+      "schedule": "1400-1655",
+      "days": "L M I J V .",
+      "building": "DEDK",
+      "classroom": "A001",
+      "nrc": "235084",
+      "code": "I7509",
+      "students": 9,
+      "course": "INSTRUMENTACION QUIMICA ANALITICA I ()"
+    },
+    "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": "L M I J V .",
+      "building": "DEDK",
+      "classroom": "A001",
+      "nrc": "235085",
+      "code": "I3304",
+      "students": 8,
+      "course": "METODOS MODERNOS DE ANALISIS QUIMICO ()"
+    },
+    "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L M I . . .",
+      "building": "DEDK",
+      "classroom": "A006",
+      "nrc": "149429",
+      "code": "I7514",
+      "students": 24,
+      "course": "QUIMICA LEGAL ()"
+    },
+    "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": "L M I J V .",
+      "building": "DEDK",
+      "classroom": "A001",
+      "nrc": "90748",
+      "code": "I6124",
+      "students": 18,
+      "course": "QUIMICA ORGANICA I ()"
+    },
+    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . V .",
+      "building": "DEDK",
+      "classroom": "A006",
+      "nrc": "235088",
+      "code": "I7499",
+      "students": 9,
+      "course": "TALLER DE SEGUIMIENTO DE MODULO II ()"
+    },
+    "professor": "LARA CERON, JESUS ALFREDO"
+  },
+  {
+    "data": {
       "schedule": "0900-1255",
       "days": "L . I . V .",
       "building": "DEDK",

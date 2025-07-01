@@ -66,7 +66,7 @@ export default function Calendar() {
       selectedCycle,
       selectedBuilding,
     }));
-  }, [selectedCycle, selectedBuilding, selectedDay, location.pathname]);
+  }, [selectedCycle, selectedBuilding, location.pathname]);
   
 
   // Guarda el estado antes de redirigirte a Google
@@ -214,20 +214,20 @@ export default function Calendar() {
 
   // Obtener edificios - Al cargar el componente
   useEffect(() => {
-  fetch(`${API_URL}/api/buildings`)
-    .then(response => response.json())
-    .then(data => {
-      const buildings = data.edifp || [];
-      const prioritized = buildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
-      const rest = buildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
+    fetch(`${API_URL}/api/buildings`)
+      .then(response => response.json())
+      .then(data => {
+        const buildings = data.edifp || [];
+        const prioritized = buildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
+        const rest = buildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
 
-      const newBuildingsOrder = [...prioritized, ...rest];
-      setBuildings(newBuildingsOrder); // Aquí cambias
-    })
-    .catch(error => {
-      console.error("Error cargando los edificios:", error);
-      toast.error("Se ha detectado un error en el servidor.");
-    });
+        const newBuildingsOrder = [...prioritized, ...rest];
+        setBuildings(newBuildingsOrder); // Aquí cambias
+      })
+      .catch(error => {
+        console.error("Error cargando los edificios:", error);
+        toast.error("Se ha detectado un error en el servidor.");
+      });
   }, []);
 
 
@@ -255,7 +255,7 @@ export default function Calendar() {
 
 
   useEffect(() => {
-    if (!selectedCycle || !selectedBuilding) return;
+    if (!selectedCycle || !selectedBuilding || isStatisticMode) return;
   
     const cacheKey = `schedule_${selectedCycle}_${selectedBuilding}`;
     
@@ -305,23 +305,35 @@ export default function Calendar() {
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
   
         const data = await response.json();
-        const scheduleData = data[selectedBuilding];
-  
-        if (Array.isArray(scheduleData) && scheduleData.length > 0) {
-          setSchedule(scheduleData);
-          sessionStorage.setItem(cacheKey, JSON.stringify(scheduleData));
-          console.log("Horario cargado desde el backend.");
-        } else {
-          console.warn("Respuesta vacía del backend. Cargando desde archivo local...");
-          await loadLocalSchedule();
+        
+        const scheduleEntry = data[selectedBuilding] || data;
+
+        // Manejar si es array directo
+        if (Array.isArray(scheduleEntry) && scheduleEntry.length > 0) {
+          setSchedule(scheduleEntry);
+          sessionStorage.setItem(cacheKey, JSON.stringify(scheduleEntry));
+          console.log("Horario cargado desde el backend (array directo).");
+          return;
         }
+
+        // Manejar si viene como { data: [...] }
+        if (Array.isArray(scheduleEntry?.data) && scheduleEntry?.data.length > 0 && !scheduleEntry?.error) {
+          setSchedule(scheduleEntry.data);
+          sessionStorage.setItem(cacheKey, JSON.stringify(scheduleEntry.data));
+          console.log("Horario cargado desde el backend (objeto con .data).");
+          return;
+        }
+
+        console.warn("Respuesta vacía del backend. Cargando desde archivo local...");
+        await loadLocalSchedule();
+
       } catch (error) {
         console.error("Error al obtener datos desde el backend:", error);
         await loadLocalSchedule();
       }
     };
     fetchSchedule();
-  }, [selectedCycle, selectedBuilding]);
+  }, [selectedCycle, selectedBuilding, isStatisticMode]);
 
 
   useEffect(() => {
@@ -334,53 +346,124 @@ export default function Calendar() {
   // Fetch para obtener el número de alumnos
   //
   useEffect(() => {
-  if (!selectedCycle || !isStatisticMode || !selectedBuilding) return;
+    if (!selectedCycle || !isStatisticMode || !selectedBuilding || buildings.length === 0) return;
 
-  const cacheKey = `full_schedule_${selectedCycle}`;
-  const cached = sessionStorage.getItem(cacheKey);
+    const cacheKey = `full_schedule_${selectedCycle}`;
+    const cached = sessionStorage.getItem(cacheKey);
 
-  if (cached) {
-    try {
-      const parsed = JSON.parse(cached);
-      console.log("Usando caché para todos los edificios");
-      setFullSchedule(parsed);
-      return;
-    } catch (error) {
-      console.warn("Error al parsear caché de todos los edificios, recargando...");
+    if (cached) {
+      try {
+        const parsed = JSON.parse(cached);
+        console.log("Usando caché para todos los edificios");
+        setFullSchedule(parsed);
+        return;
+      } catch (error) {
+        console.warn("Error al parsear caché de todos los edificios, recargando...");
+      }
     }
-  }
 
-  const fetchAllBuildingsSchedules = async () => {
-    try {
-      const buildingValues = buildings.map(b => b.value);
+    const loadLocalSchedule = async (buildingName) => {
+      try {
+        const localResponse = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
+        if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
 
-      const fetches = buildingValues.map(async (buildingName) => {
-        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
-        if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
-        const data = await response.json();
-        return { buildingName, data: data[buildingName] || [] };
-      });
+        const localData = await localResponse.json();
 
-      const results = await Promise.all(fetches);
+        if (Array.isArray(localData)) {
+          console.warn(`📁 Horario cargado desde archivo local para ${buildingName}`);
+          return localData;
+        } else {
+          console.error("El archivo local no contiene un array válido:", localData);
+          return [];
+        }
+      } catch (error) {
+        console.error(`Error al cargar archivo local de respaldo para ${buildingName}:`, error);
+        return [];
+      }
+    };
 
-      const allSchedules = results.reduce((acc, { buildingName, data }) => {
-        acc[buildingName] = data;
-        return acc;
-      }, {});
+    const fetchAllBuildingsSchedules = async () => {
+      try {
+        const buildingValues = buildings.map(b => b.value);
+        const results = [];
 
-      setFullSchedule(allSchedules);
-      sessionStorage.setItem(cacheKey, JSON.stringify(allSchedules));
-      console.log("Horario cargado y guardado en caché");
 
-    } catch (error) {
-      console.error("Error al obtener horarios para todos los edificios:", error);
-      setFullSchedule({});
-    }
-  };
+          for (const buildingName of buildingValues) {
+            try {
+              const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
+              if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
 
-  fetchAllBuildingsSchedules();
+              const data = await response.json();
 
-  }, [selectedCycle, isStatisticMode, selectedBuilding, buildings]);
+              if (data?.[buildingName]?.error === true) {
+                throw new Error(`Respuesta con error para ${buildingName}`);
+              }
+
+              let scheduleData = [];
+
+              // 1. Caso: es un array directo
+              if (Array.isArray(data)) {
+                scheduleData = data;
+                await new Promise(res => setTimeout(res, 100));
+              }
+              // 2. Caso: formato estándar { data: [...], error: false }
+              else if (Array.isArray(data?.data) && !data?.error) {
+                scheduleData = data.data;
+                await new Promise(res => setTimeout(res, 500));
+              }
+              // 3. Caso: { buildingName: [...] }
+              else if (data && Array.isArray(data[buildingName])) {
+                scheduleData = data[buildingName];
+                await new Promise(res => setTimeout(res, 100));
+              }
+              // 4. Caso: { buildingName: { data: [...], error: false } }
+              else if (data?.[buildingName]?.data && Array.isArray(data[buildingName].data)) {
+                scheduleData = data[buildingName].data;
+                await new Promise(res => setTimeout(res, 100));
+              }
+
+              if (Array.isArray(scheduleData) && scheduleData.length === 0) {
+                console.warn(`⚠️ Horario vacío para ${buildingName}`);
+              }
+
+              results.push({ buildingName, data: scheduleData || []});
+            } catch (error) {
+              console.error(`Error al obtener datos desde el backend para ${buildingName}:`, error);
+              const fallbackData = await loadLocalSchedule(buildingName);
+              await new Promise(res => setTimeout(res, 200));
+              results.push({ buildingName, data: fallbackData || [] });
+            }
+          }
+
+        const allSchedules = results.reduce((acc, { buildingName, data }) => {
+          acc[buildingName] = data;
+          return acc;
+        }, {});
+
+        setFullSchedule(allSchedules);
+
+        // Codigo para que no se sobresature el sessionStorage
+        const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+
+        if (existingKeys.length >= 2) {
+          for (let i = 0; i <= existingKeys.length - 2; i++) {
+            sessionStorage.removeItem(existingKeys[0]);
+          }
+        }
+
+        sessionStorage.setItem(cacheKey, JSON.stringify(allSchedules));
+        console.log("Horario cargado y guardado en caché");
+
+      } catch (error) {
+        console.error("Error al obtener horarios para todos los edificios:", error);
+        toast.error("Error al obtener horarios para todos los edificios:");
+        setFullSchedule({});
+      }
+    };
+
+    fetchAllBuildingsSchedules();
+  }, [selectedCycle, isStatisticMode, buildings]);
+
 
   useEffect(() => {
     if (isStatisticMode) {

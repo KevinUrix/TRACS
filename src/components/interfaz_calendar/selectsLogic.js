@@ -71,40 +71,72 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   useEffect(() => {
   const cacheKey = 'cycles_cache';
 
-  // Intentar cargar ciclos del sessionStorage
-  const cachedCycles = sessionStorage.getItem(cacheKey);
-
-  if (cachedCycles) {
+  const loadLocalCycles = async () => {
     try {
-      const parsed = JSON.parse(cachedCycles);
-      setCycle(parsed);
-      return; // Si ya hay cache, no hacemos fetch
-    } catch (error) {
-      console.warn('Cache de ciclos corrupto, se elimina y se recarga', error);
-      sessionStorage.removeItem(cacheKey);
-    }
-  }
+      const localResponse = await fetch(`${API_URL}/api/cycles/local`);
+      if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
 
-  // Si no hay cache válido, hacemos fetch
+      const localData = await localResponse.json();
+
+      if (Array.isArray(localData) && localData.length > 0) {
+        setCycle(localData);
+        sessionStorage.setItem(cacheKey, JSON.stringify(localData));
+        console.warn("✅ Ciclos cargados desde archivo local y guardados en cache.");
+      } else {
+        console.error("❌ El archivo local no contiene un array válido:", localData);
+      }
+    } catch (error) {
+      console.error("❌ Error al cargar ciclos locales de respaldo:", error);
+      setCycle([]);
+    }
+  };
+
   const fetchCycles = async () => {
+    // 1. Verificar en sessionStorage
+    const cachedCycles = sessionStorage.getItem(cacheKey);
+    if (cachedCycles) {
+      try {
+        const parsed = JSON.parse(cachedCycles);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          console.log("✅ Ciclos cargados desde sessionStorage");
+          setCycle(parsed);
+          return;
+        } else {
+          console.warn("⚠️ Ciclos en cache vacíos o corruptos, se eliminan");
+          sessionStorage.removeItem(cacheKey);
+        }
+      } catch (error) {
+        console.warn("⚠️ Error al parsear ciclos en cache:", error);
+        sessionStorage.removeItem(cacheKey);
+      }
+    }
+
+    // 2. Hacer fetch al backend
     setLoadingCycle(true);
     try {
       const response = await fetch(`${API_URL}/api/cycles`);
       if (!response.ok) throw new Error(`HTTP error ${response.status}`);
-      const data = await response.json();
-      setCycle(data);
 
-      // Guardar en sessionStorage para futuros usos
-      sessionStorage.setItem(cacheKey, JSON.stringify(data));
+      const data = await response.json();
+      if (Array.isArray(data) && data.length > 0) {
+        setCycle(data);
+        sessionStorage.setItem(cacheKey, JSON.stringify(data));
+        console.log("✅ Ciclos cargados desde el backend y guardados en cache.");
+      } else {
+        console.warn("⚠️ Respuesta vacía del backend. Intentando archivo local...");
+        await loadLocalCycles();
+      }
     } catch (error) {
-      console.error("Error cargando los ciclos:", error);
+      console.error("❌ Error al obtener ciclos desde el backend:", error);
+      await loadLocalCycles();
     } finally {
       setLoadingCycle(false);
     }
   };
 
-    fetchCycles();
+  fetchCycles();
   }, []);
+
 
 
   // EDIFICIOS
@@ -162,17 +194,26 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       const result = await res.json();
   
       if (result.success) {
-        const summary = result.result;
+        const { buildings, cycles } = result.result;
         let message = '✅ Los archivos JSON se han descargado correctamente.\n\n';
-        message += `Éxito: ${summary.success.length} edificios\n`;
-        message += `Saltados: ${summary.skipped.length} edificios (sin datos)\n`;
-        message += `Fallidos: ${summary.failed.length} edificios\n`;
-  
-        if (summary.failed.length > 0) {
-          message += '\nDetalles de errores:\n';
-          summary.failed.forEach(failure => {
-            message += `${failure.building}: ${failure.error}\n`;
+        // Información de edificios
+        message += `📚 Edificios:\n`;
+        message += `✅ Éxito: ${buildings.success.length} edificios\n`;
+        message += `⚠️ Vacíos: ${buildings.skipped.length} edificios\n`;
+        message += `❌ Fallidos: ${buildings.failed.length} edificios\n`;
+
+        if (buildings.failed.length > 0) {
+          message += `\nDetalles de errores:\n`;
+          buildings.failed.forEach(failure => {
+            message += `• ${failure.building}: ${failure.error}\n`;
           });
+        }
+
+        // Información de ciclos
+        if (cycles?.success) {
+          message += `\n📅 Ciclos guardados`;
+        } else {
+          message += `\n❌ No se pudieron guardar los ciclos.`;
         }
   
         alert(message);

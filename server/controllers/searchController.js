@@ -56,13 +56,58 @@ const matchesName = (fullName, normalizedQuery) => {
     // Filtrar los edificios que aún no están cacheados (ni siquiera array un vacío)
     const buildingsToScrape = buildings.filter(building => !cachedBuildings.includes(building.value));
 
-    if (buildingsToScrape.length > 0) {
-      await new Promise(resolve => setTimeout(resolve, 7000));
+    if (buildingsToScrape.length > 0 && cachedBuildings.length > 0) {
+      await new Promise(resolve => setTimeout(resolve, 6000));
 
       console.log(`${buildingsToScrape.length} edificios no están cacheados. Se procederá a scrapear.`);
 
       for (const building of buildingsToScrape) {
-        await scrapeData(cycle, building.value);
+        await new Promise(res => setTimeout(res, 100));
+        const scrapeResult = await scrapeData(cycle, building.value);
+
+        if (scrapeResult?.error) {
+          console.warn(`⚠️ Scraping fallido para ${building.value}. Intentando archivo local...`);
+          try {
+            const localData = require(`../data/buildings/${cycle}/${building.value}.json`);
+            const localCacheKey = `local-schedule-${cycle}-building-${building.value}`;
+
+            const alreadyCached = await cache.get(localCacheKey);
+            if (alreadyCached) {
+              console.log(`✅ Cache ya existe para ${building.value}, se omite lectura de archivo local.`);
+              continue;
+            }
+            await cache.set(`local-schedule-${cycle}-building-${building.value}`, localData);
+            console.log(`📁 Archivo local cargado para ${building.value}`);
+          } catch (fsErr) {
+            console.error(`❌ No se encontró archivo local para ${building.value}:`);
+          }
+        }
+      }
+    }
+    else if ( cachedBuildings.length === 0 ) {
+      console.log(`${buildingsToScrape.length} edificios no están cacheados. Se procederá a scrapear.`);
+
+      for (const building of buildingsToScrape) {
+        await new Promise(res => setTimeout(res, 400));
+        const scrapeResult = await scrapeData(cycle, building.value);
+
+        if (scrapeResult?.error) {
+          console.warn(`⚠️ Scraping fallido para ${building.value}. Intentando archivo local...`);
+          try {
+            const localData = require(`../data/buildings/${cycle}/${building.value}.json`);
+            const localCacheKey = `local-schedule-${cycle}-building-${building.value}`;
+
+            const alreadyCached = await cache.get(localCacheKey);
+            if (alreadyCached) {
+              console.log(`✅ Cache ya existe para ${building.value}, se omite lectura de archivo local.`);
+              continue;
+            }
+            await cache.set(`local-schedule-${cycle}-building-${building.value}`, localData);
+            console.log(`📁 Archivo local cargado para ${building.value}`);
+          } catch (fsErr) {
+            console.error(`❌ No se encontró archivo local para ${building.value}:`);
+          }
+        }
       }
     }
 
@@ -86,6 +131,25 @@ const matchesName = (fullName, normalizedQuery) => {
         }
       }
     }
+
+    if (results.length === 0) {
+      console.log('🔁 No se encontraron resultados en schedule-cache. Buscando en local-cache...');
+      const localPrefix = `local-schedule-${cycle}-building-`;
+      for (let cacheKey of updatedCacheKeys) {
+
+        if (cacheKey.startsWith(localPrefix)) {
+          const data = await cache.get(cacheKey);
+          if (data && Array.isArray(data)) {
+            const filteredResults = data.filter(item => {
+              const normalizedFullName = normalizeName(item.professor);
+              return matchesName(normalizedFullName, normalizedQuery);
+            });
+            results.push(...filteredResults);
+          }
+        }
+      }
+    }
+
 
     // Ordenar solo si se recibió un building
     if (building) {

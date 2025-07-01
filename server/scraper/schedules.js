@@ -41,7 +41,10 @@ const extractData = ($, buildingName) => {
                 const cells = $(tableRow).find('td')
                     .toArray()
                     .map(cell => $(cell).text().trim())
-                    .filter(text => text !== '01' && text !== '04' && !datePattern.test(text));
+                    .filter(text => {
+                        const inRange = Number(text) >= 1 && Number(text) <= 9 && text.length === 2 && text.startsWith('0');
+                        return !inRange && !datePattern.test(text);
+                    });
 
                 if (cells.length >= 4 && cells[2] && cells[3]) {
                     return {
@@ -185,11 +188,11 @@ const scrapeData = async (cycle, edifp) => {
         // Iniciar el scraping en segundo plano para los demás
         backgroundScraping(cycle, edifp);
 
-        return data;
+        return { data, error: false };
 
     } catch (err) {
         console.error(`Error al hacer scraping de ${edifp}:`, err.message);
-        return [];
+        return { data: [], error: true };
     } finally {
         activeScraping.delete(scrapeKey);
     }

@@ -1,7 +1,7 @@
 const { saveAllToFiles } = require('../scraper/downloadBuildings');
+const { saveCyclesToFile } = require('../scraper/downloadCycles');
 
 const getDownloads = async (req, res) => {
-  console.log('Ruta /api/descargar-json alcanzada');
   try {
     const cycle = req.query.cycle;
 
@@ -10,7 +10,9 @@ const getDownloads = async (req, res) => {
     }
 
     const resultSummary = await saveAllToFiles(cycle);
-    res.status(200).json({ success: true, result: resultSummary });
+    const cyclesSummary = await saveCyclesToFile();
+
+    res.status(200).json({ success: true, result: {buildings: resultSummary, cycles: cyclesSummary} });
 
   } catch (err) {
     console.error(err);

@@ -18,15 +18,23 @@ const extractData = ($, buildingName) => {
 
     $('tr').each((_, row) => {
         const columns = $(row).find('td.tddatos');
+        const nrc = columns.eq(0).text().trim();
+        const code = columns.eq(1).text().trim();
+        const course = columns.eq(2).text().trim();
+        const spots = columns.eq(5).text().trim();
+        const available = columns.eq(6).text().trim();
+        if (!nrc && !code && !course) return;
+        /*
+        QUITAR COMENTARIO EN CASO DE FALTA DE INFORMACIÓN Y BORRAR LO DE ARRIBA
+        const columns = $(row).find('td.tddatos');
         const nrc = columns.eq(0).text().trim() || lastValidRow.nrc;
         const code = columns.eq(1).text().trim() || lastValidRow.code;
         const course = columns.eq(2).text().trim() || lastValidRow.course;
         const spots = columns.eq(5).text().trim() || lastValidRow.spots;
         const available = columns.eq(6).text().trim() || lastValidRow.available;
-
         if (course) {
             lastValidRow = { nrc, code, course, spots, available };
-        }
+        } */
 
         const students = parseInt(spots) - parseInt(available);
         const table = $(row).find('table.td1');

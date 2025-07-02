@@ -1,0 +1,366 @@
+[
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDZZ",
+      "classroom": "0003",
+      "nrc": "07352",
+      "code": "H0776",
+      "students": 1,
+      "course": "BIOMATERIALES"
+    },
+    "professor": "TORIZ GONZALEZ, GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0003",
+      "nrc": "44225",
+      "code": "I7679",
+      "students": 1,
+      "course": "CONSTRUCCION,ARRANQUE Y OPERACION DE PLANTAS"
+    },
+    "professor": "RAMIREZ MEDA, WALTER"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". M . . . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "44228",
+      "code": "I7695",
+      "students": 1,
+      "course": "CONTROL ESTADISTICO DE PROCESOS"
+    },
+    "professor": "ROBLEDO HERNANDEZ, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . V .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "07356",
+      "code": "H0795",
+      "students": 4,
+      "course": "CORROSION"
+    },
+    "professor": "PEREZ ALVAREZ, JONATAN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0003",
+      "nrc": "158563",
+      "code": "H0739",
+      "students": 5,
+      "course": "ESTRUCTURA Y CARACTERIZACION DE MATERIALES"
+    },
+    "professor": "SOTO GARCIA, VICTOR MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". M . . . .",
+      "building": "DEDZZ",
+      "classroom": "0101",
+      "nrc": "78070",
+      "code": "I7682",
+      "students": 1,
+      "course": "INGENIERIA DE PROCURACION 404"
+    },
+    "professor": "RAMIREZ MEDA, WALTER"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". . . J . .",
+      "building": "DEDZZ",
+      "classroom": "0005",
+      "nrc": "62735",
+      "code": "I7673",
+      "students": 3,
+      "course": "INGENIERIA DE PROYECTOS"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "136789",
+      "code": "H0738",
+      "students": 5,
+      "course": "MATEMATICAS PARA MATERIALES"
+    },
+    "professor": "RUELAS LEPE, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0005",
+      "nrc": "74302",
+      "code": "I7680",
+      "students": 2,
+      "course": "MODELADO DE SISTEMAS Y FUNDAMENTOS DE CONTROL"
+    },
+    "professor": "ROBLEDO HERNANDEZ, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "88803",
+      "code": "H0766",
+      "students": 2,
+      "course": "OPTICA DE MATERIALES"
+    },
+    "professor": "GUILLEN BONILLA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "1200-1355",
+      "days": ". M . J . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "103944",
+      "code": "H0770",
+      "students": 1,
+      "course": "PROCESAMIENTO Y CARACTERIZACION DE PELICULAS DELGADAS"
+    },
+    "professor": "FLORES MARTINEZ, MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0004",
+      "nrc": "95736",
+      "code": "H0765",
+      "students": 2,
+      "course": "PROCESOS TECNOLOGICOS EN SEMICONDUCTORES"
+    },
+    "professor": "PEREZ CENTENO, ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . . S",
+      "building": "DEDZZ",
+      "classroom": "0003",
+      "nrc": "103941",
+      "code": "I7681",
+      "students": 1,
+      "course": "PROGRAMACION DE SISTEMAS DE CONTROL INTELIGENTES"
+    },
+    "professor": "ROBLEDO HERNANDEZ, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": "L . . . . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "44229",
+      "code": "I7698",
+      "students": 2,
+      "course": "PROGRAMACION PARA APLICACIONES DE CONTROL"
+    },
+    "professor": "ROBLEDO HERNANDEZ, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0800-0955",
+      "days": ". M . J . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "07424",
+      "code": "H0741",
+      "students": 7,
+      "course": "PROPIEDADES DE MATERIALES II"
+    },
+    "professor": "SANCHEZ MARTINEZ, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1200-1555",
+      "days": ". . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0001",
+      "nrc": "08373",
+      "code": "H0746",
+      "students": 3,
+      "course": "SEMINARIO DI"
+    },
+    "professor": "FLORES MARTINEZ, MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDZZ",
+      "classroom": "0001",
+      "nrc": "07438",
+      "code": "H0747",
+      "students": 3,
+      "course": "SEMINARIO DII"
+    },
+    "professor": "CASTELLANOS GUZMAN, ALEJO GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L . . . . .",
+      "building": "DEDZZ",
+      "classroom": "0001",
+      "nrc": "07439",
+      "code": "H0749",
+      "students": 2,
+      "course": "SEMINARIO DIV"
+    },
+    "professor": "SUAREZ MARTINEZ, REYNIER"
+  },
+  {
+    "data": {
+      "schedule": "1200-1555",
+      "days": ". M . . . .",
+      "building": "DEDZZ",
+      "classroom": "0001",
+      "nrc": "17947",
+      "code": "H0750",
+      "students": 1,
+      "course": "SEMINARIO DV"
+    },
+    "professor": "PEREZ ALVAREZ, JONATAN"
+  },
+  {
+    "data": {
+      "schedule": "1600-1955",
+      "days": ". M . . . .",
+      "building": "DEDZZ",
+      "classroom": "0001",
+      "nrc": "17948",
+      "code": "H0751",
+      "students": 2,
+      "course": "SEMINARIO DVI"
+    },
+    "professor": "CEBALLOS SANCHEZ, OSCAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "17949",
+      "code": "H0742",
+      "students": 5,
+      "course": "SEMINARIO I"
+    },
+    "professor": "JIMENEZ ALEMAN, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "07448",
+      "code": "H0743",
+      "students": 6,
+      "course": "SEMINARIO II"
+    },
+    "professor": "RODRIGUEZ DE ANDA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1200-1555",
+      "days": ". . . . V .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "08374",
+      "code": "H0744",
+      "students": 3,
+      "course": "SEMINARIO III"
+    },
+    "professor": "TORIZ GONZALEZ, GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1155",
+      "days": ". M . J . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "07453",
+      "code": "H0786",
+      "students": 2,
+      "course": "SINTESIS Y CARACTERIZACION DE POLIMEROS"
+    },
+    "professor": "MACIAS BALLEZA, EMMA REBECA"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". . . . V .",
+      "building": "DEDZZ",
+      "classroom": "0003",
+      "nrc": "143498",
+      "code": "I7706",
+      "students": 1,
+      "course": "TEMAS SELECTOS II (CONTROL)"
+    },
+    "professor": "OJEDA MAGAÑA, BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . . S",
+      "building": "DEDZZ",
+      "classroom": "0004",
+      "nrc": "118327",
+      "code": "I7704",
+      "students": 1,
+      "course": "TEMAS SELECTOS III (MANUFACTURA)"
+    },
+    "professor": "SAUCEDO FLORES, EMMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1730-2125",
+      "days": ". M . . . .",
+      "building": "DEDZZ",
+      "classroom": "0004",
+      "nrc": "111131",
+      "code": "I7677",
+      "students": 1,
+      "course": "TRABAJO DE INVESTIGACION II"
+    },
+    "professor": "LOPEZ NARANJO, EDGAR JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDZZ",
+      "classroom": "0002",
+      "nrc": "07498",
+      "code": "H0799",
+      "students": 4,
+      "course": "TRIBOLOGIA"
+    },
+    "professor": "FLORES JIMENEZ, MAX FERNANDO"
+  }
+]

@@ -248,32 +248,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "90654",
-      "code": "I5908",
-      "students": 25,
-      "course": "ADMINISTRACION DE SERVIDORES"
-    },
-    "professor": "SOTO SANCHEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . . S",
-      "building": "DEDX",
-      "classroom": "A005",
-      "nrc": "90654",
-      "code": "I5908",
-      "students": 25,
-      "course": "ADMINISTRACION DE SERVIDORES"
-    },
-    "professor": "SOTO SANCHEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
       "schedule": "0900-1255",
       "days": ". . . . . S",
       "building": "DEDX",
@@ -417,32 +391,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A003",
-      "nrc": "164132",
-      "code": "I5906",
-      "students": 37,
-      "course": "ALMACENES DE DATOS (DATA WAREHOUSE)"
-    },
-    "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A003",
-      "nrc": "164132",
-      "code": "I5906",
-      "students": 37,
-      "course": "ALMACENES DE DATOS (DATA WAREHOUSE)"
-    },
-    "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -453,32 +401,6 @@
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A012",
-      "nrc": "204837",
-      "code": "IL355",
-      "students": 36,
-      "course": "ANALISIS DE ALGORITMOS"
-    },
-    "professor": "ESPINOZA VALDEZ, AURORA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A012",
-      "nrc": "204837",
-      "code": "IL355",
-      "students": 36,
-      "course": "ANALISIS DE ALGORITMOS"
-    },
-    "professor": "ESPINOZA VALDEZ, AURORA"
   },
   {
     "data": {
@@ -847,32 +769,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A022",
-      "nrc": "179961",
-      "code": "I7036",
-      "students": 37,
-      "course": "COMPUTACION TOLERANTE A FALLAS"
-    },
-    "professor": "LOPEZ FRANCO, MICHEL EMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "179961",
-      "code": "I7036",
-      "students": 37,
-      "course": "COMPUTACION TOLERANTE A FALLAS"
-    },
-    "professor": "LOPEZ FRANCO, MICHEL EMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDX",
       "classroom": "A011",
@@ -1038,32 +934,6 @@
       "course": "ESTRUCTURA DE DATOS I"
     },
     "professor": "ORTEGA SANCHEZ, NOE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A016",
-      "nrc": "178661",
-      "code": "IB163",
-      "students": 27,
-      "course": "ESTRUCTURA DE DATOS II"
-    },
-    "professor": "LUPERCIO CORONEL, RAMIRO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A006",
-      "nrc": "178661",
-      "code": "IB163",
-      "students": 27,
-      "course": "ESTRUCTURA DE DATOS II"
-    },
-    "professor": "LUPERCIO CORONEL, RAMIRO"
   },
   {
     "data": {
@@ -1441,58 +1311,6 @@
       "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
     },
     "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A013",
-      "nrc": "204953",
-      "code": "IL361",
-      "students": 35,
-      "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
-    },
-    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "204953",
-      "code": "IL361",
-      "students": 35,
-      "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
-    },
-    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A013",
-      "nrc": "204954",
-      "code": "IL361",
-      "students": 37,
-      "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
-    },
-    "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A017",
-      "nrc": "204954",
-      "code": "IL361",
-      "students": 37,
-      "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
-    },
-    "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
   },
   {
     "data": {
@@ -2341,32 +2159,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "193751",
-      "code": "IL351",
-      "students": 36,
-      "course": "INNOVACION Y TECNOLOGIA"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A012",
-      "nrc": "193751",
-      "code": "IL351",
-      "students": 36,
-      "course": "INNOVACION Y TECNOLOGIA"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDX",
@@ -2862,32 +2654,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "200669",
-      "code": "IL350",
-      "students": 35,
-      "course": "LIDERAZGO Y EMPRENDIMIENTO"
-    },
-    "professor": "LOPEZ FRANCO, ADRIANA LISET"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A020",
-      "nrc": "200669",
-      "code": "IL350",
-      "students": 35,
-      "course": "LIDERAZGO Y EMPRENDIMIENTO"
-    },
-    "professor": "LOPEZ FRANCO, ADRIANA LISET"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDX",
       "classroom": "A017",
@@ -2949,32 +2715,6 @@
       "course": "MINERIA DE DATOS"
     },
     "professor": "AVILA CARDENAS, KARLA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "119882",
-      "code": "I5911",
-      "students": 35,
-      "course": "MINERIA DE DATOS"
-    },
-    "professor": "LUNA RETANA, GABRIELA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "119882",
-      "code": "I5911",
-      "students": 35,
-      "course": "MINERIA DE DATOS"
-    },
-    "professor": "LUNA RETANA, GABRIELA"
   },
   {
     "data": {
@@ -3212,58 +2952,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A012",
-      "nrc": "42561",
-      "code": "I5882",
-      "students": 38,
-      "course": "PROGRAMACION"
-    },
-    "professor": "LOPEZ FRANCO, LUIS EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A016",
-      "nrc": "42561",
-      "code": "I5882",
-      "students": 38,
-      "course": "PROGRAMACION"
-    },
-    "professor": "LOPEZ FRANCO, LUIS EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "42559",
-      "code": "I5882",
-      "students": 29,
-      "course": "PROGRAMACION"
-    },
-    "professor": "OSORIO ANGEL, SONIA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A022",
-      "nrc": "42559",
-      "code": "I5882",
-      "students": 29,
-      "course": "PROGRAMACION"
-    },
-    "professor": "OSORIO ANGEL, SONIA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -3446,58 +3134,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "131887",
-      "code": "IC589",
-      "students": 32,
-      "course": "PROGRAMACION APLICADA A LA INGENIERIA"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "131887",
-      "code": "IC589",
-      "students": 32,
-      "course": "PROGRAMACION APLICADA A LA INGENIERIA"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "131888",
-      "code": "IC589",
-      "students": 30,
-      "course": "PROGRAMACION APLICADA A LA INGENIERIA"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "131888",
-      "code": "IC589",
-      "students": 30,
-      "course": "PROGRAMACION APLICADA A LA INGENIERIA"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
-  },
-  {
-    "data": {
       "schedule": "1100-1155",
       "days": ". . . J . .",
       "building": "DEDX",
@@ -3547,32 +3183,6 @@
       "course": "PROGRAMACION APLICADA A LA INGENIERIA"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "131895",
-      "code": "IC589",
-      "students": 31,
-      "course": "PROGRAMACION APLICADA A LA INGENIERIA"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "131895",
-      "code": "IC589",
-      "students": 31,
-      "course": "PROGRAMACION APLICADA A LA INGENIERIA"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
   },
   {
     "data": {
@@ -3807,32 +3417,6 @@
       "course": "PROGRAMACION PARALELA Y EN TIEMPO REAL"
     },
     "professor": "DE LEON LOPEZ, GLORIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A023",
-      "nrc": "206027",
-      "code": "V0818",
-      "students": 29,
-      "course": "PROYECTO SUSTENTABLE"
-    },
-    "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A022",
-      "nrc": "206027",
-      "code": "V0818",
-      "students": 29,
-      "course": "PROYECTO SUSTENTABLE"
-    },
-    "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
   },
   {
     "data": {
@@ -4106,32 +3690,6 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION"
     },
     "professor": "PEREZ PADILLA, NAYELI ARELI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "124874",
-      "code": "I5914",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "124874",
-      "code": "I5914",
-      "students": 35,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS BASADOS EN CONOCIMIENTO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
   },
   {
     "data": {
@@ -5032,32 +4590,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A011",
-      "nrc": "178658",
-      "code": "I9907",
-      "students": 35,
-      "course": "TEORIA DE SISTEMAS I"
-    },
-    "professor": "BACILIO NAVARRO, HECTOR MISAEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "178658",
-      "code": "I9907",
-      "students": 35,
-      "course": "TEORIA DE SISTEMAS I"
-    },
-    "professor": "BACILIO NAVARRO, HECTOR MISAEL"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDX",
@@ -5185,32 +4717,6 @@
       "course": "TRADUCTORES DE LENGUAJES II"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "94498",
-      "code": "I5903",
-      "students": 39,
-      "course": "USO, ADAPTACION Y EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A006",
-      "nrc": "94498",
-      "code": "I5903",
-      "students": 39,
-      "course": "USO, ADAPTACION Y EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
   },
   {
     "data": {

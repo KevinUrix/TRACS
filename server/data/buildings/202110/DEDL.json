@@ -1,0 +1,743 @@
+[
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "LC01",
+      "nrc": "43827",
+      "code": "I7429",
+      "students": 21,
+      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
+    },
+    "professor": "MARIAUD SCHMIDT, AGUSTIN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDL",
+      "classroom": "LM04",
+      "nrc": "131687",
+      "code": "I7577",
+      "students": 34,
+      "course": "FUENTES ALTERNAS DE ENERGIA"
+    },
+    "professor": "VAZQUEZ BEAZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "165965",
+      "code": "IC615",
+      "students": 9,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "VACA MADRIGAL, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "166271",
+      "code": "IC615",
+      "students": 11,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "VACA MADRIGAL, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "166272",
+      "code": "IC615",
+      "students": 7,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "LARIOS GALLO, CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "166273",
+      "code": "IC615",
+      "students": 1,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "LARIOS GALLO, CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "166274",
+      "code": "IC615",
+      "students": 10,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, HUGO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "166494",
+      "code": "IC615",
+      "students": 7,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "GALLARDO SANCHEZ, MANUEL ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "171975",
+      "code": "IC615",
+      "students": 8,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "VACA MADRIGAL, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "171976",
+      "code": "IC615",
+      "students": 10,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "VACA MADRIGAL, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1855",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "171977",
+      "code": "IC615",
+      "students": 4,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "VACA MADRIGAL, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1855",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "171978",
+      "code": "IC615",
+      "students": 10,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "VACA MADRIGAL, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "178118",
+      "code": "IC615",
+      "students": 3,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "LARIOS GALLO, CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM03",
+      "nrc": "49626",
+      "code": "IT334",
+      "students": 6,
+      "course": "LABORATORIO DE CONCRETO"
+    },
+    "professor": "GALLARDO SANCHEZ, MANUEL ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "86226",
+      "code": "I7383",
+      "students": 20,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "PEREZ ORTEGA, JESUS MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "90823",
+      "code": "I7383",
+      "students": 20,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "PEREZ ORTEGA, JESUS MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "92552",
+      "code": "I7383",
+      "students": 20,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "LOPEZ DE ALBA, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1855",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "86888",
+      "code": "I7383",
+      "students": 19,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "REYNOSO GARCIA, CESAR ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "84018",
+      "code": "I7383",
+      "students": 19,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "LOPEZ DE ALBA, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "81700",
+      "code": "I7383",
+      "students": 20,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "CARRILLO CASTILLO, JOSE NIEVES"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "LM01",
+      "nrc": "88556",
+      "code": "I7383",
+      "students": 18,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "CARRILLO CASTILLO, JOSE NIEVES"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "LM02",
+      "nrc": "86839",
+      "code": "I7383",
+      "students": 18,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "LOPEZ DE ALBA, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "LM02",
+      "nrc": "159347",
+      "code": "I7383",
+      "students": 19,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "PEREZ RUIZ, ENRIQUE"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "LM02",
+      "nrc": "159348",
+      "code": "I7383",
+      "students": 18,
+      "course": "LABORATORIO DE METROLOGIA"
+    },
+    "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171982",
+      "code": "IC619",
+      "students": 13,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171983",
+      "code": "IC619",
+      "students": 12,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "BERNAL LOMELI, JOSE RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171984",
+      "code": "IC619",
+      "students": 12,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, HUGO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171985",
+      "code": "IC619",
+      "students": 13,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "BERNAL LOMELI, JOSE RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171986",
+      "code": "IC619",
+      "students": 12,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171987",
+      "code": "IC619",
+      "students": 12,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "SILVA GONZALEZ, JOSE ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "171988",
+      "code": "IC619",
+      "students": 12,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "ROSAS TORRES, MARTHA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "178119",
+      "code": "IC619",
+      "students": 3,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM04",
+      "nrc": "49663",
+      "code": "IT339",
+      "students": 11,
+      "course": "LABORATORIO DE PAVIMENTOS"
+    },
+    "professor": "GUTIERREZ ALFARO, JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152640",
+      "code": "IC592",
+      "students": 11,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152641",
+      "code": "IC592",
+      "students": 10,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "BERNAL LOMELI, JOSE RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152642",
+      "code": "IC592",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "ROSAS TORRES, MARTHA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152643",
+      "code": "IC592",
+      "students": 10,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152644",
+      "code": "IC592",
+      "students": 7,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "ROSAS TORRES, MARTHA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152645",
+      "code": "IC592",
+      "students": 9,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152646",
+      "code": "IC592",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "ROSAS TORRES, MARTHA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152647",
+      "code": "IC592",
+      "students": 8,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "BERNAL LOMELI, JOSE RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "152648",
+      "code": "IC592",
+      "students": 4,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "171965",
+      "code": "IC592",
+      "students": 9,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "GALAVIZ GONZALEZ, JOSE ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM01",
+      "nrc": "172285",
+      "code": "IC592",
+      "students": 11,
+      "course": "LABORATORIO DE SUELOS I"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159504",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159505",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "RAMIREZ FRANCO, JUAN MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159506",
+      "code": "IC595",
+      "students": 13,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159508",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159509",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159510",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . . . S",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159511",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1555",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159512",
+      "code": "IC595",
+      "students": 12,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "ROSAS TORRES, MARTHA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "EM02",
+      "nrc": "159513",
+      "code": "IC595",
+      "students": 10,
+      "course": "LABORATORIO DE SUELOS II"
+    },
+    "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . J . .",
+      "building": "DEDL",
+      "classroom": "LM05",
+      "nrc": "145580",
+      "code": "I7434",
+      "students": 14,
+      "course": "MECANICA DE MATERIALES"
+    },
+    "professor": "TOPETE SANCHEZ, RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "LM06",
+      "nrc": "126154",
+      "code": "I7471",
+      "students": 35,
+      "course": "SEMINARIO MODULAR VIII"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "LM06",
+      "nrc": "126155",
+      "code": "I7471",
+      "students": 39,
+      "course": "SEMINARIO MODULAR VIII"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "LM06",
+      "nrc": "126156",
+      "code": "I7471",
+      "students": 38,
+      "course": "SEMINARIO MODULAR VIII"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  }
+]

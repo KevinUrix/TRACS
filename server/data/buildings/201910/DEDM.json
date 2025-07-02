@@ -1,0 +1,301 @@
+[
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM2",
+      "nrc": "122789",
+      "code": "I7587",
+      "students": 10,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "GOMEZ MORALES, LEOBARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "123292",
+      "code": "I7587",
+      "students": 7,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "GRAJEDA COVARRUBIAS, ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "160180",
+      "code": "IG461",
+      "students": 3,
+      "course": "DISEÑO DE CIRCUITOS DE RADIOFRECUENCIA"
+    },
+    "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "49894",
+      "code": "ET402",
+      "students": 4,
+      "course": "DISEÑO DIGITAL ASISTIDO POR COMPUTADORA"
+    },
+    "professor": "CARRION CORTES, JOSE MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1200-1255",
+      "days": ". . . J . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "49894",
+      "code": "ET402",
+      "students": 4,
+      "course": "DISEÑO DIGITAL ASISTIDO POR COMPUTADORA"
+    },
+    "professor": "CARRION CORTES, JOSE MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "49874",
+      "code": "ET305",
+      "students": 2,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "49866",
+      "code": "ET224",
+      "students": 6,
+      "course": "INGENIERIA DE CONTROL"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . V .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "137354",
+      "code": "I7602",
+      "students": 4,
+      "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
+    },
+    "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "160213",
+      "code": "IG471",
+      "students": 4,
+      "course": "OPTOELECTRONICA"
+    },
+    "professor": "FLORES NUÑEZ, JORGE LUIS"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "49883",
+      "code": "ET315",
+      "students": 5,
+      "course": "PROTOCOLOS E INTERFACES"
+    },
+    "professor": "CURIEL MARQUEZ, ROMAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "49882",
+      "code": "ET315",
+      "students": 7,
+      "course": "PROTOCOLOS E INTERFACES"
+    },
+    "professor": "CURIEL MARQUEZ, ROMAN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM5",
+      "nrc": "60062",
+      "code": "I7267",
+      "students": 6,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "GONZALEZ BECERRA, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "59925",
+      "code": "I7281",
+      "students": 5,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "43424",
+      "code": "I7275",
+      "students": 10,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "125019",
+      "code": "I7286",
+      "students": 18,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE CONTROL"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "125020",
+      "code": "I7286",
+      "students": 18,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE CONTROL"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "59683",
+      "code": "I7281",
+      "students": 3,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "104800",
+      "code": "I7600",
+      "students": 4,
+      "course": "SISTEMAS ELECTRONICOS"
+    },
+    "professor": "GOMEZ MORALES, LEOBARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM5",
+      "nrc": "44709",
+      "code": "ET214",
+      "students": 5,
+      "course": "TALLER DE SISTEMAS DIGITALES III"
+    },
+    "professor": "GONZALEZ REGALADO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "44745",
+      "code": "ET321",
+      "students": 4,
+      "course": "TECNOLOGIA DE SEMICONDUCTORES"
+    },
+    "professor": "CAMPA MOLINA, JORGE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "55446",
+      "code": "ET354",
+      "students": 9,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA V"
+    },
+    "professor": "FLORES NUÑEZ, JORGE LUIS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "55446",
+      "code": "ET354",
+      "students": 9,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA V"
+    },
+    "professor": "FLORES NUÑEZ, JORGE LUIS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "53896",
+      "code": "ET416",
+      "students": 2,
+      "course": "TOPICOS SELECTOS EN INSTRUMENTACION"
+    },
+    "professor": "GARCIA TORALES, GUILLERMO"
+  }
+]

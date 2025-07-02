@@ -1,0 +1,626 @@
+[
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "121665",
+      "code": "I6776",
+      "students": 1,
+      "course": "BIOLOGIA COMPUTACIONAL"
+    },
+    "professor": "MORALES VALENCIA, JOSE ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "125309",
+      "code": "IB059",
+      "students": 20,
+      "course": "CALCULO VECTORIAL Y TENSORIAL"
+    },
+    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "165892",
+      "code": "I6797",
+      "students": 1,
+      "course": "CONTROL POR MODOS DESLIZANTES"
+    },
+    "professor": "GARCIA TORALES, GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60804",
+      "code": "I7413",
+      "students": 40,
+      "course": "DINAMICA"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, MARISELA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "136608",
+      "code": "IC582",
+      "students": 34,
+      "course": "DINAMICA"
+    },
+    "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "165427",
+      "code": "I7413",
+      "students": 11,
+      "course": "DINAMICA"
+    },
+    "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1400-1455",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "43758",
+      "code": "I7516",
+      "students": 4,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "ALVAREZ POZOS, SANDRA LUZ"
+  },
+  {
+    "data": {
+      "schedule": "2100-2155",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "153353",
+      "code": "I6751",
+      "students": 1,
+      "course": "DISEÑO Y PROGRAMACION PARALELA DE SISTEMAS MULTICORE"
+    },
+    "professor": "GURROLA NAVARRO, MARCO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "125310",
+      "code": "IB062",
+      "students": 13,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "73304",
+      "code": "I6800",
+      "students": 1,
+      "course": "INTELIGENCIA ARTIFICIAL"
+    },
+    "professor": "ARANA DANIEL, NANCY GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "123143",
+      "code": "I6123",
+      "students": 9,
+      "course": "INTRODUCCION A LA FISICA"
+    },
+    "professor": "SERRANO GARCIA, DAVID IGNACIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "125204",
+      "code": "I6123",
+      "students": 17,
+      "course": "INTRODUCCION A LA FISICA"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, MARISELA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "125206",
+      "code": "I6123",
+      "students": 29,
+      "course": "INTRODUCCION A LA FISICA"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, MARISELA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "125206",
+      "code": "I6123",
+      "students": 29,
+      "course": "INTRODUCCION A LA FISICA"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, MARISELA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1355",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "125237",
+      "code": "I6115",
+      "students": 2,
+      "course": "INTRODUCCION A LA FISICA DE LA ATMOSFERA"
+    },
+    "professor": "TERESHCHENKO, IRYNA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "42447",
+      "code": "I5892",
+      "students": 34,
+      "course": "MATEMATICA DISCRETA"
+    },
+    "professor": "MARTINEZ VAZQUEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1830",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "LC04",
+      "nrc": "153360",
+      "code": "I6779",
+      "students": 2,
+      "course": "METAHEURISTICA"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "42507",
+      "code": "I5895",
+      "students": 33,
+      "course": "METODOS MATEMATICOS II"
+    },
+    "professor": "ELIZALDE CAMINO, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "87827",
+      "code": "I5895",
+      "students": 40,
+      "course": "METODOS MATEMATICOS II"
+    },
+    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "172647",
+      "code": "I9885",
+      "students": 39,
+      "course": "METODOS MATEMATICOS III"
+    },
+    "professor": "CORTES NAVARRO, LAURA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "172647",
+      "code": "I9885",
+      "students": 39,
+      "course": "METODOS MATEMATICOS III"
+    },
+    "professor": "CORTES NAVARRO, LAURA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1900-2030",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "LC04",
+      "nrc": "73303",
+      "code": "I6801",
+      "students": 1,
+      "course": "OPTIMIZACION"
+    },
+    "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "159986",
+      "code": "IB120",
+      "students": 22,
+      "course": "PRECALCULO"
+    },
+    "professor": "CORONA SANCHEZ, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "109708",
+      "code": "I5799",
+      "students": 12,
+      "course": "PRECALCULO"
+    },
+    "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "113991",
+      "code": "I9882",
+      "students": 34,
+      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS I"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
+      "schedule": "1400-1455",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "57600",
+      "code": "I5968",
+      "students": 12,
+      "course": "SEMINARIO DEL MODULO DE ESTADISTICA"
+    },
+    "professor": "GUTIERREZ PULIDO, HUMBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60827",
+      "code": "I6915",
+      "students": 9,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "BAUTISTA RICO, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60828",
+      "code": "I6915",
+      "students": 16,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "PELAYO PELAYO, ALMA LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "72625",
+      "code": "I6915",
+      "students": 15,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60833",
+      "code": "I7352",
+      "students": 18,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "ZAMUDIO OJEDA, ADALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60835",
+      "code": "I7352",
+      "students": 18,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "43705",
+      "code": "I6913",
+      "students": 23,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+    },
+    "professor": "GUZMAN HERNANDEZ, JOSE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A003",
+      "nrc": "165713",
+      "code": "I6786",
+      "students": 1,
+      "course": "TEORIA DE GRAFOS"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "159539",
+      "code": "I7293",
+      "students": 33,
+      "course": "TEORIA ELECTROMAGNETICA"
+    },
+    "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "178823",
+      "code": "I7293",
+      "students": 6,
+      "course": "TEORIA ELECTROMAGNETICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "68232",
+      "code": "I5936",
+      "students": 16,
+      "course": "TEORIA ESTADISTICA"
+    },
+    "professor": "SANCHEZ GOMEZ, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "68232",
+      "code": "I5936",
+      "students": 16,
+      "course": "TEORIA ESTADISTICA"
+    },
+    "professor": "SANCHEZ GOMEZ, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "117744",
+      "code": "I5978",
+      "students": 16,
+      "course": "TOPICOS SELECTOS DE ALGEBRA LINEAL COMPUTACIONAL"
+    },
+    "professor": "VERA SORIA, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "117744",
+      "code": "I5978",
+      "students": 16,
+      "course": "TOPICOS SELECTOS DE ALGEBRA LINEAL COMPUTACIONAL"
+    },
+    "professor": "VERA SORIA, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1030",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A003",
+      "nrc": "133441",
+      "code": "I6824",
+      "students": 2,
+      "course": "TOPICOS SELECTOS DE ESTABILIDAD EN SISTEMAS ELECTRICOS DE POTENCIA"
+    },
+    "professor": "BAROCIO ESPEJO, EMILIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1230",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "LC03",
+      "nrc": "121709",
+      "code": "I6792",
+      "students": 1,
+      "course": "TOPICOS SELECTOS DE SISTEMAS EN BIOLOGIA"
+    },
+    "professor": "MORALES VALENCIA, JOSE ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A003",
+      "nrc": "145628",
+      "code": "I6807",
+      "students": 1,
+      "course": "TOPICOS SELECTOS EN GRAFICAS POR COMPUTADORA"
+    },
+    "professor": "VELEZ PEREZ, HUGO ABRAHAM"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A004",
+      "nrc": "83803",
+      "code": "I6808",
+      "students": 2,
+      "course": "TOPICOS SELECTOS EN MATEMATICAS AVANZADAS"
+    },
+    "professor": "ALANIS GARCIA, ALMA YOLANDA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A004",
+      "nrc": "159314",
+      "code": "I6774",
+      "students": 2,
+      "course": "TOPICOS SELECTOS EN SENSORES Y DETECTORES"
+    },
+    "professor": "FLORES NUÑEZ, JORGE LUIS"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A003",
+      "nrc": "73811",
+      "code": "I6811",
+      "students": 1,
+      "course": "TOPICOS SELECTOS EN SISTEMAS ROBOTICOS"
+    },
+    "professor": "NUÑO ORTEGA, EMMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A004",
+      "nrc": "140466",
+      "code": "I6811",
+      "students": 1,
+      "course": "TOPICOS SELECTOS EN SISTEMAS ROBOTICOS"
+    },
+    "professor": "LOPEZ FRANCO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A004",
+      "nrc": "124933",
+      "code": "I6793",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN TRATAMIENTO DE SEÑALES"
+    },
+    "professor": "ROMO VAZQUEZ, REBECA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . V .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "159440",
+      "code": "I6014",
+      "students": 9,
+      "course": "VARIABLE COMPLEJA"
+    },
+    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
+  }
+]

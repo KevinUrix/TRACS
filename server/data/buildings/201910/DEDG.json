@@ -1,0 +1,301 @@
+[
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "57559",
+      "code": "I3294",
+      "students": 27,
+      "course": "ANALISIS DE ALIMENTOS"
+    },
+    "professor": "TREJO PEREA, NESTOR ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "38441",
+      "code": "I3295",
+      "students": 23,
+      "course": "CINETICA QUIMICA Y QUIMICA COLOIDAL"
+    },
+    "professor": "ESCOBAR HERNANDEZ, DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "104040",
+      "code": "I5827",
+      "students": 23,
+      "course": "LABORATORIO DE MANEJO Y SEPARACION MECANICA DE MATERIALES"
+    },
+    "professor": "GUTIERREZ ROCHA, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "78703",
+      "code": "I5825",
+      "students": 24,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MEZA GARCIA, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "78704",
+      "code": "I5825",
+      "students": 24,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "125984",
+      "code": "I5837",
+      "students": 26,
+      "course": "LABORATORIO DE PROCESOS DE SEPARACION"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "LIQ02",
+      "nrc": "125984",
+      "code": "I5837",
+      "students": 26,
+      "course": "LABORATORIO DE PROCESOS DE SEPARACION"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDG",
+      "classroom": "LIQ02",
+      "nrc": "125985",
+      "code": "I5837",
+      "students": 27,
+      "course": "LABORATORIO DE PROCESOS DE SEPARACION"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1800-1855",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "LIQ02",
+      "nrc": "139192",
+      "code": "I5837",
+      "students": 26,
+      "course": "LABORATORIO DE PROCESOS DE SEPARACION"
+    },
+    "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": "L . . . . .",
+      "building": "DEDG",
+      "classroom": "LIQ02",
+      "nrc": "139193",
+      "code": "I5837",
+      "students": 24,
+      "course": "LABORATORIO DE PROCESOS DE SEPARACION"
+    },
+    "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDG",
+      "classroom": "LIQ03",
+      "nrc": "104052",
+      "code": "I5839",
+      "students": 25,
+      "course": "LABORATORIO DE REACTORES QUIMICOS"
+    },
+    "professor": "LANDAZURI GOMEZ, GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "125986",
+      "code": "I5839",
+      "students": 24,
+      "course": "LABORATORIO DE REACTORES QUIMICOS"
+    },
+    "professor": "LANDAZURI GOMEZ, GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". M . . . .",
+      "building": "DEDG",
+      "classroom": "LIQ03",
+      "nrc": "125986",
+      "code": "I5839",
+      "students": 24,
+      "course": "LABORATORIO DE REACTORES QUIMICOS"
+    },
+    "professor": "LANDAZURI GOMEZ, GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": "L . . . . .",
+      "building": "DEDG",
+      "classroom": "LIQ03",
+      "nrc": "139196",
+      "code": "I5839",
+      "students": 25,
+      "course": "LABORATORIO DE REACTORES QUIMICOS"
+    },
+    "professor": "NAVA TELLEZ, ALEJANDRO CRISTOPHER"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "LIQ03",
+      "nrc": "139197",
+      "code": "I5839",
+      "students": 16,
+      "course": "LABORATORIO DE REACTORES QUIMICOS"
+    },
+    "professor": "NAVA TELLEZ, ALEJANDRO CRISTOPHER"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "104047",
+      "code": "I5833",
+      "students": 18,
+      "course": "LABORATORIO DE TRANSFERENCIA DE CALOR"
+    },
+    "professor": "GUTIERREZ ROCHA, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "117587",
+      "code": "I5831",
+      "students": 11,
+      "course": "LABORATORIO DE TRANSFERENCIA DE MASA"
+    },
+    "professor": "GUTIERREZ ROCHA, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "117588",
+      "code": "I5831",
+      "students": 24,
+      "course": "LABORATORIO DE TRANSFERENCIA DE MASA"
+    },
+    "professor": "GUTIERREZ ROCHA, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "117591",
+      "code": "I5833",
+      "students": 23,
+      "course": "LABORATORIO DE TRANSFERENCIA DE CALOR"
+    },
+    "professor": "MEZA GARCIA, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "104039",
+      "code": "I5826",
+      "students": 34,
+      "course": "MANEJO Y SEPARACION MECANICA DE MATERIALES"
+    },
+    "professor": "ORTEGA ROSALES, LAURA EMILIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . . V .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "38452",
+      "code": "I3305",
+      "students": 17,
+      "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "38452",
+      "code": "I3305",
+      "students": 17,
+      "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
+    },
+    "professor": "PEREZ LEAÑO, JAIME RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDG",
+      "classroom": "A002",
+      "nrc": "125952",
+      "code": "I5830",
+      "students": 36,
+      "course": "TRANSFERENCIA DE MASA"
+    },
+    "professor": "RUIZ SILVA, EDUARDO"
+  }
+]

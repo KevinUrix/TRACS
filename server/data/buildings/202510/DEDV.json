@@ -27,32 +27,6 @@
   },
   {
     "data": {
-      "schedule": "1000-1155",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "188250",
-      "code": "IG673",
-      "students": 0,
-      "course": "ALGEBRA HOMOLOGICA"
-    },
-    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "188250",
-      "code": "IG673",
-      "students": 0,
-      "course": "ALGEBRA HOMOLOGICA"
-    },
-    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDV",
@@ -63,32 +37,6 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "BECERRA LOPEZ, FERNANDO IGNACIO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "197386",
-      "code": "IB056",
-      "students": 33,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "SANCHEZ NAJERA, ABEL ISAI"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "197386",
-      "code": "IB056",
-      "students": 33,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "SANCHEZ NAJERA, ABEL ISAI"
   },
   {
     "data": {
@@ -222,58 +170,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "209677",
-      "code": "V1625",
-      "students": 3,
-      "course": "ANALISIS ESPECTRAL DE LOS PROCESOS Y CAMPOS ALEATORIOS"
-    },
-    "professor": "VELAZQUEZ MUÑOZ, FEDERICO ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "209677",
-      "code": "V1625",
-      "students": 3,
-      "course": "ANALISIS ESPECTRAL DE LOS PROCESOS Y CAMPOS ALEATORIOS"
-    },
-    "professor": "VELAZQUEZ MUÑOZ, FEDERICO ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1755",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "92282",
-      "code": "I5959",
-      "students": 14,
-      "course": "ANALISIS FUNCIONAL"
-    },
-    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "92282",
-      "code": "I5959",
-      "students": 14,
-      "course": "ANALISIS FUNCIONAL"
-    },
-    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
-  },
-  {
-    "data": {
       "schedule": "1500-1755",
       "days": ". . I . . .",
       "building": "DEDV",
@@ -313,19 +209,6 @@
   },
   {
     "data": {
-      "schedule": "1200-1355",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A009",
-      "nrc": "154532",
-      "code": "IF562",
-      "students": 5,
-      "course": "ANALISIS MATEMATICO I"
-    },
-    "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -349,58 +232,6 @@
       "course": "ANALISIS MATEMATICO I"
     },
     "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "83835",
-      "code": "I5951",
-      "students": 9,
-      "course": "ANALISIS MATEMATICO I"
-    },
-    "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "83835",
-      "code": "I5951",
-      "students": 9,
-      "course": "ANALISIS MATEMATICO I"
-    },
-    "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1155",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A010",
-      "nrc": "178816",
-      "code": "IG675",
-      "students": 5,
-      "course": "ANALISIS MATEMATICO II"
-    },
-    "professor": "AVALOS RAMOS, CELIA"
-  },
-  {
-    "data": {
-      "schedule": "1000-1155",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A010",
-      "nrc": "178816",
-      "code": "IG675",
-      "students": 5,
-      "course": "ANALISIS MATEMATICO II"
-    },
-    "professor": "AVALOS RAMOS, CELIA"
   },
   {
     "data": {
@@ -496,32 +327,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "223573",
-      "code": "V2140",
-      "students": 2,
-      "course": "ASTROFISICA II"
-    },
-    "professor": "KEMP, SIMON NICHOLAS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "223573",
-      "code": "V2140",
-      "students": 2,
-      "course": "ASTROFISICA II"
-    },
-    "professor": "KEMP, SIMON NICHOLAS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDV",
       "classroom": "A015",
@@ -557,32 +362,6 @@
       "course": "CALCULO AVANZADO PARA FISICA"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "43700",
-      "code": "I6909",
-      "students": 31,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "VILLEGAS RUVALCABA, MARIO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "43700",
-      "code": "I6909",
-      "students": 31,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "VILLEGAS RUVALCABA, MARIO"
   },
   {
     "data": {
@@ -717,58 +496,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "200111",
-      "code": "IB076",
-      "students": 16,
-      "course": "CIENCIA DE MATERIALES II"
-    },
-    "professor": "PEREZ ALVAREZ, JONATAN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "200111",
-      "code": "IB076",
-      "students": 16,
-      "course": "CIENCIA DE MATERIALES II"
-    },
-    "professor": "PEREZ ALVAREZ, JONATAN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "210711",
-      "code": "V1626",
-      "students": 2,
-      "course": "CLIMATOLOGIA"
-    },
-    "professor": "MONTES ARECHIGA, JORGE MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "210711",
-      "code": "V1626",
-      "students": 2,
-      "course": "CLIMATOLOGIA"
-    },
-    "professor": "MONTES ARECHIGA, JORGE MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
       "classroom": "A005",
@@ -817,58 +544,6 @@
       "course": "CLINICA DE FORMACION FUNDAMENTAL"
     },
     "professor": "ROJAS GONZALEZ, ABIGAIL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "197986",
-      "code": "I6025",
-      "students": 33,
-      "course": "CLINICA DE FORMACION FUNDAMENTAL"
-    },
-    "professor": "ROJAS GONZALEZ, ABIGAIL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "197986",
-      "code": "I6025",
-      "students": 33,
-      "course": "CLINICA DE FORMACION FUNDAMENTAL"
-    },
-    "professor": "ROJAS GONZALEZ, ABIGAIL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "67907",
-      "code": "I6001",
-      "students": 29,
-      "course": "CLINICA DE HABILIDADES BASICAS"
-    },
-    "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "67907",
-      "code": "I6001",
-      "students": 29,
-      "course": "CLINICA DE HABILIDADES BASICAS"
-    },
-    "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
   },
   {
     "data": {
@@ -1041,58 +716,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42324",
-      "code": "I5992",
-      "students": 30,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "GONZALEZ ROMERO, JAIME RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "42324",
-      "code": "I5992",
-      "students": 30,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "GONZALEZ ROMERO, JAIME RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "42325",
-      "code": "I5992",
-      "students": 21,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "PANTOJA GONZALEZ, DIEGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42325",
-      "code": "I5992",
-      "students": 21,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "PANTOJA GONZALEZ, DIEGO ARMANDO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -1142,58 +765,6 @@
       "course": "COMPUTO CIENTIFICO I"
     },
     "professor": "MULATO GOMEZ, DIEGO FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "141905",
-      "code": "I5992",
-      "students": 20,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "MULATO GOMEZ, DIEGO FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "141905",
-      "code": "I5992",
-      "students": 20,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "MULATO GOMEZ, DIEGO FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "188377",
-      "code": "I5992",
-      "students": 18,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "TORRES LOPEZ, ROSA MARTHA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "188377",
-      "code": "I5992",
-      "students": 18,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "TORRES LOPEZ, ROSA MARTHA"
   },
   {
     "data": {
@@ -1259,58 +830,6 @@
       "course": "COMPUTO CIENTIFICO II"
     },
     "professor": "GARCIA CHAN, NESTOR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "164459",
-      "code": "I6007",
-      "students": 20,
-      "course": "COMPUTO CIENTIFICO II"
-    },
-    "professor": "GARCIA CHAN, NESTOR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "164459",
-      "code": "I6007",
-      "students": 20,
-      "course": "COMPUTO CIENTIFICO II"
-    },
-    "professor": "GARCIA CHAN, NESTOR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "178800",
-      "code": "I6007",
-      "students": 19,
-      "course": "COMPUTO CIENTIFICO II"
-    },
-    "professor": "PANTOJA GONZALEZ, DIEGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "178800",
-      "code": "I6007",
-      "students": 19,
-      "course": "COMPUTO CIENTIFICO II"
-    },
-    "professor": "PANTOJA GONZALEZ, DIEGO ARMANDO"
   },
   {
     "data": {
@@ -1405,58 +924,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "42331",
-      "code": "I5923",
-      "students": 21,
-      "course": "CONJUNTOS Y NUMEROS"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "42331",
-      "code": "I5923",
-      "students": 21,
-      "course": "CONJUNTOS Y NUMEROS"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "42332",
-      "code": "I5923",
-      "students": 17,
-      "course": "CONJUNTOS Y NUMEROS"
-    },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "42332",
-      "code": "I5923",
-      "students": 17,
-      "course": "CONJUNTOS Y NUMEROS"
-    },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": "L . I . . .",
       "building": "DEDV",
@@ -1506,58 +973,6 @@
       "course": "DETERIORO Y DESEMPEÑO DE MATERIALES"
     },
     "professor": "CISNEROS LOPEZ, ERICK OMAR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "164461",
-      "code": "IB077",
-      "students": 8,
-      "course": "DETERIORO Y DESEMPEÑO DE MATERIALES"
-    },
-    "professor": "CISNEROS LOPEZ, ERICK OMAR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "164461",
-      "code": "IB077",
-      "students": 8,
-      "course": "DETERIORO Y DESEMPEÑO DE MATERIALES"
-    },
-    "professor": "CISNEROS LOPEZ, ERICK OMAR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "136606",
-      "code": "IC582",
-      "students": 30,
-      "course": "DINAMICA"
-    },
-    "professor": "DIAZ GUEVARA, JUAN JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "136606",
-      "code": "IC582",
-      "students": 30,
-      "course": "DINAMICA"
-    },
-    "professor": "DIAZ GUEVARA, JUAN JESUS"
   },
   {
     "data": {
@@ -1640,32 +1055,6 @@
   {
     "data": {
       "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60806",
-      "code": "I7413",
-      "students": 30,
-      "course": "DINAMICA"
-    },
-    "professor": "ALFARO GARCES, JUAN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "60806",
-      "code": "I7413",
-      "students": 30,
-      "course": "DINAMICA"
-    },
-    "professor": "ALFARO GARCES, JUAN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
       "days": ". . I . V .",
       "building": "DEDV",
       "classroom": "A015",
@@ -1675,32 +1064,6 @@
       "course": "DINAMICA"
     },
     "professor": "PELAYO PELAYO, ALMA LUCIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "159549",
-      "code": "IC582",
-      "students": 30,
-      "course": "DINAMICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "159549",
-      "code": "IC582",
-      "students": 30,
-      "course": "DINAMICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
   },
   {
     "data": {
@@ -1792,32 +1155,6 @@
       "course": "DISEÑO Y EVALUACION DE RECURSOS EDUCATIVOS"
     },
     "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "206632",
-      "code": "I6021",
-      "students": 31,
-      "course": "DISEÑO Y EVALUACION DE RECURSOS EDUCATIVOS"
-    },
-    "professor": "SANTANA FAJARDO, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "206632",
-      "code": "I6021",
-      "students": 31,
-      "course": "DISEÑO Y EVALUACION DE RECURSOS EDUCATIVOS"
-    },
-    "professor": "SANTANA FAJARDO, JOSE LUIS"
   },
   {
     "data": {
@@ -1990,110 +1327,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "118767",
-      "code": "I6109",
-      "students": 22,
-      "course": "ECUACIONES EN DERIVADAS PARCIALES DE PRIMER ORDEN Y SUS APLICACIONES A LA FISICA"
-    },
-    "professor": "ROMERO IBARRA, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "118767",
-      "code": "I6109",
-      "students": 22,
-      "course": "ECUACIONES EN DERIVADAS PARCIALES DE PRIMER ORDEN Y SUS APLICACIONES A LA FISICA"
-    },
-    "professor": "ROMERO IBARRA, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60841",
-      "code": "I6013",
-      "students": 38,
-      "course": "ELECTRODINAMICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60841",
-      "code": "I6013",
-      "students": 38,
-      "course": "ELECTRODINAMICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60841",
-      "code": "I6013",
-      "students": 38,
-      "course": "ELECTRODINAMICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60841",
-      "code": "I6013",
-      "students": 38,
-      "course": "ELECTRODINAMICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60841",
-      "code": "I6013",
-      "students": 38,
-      "course": "ELECTRODINAMICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "60841",
-      "code": "I6013",
-      "students": 38,
-      "course": "ELECTRODINAMICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -2159,58 +1392,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "165364",
-      "code": "IF875",
-      "students": 24,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "165364",
-      "code": "IF875",
-      "students": 24,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "165364",
-      "code": "IF875",
-      "students": 24,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "165364",
-      "code": "IF875",
-      "students": 24,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -2224,68 +1405,29 @@
   },
   {
     "data": {
-      "schedule": "1800-1955",
-      "days": ". . . J . .",
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
       "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "165462",
+      "classroom": "A008",
+      "nrc": "165364",
       "code": "IF875",
-      "students": 20,
+      "students": 24,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
   },
   {
     "data": {
-      "schedule": "1900-1955",
-      "days": ". M . . . .",
+      "schedule": "0800-0855",
+      "days": ". . . . V .",
       "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "165462",
+      "classroom": "A008",
+      "nrc": "165364",
       "code": "IF875",
-      "students": 20,
+      "students": 24,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1800-1955",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "165462",
-      "code": "IF875",
-      "students": 20,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "165462",
-      "code": "IF875",
-      "students": 20,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "145639",
-      "code": "IC591",
-      "students": 37,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
   },
   {
     "data": {
@@ -2302,6 +1444,45 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "A018",
+      "nrc": "145639",
+      "code": "IC591",
+      "students": 37,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "GAETA VERDIN, MARIO BOLIVAR"
+  },
+  {
+    "data": {
+      "schedule": "1800-1955",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "A014",
+      "nrc": "165462",
+      "code": "IF875",
+      "students": 20,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-1955",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "A014",
+      "nrc": "165462",
+      "code": "IF875",
+      "students": 20,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -2312,19 +1493,6 @@
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "209678",
-      "code": "IC591",
-      "students": 36,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
   },
   {
     "data": {
@@ -2341,26 +1509,13 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
       "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "209679",
+      "classroom": "A011",
+      "nrc": "209678",
       "code": "IC591",
-      "students": 32,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "209679",
-      "code": "IC591",
-      "students": 32,
+      "students": 36,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
@@ -2406,6 +1561,32 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "A018",
+      "nrc": "209679",
+      "code": "IC591",
+      "students": 32,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "A018",
+      "nrc": "209679",
+      "code": "IC591",
+      "students": 32,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -2432,32 +1613,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "209680",
-      "code": "IC591",
-      "students": 32,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "CARRERA NUNEZ, MOISES"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "209680",
-      "code": "IC591",
-      "students": 32,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "CARRERA NUNEZ, MOISES"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -2478,58 +1633,6 @@
       "nrc": "209681",
       "code": "IC591",
       "students": 40,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "209681",
-      "code": "IC591",
-      "students": 40,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "209681",
-      "code": "IC591",
-      "students": 40,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "209682",
-      "code": "IC591",
-      "students": 32,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "209682",
-      "code": "IC591",
-      "students": 32,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
@@ -2588,32 +1691,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "77516",
-      "code": "I7414",
-      "students": 30,
-      "course": "ELECTROMAGNETISMO PARA INGENIERIA"
-    },
-    "professor": "PONCE DUEÑAS, ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "77516",
-      "code": "I7414",
-      "students": 30,
-      "course": "ELECTROMAGNETISMO PARA INGENIERIA"
-    },
-    "professor": "PONCE DUEÑAS, ALEJANDRO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -2637,45 +1714,6 @@
       "course": "ELECTROMAGNETISMO PARA INGENIERIA"
     },
     "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "77521",
-      "code": "I7414",
-      "students": 30,
-      "course": "ELECTROMAGNETISMO PARA INGENIERIA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "77521",
-      "code": "I7414",
-      "students": 30,
-      "course": "ELECTROMAGNETISMO PARA INGENIERIA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "122773",
-      "code": "I7414",
-      "students": 30,
-      "course": "ELECTROMAGNETISMO PARA INGENIERIA"
-    },
-    "professor": "VEGA LOPEZ, LORENA"
   },
   {
     "data": {
@@ -2721,32 +1759,6 @@
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "172649",
-      "code": "IF878",
-      "students": 19,
-      "course": "ESTADISTICA"
-    },
-    "professor": "AGUIAR BARRERA, MARTHA ELENA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "172649",
-      "code": "IF878",
-      "students": 19,
-      "course": "ESTADISTICA"
-    },
-    "professor": "AGUIAR BARRERA, MARTHA ELENA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
       "classroom": "LC02",
       "nrc": "159933",
       "code": "I7347",
@@ -2754,32 +1766,6 @@
       "course": "ESTADISTICA"
     },
     "professor": "RAMOS PULIDO, SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "159934",
-      "code": "I7347",
-      "students": 13,
-      "course": "ESTADISTICA"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "159934",
-      "code": "I7347",
-      "students": 13,
-      "course": "ESTADISTICA"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
   },
   {
     "data": {
@@ -2887,58 +1873,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "131996",
-      "code": "IC581",
-      "students": 30,
-      "course": "ESTATICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "131996",
-      "code": "IC581",
-      "students": 30,
-      "course": "ESTATICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "43792",
-      "code": "I7412",
-      "students": 32,
-      "course": "ESTATICA"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "43792",
-      "code": "I7412",
-      "students": 32,
-      "course": "ESTATICA"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "1900-2055",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -3005,58 +1939,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "43794",
-      "code": "I7412",
-      "students": 35,
-      "course": "ESTATICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "43794",
-      "code": "I7412",
-      "students": 35,
-      "course": "ESTATICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "136338",
-      "code": "I7412",
-      "students": 35,
-      "course": "ESTATICA"
-    },
-    "professor": "FARIAS GONZALEZ, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "136338",
-      "code": "I7412",
-      "students": 35,
-      "course": "ESTATICA"
-    },
-    "professor": "FARIAS GONZALEZ, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDV",
       "classroom": "A016",
@@ -3118,58 +2000,6 @@
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "145643",
-      "code": "IC600",
-      "students": 30,
-      "course": "FENOMENOS TERMICOS"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "145643",
-      "code": "IC600",
-      "students": 30,
-      "course": "FENOMENOS TERMICOS"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "145644",
-      "code": "IC600",
-      "students": 30,
-      "course": "FENOMENOS TERMICOS"
-    },
-    "professor": "SANTANA FAJARDO, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "145644",
-      "code": "IC600",
-      "students": 30,
-      "course": "FENOMENOS TERMICOS"
-    },
-    "professor": "SANTANA FAJARDO, JOSE LUIS"
   },
   {
     "data": {
@@ -3261,162 +2091,6 @@
       "course": "FISICA ESTADISTICA"
     },
     "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "105697",
-      "code": "I6027",
-      "students": 22,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "105697",
-      "code": "I6027",
-      "students": 22,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105697",
-      "code": "I6027",
-      "students": 22,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "105697",
-      "code": "I6027",
-      "students": 22,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "105697",
-      "code": "I6027",
-      "students": 22,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105697",
-      "code": "I6027",
-      "students": 22,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "197328",
-      "code": "I6027",
-      "students": 12,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "197328",
-      "code": "I6027",
-      "students": 12,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "197328",
-      "code": "I6027",
-      "students": 12,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "197328",
-      "code": "I6027",
-      "students": 12,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "197328",
-      "code": "I6027",
-      "students": 12,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "197328",
-      "code": "I6027",
-      "students": 12,
-      "course": "FISICA ESTADISTICA"
-    },
-    "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
   },
   {
     "data": {
@@ -3512,45 +2186,6 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "166374",
-      "code": "I3279",
-      "students": 30,
-      "course": "FISICA I ( ESTATICA Y DINAMICA )"
-    },
-    "professor": "ALFARO GARCES, JUAN"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "166374",
-      "code": "I3279",
-      "students": 30,
-      "course": "FISICA I ( ESTATICA Y DINAMICA )"
-    },
-    "professor": "ALFARO GARCES, JUAN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "42377",
-      "code": "I6002",
-      "students": 31,
-      "course": "FISICA MODERNA"
-    },
-    "professor": "PERAZA ALVAREZ, AMERICO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDV",
       "classroom": "A011",
@@ -3573,58 +2208,6 @@
       "course": "FISICA RELATIVISTA"
     },
     "professor": "HERNANDEZ JIMENEZ, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "80029",
-      "code": "I6020",
-      "students": 11,
-      "course": "FISICA RELATIVISTA"
-    },
-    "professor": "HERNANDEZ JIMENEZ, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "80029",
-      "code": "I6020",
-      "students": 11,
-      "course": "FISICA RELATIVISTA"
-    },
-    "professor": "HERNANDEZ JIMENEZ, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "189664",
-      "code": "IL340",
-      "students": 40,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "DE ALBA MARTINEZ, DURRUTY JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "189664",
-      "code": "IL340",
-      "students": 40,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "DE ALBA MARTINEZ, DURRUTY JESUS"
   },
   {
     "data": {
@@ -3746,32 +2329,6 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "200766",
-      "code": "IL340",
-      "students": 40,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "ULLOA GODINEZ, HECTOR HUGO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "200766",
-      "code": "IL340",
-      "students": 40,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "ULLOA GODINEZ, HECTOR HUGO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDV",
       "classroom": "A011",
@@ -3794,58 +2351,6 @@
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "MARQUEZ LUGO, RAMON ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "200767",
-      "code": "IL340",
-      "students": 40,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "MARQUEZ LUGO, RAMON ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "200767",
-      "code": "IL340",
-      "students": 40,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "MARQUEZ LUGO, RAMON ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "201881",
-      "code": "IL340",
-      "students": 38,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "RANGEL COBIAN, VICTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "201881",
-      "code": "IL340",
-      "students": 38,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "RANGEL COBIAN, VICTOR MANUEL"
   },
   {
     "data": {
@@ -3898,58 +2403,6 @@
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "SANDOVAL GARCIA, KARINA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "201882",
-      "code": "IL340",
-      "students": 28,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "SANDOVAL GARCIA, KARINA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "201882",
-      "code": "IL340",
-      "students": 28,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "SANDOVAL GARCIA, KARINA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "216337",
-      "code": "IL340",
-      "students": 39,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "216337",
-      "code": "IL340",
-      "students": 39,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
   },
   {
     "data": {
@@ -4031,45 +2484,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "223773",
-      "code": "IL340",
-      "students": 18,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "223773",
-      "code": "IL340",
-      "students": 18,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . V .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "42398",
-      "code": "I5921",
-      "students": 13,
-      "course": "FUNDAMENTOS DE GEOMETRIA"
-    },
-    "professor": "NESTEROVA, ELENA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDV",
@@ -4093,58 +2507,6 @@
       "course": "GEOMETRIA EUCLIDIANA"
     },
     "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "21954",
-      "code": "I6022",
-      "students": 17,
-      "course": "HISTORIA Y FILOSOFIA DE LA FISICA"
-    },
-    "professor": "LIMONES PIMENTEL, SERGIO FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "21954",
-      "code": "I6022",
-      "students": 17,
-      "course": "HISTORIA Y FILOSOFIA DE LA FISICA"
-    },
-    "professor": "LIMONES PIMENTEL, SERGIO FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "21954",
-      "code": "I6022",
-      "students": 17,
-      "course": "HISTORIA Y FILOSOFIA DE LA FISICA"
-    },
-    "professor": "LIMONES PIMENTEL, SERGIO FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "21954",
-      "code": "I6022",
-      "students": 17,
-      "course": "HISTORIA Y FILOSOFIA DE LA FISICA"
-    },
-    "professor": "LIMONES PIMENTEL, SERGIO FERNANDO"
   },
   {
     "data": {
@@ -4187,58 +2549,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "223750",
-      "code": "I6101",
-      "students": 11,
-      "course": "HOLOGRAFIA"
-    },
-    "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "223750",
-      "code": "I6101",
-      "students": 11,
-      "course": "HOLOGRAFIA"
-    },
-    "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "63380",
-      "code": "I5967",
-      "students": 20,
-      "course": "INFERENCIA ESTADISTICA"
-    },
-    "professor": "MONTESINOS LOPEZ, ABELARDO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1155",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "63380",
-      "code": "I5967",
-      "students": 20,
-      "course": "INFERENCIA ESTADISTICA"
-    },
-    "professor": "MONTESINOS LOPEZ, ABELARDO"
-  },
-  {
-    "data": {
       "schedule": "1000-1255",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -4288,58 +2598,6 @@
       "course": "INTRODUCCION A LA FISICA"
     },
     "professor": "RAMIREZ SANCHEZ, HERMES ULISES"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "153640",
-      "code": "IF498",
-      "students": 34,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "RAMIREZ SANCHEZ, HERMES ULISES"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "153640",
-      "code": "IF498",
-      "students": 34,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "RAMIREZ SANCHEZ, HERMES ULISES"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "153642",
-      "code": "IF498",
-      "students": 32,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "153642",
-      "code": "IF498",
-      "students": 32,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
   },
   {
     "data": {
@@ -4408,19 +2666,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . V .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "197413",
-      "code": "IB121",
-      "students": 26,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDV",
@@ -4434,29 +2679,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
+      "schedule": "0900-1055",
+      "days": ". M . . V .",
       "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "77957",
-      "code": "I6123",
-      "students": 33,
+      "classroom": "A013",
+      "nrc": "197413",
+      "code": "IB121",
+      "students": 26,
       "course": "INTRODUCCION A LA FISICA"
     },
-    "professor": "MONZON, CESAR OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "77957",
-      "code": "I6123",
-      "students": 33,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MONZON, CESAR OCTAVIO"
+    "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
   },
   {
     "data": {
@@ -4509,58 +2741,6 @@
       "course": "INTRODUCCION A LA FISICA"
     },
     "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "125201",
-      "code": "I6123",
-      "students": 34,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "125201",
-      "code": "I6123",
-      "students": 34,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "125206",
-      "code": "I6123",
-      "students": 32,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "RAMIREZ ORTEGA, JORGE ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "125206",
-      "code": "I6123",
-      "students": 32,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "RAMIREZ ORTEGA, JORGE ALBERTO"
   },
   {
     "data": {
@@ -4629,32 +2809,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "125210",
-      "code": "I6123",
-      "students": 31,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MORALES BAUTISTA, JACOB"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "125210",
-      "code": "I6123",
-      "students": 31,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "MORALES BAUTISTA, JACOB"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -4678,58 +2832,6 @@
       "course": "INTRODUCCION A LA FISICA"
     },
     "professor": "GARCIA GUADALUPE, MARIO ENRIQUE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "125213",
-      "code": "I6123",
-      "students": 31,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "GARCIA GUADALUPE, MARIO ENRIQUE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "125213",
-      "code": "I6123",
-      "students": 31,
-      "course": "INTRODUCCION A LA FISICA"
-    },
-    "professor": "GARCIA GUADALUPE, MARIO ENRIQUE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "178807",
-      "code": "I6117",
-      "students": 12,
-      "course": "INTRODUCCION A LA FISICA EDUCATIVA"
-    },
-    "professor": "SANTANA FAJARDO, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "178807",
-      "code": "I6117",
-      "students": 12,
-      "course": "INTRODUCCION A LA FISICA EDUCATIVA"
-    },
-    "professor": "SANTANA FAJARDO, JOSE LUIS"
   },
   {
     "data": {
@@ -4798,32 +2900,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "131907",
-      "code": "I5945",
-      "students": 9,
-      "course": "INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
-    },
-    "professor": "RODRIGUEZ GUZMAN, DIEGO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "131907",
-      "code": "I5945",
-      "students": 9,
-      "course": "INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
-    },
-    "professor": "RODRIGUEZ GUZMAN, DIEGO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDV",
@@ -4834,32 +2910,6 @@
       "course": "LEYES FUNDAMENTALES DE LA FISICA I"
     },
     "professor": "GONZALEZ OCHOA, HECTOR OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132015",
-      "code": "IB132",
-      "students": 16,
-      "course": "LEYES FUNDAMENTALES DE LA FISICA I"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132015",
-      "code": "IB132",
-      "students": 16,
-      "course": "LEYES FUNDAMENTALES DE LA FISICA I"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
   },
   {
     "data": {
@@ -4977,58 +3027,6 @@
       "course": "LOGICA MATEMATICA"
     },
     "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "197392",
-      "code": "I5247",
-      "students": 39,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "197392",
-      "code": "I5247",
-      "students": 39,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "201859",
-      "code": "I5247",
-      "students": 40,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "201859",
-      "code": "I5247",
-      "students": 40,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
   },
   {
     "data": {
@@ -5188,32 +3186,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "159542",
-      "code": "IF874",
-      "students": 33,
-      "course": "MECANICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "159542",
-      "code": "IF874",
-      "students": 33,
-      "course": "MECANICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDV",
@@ -5250,84 +3222,6 @@
       "course": "MECANICA"
     },
     "professor": "SAINZ ABASCAL, ISABEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132017",
-      "code": "IC675",
-      "students": 29,
-      "course": "MECANICA"
-    },
-    "professor": "GUZMAN HERNANDEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132017",
-      "code": "IC675",
-      "students": 29,
-      "course": "MECANICA"
-    },
-    "professor": "GUZMAN HERNANDEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132017",
-      "code": "IC675",
-      "students": 29,
-      "course": "MECANICA"
-    },
-    "professor": "GUZMAN HERNANDEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132017",
-      "code": "IC675",
-      "students": 29,
-      "course": "MECANICA"
-    },
-    "professor": "GUZMAN HERNANDEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132017",
-      "code": "IC675",
-      "students": 29,
-      "course": "MECANICA"
-    },
-    "professor": "GUZMAN HERNANDEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "132017",
-      "code": "IC675",
-      "students": 29,
-      "course": "MECANICA"
-    },
-    "professor": "GUZMAN HERNANDEZ, JOSE"
   },
   {
     "data": {
@@ -5432,32 +3326,6 @@
       "course": "MECANICA"
     },
     "professor": "BISWAS, SOHAM"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "193252",
-      "code": "IL343",
-      "students": 30,
-      "course": "MECANICA"
-    },
-    "professor": "DE ANDA RAMIREZ, FRANCISCO JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "193252",
-      "code": "IL343",
-      "students": 30,
-      "course": "MECANICA"
-    },
-    "professor": "DE ANDA RAMIREZ, FRANCISCO JOSE"
   },
   {
     "data": {
@@ -5695,58 +3563,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "205237",
-      "code": "IL343",
-      "students": 40,
-      "course": "MECANICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "205237",
-      "code": "IL343",
-      "students": 40,
-      "course": "MECANICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "205239",
-      "code": "IL343",
-      "students": 21,
-      "course": "MECANICA"
-    },
-    "professor": "NIGOCHE NETRO, ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "205239",
-      "code": "IL343",
-      "students": 21,
-      "course": "MECANICA"
-    },
-    "professor": "NIGOCHE NETRO, ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -5812,58 +3628,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "205241",
-      "code": "IL343",
-      "students": 41,
-      "course": "MECANICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "205241",
-      "code": "IL343",
-      "students": 41,
-      "course": "MECANICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "205242",
-      "code": "IL343",
-      "students": 40,
-      "course": "MECANICA"
-    },
-    "professor": "ZARATE GALVEZ, SARAI"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "205242",
-      "code": "IL343",
-      "students": 40,
-      "course": "MECANICA"
-    },
-    "professor": "ZARATE GALVEZ, SARAI"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -5916,32 +3680,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "205243",
-      "code": "IL343",
-      "students": 40,
-      "course": "MECANICA"
-    },
-    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "205243",
-      "code": "IL343",
-      "students": 40,
-      "course": "MECANICA"
-    },
-    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -5978,162 +3716,6 @@
       "course": "MECANICA CUANTICA"
     },
     "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "105696",
-      "code": "I6026",
-      "students": 34,
-      "course": "MECANICA CUANTICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105696",
-      "code": "I6026",
-      "students": 34,
-      "course": "MECANICA CUANTICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105696",
-      "code": "I6026",
-      "students": 34,
-      "course": "MECANICA CUANTICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "105696",
-      "code": "I6026",
-      "students": 34,
-      "course": "MECANICA CUANTICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105696",
-      "code": "I6026",
-      "students": 34,
-      "course": "MECANICA CUANTICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105696",
-      "code": "I6026",
-      "students": 34,
-      "course": "MECANICA CUANTICA"
-    },
-    "professor": "MUÑOZ VILLEGAS, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "105695",
-      "code": "I6028",
-      "students": 35,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CROS, ANNE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "105695",
-      "code": "I6028",
-      "students": 35,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CROS, ANNE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105695",
-      "code": "I6028",
-      "students": 35,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CROS, ANNE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "105695",
-      "code": "I6028",
-      "students": 35,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CROS, ANNE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "105695",
-      "code": "I6028",
-      "students": 35,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CROS, ANNE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "105695",
-      "code": "I6028",
-      "students": 35,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CROS, ANNE"
   },
   {
     "data": {
@@ -6199,58 +3781,6 @@
       "course": "MECANICA DEL MEDIO CONTINUO"
     },
     "professor": "CARRERA NUNEZ, MOISES"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "202054",
-      "code": "I6028",
-      "students": 18,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CARRERA NUNEZ, MOISES"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "202054",
-      "code": "I6028",
-      "students": 18,
-      "course": "MECANICA DEL MEDIO CONTINUO"
-    },
-    "professor": "CARRERA NUNEZ, MOISES"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "209676",
-      "code": "V1628",
-      "students": 3,
-      "course": "METEOROLOGIA FISICA"
-    },
-    "professor": "ORTIZ BAÑUELOS, ALMA DELIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "209676",
-      "code": "V1628",
-      "students": 3,
-      "course": "METEOROLOGIA FISICA"
-    },
-    "professor": "ORTIZ BAÑUELOS, ALMA DELIA"
   },
   {
     "data": {
@@ -6355,32 +3885,6 @@
       "course": "METODOS MATEMATICOS"
     },
     "professor": "GARCIA CHAN, NESTOR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "77718",
-      "code": "I6023",
-      "students": 30,
-      "course": "METODOS MATEMATICOS DE LA FISICA"
-    },
-    "professor": "MARQUEZ LUGO, RAMON ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "77718",
-      "code": "I6023",
-      "students": 30,
-      "course": "METODOS MATEMATICOS DE LA FISICA"
-    },
-    "professor": "MARQUEZ LUGO, RAMON ALEJANDRO"
   },
   {
     "data": {
@@ -6553,32 +4057,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "209883",
-      "code": "V1645",
-      "students": 3,
-      "course": "METODOS NUMERICOS PARA CIENCIAS DEL OCEANO Y DE LA ATMOSFERA"
-    },
-    "professor": "GASCA ORTIZ, TZITLALI"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "209883",
-      "code": "V1645",
-      "students": 3,
-      "course": "METODOS NUMERICOS PARA CIENCIAS DEL OCEANO Y DE LA ATMOSFERA"
-    },
-    "professor": "GASCA ORTIZ, TZITLALI"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDV",
@@ -6615,32 +4093,6 @@
       "course": "OCEANOGRAFIA DINAMICA"
     },
     "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "209675",
-      "code": "V1630",
-      "students": 3,
-      "course": "OCEANOGRAFIA FISICA"
-    },
-    "professor": "VELAZQUEZ MUÑOZ, FEDERICO ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "209675",
-      "code": "V1630",
-      "students": 3,
-      "course": "OCEANOGRAFIA FISICA"
-    },
-    "professor": "VELAZQUEZ MUÑOZ, FEDERICO ANGEL"
   },
   {
     "data": {
@@ -6748,32 +4200,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "77735",
-      "code": "I7417",
-      "students": 33,
-      "course": "OPTICA Y ACUSTICA"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "77735",
-      "code": "I7417",
-      "students": 33,
-      "course": "OPTICA Y ACUSTICA"
-    },
-    "professor": "GARCIA SANCHEZ, MAYRA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -6813,32 +4239,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "77737",
-      "code": "I7417",
-      "students": 30,
-      "course": "OPTICA Y ACUSTICA"
-    },
-    "professor": "ZARATE GALVEZ, SARAI"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "77737",
-      "code": "I7417",
-      "students": 30,
-      "course": "OPTICA Y ACUSTICA"
-    },
-    "professor": "ZARATE GALVEZ, SARAI"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -6862,58 +4262,6 @@
       "course": "OPTICA Y ACUSTICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A013",
-      "nrc": "165435",
-      "code": "I7417",
-      "students": 33,
-      "course": "OPTICA Y ACUSTICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "165435",
-      "code": "I7417",
-      "students": 33,
-      "course": "OPTICA Y ACUSTICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "145636",
-      "code": "IC671",
-      "students": 5,
-      "course": "OPTICA Y ELECTROMAGNETISMO"
-    },
-    "professor": "PELAYO PELAYO, ALMA LUCIA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "145636",
-      "code": "IC671",
-      "students": 5,
-      "course": "OPTICA Y ELECTROMAGNETISMO"
-    },
-    "professor": "PELAYO PELAYO, ALMA LUCIA"
   },
   {
     "data": {
@@ -7021,110 +4369,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "189661",
-      "code": "IG738",
-      "students": 20,
-      "course": "PRECALCULO"
-    },
-    "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "189661",
-      "code": "IG738",
-      "students": 20,
-      "course": "PRECALCULO"
-    },
-    "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "46844",
-      "code": "MT101",
-      "students": 29,
-      "course": "PRECALCULO"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "46844",
-      "code": "MT101",
-      "students": 29,
-      "course": "PRECALCULO"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "46844",
-      "code": "MT101",
-      "students": 29,
-      "course": "PRECALCULO"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "46844",
-      "code": "MT101",
-      "students": 29,
-      "course": "PRECALCULO"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "46844",
-      "code": "MT101",
-      "students": 29,
-      "course": "PRECALCULO"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "46844",
-      "code": "MT101",
-      "students": 29,
-      "course": "PRECALCULO"
-    },
-    "professor": "DE LA CRUZ GARCIA, ELBA LILIA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -7229,6 +4473,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDV",
+      "classroom": "A004",
+      "nrc": "200065",
+      "code": "IB067",
+      "students": 40,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "RAMIREZ MORENO, BENJAMIN"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -7243,15 +4500,28 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". M . J . .",
+      "days": ". M . . . .",
       "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "200065",
-      "code": "IB067",
-      "students": 40,
+      "classroom": "LC02",
+      "nrc": "42548",
+      "code": "I5801",
+      "students": 16,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
-    "professor": "RAMIREZ MORENO, BENJAMIN"
+    "professor": "PUEBLA PEREZ, LAURA MARGARITA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "LC02",
+      "nrc": "42548",
+      "code": "I5801",
+      "students": 16,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "PUEBLA PEREZ, LAURA MARGARITA"
   },
   {
     "data": {
@@ -7268,55 +4538,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
+      "schedule": "1500-1755",
+      "days": ". . I . . .",
       "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42548",
-      "code": "I5801",
-      "students": 16,
+      "classroom": "LC01",
+      "nrc": "144454",
+      "code": "IC572",
+      "students": 34,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
-    "professor": "PUEBLA PEREZ, LAURA MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42548",
-      "code": "I5801",
-      "students": 16,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "PUEBLA PEREZ, LAURA MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42548",
-      "code": "I5801",
-      "students": 16,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "PUEBLA PEREZ, LAURA MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42548",
-      "code": "I5801",
-      "students": 16,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "PUEBLA PEREZ, LAURA MARGARITA"
+    "professor": "AGUIAR BARRERA, MARTHA ELENA"
   },
   {
     "data": {
@@ -7333,19 +4564,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1755",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "144454",
-      "code": "IC572",
-      "students": 34,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "AGUIAR BARRERA, MARTHA ELENA"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -7356,32 +4574,6 @@
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "BUENROSTRO ARCEO, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "42582",
-      "code": "I5937",
-      "students": 15,
-      "course": "PROGRAMACION PARA CIENCIAS"
-    },
-    "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "42582",
-      "code": "I5937",
-      "students": 15,
-      "course": "PROGRAMACION PARA CIENCIAS"
-    },
-    "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
   },
   {
     "data": {
@@ -7427,58 +4619,6 @@
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "159380",
-      "code": "IB089",
-      "students": 13,
-      "course": "PROPIEDADES DE LOS MATERIALES III"
-    },
-    "professor": "SANCHEZ MARTINEZ, ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "159380",
-      "code": "IB089",
-      "students": 13,
-      "course": "PROPIEDADES DE LOS MATERIALES III"
-    },
-    "professor": "SANCHEZ MARTINEZ, ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "159380",
-      "code": "IB089",
-      "students": 13,
-      "course": "PROPIEDADES DE LOS MATERIALES III"
-    },
-    "professor": "SANCHEZ MARTINEZ, ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "159380",
-      "code": "IB089",
-      "students": 13,
-      "course": "PROPIEDADES DE LOS MATERIALES III"
-    },
-    "professor": "SANCHEZ MARTINEZ, ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
       "classroom": "A006",
       "nrc": "153200",
       "code": "IB088",
@@ -7512,6 +4652,32 @@
       "course": "PROPIEDADES DE LOS MATERIALES"
     },
     "professor": "JIMENEZ ALEMAN, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A008",
+      "nrc": "159380",
+      "code": "IB089",
+      "students": 13,
+      "course": "PROPIEDADES DE LOS MATERIALES III"
+    },
+    "professor": "SANCHEZ MARTINEZ, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "A006",
+      "nrc": "159380",
+      "code": "IB089",
+      "students": 13,
+      "course": "PROPIEDADES DE LOS MATERIALES III"
+    },
+    "professor": "SANCHEZ MARTINEZ, ARACELI"
   },
   {
     "data": {
@@ -7798,58 +4964,6 @@
       "course": "SIMULACION DE PROCESOS FISICOS"
     },
     "professor": "FRANCO HERNANDEZ, RAMIRO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "178818",
-      "code": "I6017",
-      "students": 11,
-      "course": "SIMULACION DE PROCESOS FISICOS"
-    },
-    "professor": "FRANCO HERNANDEZ, RAMIRO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "178818",
-      "code": "I6017",
-      "students": 11,
-      "course": "SIMULACION DE PROCESOS FISICOS"
-    },
-    "professor": "FRANCO HERNANDEZ, RAMIRO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "145680",
-      "code": "IB090",
-      "students": 16,
-      "course": "SINTESIS DE MATERIALES"
-    },
-    "professor": "MICHEL URIBE, CARLOS RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "145680",
-      "code": "IB090",
-      "students": 16,
-      "course": "SINTESIS DE MATERIALES"
-    },
-    "professor": "MICHEL URIBE, CARLOS RAFAEL"
   },
   {
     "data": {
@@ -8373,58 +5487,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "77769",
-      "code": "I7293",
-      "students": 14,
-      "course": "TEORIA ELECTROMAGNETICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "77769",
-      "code": "I7293",
-      "students": 14,
-      "course": "TEORIA ELECTROMAGNETICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "119092",
-      "code": "I7449",
-      "students": 29,
-      "course": "TEORIA ELECTROMAGNETICA PARA MAQUINAS"
-    },
-    "professor": "DE LA FUENTE ACOSTA, EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "119092",
-      "code": "I7449",
-      "students": 29,
-      "course": "TEORIA ELECTROMAGNETICA PARA MAQUINAS"
-    },
-    "professor": "DE LA FUENTE ACOSTA, EDUARDO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -8490,32 +5552,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "153198",
-      "code": "I7449",
-      "students": 30,
-      "course": "TEORIA ELECTROMAGNETICA PARA MAQUINAS"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A011",
-      "nrc": "153198",
-      "code": "I7449",
-      "students": 30,
-      "course": "TEORIA ELECTROMAGNETICA PARA MAQUINAS"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDV",
@@ -8539,32 +5575,6 @@
       "course": "TERMODINAMICA DE LA ATMOSFERA Y DEL OCEANO"
     },
     "professor": "BARBA LOPEZ, MARIA DEL REFUGIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "136323",
-      "code": "IB094",
-      "students": 12,
-      "course": "TERMODINAMICA DE MATERIALES"
-    },
-    "professor": "BLANCO ALONSO, OSCAR"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "136323",
-      "code": "IB094",
-      "students": 12,
-      "course": "TERMODINAMICA DE MATERIALES"
-    },
-    "professor": "BLANCO ALONSO, OSCAR"
   },
   {
     "data": {
@@ -8660,58 +5670,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A003",
-      "nrc": "43800",
-      "code": "I7416",
-      "students": 34,
-      "course": "TOPICOS DE FISICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "43800",
-      "code": "I7416",
-      "students": 34,
-      "course": "TOPICOS DE FISICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "136334",
-      "code": "I7416",
-      "students": 35,
-      "course": "TOPICOS DE FISICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "136334",
-      "code": "I7416",
-      "students": 35,
-      "course": "TOPICOS DE FISICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDV",
       "classroom": "A015",
@@ -8760,58 +5718,6 @@
       "course": "TOPICOS SELECTOS DE ALGEBRA I"
     },
     "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1000-1155",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A010",
-      "nrc": "171654",
-      "code": "IG685",
-      "students": 3,
-      "course": "TOPICOS SELECTOS DE ALGEBRA I"
-    },
-    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A010",
-      "nrc": "171654",
-      "code": "IG685",
-      "students": 3,
-      "course": "TOPICOS SELECTOS DE ALGEBRA I"
-    },
-    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "183077",
-      "code": "IG686",
-      "students": 1,
-      "course": "TOPICOS SELECTOS DE ALGEBRA II"
-    },
-    "professor": "PALAFOX GONZALEZ, ABEL"
-  },
-  {
-    "data": {
-      "schedule": "1600-1755",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A006",
-      "nrc": "183077",
-      "code": "IG686",
-      "students": 1,
-      "course": "TOPICOS SELECTOS DE ALGEBRA II"
-    },
-    "professor": "PALAFOX GONZALEZ, ABEL"
   },
   {
     "data": {
@@ -8906,32 +5812,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1355",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A009",
-      "nrc": "211309",
-      "code": "IK129",
-      "students": 2,
-      "course": "TOPICOS SELECTOS DE MATEMATICAS BASICAS"
-    },
-    "professor": "MATA GUTIERREZ, OSBALDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A009",
-      "nrc": "211309",
-      "code": "IK129",
-      "students": 2,
-      "course": "TOPICOS SELECTOS DE MATEMATICAS BASICAS"
-    },
-    "professor": "MATA GUTIERREZ, OSBALDO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -8994,32 +5874,6 @@
       "course": "TUTORIA DE CIENCIA DE MATERIALES II"
     },
     "professor": "CISNEROS LOPEZ, ERICK OMAR"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "166375",
-      "code": "I3283",
-      "students": 30,
-      "course": "FISICA II ( ELECTROMAGNETISMO,OPTICA Y ACUSTICA )"
-    },
-    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "166375",
-      "code": "I3283",
-      "students": 30,
-      "course": "FISICA II ( ELECTROMAGNETISMO,OPTICA Y ACUSTICA )"
-    },
-    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
   },
   {
     "data": {

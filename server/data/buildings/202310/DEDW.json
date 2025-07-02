@@ -1,0 +1,405 @@
+[
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDW",
+      "classroom": "A003",
+      "nrc": "154539",
+      "code": "IF544",
+      "students": 0,
+      "course": "ANALISIS Y EXPLORACION DE DATOS"
+    },
+    "professor": "ZALDIVAR NAVARRO, DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "178828",
+      "code": "I6909",
+      "students": 28,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ELOISA"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "88049",
+      "code": "I7421",
+      "students": 22,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "153201",
+      "code": "IB073",
+      "students": 25,
+      "course": "CARACTERIZACION DE MATERIALES I"
+    },
+    "professor": "GILDO ORTIZ, LORENZO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "153201",
+      "code": "IB073",
+      "students": 25,
+      "course": "CARACTERIZACION DE MATERIALES I"
+    },
+    "professor": "GILDO ORTIZ, LORENZO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "118779",
+      "code": "IB076",
+      "students": 25,
+      "course": "CIENCIA DE MATERIALES II"
+    },
+    "professor": "CEBALLOS SANCHEZ, OSCAR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "42326",
+      "code": "I6007",
+      "students": 21,
+      "course": "COMPUTO CIENTIFICO II"
+    },
+    "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "67921",
+      "code": "I6796",
+      "students": 1,
+      "course": "CONTROL INTELIGENTE"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "2000-2055",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "105579",
+      "code": "I6744",
+      "students": 0,
+      "course": "DISEÑO DE MICROSISTEMAS"
+    },
+    "professor": "MEDINA VAZQUEZ, AGUSTIN SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "125310",
+      "code": "IB062",
+      "students": 22,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "125206",
+      "code": "I6123",
+      "students": 37,
+      "course": "INTRODUCCION A LA FISICA"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, MARISELA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "122647",
+      "code": "IB132",
+      "students": 19,
+      "course": "LEYES FUNDAMENTALES DE LA FISICA I"
+    },
+    "professor": "GONZALEZ OCHOA, HECTOR OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "42447",
+      "code": "I5892",
+      "students": 10,
+      "course": "MATEMATICA DISCRETA"
+    },
+    "professor": "MARTINEZ VAZQUEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "193985",
+      "code": "IL345",
+      "students": 12,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "CORDOVA GONZALEZ, VERONICA ILIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "197327",
+      "code": "I6023",
+      "students": 23,
+      "course": "METODOS MATEMATICOS DE LA FISICA"
+    },
+    "professor": "ACEVES DE LA CRUZ, FERMIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "197327",
+      "code": "I6023",
+      "students": 23,
+      "course": "METODOS MATEMATICOS DE LA FISICA"
+    },
+    "professor": "ACEVES DE LA CRUZ, FERMIN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "77735",
+      "code": "I7417",
+      "students": 21,
+      "course": "OPTICA Y ACUSTICA"
+    },
+    "professor": "RODRIGUEZ SANTIAGO, MARISELA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "144942",
+      "code": "IB086",
+      "students": 18,
+      "course": "PROCESAMIENTO DE MATERIALES"
+    },
+    "professor": "BRAVO BARCENAS, DAVID ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "144940",
+      "code": "IB087",
+      "students": 20,
+      "course": "PROPIEDADES DE LOS MATERIALES"
+    },
+    "professor": "SUAREZ MARTINEZ, REYNIER"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "134054",
+      "code": "I6108",
+      "students": 19,
+      "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
+    },
+    "professor": "GORIN, THOMAS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60830",
+      "code": "I7352",
+      "students": 12,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "DE LA FUENTE ACOSTA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "72270",
+      "code": "I5997",
+      "students": 24,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
+    },
+    "professor": "PALACIOS HERNANDEZ, EMILIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "72625",
+      "code": "I6915",
+      "students": 21,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60833",
+      "code": "I7352",
+      "students": 19,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "ZAMUDIO OJEDA, ADALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "153212",
+      "code": "I7352",
+      "students": 21,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "GUTIERREZ DE VELASCO SANROMAN, GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "43705",
+      "code": "I6913",
+      "students": 16,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+    },
+    "professor": "GUZMAN HERNANDEZ, JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "171655",
+      "code": "IG683",
+      "students": 1,
+      "course": "TEORIA DE LA MEDIDA"
+    },
+    "professor": "AVALOS RAMOS, CELIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "159540",
+      "code": "I7293",
+      "students": 22,
+      "course": "TEORIA ELECTROMAGNETICA"
+    },
+    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "68232",
+      "code": "I5936",
+      "students": 13,
+      "course": "TEORIA ESTADISTICA"
+    },
+    "professor": "SANCHEZ GOMEZ, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "68232",
+      "code": "I5936",
+      "students": 13,
+      "course": "TEORIA ESTADISTICA"
+    },
+    "professor": "SANCHEZ GOMEZ, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "43804",
+      "code": "I7416",
+      "students": 28,
+      "course": "TOPICOS DE FISICA"
+    },
+    "professor": "RAMIREZ ORTEGA, JORGE ALBERTO"
+  }
+]

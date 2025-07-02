@@ -105,32 +105,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "200208",
-      "code": "IL365",
-      "students": 21,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "200208",
-      "code": "IL365",
-      "students": 21,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
-  },
-  {
-    "data": {
       "schedule": "1900-2055",
       "days": ". M . J . .",
       "building": "DUCT1",
@@ -167,58 +141,6 @@
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC10",
-      "nrc": "210921",
-      "code": "I5629",
-      "students": 24,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "VALDES LOPEZ, JULIO ESTEBAN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "210921",
-      "code": "I5629",
-      "students": 24,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "VALDES LOPEZ, JULIO ESTEBAN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "200210",
-      "code": "IL365",
-      "students": 21,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "200210",
-      "code": "IL365",
-      "students": 21,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
   },
   {
     "data": {
@@ -443,58 +365,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "43826",
-      "code": "I7429",
-      "students": 19,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "MORA DURAN, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "43826",
-      "code": "I7429",
-      "students": 19,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "MORA DURAN, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "43821",
-      "code": "I7429",
-      "students": 18,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "43821",
-      "code": "I7429",
-      "students": 18,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DUCT1",
@@ -599,58 +469,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "160080",
-      "code": "I7429",
-      "students": 19,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "160080",
-      "code": "I7429",
-      "students": 19,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "162746",
-      "code": "IF882",
-      "students": 18,
-      "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "162746",
-      "code": "IF882",
-      "students": 18,
-      "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DUCT1",
@@ -716,19 +534,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "131917",
-      "code": "IC580",
-      "students": 19,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "TRINIDAD HARO, SERGIO MIGUEL"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . I . . .",
       "building": "DUCT1",
@@ -778,19 +583,6 @@
       "course": "DISEÑO ASISTIDO POR COMPUTADORA"
     },
     "professor": "JUAREZ RAMIREZ, LEOPOLDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "131922",
-      "code": "IC580",
-      "students": 24,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "TRINIDAD HARO, SERGIO MIGUEL"
   },
   {
     "data": {
@@ -873,58 +665,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "65207",
-      "code": "I7391",
-      "students": 18,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "65207",
-      "code": "I7391",
-      "students": 18,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "43742",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "43742",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DUCT1",
       "classroom": "LC04",
@@ -973,58 +713,6 @@
       "course": "DISEÑO ASISTIDO POR COMPUTADORA"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "43741",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "43741",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "43743",
-      "code": "I7391",
-      "students": 21,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "43743",
-      "code": "I7391",
-      "students": 21,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
@@ -1093,58 +781,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "83792",
-      "code": "I7391",
-      "students": 19,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "83792",
-      "code": "I7391",
-      "students": 19,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "83795",
-      "code": "I7391",
-      "students": 21,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "83795",
-      "code": "I7391",
-      "students": 21,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DUCT1",
@@ -1191,58 +827,6 @@
       "nrc": "86875",
       "code": "I7391",
       "students": 19,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "86875",
-      "code": "I7391",
-      "students": 19,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "86875",
-      "code": "I7391",
-      "students": 19,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "146807",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "146807",
-      "code": "I7391",
-      "students": 20,
       "course": "DISEÑO ASISTIDO POR COMPUTADORA"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -1301,58 +885,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "146808",
-      "code": "I7391",
-      "students": 18,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "HERNANDEZ GARZA, LUZ KARINA"
-  },
-  {
-    "data": {
-      "schedule": "2000-2055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "146808",
-      "code": "I7391",
-      "students": 18,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "HERNANDEZ GARZA, LUZ KARINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "146810",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "146810",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DUCT1",
@@ -1402,58 +934,6 @@
       "course": "DISEÑO ASISTIDO POR COMPUTADORA"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "146811",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "146811",
-      "code": "I7391",
-      "students": 20,
-      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "104511",
-      "code": "I7442",
-      "students": 20,
-      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "104511",
-      "code": "I7442",
-      "students": 20,
-      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
   },
   {
     "data": {
@@ -1522,32 +1002,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "119766",
-      "code": "I7442",
-      "students": 20,
-      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "119766",
-      "code": "I7442",
-      "students": 20,
-      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DUCT1",
@@ -1555,32 +1009,6 @@
       "nrc": "104053",
       "code": "I5840",
       "students": 35,
-      "course": "DISEÑO DE EQUIPO DE PROCESOS QUIMICOS"
-    },
-    "professor": "ORTEGA GUDIÑO, PEDRO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "125987",
-      "code": "I5840",
-      "students": 32,
-      "course": "DISEÑO DE EQUIPO DE PROCESOS QUIMICOS"
-    },
-    "professor": "ORTEGA GUDIÑO, PEDRO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "125987",
-      "code": "I5840",
-      "students": 32,
       "course": "DISEÑO DE EQUIPO DE PROCESOS QUIMICOS"
     },
     "professor": "ORTEGA GUDIÑO, PEDRO"
@@ -1822,32 +1250,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "189623",
-      "code": "I5288",
-      "students": 28,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "NAVARRO VELAZQUEZ, MARIO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "189623",
-      "code": "I5288",
-      "students": 28,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "NAVARRO VELAZQUEZ, MARIO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DUCT1",
       "classroom": "LC03",
@@ -1938,32 +1340,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "200267",
-      "code": "I5288",
-      "students": 24,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "PARRA ESCAMILLA, GELIZTLE ALEJANDRA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "200267",
-      "code": "I5288",
-      "students": 24,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "PARRA ESCAMILLA, GELIZTLE ALEJANDRA"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DUCT1",
@@ -2000,58 +1376,6 @@
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "RAMIREZ GAYTAN, GONZALO ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC10",
-      "nrc": "200270",
-      "code": "I5288",
-      "students": 14,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "RAMIREZ GAYTAN, GONZALO ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "200270",
-      "code": "I5288",
-      "students": 14,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "RAMIREZ GAYTAN, GONZALO ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "200276",
-      "code": "I5288",
-      "students": 24,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "SANCHEZ ROSARIO, PATRICIA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "200276",
-      "code": "I5288",
-      "students": 24,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "SANCHEZ ROSARIO, PATRICIA"
   },
   {
     "data": {
@@ -2237,32 +1561,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "209844",
-      "code": "CB224",
-      "students": 28,
-      "course": "INGENIERIA DE SOFTWARE"
-    },
-    "professor": "LUPERCIO CORONEL, RAMIRO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "209844",
-      "code": "CB224",
-      "students": 28,
-      "course": "INGENIERIA DE SOFTWARE"
-    },
-    "professor": "LUPERCIO CORONEL, RAMIRO"
-  },
-  {
-    "data": {
       "schedule": "0900-1255",
       "days": ". . . . . S",
       "building": "DUCT1",
@@ -2273,32 +1571,6 @@
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "BOLAÑOS GUTIERREZ, SERGIO MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "216521",
-      "code": "CB224",
-      "students": 23,
-      "course": "INGENIERIA DE SOFTWARE"
-    },
-    "professor": "HERRERA LUJAN, ZOILA LILIANA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC10",
-      "nrc": "216521",
-      "code": "CB224",
-      "students": 23,
-      "course": "INGENIERIA DE SOFTWARE"
-    },
-    "professor": "HERRERA LUJAN, ZOILA LILIANA"
   },
   {
     "data": {
@@ -2393,32 +1665,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "117479",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "HERNANDEZ GARZA, LUZ KARINA"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "117479",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "HERNANDEZ GARZA, LUZ KARINA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DUCT1",
@@ -2442,58 +1688,6 @@
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "117481",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "117481",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "117482",
-      "code": "I7382",
-      "students": 20,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "ARMENDARIZ SILVA, MARIA ELENA"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "117482",
-      "code": "I7382",
-      "students": 20,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "ARMENDARIZ SILVA, MARIA ELENA"
   },
   {
     "data": {
@@ -2549,32 +1743,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "117483",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "117483",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DUCT1",
@@ -2593,58 +1761,6 @@
       "building": "DUCT1",
       "classroom": "LC05",
       "nrc": "159342",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159342",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159342",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "166252",
-      "code": "I7382",
-      "students": 19,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "166252",
       "code": "I7382",
       "students": 19,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
@@ -2706,28 +1822,28 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
+      "days": ". . . . V .",
       "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "103963",
-      "code": "I7388",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION"
+      "classroom": "LC03",
+      "nrc": "187175",
+      "code": "IF906",
+      "students": 19,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
-    "professor": "OLVERA PEREZ, ELSIE NOEMI"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": ". . . J . .",
+      "schedule": "1000-1055",
+      "days": ". . I . . .",
       "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "103963",
-      "code": "I7388",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION"
+      "classroom": "LC03",
+      "nrc": "187175",
+      "code": "IF906",
+      "students": 19,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
-    "professor": "OLVERA PEREZ, ELSIE NOEMI"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
@@ -2754,110 +1870,6 @@
       "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "180299",
-      "code": "IF904",
-      "students": 22,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "180299",
-      "code": "IF904",
-      "students": 22,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "187175",
-      "code": "IF906",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "103964",
-      "code": "I7388",
-      "students": 22,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "GOMEZ PADILLA, ALEJANDRA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "103964",
-      "code": "I7388",
-      "students": 22,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "GOMEZ PADILLA, ALEJANDRA"
   },
   {
     "data": {
@@ -2965,32 +1977,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "103966",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "OLVERA PEREZ, ELSIE NOEMI"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "103966",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "OLVERA PEREZ, ELSIE NOEMI"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DUCT1",
@@ -3014,58 +2000,6 @@
       "course": "LABORATORIO DE SIMULACION"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "103967",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "103967",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "103968",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "103968",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
   },
   {
     "data": {
@@ -3121,58 +2055,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "154761",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "154761",
-      "code": "I7388",
-      "students": 20,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159349",
-      "code": "I7388",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159349",
-      "code": "I7388",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DUCT1",
@@ -3219,58 +2101,6 @@
       "nrc": "159350",
       "code": "I7388",
       "students": 22,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159350",
-      "code": "I7388",
-      "students": 22,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159350",
-      "code": "I7388",
-      "students": 22,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "159351",
-      "code": "I7388",
-      "students": 19,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "159351",
-      "code": "I7388",
-      "students": 19,
       "course": "LABORATORIO DE SIMULACION"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -3511,32 +2341,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC08",
-      "nrc": "195130",
-      "code": "I5289",
-      "students": 24,
-      "course": "PROGRAMACION ORIENTADA A OBJETOS"
-    },
-    "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "195130",
-      "code": "I5289",
-      "students": 24,
-      "course": "PROGRAMACION ORIENTADA A OBJETOS"
-    },
-    "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . I . . .",
       "building": "DUCT1",
@@ -3693,32 +2497,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "138629",
-      "code": "I5909",
-      "students": 22,
-      "course": "PROGRAMACION PARA INTERNET"
-    },
-    "professor": "JIMENEZ RODRIGUEZ, MARIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "138629",
-      "code": "I5909",
-      "students": 22,
-      "course": "PROGRAMACION PARA INTERNET"
-    },
-    "professor": "JIMENEZ RODRIGUEZ, MARIO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . I . . .",
       "building": "DUCT1",
@@ -3794,32 +2572,6 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJES II"
     },
     "professor": "MEZA ESPINOSA, JOSE JUAN"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "92948",
-      "code": "I5904",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "92948",
-      "code": "I5904",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
-    },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
   },
   {
     "data": {
@@ -3940,32 +2692,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC01",
-      "nrc": "140934",
-      "code": "I7041",
-      "students": 22,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL II"
-    },
-    "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "140934",
-      "code": "I7041",
-      "students": 22,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL II"
-    },
-    "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DUCT1",
@@ -3976,19 +2702,6 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE BASES DE DATOS"
     },
     "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "59614",
-      "code": "I5885",
-      "students": 28,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ALGORITMIA"
-    },
-    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
   },
   {
     "data": {
@@ -4006,38 +2719,25 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "59614",
+      "code": "I5885",
+      "students": 28,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ALGORITMIA"
+    },
+    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DUCT1",
       "classroom": "LC09",
       "nrc": "42775",
       "code": "I5883",
       "students": 25,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION"
-    },
-    "professor": "GUERRERO CARLOS, ANA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC10",
-      "nrc": "42788",
-      "code": "I5883",
-      "students": 23,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION"
-    },
-    "professor": "GUERRERO CARLOS, ANA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "42788",
-      "code": "I5883",
-      "students": 23,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
@@ -4140,58 +2840,6 @@
       "building": "DUCT1",
       "classroom": "LC09",
       "nrc": "181924",
-      "code": "IC644",
-      "students": 20,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
-    },
-    "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "181924",
-      "code": "IC644",
-      "students": 20,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
-    },
-    "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "181924",
-      "code": "IC644",
-      "students": 20,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
-    },
-    "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "192688",
-      "code": "IC644",
-      "students": 20,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
-    },
-    "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC09",
-      "nrc": "192688",
       "code": "IC644",
       "students": 20,
       "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"

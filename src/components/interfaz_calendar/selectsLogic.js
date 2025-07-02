@@ -202,13 +202,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         message += `⚠️ Vacíos: ${buildings.skipped.length} edificios\n`;
         message += `❌ Fallidos: ${buildings.failed.length} edificios\n`;
 
-        if (buildings.failed.length > 0) {
-          message += `\nDetalles de errores:\n`;
-          buildings.failed.forEach(failure => {
-            message += `• ${failure.building}: ${failure.error}\n`;
-          });
-        }
-
         // Información de ciclos
         if (cycles?.success) {
           message += `\n📅 Ciclos guardados`;

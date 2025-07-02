@@ -20,7 +20,34 @@ const matchesName = (fullName, normalizedQuery) => {
   return normalizedQuery
     .split(' ')
     .every(q => fullName.includes(q));
-  };
+};
+
+const localFiles = async (cycle, building) => {
+  try {
+    const localData = require(`../data/buildings/${cycle}/${building}.json`);
+    const localCacheKey = `local-schedule-${cycle}-building-${building}`;
+    const scheduleCacheKey = `schedule-${cycle}-building-${building}`;
+    const TTL_LOCAL_FALLBACK = 2 * 60 * 60; // 2 horas
+
+    const alreadyInScheduleCache = await cache.get(scheduleCacheKey);
+    if (alreadyInScheduleCache) {
+      console.log(`✅ Cache ya existe (scraping o local) para ${building}, no se hace nada.`);
+      return;
+    }
+
+    const alreadyCached = await cache.get(localCacheKey);
+    if (alreadyCached) {
+      console.log(`✅ Cache ya existe para ${building}, se omite lectura de archivo local.`);
+      await cache.set(scheduleCacheKey, alreadyCached, TTL_LOCAL_FALLBACK);
+      return;
+    }
+    await cache.set(scheduleCacheKey, localData, TTL_LOCAL_FALLBACK);
+    await cache.set(localCacheKey, localData);
+    console.log(`📁 Archivo local cargado para ${building}`);
+  } catch (fsErr) {
+    console.error(`❌ No se encontró archivo local para ${building}:`);
+  }
+}
   
   // Función de búsqueda
   const getSearch = async (req, res) => {
@@ -57,30 +84,17 @@ const matchesName = (fullName, normalizedQuery) => {
     const buildingsToScrape = buildings.filter(building => !cachedBuildings.includes(building.value));
 
     if (buildingsToScrape.length > 0 && cachedBuildings.length > 0) {
-      await new Promise(resolve => setTimeout(resolve, 6000));
+      await new Promise(resolve => setTimeout(resolve, 4000));
 
       console.log(`${buildingsToScrape.length} edificios no están cacheados. Se procederá a scrapear.`);
 
       for (const building of buildingsToScrape) {
-        await new Promise(res => setTimeout(res, 100));
         const scrapeResult = await scrapeData(cycle, building.value);
+        await new Promise(res => setTimeout(res, 100));
 
         if (scrapeResult?.error) {
           console.warn(`⚠️ Scraping fallido para ${building.value}. Intentando archivo local...`);
-          try {
-            const localData = require(`../data/buildings/${cycle}/${building.value}.json`);
-            const localCacheKey = `local-schedule-${cycle}-building-${building.value}`;
-
-            const alreadyCached = await cache.get(localCacheKey);
-            if (alreadyCached) {
-              console.log(`✅ Cache ya existe para ${building.value}, se omite lectura de archivo local.`);
-              continue;
-            }
-            await cache.set(`local-schedule-${cycle}-building-${building.value}`, localData);
-            console.log(`📁 Archivo local cargado para ${building.value}`);
-          } catch (fsErr) {
-            console.error(`❌ No se encontró archivo local para ${building.value}:`);
-          }
+          await localFiles(cycle, building.value);
         }
       }
     }
@@ -88,25 +102,12 @@ const matchesName = (fullName, normalizedQuery) => {
       console.log(`${buildingsToScrape.length} edificios no están cacheados. Se procederá a scrapear.`);
 
       for (const building of buildingsToScrape) {
-        await new Promise(res => setTimeout(res, 400));
         const scrapeResult = await scrapeData(cycle, building.value);
+        await new Promise(res => setTimeout(res, 200));
 
         if (scrapeResult?.error) {
           console.warn(`⚠️ Scraping fallido para ${building.value}. Intentando archivo local...`);
-          try {
-            const localData = require(`../data/buildings/${cycle}/${building.value}.json`);
-            const localCacheKey = `local-schedule-${cycle}-building-${building.value}`;
-
-            const alreadyCached = await cache.get(localCacheKey);
-            if (alreadyCached) {
-              console.log(`✅ Cache ya existe para ${building.value}, se omite lectura de archivo local.`);
-              continue;
-            }
-            await cache.set(`local-schedule-${cycle}-building-${building.value}`, localData);
-            console.log(`📁 Archivo local cargado para ${building.value}`);
-          } catch (fsErr) {
-            console.error(`❌ No se encontró archivo local para ${building.value}:`);
-          }
+          await localFiles(cycle, building.value);
         }
       }
     }

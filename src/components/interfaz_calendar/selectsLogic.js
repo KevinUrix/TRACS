@@ -199,7 +199,8 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         // Información de edificios
         message += `📚 Edificios:\n`;
         message += `✅ Éxito: ${buildings.success.length} edificios\n`;
-        message += `⚠️ Vacíos: ${buildings.skipped.length} edificios\n`;
+        message += `⚠️ Vacíos: ${buildings.empty.length} edificios\n`;
+        message += `🗑️ Corruptos: ${buildings.skipped.length} edificios\n`;
         message += `❌ Fallidos: ${buildings.failed.length} edificios\n`;
 
         // Información de ciclos
@@ -307,7 +308,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           selectedDay={selectedDay}
         
         />
-
       </div>
     </div>
   );

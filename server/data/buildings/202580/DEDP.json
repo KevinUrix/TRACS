@@ -1,0 +1,93 @@
+[
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": "L . I . V .",
+      "building": "DEDP",
+      "classroom": "A016",
+      "nrc": "205943",
+      "code": "IC612",
+      "students": 30,
+      "course": "ANALISIS ESTRUCTURAL II ()"
+    },
+    "professor": "CERMEÑO GARCIA, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1000-1230",
+      "days": "L M I J V .",
+      "building": "DEDP",
+      "classroom": "A003",
+      "nrc": "235100",
+      "code": "I7433",
+      "students": 18,
+      "course": "FLUIDOS ()"
+    },
+    "professor": "SANCHEZ HUERTA, MARIA MAGDALENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1555",
+      "days": "L M I J V .",
+      "building": "DEDP",
+      "classroom": "A004",
+      "nrc": "235101",
+      "code": "I7425",
+      "students": 30,
+      "course": "INGENIERIA DE CONTROL ()"
+    },
+    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1030",
+      "days": "L M I J V .",
+      "building": "DEDP",
+      "classroom": "A005",
+      "nrc": "134682",
+      "code": "I7341",
+      "students": 30,
+      "course": "INTRODUCCION DE CIRCUITOS ELECTRICOS ()"
+    },
+    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-1355",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A013",
+      "nrc": "235098",
+      "code": "IC594",
+      "students": 23,
+      "course": "MECANICA DE SOLIDOS I ()"
+    },
+    "professor": "FLORES ANGULO, BENJAMIN EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": ". . . J . .",
+      "building": "DEDP",
+      "classroom": "A013",
+      "nrc": "235098",
+      "code": "IC594",
+      "students": 23,
+      "course": "MECANICA DE SOLIDOS I ()"
+    },
+    "professor": "FLORES ANGULO, BENJAMIN EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": "L . I . V .",
+      "building": "DEDP",
+      "classroom": "A016",
+      "nrc": "235099",
+      "code": "IC599",
+      "students": 8,
+      "course": "MECANICA DE SOLIDOS II ()"
+    },
+    "professor": "CERMEÑO GARCIA, JULIO CESAR"
+  }
+]

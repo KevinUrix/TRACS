@@ -26,10 +26,11 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
       setIsLoadingPopup(false);
 
       if (!response.ok) {
+        const errorData = await response.json();
         if (response.status === 400) {
           alert('Error de parámetros. Ingrese un valor válido para la búsqueda.');
         } else {
-          console.error(`Error del servidor: ${response.error}`);
+          toast.error(errorData.error || 'Error del servidor');
         }
         setFilteredSchedule([]);
         setShowPopup(false);

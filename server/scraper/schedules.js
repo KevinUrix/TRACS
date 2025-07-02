@@ -143,7 +143,7 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
 };
 
 // Scraping principal (directo al usuario)
-const scrapeData = async (cycle, edifp) => {
+const scrapeData = async (cycle, edifp, force = false) => {
     const scrapeKey = `${cycle}-${edifp}`;
 
     // Esperar si ya hay otro scraping en curso para este edificio
@@ -156,10 +156,12 @@ const scrapeData = async (cycle, edifp) => {
     const cacheKey = `schedule-${cycle}-building-${edifp}`;
     const cachedSchedules = await cache.get(cacheKey);
 
-    if (cachedSchedules) {
-        console.log(`Datos de ${cycle} - ${edifp} obtenidos desde el caché.`);
-        activeScraping.delete(scrapeKey);
-        return cachedSchedules;
+    if (!force) {
+        if (cachedSchedules) {
+            console.log(`Datos de ${cycle} - ${edifp} obtenidos desde el caché.`);
+            activeScraping.delete(scrapeKey);
+            return cachedSchedules;
+        }
     }
 
 

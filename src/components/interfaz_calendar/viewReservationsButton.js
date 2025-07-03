@@ -100,7 +100,10 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         body: JSON.stringify(updatedReservation)
       });
   
-      if (!res.ok) throw new Error('Error al actualizar la reserva');
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.message || `Error HTTP: ${res.status}`);
+      }
   
       alert('Reserva modificada correctamente');
   
@@ -109,7 +112,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
       closeEditForm();
     } catch (err) {
       console.error(err);
-      alert('Hubo un error al modificar la reserva');
+      alert(`Hubo un error al modificar la reserva:\n${err.message}`);
     }
   };
   
@@ -150,11 +153,11 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         method: 'DELETE',
       });
 
+      const data = await res.json();
       if (!res.ok) {
-        throw new Error(`Error HTTP: ${res.status}`);
+        throw new Error(data.message || `Error HTTP: ${res.status}`);
       }
 
-      const data = await res.json();
       alert(data.message);
 
       const updated = filteredReservations.filter(r =>
@@ -169,7 +172,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
       fetchReservations();
     } catch (err) {
       console.error("Error al eliminar:", err);
-      alert("Hubo un error al eliminar la reserva.");
+      alert(`Hubo un error al eliminar la reserva:\n${err.message}`);
     }
   };
 

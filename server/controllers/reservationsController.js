@@ -91,7 +91,12 @@ const saveReservation = async (req, res) => {
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
     // SOCKET
-    await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}});
+    try {
+      await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}});
+    }
+    catch (error) {
+      console.error('🔕 Error al notificar al servicio de sockets:', error.message);
+    }
 
     res.status(201).json({
       message: 'Reserva guardada con éxito',
@@ -154,6 +159,18 @@ const deleteReservation = async (req, res) => {
               console.log(`Evento ${reservation.googleEventId} eliminado de Google Calendar`);
             } catch (err) {
               console.warn(`No se pudo eliminar el evento ${reservation.googleEventId}:`, err.message);
+              if (err.message && err.message.toLowerCase().includes('not found')) {
+                return res.status(409).json({
+                  message: `Evento no encontrado en Google Calendar.\nInicie sesión con la cuenta que creó el evento.`,
+                  error: err.message,
+                });
+              }
+
+              // Otros errores
+              return res.status(500).json({
+                message: `Error al actualizar el evento en Google Calendar.`,
+                error: err.message,
+              });
             }
           }
         }
@@ -237,10 +254,7 @@ const updateReservation = async (req, res) => {
     if (originalGoogleEventId)
       orderedReservation.googleEventId = originalGoogleEventId;
 
-    currentData.data[index] = orderedReservation;
-
-    await fs.writeFile(filePath, JSON.stringify(currentData, null, 2), 'utf-8');
-
+    
     // Actualiza evento en Google Calendar si se existe el ID del evento
     if (originalGoogleEventId) {
       try {
@@ -250,10 +264,10 @@ const updateReservation = async (req, res) => {
         const [startRaw, endRaw] = updatedData.schedule.split('-');
         const startHour = `${startRaw.slice(0, 2)}:${startRaw.slice(2, 4)}`;
         const endHour = `${endRaw.slice(0, 2)}:${endRaw.slice(2, 4)}`;
-
+        
         const startDateTime = new Date(`${updatedData.date}T${startHour}:00`);
         const endDateTime = new Date(`${updatedData.date}T${endHour}:00`);
-
+        
         if (isNaN(startDateTime) || isNaN(endDateTime)) {
           throw new Error('Fechas de inicio o fin inválidas');
         }
@@ -279,11 +293,11 @@ const updateReservation = async (req, res) => {
         } else if (updatedData.duration === 'Siempre' && updatedData.days) {
           // Si la duración sigue siendo "Siempre", añadimos la recurrencia semanal
           const dayMap = { L: 'MO', M: 'TU', I: 'WE', J: 'TH', V: 'FR', S: 'SA', D: 'SU' };
-
+          
           // Convierte 'days' en un arreglo
           const daysArray = Array.isArray(updatedData.days) ? updatedData.days : updatedData.days.split('');
           const byDay = daysArray.map(d => dayMap[d]).join(',');
-
+          
           // Calcula la fecha de finalización
           const endRecurrenceDate = new Date(startDateTime);
           endRecurrenceDate.setMonth(endRecurrenceDate.getMonth() + 4); // 4 meses de duración
@@ -296,37 +310,52 @@ const updateReservation = async (req, res) => {
             `RRULE:FREQ=WEEKLY;BYDAY=${byDay};UNTIL=${untilDate}T000000Z`
           ];
         }
-
+        
         // Obtener lista de calendarios
         const calendarListResponse = await calendar.calendarList.list();
         const calendars = calendarListResponse.data.items || [];
-
+        
         // Buscar calendario que contenga buildingName en su nombre
         const targetCalendar = calendars.find(cal =>
           cal.summary.toLowerCase().includes(mappedBuildingName.toLowerCase())
         );
         const calendarId = targetCalendar ? targetCalendar.id : 'primary';
-
+        
         await calendar.events.update({
           calendarId,
           eventId: originalGoogleEventId,
           resource: event,
         });
 
-
+        
         console.log(`Evento ${originalGoogleEventId} actualizado en Google Calendar`);
       } catch (err) {
         console.warn(`No se pudo actualizar el evento ${originalGoogleEventId}:`, err.message);
+        
+        if (err.message && err.message.toLowerCase().includes('not found')) {
+          return res.status(409).json({
+            message: `Evento no encontrado en Google Calendar.\nInicie sesión con la cuenta que creó el evento.`,
+            error: err.message,
+          });
+        }
+
+        // Otros errores
+        return res.status(500).json({
+          message: `Error al actualizar el evento en Google Calendar.`,
+          error: err.message,
+        });
       }
     }
-
+    // Sólo si se actualiza en googleCalendar se hace en el json
+    currentData.data[index] = orderedReservation;
+    await fs.writeFile(filePath, JSON.stringify(currentData, null, 2), 'utf-8');
     res.json({ message: 'Reserva actualizada con éxito' });
   } catch (error) {
     if (error.code === 'ENOENT') {
       console.log(`Archivo no encontrado para: ${cycle} - ${buildingName}`);
       return res.status(404).json({ message: 'No hay reservas para este ciclo y edificio' });
     }
-
+    
     console.error("Error al actualizar la reserva:", error.message);
     res.status(500).json({ error: 'Error interno al actualizar la reserva' });
   }

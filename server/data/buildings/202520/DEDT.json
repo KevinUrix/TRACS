@@ -1,0 +1,2576 @@
+[
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "154480",
+      "code": "I9909",
+      "students": 0,
+      "course": "ACTUADORES"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "210801",
+      "code": "I9909",
+      "students": 0,
+      "course": "ACTUADORES"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "153237",
+      "code": "IB149",
+      "students": 0,
+      "course": "APLICACIONES DE LA MECANICA CUANTICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "133679",
+      "code": "IB125",
+      "students": 0,
+      "course": "CIRCUITOS ANALOGICOS I"
+    },
+    "professor": "BARRAGAN CAMPOS, ROBERTO CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "93998",
+      "code": "I7277",
+      "students": 0,
+      "course": "CIRCUITOS ANALOGICOS I"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "141263",
+      "code": "IB126",
+      "students": 0,
+      "course": "CIRCUITOS ANALOGICOS II"
+    },
+    "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "160205",
+      "code": "I7279",
+      "students": 0,
+      "course": "CIRCUITOS ANALOGICOS II"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "78969",
+      "code": "I7280",
+      "students": 0,
+      "course": "CIRCUITOS DIGITALES"
+    },
+    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "78970",
+      "code": "I7280",
+      "students": 0,
+      "course": "CIRCUITOS DIGITALES"
+    },
+    "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1855",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "78974",
+      "code": "I7280",
+      "students": 0,
+      "course": "CIRCUITOS DIGITALES"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "59907",
+      "code": "I7587",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "125039",
+      "code": "IB127",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "CASAS ORDAZ, ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "78995",
+      "code": "I7587",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "122791",
+      "code": "I7587",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "122792",
+      "code": "I7587",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "122793",
+      "code": "I7587",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "122794",
+      "code": "I7587",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "120466",
+      "code": "I7282",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "143370",
+      "code": "I7282",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "143372",
+      "code": "I7282",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
+    },
+    "professor": "VELAZQUEZ MORA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "152959",
+      "code": "I7282",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
+    },
+    "professor": "RUIZ PALACIOS, MARIA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "159267",
+      "code": "I7282",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "194942",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "194942",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "194942",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "194942",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "194943",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "194944",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1700-2055",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "194945",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "194946",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "194947",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "194948",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GARCIA RAMIREZ, MARIO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "205841",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GONZALEZ JIMENEZ, JOANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "205842",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "206642",
+      "code": "IL346",
+      "students": 0,
+      "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
+    },
+    "professor": "GONZALEZ JIMENEZ, JOANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "165508",
+      "code": "IB139",
+      "students": 0,
+      "course": "COMUNICACIONES OPTICAS I"
+    },
+    "professor": "GONZALEZ ROMERO, JAIME RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "165508",
+      "code": "IB139",
+      "students": 0,
+      "course": "COMUNICACIONES OPTICAS I"
+    },
+    "professor": "GONZALEZ ROMERO, JAIME RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "165508",
+      "code": "IB139",
+      "students": 0,
+      "course": "COMUNICACIONES OPTICAS I"
+    },
+    "professor": "GONZALEZ ROMERO, JAIME RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "165508",
+      "code": "IB139",
+      "students": 0,
+      "course": "COMUNICACIONES OPTICAS I"
+    },
+    "professor": "GONZALEZ ROMERO, JAIME RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "60803",
+      "code": "I7413",
+      "students": 0,
+      "course": "DINAMICA"
+    },
+    "professor": "GUZMAN HERNANDEZ, JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "154481",
+      "code": "I9889",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A020",
+      "nrc": "202028",
+      "code": "I9889",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "125032",
+      "code": "I7262",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "125033",
+      "code": "I7262",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "171768",
+      "code": "I7262",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "178619",
+      "code": "I7262",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "193724",
+      "code": "I7262",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "194960",
+      "code": "I7262",
+      "students": 0,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "78976",
+      "code": "I7283",
+      "students": 0,
+      "course": "DISEÑO DE TARJETAS DE EVALUACION"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "78978",
+      "code": "I7283",
+      "students": 0,
+      "course": "DISEÑO DE TARJETAS DE EVALUACION"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "78979",
+      "code": "I7283",
+      "students": 0,
+      "course": "DISEÑO DE TARJETAS DE EVALUACION"
+    },
+    "professor": "GOMEZ MORALES, LEOBARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "78980",
+      "code": "I7283",
+      "students": 0,
+      "course": "DISEÑO DE TARJETAS DE EVALUACION"
+    },
+    "professor": "CASILLAS DE LA TORRE, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "125003",
+      "code": "I7284",
+      "students": 0,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "RUIZ PALACIOS, MARIA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "125004",
+      "code": "I7284",
+      "students": 0,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "125006",
+      "code": "I7284",
+      "students": 0,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "RUIZ PALACIOS, MARIA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "159328",
+      "code": "I7284",
+      "students": 0,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "182583",
+      "code": "I7284",
+      "students": 0,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "209856",
+      "code": "IL384",
+      "students": 0,
+      "course": "DISEÑO DE VIDEO JUEGOS"
+    },
+    "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "153217",
+      "code": "IB142",
+      "students": 0,
+      "course": "DISEÑO OPTICO"
+    },
+    "professor": "BARRAGAN CAMPOS, ROBERTO CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "82694",
+      "code": "I7598",
+      "students": 0,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "97739",
+      "code": "I7598",
+      "students": 0,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "125035",
+      "code": "I7598",
+      "students": 0,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "147811",
+      "code": "I7598",
+      "students": 0,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "121528",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "225741",
+      "code": "V3636",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "225743",
+      "code": "V3636",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "121529",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "121529",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "121529",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "121529",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2155",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "121530",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "182584",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "182584",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "182584",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "182584",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "205843",
+      "code": "I7436",
+      "students": 0,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "GARCIA RAMIREZ, MARIO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "125023",
+      "code": "I7263",
+      "students": 0,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "143400",
+      "code": "I9890",
+      "students": 0,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "209751",
+      "code": "I9890",
+      "students": 0,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "164462",
+      "code": "I7263",
+      "students": 0,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "166722",
+      "code": "I7263",
+      "students": 0,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "104814",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "104815",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "104816",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "WARIO VAZQUEZ, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "104818",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1800-1855",
+      "days": ". . I . . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "104818",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "104818",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1800-1855",
+      "days": ". . I . . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "104818",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "104819",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "VELAZQUEZ MORA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "154160",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "154160",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "154160",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "154160",
+      "code": "I7372",
+      "students": 0,
+      "course": "ELECTRONICA INDUSTRIAL"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "125036",
+      "code": "IB128",
+      "students": 0,
+      "course": "ELECTRONICA INTEGRADA"
+    },
+    "professor": "BARRAGAN CAMPOS, ROBERTO CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "91411",
+      "code": "I7599",
+      "students": 0,
+      "course": "ELECTRONICA INTEGRADA"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "133092",
+      "code": "I7599",
+      "students": 0,
+      "course": "ELECTRONICA INTEGRADA"
+    },
+    "professor": "VELASCO RIVERA, JORGE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "159475",
+      "code": "I7599",
+      "students": 0,
+      "course": "ELECTRONICA INTEGRADA"
+    },
+    "professor": "GOMEZ RODRIGUEZ, PEDRO MISRAIM"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "153238",
+      "code": "IB143",
+      "students": 0,
+      "course": "FIBRAS OPTICAS"
+    },
+    "professor": "SANTIAGO HERNANDEZ, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . V .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "225766",
+      "code": "V0736",
+      "students": 0,
+      "course": "FISICA CUANTICA"
+    },
+    "professor": "QUIROGA ROJAS, JOSE VLADIMIR"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "84268",
+      "code": "I7440",
+      "students": 0,
+      "course": "FORMACION EMPRESARIAL"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "84268",
+      "code": "I7440",
+      "students": 0,
+      "course": "FORMACION EMPRESARIAL"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "84268",
+      "code": "I7440",
+      "students": 0,
+      "course": "FORMACION EMPRESARIAL"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "84268",
+      "code": "I7440",
+      "students": 0,
+      "course": "FORMACION EMPRESARIAL"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "143398",
+      "code": "IB144",
+      "students": 0,
+      "course": "FOTOMETRIA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "223232",
+      "code": "V3690",
+      "students": 0,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A024",
+      "nrc": "223233",
+      "code": "V3690",
+      "students": 0,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "223236",
+      "code": "V3690",
+      "students": 0,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0800-1255",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "223427",
+      "code": "V3690",
+      "students": 0,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0800-1255",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "223428",
+      "code": "V3690",
+      "students": 0,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A019",
+      "nrc": "223429",
+      "code": "V3690",
+      "students": 0,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A024",
+      "nrc": "55413",
+      "code": "ET332",
+      "students": 0,
+      "course": "INSTRUMENTACION MEDICA I"
+    },
+    "professor": "MENDEZ PALOS, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A022",
+      "nrc": "193759",
+      "code": "IL350",
+      "students": 0,
+      "course": "LIDERAZGO Y EMPRENDIMIENTO"
+    },
+    "professor": "RAMIREZ ALBA, CECILIA ERIKA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "226497",
+      "code": "V1681",
+      "students": 0,
+      "course": "MATEMATICAS AVANZADAS"
+    },
+    "professor": "SERRANO GARCIA, DAVID IGNACIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "143396",
+      "code": "IB148",
+      "students": 0,
+      "course": "MECANICA CUANTICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "141259",
+      "code": "IB134",
+      "students": 0,
+      "course": "MECANICA TEORICA"
+    },
+    "professor": "CERVANTES LOZANO, FRANCISCO JOEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "141260",
+      "code": "IB150",
+      "students": 0,
+      "course": "METODOS MATEMATICOS DE LA FISICA"
+    },
+    "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "153236",
+      "code": "IB151",
+      "students": 0,
+      "course": "OPTICA ELECTROMAGNETICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "143391",
+      "code": "IB152",
+      "students": 0,
+      "course": "OPTICA GEOMETRICA"
+    },
+    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "170034",
+      "code": "IB153",
+      "students": 0,
+      "course": "OPTICA NO LINEAL"
+    },
+    "professor": "ALMAGUER GOMEZ, CITLALLI"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "85740",
+      "code": "I7265",
+      "students": 0,
+      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
+    },
+    "professor": "CASAS ORDAZ, ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "141265",
+      "code": "I9891",
+      "students": 0,
+      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
+    },
+    "professor": "SANTOS ARCE, STEWART RENE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "164813",
+      "code": "I9891",
+      "students": 0,
+      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
+    },
+    "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "83821",
+      "code": "I7265",
+      "students": 0,
+      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
+    },
+    "professor": "CARRASCO ALVAREZ, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "88969",
+      "code": "I7265",
+      "students": 0,
+      "course": "PROCESAMIENTO DIGITAL DE SEÑALES"
+    },
+    "professor": "CASILLAS DE LA TORRE, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A023",
+      "nrc": "43397",
+      "code": "I7266",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "114818",
+      "code": "I9894",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+    },
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "43398",
+      "code": "I7266",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "120479",
+      "code": "I9892",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDT",
+      "classroom": "A023",
+      "nrc": "158797",
+      "code": "I9892",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "HERNANDEZ RUIZ, CARLOS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "59783",
+      "code": "I7266",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "GARCIA ARREOLA, ALICIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "59677",
+      "code": "I7266",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "MORAN LOZA, JOSE MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "59839",
+      "code": "I7266",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "PATIÑO RUIZ, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "171769",
+      "code": "I7266",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "GALVEZ LOPEZ, HECTOR ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "164027",
+      "code": "I7268",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "212890",
+      "code": "IL376",
+      "students": 0,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "CASAS ORDAZ, ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "122801",
+      "code": "I7288",
+      "students": 0,
+      "course": "PROTOCOLOS DE COMUNICACIONES"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "194958",
+      "code": "I7288",
+      "students": 0,
+      "course": "PROTOCOLOS DE COMUNICACIONES"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "160224",
+      "code": "IB156",
+      "students": 0,
+      "course": "RADIOMETRIA"
+    },
+    "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "154486",
+      "code": "I9896",
+      "students": 0,
+      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "194940",
+      "code": "I9896",
+      "students": 0,
+      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "199603",
+      "code": "I9896",
+      "students": 0,
+      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "133339",
+      "code": "I9893",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "143403",
+      "code": "I9899",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "143394",
+      "code": "I9893",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "158798",
+      "code": "I9893",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "LUQUE CHANG, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "154482",
+      "code": "I9895",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+    },
+    "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "141264",
+      "code": "I9897",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "209749",
+      "code": "I9897",
+      "students": 0,
+      "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "59962",
+      "code": "I7267",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "59925",
+      "code": "I7281",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "120472",
+      "code": "I7290",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "59838",
+      "code": "I7281",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "59683",
+      "code": "I7281",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1600-1955",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "154172",
+      "code": "I7290",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "59706",
+      "code": "I7281",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "GOMEZ MORALES, LEOBARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "92636",
+      "code": "I7271",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "194939",
+      "code": "I7273",
+      "students": 0,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "CASILLAS ZAMORA, ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "78957",
+      "code": "I7272",
+      "students": 0,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "194139",
+      "code": "I9898",
+      "students": 0,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "WARIO VAZQUEZ, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "78959",
+      "code": "I7272",
+      "students": 0,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "171773",
+      "code": "I7272",
+      "students": 0,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "CASILLAS ZAMORA, ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "120476",
+      "code": "I7289",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "AVALOS ALVAREZ, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "133071",
+      "code": "I7289",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "AVALOS ALVAREZ, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "165120",
+      "code": "I7289",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "125008",
+      "code": "I7291",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES II"
+    },
+    "professor": "RAMIREZ MORALES, LUIS FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "125010",
+      "code": "I7291",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES II"
+    },
+    "professor": "BONILLA BARRAGAN, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "133089",
+      "code": "I7291",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES II"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "166376",
+      "code": "I7291",
+      "students": 0,
+      "course": "SISTEMAS DE COMUNICACIONES II"
+    },
+    "professor": "CARRASCO ALVAREZ, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "170031",
+      "code": "IB158",
+      "students": 0,
+      "course": "SISTEMAS DE ILUMINACION"
+    },
+    "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A015",
+      "nrc": "114820",
+      "code": "IB136",
+      "students": 0,
+      "course": "SISTEMAS DE MEDICION"
+    },
+    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "164964",
+      "code": "IB137",
+      "students": 0,
+      "course": "SISTEMAS DE RADIOFRECUENCIA"
+    },
+    "professor": "OCAMPO ARELLANO, OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "194949",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "194951",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "194952",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "RAYGOZA PANDURO, JUAN JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A013",
+      "nrc": "194953",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "VELAZQUEZ MORA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "194954",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A001",
+      "nrc": "194955",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "194956",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "194957",
+      "code": "IL363",
+      "students": 0,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A014",
+      "nrc": "104802",
+      "code": "I7600",
+      "students": 0,
+      "course": "SISTEMAS ELECTRONICOS"
+    },
+    "professor": "QUIROGA ROJAS, JOSE VLADIMIR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "133093",
+      "code": "I7600",
+      "students": 0,
+      "course": "SISTEMAS ELECTRONICOS"
+    },
+    "professor": "VELASCO RIVERA, JORGE"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "193745",
+      "code": "I7600",
+      "students": 0,
+      "course": "SISTEMAS ELECTRONICOS"
+    },
+    "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDT",
+      "classroom": "A021",
+      "nrc": "123734",
+      "code": "I7418",
+      "students": 0,
+      "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
+    },
+    "professor": "MARTINEZ RUIZ, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A021",
+      "nrc": "123734",
+      "code": "I7418",
+      "students": 0,
+      "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
+    },
+    "professor": "MARTINEZ RUIZ, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDT",
+      "classroom": "A021",
+      "nrc": "123734",
+      "code": "I7418",
+      "students": 0,
+      "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
+    },
+    "professor": "MARTINEZ RUIZ, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A021",
+      "nrc": "123734",
+      "code": "I7418",
+      "students": 0,
+      "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
+    },
+    "professor": "MARTINEZ RUIZ, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A024",
+      "nrc": "141261",
+      "code": "IB138",
+      "students": 0,
+      "course": "TEORIA ELECTROMAGNETICA I"
+    },
+    "professor": "ALMAGUER GOMEZ, CITLALLI"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A003",
+      "nrc": "143388",
+      "code": "IB160",
+      "students": 0,
+      "course": "TEORIA ELECTROMAGNETICA II"
+    },
+    "professor": "SERRANO GARCIA, DAVID IGNACIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A012",
+      "nrc": "204993",
+      "code": "V0262",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN APRENDIZAJE MAQUINA"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A024",
+      "nrc": "53892",
+      "code": "ET418",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN COMPUTACION"
+    },
+    "professor": "MORAN LOZA, JOSE MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "153762",
+      "code": "ET412",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN COMUNICACIONES"
+    },
+    "professor": "ALMAGUER GOMEZ, CITLALLI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A008",
+      "nrc": "53895",
+      "code": "ET417",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN ELECTRONICA"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "147964",
+      "code": "ET416",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN INSTRUMENTACION"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "53897",
+      "code": "ET414",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A011",
+      "nrc": "206128",
+      "code": "ET414",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A010",
+      "nrc": "206129",
+      "code": "ET414",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
+    },
+    "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "104790",
+      "code": "I7294",
+      "students": 0,
+      "course": "VERIFICACION DE CIRCUITOS DIGITALES"
+    },
+    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "133088",
+      "code": "I7294",
+      "students": 0,
+      "course": "VERIFICACION DE CIRCUITOS DIGITALES"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  }
+]

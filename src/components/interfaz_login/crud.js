@@ -336,12 +336,12 @@ export default function Crud() {
   };
 
   return (
-    <div className="bg-gray-100 flex">
+    <div className="bg-gray-100 flex min-h-screen">
 
       <div className="flex flex-col w-full">
         {/*<NavbarGlobal/>*/}
 
-        <div className="pt-32 px-8 min-h-screen bg-gray-100">
+        <div className="bg-gray-100 pt-32 p-4 ml-4 mr-4">
           
           <div className="bg-white p-4 rounded-lg shadow-md custom-shadow-border-reports"> {/* Cuadro blanco para encapsular todo.*/}
             <h2 className="text-3xl font-bold mb-8 tracking-wide text-center">Administración</h2>
@@ -475,6 +475,12 @@ export default function Crud() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="p-4 ml-8 mr-8 mb-2 rounded-lg shadow-md border-2" style={{ backgroundColor: '#fed7aa', borderColor: '#fb923c' }}>
+          <h2 className="text-2xl font-bold mb-2 tracking-wide" style={{ color: '#c2410c' }}>Advertencia</h2>
+            <p>La eliminación de usuarios y edificios no es información recuperable.<br/>
+                Realizar cambios requiere de autorización previa. Si usted no es un usuario con un rol que permita estos cambios, favor de abandonar este apartado y notificarlo inmediatamente.
+            </p>
         </div>
       </div>
       {/* Modal */}

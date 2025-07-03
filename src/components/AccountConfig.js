@@ -138,7 +138,7 @@ export default function AccountConfig() {
     <div className="main-content flex-2 flex flex-col">
 
       {/* Columna izquierda: Configuración de cuenta */}
-      <div className="ml-5 mr-5 mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+      <div className="ml-5 mr-5 mb-2 mx-auto mt-10 p-6 bg-white shadow-md rounded-lg custom-shadow-border">
         <h2 className="text-2xl text-blue-900 text-center font-bold mb-4">Configuración de Cuenta</h2>
         <hr className="my-4 border-t-2 border-blue-900 mb-7" />
         <p className="mb-4 text-center text-xl">Configura algunos datos de tu cuenta.</p>

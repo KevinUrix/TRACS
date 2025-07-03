@@ -79,10 +79,11 @@ export default function Registro() {
   };
 
   return (
-    <div className="relative full-viewport w-screen bg-black">
-      <div
-        className="bg-blurred"
-    ></div>
+    <div className="content relative full-viewport w-screen bg-black">
+      {/* Fondos animados */}
+      <div className="bg"></div>
+      <div className="bg bg2"></div>
+      <div className="bg bg3"></div>
       <div className="relative flex justify-center items-center min-h-screen py-7">
         <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-90 z-10 custom-shadow-border-reports">
           <h2 className="text-2xl font-bold mb-4">Registrar Usuario</h2>

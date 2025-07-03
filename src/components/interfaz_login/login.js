@@ -73,11 +73,11 @@ export default function Login() {
   };
 
 return (
-  <div className="relative h-screen w-screen bg-black">
-    {/* Fondo con imagen difuminada */}
-    <div
-      className="bg-blurred"
-    ></div>
+  <div className="content relative h-screen w-screen bg-black">
+    {/* Fondos animados */}
+    <div className="bg"></div>
+    <div className="bg bg2"></div>
+    <div className="bg bg3"></div>
 
     {/* Capa frontal (formulario) */}
     <div className="relative flex justify-center items-center h-full">

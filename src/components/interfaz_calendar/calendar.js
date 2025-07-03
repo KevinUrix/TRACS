@@ -258,6 +258,7 @@ export default function Calendar() {
     if (!selectedCycle || !selectedBuilding || isStatisticMode) return;
   
     const cacheKey = `schedule_${selectedCycle}_${selectedBuilding}`;
+    const schedulePrefixRegex = /^schedule_\d+_.+/;
     
     const loadLocalSchedule = async () => {
       try {
@@ -268,13 +269,20 @@ export default function Calendar() {
   
         if (Array.isArray(localData)) {
           setSchedule(localData);
+          // BORRA SESSIONSTORAGE PARA QUE NO SE SOBRECARGUE
+          const keysWithPrefix = Object.keys(sessionStorage).filter(key => schedulePrefixRegex.test(key));
+
+          if (keysWithPrefix.length >= 10) {
+            keysWithPrefix.forEach(key => sessionStorage.removeItem(key));
+          }
           sessionStorage.setItem(cacheKey, JSON.stringify(localData));
           console.warn("Horario cargado desde archivo local.");
         } else {
           console.error("El archivo local no contiene un array válido:", localData);
         }
       } catch (error) {
-        console.error("Error al cargar archivo local de respaldo:", error);
+        toast.error("Error al cargar archivo local de respaldo. SIIAU no responde y no existen archivos del ciclo en el servidor.");
+        console.error("Error al cargar archivo local de respaldo.", error);
         setSchedule([]);
       }
     };
@@ -311,6 +319,12 @@ export default function Calendar() {
         // Manejar si es array directo
         if (Array.isArray(scheduleEntry) && scheduleEntry.length > 0) {
           setSchedule(scheduleEntry);
+          // BORRA SESSIONSTORAGE PARA QUE NO SE SOBRECARGUE
+          const keysWithPrefix = Object.keys(sessionStorage).filter(key => schedulePrefixRegex.test(key));
+
+          if (keysWithPrefix.length >= 10) {
+            keysWithPrefix.forEach(key => sessionStorage.removeItem(key));
+          }
           sessionStorage.setItem(cacheKey, JSON.stringify(scheduleEntry));
           console.log("Horario cargado desde el backend (array directo).");
           return;
@@ -319,6 +333,12 @@ export default function Calendar() {
         // Manejar si viene como { data: [...] }
         if (Array.isArray(scheduleEntry?.data) && scheduleEntry?.data.length > 0 && !scheduleEntry?.error) {
           setSchedule(scheduleEntry.data);
+          // BORRA SESSIONSTORAGE PARA QUE NO SE SOBRECARGUE
+          const keysWithPrefix = Object.keys(sessionStorage).filter(key => schedulePrefixRegex.test(key));
+
+          if (keysWithPrefix.length >= 10) {
+            keysWithPrefix.forEach(key => sessionStorage.removeItem(key));
+          }
           sessionStorage.setItem(cacheKey, JSON.stringify(scheduleEntry.data));
           console.log("Horario cargado desde el backend (objeto con .data).");
           return;
@@ -457,7 +477,7 @@ export default function Calendar() {
 
       } catch (error) {
         console.error("Error al obtener horarios para todos los edificios:", error);
-        toast.error("Error al obtener horarios para todos los edificios:");
+        toast.error("Error al obtener horarios para todos los edificios. Favor de confirmar funcionamiento del servidor.");
         setFullSchedule({});
       }
     };

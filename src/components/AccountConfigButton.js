@@ -10,9 +10,9 @@ export default function AccountConfigButton({ className = '' }) {
 
   const handleClick = () => {
     if (location.pathname === '/configuracion') {
-      navigate('/'); // 👈 si ya estás en configuración, ve a inicio
+      navigate('/');
     } else {
-      navigate('/configuracion'); // 👈 de lo contrario, ve a configuración
+      navigate('/configuracion');
     }
   };
 

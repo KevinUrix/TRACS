@@ -18,18 +18,6 @@ body{
 }
 
 /* archivo: styles.css o App.css */
-.bg-blurred {
-  position: absolute;
-  inset: 0;
-  background-image: url('/public/centro_cucei.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(4px) brightness(75%);
-  z-index: 1;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
 
 
 /* Select content */

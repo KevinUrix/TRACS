@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 import API_URL from '../../config/api';
 import EditReservationForm from './editReservationForm'; // Importamos el formulario
 
@@ -32,6 +33,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
   const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
   const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
+  const navigate = useNavigate();
   
   useEffect(() => {
     if (Array.isArray(reservations)) {
@@ -96,12 +98,28 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   
       const res = await fetch(`${API_URL}/api/reservations?${params.toString()}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('token')}` },
         body: JSON.stringify(updatedReservation)
       });
   
       const data = await res.json();
       if (!res.ok) {
+        if (res.status === 403) {
+          localStorage.clear();
+          toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
+          return;
+        }
+        else if (res.status === 400) {
+          localStorage.clear();
+          toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
+          return;
+        }
         throw new Error(data.message || `Error HTTP: ${res.status}`);
       }
   
@@ -151,10 +169,29 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
 
       const res = await fetch(`${API_URL}/api/reservations?${params.toString()}`, {
         method: 'DELETE',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
       });
 
       const data = await res.json();
       if (!res.ok) {
+        if (res.status === 403) {
+          localStorage.clear();
+          toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
+          return;
+        }
+        else if (res.status === 400) {
+          localStorage.clear();
+          toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
+          return;
+        }
         throw new Error(data.message || `Error HTTP: ${res.status}`);
       }
 

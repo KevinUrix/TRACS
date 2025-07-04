@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
 import API_URL from '../../config/api';
@@ -23,6 +23,7 @@ export default function Calendar() {
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
+  const navigate = useNavigate();
   const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
 
 
@@ -175,7 +176,7 @@ export default function Calendar() {
       // Envío de reserva
       const response = await fetch(`${API_URL}/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}&user=${user}`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('token')}` },
         body: JSON.stringify(reservationData),
       });
   
@@ -193,7 +194,21 @@ export default function Calendar() {
           setTimeout(() => {
             window.location.href = `${API_URL}/api/google/reauth?user=${user}`;
           }, 1300);
-        } 
+        }
+        else if (response.status === 403) {
+          localStorage.clear();
+          toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
+        }
+        else if (response.status === 400) {
+          localStorage.clear();
+          toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
+        }
         else {
           console.error('Error desde el servidor:', result.error || 'Error desconocido');
           alert(`❌ Error al guardar la reserva: ${result.error || 'Error desconocido'}`);

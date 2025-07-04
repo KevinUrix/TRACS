@@ -8,7 +8,6 @@ function authMiddleware(req, res, next) {
   
   // Verificar si el token tiene un formato correcto
   if (token.split('.').length !== 3) {
-    console.error('Error al verificar token:', err.message);
     return res.status(400).json({ message: 'Token malformado' });
   }
 

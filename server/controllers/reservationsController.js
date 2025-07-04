@@ -165,12 +165,16 @@ const deleteReservation = async (req, res) => {
                   error: err.message,
                 });
               }
-
-              // Otros errores
-              return res.status(500).json({
-                message: `Error al actualizar el evento en Google Calendar.`,
-                error: err.message,
-              });
+              else if (err.message && err.message.toLowerCase().includes('resource has been deleted')) {
+                console.log("El evento fue borrado desde Google Calendar.")
+              }
+              else {
+                // Otros errores
+                return res.status(500).json({
+                  message: `Error al eliminar el evento de Google Calendar.`,
+                  error: err.message,
+                });
+              }
             }
           }
         }

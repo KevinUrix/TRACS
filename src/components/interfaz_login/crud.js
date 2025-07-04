@@ -147,7 +147,7 @@ export default function Crud() {
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }
@@ -199,7 +199,7 @@ export default function Crud() {
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }
@@ -240,7 +240,7 @@ export default function Crud() {
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }
@@ -275,7 +275,7 @@ export default function Crud() {
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }
@@ -316,7 +316,7 @@ export default function Crud() {
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }

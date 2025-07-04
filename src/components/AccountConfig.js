@@ -66,14 +66,19 @@ export default function AccountConfig() {
       setUsernameMessage(res.data.message);
       setUserInfo((prev) => ({ ...prev, username: newUsername }));
       localStorage.clear();
-      toast.success("Se cerrará su sesión.",  {autoClose: 300});
+      toast.success("Se cerrará su sesión.",  {autoClose: 400});
       setTimeout(() => {
         window.location.href = "/";
-      }, 800);
+      }, 900);
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
           navigate("/");
+          return;
+        }
+        else if (err.response.status === 400) {
+          localStorage.clear();
+          window.location.href = '/';
           return;
         }
         setUsernameMessage(err.response.data.message);
@@ -116,7 +121,7 @@ export default function AccountConfig() {
       setNewPassword('');
       setConfirmPassword('');
       localStorage.clear();
-      toast.success("Se cerrará su sesión.", {autoClose: 300});
+      toast.success("Se cerrará su sesión.", {autoClose: 400});
       setTimeout(() => {
         window.location.href = "/";
       }, 800);
@@ -124,6 +129,11 @@ export default function AccountConfig() {
       if (err.response) {
         if (err.response.status === 403) {
           navigate("/");
+          return;
+        }
+        else if (err.response.status === 400) {
+          localStorage.clear();
+          window.location.href = '/';
           return;
         }
         setPasswordMessage(err.response.data.message);

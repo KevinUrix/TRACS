@@ -82,8 +82,9 @@ export default function Reports() {
           return;
         }
         else if (response.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
+          return;
         }
         throw new Error(errorData.error || 'Error al guardar ticket');
       }

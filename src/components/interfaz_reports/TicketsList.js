@@ -96,7 +96,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }
@@ -131,7 +131,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
           return;
         }

@@ -52,10 +52,12 @@ export default function Registro() {
       if (!res.ok) {
         if (res.status === 403) {
           navigate("/");
+          return;
         }
         else if (res.status === 400) {
-          localStorage.removeItem('token');
+          localStorage.clear();
           window.location.href = '/';
+          return;
         }
         else {
           setError(data.error || 'Error al registrar usuario');

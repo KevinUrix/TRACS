@@ -109,12 +109,6 @@ export default function AppContent() {
   }, []);
 
 
-  // SOLO PARA DESARROLLO
-  useEffect(() => {
-    window.socket = socket;
-  }, []);
-
-
   return (
     <>
       <div className="bg-gray-100 flex">

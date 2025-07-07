@@ -5,7 +5,7 @@ import API_URL from '../config/api';
 
 
 import axios from 'axios';
-import '../components/interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
+import './interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
 
 export default function AccountConfig() {
     const [userInfo, setUserInfo] = useState({ username: '', role: '' });

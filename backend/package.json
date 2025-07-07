@@ -1,10 +1,9 @@
 {
   "name": "quill-server",
-  "version": "1.0.0",
+  "version": "1.7.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^1.8.4",
@@ -25,8 +24,5 @@
     "pg": "^8.16.0",
     "puppeteer": "^24.4.0",
     "socket.io": "^4.8.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
   }
 }

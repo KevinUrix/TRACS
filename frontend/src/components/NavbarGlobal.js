@@ -1,6 +1,6 @@
 import { useState} from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
-import '../components/interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
+import './interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
 import { toast } from 'react-toastify';
 import LoginLogoutButton from './LoginLogoutButton';
 import AccountConfigButton from './AccountConfigButton';

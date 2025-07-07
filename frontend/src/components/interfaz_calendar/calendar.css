@@ -47,19 +47,19 @@ select:focus, textarea:focus {
   z-index: 0;
 }
 
-.background-image-container::before {
+/* .background-image-container::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url('/public/cucei-logo.webp'); /* <- ruta corregida */
-  background-size: 40rem;              /* Tamaño fijo en píxeles */
+  background-image: url('/public/cucei-logo.webp');
+  background-size: 40rem;              
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
   user-select: none;
-}
+} */
 
 
 /* Main content */

@@ -67,7 +67,7 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
         />
         <button
           onClick={handleSearch}
-          className="search-button ml-2 p-2 rounded bg-[#1e293b] hover:bg-[#506d9d] text-white"
+          className="search-button ml-2 p-2 rounded background-button5 text-white"
           title="Buscar"
         >
           <svg

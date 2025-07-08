@@ -61,7 +61,6 @@ select:focus, textarea:focus {
   user-select: none;
 }
 
-
 /* Main content */
 .main-content {
   display: flex;
@@ -69,6 +68,7 @@ select:focus, textarea:focus {
   width: 100%;
   margin-top: 4rem; /* Para que no se sobreponga con el navbar */
   overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  background-color: #e3e9f6;
 }
 
 .main-content2 {
@@ -106,12 +106,12 @@ select:focus, textarea:focus {
 
 .navbar {
   width: 100%;
-  background-color: #1e3a8a;
+  background: linear-gradient(to right, #612937, #351b51, #0a152d, #0f2147, #132654, #1c3a7d, #254da7);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.55rem 0.375rem rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -476,7 +476,7 @@ select:focus, textarea:focus {
 .select-container select {
   appearance: none;
   padding: 0.6rem 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 0.6rem;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -484,32 +484,39 @@ select:focus, textarea:focus {
   background-position: right 0.75rem center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
-  background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   padding-right: 2.5rem;
   cursor: pointer;
 }
 
-.select-container select:focus {
-  outline: none;
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
-  background-color: #ffffff; /* Si alejas el mouse, se cambia el color del select y sus opciones.*/
-}
 
-.select-container select:hover {
-  background-color: #f3f4f6;
-}
 
 /* Colores personalizados */
 .select-container .cycle-select {
-  background-color: #a9d4fc;
-  border-color: #64b6fa;
+  font-weight: 500;
+  color:black;
+  background-color: #f4e1e5;
+  border-color: #ce3a5f;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23cc3366' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
 
+.select-container .cycle-select:hover {
+  background-color: #e8b6c4; /* más claro y vibrante */
+  border-color: #c54968;
 }
 
 .select-container .building-select {
-  background-color: #b2fcb2;
-  border-color: #72d276;
+  font-weight: 500;
+  color:black;
+  background-color: #e6ddeb;
+  border-color: #a35bd0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg fill='purple' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+.select-container .building-select:hover {
+  background-color: #cfb3e1; /* más claro y vibrante */
+  border-color: #c28ce4;     /* mismo estilo que el botón5 */
 }
 
 .building-select::disabled {
@@ -517,8 +524,17 @@ select:focus, textarea:focus {
 }
 
 .select-container .day-select {
-  background-color: #fff7aa;
-  border-color: #feee56;
+  font-weight: 500;
+  color:black;
+  background-color: #eae8f5;
+  border-color: #5d4aac;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg fill='blue' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+.select-container .day-select:hover {
+  background-color: #cac4e7; /* más claro y vibrante */
+  border-color: #7965c9;     /* mismo estilo que el botón5 */
 }
 
 .select-container span {
@@ -951,4 +967,49 @@ input[type="password"] {
   .background-image-container::before {
     background-image: none;
   }
+}
+
+
+.background-Selects{
+  background: linear-gradient(to right, #612937, #351b51, #0a152d, #0f2147, #132654, #1c3a7d, #254da7);
+}
+
+.background-button1 {
+  background-color: #A12D4A;
+  transition: background-color 0.3s ease;
+}
+.background-button1:hover {
+  background-color: #d73465; /* un poco más claro */
+}
+
+.background-button2 {
+  background-color: #7A30A9;
+  transition: background-color 0.3s ease;
+}
+.background-button2:hover {
+  background-color: #a534d6; /* igual que el siguiente para mantener armonía */
+}
+
+.background-button3 {
+  background-color: #4629ba;
+  transition: background-color 0.3s ease;
+}
+.background-button3:hover {
+  background-color: #5b40c8; /* más vibrante */
+}
+
+.background-button4 {
+  background-color: #1A7D61;
+  transition: background-color 0.3s ease;
+}
+.background-button4:hover {
+  background-color: #2FBF8F; /* verde más claro y brillante */
+}
+
+.background-button5 {
+  background-color: #19294f;
+  transition: background-color 0.3s ease;
+}
+.background-button5:hover {
+  background-color: #264180; /* más brillante, casi azul cielo */
 }

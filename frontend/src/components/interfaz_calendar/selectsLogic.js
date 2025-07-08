@@ -235,7 +235,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
             <option value="">Cargando ciclos...⌛</option> // Mensaje de carga
           ) : (
             <>
-              <option value="" disabled>Selecciona un ciclo 📅</option>
+              <option className='text-gray-900' value="" disabled>Selecciona un ciclo 📅</option>
               {cycle.map((cycle) => (
                 <option key={cycle.value} value={cycle.value}>{cycle.text}</option>
               ))}
@@ -248,7 +248,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           className="building-select sm:w-auto select-responsive"
           disabled={!selectedCycle}
         >
-          <option value="" disabled>Selecciona un edificio 🏢</option>
+          <option className='text-gray-900' value="" disabled>Selecciona un edificio 🏢</option>
             {building.map((building, index) => (
               <option key={index} value={building.value}>{building.text}</option>
             ))}

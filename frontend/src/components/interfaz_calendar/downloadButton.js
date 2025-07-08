@@ -27,7 +27,7 @@ export default function DownloadButton({ onDownload }) {
     <div className="relative">
       <div className="relative group">
         <button
-          className="bg-customBgGreen500 hover:bg-customBgGreen600 rounded-full px-5 py-2 shadow-md text-white transition duration-200 flex items-center justify-center space-x-2"
+          className="background-button4 rounded-full px-5 py-2 shadow-md text-white transition duration-200 flex items-center justify-center space-x-2"
           onClick={toggleDownload}
           id="createJSON"
           >

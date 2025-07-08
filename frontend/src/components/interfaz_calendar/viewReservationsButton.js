@@ -222,7 +222,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
       <div className="relative group">
         <button
           onClick={openPopup}
-          className="bg-customBgBlue500 hover:bg-customBgBlue600 rounded-full px-4 py-2 shadow-md text-white transition duration-200"
+          className="background-button3 rounded-full px-4 py-2 shadow-md text-white transition duration-200"
         >
           <b>Ver reservas 📇</b>
         </button>

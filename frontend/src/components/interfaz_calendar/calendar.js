@@ -528,7 +528,7 @@ export default function Calendar() {
         <div className="main-content background-image-container">
           {/*<NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>*/}
           <div className="select-content">
-            <div className="bg-gray-200 rounded-lg shadow-md z-2">
+            <div className="background-Selects shadow-md z-2">
               <SelectsLogic
                 onUpdateCycle={setSelectedCycle}
                 onUpdateBuilding={setSelectedBuilding}
@@ -540,7 +540,7 @@ export default function Calendar() {
               />
             </div>
           </div>
-          <div className="table-container mt-1">
+          <div className="table-container">
             <table className="schedule-table" id="schedule-table">
               <thead>
                 <tr className="table-header">

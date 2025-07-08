@@ -86,7 +86,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
 
         {/* Menú hamburguesa desplegado en móvil */}
         {menuOpen && (
-          <div className="mobile-menu">
+          <div className="mobile-menu background-Selects">
             {/* Links y botón logout/login */}
             {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
               <>

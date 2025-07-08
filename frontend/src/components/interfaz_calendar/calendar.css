@@ -47,11 +47,11 @@ select:focus, textarea:focus {
   z-index: 0;
 }
 
-/* .background-image-container::before {
+.background-image-container::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url('/public/cucei-logo.webp');
+  background-image: url('/public/cucei-logo.png');
   background-size: 40rem;              
   background-position: center center;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ select:focus, textarea:focus {
   z-index: -1;
   pointer-events: none;
   user-select: none;
-} */
+}
 
 
 /* Main content */
@@ -863,6 +863,7 @@ select:focus, textarea:focus {
   }
 }
 
+
 /* Pantallas pequeñas en horizontal: una fila + scroll horizontal */
 @media (max-width: 1550px) {
   .selects-container-responsive {
@@ -944,4 +945,10 @@ input[type="password"]::-webkit-textfield-decoration-container {
 input[type="password"] {
   appearance: none;
   -webkit-appearance: none;
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+  .background-image-container::before {
+    background-image: none;
+  }
 }

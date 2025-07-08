@@ -426,7 +426,7 @@ export default function Crud() {
                 <h3 className="text-xl font-semibold mb-4 text-center text-blue-800">EDIFICIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
-                    className="w-[170px] bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 transition"
+                    className="bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 transition"
                     onClick={handleAddBuilding}
                   >
                     Agregar nuevo edificio

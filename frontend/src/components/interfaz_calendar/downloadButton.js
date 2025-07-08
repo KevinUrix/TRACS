@@ -27,11 +27,11 @@ export default function DownloadButton({ onDownload }) {
     <div className="relative">
       <div className="relative group">
         <button
-          className="bg-green-500 hover:bg-green-600 rounded-full px-10 py-2 shadow-md text-white transition duration-200 flex items-center justify-center space-x-2"
+          className="bg-customBgGreen500 hover:bg-customBgGreen600 rounded-full px-5 py-2 shadow-md text-white transition duration-200 flex items-center justify-center space-x-2"
           onClick={toggleDownload}
           id="createJSON"
           >
-          <b>JSON</b>
+          <b>Archivos</b>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
             d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
@@ -56,7 +56,7 @@ export default function DownloadButton({ onDownload }) {
             <h2 className="font-semibold">Instrucciones de Uso</h2>
             <ul className="list-disc list-inside">
               <li>Selecciona un ciclo.</li>
-              <li>Presiona "Descargar JSONS".</li>
+              <li>Presiona "Descargar archivos".</li>
             </ul>
             <div className="modal-buttons-download flex gap-4 mt-4">
               {/* Botón Cancelar */}
@@ -78,7 +78,7 @@ export default function DownloadButton({ onDownload }) {
                   isLoading ? 'bg-blue-300 cursor-not-allowed' : 'bg-blue-500'
                 } text-white whitespace-normal break-words hover:bg-blue-600 transition duration-200`}
               >
-                {isLoading ? 'Descargando...' : 'Descargar JSONS'}
+                {isLoading ? 'Descargando...' : 'Descargar archivos'}
               </button>
             </div>
 

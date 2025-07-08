@@ -296,7 +296,9 @@ export default function Calendar() {
           console.error("El archivo local no contiene un array válido:", localData);
         }
       } catch (error) {
-        toast.error("Error al cargar archivo local de respaldo. SIIAU no responde y no existen archivos del ciclo en el servidor.");
+        if (!error.message.includes("Archivo local no encontrado")) {
+          toast.error("Error al cargar archivo local de respaldo. SIIAU no responde y no existen archivos del ciclo en el servidor.");
+        }
         console.error("Error al cargar archivo local de respaldo.", error);
         setSchedule([]);
       }
@@ -522,8 +524,8 @@ export default function Calendar() {
   return (
     <>
       <div className="calendar-container">
-        <div className="main-content">
-        {/* <div className="main-content background-image-container"> */}
+        {/* <div className="main-content"> */}
+        <div className="main-content background-image-container">
           {/*<NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>*/}
           <div className="select-content">
             <div className="bg-gray-200 rounded-lg shadow-md z-2">

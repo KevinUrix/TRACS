@@ -1,9 +1,6 @@
 const Redis = require('ioredis');
 
-const redis = new Redis({
-  host: process.env.REDIS_HOST || '127.0.0.1',  // la IP del servidor Redis
-  port: process.env.REDIS_PORT || 6379,
-  password: process.env.REDIS_PASSWORD,
+const redis = new Redis(process.env.REDIS_HOST, {
   retryStrategy(times) {
     // if (times > 10) return null; deja de reconectar después de 10 intentos
     return Math.min(times * 100, 5000); // hasta 5 segundos entre reintentos

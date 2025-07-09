@@ -344,12 +344,12 @@ export default function Crud() {
         <div className="pt-12 p-4 ml-4 mr-4">
           
           <div className="bg-white p-4 rounded-lg shadow-md custom-shadow-border-reports"> {/* Cuadro blanco para encapsular todo.*/}
-            <h2 className="text-3xl font-bold mb-8 tracking-wide text-center">Administración</h2>
-            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }}  />
+            <h2 className="text-3xl font-bold mb-8 tracking-wide text-center text-purple-900">Administración</h2>
+            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
             <div className="flex flex-col md:flex-row md:flex-wrap gap-8">
               {/* Tabla de Usuarios */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-4 text-center text-blue-800">USUARIOS</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center text-pink-800">USUARIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
                     onClick={() => navigate('/registro')}
@@ -389,7 +389,7 @@ export default function Crud() {
                           <td className="py-2.5 px-4">
                             <button
                               onClick={() => handleDeleteUser(user)}
-                              className="bg-red-500 text-white px-3 py-1.5 rounded hover:bg-red-600 transition w-28"
+                              className="background-button6 text-white px-3 py-1.5 rounded hover:bg-red-600 transition w-28"
                             >
                               🗑️ Eliminar
                             </button>
@@ -423,7 +423,7 @@ export default function Crud() {
 
               {/* Tabla de Edificios */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-4 text-center text-blue-800">EDIFICIOS</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center text-pink-800">EDIFICIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
                     className="bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 transition"
@@ -449,13 +449,13 @@ export default function Crud() {
                           <td className="py-2.5 px-4">
                             <button
                               onClick={() => handleEditBuilding(building)}
-                              className="bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700 transition mr-2 edit-button-buildings w-28"
+                              className="background-button3 text-white px-3 py-1.5 rounded hover:bg-blue-700 transition mr-2 edit-button-buildings w-28"
                             >
                               ✏️ Editar
                             </button>
                             <button
                               onClick={() => handleDeleteBuilding(building)}
-                              className="bg-red-500 text-white px-3 py-1.5 rounded hover:bg-red-600 transition delete-button-buildings w-28"
+                              className="background-button6 text-white px-3 py-1.5 rounded hover:bg-red-600 transition delete-button-buildings w-28"
                             >
                               🗑️ Eliminar
                             </button>

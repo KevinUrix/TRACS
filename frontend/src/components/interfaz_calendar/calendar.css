@@ -19,19 +19,22 @@ form label {
 }
 
 input,
-select {
+select,
+textarea {
   padding: 0.5rem 0.75rem;
-  /*margin-top: 0.5rem;*/
-  border: 1px solid #cbd5e1;
+  border: 1px solid #c1c1c1;
   border-radius: 0.5rem;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Estado focus con “ring” azul */
 input:focus,
-select:focus, textarea:focus {
-  border-color: #2563eb;
-  outline: none;
+select:focus,
+textarea:focus {
+  outline: none;                        /* focus:outline-none */
+  border-color: #4629ba9d;                /* mantienes tu color de borde si quieres */
+  box-shadow: 0 0 0 2px #5d3fd7c9;        /* focus:ring-2 + focus:ring-blue-400 */
 }
 
 /* Container del calendario */
@@ -197,8 +200,8 @@ select:focus, textarea:focus {
 }
 
 .search-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+  border-color: #4629ba;
+  box-shadow: 0 0 0 3px #5231d6;
 }
 
 .search-button {
@@ -241,7 +244,6 @@ select:focus, textarea:focus {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #182f6e;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
@@ -453,7 +455,7 @@ select:focus, textarea:focus {
 /*-----------------------------------------------------------------------------------*/
 
 .reserve-button {
-  background-color: #4490c0;
+  background-color: #4629ba;
   color: white;
   border: none;
   border-radius: 0.3125rem;
@@ -463,7 +465,7 @@ select:focus, textarea:focus {
 }
 
 .reserve-button:hover {
-  background-color: #5DADE2;
+  background-color: #7157da;
 }
 
 .select-container {
@@ -550,6 +552,7 @@ select:focus, textarea:focus {
   left: 0;
   width: 100%;
   height: 100%;
+  margin-top: 12px;
   background: rgba(30, 41, 59, 0.5);
   display: flex;
   justify-content: center;
@@ -567,13 +570,13 @@ select:focus, textarea:focus {
   max-height: 85vh;
   overflow-y: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  border: 2px solid #1e293b;
+  border: 2px solid #4629ba;
 }
 
 .popup-content h3 {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #1e293b;
+  color: #402c8f;
   margin-bottom: 1rem;
   text-align: center;
   overflow-wrap: break-word;
@@ -590,10 +593,10 @@ select:focus, textarea:focus {
   grid-template-columns: 1fr 1fr;
   gap: 1rem 1rem;
   margin-bottom: 1rem;
-  background-color: #f8fafc;
+  background-color: #f4f2fd;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
-  border: 1px solid #367bd0;
+  border: 1px solid #4629ba;
   font-size: 1rem;
   word-wrap: break-word; /* Permite envolver contenido largo */
 }
@@ -656,7 +659,7 @@ select:focus, textarea:focus {
   justify-content: center;
   align-items: flex-start; /* <-- cambiar aquí */
   padding-top: 80px; /* <-- agregar para controlar la distancia */
-  z-index: 1000;
+  z-index: 99;
   animation: fadeIn 0.4s ease-out;
   backdrop-filter: blur(1px);
 }
@@ -667,7 +670,7 @@ select:focus, textarea:focus {
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   /*font-family: 'Georgia', 'Times New Roman', serif;*/
-  border: 2px solid #1e293b;
+  border: 2px solid #4629ba;
   width: 95%;
   max-width: 600px;
   max-height: 80%;
@@ -679,7 +682,7 @@ select:focus, textarea:focus {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #1e293b;
+  color: #5625aa;
   text-align: center;
 }
 /*-----------------------------*/
@@ -767,11 +770,11 @@ select:focus, textarea:focus {
 }
 
 .save-button {
-  background-color: #66b3ff; /* Azul para el botón de aceptar */
+  background-color: #4629ba; /* Azul para el botón de aceptar */
 }
 
 .save-button:hover {
-  background-color: #3388cc; /* Azul más oscuro en hover */
+  background-color: #593ccd; /* Azul más oscuro en hover */
 }
 
 .save-button:active {
@@ -780,7 +783,7 @@ select:focus, textarea:focus {
 
 .custom-shadow-border {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  border: 3px solid rgb(54, 79, 119);
+  border: 3px solid #4629ba;
 }
 
 .custom-shadow-crud {
@@ -982,6 +985,11 @@ input[type="password"] {
   background-color: #d73465; /* un poco más claro */
 }
 
+.background-button1-N {
+  background-color: #a7566a;
+  transition: background-color 0.3s ease;
+}
+
 .background-button2 {
   background-color: #7A30A9;
   transition: background-color 0.3s ease;
@@ -995,7 +1003,12 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button3:hover {
-  background-color: #5b40c8; /* más vibrante */
+  background-color: #6a50d2; /* más vibrante */
+}
+
+.background-button3-N {
+  background-color: #8171c0;
+  transition: background-color 0.3s ease;
 }
 
 .background-button4 {
@@ -1007,9 +1020,25 @@ input[type="password"] {
 }
 
 .background-button5 {
-  background-color: #19294f;
+  background-color: #172649;
   transition: background-color 0.3s ease;
 }
 .background-button5:hover {
-  background-color: #264180; /* más brillante, casi azul cielo */
+  background-color: #1f3362; /* más brillante, casi azul cielo */
+}
+
+.background-buttonS {
+  background-color: #c8c2df;
+  transition: background-color 0.3s ease;
+}
+.background-buttonS:hover {
+  background-color: #aaa6b8; /* más vibrante */
+}
+
+.background-button6 {
+  background-color: #e3426a;
+  transition: background-color 0.3s ease;
+}
+.background-button6:hover {
+  background-color: #eb628b; /* un poco más claro */
 }

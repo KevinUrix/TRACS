@@ -81,8 +81,8 @@ return (
 
     {/* Capa frontal (formulario) */}
     <div className="relative flex justify-center items-center h-full">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border-reports">
-        <h2 className="text-2xl font-bold mb-4">Iniciar Sesión</h2>
+      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border">
+        <h2 className="text-2xl font-bold mb-4 text-purple-800">Iniciar Sesión</h2>
 
         {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
 
@@ -110,7 +110,7 @@ return (
                 });
               }
             }}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg"
             placeholder="Ingresa tu nombre de usuario"
             required
           />
@@ -127,7 +127,7 @@ return (
               const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
               setPassword(filtered);
             }}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg"
             placeholder="Ingresa tu contraseña"
             required
           />
@@ -153,7 +153,7 @@ return (
 
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 mb-2"
+          className="w-full background-button3 text-white py-2 px-4 rounded-lg mb-2"
           disabled={isSaving}
         >
           Iniciar Sesión

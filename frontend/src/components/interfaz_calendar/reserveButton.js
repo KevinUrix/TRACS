@@ -344,7 +344,7 @@ export default function ReserveButton({
           <div className="modal-buttons">
             <button
               type="button"
-              className="cancel-button"
+              className="background-button1"
               onClick={handleCloseModal}
             >
               Cancelar

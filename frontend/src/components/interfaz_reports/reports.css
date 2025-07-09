@@ -28,81 +28,6 @@ body{
   /*margin-top: 4rem; /* Para que no se sobreponga con el navbar */
 }
 
-/* Navbar */
-
-/*.navbar-reports {
-  width: 100%;
-  background-color: #1e3a8a; /* Azul más oscuro, más corporativo 
-  padding: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  gap: 1rem; /* Espaciado entre elementos 
-  overflow: visible;
-}
-
-.navbar-brand-reports{
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.navbar-brand:hover {
-  color: #8abbee; /* o el color que prefieras 
-}
-
-.navbar-container-reports {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  gap: 1rem; /* Espaciado entre elementos 
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera 
-}
-
-.nav-reports-links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-reports-link {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem; /* Redondeado suave tipo cápsula 
-  transition: background-color 0.3s ease;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-reports-link:hover {
-  background-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido 
-}
-
-.nav-reports-link.active {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-/*-------------------------------------------------------*/
-
 .select-container-reports {
   display: flex;
   align-items: center;
@@ -120,35 +45,41 @@ body{
   background-position: right 0.75rem center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
-  background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   padding-right: 2.5rem;
   cursor: pointer;
 }
 
-.select-container-reports select:focus {
-  outline: none;
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
-  background-color: #f9f9f9;
-}
-
-.select-container-reports select:hover {
-  background-color: #f3f4f6;
-}
-
 .select-container-reports .building-select {
-  background-color: #b2fcb2;
-  border-color: #72d276;
+  background-color: #f4e1e5;
+  border-color: #ce3a5f;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23cc3366' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+.select-container-reports .building-select:hover {
+  background-color: #e8b6c4; /* más claro y vibrante */
+  border-color: #c54968;
 }
 
 .select-container-reports .status-select {
-  background-color: #ffdaaa;
-  border-color: #feb856;
+  background-color: #e6ddeb;
+  border-color: #a35bd0;
+  background-image: url("data:image/svg+xml,%3Csvg fill='purple' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+.select-container-reports .status-select:hover {
+  background-color: #cfb3e1; /* más claro y vibrante */
+  border-color: #c28ce4;
 }
 
 .select-container-reports .category-select {
-  background-color: #a9d4fc;
-  border-color: #64b6fa;
+  background-color: #eae8f5;
+  border-color: #5d4aac;
+  background-image: url("data:image/svg+xml,%3Csvg fill='blue' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+.select-container-reports .category-select:hover {
+  background-color: #d7d2f4;
+  border-color: #5d4aac;
 }
 
 .select-container-reports span {
@@ -159,11 +90,11 @@ body{
 
 .custom-shadow-border-reports {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  border: 3px solid rgb(54, 79, 119);
+  border: 3px solid #4629ba;
 }
 
 .custom-border-text-area{
-  border: 3px solid rgb(54, 79, 119);
+  border: 3px solid #4629ba;
 }
 
 .custom-border-text-area::selection {
@@ -183,7 +114,7 @@ body{
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(51, 70, 168) 50%, rgb(18, 38, 83) 50%);
+  background-image: linear-gradient(-60deg, #4629ba 50%, #6a57b3 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -223,3 +154,29 @@ body{
     transform:translateX(25%);
   }
 }
+
+.background-etiqueta1 {
+  background-color: #d63059;
+  transition: background-color 0.3s ease;
+}
+
+.background-etiqueta2 {
+  background-color: #7A30A9;
+  transition: background-color 0.3s ease;
+}
+
+.background-etiqueta3 {
+  background-color: #4629ba;
+  transition: background-color 0.3s ease;
+}
+
+.background-etiqueta4 {
+  background-color: #1A7D61;
+  transition: background-color 0.3s ease;
+}
+
+.background-etiqueta5 {
+  background-color: #cf7820;
+  transition: background-color 0.3s ease;
+}
+

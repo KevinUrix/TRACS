@@ -149,8 +149,8 @@ export default function AccountConfig() {
 
       {/* Columna izquierda: Configuración de cuenta */}
       <div className="ml-5 mr-5 mb-2 mx-auto mt-10 p-6 bg-white shadow-md rounded-lg custom-shadow-border">
-        <h2 className="text-2xl text-blue-900 text-center font-bold mb-4">Configuración de Cuenta</h2>
-        <hr className="my-4 border-t-2 border-blue-900 mb-7" />
+        <h2 className="text-2xl text-purple-900 text-center font-bold mb-4">Configuración de Cuenta</h2>
+        <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
         <p className="mb-4 text-center text-xl">Configura algunos datos de tu cuenta.</p>
 
         {/* Mostrar rol y usuario actual */}
@@ -190,7 +190,7 @@ export default function AccountConfig() {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 max-w-sm rounded text-lg"
+            className="background-button3 text-white px-4 py-3 max-w-sm rounded text-lg"
           >
             Guardar nuevo nombre
           </button>
@@ -199,7 +199,7 @@ export default function AccountConfig() {
           )}
         </form>
 
-        <hr className="my-4 border-t-2 border-gray-300 mb-7" />
+        <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(142, 127, 206)' }} />
 
         {/* Cambiar contraseña */}
         <form onSubmit={handlePasswordChange} className="flex flex-col items-center w-full max-w-md mx-auto">
@@ -267,7 +267,7 @@ export default function AccountConfig() {
 
           <button
             type="submit"
-            className="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded text-lg"
+            className="background-button4 text-white px-4 py-3 rounded text-lg"
           >
             Cambiar contraseña
           </button>

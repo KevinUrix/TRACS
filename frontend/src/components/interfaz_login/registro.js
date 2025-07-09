@@ -86,9 +86,10 @@ export default function Registro() {
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
+
       <div className="relative flex justify-center items-center min-h-screen py-7">
-        <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-90 z-10 custom-shadow-border-reports">
-          <h2 className="text-2xl font-bold mb-4">Registrar Usuario</h2>
+        <form onSubmit={handleRegister} className="bg-white p-8 rounded-lg shadow-lg w-90 z-10 custom-shadow-border">
+          <h2 className="text-2xl font-bold mb-4 text-purple-800">Registrar Usuario</h2>
 
           {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
           {success && <div className="mb-4 text-green-600 font-semibold">{success}</div>}
@@ -121,7 +122,7 @@ export default function Registro() {
                   });
                 }
               }}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg"
               placeholder="Nombre de usuario"
               required
             />
@@ -139,7 +140,7 @@ export default function Registro() {
                   const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
                   setPassword(filtered);
                 }}
-                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg"
                 placeholder="Contraseña"
                 required
               />
@@ -174,7 +175,7 @@ export default function Registro() {
                 const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
                 setConfirmPassword(filtered);
               }}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg"
               placeholder="Repite la contraseña"
               required
             />
@@ -182,7 +183,7 @@ export default function Registro() {
 
           <button
             type="submit"
-            className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300 mb-2"
+            className="w-full background-button3 text-white py-2 px-4 rounded-lg mb-2"
             disabled={isSaving}
           >
             Crear cuenta

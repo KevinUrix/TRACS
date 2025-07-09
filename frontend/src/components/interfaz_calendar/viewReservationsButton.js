@@ -231,7 +231,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
 
       {showPopup && (
         <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content relative p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
+          <div className="popup-content relative p-6 rounded-lg shadow-lg max-w-xs" onClick={(e) => e.stopPropagation()}>
             <button className="close-popup" onClick={closePopup}>✖</button>
 
             <h3>Reservas para ciclo {selectedCycle}, edificio {selectedBuilding}:</h3>
@@ -257,13 +257,13 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
                       {(userRole === 'superuser' || userRole === 'user') && (
                         <>
                           <button
-                            className="px-4 py-2 bg-red-500 text-white rounded-md"
+                            className="px-4 py-2 background-button1 text-white rounded-md"
                             onClick={() => deleteReservation(res)}
                           >
                             Eliminar
                           </button>
                           <button
-                            className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                            className="px-4 py-2 background-button3 text-white rounded-md"
                             onClick={() => handleModify(res)}
                           >
                             Modificar

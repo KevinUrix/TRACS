@@ -200,7 +200,7 @@ export default function Reports() {
               </div>
             </div>
             {/* Lista de tickets */}
-          <div className="bg-white p-2 mb-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border-reports"> 
+          <div className="bg-white p-2 mb-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border"> 
             <TicketsList
               building={selectedBuilding} // puede estar vacío
               refresh={refreshTickets}

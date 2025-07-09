@@ -150,10 +150,10 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-semibold mb-4 text-center tracking-wide">
+      <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900 tracking-wide">
         {building ? `Tickets para ${building}` : 'Todos los tickets'}
       </h2>
-      <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+      <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
       {!loading && tickets.length > 0 && filteredTickets.length === 0 && (
         <p>No se encontraron tickets con los filtros aplicados.</p>
@@ -175,16 +175,16 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               <div key={id} onClick={() =>
                   setSelectedTicket({ id, building, room, title, report, priority, created_at, created_by, status, category, modified_by })
                 }
-                className="relative bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100 custom-shadow-border-reports z-2 w-98 h-88"
+                className="relative bg-white p-4 shadow rounded cursor-pointer hover:bg-gray-100 custom-shadow-border z-2 w-98 h-88"
                 >
                 {/* CATEGORÍA ESTILO ETIQUETA */}
                 <div
                   className={`
                     absolute -left-3 px-8 py-2 rounded-br text-white font-semibold rounded book-style 
-                    ${category.includes('Mantenimiento') ? 'bg-yellow-600' :
-                      category.includes('Limpieza') ? 'bg-green-600' :
-                      category.includes('Hardware') ? 'bg-red-600' :
-                      category.includes('Software') ? 'bg-indigo-700' :
+                    ${category.includes('Mantenimiento') ? 'background-etiqueta5' :
+                      category.includes('Limpieza') ? 'background-etiqueta4' :
+                      category.includes('Hardware') ? 'background-etiqueta1' :
+                      category.includes('Software') ? 'background-etiqueta3' :
                       'bg-blue-700'}
                   `}
                 >
@@ -203,17 +203,17 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     </span>
                   </p>
                 </div>
-
-                <h2 className="text-xl font-bold text-blue-900 mt-4 mb-2 line-clamp-1">{title}</h2>
                 <div className="flex gap-28 mb-2">
                   <p><strong>Edificio:</strong> {building}</p>
                   <p><strong>Salón:</strong> {room}</p>
                 </div>
+
+                <h2 className="text-xl font-bold text-purple-900 mt-4 mb-2 line-clamp-1">{title}</h2>
                 <div className='mb-2'>
                     <p><strong>Reporte:</strong></p>
                     <textarea
                         type="text"
-                        className="w-full p-2 border border-gray-300 rounded resize-none custom-border-text-area"
+                        className="w-full p-2 rounded resize-none custom-border-text-area"
                         value={report}
                         rows={3}
                         readOnly
@@ -250,21 +250,21 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               </div>
             ))}
           </div>
-          <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+          <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
           <div className="flex justify-center items-center gap-4 mt-6">
             <button
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
-              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
+              className="px-4 py-2 background-buttonS rounded disabled:opacity-50"
             >
               Anterior
             </button>
-            <span className="text-sm text-gray-600">Página {currentPage} de {totalPages}</span>
+            <span className="text-sm text-purple-600">Página {currentPage} de {totalPages}</span>
             <button
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
+              className="px-4 py-2 background-buttonS rounded disabled:opacity-50"
             >
               Siguiente
             </button>
@@ -282,7 +282,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 {userRole === 'superuser' && 'Editar ticket'}
                 {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo Ticket'}
               </h2>
-              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
               <div className="flex gap-4 mb-4">
                 <label className="block mb-1 font-bold">
@@ -397,8 +397,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   onClick={handleDelete}
                   className={`px-4 py-2 rounded text-white ${
                     userRole === 'user'
-                      ? 'bg-red-300 cursor-not-allowed'
-                      : 'bg-red-500 hover:bg-red-600'
+                      ? 'background-button1-N cursor-not-allowed'
+                      : 'background-button1'
                   }`}
                   disabled={userRole === 'user'}
                 >
@@ -409,15 +409,15 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   onClick={handleSave}
                   className={`px-4 py-2 rounded text-white ${
                     userRole === 'user'
-                      ? 'bg-blue-300 cursor-not-allowed'
-                      : 'bg-blue-600 hover:bg-blue-700'
+                      ? 'background-button3-N cursor-not-allowed'
+                      : 'background-button3'
                   }`}
                   disabled={userRole === 'user'|| isSaving}
                 >
                   Guardar
                 </button>
               </div>
-              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+              <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
             </form>
             

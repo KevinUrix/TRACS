@@ -46,14 +46,14 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
       <strong>
         <h3>Horarios encontrados:</h3>
       </strong>
-      <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />
+      <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
       {professors.map((professor, idx) => (
         <div key={idx} className="professor-section">
           <strong>
             <h4>{professor}</h4>
           </strong>
-          <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />
+          <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
           <ul>
             {groupedSchedules[professor].map((course, index, arr) => (
               <li key={index}>
@@ -66,7 +66,7 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
             ))}
           </ul>
           {idx < professors.length - 1 && (
-            <hr style={{ margin: '20px 0', borderTop: '2px solid #888' }} />
+            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
           )}
         </div>
       ))}

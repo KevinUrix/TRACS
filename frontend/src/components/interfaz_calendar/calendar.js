@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
 import API_URL from '../../config/api';
@@ -17,13 +17,14 @@ export default function Calendar() {
   const [isStatisticMode, setIsStatisticMode] = useState(false);
   const [buildings, setBuildings] = useState([]);
   const [fullSchedule, setFullSchedule] = useState({});
+  const [isRestored, setIsRestored] = useState(false);
   const cellColorMapRef = useRef({});
+  const restoredStateRef = useRef(null);
   
   
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
-  const navigate = useNavigate();
   const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
 
 
@@ -35,24 +36,41 @@ export default function Calendar() {
 
   /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
   useEffect(() => {
+    // Este obtiene los datos del estado - Login
     if (location.state) {
       setSelectedCycle(location.state.selectedCycle);
       setSelectedBuilding(location.state.selectedBuilding);
+      setIsRestored(true);
+      return;
+    }
+
+    const savedState = sessionStorage.getItem('reservationState');
+
+    if (savedState) {
+      const parsed = JSON.parse(savedState);
+      setSelectedCycle(parsed.selectedCycle);
+      setSelectedBuilding(parsed.selectedBuilding);
+
+      // Guardamos localmente para luego borrar sessionStorage cuando se apliquen
+      restoredStateRef.current = parsed;
+    } else {
+      setIsRestored(true); // nada que restaurar, podemos renderizar ya
     }
   }, [location.state]);
 
+  // Efecto para eliminar sessionStorage cuando el estado se haya aplicado
   useEffect(() => {
-    const savedState = sessionStorage.getItem('reservationState');
-    if (savedState) {
-      const { selectedCycle, selectedBuilding } = JSON.parse(savedState);
-  
-      setSelectedCycle(selectedCycle);
-      setSelectedBuilding(selectedBuilding);
+    if (!restoredStateRef.current) return;
 
-      // Limpiar sessionStorage después de usarlo
+    if (
+      selectedCycle === restoredStateRef.current.selectedCycle &&
+      selectedBuilding === restoredStateRef.current.selectedBuilding
+    ) {
       sessionStorage.removeItem('reservationState');
+      restoredStateRef.current = null;
+      setIsRestored(true);
     }
-  }, []); // Se ejecuta solo una vez cuando el componente se monta
+  }, [selectedCycle, selectedBuilding]);
 
 
   /* ---------- GUARDA ESTADOS ANTES DE CAMBIAR DE PÁGINA ---------- */
@@ -519,7 +537,6 @@ export default function Calendar() {
       document.title = "Quill";
     }
   }, [isStatisticMode, selectedBuilding]);
-
 
   return (
     <>

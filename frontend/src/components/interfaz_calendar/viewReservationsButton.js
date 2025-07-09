@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
 import API_URL from '../../config/api';
 import EditReservationForm from './editReservationForm'; // Importamos el formulario
 
@@ -33,7 +32,6 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
   const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
   const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
-  const navigate = useNavigate();
   
   useEffect(() => {
     if (Array.isArray(reservations)) {

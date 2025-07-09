@@ -1,12 +1,12 @@
-// AppContent.jsx
 import { Routes, Route, useLocation, useNavigate, Navigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { jwtDecode } from 'jwt-decode';
 import { notifyTicket, notifyReserva } from './utils/notificacions';
 import { toast } from 'react-toastify';
 import { Toaster} from 'sonner';
+import Loader from './utils/loader';
 import socket from './utils/socket';
 
 
@@ -26,6 +26,9 @@ export default function AppContent() {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token'));
   const [userRole, setUserRole] = useState(localStorage.getItem('role'));
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
+  const [isLoading, setIsLoading] = useState(true);
+  const isFirstRender = useRef(true);
+
 
   const superUserRoutes = ['/crud', '/registro'];
   const userRoutes = ['/crud', '/configuracion', '/registro', '/reportes'];
@@ -108,50 +111,75 @@ export default function AppContent() {
     };
   }, []);
 
+  
+  useLayoutEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      setIsLoading(false); // Asegura que en primer render esté en false
+      return;
+    }
+
+    setIsLoading(true);
+
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 600);
+
+    return () => clearTimeout(timeout);
+  }, [location.pathname]);
+
 
   return (
-    <>
-      <div className="bg-gray-100 flex">
-        {!shouldHideNavbar && <NavbarGlobal isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} userRole={userRole} setUserRole={setUserRole}/>}
-
-        <div className="flex flex-col w-full">
-          <Routes>
-            <Route path='/' element={<Calendar />} />
-
-            {isLoggedIn && (
-              <>
-                <Route path='/reportes' element={<Reports />} />
-                <Route path='/crud' element={userRole === 'superuser' ? <Crud /> : <Navigate to="/" />} />
-                <Route path='/registro' element={userRole === 'superuser' ? <Registro /> : <Navigate to="/" />} />
-                <Route path='/configuracion' element={<AccountConfig />} />
-              </>
-            )}
-
-
-            <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <Login />}/>
-
-            <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-        </div>
-      </div>
-      <ToastContainer
-        position="top-right"
-        autoClose={2600}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
+  <>
+    {/* Navbar siempre visible */}
+    {!shouldHideNavbar && (
+      <NavbarGlobal
+        isLoggedIn={isLoggedIn}
+        setIsLoggedIn={setIsLoggedIn}
+        userRole={userRole}
+        setUserRole={setUserRole}
       />
-      <Toaster
+    )}
+    <div className="relative flex flex-col w-full bg-gray-100" style={{ minHeight: 'calc(100vh - NAVBAR_HEIGHT_PX)' }}>
+      {isLoading && <Loader />}
+
+      {/* Renderiza los Routes sólo si NO está cargando */}
+        <Routes>
+          <Route path="/" element={<Calendar />} />
+          {isLoggedIn && (
+            <>
+              <Route path="/reportes" element={<Reports />} />
+              <Route path="/crud" element={userRole === 'superuser' ? <Crud /> : <Navigate to="/" />} />
+              <Route path="/registro" element={userRole === 'superuser' ? <Registro /> : <Navigate to="/" />} />
+              <Route path="/configuracion" element={<AccountConfig />} />
+            </>
+          )}
+          <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <Login />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+    </div>
+
+    {/* Toasts */}
+    <ToastContainer
+      position="top-right"
+      autoClose={2600}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="colored"
+    />
+    <Toaster
       richColors
-      position='bottom-right'
+      position="bottom-right"
       duration={4000}
       expand
-      />
-    </>
-  );
+    />
+  </>
+);
+
+
 }

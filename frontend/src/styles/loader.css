@@ -1,0 +1,63 @@
+.contener_general {
+  transform: rotate(45deg);
+  width: 88px;
+  height: 88px;
+  position: relative;
+}
+.contener_mixte {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+}
+.ballcolor {
+  width: 40px;
+  height: 40px;
+}
+.ball_1, .ball_2, .ball_3, .ball_4 {
+  position: absolute;
+  animation: animball_one 1.3s infinite ease-in;
+}
+.ball_1 { border: 1px solid #D73465; top: 0; left: 0; }
+.ball_2 { border: 1px solid #A534D6; top: 0; left: 48px; }
+.ball_3 { border: 1px solid #4629BA; top: 48px; left: 0; }
+.ball_4 { border: 1px solid #2FBF8F; top: 48px; left: 48px; }
+
+@keyframes animball_one {
+  0% { transform: rotate(0deg); }
+  50% { top: 24px; left: 24px; opacity: 0.5; }
+  100% { transform: rotate(360deg); }
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 4.83rem; /* altura exacta de la navbar */
+  left: 0;
+  right: 0;
+  bottom: 0; /* cubrir hasta el final, incluso con scroll */
+  background-color: #e3e9f6;
+  z-index: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all; /* bloquea interacciones si es necesario */
+}
+
+@media (max-width: 768px) {
+  .loader-wrapper {
+    position: fixed;
+    top: 4.23rem; /* altura exacta de la navbar */
+    left: 0;
+    right: 0;
+    bottom: 0; /* cubrir hasta el final, incluso con scroll */
+    background-color: #e3e9f6;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all; /* bloquea interacciones si es necesario */
+  }
+}

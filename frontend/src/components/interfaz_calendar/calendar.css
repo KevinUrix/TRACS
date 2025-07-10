@@ -1036,9 +1036,9 @@ input[type="password"] {
 }
 
 .background-button6 {
-  background-color: #e3426a;
+  background-color: #d83f65;
   transition: background-color 0.3s ease;
 }
 .background-button6:hover {
-  background-color: #eb628b; /* un poco más claro */
+  background-color: #dc5d83; /* un poco más claro */
 }

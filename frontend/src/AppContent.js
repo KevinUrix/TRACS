@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import { Toaster} from 'sonner';
 import Loader from './utils/loader';
 import socket from './utils/socket';
-
+import './styles/toastColors.css';
 
 
 import Calendar from './components/interfaz_calendar/calendar';

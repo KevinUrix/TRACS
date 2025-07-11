@@ -109,7 +109,7 @@ textarea:focus {
 
 .navbar {
   width: 100%;
-  background: linear-gradient(to right, #612937, #351b51, #0a152d, #0f2147, #132654, #1c3a7d, #254da7);
+  background: linear-gradient(to right, #612937, #351b51, #0d1c3b, #0f2147, #132654, #1c3a7d, #254da7);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -974,7 +974,7 @@ input[type="password"] {
 
 
 .background-Selects{
-  background: linear-gradient(to right, #612937, #351b51, #0a152d, #0f2147, #132654, #1c3a7d, #254da7);
+  background: linear-gradient(to right, #572531, #301848, #0a152d, #0e1e40, #132654, #1c3a7d, #254da7);
 }
 
 .background-button1 {
@@ -1016,7 +1016,7 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button4:hover {
-  background-color: #2FBF8F; /* verde más claro y brillante */
+  background-color: #289c75; /* verde más claro y brillante */
 }
 
 .background-button5 {

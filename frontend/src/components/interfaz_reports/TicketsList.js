@@ -2,6 +2,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import API_URL from '../../config/api';
+import PrintTicket from './PrintTicket';
 
 export default function TicketsList({ building, refresh, onRefresh, statusFilter, categoryFilter, dateFilter, dateStart, dateEnd}) {
   const [tickets, setTickets] = useState([]);
@@ -10,6 +11,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const [currentPage, setCurrentPage] = useState(1);
   const [isSaving, setIsSaving] = useState(false);
   const navigate = useNavigate();
+
+  const [ticketToPrint, setTicketToPrint] = useState(null);
   
   const ticketsPerPage = 9;
 
@@ -418,38 +421,51 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     <option value="Media">Media</option>
                     <option value="Alta">Alta</option>
                   </select>
-              <div className="flex justify-end gap-2 mt-4">
-                <button
-                  type='button'
-                  onClick={() => setSelectedTicket(null)}
-                  className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-                >
-                  Cancelar
-                </button>
-                <button
-                  type='button'
-                  onClick={handleDelete}
-                  className={`px-4 py-2 rounded text-white ${
-                    userRole === 'user'
-                      ? 'background-button1-N cursor-not-allowed'
-                      : 'background-button1'
-                  }`}
-                  disabled={userRole === 'user'}
-                >
-                  Borrar
-                </button>
-                <button
-                  type='button'
-                  onClick={handleSave}
-                  className={`px-4 py-2 rounded text-white ${
-                    userRole === 'user'
-                      ? 'background-button3-N cursor-not-allowed'
-                      : 'background-button3'
-                  }`}
-                  disabled={userRole === 'user'|| isSaving}
-                >
-                  Guardar
-                </button>
+              <div className="p-2 mt-0 sm:mt-0 md:mt-1 lg:mt-6 w-full overflow-x-auto whitespace-nowrap">
+
+                <div className="flex gap-6 items-center sm:justify-between lg:justify-end min-w-max">
+
+                  <button
+                    type='button'
+                    onClick={() => setSelectedTicket(null)}
+                    className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+                  >
+                    Cancelar
+                  </button>
+
+                  <button
+                    type='button'
+                    onClick={() => setTicketToPrint(selectedTicket)}
+                    className="px-4 py-2 background-button4 text-white rounded"
+                  >
+                    Imprimir
+                  </button>
+
+                  <button
+                    type='button'
+                    onClick={handleDelete}
+                    className={`px-4 py-2 rounded text-white ${
+                      userRole === 'user'
+                        ? 'background-button1-N cursor-not-allowed'
+                        : 'background-button1'
+                    }`}
+                    disabled={userRole === 'user'}
+                  >
+                    Borrar
+                  </button>
+                  <button
+                    type='button'
+                    onClick={handleSave}
+                    className={`px-4 py-2 rounded text-white ${
+                      userRole === 'user'
+                        ? 'background-button3-N cursor-not-allowed'
+                        : 'background-button3'
+                    }`}
+                    disabled={userRole === 'user'|| isSaving}
+                  >
+                    Guardar
+                  </button>
+                </div>
               </div>
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
@@ -457,6 +473,9 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
             
           </div>
         </div>
+      )}
+      {ticketToPrint && (
+        <PrintTicket ticket={ticketToPrint} onClose={() => setTicketToPrint(null)} />
       )}
     </div>
   );

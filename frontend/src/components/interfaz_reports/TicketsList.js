@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import API_URL from '../../config/api';
 
-export default function TicketsList({ building, refresh, onRefresh, statusFilter, categoryFilter}) {
+export default function TicketsList({ building, refresh, onRefresh, statusFilter, categoryFilter, dateFilter, dateStart, dateEnd}) {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(false);
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
@@ -18,7 +18,41 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       statusFilter.toLowerCase() === 'todos' || ticket.status.toLowerCase() === statusFilter.toLowerCase();
     const matchesCategory =
       categoryFilter.toLowerCase() === 'todos' || ticket.category.toLowerCase() === categoryFilter.toLowerCase();
-      return matchesStatus && matchesCategory;
+
+    // Filtro por fecha
+    const createdAt = new Date(ticket.created_at);
+    
+    const today = new Date();
+    let matchesDate = true;
+
+    switch (dateFilter) {
+      case 'dias':
+        matchesDate = createdAt >= new Date(today.setDate(today.getDate() - 7));
+        break;
+      case 'mes':
+        matchesDate = createdAt >= new Date(today.setMonth(today.getMonth() - 1));
+        break;
+      case 'semestre':
+        matchesDate = createdAt >= new Date(today.setMonth(today.getMonth() - 6));
+        break;
+      case 'anio':
+        matchesDate = createdAt >= new Date(today.setFullYear(today.getFullYear() - 1));
+        break;
+      case 'personalizado':
+        if (dateStart && dateEnd) {
+          const dateS = new Date(dateStart);
+          const dateE = new Date(dateEnd);
+          dateE.setHours(23, 59, 59, 999); // incluir hasta el final del día
+          matchesDate = createdAt >= dateS && createdAt <= dateE;
+        } else {
+          matchesDate = true; // si no están ambas fechas aún
+        }
+    break;
+      case 'Todos':
+      default:
+        matchesDate = true;
+    }
+      return matchesStatus && matchesCategory && matchesDate;
   });
 
   const totalPages = Math.max(1, Math.ceil(filteredTickets.length / ticketsPerPage));
@@ -59,7 +93,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   // Resetea a página 1 cuando cambien los filtros
   useEffect(() => {
     setCurrentPage(1);
-  }, [statusFilter, categoryFilter]);
+  }, [statusFilter, categoryFilter, dateFilter]);
 
 
   // Manejar cambios en el formulario de edición

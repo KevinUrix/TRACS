@@ -1,0 +1,17 @@
+.background-aplicar {
+  background-color: #4629ba;
+  transition: background-color 0.3s ease;
+}
+
+.background-aplicar:hover {
+  background-color: #392296;
+}
+
+.background-eliminar {
+  background-color: #d83f65;
+  transition: background-color 0.3s ease;
+}
+
+.background-eliminar:hover {
+  background-color: #ba3758;
+}

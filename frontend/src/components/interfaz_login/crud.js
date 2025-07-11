@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import API_URL from '../../config/api';
+import './crud.css';
 
 export default function Crud() {
   const [users, setUsers] = useState([]);
@@ -389,7 +390,7 @@ export default function Crud() {
                           <td className="py-2.5 px-4">
                             <button
                               onClick={() => handleDeleteUser(user)}
-                              className="background-button6 text-white px-3 py-1.5 rounded hover:bg-red-600 transition w-28"
+                              className="background-eliminar text-white px-3 py-1.5 rounded transition w-28"
                             >
                               🗑️ Eliminar
                             </button>
@@ -449,13 +450,13 @@ export default function Crud() {
                           <td className="py-2.5 px-4">
                             <button
                               onClick={() => handleEditBuilding(building)}
-                              className="background-button3 text-white px-3 py-1.5 rounded hover:bg-blue-700 transition mr-2 edit-button-buildings w-28"
+                              className="background-aplicar text-white px-3 py-1.5 rounded transition mr-2 edit-button-buildings w-28"
                             >
                               ✏️ Editar
                             </button>
                             <button
                               onClick={() => handleDeleteBuilding(building)}
-                              className="background-button6 text-white px-3 py-1.5 rounded hover:bg-red-600 transition delete-button-buildings w-28"
+                              className="background-eliminar text-white px-3 py-1.5 rounded transition delete-button-buildings w-28"
                             >
                               🗑️ Eliminar
                             </button>
@@ -478,7 +479,7 @@ export default function Crud() {
         </div>
         <div className="bg-red-200 p-4 ml-8 mr-8 mb-2 rounded-lg shadow-md border-2 border-red-500">
           <h2 className="text-2xl font-bold mb-2 tracking-wide text-red-900">Advertencia</h2>
-            <p>La eliminación de usuarios y edificios no es información recuperable.<br/>
+            <p className='text-lg'>La eliminación de usuarios y edificios no es información recuperable.<br/>
                 Realizar cambios requiere de autorización previa. Si usted no es un usuario con un rol que permita estos cambios, favor de abandonar este apartado y notificarlo inmediatamente.
             </p>
         </div>
@@ -501,7 +502,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={handleConfirmChange}
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                className="px-4 py-2 background-aplicar text-white rounded"
               >
                 Sí
               </button>
@@ -525,7 +526,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={confirmDeleteUser}
-                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                className="px-4 py-2 background-eliminar text-white rounded"
               >
                 Eliminar
               </button>
@@ -549,7 +550,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={confirmDeleteBuilding}
-                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                className="px-4 py-2 background-eliminar text-white rounded"
               >
                 Eliminar
               </button>
@@ -592,7 +593,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={handleSaveEditBuilding}
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                className="px-4 py-2 background-aplicar text-white rounded"
               >
                 Guardar
               </button>
@@ -628,7 +629,7 @@ export default function Crud() {
               </button>
               <button
                 onClick={handleSaveBuilding}
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                className="px-4 py-2 background-aplicar text-white rounded"
               >
                 Guardar
               </button>

@@ -82,6 +82,17 @@ body{
   border-color: #5d4aac;
 }
 
+.select-container-reports .date-select {
+  background-color: #ddf0ec;
+  border-color: #1A7D61;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%231A7D61' height='16' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+.select-container-reports .date-select:hover {
+  background-color: #1A7D6140;
+  border-color: #1A7D61;
+}
+
 .select-container-reports span {
   font-size: 1rem;
   color: #333;
@@ -180,3 +191,13 @@ body{
   transition: background-color 0.3s ease;
 }
 
+.background-aplicar,
+.background-agregar {
+  background-color: #4629ba;
+  transition: background-color 0.3s ease;
+}
+
+.background-aplicar:hover,
+.background-agregar:hover {
+  background-color: #392296;
+}

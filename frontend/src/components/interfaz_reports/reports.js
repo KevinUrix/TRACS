@@ -27,6 +27,15 @@ export default function Reports() {
 
   const [statusFilter, setStatusFilter] = useState('Todos');
   const [categoryFilter, setCategoryFilter] = useState('Todos');
+  const [dateFilter, setDateFilter] = useState('Todos');
+  const [dateStart, setDateStart] = useState('');
+  const [dateEnd, setDateEnd] = useState('');
+  const [tempDateStart, setTempDateStart] = useState('');
+  const [tempDateEnd, setTempDateEnd] = useState('');
+  const [showCustomDateModal, setShowCustomDateModal] = useState(false);
+  const [showFloatingDateModal, setShowFloatingDateModal] = useState(false);
+  const [dismissedFloatingModal, setDismissedFloatingModal] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -121,10 +130,47 @@ export default function Reports() {
     setCategory('');
   };
 
+  const cancelCustomDateFilter = () => {
+    setShowCustomDateModal(false);
+  
+    // Si el filtro sigue siendo personalizado, muestra la flotante
+    if (dateFilter === 'personalizado') {
+      setShowFloatingDateModal(true);
+    }
+  };
+
+
   const handleBuildingChange = (e) => {
     setSelectedBuilding(e.target.value);
     // Puedes hacer algo adicional aquí si necesitas usar el edificio en el form o ticketList
   };
+
+
+  const applyCustomDateFilter = () => {
+    if (!tempDateStart || !tempDateEnd) {
+      toast.error('Selecciona ambas fechas');
+      return;
+    }
+
+    if (tempDateStart > tempDateEnd) {
+      toast.error('La fecha "Desde" no puede ser mayor que la fecha "Hasta"');
+      return false;  // o evitar aplicar el filtro
+    }
+
+    setDateStart(tempDateStart);
+    setDateEnd(tempDateEnd);
+    setShowCustomDateModal(false);
+    setDateFilter('personalizado');
+    setShowFloatingDateModal(true);
+  };
+
+  useEffect(() => {
+    if (dateFilter === 'personalizado') {
+      setShowFloatingDateModal(true);
+    } else {
+      setShowFloatingDateModal(false);
+    }
+  }, [dateFilter]);
 
 
   useEffect(() => {
@@ -164,6 +210,31 @@ export default function Reports() {
 
                 {/* Contenedor para los dos selects juntos a la derecha */}
                   <select
+                    value={dateFilter}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      if (value === 'personalizado') {
+                        setTempDateStart(dateStart);
+                        setTempDateEnd(dateEnd);
+                        setShowCustomDateModal(true);
+                        setDismissedFloatingModal(false);
+                      } else {
+                        setDateStart('');
+                        setDateEnd('');
+                        setDateFilter(value);
+                      }
+                    }}
+                    className="date-select"
+                  >
+                    <option value="Todos">Todas las fechas 🗓️</option>
+                    <option value="dias">Últimos 7 días 📅</option>
+                    <option value="mes">Último mes 📅</option>
+                    <option value="semestre">Último semestre 📆</option>
+                    <option value="anio">Último año 📆</option>
+                    <option value="personalizado">Rango personalizado ⌛</option>
+                  </select>
+
+                  <select
                     value={categoryFilter}
                     onChange={(e) => setCategoryFilter(e.target.value)}
                     className="category-select"
@@ -189,7 +260,7 @@ export default function Reports() {
                   <button
                     type='button'
                     onClick={() => setShowForm(true)}
-                    className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-6 py-2.5 shadow transition-transform hover:scale-105 whitespace-nowrap"
+                    className="flex items-center gap-2 background-agregar text-white rounded-lg px-6 py-2.5 shadow transition-transform hover:scale-105 whitespace-nowrap"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
@@ -207,6 +278,9 @@ export default function Reports() {
               onRefresh={() => setRefreshTickets(prev => !prev)}
               statusFilter={statusFilter}
               categoryFilter={categoryFilter} // nuevo prop
+              dateFilter={dateFilter}
+              dateStart={dateStart}
+              dateEnd={dateEnd}
             />
           </div>
         </div>
@@ -292,6 +366,67 @@ export default function Reports() {
                 </div>
                 <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
               </form> 
+            </div>
+          </div>
+        )}
+        {showCustomDateModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+            <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
+              <h3 className="text-lg font-bold mb-4">Rango personalizado</h3>
+              <label className="block text-gray-700 font-medium mb-1" htmlFor="from">
+                Desde:
+              </label>
+              <input
+                type="date"
+                value={tempDateStart}
+                onChange={(e) => setTempDateStart(e.target.value)}
+                className="w-full mb-3 p-2 border rounded"
+              />
+              <label className="block text-gray-700 font-medium mb-1" htmlFor="to">
+                Hasta:
+              </label>
+              <input
+                type="date"
+                value={tempDateEnd}
+                onChange={(e) => setTempDateEnd(e.target.value)}
+                className="w-full mb-3 p-2 border rounded"
+              />
+              <div className="flex justify-center gap-4">
+                <button
+                  onClick={cancelCustomDateFilter}
+                  className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={applyCustomDateFilter}
+                  className="px-4 py-2 background-aplicar text-white rounded"
+                >
+                  Aplicar
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        {showFloatingDateModal && !dismissedFloatingModal && (
+          <div
+            className="fixed top-40 right-6 z-50 cursor-pointer"
+            onClick={() => {
+              setShowFloatingDateModal(false);
+              setShowCustomDateModal(true);
+            }}
+          >
+            <div className="bg-white rounded-lg shadow-lg p-4 w-60 custom-shadow-border-reports text-center relative">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation(); // evita que se abra la modal si se presiona cerrar
+                  setDismissedFloatingModal(true);
+                }}
+                className="absolute top-1 right-2 text-gray-500 hover:text-red-500 text-sm"
+              >
+                ✖
+              </button>
+              <p className="text-gray-700 text-base">🕐 Haz clic para modificar el rango</p>
             </div>
           </div>
         )}

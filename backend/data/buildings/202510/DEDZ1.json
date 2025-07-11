@@ -339,6 +339,32 @@
   },
   {
     "data": {
+      "schedule": "1000-1255",
+      "days": ". . . J . .",
+      "building": "DEDZ1",
+      "classroom": "",
+      "nrc": "171947",
+      "code": "IG251",
+      "students": 1,
+      "course": "ASTROFISICA"
+    },
+    "professor": "RAMOS LARIOS, GERARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDZ1",
+      "classroom": "",
+      "nrc": "171947",
+      "code": "IG251",
+      "students": 1,
+      "course": "ASTROFISICA"
+    },
+    "professor": "RAMOS LARIOS, GERARDO"
+  },
+  {
+    "data": {
       "schedule": "1700-1955",
       "days": "L . . . . .",
       "building": "DEDZ1",
@@ -2572,6 +2598,19 @@
       "course": "TALLER DE ANALISIS COMPLEJO"
     },
     "professor": "RUIZ MEDINA, RAMON HARATH"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ1",
+      "classroom": "",
+      "nrc": "42818",
+      "code": "I5922",
+      "students": 13,
+      "course": "TALLER DE FUNDAMENTOS DE GEOMETRIA"
+    },
+    "professor": "AGUILA GOMEZ, RICARDO"
   },
   {
     "data": {

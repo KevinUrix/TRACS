@@ -755,6 +755,19 @@
   },
   {
     "data": {
+      "schedule": "1000-1255",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "",
+      "nrc": "212881",
+      "code": "I5959",
+      "students": 12,
+      "course": "ANALISIS FUNCIONAL"
+    },
+    "professor": "ROBLERO MENDEZ, ELI VANNEY"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -6956,6 +6969,32 @@
   },
   {
     "data": {
+      "schedule": "1000-1155",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "",
+      "nrc": "209916",
+      "code": "IK122",
+      "students": 1,
+      "course": "SEMINARIO DE AVANCE DE TESIS II"
+    },
+    "professor": "GUTIERREZ PULIDO, HUMBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "",
+      "nrc": "193177",
+      "code": "IK124",
+      "students": 1,
+      "course": "SEMINARIO DE AVANCE DE TESIS IV"
+    },
+    "professor": "MATA GUTIERREZ, OSBALDO"
+  },
+  {
+    "data": {
       "schedule": "1000-1855",
       "days": "L M I J V .",
       "building": "DEDU",
@@ -7291,6 +7330,19 @@
       "course": "SEMINARIO DEL MODULO DE SOPORTE MATEMATICO"
     },
     "professor": "VERA SORIA, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1400-1555",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "",
+      "nrc": "154534",
+      "code": "IF564",
+      "students": 5,
+      "course": "SEMINARIO INTERDISCIPLINAR DEL PROYECTO DE INVESTIGACION"
+    },
+    "professor": "FREGOSO BECERRA, EMILIA"
   },
   {
     "data": {

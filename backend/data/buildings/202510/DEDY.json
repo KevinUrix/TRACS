@@ -1,6 +1,71 @@
 [
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "63514",
+      "code": "I7004",
+      "students": 2,
+      "course": "ALIMENTOS FUNCIONALES"
+    },
+    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "117635",
+      "code": "I6153",
+      "students": 31,
+      "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
+    },
+    "professor": "MACIAS LAMAS, ADRIANA MACARIA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "170501",
+      "code": "I6153",
+      "students": 30,
+      "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
+    },
+    "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "188397",
+      "code": "I6153",
+      "students": 29,
+      "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
+    },
+    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "62033",
+      "code": "H0775",
+      "students": 8,
+      "course": "ANALISIS DE SUPERFICIES"
+    },
+    "professor": "VAZQUEZ LEPE, MILTON OSWALDO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDY",
@@ -40,6 +105,71 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "136806",
+      "code": "H0771",
+      "students": 1,
+      "course": "CIENCIA DE MATERIALES DE PELICULAS DELGADAS"
+    },
+    "professor": "BLANCO ALONSO, OSCAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "192672",
+      "code": "IL645",
+      "students": 1,
+      "course": "CINETICA QUIMICA AVANZADA"
+    },
+    "professor": "BARCENA SOTO, MAXIMILIANO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07356",
+      "code": "H0795",
+      "students": 2,
+      "course": "CORROSION"
+    },
+    "professor": "FLORES MARTINEZ, MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "101267",
+      "code": "H0767",
+      "students": 1,
+      "course": "DISEÑO Y MODELADO DE DISPOSITIVOS SEMICONDUCTORES"
+    },
+    "professor": "GUILLEN BONILLA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "158563",
+      "code": "H0739",
+      "students": 7,
+      "course": "ESTRUCTURA Y CARACTERIZACION DE MATERIALES"
+    },
+    "professor": "SOTO GARCIA, VICTOR MANUEL"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDY",
@@ -50,6 +180,19 @@
       "course": "INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "GALLEGOS CASTILLO, SAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": "L M I J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "62035",
+      "code": "H0777",
+      "students": 3,
+      "course": "INTERACCION DE LA RADIACION CON LA MATERIA"
+    },
+    "professor": "CASTAÑEDA PAREDES, EDUARDO"
   },
   {
     "data": {
@@ -287,6 +430,32 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "136789",
+      "code": "H0738",
+      "students": 7,
+      "course": "MATEMATICAS PARA MATERIALES"
+    },
+    "professor": "RUELAS LEPE, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "78065",
+      "code": "H0793",
+      "students": 4,
+      "course": "METALURGIA FISICA"
+    },
+    "professor": "RODRIGUEZ DE ANDA, EDUARDO"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDY",
@@ -297,6 +466,58 @@
       "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "88803",
+      "code": "H0766",
+      "students": 2,
+      "course": "OPTICA DE MATERIALES"
+    },
+    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "103944",
+      "code": "H0770",
+      "students": 1,
+      "course": "PROCESAMIENTO Y CARACTERIZACION DE PELICULAS DELGADAS"
+    },
+    "professor": "RIVERA TELLO, CESAR DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "103942",
+      "code": "H0740",
+      "students": 7,
+      "course": "PROPIEDADES DE MATERIALES I"
+    },
+    "professor": "BRAVO BARCENAS, DAVID ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07424",
+      "code": "H0741",
+      "students": 4,
+      "course": "PROPIEDADES DE MATERIALES II"
+    },
+    "professor": "CEBALLOS SANCHEZ, OSCAR"
   },
   {
     "data": {
@@ -430,6 +651,201 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "164317",
+      "code": "H0746",
+      "students": 6,
+      "course": "SEMINARIO DI"
+    },
+    "professor": "SANTANA ARANDA, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07438",
+      "code": "H0747",
+      "students": 7,
+      "course": "SEMINARIO DII"
+    },
+    "professor": "GILDO ORTIZ, LORENZO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "62037",
+      "code": "H0748",
+      "students": 2,
+      "course": "SEMINARIO DIII"
+    },
+    "professor": "GOMEZ ROSAS, GILBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07439",
+      "code": "H0749",
+      "students": 2,
+      "course": "SEMINARIO DIV"
+    },
+    "professor": "VAZQUEZ LEPE, MILTON OSWALDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "17947",
+      "code": "H0750",
+      "students": 2,
+      "course": "SEMINARIO DV"
+    },
+    "professor": "BLANCO ALONSO, OSCAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "17949",
+      "code": "H0742",
+      "students": 7,
+      "course": "SEMINARIO I"
+    },
+    "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07448",
+      "code": "H0743",
+      "students": 4,
+      "course": "SEMINARIO II"
+    },
+    "professor": "JIMENEZ ALEMAN, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "0800-0955",
+      "days": ". . . . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "08374",
+      "code": "H0744",
+      "students": 5,
+      "course": "SEMINARIO III"
+    },
+    "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "08374",
+      "code": "H0744",
+      "students": 5,
+      "course": "SEMINARIO III"
+    },
+    "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "137200",
+      "code": "I6166",
+      "students": 26,
+      "course": "TECNOLOGIA FARMACEUTICA I"
+    },
+    "professor": "SANCHEZ REYES, JULIAN ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . . . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "103788",
+      "code": "I6167",
+      "students": 25,
+      "course": "TECNOLOGIA FARMACEUTICA II"
+    },
+    "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "202056",
+      "code": "I6167",
+      "students": 28,
+      "course": "TECNOLOGIA FARMACEUTICA II"
+    },
+    "professor": "AVALOS SALGADO, FELIPE ALEXIS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "08378",
+      "code": "H0794",
+      "students": 1,
+      "course": "TEMAS SELECTOS DE METALURGIA"
+    },
+    "professor": "RODRIGUEZ DE ANDA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "88761",
+      "code": "H0774",
+      "students": 2,
+      "course": "TEMAS SELECTOS DE PELICULAS DELGADAS"
+    },
+    "professor": "SANCHEZ MARTINEZ, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "78066",
+      "code": "H0787",
+      "students": 1,
+      "course": "TEMAS SELECTOS DE POLIMEROS I"
+    },
+    "professor": "CISNEROS LOPEZ, ERICK OMAR"
+  },
+  {
+    "data": {
       "schedule": "1100-1355",
       "days": "L . . . . .",
       "building": "DEDY",
@@ -440,6 +856,19 @@
       "course": "TEMAS SELECTOS EN FISICOQUIMICA"
     },
     "professor": "GOMEZ SALAZAR, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . . S",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "209805",
+      "code": "IL657",
+      "students": 2,
+      "course": "TEMAS SELECTOS EN QUIMICA DE POLIMEROS II"
+    },
+    "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
   },
   {
     "data": {
@@ -596,5 +1025,31 @@
       "course": "TERMODINAMICA QUIMICA AVANZADA"
     },
     "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07498",
+      "code": "H0799",
+      "students": 0,
+      "course": "TRIBOLOGIA"
+    },
+    "professor": "FLORES MARTINEZ, MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "07498",
+      "code": "H0799",
+      "students": 0,
+      "course": "TRIBOLOGIA"
+    },
+    "professor": "FLORES MARTINEZ, MARTIN"
   }
 ]

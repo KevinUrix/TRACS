@@ -807,6 +807,19 @@
   },
   {
     "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "",
+      "nrc": "76947",
+      "code": "I3321",
+      "students": 40,
+      "course": "AGRONEGOCIOS"
+    },
+    "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
+  },
+  {
+    "data": {
       "schedule": "1700-1755",
       "days": ". . . J . .",
       "building": "DEDQ",
@@ -7477,6 +7490,19 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "",
+      "nrc": "216293",
+      "code": "IG728",
+      "students": 3,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDQ",
       "classroom": "A006",
@@ -8383,6 +8409,19 @@
       "course": "PLANTAS Y PROCESOS INDUSTRIALES"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "",
+      "nrc": "197427",
+      "code": "IB120",
+      "students": 35,
+      "course": "PRECALCULO"
+    },
+    "professor": "VELAZQUEZ ORTEGA, ANA BETTY"
   },
   {
     "data": {
@@ -9566,6 +9605,19 @@
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CASTILLO CRUZ, CLAUDIA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1155",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "",
+      "nrc": "211298",
+      "code": "IK123",
+      "students": 0,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
+    },
+    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
   },
   {
     "data": {
@@ -11009,6 +11061,32 @@
       "course": "SISTEMAS DE CONTROL SECUENCIAL"
     },
     "professor": "MONTES RUELAS, J. JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "",
+      "nrc": "104549",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1200-1255",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "",
+      "nrc": "104551",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "SANCHEZ HUERTA, MARIA MAGDALENA"
   },
   {
     "data": {

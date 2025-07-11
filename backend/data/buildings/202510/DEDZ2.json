@@ -92,6 +92,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "178759",
+      "code": "IK863",
+      "students": 0,
+      "course": "BIOESTADISTICA"
+    },
+    "professor": "RAMOS IBARRA, JOSE ROBERTO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDZ2",
@@ -141,6 +154,19 @@
       "course": "BIOINFORMATICA"
     },
     "professor": "MACIAS RODRIGUEZ, MARIA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "178762",
+      "code": "IK862",
+      "students": 0,
+      "course": "BIOLOGIA MOLECULAR"
+    },
+    "professor": "BALCAZAR LOPEZ, EDGAR"
   },
   {
     "data": {
@@ -313,6 +339,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1255",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "187374",
+      "code": "IK697",
+      "students": 4,
+      "course": "HACCP Y SISTEMAS DE CONTROLES PREVENTIVOS"
+    },
+    "professor": "RODRIGUEZ GARCIA, MA OFELIA"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDZ2",
@@ -336,6 +375,19 @@
       "course": "INFORMATICA ADMINISTRATIVA"
     },
     "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "209782",
+      "code": "V0717",
+      "students": 0,
+      "course": "INGENIERIA Y SUSTENTABILIDAD"
+    },
+    "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
   },
   {
     "data": {
@@ -512,6 +564,19 @@
       "days": ". . I . . .",
       "building": "DEDZ2",
       "classroom": "A014",
+      "nrc": "199979",
+      "code": "IK687",
+      "students": 5,
+      "course": "QUIMICA INSTRUMENTAL"
+    },
+    "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "",
       "nrc": "199979",
       "code": "IK687",
       "students": 5,
@@ -765,6 +830,32 @@
       "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
     },
     "professor": "MARTINEZ CHAVEZ, LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "191428",
+      "code": "IK684",
+      "students": 1,
+      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "SERRANO NIÑO, JULIO CESAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "",
+      "nrc": "191428",
+      "code": "IK684",
+      "students": 1,
+      "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
+    },
+    "professor": "SERRANO NIÑO, JULIO CESAR"
   },
   {
     "data": {

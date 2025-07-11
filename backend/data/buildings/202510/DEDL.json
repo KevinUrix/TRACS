@@ -2,6 +2,45 @@
   {
     "data": {
       "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "43828",
+      "code": "I7429",
+      "students": 17,
+      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
+    },
+    "professor": "MORA DURAN, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "160083",
+      "code": "I7429",
+      "students": 17,
+      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
+    },
+    "professor": "TRINIDAD MUÑOZ, SERGIO MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "142332",
+      "code": "I7478",
+      "students": 7,
+      "course": "DISEÑO DE MAQUINAS"
+    },
+    "professor": "ALBORES MONTOYA, ELIASIN ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDL",
       "classroom": "LC01",
@@ -365,6 +404,110 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104515",
+      "code": "I7451",
+      "students": 16,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104516",
+      "code": "I7451",
+      "students": 18,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104517",
+      "code": "I7451",
+      "students": 17,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104518",
+      "code": "I7451",
+      "students": 17,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104519",
+      "code": "I7451",
+      "students": 18,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104520",
+      "code": "I7451",
+      "students": 17,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104521",
+      "code": "I7451",
+      "students": 17,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104522",
+      "code": "I7451",
+      "students": 17,
+      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
+    },
+    "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
+  },
+  {
+    "data": {
       "schedule": "0700-0955",
       "days": ". M . . . .",
       "building": "DEDL",
@@ -570,5 +713,122 @@
       "course": "LABORATORIO DE SUELOS II"
     },
     "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "136378",
+      "code": "I7566",
+      "students": 9,
+      "course": "ROBOTICA INDUSTRIAL"
+    },
+    "professor": "HERNANDEZ DE LEON, JOSE ESTEBAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "88034",
+      "code": "I7446",
+      "students": 22,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "CARRILLO CASTILLO, JOSE NIEVES"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "92321",
+      "code": "I7446",
+      "students": 18,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "VELEZ BARRAGAN, EDUARDO ENRIQUE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "82018",
+      "code": "I7446",
+      "students": 22,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "AVALOS VERGARA, FERNANDO DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": "L . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "36800",
+      "code": "I7446",
+      "students": 19,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "AGUILAR ROSALES, JOEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "134053",
+      "code": "I7446",
+      "students": 19,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "VELEZ BARRAGAN, EDUARDO ENRIQUE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "159425",
+      "code": "I7446",
+      "students": 22,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "163980",
+      "code": "I7446",
+      "students": 20,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "AVALOS VERGARA, FERNANDO DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "163981",
+      "code": "I7446",
+      "students": 21,
+      "course": "TALLER DE MEDICIONES MECANICAS Y ELECTRICAS"
+    },
+    "professor": "AVALOS VERGARA, FERNANDO DANIEL"
   }
 ]

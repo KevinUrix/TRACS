@@ -105,6 +105,19 @@
   },
   {
     "data": {
+      "schedule": "0800-0955",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "",
+      "nrc": "77404",
+      "code": "I5969",
+      "students": 7,
+      "course": "ALGEBRA LINEAL NUMERICA"
+    },
+    "professor": "LICEA SALAZAR, JUAN ANTONIO"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDR",
@@ -492,6 +505,19 @@
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "",
+      "nrc": "83782",
+      "code": "I7347",
+      "students": 28,
+      "course": "ESTADISTICA"
+    },
+    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
   },
   {
     "data": {

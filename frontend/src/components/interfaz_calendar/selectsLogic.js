@@ -145,8 +145,10 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       .then(response => response.json())
       .then(data => {
         const buildings = data.edifp || [];
-        const prioritized = buildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
-        const rest = buildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
+        // Filtra para que no tome en cuenta las clases virtuales
+        const filteredBuildings = buildings.filter(b => b.value !== "DESV1" && b.value !== "DESV2");
+        const prioritized = filteredBuildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
+        const rest = filteredBuildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
         
         // Combinamos y actualizamos el estado
         const newBuildingsOrder = [...prioritized, ...rest];
@@ -230,6 +232,11 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           onChange={handleCycleChange}
           className="cycle-select sm:w-auto select-responsive"
           disabled={loadingCycle}
+          onKeyDown={(e) => {
+            if (["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp"].includes(e.key)) {
+              e.preventDefault(); // Evita cambiar con las flechas
+            }
+          }}
         >
           {loadingCycle ? (
             <option value="">Cargando ciclos...⌛</option> // Mensaje de carga
@@ -247,6 +254,11 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           onChange={handleBuildingChange}
           className="building-select sm:w-auto select-responsive"
           disabled={!selectedCycle}
+          onKeyDown={(e) => {
+            if (["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp"].includes(e.key)) {
+              e.preventDefault(); // Evita cambiar con las flechas
+            }
+          }}
         >
           <option className='text-gray-900' value="" disabled>Selecciona un edificio 🏢</option>
             {building.map((building, index) => (

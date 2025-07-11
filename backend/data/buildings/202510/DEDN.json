@@ -508,6 +508,214 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104499",
+      "code": "I7450",
+      "students": 11,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104500",
+      "code": "I7450",
+      "students": 17,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104501",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104502",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104503",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104504",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104506",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "163864",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77347",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77348",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77349",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77350",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77351",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77352",
+      "code": "I7445",
+      "students": 17,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77353",
+      "code": "I7445",
+      "students": 13,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77354",
+      "code": "I7445",
+      "students": 15,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DEDN",

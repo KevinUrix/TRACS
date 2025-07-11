@@ -251,11 +251,13 @@ export default function Calendar() {
       .then(response => response.json())
       .then(data => {
         const buildings = data.edifp || [];
-        const prioritized = buildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
-        const rest = buildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
+        // Filtra para que no tome en cuenta las clases virtuales
+        const filteredBuildings = buildings.filter(b => b.value !== "DESV1" && b.value !== "DESV2");
+        const prioritized = filteredBuildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
+        const rest = filteredBuildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
 
         const newBuildingsOrder = [...prioritized, ...rest];
-        setBuildings(newBuildingsOrder); // Aquí cambias
+        setBuildings(newBuildingsOrder); // Aquí cambia el orden
       })
       .catch(error => {
         console.error("Error cargando los edificios:", error);
@@ -568,7 +570,7 @@ export default function Calendar() {
                         {buildings.map((building, index) => (
                           <th key={index} className="table-cell">{building.value}</th>
                         ))}
-                        <th className="table-cell">Total por hora</th>
+                        <th className="table-cell" title='Número de alumnos por hora.'>Total por hora</th>
                       </>
                     )
                     : 
@@ -627,7 +629,7 @@ export default function Calendar() {
                     );
                   })}
                   <tr key="total-row">
-                    <td className="table-cell font-bold">Total por día</td>
+                    <td className="table-cell font-bold" title='Número total de alumnos multiplicado por las horas de sus clases. No representa alumnos únicos.'>Total por día</td>
                     {buildings.map((building, index) => {
                       const scheduleForBuilding = fullSchedule[building.value] || [];
                       const seen = new Set();

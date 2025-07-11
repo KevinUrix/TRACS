@@ -144,6 +144,19 @@
   },
   {
     "data": {
+      "schedule": "1400-1755",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "195076",
+      "code": "F0477",
+      "students": 4,
+      "course": "ALGEBRA Y SU DESARROLLO CONCEPTUAL"
+    },
+    "professor": "PANTOJA RANGEL, RAFAEL"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -200,6 +213,19 @@
       "days": "L . . . . .",
       "building": "DEDV",
       "classroom": "A009",
+      "nrc": "154532",
+      "code": "IF562",
+      "students": 5,
+      "course": "ANALISIS MATEMATICO I"
+    },
+    "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1200-1355",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "",
       "nrc": "154532",
       "code": "IF562",
       "students": 5,
@@ -440,6 +466,32 @@
       "course": "CALCULO INTEGRAL"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1855",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "77376",
+      "code": "F0471",
+      "students": 5,
+      "course": "CALCULO SUPERIOR"
+    },
+    "professor": "PANTOJA RANGEL, RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "77377",
+      "code": "F0471",
+      "students": 3,
+      "course": "CALCULO SUPERIOR"
+    },
+    "professor": "VALENZUELA GARCIA, CARLOS"
   },
   {
     "data": {
@@ -976,6 +1028,19 @@
   },
   {
     "data": {
+      "schedule": "1400-1755",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "164112",
+      "code": "F0483",
+      "students": 4,
+      "course": "DIDACTICA DEL CALCULO"
+    },
+    "professor": "PANTOJA RANGEL, RAFAEL"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -1106,6 +1171,19 @@
   },
   {
     "data": {
+      "schedule": "0800-1255",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "03755",
+      "code": "H0514",
+      "students": 4,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "GUTIERREZ GONZALEZ, PORFIRIO"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -1142,6 +1220,32 @@
       "course": "DISEÑO DE EXPERIMENTOS EN INOCUIDAD ALIMENTARIA"
     },
     "professor": "GUTIERREZ GONZALEZ, PORFIRIO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1355",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "89754",
+      "code": "F0470",
+      "students": 5,
+      "course": "DISEÑO INSTRUCCIONAL"
+    },
+    "professor": "VARGAS ALEJO, VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "95004",
+      "code": "F0470",
+      "students": 3,
+      "course": "DISEÑO INSTRUCCIONAL"
+    },
+    "professor": "VERA SORIA, MARIA GUADALUPE"
   },
   {
     "data": {
@@ -1974,6 +2078,32 @@
       "course": "ESTRUCTURA CRISTALINA"
     },
     "professor": "MICHEL URIBE, CARLOS RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "84280",
+      "code": "F0472",
+      "students": 5,
+      "course": "EVALUACION"
+    },
+    "professor": "VALENZUELA GARCIA, CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "87694",
+      "code": "F0472",
+      "students": 3,
+      "course": "EVALUACION"
+    },
+    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
   },
   {
     "data": {
@@ -4291,6 +4421,97 @@
   },
   {
     "data": {
+      "schedule": "1100-1455",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "104133",
+      "code": "I8105",
+      "students": 2,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA IV"
+    },
+    "professor": "VALENZUELA GARCIA, CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1600-1955",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "104134",
+      "code": "I8105",
+      "students": 1,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA IV"
+    },
+    "professor": "GUTIERREZ PULIDO, HUMBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1355",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "77441",
+      "code": "I8103",
+      "students": 2,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA II"
+    },
+    "professor": "VARGAS ALEJO, VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "1400-1755",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "77442",
+      "code": "I8103",
+      "students": 1,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA II"
+    },
+    "professor": "AGUIAR BARRERA, MARTHA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "77445",
+      "code": "I8103",
+      "students": 1,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA II"
+    },
+    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1355",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "77446",
+      "code": "I8103",
+      "students": 1,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA II"
+    },
+    "professor": "YAKHNO, LILIYA"
+  },
+  {
+    "data": {
+      "schedule": "1400-1755",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "159404",
+      "code": "I8103",
+      "students": 1,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA II"
+    },
+    "professor": "YAKHNO, ALEXANDER"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -4707,6 +4928,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "209915",
+      "code": "IK122",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCE DE TESIS II"
+    },
+    "professor": "BECERRA LOPEZ, FERNANDO IGNACIO"
+  },
+  {
+    "data": {
       "schedule": "1000-1155",
       "days": ". . . J . .",
       "building": "DEDV",
@@ -4756,6 +4990,19 @@
       "course": "SEMINARIO DE AVANCES DE TESIS II"
     },
     "professor": "MATA GUTIERREZ, OSBALDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "183186",
+      "code": "IG670",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCES DE TESIS III"
+    },
+    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
   },
   {
     "data": {
@@ -5744,6 +5991,19 @@
       "course": "TOPICOS SELECTOS DE ALGEBRA II"
     },
     "professor": "PALAFOX GONZALEZ, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "",
+      "nrc": "108735",
+      "code": "I5978",
+      "students": 11,
+      "course": "TOPICOS SELECTOS DE ALGEBRA LINEAL COMPUTACIONAL"
+    },
+    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
   },
   {
     "data": {

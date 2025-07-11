@@ -262,6 +262,19 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDE",
+      "classroom": "",
+      "nrc": "212881",
+      "code": "I5959",
+      "students": 12,
+      "course": "ANALISIS FUNCIONAL"
+    },
+    "professor": "ROBLERO MENDEZ, ELI VANNEY"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDE",
       "classroom": "A009",
@@ -5280,6 +5293,19 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDE",
+      "classroom": "",
+      "nrc": "192673",
+      "code": "IL647",
+      "students": 2,
+      "course": "PREPARACION Y CARACTERIZACION DE MATERIALES EN ESTADO SOLIDO"
+    },
+    "professor": "ROSAS SANCHEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDE",
       "classroom": "A015",
@@ -5432,6 +5458,32 @@
       "course": "QUIMICA FARMACEUTICA"
     },
     "professor": "ROMERO TEJEDA, ELBA MARGARITA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDE",
+      "classroom": "",
+      "nrc": "43437",
+      "code": "I6938",
+      "students": 3,
+      "course": "QUIMICA INORGANICA"
+    },
+    "professor": "RANGEL SALAS, IRMA IDALIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDE",
+      "classroom": "",
+      "nrc": "43437",
+      "code": "I6938",
+      "students": 3,
+      "course": "QUIMICA INORGANICA"
+    },
+    "professor": "RANGEL SALAS, IRMA IDALIA"
   },
   {
     "data": {

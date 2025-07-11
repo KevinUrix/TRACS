@@ -846,6 +846,19 @@
   },
   {
     "data": {
+      "schedule": "1800-1955",
+      "days": ". . I . . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "216232",
+      "code": "V2317",
+      "students": 4,
+      "course": "FISIOLOGIA AVANZADA"
+    },
+    "professor": "SANCHEZ REYES, KARINA"
+  },
+  {
+    "data": {
       "schedule": "0700-0955",
       "days": "L . . . . .",
       "building": "DEDK",
@@ -1123,6 +1136,19 @@
       "days": ". M . J . .",
       "building": "DEDK",
       "classroom": "LROB",
+      "nrc": "154498",
+      "code": "I7424",
+      "students": 26,
+      "course": "INGENIERIA TERMODINAMICA"
+    },
+    "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
       "nrc": "154498",
       "code": "I7424",
       "students": 26,
@@ -2029,32 +2055,6 @@
   },
   {
     "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "42587",
-      "code": "I6127",
-      "students": 27,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "42587",
-      "code": "I6127",
-      "students": 27,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDK",
@@ -2096,6 +2096,19 @@
     "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "72220",
+      "code": "I6127",
+      "students": 32,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "RIVERA CORONADO, GLORIA PAULINA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
       "building": "DEDK",
       "classroom": "A003",
       "nrc": "72220",
@@ -2367,6 +2380,32 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDK",
+      "classroom": "A006",
+      "nrc": "43795",
+      "code": "I7415",
+      "students": 30,
+      "course": "QUIMICA BASICA"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDK",
+      "classroom": "A002",
+      "nrc": "43795",
+      "code": "I7415",
+      "students": 30,
+      "course": "QUIMICA BASICA"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDK",
@@ -2575,84 +2614,6 @@
   },
   {
     "data": {
-      "schedule": "1400-1455",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 33,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 33,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "87064",
-      "code": "I6122",
-      "students": 12,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "87064",
-      "code": "I6122",
-      "students": 12,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 33,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 33,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDK",
@@ -2797,45 +2758,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "38425",
-      "code": "I3282",
-      "students": 27,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "38425",
-      "code": "I3282",
-      "students": 27,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "38425",
-      "code": "I3282",
-      "students": 27,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". . I . V .",
       "building": "DEDK",
       "classroom": "A003",
@@ -2913,32 +2835,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "42622",
-      "code": "I6124",
-      "students": 35,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "42622",
-      "code": "I6124",
-      "students": 35,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDK",
@@ -2972,6 +2868,32 @@
       "nrc": "42622",
       "code": "I6124",
       "students": 35,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A002",
+      "nrc": "63509",
+      "code": "I5805",
+      "students": 36,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "63509",
+      "code": "I5805",
+      "students": 36,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -3030,29 +2952,29 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
+      "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "79456",
-      "code": "I5805",
-      "students": 33,
+      "classroom": "A005",
+      "nrc": "42621",
+      "code": "I6124",
+      "students": 36,
       "course": "QUIMICA ORGANICA I"
     },
-    "professor": "SANCHEZ JIMENEZ, CECILIA"
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
-      "schedule": "0700-0755",
+      "schedule": "0900-0955",
       "days": ". . . . V .",
       "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "79456",
-      "code": "I5805",
-      "students": 33,
+      "classroom": "A003",
+      "nrc": "42621",
+      "code": "I6124",
+      "students": 36,
       "course": "QUIMICA ORGANICA I"
     },
-    "professor": "SANCHEZ JIMENEZ, CECILIA"
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
@@ -3391,6 +3313,123 @@
       "course": "SINTESIS DE POLIMEROS"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104549",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104550",
+      "code": "I7447",
+      "students": 23,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "CASTAÑEDA PAREDES, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1400-1455",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104550",
+      "code": "I7447",
+      "students": 23,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "CASTAÑEDA PAREDES, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104551",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "SANCHEZ HUERTA, MARIA MAGDALENA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104553",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "2000-2055",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104553",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "119763",
+      "code": "I7447",
+      "students": 23,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "MERCADO URIBE, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "119763",
+      "code": "I7447",
+      "students": 23,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "MERCADO URIBE, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "119764",
+      "code": "I7447",
+      "students": 22,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "SANCHEZ HUERTA, MARIA MAGDALENA"
   },
   {
     "data": {

@@ -14,7 +14,8 @@ const activeScraping = new Set();
 // Función para extraer datos del HTML
 const extractData = ($, buildingName) => {
     const results = [];
-    let lastValidRow = { nrc: '', code: '', course: '', spots: '', available: '' };
+    // Quitar comentario si falta información
+    // let lastValidRow = { nrc: '', code: '', course: '', spots: '', available: '' };
 
     $('tr').each((_, row) => {
         const columns = $(row).find('td.tddatos');
@@ -55,13 +56,18 @@ const extractData = ($, buildingName) => {
                         return !inRange && !datePattern.test(text);
                     });
 
-                if (cells.length >= 4 && cells[2] && cells[3]) {
+                /* 
+                Si tienes un error Cannot read properties of undefined (reading 'substring') en un edificio, verifica que los datos estén bien obtenidos. Alguien puede poner un dato mal en SIIU y el sistema provocará error.
+                Lo normal es que si el error es en calendar.js:722 puede estar en el schedule (cell[0]), provablemente provocado por la primera celda que dice '01'.
+                */
+
+                if (cells.length >= 3 && cells[0] && cells[2]) {
                     return {
                         data: {
                             schedule: cells[0],
                             days: cells[1],
                             building: cells[2],
-                            classroom: cells[3],
+                            classroom: cells[3] || '',
                             nrc,
                             code,
                             students,

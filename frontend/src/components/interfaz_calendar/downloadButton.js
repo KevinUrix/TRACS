@@ -64,8 +64,8 @@ export default function DownloadButton({ onDownload }) {
                 onClick={toggleDownload}
                 disabled={isLoading}
                 className={`px-4 py-2 rounded-md ${
-                  isLoading ? 'bg-red-300 cursor-not-allowed' : 'bg-red-500'
-                } text-white  hover:bg-red-600 transition duration-200`}
+                  isLoading ? 'background-button1-N cursor-not-allowed' : 'background-button1'
+                } text-white transition duration-200`}
               >
                 {isLoading ? 'Espera...' : 'Cerrar'}
               </button>
@@ -75,8 +75,8 @@ export default function DownloadButton({ onDownload }) {
                 onClick={handleDownload}
                 disabled={isLoading}
                 className={`px-4 py-2 rounded-md ${
-                  isLoading ? 'bg-blue-300 cursor-not-allowed' : 'bg-blue-500'
-                } text-white whitespace-normal break-words hover:bg-blue-600 transition duration-200`}
+                  isLoading ? 'background-button3-N cursor-not-allowed' : 'background-button3'
+                } text-white whitespace-normal break-words transition duration-200`}
               >
                 {isLoading ? 'Descargando...' : 'Descargar archivos'}
               </button>

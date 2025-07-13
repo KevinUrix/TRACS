@@ -197,7 +197,8 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   
       if (result.success) {
         const { buildings, cycles } = result.result;
-        let message = '✅ Los archivos JSON se han descargado correctamente.\n\n';
+        
+        let message = '📢 Estado de los archivos JSON.\n\n';
         // Información de edificios
         message += `📚 Edificios:\n`;
         message += `✅ Éxito: ${buildings.success.length} edificios\n`;

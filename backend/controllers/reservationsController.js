@@ -95,7 +95,7 @@ const saveReservation = async (req, res) => {
       await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}});
     }
     catch (error) {
-      console.error('🔕 Error al notificar al servicio de sockets:', error.message);
+      console.error('🔕 Error al notificar al servicio de sockets', error.message);
     }
 
     res.status(201).json({

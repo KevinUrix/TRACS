@@ -27,7 +27,7 @@ const localFiles = async (cycle, building) => {
     const localData = require(`../data/buildings/${cycle}/${building}.json`);
     const localCacheKey = `local-schedule-${cycle}-building-${building}`;
     const scheduleCacheKey = `schedule-${cycle}-building-${building}`;
-    const TTL_LOCAL_FALLBACK = 2 * 60 * 60; // 2 horas
+    const TTL_LOCAL_FALLBACK = 4 * 60 * 60; // 4 horas
 
     const alreadyInScheduleCache = await cache.get(scheduleCacheKey);
     if (alreadyInScheduleCache) {

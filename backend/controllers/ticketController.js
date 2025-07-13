@@ -1,16 +1,7 @@
 require('dotenv').config();
 const axios = require('axios');
-const { Pool } = require('pg');
+const { pool } = require('../utils/db');
 const { classifyTicket } = require('../utils/aiClassifier');
-
-
-const pool = new Pool({
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  port: 5432,
-});
 
 exports.createTicket = async (req, res) => {
   const { building, room, title, report, created_by } = req.body;
@@ -38,7 +29,7 @@ exports.createTicket = async (req, res) => {
       await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-ticket', data: newTicket});
     }
     catch (error) {
-      console.error('🔕 Error al notificar al servicio de sockets:', error.message);
+      console.error('🔕 Error al notificar al servicio de sockets', error.message);
     }
 
     

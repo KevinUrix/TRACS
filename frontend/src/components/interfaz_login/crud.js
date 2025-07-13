@@ -350,7 +350,7 @@ export default function Crud() {
             <div className="flex flex-col md:flex-row md:flex-wrap gap-8">
               {/* Tabla de Usuarios */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-4 text-center text-pink-800">USUARIOS</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center text-purple-800">USUARIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
                     onClick={() => navigate('/registro')}
@@ -362,10 +362,10 @@ export default function Crud() {
                 <div className={`max-h-96 min-h-96 ${users.length < 7 ? 'overflow-y-hidden' : 'overflow-y-auto'} rounded-lg shadow`}>
                   <table className="min-w-full bg-white border border-gray-200">
                     <thead className="sticky top-0 bg-gray-200 z-1">
-                      <tr className="bg-gray-200 text-gray-700">
-                        <th className="py-2 px-4 text-left">Usuario</th>
-                        <th className="py-2 px-4 text-left">Rol</th>
-                        <th className="py-2 px-4 text-left">Acciones</th>
+                      <tr className="bg-gray-200 text-purple-900">
+                        <th className="py-2 px-4 text-left bg-purple-200">Usuario</th>
+                        <th className="py-2 px-4 text-left bg-purple-200">Rol</th>
+                        <th className="py-2 px-4 text-left bg-purple-200">Acciones</th>
                       </tr>
                     </thead>
                     <tbody className='divide-y divide-gray-200'>
@@ -436,10 +436,10 @@ export default function Crud() {
                 <div className="max-h-96 min-h-96 overflow-y-auto rounded-lg shadow">
                   <table className="min-w-full bg-white border border-gray-200">
                     <thead className="sticky top-0 bg-gray-200 z-1">
-                      <tr className="text-gray-700">
-                        <th className="py-2 px-4 text-left">Edificios</th>
-                        <th className="py-2 px-4 text-left">Seudónimo</th>
-                        <th className="py-2 px-4 text-left">Acciones</th>
+                      <tr className="text-pink-900">
+                        <th className="py-2 px-4 text-left bg-pink-200">Edificios</th>
+                        <th className="py-2 px-4 text-left bg-pink-200">Seudónimo</th>
+                        <th className="py-2 px-4 text-left bg-pink-200">Acciones</th>
                       </tr>
                     </thead>
                     <tbody className=''>

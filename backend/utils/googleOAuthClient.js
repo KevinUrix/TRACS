@@ -1,83 +1,92 @@
 const { OAuth2Client } = require('google-auth-library');
-const fs = require('fs');
-const path = require('path');
 require('dotenv').config();
+const { pool } = require('./db');
 
-const getOAuth2Client = async (user) => {
-  if (!user) throw new Error('Usuario no especificado');
+//
+// ⚙️ Obtiene el cliente OAuth con los tokens desde BD, buscando por username
+//
+const getOAuth2Client = async (username) => {
+  if (!username) throw new Error('Usuario no especificado');
 
+  // Instancia del cliente OAuth de Google
   const oAuth2Client = new OAuth2Client(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
     process.env.GOOGLE_REDIRECT_URI
   );
 
-  const tokensPath = path.join(__dirname, `../data/tokens/${user}Tokens.json`);
-  const dirPath = path.dirname(tokensPath);
-
-  // Asegura que la carpeta exista
-  if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true });
-  }
-
-  // Si no existe el archivo, lo crea vacío
-  if (!fs.existsSync(tokensPath)) {
-    fs.writeFileSync(tokensPath, '{}');
-    console.warn(`Archivo de tokens creado vacío para el usuario: ${user}`);
-  }
-
   try {
-    const rawData = fs.readFileSync(tokensPath, 'utf-8');
+    //
+    // Busca el user_id por username
+    //
+    const userResult = await pool.query('SELECT id FROM users WHERE username = $1 LIMIT 1', [username]);
 
-    if (!rawData.trim()) {
-      throw new Error('El archivo de tokens está vacío');
+    if (!userResult.rows.length) {
+      throw new Error(`No se encontró el usuario con username "${username}"`);
     }
 
-    const tokens = JSON.parse(rawData);
+    const userId = userResult.rows[0].id;
+
+    //
+    // Consulta los tokens desde la base de datos usando el ID
+    //
+    const { rows } = await pool.query('SELECT * FROM google_tokens WHERE user_id = $1 LIMIT 1', [userId]);
+
+    if (!rows.length) {
+      throw new Error('No se encontraron tokens en la base de datos');
+    }
+
+    const tokens = rows[0];
 
     if (!tokens || !tokens.access_token || !tokens.refresh_token) {
-      throw new Error('No se encontraron tokens de Google');
+      throw new Error('Tokens inválidos o incompletos');
     }
 
     const now = Date.now();
-    const bufferTime = 5 * 60 * 1000; // 5 minutos de buffer para asegurar la renovación
-    
-    // **Fix del expiry_date**:
-    if (!tokens.expiry_date || tokens.expiry_date < now) {
-      console.log('expiry_date inválido o expirado. Renovando...');
+    const bufferTime = 5 * 60 * 1000; // 5 minutos de buffer para renovación anticipada
 
-      // Refresca el access_token usando el refresh_token
-      const { tokens: newTokens } = await oAuth2Client.refreshToken(tokens.refresh_token);
-
-      // Asegura que el refresh_token se conserve si no se devuelve
-      newTokens.refresh_token = newTokens.refresh_token || tokens.refresh_token;
-
-      // Calcula un nuevo expiry_date si no viene en la respuesta
-      const expiresIn = newTokens.expires_in ? newTokens.expires_in * 1000 : 3600 * 1000;
-      newTokens.expiry_date = now + expiresIn;
-
-      oAuth2Client.setCredentials(newTokens);
-
-      // Guarda los tokens actualizados correctamente
-      await fs.promises.writeFile(tokensPath, JSON.stringify(newTokens, null, 2));
-      console.log('Tokens renovados correctamente');
-    } else if (tokens.expiry_date <= now + bufferTime) {
-      console.log('El access_token está por caducar, renovando...');
+    //
+    // Renovación del token si expiró o está por expirar
+    //
+    if (!tokens.expiry_date || tokens.expiry_date < now || tokens.expiry_date <= now + bufferTime) {
+      console.log('El token ha expirado o está por caducar. Renovando...');
 
       const { tokens: newTokens } = await oAuth2Client.refreshToken(tokens.refresh_token);
+
       newTokens.refresh_token = newTokens.refresh_token || tokens.refresh_token;
       const expiresIn = newTokens.expires_in ? newTokens.expires_in * 1000 : 3600 * 1000;
       newTokens.expiry_date = now + expiresIn;
 
       oAuth2Client.setCredentials(newTokens);
-      await fs.promises.writeFile(tokensPath, JSON.stringify(newTokens, null, 2));
+
+      await pool.query(`
+        UPDATE google_tokens
+        SET access_token = $1,
+            refresh_token = $2,
+            expiry_date = $3,
+            updated_at = NOW()
+        WHERE user_id = $4
+      `, [
+        newTokens.access_token,
+        newTokens.refresh_token,
+        newTokens.expiry_date,
+        userId
+      ]);
+
       console.log('Tokens renovados correctamente');
     } else {
-      oAuth2Client.setCredentials(tokens);
+      //
+      // Token aún válido
+      //
+      oAuth2Client.setCredentials({
+        access_token: tokens.access_token,
+        refresh_token: tokens.refresh_token,
+        expiry_date: tokens.expiry_date
+      });
     }
 
   } catch (err) {
-    console.error('Error al cargar o renovar los tokens:', err.message);
+    console.error('Error al obtener o renovar los tokens desde la base de datos:', err.message);
     throw new Error('No se pudieron cargar los tokens');
   }
 

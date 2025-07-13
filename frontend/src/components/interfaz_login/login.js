@@ -44,20 +44,9 @@ export default function Login() {
       const decoded = jwtDecode(data.token);
       localStorage.setItem('role', decoded.role); // Ahora puedes usarlo para mostrar/ocultar cosas
       localStorage.setItem('username', decoded.username);
-      
-      const savedState = sessionStorage.getItem('reservationState');
-
-      if (savedState) {
-        const { selectedCycle, selectedBuilding } = JSON.parse(savedState);
-        toast.success('Se ha iniciado la sesión.');
-        // Redirigir al calendario y enviar el estado
-        navigate(`/`, {
-          state: { selectedCycle, selectedBuilding }
-        });
-      } else {
-        toast.success('Se ha iniciado la sesión.');
-        navigate('/');
-      }
+      toast.success('Se ha iniciado la sesión.');
+      // Redirigir al calendario y enviar el estado
+      navigate('/');
 
     } catch (err) {
       console.error('Error de red:', err);

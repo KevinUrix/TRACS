@@ -36,13 +36,6 @@ export default function Calendar() {
 
   /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
   useEffect(() => {
-    // Este obtiene los datos del estado - Login
-    if (location.state) {
-      setSelectedCycle(location.state.selectedCycle);
-      setSelectedBuilding(location.state.selectedBuilding);
-      setIsRestored(true);
-      return;
-    }
 
     const savedState = sessionStorage.getItem('reservationState');
 

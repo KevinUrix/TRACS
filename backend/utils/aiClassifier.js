@@ -129,7 +129,7 @@ function classifyTicket({ building, room, title, report }) {
   // Si no existen palabras utiles entonces retorna un ticket sin clasificar
   if (meaningfulTokens.length < 4) {
     return {
-      category: 'Sin clasificar',
+      category: 'Sin categoria',
       secondaryCategory: null,
       priority: 'Baja'
     };
@@ -147,7 +147,7 @@ function classifyTicket({ building, room, title, report }) {
   // Si el clasificador no devuelve nada valido retornamos un ticket sin clasificar
   if (!rawCategory || !['tecnico', 'software', 'hardware', 'limpieza', 'mantenimiento'].includes(rawCategory)) {
     return {
-      category: 'Sin clasificar',
+      category: 'Sin categoria',
       secondaryCategory: null,
       priority: capitalizeFirstLetter(rawPriority)
     };

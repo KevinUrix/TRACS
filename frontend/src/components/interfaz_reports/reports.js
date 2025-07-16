@@ -244,7 +244,7 @@ export default function Reports() {
                     <option value="Limpieza">Limpieza 🧹</option>
                     <option value="Tecnico (Hardware)">Técnico (Hardware) 🖥️</option>
                     <option value="Tecnico (Software)">Técnico (Software) 🧑‍💻</option>
-                    <option value="Sin clasificar">Sin clasificar 📂</option>
+                    <option value="Sin categoria">Sin categoría 📂</option>
                   </select>
 
                   <select

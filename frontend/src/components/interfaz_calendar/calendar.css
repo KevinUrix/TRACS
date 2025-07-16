@@ -552,7 +552,7 @@ textarea:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  margin-top: 12px;
+  margin-top: 1.2rem;
   background: rgba(30, 41, 59, 0.5);
   display: flex;
   justify-content: center;
@@ -620,10 +620,10 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eef4ff;
-  border: 1px solid #1e293b;
+  background-color: #e0daf7;
+  border: 1px solid #4629ba;
   border-radius: 9999px;
-  color: #1e293b;
+  color: #4629ba;
   font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
@@ -631,7 +631,7 @@ textarea:focus {
 }
 
 .close-popup:hover {
-  background-color: #1e293b;
+  background-color: #a492ec;
   color: white;
   transform: scale(1.05);
 }
@@ -658,7 +658,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* <-- cambiar aquí */
-  padding-top: 80px; /* <-- agregar para controlar la distancia */
+  padding-top: 90px; /* <-- agregar para controlar la distancia */
   z-index: 99;
   animation: fadeIn 0.4s ease-out;
   backdrop-filter: blur(1px);
@@ -972,6 +972,20 @@ input[type="password"] {
   }
 }
 
+@media (max-width: 640px) and (orientation: portrait) {
+  .schedule-table thead tr:first-child th { /*Modifica unicamente la fila de los nombres de los salones (altura)*/
+    height: 5rem; /* o la altura que necesites */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .schedule-table th:first-child,
+  .schedule-table td:first-child { /* Ancho de la columna de horas */
+    width: 8rem !important;
+    min-width: 8rem !important;
+    max-width: 8rem !important;
+  }
+}
+
 
 .background-Selects{
   background: linear-gradient(to right, #572531, #301848, #0a152d, #0e1e40, #132654, #1c3a7d, #254da7);
@@ -1042,3 +1056,4 @@ input[type="password"] {
 .background-button6:hover {
   background-color: #dc5d83; /* un poco más claro */
 }
+

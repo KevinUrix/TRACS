@@ -70,7 +70,7 @@ export default function PrintTicket({ ticket, onClose }) {
             </div>
           </div>
 
-          <div style="margin-bottom: 4.2rem;">
+          <div style="margin-bottom: 5.1rem;">
             <div style="display: flex; justify-content: space-between;">
                 <div class="section"><span class="label">Categoría:</span> ${ticket.category}</div>
                 <div class="section"><span class="label">Prioridad:</span> ${ticket.priority}</div>

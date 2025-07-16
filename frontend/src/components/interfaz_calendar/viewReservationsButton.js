@@ -236,7 +236,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
 
             <h3>Reservas para ciclo {selectedCycle}, edificio {selectedBuilding}:</h3>
             
-            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #666' }} />
+            <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
             {filteredReservations.length === 0 ? (
               <p>No se encontraron reservas para este ciclo y edificio.</p>

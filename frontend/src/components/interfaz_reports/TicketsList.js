@@ -225,7 +225,12 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                       'bg-gray-500'}
                   `}
                 >
-                  {category}
+                  {category === "Sin categoria" 
+                    ? "Sin categoría" 
+                    : category.includes("Tecnico") 
+                    ? category.replace("Tecnico", "Técnico") 
+                    : category
+                  }
                 </div>
                 <div className="relative flex gap-6 mt-2 ml-28 mb-2">
                   <p className='text-right  w-full text-lg font-semibold'>
@@ -389,7 +394,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     <option value="Limpieza">Limpieza</option>
                     <option value="Tecnico (Hardware)">Técnico (Hardware)</option>
                     <option value="Tecnico (Software)">Técnico (Software)</option>
-                    <option value="Sin clasificar">Sin clasificar</option>
+                    <option value="Sin categoria">Sin categoría</option>
                   </select>
                 </label>
 

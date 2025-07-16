@@ -177,10 +177,10 @@ export default function ReserveButton({
   </button>
 
   {isModalOpen && (
-    <div className="modal-overlay">
+    <div className="modal-overlay mt-1">
       <div className="modal">
         <h2>Reservar Aula</h2>
-        <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+        <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
         <form className="form">
           <div className="form-grid">

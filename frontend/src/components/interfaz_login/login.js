@@ -19,6 +19,14 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    if (usuario.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
+      toast.error('Usuario sólo admite letras minúsculas.', {
+        autoClose: 1500,
+        closeOnClick: true,
+      });
+      return;
+    }
+
     if (isSaving) return; // Evita clics múltiples
     setIsSaving(true); // Inicia la "protección"
 
@@ -83,14 +91,7 @@ return (
             maxLength={20}
             onChange={(e) => {
               const val = e.target.value;
-              const lastChar = val.slice(-1);
-              if (lastChar.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
-                toast.error('Usuario sólo admite letras minúsculas.', {
-                  autoClose: 1000,
-                  closeOnClick: true,
-                });
-              }
-              const filtered = val.replace(/[^a-z0-9_]/g, '');
+              const filtered = val.replace(/[^a-zA-Z0-9_]/g, '');
               setUsuario(filtered);
               if (filtered.length >= 20) {
                 toast.info('Máximo de 20 caracteres alcanzado.', {

@@ -222,7 +222,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                       category.includes('Limpieza') ? 'background-etiqueta4' :
                       category.includes('Hardware') ? 'background-etiqueta1' :
                       category.includes('Software') ? 'background-etiqueta3' :
-                      'bg-blue-700'}
+                      'bg-gray-500'}
                   `}
                 >
                   {category}
@@ -387,8 +387,9 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     <option value="" disabled>-- Selecciona una categoría --</option>
                     <option value="Mantenimiento">Mantenimiento</option>
                     <option value="Limpieza">Limpieza</option>
-                    <option value="Técnico (Hardware)">Técnico (Hardware)</option>
-                    <option value="Técnico (Software)">Técnico (Software)</option>
+                    <option value="Tecnico (Hardware)">Técnico (Hardware)</option>
+                    <option value="Tecnico (Software)">Técnico (Software)</option>
+                    <option value="Sin clasificar">Sin clasificar</option>
                   </select>
                 </label>
 

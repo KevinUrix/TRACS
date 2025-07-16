@@ -1,15 +1,8 @@
 const natural = require('natural');
 const fs = require('fs');
 const path = require('path');
-const { Pool } = require('pg');
-
-const pool = new Pool({
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  port: 5432,
-});
+const { pool } = require('./db');
+const { preprocess, weakSet, hardSet } = require('./preProcess');
 
 const categoryClassifier = new natural.BayesClassifier();
 const priorityClassifier = new natural.BayesClassifier();
@@ -23,8 +16,13 @@ async function trainFromDatabase() {
     categoryClassifier.docs = [];
     priorityClassifier.docs = [];
 
-    const catResult = await pool.query('SELECT report, category FROM tickets WHERE category IS NOT NULL');
-    
+    // ENTRENAMIENTO DE CATEGORÍAS
+    const catResult = await pool.query(`
+      SELECT report, category
+      FROM tickets
+      WHERE category IS NOT NULL
+    `);
+
     function extractSecondaryCategory(category) {
       const match = category.match(/\((.*?)\)/);
       return match ? match[1] : category;
@@ -33,32 +31,39 @@ async function trainFromDatabase() {
     catResult.rows.forEach(({ report, category }) => {
       if (report && category) {
         const cleanCategory = extractSecondaryCategory(category.toLowerCase());
-        categoryClassifier.addDocument(report.toLowerCase(), cleanCategory);
+        const cleanReport = preprocess(report);
+        categoryClassifier.addDocument(cleanReport, cleanCategory);
       }
     });
 
-    categoryClassifier.train();
-    await new Promise((resolve, reject) => {
-      categoryClassifier.save(categoryModelPath, (err) => {
-        if (err) reject(err);
-        else resolve();
+    if (categoryClassifier.docs.length > 0) {
+      categoryClassifier.train();
+      await new Promise((resolve, reject) => {
+        categoryClassifier.save(categoryModelPath, err => err ? reject(err) : resolve());
       });
-    });
+    }
 
-    const priResult = await pool.query('SELECT building, room, title, report, priority FROM tickets WHERE priority IS NOT NULL');
+    // ENTRENAMIENTO DE PRIORIDADES
+    const priResult = await pool.query(`
+      SELECT building, room, title, report, priority
+      FROM tickets
+      WHERE priority IS NOT NULL
+    `);
+
     priResult.rows.forEach(({ building, room, title, report, priority }) => {
-      const combined = `${building} ${room || ''} ${title || ''} ${report}`.toLowerCase();
-      if (combined && priority) {
-        priorityClassifier.addDocument(combined, priority);
+      const rawText = `${building} ${room || ''} ${title || ''} ${report}`;
+      const cleanText = preprocess(rawText);
+      if (cleanText && priority) {
+        priorityClassifier.addDocument(cleanText, priority.toLowerCase());
       }
     });
-    priorityClassifier.train();
-    await new Promise((resolve, reject) => {
-      priorityClassifier.save(priorityModelPath, (err) => {
-        if (err) reject(err);
-        else resolve();
+
+    if (priorityClassifier.docs.length > 0) {
+      priorityClassifier.train();
+      await new Promise((resolve, reject) => {
+        priorityClassifier.save(priorityModelPath, err => err ? reject(err) : resolve());
       });
-    });
+    }
 
     console.log('Clasificadores entrenados y guardados.');
   } catch (error) {
@@ -80,13 +85,11 @@ function loadModel(path) {
   });
 }
 
-
-
+// Carga ambos clasificadores desde disco
 async function loadModelsFromDisk() {
   try {
     const catClassifier = await loadModel(categoryModelPath);
     if (catClassifier) {
-      categoryClassifier.docs = catClassifier.docs;
       Object.assign(categoryClassifier, catClassifier);
     } else {
       console.log('categoryClassifier no encontrado.');
@@ -94,7 +97,6 @@ async function loadModelsFromDisk() {
 
     const priClassifier = await loadModel(priorityModelPath);
     if (priClassifier) {
-      priorityClassifier.docs = priClassifier.docs;
       Object.assign(priorityClassifier, priClassifier);
     } else {
       console.log('priorityClassifier no encontrado.');
@@ -106,32 +108,65 @@ async function loadModelsFromDisk() {
   }
 }
 
+// Capitaliza el primer carácter
 function capitalizeFirstLetter(str) {
   if (!str) return '';
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
 
+// Clasifica un ticket en categoría y prioridad
 function classifyTicket({ building, room, title, report }) {
-  const text = `${building} ${room || ''} ${title || ''} ${report}`.toLowerCase();
-  const rawCategory = categoryClassifier.classify(report.toLowerCase());
-  const rawPriority = priorityClassifier.classify(text);
+  const fullText = `${building} ${room || ''} ${title || ''} ${report}`;
+  const combinedText = `${title} ${report}`;
+  const cleanReport = preprocess(report);
+  const cleanFull = preprocess(fullText);
+  const cleanCombined = preprocess(combinedText);
+
+  const meaningfulTokens = cleanCombined.split(/\s+/).filter(token => {
+    return !hardSet.has(token) && !weakSet.has(token);
+  });
+
+  // Si no existen palabras utiles entonces retorna un ticket sin clasificar
+  if (meaningfulTokens.length < 4) {
+    return {
+      category: 'Sin clasificar',
+      secondaryCategory: null,
+      priority: 'Baja'
+    };
+  }
+
+  let rawCategory, rawPriority;
+  try {
+    rawCategory = categoryClassifier.classify(cleanReport);
+  } catch { rawCategory = null; }
+
+  try {
+    rawPriority = priorityClassifier.classify(cleanFull);
+  } catch { rawPriority = 'Baja'; }
+
+  // Si el clasificador no devuelve nada valido retornamos un ticket sin clasificar
+  if (!rawCategory || !['tecnico', 'software', 'hardware', 'limpieza', 'mantenimiento'].includes(rawCategory)) {
+    return {
+      category: 'Sin clasificar',
+      secondaryCategory: null,
+      priority: capitalizeFirstLetter(rawPriority)
+    };
+  }
 
   let category = rawCategory;
   let secondaryCategory = null;
 
   if (rawCategory === 'software' || rawCategory === 'hardware') {
-    category = 'técnico';
+    category = 'tecnico';
     secondaryCategory = rawCategory;
   }
 
-  // Capitalizamos el resultado final
   category = capitalizeFirstLetter(category);
   secondaryCategory = secondaryCategory ? capitalizeFirstLetter(secondaryCategory) : null;
   const priority = capitalizeFirstLetter(rawPriority);
 
   return { category, secondaryCategory, priority };
 }
-
 
 module.exports = {
   trainFromDatabase,

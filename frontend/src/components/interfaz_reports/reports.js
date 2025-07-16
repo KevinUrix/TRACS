@@ -242,8 +242,9 @@ export default function Reports() {
                     <option value="Todos">Todas las categorias 🌐</option>
                     <option value="Mantenimiento">Mantenimiento 🛠️</option>
                     <option value="Limpieza">Limpieza 🧹</option>
-                    <option value="Técnico (Hardware)">Técnico (Hardware) 🖥️</option>
-                    <option value="Técnico (Software)">Técnico (Software) 🧑‍💻</option>
+                    <option value="Tecnico (Hardware)">Técnico (Hardware) 🖥️</option>
+                    <option value="Tecnico (Software)">Técnico (Software) 🧑‍💻</option>
+                    <option value="Sin clasificar">Sin clasificar 📂</option>
                   </select>
 
                   <select
@@ -291,7 +292,7 @@ export default function Reports() {
             <div className="modal">
               <form>
                   <h2 className="text-lg font-semibold mb-4 text-center text-blue-900">Nuevo Ticket</h2>
-                <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+                <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
                 <div className="flex gap-4 mb-4">
                   <div>
@@ -358,13 +359,13 @@ export default function Reports() {
                   <button
                     type='button' 
                     onClick={handleSaveTicket} 
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    className="px-4 py-2 background-agregar text-white rounded"
                     disabled={isSaving}
                   >
                     Guardar Ticket
                   </button>
                 </div>
-                <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid rgb(54, 79, 119)' }} />
+                <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
               </form> 
             </div>
           </div>

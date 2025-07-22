@@ -11,9 +11,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogout = () => {
-    localStorage.removeItem('role');
-    localStorage.removeItem('username');
-    localStorage.removeItem('token');
+    localStorage.clear();
     setIsLoggedIn(false);
     setUserRole(null);
     toast.success('Se ha cerrado la sesión.');

@@ -1,3 +1,4 @@
+import { getDecodedToken } from '../../utils/auth';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -13,6 +14,10 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const navigate = useNavigate();
 
   const [ticketToPrint, setTicketToPrint] = useState(null);
+
+  const decoded = getDecodedToken();
+  const user = decoded?.username ?? null;
+  const userRole = decoded?.role ?? null;
   
   const ticketsPerPage = 9;
 
@@ -60,7 +65,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   const totalPages = Math.max(1, Math.ceil(filteredTickets.length / ticketsPerPage));
 
-  const currentUser = localStorage.getItem('username') || 'Desconocido'; // o el nombre que uses
+  const currentUser = user || 'Desconocido'; // o el nombre que uses
 
   useEffect(() => {
     const fetchTickets = async () => {
@@ -182,8 +187,6 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       toast.error('Error al borrar el ticket');
     }
   };
-
-  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
 
   return (
     <div className="p-4">

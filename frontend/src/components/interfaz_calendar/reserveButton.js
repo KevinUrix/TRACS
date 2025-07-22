@@ -1,3 +1,4 @@
+import { getDecodedToken } from '../../utils/auth';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -46,7 +47,8 @@ export default function ReserveButton({
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
 
   const navigate = useNavigate();
-  const userRole = localStorage.getItem("role");
+  const decoded = getDecodedToken();
+  const userRole = decoded?.role ?? null;
 
     // Verificación de permisos al abrir la modal
   const handleOpenModal = () => {

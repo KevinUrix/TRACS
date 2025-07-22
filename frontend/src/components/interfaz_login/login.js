@@ -1,4 +1,3 @@
-import { jwtDecode } from 'jwt-decode';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -48,10 +47,6 @@ export default function Login() {
 
       localStorage.setItem('token', data.token);
 
-      // Decodifica el token y guarda el rol
-      const decoded = jwtDecode(data.token);
-      localStorage.setItem('role', decoded.role); // Ahora puedes usarlo para mostrar/ocultar cosas
-      localStorage.setItem('username', decoded.username);
       toast.success('Se ha iniciado la sesión.');
       // Redirigir al calendario y enviar el estado
       navigate('/');

@@ -1,3 +1,4 @@
+import { getDecodedToken } from '../../utils/auth';
 import { handlePrint } from './utils';
 import { toast } from 'react-toastify';
 import { useState, useEffect } from 'react';
@@ -19,7 +20,8 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   const [cycle, setCycle] = useState([]);
   const [building, setBuilding] = useState([]);
   const [loadingCycle, setLoadingCycle] = useState(false);
-  const role = localStorage.getItem('role');
+  const decoded = getDecodedToken();
+  const role = decoded?.role ?? null;
 
 
   // const [allReservations, setAllReservations] = useState([]);
@@ -223,8 +225,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
     }
   };
 
-  const userRole = localStorage.getItem("role"); // Para obtener el rol de la cuenta.
-
   return (
     <div className="flex flex-col sm:flex-row flex-wrap -gap-1 my-5 sm:pl-6 mt-8 items-start space-x-6 selects-container-responsive">
       <div className="select-container">
@@ -277,7 +277,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         </select>
       </div>
 
-      {userRole === 'superuser' && (
+      {role === 'superuser' && (
         <DownloadButton onDownload={handleDownload} />
       )}
 

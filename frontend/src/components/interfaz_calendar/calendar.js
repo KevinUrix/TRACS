@@ -1,3 +1,4 @@
+import { getDecodedToken } from '../../utils/auth';
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -25,7 +26,9 @@ export default function Calendar() {
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
   const today = new Date();
   const location = useLocation();
-  const user = localStorage.getItem("username"); // Para obtener el usuario de la cuenta.
+  
+  const decoded = getDecodedToken();
+  const user = decoded?.username ?? null;
 
 
   /* ---------- LIMPIAR COLORES - CADA REINICIO ---------- */

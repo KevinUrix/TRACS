@@ -2,14 +2,13 @@ import { Routes, Route, useLocation, useNavigate, Navigate } from 'react-router-
 import { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { jwtDecode } from 'jwt-decode';
+import { getDecodedToken } from './utils/auth';
 import { notifyTicket, notifyReserva } from './utils/notificacions';
 import { toast } from 'react-toastify';
 import { Toaster} from 'sonner';
 import Loader from './utils/loader';
 import socket from './utils/socket';
 import './styles/toastColors.css';
-
 
 import Calendar from './components/interfaz_calendar/calendar';
 import Reports from './components/interfaz_reports/reports';
@@ -23,8 +22,13 @@ export default function AppContent() {
   const navigate = useNavigate();
   const location = useLocation();
   const hideNavbarRoutes = ['/login', '/registro'];
-  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token'));
-  const [userRole, setUserRole] = useState(localStorage.getItem('role'));
+  const decoded = getDecodedToken();
+  
+  const role = decoded?.role ?? null;
+  const user = decoded?.username ?? null;
+
+  const [isLoggedIn, setIsLoggedIn] = useState(!!decoded);
+  const [userRole, setUserRole] = useState(role);
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
   const [isLoading, setIsLoading] = useState(true);
   const isFirstRender = useRef(true);
@@ -32,12 +36,12 @@ export default function AppContent() {
 
   const superUserRoutes = ['/crud', '/registro'];
   const userRoutes = ['/crud', '/configuracion', '/registro', '/reportes'];
+  
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
+    if (decoded?.token) {
       try {
-        const decoded = jwtDecode(token);
+
         const now = Date.now() / 1000; // en segundos
 
         if (decoded.exp < now) {
@@ -78,7 +82,7 @@ export default function AppContent() {
 
   /* SOCKET.io: TICKETS */
   useEffect(() => {
-    const currentUser = localStorage.getItem('username');
+    const currentUser = user;
     const onNewTicket = (ticket) => {
       // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
       if (ticket.created_by !== currentUser) {
@@ -180,6 +184,4 @@ export default function AppContent() {
     />
   </>
 );
-
-
 }

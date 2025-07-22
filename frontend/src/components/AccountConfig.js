@@ -156,9 +156,15 @@ export default function AccountConfig() {
         {/* Mostrar rol y usuario actual */}
         <div className="mb-7 text-xl text-center">
           <p><strong>Nombre:</strong> {userInfo.username}</p>
-          <p><strong>Rol:</strong> {userInfo.role}</p>
+          <p><strong>Rol:</strong> {
+            userInfo.role === 'superuser'
+              ? 'Super usuario'
+              : userInfo.role === 'user'
+              ? 'Usuario'
+              : 'Técnico'
+          }
+          </p>
         </div>
-
         {/* Cambiar nombre de usuario */}
         <form onSubmit={handleUsernameChange} className="mb-6 flex flex-col items-center w-full max-w-md mx-auto">
           <div className="mb-4 w-full max-w-sm">

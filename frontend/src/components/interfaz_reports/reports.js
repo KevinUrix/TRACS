@@ -1,3 +1,4 @@
+import { getDecodedToken } from '../../utils/auth';
 import { toast } from 'react-toastify';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -37,6 +38,9 @@ export default function Reports() {
   const [dismissedFloatingModal, setDismissedFloatingModal] = useState(false);
 
   const navigate = useNavigate();
+  const decoded = getDecodedToken();
+  const user = decoded?.username ?? null;
+  
 
   useEffect(() => {
     document.title = "Quill - Reportes";
@@ -62,7 +66,7 @@ export default function Reports() {
       return;
     }
     // Guardamos el usuario para agregarlo como creador.
-    const creator = localStorage.getItem('username') || 'Desconocido';
+    const creator = user || 'Desconocido';
 
     const ticket = {
       building: selectedBuilding,

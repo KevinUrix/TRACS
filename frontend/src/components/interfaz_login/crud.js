@@ -1,3 +1,4 @@
+import { getDecodedToken } from '../../utils/auth';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -21,7 +22,8 @@ export default function Crud() {
   const [buildingToAdd, setBuildingToAdd] = useState(null);
 
   const navigate = useNavigate();
-  const username = localStorage.getItem("username"); // Para obtener el usuario.
+  const decoded = getDecodedToken();
+  const username = decoded?.username ?? null;
 
   useEffect(() => {
     document.title = "Quill - CRUD";
@@ -491,7 +493,14 @@ export default function Crud() {
             <h3 className="text-lg font-bold mb-4">¿Confirmar cambio de rol?</h3>
             <p className="mb-6">
               ¿Estás seguro de cambiar el rol de <strong>{selectedUser?.username}</strong> a{' '}
-              <strong>{pendingRole}</strong>?
+              <strong>
+              {pendingRole === 'superuser'
+              ? 'Super usuario'
+              : pendingRole === 'user'
+              ? 'Usuario'
+              : 'Técnico'
+              }  
+              </strong>?
             </p>
             <div className="flex justify-end gap-4">
               <button

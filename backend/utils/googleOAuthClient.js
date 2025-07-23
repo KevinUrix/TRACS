@@ -3,7 +3,7 @@ require('dotenv').config();
 const { pool } = require('./db');
 
 //
-// ⚙️ Obtiene el cliente OAuth con los tokens desde BD, buscando por username
+// Obtiene el cliente OAuth con los tokens desde BD, buscando por username
 //
 const getOAuth2Client = async (username) => {
   if (!username) throw new Error('Usuario no especificado');
@@ -16,9 +16,7 @@ const getOAuth2Client = async (username) => {
   );
 
   try {
-    //
     // Busca el user_id por username
-    //
     const userResult = await pool.query('SELECT id FROM users WHERE username = $1 LIMIT 1', [username]);
 
     if (!userResult.rows.length) {
@@ -27,9 +25,7 @@ const getOAuth2Client = async (username) => {
 
     const userId = userResult.rows[0].id;
 
-    //
     // Consulta los tokens desde la base de datos usando el ID
-    //
     const { rows } = await pool.query('SELECT * FROM google_tokens WHERE user_id = $1 LIMIT 1', [userId]);
 
     if (!rows.length) {
@@ -45,9 +41,7 @@ const getOAuth2Client = async (username) => {
     const now = Date.now();
     const bufferTime = 5 * 60 * 1000; // 5 minutos de buffer para renovación anticipada
 
-    //
     // Renovación del token si expiró o está por expirar
-    //
     if (!tokens.expiry_date || tokens.expiry_date < now || tokens.expiry_date <= now + bufferTime) {
       console.log('El token ha expirado o está por caducar. Renovando...');
 
@@ -75,9 +69,8 @@ const getOAuth2Client = async (username) => {
 
       console.log('Tokens renovados correctamente');
     } else {
-      //
+
       // Token aún válido
-      //
       oAuth2Client.setCredentials({
         access_token: tokens.access_token,
         refresh_token: tokens.refresh_token,

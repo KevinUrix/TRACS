@@ -48,7 +48,7 @@ const extractClassrooms = (buildingData) => {
 const saveBuildingsData = (buildingsData) => {
   try {
     Object.entries(buildingsData).forEach(([building, classrooms]) => {
-      const outputFilePath = path.join(__dirname, `../../public/data/classrooms/${building}.json`);
+      const outputFilePath = path.join(__dirname, `../data/classrooms/${building}.json`);
       fs.writeFileSync(outputFilePath, JSON.stringify(classrooms, null, 2), 'utf-8');
     });
   } catch (err) {

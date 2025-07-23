@@ -43,7 +43,7 @@ export default function Reports() {
   
 
   useEffect(() => {
-    document.title = "Quill - Reportes";
+    document.title = "TRACS - Reportes";
   }, []);
 
   const [isSaving, setIsSaving] = useState(false);
@@ -99,12 +99,12 @@ export default function Reports() {
           window.location.href = '/';
           return;
         }
-        throw new Error(errorData.error || 'Error al guardar ticket');
+        throw new Error(errorData.error || 'Error al guardar reporte');
       }
 
       const savedTicket = await response.json();
-      console.log('Ticket guardado:', savedTicket);
-      toast.success('Ticket guardado exitosamente');
+      console.log('Reporte guardado:', savedTicket);
+      toast.success('Reporte guardado exitosamente');
 
       // Limpiar formulario y cerrar modal
       setShowForm(false);
@@ -118,8 +118,8 @@ export default function Reports() {
       setRefreshTickets(prev => !prev);
 
     } catch (error) {
-      console.error('Error al guardar ticket:', error);
-      toast.error('No se pudo guardar el ticket');
+      console.error('Error al guardar reporte:', error);
+      toast.error('No se pudo guardar el reporte');
     } finally {
       setIsSaving(false); // Vuelve a permitir guardar
     }
@@ -270,7 +270,7 @@ export default function Reports() {
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
                     </svg>
-                    Agregar Ticket
+                    Agregar Reporte
                   </button>
                 )}
               </div>
@@ -295,7 +295,7 @@ export default function Reports() {
           <div className="modal-overlay">
             <div className="modal">
               <form>
-                  <h2 className="text-lg font-semibold mb-4 text-center text-blue-900">Nuevo Ticket</h2>
+                  <h2 className="text-lg font-semibold mb-4 text-center text-blue-900">Nuevo Reporte</h2>
                 <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
                 <div className="flex gap-4 mb-4">
@@ -366,7 +366,7 @@ export default function Reports() {
                     className="px-4 py-2 background-agregar text-white rounded"
                     disabled={isSaving}
                   >
-                    Guardar Ticket
+                    Guardar Reporte
                   </button>
                 </div>
                 <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />

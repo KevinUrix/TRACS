@@ -29,7 +29,7 @@ exports.createTicket = async (req, res) => {
       await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-ticket', data: newTicket});
     }
     catch (error) {
-      console.error('🔕 Error al notificar al servicio de sockets', error.message);
+      console.error('Error al notificar al servicio de sockets', error.message);
     }
 
     

@@ -16,7 +16,7 @@ export default function Registro() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Quill - Registro";
+    document.title = "TRACS - Registro";
   }, []);
 
   const handleRegister = async (e) => {

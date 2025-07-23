@@ -82,9 +82,9 @@ const syncLocalCacheToRedis = async () => {
       const ttl = Math.floor((expiresAt - now) / 1000);
       try {
         await redis.set(key, JSON.stringify(value), 'EX', ttl);
-        console.log(`✅ Sincronizada key=${key} a Redis`);
+        console.log(`Sincronizada key=${key} a Redis`);
       } catch (err) {
-        console.error(`❌ Error sincronizando key=${key}:`, err.message);
+        console.error(`Error sincronizando key=${key}:`, err.message);
       }
     } else {
       localCache.delete(key); // limpia expirados

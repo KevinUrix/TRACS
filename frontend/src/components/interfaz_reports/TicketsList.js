@@ -76,14 +76,14 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           : `${API_URL}/api/tickets`;
 
         const res = await fetch(url);
-        if (!res.ok) throw new Error('Error al cargar tickets');
+        if (!res.ok) throw new Error('Error al cargar reportes');
 
         const data = await res.json();
         setTickets(data);
         setCurrentPage(1);
       } catch (error) {
         console.error(error);
-        toast.error('No se pudo cargar la lista de tickets');
+        toast.error('No se pudo cargar la lista de reportes');
       } finally {
         setLoading(false);
       }
@@ -142,15 +142,15 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           window.location.href = '/';
           return;
         }
-        throw new Error('Error al actualizar ticket');
+        throw new Error('Error al actualizar reporte');
       }
 
-      toast.success('Ticket actualizado');
+      toast.success('Reporte actualizado');
       setSelectedTicket(null);
       onRefresh();
     } catch (error) {
       console.error(error);
-      toast.error('Error al actualizar el ticket');
+      toast.error('Error al actualizar el reporte');
     } finally {
       setIsSaving(false); // Vuelve a permitir guardar
     }
@@ -158,7 +158,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   // Borrar ticket
   const handleDelete = async () => {
-    if (!window.confirm('¿Seguro que quieres borrar este ticket?')) return;
+    if (!window.confirm('¿Seguro que quieres borrar este reporte?')) return;
     try {
       const res = await fetch(`${API_URL}/api/tickets/${selectedTicket.id}`, {
         method: 'DELETE',
@@ -177,34 +177,34 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           window.location.href = '/';
           return;
         }
-        throw new Error('Error al borrar ticket');
+        throw new Error('Error al borrar reporte');
       }
-      toast.success('Ticket borrado');
+      toast.success('Reporte borrado');
       setSelectedTicket(null);
       onRefresh();
     } catch (error) {
       console.error(error);
-      toast.error('Error al borrar el ticket');
+      toast.error('Error al borrar el reporte');
     }
   };
 
   return (
     <div className="p-4">
       <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900 tracking-wide">
-        {building ? `Tickets para ${building}` : 'Todos los tickets'}
+        {building ? `Reportes para ${building}` : 'Todos los reportes'}
       </h2>
       <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
       {!loading && tickets.length > 0 && filteredTickets.length === 0 && (
-        <p>No se encontraron tickets con los filtros aplicados.</p>
+        <p>No se encontraron reportes con los filtros aplicados.</p>
       )}
 
-      {loading && <p>Cargando tickets...</p>}
+      {loading && <p>Cargando reportes...</p>}
       {!loading && tickets.length === 0 && (
           <p>
             {building
-              ? 'No hay tickets para este edificio.'
-              : 'No hay tickets registrados.'}
+              ? 'No hay reportes para este edificio.'
+              : 'No hay reportes registrados.'}
           </p>
       )}
 
@@ -323,9 +323,9 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
             <form>
                 <h2>
                 {userRole === 'user' && 'Vista completa'}
-                {userRole === 'tecnico' && 'Editar ticket'}
-                {userRole === 'superuser' && 'Editar ticket'}
-                {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo Ticket'}
+                {userRole === 'tecnico' && 'Editar reporte'}
+                {userRole === 'superuser' && 'Editar reporte'}
+                {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo reporte'}
               </h2>
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 

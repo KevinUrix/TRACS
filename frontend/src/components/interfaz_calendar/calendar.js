@@ -423,7 +423,7 @@ export default function Calendar() {
         const localData = await localResponse.json();
 
         if (Array.isArray(localData)) {
-          console.warn(`📁 Horario cargado desde archivo local para ${buildingName}`);
+          console.warn(`Horario cargado desde archivo local para ${buildingName}`);
           return localData;
         } else {
           console.error("El archivo local no contiene un array válido:", localData);
@@ -474,7 +474,7 @@ export default function Calendar() {
               }
 
               if (Array.isArray(scheduleData) && scheduleData.length === 0) {
-                console.warn(`⚠️ Horario vacío para ${buildingName}`);
+                console.warn(`Horario vacío para ${buildingName}`);
               }
 
               results.push({ buildingName, data: scheduleData || []});
@@ -501,7 +501,7 @@ export default function Calendar() {
 
         const allEmpty = !Object.values(allSchedules).some(arr => Array.isArray(arr) && arr.length > 0);
         if (allEmpty) {
-          console.warn("❌ Todos los horarios están vacíos. No se guardará en caché.");
+          console.warn("Todos los horarios están vacíos. No se guardará en caché.");
           return;
         }
 
@@ -521,7 +521,7 @@ export default function Calendar() {
 
   useEffect(() => {
     if (isStatisticMode) {
-      document.title = "Quill - Conteo de Alumnos";
+      document.title = "TRACS - Conteo de Alumnos";
     }
     else if (selectedBuilding) {
       const displayName = {
@@ -530,9 +530,9 @@ export default function Calendar() {
         DBETA: "CISCO"
       }[selectedBuilding] || selectedBuilding;
 
-      document.title = `Quill - ${displayName}`;
+      document.title = `TRACS - ${displayName}`;
     } else {
-      document.title = "Quill";
+      document.title = "TRACS";
     }
   }, [isStatisticMode, selectedBuilding]);
 

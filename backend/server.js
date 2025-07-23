@@ -47,22 +47,22 @@ app.use('/api', trainRoutes);
 app.use('/api', userRoutes);
 app.use('/api/tickets', ticketRoutes);
 
-// Host - build
+/* // Host - build
 const buildPath = path.join(__dirname, '..', 'build');
 app.use(express.static(buildPath));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
+ */
 
 // Sincroniza el caché local (node) con redis si redis llegó a fallar
 redis.on('ready', () => {
-  console.log('🔄 Redis listo. Sincronizando localCache...');
+  console.log('Redis listo. Sincronizando localCache...');
   cache.syncLocalCacheToRedis()
-    .then(() => console.log('✅ Sincronización finalizada'))
-    .catch(err => console.error('❌ Error durante la sincronización:', err.message));
+    .then(() => console.log('Sincronización finalizada'))
+    .catch(err => console.error('Error durante la sincronización:', err.message));
 });
-
 
 
 (async () => {
@@ -70,6 +70,6 @@ redis.on('ready', () => {
   await loadModelsFromDisk();
   
   server.listen(PORT, '0.0.0.0', () => {
-    console.log(`✅ Servidor corriendo`);
+    console.log(`Servidor corriendo`);
   });
 })();

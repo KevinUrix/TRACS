@@ -77,7 +77,7 @@ exports.deleteUser = async (req, res) => {
   }
 };
 
-// Obtener datos del usuario actual
+// Obtiene datos del usuario actual
 exports.getUserInfo = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -98,7 +98,7 @@ exports.getUserInfo = async (req, res) => {
   }
 };
 
-// Cambiar nombre de usuario
+// Cambia nombre de usuario
 exports.updateUsername = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -125,7 +125,7 @@ exports.updateUsername = async (req, res) => {
   }
 };
 
-// Cambiar contraseña
+// Cambia contraseña
 exports.updatePassword = async (req, res) => {
   try {
     const userId = req.user.id;

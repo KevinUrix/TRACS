@@ -25,9 +25,9 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
   return (
     <>
       <nav className="navbar flex items-center justify-between px-6 bg-white shadow relative">
-        {/* Logo Quill a la izquierda */}
+        {/* Logo TRACS a la izquierda */}
         <div className="flex items-center flex-shrink-0">
-          <Link to="/" className="navbar-brand">Quill</Link>
+          <Link to="/" className="navbar-brand">TRACS</Link>
         </div>
 
         {/* Botón hamburguesa para pantallas pequeñas */}

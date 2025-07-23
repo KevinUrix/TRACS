@@ -6,7 +6,7 @@ function authMiddleware(req, res, next) {
 
   if (!token) return res.status(401).json({ message: 'Token requerido' });
   
-  // Verificar si el token tiene un formato correcto
+  // Verifica si el token tiene un formato correcto
   if (token.split('.').length !== 3) {
     return res.status(400).json({ message: 'Token malformado' });
   }

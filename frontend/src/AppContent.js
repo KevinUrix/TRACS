@@ -84,13 +84,12 @@ export default function AppContent() {
   useEffect(() => {
     const currentUser = user;
     const onNewTicket = (ticket) => {
-      // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
+      /* // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
       if (ticket.created_by !== currentUser) {
-        notifyTicket(`🎟️ Nuevo ticket recibido`, ticket);
-      }
-      // QUITAR COMENTARIO PARA MOSTRAR A TODOS
-      // notifyTicket(`🎟️ Nuevo ticket recibido`, ticket);
-      console.log('🎟️ Nuevo ticket recibido:', ticket);
+        notifyTicket(`🎟️ Nuevo reporte recibido`, ticket);
+      } */
+      notifyTicket(`🎟️ Nuevo reporte recibido`, ticket);
+      console.log('Nuevo reporte recibido:', ticket);
     };
 
     socket.on('new-ticket', onNewTicket);

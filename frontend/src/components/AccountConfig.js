@@ -23,7 +23,7 @@ export default function AccountConfig() {
     
 
   useEffect(() => {
-    document.title = "Quill - Configuración";
+    document.title = "TRACS - Configuración";
   }, []);
 
   // Obtener datos del usuario al cargar el componente
@@ -51,6 +51,14 @@ export default function AccountConfig() {
     // Validar que el nuevo nombre no sea igual al actual
     if (newUsername === userInfo.username) {
       setUsernameMessage('El nuevo nombre de usuario debe ser diferente al actual.');
+      return;
+    }
+
+    if (newUsername.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
+        toast.error('Usuario sólo admite letras minúsculas.', {
+          autoClose: 1500,
+          closeOnClick: true,
+        });
       return;
     }
 
@@ -175,14 +183,7 @@ export default function AccountConfig() {
               value={newUsername}
               onChange={(e) => {
                 const val = e.target.value;
-                const lastChar = val.slice(-1);
-                if (lastChar.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
-                  toast.error('Usuario sólo admite letras minúsculas.', {
-                    autoClose: 1000,
-                    closeOnClick: true,
-                  });
-                }
-                const filtered = val.replace(/[^a-z0-9_]/g, '');
+                const filtered = val.replace(/[^a-zA-Z0-9_]/g, '');
                 setNewUsername(filtered);
                 if (filtered.length >= 20) {
                   toast.info('Máximo de 20 caracteres alcanzado.', {

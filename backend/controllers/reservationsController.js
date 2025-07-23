@@ -90,7 +90,7 @@ const saveReservation = async (req, res) => {
     await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
-    // SOCKET
+    // Socket
     try {
       await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}});
     }
@@ -184,7 +184,7 @@ const deleteReservation = async (req, res) => {
       }
     }
 
-    // Filtrar las reservas que NO coinciden (las que se deben conservar)
+    // Filtra las reservas que NO coinciden (las que se deben conservar)
     currentData.data = currentData.data.filter(reservation =>
       !(
         reservation.schedule === schedule &&
@@ -315,11 +315,11 @@ const updateReservation = async (req, res) => {
           ];
         }
         
-        // Obtener lista de calendarios
+        // Obtenemos lista de calendarios
         const calendarListResponse = await calendar.calendarList.list();
         const calendars = calendarListResponse.data.items || [];
         
-        // Buscar calendario que contenga buildingName en su nombre
+        // Busca calendario que contenga buildingName en su nombre
         const targetCalendar = calendars.find(cal =>
           cal.summary.toLowerCase().includes(mappedBuildingName.toLowerCase())
         );

@@ -17,23 +17,23 @@ const localSchedule = async (req, res) => {
   try {
     const cached = await cache.get(cacheKey);
     if (cached) {
-      console.log(`✅ Horario de ${buildingName} obtenido desde caché local.`);
+      console.log(`Horario de ${buildingName} obtenido desde caché local.`);
       return res.json(cached);
     }
 
     const fileData = await fs.readFile(filePath, 'utf8');
     const json = JSON.parse(fileData);
 
-    // Guardar solo si el archivo existe y es válido
+    // Guarda solo si el archivo existe y es válido
     await cache.set(cacheKey, json);
-    console.log(`📥 Horario de ${buildingName} guardado en caché desde archivo local.`);
+    console.log(`Horario de ${buildingName} guardado en caché desde archivo local.`);
 
-    // Lanzar background para guardar los demás
+    // Lanza background para guardar los demás
     backgroundCacheAll(cycle, buildingName);
 
     return res.json(json);
   } catch (error) {
-    console.error('❌ Error al obtener el horario:', error.message);
+    console.error('Error al obtener el horario:', error.message);
     return res.status(500).json({ error: 'No se pudieron cargar los horarios' });
   }
 };
@@ -50,12 +50,12 @@ const backgroundCacheAll = async (cycle, skipBuilding) => {
       const fileData = await fs.readFile(filePath, 'utf8');
       const json = JSON.parse(fileData);
       await cache.set(cacheKey, json);
-      console.log(`📦 Horario en caché: ${building} desde local`);
+      console.log(`Horario en caché: ${building} desde local`);
     } catch (error) {
       if (error.code === 'ENOENT') {
-        console.warn(`⚠️ Archivo no encontrado para ${building}, no se guarda en caché.`);
+        console.warn(`Archivo no encontrado para ${building}, no se guarda en caché.`);
       } else {
-        console.error(`❌ Error al procesar ${building}:`, error.message);
+        console.error(`Error al procesar ${building}:`, error.message);
       }
     }
   }

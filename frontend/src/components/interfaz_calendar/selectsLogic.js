@@ -83,12 +83,12 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       if (Array.isArray(localData) && localData.length > 0) {
         setCycle(localData);
         sessionStorage.setItem(cacheKey, JSON.stringify(localData));
-        console.warn("✅ Ciclos cargados desde archivo local y guardados en cache.");
+        console.warn("Ciclos cargados desde archivo local y guardados en cache.");
       } else {
-        console.error("❌ El archivo local no contiene un array válido:", localData);
+        console.error("El archivo local no contiene un array válido:", localData);
       }
     } catch (error) {
-      console.error("❌ Error al cargar ciclos locales de respaldo:", error);
+      console.error("Error al cargar ciclos locales de respaldo:", error);
       setCycle([]);
     }
   };
@@ -100,15 +100,15 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       try {
         const parsed = JSON.parse(cachedCycles);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          console.log("✅ Ciclos cargados desde sessionStorage");
+          console.log("Ciclos cargados desde sessionStorage");
           setCycle(parsed);
           return;
         } else {
-          console.warn("⚠️ Ciclos en cache vacíos o corruptos, se eliminan");
+          console.warn("Ciclos en cache vacíos o corruptos, se eliminan");
           sessionStorage.removeItem(cacheKey);
         }
       } catch (error) {
-        console.warn("⚠️ Error al parsear ciclos en cache:", error);
+        console.warn("Error al parsear ciclos en cache:", error);
         sessionStorage.removeItem(cacheKey);
       }
     }
@@ -123,13 +123,13 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       if (Array.isArray(data) && data.length > 0) {
         setCycle(data);
         sessionStorage.setItem(cacheKey, JSON.stringify(data));
-        console.log("✅ Ciclos cargados desde el backend y guardados en cache.");
+        console.log("Ciclos cargados desde el backend y guardados en cache.");
       } else {
-        console.warn("⚠️ Respuesta vacía del backend. Intentando archivo local...");
+        console.warn("Respuesta vacía del backend. Intentando archivo local...");
         await loadLocalCycles();
       }
     } catch (error) {
-      console.error("❌ Error al obtener ciclos desde el backend:", error);
+      console.error("Error al obtener ciclos desde el backend:", error);
       await loadLocalCycles();
     } finally {
       setLoadingCycle(false);
@@ -220,7 +220,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         alert(`⚠️ Hubo un error al descargar los archivos: ${result.error || "Error desconocido"}`);
       }
     } catch (error) {
-      console.error("❌ Error durante la descarga:", error);
+      console.error("Error durante la descarga:", error);
       alert(`❌ Error inesperado: ${error.message}`);
     }
   };

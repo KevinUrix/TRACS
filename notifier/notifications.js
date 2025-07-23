@@ -26,14 +26,14 @@ app.post('/notify', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-  console.log('🟢 Cliente conectado al microservicio');
+  console.log('Cliente conectado al microservicio');
   
   socket.on('disconnect', () => {
-    console.log('🔴 Cliente desconectado');
+    console.log('Cliente desconectado');
   });
 });
 
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`✅ Microservicio de notificaciones activo en puerto ${PORT}`);
+  console.log(`Microservicio de notificaciones activo en puerto ${PORT}`);
 });

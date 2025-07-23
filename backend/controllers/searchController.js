@@ -31,22 +31,22 @@ const localFiles = async (cycle, building) => {
 
     const alreadyInScheduleCache = await cache.get(scheduleCacheKey);
     if (alreadyInScheduleCache) {
-      console.log(`✅ Cache ya existe (scraping o local) para ${building}, no se hace nada.`);
+      console.log(`Cache ya existe (scraping o local) para ${building}, no se hace nada.`);
       return true;
     }
 
     const alreadyCached = await cache.get(localCacheKey);
     if (alreadyCached) {
-      console.log(`✅ Cache ya existe para ${building}, se omite lectura de archivo local.`);
+      console.log(`Cache ya existe para ${building}, se omite lectura de archivo local.`);
       await cache.set(scheduleCacheKey, alreadyCached, TTL_LOCAL_FALLBACK);
       return true;
     }
     await cache.set(scheduleCacheKey, localData, TTL_LOCAL_FALLBACK);
     await cache.set(localCacheKey, localData);
-    console.log(`📁 Archivo local cargado para ${building}`);
+    console.log(`Archivo local cargado para ${building}`);
     return true;
   } catch (fsErr) {
-    console.error(`❌ No se encontró archivo local para ${building}.`);
+    console.error(`No se encontró archivo local para ${building}.`);
     return false;
   }
 }
@@ -70,19 +70,19 @@ const getSearch = async (req, res) => {
 
   try {
     let results = [];
-    // Obtener todas las claves del caché
+    // Obtiene todas las claves del caché
     const cacheKeys = await cache.keys();
-    // Procesar todas las claves que corresponden al ciclo
+    // Procesamos todas las claves que corresponden al ciclo
     const cycleCacheKeyPrefix = `schedule-${cycle}-building-`;
     // Verifica si hay match con alguna de las key
     const matchingCacheKeys = cacheKeys.filter(key => key.startsWith(cycleCacheKeyPrefix));
 
-    // Extraer nombres de edificios desde las claves cacheadas
+    // Extraemos nombres de edificios desde las claves cacheadas
     const cachedBuildings = matchingCacheKeys.map(key =>
       key.replace(cycleCacheKeyPrefix, '')
     );
 
-    // Filtrar los edificios que aún no están cacheados (ni siquiera array un vacío)
+    // Filtra los edificios que aún no están cacheados (ni siquiera array un vacío)
     const buildingsToScrape = buildings.filter(building => !cachedBuildings.includes(building.value));
 
     if (buildingsToScrape.length > 0 && cachedBuildings.length > 0) {
@@ -95,10 +95,10 @@ const getSearch = async (req, res) => {
         await new Promise(res => setTimeout(res, 100));
 
         if (scrapeResult?.error) {
-          console.warn(`⚠️ Scraping fallido para ${building.value}. Intentando archivo local...`);
+          console.warn(`Scraping fallido para ${building.value}. Intentando archivo local...`);
           const loaded = await localFiles(cycle, building.value);
           if (!loaded) {
-            console.error(`🛑 No se pudo obtener datos de ningún edificio (ni scraping ni local). Cancelando búsqueda.`);
+            console.error(`No se pudo obtener datos de ningún edificio (ni scraping ni local). Cancelando búsqueda.`);
             return res.status(500).json({ error: 'No hay datos disponibles para realizar la búsqueda. SIIAU no responde y no existen archivos del ciclo en el servidor.' });
           }
         }
@@ -112,10 +112,10 @@ const getSearch = async (req, res) => {
         await new Promise(res => setTimeout(res, 200));
 
         if (scrapeResult?.error) {
-          console.warn(`⚠️ Scraping fallido para ${building.value}. Intentando archivo local...`);
+          console.warn(`Scraping fallido para ${building.value}. Intentando archivo local...`);
           const loaded = await localFiles(cycle, building.value);
           if (!loaded) {
-            console.error(`🛑 No se pudo obtener datos de ningún edificio (ni scraping ni local). Cancelando búsqueda.`);
+            console.error(`No se pudo obtener datos de ningún edificio (ni scraping ni local). Cancelando búsqueda.`);
             return res.status(500).json({ error: 'No hay datos disponibles para realizar la búsqueda. SIIAU no responde y no existen archivos del ciclo en el servidor.' });
           }
         }
@@ -125,7 +125,7 @@ const getSearch = async (req, res) => {
     const updatedCacheKeys = await cache.keys();
 
     for (let cacheKey of updatedCacheKeys) {
-      // Procesar solo los cachés que corresponden al ciclo
+      // Procesa solo los cachés que corresponden al ciclo
       if (cacheKey.startsWith(cycleCacheKeyPrefix)) {
         const data = await cache.get(cacheKey);
 
@@ -137,7 +137,7 @@ const getSearch = async (req, res) => {
             return match;
           });
 
-          // Agregar al array de resultados
+          // Agrega al array de resultados
           results.push(...filteredResults);
         }
       }
@@ -186,14 +186,14 @@ const getSearch = async (req, res) => {
         if (!aHasDay && bHasDay) return 1;
       }
 
-      // Prioridad 3: día más próximo por prioridad (Lunes...Sábado)
+      // Prioridad 3: día más próximo por prioridad
       const aBestDay = aDays.reduce((min, d) => Math.min(min, dayPriority[d] ?? 7), 7);
       const bBestDay = bDays.reduce((min, d) => Math.min(min, dayPriority[d] ?? 7), 7);
 
       return aBestDay - bBestDay;
     });
 
-    // Enviar los resultados
+    // Envia los resultados
     if (results.length === 0) {
       console.log('No se encontraron resultados para este profesor.');
       return res.json({ message: 'No se encontraron horarios para este profesor.' });

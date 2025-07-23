@@ -1,5 +1,4 @@
-// src/components/PrintTicket.js
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './reports.css';
 
 export default function PrintTicket({ ticket, onClose }) {
@@ -20,7 +19,7 @@ export default function PrintTicket({ ticket, onClose }) {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>Ticket #${ticket.id}</title>
+          <title>Reporte #${ticket.id}</title>
           <style>
             body { font-family: Arial, sans-serif; padding: 20px; }
             h2 { color: #4629ba; }

@@ -1,19 +1,19 @@
 {
-  "short_name": "Quill",
-  "name": "Quill",
+  "short_name": "TRACS",
+  "name": "TRACS",
   "icons": [
     {
-      "src": "quill_page.webp",
+      "src": "tracs_page.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "quill_page.webp",
+      "src": "tracs_page.webp",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "quill_page.webp",
+      "src": "tracs_page.webp",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -14,15 +14,15 @@ const saveCyclesToFile = async (outputDir = path.join(__dirname, '../data'), fil
     const cycles = await scrapeCycles();
 
     if (!Array.isArray(cycles) || cycles.length === 0) {
-      console.warn('⚠️ Ciclos vacíos, no se guarda ningún archivo.');
+      console.warn('Ciclos vacíos, no se guarda ningún archivo.');
       return { success: false, reason: 'empty' };
     }
 
     fs.writeFileSync(filePath, JSON.stringify(cycles, null, 2), 'utf-8');
-    console.log(`✅ Ciclos guardados en: ${filePath}`);
+    console.log(`Ciclos guardados en: ${filePath}`);
     return { success: true };
   } catch (err) {
-    console.error('❌ Error al guardar los ciclos:', err.message);
+    console.error('Error al guardar los ciclos:', err.message);
     return { success: false, reason: err.message };
   }
 };

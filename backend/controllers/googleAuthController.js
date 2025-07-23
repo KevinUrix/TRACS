@@ -100,7 +100,7 @@ const handleGoogleCallback = async (req, res) => {
 
 
 //
-// Obtener Tokens guardados desde la base de datos (por user_id)
+// Obtiene Tokens guardados desde la base de datos (por user_id)
 //
 const getSavedTokens = async (userId) => {
   try {

@@ -90,7 +90,7 @@ export default function AppContent() {
       }
       // QUITAR COMENTARIO PARA MOSTRAR A TODOS
       // notifyTicket(`🎟️ Nuevo ticket recibido`, ticket);
-      console.log('🎟️ Nuevo ticket recibido:', ticket);
+      console.log('Nuevo ticket recibido:', ticket);
     };
 
     socket.on('new-ticket', onNewTicket);

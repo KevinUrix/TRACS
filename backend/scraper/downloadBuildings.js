@@ -43,7 +43,7 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
         const data = await scrapeData(cycle, building.value, true);
 
         if (data && typeof data === 'object' && data.error) {
-          console.warn(`⚠️ Error explícito para ${building.value}`);
+          console.warn(`Error explícito para ${building.value}`);
           resultSummary.failed.push(building.value);
           continue;
         }
@@ -60,21 +60,21 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
 
         // Verificar si hay datos útiles
         if (!Array.isArray(actualData)) {
-          console.warn(`⚠️ Datos corruptos para ${building.value}`);
+          console.warn(`Datos corruptos para ${building.value}`);
           resultSummary.skipped.push(building.value);
           continue;
         }
         else if (actualData.length === 0) {
-          console.warn(`⚠️ Datos vacíos para ${building.value}`);
+          console.warn(`Datos vacíos para ${building.value}`);
           resultSummary.empty.push(building.value);
         }
 
         const filePath = path.join(outputDir, `${building.value}.json`);
         fs.writeFileSync(filePath, JSON.stringify(actualData, null, 2), 'utf-8');
-        console.log(`✅ Guardado: ${filePath}`);
+        console.log(`Guardado: ${filePath}`);
         resultSummary.success.push(building.value);
       } catch (err) {
-        console.error(`❌ Error en ${building.value}:`, err.message);
+        console.error(`Error en ${building.value}:`, err.message);
         resultSummary.failed.push({ building, error: err.message });
       }
     }
@@ -83,7 +83,7 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
   }
 
   catch (err) {
-    console.error(`⛔ No se puede iniciar scraping: ${err.message}`);
+    console.error(`No se puede iniciar scraping: ${err.message}`);
     return {
       success: [],
       failed: buildings.map(b => b.value),

@@ -26,7 +26,7 @@ export default function Crud() {
   const username = decoded?.username ?? null;
 
   useEffect(() => {
-    document.title = "Quill - CRUD";
+    document.title = "TRACS - CRUD";
   }, []);
 
   const handleConfirmChange = async () => {

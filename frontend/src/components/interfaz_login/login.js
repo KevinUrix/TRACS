@@ -12,7 +12,7 @@ export default function Login() {
   const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
-    document.title = "Quill - Login";
+    document.title = "TRACS - Login";
   }, []);
 
   const handleLogin = async (e) => {

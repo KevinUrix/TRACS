@@ -36,6 +36,18 @@ export default function AccountConfig() {
         setUserInfo(res.data);
         setNewUsername(res.data.username);
       } catch (err) {
+        if (err.response) {
+          if (err.response.status === 403) {
+            localStorage.clear();
+            navigate("/");
+            return;
+          }
+          else if (err.response.status === 401) {
+            localStorage.clear();
+            window.location.href = '/';
+            return;
+          }
+        }
         console.error(err);
       }
     };
@@ -81,6 +93,7 @@ export default function AccountConfig() {
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }
@@ -136,6 +149,7 @@ export default function AccountConfig() {
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }

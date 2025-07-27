@@ -134,6 +134,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
       if (!res.ok) {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }
@@ -169,6 +170,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       
       if (!res.ok) {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }

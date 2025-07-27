@@ -91,6 +91,7 @@ export default function Reports() {
       if (!response.ok) {
         const errorData = await response.json();
         if (response.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }

@@ -59,6 +59,7 @@ export default function Registro() {
 
       if (!res.ok) {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }

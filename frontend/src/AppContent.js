@@ -86,10 +86,10 @@ export default function AppContent() {
     const onNewTicket = (ticket) => {
       /* // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
       if (ticket.created_by !== currentUser) {
-        notifyTicket(`🎟️ Nuevo reporte recibido`, ticket);
+        notifyTicket(`🎟️ Nuevo reporte`, ticket);
       } */
-      notifyTicket(`🎟️ Nuevo reporte recibido`, ticket);
-      console.log('Nuevo reporte recibido:', ticket);
+      notifyTicket(`🎟️ Nuevo reporte`, ticket);
+      console.log('Nuevo reporte:', ticket);
     };
 
     socket.on('new-ticket', onNewTicket);
@@ -178,7 +178,7 @@ export default function AppContent() {
     <Toaster
       richColors
       position="bottom-right"
-      duration={4000}
+      duration={6000}
       expand
     />
   </>

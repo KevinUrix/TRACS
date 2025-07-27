@@ -146,6 +146,7 @@ export default function Crud() {
       }
       else {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }
@@ -198,6 +199,7 @@ export default function Crud() {
         toast.success("Edificio actualizado correctamente");
       } else {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }
@@ -239,6 +241,7 @@ export default function Crud() {
         toast.success('Se eliminó correctamente.');
       } else {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }
@@ -274,6 +277,7 @@ export default function Crud() {
         toast.error('Se ha eliminado el usuario');
       } else {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }
@@ -315,6 +319,7 @@ export default function Crud() {
   
       if (!res.ok) {
         if (res.status === 403) {
+          localStorage.clear();
           navigate("/");
           return;
         }

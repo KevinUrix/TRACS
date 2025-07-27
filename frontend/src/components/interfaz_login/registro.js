@@ -62,7 +62,7 @@ export default function Registro() {
           navigate("/");
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -107,6 +107,7 @@ export default function Registro() {
             <input
               type="text"
               value={usuario}
+              minLength={3}
               maxLength={20}
               onChange={(e) => {
                 const val = e.target.value;
@@ -133,6 +134,7 @@ export default function Registro() {
               <input
                 type={showPasswords ? 'text' : 'password'}
                 value={password}
+                minLength={6}
                 maxLength={50}
                 onChange={(e) => {
                   const val = e.target.value;

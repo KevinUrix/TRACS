@@ -23,7 +23,7 @@ const get = async (key) => {
     return null;
 
   } catch (err) {
-    console.error('Redis get error:', err);
+    console.error('Redis get error:', err.message);
 
     const cached = localCache.get(key);
     if (cached && cached.expiresAt > Date.now()) {
@@ -41,7 +41,7 @@ const set = async (key, value, ttl = DEFAULT_TTL) => {
     const expiresAt = Date.now() + ttl * 1000;
     localCache.set(key, { value, expiresAt }); // Guarda en caché local (node)
   } catch (err) {
-    console.error('Redis set error:', err);
+    console.error('Redis set error:', err.message);
 
     const expiresAt = Date.now() + ttl * 1000;
     localCache.set(key, { value, expiresAt }); // Guarda el caché local, en caso de eror
@@ -66,7 +66,7 @@ const keys = async (pattern = '*') => {
 
     return localKeys;
   } catch (err) {
-    console.error('Error al obtener claves del caché:', err);
+    console.error('Error al obtener claves del caché:', err.message);
     return Array.from(localCache.keys());
   }
 };

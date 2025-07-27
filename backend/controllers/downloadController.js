@@ -15,7 +15,7 @@ const getDownloads = async (req, res) => {
     res.status(200).json({ success: true, result: {buildings: resultSummary, cycles: cyclesSummary} });
 
   } catch (err) {
-    console.error(err);
+    console.error(err.message);
     res.status(500).json({ success: false, error: err.message });
   }
 };

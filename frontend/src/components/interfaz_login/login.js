@@ -83,6 +83,7 @@ return (
           <input
             type="text"
             value={usuario}
+            minLength={3}
             maxLength={20}
             onChange={(e) => {
               const val = e.target.value;
@@ -107,6 +108,8 @@ return (
           <input
             type={showPasswords ? 'text' : 'password'}
             value={password}
+            minLength={6}
+            maxLength={50}
             onChange={(e) => {
               const val = e.target.value;
               const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');

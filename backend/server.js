@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const http = require('http');
 const path = require('path');
+const helmet = require('helmet');
 
 const { loadModelsFromDisk, trainFromDatabase } = require('./utils/aiClassifier');
 const scheduleRoutes = require('./routes/scheduleRoutes');
@@ -28,8 +29,11 @@ const server = http.createServer(app);
 const PORT = process.env.BACKEND_PORT || 3001;
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: ['https://tracs-cucei.vercel.app', 'http://localhost:3000'], // Cambiaremos esto cuando se requiera en CUCEI
+}));
 app.use(express.json());
+app.use(helmet());
 
 // Rutas
 app.use('/api', scheduleRoutes);

@@ -166,7 +166,7 @@ const saveBuilding = async (req, res) => {
       message: 'Edificio y su archivo de aulas guardados con éxito',
     });
   } catch (error) {
-    console.error('Error al guardar edificio:', error);
+    console.error('Error al guardar edificio:', error.message);
     res.status(500).json({ error: 'Hubo un error al guardar el edificio' });
   }
 };

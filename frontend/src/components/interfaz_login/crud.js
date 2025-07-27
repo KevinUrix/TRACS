@@ -149,7 +149,7 @@ export default function Crud() {
           navigate("/");
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -201,7 +201,7 @@ export default function Crud() {
           navigate("/");
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -242,7 +242,7 @@ export default function Crud() {
           navigate("/");
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -277,7 +277,7 @@ export default function Crud() {
           navigate("/");
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -318,7 +318,7 @@ export default function Crud() {
           navigate("/");
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;

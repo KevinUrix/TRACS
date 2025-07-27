@@ -11,7 +11,7 @@ const getSchedule = async (req, res) => {
     const data = await scrapeData(cycle, buildingName);
     return res.json({ [buildingName]: data });
   } catch (error) {
-    console.error('Error al obtener los datos:', error);
+    console.error('Error al obtener los datos:', error.message);
     return res.status(500).json({ error: "Error al obtener los datos" });
   }
 };

@@ -16,7 +16,7 @@ const processFilesInFolder = () => {
 
     saveBuildingsData(buildingsData);
   } catch (err) {
-    console.error('Error al leer los archivos de la carpeta:', err);
+    console.error('Error al leer los archivos de la carpeta:', err.message);
   }
 };
 
@@ -35,7 +35,7 @@ const processFile = (inputFilePath, buildingsData) => {
       }
     });
   } catch (err) {
-    console.error(`Error al procesar el archivo ${inputFilePath}:`, err);
+    console.error(`Error al procesar el archivo ${inputFilePath}:`, err.message);
   }
 };
 
@@ -52,7 +52,7 @@ const saveBuildingsData = (buildingsData) => {
       fs.writeFileSync(outputFilePath, JSON.stringify(classrooms, null, 2), 'utf-8');
     });
   } catch (err) {
-    console.error('Error al guardar los archivos de los edificios:', err);
+    console.error('Error al guardar los archivos de los edificios:', err.message);
   }
 };
 

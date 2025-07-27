@@ -98,7 +98,7 @@ const calendarId = targetCalendar ? targetCalendar.id : 'primary';
     });
     return res.data.id;
   } catch (error) {
-    console.error('Error al crear el evento en Google Calendar:', error);
+    console.error('Error al crear el evento en Google Calendar:', error.message || error);
     throw error;
   }
 };

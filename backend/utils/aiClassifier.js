@@ -67,7 +67,7 @@ async function trainFromDatabase() {
 
     console.log('Clasificadores entrenados y guardados.');
   } catch (error) {
-    console.error('Error entrenando clasificadores:', error);
+    console.error('Error entrenando clasificadores:', error.message);
   }
 }
 
@@ -104,7 +104,7 @@ async function loadModelsFromDisk() {
 
     console.log('Clasificadores cargados desde disco.');
   } catch (err) {
-    console.error('Error cargando clasificadores:', err);
+    console.error('Error cargando clasificadores:', err.message);
   }
 }
 

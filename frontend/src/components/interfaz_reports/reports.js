@@ -94,7 +94,7 @@ export default function Reports() {
           navigate("/");
           return;
         }
-        else if (response.status === 400) {
+        else if (response.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;

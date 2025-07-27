@@ -84,7 +84,7 @@ export default function AccountConfig() {
           navigate("/");
           return;
         }
-        else if (err.response.status === 400) {
+        else if (err.response.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -139,7 +139,7 @@ export default function AccountConfig() {
           navigate("/");
           return;
         }
-        else if (err.response.status === 400) {
+        else if (err.response.status === 401) {
           localStorage.clear();
           window.location.href = '/';
           return;
@@ -180,6 +180,8 @@ export default function AccountConfig() {
             <input
               type="text"
               className="p-3 border rounded w-full text-lg"
+              minLength={3}
+              maxLength={20}
               value={newUsername}
               onChange={(e) => {
                 const val = e.target.value;
@@ -192,7 +194,6 @@ export default function AccountConfig() {
                   });
                 }
               }}
-              maxLength={20}
             />
           </div>
           <button
@@ -217,6 +218,7 @@ export default function AccountConfig() {
               type={showPasswords ? 'text' : 'password'}
               placeholder="Contraseña actual"
               className="w-68 p-3 border rounded w-full text-lg"
+              maxLength={50}
               value={currentPassword}
               onChange={(e) => setCurrentPassword(e.target.value)}
               required
@@ -245,13 +247,14 @@ export default function AccountConfig() {
               type={'password'}
               placeholder="Nueva contraseña"
               className="w-full p-3 border rounded text-lg"
+              minLength={6}
+              maxLength={50}
               value={newPassword}
               onChange={(e) => {
                 const val = e.target.value;
                 const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
                 setNewPassword(filtered);
               }}
-              maxLength={50}
               required
             />
           </div>
@@ -261,13 +264,13 @@ export default function AccountConfig() {
               type={'password'}
               placeholder="Confirmar nueva contraseña"
               className="w-full p-3 border rounded text-lg"
+              maxLength={50}
               value={confirmPassword}
               onChange={(e) => {
                 const val = e.target.value;
                 const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
                 setConfirmPassword(filtered);
               }}
-              maxLength={50}
               required
             />
           </div>

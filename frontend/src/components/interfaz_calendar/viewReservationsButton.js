@@ -112,7 +112,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
           }, 1000);
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {
@@ -184,7 +184,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
           }, 1000);
           return;
         }
-        else if (res.status === 400) {
+        else if (res.status === 401) {
           localStorage.clear();
           toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {

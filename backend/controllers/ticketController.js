@@ -35,7 +35,7 @@ exports.createTicket = async (req, res) => {
     
     res.status(201).json(newTicket);
   } catch (err) {
-    console.error('Error al guardar ticket:', err);
+    console.error('Error al guardar ticket:', err.message);
     res.status(500).json({ error: 'Error al guardar el ticket' });
   }
 };
@@ -45,7 +45,7 @@ exports.getAllTickets = async (req, res) => {
     const result = await pool.query('SELECT * FROM tickets ORDER BY created_at DESC');
     res.json(result.rows);
   } catch (err) {
-    console.error('Error al obtener todos los tickets:', err);
+    console.error('Error al obtener todos los tickets:', err.message);
     res.status(500).json({ error: 'Error al obtener los tickets' });
   }
 };
@@ -60,7 +60,7 @@ exports.getTicketsByBuilding = async (req, res) => {
     );
     res.json(result.rows);
   } catch (err) {
-    console.error('Error al obtener tickets:', err);
+    console.error('Error al obtener tickets:', err.message);
     res.status(500).json({ error: 'Error al obtener tickets' });
   }
 };
@@ -101,7 +101,7 @@ exports.updateTicket = async (req, res) => {
 
     res.json(result.rows[0]);
   } catch (err) {
-    console.error('Error al actualizar ticket:', err);
+    console.error('Error al actualizar ticket:', err.message);
     res.status(500).json({ error: 'Error al actualizar ticket' });
   }
 };
@@ -118,7 +118,7 @@ exports.deleteTicket = async (req, res) => {
 
     res.json({ message: 'Ticket eliminado correctamente' });
   } catch (err) {
-    console.error('Error al eliminar ticket:', err);
+    console.error('Error al eliminar ticket:', err.message);
     res.status(500).json({ error: 'Error al eliminar el ticket' });
   }
 };

@@ -7,7 +7,7 @@ router.post('/train-ia', async (req, res) => {
     await trainFromDatabase();
     res.json({ message: 'Modelos entrenados correctamente desde la base de datos.' });
   } catch (err) {
-    console.error('Error al entrenar modelos:', err);
+    console.error('Error al entrenar modelos:', err.message);
     res.status(500).json({ error: 'Error al entrenar modelos.' });
   }
 });

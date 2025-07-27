@@ -5,6 +5,23 @@ const { pool } = require('../utils/db');
 
 exports.register = async (req, res) => {
   const { username, password } = req.body;
+  const usernameRegex = /^[a-z0-9_]{3,20}$/;
+  const passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{6,30}$/;
+
+  
+  if (!username || !password) {
+    return res.status(400).json({ error: 'Usuario y contraseña requeridos' });
+  }
+
+  if (!usernameRegex.test(username)) {
+    return res.status(400).json({ error: 'Nombre de usuario inválido' });
+  }
+
+  if (!passwordRegex.test(password)) {
+    return res.status(400).json({ error: 'Contraseña inválida.' });
+  }
+
+
   try {
     const hash = await bcrypt.hash(password, 10);
     await pool.query('INSERT INTO users (username, password) VALUES ($1, $2)', [username, hash]);
@@ -20,12 +37,22 @@ exports.register = async (req, res) => {
 
 exports.login = async (req, res) => {
   const { username, password } = req.body;
+  const usernameRegex = /^[a-z0-9_]{3,20}$/;
+
+  if (!username || !password) {
+    return res.status(400).json({ error: 'Usuario y contraseña requeridos' });
+  }
+
+  if (!usernameRegex.test(username)) {
+    return res.status(400).json({ error: 'Nombre de usuario inválido' });
+  }
+
   try {
     const result = await pool.query('SELECT * FROM users WHERE username = $1', [username]);
     if (result.rows.length === 0) return res.status(400).json({ error: 'Usuario no encontrado' });
 
     const valid = await bcrypt.compare(password, result.rows[0].password);
-    if (!valid) return res.status(401).json({ error: 'Contraseña incorrecta' });
+    if (!valid) return res.status(400).json({ error: 'Contraseña incorrecta' });
 
     const user = result.rows[0];
     const token = jwt.sign(
@@ -35,7 +62,7 @@ exports.login = async (req, res) => {
     );
     res.json({ token });
   } catch (err) {
-    console.error(err);
+    console.error(err.message);
     res.status(500).json({ error: 'Error en login' });
   }
 };
@@ -72,7 +99,7 @@ exports.deleteUser = async (req, res) => {
     await pool.query('DELETE FROM users WHERE id = $1', [id]);
     res.json({ message: 'Usuario eliminado correctamente' });
   } catch (err) {
-    console.error('Error al eliminar usuario:', err);
+    console.error('Error al eliminar usuario:', err.message);
     res.status(500).json({ error: 'Error al eliminar usuario' });
   }
 };
@@ -93,7 +120,7 @@ exports.getUserInfo = async (req, res) => {
 
     res.json(result.rows[0]);
   } catch (err) {
-    console.error('Error al obtener usuario:', err);
+    console.error('Error al obtener usuario:', err.message);
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };
@@ -103,6 +130,12 @@ exports.updateUsername = async (req, res) => {
   try {
     const userId = req.user.id;
     const { newUsername } = req.body;
+
+    const usernameRegex = /^[a-z0-9_]{3,20}$/;
+
+    if (!usernameRegex.test(newUsername)) {
+      return res.status(400).json({ error: 'Nombre de usuario inválido' });
+    }
 
     const exists = await pool.query(
       'SELECT id FROM users WHERE username = $1 AND id <> $2',
@@ -120,19 +153,29 @@ exports.updateUsername = async (req, res) => {
 
     res.json({ message: 'Nombre de usuario actualizado correctamente' });
   } catch (err) {
-    console.error('Error al actualizar nombre de usuario:', err);
+    console.error('Error al actualizar nombre de usuario:', err.message);
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };
 
 // Cambia contraseña
 exports.updatePassword = async (req, res) => {
+  const passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{6,30}$/;
+  
   try {
     const userId = req.user.id;
     const { currentPassword, newPassword, confirmPassword } = req.body;
-
+    
+    if (!currentPassword || !newPassword || !confirmPassword) {
+      return res.status(400).json({ error: 'Datos faltantes' });
+    }
+    
     if (newPassword !== confirmPassword) {
       return res.status(400).json({ message: 'Las nuevas contraseñas no coinciden' });
+    }
+    
+    if (!passwordRegex.test(newPassword)) {
+      return res.status(400).json({ error: 'Contraseña inválida.' });
     }
 
     const result = await pool.query(
@@ -145,7 +188,7 @@ exports.updatePassword = async (req, res) => {
     // Verifica que la contraseña actual sea correcta
     const isMatch = await bcrypt.compare(currentPassword, user.password);
     if (!isMatch) {
-      return res.status(401).json({ message: 'Contraseña actual incorrecta' });
+      return res.status(400).json({ message: 'Contraseña actual incorrecta' });
     }
 
     // Verifica que la nueva contraseña no sea la misma que la actual
@@ -163,7 +206,7 @@ exports.updatePassword = async (req, res) => {
 
     res.json({ message: 'Contraseña actualizada correctamente' });
   } catch (err) {
-    console.error('Error al actualizar contraseña:', err);
+    console.error('Error al actualizar contraseña:', err.message);
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };

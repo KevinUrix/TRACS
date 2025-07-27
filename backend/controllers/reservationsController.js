@@ -79,7 +79,7 @@ const saveReservation = async (req, res) => {
           }
         }
       } catch (calendarErr) {
-        console.error('Error al crear evento en Google Calendar:', calendarErr);
+        console.error('Error al crear evento en Google Calendar:', calendarErr.message);
         // No se interrumpe la reserva si Google falla
         return res.status(500).json({ error: 'No se pudo crear evento en Google Calendar' });
       }
@@ -103,7 +103,7 @@ const saveReservation = async (req, res) => {
       googleEventId: reservationData.googleEventId || null,
     });
   } catch (error) {
-    console.error('Error al guardar reserva:', error);
+    console.error('Error al guardar reserva:', error.message);
     res.status(500).json({ error: 'Hubo un error al guardar la reserva' });
   }
 };

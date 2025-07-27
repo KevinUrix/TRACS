@@ -216,7 +216,7 @@ export default function Calendar() {
             window.location.href = "/login";
           }, 1000);
         }
-        else if (response.status === 400) {
+        else if (response.status === 401) {
           localStorage.clear();
           toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {

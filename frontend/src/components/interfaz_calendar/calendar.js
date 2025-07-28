@@ -230,7 +230,7 @@ export default function Calendar() {
         return;
       }
   
-      console.log('>> Reserva guardada con éxito:', result);
+      // console.log('>> Reserva guardada con éxito:', result);
       alert('Reserva guardada con éxito');
   
       // Refrescar reservas después del guardado

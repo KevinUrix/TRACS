@@ -10,6 +10,7 @@ export function getDecodedToken() {
 
     return {
       token,
+      id: decoded.id,
       role: decoded.role,
       username: decoded.username,
       exp: decoded.exp,

@@ -26,6 +26,7 @@ export default function AppContent() {
   
   const role = decoded?.role ?? null;
   const user = decoded?.username ?? null;
+  const userId = decoded?.id ?? null;
 
   const [isLoggedIn, setIsLoggedIn] = useState(!!decoded);
   const [userRole, setUserRole] = useState(role);
@@ -82,43 +83,94 @@ export default function AppContent() {
 
   /* SOCKET.io: TICKETS */
   useEffect(() => {
-    const currentUser = user;
-    const onNewTicket = (ticket) => {
-      /* // PARA QUE LO MUESTRE A TODOS MENOS A AL QUE CREÓ EL TICKET
-      if (ticket.created_by !== currentUser) {
-        notifyTicket(`🎟️ Nuevo reporte`, ticket);
-      } */
-      notifyTicket(`🎟️ Nuevo reporte`, ticket);
-      console.log('Nuevo reporte:', ticket);
+    if (!user) return;
+
+    const onNewTicket = async (data) => {
+      const { id, payload } = data;
+      notifyTicket(`🎟️ Nuevo reporte`, payload, async () => {
+        try {
+          await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ userId, ids: [id] }),
+          });
+        } catch (err) {
+          console.error('Error al marcar notificación de reporte como leída:', err.message);
+        }
+      })
     };
 
     socket.on('new-ticket', onNewTicket);
-
-    return () => {
-      socket.off('new-ticket', onNewTicket);
-    };
-  }, []);
+    return () => socket.off('new-ticket', onNewTicket);
+  }, [userId]);
 
 
   /* SOCKET.io: RESERVAS */
   useEffect(() => {
-    const handleNewReservation = (reservation) => {
-      console.log('Reserva recibida por socket:', reservation); 
-      notifyReserva(`✅ Nueva reserva`, reservation);
+    if (!user) return;
+
+    const handleNewReservation = async (data) => {
+      const { id, payload } = data;
+      notifyReserva(`✅ Nueva reserva`, payload, async () => {
+        try {
+          await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ userId, ids: [id] }),
+          });
+        } catch (err) {
+          console.error('Error al marcar notificación de reserva como leída:', err.message);
+        }
+      });
     };
 
     socket.on('new-reservation', handleNewReservation);
+    return () => socket.off('new-reservation', handleNewReservation);
+  }, [userId]);
 
-    return () => {
-      socket.off('new-reservation', handleNewReservation);
+
+  /* SOCKET.io: NOTIFICACIONES PERSISTENTES */
+  useEffect(() => {
+    if (!user) return;
+
+    const fetchPersistentNotifications = async () => {
+      try {
+        const response = await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications?user=${userId}`);
+        const notifications = await response.json();
+
+        for (const noti of notifications) {
+          if (noti.type === 'new-ticket') {
+            notifyTicket(`🎟️ Nuevo reporte`, noti.payload);
+          } else if (noti.type === 'new-reservation') {
+            notifyReserva(`✅ Nueva reserva`, noti.payload);
+          }
+        }
+
+        // Marca las notificaciones como vistas, así que ya no aparecerán a usuarios
+        const ids = notifications.map(noti => noti.id);
+        if (ids.length > 0) {
+          await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ userId: userId, ids }),
+          });
+        }
+
+      } catch (err) {
+        console.error('Error al obtener notificaciones persistentes:', err.message);
+      }
     };
-  }, []);
 
-  
+    fetchPersistentNotifications();
+  }, [userId]);
+
+
   useLayoutEffect(() => {
     if (isFirstRender.current) {
       isFirstRender.current = false;
-      setIsLoading(false); // Asegura que en primer render esté en false
+      setIsLoading(false); // Asegura que el primer render esté en false
       return;
     }
 
@@ -178,7 +230,7 @@ export default function AppContent() {
     <Toaster
       richColors
       position="bottom-right"
-      duration={6000}
+      duration={6500}
       expand
     />
   </>

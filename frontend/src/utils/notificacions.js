@@ -1,6 +1,6 @@
 import { toast } from 'sonner';
 
-export const notifyReserva = (mensaje, reservation) => {
+export const notifyReserva = (mensaje, reservation, onSeen) => {
   toast.success(mensaje, {
     description: (
       <div>
@@ -10,16 +10,19 @@ export const notifyReserva = (mensaje, reservation) => {
       </div>
     ),
     style: {
-      backgroundColor: '#16a34a', // indigo-700
+      backgroundColor: '#16a34a',
       color: 'white',
-      border: '1px solid #16a34a', // indigo-500
+      border: '1px solid #16a34a',
       fontSize: '1rem',
     },
     variant: 'default',
+    onAutoClose: () => {
+      if (onSeen) onSeen();
+    }
   });
 };
 
-export const notifyTicket = (mensaje, ticket) => {
+export const notifyTicket = (mensaje, ticket, onSeen) => {
   toast.success(mensaje, {
     description: (
     <div>
@@ -36,9 +39,14 @@ export const notifyTicket = (mensaje, ticket) => {
       fontSize: '1rem',
     },
     variant: 'default',
+    onAutoClose: () => {
+      if (onSeen) onSeen();
+    }
   });
 };
 
+
+/* SI GINA QUIERE AGREGAR MÁS TOAST DE TOASTER ESTOS PUEDEN USARSE Y MODIFICARSE AL GUSTO */
 export const notifyError = (mensaje) => {
   toast.error('❌ Error', {
     description: mensaje,

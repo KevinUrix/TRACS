@@ -103,8 +103,8 @@ export default function Reports() {
         throw new Error(errorData.error || 'Error al guardar reporte');
       }
 
-      const savedTicket = await response.json();
-      console.log('Reporte guardado:', savedTicket);
+      /* const savedTicket = await response.json();
+      console.log('Reporte guardado:', savedTicket); */
       toast.success('Reporte guardado exitosamente');
 
       // Limpiar formulario y cerrar modal

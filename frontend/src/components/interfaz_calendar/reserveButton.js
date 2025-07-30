@@ -45,16 +45,23 @@ export default function ReserveButton({
   const [reservationDate, setReservationDate] = useState(getTodayDate()); /* Para poner la fecha en automatico*/
   const [duration, setDuration] = useState('Temporal');
   const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
+  const [disabledRB, setDisabledRB] = useState(false);
 
   const navigate = useNavigate();
   const decoded = getDecodedToken();
   const userRole = decoded?.role ?? null;
 
-    // Verificación de permisos al abrir la modal
+  // Verificación de permisos al abrir la modal
   const handleOpenModal = () => {
-    if (userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') {
+    if (userRole === 'superuser' || userRole === 'user') {
       setIsModalOpen(true);
-    } else {
+    } 
+    else if (userRole === 'tecnico') {
+      toast.error('No cuentas con el rol necesario para crear reservas.');
+      setDisabledRB(true);
+      setTimeout(() => setDisabledRB(false), 2000);
+    }
+    else {
       toast.error('Necesitas iniciar sesión para realizar una reserva.');
       if (selectedCycle && selectedBuilding) {
         sessionStorage.setItem('reservationState', JSON.stringify({
@@ -174,9 +181,9 @@ export default function ReserveButton({
 
   return (
     <>
-    <button className="reserve-button" onClick={handleOpenModal}>
-    R
-  </button>
+    <button className="reserve-button" onClick={handleOpenModal} disabled={disabledRB}>
+      R
+    </button>
 
   {isModalOpen && (
     <div className="modal-overlay mt-1">

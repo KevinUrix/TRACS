@@ -12,18 +12,18 @@
 - Buscar docentes.
 - Ver conteos de alumnos por día.
 
-### 🔐 Usuario autenticado
+### 🛠 Técnico
 - Todo lo anterior, además de:
-- Ver y crear reportes.
+- Crear, modificar y hacer seguimiento a reportes.
 - Acceder a opciones de configuración personalizadas.
 
-### 🛠 Técnico
-- Acceso completo del usuario.
-- Modificación y seguimiento de reportes.
+### 🔐 Usuario autenticado
+- Acceso completo a todas las funcionalidades del Técnico, además de:
+- Crear, modificar y eliminar reservas de aulas.
 
 ### 🧑‍💼 Superusuario
-- Todas las funcionalidades anteriores.
-- Acceso a un CRUD para gestionar usuarios y edificios.
+- Todas las funcionalidades anteriores, con acceso adicional a:
+- Gestión de usuarios y edificios a través de un CRUD.
 
 ---
 
@@ -45,3 +45,10 @@
 ![Vista de reportes](./assets/reports.png)
 ![Agregar reporte](./assets/add_report.png)
 ![Editar reporte](./assets/edit_report.png)
+
+---
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT.  
+Consulta el archivo [LICENSE](./LICENSE) para más información.

@@ -324,7 +324,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           <div className="modal">
             <form>
                 <h2>
-                {userRole === 'user' && 'Vista completa'}
+                {userRole === 'user' && 'Editar reporte'}
                 {userRole === 'tecnico' && 'Editar reporte'}
                 {userRole === 'superuser' && 'Editar reporte'}
                 {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo reporte'}
@@ -366,7 +366,6 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   onChange={handleChange}
                   className='w-full px-2 py-1 mt-1'
                   maxLength={50}
-                  disabled={userRole === 'user'}
                 ></input>
               </label>
 
@@ -379,8 +378,6 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   className="w-full p-2 border border-gray-300 rounded resize-none"
                   rows={4}
                   maxLength={500}
-                  disabled={userRole === 'user'}
-                  readOnly={userRole === 'user'}
                 />
               </label>
 
@@ -392,7 +389,6 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     value={selectedTicket.category}
                     onChange={handleChange}
                     className="w-full px-2 py-1 mt-1"
-                    disabled={userRole === 'user'}
                   >
                     <option value="" disabled>-- Selecciona una categoría --</option>
                     <option value="Mantenimiento">Mantenimiento</option>
@@ -410,7 +406,6 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     value={selectedTicket.status}
                     onChange={handleChange}
                     className="w-full px-2 py-1 mt-1"
-                    disabled={userRole === 'user'}
                   >
                     <option value="Abierto">Abierto</option>
                     <option value="En Proceso">En Proceso</option>
@@ -426,7 +421,6 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     value={selectedTicket.priority}
                     onChange={handleChange}
                     className="border rounded w-32 px-2 py-1 mt-1 mb-2"
-                    disabled={userRole === 'user'}
                   >
                     <option value="Baja">Baja</option>
                     <option value="Media">Media</option>
@@ -455,24 +449,15 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   <button
                     type='button'
                     onClick={handleDelete}
-                    className={`px-4 py-2 rounded text-white ${
-                      userRole === 'user'
-                        ? 'background-button1-N cursor-not-allowed'
-                        : 'background-button1'
-                    }`}
-                    disabled={userRole === 'user'}
+                    className={`px-4 py-2 rounded text-white background-button1`}
                   >
                     Borrar
                   </button>
                   <button
                     type='button'
                     onClick={handleSave}
-                    className={`px-4 py-2 rounded text-white ${
-                      userRole === 'user'
-                        ? 'background-button3-N cursor-not-allowed'
-                        : 'background-button3'
-                    }`}
-                    disabled={userRole === 'user'|| isSaving}
+                    className={`px-4 py-2 rounded text-white background-button3`}
+                    disabled={isSaving}
                   >
                     Guardar
                   </button>

@@ -1,6 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
 
-/* calendar.css */
 body{
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -28,21 +27,21 @@ textarea {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estado focus con “ring” azul */
+
 input:focus,
 select:focus,
 textarea:focus {
-  outline: none;                        /* focus:outline-none */
-  border-color: #4629ba9d;                /* mantienes tu color de borde si quieres */
-  box-shadow: 0 0 0 2px #5d3fd7c9;        /* focus:ring-2 + focus:ring-blue-400 */
+  outline: none;                        
+  border-color: #4629ba9d;                
+  box-shadow: 0 0 0 2px #5d3fd7c9;        
 }
 
-/* Container del calendario */
+
 .calendar-container {
   display: flex;
-  background-color: #f3f4f6; /* Gris claro */
+  background-color: #f3f4f6; 
   height: 100vh;
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  overflow: hidden;        
 }
 
 .background-image-container {
@@ -69,18 +68,18 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem; /* Para que no se sobreponga con el navbar */
-  overflow: hidden;        /* Evita que el contenido "explote" hacia afuera */
+  margin-top: 4rem; 
+  overflow: hidden;        
   background-color: #e3e9f6;
 }
 
 .main-content2 {
   display: grid;
-  grid-template-columns: 1fr;            /* Por defecto en móvil */
+  grid-template-columns: 1fr;            
   gap: 1rem;
   width: 100%;
   padding: 1rem;
-  margin-top: 8rem;                      /* Espacio para el navbar */
+  margin-top: 8rem;                      
   box-sizing: border-box;
 }
 
@@ -92,7 +91,7 @@ textarea:focus {
 
 @media (min-width: 1024px) {
   .main-content2 {
-    grid-template-columns: 2fr 1fr 1fr;   /* Dos columnas para izquierda, una para derecha */
+    grid-template-columns: 2fr 1fr 1fr;   
   }
 }
 
@@ -102,11 +101,10 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*margin-top: 4rem; /* Para que no se sobreponga con el navbar */
 }
 
-/* Navbar */
 
+/* Navbar */
 .navbar {
   width: 100%;
   background: linear-gradient(to right, #612937, #351b51, #0d1c3b, #0f2147, #132654, #1c3a7d, #254da7);
@@ -134,7 +132,7 @@ textarea:focus {
 }
 
 .navbar-brand:hover {
-  color: #8abbee; /* o el color que prefieras */
+  color: #8abbee; 
 }
 
 .hamburger {
@@ -169,12 +167,12 @@ textarea:focus {
   color: #ffffff;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 2rem; /* Redondeado suave tipo cápsula */
+  border-radius: 2rem; 
   transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.15); /* Fondo blanco translúcido */
+  background-color: rgba(255, 255, 255, 0.15); 
 }
 
 .nav-link.active {
@@ -233,12 +231,12 @@ textarea:focus {
 }
 
 .icon {
-  width: 2rem;         /* equivalente a w-8 */
-  height: 2rem;        /* equivalente a h-8 */
-  color: #ffffff;      /* equivalente a text-gray-700 de Tailwind */
+  width: 2rem;         
+  height: 2rem;        
+  color: #ffffff;      
 }
 
-/* Menú hamburguesa móvil */
+/* Menú hamburguesa */
 .mobile-menu {
   position: absolute;
   top: 100%;
@@ -251,7 +249,7 @@ textarea:focus {
   gap: 1rem;
   border-top: 1px solid #111827;
   z-index: 1000;
-  align-items: flex-start; /* clave para que los hijos no se estiren */
+  align-items: flex-start; 
 }
 
 .mobile-menu .nav-link {
@@ -260,14 +258,14 @@ textarea:focus {
   font-size: 1.1rem;
   color: white;
   text-decoration: none;
-  border-radius: 0.375rem; /* opcional para redondear */
+  border-radius: 0.375rem; 
 }
 
 
 .logout-container {
   display: flex;
-  align-self: flex-end; /* 👈 esto empuja el botón a la derecha */
-  margin-top: 0.5rem;   /* opcional: espacio respecto al link anterior */
+  align-self: flex-end; 
+  margin-top: 0.5rem;   
 }
 
 .menu-row {
@@ -320,16 +318,15 @@ textarea:focus {
 .schedule-table thead th {
   position: sticky;
   top: 0;
-  z-index: 4; /* Para que esté por encima del resto */
+  z-index: 4; 
   background-color: #f3f4f6;
 }
 
-/* Fijar la primera columna */
 .schedule-table th:first-child,
 .schedule-table td:first-child {
   position: sticky;
   left: 0;
-  z-index: 3; /* Asegura que quede encima de las otras celdas */
+  z-index: 3; 
   background-color: #f3f4f6;
   border-right: 1px solid #d1d5db;
 
@@ -338,7 +335,7 @@ textarea:focus {
 
 /* Celdas no horarias (salones) */
 .schedule-table th:not(:first-child),
-.schedule-table td:not(:first-child) { /* Ancho de las columnas y filas de info de salones */
+.schedule-table td:not(:first-child) { 
   min-width: 18rem;
   max-width: 18rem;
   
@@ -349,7 +346,7 @@ textarea:focus {
   height: 8rem;
 }*/
 
-.schedule-table thead th:first-child { /* fija el cuadro de hora */
+.schedule-table thead th:first-child { 
   position:sticky;
 }
 
@@ -375,14 +372,14 @@ textarea:focus {
   height: 10rem;
 }
 
-.schedule-table thead tr:first-child th { /*Modifica unicamente la fila de los nombres de los salones (altura)*/
-  height: 6rem; /* o la altura que necesites */
+.schedule-table thead tr:first-child th { 
+  height: 6rem; 
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .schedule-table th:first-child,
-.schedule-table td:first-child { /* Ancho de la columna de horas */
+.schedule-table td:first-child { 
   width: 9rem !important;
   min-width: 9rem !important;
   max-width: 9rem !important;
@@ -472,7 +469,7 @@ textarea:focus {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex-wrap: wrap; /* por si se reduce el tamaño de la pantalla */
+  flex-wrap: wrap; 
 }
 
 .select-container select {
@@ -503,7 +500,7 @@ textarea:focus {
 }
 
 .select-container .cycle-select:hover {
-  background-color: #e8b6c4; /* más claro y vibrante */
+  background-color: #e8b6c4; 
   border-color: #c54968;
 }
 
@@ -517,8 +514,8 @@ textarea:focus {
 }
 
 .select-container .building-select:hover {
-  background-color: #cfb3e1; /* más claro y vibrante */
-  border-color: #c28ce4;     /* mismo estilo que el botón5 */
+  background-color: #cfb3e1; 
+  border-color: #c28ce4;     
 }
 
 .building-select::disabled {
@@ -535,8 +532,8 @@ textarea:focus {
 }
 
 .select-container .day-select:hover {
-  background-color: #cac4e7; /* más claro y vibrante */
-  border-color: #7965c9;     /* mismo estilo que el botón5 */
+  background-color: #cac4e7; 
+  border-color: #7965c9;     
 }
 
 .select-container span {
@@ -598,7 +595,7 @@ textarea:focus {
   border-radius: 0.75rem;
   border: 1px solid #4629ba;
   font-size: 1rem;
-  word-wrap: break-word; /* Permite envolver contenido largo */
+  word-wrap: break-word; 
 }
 
 .popup-content li div {
@@ -657,11 +654,15 @@ textarea:focus {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* <-- cambiar aquí */
-  padding-top: 90px; /* <-- agregar para controlar la distancia */
+  align-items: flex-start; 
+  padding-top: 90px; 
   z-index: 99;
   animation: fadeIn 0.4s ease-out;
   backdrop-filter: blur(1px);
+}
+
+.instructions-button {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal {
@@ -736,11 +737,11 @@ textarea:focus {
 }
 
 .modal-buttons .cancel-button {
-  background-color: #ff4d4d; /* Rojo para el botón de cancelar */
+  background-color: #ff4d4d; 
 }
 
 .modal-buttons .cancel-button:hover {
-  background-color: #e60000; /* Rojo más oscuro en hover */
+  background-color: #e60000; 
 }
 
 .modal-buttons .cancel-button:active {
@@ -748,11 +749,11 @@ textarea:focus {
 }
 
 .modal-buttons .submit-button {
-  background-color: #66b3ff; /* Azul para el botón de aceptar */
+  background-color: #66b3ff; 
 }
 
 .modal-buttons .submit-button:hover {
-  background-color: #3388cc; /* Azul más oscuro en hover */
+  background-color: #3388cc; 
 }
 
 .modal-buttons .submit-button:active {
@@ -770,11 +771,11 @@ textarea:focus {
 }
 
 .save-button {
-  background-color: #4629ba; /* Azul para el botón de aceptar */
+  background-color: #4629ba; 
 }
 
 .save-button:hover {
-  background-color: #593ccd; /* Azul más oscuro en hover */
+  background-color: #593ccd; 
 }
 
 .save-button:active {
@@ -800,7 +801,7 @@ textarea:focus {
 }
 
 .lupa-button:hover {
-  transform: scale(1.2); /* Aumente el tamaño del ícono cuando pones el mouse encima */
+  transform: scale(1.2); 
 }
 
 /* src/components/LoginLogoutButton.css */
@@ -868,7 +869,7 @@ textarea:focus {
     display: none;
   }
 
-  /* Mostrar solo las columnas del bloque 0 */
+  
   .print-page-1 th.print-col-0,
   .print-page-1 td.print-col-0
   {
@@ -883,49 +884,47 @@ textarea:focus {
 }
 
 
-/* Pantallas pequeñas en horizontal: una fila + scroll horizontal */
-@media (max-width: 1550px) {
-  .selects-container-responsive {
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 0 1rem;
-    gap: 1rem;
-    margin-top: 1.1rem;
-    margin-bottom: 0rem;
-    padding-bottom: 0.3rem;
-    align-items: center;
-  }
 
-  .select-container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: nowrap;
-  }
+.selects-container-responsive {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 1rem;
+  gap: 1rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0.3rem;
+  align-items: center;
+}
 
-  .select-responsive {
-    min-width: max-content;
-    margin-left: 0;
-    flex-shrink: 0;
-  }
+.select-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
 
-  .selects-container-responsive > div {
-    flex-shrink: 0;
-  }
-  .selects-container-responsive::-webkit-scrollbar {
-    height: 8px; /* 🔹 Más delgado que el normal (~16px) */
-  }
-  .selects-container-responsive::-webkit-scrollbar-thumb {
-    background-color: rgba(136, 136, 136, 0.9); /* 0.5 es la opacidad */
-    border-radius: 4px;
-  }
-  .span-info {
-    display: none;
-  }
+.select-responsive {
+  min-width: max-content;
+  margin-left: 0;
+  flex-shrink: 0;
+}
+
+.selects-container-responsive > div {
+  flex-shrink: 0;
+}
+.selects-container-responsive::-webkit-scrollbar {
+  height: 8px; 
+}
+.selects-container-responsive::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.9); 
+  border-radius: 4px;
+}
+.span-info {
+  display: none;
 }
 
 @media (max-width: 1550px) and (orientation: landscape){
@@ -948,19 +947,19 @@ textarea:focus {
   }
 }
 
-/* Oculta el botón "ojo" en Microsoft Edge e Internet Explorer */
+
 input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
   display: none;
 }
 
-/* Oculta en Safari (WebKit) */
+
 input[type="password"]::-webkit-credentials-auto-fill-button,
 input[type="password"]::-webkit-textfield-decoration-container {
   display: none;
 }
 
-/* Safari iOS también puede requerir esto */
+
 input[type="password"] {
   appearance: none;
   -webkit-appearance: none;
@@ -973,13 +972,13 @@ input[type="password"] {
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
-  .schedule-table thead tr:first-child th { /*Modifica unicamente la fila de los nombres de los salones (altura)*/
-    height: 5rem; /* o la altura que necesites */
+  .schedule-table thead tr:first-child th { 
+    height: 5rem; 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
   .schedule-table th:first-child,
-  .schedule-table td:first-child { /* Ancho de la columna de horas */
+  .schedule-table td:first-child { 
     width: 8rem !important;
     min-width: 8rem !important;
     max-width: 8rem !important;
@@ -996,7 +995,7 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button1:hover {
-  background-color: #d73465; /* un poco más claro */
+  background-color: #d73465; 
 }
 
 .background-button1-N {
@@ -1009,7 +1008,7 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button2:hover {
-  background-color: #a534d6; /* igual que el siguiente para mantener armonía */
+  background-color: #a534d6; 
 }
 
 .background-button3 {
@@ -1017,7 +1016,7 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button3:hover {
-  background-color: #6a50d2; /* más vibrante */
+  background-color: #6a50d2; 
 }
 
 .background-button3-N {
@@ -1030,7 +1029,7 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button4:hover {
-  background-color: #289c75; /* verde más claro y brillante */
+  background-color: #289c75; 
 }
 
 .background-button5 {
@@ -1038,7 +1037,7 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-button5:hover {
-  background-color: #1f3362; /* más brillante, casi azul cielo */
+  background-color: #1f3362; 
 }
 
 .background-buttonS {
@@ -1046,14 +1045,14 @@ input[type="password"] {
   transition: background-color 0.3s ease;
 }
 .background-buttonS:hover {
-  background-color: #aaa6b8; /* más vibrante */
+  background-color: #aaa6b8;
 }
 
 .background-button6 {
   background-color: #d83f65;
   transition: background-color 0.3s ease;
 }
-.background-button6:hover {
-  background-color: #dc5d83; /* un poco más claro */
-}
 
+.background-button6:hover {
+  background-color: #ba3758;
+}

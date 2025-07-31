@@ -14,10 +14,8 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem; /* Para que no se sobreponga con el navbar */
+  margin-top: 4rem; 
 }
-
-/* archivo: styles.css o App.css */
 
 
 /* Select content */
@@ -25,7 +23,6 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*margin-top: 4rem; /* Para que no se sobreponga con el navbar */
 }
 
 .select-container-reports {
@@ -56,7 +53,7 @@ body{
 }
 
 .select-container-reports .building-select:hover {
-  background-color: #e8b6c4; /* más claro y vibrante */
+  background-color: #e8b6c4; 
   border-color: #c54968;
 }
 
@@ -67,7 +64,7 @@ body{
 }
 
 .select-container-reports .status-select:hover {
-  background-color: #cfb3e1; /* más claro y vibrante */
+  background-color: #cfb3e1;
   border-color: #c28ce4;
 }
 
@@ -114,11 +111,11 @@ body{
 
 .book-style {
   clip-path: polygon(
-    0 0,         /* esquina superior izquierda */
-    90% 0,       /* casi la esquina superior derecha */
-    100% 50%,    /* pico central derecho */
-    90% 100%,    /* casi esquina inferior derecha */
-    0 100%       /* esquina inferior izquierda */
+    0 0,         
+    90% 0,       
+    100% 50%,    
+    90% 100%,    
+    0 100%       
   );
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }

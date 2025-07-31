@@ -3,8 +3,10 @@ import AppContent from './AppContent'; // separado en otro componente
 
 export default function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <>
+      <Router>
+        <AppContent />
+      </Router>
+    </>
   );
 }

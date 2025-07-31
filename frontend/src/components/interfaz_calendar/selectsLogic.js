@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import API_URL from '../../config/api';
 import DownloadButton from './downloadButton';
-import InstructionsButton from './instructionsButton';
 import PrintButton from './printButton';
+import PolicyButton from './PolicyButton';
 import SearchProfessor from './SearchProfessor';
 import StatisticButton from './statisticButton';
 import ViewReservationsButton from './viewReservationsButton';
@@ -308,11 +308,9 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         />
       </div>
 
-      {role !== 'superuser' && (
-        <div className="-ml-6">
-          <InstructionsButton />
-        </div>
-      )}
+      <div className="-ml-6">
+        <PolicyButton />
+      </div>
 
       <div className='-ml-2'>
         <SearchProfessor

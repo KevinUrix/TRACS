@@ -51,6 +51,8 @@ export default function PrintTicket({ ticket, onClose }) {
                 }
             }
           </style>
+          <link rel="icon" href="tracs_page.webp" />
+          <link rel="apple-touch-icon" href="tracs_page.webp" />
         </head>
         <body style="display: flex; flex-direction: column; min-height: 100vh; padding-bottom: 120px;">
           <div style="flex-grow: 1;">

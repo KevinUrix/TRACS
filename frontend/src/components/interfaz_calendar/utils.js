@@ -105,6 +105,8 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
     <!DOCTYPE html>
     <html>
       <head>
+        <link rel="icon" href="tracs_page.webp" />
+        <link rel="apple-touch-icon" href="tracs_page.webp" />
         <title>${titleText}</title>
         <style>
           @page {

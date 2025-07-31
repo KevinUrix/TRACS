@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ['https://tracs-cucei.vercel.app', 'http://localhost:3000'], // Cambiaremos esto cuando se requiera en CUCEI
+    origin: ['https://www.tracs.cloud', 'http://localhost:3000'], // Cambiaremos esto cuando se requiera en CUCEI
     methods: ['GET', 'POST']
   }
 });
@@ -19,7 +19,7 @@ const io = new Server(server, {
 app.use(express.json());
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://tracs-cucei.vercel.app'], // Cambiaremos esto cuando se requiera en CUCEI
+  origin: ['http://localhost:3000', 'https://www.tracs.cloud'], // Cambiaremos esto cuando se requiera en CUCEI.También crear la rama.
   methods: ['GET', 'POST'],
   credentials: true,
 }));

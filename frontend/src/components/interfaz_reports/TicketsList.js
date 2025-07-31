@@ -413,19 +413,21 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   </select>
                 </label>
               </div>
-              <label className="block mb-1 font-bold">
-                  Prioridad:
-              </label>
-                  <select
-                    name="priority"
-                    value={selectedTicket.priority}
-                    onChange={handleChange}
-                    className="border rounded w-32 px-2 py-1 mt-1 mb-2"
-                  >
-                    <option value="Baja">Baja</option>
-                    <option value="Media">Media</option>
-                    <option value="Alta">Alta</option>
-                  </select>
+              <div className="flex gap-4 mb-4">
+                <label className="mb-1 font-bold">
+                    Prioridad:
+                    <select
+                      name="priority"
+                      value={selectedTicket.priority}
+                      onChange={handleChange}
+                      className="border rounded w-32 px-2 py-1 mt-1 mb-2"
+                      >
+                      <option value="Baja">Baja</option>
+                      <option value="Media">Media</option>
+                      <option value="Alta">Alta</option>
+                    </select>
+                </label>
+              </div>
               <div className="p-2 mt-0 sm:mt-0 md:mt-1 lg:mt-6 w-full overflow-x-auto whitespace-nowrap">
 
                 <div className="flex gap-6 items-center sm:justify-between lg:justify-end min-w-max">

@@ -30,7 +30,7 @@ const PORT = process.env.BACKEND_PORT || 3001;
 
 // Middlewares
 app.use(cors({
-  origin: ['https://tracs-cucei.vercel.app', 'http://localhost:3000'], // Cambiaremos esto cuando se requiera en CUCEI
+  origin: ['https://www.tracs.cloud', 'http://localhost:3000'], // Cambiaremos esto cuando se requiera en CUCEI
 }));
 app.use(express.json());
 app.use(helmet());

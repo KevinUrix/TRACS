@@ -230,7 +230,7 @@ export default function AppContent() {
     <Toaster
       richColors
       position="bottom-right"
-      duration={6500}
+      duration={7000}
       expand
     />
   </>

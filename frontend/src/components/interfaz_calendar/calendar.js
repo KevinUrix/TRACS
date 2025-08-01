@@ -72,7 +72,7 @@ export default function Calendar() {
   /* ---------- GUARDA ESTADOS ANTES DE CAMBIAR DE PÁGINA ---------- */
   // Guarda el estado cada vez que cambie de la raíz a otra página
   useEffect(() => {
-    const isOnRoot = location.pathname === '/';
+    const isOnRoot = location.pathname === '/calendar';
     const isComplete = selectedCycle && selectedBuilding;
 
     if (!isOnRoot || !isComplete) return;

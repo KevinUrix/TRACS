@@ -41,14 +41,6 @@ export default function DownloadButton({ onDownload }) {
             Descargar archivos de actualización al servidor, con base en el ciclo escolar.
           </span>
       </div>
-      {/* <button
-        className="bg-green-400 text-black rounded-full px-10 py-1 shadow-md"
-        title="Descargar datos"
-        onClick={toggleDownload}
-        id="createJSON"
-      >
-        <img src="/downloadArrow.webp" alt="¡Descargar!" className="h-6 w-6" />
-      </button> */}
 
       {showDownload && (
         <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">

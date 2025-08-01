@@ -31,6 +31,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   const [showPopup, setShowPopup] = useState(false);
   const [filteredReservations, setFilteredReservations] = useState([]);
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
+  
   const decoded = getDecodedToken();
   const userRole = decoded?.role ?? null; // Para obtener el rol de la cuenta.
   const user = decoded?.username ?? null; // Para obtener el usuario de la cuenta. 
@@ -286,7 +287,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         <EditReservationForm
           reservation={selectedReservation}
           onSave={handleSaveReservation}
-          onCancel={closeEditForm} // ← Solo cierra el formulario
+          onCancel={closeEditForm} // Solo cierra el formulario
           selectedBuilding={selectedBuilding}
         />
       )}

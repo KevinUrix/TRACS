@@ -1,5 +1,3 @@
-// src/components/LoginLogoutButton.jsx
-import React from 'react';
 import './interfaz_calendar/calendar.css';
 
 const LoginLogoutButton = ({ isLoggedIn, handleLogout, handleLoginRedirect }) => {

@@ -128,8 +128,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
         ) : (
             <form className="form">
                 <div className="form-grid">
-                    <label className='font-semibold'>
-                        Maestro:
+                    <label>
+                        <span className='font-semibold'>Maestro:</span>
                         <input
                             type="text"
                             value={professor}
@@ -140,8 +140,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                         />
                     </label>
                     <div className="flex items-center gap-4">
-                        <label className='font-semibold'>
-                            Materia:
+                        <label>
+                            <span className='font-semibold'>Materia:</span>
                             <input
                             type="text"
                             value={course}
@@ -151,8 +151,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             required
                             />
                         </label>
-                        <label className='font-semibold'>
-                            Clave:
+                        <label>
+                            <span className='font-semibold'>Clave:</span>
                             <input
                             type="text"
                             value={code}
@@ -164,8 +164,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                         </label>
                     </div>
                     <div className="flex items-center gap-4">
-                        <label className='font-semibold'>
-                            Edificio:
+                        <label>
+                            <span className='font-semibold'>Edificio:</span>
                             <input
                             type="text"
                             value={selectedBuilding}
@@ -174,8 +174,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             />
                         </label>
 
-                        <label className='font-semibold'>
-                            Salón:
+                        <label>
+                            <span className='font-semibold'>Salón:</span>
                             <input
                             type="text"
                             value={classroom}
@@ -185,8 +185,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                         </label>
                     </div>
                     <div className="flex items-center gap-4">
-                        <label className='font-semibold'>
-                            Fecha:
+                        <label>
+                            <span className='font-semibold'>Fecha:</span>
                             <input
                                 type="date"
                                 value={date}
@@ -195,8 +195,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                                 required
                             />
                         </label>
-                        <label className='font-semibold'>
-                            Día:
+                        <label>
+                            <span className='font-semibold'>Día:</span>
                             <select value={days} onChange={(e) => setDays(e.target.value)} disabled className='w-full pt-2 pb-2'>
                             <option value="">Selecciona un día</option>
                             <option value="L">Lunes</option>
@@ -208,8 +208,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                         </label>
                     </div>
                     <div className="flex items-center gap-4">
-                        <label className="flex flex-col font-semibold">
-                            Hora de inicio:
+                        <label className="flex flex-col">
+                            <span className='font-semibold'>Hora de inicio:</span>
                             <input
                             type="text"
                             value={formattedStart}
@@ -218,8 +218,8 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
                             />
                         </label>
 
-                        <label className="flex flex-col font-semibold">
-                            Hora de cierre:
+                        <label className="flex flex-col">
+                            <span className='font-semibold'>Hora de cierre:</span>
                             <input
                             type="text"
                             value={formattedEnd}

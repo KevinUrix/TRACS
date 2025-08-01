@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import API_URL from '../../config/api';
 import DownloadButton from './downloadButton';
 import PrintButton from './printButton';
-import PolicyButton from './PolicyButton';
+import InstructionsButton from './instructionsButton';
 import SearchProfessor from './SearchProfessor';
 import StatisticButton from './statisticButton';
 import ViewReservationsButton from './viewReservationsButton';
@@ -23,8 +23,6 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   const decoded = getDecodedToken();
   const role = decoded?.role ?? null;
 
-
-  // const [allReservations, setAllReservations] = useState([]);
   const location = useLocation();
 
   useEffect(() => {
@@ -308,9 +306,12 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
         />
       </div>
 
-      <div className="-ml-6">
-        <PolicyButton />
-      </div>
+      {(role !== 'superuser' && role !== 'tecnico' && role !== 'user') && (
+        <div className="-ml-6">
+          <InstructionsButton />
+        </div>
+      )}
+
 
       <div className='-ml-2'>
         <SearchProfessor

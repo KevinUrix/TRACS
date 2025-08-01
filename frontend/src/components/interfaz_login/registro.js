@@ -33,8 +33,8 @@ export default function Registro() {
     if (isSaving) return; // Evita clics múltiples
     
     // Validar contraseña mínima
-    if (password.length < 5) {
-      toast.error('La contraseña debe tener al menos 5 caracteres.', {
+    if (password.length < 6) {
+      toast.error('La contraseña debe tener al menos 6 caracteres.', {
         autoClose: 1500,
         closeOnClick: true,
       });
@@ -60,12 +60,12 @@ export default function Registro() {
       if (!res.ok) {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         else {

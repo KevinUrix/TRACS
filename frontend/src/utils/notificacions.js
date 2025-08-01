@@ -6,7 +6,7 @@ export const notifyReserva = (mensaje, reservation, onSeen) => {
       <div>
         <p>📍 Edificio: {reservation.building} ({reservation.classroom}).</p>
         <p>📖 Profesor: {reservation.professor}.</p>
-        {reservation.user && <p>👤 Usuario: {reservation.user}</p>}
+        {reservation.user && <p>👤 Usuario: {reservation.user.charAt(0).toUpperCase() + reservation.user.slice(1)}</p>}
       </div>
     ),
     style: {
@@ -29,13 +29,16 @@ export const notifyTicket = (mensaje, ticket, onSeen) => {
       <b>{ticket.title}</b>
       <p>Edificio: {ticket.building}.</p>
       <p>Prioridad: {ticket.priority}.</p>
-      <p>Creado por: {ticket.created_by}.</p>
+      <p>
+        Creado por: {ticket.created_by.charAt(0).toUpperCase() + ticket.created_by.slice(1)}.
+      </p>
+
     </div>
     ),
     style: {
-      backgroundColor: '#3949AB', // indigo-600
+      backgroundColor: '#3949AB',
       color: 'white',
-      border: '1px solid #3F51B5', // indigo-500
+      border: '1px solid #3F51B5',
       fontSize: '1rem',
     },
     variant: 'default',

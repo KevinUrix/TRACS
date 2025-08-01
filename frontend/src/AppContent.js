@@ -10,6 +10,7 @@ import Loader from './utils/loader';
 import socket from './utils/socket';
 import './styles/toastColors.css';
 
+import LandingPage from './components/interfaz_calendar/LandingPage';
 import Calendar from './components/interfaz_calendar/calendar';
 import Reports from './components/interfaz_reports/reports';
 import Login from './components/interfaz_login/login';
@@ -21,7 +22,7 @@ import NavbarGlobal from './components/NavbarGlobal';
 export default function AppContent() {
   const navigate = useNavigate();
   const location = useLocation();
-  const hideNavbarRoutes = ['/login', '/registro'];
+  const hideNavbarRoutes = ['/login', '/signup'];
   const decoded = getDecodedToken();
   
   const role = decoded?.role ?? null;
@@ -35,8 +36,8 @@ export default function AppContent() {
   const isFirstRender = useRef(true);
 
 
-  const superUserRoutes = ['/crud', '/registro'];
-  const userRoutes = ['/crud', '/configuracion', '/registro', '/reportes'];
+  const superUserRoutes = ['/crud', '/signup'];
+  const userRoutes = ['/crud', '/config', '/signup', '/reports'];
   
 
   useEffect(() => {
@@ -50,7 +51,7 @@ export default function AppContent() {
           toast.error('Tu sesión ha expirado. Inicia sesión otra vez.');
           setIsLoggedIn(false);
           setUserRole(null);
-          navigate('/');
+          navigate('/calendar');
           return
         }
         setIsLoggedIn(true);
@@ -58,11 +59,11 @@ export default function AppContent() {
 
         if (superUserRoutes.includes(location.pathname) && decoded.role !== 'superuser') {
           toast.error(`Debes ser 'Super usuario' para acceder esta página.`);
-          navigate('/');
+          navigate('/calendar');
         }
         else if (location.pathname === '/login') {
           toast.error('Tu sesión sigue activa.');
-          navigate('/');
+          navigate('/calendar');
         }
       } catch (error) {
         console.error('Token inválido:', error);
@@ -70,13 +71,13 @@ export default function AppContent() {
         toast.error('Sesión inválida. Vuelve a iniciar sesión.');
         setIsLoggedIn(false);
         setUserRole(null);
-        navigate('/');
+        navigate('/calendar');
       }
     } else if (userRoutes.includes(location.pathname)) {
       setIsLoggedIn(false);
       setUserRole(null);
       toast.error('Debes iniciar sesión para acceder a esta página.');
-      navigate('/');
+      navigate('/calendar');
     }
   }, [location.pathname, navigate]);
 
@@ -146,7 +147,7 @@ export default function AppContent() {
           }
         }
 
-        // Marca las notificaciones como vistas, así que ya no aparecerán a usuarios
+        // Marca las notificaciones como vistas
         const ids = notifications.map(noti => noti.id);
         if (ids.length > 0) {
           await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
@@ -200,17 +201,18 @@ export default function AppContent() {
 
       {/* Renderiza los Routes sólo si NO está cargando */}
         <Routes>
-          <Route path="/" element={<Calendar />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/calendar" element={<Calendar />} />
           {isLoggedIn && (
             <>
-              <Route path="/reportes" element={<Reports />} />
-              <Route path="/crud" element={userRole === 'superuser' ? <Crud /> : <Navigate to="/" />} />
-              <Route path="/registro" element={userRole === 'superuser' ? <Registro /> : <Navigate to="/" />} />
-              <Route path="/configuracion" element={<AccountConfig />} />
+              <Route path="/reports" element={<Reports />} />
+              <Route path="/crud" element={userRole === 'superuser' ? <Crud /> : <Navigate to="/calendar" />} />
+              <Route path="/signup" element={userRole === 'superuser' ? <Registro /> : <Navigate to="/calendar" />} />
+              <Route path="/config" element={<AccountConfig />} />
             </>
           )}
-          <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <Login />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/login" element={isLoggedIn ? <Navigate to="/calendar" replace /> : <Login />} />
+          <Route path="*" element={<Navigate to="/calendar" replace />} />
         </Routes>
     </div>
 

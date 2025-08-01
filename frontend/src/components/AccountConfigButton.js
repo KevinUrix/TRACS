@@ -9,14 +9,14 @@ export default function AccountConfigButton({ className = '' }) {
   const location = useLocation();
 
   const handleClick = () => {
-    if (location.pathname === '/configuracion') {
-      navigate('/');
+    if (location.pathname === '/config') {
+      navigate('/calendar');
     } else {
-      navigate('/configuracion');
+      navigate('/config');
     }
   };
 
-  const isInConfig = location.pathname === '/configuracion';
+  const isInConfig = location.pathname === '/config';
   
   return (
     <button

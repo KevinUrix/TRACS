@@ -15,7 +15,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
     setIsLoggedIn(false);
     setUserRole(null);
     toast.success('Se ha cerrado la sesión.');
-    navigate('/');
+    navigate('/calendar');
   };
 
   const handleLoginRedirect = () => {
@@ -61,9 +61,9 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           {/* Links centrados */}
           {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
             <div className="flex gap-6">
-              <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Inicio</Link>
+              <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`}>Inicio</Link>
               {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
-                <Link to="/reportes" className={`nav-link ${location.pathname === '/reportes' ? 'active' : ''}`}>Reportes</Link>
+                <Link to="/reports" className={`nav-link ${location.pathname === '/reports' ? 'active' : ''}`}>Reportes</Link>
               )}
               {userRole === 'superuser' && (
                 <Link to="/crud" className={`nav-link ${location.pathname === '/crud' ? 'active' : ''}`}>CRUD</Link>
@@ -73,14 +73,16 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
         </div>
 
         {/* Botón login/logout a la derecha extrema (oculto en móvil) */}
-        <div className="hidden md:flex flex-shrink-0">
-          {isLoggedIn && <AccountConfigButton className="hidden md:flex"/>}
+        <div className="hidden md:flex flex-shrink-0 items-center">
+          {isLoggedIn && <AccountConfigButton className="hidden md:flex" />}
+
           <LoginLogoutButton
             isLoggedIn={isLoggedIn}
             handleLogout={handleLogout}
             handleLoginRedirect={handleLoginRedirect}
           />
         </div>
+
 
         {/* Menú hamburguesa desplegado en móvil */}
         {menuOpen && (
@@ -89,7 +91,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
             {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
               <>
                 <div className="menu-row">
-                  <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                  <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
                     Inicio
                   </Link>
 
@@ -100,13 +102,13 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
                   />
                 </div>
                 {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
-                  <Link to="/reportes" className={`nav-link ${location.pathname === '/reportes' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Reportes</Link>
+                  <Link to="/reports" className={`nav-link ${location.pathname === '/reports' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Reportes</Link>
                 )}
                 {userRole === 'superuser' && (
                   <Link to="/crud" className={`nav-link ${location.pathname === '/crud' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>CRUD</Link>
                 )}
                 {userRole === 'superuser' && (
-                  <Link to="/configuracion" className={`nav-link ${location.pathname === '/configuracion' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Configuración</Link>
+                  <Link to="/config" className={`nav-link ${location.pathname === '/config' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Configuración</Link>
                 )}
               </>
             )}

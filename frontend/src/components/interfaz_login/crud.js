@@ -138,7 +138,7 @@ export default function Crud() {
       });
 
       if (res.ok) {
-        // Refrescar la lista local
+        // Refresca la lista local
         setUsers((prev) =>
           prev.map((user) => (user.id === id ? { ...user, role: newRole } : user))
         );
@@ -147,12 +147,12 @@ export default function Crud() {
       else {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
       }
@@ -200,12 +200,12 @@ export default function Crud() {
       } else {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         toast.error("Error al actualizar el edificio");
@@ -242,12 +242,12 @@ export default function Crud() {
       } else {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         toast.error('Fallo al eliminar edificio');
@@ -278,12 +278,12 @@ export default function Crud() {
       } else {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         toast.error('Fallo al eliminar usuario');
@@ -320,12 +320,12 @@ export default function Crud() {
       if (!res.ok) {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         console.error('Error desde el servidor:', result?.error || 'Error desconocido');
@@ -347,7 +347,6 @@ export default function Crud() {
     <div className="bg-gray-100 flex min-h-screen">
 
       <div className="main-content flex flex-col">
-        {/*<NavbarGlobal/>*/}
 
         <div className="pt-12 p-4 ml-4 mr-4">
           
@@ -360,7 +359,7 @@ export default function Crud() {
                 <h3 className="text-xl font-semibold mb-4 text-center text-purple-800">USUARIOS</h3>
                 <div className="flex justify-end mb-4">
                   <button
-                    onClick={() => navigate('/registro')}
+                    onClick={() => navigate('/signup')}
                     className="bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 transition"
                   >
                     Registrar nuevo usuario

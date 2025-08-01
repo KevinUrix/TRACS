@@ -48,8 +48,8 @@ export default function Login() {
       localStorage.setItem('token', data.token);
 
       toast.success('Se ha iniciado la sesión.');
-      // Redirigir al calendario y enviar el estado
-      navigate('/');
+      // Redirigir al calendario
+      navigate('/calendar');
 
     } catch (err) {
       console.error('Error de red:', err);
@@ -61,7 +61,7 @@ export default function Login() {
   };
 
   const goToSignup = () => {
-    navigate('/');
+    navigate('/calendar');
   };
 
 return (

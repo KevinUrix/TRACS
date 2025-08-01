@@ -39,12 +39,12 @@ export default function AccountConfig() {
         if (err.response) {
           if (err.response.status === 403) {
             localStorage.clear();
-            navigate("/");
+            navigate("/calendar");
             return;
           }
           else if (err.response.status === 401) {
             localStorage.clear();
-            window.location.href = '/';
+            window.location.href = '/calendar';
             return;
           }
         }
@@ -88,18 +88,18 @@ export default function AccountConfig() {
       localStorage.clear();
       toast.success("Se cerrará su sesión.",  {autoClose: 400});
       setTimeout(() => {
-        window.location.href = "/";
+        window.location.href = "/calendar";
       }, 900);
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (err.response.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         setUsernameMessage(err.response.data.message);
@@ -119,8 +119,8 @@ export default function AccountConfig() {
     const cleanedNewPassword = newPassword.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
     const cleanedConfirmPassword = confirmPassword.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
 
-    if (cleanedNewPassword.length < 5) {
-      toast.error('La nueva contraseña debe tener al menos 5 caracteres válidos.');
+    if (cleanedNewPassword.length < 6) {
+      toast.error('La nueva contraseña debe tener al menos 6 caracteres válidos.');
       return;
     }
 
@@ -144,18 +144,18 @@ export default function AccountConfig() {
       localStorage.clear();
       toast.success("Se cerrará su sesión.", {autoClose: 400});
       setTimeout(() => {
-        window.location.href = "/";
+        window.location.href = "/calendar";
       }, 800);
     } catch (err) {
       if (err.response) {
         if (err.response.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (err.response.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         setPasswordMessage(err.response.data.message);

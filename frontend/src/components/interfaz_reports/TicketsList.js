@@ -135,12 +135,12 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       if (!res.ok) {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         throw new Error('Error al actualizar reporte');
@@ -171,12 +171,12 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       if (!res.ok) {
         if (res.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         throw new Error('Error al borrar reporte');
@@ -332,8 +332,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
               <div className="flex gap-4 mb-4">
-                <label className="block mb-1 font-bold">
-                  Edificio:
+                <label className="block mb-1">
+                  <span className='font-semibold'>Edificio:</span>
                   <input
                     type="text"
                     name="building"
@@ -344,8 +344,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   />
                 </label>
                 
-                <label className="block mb-1 font-bold">
-                  Salón:
+                <label className="block mb-1">
+                  <span className='font-semibold'>Salón:</span>
                   <input
                     type="text"
                     name="room"
@@ -357,8 +357,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 </label>
               </div>
 
-              <label className="block mb-1 font-bold">
-                Titulo:
+              <label className="block mb-1">
+                <span className='font-semibold'>Título:</span>
                 <input
                   type='text'
                   name='title'
@@ -369,8 +369,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 ></input>
               </label>
 
-              <label className="block mb-1 font-bold">
-                Reporte:
+              <label className="block mb-1">
+                <span className='font-semibold'>Reporte:</span>
                 <textarea
                   name="report"
                   value={selectedTicket.report}
@@ -382,8 +382,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
               </label>
 
               <div className="flex gap-4 mb-4">
-                <label className="block mb-1 font-bold">
-                  Categoría:
+                <label className="block mb-1">
+                  <span className='font-semibold'>Categoría:</span>
                   <select
                     name="category"
                     value={selectedTicket.category}
@@ -399,8 +399,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   </select>
                 </label>
 
-                <label className="block mb-1 font-bold">
-                  Estado:
+                <label className="block mb-1">
+                  <span className='font-semibold'>Estado:</span>
                   <select
                     name="status"
                     value={selectedTicket.status}
@@ -414,8 +414,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                 </label>
               </div>
               <div className="flex gap-4 mb-4">
-                <label className="mb-1 font-bold">
-                    Prioridad:
+                <label className="mb-1">
+                    <span className='font-semibold'>Prioridad:</span>
                     <select
                       name="priority"
                       value={selectedTicket.priority}
@@ -459,7 +459,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     type='button'
                     onClick={handleSave}
                     className={`px-4 py-2 rounded text-white background-button3`}
-                    disabled={isSaving}
+                    // disabled={isSaving}
                   >
                     Guardar
                   </button>

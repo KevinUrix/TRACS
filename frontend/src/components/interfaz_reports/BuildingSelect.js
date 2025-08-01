@@ -3,7 +3,6 @@ import API_URL from '../../config/api';
 import "./reports.css"
 
 
-
 export default function BuildingSelect({ selectedBuilding, onChange }) {
   const [building, setBuilding] = useState([]);
 

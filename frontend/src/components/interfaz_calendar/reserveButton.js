@@ -153,14 +153,6 @@ export default function ReserveButton({
       setReservationDate(getTodayDate());
       return;
     }
-  
-    // Validar
-    /*if (selectedDateDay !== expectedDay) {
-      alert(`Por favor selecciona una fecha que caiga en el día correspondiente (${selectedDay}).`); // Anteriormente para regresarte al día si no escogias el mismo.
-      setReservationDate(getTodayDate());
-    } else {
-      setReservationDate(e.target.value);
-    }*/
 
     if (selectedDateDay !== expectedDay) { //Corrige la fecha a la mas cercana con el día corres pondiente.
       const correctedDate = findNextValidDate(selectedDate, expectedDay);
@@ -193,8 +185,8 @@ export default function ReserveButton({
 
         <form className="form">
           <div className="form-grid">
-              <label className='font-semibold'>
-                Maestro:
+              <label>
+                <span className='font-semibold'>Maestro:</span>
                 <input
                   type="text"
                   value={professor}
@@ -205,8 +197,8 @@ export default function ReserveButton({
                 />
               </label>
             <div className="flex items-center gap-4">
-              <label className='font-semibold'>
-                Materia:
+              <label>
+                <span className='font-semibold'>Materia:</span>
                 <input
                   type="text"
                   value={course}
@@ -216,8 +208,8 @@ export default function ReserveButton({
                   required
                 />
               </label>
-              <label className='font-semibold'>
-                Clave:
+              <label>
+                <span className='font-semibold'>Clave:</span>
                 <input
                   type="text"
                   value={code}
@@ -229,8 +221,8 @@ export default function ReserveButton({
               </label>
             </div>
             <div className="flex items-center gap-4">
-              <label className='font-semibold'>
-                Edificio:
+              <label>
+                <span className='font-semibold'>Edificio:</span>
                 <input
                   type="text"
                   value={selectedBuilding}
@@ -239,8 +231,8 @@ export default function ReserveButton({
                 />
               </label>
 
-              <label className='font-semibold'>
-                Salón:
+              <label>
+                <span className='font-semibold'>Salón:</span>
                 <input
                   type="text"
                   value={classroom}
@@ -250,8 +242,8 @@ export default function ReserveButton({
               </label>
             </div>
             <div className="flex items-center gap-4">
-              <label className='font-semibold'>
-                    Fecha:
+              <label>
+                    <span className='font-semibold'>Fecha:</span>
                     <input
                     type="date"
                     value={reservationDate}
@@ -260,8 +252,8 @@ export default function ReserveButton({
                     required
                     />
               </label>
-              <label className='font-semibold'>
-                Día:
+              <label>
+                <span className='font-semibold'>Día:</span>
                 <select value={selectedDay} type="text" disabled className='w-full pt-2 pb-2'>
                   <option value="">Selecciona un día</option>
                   <option value="L">Lunes</option>
@@ -274,8 +266,8 @@ export default function ReserveButton({
               </label>
             </div>
             <div className="flex items-center gap-4">
-                <label className="flex gap-1 font-semibold text-center">
-                  Hora de inicio
+                <label className="flex gap-1">
+                  <span className='font-semibold text-center'>Hora de incio:</span>
                   <input
                     type="time"
                     value={startTime}
@@ -284,8 +276,8 @@ export default function ReserveButton({
                   />
                 </label>
 
-                <label className="flex gap-1 font-semibold text-center">
-                  Hora de cierre
+                <label className="flex gap-1">
+                  <span className='font-semibold text-center'>Hora de cierre:</span>
                   <input
                     type="time"
                     value={endTime}

@@ -21,8 +21,6 @@ export default function Reports() {
   const [category, setCategory] = useState('');
   
   const [refreshTickets, setRefreshTickets] = useState(false);
-  //const [refresh, setRefresh] = useState(false);
-  //const toggleRefresh = () => setRefresh(prev => !prev);
 
   const [classrooms, setClassrooms] = useState([]);
 
@@ -92,12 +90,12 @@ export default function Reports() {
         const errorData = await response.json();
         if (response.status === 403) {
           localStorage.clear();
-          navigate("/");
+          navigate("/calendar");
           return;
         }
         else if (response.status === 401) {
           localStorage.clear();
-          window.location.href = '/';
+          window.location.href = '/calendar';
           return;
         }
         throw new Error(errorData.error || 'Error al guardar reporte');
@@ -201,7 +199,6 @@ export default function Reports() {
     <div className="bg-gray-100 flex min-h-screen">
 
       <div className="main-content flex-2 flex flex-col">
-        {/*<NavbarGlobal/>*/}
 
           <div className="p-2 mt-0 sm:mt-0 md:mt-1 lg:mt-6 max-w-7xl mx-auto w-full overflow-x-auto overflow-y-hidden">
               {/* Selector de edificio y botón de agregar */}
@@ -301,7 +298,9 @@ export default function Reports() {
 
                 <div className="flex gap-4 mb-4">
                   <div>
-                    <label className="block mb-1 font-bold">Edificio:</label>
+                    <label className="block mb-1">
+                      <span className='font-semibold'>Edificio:</span>
+                    </label>
                     <select 
                       value={selectedBuilding}  
                       className="w-full mr-48 px-2 py-1 mt-1"
@@ -312,7 +311,9 @@ export default function Reports() {
                   </div>
 
                   <div>
-                    <label className="block mb-1 font-bold">Salón:</label>
+                    <label className="block mb-1">
+                      <span className='font-semibold'>Salón:</span>
+                    </label>
                     <select
                       value={selectedRoom}
                       onChange={(e) => setSelectedRoom(e.target.value)}
@@ -330,7 +331,9 @@ export default function Reports() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="block mb-1 font-bold">Título:</label>
+                  <label className="block mb-1">
+                    <span className='font-semibold'>Título:</span>
+                  </label>
                   <input 
                     type="text"
                     value={title}
@@ -342,7 +345,9 @@ export default function Reports() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="block mb-1 font-bold">Reporte:</label>
+                  <label className="block mb-1">
+                    <span className='font-semibold'>Reporte:</span>
+                  </label>
                   <textarea 
                     value={reportText}
                     onChange={(e) => setReportText(e.target.value)}
@@ -365,7 +370,7 @@ export default function Reports() {
                     type='button' 
                     onClick={handleSaveTicket} 
                     className="px-4 py-2 background-agregar text-white rounded"
-                    disabled={isSaving}
+                    // disabled={isSaving}
                   >
                     Guardar Reporte
                   </button>

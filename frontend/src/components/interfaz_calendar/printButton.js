@@ -1,6 +1,5 @@
 import { toast } from "react-toastify";
 
-// PrintButton.js
 export default function PrintButton({ selectedBuilding, selectedDay, selectedCycle, onPrint }) {
   const handleClick = () => {
     if (!selectedBuilding || !selectedCycle || !selectedDay) {

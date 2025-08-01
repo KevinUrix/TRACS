@@ -52,7 +52,6 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
 
     // Control para rowspan: para cada columna (solo las aulas, no hora),
     // guardamos cuántas filas faltan para que termine el rowspan
-    // Índices relativos al bloque (0 a chunkSize-1)
     const rowspanTracker = new Array(end - start).fill(0);
 
     for (let rowIndex = 0; rowIndex < bodyRows.length; rowIndex++) {
@@ -96,7 +95,7 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
   }
 
   const containsDuct1 = Array.from(header.children).some(th => th.textContent.trim() === "DUCT1");
-  // Define el título según esa condición
+  // Define el título según la condición
   const titleText = containsDuct1 ? "Conteo de alumnos" : `Horario - ${selectedBuilding}`;
 
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);

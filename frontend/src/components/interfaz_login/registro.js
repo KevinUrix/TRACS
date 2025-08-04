@@ -11,7 +11,10 @@ export default function Registro() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [showPasswords, setShowPasswords] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
+  /* 
+  isSaving es para que no se guarden dos reportes desde una misma modal, el problema es que si faltan o colocas datos incorrectos NO puedes volver a presionar el botón.
+  */
+  // const [isSaving, setIsSaving] = useState(false);
   
   const navigate = useNavigate();
 
@@ -30,7 +33,7 @@ export default function Registro() {
       return;
     }
 
-    if (isSaving) return; // Evita clics múltiples
+    // if (isSaving) return; // Evita clics múltiples
     
     // Validar contraseña mínima
     if (password.length < 6) {
@@ -46,7 +49,7 @@ export default function Registro() {
       return;
     }
     
-    setIsSaving(true); // Inicia la "protección"
+    // setIsSaving(true); // Inicia la "protección"
 
     try {
       const res = await fetch(`${API_URL}/api/register`, {
@@ -81,7 +84,7 @@ export default function Registro() {
       console.error('Error de red:', err);
       setError('No se pudo conectar con el servidor');
     } finally {
-      setIsSaving(false); // Vuelve a permitir guardar
+      // setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -186,7 +189,7 @@ export default function Registro() {
           <button
             type="submit"
             className="w-full background-button3 text-white py-2 px-4 rounded-lg mb-2"
-            disabled={isSaving}
+            // disabled={isSaving}
           >
             Crear cuenta
           </button>

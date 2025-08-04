@@ -6,6 +6,7 @@ import API_URL from '../config/api';
 
 import axios from 'axios';
 import './interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
+import Footer from './interfaz_calendar/footer';
 
 export default function AccountConfig() {
     const [userInfo, setUserInfo] = useState({ username: '', role: '' });
@@ -170,7 +171,7 @@ export default function AccountConfig() {
     <div className="main-content flex-2 flex flex-col">
 
       {/* Columna izquierda: Configuración de cuenta */}
-      <div className="ml-5 mr-5 mb-2 mx-auto mt-10 p-6 bg-white shadow-md rounded-lg custom-shadow-border">
+      <div className="ml-5 mr-5 mb-28 mx-auto mt-10 p-6 bg-white shadow-md rounded-lg custom-shadow-border">
         <h2 className="text-2xl text-purple-900 text-center font-bold mb-4">Configuración de Cuenta</h2>
         <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
         <p className="mb-4 text-center text-xl">Configura algunos datos de tu cuenta.</p>
@@ -301,6 +302,7 @@ export default function AccountConfig() {
           )}
         </form>
       </div>
+      <Footer />
     </div>
   </div>
 );

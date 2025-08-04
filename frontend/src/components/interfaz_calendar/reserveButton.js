@@ -44,7 +44,7 @@ export default function ReserveButton({
   const [endTime, setEndTime] = useState(addMinutes(startTime, 55));
   const [reservationDate, setReservationDate] = useState(getTodayDate()); /* Para poner la fecha en automatico*/
   const [duration, setDuration] = useState('Temporal');
-  const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('true');
+  const [createInGoogleCalendar, setCreateInGoogleCalendar] = useState('false');
   const [disabledRB, setDisabledRB] = useState(false);
 
   const navigate = useNavigate();

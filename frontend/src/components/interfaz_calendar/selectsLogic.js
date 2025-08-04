@@ -13,7 +13,7 @@ import ViewReservationsButton from './viewReservationsButton';
 
 import './calendar.css'; // Importa el archivo de estilos CSS
 
-export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCycle, fetchReservations, reservations, isStatisticMode, setIsStatisticMode }) {
+export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCycle, fetchReservations, reservations, isStatisticMode, setIsStatisticMode, isPrintMode, setIsPrintMode }) {
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [selectedCycle, setSelectedCycle] = useState('');
@@ -294,6 +294,9 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           selectedDay={selectedDay}
           selectedCycle={selectedCycle}
           onPrint={handlePrint}
+          isPrintMode={isPrintMode}
+          setIsPrintMode={setIsPrintMode}
+          isStatisticMode={isStatisticMode}
         />
       </div>
 
@@ -303,6 +306,8 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
           setIsStatisticMode={setIsStatisticMode}
           selectedCycle={selectedCycle}
           selectedBuilding={selectedBuilding}
+          isPrintMode={isPrintMode}
+          setIsPrintMode={setIsPrintMode}
         />
       </div>
 

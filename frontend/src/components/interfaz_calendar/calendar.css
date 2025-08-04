@@ -5,6 +5,9 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* IMPORTANTE NO MODIFICAR, son para los formularios, son globales */
@@ -40,7 +43,7 @@ textarea:focus {
 .calendar-container {
   display: flex;
   background-color: #f3f4f6; 
-  height: 100vh;
+  height: 96vh;
   overflow: hidden;        
 }
 
@@ -1075,4 +1078,8 @@ footer{
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0.55rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+.padding-footer {
+  padding: 0.45rem;
 }

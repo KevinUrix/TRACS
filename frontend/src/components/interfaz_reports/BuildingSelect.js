@@ -20,11 +20,18 @@ export default function BuildingSelect({ selectedBuilding, onChange }) {
       .catch((err) => console.error("Error cargando edificios:", err));
   }, []);
 
+  const handleChange = (e) => {
+    const selectedValue = e.target.value;
+    const selectedObj = building.find(b => b.value === selectedValue);
+    onChange(selectedObj || { value: '', text: 'Todos los edificios 🏢' });
+  };
+
+
   return (
     <div className="flex space-x-6">
         <select
             value={selectedBuilding}
-            onChange={onChange}
+            onChange={handleChange}
             className="building-select"
         >
             <option value="">Todos los edificios 🏢</option>

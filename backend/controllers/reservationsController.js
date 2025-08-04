@@ -6,7 +6,7 @@ const { getOAuth2Client } = require('../utils/googleOAuthClient');
 const { createGoogleEvent } = require('../utils/createGoogleEvent');
 
 const mapBuildingName = (name) => {
-  if (name === 'DUCT1') return 'Alfa';
+  if (name === 'DUCT1') return 'Alpha';
   if (name === 'DUCT2') return 'Beta';
   if (name === 'DBETA') return 'CISCO';
   return name;

@@ -9,6 +9,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const linkTarget = isLoggedIn ? '/calendar' : '/';
 
   const handleLogout = () => {
     localStorage.clear();
@@ -27,7 +28,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
       <nav className="navbar flex items-center justify-between px-6 bg-white shadow relative">
         {/* Logo TRACS a la izquierda */}
         <div className="flex items-center flex-shrink-0">
-          <Link to="/" className="navbar-brand">TRACS</Link>
+          <Link to={linkTarget} className="navbar-brand">TRACS</Link>
         </div>
 
         {/* Botón hamburguesa para pantallas pequeñas */}
@@ -61,7 +62,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           {/* Links centrados */}
           {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
             <div className="flex gap-6">
-              <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`}>Inicio</Link>
+              <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`}>Calendario</Link>
               {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
                 <Link to="/reports" className={`nav-link ${location.pathname === '/reports' ? 'active' : ''}`}>Reportes</Link>
               )}
@@ -92,7 +93,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
               <>
                 <div className="menu-row">
                   <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
-                    Inicio
+                    Calendario
                   </Link>
 
                   <LoginLogoutButton

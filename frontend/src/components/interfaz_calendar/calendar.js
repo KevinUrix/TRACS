@@ -16,6 +16,7 @@ export default function Calendar() {
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
   const [isStatisticMode, setIsStatisticMode] = useState(false);
+  const [isPrintMode, setIsPrintMode] = useState(false);
   const [buildings, setBuildings] = useState([]);
   const [fullSchedule, setFullSchedule] = useState({});
   const [isRestored, setIsRestored] = useState(false);
@@ -552,6 +553,8 @@ export default function Calendar() {
                 reservations={reservations}
                 isStatisticMode={isStatisticMode}
                 setIsStatisticMode={setIsStatisticMode}
+                isPrintMode={isPrintMode}
+                setIsPrintMode={setIsPrintMode}
               />
             </div>
           </div>
@@ -709,7 +712,7 @@ export default function Calendar() {
                         const cellKey = `${currentHour}-${classroom}`;
 
                         // No renderizar si ya se pintó por rowspan
-                        if (renderedCells[cellKey]) return null;
+                        if (!isPrintMode && renderedCells[cellKey]) return null;
 
                         // Buscar si hay reserva
                         const hasClassThisHour = schedule.some(course => {
@@ -808,7 +811,8 @@ export default function Calendar() {
                           const [start, end] = matchingCourse.data.schedule.split('-');
                           const startHour = parseInt(start.substring(0, 2), 10);
                           const endHour = parseInt(end.substring(0, 2), 10);
-                          rowspan = endHour - startHour + 1;
+                          
+                          if (!isPrintMode) rowspan = endHour - startHour + 1;
 
                           // Marcar horas ya renderizadas
                           for (let h = startHour; h <= endHour; h++) {
@@ -847,8 +851,14 @@ export default function Calendar() {
                               showReservation ? 'reserved-cell' : (
                                 matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'
                               )}`}
-                            style={{ backgroundColor: matchingCourse ? `hsl(${hue}, 50%, 46%)` : showReservation ? '#0a304b' : 'white' }}
-                            rowSpan={rowspan}
+                            style={{
+                              backgroundColor: matchingCourse
+                                ? `hsl(${hue}, 50%, 46%)`
+                                : showReservation
+                                  ? '#0a304b'
+                                  : 'white'
+                            }}
+                            {...(!isPrintMode && rowspan > 1 ? { rowSpan: rowspan } : {})}
                           >
                             {showReservation ? (
                               <>
@@ -883,6 +893,10 @@ export default function Calendar() {
           </div>
         </div>
       </div>
+      <footer className="w-full text-white padding-footer">
+        <span>POLITICA DE PRIVACIDAD</span>
+        <span>TÉRMINOS Y CONDICIONES</span>
+      </footer>
     </>
   );
 }

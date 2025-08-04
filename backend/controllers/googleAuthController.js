@@ -18,7 +18,8 @@ const generateAuthUrl = (username) => {
     access_type: 'offline',
     prompt: 'consent',
     scope: process.env.GOOGLE_CALENDAR_SCOPES?.split(',') || [
-      'https://www.googleapis.com/auth/calendar',
+      'https://www.googleapis.com/auth/calendar.events',
+      'https://www.googleapis.com/auth/calendar.readonly'
     ],
     state: username // sigue enviando username como identificador desde el frontend
   });

@@ -1,3 +1,16 @@
 {
-  "data": []
+  "data": [
+    {
+      "schedule": "0700-0755",
+      "days": "S",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "code": "IL365",
+      "course": "ARQUITECTURA DE COMPUTADORAS",
+      "date": "2025-08-09",
+      "duration": "Temporal",
+      "professor": "MEZA ESPINOSA JOSE JUAN",
+      "createInGoogleCalendar": "false"
+    }
+  ]
 }

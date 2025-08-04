@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import API_URL from '../../config/api';
 import './crud.css';
+import Footer from '../interfaz_calendar/footer';
 
 export default function Crud() {
   const [users, setUsers] = useState([]);
@@ -483,12 +484,13 @@ export default function Crud() {
             </div>
           </div>
         </div>
-        <div className="bg-red-200 p-4 ml-8 mr-8 mb-2 rounded-lg shadow-md border-2 border-red-500">
+        <div className="bg-red-200 p-4 ml-8 mr-8 mb-16 mt-6 rounded-lg shadow-md border-2 border-red-500">
           <h2 className="text-2xl font-bold mb-2 tracking-wide text-red-900">Advertencia</h2>
             <p className='text-lg'>La eliminación de usuarios y edificios no es información recuperable.<br/>
                 Realizar cambios requiere de autorización previa. Si usted no es un usuario con un rol que permita estos cambios, favor de abandonar este apartado y notificarlo inmediatamente.
             </p>
         </div>
+        <Footer />
       </div>
       {/* Modal */}
       {showModal && (
@@ -624,6 +626,7 @@ export default function Crud() {
               onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, value: e.target.value }))}
               placeholder="Nombre del Edificio"
               className="w-full mb-3 p-2 border rounded"
+              maxLength={10}
             />
 
             <input
@@ -632,6 +635,7 @@ export default function Crud() {
               onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, text: e.target.value }))}
               placeholder="Seudónimo"
               className="w-full mb-3 p-2 border rounded"
+              maxLength={10}
             />
             <div className="flex justify-center gap-4">
               <button

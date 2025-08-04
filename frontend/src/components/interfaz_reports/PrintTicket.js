@@ -31,7 +31,7 @@ export default function PrintTicket({ ticket, onClose }) {
                     height:100vh; 
                     margin: 0 !important; 
                     padding: 0 !important;
-                    overflow: hidden;
+                    // overflow: hidden;
                 }
 
                 .footer {
@@ -57,7 +57,7 @@ export default function PrintTicket({ ticket, onClose }) {
         <body style="display: flex; flex-direction: column; min-height: 100vh; padding-bottom: 120px;">
           <div style="flex-grow: 1;">
             <div style="border-top: 1px solid #ccc; margin-bottom: 10px;"></div>
-            <h2>${ticket.title}</h2>
+            <h2 style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; white-space: normal;"> ${ticket.title} </h2>
             <div style="display: flex; justify-content: space-between; margin-bottom: 1.2rem;">
                 <div><span class="label">Edificio:</span> ${ticket.building}</div>
                 <div><span class="label">Salón:</span> ${ticket.room}</div>
@@ -67,25 +67,28 @@ export default function PrintTicket({ ticket, onClose }) {
                 <div style="margin-bottom: 1em;">
                     <span class="label">Reporte:</span>
                 </div>
-                <div style="white-space: pre-wrap;">${ticket.report}</div>
+                <div style="word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; white-space: pre-wrap;">${ticket.report}</div>
             </div>
           </div>
 
-          <div style="margin-bottom: 5.1rem;">
-            <div style="display: flex; justify-content: space-between;">
-                <div class="section"><span class="label">Categoría:</span> ${ticket.category}</div>
-                <div class="section"><span class="label">Prioridad:</span> ${ticket.priority}</div>
-            </div>
-
-            <div style="display: flex; justify-content: space-between;">
-                <div class="section"><span class="label">Creador:</span> ${ticket.created_by}</div>
-                <div class="section"><span class="label">Modificado por:</span> ${ticket.modified_by || 'N/A'}</div>
-            </div>
-          </div>
-          
           <div class="footer">
-            <span class="label">Fecha de creación:</span> ${new Date(ticket.created_at).toLocaleString()}
-            <div class="section"><span class="label">Estado:</span> ${ticket.status}</div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <div class="section"><span class="label">Categoría:</span> ${ticket.category}</div>
+              <div class="section"><span class="label">Prioridad:</span> ${ticket.priority}</div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <div class="section"><span class="label">Creador:</span> ${ticket.created_by}</div>
+              <div class="section"><span class="label">Modificado por:</span> ${ticket.modified_by || 'N/A'}</div>
+            </div>
+
+            <div style="margin-bottom: 0.5rem;">
+              <span class="label">Fecha de creación:</span> ${new Date(ticket.created_at).toLocaleString()}
+            </div>
+
+            <div class="section">
+              <span class="label">Estado:</span> ${ticket.status}
+            </div>
           </div>
 
           ${blocks.join("<div style='page-break-after: always;'></div>")}

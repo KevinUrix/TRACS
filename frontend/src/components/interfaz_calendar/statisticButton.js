@@ -1,12 +1,15 @@
 import { toast } from 'react-toastify';
 
-export default function StatisticButton({ isStatisticMode, setIsStatisticMode, selectedCycle, selectedBuilding }) {
+export default function StatisticButton({ isStatisticMode, setIsStatisticMode, selectedCycle, selectedBuilding, isPrintMode, setIsPrintMode }) {
   const handleClick = () => {
     if (!selectedBuilding || !selectedCycle) {
       toast.error('Debes seleccionar un ciclo y un edificio.');
       return;
     }
     setIsStatisticMode(!isStatisticMode);
+    if (isPrintMode) {
+      setIsPrintMode(!isPrintMode);
+    }
   };
 
   return (

@@ -7,10 +7,11 @@ import TicketsList from './TicketsList';
 import API_URL from '../../config/api';
 
 import './reports.css'; // Importa el archivo de estilos CSS
+import Footer from '../interfaz_calendar/footer';
 
 
 export default function Reports() {
-  const [selectedBuilding, setSelectedBuilding] = useState('');
+  const [selectedBuilding, setSelectedBuilding] = useState({ value: '', text: 'Todos los edificios 🏢' });
 
   const [showForm, setShowForm] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState('');
@@ -44,14 +45,17 @@ export default function Reports() {
     document.title = "TRACS - Reportes";
   }, []);
 
-  const [isSaving, setIsSaving] = useState(false);
+  /* 
+  isSaving es para que no se guarden dos reportes desde una misma modal, el problema es que si faltan o colocas datos incorrectos NO puedes volver a presionar el botón.
+  */
+  // const [isSaving, setIsSaving] = useState(false);
 
   const handleSaveTicket = async () => {
 
-    if (isSaving) return; // Evita clics múltiples
-    setIsSaving(true); // Inicia la "protección"
+    // if (isSaving) return; // Evita clics múltiples
+    // setIsSaving(true); // Inicia la "protección"
 
-    if (!selectedBuilding) {
+    if (!selectedBuilding.value) {
       toast.error('Selecciona un edificio antes de guardar');
       return;
     }
@@ -67,7 +71,7 @@ export default function Reports() {
     const creator = user || 'Desconocido';
 
     const ticket = {
-      building: selectedBuilding,
+      building: selectedBuilding.value,
       room: selectedRoom,
       title: title.trim(),
       category: category.trim(),
@@ -120,7 +124,7 @@ export default function Reports() {
       console.error('Error al guardar reporte:', error);
       toast.error('No se pudo guardar el reporte');
     } finally {
-      setIsSaving(false); // Vuelve a permitir guardar
+      // setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -143,9 +147,8 @@ export default function Reports() {
   };
 
 
-  const handleBuildingChange = (e) => {
-    setSelectedBuilding(e.target.value);
-    // Puedes hacer algo adicional aquí si necesitas usar el edificio en el form o ticketList
+  const handleBuildingChange = (buildingObj) => {
+    setSelectedBuilding(buildingObj);
   };
 
 
@@ -177,11 +180,11 @@ export default function Reports() {
 
 
   useEffect(() => {
-    if (!selectedBuilding) return;
+    if (!selectedBuilding.value) return;
 
     const fetchClassrooms = async () => {
       try {
-        const res = await fetch(`${API_URL}/api/classrooms?buildingName=${selectedBuilding}`);
+        const res = await fetch(`${API_URL}/api/classrooms?buildingName=${selectedBuilding.value}`);
         if (!res.ok) throw new Error('No se pudo cargar la lista de salones');
         const data = await res.json();
         setClassrooms(data);
@@ -205,7 +208,7 @@ export default function Reports() {
             <div className="p-4 select-container-reports flex md:flex-row items-center justify-between gap-4 mb-1 sm:flex-row">
               {/* Edificio a la izquierda */}
               <BuildingSelect
-                selectedBuilding={selectedBuilding}
+                selectedBuilding={selectedBuilding.value}
                 onChange={handleBuildingChange}
                 className="building-select"
               />
@@ -259,7 +262,7 @@ export default function Reports() {
                     <option value="En Proceso">En proceso 🟠</option>
                     <option value="Cerrado">Cerrado 🟢</option>
                   </select>
-                {selectedBuilding && (
+                {selectedBuilding.value && (
                   <button
                     type='button'
                     onClick={() => setShowForm(true)}
@@ -274,7 +277,7 @@ export default function Reports() {
               </div>
             </div>
             {/* Lista de tickets */}
-          <div className="bg-white p-2 mb-2 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border"> 
+          <div className="bg-white p-2 mb-10 rounded-lg shadow-md max-w-7xl w-full mx-auto min-w-7xl max-h-7xl min-h-7xl custom-shadow-border"> 
             <TicketsList
               building={selectedBuilding} // puede estar vacío
               refresh={refreshTickets}
@@ -286,6 +289,7 @@ export default function Reports() {
               dateEnd={dateEnd}
             />
           </div>
+          <Footer />
         </div>
 
         {/* Modal de nuevo ticket */}
@@ -302,11 +306,11 @@ export default function Reports() {
                       <span className='font-semibold'>Edificio:</span>
                     </label>
                     <select 
-                      value={selectedBuilding}  
+                      value={selectedBuilding.value}  
                       className="w-full mr-48 px-2 py-1 mt-1"
                       disabled
                     >
-                      <option>{selectedBuilding || 'Selecciona un edificio'}</option>
+                      <option>{selectedBuilding.value || 'Selecciona un edificio'}</option>
                     </select>
                   </div>
 
@@ -340,7 +344,7 @@ export default function Reports() {
                     onChange={(e) => setTitle(e.target.value)}
                     className="w-full px-2 py-1 mt-1"
                     placeholder="Ej. Problema con el proyector"
-                    maxLength={50}
+                    maxLength={90}
                   />
                 </div>
 
@@ -352,9 +356,9 @@ export default function Reports() {
                     value={reportText}
                     onChange={(e) => setReportText(e.target.value)}
                     className="w-full p-2 border border-gray-300 rounded resize-none"
-                    rows={3}
+                    rows={4}
                     placeholder="Escribe el reporte aquí..."
-                    maxLength={500}
+                    maxLength={2500}
                   ></textarea>
                 </div>
 

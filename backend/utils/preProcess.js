@@ -17,7 +17,8 @@ const hardStopwords = [
   "alguien", "algo", "ninguno", "ninguna", "ningunos", "ningunas", "todos", "todas",
   "muchos", "pocos", "hacer", "hacerlo", "haremos", "decir", "decimos", "dar", "damos",
   "daremos", "tener", "tenemos", "venir", "ver", "vemos", "oir", "oimos", "pensar", "saber",
-  "creer", "estar", "seguir", "pienso", "sabemos", "ni", "pero", "porque", "siendo", "eso"
+  "creer", "estar", "seguir", "pienso", "sabemos", "ni", "pero", "porque", "siendo", "eso",
+  "da"
 ];
 
 const weakStopwords = [
@@ -54,7 +55,7 @@ const protectedWords = [
   "correo", "email", "cuenta", "sesion", "ticket", "soporte", "app",
   "token", "id", "login", "logout", "api", "backend", "frontend", "clave",
   "contraseña", "otp", "autenticacion", "seguridad", "acceso", "permiso",
-  "bloqueo", "captcha", "certificado", "cifrado", "switch", "rj45"
+  "bloqueo", "captcha", "certificado", "cifrado", "switch", "rj45", "tv", "television"
 ];
 
 const synonyms = {
@@ -154,6 +155,8 @@ const synonyms = {
   "reiniciar": "reiniciar",
   "tarjetamadre": "motherboard",
   "procesador": "cpu",
+  "tv": "pantalla",
+  "television": "pantalla"
 };
 
 const phrases = {

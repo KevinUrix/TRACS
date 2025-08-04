@@ -10,7 +10,10 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const [loading, setLoading] = useState(false);
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
   const [currentPage, setCurrentPage] = useState(1);
-  const [isSaving, setIsSaving] = useState(false);
+  /* 
+  isSaving es para que no se guarden dos reportes desde una misma modal, el problema es que si faltan o colocas datos incorrectos NO puedes volver a presionar el botón.
+  */
+  // const [isSaving, setIsSaving] = useState(false);
   const navigate = useNavigate();
 
   const [ticketToPrint, setTicketToPrint] = useState(null);
@@ -71,8 +74,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
     const fetchTickets = async () => {
       setLoading(true);
       try {
-        const url = building
-          ? `${API_URL}/api/tickets/${encodeURIComponent(building)}`
+        const url = building.value
+          ? `${API_URL}/api/tickets/${encodeURIComponent(building.value)}`
           : `${API_URL}/api/tickets`;
 
         const res = await fetch(url);
@@ -112,8 +115,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   // Actualizar ticket
   const handleSave = async () => {
-    if (isSaving) return; // Evita clics múltiples
-    setIsSaving(true); // Inicia la "protección"
+    // if (isSaving) return; // Evita clics múltiples
+    // setIsSaving(true); // Inicia la "protección"
     
     try {
 
@@ -153,7 +156,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       console.error(error);
       toast.error('Error al actualizar el reporte');
     } finally {
-      setIsSaving(false); // Vuelve a permitir guardar
+      // setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -193,7 +196,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   return (
     <div className="p-4">
       <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900 tracking-wide">
-        {building ? `Reportes para ${building}` : 'Todos los reportes'}
+        {building.value ? `Reportes para ${building.text}` : 'Todos los reportes'}
       </h2>
       <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
@@ -204,7 +207,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       {loading && <p>Cargando reportes...</p>}
       {!loading && tickets.length === 0 && (
           <p>
-            {building
+            {building.value
               ? 'No hay reportes para este edificio.'
               : 'No hay reportes registrados.'}
           </p>
@@ -365,7 +368,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   value={selectedTicket.title}
                   onChange={handleChange}
                   className='w-full px-2 py-1 mt-1'
-                  maxLength={50}
+                  maxLength={90}
                 ></input>
               </label>
 
@@ -377,7 +380,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                   onChange={handleChange}
                   className="w-full p-2 border border-gray-300 rounded resize-none"
                   rows={4}
-                  maxLength={500}
+                  maxLength={2500}
                 />
               </label>
 

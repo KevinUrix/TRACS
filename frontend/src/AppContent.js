@@ -201,7 +201,7 @@ export default function AppContent() {
 
       {/* Renderiza los Routes sólo si NO está cargando */}
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={isLoggedIn ? <Navigate to="/calendar" replace /> : <LandingPage /> }/>
           <Route path="/calendar" element={<Calendar />} />
           {isLoggedIn && (
             <>
@@ -216,6 +216,10 @@ export default function AppContent() {
         </Routes>
     </div>
 
+{/*     {!shouldHideFooter && (
+      <Footer />
+    )}
+ */}
     {/* Toasts */}
     <ToastContainer
       position="top-right"

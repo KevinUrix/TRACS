@@ -9,7 +9,10 @@ export default function Login() {
   const [error, setError] = useState('');
   const [showPasswords, setShowPasswords] = useState(false);
   const navigate = useNavigate();
-  const [isSaving, setIsSaving] = useState(false);
+  /* 
+  isSaving es para que no se guarden dos reportes desde una misma modal, el problema es que si faltan o colocas datos incorrectos NO puedes volver a presionar el botón.
+  */
+  // const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
     document.title = "TRACS - Login";
@@ -26,8 +29,8 @@ export default function Login() {
       return;
     }
 
-    if (isSaving) return; // Evita clics múltiples
-    setIsSaving(true); // Inicia la "protección"
+    // if (isSaving) return; // Evita clics múltiples
+    // setIsSaving(true); // Inicia la "protección"
 
     try {
       const res = await fetch(`${API_URL}/api/login`, {
@@ -56,7 +59,7 @@ export default function Login() {
       setError('No se pudo conectar con el servidor');
     }
     finally {
-      setIsSaving(false); // Vuelve a permitir guardar
+      // setIsSaving(false); // Vuelve a permitir guardar
     }
   };
 
@@ -142,7 +145,7 @@ return (
         <button
           type="submit"
           className="w-full background-button3 text-white py-2 px-4 rounded-lg mb-2"
-          disabled={isSaving}
+          // disabled={isSaving}
         >
           Iniciar Sesión
         </button>

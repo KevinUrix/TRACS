@@ -21,7 +21,7 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
   const bodyRows = Array.from(table.querySelectorAll("tbody tr"));
 
   const totalCols = header.children.length; // toma el número de columnas
-  const chunkSize = 10; // número de aulas por página
+  const chunkSize = 11; // número de aulas por página
 
   const blocks = [];
 
@@ -58,34 +58,52 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
       const row = bodyRows[rowIndex];
       const newRow = document.createElement("tr");
 
-      // Clonar columna de hora (index 0)
+      // Clona la columna de hora
       newRow.appendChild(row.children[0].cloneNode(true));
 
-      // Iterar columnas de aulas en el bloque
-      for (let colIndex = start; colIndex < end; colIndex++) {
-        const relativeColIndex = colIndex - start;
+      let visualColIndex = 0;
+      let realCellIndex = start;
 
-        // Si hay rowspan activo para esta columna, no ponemos td, solo ponemos contador
-        if (rowspanTracker[relativeColIndex] > 0) {
-          rowspanTracker[relativeColIndex]--;
-          continue; // no agregamos <td>
+      while (visualColIndex < end - start) {
+        if (rowspanTracker[visualColIndex] > 0) {
+          rowspanTracker[visualColIndex]--;
+          visualColIndex++;
+          continue;
         }
 
-        const cell = row.children[colIndex];
+        const cell = row.children[realCellIndex];
+        
         if (cell) {
-          newRow.appendChild(cell.cloneNode(true));
+        const rs = parseInt(cell.getAttribute("rowspan") || "1", 10);
+        const cs = parseInt(cell.getAttribute("colspan") || "1", 10);
 
-          // Si la celda tiene rowspan > 1, lo registramos para las próximas filas
-          const rs = parseInt(cell.getAttribute("rowspan") || "1", 10);
+        const cloned = document.createElement("td");
+
+        // Muestra contenido sólo si NO es "R"
+        const isR = cell.innerText.trim() === "R";
+        cloned.innerHTML = isR ? "" : cell.innerHTML;
+        cloned.className = cell.className;
+        cloned.setAttribute("style", cell.getAttribute("style") || "");
+
+        if (rs > 1) cloned.setAttribute("rowspan", rs);
+        if (cs > 1) cloned.setAttribute("colspan", cs);
+
+        newRow.appendChild(cloned);
+
+        for (let i = 0; i < cs; i++) {
           if (rs > 1) {
-            rowspanTracker[relativeColIndex] = rs - 1;
+            rowspanTracker[visualColIndex + i] = rs - 1;
           }
-        } else {
-          // No hay celda, ponemos vacía
-          const emptyCell = document.createElement("td");
-          newRow.appendChild(emptyCell);
         }
+
+        visualColIndex += cs;
+        realCellIndex++;
+      } else {
+        const empty = document.createElement("td");
+        newRow.appendChild(empty);
+        visualColIndex++;
       }
+    }
 
       tbody.appendChild(newRow);
     }
@@ -96,7 +114,7 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
 
   const containsDuct1 = Array.from(header.children).some(th => th.textContent.trim() === "DUCT1");
   // Define el título según la condición
-  const titleText = containsDuct1 ? "Conteo de alumnos" : `Horario - ${selectedBuilding}`;
+  const titleText = containsDuct1 ? `Conteo de alumnos - ${mapDaysInverse[selectedDay] || selectedDay}` : `Horario - ${selectedBuilding} - ${mapDaysInverse[selectedDay] || selectedDay}`;
 
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 

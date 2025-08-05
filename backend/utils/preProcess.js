@@ -177,7 +177,7 @@ const hardSet = new Set(hardStopwords.map(w => stemmer.stem(w)));
 const weakSet = new Set(weakStopwords.map(w => stemmer.stem(w)));
 const protectedSet = new Set(protectedWords);
 
-// Filtro de stopwords
+/* // Filtro de stopwords
 function isMeaningfulWord(word, context) {
   if (hardSet.has(word)) return false;
   if (weakSet.has(word)) {
@@ -185,6 +185,7 @@ function isMeaningfulWord(word, context) {
   }
   return true;
 }
+ */
 
 // Reemplaza las frases compuestas por palabras
 function replacePhrases(text) {
@@ -198,19 +199,31 @@ function replacePhrases(text) {
 /* ---- PRE PROCESADO DE TICKETS ---- */
 
 function preprocess(text) {
-  text = replacePhrases(text); // Transforma frases compuestas a una palabra
+
+  // Elimina acentos
+  text = text.toLowerCase();
+
+  // Transforma frases a una palabra
+  text = replacePhrases(text);
+
+  // Normaliza y elimina acentos
+  text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
   let tokens = text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")     // Elimina acentos
-    .split(/\s+/)                        // Divide por palabras
+    .split(/\s+/) // Divide por palabras
     .map(word => word.replace(/[^a-z0-9]/g, '')) // Elimina signos de cada palabra
     .filter(word => word && !/^\d+$/.test(word)) // Elimina vacíos y números solos
-    .map(word => synonyms[word] || word) // Reemplaza por sinonimos
+
+  tokens = tokens
+    .map(word => synonyms[word] || word) // Reemplazar por sinónimos
     .map(word => protectedSet.has(word) ? word : stemmer.stem(word)); // Aplica stemming solo si NO está en palabras protegidas
 
-  tokens = tokens.filter((word, _, arr) => isMeaningfulWord(word, arr));
+  const hasStrongWord = tokens.some(w => !weakSet.has(w) && !hardSet.has(w));
+  const filteredTokens = tokens.filter(word => {
+    if (hardSet.has(word)) return false; // Si es una palabra dura, la elimina.
+    if (weakSet.has(word)) return hasStrongWord; // Si es una palabra débil, la mantiene solo si hay palabras fuertes.
+    return true; // Si es una palabra fuerte, la mantiene.
+  });
 
   return tokens.join(' ');
 }

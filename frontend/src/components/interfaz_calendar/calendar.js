@@ -893,9 +893,11 @@ export default function Calendar() {
           </div>
         </div>
       </div>
-      <footer className="w-full text-white padding-footer">
-        <span>POLITICA DE PRIVACIDAD</span>
-        <span>TÉRMINOS Y CONDICIONES</span>
+      <footer className="w-full bg-gray-100 text-white footer-calendar fixed bottom-0 left-0">
+        <div className="flex justify-center space-x-4 py-4">
+          <span>POLÍTICA DE PRIVACIDAD</span>
+          <span>TÉRMINOS Y CONDICIONES</span>
+        </div>
       </footer>
     </>
   );

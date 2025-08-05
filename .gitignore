@@ -30,3 +30,5 @@ yarn-error.log*
 ngrok.exe
 backend/data/tokens/*.json
 Redis/
+ai/
+ai_service/

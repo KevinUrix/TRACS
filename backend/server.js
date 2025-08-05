@@ -70,7 +70,7 @@ redis.on('ready', () => {
 
 
 (async () => {
-  // await trainFromDatabase();
+    // await trainFromDatabase();
   await loadModelsFromDisk();
   
   server.listen(PORT, '0.0.0.0', () => {

@@ -1,7 +1,7 @@
 export default function Footer() {
 
   return (
-    <footer className="w-full text-white mt-auto bottom-0">
+    <footer className="w-full text-white mt-auto bottom-0 footer">
         <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
             <div>
                 <h4 className="font-semibold text-white mb-2">Sobre TRACS</h4>

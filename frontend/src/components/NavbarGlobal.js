@@ -58,7 +58,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
         )}
 
         {/* Contenedor central y derecho - oculto en móvil */}
-        <div className="ml-20 hidden md:flex flex-1 justify-center items-center gap-8">
+        <div className="mr-15 hidden md:flex flex-1 justify-center items-center gap-8">
           {/* Links centrados */}
           {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
             <div className="flex gap-6">

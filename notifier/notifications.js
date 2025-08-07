@@ -25,7 +25,7 @@ app.use(cors({
 }));
 
 
-/* EN CASO DE CREAR MÁS EVENTOS SE PONEN AQUÍ */
+/* SERVICIO: EN CASO DE CREAR MÁS EVENTOS SE PONEN AQUÍ */
 const allowedEvents = ['new-reservation', 'new-ticket'];
 
 

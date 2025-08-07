@@ -5,7 +5,25 @@ const { classifyTicket } = require('../utils/aiClassifier');
 
 exports.createTicket = async (req, res) => {
   const { building, room, title, report, created_by } = req.body;
-  const { category, secondaryCategory, priority } = classifyTicket({ building, room, title, report });
+  // const { category, secondaryCategory, priority } = classifyTicket({ building, room, title, report });
+  console.log('URL para clasificador:', process.env.CLASSIFIER_URL);
+
+  try {
+    const response = await axios.post(`${process.env.CLASSIFIER_URL}/classify`, {
+      building,
+      room,
+      title,
+      report
+    });
+    category = response.data.category;
+    secondaryCategory = response.data.secondaryCategory;
+    priority = response.data.priority;
+  } catch (error) {
+    console.error('Error clasificando el ticket:', error.message);
+    // Opcional: fallback a valores por defecto o respuesta de error
+    return res.status(500).json({ error: 'Error clasificando el ticket' });
+  }
+
   const fullCategory = secondaryCategory ? `${category} (${secondaryCategory})` : category;
 
   // const { building, room, title, category, priority, report, created_by } = req.body;

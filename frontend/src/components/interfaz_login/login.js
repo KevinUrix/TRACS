@@ -76,7 +76,7 @@ return (
 
     {/* Capa frontal (formulario) */}
     <div className="relative flex justify-center items-center h-full">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-80 z-10 custom-shadow-border">
+      <form onSubmit={handleLogin} className="bg-white p-8 rounded-lg shadow-lg w-90 z-10 custom-shadow-border">
         <h2 className="text-2xl font-bold mb-4 text-purple-800">Iniciar Sesión</h2>
 
         {error && <div className="mb-4 text-red-600 font-semibold">{error}</div>}
@@ -157,6 +157,14 @@ return (
         >
           Cancelar
         </button>
+        <div className="flex justify-between items-center gap-6 mt-6 text-sm md:text-base text-gray-600 px-2">
+            <a href="/privacy" className="hover:underline hover:text-purple-800 transition-colors duration-200">
+              Política de privacidad
+            </a>
+            <a href="/terms" className="hover:underline hover:text-purple-800 transition-colors duration-200">
+              Términos y condiciones
+            </a>
+        </div>
       </form>
     </div>
   </div>

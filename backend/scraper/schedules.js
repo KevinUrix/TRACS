@@ -144,7 +144,7 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
             activeBackgroundScraping.delete(scrapeKey);
         }
     }));
-        await new Promise(res => setTimeout(res, 200));
+        await new Promise(res => setTimeout(res, 250));
     }
 };
 

@@ -17,7 +17,7 @@ hard_stopwords = [
   "es", "era", "fue", "son", "ser", "soy", "eres", "estoy", "esta", "estan", "estamos",
   "buenas", "tardes", "hola", "hello", "gracias", "buenos", "saludos", "atentamente",
   "despido", "lejos", "acerca", "junto", "aqui", "ahi",
-  "alguien", "algo", "haremos", "decir", "decimos", "dar", "damos", "daremos", "tener", "tenemos", "venir", "ver", "vemos", "oir", "oimos", "pensar", "saber", "creer", "estar", "seguir", "pienso", "sabemos", "ni", "pero", "siendo", "eso", "da"
+  "alguien", "algo", "haremos", "decir", "dar", "damos", "tener", "tenemos", "venir", "ver", "vemos", "oir", "oimos", "pensar", "saber", "creer", "estar", "seguir", "pienso", "sabemos", "ni", "pero", "siendo", "eso", "da"
 ]
 
 weak_stopwords = [
@@ -31,7 +31,7 @@ weak_stopwords = [
   "porfavor", "porfa", "favor", "hay",
   "señor", "señora", "maestra", "doctora", "doctor", "profesor", "profesora", "mtra", "mtro",
   "etc", "entre", "alrededor", "cerca", "fabuloso", "porque", "esto", "segundo", "primero",
-  "muchos", "pocos", "hacer", "hacerlo", "ninguno", "ninguna", "ningunos", "ningunas", "todos", "todas", "profe", "docente"
+  "muchos", "pocos", "hacer", "hacerlo", "ninguno", "ninguna", "ningunos", "ningunas", "todos", "todas", "profe", "docente", "decimos", "daremos"
 ]
 
 protected_words = {

@@ -43,7 +43,7 @@ export default function DownloadButton({ onDownload }) {
       </div>
 
       {showDownload && (
-        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 download-button-bg bg-opacity-50 flex justify-center items-center z-50">
           <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-lg max-w-xs custom-shadow-border">
             <h2 className="font-semibold">Instrucciones de Uso</h2>
             <ul className="list-disc list-inside">

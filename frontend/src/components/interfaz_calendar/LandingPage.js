@@ -3,9 +3,12 @@ export default function LandingPage() {
     return (
         <div className="bg-gradient-to-br from-indigo-200 via-slate-100 to-white min-h-screen flex flex-col items-center justify-center">
             <div className="main-content3 text-center px-6 py-10 flex-1">
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-indigo-900 mb-4">
-                TRACS
-                </h1>
+                <div className="flex items-center justify-center mb-4">
+                    <h1 className="text-4xl sm:text-5xl font-extrabold text-indigo-900 mr-4">
+                        TRACS
+                    </h1>
+                    <img src="/tracs_page.webp" alt="Logo de TRACS" className="max-w-xs sm:max-w-md tracs-logo" />
+                </div>
                 <h2 className="text-xl sm:text-2xl text-gray-700 font-medium mb-6">
                 Timetable and Reporting Assistant for CUCEI Services
                 </h2>

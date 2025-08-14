@@ -6,7 +6,6 @@ const { classifyTicket } = require('../utils/aiClassifier');
 exports.createTicket = async (req, res) => {
   const { building, room, title, report, created_by } = req.body;
   // const { category, secondaryCategory, priority } = classifyTicket({ building, room, title, report });
-  console.log('URL para clasificador:', process.env.CLASSIFIER_URL);
 
   try {
     const response = await axios.post(`${process.env.CLASSIFIER_URL}/classify`, {

@@ -23,7 +23,7 @@ async def train_and_save_model(data, field, labels, model_path):
   y = np.array(outputs)
 
   model = create_model(len(labels), max_len, len(vocabulary))
-  model.fit(X, y, epochs=25, batch_size=32, verbose=2)
+  model.fit(X, y, epochs=50, batch_size=32, verbose=2)
 
   model.save(f"{model_path}.h5")
 

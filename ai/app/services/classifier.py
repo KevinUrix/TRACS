@@ -2,7 +2,7 @@ from app.utils.preprocess import preprocess
 import numpy as np
 
 # ------------------- CLASIFICACIÓN DE TEXTO --------------------
-def classify_text(text, model_obj, labels, threshold=0.5, default_label=None):
+def classify_text(text, model_obj, labels, threshold=0.4, default_label=None):
   model = model_obj['model']
   tokenizer = model_obj['tokenizer']
   max_len = model_obj['max_len']

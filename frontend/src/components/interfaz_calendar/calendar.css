@@ -668,6 +668,10 @@ textarea:focus {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.download-button-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .modal {
   background: white;
   padding: 2rem;
@@ -1095,5 +1099,10 @@ input[type="password"] {
 }
 
 .footer-calendar div {
-  padding: 10px 20px;
+  padding: 3px 20px;
+}
+
+.tracs-logo {
+  width: 100px;
+  height: auto;
 }

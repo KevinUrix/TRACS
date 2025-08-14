@@ -894,10 +894,10 @@ export default function Calendar() {
         </div>
       </div>
       <footer className="w-full bg-gray-100 text-white footer-calendar fixed bottom-0 left-0">
-        <div className="flex justify-between items-center px-6 py-4 w-full text-sm md:text-base">
+        <div className="flex justify-between items-center px-6 w-full text-sm md:text-base">
           <div className="flex space-x-4">
-            <a href="/privacy" className="hover:underline text-sm md:text-lg font-medium">Política de privacidad</a>
-            <a href="/terms" className="hover:underline text-sm md:text-lg font-medium">Términos y condiciones</a>
+            <a href="/privacy" className="hover:underline text-sm md:text-lg font-medium" target="_blank">Política de privacidad</a>
+            <a href="/terms" className="hover:underline text-sm md:text-lg font-medium" target="_blank">Términos y condiciones</a>
           </div>
 
           <div className="hidden md:block text-right text-sm md:text-lg font-medium">

@@ -526,8 +526,8 @@ export default function Calendar() {
     }
     else if (selectedBuilding) {
       const displayName = {
-        DUCT1: "Alfa",
-        DUCT2: "Beta",
+        DUCT1: "ALPHA",
+        DUCT2: "BETA",
         DBETA: "CISCO"
       }[selectedBuilding] || selectedBuilding;
 
@@ -901,7 +901,7 @@ export default function Calendar() {
           </div>
 
           <div className="hidden md:block text-right text-sm md:text-lg font-medium">
-            © {new Date().getFullYear()} CUCEI - Todos los derechos reservados
+            © {new Date().getFullYear()} TRACS - Licenciado bajo MIT.
           </div>
         </div>
       </footer>

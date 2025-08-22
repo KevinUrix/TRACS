@@ -134,29 +134,28 @@ export default function AppContent() {
   useEffect(() => {
     if (!user) return;
 
+    const markSeen = async (ids) => {
+      if (!ids?.length) return;
+      await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId, ids }),
+      });
+    };
+
     const fetchPersistentNotifications = async () => {
       try {
         const response = await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications?user=${userId}`);
         const notifications = await response.json();
 
         for (const noti of notifications) {
-          if (noti.type === 'new-ticket') {
-            notifyTicket(`🎟️ Nuevo reporte`, noti.payload);
-          } else if (noti.type === 'new-reservation') {
-            notifyReserva(`✅ Nueva reserva`, noti.payload);
-          }
-        }
+          const onSeen = () => markSeen([noti.id]);
 
-        // Marca las notificaciones como vistas
-        const ids = notifications.map(noti => noti.id);
-        if (ids.length > 0) {
-          await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ userId: userId, ids }),
-          });
+          if (noti.type === 'new-ticket') {
+            notifyTicket(`🎟️ Nuevo reporte`, noti.payload, onSeen);
+          } else if (noti.type === 'new-reservation') {
+            notifyReserva(`✅ Nueva reserva`, noti.payload, onSeen);
+          }
         }
 
       } catch (err) {

@@ -9,6 +9,8 @@ export const notifyReserva = (mensaje, reservation, onSeen) => {
         {reservation.user && <p>👤 Usuario: {reservation.user.charAt(0).toUpperCase() + reservation.user.slice(1)}</p>}
       </div>
     ),
+    onAutoClose: () => onSeen?.(),
+    onDismiss:   () => onSeen?.(),
     style: {
       backgroundColor: '#16a34a',
       color: 'white',
@@ -16,9 +18,6 @@ export const notifyReserva = (mensaje, reservation, onSeen) => {
       fontSize: '1rem',
     },
     variant: 'default',
-    onAutoClose: () => {
-      if (onSeen) onSeen();
-    }
   });
 };
 
@@ -35,6 +34,8 @@ export const notifyTicket = (mensaje, ticket, onSeen) => {
 
     </div>
     ),
+    onAutoClose: () => onSeen?.(),
+    onDismiss:   () => onSeen?.(),
     style: {
       backgroundColor: '#3949AB',
       color: 'white',
@@ -42,9 +43,6 @@ export const notifyTicket = (mensaje, ticket, onSeen) => {
       fontSize: '1rem',
     },
     variant: 'default',
-    onAutoClose: () => {
-      if (onSeen) onSeen();
-    }
   });
 };
 

@@ -29,7 +29,7 @@ return (
     </div>
 
     <div className="border-t border-slate-700 text-center text-xs text-gray-400 py-3 px-4">
-      © {new Date().getFullYear()} TRACS - Todos los derechos reservados.
+      © {new Date().getFullYear()} TRACS - Licenciado bajo MIT.
     </div>
   </footer>
 );

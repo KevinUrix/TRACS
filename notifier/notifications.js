@@ -71,11 +71,11 @@ app.post('/notify', async (req, res) => {
 app.get('/notifications', async (req, res) => {
   const userId = req.query.user;
 
-  if (!userId) return res.status(400).json({ error: 'Falta userId' });
+  if (userId === undefined || userId === null ) return res.status(400).json({ error: 'Falta userId' });
 
   try {
     const result = await pool.query(
-      'SELECT * FROM notifications WHERE NOT $1 = ANY(seen_by) ORDER BY created_at DESC',
+      'SELECT * FROM notifications WHERE NOT $1 = ANY(seen_by) ORDER BY created_at ASC',
       [userId]
     );
     res.json(result.rows);
@@ -90,7 +90,7 @@ app.get('/notifications', async (req, res) => {
 app.post('/notifications/mark-read', async (req, res) => {
   const { userId, ids } = req.body;
 
-  if (!userId || !ids || !Array.isArray(ids)) {
+  if (userId === undefined || userId === null || !ids || !Array.isArray(ids)) {
     return res.status(400).json({ error: 'Datos inválidos' });
   }
 

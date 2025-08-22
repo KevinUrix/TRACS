@@ -75,7 +75,7 @@ app.get('/notifications', async (req, res) => {
 
   try {
     const result = await pool.query(
-      'SELECT * FROM notifications WHERE NOT $1 = ANY(seen_by) ORDER BY created_at DESC',
+      'SELECT * FROM notifications WHERE NOT $1 = ANY(seen_by) ORDER BY created_at ASC',
       [userId]
     );
     res.json(result.rows);

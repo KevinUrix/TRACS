@@ -89,7 +89,7 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
 
       {(isLoadingPopup || showPopup) && (
         <div className="popup-overlay" onClick={() => { if (!isLoadingPopup) setShowPopup(false); }}>
-          <div className="popup-content relative p-6 rounded-lg shadow-lg top-3" onClick={(e) => e.stopPropagation()}>
+          <div className="popup-content relative p-6 rounded-lg shadow-lg top-2" onClick={(e) => e.stopPropagation()}>
             {isLoadingPopup ? (
               <p className="text-lg font-semibold text-center">Espere un momento . . . ⏳</p>
             ) : (

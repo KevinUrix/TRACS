@@ -31,4 +31,4 @@ ngrok.exe
 backend/data/tokens/*.json
 Redis/
 __pycache__/
-backend/data/reservations/*.json
+backend/data/reservations/

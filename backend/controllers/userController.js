@@ -56,7 +56,7 @@ exports.login = async (req, res) => {
 
     const user = result.rows[0];
     const token = jwt.sign(
-      { id: user.id, username: user.username, role: user.role },
+      { id: user.id, username: user.username, role: user.role, tv: user.token_version },
       process.env.JWT_SECRET,
       { expiresIn: '7d' }
     );
@@ -85,9 +85,13 @@ exports.updateRole = async (req, res) => {
   const { role } = req.body;
 
   try {
+    await pool.query('BEGIN');
     await pool.query('UPDATE users SET role = $1 WHERE id = $2', [role, id]);
+    await pool.query('UPDATE users SET token_version = token_version + 1 WHERE id = $1', [id]);
+    await pool.query('COMMIT');
     res.json({ message: 'Rol actualizado correctamente' });
   } catch (err) {
+    await pool.query('ROLLBACK');
     res.status(500).json({ error: 'Error al actualizar rol' });
   }
 };

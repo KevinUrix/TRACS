@@ -104,6 +104,8 @@ export default function ReserveButton({
     setCourse('');
     setCode('');
     setProfessor('');
+    setDuration('Temporal');
+    setCreateInGoogleCalendar('false');
     setStartTime(convertTo24HourFormat(selectedHour));
     setEndTime(addMinutes(startTime, 55));
     setReservationDate(getTodayDate()); /* Anteriormente para poner la fecha en automatico */
@@ -128,7 +130,7 @@ export default function ReserveButton({
       return null; // O alguna fecha predeterminada como 'Invalid date'
     }
   
-    // Asegurarse de que expectedDay es un valor válido (0-6)
+    // Asegura que expectedDay es un valor válido (0-6)
     if (expectedDay < 0 || expectedDay > 6) {
       console.error("Día esperado inválido:", expectedDay);
       return null; // O una fecha predeterminada
@@ -139,7 +141,7 @@ export default function ReserveButton({
       date.setDate(date.getDate() + 1);
     }
   
-    return date.toISOString().split('T')[0]; // YYYY-MM-DD
+    return date.toISOString().split('T')[0];
   };
 
   const handleDateChange = (e) => {

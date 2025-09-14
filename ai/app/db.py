@@ -49,3 +49,38 @@ async def fetch_priority_data(pool):
     raw_text = f"{row['building']} {row['room'] or ''} {row['title'] or ''} {row['report'] or ''}".strip()
     data.append({'text': raw_text, 'priority': prio})
   return data
+
+
+async def fetch_category_test_data(pool):
+  rows = await pool.fetch("SELECT title, report, category FROM test_tickets WHERE category IS NOT NULL")
+  data = []
+  for row in rows:
+    cat_raw = (row['category'] or '').capitalize()
+    cat_processed = ''
+
+    cat_lower = cat_raw.lower()
+    if 'hardware' in cat_lower:
+      cat_processed = 'Hardware'
+    elif 'software' in cat_lower:
+      cat_processed = 'Software'
+    elif cat_raw in category_labels:
+      cat_processed = cat_raw
+    else:
+      cat_processed = 'Sin categoria'
+
+    if cat_processed not in category_labels:
+      cat_processed = 'Sin categoria'
+
+    full_text = f"{row['title'] or ''} {row['report'] or ''}".strip()
+    data.append({'text': full_text, 'category': cat_processed})
+  return data
+
+
+async def fetch_priority_test_data(pool):
+  rows = await pool.fetch("SELECT building, room, title, report, priority FROM test_tickets WHERE priority IS NOT NULL")
+  data = []
+  for row in rows:
+    prio = (row['priority'] or 'baja').capitalize()
+    raw_text = f"{row['building']} {row['room'] or ''} {row['title'] or ''} {row['report'] or ''}".strip()
+    data.append({'text': raw_text, 'priority': prio})
+  return data

@@ -4,6 +4,7 @@ const axios = require('axios');
 const { google } = require('googleapis');
 const { getOAuth2Client } = require('../utils/googleOAuthClient');
 const { createGoogleEvent } = require('../utils/createGoogleEvent');
+const buildings = require('../config/buildings');
 
 const mapBuildingName = (name) => {
   if (name === 'DUCT1') return 'Alpha';
@@ -19,6 +20,12 @@ const saveReservation = async (req, res) => {
   const { cycle, buildingName, user } = req.query;
   const mappedBuildingName = mapBuildingName(buildingName);
   const reservationData = req.body;
+
+  const isValidBuilding = buildings.edifp.some(b => b.value === buildingName);
+  if (!isValidBuilding) {
+    return res.status(400).json({ error: `Edificio "${buildingName}" no válido` });
+  }
+
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
   if (!reservationData || !reservationData.course || !reservationData.professor || !cycle || !buildingName || !user) {
@@ -95,7 +102,7 @@ const saveReservation = async (req, res) => {
       await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}}, {headers: {Authorization: `Bearer ${process.env.NOTIFY_TOKEN}`}});
     }
     catch (error) {
-      console.error('🔕 Error al notificar al servicio de sockets', error.message);
+      console.error('Error al notificar al servicio de sockets', error.message);
     }
 
     res.status(201).json({

@@ -11,9 +11,6 @@ import os
 
 load_dotenv()
 
-
-hardSet = set()
-weakSet = set()
 category_model = None
 priority_model = None
 
@@ -53,7 +50,7 @@ async def classify_ticket_endpoint(ticket: TicketInput):
 
   full = f"{ticket.building or ''} {ticket.room or ''} {ticket.title or ''} {ticket.report}".strip()
   combined = f"{ticket.title or ''} {ticket.report}".strip()
-  meaningful = [t for t in preprocess(combined).split() if t not in hardSet and t not in weakSet]
+  meaningful = preprocess(combined).split()
 
   if len(meaningful) < 3:
     return {
@@ -62,7 +59,7 @@ async def classify_ticket_endpoint(ticket: TicketInput):
       'priority': 'Baja'
     }
 
-  raw_cat = classify_text(combined, category_model, category_labels)
+  raw_cat = classify_text(combined, category_model, category_labels, threshold=0.5)
   raw_pri = classify_text(full, priority_model, priority_labels, default_label='Baja')
 
   category = raw_cat
@@ -71,8 +68,8 @@ async def classify_ticket_endpoint(ticket: TicketInput):
     category = 'Tecnico'
     secondary_category = raw_cat.capitalize()
 
-  if category.lower() == 'sin categoria':
-    raw_pri = 'baja'
+  # if category.lower() == 'sin categoria':
+  #   raw_pri = 'baja'
 
   return {
     'category': category.capitalize(),

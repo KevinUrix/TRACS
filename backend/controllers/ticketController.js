@@ -18,8 +18,6 @@ exports.createTicket = async (req, res) => {
     secondaryCategory = response.data.secondaryCategory;
     priority = response.data.priority;
   } catch (error) {
-    console.error('Error clasificando el ticket:', error.message);
-    // Opcional: fallback a valores por defecto o respuesta de error
     return res.status(500).json({ error: 'Error clasificando el ticket' });
   }
 
@@ -88,6 +86,38 @@ exports.updateTicket = async (req, res) => {
 
   if (!report) {
     return res.status(400).json({ error: 'El campo "report" es obligatorio' });
+  }
+
+  const allowedCategories = new Set([
+    'Tecnico (Hardware)',
+    'Tecnico (Software)',
+    'Mantenimiento',
+    'Limpieza',
+    'Sin categoria'
+  ]);
+
+  const allowedStatus = new Set([
+    'Abierto',
+    'En Proceso',
+    'Cerrado'
+  ]);
+
+  const allowedPriorities = new Set([
+    'Baja',
+    'Media',
+    'Alta'
+  ]);
+
+  if (category && !allowedCategories.has(category)) {
+    return res.status(400).json({ error: 'Categoría inválida' });
+  }
+
+  if (status && !allowedStatus.has(status)) {
+    return res.status(400).json({ error: 'Estado inválido' });
+  }
+
+  if (priority && !allowedPriorities.has(priority)) {
+    return res.status(400).json({ error: 'Prioridad inválida' });
   }
 
   try {

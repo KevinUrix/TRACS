@@ -23,6 +23,18 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
     navigate('/login');
   };
 
+  const normalizePath = (s) => {
+    const cleaned = (s || '/').replace(/\/+$/, '');
+    return cleaned === '' ? '/' : cleaned;
+  };
+
+  const isActive = (target) => {
+    const cur = normalizePath(location.pathname);
+    const base = normalizePath(target);
+
+    return cur === base || cur.startsWith(base + '/');
+  };
+
   return (
     <>
       <nav className="navbar flex items-center justify-between px-6 bg-white shadow relative">
@@ -62,12 +74,12 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           {/* Links centrados */}
           {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
             <div className="flex gap-6">
-              <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`}>Calendario</Link>
+              <Link to="/calendar" className={`nav-link ${isActive('/calendar') ? 'active' : ''}`}>Calendario</Link>
               {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
-                <Link to="/reports" className={`nav-link ${location.pathname === '/reports' ? 'active' : ''}`}>Reportes</Link>
+                <Link to="/reports" className={`nav-link ${isActive('/reports') ? 'active' : ''}`}>Reportes</Link>
               )}
               {userRole === 'superuser' && (
-                <Link to="/crud" className={`nav-link ${location.pathname === '/crud' ? 'active' : ''}`}>CRUD</Link>
+                <Link to="/crud" className={`nav-link ${isActive('/crud') ? 'active' : ''}`}>CRUD</Link>
               )}
             </div>
           )}
@@ -92,7 +104,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
             {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
               <>
                 <div className="menu-row">
-                  <Link to="/calendar" className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                  <Link to="/calendar" className={`nav-link ${isActive('/calendar') ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
                     Calendario
                   </Link>
 
@@ -103,13 +115,19 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
                   />
                 </div>
                 {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
-                  <Link to="/reports" className={`nav-link ${location.pathname === '/reports' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Reportes</Link>
+                  <Link to="/reports" className={`nav-link ${isActive('/reports') ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                    Reportes
+                  </Link>
                 )}
                 {userRole === 'superuser' && (
-                  <Link to="/crud" className={`nav-link ${location.pathname === '/crud' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>CRUD</Link>
+                  <Link to="/crud" className={`nav-link ${isActive('/crud') ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                    CRUD
+                  </Link>
                 )}
                 {userRole === 'superuser' && (
-                  <Link to="/config" className={`nav-link ${location.pathname === '/config' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Configuración</Link>
+                  <Link to="/config" className={`nav-link ${isActive('/config') ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>
+                    Configuración
+                  </Link>
                 )}
               </>
             )}

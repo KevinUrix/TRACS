@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import { Toaster} from 'sonner';
 import Loader from './utils/loader';
 import socket from './utils/socket';
+import { NormalizeURL } from './utils/normalizeURL';
 import './styles/toastColors.css';
 
 import LandingPage from './components/interfaz_calendar/LandingPage';
@@ -198,21 +199,22 @@ export default function AppContent() {
     <div className="relative flex flex-col w-full bg-gray-100" style={{ minHeight: 'calc(100vh - NAVBAR_HEIGHT_PX)' }}>
       {isLoading && <Loader />}
 
-      {/* Renderiza los Routes sólo si NO está cargando */}
-        <Routes>
-          <Route path="/" element={isLoggedIn ? <Navigate to="/calendar" replace /> : <LandingPage /> }/>
-          <Route path="/calendar" element={<Calendar />} />
-          {isLoggedIn && (
-            <>
-              <Route path="/reports" element={<Reports />} />
-              <Route path="/crud" element={userRole === 'superuser' ? <Crud /> : <Navigate to="/calendar" />} />
-              <Route path="/signup" element={userRole === 'superuser' ? <Registro /> : <Navigate to="/calendar" />} />
-              <Route path="/config" element={<AccountConfig />} />
-            </>
-          )}
-          <Route path="/login" element={isLoggedIn ? <Navigate to="/calendar" replace /> : <Login />} />
-          <Route path="*" element={<Navigate to="/calendar" replace />} />
-        </Routes>
+      <NormalizeURL />
+    
+      <Routes>
+        <Route path="/" element={isLoggedIn ? <Navigate to="/calendar" replace /> : <LandingPage /> }/>
+        <Route path="/calendar" element={<Calendar />} />
+        {isLoggedIn && (
+          <>
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/crud" element={userRole === 'superuser' ? <Crud /> : <Navigate to="/calendar" />} />
+            <Route path="/signup" element={userRole === 'superuser' ? <Registro /> : <Navigate to="/calendar" />} />
+            <Route path="/config" element={<AccountConfig />} />
+          </>
+        )}
+        <Route path="/login" element={isLoggedIn ? <Navigate to="/calendar" replace /> : <Login />} />
+        <Route path="*" element={<Navigate to="/calendar" replace />} />
+      </Routes>
     </div>
 
 {/*     {!shouldHideFooter && (

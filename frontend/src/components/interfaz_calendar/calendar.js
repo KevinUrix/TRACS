@@ -95,7 +95,7 @@ export default function Calendar() {
     }
   };
 
-  useEffect(() => {
+/*   useEffect(() => {
     // Verifica si en la URL está el parámetro "fromGoogle"
     const params = new URLSearchParams(location.search);
     if (params.get('fromGoogle') === 'true') {
@@ -105,10 +105,10 @@ export default function Calendar() {
       params.delete('fromGoogle');
       window.history.replaceState({}, '', `${location.pathname}`);
     }
-  }, [location]);
+  }, [location]); */
 
 
-  // Obtener el día de la semana (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
+  // Obtiene el día de la semana (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
   const dayOfWeek = today.getDay();
   const startOfWeek = new Date(today);
   startOfWeek.setDate(today.getDate() - dayOfWeek); // Domingo anterior

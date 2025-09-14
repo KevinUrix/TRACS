@@ -6,7 +6,7 @@ stemmer = SnowballStemmer("spanish")
 
 hard_stopwords = [
   "el", "la", "los", "las", "un", "una", "unos", "unas",
-  "de", "del", "al", "y", "o", "u", "en", "con", "sin",
+  "de", "del", "al", "y", "o", "u", "en", "con",
   "por", "para", "a", "ante", "bajo", "cabe", "contra",
   "desde", "hacia", "hasta", "mediante",
   "segun", "sobre", "tras", "que", "como", "cuando", "donde",
@@ -25,9 +25,10 @@ weak_stopwords = [
   "poco", "mas", "menos", "tambien", "tampoco", "incluso",
   "entonces", "ademas", "luego", "asi", "quiza", "quizas",
   "casi", "aunque", "mismo", "bien", "mal", "mucho", "bastante",
-  "demasiado",
-  "ayuda", "necesito", "requiero", "requiere", "pido", "quiero",
-  "solicito", "solicita", "presenta", "presento", "presento",
+  "demasiado", "ayuda",
+  "necesito", "requiero", "requiere", "pido", "quiero",
+  "solicito", "solicita",
+  "presenta", "presento", "presento",
   "porfavor", "porfa", "favor", "hay",
   "señor", "señora", "maestra", "doctora", "doctor", "profesor", "profesora", "mtra", "mtro",
   "etc", "entre", "alrededor", "cerca", "fabuloso", "porque", "esto", "segundo", "primero",
@@ -52,6 +53,16 @@ protected_words = {
   "contraseña", "otp", "autenticacion", "seguridad", "acceso", "permiso",
   "bloqueo", "captcha", "certificado", "cifrado", "switch", "rj45", "tv", "television"
 }
+
+
+urgent_set = {
+  "urgente", "urgencia", "emergencia", "inmediato", "inmediata",
+  "critico", "critica", "caido", "caido", "apagado", "apagada",
+  "no", "funciona", "enciende", "prende", "caido", "caída",
+  "riesgo", "peligro", "fuga", "incendio", "derrame",
+  "hoy", "ahora", "mañana", "examen", "clase", "sin", "luz", "agua"
+}
+
 
 synonyms = {
   "correo": "email",
@@ -101,7 +112,7 @@ synonyms = {
   "instalar": "instalacion",
   "reinstalar": "instalacion",
   "formatear": "formateo",
-  "formato": "formateo",
+  # "formato": "formateo",
   "configurar": "configuracion",
   "setup": "configuracion",
 
@@ -114,9 +125,9 @@ synonyms = {
   "estadosolido": "ssd",
   "memoria": "ram",
 
-  "problema": "error",
+  # "problema": "error",
   "error": "error",
-  "falla": "error",
+  # "falla": "error",
   "inconveniente": "error",
   "reclamo": "solicitud",
   "pedido": "solicitud",
@@ -126,9 +137,9 @@ synonyms = {
   "ayuda": "solicitud",
   "consulta": "solicitud",
 
-  "bloqueo": "seguridad",
-  "bloqueada": "seguridad",
-  "bloqueado": "seguridad",
+  # "bloqueo": "seguridad",
+  # "bloqueada": "seguridad",
+  # "bloqueado": "seguridad",
   "segura": "seguridad",
   "autenticacion": "seguridad",
   "verificacion": "seguridad",
@@ -182,13 +193,14 @@ def preprocess(text: str) -> str:
   # Tokeniza y limpia los tokens
   tokens = re.split(r'\s+', text)
   tokens = [re.sub(r'[^a-z0-9]', '', t) for t in tokens]
-  tokens = [t for t in tokens if t and not re.fullmatch(r'\d+', t)]
+  tokens = [t for t in tokens if t]
+  # tokens = [t for t in tokens if t and not re.fullmatch(r'\d+', t)]
 
   # Sinonimos y stemming
   processed_tokens = []
   for word in tokens:
     word = synonyms.get(word, word)
-    if word in protected_set:
+    if word in protected_set or word in urgent_set:
       processed_tokens.append(word)
     else:
       processed_tokens.append(stemmer.stem(word))

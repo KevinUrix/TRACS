@@ -1,4 +1,4 @@
-from app.utils.preprocess import preprocess
+from app.utils.preprocess import preprocess, protected_set
 import numpy as np
 
 # ------------------- CLASIFICACIÓN DE TEXTO --------------------
@@ -15,7 +15,9 @@ def classify_text(text, model_obj, labels, threshold=0.4, default_label=None):
   max_prob = max(prediction)
   label_index = np.argmax(prediction)
 
+  print(max_prob)
   if max_prob < threshold:
+    print(max_prob)
     return default_label or "Sin categoria"
   else:
     return labels[label_index]

@@ -8,19 +8,13 @@ from app.services.tokenizer import tokenize_data, vectorize
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix as sk_confusion
 from sklearn.utils.class_weight import compute_class_weight
-from sklearn.model_selection import StratifiedKFold, StratifiedShuffleSplit
-from sklearn.metrics import f1_score
-from tensorflow.keras.callbacks import ReduceLROnPlateau
-from tensorflow.keras.callbacks import ModelCheckpoint
+from tensorflow.keras.callbacks import ReduceLROnPlateau, ModelCheckpoint
 from tensorflow.keras.models import load_model
-
-
 import asyncpg
 import asyncio
 import json
 import numpy as np
 import os
-
 
 
 # ----------------- ENTRENAMIENTO Y GUARDADO ----------------------
@@ -29,7 +23,8 @@ async def train_and_save_model(data, field, labels, model_path):
   outputs = [labels.index(d[field]) if d[field] in labels else len(labels) - 1 for d in data]
 
   tokenizer, vocabulary = tokenize_data(texts)
-  max_len = 30
+  max_len = 37
+
   X = vectorize(texts, tokenizer, max_len).astype('int32')
   y = np.array(outputs)
 
@@ -43,24 +38,26 @@ async def train_and_save_model(data, field, labels, model_path):
   cw = compute_class_weight(class_weight='balanced', classes=classes, y=y)
   class_weight = {int(c): float(w) for c, w in zip(classes, cw)}
 
-  if field == 'priority':
-    idx_baja = labels.index('Baja')
-    idx_media = labels.index('Media')
-    class_weight[idx_baja] *= 1.25
-    class_weight[idx_media] *= 0.85
+  # if field == 'priority':
+  #   # idx_baja = labels.index('Baja')
+  #   idx_media = labels.index('Media')
+  #   idx_alta = labels.index('Alta')
+  #   # class_weight[idx_baja] *= 1.10
+  #   class_weight[idx_media] *= 0.95
+  #   class_weight[idx_alta] *= 1.15
 
 
-  model = create_model(len(labels), max_len, len(vocabulary))
+  model = create_model(len(labels), len(vocabulary))
 
   callbacks = [
-    ReduceLROnPlateau(monitor="loss", factor=0.5, patience=2, min_lr=1e-6),
+    ReduceLROnPlateau(monitor="loss", factor=0.5, patience=4, min_delta=1e-4, cooldown=1, min_lr=1e-5, verbose=1),
     ModelCheckpoint(f"{model_path}_best.keras", monitor="loss", save_best_only=True, verbose=1),
   ]
 
   history = model.fit(
     X, y,
-    epochs=350,
-    batch_size=32,
+    epochs=300,
+    batch_size=64,
     validation_data=(X_val, y_val),
     class_weight=class_weight,
     shuffle=True,
@@ -132,7 +129,7 @@ async def evaluate_on_external_test(model_path, labels, pool, fetch_fn, field_na
   X_test = vectorize(texts, tokenizer, max_len).astype('int32')
 
   y_pred = np.argmax(best_model.predict(X_test, batch_size=256, verbose=0), axis=1)
-  print("\n=== RESULTADOS EN TEST EXTERNO (otra tabla) ===")
+  print("\n=== RESULTADOS EN TEST EXTERNO ===")
   print(classification_report(y_true, y_pred, target_names=labels, digits=3))
 
   cm = sk_confusion(y_true, y_pred)

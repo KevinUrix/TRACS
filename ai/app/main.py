@@ -59,7 +59,7 @@ async def classify_ticket_endpoint(ticket: TicketInput):
       'priority': 'Baja'
     }
 
-  raw_cat = classify_text(combined, category_model, category_labels, threshold=0.5)
+  raw_cat = classify_text(combined, category_model, category_labels, threshold=0.4)
   raw_pri = classify_text(full, priority_model, priority_labels, default_label='Baja')
 
   category = raw_cat

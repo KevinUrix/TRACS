@@ -275,7 +275,7 @@ export default function Crud() {
 
       if (res.ok) {
         setUsers((prevUsers) => prevUsers.filter((u) => u.id !== userToDelete.id));
-        toast.error('Se ha eliminado el usuario');
+        toast.success('Se ha eliminado el usuario');
       } else {
         if (res.status === 403) {
           localStorage.clear();

@@ -2,5 +2,10 @@
   "rewrites": [
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/terms", "destination": "/terms.html" }
+  ],
+  "redirects": [
+    { "source": "/calendar/", "destination": "/calendar", "permanent": true },
+    { "source": "/reports/", "destination": "/reports", "permanent": true },
+    { "source": "/crud/", "destination": "/crud", "permanent": true }
   ]
 }

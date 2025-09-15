@@ -17,7 +17,7 @@ hard_stopwords = [
   "es", "era", "fue", "son", "ser", "soy", "eres", "estoy", "esta", "estan", "estamos",
   "buenas", "tardes", "hola", "hello", "gracias", "buenos", "saludos", "atentamente",
   "despido", "lejos", "acerca", "junto", "aqui", "ahi",
-  "alguien", "algo", "haremos", "decir", "dar", "damos", "tener", "tenemos", "venir", "ver", "vemos", "oir", "oimos", "pensar", "saber", "creer", "estar", "seguir", "pienso", "sabemos", "ni", "pero", "siendo", "eso", "da"
+  "alguien", "algo", "haremos", "decir", "dar", "damos", "tener", "tenemos", "venir", "ver", "vemos", "oir", "oimos", "pensar", "saber", "creer", "estar", "seguir", "pienso", "sabemos", "pero", "siendo", "eso", "da"
 ]
 
 weak_stopwords = [
@@ -28,11 +28,10 @@ weak_stopwords = [
   "demasiado", "ayuda",
   "necesito", "requiero", "requiere", "pido", "quiero",
   "solicito", "solicita",
-  "presenta", "presento", "presento",
-  "porfavor", "porfa", "favor", "hay",
-  "señor", "señora", "maestra", "doctora", "doctor", "profesor", "profesora", "mtra", "mtro",
+  "presenta", "presento", "porfavor", "porfa", "favor", "hay",
+  "senor", "senora", "maestra", "doctora", "doctor", "profesor", "profesora", "mtra", "mtro",
   "etc", "entre", "alrededor", "cerca", "fabuloso", "porque", "esto", "segundo", "primero",
-  "muchos", "pocos", "hacer", "hacerlo", "ninguno", "ninguna", "ningunos", "ningunas", "todos", "todas", "profe", "docente", "decimos", "daremos"
+  "muchos", "pocos", "hacer", "hacerlo", "ninguno", "ninguna", "ningunos", "ningunas", "todos", "todas", "profe", "docente", "decimos", "daremos", "maestro"
 ]
 
 protected_words = {
@@ -50,17 +49,19 @@ protected_words = {
   "configuracion", "controladores", "pc", "laptop", "usuario", "password",
   "correo", "email", "cuenta", "sesion", "ticket", "soporte", "app",
   "token", "id", "login", "logout", "api", "backend", "frontend", "clave",
-  "contraseña", "otp", "autenticacion", "seguridad", "acceso", "permiso",
-  "bloqueo", "captcha", "certificado", "cifrado", "switch", "rj45", "tv", "television"
+  "contrasena", "otp", "autenticacion", "seguridad", "acceso", "permiso",
+  "bloqueo", "captcha", "certificado", "cifrado", "switch", "rj45", "tv", "television",
+  "internet"
 }
 
 
 urgent_set = {
   "urgente", "urgencia", "emergencia", "inmediato", "inmediata",
-  "critico", "critica", "caido", "caido", "apagado", "apagada",
-  "no", "funciona", "enciende", "prende", "caido", "caída",
+  "critico", "critica", "caido", "apagado", "apagada",
+  "funciona", "enciende", "prende", "caida",
   "riesgo", "peligro", "fuga", "incendio", "derrame",
-  "hoy", "ahora", "mañana", "examen", "clase", "sin", "luz", "agua"
+  "hoy", "ahora", "manana", "examen", "clase", "peligroso",
+  "peligrosa", "riesgoso", "riesgosa", "caida", "funciono", "peligra", "incendia", "derramo"
 }
 
 
@@ -82,14 +83,13 @@ synonyms = {
   "conectividad": "internet",
   "inalambrica": "wifi",
   "redinalambrica": "wifi",
-  "wifi": "internet",
   "internet": "internet",
   "conectado": "internet",
 
   "usuario": "cuenta",
   "usuarios": "cuenta",
   "clave": "password",
-  "contraseña": "password",
+  "contrasena": "password",
   "pass": "password",
   "passwd": "password",
   "login": "acceso",
@@ -126,8 +126,7 @@ synonyms = {
   "memoria": "ram",
 
   # "problema": "error",
-  "error": "error",
-  # "falla": "error",
+  "falla": "error",
   "inconveniente": "error",
   "reclamo": "solicitud",
   "pedido": "solicitud",
@@ -151,7 +150,9 @@ synonyms = {
   "reiniciar": "reiniciar",
   "tarjetamadre": "motherboard",
   "procesador": "cpu",
-  "tv": "television"
+  "tv": "television",
+  "enchufe": "tomacorriente",
+  "contacto": "tomacorriente",
 }
 
 phrases = {
@@ -166,7 +167,8 @@ phrases = {
   "memoria rom": "rom",
   "pantalla borrosa": "borroso",
   "corto circuito": "cortocircuito",
-  "toma corriente": "tomacorriente"
+  "toma corriente": "tomacorriente",
+  "toma de corriente": "tomacorriente",
 }
 
 # Creamos de las listas de palabras
@@ -183,12 +185,13 @@ def replace_phrases(text: str) -> str:
 def preprocess(text: str) -> str:
   text = text.lower()
 
-  # Reemplaza frases
-  text = replace_phrases(text)
 
   # Normaliza y elimina los acentos
   text = unicodedata.normalize("NFD", text)
   text = re.sub(r'[\u0300-\u036f]', '', text)
+
+  # Reemplaza frases
+  text = replace_phrases(text)
 
   # Tokeniza y limpia los tokens
   tokens = re.split(r'\s+', text)
@@ -201,17 +204,23 @@ def preprocess(text: str) -> str:
   for word in tokens:
     word = synonyms.get(word, word)
     if word in protected_set or word in urgent_set:
+    # if word in protected_set:
       processed_tokens.append(word)
     else:
       processed_tokens.append(stemmer.stem(word))
 
   # Filtramos las palabras
-  has_strong_word = any((w not in weak_set and w not in hard_set) for w in processed_tokens)
+  has_strong_word = any(
+    (stemmer.stem(w) not in weak_set) and (stemmer.stem(w) not in hard_set)
+    for w in processed_tokens
+  )
+
   filtered_tokens = []
   for w in processed_tokens:
-    if w in hard_set:
+    sw = stemmer.stem(w)
+    if sw in hard_set:
       continue
-    if w in weak_set and not has_strong_word:
+    if sw in weak_set and not has_strong_word:
       continue
     filtered_tokens.append(w)
 

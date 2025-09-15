@@ -90,7 +90,7 @@ const handleGoogleCallback = async (req, res) => {
     ]);
 
     console.log('>> Tokens guardados exitosamente en la base de datos');
-    return res.redirect(`${process.env.FRONTEND_URL}/?fromGoogle=true`);
+    return res.redirect(`${process.env.FRONTEND_URL}?fromGoogle=true`);
   } catch (error) {
     console.error('Error al obtener tokens:', error.message);
     if (!res.headersSent) {

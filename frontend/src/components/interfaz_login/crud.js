@@ -156,6 +156,9 @@ export default function Crud() {
           window.location.href = '/calendar';
           return;
         }
+        else if (res.status === 500){
+          toast.error(`Error al actualizar el rol.`);
+        }
       }
     } catch (err) {
       console.error('Error al actualizar el rol:', err);

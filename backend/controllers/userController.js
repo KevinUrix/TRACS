@@ -84,6 +84,16 @@ exports.updateRole = async (req, res) => {
   const { id } = req.params;
   const { role } = req.body;
 
+  const allowedRoles = new Set([
+    'user',
+    'tecnico',
+    'superuser'
+  ]);
+
+  if (role && !allowedRoles.has(role)) {
+    return res.status(500).json({ error: 'Rol inválido' });
+  }
+
   try {
     await pool.query('BEGIN');
     await pool.query('UPDATE users SET role = $1 WHERE id = $2', [role, id]);

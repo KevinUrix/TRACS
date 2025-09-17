@@ -196,6 +196,7 @@ def preprocess(text: str) -> str:
   # Tokeniza y limpia los tokens
   tokens = re.split(r'\s+', text)
   tokens = [re.sub(r'[^a-z0-9]', '', t) for t in tokens]
+  tokens = [re.sub(r'\d+', '', t) for t in tokens]
   tokens = [t for t in tokens if t]
   # tokens = [t for t in tokens if t and not re.fullmatch(r'\d+', t)]
 

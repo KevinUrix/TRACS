@@ -149,14 +149,28 @@ export default function AppContent() {
         const response = await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications?user=${userId}`);
         const notifications = await response.json();
 
-        for (const noti of notifications) {
-          const onSeen = () => markSeen([noti.id]);
+        const BATCH = 3;
+        for (let i = 0; i < notifications.length; i += BATCH) {
+          const batch = notifications.slice(i, i + BATCH);
 
-          if (noti.type === 'new-ticket') {
-            notifyTicket(`🎟️ Nuevo reporte`, noti.payload, onSeen);
-          } else if (noti.type === 'new-reservation') {
-            notifyReserva(`✅ Nueva reserva`, noti.payload, onSeen);
-          }
+          await Promise.all(
+            batch.map((noti) => new Promise((resolve) => {
+              const onSeen = async () => {
+                await markSeen([noti.id]);
+                resolve();
+              };
+
+              if (noti.type === 'new-ticket') {
+                notifyTicket('🎟️ Nuevo reporte', noti.payload, onSeen);
+              } else if (noti.type === 'new-reservation') {
+                notifyReserva('✅ Nueva reserva', noti.payload, onSeen);
+              } else {
+                // No bloquea el lote
+                resolve();
+              }
+            }))
+          );
+          await new Promise(r => setTimeout(r, 150));
         }
 
       } catch (err) {

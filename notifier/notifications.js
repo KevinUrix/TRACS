@@ -70,14 +70,26 @@ app.post('/notify', async (req, res) => {
 /* GUARDA LAS NOTIFICACIONES EN LA BD */
 app.get('/notifications', async (req, res) => {
   const userId = req.query.user;
+  const maxDays = parseInt(req.query.maxDays || '30', 10);
+
 
   if (userId === undefined || userId === null ) return res.status(400).json({ error: 'Falta userId' });
 
   try {
-    const result = await pool.query(
-      'SELECT * FROM notifications WHERE NOT $1 = ANY(seen_by) ORDER BY created_at ASC',
-      [userId]
+    await pool.query(
+      `
+      UPDATE notifications SET seen_by = array_append(seen_by, $1) WHERE created_at < NOW() - ($2 || ' days')::interval AND NOT $1 = ANY(seen_by)
+      `,
+      [userId, maxDays]
     );
+
+    const result = await pool.query(
+      `
+      SELECT * FROM notifications WHERE NOT $1 = ANY(seen_by) AND created_at >= NOW() - ($2 || ' days')::interval ORDER BY created_at ASC
+      `,
+      [userId, maxDays]
+    );
+
     res.json(result.rows);
   } catch (err) {
     console.error('Error al obtener notificaciones:', err.message);

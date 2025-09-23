@@ -271,7 +271,7 @@ export default function Reports() {
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
                     </svg>
-                    Agregar Reporte
+                    Agregar reporte
                   </button>
                 )}
               </div>
@@ -376,7 +376,7 @@ export default function Reports() {
                     className="px-4 py-2 background-agregar text-white rounded"
                     // disabled={isSaving}
                   >
-                    Guardar Reporte
+                    Guardar reporte
                   </button>
                 </div>
                 <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />

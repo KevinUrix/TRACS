@@ -36,7 +36,7 @@ export default function InstructionsButton() {
       {showInstructions && (
         <div className="fixed inset-0 instructions-button bg-opacity-50 flex justify-center items-center z-50">
           <div className="p-6 bg-white border rounded-lg shadow-lg max-w-xs custom-shadow-border">
-            <h2 className="font-semibold">Instrucciones de Uso:</h2>
+            <h2 className="font-semibold">Instrucciones de uso:</h2>
             <ul className="list-disc list-inside">
               <li>Selecciona un ciclo.</li>
               <li>Selecciona un edificio.</li>

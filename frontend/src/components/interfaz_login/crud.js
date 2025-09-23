@@ -16,11 +16,14 @@ export default function Crud() {
   const [showDeleteModalBuilding, setShowDeleteModalBuilding] = useState(false);
   const [showEditModalBuilding, setShowEditModalBuilding] = useState(false);
   const [showAddModalBuilding, setShowAddModalBuilding] = useState(false);
+  const [showAddModalClassrooms, setshowAddModalClassrooms] = useState(false);
   const [userToDelete, setUserToDelete] = useState(null);
   const [buildingToDelete, setBuildingToDelete] = useState(null);
   const [buildingToEdit, setBuildingToEdit] = useState(null);
   const [originalBuilding, setOriginalBuilding] = useState(null);
   const [buildingToAdd, setBuildingToAdd] = useState(null);
+  const [classroomsToAdd, setClassroomsToAdd] = useState('');
+  const [lastCreatedBuilding, setLastCreatedBuilding] = useState(null);
 
   const navigate = useNavigate();
   const decoded = getDecodedToken();
@@ -91,6 +94,13 @@ export default function Crud() {
     setShowAddModalBuilding(false);
     setBuildingToAdd(null);
   };
+
+  // const cancelAddClassrooms = () => {
+  //   setshowAddModalClassrooms(false);
+  //   setClassroomsToAdd('');
+  //   setLastCreatedBuilding(null);
+  // };
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -332,20 +342,80 @@ export default function Crud() {
           window.location.href = '/calendar';
           return;
         }
+        else if (res.status === 409) {
+          toast.error('El edificio ya existe.');
+          return;
+        }
         console.error('Error desde el servidor:', result?.error || 'Error desconocido');
         toast.error('Error al agregar el edificio.');
         return;
       }
+
       setBuildings(prev => [...prev, buildingToAdd]);
       toast.success("Edificio agregado correctamente");
+
+      setLastCreatedBuilding(buildingToAdd.value);
+      setShowAddModalBuilding(false);
+      setshowAddModalClassrooms(true);
+      setClassroomsToAdd('');
+
     } catch (err) {
       console.error("Error al agregar el edificio:", err);
       toast.error('Error al agregar el edificio.');
     } finally {
-      setShowAddModalBuilding(false);
       setBuildingToAdd(null);
     }
   };
+
+
+  const handleSaveClassrooms = async () => {
+    const raw = (classroomsToAdd || '').replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+
+    const classrooms = raw.split(/\s+/).filter(Boolean);
+
+    if (!lastCreatedBuilding) {
+      toast.error('No se detectó el edificio recién creado.');
+      return;
+    }
+
+    if (classrooms.length === 0) {
+      toast.error('Ingresa al menos un salón con el formato: salon1 salon2 salon3');
+      return;
+    }
+
+    try {
+      const res = await fetch(`${API_URL}/api/classrooms?buildingName=${encodeURIComponent(lastCreatedBuilding)}&classrooms=${encodeURIComponent(raw)}`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`
+        },
+      });
+
+      if (!res.ok) {
+        if (res.status === 403) {
+          localStorage.clear();
+          navigate('/calendar');
+          return;
+        } else if (res.status === 401) {
+          localStorage.clear();
+          window.location.href = '/calendar';
+          return;
+        }
+        
+        console.error('Error creando salones');
+        toast.error('No se pudieron crear los salones.');
+        return;
+      }
+
+      toast.success(`Se crearon salones en ${lastCreatedBuilding}`);
+      setshowAddModalClassrooms(false);
+      setClassroomsToAdd('');
+      setLastCreatedBuilding(null);
+    } catch (error) {
+      toast.error('Error al crear salones.');
+    }
+  };
+
 
   return (
     <div className="bg-gray-100 flex min-h-screen">
@@ -581,7 +651,7 @@ export default function Crud() {
           <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
             <h3 className="text-lg font-bold mb-4">Modificar Edificio</h3>
             <label className="block text-gray-700 font-medium mb-1" htmlFor="value">
-              Nombre del Edificio:
+              Nombre del edificio:
             </label>
             <input
               name="value"
@@ -592,7 +662,7 @@ export default function Crud() {
               maxLength={10}
             />
             <label className="block text-gray-700 font-medium mb-1" htmlFor="value">
-              Seudónimo libre del Edificio:
+              Seudónimo:
             </label>
             <input
               name="text"
@@ -627,7 +697,7 @@ export default function Crud() {
               name="value"
               value={buildingToAdd?.value ?? ''}
               onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, value: e.target.value }))}
-              placeholder="Nombre del Edificio"
+              placeholder="Nombre del edificio"
               className="w-full mb-3 p-2 border rounded"
               maxLength={10}
             />
@@ -657,6 +727,35 @@ export default function Crud() {
           </div>
         </div>
       )}
+
+      {showAddModalClassrooms && (
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
+            <h3 className="text-lg font-bold mb-4 text-center">Agregar Salones</h3>
+            <input
+              value={classroomsToAdd}
+              onChange={(e) => {
+                const cleaned = e.target.value.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, ' ');
+                setClassroomsToAdd(cleaned)}
+              }
+              placeholder="Formato: Salon1 Salon2 Salon3..."
+              className="w-full mb-4 p-2 border rounded"
+              maxLength={300}
+              disabled={false}
+            />
+            <div className="flex justify-center gap-4">
+              <button
+                onClick={handleSaveClassrooms}
+                className="px-4 py-2 background-aplicar text-white rounded"
+                disabled={!classroomsToAdd.trim()}
+              >
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

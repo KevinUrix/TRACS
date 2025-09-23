@@ -136,6 +136,9 @@ const saveBuilding = async (req, res) => {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
   }
 
+  const newValue = String(buildingData.value).trim();
+  const newText  = String(buildingData.text).trim();
+
   try {
     let currentData = { edifp: [] };
     try {
@@ -148,7 +151,15 @@ const saveBuilding = async (req, res) => {
       console.warn('Archivo inexistente o corrupto, se inicializa vacío');
     }
 
-    currentData.edifp.push(buildingData);
+    const exists = currentData.edifp.some(
+      (b) => String(b?.value ?? '').trim().toLowerCase() === newValue.toLowerCase()
+    );
+
+    if (exists) {
+      return res.status(409).json({ error: `El edificio "${newValue}" ya existe` });
+    }
+
+    currentData.edifp.push({ value: newValue, text: newText });
     await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
 
@@ -156,10 +167,10 @@ const saveBuilding = async (req, res) => {
     await fs.mkdir(classroomsPath, { recursive: true });
     try {
       await fs.access(classroomFile);
-      console.log(`El archivo ${buildingData.value}.json ya existe, no se sobreescribirá.`);
+      console.log(`El archivo ${newValue}.json ya existe, no se sobreescribirá.`);
     } catch {
       await fs.writeFile(classroomFile, JSON.stringify([], null, 2));
-      console.log(`Archivo ${buildingData.value}.json creado correctamente.`);
+      console.log(`Archivo ${newValue}.json creado correctamente.`);
     }
 
     res.status(201).json({

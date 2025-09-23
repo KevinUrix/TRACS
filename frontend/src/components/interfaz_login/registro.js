@@ -170,7 +170,7 @@ export default function Registro() {
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-2">Confirmar Contraseña</label>
+            <label className="block text-gray-700 font-semibold mb-2">Confirmar contraseña</label>
             <input
               type={showPasswords ? 'text' : 'password'}
               value={confirmPassword}

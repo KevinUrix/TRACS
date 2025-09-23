@@ -290,7 +290,7 @@ export default function ReserveButton({
                 </label>
             </div>
             <div className="flex flex-col items-start gap-2 mb-4">
-                <span className="font-semibold">Duración de la reserva</span>
+                <span className="font-semibold">Duración de la reserva:</span>
                 <div className="flex items-center gap-4">
                   <label className="inline-flex items-center gap-2">
                       Siempre

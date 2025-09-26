@@ -1,6 +1,8 @@
 const { OAuth2Client } = require('google-auth-library');
 require('dotenv').config();
 const { pool } = require('../utils/db');
+const { encryptJson, decryptJson } = require('../utils/crypto');
+const { signState, verifyState } = require('../utils/state');
 
 
 const oauth2Client = new OAuth2Client(
@@ -13,17 +15,18 @@ const oauth2Client = new OAuth2Client(
 //
 // Generación de URL para autenticación
 //
-const generateAuthUrl = (username) => {
-  const authUrl = oauth2Client.generateAuthUrl({
+const generateAuthUrl = (username, forceConsent = false) => {
+  const params = {
     access_type: 'offline',
-    prompt: 'consent',
+    include_granted_scopes: true,
     scope: process.env.GOOGLE_CALENDAR_SCOPES?.split(',') || [
       'https://www.googleapis.com/auth/calendar.events',
       'https://www.googleapis.com/auth/calendar.readonly'
     ],
-    state: username // sigue enviando username como identificador desde el frontend
-  });
-  return authUrl;
+    state: signState(username) // sigue enviando username como identificador desde el frontend
+  };
+  if (forceConsent) params.prompt = 'consent';
+  return oauth2Client.generateAuthUrl(params);
 };
 
 
@@ -32,10 +35,16 @@ const generateAuthUrl = (username) => {
 //
 const handleGoogleCallback = async (req, res) => {
   const { code, state } = req.query;
-  const username = state;
 
   if (!code) {
     return res.status(400).send('Código de autorización no proporcionado');
+  }
+
+  let username;
+  try {
+    username = verifyState(state);
+  } catch {
+    return res.status(400).send('Parámetro state inválido o expirado');
   }
 
   try {
@@ -57,7 +66,9 @@ const handleGoogleCallback = async (req, res) => {
     if (!tokens.refresh_token && oldTokens?.refresh_token) {
       tokens.refresh_token = oldTokens.refresh_token;
     } else if (!tokens.refresh_token) {
-      throw new Error('No se obtuvo refresh_token y no hay uno guardado anteriormente');
+      console.log('No se obtuvo refresh_token y no hay uno guardado anteriormente');
+      const consentUrl = generateAuthUrl(username, true);
+      return res.redirect(consentUrl);
     }
 
     if (!tokens || Object.keys(tokens).length === 0) {
@@ -68,26 +79,23 @@ const handleGoogleCallback = async (req, res) => {
     const expiresIn = tokens.expires_in ? tokens.expires_in * 1000 : 3600 * 1000;
     const expiryDate = now + expiresIn;
 
+    const packet = encryptJson({
+      access_token: tokens.access_token,
+      refresh_token: tokens.refresh_token,
+      token_type: tokens.token_type || null,
+      scope: tokens.scope || null,
+      expiry_date: expiryDate
+    });
+
     // Inserta o actualiza los tokens en la base de datos
     await pool.query(`
-      INSERT INTO google_tokens (user_id, access_token, refresh_token, expiry_date, token_type, scope)
-      VALUES ($1, $2, $3, $4, $5, $6)
+      INSERT INTO google_tokens (user_id, token_encrypted, updated_at)
+      VALUES ($1, $2::jsonb, NOW())
       ON CONFLICT (user_id)
       DO UPDATE SET
-        access_token = EXCLUDED.access_token,
-        refresh_token = EXCLUDED.refresh_token,
-        expiry_date = EXCLUDED.expiry_date,
-        token_type = EXCLUDED.token_type,
-        scope = EXCLUDED.scope,
+        token_encrypted = EXCLUDED.token_encrypted,
         updated_at = NOW()
-    `, [
-      userId,
-      tokens.access_token,
-      tokens.refresh_token,
-      expiryDate,
-      tokens.token_type || null,
-      tokens.scope || null
-    ]);
+    `, [userId, JSON.stringify(packet)]);
 
     console.log('>> Tokens guardados exitosamente en la base de datos');
     return res.redirect(`${process.env.FRONTEND_URL}?fromGoogle=true`);
@@ -105,10 +113,19 @@ const handleGoogleCallback = async (req, res) => {
 //
 const getSavedTokens = async (userId) => {
   try {
-    const { rows } = await pool.query('SELECT * FROM google_tokens WHERE user_id = $1', [userId]);
-    return rows[0] || null;
+    const { rows } = await pool.query(
+      'SELECT token_encrypted FROM google_tokens WHERE user_id = $1 LIMIT 1',
+      [userId]
+    );
+    if (!rows.length) return null;
+
+    const packet = typeof rows[0].token_encrypted === 'string'
+      ? JSON.parse(rows[0].token_encrypted)
+      : rows[0].token_encrypted;
+
+    return decryptJson(packet);
   } catch (error) {
-    console.error('No se pudieron leer los tokens desde la base de datos:', error.message);
+    console.error('No se pudieron leer/descifrar los tokens desde la base de datos:', error.message);
     return null;
   }
 };
@@ -133,7 +150,7 @@ const reauth = async (req, res) => {
     console.log(`Tokens de ${username} eliminados para reautenticación`);
 
     // Redirige a la URL de autenticación
-    const authUrl = generateAuthUrl(username);
+    const authUrl = generateAuthUrl(username, true);
     res.redirect(authUrl);
 
   } catch (error) {

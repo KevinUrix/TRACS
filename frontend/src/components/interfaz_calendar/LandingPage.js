@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Footer from "./footer";
 export default function LandingPage() {
     return (
@@ -38,12 +40,12 @@ export default function LandingPage() {
                 </div>
 
                 <div className="mt-10">
-                <a
-                    href="/calendar"
+                <Link
+                    to="/calendar"
                     className="inline-block bg-indigo-700 text-white font-semibold py-3 px-7 rounded-full hover:bg-indigo-800 transition shadow-sm hover:shadow-lg"
                 >
                     Empezar ahora
-                </a>
+                </Link>
                 </div>
             </div>
             <Footer />

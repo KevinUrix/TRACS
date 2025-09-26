@@ -82,7 +82,7 @@ const saveReservation = async (req, res) => {
           const googleEventId = await createGoogleEvent(reservationData, tokens, mappedBuildingName);
           if (googleEventId) {
             reservationData.googleEventId = googleEventId;
-            console.log('Evento creado en Google Calendar:', googleEventId);
+            console.log('Evento creado en Google Calendar.');
           }
         }
       } catch (calendarErr) {
@@ -163,9 +163,9 @@ const deleteReservation = async (req, res) => {
                 calendarId,
                 eventId: reservation.googleEventId,
               });
-              console.log(`Evento ${reservation.googleEventId} eliminado de Google Calendar`);
+              console.log(`Evento eliminado de Google Calendar`);
             } catch (err) {
-              console.warn(`No se pudo eliminar el evento ${reservation.googleEventId}:`, err.message);
+              console.warn(`No se pudo eliminar el evento:`, err.message);
               if (err.message && err.message.toLowerCase().includes('not found')) {
                 return res.status(409).json({
                   message: `Evento no encontrado en Google Calendar.\nInicie sesión con la cuenta que creó el evento.`,
@@ -202,7 +202,7 @@ const deleteReservation = async (req, res) => {
     );
 
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
-    res.json({ message: 'Reserva(s) eliminada(s) con éxito' });
+    res.json({ message: 'Reserva eliminada con éxito' });
 
   } catch (error) {
     if (error.code === 'ENOENT') {
@@ -289,11 +289,11 @@ const updateReservation = async (req, res) => {
           location: `${updatedData.building} ${updatedData.classroom}`,
           description: `Materia: ${updatedData.course}\nClave: ${updatedData.code}`,
           start: {
-            dateTime: startDateTime.toISOString(),
+            dateTime: `${updatedData.date}T${startHour}:00`,
             timeZone: 'America/Mexico_City',
           },
           end: {
-            dateTime: endDateTime.toISOString(),
+            dateTime: `${updatedData.date}T${endHour}:00`,
             timeZone: 'America/Mexico_City',
           },
         };
@@ -339,9 +339,9 @@ const updateReservation = async (req, res) => {
         });
 
         
-        console.log(`Evento ${originalGoogleEventId} actualizado en Google Calendar`);
+        console.log(`Evento actualizado en Google Calendar`);
       } catch (err) {
-        console.warn(`No se pudo actualizar el evento ${originalGoogleEventId}:`, err.message);
+        console.warn(`No se pudo actualizar el evento:`, err.message);
         
         if (err.message && err.message.toLowerCase().includes('not found')) {
           return res.status(409).json({

@@ -202,7 +202,7 @@ const deleteReservation = async (req, res) => {
     );
 
     await fs.writeFile(filePath, JSON.stringify(currentData, null, 2));
-    res.json({ message: 'Reserva(s) eliminada(s) con éxito' });
+    res.json({ message: 'Reserva eliminada con éxito' });
 
   } catch (error) {
     if (error.code === 'ENOENT') {

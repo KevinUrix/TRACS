@@ -187,7 +187,11 @@ export default function Reports() {
         const res = await fetch(`${API_URL}/api/classrooms?buildingName=${selectedBuilding.value}`);
         if (!res.ok) throw new Error('No se pudo cargar la lista de salones');
         const data = await res.json();
-        setClassrooms(data);
+        const names = Array.isArray(data)
+        ? data.map(item => (typeof item === 'string' ? item : item?.name)).filter(Boolean)
+        : [];
+
+        setClassrooms(names);
       } catch (error) {
         console.error(error);
         toast.error('Error al cargar los salones.');

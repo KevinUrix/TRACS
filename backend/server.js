@@ -30,7 +30,7 @@ const PORT = process.env.BACKEND_PORT || 3001;
 
 // Middlewares
 app.use(cors({
-  origin: ['https://www.tracs.cloud', 'http://localhost:3000'], // Cambiaremos esto cuando se requiera en CUCEI
+  origin: ['https://www.tracs.cloud', 'http://localhost:3000', 'http://johnafleming.cucei.udg.mx'], // Cambiaremos esto cuando se requiera en CUCEI
 }));
 app.use(express.json());
 app.use(helmet());
@@ -51,14 +51,14 @@ app.use('/api', trainRoutes);
 app.use('/api', userRoutes);
 app.use('/api/tickets', ticketRoutes);
 
-/* // Host - build
+// Host - build
 const buildPath = path.join(__dirname, '..', 'build');
-app.use(express.static(buildPath));
+app.use('/desarrollo/tracs', express.static(buildPath));
 
-app.get('*', (req, res) => {
+app.get('/desarrollo/tracs/*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
- */
+
 
 // Sincroniza el caché local (node) con redis si redis llegó a fallar
 redis.on('ready', () => {

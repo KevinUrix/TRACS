@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Footer from "./footer";
 export default function LandingPage() {
     return (
@@ -7,7 +8,7 @@ export default function LandingPage() {
                     <h1 className="text-4xl sm:text-5xl font-extrabold text-indigo-900 mr-4">
                         TRACS
                     </h1>
-                    <img src="/tracs_page.webp" alt="Logo de TRACS" className="max-w-xs sm:max-w-md tracs-logo" />
+                    <img src="tracs_page.webp" alt="Logo de TRACS" className="max-w-xs sm:max-w-md tracs-logo" />
                 </div>
                 <h2 className="text-xl sm:text-2xl text-gray-700 font-medium mb-6">
                 Timetable and Reporting Assistant for CUCEI Services
@@ -38,12 +39,12 @@ export default function LandingPage() {
                 </div>
 
                 <div className="mt-10">
-                <a
-                    href="/calendar"
+                <Link
+                    to="/calendar"
                     className="inline-block bg-indigo-700 text-white font-semibold py-3 px-7 rounded-full hover:bg-indigo-800 transition shadow-sm hover:shadow-lg"
                 >
                     Empezar ahora
-                </a>
+                </Link>
                 </div>
             </div>
             <Footer />

@@ -13,6 +13,7 @@ export default function Calendar() {
   const [selectedDay, setSelectedDay] = useState('Lunes');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [classrooms, setClassrooms] = useState([]);
+  const [capacities, setCapacities] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
   const [isStatisticMode, setIsStatisticMode] = useState(false);
@@ -276,7 +277,21 @@ export default function Calendar() {
           }
           return response.json();
         })
-        .then(data => setClassrooms(data))
+        .then(data => {
+          // puede ser ["LFS01", ...] o [{name:"LFS01", capacity:30}, ...]
+          const normalized = Array.isArray(data)
+            ? data.map(item => typeof item === 'string'
+                ? { name: item, capacity: null }
+                : item)
+            : [];
+
+          // 1) Sólo salones, en caso de no tener cupos puestos no dirá nada
+          setClassrooms(normalized.map(x => x.name));
+
+          const capMap = {};
+          for (const x of normalized) capMap[x.name] = x.capacity ?? null;
+          setCapacities(capMap);
+        })
         .catch(error => {
           console.error("Error cargando los salones:", error);
           toast.error("No se encontraron salones. Por favor, reinicia la página.");
@@ -573,9 +588,18 @@ export default function Calendar() {
                       </>
                     )
                     : 
-                  classrooms.map((classroom, index) => (
-                    <th key={index} className={`table-cell print-col-${Math.floor(index / 9)}`}>{classroom}</th>
-                  ))}
+                  classrooms.map((classroom, index) => {
+                    const cap = capacities?.[classroom];
+                    return (
+                      <th
+                        key={index}
+                        className={`table-cell print-col-${Math.floor(index / 9)}`}
+                        title={cap != null ? `Cupos: ${cap}` : 'Cupos no definido'}
+                      >
+                        {cap != null ? `${classroom} (${cap})` : classroom}
+                      </th>
+                    );
+                  })}
                 </tr>
               </thead>
 

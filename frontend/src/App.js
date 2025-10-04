@@ -4,7 +4,7 @@ import AppContent from './AppContent'; // separado en otro componente
 export default function App() {
   return (
     <>
-      <Router>
+      <Router basename={process.env.REACT_APP_BASENAME}>
         <AppContent />
       </Router>
     </>

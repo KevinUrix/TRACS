@@ -13,6 +13,7 @@ export default function Calendar() {
   const [selectedDay, setSelectedDay] = useState('Lunes');
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [classrooms, setClassrooms] = useState([]);
+  const [capacities, setCapacities] = useState([]);
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
   const [isStatisticMode, setIsStatisticMode] = useState(false);
@@ -276,7 +277,21 @@ export default function Calendar() {
           }
           return response.json();
         })
-        .then(data => setClassrooms(data))
+        .then(data => {
+          // Puede ser ["LFS01", ...] o [{name:"LFS01", capacity:30}, ...]
+          const normalized = Array.isArray(data)
+            ? data.map(item => typeof item === 'string'
+                ? { name: item, capacity: null }
+                : item)
+            : [];
+
+          // En caso de no tener cupos puestos no se mostrará nada
+          setClassrooms(normalized.map(x => x.name));
+
+          const capMap = {};
+          for (const x of normalized) capMap[x.name] = x.capacity ?? null;
+          setCapacities(capMap);
+        })
         .catch(error => {
           console.error("Error cargando los salones:", error);
           toast.error("No se encontraron salones. Por favor, reinicia la página.");

@@ -4,12 +4,11 @@ const axios = require('axios');
 const { google } = require('googleapis');
 const { getOAuth2Client } = require('../utils/googleOAuthClient');
 const { createGoogleEvent } = require('../utils/createGoogleEvent');
-const buildings = require('../config/buildings');
 
 const mapBuildingName = (name) => {
   if (name === 'DUCT1') return 'Alpha';
   if (name === 'DUCT2') return 'Beta';
-  if (name === 'DBETA') return 'CISCO';
+  if (name === 'DBETA') return 'Beta';
   return name;
 };
 
@@ -21,7 +20,9 @@ const saveReservation = async (req, res) => {
   const mappedBuildingName = mapBuildingName(buildingName);
   const reservationData = req.body;
 
-  const isValidBuilding = buildings.edifp.some(b => b.value === buildingName);
+  const buildingsPath = path.join(__dirname, '../config/buildings.json');
+  const buildingsData = JSON.parse(await fs.readFile(buildingsPath, 'utf-8'));
+  const isValidBuilding = buildingsData.edifp.some(b => b.value === buildingName);
   if (!isValidBuilding) {
     return res.status(400).json({ error: `Edificio "${buildingName}" no válido` });
   }
@@ -168,7 +169,7 @@ const deleteReservation = async (req, res) => {
               console.warn(`No se pudo eliminar el evento:`, err.message);
               if (err.message && err.message.toLowerCase().includes('not found')) {
                 return res.status(409).json({
-                  message: `Evento no encontrado en Google Calendar.\nInicie sesión con la cuenta que creó el evento.`,
+                  message: `Evento no encontrado en Google Calendar.`,
                   error: err.message,
                 });
               }
@@ -345,7 +346,7 @@ const updateReservation = async (req, res) => {
         
         if (err.message && err.message.toLowerCase().includes('not found')) {
           return res.status(409).json({
-            message: `Evento no encontrado en Google Calendar.\nInicie sesión con la cuenta que creó el evento.`,
+            message: `Evento no encontrado en Google Calendar.`,
             error: err.message,
           });
         }

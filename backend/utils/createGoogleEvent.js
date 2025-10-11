@@ -10,7 +10,7 @@ const formatTime = (timeStr) => {
 const mapBuildingName = (name) => {
   if (name === 'DUCT1') return 'Alfa';
   if (name === 'DUCT2') return 'Beta';
-  if (name === 'DBETA') return 'CISCO';
+  if (name === 'DBETA') return 'Beta';
   return name;
 };
 

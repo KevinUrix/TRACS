@@ -278,14 +278,14 @@ export default function Calendar() {
           return response.json();
         })
         .then(data => {
-          // puede ser ["LFS01", ...] o [{name:"LFS01", capacity:30}, ...]
+          // Puede ser ["LFS01", ...] o [{name:"LFS01", capacity:30}, ...]
           const normalized = Array.isArray(data)
             ? data.map(item => typeof item === 'string'
                 ? { name: item, capacity: null }
                 : item)
             : [];
 
-          // 1) Sólo salones, en caso de no tener cupos puestos no dirá nada
+          // En caso de no tener cupos puestos no se mostrará nada
           setClassrooms(normalized.map(x => x.name));
 
           const capMap = {};
@@ -594,7 +594,7 @@ export default function Calendar() {
                       <th
                         key={index}
                         className={`table-cell print-col-${Math.floor(index / 9)}`}
-                        title={cap != null ? `Cupos: ${cap}` : 'Cupos no definido'}
+                        title={cap != null ? `Cupos: ${cap}` : 'Cupos no definidos'}
                       >
                         {cap != null ? `${classroom} (${cap})` : classroom}
                       </th>

@@ -84,10 +84,23 @@ export default function Crud() {
     setBuildingToDelete(null);
   };
 
-  const cancelEditBuilding = () => {
+  const cancelEditBuilding = async () => {
     setShowEditModalBuilding(false);
+    const buildingValueToLoad = originalBuilding?.value ?? buildingToEdit?.value ?? null;
+
     setBuildingToEdit(null);
     setOriginalBuilding(null);
+
+    if (!buildingValueToLoad) return;
+
+    const inputStr = await fetchClassroomsInput(buildingValueToLoad);
+    if (inputStr !== null) {
+      setClassroomsToAdd(inputStr);
+      setLastCreatedBuilding(buildingValueToLoad);
+      setshowAddModalClassrooms(true);
+    } else {
+      toast.error('No se pudieron cargar los salones del edificio.');
+    }
   };
 
   const cancelAddBuilding = () => {
@@ -95,18 +108,17 @@ export default function Crud() {
     setBuildingToAdd(null);
   };
 
-  // const cancelAddClassrooms = () => {
-  //   setshowAddModalClassrooms(false);
-  //   setClassroomsToAdd('');
-  //   setLastCreatedBuilding(null);
-  // };
+  const cancelAddClassrooms = () => {
+    setshowAddModalClassrooms(false);
+    setClassroomsToAdd('');
+    setLastCreatedBuilding(null);
+  };
 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setBuildingToEdit((prev) => ({ ...prev, [name]: value }));
   };
-
 
 
   // Cargar usuarios al montar
@@ -211,6 +223,15 @@ export default function Crud() {
           )
         );
         toast.success("Edificio actualizado correctamente");
+
+        const inputStr = await fetchClassroomsInput(cleanedBuildingData.value);
+        if (inputStr !== null) {
+          setClassroomsToAdd(inputStr);
+          setLastCreatedBuilding(cleanedBuildingData.value);
+          setshowAddModalClassrooms(true);
+        } else {
+          toast.error('No se pudieron cargar los salones del edificio.');
+        }
       } else {
         if (res.status === 403) {
           localStorage.clear();
@@ -369,7 +390,7 @@ export default function Crud() {
 
 
   const handleSaveClassrooms = async () => {
-    const raw = (classroomsToAdd || '').replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+    const raw = (classroomsToAdd || '').replace(/[^a-zA-Z0-9:\s]/g, '').replace(/\s+/g, ' ').trim();
 
     const classrooms = raw.split(/\s+/).filter(Boolean);
 
@@ -379,7 +400,7 @@ export default function Crud() {
     }
 
     if (classrooms.length === 0) {
-      toast.error('Ingresa al menos un salón con el formato: salon1 salon2 salon3');
+      toast.error('Ingresa al menos un salón con el formato: Salon1 Salon2 Salon3:23');
       return;
     }
 
@@ -413,6 +434,33 @@ export default function Crud() {
       setLastCreatedBuilding(null);
     } catch (error) {
       toast.error('Error al crear salones.');
+    }
+  };
+
+  // Obtiene los salones del edificio para editarlos junto a los edificios
+  const fetchClassroomsInput = async (buildingValue) => {
+    try {
+      const res = await fetch(
+        `${API_URL}/api/classrooms?buildingName=${encodeURIComponent(buildingValue)}`,
+        { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
+      );
+      if (!res.ok) return null;
+      const data = await res.json();
+
+      if (!Array.isArray(data) || data.length === 0) return '';
+
+      // Soporta los dos formatos de salones, los que tienen capacidad y los que no.
+      const tokens = data.map(item => {
+        if (typeof item === 'string') return item;
+        if (item && typeof item === 'object' && item.name) {
+          return item.capacity ? `${item.name}:${item.capacity}` : item.name;
+        }
+        return null;
+      }).filter(Boolean);
+
+      return tokens.join(' ');
+    } catch {
+      return null;
     }
   };
 
@@ -649,7 +697,7 @@ export default function Crud() {
       {showEditModalBuilding && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
-            <h3 className="text-lg font-bold mb-4">Modificar Edificio</h3>
+            <h3 className="text-lg font-bold mb-4 text-center">Modificar Edificio</h3>
             <label className="block text-gray-700 font-medium mb-1" htmlFor="value">
               Nombre del edificio:
             </label>
@@ -731,19 +779,25 @@ export default function Crud() {
       {showAddModalClassrooms && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 w-80 custom-shadow-border-reports">
-            <h3 className="text-lg font-bold mb-4 text-center">Agregar Salones</h3>
+            <h3 className="text-lg font-bold mb-4 text-center">Salones del Edificio</h3>
             <input
               value={classroomsToAdd}
               onChange={(e) => {
-                const cleaned = e.target.value.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, ' ');
+                const cleaned = e.target.value.replace(/[^a-zA-Z0-9:\s]/g, "").replace(/\s+/g, ' ');
                 setClassroomsToAdd(cleaned)}
               }
-              placeholder="Formato: Salon1 Salon2 Salon3..."
+              placeholder="Formato: Salon1 Salon2:23 Salon3..."
               className="w-full mb-4 p-2 border rounded"
               maxLength={300}
               disabled={false}
             />
             <div className="flex justify-center gap-4">
+              <button
+                onClick={cancelAddClassrooms}
+                className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+              >
+                Cancelar
+              </button>
               <button
                 onClick={handleSaveClassrooms}
                 className="px-4 py-2 background-aplicar text-white rounded"

@@ -27,7 +27,7 @@ const localFiles = async (cycle, building) => {
     const localData = require(`../data/buildings/${cycle}/${building}.json`);
     const localCacheKey = `local-schedule-${cycle}-building-${building}`;
     const scheduleCacheKey = `schedule-${cycle}-building-${building}`;
-    const TTL_LOCAL_FALLBACK = 4 * 60 * 60; // 4 horas
+    const TTL_LOCAL_FALLBACK = 5 * 60 * 60; // 5 horas
 
     const alreadyInScheduleCache = await cache.get(scheduleCacheKey);
     if (alreadyInScheduleCache) {
@@ -109,7 +109,7 @@ const getSearch = async (req, res) => {
 
       for (const building of buildingsToScrape) {
         const scrapeResult = await scrapeData(cycle, building.value);
-        await new Promise(res => setTimeout(res, 200));
+        await new Promise(res => setTimeout(res, 250));
 
         if (scrapeResult?.error) {
           console.warn(`Scraping fallido para ${building.value}. Intentando archivo local...`);

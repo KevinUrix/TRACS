@@ -7,7 +7,7 @@
       "classroom": "A003",
       "nrc": "153637",
       "code": "IF497",
-      "students": 0,
+      "students": 32,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
@@ -20,36 +20,23 @@
       "classroom": "A003",
       "nrc": "153637",
       "code": "IF497",
-      "students": 0,
+      "students": 32,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDR",
       "classroom": "A003",
-      "nrc": "153637",
-      "code": "IF497",
-      "students": 0,
+      "nrc": "197389",
+      "code": "IB056",
+      "students": 38,
       "course": "ALGEBRA LINEAL"
     },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "153637",
-      "code": "IF497",
-      "students": 0,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
+    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
   },
   {
     "data": {
@@ -59,10 +46,10 @@
       "classroom": "A002",
       "nrc": "42253",
       "code": "I5802",
-      "students": 0,
+      "students": 26,
       "course": "ALGEBRA LINEAL"
     },
-    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+    "professor": "BERNAL TIRADO, ALFONSO"
   },
   {
     "data": {
@@ -72,7 +59,7 @@
       "classroom": "A003",
       "nrc": "42250",
       "code": "I5802",
-      "students": 0,
+      "students": 12,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
@@ -85,10 +72,23 @@
       "classroom": "A001",
       "nrc": "197390",
       "code": "IB056",
-      "students": 0,
+      "students": 39,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "42256",
+      "code": "I5802",
+      "students": 39,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
   },
   {
     "data": {
@@ -98,10 +98,62 @@
       "classroom": "A004",
       "nrc": "224976",
       "code": "IB056",
-      "students": 0,
+      "students": 36,
       "course": "ALGEBRA LINEAL"
     },
-    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+    "professor": "BERNAL TIRADO, ALFONSO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A004",
+      "nrc": "224978",
+      "code": "IB056",
+      "students": 33,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "1800-1955",
+      "days": "L . . . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "224981",
+      "code": "IB056",
+      "students": 26,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1800-1955",
+      "days": ". . I . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "224981",
+      "code": "IB056",
+      "students": 26,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDR",
+      "classroom": "A001",
+      "nrc": "224987",
+      "code": "IB056",
+      "students": 34,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "CASTILLO PEREZ, ALONSO"
   },
   {
     "data": {
@@ -111,23 +163,10 @@
       "classroom": "A002",
       "nrc": "42264",
       "code": "I5991",
-      "students": 0,
+      "students": 28,
       "course": "ALGEBRA LINEAL I"
     },
     "professor": "YAKHNO, LILIYA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "187590",
-      "code": "I5991",
-      "students": 0,
-      "course": "ALGEBRA LINEAL I"
-    },
-    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
   },
   {
     "data": {
@@ -137,7 +176,7 @@
       "classroom": "A001",
       "nrc": "195063",
       "code": "I6000",
-      "students": 0,
+      "students": 4,
       "course": "ALGEBRA LINEAL II"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -150,46 +189,7 @@
       "classroom": "A003",
       "nrc": "77404",
       "code": "I5969",
-      "students": 0,
-      "course": "ALGEBRA LINEAL NUMERICA"
-    },
-    "professor": "LICEA SALAZAR, JUAN ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "77404",
-      "code": "I5969",
-      "students": 0,
-      "course": "ALGEBRA LINEAL NUMERICA"
-    },
-    "professor": "LICEA SALAZAR, JUAN ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "77404",
-      "code": "I5969",
-      "students": 0,
-      "course": "ALGEBRA LINEAL NUMERICA"
-    },
-    "professor": "LICEA SALAZAR, JUAN ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "77404",
-      "code": "I5969",
-      "students": 0,
+      "students": 11,
       "course": "ALGEBRA LINEAL NUMERICA"
     },
     "professor": "LICEA SALAZAR, JUAN ANTONIO"
@@ -202,20 +202,20 @@
       "classroom": "A001",
       "nrc": "174592",
       "code": "I6030",
-      "students": 0,
+      "students": 34,
       "course": "ALGEBRA MULTILINEAL"
     },
     "professor": "AGUILA GOMEZ, RICARDO"
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1700-1855",
       "days": "L . I . . .",
       "building": "DEDR",
       "classroom": "LC09",
       "nrc": "91570",
       "code": "I9878",
-      "students": 0,
+      "students": 18,
       "course": "ALGORITMIA"
     },
     "professor": "ASCENCIO PIÑA, CESAR RODOLFO"
@@ -228,10 +228,36 @@
       "classroom": "A004",
       "nrc": "159931",
       "code": "IC584",
-      "students": 0,
+      "students": 30,
       "course": "ANALISIS NUMERICO I"
     },
     "professor": "JIMENEZ SERRANO, EDUVIGES"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDR",
+      "classroom": "LC05",
+      "nrc": "200210",
+      "code": "IL365",
+      "students": 16,
+      "course": "ARQUITECTURA DE COMPUTADORAS"
+    },
+    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDR",
+      "classroom": "LC05",
+      "nrc": "235668",
+      "code": "V0718",
+      "students": 15,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "RUVALCABA DELGADILLO, ROSARIO ELIZABETH"
   },
   {
     "data": {
@@ -241,7 +267,7 @@
       "classroom": "A001",
       "nrc": "42294",
       "code": "I6009",
-      "students": 0,
+      "students": 30,
       "course": "CALCULO AVANZADO PARA FISICA"
     },
     "professor": "MONTES NAVARRO, MARIANA SARAHI"
@@ -254,7 +280,7 @@
       "classroom": "A002",
       "nrc": "43537",
       "code": "I7344",
-      "students": 0,
+      "students": 40,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "SANTIAGO HERNANDEZ, ELOISA"
@@ -267,7 +293,7 @@
       "classroom": "A004",
       "nrc": "42298",
       "code": "I5800",
-      "students": 0,
+      "students": 32,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
@@ -280,7 +306,7 @@
       "classroom": "A002",
       "nrc": "42301",
       "code": "I5990",
-      "students": 0,
+      "students": 20,
       "course": "CALCULO DIFERENCIAL E INTEGRAL I"
     },
     "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
@@ -293,49 +319,10 @@
       "classroom": "A002",
       "nrc": "42301",
       "code": "I5990",
-      "students": 0,
+      "students": 20,
       "course": "CALCULO DIFERENCIAL E INTEGRAL I"
     },
     "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "42301",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "42301",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "153638",
-      "code": "IB058",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
@@ -345,10 +332,36 @@
       "classroom": "A001",
       "nrc": "77410",
       "code": "I5999",
-      "students": 0,
+      "students": 30,
       "course": "CALCULO DIFERENCIAL E INTEGRAL II"
     },
     "professor": "MONTES NAVARRO, MARIANA SARAHI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDR",
+      "classroom": "A001",
+      "nrc": "42302",
+      "code": "I5990",
+      "students": 9,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "153638",
+      "code": "IB058",
+      "students": 27,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
@@ -358,150 +371,20 @@
       "classroom": "A003",
       "nrc": "42295",
       "code": "I5800",
-      "students": 0,
+      "students": 34,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "GONZALEZ RENDON, LUCIA"
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "193991",
-      "code": "IL344",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "178832",
-      "code": "I5990",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . I . . .",
       "building": "DEDR",
       "classroom": "A004",
       "nrc": "137230",
       "code": "IC578",
-      "students": 0,
+      "students": 24,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
@@ -514,49 +397,10 @@
       "classroom": "A004",
       "nrc": "137230",
       "code": "IC578",
-      "students": 0,
+      "students": 24,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "137230",
-      "code": "IC578",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "137230",
-      "code": "IC578",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "42296",
-      "code": "I5800",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
   },
   {
     "data": {
@@ -566,10 +410,23 @@
       "classroom": "A001",
       "nrc": "193994",
       "code": "IL344",
-      "students": 0,
+      "students": 33,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "193996",
+      "code": "IL344",
+      "students": 35,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
   },
   {
     "data": {
@@ -579,36 +436,36 @@
       "classroom": "A002",
       "nrc": "193996",
       "code": "IL344",
-      "students": 0,
+      "students": 35,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
+      "schedule": "1600-1655",
+      "days": ". M . . . .",
       "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "42305",
-      "code": "I6121",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL INTEGRAL"
+      "classroom": "A002",
+      "nrc": "193996",
+      "code": "IL344",
+      "students": 35,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
+    "professor": "VILLEGAS RUVALCABA, MARIO"
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
       "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "42305",
-      "code": "I6121",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL INTEGRAL"
+      "classroom": "A004",
+      "nrc": "205828",
+      "code": "IL344",
+      "students": 35,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
+    "professor": "FRIAS UREÑA, PALOMA MARGARITA"
   },
   {
     "data": {
@@ -644,23 +501,10 @@
       "classroom": "A001",
       "nrc": "42306",
       "code": "I6121",
-      "students": 0,
+      "students": 41,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
-    "professor": "RODRIGUEZ GUTIERREZ, JORGE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "38415",
-      "code": "I3277",
-      "students": 0,
-      "course": "CALCULO I"
-    },
-    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+    "professor": "GARCIA SANCHEZ, FERNANDO"
   },
   {
     "data": {
@@ -670,62 +514,36 @@
       "classroom": "A004",
       "nrc": "125309",
       "code": "IB059",
-      "students": 0,
+      "students": 11,
       "course": "CALCULO VECTORIAL Y TENSORIAL"
     },
     "professor": "MONTES NAVARRO, MARIANA SARAHI"
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
       "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "42336",
-      "code": "I5874",
-      "students": 0,
-      "course": "DISEÑO DE EXPERIMENTOS"
+      "classroom": "LC09",
+      "nrc": "59907",
+      "code": "I7587",
+      "students": 30,
+      "course": "CIRCUITOS ELECTRICOS"
     },
-    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
+    "professor": "LANDA HORTA, DANIEL OMAR"
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
       "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "42336",
-      "code": "I5874",
-      "students": 0,
-      "course": "DISEÑO DE EXPERIMENTOS"
+      "classroom": "LC09",
+      "nrc": "159267",
+      "code": "I7282",
+      "students": 12,
+      "course": "CIRCUITOS ELECTRONICOS PARA COMUNICACIONES"
     },
-    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "42336",
-      "code": "I5874",
-      "students": 0,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "42336",
-      "code": "I5874",
-      "students": 0,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
   },
   {
     "data": {
@@ -735,7 +553,7 @@
       "classroom": "A002",
       "nrc": "42337",
       "code": "I5874",
-      "students": 0,
+      "students": 13,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
@@ -748,7 +566,7 @@
       "classroom": "A004",
       "nrc": "42335",
       "code": "I5874",
-      "students": 0,
+      "students": 12,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "ELIZALDE CAMINO, FERNANDO"
@@ -761,7 +579,7 @@
       "classroom": "A003",
       "nrc": "171759",
       "code": "I7342",
-      "students": 0,
+      "students": 27,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -774,23 +592,10 @@
       "classroom": "A001",
       "nrc": "209743",
       "code": "V0712",
-      "students": 0,
+      "students": 39,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "VAZQUEZ HERNANDEZ, HUSAI"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "197383",
-      "code": "IL347",
-      "students": 0,
-      "course": "ECUACIONES DIFERENCIALES"
-    },
-    "professor": "CERVANTES LOMELI, ADRIAN"
   },
   {
     "data": {
@@ -800,7 +605,7 @@
       "classroom": "A004",
       "nrc": "152905",
       "code": "I7347",
-      "students": 0,
+      "students": 28,
       "course": "ESTADISTICA"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -813,14 +618,14 @@
       "classroom": "A002",
       "nrc": "77799",
       "code": "I5897",
-      "students": 0,
+      "students": 28,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
   },
   {
     "data": {
-      "schedule": "1300-1455",
+      "schedule": "1500-1655",
       "days": "L . I . . .",
       "building": "DEDR",
       "classroom": "LC05",
@@ -833,13 +638,26 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDR",
+      "classroom": "LC10",
+      "nrc": "210419",
+      "code": "V1683",
+      "students": 5,
+      "course": "INGENIERIA OPTICA"
+    },
+    "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDR",
       "classroom": "A004",
       "nrc": "43546",
       "code": "I7349",
-      "students": 0,
+      "students": 40,
       "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -852,33 +670,7 @@
       "classroom": "A002",
       "nrc": "43546",
       "code": "I7349",
-      "students": 0,
-      "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
-    },
-    "professor": "CERVANTES LOMELI, ADRIAN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "43546",
-      "code": "I7349",
-      "students": 0,
-      "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
-    },
-    "professor": "CERVANTES LOMELI, ADRIAN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "43546",
-      "code": "I7349",
-      "students": 0,
+      "students": 40,
       "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -891,7 +683,7 @@
       "classroom": "LC11",
       "nrc": "160225",
       "code": "IB147",
-      "students": 0,
+      "students": 5,
       "course": "LASERES"
     },
     "professor": "ALMAGUER GOMEZ, CITLALLI"
@@ -904,23 +696,10 @@
       "classroom": "A002",
       "nrc": "189644",
       "code": "I5247",
-      "students": 0,
+      "students": 40,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "FLORES SANDOVAL, MIRIAM ILEANA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "189645",
-      "code": "I5247",
-      "students": 0,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "ELIZALDE CAMINO, FERNANDO"
   },
   {
     "data": {
@@ -930,7 +709,7 @@
       "classroom": "A004",
       "nrc": "189647",
       "code": "I5247",
-      "students": 0,
+      "students": 40,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "CORDOVA GONZALEZ, VERONICA ILIANA"
@@ -943,7 +722,7 @@
       "classroom": "A003",
       "nrc": "189649",
       "code": "I5247",
-      "students": 0,
+      "students": 40,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "FLORES SANDOVAL, MIRIAM ILEANA"
@@ -956,10 +735,23 @@
       "classroom": "A001",
       "nrc": "200721",
       "code": "I5247",
-      "students": 0,
+      "students": 40,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "FLORES SANDOVAL, MIRIAM ILEANA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "201861",
+      "code": "I5247",
+      "students": 40,
+      "course": "LOGICA MATEMATICA"
+    },
+    "professor": "FREGOSO BECERRA, EMILIA"
   },
   {
     "data": {
@@ -969,7 +761,7 @@
       "classroom": "A001",
       "nrc": "201862",
       "code": "I5247",
-      "students": 0,
+      "students": 44,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
@@ -982,7 +774,7 @@
       "classroom": "A004",
       "nrc": "57586",
       "code": "I7423",
-      "students": 0,
+      "students": 33,
       "course": "MATEMATICAS AVANZADAS PARA INGENIERIA"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
@@ -995,7 +787,7 @@
       "classroom": "A002",
       "nrc": "205834",
       "code": "V0711",
-      "students": 0,
+      "students": 12,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "MARTINEZ VAZQUEZ, RICARDO"
@@ -1008,23 +800,36 @@
       "classroom": "A004",
       "nrc": "205836",
       "code": "V0711",
-      "students": 0,
+      "students": 35,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "209747",
-      "code": "V0711",
-      "students": 0,
+      "classroom": "A001",
+      "nrc": "193987",
+      "code": "IL345",
+      "students": 36,
       "course": "MATEMATICAS DISCRETAS"
     },
-    "professor": "MARTINEZ VAZQUEZ, RICARDO"
+    "professor": "GARCIA NAVA, DALMIRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "193987",
+      "code": "IL345",
+      "students": 36,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "GARCIA NAVA, DALMIRO"
   },
   {
     "data": {
@@ -1034,46 +839,7 @@
       "classroom": "A004",
       "nrc": "209747",
       "code": "V0711",
-      "students": 0,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "MARTINEZ VAZQUEZ, RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "209747",
-      "code": "V0711",
-      "students": 0,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "MARTINEZ VAZQUEZ, RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "209747",
-      "code": "V0711",
-      "students": 0,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "MARTINEZ VAZQUEZ, RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "209882",
-      "code": "V0711",
-      "students": 0,
+      "students": 22,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "MARTINEZ VAZQUEZ, RICARDO"
@@ -1086,36 +852,10 @@
       "classroom": "A001",
       "nrc": "91267",
       "code": "I9881",
-      "students": 0,
+      "students": 23,
       "course": "METODOS MATEMATICOS I"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "144539",
-      "code": "I9881",
-      "students": 0,
-      "course": "METODOS MATEMATICOS I"
-    },
-    "professor": "ELIZALDE CAMINO, FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDR",
-      "classroom": "LC05",
-      "nrc": "209830",
-      "code": "V0260",
-      "students": 0,
-      "course": "METODOS COMPUTACIONALES PARA LA INGENIERIA DE DATOS"
-    },
-    "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
   },
   {
     "data": {
@@ -1125,10 +865,62 @@
       "classroom": "A003",
       "nrc": "42494",
       "code": "I5893",
-      "students": 0,
+      "students": 37,
       "course": "METODOS MATEMATICOS I"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "212883",
+      "code": "V0713",
+      "students": 38,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "MARQUEZ SOSA, SAUL RENE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "57009",
+      "code": "I7343",
+      "students": 30,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "KRAVTCHENKO, MARIA NIKOLAEVNA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDR",
+      "classroom": "A001",
+      "nrc": "57009",
+      "code": "I7343",
+      "students": 30,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "KRAVTCHENKO, MARIA NIKOLAEVNA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "200064",
+      "code": "IL348",
+      "students": 29,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "JIMENEZ SERRANO, EDUVIGES"
   },
   {
     "data": {
@@ -1151,7 +943,7 @@
       "classroom": "A001",
       "nrc": "189654",
       "code": "IG738",
-      "students": 0,
+      "students": 41,
       "course": "PRECALCULO"
     },
     "professor": "MARQUEZ FRAUSTO, TERESA GABRIELA"
@@ -1164,7 +956,7 @@
       "classroom": "A001",
       "nrc": "42536",
       "code": "I5799",
-      "students": 0,
+      "students": 35,
       "course": "PRECALCULO"
     },
     "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
@@ -1177,75 +969,75 @@
       "classroom": "A003",
       "nrc": "42535",
       "code": "I5799",
-      "students": 0,
+      "students": 32,
       "course": "PRECALCULO"
     },
     "professor": "GONZALEZ RENDON, LUCIA"
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "218599",
-      "code": "IG738",
-      "students": 0,
-      "course": "PRECALCULO"
-    },
-    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
+      "schedule": "1500-1655",
       "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "218599",
-      "code": "IG738",
-      "students": 0,
-      "course": "PRECALCULO"
-    },
-    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "218599",
-      "code": "IG738",
-      "students": 0,
-      "course": "PRECALCULO"
-    },
-    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "218599",
-      "code": "IG738",
-      "students": 0,
-      "course": "PRECALCULO"
-    },
-    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1255",
-      "days": ". . . . V .",
       "building": "DEDR",
       "classroom": "A004",
-      "nrc": "218603",
+      "nrc": "201874",
       "code": "IG738",
-      "students": 0,
+      "students": 25,
       "course": "PRECALCULO"
     },
-    "professor": "SOLIS RODRIGUEZ, JOSE"
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDR",
+      "classroom": "A004",
+      "nrc": "201874",
+      "code": "IG738",
+      "students": 25,
+      "course": "PRECALCULO"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDR",
+      "classroom": "A001",
+      "nrc": "218599",
+      "code": "IG738",
+      "students": 40,
+      "course": "PRECALCULO"
+    },
+    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDR",
+      "classroom": "A001",
+      "nrc": "218599",
+      "code": "IG738",
+      "students": 40,
+      "course": "PRECALCULO"
+    },
+    "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A004",
+      "nrc": "225017",
+      "code": "IG738",
+      "students": 37,
+      "course": "PRECALCULO"
+    },
+    "professor": "GARCIA URIOSTEGUI, LORENA"
   },
   {
     "data": {
@@ -1255,7 +1047,7 @@
       "classroom": "A003",
       "nrc": "90820",
       "code": "I7348",
-      "students": 0,
+      "students": 30,
       "course": "PROBABILIDAD"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
@@ -1268,33 +1060,7 @@
       "classroom": "A003",
       "nrc": "90820",
       "code": "I7348",
-      "students": 0,
-      "course": "PROBABILIDAD"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "90820",
-      "code": "I7348",
-      "students": 0,
-      "course": "PROBABILIDAD"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "90820",
-      "code": "I7348",
-      "students": 0,
+      "students": 30,
       "course": "PROBABILIDAD"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
@@ -1307,7 +1073,7 @@
       "classroom": "A002",
       "nrc": "200069",
       "code": "IB067",
-      "students": 0,
+      "students": 35,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "RAMIREZ MORENO, BENJAMIN"
@@ -1320,7 +1086,7 @@
       "classroom": "LC11",
       "nrc": "120478",
       "code": "I9892",
-      "students": 0,
+      "students": 22,
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
@@ -1333,7 +1099,7 @@
       "classroom": "LC11",
       "nrc": "153764",
       "code": "I9894",
-      "students": 0,
+      "students": 21,
       "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "HERNANDEZ HERNANDEZ, HECTOR"
@@ -1346,23 +1112,23 @@
       "classroom": "LC06",
       "nrc": "43402",
       "code": "I7268",
-      "students": 0,
+      "students": 19,
       "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
-    "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
+    "professor": "CAMARENA MENDEZ, JOSE OCTAVIO"
   },
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". M . J . .",
+      "days": ". . I . V .",
       "building": "DEDR",
-      "classroom": "LC09",
-      "nrc": "43403",
-      "code": "I7268",
-      "students": 0,
-      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+      "classroom": "LC06",
+      "nrc": "158797",
+      "code": "I9892",
+      "students": 21,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
-    "professor": "GARCIA ARREOLA, ALICIA"
+    "professor": "HERNANDEZ RUIZ, CARLOS MANUEL"
   },
   {
     "data": {
@@ -1372,7 +1138,7 @@
       "classroom": "LC06",
       "nrc": "100789",
       "code": "I7268",
-      "students": 0,
+      "students": 17,
       "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "PLASCENCIA LOPEZ, JOSUE ADAIR"
@@ -1385,10 +1151,23 @@
       "classroom": "LC06",
       "nrc": "104767",
       "code": "I7268",
-      "students": 0,
+      "students": 10,
       "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "PLASCENCIA LOPEZ, JOSUE ADAIR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDR",
+      "classroom": "LC05",
+      "nrc": "193710",
+      "code": "IL352",
+      "students": 29,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
   },
   {
     "data": {
@@ -1398,23 +1177,49 @@
       "classroom": "LC06",
       "nrc": "209838",
       "code": "V0275",
-      "students": 0,
+      "students": 2,
       "course": "REDES NEURONALES ARTIFICIALES"
     },
     "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
   },
   {
     "data": {
-      "schedule": "1100-1255",
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A004",
+      "nrc": "103853",
+      "code": "I9884",
+      "students": 29,
+      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS II"
+    },
+    "professor": "RIOS MATA, DIANA NOHEMI"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "103853",
+      "code": "I9884",
+      "students": 29,
+      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS II"
+    },
+    "professor": "RIOS MATA, DIANA NOHEMI"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
       "days": ". M . J . .",
       "building": "DEDR",
-      "classroom": "LC05",
-      "nrc": "120295",
-      "code": "I9901",
-      "students": 0,
-      "course": "SEMINARIO DE PROBLEMAS DE CONTROL I"
+      "classroom": "LC10",
+      "nrc": "133339",
+      "code": "I9893",
+      "students": 22,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
-    "professor": "SANCHEZ SANCHEZ, OSCAR DIDIER"
+    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
   },
   {
     "data": {
@@ -1424,7 +1229,7 @@
       "classroom": "A004",
       "nrc": "103853",
       "code": "I9884",
-      "students": 0,
+      "students": 29,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS II"
     },
     "professor": "RIOS MATA, DIANA NOHEMI"
@@ -1437,33 +1242,7 @@
       "classroom": "A003",
       "nrc": "103853",
       "code": "I9884",
-      "students": 0,
-      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS II"
-    },
-    "professor": "RIOS MATA, DIANA NOHEMI"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "103853",
-      "code": "I9884",
-      "students": 0,
-      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS II"
-    },
-    "professor": "RIOS MATA, DIANA NOHEMI"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "103853",
-      "code": "I9884",
-      "students": 0,
+      "students": 29,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS II"
     },
     "professor": "RIOS MATA, DIANA NOHEMI"
@@ -1471,12 +1250,12 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . I . . .",
+      "days": "L . . . . .",
       "building": "DEDR",
       "classroom": "LC05",
       "nrc": "120482",
       "code": "I9901",
-      "students": 0,
+      "students": 32,
       "course": "SEMINARIO DE PROBLEMAS DE CONTROL I"
     },
     "professor": "RODRIGUEZ CASTELLANOS, DAVID ISRAEL"
@@ -1489,7 +1268,7 @@
       "classroom": "A004",
       "nrc": "120484",
       "code": "I9886",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -1502,7 +1281,7 @@
       "classroom": "A001",
       "nrc": "193186",
       "code": "I9886",
-      "students": 0,
+      "students": 40,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "CORTES NAVARRO, LAURA ESTHER"
@@ -1515,7 +1294,7 @@
       "classroom": "A002",
       "nrc": "123585",
       "code": "I9882",
-      "students": 0,
+      "students": 40,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS I"
     },
     "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
@@ -1528,7 +1307,7 @@
       "classroom": "LC10",
       "nrc": "166299",
       "code": "I9895",
-      "students": 0,
+      "students": 23,
       "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -1541,7 +1320,7 @@
       "classroom": "LC09",
       "nrc": "44614",
       "code": "I7269",
-      "students": 0,
+      "students": 9,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "LOMELI BARAJAS, MIRYAM"
@@ -1554,7 +1333,7 @@
       "classroom": "LC06",
       "nrc": "43401",
       "code": "I7267",
-      "students": 0,
+      "students": 19,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -1567,7 +1346,7 @@
       "classroom": "LC09",
       "nrc": "44613",
       "code": "I7269",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -1580,7 +1359,7 @@
       "classroom": "LC11",
       "nrc": "43400",
       "code": "I7267",
-      "students": 0,
+      "students": 20,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "RAMOS GUILLEN, JOSE JESUS"
@@ -1593,7 +1372,7 @@
       "classroom": "LC06",
       "nrc": "43399",
       "code": "I7267",
-      "students": 0,
+      "students": 17,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "MORAN LOZA, JOSE MIGUEL"
@@ -1606,7 +1385,7 @@
       "classroom": "LC10",
       "nrc": "44612",
       "code": "I7269",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "GARCIA ARREOLA, ALICIA"
@@ -1619,7 +1398,7 @@
       "classroom": "LC11",
       "nrc": "60092",
       "code": "I7267",
-      "students": 0,
+      "students": 18,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "MORAN LOZA, JOSE MIGUEL"
@@ -1632,7 +1411,7 @@
       "classroom": "LC10",
       "nrc": "59761",
       "code": "I7267",
-      "students": 0,
+      "students": 20,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "GARCIA ARREOLA, ALICIA"
@@ -1645,7 +1424,7 @@
       "classroom": "LC06",
       "nrc": "60001",
       "code": "I7267",
-      "students": 0,
+      "students": 24,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
@@ -1658,7 +1437,7 @@
       "classroom": "LC11",
       "nrc": "59660",
       "code": "I7267",
-      "students": 0,
+      "students": 20,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
@@ -1671,23 +1450,10 @@
       "classroom": "LC10",
       "nrc": "44617",
       "code": "I7269",
-      "students": 0,
+      "students": 8,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "VELAZQUEZ MORA, EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDR",
-      "classroom": "LC09",
-      "nrc": "44608",
-      "code": "I7269",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
-    },
-    "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
   },
   {
     "data": {
@@ -1697,10 +1463,23 @@
       "classroom": "LC11",
       "nrc": "59702",
       "code": "I7267",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "LUQUE CHANG, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDR",
+      "classroom": "LC09",
+      "nrc": "44608",
+      "code": "I7269",
+      "students": 14,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+    },
+    "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
   },
   {
     "data": {
@@ -1710,23 +1489,10 @@
       "classroom": "LC06",
       "nrc": "59735",
       "code": "I7267",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "CASILLAS DE LA TORRE, SERGIO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDR",
-      "classroom": "LC09",
-      "nrc": "104782",
-      "code": "I7290",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
-    },
-    "professor": "RUIZ PALACIOS, MARIA SUSANA"
   },
   {
     "data": {
@@ -1736,7 +1502,7 @@
       "classroom": "LC09",
       "nrc": "59967",
       "code": "I7281",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -1749,10 +1515,23 @@
       "classroom": "LC06",
       "nrc": "78965",
       "code": "I7273",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "PLASCENCIA LOPEZ, JOSUE ADAIR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "133389",
+      "code": "I5896",
+      "students": 24,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS II"
+    },
+    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
   },
   {
     "data": {
@@ -1762,7 +1541,7 @@
       "classroom": "A002",
       "nrc": "42711",
       "code": "I5896",
-      "students": 0,
+      "students": 26,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS II"
     },
     "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
@@ -1775,7 +1554,7 @@
       "classroom": "LC07",
       "nrc": "201932",
       "code": "V0250",
-      "students": 0,
+      "students": 3,
       "course": "SEMINARIO DE TESIS II"
     },
     "professor": "GONZALEZ BECERRA, ADRIAN"
@@ -1788,10 +1567,23 @@
       "classroom": "LC10",
       "nrc": "160226",
       "code": "IB157",
-      "students": 0,
+      "students": 16,
       "course": "SISTEMAS DE CONVERSION DE ENERGIA"
     },
     "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDR",
+      "classroom": "LC09",
+      "nrc": "114820",
+      "code": "IB136",
+      "students": 15,
+      "course": "SISTEMAS DE MEDICION"
+    },
+    "professor": "MAESTRO RUIZ, EDGAR ALBERTO"
   },
   {
     "data": {
@@ -1801,10 +1593,23 @@
       "classroom": "LC10",
       "nrc": "194950",
       "code": "IL363",
-      "students": 0,
+      "students": 21,
       "course": "SISTEMAS DIGITALES"
     },
     "professor": "RAYGOZA PANDURO, JUAN JOSE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDR",
+      "classroom": "LC05",
+      "nrc": "103842",
+      "code": "I7029",
+      "students": 16,
+      "course": "SISTEMAS OPERATIVOS"
+    },
+    "professor": "HERRERA LUJAN, ZOILA LILIANA"
   },
   {
     "data": {
@@ -1814,7 +1619,7 @@
       "classroom": "A003",
       "nrc": "164472",
       "code": "I5946",
-      "students": 0,
+      "students": 16,
       "course": "TALLER DE INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
     },
     "professor": "ROBLERO MENDEZ, ELI VANNEY"
@@ -1827,46 +1632,7 @@
       "classroom": "A004",
       "nrc": "195064",
       "code": "I5942",
-      "students": 0,
-      "course": "TEORIA DE ANILLOS Y CAMPOS"
-    },
-    "professor": "MATA GUTIERREZ, OSBALDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "195064",
-      "code": "I5942",
-      "students": 0,
-      "course": "TEORIA DE ANILLOS Y CAMPOS"
-    },
-    "professor": "MATA GUTIERREZ, OSBALDO"
-  },
-  {
-    "data": {
-      "schedule": "1200-1455",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "195064",
-      "code": "I5942",
-      "students": 0,
-      "course": "TEORIA DE ANILLOS Y CAMPOS"
-    },
-    "professor": "MATA GUTIERREZ, OSBALDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "195064",
-      "code": "I5942",
-      "students": 0,
+      "students": 5,
       "course": "TEORIA DE ANILLOS Y CAMPOS"
     },
     "professor": "MATA GUTIERREZ, OSBALDO"
@@ -1879,10 +1645,23 @@
       "classroom": "A001",
       "nrc": "57103",
       "code": "I5932",
-      "students": 0,
+      "students": 6,
       "course": "TEORIA DE ECUACIONES DIFERENCIALES ORDINARIAS I"
     },
     "professor": "YAKHNO, ALEXANDER"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "122674",
+      "code": "I5932",
+      "students": 14,
+      "course": "TEORIA DE ECUACIONES DIFERENCIALES ORDINARIAS I"
+    },
+    "professor": "GUTIERREZ ROBLES, JOSE ALBERTO"
   },
   {
     "data": {
@@ -1892,10 +1671,10 @@
       "classroom": "A001",
       "nrc": "102162",
       "code": "I6008",
-      "students": 0,
+      "students": 32,
       "course": "TEORIA DE LA PROBABILIDAD Y ESTADISTICA MATEMATICA"
     },
-    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+    "professor": "BERNAL TIRADO, ALFONSO"
   },
   {
     "data": {
@@ -1905,7 +1684,7 @@
       "classroom": "LC11",
       "nrc": "53891",
       "code": "ET418",
-      "students": 0,
+      "students": 45,
       "course": "TOPICOS SELECTOS EN COMPUTACION"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
@@ -1918,10 +1697,23 @@
       "classroom": "LC11",
       "nrc": "206130",
       "code": "ET418",
-      "students": 0,
+      "students": 53,
       "course": "TOPICOS SELECTOS EN COMPUTACION"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDR",
+      "classroom": "LC09",
+      "nrc": "53897",
+      "code": "ET414",
+      "students": 19,
+      "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
   },
   {
     "data": {
@@ -1931,23 +1723,10 @@
       "classroom": "LC05",
       "nrc": "209842",
       "code": "V0279",
-      "students": 0,
+      "students": 2,
       "course": "TOPICOS SELECTOS EN VISION ARTIFICIAL"
     },
-    "professor": "VALDIVIA GONZALEZ, ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "87800",
-      "code": "I5948",
-      "students": 0,
-      "course": "TOPOLOGIA"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
+    "professor": "ARANGUREN NAVARRO, ITZEL NIASANDIU"
   },
   {
     "data": {
@@ -1957,7 +1736,7 @@
       "classroom": "A003",
       "nrc": "152902",
       "code": "I5948",
-      "students": 0,
+      "students": 8,
       "course": "TOPOLOGIA"
     },
     "professor": "DE LOS SANTOS BAÑOS, LUGUIS"
@@ -1970,33 +1749,7 @@
       "classroom": "A004",
       "nrc": "152902",
       "code": "I5948",
-      "students": 0,
-      "course": "TOPOLOGIA"
-    },
-    "professor": "DE LOS SANTOS BAÑOS, LUGUIS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "152902",
-      "code": "I5948",
-      "students": 0,
-      "course": "TOPOLOGIA"
-    },
-    "professor": "DE LOS SANTOS BAÑOS, LUGUIS"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "152902",
-      "code": "I5948",
-      "students": 0,
+      "students": 8,
       "course": "TOPOLOGIA"
     },
     "professor": "DE LOS SANTOS BAÑOS, LUGUIS"
@@ -2009,7 +1762,7 @@
       "classroom": "LC11",
       "nrc": "104791",
       "code": "I7294",
-      "students": 0,
+      "students": 20,
       "course": "VERIFICACION DE CIRCUITOS DIGITALES"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
@@ -2022,22 +1775,9 @@
       "classroom": "LC11",
       "nrc": "197423",
       "code": "I7294",
-      "students": 0,
+      "students": 20,
       "course": "VERIFICACION DE CIRCUITOS DIGITALES"
     },
     "professor": "CARRION CORTES, JOSE MARIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDR",
-      "classroom": "LC07",
-      "nrc": "209843",
-      "code": "V0280",
-      "students": 0,
-      "course": "VISION ARTIFICIAL"
-    },
-    "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
   }
 ]

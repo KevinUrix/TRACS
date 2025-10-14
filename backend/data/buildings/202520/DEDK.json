@@ -7,7 +7,7 @@
       "classroom": "A003",
       "nrc": "127481",
       "code": "I6133",
-      "students": 0,
+      "students": 32,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "BARROS CASTILLO, JULIO CESAR"
@@ -20,7 +20,7 @@
       "classroom": "A006",
       "nrc": "57559",
       "code": "I3294",
-      "students": 0,
+      "students": 6,
       "course": "ANALISIS DE ALIMENTOS"
     },
     "professor": "TREJO PEREA, NESTOR ALFREDO"
@@ -33,33 +33,7 @@
       "classroom": "A003",
       "nrc": "57559",
       "code": "I3294",
-      "students": 0,
-      "course": "ANALISIS DE ALIMENTOS"
-    },
-    "professor": "TREJO PEREA, NESTOR ALFREDO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "57559",
-      "code": "I3294",
-      "students": 0,
-      "course": "ANALISIS DE ALIMENTOS"
-    },
-    "professor": "TREJO PEREA, NESTOR ALFREDO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1955",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "57559",
-      "code": "I3294",
-      "students": 0,
+      "students": 6,
       "course": "ANALISIS DE ALIMENTOS"
     },
     "professor": "TREJO PEREA, NESTOR ALFREDO"
@@ -72,7 +46,7 @@
       "classroom": "D001",
       "nrc": "178078",
       "code": "IC612",
-      "students": 0,
+      "students": 33,
       "course": "ANALISIS ESTRUCTURAL II"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -85,7 +59,7 @@
       "classroom": "D001",
       "nrc": "171989",
       "code": "IC621",
-      "students": 0,
+      "students": 33,
       "course": "ANALISIS ESTRUCTURAL III"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -98,7 +72,7 @@
       "classroom": "D001",
       "nrc": "178080",
       "code": "IC621",
-      "students": 0,
+      "students": 35,
       "course": "ANALISIS ESTRUCTURAL III"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -111,7 +85,7 @@
       "classroom": "A007",
       "nrc": "38445",
       "code": "I3298",
-      "students": 0,
+      "students": 25,
       "course": "ANALISIS MICROBIOLOGICO"
     },
     "professor": "CARDONA CAMPOS, MARCELA"
@@ -124,33 +98,7 @@
       "classroom": "A007",
       "nrc": "38445",
       "code": "I3298",
-      "students": 0,
-      "course": "ANALISIS MICROBIOLOGICO"
-    },
-    "professor": "CARDONA CAMPOS, MARCELA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A007",
-      "nrc": "38445",
-      "code": "I3298",
-      "students": 0,
-      "course": "ANALISIS MICROBIOLOGICO"
-    },
-    "professor": "CARDONA CAMPOS, MARCELA"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A007",
-      "nrc": "38445",
-      "code": "I3298",
-      "students": 0,
+      "students": 25,
       "course": "ANALISIS MICROBIOLOGICO"
     },
     "professor": "CARDONA CAMPOS, MARCELA"
@@ -163,7 +111,7 @@
       "classroom": "A007",
       "nrc": "117647",
       "code": "I6171",
-      "students": 0,
+      "students": 30,
       "course": "ANALISIS MICROBIOLOGICOS"
     },
     "professor": "MUÑIZ FLORES, JORGE ADRIAN"
@@ -176,10 +124,10 @@
       "classroom": "A007",
       "nrc": "117648",
       "code": "I6171",
-      "students": 0,
+      "students": 29,
       "course": "ANALISIS MICROBIOLOGICOS"
     },
-    "professor": "TORRES VITELA, MA. REFUGIO"
+    "professor": "BUENO URQUIZA, LESLY JAZMIN"
   },
   {
     "data": {
@@ -189,7 +137,7 @@
       "classroom": "A011",
       "nrc": "65856",
       "code": "I3309",
-      "students": 0,
+      "students": 32,
       "course": "AUTOMATIZACION Y OPTIMIZACION DE PROCESOS"
     },
     "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
@@ -202,10 +150,23 @@
       "classroom": "A013",
       "nrc": "117566",
       "code": "I3309",
-      "students": 0,
+      "students": 7,
       "course": "AUTOMATIZACION Y OPTIMIZACION DE PROCESOS"
     },
     "professor": "MENDEZ ACOSTA, HUGO OSCAR"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . V .",
+      "building": "DEDK",
+      "classroom": "A013",
+      "nrc": "223431",
+      "code": "I3309",
+      "students": 30,
+      "course": "AUTOMATIZACION Y OPTIMIZACION DE PROCESOS"
+    },
+    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
   },
   {
     "data": {
@@ -215,7 +176,7 @@
       "classroom": "A011",
       "nrc": "62947",
       "code": "I3291",
-      "students": 0,
+      "students": 13,
       "course": "BALANCES DE MATERIA Y ENERGIA"
     },
     "professor": "SANCHEZ DIAZ, JUAN CARLOS"
@@ -228,7 +189,7 @@
       "classroom": "A011",
       "nrc": "42271",
       "code": "I5817",
-      "students": 0,
+      "students": 36,
       "course": "BALANCES DE MATERIA Y ENERGIA"
     },
     "professor": "SANCHEZ DIAZ, JUAN CARLOS"
@@ -241,33 +202,7 @@
       "classroom": "A011",
       "nrc": "42271",
       "code": "I5817",
-      "students": 0,
-      "course": "BALANCES DE MATERIA Y ENERGIA"
-    },
-    "professor": "SANCHEZ DIAZ, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "42271",
-      "code": "I5817",
-      "students": 0,
-      "course": "BALANCES DE MATERIA Y ENERGIA"
-    },
-    "professor": "SANCHEZ DIAZ, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "42271",
-      "code": "I5817",
-      "students": 0,
+      "students": 36,
       "course": "BALANCES DE MATERIA Y ENERGIA"
     },
     "professor": "SANCHEZ DIAZ, JUAN CARLOS"
@@ -280,7 +215,7 @@
       "classroom": "A009",
       "nrc": "104023",
       "code": "I3291",
-      "students": 0,
+      "students": 25,
       "course": "BALANCES DE MATERIA Y ENERGIA"
     },
     "professor": "MARTINEZ PRECIADO, ALMA HORTENSIA"
@@ -293,7 +228,7 @@
       "classroom": "A007",
       "nrc": "42283",
       "code": "I6125",
-      "students": 0,
+      "students": 30,
       "course": "BIOESTADISTICA"
     },
     "professor": "AYALA MIRANDA, KARLA GUADALUPE"
@@ -306,7 +241,7 @@
       "classroom": "A007",
       "nrc": "42289",
       "code": "I6156",
-      "students": 0,
+      "students": 38,
       "course": "BIOETICA Y DEONTOLOGIA"
     },
     "professor": "FRANCO TORRES, ESMERALDA MARISOL"
@@ -319,7 +254,7 @@
       "classroom": "A007",
       "nrc": "42287",
       "code": "I6156",
-      "students": 0,
+      "students": 35,
       "course": "BIOETICA Y DEONTOLOGIA"
     },
     "professor": "ALVAREZ ALVAREZ, SALVADOR ENRIQUE"
@@ -332,7 +267,7 @@
       "classroom": "A006",
       "nrc": "44198",
       "code": "I3292",
-      "students": 0,
+      "students": 33,
       "course": "BIOQUIMICA DE ALIMENTOS"
     },
     "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
@@ -345,7 +280,7 @@
       "classroom": "A003",
       "nrc": "104239",
       "code": "I7493",
-      "students": 0,
+      "students": 21,
       "course": "BIOQUIMICA ESTRUCTURAL I"
     },
     "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
@@ -358,7 +293,7 @@
       "classroom": "A007",
       "nrc": "58546",
       "code": "I6140",
-      "students": 0,
+      "students": 19,
       "course": "BIOQUIMICA I"
     },
     "professor": "ANAYA DAVALOS, ADRIANA"
@@ -371,20 +306,20 @@
       "classroom": "A007",
       "nrc": "124844",
       "code": "I6178",
-      "students": 0,
+      "students": 7,
       "course": "BIOTECNOLOGIA"
     },
     "professor": "SOLIS PACHECO, JOSUE RAYMUNDO"
   },
   {
     "data": {
-      "schedule": "1500-1555",
+      "schedule": "1600-1655",
       "days": ". . . . V .",
       "building": "DEDK",
       "classroom": "A009",
       "nrc": "38454",
       "code": "I3308",
-      "students": 0,
+      "students": 13,
       "course": "BIOTECNOLOGIA PARA LOS ALIMENTOS"
     },
     "professor": "ESCALANTE GARCIA, ZAZIL YADEL"
@@ -397,7 +332,7 @@
       "classroom": "A008",
       "nrc": "104026",
       "code": "I3308",
-      "students": 0,
+      "students": 15,
       "course": "BIOTECNOLOGIA PARA LOS ALIMENTOS"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -410,33 +345,7 @@
       "classroom": "A008",
       "nrc": "104026",
       "code": "I3308",
-      "students": 0,
-      "course": "BIOTECNOLOGIA PARA LOS ALIMENTOS"
-    },
-    "professor": "GOMEZ ANGULO, JORGE HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A008",
-      "nrc": "104026",
-      "code": "I3308",
-      "students": 0,
-      "course": "BIOTECNOLOGIA PARA LOS ALIMENTOS"
-    },
-    "professor": "GOMEZ ANGULO, JORGE HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A008",
-      "nrc": "104026",
-      "code": "I3308",
-      "students": 0,
+      "students": 15,
       "course": "BIOTECNOLOGIA PARA LOS ALIMENTOS"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -449,7 +358,7 @@
       "classroom": "D001",
       "nrc": "178082",
       "code": "IC625",
-      "students": 0,
+      "students": 31,
       "course": "CARRETERAS"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
@@ -462,33 +371,7 @@
       "classroom": "D001",
       "nrc": "178082",
       "code": "IC625",
-      "students": 0,
-      "course": "CARRETERAS"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "D001",
-      "nrc": "178082",
-      "code": "IC625",
-      "students": 0,
-      "course": "CARRETERAS"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "D001",
-      "nrc": "178082",
-      "code": "IC625",
-      "students": 0,
+      "students": 31,
       "course": "CARRETERAS"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
@@ -501,7 +384,7 @@
       "classroom": "D001",
       "nrc": "178083",
       "code": "IC625",
-      "students": 0,
+      "students": 25,
       "course": "CARRETERAS"
     },
     "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -514,7 +397,7 @@
       "classroom": "D001",
       "nrc": "152653",
       "code": "IC699",
-      "students": 0,
+      "students": 7,
       "course": "CARTOGRAFIA"
     },
     "professor": "GONZALEZ DE LUNA, CARLOS ALBERTO"
@@ -527,7 +410,7 @@
       "classroom": "A010",
       "nrc": "62959",
       "code": "I5876",
-      "students": 0,
+      "students": 14,
       "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
     },
     "professor": "ACEVEDO PARRA, HECTOR RUBEN"
@@ -540,7 +423,7 @@
       "classroom": "A009",
       "nrc": "117607",
       "code": "I5876",
-      "students": 0,
+      "students": 31,
       "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
     },
     "professor": "LOPEZ NARANJO, EDGAR JOSE"
@@ -553,7 +436,7 @@
       "classroom": "A009",
       "nrc": "166265",
       "code": "I5876",
-      "students": 0,
+      "students": 30,
       "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
     },
     "professor": "MARTIN DEL CAMPO FLORES, ALAN SALVADOR"
@@ -566,7 +449,7 @@
       "classroom": "A012",
       "nrc": "223214",
       "code": "I5876",
-      "students": 0,
+      "students": 29,
       "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
     },
     "professor": "SUAREZ MARTINEZ, REYNIER"
@@ -579,33 +462,7 @@
       "classroom": "A012",
       "nrc": "223214",
       "code": "I5876",
-      "students": 0,
-      "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
-    },
-    "professor": "SUAREZ MARTINEZ, REYNIER"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "223214",
-      "code": "I5876",
-      "students": 0,
-      "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
-    },
-    "professor": "SUAREZ MARTINEZ, REYNIER"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "223214",
-      "code": "I5876",
-      "students": 0,
+      "students": 29,
       "course": "CIENCIA E INGENIERIA DE LOS MATERIALES"
     },
     "professor": "SUAREZ MARTINEZ, REYNIER"
@@ -618,7 +475,7 @@
       "classroom": "A003",
       "nrc": "38441",
       "code": "I3295",
-      "students": 0,
+      "students": 32,
       "course": "CINETICA QUIMICA Y QUIMICA COLOIDAL"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -631,7 +488,7 @@
       "classroom": "A002",
       "nrc": "79431",
       "code": "I3295",
-      "students": 0,
+      "students": 31,
       "course": "CINETICA QUIMICA Y QUIMICA COLOIDAL"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -644,33 +501,7 @@
       "classroom": "A006",
       "nrc": "79431",
       "code": "I3295",
-      "students": 0,
-      "course": "CINETICA QUIMICA Y QUIMICA COLOIDAL"
-    },
-    "professor": "ESCOBAR HERNANDEZ, DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "79431",
-      "code": "I3295",
-      "students": 0,
-      "course": "CINETICA QUIMICA Y QUIMICA COLOIDAL"
-    },
-    "professor": "ESCOBAR HERNANDEZ, DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "79431",
-      "code": "I3295",
-      "students": 0,
+      "students": 31,
       "course": "CINETICA QUIMICA Y QUIMICA COLOIDAL"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -683,7 +514,7 @@
       "classroom": "A006",
       "nrc": "38449",
       "code": "I3302",
-      "students": 0,
+      "students": 31,
       "course": "CONSERVACION DE ALIMENTOS"
     },
     "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -696,33 +527,7 @@
       "classroom": "A006",
       "nrc": "38449",
       "code": "I3302",
-      "students": 0,
-      "course": "CONSERVACION DE ALIMENTOS"
-    },
-    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1355",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "38449",
-      "code": "I3302",
-      "students": 0,
-      "course": "CONSERVACION DE ALIMENTOS"
-    },
-    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "38449",
-      "code": "I3302",
-      "students": 0,
+      "students": 31,
       "course": "CONSERVACION DE ALIMENTOS"
     },
     "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -735,7 +540,7 @@
       "classroom": "A001",
       "nrc": "89749",
       "code": "I3302",
-      "students": 0,
+      "students": 34,
       "course": "CONSERVACION DE ALIMENTOS"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -748,33 +553,7 @@
       "classroom": "A001",
       "nrc": "89749",
       "code": "I3302",
-      "students": 0,
-      "course": "CONSERVACION DE ALIMENTOS"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "89749",
-      "code": "I3302",
-      "students": 0,
-      "course": "CONSERVACION DE ALIMENTOS"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1755",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "89749",
-      "code": "I3302",
-      "students": 0,
+      "students": 34,
       "course": "CONSERVACION DE ALIMENTOS"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -787,7 +566,7 @@
       "classroom": "D001",
       "nrc": "224379",
       "code": "V2368",
-      "students": 0,
+      "students": 6,
       "course": "CONSERVACION  Y GESTION DE VIAS TERRESTRES"
     },
     "professor": "LIMON COVARRUBIAS, PEDRO"
@@ -800,33 +579,7 @@
       "classroom": "D001",
       "nrc": "224379",
       "code": "V2368",
-      "students": 0,
-      "course": "CONSERVACION  Y GESTION DE VIAS TERRESTRES"
-    },
-    "professor": "LIMON COVARRUBIAS, PEDRO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "D001",
-      "nrc": "224379",
-      "code": "V2368",
-      "students": 0,
-      "course": "CONSERVACION  Y GESTION DE VIAS TERRESTRES"
-    },
-    "professor": "LIMON COVARRUBIAS, PEDRO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . . . S",
-      "building": "DEDK",
-      "classroom": "D001",
-      "nrc": "224379",
-      "code": "V2368",
-      "students": 0,
+      "students": 6,
       "course": "CONSERVACION  Y GESTION DE VIAS TERRESTRES"
     },
     "professor": "LIMON COVARRUBIAS, PEDRO"
@@ -839,7 +592,7 @@
       "classroom": "A008",
       "nrc": "188666",
       "code": "I5844",
-      "students": 0,
+      "students": 34,
       "course": "CONTROL DE PROCESOS"
     },
     "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
@@ -852,7 +605,7 @@
       "classroom": "A007",
       "nrc": "223213",
       "code": "I6198",
-      "students": 0,
+      "students": 32,
       "course": "COSMETOLOGIA"
     },
     "professor": "REYNAGA DELGADO, EIRE"
@@ -865,7 +618,7 @@
       "classroom": "A003",
       "nrc": "127727",
       "code": "I7522",
-      "students": 0,
+      "students": 13,
       "course": "DEONTOLOGIA QUIMICA"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -878,33 +631,7 @@
       "classroom": "A003",
       "nrc": "127727",
       "code": "I7522",
-      "students": 0,
-      "course": "DEONTOLOGIA QUIMICA"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "127727",
-      "code": "I7522",
-      "students": 0,
-      "course": "DEONTOLOGIA QUIMICA"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "127727",
-      "code": "I7522",
-      "students": 0,
+      "students": 13,
       "course": "DEONTOLOGIA QUIMICA"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -917,7 +644,7 @@
       "classroom": "A010",
       "nrc": "166320",
       "code": "I5840",
-      "students": 0,
+      "students": 37,
       "course": "DISEÑO DE EQUIPO DE PROCESOS QUIMICOS"
     },
     "professor": "ZEPEDA SAHAGUN, CARLOS"
@@ -930,7 +657,7 @@
       "classroom": "D001",
       "nrc": "183121",
       "code": "IC627",
-      "students": 0,
+      "students": 34,
       "course": "DISEÑO DE ESTRUCTURAS DE ACERO I"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -943,7 +670,7 @@
       "classroom": "D001",
       "nrc": "178102",
       "code": "IC624",
-      "students": 0,
+      "students": 37,
       "course": "DISEÑO DE ESTRUCTURAS DE CONCRETO I"
     },
     "professor": "CERMEÑO GARCIA, JULIO CESAR"
@@ -956,7 +683,7 @@
       "classroom": "A005",
       "nrc": "145671",
       "code": "I5856",
-      "students": 0,
+      "students": 21,
       "course": "ELECTROQUIMICA I"
     },
     "professor": "MARTINEZ MARTINEZ, FERNANDO"
@@ -969,7 +696,7 @@
       "classroom": "A007",
       "nrc": "38457",
       "code": "I3336",
-      "students": 0,
+      "students": 25,
       "course": "ENZIMOLOGIA"
     },
     "professor": "SOLIS PACHECO, JOSUE RAYMUNDO"
@@ -982,7 +709,7 @@
       "classroom": "A002",
       "nrc": "63390",
       "code": "I6925",
-      "students": 0,
+      "students": 34,
       "course": "ESTRUCTURA MOLECULAR"
     },
     "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
@@ -995,7 +722,7 @@
       "classroom": "A012",
       "nrc": "65859",
       "code": "I3315",
-      "students": 0,
+      "students": 26,
       "course": "ETICA Y BIOSEGURIDAD"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -1008,33 +735,7 @@
       "classroom": "A012",
       "nrc": "65859",
       "code": "I3315",
-      "students": 0,
-      "course": "ETICA Y BIOSEGURIDAD"
-    },
-    "professor": "GOMEZ ANGULO, JORGE HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "65859",
-      "code": "I3315",
-      "students": 0,
-      "course": "ETICA Y BIOSEGURIDAD"
-    },
-    "professor": "GOMEZ ANGULO, JORGE HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "65859",
-      "code": "I3315",
-      "students": 0,
+      "students": 26,
       "course": "ETICA Y BIOSEGURIDAD"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -1047,7 +748,7 @@
       "classroom": "A010",
       "nrc": "104027",
       "code": "I3315",
-      "students": 0,
+      "students": 25,
       "course": "ETICA Y BIOSEGURIDAD"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -1060,33 +761,7 @@
       "classroom": "A010",
       "nrc": "104027",
       "code": "I3315",
-      "students": 0,
-      "course": "ETICA Y BIOSEGURIDAD"
-    },
-    "professor": "GOMEZ ANGULO, JORGE HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "104027",
-      "code": "I3315",
-      "students": 0,
-      "course": "ETICA Y BIOSEGURIDAD"
-    },
-    "professor": "GOMEZ ANGULO, JORGE HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "104027",
-      "code": "I3315",
-      "students": 0,
+      "students": 25,
       "course": "ETICA Y BIOSEGURIDAD"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -1099,7 +774,7 @@
       "classroom": "A001",
       "nrc": "117540",
       "code": "I7558",
-      "students": 0,
+      "students": 28,
       "course": "EVALUACION DE RIESGOS"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -1112,33 +787,7 @@
       "classroom": "A001",
       "nrc": "117540",
       "code": "I7558",
-      "students": 0,
-      "course": "EVALUACION DE RIESGOS"
-    },
-    "professor": "TREVIÑO ORTIZ, RAQUEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "117540",
-      "code": "I7558",
-      "students": 0,
-      "course": "EVALUACION DE RIESGOS"
-    },
-    "professor": "TREVIÑO ORTIZ, RAQUEL"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "117540",
-      "code": "I7558",
-      "students": 0,
+      "students": 28,
       "course": "EVALUACION DE RIESGOS"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -1151,7 +800,7 @@
       "classroom": "A007",
       "nrc": "92363",
       "code": "I6147",
-      "students": 0,
+      "students": 30,
       "course": "FARMACOGNOSIA"
     },
     "professor": "DELGADO SAUCEDO, JORGE IVAN"
@@ -1164,23 +813,10 @@
       "classroom": "A011",
       "nrc": "160032",
       "code": "I6486",
-      "students": 0,
+      "students": 12,
       "course": "FILOSOFIA DE LA CIENCIA"
     },
     "professor": "CRUZ BARBA, LUIS EMILIO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "38448",
-      "code": "I3301",
-      "students": 0,
-      "course": "FISICOQUIMICA DE LOS ALIMENTOS"
-    },
-    "professor": "ESCOBAR HERNANDEZ, DANIEL"
   },
   {
     "data": {
@@ -1190,7 +826,7 @@
       "classroom": "A006",
       "nrc": "92176",
       "code": "I3301",
-      "students": 0,
+      "students": 30,
       "course": "FISICOQUIMICA DE LOS ALIMENTOS"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -1198,15 +834,28 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". . . J . .",
+      "days": ". M . J . .",
       "building": "DEDK",
       "classroom": "A002",
       "nrc": "223215",
       "code": "I3301",
-      "students": 0,
+      "students": 20,
       "course": "FISICOQUIMICA DE LOS ALIMENTOS"
     },
-    "professor": "CORTES ORTEGA, JORGE ALBERTO"
+    "professor": "FLORES MEJIA, JORGE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A005",
+      "nrc": "79473",
+      "code": "I6928",
+      "students": 18,
+      "course": "FISICOQUIMICA I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
   },
   {
     "data": {
@@ -1216,7 +865,7 @@
       "classroom": "A001",
       "nrc": "42381",
       "code": "I6128",
-      "students": 0,
+      "students": 36,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -1229,10 +878,23 @@
       "classroom": "A004",
       "nrc": "104435",
       "code": "I6128",
-      "students": 0,
+      "students": 29,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "MUÑOZ GARCIA, RUBEN OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "123243",
+      "code": "I6128",
+      "students": 25,
+      "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
   },
   {
     "data": {
@@ -1242,7 +904,7 @@
       "classroom": "A006",
       "nrc": "127431",
       "code": "I6128",
-      "students": 0,
+      "students": 22,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "ESCALANTE VAZQUEZ, JOSE INES"
@@ -1255,7 +917,7 @@
       "classroom": "A004",
       "nrc": "63956",
       "code": "I5813",
-      "students": 0,
+      "students": 23,
       "course": "FISICOQUIMICA PARA INGENIEROS II"
     },
     "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -1268,7 +930,7 @@
       "classroom": "A003",
       "nrc": "42387",
       "code": "I5812",
-      "students": 0,
+      "students": 27,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "BARCENA SOTO, MAXIMILIANO"
@@ -1281,7 +943,7 @@
       "classroom": "A001",
       "nrc": "152793",
       "code": "I5812",
-      "students": 0,
+      "students": 28,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "MUÑOZ GARCIA, RUBEN OCTAVIO"
@@ -1294,7 +956,7 @@
       "classroom": "A007",
       "nrc": "42391",
       "code": "I6137",
-      "students": 0,
+      "students": 29,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "BANCALARI ORGANISTA, CARLOS"
@@ -1307,7 +969,7 @@
       "classroom": "A007",
       "nrc": "58213",
       "code": "I6137",
-      "students": 0,
+      "students": 30,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "BANCALARI ORGANISTA, CARLOS"
@@ -1320,7 +982,7 @@
       "classroom": "A007",
       "nrc": "124866",
       "code": "I6137",
-      "students": 0,
+      "students": 34,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "MEDEROS TORRES, CLAUDIA VERONICA"
@@ -1333,7 +995,7 @@
       "classroom": "A004",
       "nrc": "79477",
       "code": "I6926",
-      "students": 0,
+      "students": 37,
       "course": "FUNDAMENTOS DE ESPECTROSCOPIA"
     },
     "professor": "ZUÑIGA GUTIERREZ, BERNARDO ANTONIO"
@@ -1346,7 +1008,7 @@
       "classroom": "A005",
       "nrc": "223347",
       "code": "V3846",
-      "students": 0,
+      "students": 23,
       "course": "FUNDAMENTOS DE QUIMICA"
     },
     "professor": "RODRIGUEZ BETANCOURTT, VERONICA MARIA"
@@ -1359,7 +1021,7 @@
       "classroom": "A006",
       "nrc": "158548",
       "code": "IF873",
-      "students": 0,
+      "students": 32,
       "course": "FUNDAMENTOS DE QUIMICA"
     },
     "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -1372,7 +1034,7 @@
       "classroom": "A005",
       "nrc": "158549",
       "code": "IF873",
-      "students": 0,
+      "students": 22,
       "course": "FUNDAMENTOS DE QUIMICA"
     },
     "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
@@ -1385,7 +1047,7 @@
       "classroom": "D001",
       "nrc": "213197",
       "code": "V2353",
-      "students": 0,
+      "students": 1,
       "course": "GEOTECNIA"
     },
     "professor": "GALAVIZ GONZALEZ, JOSE ROBERTO"
@@ -1398,7 +1060,7 @@
       "classroom": "A007",
       "nrc": "225478",
       "code": "V2136",
-      "students": 0,
+      "students": 7,
       "course": "GERENCIA Y ADMINISTRACION FARMACEUTICA"
     },
     "professor": "VAZQUEZ RODRIGUEZ, LEONARDO"
@@ -1411,7 +1073,7 @@
       "classroom": "A012",
       "nrc": "104059",
       "code": "I6484",
-      "students": 0,
+      "students": 30,
       "course": "HISTORIA DE LA TECNOLOGIA"
     },
     "professor": "MARTINEZ CARDENAS, CRISTINA"
@@ -1424,33 +1086,7 @@
       "classroom": "A012",
       "nrc": "104059",
       "code": "I6484",
-      "students": 0,
-      "course": "HISTORIA DE LA TECNOLOGIA"
-    },
-    "professor": "MARTINEZ CARDENAS, CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "104059",
-      "code": "I6484",
-      "students": 0,
-      "course": "HISTORIA DE LA TECNOLOGIA"
-    },
-    "professor": "MARTINEZ CARDENAS, CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "104059",
-      "code": "I6484",
-      "students": 0,
+      "students": 30,
       "course": "HISTORIA DE LA TECNOLOGIA"
     },
     "professor": "MARTINEZ CARDENAS, CRISTINA"
@@ -1463,7 +1099,7 @@
       "classroom": "A011",
       "nrc": "153938",
       "code": "I5868",
-      "students": 0,
+      "students": 5,
       "course": "INGENIERIA AMBIENTAL"
     },
     "professor": "GOMEZ HERMOSILLO, CESAR MIGUEL"
@@ -1476,7 +1112,7 @@
       "classroom": "A007",
       "nrc": "16756",
       "code": "I3303",
-      "students": 0,
+      "students": 35,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -1502,7 +1138,7 @@
       "classroom": "A009",
       "nrc": "160033",
       "code": "I5847",
-      "students": 0,
+      "students": 34,
       "course": "INGENIERIA DE SERVICIOS"
     },
     "professor": "ZEPEDA SAHAGUN, CARLOS"
@@ -1515,7 +1151,7 @@
       "classroom": "A012",
       "nrc": "178766",
       "code": "I5847",
-      "students": 0,
+      "students": 34,
       "course": "INGENIERIA DE SERVICIOS"
     },
     "professor": "HERNANDEZ GUTIERREZ, ARTURO"
@@ -1528,7 +1164,7 @@
       "classroom": "A010",
       "nrc": "104025",
       "code": "I3307",
-      "students": 0,
+      "students": 14,
       "course": "INGENIERIA DE SISTEMAS BIOTECNOLOGICOS"
     },
     "professor": "ESCALANTE GARCIA, ZAZIL YADEL"
@@ -1541,7 +1177,7 @@
       "classroom": "D001",
       "nrc": "181913",
       "code": "IC630",
-      "students": 0,
+      "students": 32,
       "course": "INGENIERIA SISMICA"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -1554,7 +1190,7 @@
       "classroom": "LROB",
       "nrc": "58781",
       "code": "I7424",
-      "students": 0,
+      "students": 33,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
@@ -1567,7 +1203,7 @@
       "classroom": "LROB",
       "nrc": "58230",
       "code": "I7424",
-      "students": 0,
+      "students": 32,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
@@ -1580,7 +1216,7 @@
       "classroom": "LROB",
       "nrc": "58505",
       "code": "I7424",
-      "students": 0,
+      "students": 32,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "CRUZ HERNANDEZ, ALEJANDRA"
@@ -1593,7 +1229,7 @@
       "classroom": "LROB",
       "nrc": "58321",
       "code": "I7424",
-      "students": 0,
+      "students": 34,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
@@ -1606,7 +1242,7 @@
       "classroom": "LROB",
       "nrc": "58231",
       "code": "I7424",
-      "students": 0,
+      "students": 32,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "CRUZ HERNANDEZ, ALEJANDRA"
@@ -1619,7 +1255,7 @@
       "classroom": "LROB",
       "nrc": "154497",
       "code": "I7424",
-      "students": 0,
+      "students": 18,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "HUERTA MARCIAL, SILVIA TERESA"
@@ -1632,49 +1268,62 @@
       "classroom": "LROB",
       "nrc": "154498",
       "code": "I7424",
-      "students": 0,
+      "students": 32,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
       "building": "DEDK",
-      "classroom": "LROB",
+      "classroom": "",
       "nrc": "154498",
       "code": "I7424",
-      "students": 0,
+      "students": 32,
       "course": "INGENIERIA TERMODINAMICA"
     },
     "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDK",
+      "classroom": "A004",
+      "nrc": "216211",
+      "code": "I3297",
+      "students": 28,
+      "course": "INOCUIDAD"
+    },
+    "professor": "PEREZ MONTAÑO, JULIA AURORA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDK",
+      "classroom": "A004",
+      "nrc": "216211",
+      "code": "I3297",
+      "students": 28,
+      "course": "INOCUIDAD"
+    },
+    "professor": "PEREZ MONTAÑO, JULIA AURORA"
   },
   {
     "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDK",
-      "classroom": "A004",
+      "classroom": "A005",
       "nrc": "104255",
       "code": "I7509",
-      "students": 0,
+      "students": 30,
       "course": "INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "104256",
-      "code": "I7509",
-      "students": 0,
-      "course": "INSTRUMENTACION QUIMICA ANALITICA I"
-    },
-    "professor": "GALLEGOS CASTILLO, SAUL"
   },
   {
     "data": {
@@ -1684,7 +1333,7 @@
       "classroom": "A010",
       "nrc": "146211",
       "code": "I5860",
-      "students": 0,
+      "students": 21,
       "course": "INTRODUCCION A LA BIOINGENIERIA"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -1697,7 +1346,7 @@
       "classroom": "A009",
       "nrc": "38434",
       "code": "I3289",
-      "students": 0,
+      "students": 23,
       "course": "INTRODUCCION A LA BIOTECNOLOGIA"
     },
     "professor": "SNELL CASTRO, RAUL"
@@ -1707,10 +1356,10 @@
       "schedule": "1700-1855",
       "days": ". . I . V .",
       "building": "DEDK",
-      "classroom": "A009",
+      "classroom": "A008",
       "nrc": "94772",
       "code": "I5828",
-      "students": 0,
+      "students": 23,
       "course": "INTRODUCCION A LA BIOTECNOLOGIA"
     },
     "professor": "ESCALANTE GARCIA, ZAZIL YADEL"
@@ -1723,7 +1372,7 @@
       "classroom": "A008",
       "nrc": "153931",
       "code": "I3289",
-      "students": 0,
+      "students": 26,
       "course": "INTRODUCCION A LA BIOTECNOLOGIA"
     },
     "professor": "SNELL CASTRO, RAUL"
@@ -1736,7 +1385,7 @@
       "classroom": "A008",
       "nrc": "117584",
       "code": "I5828",
-      "students": 0,
+      "students": 33,
       "course": "INTRODUCCION A LA BIOTECNOLOGIA"
     },
     "professor": "GOMEZ ANGULO, JORGE HECTOR"
@@ -1749,7 +1398,7 @@
       "classroom": "A010",
       "nrc": "126009",
       "code": "I5858",
-      "students": 0,
+      "students": 8,
       "course": "INTRODUCCION A LA CIENCIA Y TECNOLOGIA DE POLIMEROS"
     },
     "professor": "JASSO GASTINEL, CARLOS FEDERICO"
@@ -1762,7 +1411,7 @@
       "classroom": "A004",
       "nrc": "137216",
       "code": "I7542",
-      "students": 0,
+      "students": 31,
       "course": "INTRODUCCION A LA GEOQUIMICA"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -1775,7 +1424,7 @@
       "classroom": "A013",
       "nrc": "42411",
       "code": "I5816",
-      "students": 0,
+      "students": 36,
       "course": "INTRODUCCION A LA INGENIERIA AMBIENTAL"
     },
     "professor": "ROBLEDO ORTIZ, JORGE RAMON"
@@ -1788,7 +1437,7 @@
       "classroom": "A010",
       "nrc": "166012",
       "code": "I5855",
-      "students": 0,
+      "students": 19,
       "course": "INTRODUCCION A LA PETROQUIMICA"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -1801,7 +1450,7 @@
       "classroom": "A011",
       "nrc": "126011",
       "code": "I5859",
-      "students": 0,
+      "students": 35,
       "course": "INTRODUCCION A LA TECNOLOGIA DE ALIMENTOS"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -1814,7 +1463,7 @@
       "classroom": "A006",
       "nrc": "117542",
       "code": "I7553",
-      "students": 0,
+      "students": 8,
       "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1827,33 +1476,7 @@
       "classroom": "A006",
       "nrc": "117542",
       "code": "I7553",
-      "students": 0,
-      "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "117542",
-      "code": "I7553",
-      "students": 0,
-      "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "117542",
-      "code": "I7553",
-      "students": 0,
+      "students": 8,
       "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1866,7 +1489,7 @@
       "classroom": "A005",
       "nrc": "63961",
       "code": "I5822",
-      "students": 0,
+      "students": 33,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1879,7 +1502,20 @@
       "classroom": "A003",
       "nrc": "79440",
       "code": "I5822",
-      "students": 0,
+      "students": 27,
+      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
+    },
+    "professor": "RIVAS LOAIZA, JUAN ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A005",
+      "nrc": "79440",
+      "code": "I5822",
+      "students": 27,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -1892,7 +1528,7 @@
       "classroom": "A006",
       "nrc": "79441",
       "code": "I5822",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1905,7 +1541,7 @@
       "classroom": "A001",
       "nrc": "79493",
       "code": "I7507",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE QUIMICA ANALITICA I"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -1918,75 +1554,36 @@
       "classroom": "A003",
       "nrc": "83662",
       "code": "I7508",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA ANALITICA II"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
   },
   {
     "data": {
-      "schedule": "1300-1355",
-      "days": ". . . J . .",
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
       "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "90585",
-      "code": "I7508",
-      "students": 0,
-      "course": "LABORATORIO DE QUIMICA ANALITICA II"
+      "classroom": "A005",
+      "nrc": "117496",
+      "code": "I7507",
+      "students": 18,
+      "course": "LABORATORIO DE QUIMICA ANALITICA I"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
   },
   {
     "data": {
       "schedule": "1100-1255",
-      "days": "L . . . . .",
+      "days": ". . I . . .",
       "building": "DEDK",
       "classroom": "A005",
       "nrc": "117496",
       "code": "I7507",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE QUIMICA ANALITICA I"
     },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "117496",
-      "code": "I7507",
-      "students": 0,
-      "course": "LABORATORIO DE QUIMICA ANALITICA I"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "117496",
-      "code": "I7507",
-      "students": 0,
-      "course": "LABORATORIO DE QUIMICA ANALITICA I"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "117496",
-      "code": "I7507",
-      "students": 0,
-      "course": "LABORATORIO DE QUIMICA ANALITICA I"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
+    "professor": "GUDIÑO GUZMAN, BERNARDO"
   },
   {
     "data": {
@@ -1996,7 +1593,7 @@
       "classroom": "A010",
       "nrc": "86101",
       "code": "I3330",
-      "students": 0,
+      "students": 26,
       "course": "MANEJO DE RESIDUOS"
     },
     "professor": "ARANDA JARAMILLO, BRENDA"
@@ -2009,33 +1606,7 @@
       "classroom": "A010",
       "nrc": "86101",
       "code": "I3330",
-      "students": 0,
-      "course": "MANEJO DE RESIDUOS"
-    },
-    "professor": "ARANDA JARAMILLO, BRENDA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "86101",
-      "code": "I3330",
-      "students": 0,
-      "course": "MANEJO DE RESIDUOS"
-    },
-    "professor": "ARANDA JARAMILLO, BRENDA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "86101",
-      "code": "I3330",
-      "students": 0,
+      "students": 26,
       "course": "MANEJO DE RESIDUOS"
     },
     "professor": "ARANDA JARAMILLO, BRENDA"
@@ -2048,7 +1619,7 @@
       "classroom": "A008",
       "nrc": "78706",
       "code": "I5826",
-      "students": 0,
+      "students": 36,
       "course": "MANEJO Y SEPARACION MECANICA DE MATERIALES"
     },
     "professor": "PEREZ LEAÑO, JAIME RUBEN"
@@ -2074,7 +1645,7 @@
       "classroom": "A010",
       "nrc": "104034",
       "code": "I5823",
-      "students": 0,
+      "students": 35,
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
     "professor": "SILVA JARA, JORGE MANUEL"
@@ -2087,7 +1658,7 @@
       "classroom": "A008",
       "nrc": "42457",
       "code": "I5818",
-      "students": 0,
+      "students": 18,
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA I"
     },
     "professor": "JIMENEZ AMEZCUA, ROSA MARIA"
@@ -2100,7 +1671,7 @@
       "classroom": "A013",
       "nrc": "74719",
       "code": "I5818",
-      "students": 0,
+      "students": 35,
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA I"
     },
     "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
@@ -2113,7 +1684,7 @@
       "classroom": "A012",
       "nrc": "117574",
       "code": "I5823",
-      "students": 0,
+      "students": 38,
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
     "professor": "MARTINEZ RUVALCABA, AGUSTIN"
@@ -2126,7 +1697,7 @@
       "classroom": "A013",
       "nrc": "178769",
       "code": "I5823",
-      "students": 0,
+      "students": 35,
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
     "professor": "GARCIA SANDOVAL, JUAN PAULO"
@@ -2139,33 +1710,7 @@
       "classroom": "A008",
       "nrc": "178769",
       "code": "I5823",
-      "students": 0,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
-    },
-    "professor": "GARCIA SANDOVAL, JUAN PAULO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A013",
-      "nrc": "178769",
-      "code": "I5823",
-      "students": 0,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
-    },
-    "professor": "GARCIA SANDOVAL, JUAN PAULO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A008",
-      "nrc": "178769",
-      "code": "I5823",
-      "students": 0,
+      "students": 35,
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
     "professor": "GARCIA SANDOVAL, JUAN PAULO"
@@ -2178,7 +1723,7 @@
       "classroom": "A008",
       "nrc": "95272",
       "code": "I5824",
-      "students": 0,
+      "students": 30,
       "course": "MECANICA DE FLUIDOS"
     },
     "professor": "JIMENEZ AMEZCUA, ROSA MARIA"
@@ -2191,7 +1736,7 @@
       "classroom": "A008",
       "nrc": "78658",
       "code": "I3296",
-      "students": 0,
+      "students": 26,
       "course": "MECANICA DE FLUIDOS"
     },
     "professor": "VAZQUEZ LEPE, MILTON OSWALDO"
@@ -2204,7 +1749,7 @@
       "classroom": "A012",
       "nrc": "104036",
       "code": "I5824",
-      "students": 0,
+      "students": 30,
       "course": "MECANICA DE FLUIDOS"
     },
     "professor": "SUAREZ MARTINEZ, REYNIER"
@@ -2217,7 +1762,7 @@
       "classroom": "LROB",
       "nrc": "178916",
       "code": "I7434",
-      "students": 0,
+      "students": 29,
       "course": "MECANICA DE MATERIALES"
     },
     "professor": "ALBORES MONTOYA, ELIASIN ALEJANDRO"
@@ -2230,7 +1775,7 @@
       "classroom": "D001",
       "nrc": "145210",
       "code": "IC594",
-      "students": 0,
+      "students": 32,
       "course": "MECANICA DE SOLIDOS I"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -2243,7 +1788,7 @@
       "classroom": "D001",
       "nrc": "152634",
       "code": "IC599",
-      "students": 0,
+      "students": 38,
       "course": "MECANICA DE SOLIDOS II"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -2256,7 +1801,7 @@
       "classroom": "D001",
       "nrc": "152635",
       "code": "IC599",
-      "students": 0,
+      "students": 39,
       "course": "MECANICA DE SOLIDOS II"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -2269,7 +1814,7 @@
       "classroom": "D001",
       "nrc": "152636",
       "code": "IC599",
-      "students": 0,
+      "students": 18,
       "course": "MECANICA DE SOLIDOS II"
     },
     "professor": "CERMEÑO GARCIA, JULIO CESAR"
@@ -2282,7 +1827,7 @@
       "classroom": "A007",
       "nrc": "42471",
       "code": "I6157",
-      "students": 0,
+      "students": 38,
       "course": "METODOLOGIA DE LA INVESTIGACION"
     },
     "professor": "MEDINA DIAZ, EUNICE"
@@ -2295,7 +1840,7 @@
       "classroom": "A007",
       "nrc": "76902",
       "code": "I6157",
-      "students": 0,
+      "students": 34,
       "course": "METODOLOGIA DE LA INVESTIGACION"
     },
     "professor": "BECERRIL SERNA, LESLIE"
@@ -2308,7 +1853,7 @@
       "classroom": "A001",
       "nrc": "38451",
       "code": "I3304",
-      "students": 0,
+      "students": 17,
       "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -2321,7 +1866,7 @@
       "classroom": "A001",
       "nrc": "104230",
       "code": "I3304",
-      "students": 0,
+      "students": 20,
       "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -2334,49 +1879,10 @@
       "classroom": "A004",
       "nrc": "104230",
       "code": "I3304",
-      "students": 0,
+      "students": 20,
       "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "104230",
-      "code": "I3304",
-      "students": 0,
-      "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "104230",
-      "code": "I3304",
-      "students": 0,
-      "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
-    },
-    "professor": "LUNA DIAZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "200180",
-      "code": "I3304",
-      "students": 0,
-      "course": "METODOS MODERNOS DE ANALISIS QUIMICO"
-    },
-    "professor": "TREVIÑO ORTIZ, RAQUEL"
   },
   {
     "data": {
@@ -2386,7 +1892,7 @@
       "classroom": "A009",
       "nrc": "104056",
       "code": "I5842",
-      "students": 0,
+      "students": 37,
       "course": "MODELADO DINAMICO Y OPTIMIZACION DE PROCESOS"
     },
     "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
@@ -2399,10 +1905,49 @@
       "classroom": "A013",
       "nrc": "125993",
       "code": "I5842",
-      "students": 0,
+      "students": 38,
       "course": "MODELADO DINAMICO Y OPTIMIZACION DE PROCESOS"
     },
     "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A005",
+      "nrc": "127734",
+      "code": "I7480",
+      "students": 25,
+      "course": "MODELADO MOLECULAR"
+    },
+    "professor": "DIAMANTI, AIKATERINI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A013",
+      "nrc": "84269",
+      "code": "I5850",
+      "students": 27,
+      "course": "MODULO DE AVANCE DEL PROYECTO II"
+    },
+    "professor": "SANCHEZ GARCIA, JUAN JOSE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A011",
+      "nrc": "96114",
+      "code": "I5850",
+      "students": 28,
+      "course": "MODULO DE AVANCE DEL PROYECTO II"
+    },
+    "professor": "SANCHEZ GARCIA, JUAN JOSE"
   },
   {
     "data": {
@@ -2412,7 +1957,7 @@
       "classroom": "A012",
       "nrc": "42518",
       "code": "I5849",
-      "students": 0,
+      "students": 28,
       "course": "MODULO DE AVANCE DEL PROYECTO I"
     },
     "professor": "SANCHEZ GARCIA, JUAN JOSE"
@@ -2425,7 +1970,7 @@
       "classroom": "A009",
       "nrc": "139208",
       "code": "I5852",
-      "students": 0,
+      "students": 36,
       "course": "MODULO DE AVANCE DEL PROYECTO IV"
     },
     "professor": "RIVERA GALVEZ, FRANCISCO JAVIER"
@@ -2438,36 +1983,10 @@
       "classroom": "A008",
       "nrc": "117606",
       "code": "I5851",
-      "students": 0,
+      "students": 22,
       "course": "MODULO DE AVANCE DEL PROYECTO III"
     },
     "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "96114",
-      "code": "I5850",
-      "students": 0,
-      "course": "MODULO DE AVANCE DEL PROYECTO II"
-    },
-    "professor": "SANCHEZ GARCIA, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "210955",
-      "code": "I5852",
-      "students": 0,
-      "course": "MODULO DE AVANCE DEL PROYECTO IV"
-    },
-    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
   },
   {
     "data": {
@@ -2477,10 +1996,23 @@
       "classroom": "A013",
       "nrc": "178771",
       "code": "I5851",
-      "students": 0,
+      "students": 36,
       "course": "MODULO DE AVANCE DEL PROYECTO III"
     },
     "professor": "HERRERA GONZALEZ, MARIA AZUCENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A010",
+      "nrc": "210955",
+      "code": "I5852",
+      "students": 36,
+      "course": "MODULO DE AVANCE DEL PROYECTO IV"
+    },
+    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
   },
   {
     "data": {
@@ -2490,7 +2022,7 @@
       "classroom": "A010",
       "nrc": "160203",
       "code": "I5849",
-      "students": 0,
+      "students": 32,
       "course": "MODULO DE AVANCE DEL PROYECTO I"
     },
     "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
@@ -2503,7 +2035,7 @@
       "classroom": "A007",
       "nrc": "42523",
       "code": "I6135",
-      "students": 0,
+      "students": 30,
       "course": "MORFOLOGIA"
     },
     "professor": "BANCALARI ORGANISTA, CARLOS"
@@ -2516,33 +2048,7 @@
       "classroom": "A007",
       "nrc": "42523",
       "code": "I6135",
-      "students": 0,
-      "course": "MORFOLOGIA"
-    },
-    "professor": "BANCALARI ORGANISTA, CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDK",
-      "classroom": "A007",
-      "nrc": "42523",
-      "code": "I6135",
-      "students": 0,
-      "course": "MORFOLOGIA"
-    },
-    "professor": "BANCALARI ORGANISTA, CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A007",
-      "nrc": "42523",
-      "code": "I6135",
-      "students": 0,
+      "students": 30,
       "course": "MORFOLOGIA"
     },
     "professor": "BANCALARI ORGANISTA, CARLOS"
@@ -2555,7 +2061,7 @@
       "classroom": "A007",
       "nrc": "225492",
       "code": "V2131",
-      "students": 0,
+      "students": 6,
       "course": "NANOTECNOLOGIA FARMACEUTICA"
     },
     "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -2568,7 +2074,7 @@
       "classroom": "A012",
       "nrc": "104032",
       "code": "I3335",
-      "students": 0,
+      "students": 13,
       "course": "NUEVAS TECNOLOGIAS PARA ALIMENTOS"
     },
     "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
@@ -2581,33 +2087,7 @@
       "classroom": "A012",
       "nrc": "104032",
       "code": "I3335",
-      "students": 0,
-      "course": "NUEVAS TECNOLOGIAS PARA ALIMENTOS"
-    },
-    "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "104032",
-      "code": "I3335",
-      "students": 0,
-      "course": "NUEVAS TECNOLOGIAS PARA ALIMENTOS"
-    },
-    "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "104032",
-      "code": "I3335",
-      "students": 0,
+      "students": 13,
       "course": "NUEVAS TECNOLOGIAS PARA ALIMENTOS"
     },
     "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
@@ -2620,7 +2100,7 @@
       "classroom": "A010",
       "nrc": "38452",
       "code": "I3305",
-      "students": 0,
+      "students": 22,
       "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
     },
     "professor": "PEREZ LEAÑO, JAIME RUBEN"
@@ -2633,33 +2113,7 @@
       "classroom": "A010",
       "nrc": "38452",
       "code": "I3305",
-      "students": 0,
-      "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
-    },
-    "professor": "PEREZ LEAÑO, JAIME RUBEN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "38452",
-      "code": "I3305",
-      "students": 0,
-      "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
-    },
-    "professor": "PEREZ LEAÑO, JAIME RUBEN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A010",
-      "nrc": "38452",
-      "code": "I3305",
-      "students": 0,
+      "students": 22,
       "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
     },
     "professor": "PEREZ LEAÑO, JAIME RUBEN"
@@ -2672,7 +2126,7 @@
       "classroom": "A013",
       "nrc": "104024",
       "code": "I3305",
-      "students": 0,
+      "students": 18,
       "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
     },
     "professor": "PEREZ LEAÑO, JAIME RUBEN"
@@ -2685,33 +2139,7 @@
       "classroom": "A013",
       "nrc": "104024",
       "code": "I3305",
-      "students": 0,
-      "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
-    },
-    "professor": "PEREZ LEAÑO, JAIME RUBEN"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A013",
-      "nrc": "104024",
-      "code": "I3305",
-      "students": 0,
-      "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
-    },
-    "professor": "PEREZ LEAÑO, JAIME RUBEN"
-  },
-  {
-    "data": {
-      "schedule": "1500-1755",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A013",
-      "nrc": "104024",
-      "code": "I3305",
-      "students": 0,
+      "students": 18,
       "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
     },
     "professor": "PEREZ LEAÑO, JAIME RUBEN"
@@ -2724,10 +2152,23 @@
       "classroom": "A009",
       "nrc": "171733",
       "code": "I3305",
-      "students": 0,
+      "students": 8,
       "course": "OPERACIONES UNITARIAS DE LOS ALIMENTOS"
     },
     "professor": "MEZA GARCIA, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDK",
+      "classroom": "A005",
+      "nrc": "192673",
+      "code": "IL647",
+      "students": 5,
+      "course": "PREPARACION Y CARACTERIZACION DE MATERIALES EN ESTADO SOLIDO"
+    },
+    "professor": "ROSAS SANCHEZ, ALFREDO"
   },
   {
     "data": {
@@ -2737,7 +2178,7 @@
       "classroom": "A011",
       "nrc": "117594",
       "code": "I5836",
-      "students": 0,
+      "students": 39,
       "course": "PROCESOS DE SEPARACION I"
     },
     "professor": "HERRERA GONZALEZ, MARIA AZUCENA"
@@ -2750,7 +2191,7 @@
       "classroom": "A011",
       "nrc": "178772",
       "code": "I5836",
-      "students": 0,
+      "students": 36,
       "course": "PROCESOS DE SEPARACION I"
     },
     "professor": "HERRERA GONZALEZ, MARIA AZUCENA"
@@ -2763,7 +2204,7 @@
       "classroom": "A001",
       "nrc": "127725",
       "code": "I7523",
-      "students": 0,
+      "students": 9,
       "course": "QUIMICA AMBIENTAL"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -2776,7 +2217,33 @@
       "classroom": "A002",
       "nrc": "79491",
       "code": "I7504",
-      "students": 0,
+      "students": 32,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDK",
+      "classroom": "A006",
+      "nrc": "79492",
+      "code": "I7504",
+      "students": 23,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDK",
+      "classroom": "A006",
+      "nrc": "79492",
+      "code": "I7504",
+      "students": 23,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -2789,20 +2256,7 @@
       "classroom": "A003",
       "nrc": "72220",
       "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "RIVERA CORONADO, GLORIA PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "72220",
-      "code": "I6127",
-      "students": 0,
+      "students": 36,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "RIVERA CORONADO, GLORIA PAULINA"
@@ -2810,12 +2264,12 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". M . . . .",
+      "days": ". . . J . .",
       "building": "DEDK",
       "classroom": "A003",
       "nrc": "72220",
       "code": "I6127",
-      "students": 0,
+      "students": 36,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "RIVERA CORONADO, GLORIA PAULINA"
@@ -2828,7 +2282,7 @@
       "classroom": "A003",
       "nrc": "72220",
       "code": "I6127",
-      "students": 0,
+      "students": 36,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "RIVERA CORONADO, GLORIA PAULINA"
@@ -2841,7 +2295,7 @@
       "classroom": "A001",
       "nrc": "123244",
       "code": "I6127",
-      "students": 0,
+      "students": 38,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -2854,33 +2308,7 @@
       "classroom": "A002",
       "nrc": "123244",
       "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "123244",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "123244",
-      "code": "I6127",
-      "students": 0,
+      "students": 38,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -2893,7 +2321,7 @@
       "classroom": "A001",
       "nrc": "137210",
       "code": "I6127",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "BADILLO CAMACHO, JESSICA"
@@ -2906,33 +2334,7 @@
       "classroom": "A001",
       "nrc": "137210",
       "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "BADILLO CAMACHO, JESSICA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "137210",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "BADILLO CAMACHO, JESSICA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "137210",
-      "code": "I6127",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "BADILLO CAMACHO, JESSICA"
@@ -2945,7 +2347,7 @@
       "classroom": "A002",
       "nrc": "67482",
       "code": "I6130",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -2958,7 +2360,7 @@
       "classroom": "A001",
       "nrc": "92684",
       "code": "I7506",
-      "students": 0,
+      "students": 15,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -2971,10 +2373,10 @@
       "classroom": "A003",
       "nrc": "79444",
       "code": "I6130",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA II"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
+    "professor": "SANDOVAL GARCIA, KARINA"
   },
   {
     "data": {
@@ -2984,10 +2386,10 @@
       "classroom": "A003",
       "nrc": "79444",
       "code": "I6130",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA II"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
+    "professor": "SANDOVAL GARCIA, KARINA"
   },
   {
     "data": {
@@ -2997,88 +2399,10 @@
       "classroom": "A006",
       "nrc": "79444",
       "code": "I6130",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA II"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "79444",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "79444",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "79444",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "79444",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "79444",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "79444",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
+    "professor": "SANDOVAL GARCIA, KARINA"
   },
   {
     "data": {
@@ -3088,7 +2412,7 @@
       "classroom": "A001",
       "nrc": "152787",
       "code": "I6130",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -3101,7 +2425,7 @@
       "classroom": "A004",
       "nrc": "79448",
       "code": "I6132",
-      "students": 0,
+      "students": 22,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -3114,33 +2438,7 @@
       "classroom": "A006",
       "nrc": "79448",
       "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "TREVIÑO ORTIZ, RAQUEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "79448",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "TREVIÑO ORTIZ, RAQUEL"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "79448",
-      "code": "I6132",
-      "students": 0,
+      "students": 22,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -3153,7 +2451,7 @@
       "classroom": "A003",
       "nrc": "102071",
       "code": "I6132",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -3166,10 +2464,10 @@
       "classroom": "A002",
       "nrc": "145672",
       "code": "I6132",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA ANALITICA III"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
+    "professor": "BARROS CASTILLO, JULIO CESAR"
   },
   {
     "data": {
@@ -3179,88 +2477,62 @@
       "classroom": "A002",
       "nrc": "145672",
       "code": "I6132",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA ANALITICA III"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
+    "professor": "BARROS CASTILLO, JULIO CESAR"
   },
   {
     "data": {
-      "schedule": "1100-1255",
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDK",
+      "classroom": "A004",
+      "nrc": "152788",
+      "code": "I6132",
+      "students": 34,
+      "course": "QUIMICA ANALITICA III"
+    },
+    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "152788",
+      "code": "I6132",
+      "students": 34,
+      "course": "QUIMICA ANALITICA III"
+    },
+    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDK",
+      "classroom": "A006",
+      "nrc": "43795",
+      "code": "I7415",
+      "students": 33,
+      "course": "QUIMICA BASICA"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDK",
       "classroom": "A002",
-      "nrc": "145672",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
+      "nrc": "43795",
+      "code": "I7415",
+      "students": 33,
+      "course": "QUIMICA BASICA"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "145672",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "HERRERA SALGADO, PRISCILA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "152788",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "152788",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "152788",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "152788",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
+    "professor": "PALACIOS JUAREZ, ROSALIA"
   },
   {
     "data": {
@@ -3270,7 +2542,7 @@
       "classroom": "A002",
       "nrc": "63517",
       "code": "I7356",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA BASICA"
     },
     "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -3283,7 +2555,7 @@
       "classroom": "A006",
       "nrc": "43795",
       "code": "I7415",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA BASICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -3296,33 +2568,7 @@
       "classroom": "A002",
       "nrc": "43795",
       "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "43795",
-      "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "43795",
-      "code": "I7415",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA BASICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -3335,7 +2581,7 @@
       "classroom": "A002",
       "nrc": "43561",
       "code": "I7356",
-      "students": 0,
+      "students": 40,
       "course": "QUIMICA BASICA"
     },
     "professor": "GONZALEZ QUEZADA, ESPERANZA"
@@ -3348,10 +2594,23 @@
       "classroom": "A002",
       "nrc": "63516",
       "code": "I7356",
-      "students": 0,
+      "students": 41,
       "course": "QUIMICA BASICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "A004",
+      "nrc": "63515",
+      "code": "I7356",
+      "students": 23,
+      "course": "QUIMICA BASICA"
+    },
+    "professor": "GONZALEZ QUEZADA, ESPERANZA"
   },
   {
     "data": {
@@ -3361,59 +2620,7 @@
       "classroom": "A003",
       "nrc": "79449",
       "code": "I7356",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "89935",
-      "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "89935",
-      "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "89935",
-      "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "89935",
-      "code": "I7415",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA BASICA"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -3426,7 +2633,7 @@
       "classroom": "A002",
       "nrc": "104231",
       "code": "I7415",
-      "students": 0,
+      "students": 21,
       "course": "QUIMICA BASICA"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -3439,7 +2646,7 @@
       "classroom": "A004",
       "nrc": "127490",
       "code": "I7415",
-      "students": 0,
+      "students": 15,
       "course": "QUIMICA BASICA"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -3452,33 +2659,7 @@
       "classroom": "A006",
       "nrc": "127490",
       "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "127490",
-      "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "127490",
-      "code": "I7415",
-      "students": 0,
+      "students": 15,
       "course": "QUIMICA BASICA"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -3491,7 +2672,7 @@
       "classroom": "A005",
       "nrc": "145669",
       "code": "I7356",
-      "students": 0,
+      "students": 41,
       "course": "QUIMICA BASICA"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -3504,7 +2685,7 @@
       "classroom": "A004",
       "nrc": "145670",
       "code": "I7356",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA BASICA"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -3517,10 +2698,23 @@
       "classroom": "A005",
       "nrc": "140747",
       "code": "I7519",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA DE LOS ALIMENTOS I"
     },
     "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "164025",
+      "code": "I7543",
+      "students": 35,
+      "course": "QUIMICA DE NUEVOS MATERIALES"
+    },
+    "professor": "CARBAJAL ARIZAGA, GREGORIO GUADALUPE"
   },
   {
     "data": {
@@ -3530,7 +2724,7 @@
       "classroom": "A002",
       "nrc": "139348",
       "code": "IC601",
-      "students": 0,
+      "students": 32,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PULIDO GONZALEZ, HECTOR"
@@ -3543,7 +2737,7 @@
       "classroom": "A003",
       "nrc": "139349",
       "code": "IC601",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -3556,33 +2750,7 @@
       "classroom": "A006",
       "nrc": "139349",
       "code": "IC601",
-      "students": 0,
-      "course": "QUIMICA EN LA INGENIERIA CIVIL"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "139349",
-      "code": "IC601",
-      "students": 0,
-      "course": "QUIMICA EN LA INGENIERIA CIVIL"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "139349",
-      "code": "IC601",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -3595,7 +2763,7 @@
       "classroom": "A006",
       "nrc": "139352",
       "code": "IC601",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -3608,7 +2776,7 @@
       "classroom": "A005",
       "nrc": "87064",
       "code": "I6122",
-      "students": 0,
+      "students": 11,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -3621,7 +2789,7 @@
       "classroom": "A006",
       "nrc": "87064",
       "code": "I6122",
-      "students": 0,
+      "students": 11,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -3629,80 +2797,15 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "87064",
-      "code": "I6122",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
+      "days": ". . . J . .",
       "building": "DEDK",
       "classroom": "A006",
-      "nrc": "87064",
-      "code": "I6122",
-      "students": 0,
+      "nrc": "42595",
+      "code": "I5803",
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "43719",
-      "code": "I6921",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
+    "professor": "MARTINEZ GOMEZ, ALVARO DE JESUS"
   },
   {
     "data": {
@@ -3712,7 +2815,7 @@
       "classroom": "A002",
       "nrc": "42593",
       "code": "I5803",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -3725,7 +2828,7 @@
       "classroom": "A004",
       "nrc": "43726",
       "code": "I6923",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
@@ -3738,33 +2841,7 @@
       "classroom": "A004",
       "nrc": "43726",
       "code": "I6923",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "43726",
-      "code": "I6923",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "43726",
-      "code": "I6923",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
@@ -3777,20 +2854,33 @@
       "classroom": "A002",
       "nrc": "42611",
       "code": "I6126",
-      "students": 0,
+      "students": 32,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDK",
+      "classroom": "A005",
+      "nrc": "102073",
+      "code": "I6126",
+      "students": 25,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": "L . I . . .",
       "building": "DEDK",
       "classroom": "A005",
       "nrc": "38416",
       "code": "I3278",
-      "students": 0,
+      "students": 32,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -3803,33 +2893,7 @@
       "classroom": "A005",
       "nrc": "38416",
       "code": "I3278",
-      "students": 0,
-      "course": "QUIMICA INORGANICA"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "38416",
-      "code": "I3278",
-      "students": 0,
-      "course": "QUIMICA INORGANICA"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "38416",
-      "code": "I3278",
-      "students": 0,
+      "students": 32,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -3842,7 +2906,7 @@
       "classroom": "A001",
       "nrc": "79455",
       "code": "I3278",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -3855,36 +2919,23 @@
       "classroom": "A001",
       "nrc": "79455",
       "code": "I3278",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
       "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "79455",
+      "classroom": "A002",
+      "nrc": "147832",
       "code": "I3278",
-      "students": 0,
+      "students": 16,
       "course": "QUIMICA INORGANICA"
     },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "79455",
-      "code": "I3278",
-      "students": 0,
-      "course": "QUIMICA INORGANICA"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
   },
   {
     "data": {
@@ -3901,81 +2952,29 @@
   },
   {
     "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "38425",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "38425",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A002",
-      "nrc": "38425",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . V .",
       "building": "DEDK",
       "classroom": "A003",
       "nrc": "125931",
       "code": "IB071",
-      "students": 0,
+      "students": 9,
       "course": "QUIMICA ORGANICA"
     },
     "professor": "LARA CERON, JESUS ALFREDO"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "38424",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
+      "schedule": "1200-1255",
       "days": ". . . . V .",
       "building": "DEDK",
       "classroom": "A002",
-      "nrc": "38424",
+      "nrc": "38425",
       "code": "I3282",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ORGANICA"
     },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+    "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
   },
   {
     "data": {
@@ -3985,10 +2984,10 @@
       "classroom": "A004",
       "nrc": "38424",
       "code": "I3282",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ORGANICA"
     },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
+    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
   },
   {
     "data": {
@@ -3998,36 +2997,10 @@
       "classroom": "A002",
       "nrc": "38424",
       "code": "I3282",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ORGANICA"
     },
-    "professor": "QUIÑONEZ LOPEZ, RAUL RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "42622",
-      "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "42622",
-      "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
   },
   {
     "data": {
@@ -4037,7 +3010,7 @@
       "classroom": "A002",
       "nrc": "42619",
       "code": "I5805",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "CID HERNANDEZ, MARGARITA"
@@ -4050,7 +3023,7 @@
       "classroom": "A004",
       "nrc": "42622",
       "code": "I6124",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -4063,7 +3036,7 @@
       "classroom": "A004",
       "nrc": "42622",
       "code": "I6124",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -4076,7 +3049,7 @@
       "classroom": "A002",
       "nrc": "63509",
       "code": "I5805",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -4089,10 +3062,36 @@
       "classroom": "A003",
       "nrc": "63509",
       "code": "I5805",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "A004",
+      "nrc": "42621",
+      "code": "I6124",
+      "students": 35,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "42621",
+      "code": "I6124",
+      "students": 35,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
@@ -4102,7 +3101,7 @@
       "classroom": "A002",
       "nrc": "63509",
       "code": "I5805",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -4115,7 +3114,7 @@
       "classroom": "A003",
       "nrc": "63509",
       "code": "I5805",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -4125,10 +3124,10 @@
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDK",
-      "classroom": "A005",
+      "classroom": "A004",
       "nrc": "42621",
       "code": "I6124",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -4141,33 +3140,7 @@
       "classroom": "A003",
       "nrc": "42621",
       "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A005",
-      "nrc": "42621",
-      "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "42621",
-      "code": "I6124",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -4180,10 +3153,10 @@
       "classroom": "A004",
       "nrc": "79456",
       "code": "I5805",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA ORGANICA I"
     },
-    "professor": "SANCHEZ JIMENEZ, CECILIA"
+    "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
   },
   {
     "data": {
@@ -4193,36 +3166,10 @@
       "classroom": "A004",
       "nrc": "79456",
       "code": "I5805",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA ORGANICA I"
     },
-    "professor": "SANCHEZ JIMENEZ, CECILIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "79456",
-      "code": "I5805",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SANCHEZ JIMENEZ, CECILIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "79456",
-      "code": "I5805",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SANCHEZ JIMENEZ, CECILIA"
+    "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
   },
   {
     "data": {
@@ -4232,7 +3179,7 @@
       "classroom": "A006",
       "nrc": "42627",
       "code": "I5806",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -4245,33 +3192,7 @@
       "classroom": "A006",
       "nrc": "42627",
       "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "42627",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "42627",
-      "code": "I5806",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -4284,7 +3205,7 @@
       "classroom": "A005",
       "nrc": "63512",
       "code": "I6129",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -4297,7 +3218,7 @@
       "classroom": "A006",
       "nrc": "152797",
       "code": "I5806",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -4310,7 +3231,7 @@
       "classroom": "A001",
       "nrc": "152797",
       "code": "I5806",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -4323,101 +3244,10 @@
       "classroom": "A001",
       "nrc": "152797",
       "code": "I5806",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A001",
-      "nrc": "104260",
-      "code": "I7540",
-      "students": 0,
-      "course": "QUIMICA ORGANOMETALICA"
-    },
-    "professor": "CORTES LLAMAS, SARA ANGELICA"
   },
   {
     "data": {
@@ -4427,7 +3257,7 @@
       "classroom": "A005",
       "nrc": "104262",
       "code": "I7551",
-      "students": 0,
+      "students": 8,
       "course": "QUIMIOMETRIA"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -4440,7 +3270,7 @@
       "classroom": "D001",
       "nrc": "224392",
       "code": "V2376",
-      "students": 0,
+      "students": 3,
       "course": "REOLOGIA DE MATERIALES"
     },
     "professor": "MACIAS BALLEZA, EMMA REBECA"
@@ -4453,36 +3283,23 @@
       "classroom": "D001",
       "nrc": "224392",
       "code": "V2376",
-      "students": 0,
+      "students": 3,
       "course": "REOLOGIA DE MATERIALES"
     },
     "professor": "MACIAS BALLEZA, EMMA REBECA"
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "D001",
-      "nrc": "224392",
-      "code": "V2376",
-      "students": 0,
-      "course": "REOLOGIA DE MATERIALES"
-    },
-    "professor": "MACIAS BALLEZA, EMMA REBECA"
-  },
-  {
-    "data": {
-      "schedule": "2000-2155",
+      "schedule": "1700-1755",
       "days": ". . . J . .",
       "building": "DEDK",
-      "classroom": "D001",
-      "nrc": "224392",
-      "code": "V2376",
-      "students": 0,
-      "course": "REOLOGIA DE MATERIALES"
+      "classroom": "A007",
+      "nrc": "90098",
+      "code": "I6136",
+      "students": 17,
+      "course": "SALUD Y SOCIEDAD"
     },
-    "professor": "MACIAS BALLEZA, EMMA REBECA"
+    "professor": "ANAYA DAVALOS, ADRIANA"
   },
   {
     "data": {
@@ -4492,7 +3309,7 @@
       "classroom": "A011",
       "nrc": "104049",
       "code": "I5835",
-      "students": 0,
+      "students": 39,
       "course": "SEGURIDAD DE PROCESOS Y PREVENCION DE PERDIDAS"
     },
     "professor": "MEZA GARCIA, ALFREDO"
@@ -4505,36 +3322,36 @@
       "classroom": "A011",
       "nrc": "104049",
       "code": "I5835",
-      "students": 0,
+      "students": 39,
       "course": "SEGURIDAD DE PROCESOS Y PREVENCION DE PERDIDAS"
     },
     "professor": "MEZA GARCIA, ALFREDO"
   },
   {
     "data": {
-      "schedule": "0700-0855",
+      "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "104049",
+      "classroom": "A013",
+      "nrc": "125971",
       "code": "I5835",
-      "students": 0,
+      "students": 33,
       "course": "SEGURIDAD DE PROCESOS Y PREVENCION DE PERDIDAS"
     },
-    "professor": "MEZA GARCIA, ALFREDO"
+    "professor": "RABELERO VELASCO, MARTIN"
   },
   {
     "data": {
-      "schedule": "0800-0855",
+      "schedule": "1300-1355",
       "days": ". . . J . .",
       "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "104049",
+      "classroom": "A013",
+      "nrc": "125971",
       "code": "I5835",
-      "students": 0,
+      "students": 33,
       "course": "SEGURIDAD DE PROCESOS Y PREVENCION DE PERDIDAS"
     },
-    "professor": "MEZA GARCIA, ALFREDO"
+    "professor": "RABELERO VELASCO, MARTIN"
   },
   {
     "data": {
@@ -4544,7 +3361,7 @@
       "classroom": "A007",
       "nrc": "225504",
       "code": "V2119",
-      "students": 0,
+      "students": 7,
       "course": "SEMINARIO DE AVANCE DE TESIS II"
     },
     "professor": "RIVERA RAMIREZ, JOSE DOMINGO"
@@ -4557,7 +3374,7 @@
       "classroom": "A009",
       "nrc": "38421",
       "code": "I3280",
-      "students": 0,
+      "students": 30,
       "course": "SEMINARIO DE COMUNICACION E INTRODUCCION AL PLAN DE ESTUDIOS"
     },
     "professor": "MARTINEZ CARDENAS, CRISTINA"
@@ -4570,7 +3387,7 @@
       "classroom": "A009",
       "nrc": "38420",
       "code": "I3280",
-      "students": 0,
+      "students": 33,
       "course": "SEMINARIO DE COMUNICACION E INTRODUCCION AL PLAN DE ESTUDIOS"
     },
     "professor": "MARTINEZ CARDENAS, CRISTINA"
@@ -4583,7 +3400,7 @@
       "classroom": "A009",
       "nrc": "195259",
       "code": "I3280",
-      "students": 0,
+      "students": 32,
       "course": "SEMINARIO DE COMUNICACION E INTRODUCCION AL PLAN DE ESTUDIOS"
     },
     "professor": "MARTINEZ CARDENAS, CRISTINA"
@@ -4596,7 +3413,7 @@
       "classroom": "A013",
       "nrc": "65857",
       "code": "I3310",
-      "students": 0,
+      "students": 23,
       "course": "SEMINARIO DE CREATIVIDAD E INNOVACION"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -4609,7 +3426,7 @@
       "classroom": "A011",
       "nrc": "139184",
       "code": "I3310",
-      "students": 0,
+      "students": 25,
       "course": "SEMINARIO DE CREATIVIDAD E INNOVACION"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -4622,7 +3439,7 @@
       "classroom": "D001",
       "nrc": "181916",
       "code": "IC633",
-      "students": 0,
+      "students": 33,
       "course": "SEMINARIO DE DISEÑO DE OBRA CIVIL"
     },
     "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -4635,7 +3452,7 @@
       "classroom": "A001",
       "nrc": "43754",
       "code": "I7487",
-      "students": 0,
+      "students": 35,
       "course": "SEMINARIO DE INDUCCION"
     },
     "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
@@ -4648,10 +3465,23 @@
       "classroom": "A009",
       "nrc": "65858",
       "code": "I3314",
-      "students": 0,
+      "students": 24,
       "course": "SEMINARIO DE TITULACION"
     },
     "professor": "MARTINEZ CARDENAS, CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A007",
+      "nrc": "42795",
+      "code": "I6160",
+      "students": 30,
+      "course": "SEMINARIO DE TUTORIA INICIAL II"
+    },
+    "professor": "ANGUIANO SEVILLA, LUIS ALBERTO"
   },
   {
     "data": {
@@ -4661,7 +3491,7 @@
       "classroom": "A007",
       "nrc": "42792",
       "code": "I6159",
-      "students": 0,
+      "students": 35,
       "course": "SEMINARIO DE TUTORIA INICIAL I"
     },
     "professor": "VILLASEÑOR GARCIA, MARIA MARTHA"
@@ -4674,10 +3504,23 @@
       "classroom": "A007",
       "nrc": "158293",
       "code": "I6164",
-      "students": 0,
+      "students": 31,
       "course": "SEMINARIO DE TUTORIA INTERMEDIA III"
     },
     "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "LROB",
+      "nrc": "84459",
+      "code": "I7468",
+      "students": 35,
+      "course": "SEMINARIO MODULAR V"
+    },
+    "professor": "ALVAREZ GONZALEZ, BRENDA LETICIA"
   },
   {
     "data": {
@@ -4687,10 +3530,10 @@
       "classroom": "A007",
       "nrc": "117629",
       "code": "I6173",
-      "students": 0,
+      "students": 29,
       "course": "SERVICIOS FARMACEUTICOS HOSPITALARIOS"
     },
-    "professor": "CORTEZ ALVAREZ, CESAR RICARDO"
+    "professor": "AGUILAR VEGA, IVAN"
   },
   {
     "data": {
@@ -4700,10 +3543,127 @@
       "classroom": "A002",
       "nrc": "137221",
       "code": "I7536",
-      "students": 0,
+      "students": 24,
       "course": "SINTESIS DE POLIMEROS"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104549",
+      "code": "I7447",
+      "students": 12,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104550",
+      "code": "I7447",
+      "students": 32,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "CASTAÑEDA PAREDES, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1400-1455",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104550",
+      "code": "I7447",
+      "students": 32,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "CASTAÑEDA PAREDES, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104551",
+      "code": "I7447",
+      "students": 24,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "SANCHEZ HUERTA, MARIA MAGDALENA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104553",
+      "code": "I7447",
+      "students": 31,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "2000-2055",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "104553",
+      "code": "I7447",
+      "students": 31,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "119763",
+      "code": "I7447",
+      "students": 13,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "MERCADO URIBE, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "119763",
+      "code": "I7447",
+      "students": 13,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "MERCADO URIBE, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "",
+      "nrc": "119764",
+      "code": "I7447",
+      "students": 23,
+      "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
+    },
+    "professor": "SANCHEZ HUERTA, MARIA MAGDALENA"
   },
   {
     "data": {
@@ -4713,7 +3673,7 @@
       "classroom": "A013",
       "nrc": "78684",
       "code": "I3313",
-      "students": 0,
+      "students": 17,
       "course": "SUSTENTABILIDAD"
     },
     "professor": "TOLEDO CERVANTES, ALMA LILIA"
@@ -4739,10 +3699,23 @@
       "classroom": "A006",
       "nrc": "117541",
       "code": "I7559",
-      "students": 0,
+      "students": 16,
       "course": "TALLER DE EVALUACION DE RIESGOS"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDK",
+      "classroom": "A001",
+      "nrc": "79480",
+      "code": "I6911",
+      "students": 18,
+      "course": "TALLER DE MATEMATICAS APLICADAS A LA QUIMICA"
+    },
+    "professor": "MUÑOZ GARCIA, RUBEN OCTAVIO"
   },
   {
     "data": {
@@ -4752,20 +3725,7 @@
       "classroom": "A004",
       "nrc": "104253",
       "code": "I7499",
-      "students": 0,
-      "course": "TALLER DE SEGUIMIENTO DE MODULO II"
-    },
-    "professor": "LARA CERON, JESUS ALFREDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "206060",
-      "code": "I7499",
-      "students": 0,
+      "students": 7,
       "course": "TALLER DE SEGUIMIENTO DE MODULO II"
     },
     "professor": "LARA CERON, JESUS ALFREDO"
@@ -4778,7 +3738,7 @@
       "classroom": "A002",
       "nrc": "158547",
       "code": "I7513",
-      "students": 0,
+      "students": 23,
       "course": "TALLER DE SEGUIMIENTO DE MODULO III"
     },
     "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
@@ -4791,7 +3751,7 @@
       "classroom": "A002",
       "nrc": "197842",
       "code": "I6927",
-      "students": 0,
+      "students": 23,
       "course": "TALLER DE SEGUIMIENTO DE MODULO I"
     },
     "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
@@ -4804,7 +3764,7 @@
       "classroom": "A001",
       "nrc": "209984",
       "code": "I7513",
-      "students": 0,
+      "students": 10,
       "course": "TALLER DE SEGUIMIENTO DE MODULO III"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -4817,7 +3777,7 @@
       "classroom": "A013",
       "nrc": "139217",
       "code": "I5864",
-      "students": 0,
+      "students": 22,
       "course": "TECNOLOGIA DE ALIMENTOS"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -4830,7 +3790,7 @@
       "classroom": "A009",
       "nrc": "211054",
       "code": "I5864",
-      "students": 0,
+      "students": 10,
       "course": "TECNOLOGIA DE ALIMENTOS"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -4843,33 +3803,7 @@
       "classroom": "A009",
       "nrc": "211054",
       "code": "I5864",
-      "students": 0,
-      "course": "TECNOLOGIA DE ALIMENTOS"
-    },
-    "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". M . . . .",
-      "building": "DEDK",
-      "classroom": "A009",
-      "nrc": "211054",
-      "code": "I5864",
-      "students": 0,
-      "course": "TECNOLOGIA DE ALIMENTOS"
-    },
-    "professor": "HUESCA PEREZ, JESUS HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A009",
-      "nrc": "211054",
-      "code": "I5864",
-      "students": 0,
+      "students": 10,
       "course": "TECNOLOGIA DE ALIMENTOS"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -4882,7 +3816,7 @@
       "classroom": "A009",
       "nrc": "78686",
       "code": "I3319",
-      "students": 0,
+      "students": 17,
       "course": "TECNOLOGIA DE PROCESOS DE BEBIDAS Y CONFITERIA"
     },
     "professor": "SANCHEZ PEÑA, MARIA JUDITH"
@@ -4895,7 +3829,7 @@
       "classroom": "A010",
       "nrc": "68175",
       "code": "I3318",
-      "students": 0,
+      "students": 16,
       "course": "TECNOLOGIA DE PROCESOS DE CEREALES"
     },
     "professor": "SANCHEZ PEÑA, MARIA JUDITH"
@@ -4908,23 +3842,10 @@
       "classroom": "A009",
       "nrc": "38456",
       "code": "I3320",
-      "students": 0,
+      "students": 19,
       "course": "TECNOLOGIA DE PROCESOS DE FRUTAS Y VEGETALES"
     },
     "professor": "MARTINEZ PRECIADO, ALMA HORTENSIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1655",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "68216",
-      "code": "I3318",
-      "students": 0,
-      "course": "TECNOLOGIA DE PROCESOS DE CEREALES"
-    },
-    "professor": "SANCHEZ PEÑA, MARIA JUDITH"
   },
   {
     "data": {
@@ -4934,8 +3855,21 @@
       "classroom": "A010",
       "nrc": "104028",
       "code": "I3319",
-      "students": 0,
+      "students": 23,
       "course": "TECNOLOGIA DE PROCESOS DE BEBIDAS Y CONFITERIA"
+    },
+    "professor": "SANCHEZ PEÑA, MARIA JUDITH"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A011",
+      "nrc": "68216",
+      "code": "I3318",
+      "students": 24,
+      "course": "TECNOLOGIA DE PROCESOS DE CEREALES"
     },
     "professor": "SANCHEZ PEÑA, MARIA JUDITH"
   },
@@ -4947,7 +3881,7 @@
       "classroom": "A010",
       "nrc": "38455",
       "code": "I3317",
-      "students": 0,
+      "students": 12,
       "course": "TECNOLOGIA DE PROCESOS LACTEOS Y CARNICOS"
     },
     "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
@@ -4960,7 +3894,7 @@
       "classroom": "A010",
       "nrc": "125937",
       "code": "I3317",
-      "students": 0,
+      "students": 14,
       "course": "TECNOLOGIA DE PROCESOS LACTEOS Y CARNICOS"
     },
     "professor": "RIVERA ORTIZ, KARLA GABRIELA"
@@ -4973,10 +3907,23 @@
       "classroom": "A007",
       "nrc": "137200",
       "code": "I6166",
-      "students": 0,
+      "students": 20,
       "course": "TECNOLOGIA FARMACEUTICA I"
     },
     "professor": "SANCHEZ REYES, JULIAN ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I J . .",
+      "building": "DEDK",
+      "classroom": "A005",
+      "nrc": "209803",
+      "code": "IL665",
+      "students": 1,
+      "course": "TEMAS SELECTOS EN BIOQUIMICA II"
+    },
+    "professor": "CID HERNANDEZ, MARGARITA"
   },
   {
     "data": {
@@ -4986,7 +3933,7 @@
       "classroom": "A001",
       "nrc": "92127",
       "code": "I7489",
-      "students": 0,
+      "students": 19,
       "course": "TEORIA DE QUIMICA ORGANICA III"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -4999,7 +3946,7 @@
       "classroom": "A012",
       "nrc": "41786",
       "code": "I5881",
-      "students": 0,
+      "students": 35,
       "course": "TERMODINAMICA"
     },
     "professor": "SUAREZ MARTINEZ, REYNIER"
@@ -5012,33 +3959,7 @@
       "classroom": "A012",
       "nrc": "41786",
       "code": "I5881",
-      "students": 0,
-      "course": "TERMODINAMICA"
-    },
-    "professor": "SUAREZ MARTINEZ, REYNIER"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "41786",
-      "code": "I5881",
-      "students": 0,
-      "course": "TERMODINAMICA"
-    },
-    "professor": "SUAREZ MARTINEZ, REYNIER"
-  },
-  {
-    "data": {
-      "schedule": "1300-1555",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "41786",
-      "code": "I5881",
-      "students": 0,
+      "students": 35,
       "course": "TERMODINAMICA"
     },
     "professor": "SUAREZ MARTINEZ, REYNIER"
@@ -5051,7 +3972,7 @@
       "classroom": "A011",
       "nrc": "78682",
       "code": "I5881",
-      "students": 0,
+      "students": 20,
       "course": "TERMODINAMICA"
     },
     "professor": "ALMARAZ VEGA, ERNESTO"
@@ -5064,33 +3985,7 @@
       "classroom": "A011",
       "nrc": "78682",
       "code": "I5881",
-      "students": 0,
-      "course": "TERMODINAMICA"
-    },
-    "professor": "ALMARAZ VEGA, ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "78682",
-      "code": "I5881",
-      "students": 0,
-      "course": "TERMODINAMICA"
-    },
-    "professor": "ALMARAZ VEGA, ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "78682",
-      "code": "I5881",
-      "students": 0,
+      "students": 20,
       "course": "TERMODINAMICA"
     },
     "professor": "ALMARAZ VEGA, ERNESTO"
@@ -5103,7 +3998,7 @@
       "classroom": "A012",
       "nrc": "62965",
       "code": "I5819",
-      "students": 0,
+      "students": 28,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "MARTINEZ RUVALCABA, AGUSTIN"
@@ -5116,33 +4011,7 @@
       "classroom": "A012",
       "nrc": "62965",
       "code": "I5819",
-      "students": 0,
-      "course": "TERMODINAMICA QUIMICA APLICADA"
-    },
-    "professor": "MARTINEZ RUVALCABA, AGUSTIN"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "62965",
-      "code": "I5819",
-      "students": 0,
-      "course": "TERMODINAMICA QUIMICA APLICADA"
-    },
-    "professor": "MARTINEZ RUVALCABA, AGUSTIN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . V .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "62965",
-      "code": "I5819",
-      "students": 0,
+      "students": 28,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "MARTINEZ RUVALCABA, AGUSTIN"
@@ -5155,7 +4024,7 @@
       "classroom": "A012",
       "nrc": "62966",
       "code": "I5819",
-      "students": 0,
+      "students": 27,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "MARTINEZ RUVALCABA, AGUSTIN"
@@ -5168,33 +4037,7 @@
       "classroom": "A012",
       "nrc": "62966",
       "code": "I5819",
-      "students": 0,
-      "course": "TERMODINAMICA QUIMICA APLICADA"
-    },
-    "professor": "MARTINEZ RUVALCABA, AGUSTIN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . V .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "62966",
-      "code": "I5819",
-      "students": 0,
-      "course": "TERMODINAMICA QUIMICA APLICADA"
-    },
-    "professor": "MARTINEZ RUVALCABA, AGUSTIN"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "62966",
-      "code": "I5819",
-      "students": 0,
+      "students": 27,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "MARTINEZ RUVALCABA, AGUSTIN"
@@ -5207,7 +4050,7 @@
       "classroom": "A008",
       "nrc": "78694",
       "code": "I5819",
-      "students": 0,
+      "students": 30,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
@@ -5220,7 +4063,7 @@
       "classroom": "A012",
       "nrc": "117569",
       "code": "I5819",
-      "students": 0,
+      "students": 22,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "ROBLES VASQUEZ, OSCAR"
@@ -5233,33 +4076,7 @@
       "classroom": "A012",
       "nrc": "117569",
       "code": "I5819",
-      "students": 0,
-      "course": "TERMODINAMICA QUIMICA APLICADA"
-    },
-    "professor": "ROBLES VASQUEZ, OSCAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1355",
-      "days": "L . . . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "117569",
-      "code": "I5819",
-      "students": 0,
-      "course": "TERMODINAMICA QUIMICA APLICADA"
-    },
-    "professor": "ROBLES VASQUEZ, OSCAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A012",
-      "nrc": "117569",
-      "code": "I5819",
-      "students": 0,
+      "students": 22,
       "course": "TERMODINAMICA QUIMICA APLICADA"
     },
     "professor": "ROBLES VASQUEZ, OSCAR"
@@ -5272,7 +4089,7 @@
       "classroom": "A007",
       "nrc": "117643",
       "code": "I6175",
-      "students": 0,
+      "students": 35,
       "course": "TOXICOLOGIA APLICADA"
     },
     "professor": "DE ALMEIDA CUNHA, NELSON BRUNO"
@@ -5285,7 +4102,7 @@
       "classroom": "A007",
       "nrc": "38439",
       "code": "I3293",
-      "students": 0,
+      "students": 33,
       "course": "TOXICOLOGIA DE LOS ALIMENTOS"
     },
     "professor": "VILLARRUEL LOPEZ, ANGELICA"
@@ -5298,10 +4115,23 @@
       "classroom": "A008",
       "nrc": "104045",
       "code": "I5832",
-      "students": 0,
+      "students": 31,
       "course": "TRANSFERENCIA DE CALOR"
     },
     "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDK",
+      "classroom": "A012",
+      "nrc": "82904",
+      "code": "I3300",
+      "students": 31,
+      "course": "TRANSFERENCIA  DE CALOR Y MASA"
+    },
+    "professor": "MACIAS BALLEZA, EMMA REBECA"
   },
   {
     "data": {
@@ -5311,7 +4141,7 @@
       "classroom": "A013",
       "nrc": "93810",
       "code": "I5830",
-      "students": 0,
+      "students": 32,
       "course": "TRANSFERENCIA DE MASA"
     },
     "professor": "MARTINEZ GOMEZ, ALVARO DE JESUS"
@@ -5324,7 +4154,7 @@
       "classroom": "A008",
       "nrc": "125952",
       "code": "I5830",
-      "students": 0,
+      "students": 28,
       "course": "TRANSFERENCIA DE MASA"
     },
     "professor": "RIVERA GALVEZ, FRANCISCO JAVIER"

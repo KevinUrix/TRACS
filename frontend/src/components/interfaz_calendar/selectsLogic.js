@@ -188,8 +188,9 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
   
       if (!res.ok) {
         if (res.status === 403 || res.status === 401) {
-          toast.error("Se ha cerrado tu sesión. Vuelve a iniciarla.");
-          throw new Error(`Error HTTP: ${res.status}`);
+          localStorage.clear();
+          window.location.href = "/login";
+          return;
         }
       }
   

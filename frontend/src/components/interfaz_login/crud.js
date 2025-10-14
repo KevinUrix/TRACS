@@ -124,10 +124,31 @@ export default function Crud() {
   // Cargar usuarios al montar
   useEffect(() => {
     const excludedUser = username;
-    fetch(`${API_URL}/api/users?exclude=${excludedUser}`)
-      .then((res) => res.json())
-      .then((data) => setUsers(data))
-      .catch((err) => console.error('Error al obtener usuarios:', err));
+    fetch(`${API_URL}/api/users?exclude=${excludedUser}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${localStorage.getItem('token')}`
+      },
+    })
+      .then((res) => {
+        if (!res.ok) {
+          if (res.status === 403 || res.status === 401) {
+            localStorage.clear();
+            window.location.href = "/calendar";
+            return [];
+          }
+          if (!res.ok) throw new Error('Error al cargar usuarios');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        const arr = Array.isArray(data) ? data : Array.isArray(data?.users) ? data.users : [];
+        setUsers(arr);
+      })
+      .catch((err) => {
+        console.error('Error al obtener usuarios:', err);
+        setUsers([]);
+      })
   }, []);
 
 

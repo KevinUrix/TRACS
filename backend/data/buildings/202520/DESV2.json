@@ -1,0 +1,925 @@
+[
+  {
+    "data": {
+      "schedule": "0013-0013",
+      "days": ". M . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "131912",
+      "code": "IC673",
+      "students": 24,
+      "course": "ALGEBRA"
+    },
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "0009-0009",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "A001",
+      "nrc": "137225",
+      "code": "IC577",
+      "students": 35,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "GODINEZ DIETRICH, GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "0048-0048",
+      "days": ". M . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "202033",
+      "code": "IB056",
+      "students": 35,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
+      "schedule": "0040-0040",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "108729",
+      "code": "I5973",
+      "students": 1,
+      "course": "ANALISIS ESTADISTICO MULTIVARIADO"
+    },
+    "professor": "SANCHEZ GOMEZ, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "0015-0015",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A050",
+      "nrc": "49781",
+      "code": "I7420",
+      "students": 40,
+      "course": "CALCULO AVANZADO"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0025-0025",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "A002",
+      "nrc": "42294",
+      "code": "I6009",
+      "students": 30,
+      "course": "CALCULO AVANZADO PARA FISICA"
+    },
+    "professor": "MONTES NAVARRO, MARIANA SARAHI"
+  },
+  {
+    "data": {
+      "schedule": "0030-0030",
+      "days": ". M . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "104120",
+      "code": "I6009",
+      "students": 14,
+      "course": "CALCULO AVANZADO PARA FISICA"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0019-0019",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A001",
+      "nrc": "43700",
+      "code": "I6909",
+      "students": 26,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "0048-0048",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "A037",
+      "nrc": "153638",
+      "code": "IB058",
+      "students": 27,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "0002-0002",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "A023",
+      "nrc": "42299",
+      "code": "I5800",
+      "students": 30,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0002-0002",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A023",
+      "nrc": "42299",
+      "code": "I5800",
+      "students": 30,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0057-0057",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "42296",
+      "code": "I5800",
+      "students": 19,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
+  },
+  {
+    "data": {
+      "schedule": "0033-0033",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "205827",
+      "code": "V0710",
+      "students": 21,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "LUNA ARELLANO, MAYRA LORENA"
+  },
+  {
+    "data": {
+      "schedule": "0042-0042",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A050",
+      "nrc": "223406",
+      "code": "V0710",
+      "students": 20,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
+  },
+  {
+    "data": {
+      "schedule": "0023-0023",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "223565",
+      "code": "V0710",
+      "students": 35,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "0002-0002",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A030",
+      "nrc": "104121",
+      "code": "I6121",
+      "students": 41,
+      "course": "CALCULO DIFERENCIAL INTEGRAL"
+    },
+    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "222815",
+      "code": "V0264",
+      "students": 1,
+      "course": "COMPUTO EVOLUTIVO"
+    },
+    "professor": "AVALOS ALVAREZ, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "165531",
+      "code": "I6795",
+      "students": 0,
+      "course": "CONTROL DIGITAL DE SISTEMAS NO LINEALES"
+    },
+    "professor": "NUÑO ORTEGA, EMMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . . S",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "137196",
+      "code": "I6177",
+      "students": 49,
+      "course": "DESARROLLO SUSTENTABLE"
+    },
+    "professor": "ABUD GONZALEZ, MONSERRATT"
+  },
+  {
+    "data": {
+      "schedule": "0003-0003",
+      "days": ". M . . . .",
+      "building": "DESV2",
+      "classroom": "A014",
+      "nrc": "163996",
+      "code": "I5874",
+      "students": 16,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "0034-0034",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "A037",
+      "nrc": "178833",
+      "code": "I5874",
+      "students": 27,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0006-0006",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "179857",
+      "code": "I7342",
+      "students": 29,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "0049-0049",
+      "days": ". M . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "209740",
+      "code": "V0712",
+      "students": 41,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "0033-0033",
+      "days": ". . . . . S",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "209741",
+      "code": "V0712",
+      "students": 41,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0042-0042",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "A050",
+      "nrc": "72282",
+      "code": "I7346",
+      "students": 14,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
+  },
+  {
+    "data": {
+      "schedule": "0046-0046",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "A036",
+      "nrc": "56884",
+      "code": "I6910",
+      "students": 12,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "ROBLERO MENDEZ, ELI VANNEY"
+  },
+  {
+    "data": {
+      "schedule": "0049-0049",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "144457",
+      "code": "IC585",
+      "students": 31,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "0020-0020",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "96092",
+      "code": "I7347",
+      "students": 32,
+      "course": "ESTADISTICA"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "0005-0005",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A020",
+      "nrc": "84161",
+      "code": "I7347",
+      "students": 28,
+      "course": "ESTADISTICA"
+    },
+    "professor": "CENTENO QUEVEDO, JUAN JERONIMO"
+  },
+  {
+    "data": {
+      "schedule": "0003-0003",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A014",
+      "nrc": "132759",
+      "code": "I9880",
+      "students": 34,
+      "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0004-0004",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A014",
+      "nrc": "201951",
+      "code": "I9880",
+      "students": 3,
+      "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "210904",
+      "code": "V0731",
+      "students": 26,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "210904",
+      "code": "V0731",
+      "students": 26,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "210904",
+      "code": "V0731",
+      "students": 26,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "200223",
+      "code": "IL354",
+      "students": 34,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0039-0039",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A036",
+      "nrc": "131914",
+      "code": "IC674",
+      "students": 27,
+      "course": "GEOMETRIA EUCLIDIANA"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "198565",
+      "code": "V0273",
+      "students": 2,
+      "course": "INTELIGENCIA COMPUTACIONAL"
+    },
+    "professor": "LUQUE CHANG, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0045-0045",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A025",
+      "nrc": "43545",
+      "code": "I7349",
+      "students": 40,
+      "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
+    },
+    "professor": "GARCIA NAVA, DALMIRO"
+  },
+  {
+    "data": {
+      "schedule": "0025-0025",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "189651",
+      "code": "I5247",
+      "students": 40,
+      "course": "LOGICA MATEMATICA"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0027-0027",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "193980",
+      "code": "IL345",
+      "students": 38,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "ACEVES FERNANDEZ, ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "0023-0023",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "209746",
+      "code": "V0711",
+      "students": 35,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
+  },
+  {
+    "data": {
+      "schedule": "0036-0036",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "210104",
+      "code": "I9881",
+      "students": 15,
+      "course": "METODOS MATEMATICOS I"
+    },
+    "professor": "BONILLA MERCADO, VICTORINO"
+  },
+  {
+    "data": {
+      "schedule": "0009-0009",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A001",
+      "nrc": "42491",
+      "code": "I5893",
+      "students": 33,
+      "course": "METODOS MATEMATICOS I"
+    },
+    "professor": "GODINEZ DIETRICH, GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "0036-0036",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "212352",
+      "code": "V0713",
+      "students": 34,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "216534",
+      "code": "V0261",
+      "students": 0,
+      "course": "MINERIA DE DATOS"
+    },
+    "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-2055",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "160576",
+      "code": "IG365",
+      "students": 22,
+      "course": "MODELADO DE DATOS"
+    },
+    "professor": "MENDEZ PALOS, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "222816",
+      "code": "V0268",
+      "students": 6,
+      "course": "OPTIMIZACION MULTIOBJETIVO"
+    },
+    "professor": "CUEVAS JIMENEZ, ERIK VALDEMAR"
+  },
+  {
+    "data": {
+      "schedule": "0024-0024",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A025",
+      "nrc": "42535",
+      "code": "I5799",
+      "students": 32,
+      "course": "PRECALCULO"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "0021-0021",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "A009",
+      "nrc": "42540",
+      "code": "I5799",
+      "students": 34,
+      "course": "PRECALCULO"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "0016-0016",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "159937",
+      "code": "I7348",
+      "students": 23,
+      "course": "PROBABILIDAD"
+    },
+    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0006-0006",
+      "days": ". M . . . .",
+      "building": "DESV2",
+      "classroom": "A022",
+      "nrc": "137239",
+      "code": "IC572",
+      "students": 37,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A028",
+      "nrc": "144451",
+      "code": "IC572",
+      "students": 37,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ELOISA"
+  },
+  {
+    "data": {
+      "schedule": "0023-0023",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "A001",
+      "nrc": "125311",
+      "code": "IF108",
+      "students": 36,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "0053-0053",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "225021",
+      "code": "IB067",
+      "students": 35,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
+  },
+  {
+    "data": {
+      "schedule": "0033-0033",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "225022",
+      "code": "IB067",
+      "students": 35,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "193712",
+      "code": "IL352",
+      "students": 36,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "193712",
+      "code": "IL352",
+      "students": 36,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "193712",
+      "code": "IL352",
+      "students": 36,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "195113",
+      "code": "I5289",
+      "students": 37,
+      "course": "PROGRAMACION ORIENTADA A OBJETOS"
+    },
+    "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0011-0011",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A050",
+      "nrc": "90532",
+      "code": "I9882",
+      "students": 41,
+      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS I"
+    },
+    "professor": "ACEVES FERNANDEZ, ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "0035-0035",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A045",
+      "nrc": "57629",
+      "code": "I7021",
+      "students": 39,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "0050-0050",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "57426",
+      "code": "I7021",
+      "students": 21,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0020-0020",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A050",
+      "nrc": "42733",
+      "code": "I5896",
+      "students": 23,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS II"
+    },
+    "professor": "CORTES NAVARRO, LAURA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "198564",
+      "code": "V0249",
+      "students": 10,
+      "course": "SEMINARIO DE TESIS I"
+    },
+    "professor": "ARANGUREN NAVARRO, ITZEL NIASANDIU"
+  },
+  {
+    "data": {
+      "schedule": "1500-1855",
+      "days": ". . . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "223256",
+      "code": "V0250",
+      "students": 2,
+      "course": "SEMINARIO DE TESIS II"
+    },
+    "professor": "LUQUE CHANG, ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "216582",
+      "code": "V0254",
+      "students": 7,
+      "course": "SEMINARIO DE TESIS VI"
+    },
+    "professor": "CAMARENA MENDEZ, JOSE OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . . S",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "158574",
+      "code": "I6165",
+      "students": 47,
+      "course": "SEMINARIO DE TUTORIA DE EGRESO"
+    },
+    "professor": "ABUD GONZALEZ, MONSERRATT"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "209840",
+      "code": "V0277",
+      "students": 0,
+      "course": "SISTEMAS DIFUSOS"
+    },
+    "professor": "ZALDIVAR NAVARRO, DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "0036-0036",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "42824",
+      "code": "I5946",
+      "students": 10,
+      "course": "TALLER DE INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
+    },
+    "professor": "AGUILA GOMEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0012-0012",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A050",
+      "nrc": "77391",
+      "code": "I5925",
+      "students": 14,
+      "course": "TEORIA DE ESPACIOS VECTORIALES"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DESV2",
+      "classroom": "",
+      "nrc": "216584",
+      "code": "V0271",
+      "students": 1,
+      "course": "TOPICOS SELECTOS EN COMPUTO METAHEURISTICO"
+    },
+    "professor": "VALDIVIA GONZALEZ, ARTURO"
+  }
+]

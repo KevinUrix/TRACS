@@ -1,29 +1,42 @@
 [
   {
     "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . . S",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "119876",
+      "code": "I5902",
+      "students": 40,
+      "course": "ADMINISTRACION DE BASES DE DATOS"
+    },
+    "professor": "GARCIA GUTIERREZ, LUIS FERNANDO"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DBETA",
       "classroom": "LC01",
       "nrc": "209854",
       "code": "IL378",
-      "students": 0,
+      "students": 43,
       "course": "ADMINISTRACION DE REDES"
     },
     "professor": "REYNOSO GOMEZ, BLANCA LORENA"
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
       "building": "DBETA",
-      "classroom": "LC02",
-      "nrc": "225407",
-      "code": "V0742",
-      "students": 0,
-      "course": "ANALISIS GENOMICO Y PROTEOMICO"
+      "classroom": "LC01",
+      "nrc": "209855",
+      "code": "IL378",
+      "students": 28,
+      "course": "ADMINISTRACION DE REDES"
     },
-    "professor": "SOTELO RODRIGUEZ, MOISES"
+    "professor": "BARBA VENEGAS, MIGUEL ANGEL"
   },
   {
     "data": {
@@ -33,10 +46,36 @@
       "classroom": "LC01",
       "nrc": "216529",
       "code": "IL380",
-      "students": 0,
+      "students": 22,
       "course": "INTERCONEXION DE REDES"
     },
     "professor": "BARBA VENEGAS, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . . V .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "216528",
+      "code": "IL380",
+      "students": 30,
+      "course": "INTERCONEXION DE REDES"
+    },
+    "professor": "BARBA VENEGAS, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": "L . . . . .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "216544",
+      "code": "IL379",
+      "students": 21,
+      "course": "PROGRAMACION DE APLICACIONES DE REDES"
+    },
+    "professor": "ESQUIVEL GARCIA, SAUL"
   },
   {
     "data": {
@@ -46,7 +85,7 @@
       "classroom": "LC01",
       "nrc": "227985",
       "code": "IL379",
-      "students": 0,
+      "students": 37,
       "course": "PROGRAMACION DE APLICACIONES DE REDES"
     },
     "professor": "VAZQUEZ CHOLICO, CARLOS"
@@ -59,10 +98,23 @@
       "classroom": "LC01",
       "nrc": "204865",
       "code": "IL364",
-      "students": 0,
+      "students": 36,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "REYNOSO GOMEZ, BLANCA LORENA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "204866",
+      "code": "IL364",
+      "students": 33,
+      "course": "REDES DE COMPUTADORAS"
+    },
+    "professor": "ESQUIVEL GARCIA, SAUL"
   },
   {
     "data": {
@@ -72,7 +124,7 @@
       "classroom": "LC01",
       "nrc": "204868",
       "code": "IL364",
-      "students": 0,
+      "students": 33,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "BARBA VENEGAS, MIGUEL ANGEL"
@@ -85,7 +137,7 @@
       "classroom": "LC01",
       "nrc": "204869",
       "code": "IL364",
-      "students": 0,
+      "students": 35,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "MORALES RAMIREZ, THELMA ISABEL"
@@ -98,7 +150,7 @@
       "classroom": "LC01",
       "nrc": "204871",
       "code": "IL364",
-      "students": 0,
+      "students": 33,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "BARBA VENEGAS, MIGUEL ANGEL"
@@ -111,9 +163,61 @@
       "classroom": "LC01",
       "nrc": "216552",
       "code": "IL364",
-      "students": 0,
+      "students": 33,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "ARGAEZ REA, JUAN ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "216554",
+      "code": "IL364",
+      "students": 33,
+      "course": "REDES DE COMPUTADORAS"
+    },
+    "professor": "ARGAEZ REA, JUAN ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "216556",
+      "code": "IL364",
+      "students": 30,
+      "course": "REDES DE COMPUTADORAS"
+    },
+    "professor": "ESQUIVEL GARCIA, SAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "216558",
+      "code": "IL364",
+      "students": 39,
+      "course": "REDES DE COMPUTADORAS"
+    },
+    "professor": "ESQUIVEL GARCIA, SAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DBETA",
+      "classroom": "LC01",
+      "nrc": "123191",
+      "code": "I7042",
+      "students": 24,
+      "course": "SIMULACION POR COMPUTADORA"
+    },
+    "professor": "PEREZ CISNEROS, MARCO ANTONIO"
   }
 ]

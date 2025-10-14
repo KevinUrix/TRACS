@@ -7,101 +7,62 @@
       "classroom": "LF02",
       "nrc": "202026",
       "code": "IF882",
-      "students": 0,
+      "students": 5,
       "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
   },
   {
     "data": {
-      "schedule": "1200-1255",
+      "schedule": "0800-0855",
       "days": ". . I . . .",
       "building": "DLAQ",
       "classroom": "LF02",
-      "nrc": "202026",
-      "code": "IF882",
-      "students": 0,
-      "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
+      "nrc": "43740",
+      "code": "I7391",
+      "students": 25,
+      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
     },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
       "building": "DLAQ",
       "classroom": "LF02",
-      "nrc": "202026",
-      "code": "IF882",
-      "students": 0,
-      "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
+      "nrc": "83792",
+      "code": "I7391",
+      "students": 23,
+      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
   },
   {
     "data": {
-      "schedule": "1200-1255",
+      "schedule": "1900-1955",
+      "days": ". . . J . .",
+      "building": "DLAQ",
+      "classroom": "LF02",
+      "nrc": "83792",
+      "code": "I7391",
+      "students": 23,
+      "course": "DISEÑO ASISTIDO POR COMPUTADORA"
+    },
+    "professor": "JARAMILLO GONZALEZ, GERARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
       "days": ". . I . . .",
       "building": "DLAQ",
       "classroom": "LF02",
-      "nrc": "202026",
-      "code": "IF882",
-      "students": 0,
-      "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
+      "nrc": "103958",
+      "code": "I7387",
+      "students": 33,
+      "course": "INVESTIGACION DE OPERACIONES II"
     },
-    "professor": "JARAMILLO GONZALEZ, GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117484",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117484",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117484",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117484",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
   },
   {
     "data": {
@@ -111,7 +72,7 @@
       "classroom": "LF03",
       "nrc": "117485",
       "code": "I7374",
-      "students": 0,
+      "students": 23,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -124,33 +85,7 @@
       "classroom": "LF03",
       "nrc": "117485",
       "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117485",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117485",
-      "code": "I7374",
-      "students": 0,
+      "students": 23,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -163,7 +98,7 @@
       "classroom": "LF03",
       "nrc": "117486",
       "code": "I7374",
-      "students": 0,
+      "students": 23,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -176,7 +111,7 @@
       "classroom": "LF03",
       "nrc": "117487",
       "code": "I7374",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -189,33 +124,7 @@
       "classroom": "LF03",
       "nrc": "117487",
       "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117487",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "2000-2055",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117487",
-      "code": "I7374",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -228,7 +137,7 @@
       "classroom": "LF03",
       "nrc": "117488",
       "code": "I7374",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -241,85 +150,7 @@
       "classroom": "LF03",
       "nrc": "117488",
       "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117488",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117488",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117489",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117489",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117489",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "117489",
-      "code": "I7374",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -332,7 +163,7 @@
       "classroom": "LF03",
       "nrc": "153720",
       "code": "I7374",
-      "students": 0,
+      "students": 7,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "ARELLANO MURO, CARLOS AUGUSTO"
@@ -345,33 +176,7 @@
       "classroom": "LF03",
       "nrc": "153720",
       "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "ARELLANO MURO, CARLOS AUGUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "153720",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "ARELLANO MURO, CARLOS AUGUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "153720",
-      "code": "I7374",
-      "students": 0,
+      "students": 7,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "ARELLANO MURO, CARLOS AUGUSTO"
@@ -384,7 +189,7 @@
       "classroom": "LF03",
       "nrc": "159341",
       "code": "I7374",
-      "students": 0,
+      "students": 13,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "ARELLANO MURO, CARLOS AUGUSTO"
@@ -397,33 +202,7 @@
       "classroom": "LF03",
       "nrc": "159341",
       "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "ARELLANO MURO, CARLOS AUGUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "159341",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "ARELLANO MURO, CARLOS AUGUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "159341",
-      "code": "I7374",
-      "students": 0,
+      "students": 13,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "ARELLANO MURO, CARLOS AUGUSTO"
@@ -436,7 +215,7 @@
       "classroom": "LF03",
       "nrc": "188656",
       "code": "I7374",
-      "students": 0,
+      "students": 8,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "ARELLANO MURO, CARLOS AUGUSTO"
@@ -449,33 +228,7 @@
       "classroom": "LF03",
       "nrc": "188656",
       "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "ARELLANO MURO, CARLOS AUGUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "188656",
-      "code": "I7374",
-      "students": 0,
-      "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
-    },
-    "professor": "ARELLANO MURO, CARLOS AUGUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF03",
-      "nrc": "188656",
-      "code": "I7374",
-      "students": 0,
+      "students": 8,
       "course": "LABORATORIO DE AUTOMATIZACION Y ROBOTICA"
     },
     "professor": "ARELLANO MURO, CARLOS AUGUSTO"
@@ -488,7 +241,7 @@
       "classroom": "LF02",
       "nrc": "117480",
       "code": "I7382",
-      "students": 0,
+      "students": 16,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -501,33 +254,7 @@
       "classroom": "LF02",
       "nrc": "117480",
       "code": "I7382",
-      "students": 0,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "117480",
-      "code": "I7382",
-      "students": 0,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "117480",
-      "code": "I7382",
-      "students": 0,
+      "students": 16,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -540,7 +267,7 @@
       "classroom": "LF02",
       "nrc": "159343",
       "code": "I7382",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -553,33 +280,7 @@
       "classroom": "LF02",
       "nrc": "159343",
       "code": "I7382",
-      "students": 0,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "159343",
-      "code": "I7382",
-      "students": 0,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "159343",
-      "code": "I7382",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -592,7 +293,7 @@
       "classroom": "LF02",
       "nrc": "159344",
       "code": "I7382",
-      "students": 0,
+      "students": 9,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -605,7 +306,7 @@
       "classroom": "LF02",
       "nrc": "166253",
       "code": "I7382",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -618,33 +319,7 @@
       "classroom": "LF02",
       "nrc": "166253",
       "code": "I7382",
-      "students": 0,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "166253",
-      "code": "I7382",
-      "students": 0,
-      "course": "LABORATORIO DE CONTROL ESTADISTICO"
-    },
-    "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "166253",
-      "code": "I7382",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE CONTROL ESTADISTICO"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
@@ -657,7 +332,7 @@
       "classroom": "LF01",
       "nrc": "103947",
       "code": "I7362",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
@@ -670,33 +345,7 @@
       "classroom": "LF01",
       "nrc": "103947",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103947",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103947",
-      "code": "I7362",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
@@ -709,7 +358,7 @@
       "classroom": "LF02",
       "nrc": "103948",
       "code": "I7362",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
@@ -722,33 +371,7 @@
       "classroom": "LF02",
       "nrc": "103948",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103948",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103948",
-      "code": "I7362",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
@@ -761,7 +384,7 @@
       "classroom": "LF02",
       "nrc": "103949",
       "code": "I7362",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "LOZANO GONZALEZ, ALEJANDRO"
@@ -774,33 +397,7 @@
       "classroom": "LF02",
       "nrc": "103949",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "LOZANO GONZALEZ, ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103949",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "LOZANO GONZALEZ, ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103949",
-      "code": "I7362",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "LOZANO GONZALEZ, ALEJANDRO"
@@ -813,7 +410,7 @@
       "classroom": "LF02",
       "nrc": "103950",
       "code": "I7362",
-      "students": 0,
+      "students": 15,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -823,36 +420,10 @@
       "schedule": "1000-1055",
       "days": ". . . J . .",
       "building": "DLAQ",
-      "classroom": "LF02",
+      "classroom": "LF01",
       "nrc": "103950",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103950",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103950",
-      "code": "I7362",
-      "students": 0,
+      "students": 15,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -865,7 +436,7 @@
       "classroom": "LF01",
       "nrc": "103951",
       "code": "I7362",
-      "students": 0,
+      "students": 6,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -878,33 +449,7 @@
       "classroom": "LF01",
       "nrc": "103951",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103951",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103951",
-      "code": "I7362",
-      "students": 0,
+      "students": 6,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -917,7 +462,7 @@
       "classroom": "LF02",
       "nrc": "148628",
       "code": "I7362",
-      "students": 0,
+      "students": 23,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
@@ -930,33 +475,7 @@
       "classroom": "LF02",
       "nrc": "148628",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "148628",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "148628",
-      "code": "I7362",
-      "students": 0,
+      "students": 23,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
@@ -969,7 +488,7 @@
       "classroom": "LF02",
       "nrc": "148629",
       "code": "I7362",
-      "students": 0,
+      "students": 26,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
@@ -982,33 +501,7 @@
       "classroom": "LF02",
       "nrc": "148629",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "148629",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "148629",
-      "code": "I7362",
-      "students": 0,
+      "students": 26,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
@@ -1021,7 +514,7 @@
       "classroom": "LF02",
       "nrc": "153119",
       "code": "I7362",
-      "students": 0,
+      "students": 15,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1034,33 +527,7 @@
       "classroom": "LF02",
       "nrc": "153119",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "153119",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "153119",
-      "code": "I7362",
-      "students": 0,
+      "students": 15,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1070,10 +537,10 @@
       "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DLAQ",
-      "classroom": "LF02",
+      "classroom": "LF01",
       "nrc": "153120",
       "code": "I7362",
-      "students": 0,
+      "students": 10,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1086,33 +553,7 @@
       "classroom": "LF02",
       "nrc": "153120",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "153120",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "153120",
-      "code": "I7362",
-      "students": 0,
+      "students": 10,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1125,7 +566,7 @@
       "classroom": "LF01",
       "nrc": "153121",
       "code": "I7362",
-      "students": 0,
+      "students": 17,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1138,33 +579,7 @@
       "classroom": "LF01",
       "nrc": "153121",
       "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153121",
-      "code": "I7362",
-      "students": 0,
-      "course": "LABORATORIO DE ERGONOMIA"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153121",
-      "code": "I7362",
-      "students": 0,
+      "students": 17,
       "course": "LABORATORIO DE ERGONOMIA"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1177,7 +592,7 @@
       "classroom": "LF01",
       "nrc": "103979",
       "code": "I7363",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
@@ -1190,33 +605,7 @@
       "classroom": "LF01",
       "nrc": "103979",
       "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103979",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103979",
-      "code": "I7363",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
@@ -1229,7 +618,7 @@
       "classroom": "LF01",
       "nrc": "103980",
       "code": "I7363",
-      "students": 0,
+      "students": 12,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
@@ -1242,33 +631,7 @@
       "classroom": "LF01",
       "nrc": "103980",
       "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103980",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103980",
-      "code": "I7363",
-      "students": 0,
+      "students": 12,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
@@ -1281,7 +644,7 @@
       "classroom": "LF01",
       "nrc": "103981",
       "code": "I7363",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
@@ -1294,33 +657,7 @@
       "classroom": "LF01",
       "nrc": "103981",
       "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103981",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . J . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103981",
-      "code": "I7363",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
@@ -1333,7 +670,7 @@
       "classroom": "LF01",
       "nrc": "103982",
       "code": "I7363",
-      "students": 0,
+      "students": 13,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1346,33 +683,7 @@
       "classroom": "LF01",
       "nrc": "103982",
       "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103982",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103982",
-      "code": "I7363",
-      "students": 0,
+      "students": 13,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1385,7 +696,7 @@
       "classroom": "LF01",
       "nrc": "103983",
       "code": "I7363",
-      "students": 0,
+      "students": 21,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1394,37 +705,11 @@
     "data": {
       "schedule": "0800-0855",
       "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103983",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
       "building": "DLAQ",
       "classroom": "LF01",
       "nrc": "103983",
       "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103983",
-      "code": "I7363",
-      "students": 0,
+      "students": 21,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -1437,7 +722,7 @@
       "classroom": "LF01",
       "nrc": "103984",
       "code": "I7363",
-      "students": 0,
+      "students": 24,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
@@ -1450,397 +735,150 @@
       "classroom": "LF01",
       "nrc": "103984",
       "code": "I7363",
-      "students": 0,
+      "students": 24,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
     "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DLAQ",
+      "classroom": "LF01",
+      "nrc": "153723",
+      "code": "I7363",
+      "students": 17,
+      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
   },
   {
     "data": {
       "schedule": "1300-1455",
-      "days": ". M . . . .",
+      "days": "L . . . . .",
       "building": "DLAQ",
       "classroom": "LF01",
-      "nrc": "103984",
+      "nrc": "153724",
       "code": "I7363",
-      "students": 0,
+      "students": 16,
       "course": "LABORATORIO DE INGENIERIA DE METODOS"
     },
-    "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
   },
   {
     "data": {
-      "schedule": "1300-1355",
+      "schedule": "1400-1455",
+      "days": ". . I . . .",
+      "building": "DLAQ",
+      "classroom": "LF01",
+      "nrc": "153724",
+      "code": "I7363",
+      "students": 16,
+      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1800-1855",
+      "days": ". . I . . .",
+      "building": "DLAQ",
+      "classroom": "LF01",
+      "nrc": "153725",
+      "code": "I7363",
+      "students": 12,
+      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+    },
+    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . I . . .",
+      "building": "DLAQ",
+      "classroom": "LF01",
+      "nrc": "153726",
+      "code": "I7363",
+      "students": 25,
+      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+    },
+    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
       "days": ". . . J . .",
       "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "103984",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+      "classroom": "LF02",
+      "nrc": "103963",
+      "code": "I7388",
+      "students": 24,
+      "course": "LABORATORIO DE SIMULACION"
     },
-    "professor": "OSPINO GONZALEZ, ROMMEL JOSE"
+    "professor": "OLVERA PEREZ, ELSIE NOEMI"
   },
   {
     "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153723",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+      "classroom": "LF02",
+      "nrc": "180300",
+      "code": "IF904",
+      "students": 22,
+      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
     },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
       "schedule": "1500-1555",
       "days": ". . I . . .",
       "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153723",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+      "classroom": "LF02",
+      "nrc": "180300",
+      "code": "IF904",
+      "students": 22,
+      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
     },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153723",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+      "classroom": "LF02",
+      "nrc": "103965",
+      "code": "I7388",
+      "students": 18,
+      "course": "LABORATORIO DE SIMULACION"
     },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
-      "schedule": "1500-1555",
+      "schedule": "0700-0755",
       "days": ". . I . . .",
       "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153723",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
+      "classroom": "LF02",
+      "nrc": "103965",
+      "code": "I7388",
+      "students": 18,
+      "course": "LABORATORIO DE SIMULACION"
     },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153724",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153724",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153724",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153724",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
       "days": ". . . . V .",
       "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153725",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153725",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153725",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153725",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153726",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153726",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153726",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153726",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "GOMEZ VAZQUEZ, JUAN JOSE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153727",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153727",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153727",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF01",
-      "nrc": "153727",
-      "code": "I7363",
-      "students": 0,
-      "course": "LABORATORIO DE INGENIERIA DE METODOS"
-    },
-    "professor": "MONTES GONZALEZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DLAQ",
       "classroom": "LF02",
-      "nrc": "180300",
-      "code": "IF904",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "180300",
-      "code": "IF904",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "180300",
-      "code": "IF904",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "180300",
-      "code": "IF904",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103965",
+      "nrc": "103967",
       "code": "I7388",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103965",
-      "code": "I7388",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103965",
-      "code": "I7388",
-      "students": 0,
-      "course": "LABORATORIO DE SIMULACION"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "103965",
-      "code": "I7388",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO DE SIMULACION"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"

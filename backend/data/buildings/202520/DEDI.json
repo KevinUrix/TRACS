@@ -7,7 +7,7 @@
       "classroom": "A007",
       "nrc": "127482",
       "code": "I6133",
-      "students": 0,
+      "students": 36,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "TREJO PEREA, NESTOR ALFREDO"
@@ -20,7 +20,7 @@
       "classroom": "A006",
       "nrc": "127483",
       "code": "I6133",
-      "students": 0,
+      "students": 38,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -33,7 +33,7 @@
       "classroom": "A008",
       "nrc": "137207",
       "code": "I6133",
-      "students": 0,
+      "students": 28,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -46,7 +46,7 @@
       "classroom": "A004",
       "nrc": "152789",
       "code": "I6133",
-      "students": 0,
+      "students": 35,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -59,10 +59,23 @@
       "classroom": "A006",
       "nrc": "44198",
       "code": "I3292",
-      "students": 0,
+      "students": 33,
       "course": "BIOQUIMICA DE ALIMENTOS"
     },
     "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . V .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "63389",
+      "code": "I3292",
+      "students": 34,
+      "course": "BIOQUIMICA DE ALIMENTOS"
+    },
+    "professor": "CRUZ VARGAS, MARIA DE JESUS"
   },
   {
     "data": {
@@ -72,7 +85,7 @@
       "classroom": "A004",
       "nrc": "127737",
       "code": "I7493",
-      "students": 0,
+      "students": 25,
       "course": "BIOQUIMICA ESTRUCTURAL I"
     },
     "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -85,23 +98,10 @@
       "classroom": "A006",
       "nrc": "137213",
       "code": "I7526",
-      "students": 0,
+      "students": 18,
       "course": "CIENCIA DE LOS POLIMEROS"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "145671",
-      "code": "I5856",
-      "students": 0,
-      "course": "ELECTROQUIMICA I"
-    },
-    "professor": "MARTINEZ MARTINEZ, FERNANDO"
   },
   {
     "data": {
@@ -111,23 +111,23 @@
       "classroom": "A001",
       "nrc": "108075",
       "code": "I7500",
-      "students": 0,
+      "students": 24,
       "course": "ELECTROQUIMICA I"
     },
     "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
   },
   {
     "data": {
-      "schedule": "1000-1155",
-      "days": ". . . . V .",
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
       "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "79434",
-      "code": "I6995",
-      "students": 0,
-      "course": "ESPECTROSCOPIA Y METODOS DE SEPARACION"
+      "classroom": "A005",
+      "nrc": "145671",
+      "code": "I5856",
+      "students": 21,
+      "course": "ELECTROQUIMICA I"
     },
-    "professor": "ROSAS SANCHEZ, ALFREDO"
+    "professor": "MARTINEZ MARTINEZ, FERNANDO"
   },
   {
     "data": {
@@ -137,7 +137,7 @@
       "classroom": "A002",
       "nrc": "43730",
       "code": "I6925",
-      "students": 0,
+      "students": 32,
       "course": "ESTRUCTURA MOLECULAR"
     },
     "professor": "RENTERIA URQUIZA, MAITE"
@@ -150,7 +150,7 @@
       "classroom": "A001",
       "nrc": "43729",
       "code": "I6925",
-      "students": 0,
+      "students": 31,
       "course": "ESTRUCTURA MOLECULAR"
     },
     "professor": "RANGEL SALAS, IRMA IDALIA"
@@ -160,10 +160,10 @@
       "schedule": "1100-1155",
       "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A001",
+      "classroom": "A002",
       "nrc": "67949",
       "code": "I3285",
-      "students": 0,
+      "students": 16,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -176,7 +176,7 @@
       "classroom": "A007",
       "nrc": "63391",
       "code": "I3285",
-      "students": 0,
+      "students": 24,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -189,33 +189,7 @@
       "classroom": "A003",
       "nrc": "63391",
       "code": "I3285",
-      "students": 0,
-      "course": "FISICOQUIMICA"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63391",
-      "code": "I3285",
-      "students": 0,
-      "course": "FISICOQUIMICA"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "63391",
-      "code": "I3285",
-      "students": 0,
+      "students": 24,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -228,7 +202,7 @@
       "classroom": "A006",
       "nrc": "79466",
       "code": "I6928",
-      "students": 0,
+      "students": 17,
       "course": "FISICOQUIMICA I"
     },
     "professor": "ESCALANTE VAZQUEZ, JOSE INES"
@@ -241,46 +215,7 @@
       "classroom": "A008",
       "nrc": "79473",
       "code": "I6928",
-      "students": 0,
-      "course": "FISICOQUIMICA I"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79473",
-      "code": "I6928",
-      "students": 0,
-      "course": "FISICOQUIMICA I"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "79473",
-      "code": "I6928",
-      "students": 0,
-      "course": "FISICOQUIMICA I"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79473",
-      "code": "I6928",
-      "students": 0,
+      "students": 18,
       "course": "FISICOQUIMICA I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -293,7 +228,7 @@
       "classroom": "A006",
       "nrc": "42380",
       "code": "I6128",
-      "students": 0,
+      "students": 25,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -303,10 +238,10 @@
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDI",
-      "classroom": "A003",
+      "classroom": "A007",
       "nrc": "42378",
       "code": "I6128",
-      "students": 0,
+      "students": 35,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -319,23 +254,10 @@
       "classroom": "A005",
       "nrc": "42379",
       "code": "I6128",
-      "students": 0,
+      "students": 25,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "FLORES MEJIA, JORGE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "123243",
-      "code": "I6128",
-      "students": 0,
-      "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
   },
   {
     "data": {
@@ -345,72 +267,20 @@
       "classroom": "A002",
       "nrc": "63963",
       "code": "I6131",
-      "students": 0,
+      "students": 21,
       "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "104244",
-      "code": "I7492",
-      "students": 0,
-      "course": "FISICOQUIMICA III"
-    },
-    "professor": "DIAMANTI, AIKATERINI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "104244",
-      "code": "I7492",
-      "students": 0,
-      "course": "FISICOQUIMICA III"
-    },
-    "professor": "DIAMANTI, AIKATERINI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "104244",
-      "code": "I7492",
-      "students": 0,
-      "course": "FISICOQUIMICA III"
-    },
-    "professor": "DIAMANTI, AIKATERINI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "104244",
-      "code": "I7492",
-      "students": 0,
-      "course": "FISICOQUIMICA III"
-    },
-    "professor": "DIAMANTI, AIKATERINI"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDI",
       "classroom": "A004",
       "nrc": "42386",
       "code": "I5812",
-      "students": 0,
+      "students": 25,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -423,33 +293,7 @@
       "classroom": "A008",
       "nrc": "42386",
       "code": "I5812",
-      "students": 0,
-      "course": "FISICOQUIMICA PARA INGENIEROS I"
-    },
-    "professor": "ESCOBAR HERNANDEZ, DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "42386",
-      "code": "I5812",
-      "students": 0,
-      "course": "FISICOQUIMICA PARA INGENIEROS I"
-    },
-    "professor": "ESCOBAR HERNANDEZ, DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42386",
-      "code": "I5812",
-      "students": 0,
+      "students": 25,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -462,7 +306,7 @@
       "classroom": "A001",
       "nrc": "63392",
       "code": "I5812",
-      "students": 0,
+      "students": 33,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -475,7 +319,7 @@
       "classroom": "A002",
       "nrc": "79436",
       "code": "I5812",
-      "students": 0,
+      "students": 26,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "BARCENA SOTO, MAXIMILIANO"
@@ -488,7 +332,7 @@
       "classroom": "A001",
       "nrc": "223347",
       "code": "V3846",
-      "students": 0,
+      "students": 23,
       "course": "FUNDAMENTOS DE QUIMICA"
     },
     "professor": "RODRIGUEZ BETANCOURTT, VERONICA MARIA"
@@ -501,7 +345,7 @@
       "classroom": "A001",
       "nrc": "43755",
       "code": "I7494",
-      "students": 0,
+      "students": 32,
       "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
     },
     "professor": "BADILLO CAMACHO, JESSICA"
@@ -514,7 +358,7 @@
       "classroom": "A001",
       "nrc": "43756",
       "code": "I7494",
-      "students": 0,
+      "students": 27,
       "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -527,33 +371,7 @@
       "classroom": "A001",
       "nrc": "43756",
       "code": "I7494",
-      "students": 0,
-      "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
-    },
-    "professor": "PEÑA ORTIZ, MARIA OLIVIA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43756",
-      "code": "I7494",
-      "students": 0,
-      "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
-    },
-    "professor": "PEÑA ORTIZ, MARIA OLIVIA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43756",
-      "code": "I7494",
-      "students": 0,
+      "students": 27,
       "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -566,7 +384,7 @@
       "classroom": "A003",
       "nrc": "117530",
       "code": "I7510",
-      "students": 0,
+      "students": 24,
       "course": "INSTRUMENTACION QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -579,36 +397,23 @@
       "classroom": "A004",
       "nrc": "117530",
       "code": "I7510",
-      "students": 0,
+      "students": 24,
       "course": "INSTRUMENTACION QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "117530",
-      "code": "I7510",
-      "students": 0,
-      "course": "INSTRUMENTACION QUIMICA ANALITICA II"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
+      "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDI",
       "classroom": "A004",
-      "nrc": "117530",
-      "code": "I7510",
-      "students": 0,
-      "course": "INSTRUMENTACION QUIMICA ANALITICA II"
+      "nrc": "117494",
+      "code": "I7509",
+      "students": 21,
+      "course": "INSTRUMENTACION QUIMICA ANALITICA I"
     },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
+    "professor": "VELAZQUEZ JUAREZ, GILBERTO"
   },
   {
     "data": {
@@ -618,7 +423,7 @@
       "classroom": "A005",
       "nrc": "127731",
       "code": "I7510",
-      "students": 0,
+      "students": 25,
       "course": "INSTRUMENTACION QUIMICA ANALITICA II"
     },
     "professor": "VELAZQUEZ JUAREZ, GILBERTO"
@@ -631,7 +436,7 @@
       "classroom": "A007",
       "nrc": "38437",
       "code": "I3290",
-      "students": 0,
+      "students": 29,
       "course": "INTRODUCCION A LA BIOQUIMICA"
     },
     "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
@@ -644,7 +449,7 @@
       "classroom": "A008",
       "nrc": "137215",
       "code": "I7557",
-      "students": 0,
+      "students": 14,
       "course": "INTRODUCCIN A LA CARACTERIZACION DE POLIMEROS"
     },
     "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
@@ -657,7 +462,7 @@
       "classroom": "A005",
       "nrc": "127716",
       "code": "I7556",
-      "students": 0,
+      "students": 7,
       "course": "INTRODUCCION AL ANALISIS BROMATOLOGICO"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -670,7 +475,7 @@
       "classroom": "A007",
       "nrc": "63961",
       "code": "I5822",
-      "students": 0,
+      "students": 33,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -683,46 +488,7 @@
       "classroom": "A008",
       "nrc": "79440",
       "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "RIVAS LOAIZA, JUAN ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "79440",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "RIVAS LOAIZA, JUAN ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "79440",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "RIVAS LOAIZA, JUAN ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "79440",
-      "code": "I5822",
-      "students": 0,
+      "students": 27,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -735,127 +501,49 @@
       "classroom": "A007",
       "nrc": "79441",
       "code": "I5822",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
       "building": "DEDI",
       "classroom": "A004",
       "nrc": "79442",
       "code": "I5822",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "79442",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79442",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
+      "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DEDI",
-      "classroom": "A004",
+      "classroom": "A002",
       "nrc": "79442",
       "code": "I5822",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "79442",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": "L . . . . .",
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
       "building": "DEDI",
       "classroom": "A003",
       "nrc": "79442",
       "code": "I5822",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "79442",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "79442",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79442",
-      "code": "I5822",
-      "students": 0,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
   },
   {
     "data": {
@@ -865,7 +553,7 @@
       "classroom": "A008",
       "nrc": "127733",
       "code": "I7512",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -878,33 +566,7 @@
       "classroom": "A008",
       "nrc": "127733",
       "code": "I7512",
-      "students": 0,
-      "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "127733",
-      "code": "I7512",
-      "students": 0,
-      "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "127733",
-      "code": "I7512",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -917,7 +579,7 @@
       "classroom": "A007",
       "nrc": "83662",
       "code": "I7508",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA ANALITICA II"
     },
     "professor": "LUNA DIAZ, JOSE DE JESUS"
@@ -930,7 +592,7 @@
       "classroom": "A008",
       "nrc": "79494",
       "code": "I7507",
-      "students": 0,
+      "students": 26,
       "course": "LABORATORIO DE QUIMICA ANALITICA I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -943,7 +605,7 @@
       "classroom": "A002",
       "nrc": "43723",
       "code": "I6922",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE QUIMICA GENERAL I"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -956,7 +618,7 @@
       "classroom": "A003",
       "nrc": "137218",
       "code": "I7527",
-      "students": 0,
+      "students": 24,
       "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
     },
     "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -969,36 +631,62 @@
       "classroom": "A003",
       "nrc": "137218",
       "code": "I7527",
-      "students": 0,
+      "students": 24,
       "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
     },
     "professor": "PACHECO MOISES, FERMIN PAUL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDI",
+      "classroom": "A005",
+      "nrc": "235334",
+      "code": "I6145",
+      "students": 30,
+      "course": "MICROBIOLOGIA"
+    },
+    "professor": "GUERRA MARTINEZ, SUSANA OLIVIA"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "133860",
+      "code": "I7521",
+      "students": 19,
+      "course": "OPTIMIZACION Y PROCESOS DE SINTESIS II"
+    },
+    "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "121217",
+      "code": "I7520",
+      "students": 10,
+      "course": "OPTIMIZACION Y PROCESOS DE SINTESIS I"
+    },
+    "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
   },
   {
     "data": {
       "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "137218",
-      "code": "I7527",
-      "students": 0,
-      "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
-    },
-    "professor": "PACHECO MOISES, FERMIN PAUL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
       "days": ". . . J . .",
       "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "137218",
-      "code": "I7527",
-      "students": 0,
-      "course": "MECANISMOS DE REACCIONES ENZIMATICAS"
+      "classroom": "A007",
+      "nrc": "192673",
+      "code": "IL647",
+      "students": 5,
+      "course": "PREPARACION Y CARACTERIZACION DE MATERIALES EN ESTADO SOLIDO"
     },
-    "professor": "PACHECO MOISES, FERMIN PAUL"
+    "professor": "ROSAS SANCHEZ, ALFREDO"
   },
   {
     "data": {
@@ -1008,7 +696,7 @@
       "classroom": "A008",
       "nrc": "127725",
       "code": "I7523",
-      "students": 0,
+      "students": 9,
       "course": "QUIMICA AMBIENTAL"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -1021,7 +709,7 @@
       "classroom": "A002",
       "nrc": "42587",
       "code": "I6127",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -1034,33 +722,7 @@
       "classroom": "A007",
       "nrc": "42587",
       "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42587",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "42587",
-      "code": "I6127",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -1073,10 +735,36 @@
       "classroom": "A008",
       "nrc": "79491",
       "code": "I7504",
-      "students": 0,
+      "students": 32,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "42587",
+      "code": "I6127",
+      "students": 35,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDI",
+      "classroom": "A007",
+      "nrc": "42587",
+      "code": "I6127",
+      "students": 35,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
@@ -1086,137 +774,33 @@
       "classroom": "A004",
       "nrc": "42585",
       "code": "I6127",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
-      "schedule": "1700-1755",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
+      "schedule": "1100-1155",
       "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": "L . . . . .",
-      "building": "DEDI",
       "classroom": "A003",
-      "nrc": "42584",
+      "nrc": "42585",
       "code": "I6127",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ANALITICA I"
     },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "42584",
-      "code": "I6127",
-      "students": 0,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
       "schedule": "1500-1655",
-      "days": "L . I . . .",
+      "days": ". M . . . .",
       "building": "DEDI",
-      "classroom": "A006",
+      "classroom": "A003",
       "nrc": "117526",
       "code": "I7504",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA ANALITICA I"
     },
     "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -1226,13 +810,52 @@
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "72220",
-      "code": "I6127",
-      "students": 0,
+      "classroom": "A005",
+      "nrc": "117526",
+      "code": "I7504",
+      "students": 25,
       "course": "QUIMICA ANALITICA I"
     },
-    "professor": "RIVERA CORONADO, GLORIA PAULINA"
+    "professor": "ROSAS SANCHEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": "L . . . . .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "42584",
+      "code": "I6127",
+      "students": 35,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "DELGADO CHAVEZ, ELEAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "42584",
+      "code": "I6127",
+      "students": 35,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "DELGADO CHAVEZ, ELEAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "42584",
+      "code": "I6127",
+      "students": 35,
+      "course": "QUIMICA ANALITICA I"
+    },
+    "professor": "DELGADO CHAVEZ, ELEAZAR"
   },
   {
     "data": {
@@ -1242,7 +865,7 @@
       "classroom": "A004",
       "nrc": "67482",
       "code": "I6130",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -1255,33 +878,7 @@
       "classroom": "A003",
       "nrc": "67482",
       "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "67482",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "DELGADO CHAVEZ, ELEAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "67482",
-      "code": "I6130",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -1294,7 +891,7 @@
       "classroom": "A008",
       "nrc": "90304",
       "code": "I7506",
-      "students": 0,
+      "students": 26,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -1307,49 +904,10 @@
       "classroom": "A003",
       "nrc": "90304",
       "code": "I7506",
-      "students": 0,
+      "students": 26,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "90304",
-      "code": "I7506",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "90304",
-      "code": "I7506",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . . S",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "67483",
-      "code": "I6130",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
-    },
-    "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
   },
   {
     "data": {
@@ -1359,7 +917,7 @@
       "classroom": "A007",
       "nrc": "152787",
       "code": "I6130",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1372,7 +930,7 @@
       "classroom": "A003",
       "nrc": "79445",
       "code": "I6132",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -1385,7 +943,7 @@
       "classroom": "A004",
       "nrc": "79445",
       "code": "I6132",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -1398,85 +956,7 @@
       "classroom": "A004",
       "nrc": "79445",
       "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79445",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "79445",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "79445",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79445",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "79445",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "79445",
-      "code": "I6132",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -1489,7 +969,7 @@
       "classroom": "A001",
       "nrc": "79448",
       "code": "I6132",
-      "students": 0,
+      "students": 22,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "TREVIÑO ORTIZ, RAQUEL"
@@ -1502,7 +982,7 @@
       "classroom": "A008",
       "nrc": "102071",
       "code": "I6132",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1515,33 +995,7 @@
       "classroom": "A008",
       "nrc": "102071",
       "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "102071",
-      "code": "I6132",
-      "students": 0,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "102071",
-      "code": "I6132",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ANALITICA III"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -1554,10 +1008,10 @@
       "classroom": "A001",
       "nrc": "145672",
       "code": "I6132",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA ANALITICA III"
     },
-    "professor": "HERRERA SALGADO, PRISCILA"
+    "professor": "BARROS CASTILLO, JULIO CESAR"
   },
   {
     "data": {
@@ -1567,33 +1021,20 @@
       "classroom": "A003",
       "nrc": "43797",
       "code": "I7415",
-      "students": 0,
+      "students": 29,
       "course": "QUIMICA BASICA"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "63515",
-      "code": "I7356",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "GONZALEZ QUEZADA, ESPERANZA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDI",
       "classroom": "A004",
       "nrc": "43796",
       "code": "I7415",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA BASICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1606,33 +1047,7 @@
       "classroom": "A004",
       "nrc": "43796",
       "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "43796",
-      "code": "I7415",
-      "students": 0,
-      "course": "QUIMICA BASICA"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "43796",
-      "code": "I7415",
-      "students": 0,
+      "students": 33,
       "course": "QUIMICA BASICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -1645,7 +1060,7 @@
       "classroom": "A002",
       "nrc": "43798",
       "code": "I7415",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA BASICA"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -1658,72 +1073,85 @@
       "classroom": "A001",
       "nrc": "145669",
       "code": "I7356",
-      "students": 0,
+      "students": 41,
       "course": "QUIMICA BASICA"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
   },
   {
     "data": {
-      "schedule": "1500-1555",
+      "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "152810",
-      "code": "IC676",
-      "students": 0,
-      "course": "QUIMICA DE SUELOS"
+      "classroom": "A001",
+      "nrc": "152808",
+      "code": "I7485",
+      "students": 18,
+      "course": "QUIMICA CUANTICA"
     },
-    "professor": "GONZALEZ QUEZADA, ESPERANZA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "152810",
-      "code": "IC676",
-      "students": 0,
-      "course": "QUIMICA DE SUELOS"
-    },
-    "professor": "GONZALEZ QUEZADA, ESPERANZA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "152810",
-      "code": "IC676",
-      "students": 0,
-      "course": "QUIMICA DE SUELOS"
-    },
-    "professor": "GONZALEZ QUEZADA, ESPERANZA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "152810",
-      "code": "IC676",
-      "students": 0,
-      "course": "QUIMICA DE SUELOS"
-    },
-    "professor": "GONZALEZ QUEZADA, ESPERANZA"
+    "professor": "DIAMANTI, AIKATERINI"
   },
   {
     "data": {
       "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "152808",
+      "code": "I7485",
+      "students": 18,
+      "course": "QUIMICA CUANTICA"
+    },
+    "professor": "DIAMANTI, AIKATERINI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "164025",
+      "code": "I7543",
+      "students": 35,
+      "course": "QUIMICA DE NUEVOS MATERIALES"
+    },
+    "professor": "CARBAJAL ARIZAGA, GREGORIO GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": "L . . . . .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "152810",
+      "code": "IC676",
+      "students": 17,
+      "course": "QUIMICA DE SUELOS"
+    },
+    "professor": "GONZALEZ QUEZADA, ESPERANZA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "152810",
+      "code": "IC676",
+      "students": 17,
+      "course": "QUIMICA DE SUELOS"
+    },
+    "professor": "GONZALEZ QUEZADA, ESPERANZA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
       "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A007",
+      "classroom": "A001",
       "nrc": "137220",
       "code": "I7541",
-      "students": 0,
+      "students": 19,
       "course": "QUIMICA DEL ESTADO SOLIDO"
     },
     "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -1736,7 +1164,7 @@
       "classroom": "A001",
       "nrc": "139350",
       "code": "IC601",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -1749,33 +1177,7 @@
       "classroom": "A001",
       "nrc": "139350",
       "code": "IC601",
-      "students": 0,
-      "course": "QUIMICA EN LA INGENIERIA CIVIL"
-    },
-    "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "139350",
-      "code": "IC601",
-      "students": 0,
-      "course": "QUIMICA EN LA INGENIERIA CIVIL"
-    },
-    "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "139350",
-      "code": "IC601",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -1788,20 +1190,33 @@
       "classroom": "A007",
       "nrc": "139351",
       "code": "IC601",
-      "students": 0,
+      "students": 20,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "103821",
+      "code": "I6214",
+      "students": 23,
+      "course": "QUIMICA FARMACEUTICA"
+    },
+    "professor": "ROMERO TEJEDA, ELBA MARGARITA"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DEDI",
       "classroom": "A002",
       "nrc": "42592",
       "code": "I5803",
-      "students": 0,
+      "students": 29,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -1814,7 +1229,7 @@
       "classroom": "A002",
       "nrc": "42592",
       "code": "I5803",
-      "students": 0,
+      "students": 29,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -1824,78 +1239,65 @@
       "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42592",
-      "code": "I5803",
-      "students": 0,
+      "classroom": "A001",
+      "nrc": "43721",
+      "code": "I6921",
+      "students": 34,
       "course": "QUIMICA GENERAL I"
     },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
+    "professor": "PULIDO GONZALEZ, HECTOR"
   },
   {
     "data": {
-      "schedule": "0700-0755",
+      "schedule": "0800-0855",
+      "days": ". . . J . .",
+      "building": "DEDI",
+      "classroom": "A001",
+      "nrc": "43721",
+      "code": "I6921",
+      "students": 34,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "PULIDO GONZALEZ, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "42594",
+      "code": "I5803",
+      "students": 37,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "PULIDO GONZALEZ, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
       "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42592",
+      "classroom": "A004",
+      "nrc": "42594",
       "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43721",
-      "code": "I6921",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "PULIDO GONZALEZ, HECTOR"
   },
   {
     "data": {
-      "schedule": "0800-0855",
+      "schedule": "1400-1655",
       "days": ". . . J . .",
       "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43721",
+      "classroom": "A008",
+      "nrc": "43719",
       "code": "I6921",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA GENERAL I"
     },
-    "professor": "PULIDO GONZALEZ, HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43721",
-      "code": "I6921",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "PULIDO GONZALEZ, HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43721",
-      "code": "I6921",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "PULIDO GONZALEZ, HECTOR"
+    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
   },
   {
     "data": {
@@ -1905,7 +1307,7 @@
       "classroom": "A008",
       "nrc": "43719",
       "code": "I6921",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -1918,7 +1320,7 @@
       "classroom": "A002",
       "nrc": "42594",
       "code": "I5803",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1928,36 +1330,10 @@
       "schedule": "0900-0955",
       "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A001",
+      "classroom": "A004",
       "nrc": "42594",
       "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "PULIDO GONZALEZ, HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42594",
-      "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "PULIDO GONZALEZ, HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "42594",
-      "code": "I5803",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "PULIDO GONZALEZ, HECTOR"
@@ -1970,10 +1346,23 @@
       "classroom": "A007",
       "nrc": "102072",
       "code": "I6122",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "1200-1355",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "42595",
+      "code": "I5803",
+      "students": 37,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "MARTINEZ GOMEZ, ALVARO DE JESUS"
   },
   {
     "data": {
@@ -1983,7 +1372,7 @@
       "classroom": "A007",
       "nrc": "42593",
       "code": "I5803",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -1996,10 +1385,10 @@
       "classroom": "A006",
       "nrc": "79451",
       "code": "I5803",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA GENERAL I"
     },
-    "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
+    "professor": "HERRERA HERRERA, PEDRO ARTURO"
   },
   {
     "data": {
@@ -2009,36 +1398,10 @@
       "classroom": "A006",
       "nrc": "79451",
       "code": "I5803",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA GENERAL I"
     },
-    "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "79451",
-      "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "79451",
-      "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "SAUCEDO AZPEITIA, HUGO FRANCISCO"
+    "professor": "HERRERA HERRERA, PEDRO ARTURO"
   },
   {
     "data": {
@@ -2048,7 +1411,7 @@
       "classroom": "A007",
       "nrc": "94990",
       "code": "I5803",
-      "students": 0,
+      "students": 36,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -2061,33 +1424,7 @@
       "classroom": "A007",
       "nrc": "94990",
       "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "SOTO GARCIA, VICTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "94990",
-      "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "SOTO GARCIA, VICTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "94990",
-      "code": "I5803",
-      "students": 0,
+      "students": 36,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -2100,7 +1437,7 @@
       "classroom": "A001",
       "nrc": "63398",
       "code": "I6122",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MATA MUNGUIA, AIDE"
@@ -2113,33 +1450,7 @@
       "classroom": "A001",
       "nrc": "63398",
       "code": "I6122",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MATA MUNGUIA, AIDE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "63398",
-      "code": "I6122",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MATA MUNGUIA, AIDE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "63398",
-      "code": "I6122",
-      "students": 0,
+      "students": 37,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MATA MUNGUIA, AIDE"
@@ -2152,7 +1463,7 @@
       "classroom": "A005",
       "nrc": "102196",
       "code": "I5803",
-      "students": 0,
+      "students": 29,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -2165,33 +1476,7 @@
       "classroom": "A006",
       "nrc": "102196",
       "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "102196",
-      "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "102196",
-      "code": "I5803",
-      "students": 0,
+      "students": 29,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -2204,7 +1489,7 @@
       "classroom": "A004",
       "nrc": "42610",
       "code": "I6126",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -2217,7 +1502,7 @@
       "classroom": "A006",
       "nrc": "42608",
       "code": "I5804",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -2230,33 +1515,7 @@
       "classroom": "A006",
       "nrc": "42608",
       "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "42608",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "42608",
-      "code": "I5804",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -2269,7 +1528,7 @@
       "classroom": "A002",
       "nrc": "43725",
       "code": "I6923",
-      "students": 0,
+      "students": 19,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -2282,7 +1541,7 @@
       "classroom": "A001",
       "nrc": "43725",
       "code": "I6923",
-      "students": 0,
+      "students": 19,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -2295,7 +1554,7 @@
       "classroom": "A007",
       "nrc": "42605",
       "code": "I5804",
-      "students": 0,
+      "students": 26,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
@@ -2308,62 +1567,10 @@
       "classroom": "A002",
       "nrc": "42605",
       "code": "I5804",
-      "students": 0,
+      "students": 26,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "42605",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "RIOS DONATO, NELY"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42605",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "RIOS DONATO, NELY"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . V .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "43725",
-      "code": "I6923",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "43725",
-      "code": "I6923",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "LOMELI ROSALES, DIEGO ALBERTO"
   },
   {
     "data": {
@@ -2373,7 +1580,7 @@
       "classroom": "A005",
       "nrc": "42609",
       "code": "I6126",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "FLORES MEJIA, JORGE"
@@ -2386,7 +1593,7 @@
       "classroom": "A005",
       "nrc": "42609",
       "code": "I6126",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "FLORES MEJIA, JORGE"
@@ -2394,28 +1601,28 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . I . . .",
+      "days": "L . . . . .",
       "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "42604",
-      "code": "I5804",
-      "students": 0,
+      "classroom": "A002",
+      "nrc": "63400",
+      "code": "I6923",
+      "students": 27,
       "course": "QUIMICA GENERAL II"
     },
-    "professor": "FLORES MEJIA, JORGE"
+    "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
   },
   {
     "data": {
       "schedule": "1300-1355",
       "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "42604",
-      "code": "I5804",
-      "students": 0,
+      "classroom": "A002",
+      "nrc": "63400",
+      "code": "I6923",
+      "students": 27,
       "course": "QUIMICA GENERAL II"
     },
-    "professor": "FLORES MEJIA, JORGE"
+    "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
   },
   {
     "data": {
@@ -2425,7 +1632,7 @@
       "classroom": "A005",
       "nrc": "42609",
       "code": "I6126",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "FLORES MEJIA, JORGE"
@@ -2438,20 +1645,33 @@
       "classroom": "A005",
       "nrc": "42609",
       "code": "I6126",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "FLORES MEJIA, JORGE"
   },
   {
     "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
       "building": "DEDI",
-      "classroom": "A006",
+      "classroom": "A002",
       "nrc": "63400",
       "code": "I6923",
-      "students": 0,
+      "students": 27,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "63400",
+      "code": "I6923",
+      "students": 27,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
@@ -2464,7 +1684,7 @@
       "classroom": "A005",
       "nrc": "42604",
       "code": "I5804",
-      "students": 0,
+      "students": 18,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "FLORES MEJIA, JORGE"
@@ -2477,85 +1697,20 @@
       "classroom": "A005",
       "nrc": "42604",
       "code": "I5804",
-      "students": 0,
+      "students": 18,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "FLORES MEJIA, JORGE"
   },
   {
     "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "63400",
-      "code": "I6923",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42612",
-      "code": "I6126",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42612",
-      "code": "I6126",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42612",
-      "code": "I6126",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42612",
-      "code": "I6126",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDI",
       "classroom": "A006",
       "nrc": "42606",
       "code": "I5804",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
@@ -2568,10 +1723,36 @@
       "classroom": "A006",
       "nrc": "42606",
       "code": "I5804",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "42612",
+      "code": "I6126",
+      "students": 26,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1800-1855",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A003",
+      "nrc": "42612",
+      "code": "I6126",
+      "students": 26,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
   },
   {
     "data": {
@@ -2581,7 +1762,7 @@
       "classroom": "A006",
       "nrc": "42606",
       "code": "I5804",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
@@ -2594,62 +1775,10 @@
       "classroom": "A006",
       "nrc": "42606",
       "code": "I5804",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "79452",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "HERRERA HERRERA, PEDRO ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79452",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "HERRERA HERRERA, PEDRO ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "79452",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "HERRERA HERRERA, PEDRO ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "79452",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "HERRERA HERRERA, PEDRO ARTURO"
   },
   {
     "data": {
@@ -2659,20 +1788,46 @@
       "classroom": "A005",
       "nrc": "102073",
       "code": "I6126",
-      "students": 0,
+      "students": 25,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "79452",
+      "code": "I5804",
+      "students": 25,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "HERRERA HERRERA, PEDRO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "79452",
+      "code": "I5804",
+      "students": 25,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "HERRERA HERRERA, PEDRO ARTURO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDI",
       "classroom": "A005",
       "nrc": "79453",
       "code": "I5804",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -2685,33 +1840,7 @@
       "classroom": "A005",
       "nrc": "79453",
       "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "79453",
-      "code": "I5804",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "79453",
-      "code": "I5804",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -2724,7 +1853,7 @@
       "classroom": "A001",
       "nrc": "131074",
       "code": "I6126",
-      "students": 0,
+      "students": 24,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2737,33 +1866,7 @@
       "classroom": "A008",
       "nrc": "131074",
       "code": "I6126",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "131074",
-      "code": "I6126",
-      "students": 0,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "131074",
-      "code": "I6126",
-      "students": 0,
+      "students": 24,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -2776,7 +1879,7 @@
       "classroom": "A008",
       "nrc": "38417",
       "code": "I3278",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -2789,7 +1892,7 @@
       "classroom": "A002",
       "nrc": "43749",
       "code": "I7482",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA INORGANICA I"
     },
     "professor": "RENTERIA URQUIZA, MAITE"
@@ -2797,12 +1900,12 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". M . . V .",
+      "days": "L . I . . .",
       "building": "DEDI",
-      "classroom": "A003",
+      "classroom": "A006",
       "nrc": "63952",
       "code": "I7491",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA INORGANICA II"
     },
     "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -2815,7 +1918,7 @@
       "classroom": "A003",
       "nrc": "127741",
       "code": "I7491",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA INORGANICA II"
     },
     "professor": "RANGEL SALAS, IRMA IDALIA"
@@ -2828,7 +1931,7 @@
       "classroom": "A002",
       "nrc": "95950",
       "code": "I7517",
-      "students": 0,
+      "students": 20,
       "course": "QUIMICA MACROMOLECULAR"
     },
     "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
@@ -2841,7 +1944,7 @@
       "classroom": "A004",
       "nrc": "89400",
       "code": "I7517",
-      "students": 0,
+      "students": 18,
       "course": "QUIMICA MACROMOLECULAR"
     },
     "professor": "ALVARADO MENDOZA, ABRAHAM GABRIEL"
@@ -2854,7 +1957,7 @@
       "classroom": "A005",
       "nrc": "192668",
       "code": "I7517",
-      "students": 0,
+      "students": 15,
       "course": "QUIMICA MACROMOLECULAR"
     },
     "professor": "FLORES MEJIA, JORGE"
@@ -2867,7 +1970,7 @@
       "classroom": "A004",
       "nrc": "209799",
       "code": "I3282",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2880,7 +1983,7 @@
       "classroom": "A008",
       "nrc": "209799",
       "code": "I3282",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2893,85 +1996,7 @@
       "classroom": "A001",
       "nrc": "209799",
       "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "209799",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "209799",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "209799",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "209799",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "209799",
-      "code": "I3282",
-      "students": 0,
-      "course": "QUIMICA ORGANICA"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "209799",
-      "code": "I3282",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
@@ -2984,7 +2009,7 @@
       "classroom": "A006",
       "nrc": "42619",
       "code": "I5805",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "CID HERNANDEZ, MARGARITA"
@@ -2997,7 +2022,7 @@
       "classroom": "A007",
       "nrc": "42620",
       "code": "I6124",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -3010,33 +2035,7 @@
       "classroom": "A006",
       "nrc": "42620",
       "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "42620",
-      "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "42620",
-      "code": "I6124",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -3049,7 +2048,7 @@
       "classroom": "A005",
       "nrc": "42618",
       "code": "I5805",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "CID HERNANDEZ, MARGARITA"
@@ -3062,33 +2061,7 @@
       "classroom": "A003",
       "nrc": "42618",
       "code": "I5805",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "CID HERNANDEZ, MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "42618",
-      "code": "I5805",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "CID HERNANDEZ, MARGARITA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A003",
-      "nrc": "42618",
-      "code": "I5805",
-      "students": 0,
+      "students": 31,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "CID HERNANDEZ, MARGARITA"
@@ -3101,7 +2074,7 @@
       "classroom": "A006",
       "nrc": "72219",
       "code": "I6124",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -3114,33 +2087,7 @@
       "classroom": "A006",
       "nrc": "72219",
       "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "72219",
-      "code": "I6124",
-      "students": 0,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "72219",
-      "code": "I6124",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
@@ -3153,7 +2100,7 @@
       "classroom": "A005",
       "nrc": "112062",
       "code": "I6124",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -3166,7 +2113,7 @@
       "classroom": "A005",
       "nrc": "63404",
       "code": "I5805",
-      "students": 0,
+      "students": 29,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "GONZALEZ CRUZ, RICARDO"
@@ -3179,7 +2126,7 @@
       "classroom": "A004",
       "nrc": "63511",
       "code": "I6129",
-      "students": 0,
+      "students": 15,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -3192,62 +2139,10 @@
       "classroom": "A001",
       "nrc": "63511",
       "code": "I6129",
-      "students": 0,
+      "students": 15,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "63511",
-      "code": "I6129",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "63511",
-      "code": "I6129",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42629",
-      "code": "I6129",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "42629",
-      "code": "I6129",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
   },
   {
     "data": {
@@ -3257,7 +2152,7 @@
       "classroom": "A004",
       "nrc": "42628",
       "code": "I5806",
-      "students": 0,
+      "students": 39,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "MOSCOSO SANCHEZ, FRANCISCO JAVIER"
@@ -3270,7 +2165,7 @@
       "classroom": "A002",
       "nrc": "42629",
       "code": "I6129",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -3283,7 +2178,7 @@
       "classroom": "A001",
       "nrc": "42629",
       "code": "I6129",
-      "students": 0,
+      "students": 35,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -3296,7 +2191,7 @@
       "classroom": "A008",
       "nrc": "63512",
       "code": "I6129",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -3309,33 +2204,7 @@
       "classroom": "A008",
       "nrc": "63512",
       "code": "I6129",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "63512",
-      "code": "I6129",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A008",
-      "nrc": "63512",
-      "code": "I6129",
-      "students": 0,
+      "students": 30,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -3348,7 +2217,7 @@
       "classroom": "A002",
       "nrc": "42630",
       "code": "I6129",
-      "students": 0,
+      "students": 34,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
@@ -3361,7 +2230,7 @@
       "classroom": "A007",
       "nrc": "63407",
       "code": "I5806",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -3374,7 +2243,7 @@
       "classroom": "A007",
       "nrc": "63407",
       "code": "I5806",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -3387,85 +2256,7 @@
       "classroom": "A007",
       "nrc": "63407",
       "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63407",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63407",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63407",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63407",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63407",
-      "code": "I5806",
-      "students": 0,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDI",
-      "classroom": "A007",
-      "nrc": "63407",
-      "code": "I5806",
-      "students": 0,
+      "students": 27,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
@@ -3478,23 +2269,23 @@
       "classroom": "A008",
       "nrc": "95236",
       "code": "I5806",
-      "students": 0,
+      "students": 32,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
+      "schedule": "1400-1655",
+      "days": ". . . . V .",
       "building": "DEDI",
-      "classroom": "A008",
+      "classroom": "A003",
       "nrc": "104260",
       "code": "I7540",
-      "students": 0,
+      "students": 26,
       "course": "QUIMICA ORGANOMETALICA"
     },
-    "professor": "CORTES LLAMAS, SARA ANGELICA"
+    "professor": "ROSAS SANCHEZ, ALFREDO"
   },
   {
     "data": {
@@ -3504,7 +2295,7 @@
       "classroom": "A003",
       "nrc": "104262",
       "code": "I7551",
-      "students": 0,
+      "students": 8,
       "course": "QUIMIOMETRIA"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -3517,7 +2308,7 @@
       "classroom": "A001",
       "nrc": "43753",
       "code": "I7487",
-      "students": 0,
+      "students": 36,
       "course": "SEMINARIO DE INDUCCION"
     },
     "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
@@ -3530,7 +2321,7 @@
       "classroom": "A008",
       "nrc": "104261",
       "code": "I7538",
-      "students": 0,
+      "students": 22,
       "course": "SINTESIS DE COMPUESTOS ORGANICOS"
     },
     "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -3543,7 +2334,7 @@
       "classroom": "A004",
       "nrc": "172123",
       "code": "I6911",
-      "students": 0,
+      "students": 31,
       "course": "TALLER DE MATEMATICAS APLICADAS A LA QUIMICA"
     },
     "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
@@ -3556,7 +2347,7 @@
       "classroom": "A007",
       "nrc": "148083",
       "code": "I7524",
-      "students": 0,
+      "students": 19,
       "course": "TALLER DE QUIMICA AMBIENTAL"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -3569,7 +2360,7 @@
       "classroom": "A008",
       "nrc": "104254",
       "code": "I7499",
-      "students": 0,
+      "students": 17,
       "course": "TALLER DE SEGUIMIENTO DE MODULO II"
     },
     "professor": "LOMELI ROSALES, DIEGO ALBERTO"
@@ -3582,10 +2373,10 @@
       "classroom": "A005",
       "nrc": "166484",
       "code": "I7515",
-      "students": 0,
+      "students": 19,
       "course": "TALLER DE SEGUIMIENTO DE MODULO IV"
     },
-    "professor": "RANGEL SALAS, IRMA IDALIA"
+    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   },
   {
     "data": {
@@ -3595,7 +2386,7 @@
       "classroom": "A004",
       "nrc": "79485",
       "code": "I6927",
-      "students": 0,
+      "students": 22,
       "course": "TALLER DE SEGUIMIENTO DE MODULO I"
     },
     "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
@@ -3608,23 +2399,10 @@
       "classroom": "A004",
       "nrc": "79486",
       "code": "I6927",
-      "students": 0,
+      "students": 21,
       "course": "TALLER DE SEGUIMIENTO DE MODULO I"
     },
     "professor": "CORTES ROMERO, CELSO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "209803",
-      "code": "IL665",
-      "students": 0,
-      "course": "TEMAS SELECTOS EN BIOQUIMICA II"
-    },
-    "professor": "CID HERNANDEZ, MARGARITA"
   },
   {
     "data": {
@@ -3634,7 +2412,7 @@
       "classroom": "A005",
       "nrc": "79490",
       "code": "I7488",
-      "students": 0,
+      "students": 22,
       "course": "TEORIA DE QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -3644,10 +2422,10 @@
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDI",
-      "classroom": "A007",
+      "classroom": "A003",
       "nrc": "127730",
       "code": "I7488",
-      "students": 0,
+      "students": 25,
       "course": "TEORIA DE QUIMICA ORGANICA II"
     },
     "professor": "LOPEZ REYES, MORELIA EUNICE"
@@ -3660,20 +2438,20 @@
       "classroom": "A003",
       "nrc": "63944",
       "code": "I7481",
-      "students": 0,
+      "students": 31,
       "course": "TEORIA DE QUIMICA ORGANICA I"
     },
     "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
   },
   {
     "data": {
-      "schedule": "1300-1455",
+      "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDI",
-      "classroom": "A007",
+      "classroom": "A002",
       "nrc": "118956",
       "code": "I7481",
-      "students": 0,
+      "students": 28,
       "course": "TEORIA DE QUIMICA ORGANICA I"
     },
     "professor": "LOPEZ REYES, MORELIA EUNICE"
@@ -3686,7 +2464,7 @@
       "classroom": "A003",
       "nrc": "127729",
       "code": "I7481",
-      "students": 0,
+      "students": 32,
       "course": "TEORIA DE QUIMICA ORGANICA I"
     },
     "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
@@ -3699,7 +2477,7 @@
       "classroom": "A004",
       "nrc": "84481",
       "code": "I7489",
-      "students": 0,
+      "students": 29,
       "course": "TEORIA DE QUIMICA ORGANICA III"
     },
     "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"

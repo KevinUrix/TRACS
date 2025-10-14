@@ -211,16 +211,9 @@ export default function Calendar() {
             window.location.href = `${API_URL}/api/google/reauth?user=${user}`;
           }, 1300);
         }
-        else if (response.status === 403) {
+        else if (response.status === 403 || response.status === 401) {
           localStorage.clear();
           toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
-          setTimeout(() => {
-            window.location.href = "/login";
-          }, 1000);
-        }
-        else if (response.status === 401) {
-          localStorage.clear();
-          toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {
             window.location.href = "/login";
           }, 1000);

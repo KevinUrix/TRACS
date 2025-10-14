@@ -1,26 +1,26 @@
 [
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
       "building": "DEDM",
-      "classroom": "LM2",
-      "nrc": "165897",
-      "code": "IH371",
-      "students": 0,
-      "course": "ANALISIS GENOMICO"
+      "classroom": "LM1",
+      "nrc": "44211",
+      "code": "I7594",
+      "students": 5,
+      "course": "BIOMATERIALES"
     },
-    "professor": "MORALES VALENCIA, JOSE ALEJANDRO"
+    "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
   },
   {
     "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDM",
-      "classroom": "LM5",
+      "classroom": "LM4",
       "nrc": "88258",
       "code": "I7277",
-      "students": 0,
+      "students": 10,
       "course": "CIRCUITOS ANALOGICOS I"
     },
     "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -33,7 +33,7 @@
       "classroom": "LM4",
       "nrc": "104763",
       "code": "I7279",
-      "students": 0,
+      "students": 20,
       "course": "CIRCUITOS ANALOGICOS II"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -46,7 +46,7 @@
       "classroom": "LM4",
       "nrc": "78971",
       "code": "I7280",
-      "students": 0,
+      "students": 20,
       "course": "CIRCUITOS DIGITALES"
     },
     "professor": "GURROLA NAVARRO, MARCO ANTONIO"
@@ -59,23 +59,49 @@
       "classroom": "LM4",
       "nrc": "170036",
       "code": "IB140",
-      "students": 0,
+      "students": 16,
       "course": "COMUNICACIONES OPTICAS II"
     },
     "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
   },
   {
     "data": {
-      "schedule": "1300-1455",
+      "schedule": "1900-2055",
       "days": ". M . J . .",
       "building": "DEDM",
       "classroom": "LM4",
-      "nrc": "225739",
-      "code": "V3636",
-      "students": 0,
-      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+      "nrc": "193724",
+      "code": "I7262",
+      "students": 10,
+      "course": "DISEÑO DE INTERFACES"
     },
-    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "154519",
+      "code": "I7597",
+      "students": 21,
+      "course": "ELECTROFISIOLOGIA MOLECULAR II"
+    },
+    "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "82672",
+      "code": "I7602",
+      "students": 20,
+      "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
+    },
+    "professor": "OCHOA RAMIREZ, BENJAMIN"
   },
   {
     "data": {
@@ -85,7 +111,7 @@
       "classroom": "LM4",
       "nrc": "120467",
       "code": "I7287",
-      "students": 0,
+      "students": 21,
       "course": "INSTRUMENTACION"
     },
     "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -98,7 +124,7 @@
       "classroom": "LM4",
       "nrc": "122799",
       "code": "I7287",
-      "students": 0,
+      "students": 20,
       "course": "INSTRUMENTACION"
     },
     "professor": "GOMEZ MORALES, LEOBARDO"
@@ -111,101 +137,140 @@
       "classroom": "LM4",
       "nrc": "131840",
       "code": "I7287",
-      "students": 0,
+      "students": 20,
       "course": "INSTRUMENTACION"
     },
-    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+    "professor": "GARCIA MORENO, SALATIEL"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM4",
-      "nrc": "133069",
-      "code": "I7287",
-      "students": 0,
-      "course": "INSTRUMENTACION"
-    },
-    "professor": "VEGA MAGDALENO, GUSTAVO DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "0800-1155",
+      "schedule": "1300-1655",
       "days": ". . . . V .",
       "building": "DEDM",
-      "classroom": "LM4",
-      "nrc": "194959",
-      "code": "I7287",
-      "students": 0,
-      "course": "INSTRUMENTACION"
+      "classroom": "LM3",
+      "nrc": "197843",
+      "code": "I7605",
+      "students": 13,
+      "course": "INSTRUMENTACION DIAGNOSTICA Y TERAPEUTICA"
     },
-    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+    "professor": "MORENO GONZALEZ, VICTOR ERNESTO"
   },
   {
     "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDM",
-      "classroom": "LM2",
-      "nrc": "174256",
-      "code": "IH385",
-      "students": 0,
-      "course": "INTELIGENCIA ARTIFICIAL"
+      "classroom": "LM3",
+      "nrc": "59589",
+      "code": "I7603",
+      "students": 20,
+      "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
     },
-    "professor": "ALVAREZ PADILLA, FRANCISCO JAVIER"
+    "professor": "OCHOA RAMIREZ, BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "99098",
+      "code": "I7604",
+      "students": 30,
+      "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
+    },
+    "professor": "GONZALEZ ORTEGA, ELENA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "89615",
+      "code": "ET334",
+      "students": 25,
+      "course": "INSTRUMENTACION MEDICA III"
+    },
+    "professor": "QUIROZ PEREZ, ERIKA LIZETH"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "195521",
+      "code": "ET334",
+      "students": 41,
+      "course": "INSTRUMENTACION MEDICA III"
+    },
+    "professor": "MORENO GONZALEZ, VICTOR ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": "L . I . V .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "55416",
+      "code": "ET335",
+      "students": 27,
+      "course": "INSTRUMENTACION MEDICA IV"
+    },
+    "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": "L . I . V .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "55416",
+      "code": "ET335",
+      "students": 27,
+      "course": "INSTRUMENTACION MEDICA IV"
+    },
+    "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "95062",
+      "code": "I7606",
+      "students": 22,
+      "course": "INSTRUMENTACION Y TECNICAS DE REHABILITACION"
+    },
+    "professor": "MENDEZ PALOS, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "78949",
+      "code": "ET333",
+      "students": 17,
+      "course": "INSTRUMENTACION MEDICA II"
+    },
+    "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
   },
   {
     "data": {
       "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDM",
-      "classroom": "LM7",
-      "nrc": "194962",
-      "code": "IB146",
-      "students": 0,
-      "course": "LABORATORIO DE CARACTERIZACION OPTICA"
-    },
-    "professor": "BALDERAS MATA, SANDRA ELOISA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDM",
-      "classroom": "LM2",
-      "nrc": "165903",
-      "code": "IH390",
-      "students": 0,
-      "course": "NEUROCIENCIAS"
+      "classroom": "LM3",
+      "nrc": "60994",
+      "code": "I7593",
+      "students": 20,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ANATOMIA MECANICA II"
     },
-    "professor": "OSUNA CARRASCO, LAURA PAULINA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDM",
-      "classroom": "LM7",
-      "nrc": "160210",
-      "code": "IG420",
-      "students": 0,
-      "course": "OPTICA FISICA"
-    },
-    "professor": "BALDERAS MATA, SANDRA ELOISA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDM",
-      "classroom": "LM7",
-      "nrc": "210480",
-      "code": "V1685",
-      "students": 0,
-      "course": "OPTICA FISICA"
-    },
-    "professor": "BALDERAS MATA, SANDRA ELOISA"
+    "professor": "RIVERA TELLO, SERGIO IVAN"
   },
   {
     "data": {
@@ -215,49 +280,10 @@
       "classroom": "LM5",
       "nrc": "120470",
       "code": "I7290",
-      "students": 0,
+      "students": 19,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
     },
     "professor": "RUIZ PALACIOS, MARIA SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . V .",
-      "building": "DEDM",
-      "classroom": "LM5",
-      "nrc": "154171",
-      "code": "I7290",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
-    },
-    "professor": "PACHECO PADILLA, LUIS MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM5",
-      "nrc": "82552",
-      "code": "I7271",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
-    },
-    "professor": "RIOS SALCEDO, SERGIO ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM2",
-      "nrc": "210420",
-      "code": "V1684",
-      "students": 0,
-      "course": "SISTEMAS DE MEDICION"
-    },
-    "professor": "GARCIA TORALES, GUILLERMO"
   },
   {
     "data": {
@@ -267,9 +293,48 @@
       "classroom": "LM4",
       "nrc": "43526",
       "code": "I7292",
-      "students": 0,
+      "students": 7,
       "course": "SISTEMAS DE MEDICION"
     },
-    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+    "professor": "MAESTRO RUIZ, EDGAR ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "55437",
+      "code": "ET356",
+      "students": 25,
+      "course": "TEMAS SELECTOS DE INGENIERIA BIOMEDICA I"
+    },
+    "professor": "RIVERA TELLO, SERGIO IVAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "143461",
+      "code": "ET353",
+      "students": 19,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
+    },
+    "professor": "RIVERA TELLO, SERGIO IVAN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "165123",
+      "code": "ET353",
+      "students": 24,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
+    },
+    "professor": "RIVERA TELLO, SERGIO IVAN"
   }
 ]

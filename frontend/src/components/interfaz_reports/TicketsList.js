@@ -78,8 +78,21 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           ? `${API_URL}/api/tickets/${encodeURIComponent(building.value)}`
           : `${API_URL}/api/tickets`;
 
-        const res = await fetch(url);
-        if (!res.ok) throw new Error('Error al cargar reportes');
+        const res = await fetch(url, {
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+          },
+        });
+        
+        if (!res.ok) {
+          if (res.status === 403 || res.status === 401) {
+            localStorage.clear();
+            window.location.href = "/calendar";
+            return;
+          }
+          throw new Error('Error al cargar reportes');
+        }
 
         const data = await res.json();
         setTickets(data);

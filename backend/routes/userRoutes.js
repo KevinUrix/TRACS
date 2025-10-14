@@ -6,7 +6,7 @@ const authRole = require('../middleware/authRole');
 
 router.post('/register', authMiddleware, authRole(['superuser']), userController.register);
 router.post('/login', userController.login);
-router.get('/users', userController.getAllUsers);
+router.get('/users', authMiddleware, authRole(['superuser']), userController.getAllUsers);
 router.put('/users/:id/role', authMiddleware, authRole(['superuser']), userController.updateRole);
 router.delete('/users/:id', authMiddleware, authRole(['superuser']), userController.deleteUser);
 

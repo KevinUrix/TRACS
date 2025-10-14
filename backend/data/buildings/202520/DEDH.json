@@ -7,7 +7,7 @@
       "classroom": "LBQ01",
       "nrc": "42389",
       "code": "I6137",
-      "students": 0,
+      "students": 34,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "DIAZ BURKE, YOLANDA"
@@ -20,7 +20,7 @@
       "classroom": "LBQ01",
       "nrc": "42392",
       "code": "I6137",
-      "students": 0,
+      "students": 35,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "VIRGEN MONTELONGO, MARIA"
@@ -33,7 +33,7 @@
       "classroom": "LBQ01",
       "nrc": "42390",
       "code": "I6137",
-      "students": 0,
+      "students": 36,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "MEZA RIOS, ALEJANDRA"
@@ -46,7 +46,7 @@
       "classroom": "LBQ01",
       "nrc": "58213",
       "code": "I6137",
-      "students": 0,
+      "students": 30,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "BANCALARI ORGANISTA, CARLOS"
@@ -59,10 +59,23 @@
       "classroom": "LCL01",
       "nrc": "117639",
       "code": "I6174",
-      "students": 0,
+      "students": 31,
       "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
     },
     "professor": "ZERMEÑO RUIZ, MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDH",
+      "classroom": "",
+      "nrc": "158573",
+      "code": "I6174",
+      "students": 25,
+      "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
+    },
+    "professor": "VAZQUEZ PAULINO, OLGA DELI"
   },
   {
     "data": {
@@ -72,7 +85,7 @@
       "classroom": "LCL01",
       "nrc": "89596",
       "code": "I6151",
-      "students": 0,
+      "students": 29,
       "course": "LABORATORIO DE MICROBIOLOGIA CLINICA"
     },
     "professor": "ZERMEÑO RUIZ, MARTIN"
@@ -85,7 +98,7 @@
       "classroom": "LCL01",
       "nrc": "87901",
       "code": "I6151",
-      "students": 0,
+      "students": 30,
       "course": "LABORATORIO DE MICROBIOLOGIA CLINICA"
     },
     "professor": "GUERRA MARTINEZ, SUSANA OLIVIA"
@@ -98,9 +111,48 @@
       "classroom": "LCL01",
       "nrc": "143292",
       "code": "I6151",
-      "students": 0,
+      "students": 29,
       "course": "LABORATORIO DE MICROBIOLOGIA CLINICA"
     },
     "professor": "CHAVARIN SALAZAR, DANIEL IGNACIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDH",
+      "classroom": "",
+      "nrc": "79493",
+      "code": "I7507",
+      "students": 31,
+      "course": "LABORATORIO DE QUIMICA ANALITICA I"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDH",
+      "classroom": "",
+      "nrc": "90585",
+      "code": "I7508",
+      "students": 25,
+      "course": "LABORATORIO DE QUIMICA ANALITICA II"
+    },
+    "professor": "GUDIÑO GUZMAN, BERNARDO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1855",
+      "days": ". . . . V .",
+      "building": "DEDH",
+      "classroom": "",
+      "nrc": "152805",
+      "code": "I7508",
+      "students": 21,
+      "course": "LABORATORIO DE QUIMICA ANALITICA II"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
   }
 ]

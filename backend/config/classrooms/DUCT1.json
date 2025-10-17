@@ -1,12 +1,42 @@
 [
-  "LC01",
-  "LC02",
-  "LC03",
-  "LC04",
-  "LC05",
-  "LC06",
-  "LC07",
-  "LC08",
-  "LC09",
-  "LC10"
+  {
+    "name": "LC01",
+    "capacity": "40"
+  },
+  {
+    "name": "LC02",
+    "capacity": "30"
+  },
+  {
+    "name": "LC03",
+    "capacity": "28"
+  },
+  {
+    "name": "LC04",
+    "capacity": "28"
+  },
+  {
+    "name": "LC05",
+    "capacity": "28"
+  },
+  {
+    "name": "LC06",
+    "capacity": "28"
+  },
+  {
+    "name": "LC07",
+    "capacity": "28"
+  },
+  {
+    "name": "LC08",
+    "capacity": "28"
+  },
+  {
+    "name": "LC09",
+    "capacity": "28"
+  },
+  {
+    "name": "LC10",
+    "capacity": "28"
+  }
 ]

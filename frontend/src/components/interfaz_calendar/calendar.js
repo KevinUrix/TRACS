@@ -587,9 +587,19 @@ export default function Calendar() {
                       <th
                         key={index}
                         className={`table-cell print-col-${Math.floor(index / 9)}`}
-                        title={cap != null ? `Cupos: ${cap}` : 'Cupos no definidos'}
+                        title={cap != null ? `Capacidad: ${cap} estudiantes` : 'Capacidad no definidos'}
                       >
-                        {cap != null ? `${classroom} (${cap})` : classroom}
+                        {cap != null ? (
+                          <>
+                            {classroom}
+                            <br />
+                            <span style={{ fontWeight: 'normal' }}>
+                              Capacidad: {cap} estudiantes
+                            </span>
+                          </>
+                        ) : (
+                          classroom
+                        )}
                       </th>
                     );
                   })}

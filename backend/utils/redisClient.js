@@ -1,6 +1,6 @@
 const Redis = require('ioredis');
 
-const redis = new Redis(process.env.REDIS_HOST, {
+/* const redis = new Redis(process.env.REDIS_HOST, {
   retryStrategy(times) {
     // if (times > 10) return null; deja de reconectar después de 10 intentos
     return Math.min(times * 100, 5000); // hasta 5 segundos entre reintentos
@@ -8,12 +8,12 @@ const redis = new Redis(process.env.REDIS_HOST, {
   maxRetriesPerRequest: 3,  // máximo 3 intentos por comando
   enableOfflineQueue: false // no encola comandos si está desconectado
 });
+ */
 
-/* 
-REDIS EN SERVIDOR LOCAL
+
 const redis = new Redis({
-  host: process.env.REDIS_HOST || '127.0.0.1',  // la IP del servidor Redis
-  port: process.env.REDIS_PORT || 6379,
+  host: process.env.REDIS_HOST,  // la IP del servidor Redis
+  port: process.env.REDIS_PORT,
   password: process.env.REDIS_PASSWORD,
   retryStrategy(times) {
     // if (times > 10) return null; deja de reconectar después de 10 intentos
@@ -21,7 +21,7 @@ const redis = new Redis({
   },
   maxRetriesPerRequest: 3,  // máximo 3 intentos por comando
   enableOfflineQueue: false // no encola comandos si está desconectado
-}); */
+});
 
 redis.on('error', (err) => {
     if (err.message.includes('ECONNREFUSED')) {

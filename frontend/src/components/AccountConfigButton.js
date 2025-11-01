@@ -25,7 +25,7 @@ export default function AccountConfigButton({ className = '' }) {
       title={isInConfig ? "Ir a inicio" : "Configuración de cuenta"}
     >
       {isInConfig ? (
-        // Ícono de inicio 🏠
+        // Ícono de inicio
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-10 h-10 text-white"
@@ -41,7 +41,7 @@ export default function AccountConfigButton({ className = '' }) {
           />
         </svg>
       ) : (
-        // Ícono de configuración ⚙️
+        // Ícono de configuración
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-10 h-10 text-white"

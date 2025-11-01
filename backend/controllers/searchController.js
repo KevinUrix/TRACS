@@ -143,16 +143,6 @@ const getSearch = async (req, res) => {
       }
     }
 
-    const dayMap = {
-      'Lunes': 'L',
-      'Martes': 'M',
-      'Miércoles': 'I',
-      'Miercoles': 'I',
-      'Jueves': 'J',
-      'Viernes': 'V',
-      'Sábado': 'S',
-      'Sabado': 'S'
-    };
 
     const dayPriority = {
       'L': 1,
@@ -164,34 +154,36 @@ const getSearch = async (req, res) => {
       '.': 7
     };
 
-    const selectedDayLetter = dayMap[day] || day;
+    function getEarliestDayPriority(daysStr) {
+      const days = daysStr.split(' ').filter(d => d !== '');
+      return days.reduce((min, d) => {
+        const pr = dayPriority[d] ?? 7;
+        return pr < min ? pr : min;
+      }, 7);
+    }
+
+    function getStartTime(scheduleStr) {
+      if (!scheduleStr) return 9999;
+      const [start] = scheduleStr.split('-');
+      return parseInt(start, 10);
+    }
 
     results.sort((a, b) => {
-      const aIsInBuilding = a.data.building === building;
-      const bIsInBuilding = b.data.building === building;
+      const aDayPr = getEarliestDayPriority(a.data.days || '');
+      const bDayPr = getEarliestDayPriority(b.data.days || '');
 
-      // Prioridad 1: el edificio que coincide
-      if (aIsInBuilding && !bIsInBuilding) return -1;
-      if (!aIsInBuilding && bIsInBuilding) return 1;
-
-      // Obtener días activos
-      const aDays = a.data.days.split(' ').filter(d => d !== '.' && d !== '');
-      const bDays = b.data.days.split(' ').filter(d => d !== '.' && d !== '');
-
-      // Prioridad 2: dentro del mismo edificio, día buscado
-      const aHasDay = aDays.includes(selectedDayLetter);
-      const bHasDay = bDays.includes(selectedDayLetter);
-      if (aIsInBuilding && bIsInBuilding) {
-        if (aHasDay && !bHasDay) return -1;
-        if (!aHasDay && bHasDay) return 1;
+      // Primero por día
+      if (aDayPr !== bDayPr) {
+        return aDayPr - bDayPr;
       }
 
-      // Prioridad 3: día más próximo por prioridad
-      const aBestDay = aDays.reduce((min, d) => Math.min(min, dayPriority[d] ?? 7), 7);
-      const bBestDay = bDays.reduce((min, d) => Math.min(min, dayPriority[d] ?? 7), 7);
+      // Ordena por hora
+      const aStart = getStartTime(a.data.schedule);
+      const bStart = getStartTime(b.data.schedule);
 
-      return aBestDay - bBestDay;
+      return aStart - bStart;
     });
+
 
     // Envia los resultados
     if (results.length === 0) {

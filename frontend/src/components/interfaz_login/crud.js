@@ -532,7 +532,7 @@ export default function Crud() {
                               className="px-3 py-1.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-indigo-500 text-sm text-gray-800 bg-white"
                             >
                               <option value="user">Usuario</option>
-                              <option value="superuser">Super usuario</option>
+                              <option value="superuser">Superusuario</option>
                               <option value="tecnico">Técnico</option>
                             </select>
                           </td>
@@ -643,7 +643,7 @@ export default function Crud() {
               ¿Estás seguro de cambiar el rol de <strong>{selectedUser?.username}</strong> a{' '}
               <strong>
               {pendingRole === 'superuser'
-              ? 'Super usuario'
+              ? 'Superusuario'
               : pendingRole === 'user'
               ? 'Usuario'
               : 'Técnico'

@@ -6,7 +6,7 @@ export const notifyReserva = (mensaje, reservation, onSeen) => {
       <div>
         <p>📍 Edificio: {reservation.building} ({reservation.classroom}).</p>
         <p>📖 Profesor: {reservation.professor}.</p>
-        {reservation.user && <p>👤 Usuario: {reservation.user.charAt(0).toUpperCase() + reservation.user.slice(1)}</p>}
+        {reservation.user && <p>👤 Usuario: {reservation.user.charAt(0).toUpperCase() + reservation.user.slice(1)}.</p>}
       </div>
     ),
     onAutoClose: () => onSeen?.(),
@@ -26,10 +26,10 @@ export const notifyTicket = (mensaje, ticket, onSeen) => {
     description: (
     <div>
       <b>{ticket.title}</b>
-      <p>Edificio: {ticket.building}.</p>
-      <p>Prioridad: {ticket.priority}.</p>
+      <p>📍 Edificio: {ticket.building}.</p>
+      <p>🕑 Prioridad: {ticket.priority}.</p>
       <p>
-        Creado por: {ticket.created_by.charAt(0).toUpperCase() + ticket.created_by.slice(1)}.
+        👤 Creado por: {ticket.created_by.charAt(0).toUpperCase() + ticket.created_by.slice(1)}.
       </p>
 
     </div>

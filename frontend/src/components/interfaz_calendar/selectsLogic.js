@@ -199,28 +199,28 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       if (result.success) {
         const { buildings, cycles } = result.result;
         
-        let message = '📢 Estado de los archivos JSON.\n\n';
+        let message = 'Estado de los archivos JSON.\n\n';
         // Información de edificios
-        message += `📚 Edificios:\n`;
-        message += `✅ Éxito: ${buildings.success.length} edificios\n`;
-        message += `⚠️ Vacíos: ${buildings.empty.length} edificios\n`;
-        message += `🗑️ Corruptos: ${buildings.skipped.length} edificios\n`;
-        message += `❌ Fallidos: ${buildings.failed.length} edificios\n`;
+        message += `Edificios:\n`;
+        message += `Éxito: ${buildings.success.length} edificios\n`;
+        message += `Vacíos: ${buildings.empty.length} edificios\n`;
+        message += `Corruptos: ${buildings.skipped.length} edificios\n`;
+        message += `Fallidos: ${buildings.failed.length} edificios\n`;
 
         // Información de ciclos
         if (cycles?.success) {
-          message += `\n📅 Ciclos guardados`;
+          message += `\nCiclos guardados.`;
         } else {
-          message += `\n❌ No se pudieron guardar los ciclos.`;
+          message += `\nNo se pudieron guardar los ciclos.`;
         }
   
         alert(message);
       } else {
-        alert(`⚠️ Hubo un error al descargar los archivos: ${result.error || "Error desconocido"}`);
+        alert(`Hubo un error al descargar los archivos: ${result.error || "Error desconocido"}`);
       }
     } catch (error) {
       console.error("Error durante la descarga:", error);
-      alert(`❌ Error inesperado: ${error.message}`);
+      alert(`Error inesperado: ${error.message}`);
     }
   };
 

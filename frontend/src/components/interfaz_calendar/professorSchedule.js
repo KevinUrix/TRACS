@@ -49,7 +49,7 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
       <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
       {professors.map((professor, idx) => (
-        <div key={idx} className="professor-section">
+        <div key={idx} className="professor-section" style={{fontSize: "17px"}}>
           <strong>
             <h4>{professor}</h4>
           </strong>
@@ -61,6 +61,7 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
                   <div><b>Dia/s:</b> {translateDays(course.data.days)}</div>
                   <div><b>Edificio:</b> {course.data.building}</div>
                   <div><b>Salón:</b> {course.data.classroom}</div>
+                  <div><b>Clave:</b> {course.data.code}</div>
                   <div><b>Horario:</b> {course.data.schedule.replace(/(\d{2})(\d{2})-(\d{2})(\d{2})/, "$1:$2 - $3:$4")}</div>
               </li>
             ))}

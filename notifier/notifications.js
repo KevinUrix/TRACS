@@ -70,7 +70,7 @@ app.post('/notify', async (req, res) => {
 /* GUARDA LAS NOTIFICACIONES EN LA BD */
 app.get('/notifications', async (req, res) => {
   const userId = req.query.user;
-  const maxDays = parseInt(req.query.maxDays || '30', 10);
+  const maxDays = parseInt(req.query.maxDays || '7', 10);
 
 
   if (userId === undefined || userId === null ) return res.status(400).json({ error: 'Falta userId' });

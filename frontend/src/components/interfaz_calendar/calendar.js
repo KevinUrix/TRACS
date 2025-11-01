@@ -200,7 +200,7 @@ export default function Calendar() {
   
       if (!response.ok) {
         if (response.status === 409) {
-          alert('⚠️ Ya existe una reserva para esta fecha, horario y aula.');
+          alert('Ya existe una reserva para esta fecha, horario y aula.');
         } else if (response.status === 500) {
             toast.info('Tokens invalidos.\nRedirigiéndote para iniciar sesión en Google...', {
             autoClose: 1000,
@@ -220,7 +220,7 @@ export default function Calendar() {
         }
         else {
           console.error('Error desde el servidor:', result.error || 'Error desconocido');
-          alert(`❌ Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
+          alert(`Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
         }
         return;
       }

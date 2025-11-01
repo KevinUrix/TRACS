@@ -17,25 +17,27 @@ import numpy as np
 import os
 
 
+
 # ----------------- ENTRENAMIENTO Y GUARDADO ----------------------
 async def train_and_save_model(data, field, labels, model_path):
   texts = [preprocess(d['text']) for d in data]
   outputs = [labels.index(d[field]) if d[field] in labels else len(labels) - 1 for d in data]
 
   tokenizer, vocabulary = tokenize_data(texts)
-  max_len = 37
+  max_len = 60
 
   X = vectorize(texts, tokenizer, max_len).astype('int32')
-  y = np.array(outputs)
+  y = np.array(outputs, dtype=np.int32)
 
-  _, X_val, _,  y_val = train_test_split(
-    X, y, test_size=0.2, random_state=42, stratify=y
+  X_train, X_val, y_train, y_val = train_test_split(
+      X, y, test_size=0.20, random_state=42, stratify=y
   )
-  X_val = X_val.astype('int32')
+  X_train = X_train.astype('int32')
+  X_val   = X_val.astype('int32')
 
 
-  classes = np.unique(y)
-  cw = compute_class_weight(class_weight='balanced', classes=classes, y=y)
+  classes = np.unique(y_train)
+  cw = compute_class_weight(class_weight='balanced', classes=classes, y=y_train)
   class_weight = {int(c): float(w) for c, w in zip(classes, cw)}
 
   # if field == 'priority':
@@ -50,19 +52,19 @@ async def train_and_save_model(data, field, labels, model_path):
   model = create_model(len(labels), len(vocabulary))
 
   callbacks = [
-    ReduceLROnPlateau(monitor="loss", factor=0.5, patience=4, min_delta=1e-4, cooldown=1, min_lr=1e-5, verbose=1),
-    ModelCheckpoint(f"{model_path}_best.keras", monitor="loss", save_best_only=True, verbose=1),
+    ReduceLROnPlateau(monitor="val_loss", factor=0.5, patience=4, min_delta=1e-4, cooldown=1, min_lr=1e-5, verbose=0),
+    ModelCheckpoint(f"{model_path}_best.keras", monitor="val_loss", save_best_only=True, verbose=0),
   ]
 
   history = model.fit(
-    X, y,
+    X_train, y_train,
     epochs=300,
     batch_size=64,
     validation_data=(X_val, y_val),
     class_weight=class_weight,
     shuffle=True,
     callbacks=callbacks,
-    verbose=2
+    verbose=0
   )
 
   best_model = load_model(f"{model_path}_best.keras")
@@ -81,7 +83,7 @@ async def train_and_save_model(data, field, labels, model_path):
 
   image_filename = model_path + '_confusion_matrix.png'
   plot_confusion_matrix(cm, labels, f'Matriz de Confusión (VAL) - {field.upper()}', image_filename)
-  print(f'Matriz de confusión guardada en: {image_filename}')
+  print(f'Matriz de confusión guardada.')
 
 
 # ------------------- ENTRENAMIENTO DE LOS MODELOS --------------------
@@ -91,12 +93,10 @@ async def train_all_models():
   try:
     category_data = await fetch_category_data(pool)
     await train_and_save_model(category_data, 'category', category_labels, category_model_path)
-
-    await evaluate_on_external_test(category_model_path, category_labels, pool, fetch_category_test_data, 'category')
-
     priority_data = await fetch_priority_data(pool)
     await train_and_save_model(priority_data, 'priority', priority_labels, priority_model_path)
-
+    
+    await evaluate_on_external_test(category_model_path, category_labels, pool, fetch_category_test_data, 'category')
     await evaluate_on_external_test(priority_model_path, priority_labels, pool, fetch_priority_test_data, 'priority')
 
     print('Modelos entrenados y guardados.')
@@ -129,14 +129,13 @@ async def evaluate_on_external_test(model_path, labels, pool, fetch_fn, field_na
   X_test = vectorize(texts, tokenizer, max_len).astype('int32')
 
   y_pred = np.argmax(best_model.predict(X_test, batch_size=256, verbose=0), axis=1)
-  print("\n=== RESULTADOS EN TEST EXTERNO ===")
+  print(f"\n=== RESULTADOS EN TEST EXTERNO ({field_name.upper()}) ===")
   print(classification_report(y_true, y_pred, target_names=labels, digits=3))
 
   cm = sk_confusion(y_true, y_pred)
   image_filename = model_path + '_external_test_confusion_matrix.png'
   plot_confusion_matrix(cm, labels, f'Matriz de Confusión (TEST externo) - {field_name.upper()}', image_filename)
-  print(f'Matriz de confusión (externa) guardada en: {image_filename}')
-
+  print(f'Matriz de confusión (externa) guardada.')
 
 
 asyncio.run(train_all_models())

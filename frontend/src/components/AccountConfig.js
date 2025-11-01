@@ -181,7 +181,7 @@ export default function AccountConfig() {
           <p><strong>Nombre:</strong> {userInfo.username}</p>
           <p><strong>Rol:</strong> {
             userInfo.role === 'superuser'
-              ? 'Super usuario'
+              ? 'Superusuario'
               : userInfo.role === 'user'
               ? 'Usuario'
               : 'Técnico'

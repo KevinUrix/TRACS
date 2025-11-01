@@ -92,16 +92,18 @@ export default function PrintTicket({ ticket, onClose }) {
           </div>
 
           ${blocks.join("<div style='page-break-after: always;'></div>")}
-          <script>
-            setTimeout(() => {
-                window.print();
-                ${isMobile ? '' : 'window.close();'}
-            }, 300);
-          </script>
         </body>
       </html>
     `);
     printWindow.document.close();
+
+    printWindow.onload = () => {
+      printWindow.focus();
+      printWindow.print();
+      if (!isMobile) {
+        printWindow.close();
+      }
+    }
 
     if (onClose) {
       onClose();

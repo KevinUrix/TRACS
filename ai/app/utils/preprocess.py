@@ -51,17 +51,18 @@ protected_words = {
   "token", "id", "login", "logout", "api", "backend", "frontend", "clave",
   "contrasena", "otp", "autenticacion", "seguridad", "acceso", "permiso",
   "bloqueo", "captcha", "certificado", "cifrado", "switch", "rj45", "tv", "television",
-  "internet"
+  "internet", "drivers"
 }
 
 
 urgent_set = {
   "urgente", "urgencia", "emergencia", "inmediato", "inmediata",
-  "critico", "critica", "caido", "apagado", "apagada",
-  "funciona", "enciende", "prende", "caida",
+  "critico", "criticos", "critica", "criticas", "caido", "caidos", "caida", "caidas", "apagado", "apagada", "apagados", "apagadas",
+  "funciona", "enciende", "prende",
   "riesgo", "peligro", "fuga", "incendio", "derrame",
   "hoy", "ahora", "manana", "examen", "clase", "peligroso",
-  "peligrosa", "riesgoso", "riesgosa", "caida", "funciono", "peligra", "incendia", "derramo"
+  "peligrosa", "riesgoso", "riesgosa", "funciono", "funciona", "peligra", "incendia",
+  "derramo"
 }
 
 
@@ -153,6 +154,7 @@ synonyms = {
   "tv": "television",
   "enchufe": "tomacorriente",
   "contacto": "tomacorriente",
+  "controladores": "drivers"
 }
 
 phrases = {

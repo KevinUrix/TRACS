@@ -5,7 +5,12 @@ const { classifyTicket } = require('../utils/aiClassifier');
 
 exports.createTicket = async (req, res) => {
   const { building, room, title, report, created_by } = req.body;
-  // const { category, secondaryCategory, priority } = classifyTicket({ building, room, title, report });
+
+  if (!building || !report || !title || !created_by) {
+    return res.status(400).json({ error: 'Faltan campos obligatorios' });
+  }
+
+  let category, secondaryCategory, priority;
 
   try {
     const response = await axios.post(`${process.env.CLASSIFIER_URL}/classify`, {
@@ -18,16 +23,13 @@ exports.createTicket = async (req, res) => {
     secondaryCategory = response.data.secondaryCategory;
     priority = response.data.priority;
   } catch (error) {
-    return res.status(500).json({ error: 'Error clasificando el ticket' });
+    category = 'Sin categoria';
+    secondaryCategory = null;
+    priority = 'Baja';
   }
 
   const fullCategory = secondaryCategory ? `${category} (${secondaryCategory})` : category;
 
-  // const { building, room, title, category, priority, report, created_by } = req.body;
-
-  if (!building || !report || !title || !priority || !fullCategory || !created_by) {
-    return res.status(400).json({ error: 'Faltan campos obligatorios' });
-  }
 
   try {
     const result = await pool.query(

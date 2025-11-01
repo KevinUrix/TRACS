@@ -193,7 +193,7 @@ export default function AppContent() {
 
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 600);
+    }, Math.floor(Math.random() * (900 - 800 + 1)) + 800);
 
     return () => clearTimeout(timeout);
   }, [location.pathname]);

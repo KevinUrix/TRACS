@@ -1,7 +1,7 @@
+const fs = require('fs');
+const path = require('path');
 const cache = require('../scraper/cache');
 const { scrapeData } = require('../scraper/schedules');
-const buildingsData = require('../config/buildings.json');
-const buildings = buildingsData.edifp;
 
 // Normalización del nombre del profesor
 const normalizeName = (name) => {
@@ -58,6 +58,10 @@ const getSearch = async (req, res) => {
   const building = req.query.buildingName || '';
   const day = req.query.day || '';
   console.log(professorName, cycle, building, day);
+
+  const buildingsPath = path.join(__dirname, '../config/buildings.json');
+  const buildingsData = JSON.parse(fs.readFileSync(buildingsPath, 'utf-8'));
+  const buildings = buildingsData.edifp;
   
   if (!professorName || !cycle) {
     return res.status(400).json({ error: 'Faltan parámetros: name y cycle son requeridos' });

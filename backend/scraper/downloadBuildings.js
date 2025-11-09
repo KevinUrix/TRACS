@@ -1,11 +1,14 @@
 const { scrapeData } = require('./schedules');
 
-const buildingsData = require('../config/buildings');
-const buildings = buildingsData.edifp;
-
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+
+const getBuildings = () => {
+  const filePath = path.join(__dirname, '../config/buildings.json');
+  const json = fs.readFileSync(filePath, 'utf-8');
+  return JSON.parse(json).edifp;
+};
 
 const isSiiauAvailable = () => {
   return new Promise((resolve, reject) => {
@@ -38,7 +41,7 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
       empty: []
     };
 
-    for (const building of buildings) {
+    for (const building of getBuildings()) {
       try {
         const data = await scrapeData(cycle, building.value, true);
 
@@ -86,7 +89,7 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
     console.error(`No se puede iniciar scraping: ${err.message}`);
     return {
       success: [],
-      failed: buildings.map(b => b.value),
+      failed: getBuildings().map(b => b.value),
       skipped: [],
       empty: []
     }

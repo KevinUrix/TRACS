@@ -371,7 +371,7 @@
       "classroom": "",
       "nrc": "144462",
       "code": "IC586",
-      "students": 20,
+      "students": 19,
       "course": "CALCULO AVANZADO"
     },
     "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
@@ -381,7 +381,7 @@
       "schedule": "0030-0030",
       "days": ". . I . . .",
       "building": "DESV1",
-      "classroom": "A035",
+      "classroom": "",
       "nrc": "49780",
       "code": "I7420",
       "students": 0,
@@ -456,6 +456,19 @@
   },
   {
     "data": {
+      "schedule": "0030-0030",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A034",
+      "nrc": "236319",
+      "code": "I7420",
+      "students": 32,
+      "course": "CALCULO AVANZADO"
+    },
+    "professor": "MIRANDA PANDURO, CESAR RAUL"
+  },
+  {
+    "data": {
       "schedule": "0026-0026",
       "days": ". . I . . .",
       "building": "DESV1",
@@ -521,42 +534,16 @@
   },
   {
     "data": {
-      "schedule": "0023-0023",
-      "days": ". . I . . .",
-      "building": "DESV1",
-      "classroom": "A023",
-      "nrc": "137227",
-      "code": "IC578",
-      "students": 30,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
-  },
-  {
-    "data": {
-      "schedule": "0053-0053",
-      "days": ". . . J . .",
+      "schedule": "0050-0050",
+      "days": ". . . . V .",
       "building": "DESV1",
       "classroom": "",
-      "nrc": "117748",
-      "code": "IB058",
-      "students": 29,
+      "nrc": "193989",
+      "code": "IL344",
+      "students": 39,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0015-0015",
-      "days": ". . I . . .",
-      "building": "DESV1",
-      "classroom": "A007",
-      "nrc": "137232",
-      "code": "IC681",
-      "students": 18,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
   },
   {
     "data": {
@@ -573,16 +560,68 @@
   },
   {
     "data": {
-      "schedule": "0050-0050",
-      "days": ". . . . V .",
+      "schedule": "0023-0023",
+      "days": ". . I . . .",
       "building": "DESV1",
-      "classroom": "",
-      "nrc": "193989",
-      "code": "IL344",
-      "students": 39,
+      "classroom": "A023",
+      "nrc": "137227",
+      "code": "IC578",
+      "students": 30,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "0015-0015",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A007",
+      "nrc": "137232",
+      "code": "IC681",
+      "students": 18,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0053-0053",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "117748",
+      "code": "IB058",
+      "students": 29,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0028-0028",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "42295",
+      "code": "I5800",
+      "students": 34,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "0029-0029",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "42295",
+      "code": "I5800",
+      "students": 34,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
   },
   {
     "data": {
@@ -651,19 +690,6 @@
   },
   {
     "data": {
-      "schedule": "0055-0055",
-      "days": ". . . . V .",
-      "building": "DESV1",
-      "classroom": "",
-      "nrc": "193991",
-      "code": "IL344",
-      "students": 35,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
       "schedule": "0015-0015",
       "days": ". . . . V .",
       "building": "DESV1",
@@ -677,16 +703,16 @@
   },
   {
     "data": {
-      "schedule": "0011-0011",
-      "days": ". . . J . .",
+      "schedule": "0055-0055",
+      "days": ". . . . V .",
       "building": "DESV1",
-      "classroom": "A023",
-      "nrc": "197902",
-      "code": "IB058",
-      "students": 20,
+      "classroom": "",
+      "nrc": "193991",
+      "code": "IL344",
+      "students": 36,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "ACEVES FERNANDEZ, ELIZABETH"
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
   },
   {
     "data": {
@@ -700,6 +726,19 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "0011-0011",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "A023",
+      "nrc": "197902",
+      "code": "IB058",
+      "students": 20,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "ACEVES FERNANDEZ, ELIZABETH"
   },
   {
     "data": {
@@ -774,7 +813,7 @@
       "classroom": "",
       "nrc": "224995",
       "code": "V0710",
-      "students": 38,
+      "students": 37,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
@@ -1385,7 +1424,7 @@
       "classroom": "",
       "nrc": "197383",
       "code": "IL347",
-      "students": 36,
+      "students": 35,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -1424,7 +1463,7 @@
       "classroom": "",
       "nrc": "212338",
       "code": "IL347",
-      "students": 30,
+      "students": 29,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
@@ -1502,7 +1541,7 @@
       "classroom": "",
       "nrc": "104669",
       "code": "I6015",
-      "students": 36,
+      "students": 35,
       "course": "ECUACIONES DIFERENCIALES PARCIALES Y FUNCIONES ESPECIALES"
     },
     "professor": "AGUILA GOMEZ, RICARDO"
@@ -1892,7 +1931,7 @@
       "classroom": "",
       "nrc": "189645",
       "code": "I5247",
-      "students": 12,
+      "students": 14,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
@@ -2399,7 +2438,7 @@
       "classroom": "A049",
       "nrc": "200063",
       "code": "IL348",
-      "students": 38,
+      "students": 37,
       "course": "METODOS NUMERICOS"
     },
     "professor": "URENDA CAZARES, ERNESTO"
@@ -2503,7 +2542,7 @@
       "classroom": "A050",
       "nrc": "171993",
       "code": "IC622",
-      "students": 25,
+      "students": 24,
       "course": "PLANEACION DE SISTEMAS"
     },
     "professor": "ALMAGUER AVILA, JUAN CARLOS"
@@ -2841,7 +2880,7 @@
       "classroom": "A039",
       "nrc": "201877",
       "code": "IB067",
-      "students": 30,
+      "students": 29,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -3114,7 +3153,7 @@
       "classroom": "",
       "nrc": "57110",
       "code": "I7021",
-      "students": 31,
+      "students": 30,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
@@ -3140,7 +3179,7 @@
       "classroom": "",
       "nrc": "57680",
       "code": "I7021",
-      "students": 33,
+      "students": 32,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "HERNANDEZ CORONA, GUSTAVO"
@@ -3439,7 +3478,7 @@
       "classroom": "",
       "nrc": "42842",
       "code": "I5925",
-      "students": 13,
+      "students": 11,
       "course": "TEORIA DE ESPACIOS VECTORIALES"
     },
     "professor": "BOCARDO GASPAR, MIRIAM"

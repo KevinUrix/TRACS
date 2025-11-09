@@ -30,7 +30,7 @@
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDN",
-      "classroom": "LE04",
+      "classroom": "LE05",
       "nrc": "43409",
       "code": "I7274",
       "students": 22,
@@ -46,7 +46,7 @@
       "classroom": "LE05",
       "nrc": "43417",
       "code": "I7274",
-      "students": 20,
+      "students": 21,
       "course": "AUTOMATIZACION"
     },
     "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -170,6 +170,19 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "225739",
+      "code": "V3636",
+      "students": 13,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDN",
@@ -215,7 +228,7 @@
       "classroom": "LE03",
       "nrc": "225760",
       "code": "V3929",
-      "students": 20,
+      "students": 21,
       "course": "ELECTRONICA DIGITAL"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -244,7 +257,7 @@
       "students": 20,
       "course": "ELECTRONICA DIGITAL"
     },
-    "professor": "VELAZQUEZ MORA, EDUARDO"
+    "professor": "GARCIA ARREOLA, ALICIA"
   },
   {
     "data": {
@@ -579,7 +592,7 @@
       "classroom": "LHI03",
       "nrc": "165967",
       "code": "IC617",
-      "students": 14,
+      "students": 13,
       "course": "LABORATORIO DE HIDRAULICA III"
     },
     "professor": "CEJA VILLANUEVA, ARACELI"
@@ -1125,7 +1138,7 @@
       "classroom": "LE05",
       "nrc": "43427",
       "code": "I7275",
-      "students": 16,
+      "students": 15,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "MATEOS ORTEGA, HECTOR"
@@ -1203,7 +1216,7 @@
       "classroom": "LE02",
       "nrc": "78962",
       "code": "I7273",
-      "students": 20,
+      "students": 18,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
@@ -1424,7 +1437,7 @@
       "classroom": "LE02",
       "nrc": "206129",
       "code": "ET414",
-      "students": 16,
+      "students": 15,
       "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
     },
     "professor": "CERON RAMIREZ, FRANCISCO JAVIER"

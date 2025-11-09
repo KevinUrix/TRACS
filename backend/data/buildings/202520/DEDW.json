@@ -92,6 +92,19 @@
   },
   {
     "data": {
+      "schedule": "1200-1255",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "178800",
+      "code": "I6007",
+      "students": 24,
+      "course": "COMPUTO CIENTIFICO II"
+    },
+    "professor": "GASCA ORTIZ, TZITLALI"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDW",
@@ -241,7 +254,7 @@
       "classroom": "A001",
       "nrc": "189645",
       "code": "I5247",
-      "students": 12,
+      "students": 14,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"

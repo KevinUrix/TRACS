@@ -17,6 +17,10 @@ exports.register = async (req, res) => {
     return res.status(400).json({ error: 'Nombre de usuario inválido' });
   }
 
+  if (/^[0-9]+$/.test(username)) {
+    return res.status(400).json({ error: 'El nombre de usuario no puede ser sólo números.' });
+  }
+
   if (!passwordRegex.test(password)) {
     return res.status(400).json({ error: 'Contraseña inválida.' });
   }
@@ -149,6 +153,10 @@ exports.updateUsername = async (req, res) => {
 
     if (!usernameRegex.test(newUsername)) {
       return res.status(400).json({ error: 'Nombre de usuario inválido' });
+    }
+
+    if (/^[0-9]+$/.test(newUsername)) {
+      return res.status(400).json({ error: 'El nombre de usuario no puede ser sólo números.' });
     }
 
     const exists = await pool.query(

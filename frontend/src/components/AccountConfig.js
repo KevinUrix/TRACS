@@ -54,7 +54,7 @@ export default function AccountConfig() {
     };
 
     fetchUserInfo();
-  }, []);
+  }, [navigate]);
 
   // Cambiar nombre de usuario
   const handleUsernameChange = async (e) => {
@@ -67,11 +67,21 @@ export default function AccountConfig() {
       return;
     }
 
-    if (newUsername.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
-        toast.error('Usuario sólo admite letras minúsculas.', {
-          autoClose: 1500,
-          closeOnClick: true,
-        });
+    const usernameRegex = /^[a-z0-9_]{3,20}$/;
+
+    if (!usernameRegex.test(newUsername)) {
+      toast.error('Nombre de usuario solo permite letras minúsculas, números y guion bajo.', {
+        autoClose: 1500,
+        closeOnClick: true,
+      });
+      return;
+    }
+
+    if (/^[0-9]+$/.test(newUsername)) {
+      toast.error('El nombre de usuario no puede ser solo números.', {
+        autoClose: 1500,
+        closeOnClick: true,
+      });
       return;
     }
 
@@ -218,7 +228,7 @@ export default function AccountConfig() {
             Guardar nuevo nombre
           </button>
           {usernameMessage && (
-            <p className="mt-2 text-sm text-gray-700">{usernameMessage}</p>
+            <p className="mt-2 text-purple-800">{usernameMessage}</p>
           )}
         </form>
 
@@ -233,9 +243,13 @@ export default function AccountConfig() {
               type={showPasswords ? 'text' : 'password'}
               placeholder="Contraseña actual"
               className="w-68 p-3 border rounded w-full text-lg"
-              maxLength={50}
+              maxLength={30}
               value={currentPassword}
-              onChange={(e) => setCurrentPassword(e.target.value)}
+              onChange={(e) => {
+                const val = e.target.value;
+                const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
+                setCurrentPassword(filtered);
+              }}
               required
             />
             <button
@@ -263,7 +277,7 @@ export default function AccountConfig() {
               placeholder="Nueva contraseña"
               className="w-full p-3 border rounded text-lg"
               minLength={6}
-              maxLength={50}
+              maxLength={30}
               value={newPassword}
               onChange={(e) => {
                 const val = e.target.value;
@@ -279,7 +293,8 @@ export default function AccountConfig() {
               type={'password'}
               placeholder="Confirmar nueva contraseña"
               className="w-full p-3 border rounded text-lg"
-              maxLength={50}
+              minLength={6}
+              maxLength={30}
               value={confirmPassword}
               onChange={(e) => {
                 const val = e.target.value;
@@ -298,7 +313,7 @@ export default function AccountConfig() {
           </button>
 
           {passwordMessage && (
-            <p className="mt-2 text-sm text-gray-700">{passwordMessage}</p>
+            <p className="mt-2 text-purple-800">{passwordMessage}</p>
           )}
         </form>
       </div>

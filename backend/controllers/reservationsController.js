@@ -54,13 +54,6 @@ const saveReservation = async (req, res) => {
 
       const isDuplicate = sameDate && sameSchedule && sameClassroom;
 
-      if (isDuplicate) {
-        console.warn('Reserva duplicada detectada:', {
-          existente: res,
-          nueva: reservationData
-        });
-      }
-
       return isDuplicate;
     });
 
@@ -247,6 +240,20 @@ const updateReservation = async (req, res) => {
 
     if (index === -1) {
       return res.status(404).json({ error: 'Reserva no encontrada para modificar' });
+    }
+
+    const alreadyExists = currentData.data.find((res, i) => {
+      if (i === index) return false;
+      const sameDate = res.date?.trim() === updatedData.date?.trim();
+      const sameSchedule = res.schedule?.trim() === updatedData.schedule?.trim();
+      const sameClassroom = res.classroom?.trim().toUpperCase() === updatedData.classroom?.trim().toUpperCase();
+      return sameDate && sameSchedule && sameClassroom;
+    });
+
+    if (alreadyExists) {
+      return res.status(409).json({
+        message: 'Ya existe una reserva para esta fecha, horario y aula',
+      });
     }
 
     // Reemplazar la reserva en el índice encontrado

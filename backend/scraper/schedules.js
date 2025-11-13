@@ -2,7 +2,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
 const cache = require('./cache');
-const buildingsData = require('../config/buildings');
+const fs = require('fs').promises;
+const path = require('path');
+
 
 // Formato de fecha
 const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
@@ -88,6 +90,11 @@ const extractData = ($, buildingName) => {
 // Scraping en segundo plano (background)
 const backgroundScraping = async (cycle, skipEdifp = null) => {
     const chunkSize = 6;
+    const buildingsPath = path.join(__dirname, '../config/buildings.json');
+    
+    const buildingsJson = await fs.readFile(buildingsPath, 'utf-8');
+    const buildingsData = JSON.parse(buildingsJson);
+
     for (let i = 0; i < buildingsData.edifp.length; i += chunkSize) {
         const chunk = buildingsData.edifp.slice(i, i + chunkSize);
         
@@ -144,7 +151,7 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
             activeBackgroundScraping.delete(scrapeKey);
         }
     }));
-        await new Promise(res => setTimeout(res, 250));
+        await new Promise(res => setTimeout(res, 300));
     }
 };
 

@@ -254,7 +254,7 @@
       "classroom": "A016",
       "nrc": "178081",
       "code": "IC621",
-      "students": 41,
+      "students": 40,
       "course": "ANALISIS ESTRUCTURAL III"
     },
     "professor": "FLORES ANGULO, BENJAMIN EDUARDO"
@@ -267,23 +267,10 @@
       "classroom": "A013",
       "nrc": "178081",
       "code": "IC621",
-      "students": 41,
-      "course": "ANALISIS ESTRUCTURAL III"
-    },
-    "professor": "FLORES ANGULO, BENJAMIN EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1800-2055",
-      "days": ". . . . V .",
-      "building": "DEDP",
-      "classroom": "A023",
-      "nrc": "183118",
-      "code": "IC621",
       "students": 40,
       "course": "ANALISIS ESTRUCTURAL III"
     },
-    "professor": "PEREZ GARCIA, RAMON ERNESTO"
+    "professor": "FLORES ANGULO, BENJAMIN EDUARDO"
   },
   {
     "data": {
@@ -809,6 +796,19 @@
     "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
+      "building": "DEDP",
+      "classroom": "A008",
+      "nrc": "104569",
+      "code": "I7428",
+      "students": 35,
+      "course": "CIRCUITOS ELECTRICOS II"
+    },
+    "professor": "CASTAÑEDA PAREDES, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
       "building": "DEDP",
       "classroom": "A008",
       "nrc": "104569",
@@ -1379,19 +1379,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1755",
-      "days": ". . . . V .",
-      "building": "DEDP",
-      "classroom": "A023",
-      "nrc": "178098",
-      "code": "IC627",
-      "students": 35,
-      "course": "DISEÑO DE ESTRUCTURAS DE ACERO I"
-    },
-    "professor": "PEREZ GARCIA, RAMON ERNESTO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . . . . S",
       "building": "DEDP",
@@ -1415,19 +1402,6 @@
       "course": "DISEÑO DE ESTRUCTURAS DE ACERO I"
     },
     "professor": "MENDEZ GARCIA, JAHAZIEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0955",
-      "days": ". . . . . S",
-      "building": "DEDP",
-      "classroom": "A014",
-      "nrc": "178100",
-      "code": "IC627",
-      "students": 40,
-      "course": "DISEÑO DE ESTRUCTURAS DE ACERO I"
-    },
-    "professor": "PEREZ GARCIA, RAMON ERNESTO"
   },
   {
     "data": {
@@ -1470,7 +1444,7 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "1000-1055",
       "days": ". M . . . .",
       "building": "DEDP",
       "classroom": "A002",
@@ -1541,7 +1515,7 @@
       "classroom": "A007",
       "nrc": "42342",
       "code": "I5809",
-      "students": 33,
+      "students": 32,
       "course": "ELECTRICIDAD Y MAGNETISMO"
     },
     "professor": "ROBLEDO HERNANDEZ, JOSE GUADALUPE"
@@ -2230,7 +2204,7 @@
       "classroom": "A018",
       "nrc": "165966",
       "code": "IC616",
-      "students": 30,
+      "students": 29,
       "course": "HIDRAULICA III"
     },
     "professor": "CEJA VILLANUEVA, ARACELI"
@@ -2282,7 +2256,7 @@
       "classroom": "A018",
       "nrc": "165962",
       "code": "IC602",
-      "students": 25,
+      "students": 24,
       "course": "HIDROLOGIA"
     },
     "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
@@ -2529,7 +2503,7 @@
       "classroom": "A005",
       "nrc": "44629",
       "code": "I7438",
-      "students": 21,
+      "students": 22,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "CARRASCO GARCIA, JULIETA"
@@ -2793,19 +2767,6 @@
       "course": "INGENIERIA DE TRANSITO"
     },
     "professor": "ULLOA LEAÑO, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1255",
-      "days": ". . . . . S",
-      "building": "DEDP",
-      "classroom": "A023",
-      "nrc": "181912",
-      "code": "IC630",
-      "students": 32,
-      "course": "INGENIERIA SISMICA"
-    },
-    "professor": "PEREZ GARCIA, RAMON ERNESTO"
   },
   {
     "data": {
@@ -3634,7 +3595,7 @@
       "classroom": "A004",
       "nrc": "193249",
       "code": "IL343",
-      "students": 38,
+      "students": 39,
       "course": "MECANICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
@@ -3667,19 +3628,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDP",
-      "classroom": "A021",
-      "nrc": "43551",
-      "code": "I7353",
-      "students": 30,
-      "course": "MECANICA"
-    },
-    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDP",
@@ -3690,6 +3638,19 @@
       "course": "MECANICA"
     },
     "professor": "FLORES PEREZ, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDP",
+      "classroom": "A021",
+      "nrc": "43551",
+      "code": "I7353",
+      "students": 30,
+      "course": "MECANICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
   },
   {
     "data": {
@@ -3816,7 +3777,7 @@
       "classroom": "A020",
       "nrc": "145212",
       "code": "IC594",
-      "students": 27,
+      "students": 26,
       "course": "MECANICA DE SOLIDOS I"
     },
     "professor": "CABELLO SUAREZ, LAURA YESSENIA"
@@ -3894,7 +3855,7 @@
       "classroom": "A015",
       "nrc": "152638",
       "code": "IC593",
-      "students": 32,
+      "students": 33,
       "course": "MECANICA DE SUELOS I"
     },
     "professor": "NUÑEZ RUELAS, GABRIEL ARTURO"
@@ -4388,7 +4349,7 @@
       "classroom": "A015",
       "nrc": "171993",
       "code": "IC622",
-      "students": 25,
+      "students": 24,
       "course": "PLANEACION DE SISTEMAS"
     },
     "professor": "ALMAGUER AVILA, JUAN CARLOS"
@@ -5194,7 +5155,7 @@
       "classroom": "A007",
       "nrc": "112062",
       "code": "I6124",
-      "students": 34,
+      "students": 33,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -5441,7 +5402,7 @@
       "classroom": "A005",
       "nrc": "42645",
       "code": "I6011",
-      "students": 38,
+      "students": 37,
       "course": "SEMINARIO DE INVESTIGACION"
     },
     "professor": "MENDEZ MALDONADO, GLORIA ARLETTE"
@@ -5766,7 +5727,7 @@
       "classroom": "A006",
       "nrc": "43838",
       "code": "I7465",
-      "students": 29,
+      "students": 28,
       "course": "SEMINARIO MODULAR II"
     },
     "professor": "PONCE DUEÑAS, NESTOR RAFAEL"
@@ -6170,7 +6131,7 @@
       "nrc": "58422",
       "code": "I7439",
       "students": 30,
-      "course": "SISTEMAS AMBIENTALES"
+      "course": "SISTEMAS AMBIENTALES  I"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
   },
@@ -6183,7 +6144,7 @@
       "nrc": "58294",
       "code": "I7439",
       "students": 32,
-      "course": "SISTEMAS AMBIENTALES"
+      "course": "SISTEMAS AMBIENTALES  I"
     },
     "professor": "GARCIA JAUREGUI, ESTHER"
   },
@@ -6196,7 +6157,7 @@
       "nrc": "58396",
       "code": "I7439",
       "students": 18,
-      "course": "SISTEMAS AMBIENTALES"
+      "course": "SISTEMAS AMBIENTALES  I"
     },
     "professor": "MEDINA ALVARADO, ELVIRA"
   },
@@ -6209,7 +6170,7 @@
       "nrc": "154025",
       "code": "I7439",
       "students": 24,
-      "course": "SISTEMAS AMBIENTALES"
+      "course": "SISTEMAS AMBIENTALES  I"
     },
     "professor": "MEDINA ALVARADO, ELVIRA"
   },
@@ -6222,7 +6183,7 @@
       "nrc": "154025",
       "code": "I7439",
       "students": 24,
-      "course": "SISTEMAS AMBIENTALES"
+      "course": "SISTEMAS AMBIENTALES  I"
     },
     "professor": "MEDINA ALVARADO, ELVIRA"
   },
@@ -7079,7 +7040,7 @@
       "classroom": "A023",
       "nrc": "192685",
       "code": "IC650",
-      "students": 29,
+      "students": 30,
       "course": "TEMAS ESPECIALES EN CONSTRUCCION Y PLANEACION I"
     },
     "professor": "JUAREZ RAMIREZ, LEOPOLDO"
@@ -7560,7 +7521,7 @@
       "classroom": "A012",
       "nrc": "178128",
       "code": "IC729",
-      "students": 31,
+      "students": 32,
       "course": "TOPOGRAFIA COSTERA"
     },
     "professor": "DURAN ESPARZA, OMAR"
@@ -7573,7 +7534,7 @@
       "classroom": "A022",
       "nrc": "178128",
       "code": "IC729",
-      "students": 31,
+      "students": 32,
       "course": "TOPOGRAFIA COSTERA"
     },
     "professor": "DURAN ESPARZA, OMAR"

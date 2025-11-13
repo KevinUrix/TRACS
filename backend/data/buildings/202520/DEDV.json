@@ -85,7 +85,7 @@
       "classroom": "LC02",
       "nrc": "77404",
       "code": "I5969",
-      "students": 11,
+      "students": 10,
       "course": "ALGEBRA LINEAL NUMERICA"
     },
     "professor": "LICEA SALAZAR, JUAN ANTONIO"
@@ -274,19 +274,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "193991",
-      "code": "IL344",
-      "students": 35,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . . . S",
       "building": "DEDV",
@@ -295,6 +282,19 @@
       "code": "I5999",
       "students": 12,
       "course": "CALCULO DIFERENCIAL E INTEGRAL II"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "A002",
+      "nrc": "193991",
+      "code": "IL344",
+      "students": 36,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "SANCHEZ ALVAREZ, MIGUEL"
   },
@@ -547,6 +547,19 @@
   },
   {
     "data": {
+      "schedule": "1900-2055",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "LC01",
+      "nrc": "117749",
+      "code": "IB060",
+      "students": 4,
+      "course": "COMPUTO CIENTIFICO I"
+    },
+    "professor": "ORTEGA CORDOVA, RAUL"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -570,19 +583,6 @@
       "course": "COMPUTO CIENTIFICO I"
     },
     "professor": "GONZALEZ ROMERO, JAIME RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "LC01",
-      "nrc": "117749",
-      "code": "IB060",
-      "students": 4,
-      "course": "COMPUTO CIENTIFICO I"
-    },
-    "professor": "ORTEGA CORDOVA, RAUL"
   },
   {
     "data": {
@@ -705,19 +705,6 @@
     "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "178800",
-      "code": "I6007",
-      "students": 24,
-      "course": "COMPUTO CIENTIFICO II"
-    },
-    "professor": "GASCA ORTIZ, TZITLALI"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": "L . . . . .",
       "building": "DEDV",
       "classroom": "LC02",
       "nrc": "178800",
@@ -1002,6 +989,19 @@
   },
   {
     "data": {
+      "schedule": "0900-0955",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "LC02",
+      "nrc": "42337",
+      "code": "I5874",
+      "students": 13,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -1164,7 +1164,7 @@
       "classroom": "A002",
       "nrc": "209744",
       "code": "V0712",
-      "students": 40,
+      "students": 39,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
@@ -1203,7 +1203,7 @@
       "classroom": "A016",
       "nrc": "60841",
       "code": "I6013",
-      "students": 40,
+      "students": 39,
       "course": "ELECTRODINAMICA"
     },
     "professor": "GAETA VERDIN, MARIO BOLIVAR"
@@ -1216,7 +1216,7 @@
       "classroom": "A016",
       "nrc": "60841",
       "code": "I6013",
-      "students": 40,
+      "students": 39,
       "course": "ELECTRODINAMICA"
     },
     "professor": "GAETA VERDIN, MARIO BOLIVAR"
@@ -1229,7 +1229,7 @@
       "classroom": "A016",
       "nrc": "60841",
       "code": "I6013",
-      "students": 40,
+      "students": 39,
       "course": "ELECTRODINAMICA"
     },
     "professor": "GAETA VERDIN, MARIO BOLIVAR"
@@ -2061,7 +2061,7 @@
       "classroom": "A017",
       "nrc": "105697",
       "code": "I6027",
-      "students": 34,
+      "students": 33,
       "course": "FISICA ESTADISTICA"
     },
     "professor": "BISWAS, SOHAM"
@@ -2074,7 +2074,7 @@
       "classroom": "A017",
       "nrc": "105697",
       "code": "I6027",
-      "students": 34,
+      "students": 33,
       "course": "FISICA ESTADISTICA"
     },
     "professor": "BISWAS, SOHAM"
@@ -2087,7 +2087,7 @@
       "classroom": "A012",
       "nrc": "105697",
       "code": "I6027",
-      "students": 34,
+      "students": 33,
       "course": "FISICA ESTADISTICA"
     },
     "professor": "BISWAS, SOHAM"
@@ -2100,7 +2100,7 @@
       "classroom": "A007",
       "nrc": "197328",
       "code": "I6027",
-      "students": 19,
+      "students": 18,
       "course": "FISICA ESTADISTICA"
     },
     "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
@@ -2113,7 +2113,7 @@
       "classroom": "A007",
       "nrc": "197328",
       "code": "I6027",
-      "students": 19,
+      "students": 18,
       "course": "FISICA ESTADISTICA"
     },
     "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
@@ -2126,7 +2126,7 @@
       "classroom": "A007",
       "nrc": "197328",
       "code": "I6027",
-      "students": 19,
+      "students": 18,
       "course": "FISICA ESTADISTICA"
     },
     "professor": "SANCHEZ RODRIGUEZ, JORGE EMMANUEL"
@@ -2178,7 +2178,7 @@
       "classroom": "A012",
       "nrc": "42377",
       "code": "I6002",
-      "students": 40,
+      "students": 39,
       "course": "FISICA MODERNA"
     },
     "professor": "DAVALOS GONZALEZ, DAVID"
@@ -2204,7 +2204,7 @@
       "classroom": "A011",
       "nrc": "80029",
       "code": "I6020",
-      "students": 22,
+      "students": 20,
       "course": "FISICA RELATIVISTA"
     },
     "professor": "HERNANDEZ JIMENEZ, RAFAEL"
@@ -2217,7 +2217,7 @@
       "classroom": "A013",
       "nrc": "80029",
       "code": "I6020",
-      "students": 22,
+      "students": 20,
       "course": "FISICA RELATIVISTA"
     },
     "professor": "HERNANDEZ JIMENEZ, RAFAEL"
@@ -2737,7 +2737,7 @@
       "classroom": "A015",
       "nrc": "193974",
       "code": "I6022",
-      "students": 8,
+      "students": 7,
       "course": "HISTORIA Y FILOSOFIA DE LA FISICA"
     },
     "professor": "ROMERO IBARRA, JOSE LUIS"
@@ -3127,7 +3127,7 @@
       "classroom": "A002",
       "nrc": "131907",
       "code": "I5945",
-      "students": 15,
+      "students": 14,
       "course": "INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
     },
     "professor": "RODRIGUEZ GUZMAN, DIEGO"
@@ -3140,7 +3140,7 @@
       "classroom": "A004",
       "nrc": "131907",
       "code": "I5945",
-      "students": 15,
+      "students": 14,
       "course": "INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
     },
     "professor": "RODRIGUEZ GUZMAN, DIEGO"
@@ -3231,7 +3231,7 @@
       "classroom": "A003",
       "nrc": "189650",
       "code": "I5247",
-      "students": 40,
+      "students": 41,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
@@ -4258,7 +4258,7 @@
       "classroom": "A002",
       "nrc": "84050",
       "code": "I5895",
-      "students": 22,
+      "students": 20,
       "course": "METODOS MATEMATICOS II"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
@@ -4414,7 +4414,7 @@
       "classroom": "A016",
       "nrc": "42527",
       "code": "I5996",
-      "students": 31,
+      "students": 30,
       "course": "ONDAS, FLUIDOS Y FISICA MOLECULAR"
     },
     "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
@@ -4856,7 +4856,7 @@
       "classroom": "LC01",
       "nrc": "144454",
       "code": "IC572",
-      "students": 35,
+      "students": 34,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "AGUIAR BARRERA, MARTHA ELENA"
@@ -4869,7 +4869,7 @@
       "classroom": "A004",
       "nrc": "200068",
       "code": "IB067",
-      "students": 35,
+      "students": 36,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -5129,7 +5129,7 @@
       "classroom": "A004",
       "nrc": "104147",
       "code": "I5965",
-      "students": 19,
+      "students": 18,
       "course": "SEMINARIO DEL MODULO DE ECUACIONES DIFERENCIALES"
     },
     "professor": "MUÑOZ CHAVEZ, MARTIN"
@@ -5142,7 +5142,7 @@
       "classroom": "A003",
       "nrc": "172351",
       "code": "I5965",
-      "students": 17,
+      "students": 16,
       "course": "SEMINARIO DEL MODULO DE ECUACIONES DIFERENCIALES"
     },
     "professor": "GUERRERO ARROYO, EDGAR ALEJANDRO"
@@ -5259,7 +5259,7 @@
       "classroom": "LC01",
       "nrc": "77406",
       "code": "I5970",
-      "students": 11,
+      "students": 10,
       "course": "TALLER DE ALGEBRA LINEAL NUMERICA"
     },
     "professor": "LICEA SALAZAR, JUAN ANTONIO"
@@ -5922,7 +5922,7 @@
       "classroom": "A015",
       "nrc": "136334",
       "code": "I7416",
-      "students": 34,
+      "students": 33,
       "course": "TOPICOS DE FISICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
@@ -5935,7 +5935,7 @@
       "classroom": "A012",
       "nrc": "136334",
       "code": "I7416",
-      "students": 34,
+      "students": 33,
       "course": "TOPICOS DE FISICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"

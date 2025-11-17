@@ -33,6 +33,25 @@ export default function Crud() {
     document.title = "TRACS - CRUD";
   }, []);
 
+  const validBuildingField = (str, { allowSpaces = true } = {}) => {
+    if (typeof str !== 'string') return false;
+    if (str.startsWith(' ')) return false;
+
+    const allowedRegex = allowSpaces
+      ? /^[0-9A-Za-zÁÉÍÓÚáéíóúÜüÑñ_.\-,\s]+$/
+      : /^[0-9A-Za-zÁÉÍÓÚáéíóúÜüÑñ_.\-,]+$/;
+
+    if (!allowedRegex.test(str)) return false;
+
+    const trimmed = str.trim();
+    if (!trimmed) return false;
+
+    const hasLetter = /[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]/.test(trimmed);
+    if (!hasLetter) return false;
+
+    return true;
+  };
+
   const handleConfirmChange = async () => {
     if (!selectedUser) return;
 
@@ -112,12 +131,6 @@ export default function Crud() {
     setshowAddModalClassrooms(false);
     setClassroomsToAdd('');
     setLastCreatedBuilding(null);
-  };
-
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setBuildingToEdit((prev) => ({ ...prev, [name]: value }));
   };
 
 
@@ -215,14 +228,25 @@ export default function Crud() {
       return;
     }
 
+    const cleanValue = buildingToEdit.value.trim();
+    const cleanText  = buildingToEdit.text.trim();
+
+    if (
+    !validBuildingField(cleanValue, { allowSpaces: false }) ||
+    !validBuildingField(cleanText, { allowSpaces: true })
+    ) {
+      toast.error("Nombre y seudónimo no pueden iniciar con espacio, tener caracteres no permitidos ni ser solo espacios, números o símbolos.");
+      return;
+    }
+
     const params = new URLSearchParams({
       buildingName: originalBuilding.value,
       buildingText: originalBuilding.text
     });
 
     const cleanedBuildingData = {
-      value: buildingToEdit.value,
-      text: buildingToEdit.text,
+      value: cleanValue,
+      text: cleanText,
     };
 
     try {
@@ -238,11 +262,13 @@ export default function Crud() {
       if (res.ok) {
         setBuildings((prev) =>
           prev.map((building) =>
-            building.value === originalBuilding.value && building.text === originalBuilding.text
+            building.value.trim() === (originalBuilding.value ?? '').trim() &&
+            building.text.trim() === (originalBuilding.text ?? '').trim()
               ? { ...building, ...cleanedBuildingData }
               : building
           )
         );
+
         toast.success("Edificio actualizado correctamente");
 
         const inputStr = await fetchClassroomsInput(cleanedBuildingData.value);
@@ -280,8 +306,8 @@ export default function Crud() {
     if (!buildingToDelete) return;
     
     const params = new URLSearchParams({
-      buildingName: buildingToDelete.value,
-      buildingText: buildingToDelete.text
+      buildingName: buildingToDelete.value.trim(),
+      buildingText: buildingToDelete.text.trim()
     });
 
     try {
@@ -358,6 +384,17 @@ export default function Crud() {
   const handleSaveBuilding = async () => {
     if (!buildingToAdd) return;
 
+    const cleanValue = (buildingToAdd.value ?? '').trim();
+    const cleanText  = (buildingToAdd.text ?? '').trim();
+
+    if (
+    !validBuildingField(buildingToAdd.value, { allowSpaces: false }) ||
+    !validBuildingField(buildingToAdd.text, { allowSpaces: true })
+    ) {
+      toast.error("Nombre no puede contener espacios ni caracteres no permitidos. El seudónimo sí puede tener espacios.");
+      return;
+    }
+
     try {
       const res = await fetch(`${API_URL}/api/buildings`, {
         method: 'POST',
@@ -366,8 +403,8 @@ export default function Crud() {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         },
         body: JSON.stringify({
-          value: buildingToAdd.value,
-          text: buildingToAdd.text,
+          value: cleanValue,
+          text: cleanText,
         }),
       });
   
@@ -393,10 +430,10 @@ export default function Crud() {
         return;
       }
 
-      setBuildings(prev => [...prev, buildingToAdd]);
+      setBuildings(prev => [...prev, { value: cleanValue, text: cleanText }]);
       toast.success("Edificio agregado correctamente");
 
-      setLastCreatedBuilding(buildingToAdd.value);
+      setLastCreatedBuilding(cleanValue);
       setShowAddModalBuilding(false);
       setshowAddModalClassrooms(true);
       setClassroomsToAdd('');
@@ -725,7 +762,13 @@ export default function Crud() {
             <input
               name="value"
               value={buildingToEdit.value}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                const raw = e.target.value;
+                const val = raw.replace(/[^0-9A-Za-zÁÉÍÓÚáéíóúÜüÑñ_.\-,]/g, '');
+                if (val === '' || validBuildingField(val, { allowSpaces: false })) {
+                  setBuildingToEdit((prev) => ({ ...prev, value: val }));
+                }
+              }}
               placeholder="Nombre del Edificio"
               className="w-full mb-3 p-2 border rounded"
               maxLength={10}
@@ -736,7 +779,11 @@ export default function Crud() {
             <input
               name="text"
               value={buildingToEdit.text}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                const val = e.target.value;
+                if (val === '' || validBuildingField(val))
+                  setBuildingToEdit((prev) => ({ ...prev, text: val }));
+              }}
               placeholder="Seudónimo"
               className="w-full mb-3 p-2 border rounded"
               maxLength={10}
@@ -765,7 +812,13 @@ export default function Crud() {
             <input
               name="value"
               value={buildingToAdd?.value ?? ''}
-              onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, value: e.target.value }))}
+              onChange={(e) => {
+                const raw = e.target.value;
+                const val = raw.replace(/[^0-9A-Za-zÁÉÍÓÚáéíóúÜüÑñ_.\-,]/g, '');
+                if (val === '' || validBuildingField(val, { allowSpaces: false })) {
+                  setBuildingToAdd((prev) => ({ ...prev, value: val }));
+                }
+              }}
               placeholder="Nombre del edificio"
               className="w-full mb-3 p-2 border rounded"
               maxLength={10}
@@ -774,7 +827,11 @@ export default function Crud() {
             <input
               name="text"
               value={buildingToAdd?.text ?? ''}
-              onChange={(e) => setBuildingToAdd((prev) => ({ ...prev, text: e.target.value }))}
+              onChange={(e) => {
+                const val = e.target.value;
+                if (val === '' || validBuildingField(val))
+                  setBuildingToAdd((prev) => ({ ...prev, text: val }));
+              }}
               placeholder="Seudónimo"
               className="w-full mb-3 p-2 border rounded"
               maxLength={10}

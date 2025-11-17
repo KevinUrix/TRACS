@@ -26,7 +26,15 @@ export default function Registro() {
     e.preventDefault();
     
     if (usuario.match(/[A-ZÁÉÍÓÚÜÑ!@#$%^&*]/)) {
-      toast.error('Usuario sólo admite letras minúsculas.', {
+      toast.error('Usuario solo admite letras minúsculas.', {
+        autoClose: 1500,
+        closeOnClick: true,
+      });
+      return;
+    }
+
+    if (/^[0-9]+$/.test(usuario)) {
+      toast.error('El nombre de usuario no puede ser solo números.', {
         autoClose: 1500,
         closeOnClick: true,
       });
@@ -139,7 +147,7 @@ export default function Registro() {
                 type={showPasswords ? 'text' : 'password'}
                 value={password}
                 minLength={6}
-                maxLength={50}
+                maxLength={30}
                 onChange={(e) => {
                   const val = e.target.value;
                   const filtered = val.replace(/[^a-zA-Z0-9!@#$%^&*]/g, '');
@@ -174,6 +182,8 @@ export default function Registro() {
             <input
               type={showPasswords ? 'text' : 'password'}
               value={confirmPassword}
+              minLength={6}
+              maxLength={30}
               onChange={(e) => {
                 const val = e.target.value;
                 // Solo letras, números y algunos símbolos comunes para contraseñas

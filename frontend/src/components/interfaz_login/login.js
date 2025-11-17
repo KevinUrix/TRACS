@@ -15,7 +15,7 @@ export default function Login() {
   // const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
-    document.title = "TRACS - Login";
+    document.title = "TRACS - Inicio de sesión";
   }, []);
 
   const handleLogin = async (e) => {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import API_URL from '../../config/api';
 import ProfessorSchedule from './professorSchedule';
@@ -8,6 +8,7 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
   const [filteredSchedule, setFilteredSchedule] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [isLoadingPopup, setIsLoadingPopup] = useState(false);
+  const toastCooldown = useRef(false)
 
   const handleSearch = async () => {
     if (!selectedBuilding || !selectedCycle) {
@@ -17,6 +18,18 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
     if (!searchTerm.trim()) {
       setFilteredSchedule([]);
       setShowPopup(false);
+      return;
+    }
+
+    if (searchTerm.trim().length < 3) {
+      
+      if (!toastCooldown.current) {
+        toast.info('Escribe al menos 3 letras para buscar.');
+        toastCooldown.current = true;
+        setTimeout(() => {
+          toastCooldown.current = false;
+        }, 2000);
+      }
       return;
     }
 
@@ -59,6 +72,7 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
       <div className="search-container">
         <input
           type="text"
+          minLength={3}
           placeholder="Buscar maestro..."
           className="search-input px-3 border rounded"
           value={searchTerm}

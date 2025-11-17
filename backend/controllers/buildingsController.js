@@ -1,6 +1,25 @@
 const fs = require('fs').promises;
 const path = require('path');
 
+const validBuildingField = (str, { allowSpaces = true } = {}) => {
+  if (typeof str !== 'string') return false;
+  if (str.startsWith(' ')) return false;
+
+  const allowedRegex = allowSpaces
+    ? /^[0-9A-Za-zÁÉÍÓÚáéíóúÜüÑñ_.\-,\s]+$/
+    : /^[0-9A-Za-zÁÉÍÓÚáéíóúÜüÑñ_.\-,]+$/;
+
+  if (!allowedRegex.test(str)) return false;
+
+  const trimmed = str.trim();
+  if (!trimmed) return false;
+
+  const hasLetter = /[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]/.test(trimmed);
+  if (!hasLetter) return false;
+
+  return true;
+};
+
 
 //
 // OBTENER EDIFICIOS
@@ -30,6 +49,16 @@ const deleteBuilding = async (req, res) => {
     console.error("Parámetros no encontrados");
     return res.status(400).json({ error: 'Faltan parámetros para eliminar el edificio.' });
   }
+
+  if (
+  !validBuildingField(buildingName, { allowSpaces: false }) ||
+  !validBuildingField(buildingText, { allowSpaces: true })
+  ) {
+    return res.status(400).json({
+      error: 'Parámetros de edificios inválidos.'
+    });
+  }
+
 
   try {
     const fileContent = await fs.readFile(filePath, 'utf-8');
@@ -70,11 +99,33 @@ const updateBuilding = async (req, res) => {
   if (!updatedData || !updatedData.value || !updatedData.text) {
     return res.status(400).json({ error: 'Faltan datos obligatorios para el edificio' });
   }
+
+  if (
+  !validBuildingField(buildingName, { allowSpaces: false }) ||
+  !validBuildingField(buildingText, { allowSpaces: true })
+  ) {
+    return res.status(400).json({
+      error: 'Parámetros de edificios inválidos.'
+    });
+  }
+
+  const newValue = String(updatedData.value).trim();
+  const newText  = String(updatedData.text).trim();
+
+  if (
+  !validBuildingField(newValue, { allowSpaces: false }) ||
+  !validBuildingField(newText, { allowSpaces: true })
+  ) {
+    return res.status(400).json({
+      error: 'Nombre no puede contener espacios ni caracteres no permitidos. El seudónimo sí puede tener espacios.'
+    });
+  }
+
   
   const filePath = path.join(__dirname, `../config/buildings.json`);
   const classroomsPath = path.join(__dirname, `../config/classrooms`);
   const oldFilePath = path.join(classroomsPath, `${buildingName}.json`);
-  const newFilePath = path.join(classroomsPath, `${updatedData.value}.json`);
+  const newFilePath = path.join(classroomsPath, `${newValue}.json`);
 
   try {
     const fileContent = await fs.readFile(filePath, 'utf-8');
@@ -97,15 +148,15 @@ const updateBuilding = async (req, res) => {
     // Si existe el archivo con el nombre antiguo, lo renombramos
     if (await fs.access(oldFilePath).then(() => true).catch(() => false)) {
       await fs.rename(oldFilePath, newFilePath);
-      console.log(`Archivo de salones renombrado: ${buildingName} -> ${updatedData.value}`);
+      console.log(`Archivo de salones renombrado: ${buildingName} -> ${newValue}`);
     } else {
       console.warn(`El archivo ${oldFilePath} no existe, no se pudo renombrar.`);
     }
 
     // Reemplazar la reserva en el índice encontrado
     const orderedBuilding = {
-      value: updatedData.value,
-      text: updatedData.text,
+      value: newValue,
+      text: newText,
     };
 
     currentData.edifp[index] = orderedBuilding;
@@ -130,14 +181,26 @@ const saveBuilding = async (req, res) => {
   const buildingData = req.body;
   const filePath = path.join(__dirname, `../config/buildings.json`);
   const classroomsPath = path.join(__dirname, `../config/classrooms`);
-  const classroomFile = path.join(classroomsPath, `${buildingData.value}.json`);
-
+  
   if (!buildingData || !buildingData.value || !buildingData.text) {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
   }
+  
 
   const newValue = String(buildingData.value).trim();
   const newText  = String(buildingData.text).trim();
+
+  if (
+    !validBuildingField(newValue, { allowSpaces: false }) ||
+    !validBuildingField(newText, { allowSpaces: true })
+  ) {
+    return res.status(400).json({
+      error: 'Nombre no puede contener espacios ni caracteres no permitidos. El seudónimo sí puede tener espacios.'
+    });
+  }
+
+  
+  const classroomFile = path.join(classroomsPath, `${newValue}.json`);
 
   try {
     let currentData = { edifp: [] };
@@ -181,7 +244,6 @@ const saveBuilding = async (req, res) => {
     res.status(500).json({ error: 'Hubo un error al guardar el edificio' });
   }
 };
-
 
 
 module.exports = {

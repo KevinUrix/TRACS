@@ -75,6 +75,7 @@ export default function ReserveButton({
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    setReservationDate(getTodayDate());
   };
 
   document.querySelectorAll('input, select').forEach(el => {

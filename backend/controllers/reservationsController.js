@@ -134,8 +134,10 @@ const deleteReservation = async (req, res) => {
       reservation.professor === professor
     );
 
+    const googleReservations = toDelete.filter(res => res.googleEventId);
+
     // Si hay eventos para borrar en Google Calendar
-    if (toDelete.length > 0) {
+    if (googleReservations.length > 0) {
       try {
         const oAuth2Client = await getOAuth2Client(user);
         const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
@@ -150,7 +152,7 @@ const deleteReservation = async (req, res) => {
         );
         const calendarId = targetCalendar ? targetCalendar.id : 'primary';
 
-        for (const reservation of toDelete) {
+        for (const reservation of googleReservations) {
           if (reservation.googleEventId) {
             try {
               await calendar.events.delete({

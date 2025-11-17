@@ -13,6 +13,12 @@ const datePattern = /\b\d{2}\/\d{2}\/\d{2} - \d{2}\/\d{2}\/\d{2}\b/;
 const activeBackgroundScraping = new Set();
 const activeScraping = new Set();
 
+// Función para asignar un valor al espacio en blanco de profesor
+const mapProfessorName = (name) => {
+    if (!name || name.trim() === "") return "PROFESOR NO ASIGNADO";
+    return name;
+};
+
 // Función para extraer datos del HTML
 const extractData = ($, buildingName) => {
     const results = [];
@@ -41,7 +47,8 @@ const extractData = ($, buildingName) => {
 
         const students = parseInt(spots) - parseInt(available);
         const table = $(row).find('table.td1');
-        const professor = $(row).find('td.tdprofesor').eq(1).text().trim();
+        let professor = $(row).find('td.tdprofesor').eq(1).text().trim();
+        professor = mapProfessorName(professor);
 
         if (table.length) {
             const rows = table.find('tr').toArray();

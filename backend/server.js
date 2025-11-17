@@ -3,8 +3,12 @@ const cors = require('cors');
 const http = require('http');
 const path = require('path');
 const helmet = require('helmet');
+const { Server } = require('socket.io');
+require('dotenv').config();
 
+const { initNotifier } = require('./utils/notifier');
 const { loadModelsFromDisk, trainFromDatabase } = require('./utils/aiClassifier');
+
 const scheduleRoutes = require('./routes/scheduleRoutes');
 const downloadRoutes = require('./routes/downloadRoutes');
 const searchRoutes = require('./routes/searchRoutes');
@@ -17,7 +21,7 @@ const googleAuthRoutes = require('./routes/googleAuthRoutes');
 const userRoutes = require('./routes/userRoutes');
 const ticketRoutes = require('./routes/ticketRoutes');
 const trainRoutes = require('./routes/trainRoutes');
-require('dotenv').config();
+const notificationsRoutes = require('./routes/notificationsRoutes');
 
 //Cache
 const redis = require('./utils/redisClient');
@@ -25,6 +29,19 @@ const cache = require('./scraper/cache');
 
 const app = express();
 const server = http.createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: [
+      'https://www.tracs.cloud',
+      'http://localhost:3000',
+      'http://johnafleming.cucei.udg.mx'
+    ],
+    methods: ['GET', 'POST'],
+    credentials: true,
+  },
+});
+initNotifier(io);
 
 const PORT = process.env.BACKEND_PORT || 3001;
 
@@ -46,6 +63,7 @@ app.use('/api', cyclesRoutes);
 app.use('/api', buildingsRoutes);
 app.use('/api/google', googleAuthRoutes);
 app.use('/api', trainRoutes);
+app.use('/api', notificationsRoutes);
 
 /*---------------- SQL -----------------------*/
 app.use('/api', userRoutes);

@@ -1,9 +1,9 @@
 const fs = require('fs').promises;
 const path = require('path');
-const axios = require('axios');
 const { google } = require('googleapis');
 const { getOAuth2Client } = require('../utils/googleOAuthClient');
 const { createGoogleEvent } = require('../utils/createGoogleEvent');
+const { notify } = require('../utils/notifier');
 
 const mapBuildingName = (name) => {
   if (name === 'DUCT1') return 'Alpha';
@@ -100,10 +100,9 @@ const saveReservation = async (req, res) => {
 
     // Socket
     try {
-      await axios.post(`${process.env.SOCKET_URL}/notify`, {type: 'new-reservation', data: {...reservationData, user}}, {headers: {Authorization: `Bearer ${process.env.NOTIFY_TOKEN}`}});
-    }
-    catch (error) {
-      console.error('Error al notificar al servicio de sockets', error.message);
+      await notify('new-reservation', { ...reservationData, user });
+    } catch (error) {
+      console.error('Error al notificar (new-reservation)', error.message);
     }
 
     res.status(201).json({
@@ -141,8 +140,10 @@ const deleteReservation = async (req, res) => {
       reservation.professor === professor
     );
 
+    const googleReservations = toDelete.filter(res => res.googleEventId);
+
     // Si hay eventos para borrar en Google Calendar
-    if (toDelete.length > 0) {
+    if (googleReservations.length > 0) {
       try {
         const oAuth2Client = await getOAuth2Client(user);
         const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
@@ -157,7 +158,7 @@ const deleteReservation = async (req, res) => {
         );
         const calendarId = targetCalendar ? targetCalendar.id : 'primary';
 
-        for (const reservation of toDelete) {
+        for (const reservation of googleReservations) {
           if (reservation.googleEventId) {
             try {
               await calendar.events.delete({

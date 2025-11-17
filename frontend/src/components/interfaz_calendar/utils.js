@@ -243,10 +243,12 @@ export const handlePrint = (selectedBuilding, selectedDay, selectedCycle) => {
   
   printWindow.onload = () => {
     printWindow.focus();
-    printWindow.print();
-    if (!isMobile) {
-      printWindow.close();
-    }
+    setTimeout(() => {
+      printWindow.print();
+      if (!isMobile) {
+        printWindow.close();
+      }
+    }, 100);
   }
 };
 

@@ -34,3 +34,5 @@ backend/data/tokens/*.json
 Redis/
 __pycache__/
 backend/data/reservations/
+notifier/
+ai/ecosystem.config.js

@@ -99,10 +99,12 @@ export default function PrintTicket({ ticket, onClose }) {
 
     printWindow.onload = () => {
       printWindow.focus();
-      printWindow.print();
-      if (!isMobile) {
-        printWindow.close();
-      }
+      setTimeout(() => {
+        printWindow.print();
+        if (!isMobile) {
+          printWindow.close();
+        }
+      }, 100);
     }
 
     if (onClose) {

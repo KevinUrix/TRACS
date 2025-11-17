@@ -7,9 +7,12 @@ import { notifyTicket, notifyReserva } from './utils/notificacions';
 import { toast } from 'react-toastify';
 import { Toaster} from 'sonner';
 import Loader from './utils/loader';
-import socket from './utils/socket';
+import socket from './config/socket';
 import { NormalizeURL } from './utils/normalizeURL';
+import { playNotificationSound } from './utils/notificationsSound';
+
 import './styles/toastColors.css';
+import API_URL from './config/api';
 
 import LandingPage from './components/interfaz_calendar/LandingPage';
 import Calendar from './components/interfaz_calendar/calendar';
@@ -86,12 +89,14 @@ export default function AppContent() {
   /* SOCKET.io: TICKETS */
   useEffect(() => {
     if (!user) return;
-
+    
     const onNewTicket = async (data) => {
+      playNotificationSound();
+
       const { id, payload } = data;
       notifyTicket(`🎟️ Nuevo reporte`, payload, async () => {
         try {
-          await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+          await fetch(`${API_URL}/api/notifications/mark-read`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ userId, ids: [id] }),
@@ -112,10 +117,12 @@ export default function AppContent() {
     if (!user) return;
 
     const handleNewReservation = async (data) => {
+      playNotificationSound();
+      
       const { id, payload } = data;
       notifyReserva(`✅ Nueva reserva`, payload, async () => {
         try {
-          await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+          await fetch(`${API_URL}/api/notifications/mark-read`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ userId, ids: [id] }),
@@ -137,7 +144,7 @@ export default function AppContent() {
 
     const markSeen = async (ids) => {
       if (!ids?.length) return;
-      await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications/mark-read`, {
+      await fetch(`${API_URL}/api/notifications/mark-read`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userId, ids }),
@@ -146,7 +153,7 @@ export default function AppContent() {
 
     const fetchPersistentNotifications = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_SOCKET_URL}/notifications?user=${userId}`);
+        const response = await fetch(`${API_URL}/api/notifications?user=${userId}`);
         const notifications = await response.json();
 
         const BATCH = 3;
@@ -251,7 +258,7 @@ export default function AppContent() {
     <Toaster
       richColors
       position="bottom-right"
-      duration={7000}
+      duration={8000}
       expand
     />
   </>

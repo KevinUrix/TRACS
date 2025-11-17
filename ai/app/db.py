@@ -52,7 +52,7 @@ async def fetch_priority_data(pool):
 
 
 async def fetch_category_test_data(pool):
-  rows = await pool.fetch("SELECT title, report, category FROM test_tickets WHERE category IS NOT NULL")
+  rows = await pool.fetch("SELECT title, report, category FROM tickets WHERE category IS NOT NULL")
   data = []
   for row in rows:
     cat_raw = (row['category'] or '').capitalize()
@@ -77,7 +77,7 @@ async def fetch_category_test_data(pool):
 
 
 async def fetch_priority_test_data(pool):
-  rows = await pool.fetch("SELECT building, room, title, report, priority FROM test_tickets WHERE priority IS NOT NULL")
+  rows = await pool.fetch("SELECT building, room, title, report, priority FROM tickets WHERE priority IS NOT NULL")
   data = []
   for row in rows:
     prio = (row['priority'] or 'baja').capitalize()

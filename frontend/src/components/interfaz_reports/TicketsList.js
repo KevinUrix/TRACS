@@ -209,7 +209,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   return (
     <div className="p-4">
       <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900 tracking-wide">
-        {building.value ? `Reportes para ${building.text}` : 'Todos los reportes'}
+        {building.value ? `Reportes para ${building.text}` : 'Todos los Reportes'}
       </h2>
       <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
@@ -340,9 +340,9 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           <div className="modal">
             <form>
                 <h2>
-                {userRole === 'user' && 'Editar reporte'}
-                {userRole === 'tecnico' && 'Editar reporte'}
-                {userRole === 'superuser' && 'Editar reporte'}
+                {userRole === 'user' && 'Editar Reporte'}
+                {userRole === 'tecnico' && 'Editar Reporte'}
+                {userRole === 'superuser' && 'Editar Reporte'}
                 {!['user', 'tecnico', 'superuser'].includes(userRole) && 'Nuevo reporte'}
               </h2>
               <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />

@@ -158,10 +158,10 @@ return (
           Cancelar
         </button>
         <div className="flex justify-between items-center gap-6 mt-6 text-sm md:text-base text-gray-600 px-2">
-            <a href="/privacy" className="hover:underline hover:text-purple-800 transition-colors duration-200">
+            <a href="/privacy" className="hover:underline hover:text-purple-800 transition-colors duration-200" target="_blank">
               Política de privacidad
             </a>
-            <a href="/terms" className="hover:underline hover:text-purple-800 transition-colors duration-200">
+            <a href="/terms" className="hover:underline hover:text-purple-800 transition-colors duration-200" target="_blank">
               Términos y condiciones
             </a>
         </div>

@@ -44,7 +44,7 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
   return (
     <>
       <strong>
-        <h3>Horarios encontrados:</h3>
+        <h3>Horarios Encontrados</h3>
       </strong>
       <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
@@ -58,7 +58,7 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
             {groupedSchedules[professor].map((course, index, arr) => (
               <li key={index}>
                   <div><b>Materia:</b> {course.data.course}</div>
-                  <div><b>Dia/s:</b> {translateDays(course.data.days)}</div>
+                  <div><b>Día/s:</b> {translateDays(course.data.days)}</div>
                   <div><b>Edificio:</b> {course.data.building}</div>
                   <div><b>Salón:</b> {course.data.classroom}</div>
                   <div><b>Clave:</b> {course.data.code}</div>

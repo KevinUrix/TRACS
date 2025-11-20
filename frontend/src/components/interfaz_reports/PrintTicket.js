@@ -31,7 +31,6 @@ export default function PrintTicket({ ticket, onClose }) {
                     height:100vh; 
                     margin: 0 !important; 
                     padding: 0 !important;
-                    // overflow: hidden;
                 }
 
                 .footer {

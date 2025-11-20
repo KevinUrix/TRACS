@@ -121,7 +121,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
   return (
     <div className="modal-overlay mt-0" onClick={onCancel}>
         <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h2>Modificar reserva</h2>
+            <h2>Modificar Reserva</h2>
             <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
         {isLoading ? (
           <div className="modal"><p>Cargando...</p></div>

@@ -21,7 +21,7 @@ app = FastAPI()
 origins = [
   "http://localhost:3000",
   "https://www.tracs.cloud",
-  "http://johnafleming.cucei.udg.mx"
+  "https://johnafleming.cucei.udg.mx"
   # Cambiaremos esto cuando se requiera en CUCEI
 ]
 

@@ -1,4 +1,5 @@
 export default function Footer() {
+  const basePath = process.env.REACT_APP_BASENAME || '';
 
 return (
   <footer className="w-full text-white mt-auto bottom-0 footer">
@@ -13,8 +14,8 @@ return (
       <div>
         <h4 className="font-semibold text-white mb-2">Enlaces útiles</h4>
         <ul className="text-gray-300 space-y-1">
-          <li><a href="/privacy" className="hover:underline text-lg font-medium" target="_blank">Política de privacidad</a></li>
-          <li><a href="/terms" className="hover:underline text-lg font-medium" target="_blank">Términos y condiciones</a></li>
+          <li><a href={`${basePath}/privacy`} className="hover:underline text-lg font-medium" target="_blank">Política de privacidad</a></li>
+          <li><a href={`${basePath}/terms`} className="hover:underline text-lg font-medium" target="_blank">Términos y condiciones</a></li>
         </ul>
       </div>
 

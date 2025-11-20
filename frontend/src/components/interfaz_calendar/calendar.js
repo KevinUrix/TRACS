@@ -23,6 +23,7 @@ export default function Calendar() {
   const [isRestored, setIsRestored] = useState(false);
   const cellColorMapRef = useRef({});
   const restoredStateRef = useRef(null);
+  const basePath = process.env.REACT_APP_BASENAME || '';
   
   
   const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
@@ -923,8 +924,8 @@ export default function Calendar() {
       <footer className="w-full bg-gray-100 text-white footer-calendar fixed bottom-0 left-0">
         <div className="flex justify-between items-center px-6 w-full text-sm md:text-base">
           <div className="flex space-x-4">
-            <a href="/privacy" className="hover:underline text-sm md:text-lg font-medium" target="_blank">Política de privacidad</a>
-            <a href="/terms" className="hover:underline text-sm md:text-lg font-medium" target="_blank">Términos y condiciones</a>
+            <a href={`${basePath}/privacy`} className="hover:underline text-sm md:text-lg font-medium" target="_blank">Política de privacidad</a>
+            <a href={`${basePath}/terms`} className="hover:underline text-sm md:text-lg font-medium" target="_blank">Términos y condiciones</a>
           </div>
 
           <div className="hidden md:block text-right text-sm md:text-lg font-medium">

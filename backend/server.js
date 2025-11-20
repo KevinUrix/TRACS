@@ -34,8 +34,8 @@ const io = new Server(server, {
   cors: {
     origin: [
       'https://www.tracs.cloud',
-      'http://localhost:3000',
-      'http://johnafleming.cucei.udg.mx'
+      'http://localhost:3001',
+      'https://johnafleming.cucei.udg.mx'
     ],
     methods: ['GET', 'POST'],
     credentials: true,
@@ -47,31 +47,44 @@ const PORT = process.env.BACKEND_PORT || 3001;
 
 // Middlewares
 app.use(cors({
-  origin: ['https://www.tracs.cloud', 'http://localhost:3000', 'http://johnafleming.cucei.udg.mx'], // Cambiaremos esto cuando se requiera en CUCEI
+  origin: ['https://www.tracs.cloud', 'http://localhost:3001', 'https://johnafleming.cucei.udg.mx'], // Cambiaremos esto cuando se requiera en CUCEI
+  credentials: true,
 }));
 app.use(express.json());
 app.use(helmet());
 
 // Rutas
-app.use('/api', scheduleRoutes);
-app.use('/api', downloadRoutes);
-app.use('/api', searchRoutes);
-app.use('/api', reservationsRoutes);
-app.use('/api', classroomsRoutes);
-app.use('/api', localScheduleRoutes);
-app.use('/api', cyclesRoutes);
-app.use('/api', buildingsRoutes);
-app.use('/api/google', googleAuthRoutes);
-app.use('/api', trainRoutes);
-app.use('/api', notificationsRoutes);
+app.use('/desarrollo/tracs/api', scheduleRoutes);
+app.use('/desarrollo/tracs/api', downloadRoutes);
+app.use('/desarrollo/tracs/api', searchRoutes);
+app.use('/desarrollo/tracs/api', reservationsRoutes);
+app.use('/desarrollo/tracs/api', classroomsRoutes);
+app.use('/desarrollo/tracs/api', localScheduleRoutes);
+app.use('/desarrollo/tracs/api', cyclesRoutes);
+app.use('/desarrollo/tracs/api', buildingsRoutes);
+app.use('/desarrollo/tracs/api/google', googleAuthRoutes);
+app.use('/desarrollo/tracs/api', trainRoutes);
+app.use('/desarrollo/tracs/api', notificationsRoutes);
 
 /*---------------- SQL -----------------------*/
-app.use('/api', userRoutes);
-app.use('/api/tickets', ticketRoutes);
+app.use('/desarrollo/tracs/api', userRoutes);
+app.use('/desarrollo/tracs/api/tickets', ticketRoutes);
 
 // Host - build
 const buildPath = path.join(__dirname, '..', 'build');
 app.use('/desarrollo/tracs', express.static(buildPath));
+
+app.get('/desarrollo/tracs', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
+});
+
+app.get('/desarrollo/tracs/privacy', (req, res) => {
+  res.sendFile(path.join(buildPath, 'privacy.html'));
+});
+
+app.get('/desarrollo/tracs/terms', (req, res) => {
+  res.sendFile(path.join(buildPath, 'terms.html'));
+});
 
 app.get('/desarrollo/tracs/*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));

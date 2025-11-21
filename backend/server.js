@@ -44,6 +44,8 @@ const io = new Server(server, {
 initNotifier(io);
 
 const PORT = process.env.BACKEND_PORT || 3001;
+const BASE_PATH = process.env.BASE_PATH || `/desarrollo/tracs`;
+const BASE_PATH_API = process.env.BASE_PATH_API || `/desarrollo/tracs/api`;
 
 // Middlewares
 app.use(cors({
@@ -54,39 +56,39 @@ app.use(express.json());
 app.use(helmet());
 
 // Rutas
-app.use('/desarrollo/tracs/api', scheduleRoutes);
-app.use('/desarrollo/tracs/api', downloadRoutes);
-app.use('/desarrollo/tracs/api', searchRoutes);
-app.use('/desarrollo/tracs/api', reservationsRoutes);
-app.use('/desarrollo/tracs/api', classroomsRoutes);
-app.use('/desarrollo/tracs/api', localScheduleRoutes);
-app.use('/desarrollo/tracs/api', cyclesRoutes);
-app.use('/desarrollo/tracs/api', buildingsRoutes);
-app.use('/desarrollo/tracs/api/google', googleAuthRoutes);
-app.use('/desarrollo/tracs/api', trainRoutes);
-app.use('/desarrollo/tracs/api', notificationsRoutes);
+app.use(BASE_PATH_API, scheduleRoutes);
+app.use(BASE_PATH_API, downloadRoutes);
+app.use(BASE_PATH_API, searchRoutes);
+app.use(BASE_PATH_API, reservationsRoutes);
+app.use(BASE_PATH_API, classroomsRoutes);
+app.use(BASE_PATH_API, localScheduleRoutes);
+app.use(BASE_PATH_API, cyclesRoutes);
+app.use(BASE_PATH_API, buildingsRoutes);
+app.use(`${BASE_PATH_API}/google`, googleAuthRoutes);
+app.use(BASE_PATH_API, trainRoutes);
+app.use(BASE_PATH_API, notificationsRoutes);
 
 /*---------------- SQL -----------------------*/
-app.use('/desarrollo/tracs/api', userRoutes);
-app.use('/desarrollo/tracs/api/tickets', ticketRoutes);
+app.use(BASE_PATH_API, userRoutes);
+app.use(`${BASE_PATH_API}/tickets`, ticketRoutes);
 
 // Host - build
-const buildPath = path.join(__dirname, '..', 'build');
-app.use('/desarrollo/tracs', express.static(buildPath));
+const buildPath = path.join(__dirname, '../frontend/', 'build');
+app.use(BASE_PATH, express.static(buildPath));
 
-app.get('/desarrollo/tracs', (req, res) => {
+app.get(BASE_PATH, (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
 
-app.get('/desarrollo/tracs/privacy', (req, res) => {
+app.get(`${BASE_PATH}/privacy`, (req, res) => {
   res.sendFile(path.join(buildPath, 'privacy.html'));
 });
 
-app.get('/desarrollo/tracs/terms', (req, res) => {
+app.get(`${BASE_PATH}/terms`, (req, res) => {
   res.sendFile(path.join(buildPath, 'terms.html'));
 });
 
-app.get('/desarrollo/tracs/*', (req, res) => {
+app.get(`${BASE_PATH}/*`, (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'));
 });
 

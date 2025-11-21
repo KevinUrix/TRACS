@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import API_URL from '../../config/api';
+import BASENAME from '../../config/baseName';
 import PrintTicket from './PrintTicket';
 
 export default function TicketsList({ building, refresh, onRefresh, statusFilter, categoryFilter, dateFilter, dateStart, dateEnd}) {
@@ -88,7 +89,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
         if (!res.ok) {
           if (res.status === 403 || res.status === 401) {
             localStorage.clear();
-            window.location.href = "/calendar";
+            window.location.href = `${BASENAME}/calendar`;
             return;
           }
           throw new Error('Error al cargar reportes');
@@ -156,7 +157,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/calendar';
+          window.location.href = `${BASENAME}/calendar`;
           return;
         }
         throw new Error('Error al actualizar reporte');
@@ -192,7 +193,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = '/calendar';
+          window.location.href = `${BASENAME}/calendar`;
           return;
         }
         throw new Error('Error al borrar reporte');

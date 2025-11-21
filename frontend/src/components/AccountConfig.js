@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import API_URL from '../config/api';
+import BASENAME from '../config/baseName';
 
 
 import axios from 'axios';
@@ -45,7 +46,7 @@ export default function AccountConfig() {
           }
           else if (err.response.status === 401) {
             localStorage.clear();
-            window.location.href = '/calendar';
+            window.location.href = `${BASENAME}/calendar`;
             return;
           }
         }
@@ -99,7 +100,7 @@ export default function AccountConfig() {
       localStorage.clear();
       toast.success("Se cerrará su sesión.",  {autoClose: 400});
       setTimeout(() => {
-        window.location.href = "/calendar";
+        window.location.href = `${BASENAME}/calendar`;
       }, 900);
     } catch (err) {
       if (err.response) {
@@ -110,7 +111,7 @@ export default function AccountConfig() {
         }
         else if (err.response.status === 401) {
           localStorage.clear();
-          window.location.href = '/calendar';
+          window.location.href = `${BASENAME}/calendar`;
           return;
         }
         setUsernameMessage(err.response.data.message);
@@ -155,7 +156,7 @@ export default function AccountConfig() {
       localStorage.clear();
       toast.success("Se cerrará su sesión.", {autoClose: 400});
       setTimeout(() => {
-        window.location.href = "/calendar";
+        window.location.href = `${BASENAME}/calendar`;
       }, 800);
     } catch (err) {
       if (err.response) {
@@ -166,7 +167,7 @@ export default function AccountConfig() {
         }
         else if (err.response.status === 401) {
           localStorage.clear();
-          window.location.href = '/calendar';
+          window.location.href = `${BASENAME}/calendar`;
           return;
         }
         setPasswordMessage(err.response.data.message);

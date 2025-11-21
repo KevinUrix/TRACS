@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import BuildingSelect from './BuildingSelect';
 import TicketsList from './TicketsList';
 import API_URL from '../../config/api';
+import BASENAME from '../../config/baseName';
 
 import './reports.css'; // Importa el archivo de estilos CSS
 import Footer from '../interfaz_calendar/footer';
@@ -99,7 +100,7 @@ export default function Reports() {
         }
         else if (response.status === 401) {
           localStorage.clear();
-          window.location.href = '/calendar';
+          window.location.href = `${BASENAME}/calendar`;
           return;
         }
         throw new Error(errorData.error || 'Error al guardar reporte');

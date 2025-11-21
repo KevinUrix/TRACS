@@ -2,6 +2,7 @@ import { getDecodedToken } from '../../utils/auth';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import API_URL from '../../config/api';
+import BASENAME from '../../config/baseName';
 import EditReservationForm from './editReservationForm'; // Importamos el formulario
 
 const dayNames = {
@@ -109,7 +110,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
           localStorage.clear();
           toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {
-            window.location.href = "/login";
+            window.location.href = `${BASENAME}/login`;
           }, 1000);
           return;
         }
@@ -117,7 +118,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
           localStorage.clear();
           toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {
-            window.location.href = "/login";
+            window.location.href = `${BASENAME}/login`;
           }, 1000);
           return;
         }
@@ -181,7 +182,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
           localStorage.clear();
           toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {
-            window.location.href = "/login";
+            window.location.href = `${BASENAME}/login`;
           }, 1000);
           return;
         }
@@ -189,7 +190,7 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
           localStorage.clear();
           toast.error("Sesión invalida. Inicie sesión nuevamente.",  {autoClose: 500});
           setTimeout(() => {
-            window.location.href = "/login";
+            window.location.href = `${BASENAME}/login`;
           }, 1000);
           return;
         }

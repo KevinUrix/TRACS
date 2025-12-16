@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import API_URL from '../../config/api';
-import BASENAME from '../../config/baseName';
 import './crud.css';
 import Footer from '../interfaz_calendar/footer';
 
@@ -148,7 +147,7 @@ export default function Crud() {
         if (!res.ok) {
           if (res.status === 403 || res.status === 401) {
             localStorage.clear();
-            window.location.href = `${BASENAME}/calendar`;
+            window.location.href = `/calendar`;
             return [];
           }
           if (!res.ok) throw new Error('Error al cargar usuarios');
@@ -210,7 +209,7 @@ export default function Crud() {
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/calendar`;
+          window.location.href = `/calendar`;
           return;
         }
         else if (res.status === 500){
@@ -288,7 +287,7 @@ export default function Crud() {
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/calendar`;
+          window.location.href = `/calendar`;
           return;
         }
         toast.error("Error al actualizar el edificio");
@@ -330,7 +329,7 @@ export default function Crud() {
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/calendar`;
+          window.location.href = `/calendar`;
           return;
         }
         toast.error('Fallo al eliminar edificio');
@@ -366,7 +365,7 @@ export default function Crud() {
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/calendar`;
+          window.location.href = `/calendar`;
           return;
         }
         toast.error('Fallo al eliminar usuario');
@@ -419,7 +418,7 @@ export default function Crud() {
         }
         else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/calendar`;
+          window.location.href = `/calendar`;
           return;
         }
         else if (res.status === 409) {
@@ -478,7 +477,7 @@ export default function Crud() {
           return;
         } else if (res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/calendar`;
+          window.location.href = `/calendar`;
           return;
         }
         

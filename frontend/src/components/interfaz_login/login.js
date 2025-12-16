@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import API_URL from '../../config/api';
-import BASENAME from '../../config/baseName';
 
 export default function Login() {
   const [usuario, setUsuario] = useState('');
@@ -159,10 +158,10 @@ return (
           Cancelar
         </button>
         <div className="flex justify-between items-center gap-6 mt-6 text-sm md:text-base text-gray-600 px-2">
-            <a href={`${BASENAME}/privacy`} className="hover:underline hover:text-purple-800 transition-colors duration-200" target="_blank">
+            <a href={`/privacy`} className="hover:underline hover:text-purple-800 transition-colors duration-200" target="_blank">
               Política de privacidad
             </a>
-            <a href={`${BASENAME}/terms`} className="hover:underline hover:text-purple-800 transition-colors duration-200" target="_blank">
+            <a href={`/terms`} className="hover:underline hover:text-purple-800 transition-colors duration-200" target="_blank">
               Términos y condiciones
             </a>
         </div>

@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import API_URL from '../../config/api';
-import BASENAME from '../../config/baseName';
 import DownloadButton from './downloadButton';
 import PrintButton from './printButton';
 import InstructionsButton from './instructionsButton';
@@ -190,7 +189,7 @@ export default function SelectsLogic({ onUpdateBuilding, onUpdateDay, onUpdateCy
       if (!res.ok) {
         if (res.status === 403 || res.status === 401) {
           localStorage.clear();
-          window.location.href = `${BASENAME}/login`;
+          window.location.href = `/login`;
           return;
         }
       }

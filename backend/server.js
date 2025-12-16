@@ -35,7 +35,7 @@ const io = new Server(server, {
     origin: [
       'https://www.tracs.cloud',
       'http://localhost:3001',
-      'https://johnafleming.cucei.udg.mx'
+      'https://horarios.cucei.udg.mx'
     ],
     methods: ['GET', 'POST'],
     credentials: true,
@@ -44,16 +44,15 @@ const io = new Server(server, {
 initNotifier(io);
 
 const PORT = process.env.BACKEND_PORT || 3001;
-const BASE_PATH = process.env.BASE_PATH || `/desarrollo/tracs`;
-const BASE_PATH_API = process.env.BASE_PATH_API || `/desarrollo/tracs/api`;
+const BASE_PATH_API = process.env.BASE_PATH_API || `/api`;
 
 // Middlewares
+app.use(helmet());
 app.use(cors({
-  origin: ['https://www.tracs.cloud', 'http://localhost:3001', 'https://johnafleming.cucei.udg.mx'], // Cambiaremos esto cuando se requiera en CUCEI
+  origin: ['https://www.tracs.cloud', 'http://localhost:3001', 'https://horarios.cucei.udg.mx'],
   credentials: true,
 }));
 app.use(express.json());
-app.use(helmet());
 
 // Rutas
 app.use(BASE_PATH_API, scheduleRoutes);
@@ -72,27 +71,6 @@ app.use(BASE_PATH_API, notificationsRoutes);
 app.use(BASE_PATH_API, userRoutes);
 app.use(`${BASE_PATH_API}/tickets`, ticketRoutes);
 
-// Host - build
-const buildPath = path.join(__dirname, '../frontend/', 'build');
-app.use(BASE_PATH, express.static(buildPath));
-
-app.get(BASE_PATH, (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
-});
-
-app.get(`${BASE_PATH}/privacy`, (req, res) => {
-  res.sendFile(path.join(buildPath, 'privacy.html'));
-});
-
-app.get(`${BASE_PATH}/terms`, (req, res) => {
-  res.sendFile(path.join(buildPath, 'terms.html'));
-});
-
-app.get(`${BASE_PATH}/*`, (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
-});
-
-
 // Sincroniza el caché local (node) con redis si redis llegó a fallar
 redis.on('ready', () => {
   console.log('Redis listo. Sincronizando localCache...');
@@ -101,6 +79,7 @@ redis.on('ready', () => {
     .catch(err => console.error('Error durante la sincronización:', err.message));
 });
 
+app.get('trust proxy');
 
 (async () => {
   // await trainFromDatabase();

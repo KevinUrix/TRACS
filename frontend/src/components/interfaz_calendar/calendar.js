@@ -587,7 +587,7 @@ export default function Calendar() {
                       <th
                         key={index}
                         className={`table-cell print-col-${Math.floor(index / 9)}`}
-                        title={cap != null ? `Capacidad: ${cap} estudiantes` : 'Capacidad no definidos'}
+                        title={cap != null ? `Capacidad: ${cap} estudiantes` : 'Capacidad no definida'}
                       >
                         {cap != null ? (
                           <>

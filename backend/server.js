@@ -46,6 +46,8 @@ initNotifier(io);
 const PORT = process.env.BACKEND_PORT || 3001;
 const BASE_PATH_API = process.env.BASE_PATH_API || `/api`;
 
+app.get('trust proxy');
+
 // Middlewares
 app.use(helmet());
 app.use(cors({
@@ -79,7 +81,6 @@ redis.on('ready', () => {
     .catch(err => console.error('Error durante la sincronización:', err.message));
 });
 
-app.get('trust proxy');
 
 (async () => {
   // await trainFromDatabase();

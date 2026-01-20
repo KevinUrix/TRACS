@@ -34,7 +34,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       'https://www.tracs.cloud',
-      'http://localhost:3001',
+      'http://localhost:3000',
       'https://horarios.cucei.udg.mx'
     ],
     methods: ['GET', 'POST'],
@@ -46,12 +46,10 @@ initNotifier(io);
 const PORT = process.env.BACKEND_PORT || 3001;
 const BASE_PATH_API = process.env.BASE_PATH_API || `/api`;
 
-app.get('trust proxy');
-
 // Middlewares
 app.use(helmet());
 app.use(cors({
-  origin: ['https://www.tracs.cloud', 'http://localhost:3001', 'https://horarios.cucei.udg.mx'],
+  origin: ['https://www.tracs.cloud', 'http://localhost:3000', 'https://horarios.cucei.udg.mx'],
   credentials: true,
 }));
 app.use(express.json());

@@ -7,7 +7,6 @@ const { Server } = require('socket.io');
 require('dotenv').config();
 
 const { initNotifier } = require('./utils/notifier');
-const { loadModelsFromDisk, trainFromDatabase } = require('./utils/aiClassifier');
 
 const scheduleRoutes = require('./routes/scheduleRoutes');
 const downloadRoutes = require('./routes/downloadRoutes');
@@ -20,7 +19,6 @@ const buildingsRoutes = require( './routes/buildingsRoutes');
 const googleAuthRoutes = require('./routes/googleAuthRoutes');
 const userRoutes = require('./routes/userRoutes');
 const ticketRoutes = require('./routes/ticketRoutes');
-const trainRoutes = require('./routes/trainRoutes');
 const notificationsRoutes = require('./routes/notificationsRoutes');
 
 //Cache
@@ -64,7 +62,6 @@ app.use(BASE_PATH_API, localScheduleRoutes);
 app.use(BASE_PATH_API, cyclesRoutes);
 app.use(BASE_PATH_API, buildingsRoutes);
 app.use(`${BASE_PATH_API}/google`, googleAuthRoutes);
-app.use(BASE_PATH_API, trainRoutes);
 app.use(BASE_PATH_API, notificationsRoutes);
 
 /*---------------- SQL -----------------------*/
@@ -81,9 +78,6 @@ redis.on('ready', () => {
 
 
 (async () => {
-  // await trainFromDatabase();
-  // await loadModelsFromDisk();
-  
   server.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor corriendo`);
   });

@@ -1,26 +1,13 @@
 [
   {
     "data": {
-      "schedule": "0013-0013",
-      "days": ". M . . . .",
-      "building": "DESV2",
-      "classroom": "",
-      "nrc": "131912",
-      "code": "IC673",
-      "students": 0,
-      "course": "ALGEBRA"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
-  },
-  {
-    "data": {
       "schedule": "0009-0009",
       "days": ". . . J . .",
       "building": "DESV2",
       "classroom": "A001",
       "nrc": "137225",
       "code": "IC577",
-      "students": 0,
+      "students": 33,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "GODINEZ DIETRICH, GABRIEL"
@@ -33,7 +20,7 @@
       "classroom": "",
       "nrc": "202033",
       "code": "IB056",
-      "students": 0,
+      "students": 37,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "MENDOZA SANTOS, ROSA DELIA"
@@ -46,7 +33,7 @@
       "classroom": "",
       "nrc": "108729",
       "code": "I5973",
-      "students": 0,
+      "students": 10,
       "course": "ANALISIS ESTADISTICO MULTIVARIADO"
     },
     "professor": "SANCHEZ GOMEZ, RUBEN"
@@ -59,7 +46,7 @@
       "classroom": "A050",
       "nrc": "49781",
       "code": "I7420",
-      "students": 0,
+      "students": 30,
       "course": "CALCULO AVANZADO"
     },
     "professor": "SANCHEZ ALVAREZ, MIGUEL"
@@ -72,7 +59,7 @@
       "classroom": "A002",
       "nrc": "42294",
       "code": "I6009",
-      "students": 0,
+      "students": 17,
       "course": "CALCULO AVANZADO PARA FISICA"
     },
     "professor": "MONTES NAVARRO, MARIANA SARAHI"
@@ -85,23 +72,10 @@
       "classroom": "",
       "nrc": "104120",
       "code": "I6009",
-      "students": 0,
+      "students": 7,
       "course": "CALCULO AVANZADO PARA FISICA"
     },
     "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "0048-0048",
-      "days": ". . . J . .",
-      "building": "DESV2",
-      "classroom": "A037",
-      "nrc": "153638",
-      "code": "IB058",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
@@ -111,7 +85,7 @@
       "classroom": "A001",
       "nrc": "43700",
       "code": "I6909",
-      "students": 0,
+      "students": 17,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
@@ -124,7 +98,7 @@
       "classroom": "A023",
       "nrc": "42299",
       "code": "I5800",
-      "students": 0,
+      "students": 35,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -137,7 +111,7 @@
       "classroom": "A023",
       "nrc": "42299",
       "code": "I5800",
-      "students": 0,
+      "students": 35,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -150,23 +124,10 @@
       "classroom": "",
       "nrc": "42296",
       "code": "I5800",
-      "students": 0,
+      "students": 35,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "0033-0033",
-      "days": ". . I . . .",
-      "building": "DESV2",
-      "classroom": "",
-      "nrc": "205827",
-      "code": "V0710",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "LUNA ARELLANO, MAYRA LORENA"
   },
   {
     "data": {
@@ -176,7 +137,7 @@
       "classroom": "A050",
       "nrc": "223406",
       "code": "V0710",
-      "students": 0,
+      "students": 35,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
@@ -189,7 +150,7 @@
       "classroom": "",
       "nrc": "223565",
       "code": "V0710",
-      "students": 0,
+      "students": 35,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
@@ -202,7 +163,7 @@
       "classroom": "A030",
       "nrc": "104121",
       "code": "I6121",
-      "students": 0,
+      "students": 38,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "VAZQUEZ HERNANDEZ, HUSAI"
@@ -241,7 +202,7 @@
       "classroom": "",
       "nrc": "137196",
       "code": "I6177",
-      "students": 0,
+      "students": 36,
       "course": "DESARROLLO SUSTENTABLE"
     },
     "professor": "ABUD GONZALEZ, MONSERRATT"
@@ -254,23 +215,10 @@
       "classroom": "A014",
       "nrc": "163996",
       "code": "I5874",
-      "students": 0,
+      "students": 35,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "0034-0034",
-      "days": ". . . J . .",
-      "building": "DESV2",
-      "classroom": "A037",
-      "nrc": "178833",
-      "code": "I5874",
-      "students": 0,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "DIAZ CALDERA, LIZBETH"
   },
   {
     "data": {
@@ -280,7 +228,7 @@
       "classroom": "",
       "nrc": "179857",
       "code": "I7342",
-      "students": 0,
+      "students": 34,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -293,7 +241,7 @@
       "classroom": "",
       "nrc": "209740",
       "code": "V0712",
-      "students": 0,
+      "students": 30,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
@@ -306,7 +254,7 @@
       "classroom": "",
       "nrc": "209741",
       "code": "V0712",
-      "students": 0,
+      "students": 30,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "SANCHEZ ALVAREZ, MIGUEL"
@@ -319,7 +267,7 @@
       "classroom": "A050",
       "nrc": "72282",
       "code": "I7346",
-      "students": 0,
+      "students": 5,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
@@ -332,7 +280,7 @@
       "classroom": "A036",
       "nrc": "56884",
       "code": "I6910",
-      "students": 0,
+      "students": 19,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "ROBLERO MENDEZ, ELI VANNEY"
@@ -345,7 +293,7 @@
       "classroom": "",
       "nrc": "144457",
       "code": "IC585",
-      "students": 0,
+      "students": 30,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -358,7 +306,7 @@
       "classroom": "",
       "nrc": "96092",
       "code": "I7347",
-      "students": 0,
+      "students": 31,
       "course": "ESTADISTICA"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
@@ -371,7 +319,7 @@
       "classroom": "A020",
       "nrc": "84161",
       "code": "I7347",
-      "students": 0,
+      "students": 30,
       "course": "ESTADISTICA"
     },
     "professor": "CENTENO QUEVEDO, JUAN JERONIMO"
@@ -384,7 +332,7 @@
       "classroom": "A014",
       "nrc": "132759",
       "code": "I9880",
-      "students": 0,
+      "students": 30,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -397,23 +345,10 @@
       "classroom": "A014",
       "nrc": "201951",
       "code": "I9880",
-      "students": 0,
+      "students": 18,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0039-0039",
-      "days": ". . I . . .",
-      "building": "DESV2",
-      "classroom": "A036",
-      "nrc": "131914",
-      "code": "IC674",
-      "students": 0,
-      "course": "GEOMETRIA EUCLIDIANA"
-    },
-    "professor": "RADILLO ENRIQUEZ, MARISOL"
   },
   {
     "data": {
@@ -436,10 +371,23 @@
       "classroom": "A025",
       "nrc": "43545",
       "code": "I7349",
-      "students": 0,
+      "students": 35,
       "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
     },
     "professor": "GARCIA NAVA, DALMIRO"
+  },
+  {
+    "data": {
+      "schedule": "0015-0015",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A046",
+      "nrc": "42416",
+      "code": "I5945",
+      "students": 8,
+      "course": "INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
+    },
+    "professor": "AGUILA GOMEZ, RICARDO"
   },
   {
     "data": {
@@ -449,10 +397,23 @@
       "classroom": "",
       "nrc": "189651",
       "code": "I5247",
-      "students": 0,
+      "students": 35,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0039-0039",
+      "days": ". . I . . .",
+      "building": "DESV2",
+      "classroom": "A002",
+      "nrc": "252337",
+      "code": "I5247",
+      "students": 35,
+      "course": "LOGICA MATEMATICA"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
   },
   {
     "data": {
@@ -462,7 +423,7 @@
       "classroom": "",
       "nrc": "193980",
       "code": "IL345",
-      "students": 0,
+      "students": 30,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "ACEVES FERNANDEZ, ELIZABETH"
@@ -475,23 +436,10 @@
       "classroom": "",
       "nrc": "209746",
       "code": "V0711",
-      "students": 0,
+      "students": 35,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
-  },
-  {
-    "data": {
-      "schedule": "0036-0036",
-      "days": ". . . . V .",
-      "building": "DESV2",
-      "classroom": "",
-      "nrc": "210104",
-      "code": "I9881",
-      "students": 0,
-      "course": "METODOS MATEMATICOS I"
-    },
-    "professor": "BONILLA MERCADO, VICTORINO"
   },
   {
     "data": {
@@ -501,7 +449,7 @@
       "classroom": "A001",
       "nrc": "42491",
       "code": "I5893",
-      "students": 0,
+      "students": 6,
       "course": "METODOS MATEMATICOS I"
     },
     "professor": "GODINEZ DIETRICH, GABRIEL"
@@ -514,7 +462,7 @@
       "classroom": "",
       "nrc": "212352",
       "code": "V0713",
-      "students": 0,
+      "students": 33,
       "course": "METODOS NUMERICOS"
     },
     "professor": "MENDOZA SANTOS, ROSA DELIA"
@@ -566,7 +514,7 @@
       "classroom": "A025",
       "nrc": "42535",
       "code": "I5799",
-      "students": 0,
+      "students": 25,
       "course": "PRECALCULO"
     },
     "professor": "GONZALEZ RENDON, LUCIA"
@@ -579,7 +527,7 @@
       "classroom": "A009",
       "nrc": "42540",
       "code": "I5799",
-      "students": 0,
+      "students": 33,
       "course": "PRECALCULO"
     },
     "professor": "GONZALEZ RENDON, LUCIA"
@@ -592,10 +540,10 @@
       "classroom": "",
       "nrc": "159937",
       "code": "I7348",
-      "students": 0,
+      "students": 30,
       "course": "PROBABILIDAD"
     },
-    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
   },
   {
     "data": {
@@ -605,7 +553,7 @@
       "classroom": "A022",
       "nrc": "137239",
       "code": "IC572",
-      "students": 0,
+      "students": 35,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -618,49 +566,23 @@
       "classroom": "A028",
       "nrc": "144451",
       "code": "IC572",
-      "students": 0,
+      "students": 30,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "GARIBAY LOPEZ, CECILIA"
   },
   {
     "data": {
-      "schedule": "0053-0053",
-      "days": "L . . . . .",
-      "building": "DESV2",
-      "classroom": "",
-      "nrc": "225021",
-      "code": "IB067",
-      "students": 0,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
-  },
-  {
-    "data": {
-      "schedule": "0033-0033",
-      "days": ". . I . . .",
-      "building": "DESV2",
-      "classroom": "",
-      "nrc": "225022",
-      "code": "IB067",
-      "students": 0,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
-  },
-  {
-    "data": {
-      "schedule": "0011-0011",
+      "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DESV2",
-      "classroom": "A050",
-      "nrc": "90532",
-      "code": "I9882",
+      "classroom": "",
+      "nrc": "252523",
+      "code": "IK677",
       "students": 0,
-      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS I"
+      "course": "SEMINARIO DE AVANCE DE TESIS I"
     },
-    "professor": "ACEVES FERNANDEZ, ELIZABETH"
+    "professor": "VELAZQUEZ CARRILES, CARLOS ARNULFO"
   },
   {
     "data": {
@@ -670,7 +592,7 @@
       "classroom": "A045",
       "nrc": "57629",
       "code": "I7021",
-      "students": 0,
+      "students": 30,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
@@ -683,7 +605,7 @@
       "classroom": "",
       "nrc": "57426",
       "code": "I7021",
-      "students": 0,
+      "students": 5,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
@@ -696,7 +618,7 @@
       "classroom": "A050",
       "nrc": "42733",
       "code": "I5896",
-      "students": 0,
+      "students": 30,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS II"
     },
     "professor": "CORTES NAVARRO, LAURA ESTHER"
@@ -748,7 +670,7 @@
       "classroom": "",
       "nrc": "158574",
       "code": "I6165",
-      "students": 0,
+      "students": 36,
       "course": "SEMINARIO DE TUTORIA DE EGRESO"
     },
     "professor": "ABUD GONZALEZ, MONSERRATT"
@@ -768,26 +690,13 @@
   },
   {
     "data": {
-      "schedule": "0036-0036",
-      "days": ". . . . V .",
-      "building": "DESV2",
-      "classroom": "",
-      "nrc": "42824",
-      "code": "I5946",
-      "students": 0,
-      "course": "TALLER DE INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
-    },
-    "professor": "AGUILA GOMEZ, RICARDO"
-  },
-  {
-    "data": {
       "schedule": "0012-0012",
       "days": ". . . . V .",
       "building": "DESV2",
       "classroom": "A050",
       "nrc": "77391",
       "code": "I5925",
-      "students": 0,
+      "students": 7,
       "course": "TEORIA DE ESPACIOS VECTORIALES"
     },
     "professor": "SANCHEZ ALVAREZ, MIGUEL"

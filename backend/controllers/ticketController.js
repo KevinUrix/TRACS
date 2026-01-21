@@ -1,7 +1,6 @@
 require('dotenv').config();
 const axios = require('axios');
 const { pool } = require('../utils/db');
-const { classifyTicket } = require('../utils/aiClassifier');
 const { notify } = require('../utils/notifier');
 
 exports.createTicket = async (req, res) => {

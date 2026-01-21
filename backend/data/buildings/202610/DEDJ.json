@@ -1,39 +1,13 @@
 [
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "127740",
-      "code": "I7539",
-      "students": 0,
-      "course": "BIOINORGANICA"
-    },
-    "professor": "DELGADO JAIME, MARIO ULISES"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "104239",
-      "code": "I7493",
-      "students": 0,
-      "course": "BIOQUIMICA ESTRUCTURAL I"
-    },
-    "professor": "VELAZQUEZ JUAREZ, GILBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . I . . .",
       "building": "DEDJ",
       "classroom": "A001",
       "nrc": "125933",
       "code": "I5857",
-      "students": 0,
+      "students": 4,
       "course": "ELECTROQUIMICA II"
     },
     "professor": "CASILLAS SANTANA, NORBERTO"
@@ -41,12 +15,25 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": "L . I . . .",
+      "days": "L . . . . .",
       "building": "DEDJ",
       "classroom": "A001",
       "nrc": "127742",
       "code": "I6131",
-      "students": 0,
+      "students": 33,
+      "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
+    },
+    "professor": "CORTES ORTEGA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "nrc": "127742",
+      "code": "I6131",
+      "students": 33,
       "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
     },
     "professor": "CORTES ORTEGA, JORGE ALBERTO"
@@ -59,7 +46,7 @@
       "classroom": "A001",
       "nrc": "42385",
       "code": "I5812",
-      "students": 0,
+      "students": 25,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "CORTES ORTEGA, JORGE ALBERTO"
@@ -72,7 +59,7 @@
       "classroom": "A001",
       "nrc": "79437",
       "code": "I5813",
-      "students": 0,
+      "students": 25,
       "course": "FISICOQUIMICA PARA INGENIEROS II"
     },
     "professor": "CORTES ORTEGA, JORGE ALBERTO"
@@ -85,23 +72,10 @@
       "classroom": "A001",
       "nrc": "158549",
       "code": "IF873",
-      "students": 0,
+      "students": 25,
       "course": "FUNDAMENTOS DE QUIMICA"
     },
-    "professor": "CORTES ROMERO, CELSO"
-  },
-  {
-    "data": {
-      "schedule": "1800-1855",
-      "days": ". . I . . .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "152805",
-      "code": "I7508",
-      "students": 0,
-      "course": "LABORATORIO DE QUIMICA ANALITICA II"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
+    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
   },
   {
     "data": {
@@ -111,7 +85,7 @@
       "classroom": "",
       "nrc": "43728",
       "code": "I6924",
-      "students": 0,
+      "students": 19,
       "course": "LABORATORIO DE QUIMICA GENERAL II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -124,7 +98,7 @@
       "classroom": "",
       "nrc": "63519",
       "code": "I6924",
-      "students": 0,
+      "students": 21,
       "course": "LABORATORIO DE QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
@@ -137,7 +111,7 @@
       "classroom": "",
       "nrc": "43727",
       "code": "I6924",
-      "students": 0,
+      "students": 21,
       "course": "LABORATORIO DE QUIMICA GENERAL II"
     },
     "professor": "RIOS DONATO, NELY"
@@ -150,7 +124,7 @@
       "classroom": "",
       "nrc": "43724",
       "code": "I6922",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA GENERAL I"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -163,7 +137,7 @@
       "classroom": "",
       "nrc": "63518",
       "code": "I6922",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA GENERAL I"
     },
     "professor": "GONZALEZ MEZA, OMAR ALEJANDRO"
@@ -176,7 +150,7 @@
       "classroom": "",
       "nrc": "87905",
       "code": "I6922",
-      "students": 0,
+      "students": 11,
       "course": "LABORATORIO DE QUIMICA GENERAL I"
     },
     "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
@@ -189,10 +163,23 @@
       "classroom": "",
       "nrc": "117499",
       "code": "I6922",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA GENERAL I"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . J . .",
+      "building": "DEDJ",
+      "classroom": "",
+      "nrc": "158551",
+      "code": "I6922",
+      "students": 20,
+      "course": "LABORATORIO DE QUIMICA GENERAL I"
+    },
+    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
   },
   {
     "data": {
@@ -202,7 +189,7 @@
       "classroom": "",
       "nrc": "43752",
       "code": "I7484",
-      "students": 0,
+      "students": 8,
       "course": "LABORATORIO DE QUIMICA INORGANICA I"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -215,7 +202,7 @@
       "classroom": "",
       "nrc": "63520",
       "code": "I7484",
-      "students": 0,
+      "students": 19,
       "course": "LABORATORIO DE QUIMICA INORGANICA I"
     },
     "professor": "MANCILLA ALCANTAR, ADELINA"
@@ -228,7 +215,7 @@
       "classroom": "",
       "nrc": "43751",
       "code": "I7484",
-      "students": 0,
+      "students": 21,
       "course": "LABORATORIO DE QUIMICA INORGANICA I"
     },
     "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -241,7 +228,7 @@
       "classroom": "",
       "nrc": "63953",
       "code": "I7497",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA INORGANICA II"
     },
     "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -254,7 +241,7 @@
       "classroom": "",
       "nrc": "63954",
       "code": "I7497",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA INORGANICA II"
     },
     "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
@@ -267,7 +254,7 @@
       "classroom": "",
       "nrc": "63955",
       "code": "I7497",
-      "students": 0,
+      "students": 15,
       "course": "LABORATORIO DE QUIMICA INORGANICA II"
     },
     "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
@@ -277,10 +264,10 @@
       "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDJ",
-      "classroom": "",
+      "classroom": "LQM01",
       "nrc": "91992",
       "code": "I7518",
-      "students": 0,
+      "students": 13,
       "course": "LABORATORIO DE QUIMICA MACROMOLECULAR"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -293,7 +280,7 @@
       "classroom": "",
       "nrc": "96072",
       "code": "I7518",
-      "students": 0,
+      "students": 11,
       "course": "LABORATORIO DE QUIMICA MACROMOLECULAR"
     },
     "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
@@ -306,7 +293,7 @@
       "classroom": "",
       "nrc": "152806",
       "code": "I7518",
-      "students": 0,
+      "students": 19,
       "course": "LABORATORIO DE QUIMICA MACROMOLECULAR"
     },
     "professor": "LOPEZ GONZALEZNUÑEZ, ROSA GABRIELA"
@@ -316,10 +303,10 @@
       "schedule": "1100-1355",
       "days": ". . . J . .",
       "building": "DEDJ",
-      "classroom": "",
+      "classroom": "LQM01",
       "nrc": "42436",
       "code": "I5811",
-      "students": 0,
+      "students": 22,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -332,7 +319,7 @@
       "classroom": "",
       "nrc": "42437",
       "code": "I5811",
-      "students": 0,
+      "students": 21,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -345,7 +332,7 @@
       "classroom": "",
       "nrc": "42440",
       "code": "I5811",
-      "students": 0,
+      "students": 10,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -358,7 +345,7 @@
       "classroom": "",
       "nrc": "42438",
       "code": "I5811",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -371,20 +358,20 @@
       "classroom": "",
       "nrc": "42439",
       "code": "I5811",
-      "students": 0,
+      "students": 20,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "MORAN SALAZAR, RENE GUADALUPE"
   },
   {
     "data": {
-      "schedule": "1400-1655",
+      "schedule": "0800-1055",
       "days": ". . . . V .",
       "building": "DEDJ",
       "classroom": "",
       "nrc": "63394",
       "code": "I5811",
-      "students": 0,
+      "students": 18,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "CID HERNANDEZ, MARGARITA"
@@ -394,10 +381,10 @@
       "schedule": "1400-1655",
       "days": ". . . . V .",
       "building": "DEDJ",
-      "classroom": "",
+      "classroom": "LQM01",
       "nrc": "125934",
       "code": "I5811",
-      "students": 0,
+      "students": 19,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -410,7 +397,7 @@
       "classroom": "",
       "nrc": "178710",
       "code": "I5811",
-      "students": 0,
+      "students": 19,
       "course": "LABORATORIO DE QUIMICA PARA INGENIEROS"
     },
     "professor": "CETINA CORONA, ABRAHAM FRANCISCO"
@@ -430,16 +417,29 @@
   },
   {
     "data": {
-      "schedule": "1500-1755",
+      "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDJ",
       "classroom": "A001",
-      "nrc": "172109",
-      "code": "I7506",
-      "students": 0,
-      "course": "QUIMICA ANALITICA II"
+      "nrc": "43799",
+      "code": "I7415",
+      "students": 25,
+      "course": "QUIMICA BASICA"
     },
-    "professor": "GUDIÑO GUZMAN, BERNARDO"
+    "professor": "GALLEGOS COVARRUBIAS, BELINDA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "nrc": "139350",
+      "code": "IC601",
+      "students": 26,
+      "course": "QUIMICA EN LA INGENIERIA CIVIL"
+    },
+    "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
   },
   {
     "data": {
@@ -449,7 +449,7 @@
       "classroom": "A001",
       "nrc": "42591",
       "code": "I5803",
-      "students": 0,
+      "students": 8,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -462,23 +462,10 @@
       "classroom": "A001",
       "nrc": "42591",
       "code": "I5803",
-      "students": 0,
+      "students": 8,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "42595",
-      "code": "I5803",
-      "students": 0,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MARTINEZ GOMEZ, ALVARO DE JESUS"
   },
   {
     "data": {
@@ -488,7 +475,7 @@
       "classroom": "A001",
       "nrc": "43726",
       "code": "I6923",
-      "students": 0,
+      "students": 22,
       "course": "QUIMICA GENERAL II"
     },
     "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
@@ -501,7 +488,7 @@
       "classroom": "A001",
       "nrc": "38417",
       "code": "I3278",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -514,7 +501,7 @@
       "classroom": "A001",
       "nrc": "38425",
       "code": "I3282",
-      "students": 0,
+      "students": 23,
       "course": "QUIMICA ORGANICA"
     },
     "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
@@ -527,9 +514,35 @@
       "classroom": "A001",
       "nrc": "95236",
       "code": "I5806",
-      "students": 0,
+      "students": 17,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "nrc": "196856",
+      "code": "IL641",
+      "students": 0,
+      "course": "QUIMICA ORGANOMETALICA AVANZADA"
+    },
+    "professor": "RANGEL SALAS, IRMA IDALIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDJ",
+      "classroom": "A001",
+      "nrc": "43754",
+      "code": "I7487",
+      "students": 23,
+      "course": "SEMINARIO DE INDUCCION"
+    },
+    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   }
 ]

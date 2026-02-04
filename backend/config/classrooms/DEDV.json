@@ -1,23 +1,85 @@
 [
-  "A001",
-  "A002",
-  "A003",
-  "A004",
-  "A005",
-  "A006",
-  "A007",
-  "A008",
-  "A009",
-  "A010",
-  "A011",
-  "A012",
-  "A013",
-  "A014",
-  "A015",
-  "A016",
-  "A017",
-  "A018",
-  "A019",
-  "LC01",
-  "LC02"
+  {
+    "name": "A001",
+    "capacity": "20"
+  },
+  {
+    "name": "A002",
+    "capacity": "40"
+  },
+  {
+    "name": "A003",
+    "capacity": "40"
+  },
+  {
+    "name": "A004",
+    "capacity": "40"
+  },
+  {
+    "name": "A005",
+    "capacity": "20"
+  },
+  {
+    "name": "A006",
+    "capacity": "20"
+  },
+  {
+    "name": "A007",
+    "capacity": "20"
+  },
+  {
+    "name": "A008",
+    "capacity": "40"
+  },
+  {
+    "name": "A009",
+    "capacity": "20"
+  },
+  {
+    "name": "A010",
+    "capacity": "20"
+  },
+  {
+    "name": "A011",
+    "capacity": "40"
+  },
+  {
+    "name": "A012",
+    "capacity": "40"
+  },
+  {
+    "name": "A013",
+    "capacity": "40"
+  },
+  {
+    "name": "A014",
+    "capacity": "40"
+  },
+  {
+    "name": "A015",
+    "capacity": "40"
+  },
+  {
+    "name": "A016",
+    "capacity": "40"
+  },
+  {
+    "name": "A017",
+    "capacity": "40"
+  },
+  {
+    "name": "A018",
+    "capacity": "40"
+  },
+  {
+    "name": "A019"
+  },
+  {
+    "name": "LC01",
+    "capacity": "20"
+  },
+  {
+    "name": "LC02",
+    "capacity": "20"
+  }
 ]

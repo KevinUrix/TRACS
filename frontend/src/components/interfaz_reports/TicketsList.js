@@ -10,6 +10,10 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   const [loading, setLoading] = useState(false);
   const [selectedTicket, setSelectedTicket] = useState(null); // ticket seleccionado para editar
   const [currentPage, setCurrentPage] = useState(1);
+  const [disabledReportB, setDisabledReportB] = useState(false);
+  const [showPrintButton, setShowPrintButton] = useState(true);
+  const [dismissedPrintButton, setDismissedPrintButton] = useState(false);
+
   /* 
   isSaving es para que no se guarden dos reportes desde una misma modal, el problema es que si faltan o colocas datos incorrectos NO puedes volver a presionar el botón.
   */
@@ -128,8 +132,8 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
 
   // Actualizar ticket
   const handleSave = async () => {
-    // if (isSaving) return; // Evita clics múltiples
-    // setIsSaving(true); // Inicia la "protección"
+    setDisabledReportB(true);
+    setTimeout(() => setDisabledReportB(false), 400);
     
     try {
 
@@ -207,7 +211,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 print-area">
       <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900 tracking-wide">
         {building.value ? `Reportes para ${building.text}` : 'Todos los Reportes'}
       </h2>
@@ -316,6 +320,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
           <hr style={{ margin: '10px 0 20px 0', borderTop: '2px solid #4629ba' }} />
 
           <div className="flex justify-center items-center gap-4 mt-6">
+          {/* PONER no-print EN EL classname PARA IMPRIMIR LOS BOTONES DE LA LISTA DE REPORTES */}
             <button
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
@@ -475,7 +480,7 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
                     type='button'
                     onClick={handleSave}
                     className={`px-4 py-2 rounded text-white background-button3`}
-                    // disabled={isSaving}
+                    disabled={disabledReportB}
                   >
                     Guardar
                   </button>
@@ -490,6 +495,30 @@ export default function TicketsList({ building, refresh, onRefresh, statusFilter
       )}
       {ticketToPrint && (
         <PrintTicket ticket={ticketToPrint} onClose={() => setTicketToPrint(null)} />
+      )}
+
+      {/* BOTÓN DE IMPRESIÓN PARA LA LISTA DE TICKETS */}
+      {!loading && tickets.length > 0 && showPrintButton && !dismissedPrintButton && (
+        <div
+          className="fixed bottom-6 right-6 z-5 cursor-pointer no-print"
+          onClick={() => window.print()}
+        >
+          <div className="bg-white rounded-lg shadow-lg p-4 w-60 custom-shadow-border-reports text-center relative hover:bg-gray-100">
+            <button
+              onClick={(e) => {
+                  e.stopPropagation(); // Evita que al cerrar se dispare el print
+                  setDismissedPrintButton(true);
+              }}
+              className="absolute top-1 right-2 text-gray-500 hover:text-red-500 text-sm"
+            >
+              ✖
+            </button>
+
+            <p className="text-gray-700 text-base">
+              🖨️ Imprimir todos los tickets
+            </p>
+          </div>
+        </div>
       )}
     </div>
   );

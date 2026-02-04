@@ -1,14 +1,40 @@
 [
-  "EM01",
-  "EM02",
-  "EM03",
-  "EM04",
-  "LC01",
-  "LM01",
-  "LM02",
-  "LM03",
-  "LM04",
-  "LM05",
-  "LM06",
-  "LM07"
+  {
+    "name": "EM01"
+  },
+  {
+    "name": "EM02"
+  },
+  {
+    "name": "EM03"
+  },
+  {
+    "name": "EM04"
+  },
+  {
+    "name": "LC01",
+    "capacity": "25"
+  },
+  {
+    "name": "LM01"
+  },
+  {
+    "name": "LM02"
+  },
+  {
+    "name": "LM03"
+  },
+  {
+    "name": "LM04"
+  },
+  {
+    "name": "LM05"
+  },
+  {
+    "name": "LM06",
+    "capacity": "20"
+  },
+  {
+    "name": "LM07"
+  }
 ]

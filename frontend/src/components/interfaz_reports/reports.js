@@ -35,6 +35,7 @@ export default function Reports() {
   const [showCustomDateModal, setShowCustomDateModal] = useState(false);
   const [showFloatingDateModal, setShowFloatingDateModal] = useState(false);
   const [dismissedFloatingModal, setDismissedFloatingModal] = useState(false);
+  const [disabledReportB, setDisabledReportB] = useState(false);
 
   const navigate = useNavigate();
   const decoded = getDecodedToken();
@@ -51,9 +52,8 @@ export default function Reports() {
   // const [isSaving, setIsSaving] = useState(false);
 
   const handleSaveTicket = async () => {
-
-    // if (isSaving) return; // Evita clics múltiples
-    // setIsSaving(true); // Inicia la "protección"
+    setDisabledReportB(true);
+    setTimeout(() => setDisabledReportB(false), 400);
 
     if (!selectedBuilding.value) {
       toast.error('Selecciona un edificio antes de guardar');
@@ -378,7 +378,7 @@ export default function Reports() {
                     type='button' 
                     onClick={handleSaveTicket} 
                     className="px-4 py-2 background-agregar text-white rounded"
-                    // disabled={isSaving}
+                    disabled={disabledReportB}
                   >
                     Guardar reporte
                   </button>
@@ -429,7 +429,7 @@ export default function Reports() {
         )}
         {showFloatingDateModal && !dismissedFloatingModal && (
           <div
-            className="fixed top-40 right-6 z-50 cursor-pointer"
+            className="fixed top-40 right-6 z-50 cursor-pointer no-print"
             onClick={() => {
               setShowFloatingDateModal(false);
               setShowCustomDateModal(true);

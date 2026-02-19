@@ -1,6 +1,6 @@
 const redis = require('../utils/redisClient');
 
-const DEFAULT_TTL = 72000; // Tiempo en segundos
+const DEFAULT_TTL = 43200; // Tiempo en segundos
 
 const localCache = new Map(); // fallback en memoria
 const isRedisReady = () => redis.status === 'ready';

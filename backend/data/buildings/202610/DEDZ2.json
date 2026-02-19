@@ -7,7 +7,7 @@
       "classroom": "A006",
       "nrc": "117633",
       "code": "I6153",
-      "students": 6,
+      "students": 7,
       "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
     },
     "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
@@ -20,7 +20,7 @@
       "classroom": "A007",
       "nrc": "236063",
       "code": "IL381",
-      "students": 0,
+      "students": 20,
       "course": "APRENDIZAJE MAQUINA"
     },
     "professor": "BARAJAS GONZALEZ, EMILIO"
@@ -33,7 +33,7 @@
       "classroom": "A006",
       "nrc": "235877",
       "code": "I6155",
-      "students": 36,
+      "students": 37,
       "course": "ASEGURAMIENTO DE LA CALIDAD ANALITICA"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -46,7 +46,7 @@
       "classroom": "A012",
       "nrc": "181850",
       "code": "IK868",
-      "students": 0,
+      "students": 1,
       "course": "AVANCE DE TESIS I"
     },
     "professor": "MACIAS LAMAS, ADRIANA MACARIA"
@@ -59,7 +59,7 @@
       "classroom": "A014",
       "nrc": "191425",
       "code": "IK870",
-      "students": 0,
+      "students": 6,
       "course": "AVANCE DE TESIS III"
     },
     "professor": "FAJARDO ROBLEDO, NICTE SELENE"
@@ -72,7 +72,7 @@
       "classroom": "A014",
       "nrc": "178760",
       "code": "IK864",
-      "students": 0,
+      "students": 1,
       "course": "BASE DE MICROBIOLOGIA DE ALIMENTOS"
     },
     "professor": "PEREZ MONTAÑO, JULIA AURORA"
@@ -85,7 +85,7 @@
       "classroom": "A012",
       "nrc": "178760",
       "code": "IK864",
-      "students": 0,
+      "students": 1,
       "course": "BASE DE MICROBIOLOGIA DE ALIMENTOS"
     },
     "professor": "PEREZ MONTAÑO, JULIA AURORA"
@@ -98,7 +98,7 @@
       "classroom": "A006",
       "nrc": "182089",
       "code": "I6125",
-      "students": 20,
+      "students": 21,
       "course": "BIOESTADISTICA"
     },
     "professor": "FRANCO ARROYO, NOEL NOE"
@@ -111,7 +111,7 @@
       "classroom": "A012",
       "nrc": "178759",
       "code": "IK863",
-      "students": 0,
+      "students": 2,
       "course": "BIOESTADISTICA"
     },
     "professor": "RAMOS IBARRA, JOSE ROBERTO"
@@ -124,7 +124,7 @@
       "classroom": "A012",
       "nrc": "178759",
       "code": "IK863",
-      "students": 0,
+      "students": 2,
       "course": "BIOESTADISTICA"
     },
     "professor": "RAMOS IBARRA, JOSE ROBERTO"
@@ -137,7 +137,7 @@
       "classroom": "A006",
       "nrc": "76899",
       "code": "I6156",
-      "students": 16,
+      "students": 20,
       "course": "BIOETICA Y DEONTOLOGIA"
     },
     "professor": "FIERROS URIBE, DAMIAN"
@@ -150,7 +150,7 @@
       "classroom": "A006",
       "nrc": "201916",
       "code": "I6148",
-      "students": 31,
+      "students": 27,
       "course": "BIOFARMACIA Y FARMACOCINETICA"
     },
     "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
@@ -163,7 +163,7 @@
       "classroom": "A006",
       "nrc": "201916",
       "code": "I6148",
-      "students": 31,
+      "students": 27,
       "course": "BIOFARMACIA Y FARMACOCINETICA"
     },
     "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
@@ -176,7 +176,7 @@
       "classroom": "A006",
       "nrc": "201916",
       "code": "I6148",
-      "students": 31,
+      "students": 27,
       "course": "BIOFARMACIA Y FARMACOCINETICA"
     },
     "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
@@ -189,10 +189,36 @@
       "classroom": "A012",
       "nrc": "210564",
       "code": "IK690",
-      "students": 0,
+      "students": 3,
       "course": "BIOINFORMATICA"
     },
     "professor": "MACIAS RODRIGUEZ, MARIA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDZ2",
+      "classroom": "A012",
+      "nrc": "182094",
+      "code": "IK688",
+      "students": 2,
+      "course": "BIOLOGIA MOLECULAR"
+    },
+    "professor": "CORTES ROMERO, CELSO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A013",
+      "nrc": "182094",
+      "code": "IK688",
+      "students": 2,
+      "course": "BIOLOGIA MOLECULAR"
+    },
+    "professor": "CORTES ROMERO, CELSO"
   },
   {
     "data": {
@@ -202,7 +228,7 @@
       "classroom": "A012",
       "nrc": "178762",
       "code": "IK862",
-      "students": 0,
+      "students": 2,
       "course": "BIOLOGIA MOLECULAR"
     },
     "professor": "BALCAZAR LOPEZ, EDGAR"
@@ -241,7 +267,7 @@
       "classroom": "A007",
       "nrc": "209780",
       "code": "V0816",
-      "students": 0,
+      "students": 20,
       "course": "CIENCIA DE DATOS"
     },
     "professor": "GUZMAN VAZQUEZ, ARTURO"
@@ -254,7 +280,7 @@
       "classroom": "A007",
       "nrc": "205706",
       "code": "V0815",
-      "students": 0,
+      "students": 20,
       "course": "CYBERSEGURIDAD"
     },
     "professor": "BOCANEGRA MICHEL, DAVID ELIEL"
@@ -293,7 +319,7 @@
       "classroom": "A006",
       "nrc": "170506",
       "code": "I6147",
-      "students": 28,
+      "students": 31,
       "course": "FARMACOGNOSIA"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -306,7 +332,7 @@
       "classroom": "A006",
       "nrc": "170506",
       "code": "I6147",
-      "students": 28,
+      "students": 31,
       "course": "FARMACOGNOSIA"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -319,7 +345,7 @@
       "classroom": "A006",
       "nrc": "76918",
       "code": "I6142",
-      "students": 35,
+      "students": 37,
       "course": "FARMACOLOGIA II"
     },
     "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
@@ -332,7 +358,7 @@
       "classroom": "A006",
       "nrc": "137202",
       "code": "I6142",
-      "students": 36,
+      "students": 39,
       "course": "FARMACOLOGIA II"
     },
     "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
@@ -345,7 +371,7 @@
       "classroom": "A008",
       "nrc": "104435",
       "code": "I6128",
-      "students": 16,
+      "students": 22,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "MUÑOZ GARCIA, RUBEN OCTAVIO"
@@ -358,7 +384,7 @@
       "classroom": "A008",
       "nrc": "179646",
       "code": "I7492",
-      "students": 19,
+      "students": 20,
       "course": "FISICOQUIMICA III"
     },
     "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
@@ -371,7 +397,7 @@
       "classroom": "A008",
       "nrc": "92251",
       "code": "I5812",
-      "students": 25,
+      "students": 26,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "OROZCO GUAREÑO, EULOGIO"
@@ -384,7 +410,7 @@
       "classroom": "A006",
       "nrc": "42390",
       "code": "I6137",
-      "students": 28,
+      "students": 34,
       "course": "FISIOLOGIA Y FUNDAMENTOS DE FISIO-PATOLOGIA"
     },
     "professor": "MEZA RIOS, ALEJANDRA"
@@ -397,7 +423,7 @@
       "classroom": "A014",
       "nrc": "190401",
       "code": "IK686",
-      "students": 0,
+      "students": 2,
       "course": "GENOTOXICIDAD ALIMENTARIA"
     },
     "professor": "FRANCO RODRIGUEZ, NANCY ELIZABETH"
@@ -410,7 +436,7 @@
       "classroom": "A007",
       "nrc": "209782",
       "code": "V0717",
-      "students": 19,
+      "students": 23,
       "course": "INGENIERIA Y SUSTENTABILIDAD"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -423,7 +449,7 @@
       "classroom": "A014",
       "nrc": "178168",
       "code": "IK694",
-      "students": 0,
+      "students": 6,
       "course": "INOCUIDAD ALIMENTARIA"
     },
     "professor": "PEREZ MONTAÑO, JULIA AURORA"
@@ -436,7 +462,7 @@
       "classroom": "A014",
       "nrc": "178168",
       "code": "IK694",
-      "students": 0,
+      "students": 6,
       "course": "INOCUIDAD ALIMENTARIA"
     },
     "professor": "PEREZ MONTAÑO, JULIA AURORA"
@@ -449,7 +475,7 @@
       "classroom": "A008",
       "nrc": "117494",
       "code": "I7509",
-      "students": 18,
+      "students": 19,
       "course": "INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "VELAZQUEZ JUAREZ, GILBERTO"
@@ -462,7 +488,7 @@
       "classroom": "A007",
       "nrc": "205716",
       "code": "ID985",
-      "students": 0,
+      "students": 20,
       "course": "INTELIGENCIA ARTIFICIAL"
     },
     "professor": "LOPEZ ARAMBURO, MARIA FERNANDA"
@@ -488,10 +514,23 @@
       "classroom": "A008",
       "nrc": "87905",
       "code": "I6922",
-      "students": 11,
+      "students": 12,
       "course": "LABORATORIO DE QUIMICA GENERAL I"
     },
     "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A006",
+      "nrc": "189645",
+      "code": "I5247",
+      "students": 39,
+      "course": "LOGICA MATEMATICA"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
   },
   {
     "data": {
@@ -514,7 +553,7 @@
       "classroom": "A006",
       "nrc": "189723",
       "code": "I6145",
-      "students": 27,
+      "students": 29,
       "course": "MICROBIOLOGIA"
     },
     "professor": "CHAVARIN SALAZAR, DANIEL IGNACIO"
@@ -527,7 +566,7 @@
       "classroom": "A012",
       "nrc": "178758",
       "code": "IK861",
-      "students": 0,
+      "students": 1,
       "course": "MICROBIOLOGIA AVANZADA"
     },
     "professor": "VILLARRUEL LOPEZ, ANGELICA"
@@ -540,7 +579,7 @@
       "classroom": "A007",
       "nrc": "209769",
       "code": "V0814",
-      "students": 0,
+      "students": 20,
       "course": "MICROSERVICIOS PARA INTERNET Y LA NUBE"
     },
     "professor": "BOCANEGRA MICHEL, DAVID ELIEL"
@@ -553,20 +592,20 @@
       "classroom": "A006",
       "nrc": "42521",
       "code": "I6135",
-      "students": 30,
+      "students": 32,
       "course": "MORFOLOGIA"
     },
     "professor": "PESQUEDA CENDEJAS, LADY KAREN"
   },
   {
     "data": {
-      "schedule": "0900-1155",
+      "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDZ2",
       "classroom": "",
       "nrc": "191427",
       "code": "IK692",
-      "students": 0,
+      "students": 6,
       "course": "NANOSISTEMAS APLICADAS A LA INOCUIDAD ALIMENTARIA"
     },
     "professor": "SILVA JARA, JORGE MANUEL"
@@ -579,7 +618,7 @@
       "classroom": "A014",
       "nrc": "191427",
       "code": "IK692",
-      "students": 0,
+      "students": 6,
       "course": "NANOSISTEMAS APLICADAS A LA INOCUIDAD ALIMENTARIA"
     },
     "professor": "SILVA JARA, JORGE MANUEL"
@@ -592,7 +631,7 @@
       "classroom": "A006",
       "nrc": "117683",
       "code": "I6141",
-      "students": 25,
+      "students": 26,
       "course": "PARASITOLOGIA"
     },
     "professor": "MARIN MOLINA, ANA LAURA"
@@ -612,13 +651,39 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDZ2",
+      "classroom": "A007",
+      "nrc": "189658",
+      "code": "IG738",
+      "students": 38,
+      "course": "PRECALCULO"
+    },
+    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "42534",
+      "code": "I5799",
+      "students": 38,
+      "course": "PRECALCULO"
+    },
+    "professor": "SILOS VEGA, HECTOR XOLOTL"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDZ2",
       "classroom": "A007",
       "nrc": "206027",
       "code": "V0818",
-      "students": 0,
+      "students": 20,
       "course": "PROYECTO SUSTENTABLE"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -631,7 +696,7 @@
       "classroom": "A008",
       "nrc": "92684",
       "code": "I7506",
-      "students": 19,
+      "students": 23,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "MARTINEZ AGUILAR, JUAN FRANCISCO"
@@ -657,7 +722,7 @@
       "classroom": "A008",
       "nrc": "79450",
       "code": "I7356",
-      "students": 17,
+      "students": 20,
       "course": "QUIMICA BASICA"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -683,7 +748,7 @@
       "classroom": "A008",
       "nrc": "43721",
       "code": "I6921",
-      "students": 15,
+      "students": 16,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
@@ -696,7 +761,7 @@
       "classroom": "A008",
       "nrc": "43721",
       "code": "I6921",
-      "students": 15,
+      "students": 16,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
@@ -709,7 +774,7 @@
       "classroom": "A008",
       "nrc": "63401",
       "code": "I7482",
-      "students": 25,
+      "students": 20,
       "course": "QUIMICA INORGANICA I"
     },
     "professor": "CHAVEZ HERNANDEZ, KARINA VIRIDIANA"
@@ -722,7 +787,7 @@
       "classroom": "A014",
       "nrc": "199979",
       "code": "IK687",
-      "students": 0,
+      "students": 4,
       "course": "QUIMICA INSTRUMENTAL"
     },
     "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
@@ -735,7 +800,7 @@
       "classroom": "A014",
       "nrc": "199979",
       "code": "IK687",
-      "students": 0,
+      "students": 4,
       "course": "QUIMICA INSTRUMENTAL"
     },
     "professor": "PARRA SAAVEDRA, KARINA JEANETTE"
@@ -748,23 +813,10 @@
       "classroom": "A008",
       "nrc": "38425",
       "code": "I3282",
-      "students": 23,
+      "students": 25,
       "course": "QUIMICA ORGANICA"
     },
     "professor": "IBARRA VAZQUEZ, MARIA FERNANDA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDZ2",
-      "classroom": "A008",
-      "nrc": "63974",
-      "code": "I6935",
-      "students": 0,
-      "course": "QUIMICA ORGANICA AVANZADA I"
-    },
-    "professor": "VELAZQUEZ LOPEZ, JOSE MIGUEL"
   },
   {
     "data": {
@@ -774,7 +826,7 @@
       "classroom": "A008",
       "nrc": "63510",
       "code": "I6124",
-      "students": 28,
+      "students": 30,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
@@ -787,7 +839,7 @@
       "classroom": "A008",
       "nrc": "42627",
       "code": "I5806",
-      "students": 25,
+      "students": 27,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -800,7 +852,7 @@
       "classroom": "A008",
       "nrc": "104260",
       "code": "I7540",
-      "students": 30,
+      "students": 31,
       "course": "QUIMICA ORGANOMETALICA"
     },
     "professor": "ROSAS SANCHEZ, ALFREDO"
@@ -813,7 +865,7 @@
       "classroom": "A008",
       "nrc": "104262",
       "code": "I7551",
-      "students": 4,
+      "students": 2,
       "course": "QUIMIOMETRIA"
     },
     "professor": "GUDIÑO GUZMAN, BERNARDO"
@@ -826,23 +878,10 @@
       "classroom": "A014",
       "nrc": "182096",
       "code": "IK678",
-      "students": 0,
+      "students": 4,
       "course": "SEMINARIO DE AVANCE DE TESIS II"
     },
     "professor": "CABRERA DIAZ, ELISA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "A014",
-      "nrc": "178761",
-      "code": "IK867",
-      "students": 0,
-      "course": "SEMINARIO DE INVESTIGACION"
-    },
-    "professor": "AGUILAR USCANGA, BLANCA ROSA"
   },
   {
     "data": {
@@ -852,10 +891,23 @@
       "classroom": "A014",
       "nrc": "172777",
       "code": "IJ741",
-      "students": 0,
+      "students": 6,
       "course": "SEMINARIO DE INVESTIGACION"
     },
     "professor": "CAVAZOS GARDUÑO, ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "178761",
+      "code": "IK867",
+      "students": 2,
+      "course": "SEMINARIO DE INVESTIGACION"
+    },
+    "professor": "AGUILAR USCANGA, BLANCA ROSA"
   },
   {
     "data": {
@@ -865,7 +917,7 @@
       "classroom": "A006",
       "nrc": "76925",
       "code": "I6143",
-      "students": 8,
+      "students": 9,
       "course": "SEMINARIO DE INVESTIGACION"
     },
     "professor": "MEZA CANALES, IVAN DAVID"
@@ -904,7 +956,7 @@
       "classroom": "A006",
       "nrc": "84957",
       "code": "I6216",
-      "students": 25,
+      "students": 26,
       "course": "SINTESIS DE FARMACOS"
     },
     "professor": "GUTIERREZ GUTIERREZ, FILIBERTO"
@@ -917,7 +969,7 @@
       "classroom": "A012",
       "nrc": "178167",
       "code": "IK676",
-      "students": 0,
+      "students": 10,
       "course": "SISTEMAS DE GESTION DE LA INOCUIDAD"
     },
     "professor": "RODRIGUEZ GARCIA, MA OFELIA"
@@ -938,12 +990,25 @@
   {
     "data": {
       "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDZ2",
+      "classroom": "A008",
+      "nrc": "174253",
+      "code": "IG665",
+      "students": 20,
+      "course": "TEORIA DE LA COMPUTACION"
+    },
+    "professor": "ALVAREZ PADILLA, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDZ2",
       "classroom": "A013",
       "nrc": "182092",
       "code": "IK680",
-      "students": 0,
+      "students": 2,
       "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
     },
     "professor": "MARTINEZ CHAVEZ, LILIANA"
@@ -956,7 +1021,7 @@
       "classroom": "A014",
       "nrc": "182092",
       "code": "IK680",
-      "students": 0,
+      "students": 2,
       "course": "TOPICOS SELECTOS I (PELIGROS BIOLOGICOS TRANSMITIDOS POR LOS ALIMENTOS)"
     },
     "professor": "MARTINEZ CHAVEZ, LILIANA"
@@ -969,7 +1034,7 @@
       "classroom": "A013",
       "nrc": "191428",
       "code": "IK684",
-      "students": 0,
+      "students": 4,
       "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
     },
     "professor": "SERRANO NIÑO, JULIO CESAR"
@@ -982,7 +1047,7 @@
       "classroom": "A006",
       "nrc": "191428",
       "code": "IK684",
-      "students": 0,
+      "students": 4,
       "course": "TOPICOS SELECTOS II (PELIGROS QUIMICOS TRANSMITIDOS POR LOS ALIMENTOS)"
     },
     "professor": "SERRANO NIÑO, JULIO CESAR"
@@ -995,7 +1060,7 @@
       "classroom": "A006",
       "nrc": "117641",
       "code": "I6175",
-      "students": 19,
+      "students": 22,
       "course": "TOXICOLOGIA APLICADA"
     },
     "professor": "CORONA ESPAÑA, ANA MONTSERRAT"
@@ -1008,7 +1073,7 @@
       "classroom": "A014",
       "nrc": "172776",
       "code": "IJ740",
-      "students": 0,
+      "students": 6,
       "course": "TOXICOLOGIA DE ALIMENTOS"
     },
     "professor": "NOA PEREZ, MARIO"
@@ -1021,7 +1086,7 @@
       "classroom": "A014",
       "nrc": "172776",
       "code": "IJ740",
-      "students": 0,
+      "students": 6,
       "course": "TOXICOLOGIA DE ALIMENTOS"
     },
     "professor": "NOA PEREZ, MARIO"
@@ -1034,7 +1099,7 @@
       "classroom": "A006",
       "nrc": "95611",
       "code": "I6150",
-      "students": 35,
+      "students": 36,
       "course": "TOXICOLOGIA GENERAL"
     },
     "professor": "SERRANO NIÑO, JULIO CESAR"

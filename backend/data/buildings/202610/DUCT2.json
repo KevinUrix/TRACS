@@ -1,13 +1,26 @@
 [
   {
     "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "197417",
+      "code": "IH413",
+      "students": 3,
+      "course": "ADMINISTRACION DE PROYECTOS"
+    },
+    "professor": "PALOMO BRIONES, GAMALIEL ABISAY"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": ". . I . . .",
       "building": "DUCT2",
       "classroom": "LC04",
       "nrc": "216482",
       "code": "IL378",
-      "students": 28,
+      "students": 23,
       "course": "ADMINISTRACION DE REDES"
     },
     "professor": "GARCIA RAMIREZ, MIGUEL ANGEL"
@@ -33,7 +46,7 @@
       "classroom": "LC09",
       "nrc": "204842",
       "code": "IL355",
-      "students": 22,
+      "students": 24,
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "HERNANDEZ CASAS, ANGEL TONATIUH"
@@ -46,7 +59,7 @@
       "classroom": "LC03",
       "nrc": "225407",
       "code": "V0742",
-      "students": 27,
+      "students": 26,
       "course": "ANALISIS GENOMICO Y PROTEOMICO"
     },
     "professor": "SOTELO RODRIGUEZ, MOISES"
@@ -59,23 +72,10 @@
       "classroom": "LC09",
       "nrc": "210914",
       "code": "I5629",
-      "students": 26,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "PATIÑO RUIZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC09",
-      "nrc": "210917",
-      "code": "I5629",
       "students": 28,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
-    "professor": "MORALES RAMIREZ, THELMA ISABEL"
+    "professor": "PATIÑO RUIZ, ROBERTO"
   },
   {
     "data": {
@@ -92,13 +92,26 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DUCT2",
+      "classroom": "LC09",
+      "nrc": "210917",
+      "code": "I5629",
+      "students": 28,
+      "course": "ARQUITECTURA DE COMPUTADORAS"
+    },
+    "professor": "MORALES RAMIREZ, THELMA ISABEL"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DUCT2",
       "classroom": "LC03",
       "nrc": "200206",
       "code": "IL365",
-      "students": 20,
+      "students": 21,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "MEZA ESPINOSA, JOSE JUAN"
@@ -111,7 +124,7 @@
       "classroom": "LC02",
       "nrc": "210918",
       "code": "I5629",
-      "students": 5,
+      "students": 11,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -137,7 +150,7 @@
       "classroom": "LC07",
       "nrc": "210923",
       "code": "I5629",
-      "students": 27,
+      "students": 28,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
@@ -150,7 +163,7 @@
       "classroom": "LC03",
       "nrc": "200214",
       "code": "IL365",
-      "students": 8,
+      "students": 9,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "PATIÑO RUIZ, ROBERTO"
@@ -163,7 +176,7 @@
       "classroom": "LC06",
       "nrc": "204855",
       "code": "IL356",
-      "students": 28,
+      "students": 26,
       "course": "BASES DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -176,7 +189,7 @@
       "classroom": "LC03",
       "nrc": "204855",
       "code": "IL356",
-      "students": 28,
+      "students": 26,
       "course": "BASES DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -215,7 +228,7 @@
       "classroom": "LC04",
       "nrc": "204857",
       "code": "IL356",
-      "students": 27,
+      "students": 30,
       "course": "BASES DE DATOS"
     },
     "professor": "CAMACHO SANTILLAN, VERONICA"
@@ -249,9 +262,9 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". . . . V .",
+      "days": ". . I . . .",
       "building": "DUCT2",
-      "classroom": "LC04",
+      "classroom": "LC07",
       "nrc": "240729",
       "code": "V0718",
       "students": 28,
@@ -267,7 +280,7 @@
       "classroom": "LC09",
       "nrc": "204860",
       "code": "IL356",
-      "students": 28,
+      "students": 27,
       "course": "BASES DE DATOS"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -280,7 +293,7 @@
       "classroom": "LC08",
       "nrc": "204860",
       "code": "IL356",
-      "students": 28,
+      "students": 27,
       "course": "BASES DE DATOS"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -293,7 +306,7 @@
       "classroom": "LC09",
       "nrc": "204861",
       "code": "IL356",
-      "students": 28,
+      "students": 27,
       "course": "BASES DE DATOS"
     },
     "professor": "ESTRADA GUZMAN, ELSA"
@@ -306,7 +319,7 @@
       "classroom": "LC06",
       "nrc": "204861",
       "code": "IL356",
-      "students": 28,
+      "students": 27,
       "course": "BASES DE DATOS"
     },
     "professor": "ESTRADA GUZMAN, ELSA"
@@ -319,7 +332,7 @@
       "classroom": "LC09",
       "nrc": "223209",
       "code": "IL356",
-      "students": 28,
+      "students": 26,
       "course": "BASES DE DATOS"
     },
     "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
@@ -332,7 +345,7 @@
       "classroom": "LC09",
       "nrc": "223209",
       "code": "IL356",
-      "students": 28,
+      "students": 26,
       "course": "BASES DE DATOS"
     },
     "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
@@ -358,7 +371,7 @@
       "classroom": "LC10",
       "nrc": "251308",
       "code": "V0749",
-      "students": 21,
+      "students": 25,
       "course": "DESARROLLO DE APLICACIONES WEB EN LA NUBE Y MOVILES"
     },
     "professor": "JIMENEZ RODRIGUEZ, MARIO"
@@ -384,10 +397,23 @@
       "classroom": "LC10",
       "nrc": "251310",
       "code": "V0749",
-      "students": 28,
+      "students": 29,
       "course": "DESARROLLO DE APLICACIONES WEB EN LA NUBE Y MOVILES"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "",
+      "nrc": "160578",
+      "code": "IG367",
+      "students": 21,
+      "course": "DISEÑO ESTADISTICO Y EXPERIMENTAL"
+    },
+    "professor": "MENDEZ PALOS, EDUARDO"
   },
   {
     "data": {
@@ -433,10 +459,10 @@
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DUCT2",
-      "classroom": "LC03",
+      "classroom": "LC02",
       "nrc": "200220",
       "code": "IL354",
-      "students": 29,
+      "students": 30,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
@@ -449,7 +475,7 @@
       "classroom": "LC02",
       "nrc": "200220",
       "code": "IL354",
-      "students": 29,
+      "students": 30,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
@@ -488,7 +514,7 @@
       "classroom": "LC07",
       "nrc": "200224",
       "code": "IL354",
-      "students": 22,
+      "students": 24,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
@@ -501,7 +527,7 @@
       "classroom": "LC09",
       "nrc": "200226",
       "code": "IL354",
-      "students": 28,
+      "students": 26,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -514,7 +540,7 @@
       "classroom": "LC08",
       "nrc": "210909",
       "code": "V0731",
-      "students": 25,
+      "students": 29,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
@@ -566,7 +592,7 @@
       "classroom": "LC05",
       "nrc": "189620",
       "code": "I5288",
-      "students": 14,
+      "students": 15,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -579,7 +605,7 @@
       "classroom": "LC08",
       "nrc": "189621",
       "code": "I5288",
-      "students": 13,
+      "students": 14,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -618,7 +644,7 @@
       "classroom": "LC06",
       "nrc": "189625",
       "code": "I5288",
-      "students": 9,
+      "students": 11,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -631,7 +657,7 @@
       "classroom": "LC04",
       "nrc": "189628",
       "code": "I5288",
-      "students": 28,
+      "students": 27,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "DAVALOS BOITES, MICHEL"
@@ -644,7 +670,7 @@
       "classroom": "LC06",
       "nrc": "189629",
       "code": "I5288",
-      "students": 20,
+      "students": 28,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "CASAS ORDAZ, ANGEL"
@@ -657,7 +683,7 @@
       "classroom": "LC07",
       "nrc": "189633",
       "code": "I5288",
-      "students": 28,
+      "students": 27,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "LOPEZ CISNEROS, JUAN JOSE"
@@ -709,7 +735,7 @@
       "classroom": "LC03",
       "nrc": "200278",
       "code": "I5288",
-      "students": 6,
+      "students": 7,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "MARQUEZ FRAUSTO, TERESA GABRIELA"
@@ -722,7 +748,7 @@
       "classroom": "LC03",
       "nrc": "200605",
       "code": "I5288",
-      "students": 28,
+      "students": 27,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
@@ -748,7 +774,7 @@
       "classroom": "LC05",
       "nrc": "216513",
       "code": "I5288",
-      "students": 12,
+      "students": 13,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "VAZQUEZ AVILA, JORGE"
@@ -761,7 +787,7 @@
       "classroom": "LC07",
       "nrc": "216515",
       "code": "I5288",
-      "students": 27,
+      "students": 28,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "ASCENCIO PIÑA, CESAR RODOLFO"
@@ -774,7 +800,7 @@
       "classroom": "LC06",
       "nrc": "222827",
       "code": "I5288",
-      "students": 18,
+      "students": 24,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "SANCHEZ ESTRADA, JAIRO CAIN"
@@ -787,7 +813,7 @@
       "classroom": "LC06",
       "nrc": "222832",
       "code": "I5288",
-      "students": 13,
+      "students": 11,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -800,7 +826,7 @@
       "classroom": "LC02",
       "nrc": "222833",
       "code": "I5288",
-      "students": 28,
+      "students": 29,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
@@ -813,7 +839,7 @@
       "classroom": "LC09",
       "nrc": "252215",
       "code": "I5288",
-      "students": 19,
+      "students": 20,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "ORTIZ PIMENTEL, BELEN ANABETT"
@@ -839,7 +865,7 @@
       "classroom": "LC06",
       "nrc": "252217",
       "code": "I5288",
-      "students": 28,
+      "students": 27,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "RAMIREZ GAYTAN, GONZALO ALEJANDRO"
@@ -891,7 +917,7 @@
       "classroom": "LC05",
       "nrc": "252223",
       "code": "I5288",
-      "students": 11,
+      "students": 14,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -904,7 +930,7 @@
       "classroom": "LC09",
       "nrc": "252226",
       "code": "I5288",
-      "students": 11,
+      "students": 14,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "GARCIA RAMIREZ, MIGUEL ANGEL"
@@ -917,7 +943,7 @@
       "classroom": "LC04",
       "nrc": "252226",
       "code": "I5288",
-      "students": 11,
+      "students": 14,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "GARCIA RAMIREZ, MIGUEL ANGEL"
@@ -943,7 +969,20 @@
       "classroom": "LC07",
       "nrc": "252230",
       "code": "I5288",
-      "students": 8,
+      "students": 14,
+      "course": "FUNDAMENTOS DE PROGRAMACION"
+    },
+    "professor": "DELGADO CASTAÑEDA, NOE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC03",
+      "nrc": "252230",
+      "code": "I5288",
+      "students": 14,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "DELGADO CASTAÑEDA, NOE"
@@ -956,7 +995,7 @@
       "classroom": "LC04",
       "nrc": "125014",
       "code": "I7285",
-      "students": 28,
+      "students": 29,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "RUIZ VELAZQUEZ, EDUARDO"
@@ -969,7 +1008,7 @@
       "classroom": "LC04",
       "nrc": "209845",
       "code": "CB224",
-      "students": 27,
+      "students": 28,
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
@@ -1008,7 +1047,7 @@
       "classroom": "LC08",
       "nrc": "223203",
       "code": "CB224",
-      "students": 28,
+      "students": 25,
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "LARA LOPEZ, GRACIELA"
@@ -1021,7 +1060,7 @@
       "classroom": "LC02",
       "nrc": "223204",
       "code": "CB224",
-      "students": 28,
+      "students": 26,
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "LARA LOPEZ, GRACIELA"
@@ -1060,7 +1099,7 @@
       "classroom": "LC07",
       "nrc": "252316",
       "code": "V0720",
-      "students": 0,
+      "students": 25,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "GIL RIVERA, RUBEN ADRIAN"
@@ -1073,10 +1112,36 @@
       "classroom": "LC05",
       "nrc": "252317",
       "code": "V0720",
-      "students": 0,
+      "students": 22,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DUCT2",
+      "classroom": "",
+      "nrc": "160576",
+      "code": "IG365",
+      "students": 21,
+      "course": "MODELADO DE DATOS"
+    },
+    "professor": "OSORIO ANGEL, SONIA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC02",
+      "nrc": "160576",
+      "code": "IG365",
+      "students": 21,
+      "course": "MODELADO DE DATOS"
+    },
+    "professor": "OSORIO ANGEL, SONIA"
   },
   {
     "data": {
@@ -1112,7 +1177,7 @@
       "classroom": "LC09",
       "nrc": "209852",
       "code": "IL358",
-      "students": 15,
+      "students": 16,
       "course": "PROGRAMACION DE BAJO NIVEL"
     },
     "professor": "RAMIREZ HERNANDEZ, NORMA"
@@ -1148,23 +1213,36 @@
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DUCT2",
-      "classroom": "LC02",
+      "classroom": "LC04",
       "nrc": "193704",
       "code": "IL352",
-      "students": 28,
+      "students": 29,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
   },
   {
     "data": {
-      "schedule": "1100-1455",
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "193704",
+      "code": "IL352",
+      "students": 29,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DUCT2",
       "classroom": "LC02",
       "nrc": "193704",
       "code": "IL352",
-      "students": 28,
+      "students": 29,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -1184,13 +1262,52 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "193704",
+      "code": "IL352",
+      "students": 29,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "193704",
+      "code": "IL352",
+      "students": 29,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC02",
+      "nrc": "193704",
+      "code": "IL352",
+      "students": 29,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": ". . I . . .",
       "building": "DUCT2",
       "classroom": "LC06",
       "nrc": "193705",
       "code": "IL352",
-      "students": 22,
+      "students": 23,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "LOPEZ LOPEZ, LAURA"
@@ -1203,7 +1320,46 @@
       "classroom": "LC03",
       "nrc": "193705",
       "code": "IL352",
-      "students": 22,
+      "students": 23,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "LOPEZ LOPEZ, LAURA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DUCT2",
+      "classroom": "LC02",
+      "nrc": "204899",
+      "code": "V0716",
+      "students": 29,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DUCT2",
+      "classroom": "LC06",
+      "nrc": "193705",
+      "code": "IL352",
+      "students": 23,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "LOPEZ LOPEZ, LAURA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC03",
+      "nrc": "193705",
+      "code": "IL352",
+      "students": 23,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "LOPEZ LOPEZ, LAURA"
@@ -1216,7 +1372,20 @@
       "classroom": "LC06",
       "nrc": "193706",
       "code": "IL352",
-      "students": 25,
+      "students": 28,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "GUERRERO CARLOS, ANA JAZMIN"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC06",
+      "nrc": "193706",
+      "code": "IL352",
+      "students": 28,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
@@ -1275,29 +1444,29 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DUCT2",
-      "classroom": "LC05",
-      "nrc": "204907",
-      "code": "V0716",
-      "students": 29,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DUCT2",
       "classroom": "LC07",
       "nrc": "193710",
       "code": "IL352",
-      "students": 28,
+      "students": 30,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DUCT2",
+      "classroom": "LC05",
+      "nrc": "204907",
+      "code": "V0716",
+      "students": 30,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
   },
   {
     "data": {
@@ -1320,7 +1489,7 @@
       "classroom": "LC02",
       "nrc": "193712",
       "code": "IL352",
-      "students": 18,
+      "students": 23,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
@@ -1333,7 +1502,7 @@
       "classroom": "LC05",
       "nrc": "195134",
       "code": "IL352",
-      "students": 28,
+      "students": 29,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "CAMACHO SANTILLAN, VERONICA"
@@ -1359,7 +1528,7 @@
       "classroom": "LC09",
       "nrc": "195136",
       "code": "IL352",
-      "students": 24,
+      "students": 20,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -1372,7 +1541,7 @@
       "classroom": "LC05",
       "nrc": "195143",
       "code": "IL352",
-      "students": 27,
+      "students": 19,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -1411,7 +1580,7 @@
       "classroom": "LC02",
       "nrc": "195113",
       "code": "I5289",
-      "students": 28,
+      "students": 25,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "MUÑOZ GOMEZ, LUIS ALBERTO"
@@ -1424,7 +1593,7 @@
       "classroom": "LC02",
       "nrc": "195114",
       "code": "I5289",
-      "students": 28,
+      "students": 18,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "VEGA MALDONADO, SABRINA LIZBETH"
@@ -1450,7 +1619,7 @@
       "classroom": "LC04",
       "nrc": "195116",
       "code": "I5289",
-      "students": 28,
+      "students": 29,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "MORALES LOPEZ, LUIS ANGEL"
@@ -1463,7 +1632,7 @@
       "classroom": "LC09",
       "nrc": "195117",
       "code": "I5289",
-      "students": 25,
+      "students": 27,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "ORTEGA SANCHEZ, NOE"
@@ -1489,7 +1658,7 @@
       "classroom": "LC05",
       "nrc": "195124",
       "code": "I5289",
-      "students": 7,
+      "students": 12,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
@@ -1502,7 +1671,7 @@
       "classroom": "LC06",
       "nrc": "195126",
       "code": "I5289",
-      "students": 27,
+      "students": 28,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "ORTEGA SANCHEZ, NOE"
@@ -1541,7 +1710,7 @@
       "classroom": "LC02",
       "nrc": "209861",
       "code": "I5289",
-      "students": 19,
+      "students": 21,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
@@ -1564,7 +1733,7 @@
       "schedule": "0900-1255",
       "days": ". . . . V .",
       "building": "DUCT2",
-      "classroom": "LC04",
+      "classroom": "LC02",
       "nrc": "209868",
       "code": "I5289",
       "students": 28,
@@ -1580,7 +1749,7 @@
       "classroom": "LC08",
       "nrc": "209872",
       "code": "I5289",
-      "students": 12,
+      "students": 17,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "ASCENCIO PIÑA, CESAR RODOLFO"
@@ -1593,7 +1762,7 @@
       "classroom": "LC02",
       "nrc": "209872",
       "code": "I5289",
-      "students": 12,
+      "students": 17,
       "course": "PROGRAMACION ORIENTADA A OBJETOS"
     },
     "professor": "ASCENCIO PIÑA, CESAR RODOLFO"
@@ -1632,7 +1801,7 @@
       "classroom": "LC10",
       "nrc": "199891",
       "code": "IL362",
-      "students": 27,
+      "students": 29,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MALDONADO MERCADO, JOSE RUBEN"
@@ -1645,7 +1814,7 @@
       "classroom": "LC10",
       "nrc": "124890",
       "code": "I5909",
-      "students": 6,
+      "students": 7,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MALDONADO MERCADO, JOSE RUBEN"
@@ -1684,7 +1853,7 @@
       "classroom": "LC10",
       "nrc": "138631",
       "code": "I5909",
-      "students": 12,
+      "students": 15,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MALDONADO MERCADO, JOSE RUBEN"
@@ -1697,7 +1866,7 @@
       "classroom": "LC10",
       "nrc": "147794",
       "code": "I5909",
-      "students": 11,
+      "students": 13,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MALDONADO MERCADO, JOSE RUBEN"
@@ -1710,7 +1879,7 @@
       "classroom": "LC10",
       "nrc": "199900",
       "code": "IL362",
-      "students": 21,
+      "students": 29,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "JIMENEZ RODRIGUEZ, MARIO"
@@ -1749,10 +1918,23 @@
       "classroom": "LC02",
       "nrc": "216554",
       "code": "IL364",
-      "students": 28,
+      "students": 29,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "ARGAEZ REA, JUAN ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DUCT2",
+      "classroom": "LC05",
+      "nrc": "216561",
+      "code": "IL364",
+      "students": 28,
+      "course": "REDES DE COMPUTADORAS"
+    },
+    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
   },
   {
     "data": {
@@ -1775,23 +1957,10 @@
       "classroom": "LC04",
       "nrc": "225773",
       "code": "V3732",
-      "students": 20,
+      "students": 21,
       "course": "REDES PARA CIRCUITOS ELECTRONICOS"
     },
     "professor": "LANDA HORTA, DANIEL OMAR"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC08",
-      "nrc": "84602",
-      "code": "I9888",
-      "students": 7,
-      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION"
-    },
-    "professor": "HERRERA LUJAN, ZOILA LILIANA"
   },
   {
     "data": {
@@ -1805,6 +1974,19 @@
       "course": "SEMINARIO DE PROBLEMAS DE MODELADO Y SIMULACION DE SISTEMAS"
     },
     "professor": "SOLIS PERALES, GUALBERTO CELESTINO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
+      "building": "DUCT2",
+      "classroom": "LC08",
+      "nrc": "84602",
+      "code": "I9888",
+      "students": 9,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION"
+    },
+    "professor": "HERRERA LUJAN, ZOILA LILIANA"
   },
   {
     "data": {
@@ -1827,7 +2009,7 @@
       "classroom": "LC08",
       "nrc": "132006",
       "code": "I9888",
-      "students": 6,
+      "students": 7,
       "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION"
     },
     "professor": "SANCHEZ ESTRADA, JAIRO CAIN"
@@ -1853,7 +2035,7 @@
       "classroom": "LC07",
       "nrc": "201975",
       "code": "I9879",
-      "students": 15,
+      "students": 20,
       "course": "SEMINARIO DE PROBLEMAS DE ALGORITMIA"
     },
     "professor": "ASCENCIO PIÑA, CESAR RODOLFO"
@@ -1866,7 +2048,7 @@
       "classroom": "LC07",
       "nrc": "178650",
       "code": "IB130",
-      "students": 20,
+      "students": 21,
       "course": "SEMINARIO DE PROBLEMAS DE ESTRUCTURA DE DATOS I"
     },
     "professor": "ESTRADA GUZMAN, ELSA"
@@ -1879,7 +2061,7 @@
       "classroom": "LC08",
       "nrc": "145997",
       "code": "IB131",
-      "students": 16,
+      "students": 17,
       "course": "SEMINARIO DE PROBLEMAS DE ESTRUCTURA DE DATOS II"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -1905,7 +2087,7 @@
       "classroom": "LC10",
       "nrc": "124882",
       "code": "I7041",
-      "students": 22,
+      "students": 20,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL II"
     },
     "professor": "SENCION ECHAURI, FELIPE"
@@ -1918,7 +2100,7 @@
       "classroom": "LC07",
       "nrc": "103841",
       "code": "I7028",
-      "students": 10,
+      "students": 12,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE TRADUCTORES DE LENGUAJES II"
     },
     "professor": "LOPEZ FRANCO, MICHEL EMANUEL"
@@ -1931,7 +2113,7 @@
       "classroom": "LC08",
       "nrc": "103856",
       "code": "I5904",
-      "students": 10,
+      "students": 13,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
     },
     "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
@@ -1944,7 +2126,7 @@
       "classroom": "LC04",
       "nrc": "103856",
       "code": "I5904",
-      "students": 10,
+      "students": 13,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
     },
     "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
@@ -1957,23 +2139,10 @@
       "classroom": "LC02",
       "nrc": "103858",
       "code": "I5904",
-      "students": 8,
+      "students": 11,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE USO, ADAPTACION, EXPLOTACION DE SISTEMAS OPERATIVOS"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC02",
-      "nrc": "59894",
-      "code": "I5889",
-      "students": 1,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ESTRUCTURAS DE DATOS II"
-    },
-    "professor": "CASTELLANOS BARAJAS, JANETTE ARACELI"
   },
   {
     "data": {
@@ -1996,23 +2165,10 @@
       "classroom": "LC09",
       "nrc": "82847",
       "code": "I5899",
-      "students": 20,
+      "students": 22,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE SOFTWARE I"
     },
     "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC03",
-      "nrc": "42650",
-      "code": "I5887",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE ESTRUCTURAS DE DATOS I"
-    },
-    "professor": "SANCHEZ ESTRADA, JAIRO CAIN"
   },
   {
     "data": {
@@ -2022,7 +2178,7 @@
       "classroom": "LC08",
       "nrc": "200281",
       "code": "I5899",
-      "students": 10,
+      "students": 14,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE SOFTWARE I"
     },
     "professor": "GIL RIVERA, RUBEN ADRIAN"
@@ -2048,10 +2204,23 @@
       "classroom": "LC06",
       "nrc": "216580",
       "code": "V0733",
-      "students": 19,
+      "students": 21,
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "ARENAS YERENA, CARLOS DARIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-2055",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC10",
+      "nrc": "138651",
+      "code": "I7042",
+      "students": 2,
+      "course": "SIMULACION POR COMPUTADORA"
+    },
+    "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
   },
   {
     "data": {
@@ -2061,7 +2230,7 @@
       "classroom": "LC02",
       "nrc": "204878",
       "code": "IL366",
-      "students": 23,
+      "students": 25,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -2074,7 +2243,7 @@
       "classroom": "LC04",
       "nrc": "204879",
       "code": "IL366",
-      "students": 5,
+      "students": 3,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -2100,7 +2269,7 @@
       "classroom": "LC09",
       "nrc": "204881",
       "code": "IL366",
-      "students": 28,
+      "students": 26,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
@@ -2113,7 +2282,20 @@
       "classroom": "LC02",
       "nrc": "204882",
       "code": "IL366",
-      "students": 6,
+      "students": 13,
+      "course": "SISTEMAS OPERATIVOS"
+    },
+    "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC06",
+      "nrc": "204882",
+      "code": "IL366",
+      "students": 13,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -2126,7 +2308,7 @@
       "classroom": "LC05",
       "nrc": "204883",
       "code": "IL366",
-      "students": 20,
+      "students": 21,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
@@ -2139,7 +2321,7 @@
       "classroom": "LC07",
       "nrc": "204883",
       "code": "IL366",
-      "students": 20,
+      "students": 21,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
@@ -2178,7 +2360,7 @@
       "classroom": "LC06",
       "nrc": "181924",
       "code": "IC644",
-      "students": 22,
+      "students": 24,
       "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
     },
     "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
@@ -2191,7 +2373,7 @@
       "classroom": "LC06",
       "nrc": "181924",
       "code": "IC644",
-      "students": 22,
+      "students": 24,
       "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
     },
     "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
@@ -2221,5 +2403,18 @@
       "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
     },
     "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC03",
+      "nrc": "166619",
+      "code": "IH439",
+      "students": 22,
+      "course": "TOPICO DE INDUSTRIA I"
+    },
+    "professor": "WARIO VAZQUEZ, FERNANDO"
   }
 ]

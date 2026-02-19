@@ -7,7 +7,7 @@
       "classroom": "LM1",
       "nrc": "44211",
       "code": "I7594",
-      "students": 17,
+      "students": 16,
       "course": "BIOMATERIALES"
     },
     "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
@@ -20,7 +20,7 @@
       "classroom": "LM4",
       "nrc": "88258",
       "code": "I7277",
-      "students": 1,
+      "students": 2,
       "course": "CIRCUITOS ANALOGICOS I"
     },
     "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -33,7 +33,7 @@
       "classroom": "LM4",
       "nrc": "104763",
       "code": "I7279",
-      "students": 8,
+      "students": 10,
       "course": "CIRCUITOS ANALOGICOS II"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -53,29 +53,29 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM4",
-      "nrc": "170036",
-      "code": "IB140",
-      "students": 1,
-      "course": "COMUNICACIONES OPTICAS II"
-    },
-    "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDM",
       "classroom": "LM1",
       "nrc": "154519",
       "code": "I7597",
-      "students": 23,
+      "students": 20,
       "course": "ELECTROFISIOLOGIA MOLECULAR II"
     },
     "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM4",
+      "nrc": "249809",
+      "code": "IN228",
+      "students": 9,
+      "course": "ELECTRONICA ANALOGICA"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
   },
   {
     "data": {
@@ -85,7 +85,7 @@
       "classroom": "LM3",
       "nrc": "82672",
       "code": "I7602",
-      "students": 35,
+      "students": 34,
       "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
     },
     "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -98,7 +98,7 @@
       "classroom": "LM4",
       "nrc": "120467",
       "code": "I7287",
-      "students": 20,
+      "students": 21,
       "course": "INSTRUMENTACION"
     },
     "professor": "CASTILLO SERRANO, OSCAR EDUARDO"
@@ -124,7 +124,7 @@
       "classroom": "LM4",
       "nrc": "131840",
       "code": "I7287",
-      "students": 14,
+      "students": 13,
       "course": "INSTRUMENTACION"
     },
     "professor": "LUQUE CHANG, ALBERTO"
@@ -150,7 +150,7 @@
       "classroom": "LM3",
       "nrc": "59589",
       "code": "I7603",
-      "students": 21,
+      "students": 22,
       "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
     },
     "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -163,7 +163,7 @@
       "classroom": "LM3",
       "nrc": "97741",
       "code": "I7604",
-      "students": 29,
+      "students": 31,
       "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
     },
     "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -189,20 +189,20 @@
       "classroom": "LM3",
       "nrc": "89615",
       "code": "ET334",
-      "students": 31,
+      "students": 35,
       "course": "INSTRUMENTACION MEDICA III"
     },
     "professor": "QUIROZ PEREZ, ERIKA LIZETH"
   },
   {
     "data": {
-      "schedule": "0900-1255",
-      "days": ". . . . V .",
+      "schedule": "0700-1055",
+      "days": ". . . . . S",
       "building": "DEDM",
       "classroom": "LM2",
       "nrc": "195521",
       "code": "ET334",
-      "students": 40,
+      "students": 44,
       "course": "INSTRUMENTACION MEDICA III"
     },
     "professor": "MORENO GONZALEZ, VICTOR ERNESTO"
@@ -215,7 +215,7 @@
       "classroom": "LM1",
       "nrc": "55416",
       "code": "ET335",
-      "students": 29,
+      "students": 30,
       "course": "INSTRUMENTACION MEDICA IV"
     },
     "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -228,7 +228,7 @@
       "classroom": "LM3",
       "nrc": "55416",
       "code": "ET335",
-      "students": 29,
+      "students": 30,
       "course": "INSTRUMENTACION MEDICA IV"
     },
     "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -241,7 +241,7 @@
       "classroom": "LM4",
       "nrc": "164962",
       "code": "IB145",
-      "students": 8,
+      "students": 9,
       "course": "INSTRUMENTACION PARA SISTEMAS FOTONICOS"
     },
     "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
@@ -261,16 +261,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
+      "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDM",
-      "classroom": "LM4",
-      "nrc": "89687",
-      "code": "I7270",
-      "students": 2,
-      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
+      "classroom": "LM2",
+      "nrc": "174259",
+      "code": "IH392",
+      "students": 5,
+      "course": "PROCESAMIENTO DE BIOSEÑALES"
     },
-    "professor": "VASQUEZ FRANCO, MARCOS MARIO"
+    "professor": "SALIDO RUIZ, RICARDO ANTONIO"
   },
   {
     "data": {
@@ -280,7 +280,7 @@
       "classroom": "LM5",
       "nrc": "93092",
       "code": "I7278",
-      "students": 2,
+      "students": 5,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS ANALOGICOS I"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -306,23 +306,23 @@
       "classroom": "LM5",
       "nrc": "91621",
       "code": "I7271",
-      "students": 6,
+      "students": 7,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "1300-1455",
       "days": "L . I . . .",
       "building": "DEDM",
-      "classroom": "LM5",
-      "nrc": "133089",
-      "code": "I7291",
-      "students": 30,
-      "course": "SISTEMAS DE COMUNICACIONES II"
+      "classroom": "LM4",
+      "nrc": "78959",
+      "code": "I7272",
+      "students": 16,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
-    "professor": "MONTIEL MENA, RICARDO"
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
   },
   {
     "data": {
@@ -332,7 +332,7 @@
       "classroom": "LM1",
       "nrc": "55437",
       "code": "ET356",
-      "students": 30,
+      "students": 29,
       "course": "TEMAS SELECTOS DE INGENIERIA BIOMEDICA I"
     },
     "professor": "RIVERA TELLO, SERGIO IVAN"
@@ -345,7 +345,7 @@
       "classroom": "LM3",
       "nrc": "55439",
       "code": "ET357",
-      "students": 25,
+      "students": 20,
       "course": "TEMAS SELECTOS DE INGENIERIA BIOMEDICA II"
     },
     "professor": "MARQUEZ NORIEGO, MARIA INMACULADA"
@@ -358,7 +358,7 @@
       "classroom": "LM1",
       "nrc": "143461",
       "code": "ET353",
-      "students": 30,
+      "students": 31,
       "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
     },
     "professor": "RIVERA TELLO, SERGIO IVAN"
@@ -371,10 +371,36 @@
       "classroom": "LM3",
       "nrc": "165123",
       "code": "ET353",
-      "students": 27,
+      "students": 21,
       "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
     },
     "professor": "RIVERA TELLO, SERGIO IVAN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1655",
+      "days": ". . I . . .",
+      "building": "DEDM",
+      "classroom": "LM2",
+      "nrc": "209739",
+      "code": "IH400",
+      "students": 4,
+      "course": "TOPICOS SELECTOS 3"
+    },
+    "professor": "MORALES VALENCIA, JOSE ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM2",
+      "nrc": "53867",
+      "code": "CC417",
+      "students": 8,
+      "course": "TOPICOS SELECTOS DE COMPUTACION I"
+    },
+    "professor": "MUNGUIA ALCALA, RODRIGO FRANCISCO"
   },
   {
     "data": {
@@ -384,7 +410,7 @@
       "classroom": "LM2",
       "nrc": "179623",
       "code": "IH397",
-      "students": 2,
+      "students": 7,
       "course": "VISION COMPUTACIONAL"
     },
     "professor": "SANTOS ARCE, STEWART RENE"

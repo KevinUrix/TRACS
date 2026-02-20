@@ -722,7 +722,7 @@
       "classroom": "A002",
       "nrc": "194943",
       "code": "IL346",
-      "students": 24,
+      "students": 23,
       "course": "CIRCUITOS ELECTRONICOS Y ELECTROMAGNETISMO"
     },
     "professor": "CARRILLO DIAZ, RAUL"
@@ -1697,7 +1697,7 @@
       "classroom": "A015",
       "nrc": "199922",
       "code": "IL341",
-      "students": 40,
+      "students": 39,
       "course": "ETICA Y LEGISLACION"
     },
     "professor": "TORRES MOLINA, SERGIO ANDRES"
@@ -2048,7 +2048,7 @@
       "classroom": "A014",
       "nrc": "223338",
       "code": "V3684",
-      "students": 41,
+      "students": 40,
       "course": "INDUCCION UNIVERSITARIA"
     },
     "professor": "CRUZ VERA, KARLA ADRIANA"
@@ -2061,7 +2061,7 @@
       "classroom": "A022",
       "nrc": "223339",
       "code": "V3684",
-      "students": 40,
+      "students": 41,
       "course": "INDUCCION UNIVERSITARIA"
     },
     "professor": "SILVA LANDEROS, JORGE"
@@ -2074,7 +2074,7 @@
       "classroom": "A022",
       "nrc": "223340",
       "code": "V3684",
-      "students": 40,
+      "students": 39,
       "course": "INDUCCION UNIVERSITARIA"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -2802,7 +2802,7 @@
       "classroom": "A024",
       "nrc": "189642",
       "code": "IL342",
-      "students": 41,
+      "students": 40,
       "course": "INTRODUCCION A LA INGENIERIA"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -3277,19 +3277,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A009",
-      "nrc": "43398",
-      "code": "I7266",
-      "students": 39,
-      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
-    },
-    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . I . V .",
       "building": "DEDT",
@@ -3316,6 +3303,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A009",
+      "nrc": "43398",
+      "code": "I7266",
+      "students": 39,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -3339,6 +3339,19 @@
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "PATIÑO RUIZ, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . . S",
+      "building": "DEDT",
+      "classroom": "A004",
+      "nrc": "171769",
+      "code": "I7266",
+      "students": 24,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "RAMOS GUILLEN, JOSE JESUS"
   },
   {
     "data": {
@@ -3862,19 +3875,6 @@
   },
   {
     "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . V .",
-      "building": "DEDT",
-      "classroom": "A023",
-      "nrc": "154171",
-      "code": "I7290",
-      "students": 26,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
-    },
-    "professor": "PACHECO PADILLA, LUIS MANUEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -3885,6 +3885,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
     },
     "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDT",
+      "classroom": "A023",
+      "nrc": "154171",
+      "code": "I7290",
+      "students": 26,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
   },
   {
     "data": {
@@ -3953,19 +3966,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A005",
-      "nrc": "78957",
-      "code": "I7272",
-      "students": 33,
-      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
-    },
-    "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
-  },
-  {
-    "data": {
       "schedule": "1700-2055",
       "days": ". . . . V .",
       "building": "DEDT",
@@ -3976,6 +3976,19 @@
       "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "CASILLAS DE LA TORRE, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "78957",
+      "code": "I7272",
+      "students": 33,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
   },
   {
     "data": {

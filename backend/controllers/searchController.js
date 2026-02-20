@@ -27,7 +27,7 @@ const localFiles = async (cycle, building) => {
     const localData = require(`../data/buildings/${cycle}/${building}.json`);
     const localCacheKey = `local-schedule-${cycle}-building-${building}`;
     const scheduleCacheKey = `schedule-${cycle}-building-${building}`;
-    const TTL_LOCAL_FALLBACK = 3 * 60 * 60; // 3 horas
+    const TTL_LOCAL_FALLBACK = 4 * 60 * 60; // 4 horas
 
     const alreadyInScheduleCache = await cache.get(scheduleCacheKey);
     if (alreadyInScheduleCache) {
@@ -42,7 +42,7 @@ const localFiles = async (cycle, building) => {
       return true;
     }
     await cache.set(scheduleCacheKey, localData, TTL_LOCAL_FALLBACK);
-    await cache.set(localCacheKey, localData);
+    await cache.set(localCacheKey, localData, TTL_LOCAL_FALLBACK);
     console.log(`Archivo local cargado para ${building}`);
     return true;
   } catch (fsErr) {

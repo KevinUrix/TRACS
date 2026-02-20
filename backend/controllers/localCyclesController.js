@@ -10,7 +10,7 @@ const localCycles = async (req, res) => {
     const cycles = JSON.parse(data);
     
     // Guardar en caché
-    await cache.set('local-cycles', cycles);
+    await cache.set('local-cycles', cycles, 14400); // 4 horas
     console.log('Ciclos obtenidos desde archivo local y guardados en caché');
 
     res.status(200).json(cycles);

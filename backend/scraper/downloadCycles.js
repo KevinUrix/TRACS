@@ -1,4 +1,5 @@
 const { scrapeCycles } = require('./cycles');
+const cache = require('./cache');
 const fs = require('fs');
 const path = require('path');
 
@@ -20,6 +21,7 @@ const saveCyclesToFile = async (outputDir = path.join(__dirname, '../data'), fil
 
     fs.writeFileSync(filePath, JSON.stringify(cycles, null, 2), 'utf-8');
     console.log(`Ciclos guardados en: ${filePath}`);
+    await cache.set('cycles', cycles);
     return { success: true };
   } catch (err) {
     console.error('Error al guardar los ciclos:', err.message);

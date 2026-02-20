@@ -215,7 +215,7 @@
       "classroom": "A025",
       "nrc": "159985",
       "code": "IC584",
-      "students": 33,
+      "students": 34,
       "course": "ANALISIS NUMERICO I"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
@@ -1353,16 +1353,16 @@
   },
   {
     "data": {
-      "schedule": "0011-0030",
-      "days": ". . . . V .",
+      "schedule": "0043-0043",
+      "days": ". . . J . .",
       "building": "DESV1",
       "classroom": "",
-      "nrc": "38427",
-      "code": "I3284",
-      "students": 12,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+      "nrc": "163997",
+      "code": "IF880",
+      "students": 24,
+      "course": "ECUACIONES DIFERENCIALES"
     },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
+    "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
   },
   {
     "data": {
@@ -1379,14 +1379,27 @@
   },
   {
     "data": {
-      "schedule": "0043-0043",
-      "days": ". . . J . .",
+      "schedule": "0011-0030",
+      "days": ". . . . V .",
       "building": "DESV1",
       "classroom": "",
-      "nrc": "163997",
-      "code": "IF880",
-      "students": 24,
-      "course": "ECUACIONES DIFERENCIALES"
+      "nrc": "38427",
+      "code": "I3284",
+      "students": 12,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
+      "schedule": "0052-0052",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "77430",
+      "code": "I7422",
+      "students": 38,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
   },
@@ -1402,19 +1415,6 @@
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
-  },
-  {
-    "data": {
-      "schedule": "0052-0052",
-      "days": ". . I . . .",
-      "building": "DESV1",
-      "classroom": "",
-      "nrc": "77430",
-      "code": "I7422",
-      "students": 38,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
   },
   {
     "data": {
@@ -1496,19 +1496,6 @@
   },
   {
     "data": {
-      "schedule": "0034-0034",
-      "days": ". M . . . .",
-      "building": "DESV1",
-      "classroom": "",
-      "nrc": "212338",
-      "code": "IL347",
-      "students": 19,
-      "course": "ECUACIONES DIFERENCIALES"
-    },
-    "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
-  },
-  {
-    "data": {
       "schedule": "0032-0032",
       "days": ". M . . . .",
       "building": "DESV1",
@@ -1519,6 +1506,19 @@
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "0034-0034",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "212338",
+      "code": "IL347",
+      "students": 19,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
   },
   {
     "data": {
@@ -1636,19 +1636,6 @@
       "course": "ESTADISTICA"
     },
     "professor": "CENTENO QUEVEDO, JUAN JERONIMO"
-  },
-  {
-    "data": {
-      "schedule": "0041-0041",
-      "days": ". . . J . .",
-      "building": "DESV1",
-      "classroom": "A019",
-      "nrc": "152905",
-      "code": "I7347",
-      "students": 32,
-      "course": "ESTADISTICA"
-    },
-    "professor": "MUELA LOPEZ, MARIA CRISTINA"
   },
   {
     "data": {
@@ -2953,19 +2940,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DESV1",
-      "classroom": "A050",
-      "nrc": "210890",
-      "code": "V1145",
-      "students": 8,
-      "course": "SEMINARIO DE AVANCE DE INVESTIGACION IV"
-    },
-    "professor": "VALDIVIA GONZALEZ, ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": ". . I . . .",
       "building": "DESV1",
       "classroom": "A048",
@@ -2978,16 +2952,16 @@
   },
   {
     "data": {
-      "schedule": "1600-1755",
-      "days": ". . . . V .",
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
       "building": "DESV1",
-      "classroom": "",
-      "nrc": "79458",
-      "code": "I6981",
-      "students": 5,
-      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION III"
+      "classroom": "A050",
+      "nrc": "210890",
+      "code": "V1145",
+      "students": 8,
+      "course": "SEMINARIO DE AVANCE DE INVESTIGACION IV"
     },
-    "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
+    "professor": "VALDIVIA GONZALEZ, ARTURO"
   },
   {
     "data": {
@@ -3017,6 +2991,19 @@
   },
   {
     "data": {
+      "schedule": "1600-1755",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "79458",
+      "code": "I6981",
+      "students": 5,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION III"
+    },
+    "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DESV1",
@@ -3027,19 +3014,6 @@
       "course": "SEMINARIO DE AVANCE DE TESIS III"
     },
     "professor": "ANAYA ESPARZA, LUIS MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "0055-0055",
-      "days": "L . . . . .",
-      "building": "DESV1",
-      "classroom": "",
-      "nrc": "199975",
-      "code": "IK126",
-      "students": 1,
-      "course": "SEMINARIO DE AVANCE DE TESIS VI"
-    },
-    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
   },
   {
     "data": {

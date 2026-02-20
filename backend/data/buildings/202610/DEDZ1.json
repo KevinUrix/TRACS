@@ -456,16 +456,29 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
       "building": "DEDZ1",
-      "classroom": "A005",
-      "nrc": "42295",
+      "classroom": "A009",
+      "nrc": "42298",
       "code": "I5800",
-      "students": 41,
+      "students": 42,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "GONZALEZ RENDON, LUCIA"
+    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A006",
+      "nrc": "42298",
+      "code": "I5800",
+      "students": 42,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
   },
   {
     "data": {
@@ -479,6 +492,19 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A005",
+      "nrc": "42295",
+      "code": "I5800",
+      "students": 41,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
   },
   {
     "data": {
@@ -667,7 +693,7 @@
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDZ1",
-      "classroom": "",
+      "classroom": "A012",
       "nrc": "125309",
       "code": "IB059",
       "students": 2,
@@ -687,19 +713,6 @@
       "course": "CIENCIA Y SUSTENTABILIDAD"
     },
     "professor": "EUSEBIO MARTIN, ESTEBAN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDZ1",
-      "classroom": "A004",
-      "nrc": "178799",
-      "code": "I6034",
-      "students": 31,
-      "course": "CLINICA TUTORIAL III"
-    },
-    "professor": "GARCIA LUNA, JOSE LUIS"
   },
   {
     "data": {
@@ -1532,19 +1545,6 @@
       "course": "LOGICA MATEMATICA"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDZ1",
-      "classroom": "A012",
-      "nrc": "252278",
-      "code": "I5247",
-      "students": 37,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "LUNA ARELLANO, MAYRA LORENA"
   },
   {
     "data": {
@@ -2624,6 +2624,32 @@
       "course": "QUIMICA INORGANICA"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDZ1",
+      "classroom": "A011",
+      "nrc": "137205",
+      "code": "I3282",
+      "students": 16,
+      "course": "QUIMICA ORGANICA"
+    },
+    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A011",
+      "nrc": "137205",
+      "code": "I3282",
+      "students": 16,
+      "course": "QUIMICA ORGANICA"
+    },
+    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
   },
   {
     "data": {

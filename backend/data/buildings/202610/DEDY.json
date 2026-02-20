@@ -391,19 +391,6 @@
   },
   {
     "data": {
-      "schedule": "1400-1655",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "104246",
-      "code": "I7503",
-      "students": 20,
-      "course": "LABORATORIO DE FISICOQUIMICA III"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
       "schedule": "1300-1555",
       "days": ". . . . V .",
       "building": "DEDY",
@@ -414,6 +401,19 @@
       "course": "LABORATORIO DE FISICOQUIMICA II"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1400-1655",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "104246",
+      "code": "I7503",
+      "students": 20,
+      "course": "LABORATORIO DE FISICOQUIMICA III"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
   },
   {
     "data": {
@@ -489,6 +489,19 @@
       "nrc": "104258",
       "code": "I7511",
       "students": 14,
+      "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
+    },
+    "professor": "GARCIA CASILLAS, LUIS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "LQM05",
+      "nrc": "117495",
+      "code": "I7511",
+      "students": 16,
       "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "GARCIA CASILLAS, LUIS ALBERTO"

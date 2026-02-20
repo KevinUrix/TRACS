@@ -25,7 +25,7 @@ const localSchedule = async (req, res) => {
     const json = JSON.parse(fileData);
 
     // Guarda solo si el archivo existe y es válido
-    await cache.set(cacheKey, json);
+    await cache.set(cacheKey, json, 14400); // 4 horas
     console.log(`Horario de ${buildingName} guardado en caché desde archivo local.`);
 
     // Lanza background para guardar los demás
@@ -49,7 +49,7 @@ const backgroundCacheAll = async (cycle, skipBuilding) => {
     try {
       const fileData = await fs.readFile(filePath, 'utf8');
       const json = JSON.parse(fileData);
-      await cache.set(cacheKey, json);
+      await cache.set(cacheKey, json, 14400); // 4 horas
       console.log(`Horario en caché: ${building} desde local`);
     } catch (error) {
       if (error.code === 'ENOENT') {

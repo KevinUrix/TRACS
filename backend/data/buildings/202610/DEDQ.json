@@ -3153,7 +3153,7 @@
       "classroom": "A022",
       "nrc": "165462",
       "code": "IF875",
-      "students": 13,
+      "students": 14,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "REYES BARRERA, LUZ MARINA"
@@ -3553,32 +3553,6 @@
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDQ",
-      "classroom": "A029",
-      "nrc": "43790",
-      "code": "I7412",
-      "students": 21,
-      "course": "ESTATICA"
-    },
-    "professor": "GARCIA LUNA, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A026",
-      "nrc": "43790",
-      "code": "I7412",
-      "students": 21,
-      "course": "ESTATICA"
-    },
-    "professor": "GARCIA LUNA, JOSE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDQ",
       "classroom": "A031",
       "nrc": "131994",
       "code": "IC581",
@@ -3628,19 +3602,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A007",
-      "nrc": "153722",
-      "code": "IC579",
-      "students": 10,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "PONCE MACIAS, CAROLINA"
-  },
-  {
-    "data": {
       "schedule": "0800-0955",
       "days": ". . . . . S",
       "building": "DEDQ",
@@ -3651,6 +3612,19 @@
       "course": "ETICA PROFESIONAL"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A007",
+      "nrc": "153722",
+      "code": "IC579",
+      "students": 10,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "PONCE MACIAS, CAROLINA"
   },
   {
     "data": {
@@ -3680,19 +3654,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A006",
-      "nrc": "43592",
-      "code": "I7381",
-      "students": 38,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "FIGUEROA VEGA, LINKA VANESSA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDQ",
@@ -3703,6 +3664,19 @@
       "course": "ETICA PROFESIONAL"
     },
     "professor": "NERI CORTES, CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A006",
+      "nrc": "43592",
+      "code": "I7381",
+      "students": 38,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "FIGUEROA VEGA, LINKA VANESSA"
   },
   {
     "data": {
@@ -3732,19 +3706,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A011",
-      "nrc": "43595",
-      "code": "I7381",
-      "students": 15,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "ORTEGA GUDIÑO, PEDRO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDQ",
@@ -3755,6 +3716,19 @@
       "course": "ETICA PROFESIONAL"
     },
     "professor": "MONZON, CESAR OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A011",
+      "nrc": "43595",
+      "code": "I7381",
+      "students": 15,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "ORTEGA GUDIÑO, PEDRO"
   },
   {
     "data": {
@@ -3910,7 +3884,7 @@
       "students": 31,
       "course": "EVALUACION ECONOMICA"
     },
-    "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
+    "professor": "GANDARA RODRIGUEZ, MANUEL"
   },
   {
     "data": {
@@ -3923,7 +3897,7 @@
       "students": 31,
       "course": "EVALUACION ECONOMICA"
     },
-    "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
+    "professor": "GANDARA RODRIGUEZ, MANUEL"
   },
   {
     "data": {
@@ -4486,6 +4460,84 @@
   },
   {
     "data": {
+      "schedule": "1100-1155",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A027",
+      "nrc": "76960",
+      "code": "I3323",
+      "students": 39,
+      "course": "FINANZAS"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A005",
+      "nrc": "76960",
+      "code": "I3323",
+      "students": 39,
+      "course": "FINANZAS"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A006",
+      "nrc": "175272",
+      "code": "IF891",
+      "students": 35,
+      "course": "FINANZAS"
+    },
+    "professor": "GALLO GUTIERREZ, ELISA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A006",
+      "nrc": "175272",
+      "code": "IF891",
+      "students": 35,
+      "course": "FINANZAS"
+    },
+    "professor": "GALLO GUTIERREZ, ELISA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A012",
+      "nrc": "139595",
+      "code": "I3323",
+      "students": 32,
+      "course": "FINANZAS"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "2000-2055",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A006",
+      "nrc": "139595",
+      "code": "I3323",
+      "students": 32,
+      "course": "FINANZAS"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDQ",
@@ -4895,7 +4947,7 @@
       "classroom": "A005",
       "nrc": "252238",
       "code": "IL340",
-      "students": 40,
+      "students": 39,
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
@@ -4908,7 +4960,7 @@
       "classroom": "A030",
       "nrc": "252238",
       "code": "IL340",
-      "students": 40,
+      "students": 39,
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
@@ -4950,7 +5002,7 @@
       "students": 23,
       "course": "FUNDAMENTOS DE FISICA"
     },
-    "professor": "MENDEZ MALDONADO, GLORIA ARLETTE"
+    "professor": "ALANIS FUERTE, IVON"
   },
   {
     "data": {
@@ -5540,19 +5592,6 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDQ",
-      "classroom": "A010",
-      "nrc": "38450",
-      "code": "I3303",
-      "students": 8,
-      "course": "INGENIERIA DE COSTOS"
-    },
-    "professor": "PAEZ RIVAS, LAURA ESTELA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DEDQ",
       "classroom": "A004",
@@ -5575,6 +5614,19 @@
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDQ",
+      "classroom": "A010",
+      "nrc": "38450",
+      "code": "I3303",
+      "students": 8,
+      "course": "INGENIERIA DE COSTOS"
+    },
+    "professor": "PAEZ RIVAS, LAURA ESTELA"
   },
   {
     "data": {
@@ -5955,32 +6007,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A018",
-      "nrc": "43819",
-      "code": "I7426",
-      "students": 26,
-      "course": "INGENIERIA DE LOS MATERIALES"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A018",
-      "nrc": "43819",
-      "code": "I7426",
-      "students": 26,
-      "course": "INGENIERIA DE LOS MATERIALES"
-    },
-    "professor": "AGUILAR ROSALES, JOEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDQ",
@@ -6280,13 +6306,26 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
       "building": "DEDQ",
       "classroom": "A012",
-      "nrc": "122645",
-      "code": "I5848",
-      "students": 37,
+      "nrc": "136422",
+      "code": "I7580",
+      "students": 39,
+      "course": "INGENIERIA ECONOMICA"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A012",
+      "nrc": "136422",
+      "code": "I7580",
+      "students": 39,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -6313,6 +6352,19 @@
       "nrc": "163257",
       "code": "I3584",
       "students": 14,
+      "course": "INGENIERIA ECONOMICA"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDQ",
+      "classroom": "A012",
+      "nrc": "122645",
+      "code": "I5848",
+      "students": 37,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -6419,7 +6471,7 @@
       "students": 38,
       "course": "INGENIERIA EN LOGISTICA Y TRANSPORTE"
     },
-    "professor": "ARMENDARIZ SILVA, MARIA ELENA"
+    "professor": "ARMENDARIZ HERRERA, SAUL"
   },
   {
     "data": {
@@ -6432,7 +6484,7 @@
       "students": 38,
       "course": "INGENIERIA EN LOGISTICA Y TRANSPORTE"
     },
-    "professor": "ARMENDARIZ SILVA, MARIA ELENA"
+    "professor": "ARMENDARIZ HERRERA, SAUL"
   },
   {
     "data": {
@@ -6445,7 +6497,7 @@
       "students": 34,
       "course": "INGENIERIA EN LOGISTICA Y TRANSPORTE"
     },
-    "professor": "ARMENDARIZ SILVA, MARIA ELENA"
+    "professor": "JARAMILLO GONZALEZ, GERARDO"
   },
   {
     "data": {
@@ -6845,7 +6897,7 @@
       "classroom": "A030",
       "nrc": "167470",
       "code": "IF892",
-      "students": 29,
+      "students": 30,
       "course": "INVESTIGACION APLICADA A LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -6858,62 +6910,10 @@
       "classroom": "A030",
       "nrc": "167470",
       "code": "IF892",
-      "students": 29,
+      "students": 30,
       "course": "INVESTIGACION APLICADA A LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A014",
-      "nrc": "103958",
-      "code": "I7387",
-      "students": 25,
-      "course": "INVESTIGACION DE OPERACIONES II"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A015",
-      "nrc": "103958",
-      "code": "I7387",
-      "students": 25,
-      "course": "INVESTIGACION DE OPERACIONES II"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A013",
-      "nrc": "175270",
-      "code": "IF896",
-      "students": 28,
-      "course": "INVESTIGACION DE OPERACIONES II"
-    },
-    "professor": "GANDARA RODRIGUEZ, MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A014",
-      "nrc": "175270",
-      "code": "IF896",
-      "students": 28,
-      "course": "INVESTIGACION DE OPERACIONES II"
-    },
-    "professor": "GANDARA RODRIGUEZ, MANUEL"
   },
   {
     "data": {
@@ -7092,7 +7092,7 @@
       "classroom": "A027",
       "nrc": "167473",
       "code": "IF893",
-      "students": 30,
+      "students": 31,
       "course": "INVESTIGACION DE OPERACIONES I"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7105,7 +7105,7 @@
       "classroom": "A008",
       "nrc": "167473",
       "code": "IF893",
-      "students": 30,
+      "students": 31,
       "course": "INVESTIGACION DE OPERACIONES I"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -10528,6 +10528,19 @@
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A031",
+      "nrc": "137205",
+      "code": "I3282",
+      "students": 16,
+      "course": "QUIMICA ORGANICA"
+    },
+    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
   },
   {
     "data": {

@@ -586,19 +586,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "152905",
-      "code": "I7347",
-      "students": 32,
-      "course": "ESTADISTICA"
-    },
-    "professor": "MUELA LOPEZ, MARIA CRISTINA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDR",
@@ -1047,7 +1034,7 @@
       "classroom": "A004",
       "nrc": "189656",
       "code": "IG738",
-      "students": 36,
+      "students": 37,
       "course": "PRECALCULO"
     },
     "professor": "MENDOZA SANTOS, ROSA DELIA"
@@ -1164,7 +1151,7 @@
       "classroom": "A002",
       "nrc": "252321",
       "code": "IG738",
-      "students": 38,
+      "students": 37,
       "course": "PRECALCULO"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
@@ -1177,7 +1164,7 @@
       "classroom": "A004",
       "nrc": "252321",
       "code": "IG738",
-      "students": 38,
+      "students": 37,
       "course": "PRECALCULO"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
@@ -1324,19 +1311,6 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1455",
-      "days": ". . . . V .",
-      "building": "DEDR",
-      "classroom": "LC06",
-      "nrc": "209838",
-      "code": "V0275",
-      "students": 6,
-      "course": "REDES NEURONALES ARTIFICIALES"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
   },
   {
     "data": {
@@ -1623,6 +1597,19 @@
       "course": "SISTEMAS DE CONVERSION DE ENERGIA"
     },
     "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDR",
+      "classroom": "LC08",
+      "nrc": "252871",
+      "code": "V6002",
+      "students": 0,
+      "course": "SISTEMAS DE MEDICION"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
   },
   {
     "data": {

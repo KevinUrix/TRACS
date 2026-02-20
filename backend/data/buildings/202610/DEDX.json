@@ -4369,6 +4369,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A015",
+      "nrc": "209838",
+      "code": "V0275",
+      "students": 6,
+      "course": "REDES NEURONALES ARTIFICIALES"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDX",
@@ -4733,19 +4746,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A012",
-      "nrc": "124883",
-      "code": "I7041",
-      "students": 6,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL II"
-    },
-    "professor": "CONTRERAS GARCIA, GABRIEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1255",
       "days": ". . . . V .",
       "building": "DEDX",
@@ -4756,6 +4756,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL I"
     },
     "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A012",
+      "nrc": "124883",
+      "code": "I7041",
+      "students": 6,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL II"
+    },
+    "professor": "CONTRERAS GARCIA, GABRIEL"
   },
   {
     "data": {
@@ -4876,19 +4889,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "213175",
-      "code": "IL370",
-      "students": 28,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
-  },
-  {
-    "data": {
       "schedule": "0700-0755",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -4899,6 +4899,19 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "213175",
+      "code": "IL370",
+      "students": 28,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {
@@ -4980,19 +4993,6 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "228033",
-      "code": "IL370",
-      "students": 26,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1355",
       "days": ". . I . . .",
       "building": "DEDX",
@@ -5006,16 +5006,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
+      "schedule": "0900-0955",
+      "days": "L . . . . .",
       "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "204888",
-      "code": "IL369",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
+      "classroom": "A002",
+      "nrc": "228033",
+      "code": "IL370",
+      "students": 26,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
   },
   {
     "data": {
@@ -5029,6 +5029,19 @@
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "204888",
+      "code": "IL369",
+      "students": 40,
+      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
+    },
+    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {

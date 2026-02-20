@@ -969,7 +969,7 @@
       "classroom": "A014",
       "nrc": "159487",
       "code": "IC613",
-      "students": 37,
+      "students": 38,
       "course": "CONSTRUCCION II"
     },
     "professor": "PEREZ ORTIZ, CHRISTIAN FARID"
@@ -982,7 +982,7 @@
       "classroom": "A013",
       "nrc": "159487",
       "code": "IC613",
-      "students": 37,
+      "students": 38,
       "course": "CONSTRUCCION II"
     },
     "professor": "PEREZ ORTIZ, CHRISTIAN FARID"
@@ -1437,7 +1437,7 @@
       "classroom": "A022",
       "nrc": "165462",
       "code": "IF875",
-      "students": 13,
+      "students": 14,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "REYES BARRERA, LUZ MARINA"
@@ -2230,7 +2230,7 @@
       "classroom": "A022",
       "nrc": "171967",
       "code": "IC597",
-      "students": 19,
+      "students": 20,
       "course": "HIDRAULICA I"
     },
     "professor": "CEJA VILLANUEVA, ARACELI"
@@ -2243,7 +2243,7 @@
       "classroom": "A020",
       "nrc": "171967",
       "code": "IC597",
-      "students": 19,
+      "students": 20,
       "course": "HIDRAULICA I"
     },
     "professor": "CEJA VILLANUEVA, ARACELI"
@@ -3551,19 +3551,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDP",
-      "classroom": "A002",
-      "nrc": "193249",
-      "code": "IL343",
-      "students": 41,
-      "course": "MECANICA"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDP",
       "classroom": "A020",
@@ -3573,6 +3560,19 @@
       "course": "MECANICA"
     },
     "professor": "ZARATE GALVEZ, SARAI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDP",
+      "classroom": "A002",
+      "nrc": "193249",
+      "code": "IL343",
+      "students": 41,
+      "course": "MECANICA"
+    },
+    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
   },
   {
     "data": {
@@ -3712,7 +3712,7 @@
       "classroom": "A017",
       "nrc": "145209",
       "code": "IC594",
-      "students": 34,
+      "students": 35,
       "course": "MECANICA DE SOLIDOS I"
     },
     "professor": "FLORES ANGULO, BENJAMIN EDUARDO"
@@ -3777,7 +3777,7 @@
       "classroom": "A014",
       "nrc": "152637",
       "code": "IC593",
-      "students": 29,
+      "students": 30,
       "course": "MECANICA DE SUELOS I"
     },
     "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -3790,7 +3790,7 @@
       "classroom": "A014",
       "nrc": "152637",
       "code": "IC593",
-      "students": 29,
+      "students": 30,
       "course": "MECANICA DE SUELOS I"
     },
     "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -4067,19 +4067,6 @@
       "course": "METODOS ESTADISTICOS"
     },
     "professor": "AVALOS CUEVA, DAVID"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDP",
-      "classroom": "A011",
-      "nrc": "252516",
-      "code": "I6023",
-      "students": 6,
-      "course": "METODOS MATEMATICOS DE LA FISICA"
-    },
-    "professor": "GARCIA LUNA, JOSE LUIS"
   },
   {
     "data": {

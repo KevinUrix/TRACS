@@ -3,7 +3,9 @@ const cheerio = require('cheerio');
 const iconv = require('iconv-lite');
 
 const scrapeCycles = async () => {
-    const url = 'http://consulta.siiau.udg.mx/wco/sspseca.forma_consulta';
+    const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta';
+    // const url = 'http://consulta.siiau.udg.mx/wco/sspseca.forma_consulta';
+
 
     try {
         const response = await axios.get(url,

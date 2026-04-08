@@ -46,7 +46,7 @@
       "classroom": "A009",
       "nrc": "137208",
       "code": "I6133",
-      "students": 27,
+      "students": 28,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "BARROS CASTILLO, JULIO CESAR"
@@ -59,7 +59,7 @@
       "classroom": "A004",
       "nrc": "137208",
       "code": "I6133",
-      "students": 27,
+      "students": 28,
       "course": "ANALISIS BROMATOLOGICOS"
     },
     "professor": "BARROS CASTILLO, JULIO CESAR"
@@ -462,7 +462,7 @@
       "classroom": "A004",
       "nrc": "38428",
       "code": "I3285",
-      "students": 26,
+      "students": 25,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -475,7 +475,7 @@
       "classroom": "A005",
       "nrc": "38428",
       "code": "I3285",
-      "students": 26,
+      "students": 25,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -729,19 +729,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDF",
-      "classroom": "A002",
-      "nrc": "152792",
-      "code": "I5813",
-      "students": 23,
-      "course": "FISICOQUIMICA PARA INGENIEROS II"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDF",
@@ -752,6 +739,19 @@
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "OROZCO GUAREÑO, EULOGIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDF",
+      "classroom": "A002",
+      "nrc": "152792",
+      "code": "I5813",
+      "students": 23,
+      "course": "FISICOQUIMICA PARA INGENIEROS II"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
   },
   {
     "data": {
@@ -856,6 +856,19 @@
       "course": "HEMATOLOGIA"
     },
     "professor": "GUERRERO GARCIA, JOSE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDF",
+      "classroom": "A003",
+      "nrc": "43755",
+      "code": "I7494",
+      "students": 21,
+      "course": "HIGIENE Y SEGURIDAD EN LABORATORIOS"
+    },
+    "professor": "BADILLO CAMACHO, JESSICA"
   },
   {
     "data": {
@@ -1379,19 +1392,6 @@
   },
   {
     "data": {
-      "schedule": "1600-1655",
-      "days": ". . . . V .",
-      "building": "DEDF",
-      "classroom": "A002",
-      "nrc": "249878",
-      "code": "I6127",
-      "students": 10,
-      "course": "QUIMICA ANALITICA I"
-    },
-    "professor": "CID HERNANDEZ, MARGARITA"
-  },
-  {
-    "data": {
       "schedule": "0800-0855",
       "days": ". . . . V .",
       "building": "DEDF",
@@ -1463,7 +1463,7 @@
       "classroom": "A005",
       "nrc": "139351",
       "code": "IC601",
-      "students": 28,
+      "students": 30,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -1834,19 +1834,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDF",
-      "classroom": "A002",
-      "nrc": "42619",
-      "code": "I5805",
-      "students": 31,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDF",
@@ -1857,6 +1844,19 @@
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDF",
+      "classroom": "A002",
+      "nrc": "42619",
+      "code": "I5805",
+      "students": 31,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
   },
   {
     "data": {
@@ -1892,7 +1892,7 @@
       "classroom": "A003",
       "nrc": "112062",
       "code": "I6124",
-      "students": 29,
+      "students": 28,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -1944,7 +1944,7 @@
       "classroom": "A004",
       "nrc": "42628",
       "code": "I5806",
-      "students": 23,
+      "students": 24,
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "MOSCOSO SANCHEZ, FRANCISCO JAVIER"
@@ -2113,7 +2113,7 @@
       "classroom": "A007",
       "nrc": "42796",
       "code": "I6160",
-      "students": 34,
+      "students": 33,
       "course": "SEMINARIO DE TUTORIA INICIAL II"
     },
     "professor": "FRANCO TORRES, ESMERALDA MARISOL"

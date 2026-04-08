@@ -122,7 +122,8 @@ const backgroundScraping = async (cycle, skipEdifp = null) => {
         }
 
         try {
-            const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
+            const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.consulta_oferta';
+            // const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
             const formData = new URLSearchParams({
                 ciclop: cycle,
                 cup: 'D',
@@ -187,7 +188,8 @@ const scrapeData = async (cycle, edifp, force = false) => {
 
     console.log('Datos no encontrados en caché, iniciando scraping principal...');
 
-    const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
+    const url = 'https://siiauescolar.siiau.udg.mx/wal/sspseca.consulta_oferta';
+    // const url = 'http://consulta.siiau.udg.mx/wco/sspseca.consulta_oferta';
     const formData = new URLSearchParams({
         ciclop: cycle,
         cup: 'D',

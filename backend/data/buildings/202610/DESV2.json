@@ -176,7 +176,7 @@
       "classroom": "",
       "nrc": "222815",
       "code": "V0264",
-      "students": 1,
+      "students": 5,
       "course": "COMPUTO EVOLUTIVO"
     },
     "professor": "AVALOS ALVAREZ, OMAR"
@@ -228,7 +228,7 @@
       "classroom": "",
       "nrc": "179857",
       "code": "I7342",
-      "students": 32,
+      "students": 31,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -293,7 +293,7 @@
       "classroom": "",
       "nrc": "144457",
       "code": "IC585",
-      "students": 34,
+      "students": 35,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -371,7 +371,7 @@
       "classroom": "A025",
       "nrc": "43545",
       "code": "I7349",
-      "students": 38,
+      "students": 37,
       "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
     },
     "professor": "GARCIA NAVA, DALMIRO"
@@ -388,6 +388,19 @@
       "course": "INTRODUCCION ANALITICA A LAS GEOMETRIAS II"
     },
     "professor": "AGUILA GOMEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0035-0035",
+      "days": ". . . . V .",
+      "building": "DESV2",
+      "classroom": "A004",
+      "nrc": "189651",
+      "code": "I5247",
+      "students": 30,
+      "course": "LOGICA MATEMATICA"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
   },
   {
     "data": {
@@ -475,7 +488,7 @@
       "classroom": "",
       "nrc": "222816",
       "code": "V0268",
-      "students": 0,
+      "students": 6,
       "course": "OPTIMIZACION MULTIOBJETIVO"
     },
     "professor": "CUEVAS JIMENEZ, ERIK VALDEMAR"
@@ -514,7 +527,7 @@
       "classroom": "A028",
       "nrc": "144451",
       "code": "IC572",
-      "students": 33,
+      "students": 37,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "PIÑUELAS CASTRO, LUIS MANUEL"

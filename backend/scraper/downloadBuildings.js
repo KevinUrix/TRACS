@@ -2,7 +2,8 @@ const { scrapeData } = require('./schedules');
 
 const fs = require('fs');
 const path = require('path');
-const http = require('http');
+const https = require('https');
+// const http = require('http'); QUITEN LOS COMENTARIOS SI SE USA HTTP EN LUGAR DE HTTPS
 
 const getBuildings = () => {
   const filePath = path.join(__dirname, '../config/buildings.json');
@@ -12,7 +13,9 @@ const getBuildings = () => {
 
 const isSiiauAvailable = () => {
   return new Promise((resolve, reject) => {
-    http.get('http://consulta.siiau.udg.mx/wco/sspseca.forma_consulta', (res) => {
+    https.get('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', (res) => {
+    // http.get('http://consulta.siiau.udg.mx/wco/sspseca.forma_consulta', (res) => {
+
       if (res.statusCode === 200) {
         resolve(true);
       } else {

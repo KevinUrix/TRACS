@@ -1,19 +1,6 @@
 [
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDM",
-      "classroom": "LM1",
-      "nrc": "44211",
-      "code": "I7594",
-      "students": 16,
-      "course": "BIOMATERIALES"
-    },
-    "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDM",
@@ -163,7 +150,7 @@
       "classroom": "LM3",
       "nrc": "97741",
       "code": "I7604",
-      "students": 31,
+      "students": 32,
       "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
     },
     "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -245,19 +232,6 @@
       "course": "INSTRUMENTACION PARA SISTEMAS FOTONICOS"
     },
     "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1255",
-      "days": ". . . . V .",
-      "building": "DEDM",
-      "classroom": "LM1",
-      "nrc": "78949",
-      "code": "ET333",
-      "students": 28,
-      "course": "INSTRUMENTACION MEDICA II"
-    },
-    "professor": "ULLOA GODINEZ, GUADALUPE SANDRA"
   },
   {
     "data": {

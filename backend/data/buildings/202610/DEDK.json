@@ -85,7 +85,7 @@
       "classroom": "D001",
       "nrc": "171989",
       "code": "IC621",
-      "students": 25,
+      "students": 27,
       "course": "ANALISIS ESTRUCTURAL III"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -158,7 +158,20 @@
   {
     "data": {
       "schedule": "1700-1855",
-      "days": ". . I J . .",
+      "days": ". . I . . .",
+      "building": "DEDK",
+      "classroom": "A010",
+      "nrc": "65856",
+      "code": "I3309",
+      "students": 5,
+      "course": "AUTOMATIZACION Y OPTIMIZACION DE PROCESOS"
+    },
+    "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
       "building": "DEDK",
       "classroom": "A011",
       "nrc": "65856",
@@ -241,7 +254,7 @@
       "classroom": "A007",
       "nrc": "42283",
       "code": "I6125",
-      "students": 35,
+      "students": 34,
       "course": "BIOESTADISTICA"
     },
     "professor": "AYALA MIRANDA, KARLA GUADALUPE"
@@ -358,7 +371,7 @@
       "classroom": "D001",
       "nrc": "178082",
       "code": "IC625",
-      "students": 32,
+      "students": 33,
       "course": "CARRETERAS"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
@@ -371,7 +384,7 @@
       "classroom": "D001",
       "nrc": "178082",
       "code": "IC625",
-      "students": 32,
+      "students": 33,
       "course": "CARRETERAS"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
@@ -384,7 +397,7 @@
       "classroom": "D001",
       "nrc": "178083",
       "code": "IC625",
-      "students": 22,
+      "students": 24,
       "course": "CARRETERAS"
     },
     "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -891,7 +904,7 @@
       "classroom": "A006",
       "nrc": "127431",
       "code": "I6128",
-      "students": 10,
+      "students": 9,
       "course": "FISICOQUIMICA I PARA FARMACEUTICOS"
     },
     "professor": "ESCALANTE VAZQUEZ, JOSE INES"
@@ -1528,7 +1541,7 @@
       "classroom": "A003",
       "nrc": "79440",
       "code": "I5822",
-      "students": 34,
+      "students": 35,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -1541,7 +1554,7 @@
       "classroom": "A005",
       "nrc": "79440",
       "code": "I5822",
-      "students": 34,
+      "students": 35,
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "RIVAS LOAIZA, JUAN ANTONIO"
@@ -1749,7 +1762,7 @@
       "classroom": "D001",
       "nrc": "145210",
       "code": "IC594",
-      "students": 35,
+      "students": 36,
       "course": "MECANICA DE SOLIDOS I"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -1762,7 +1775,7 @@
       "classroom": "D001",
       "nrc": "152634",
       "code": "IC599",
-      "students": 39,
+      "students": 38,
       "course": "MECANICA DE SOLIDOS II"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -1775,7 +1788,7 @@
       "classroom": "D001",
       "nrc": "152635",
       "code": "IC599",
-      "students": 41,
+      "students": 42,
       "course": "MECANICA DE SOLIDOS II"
     },
     "professor": "GUERRERO MAGAÑA, FRIDA LUCIA"
@@ -1788,7 +1801,7 @@
       "classroom": "D001",
       "nrc": "152636",
       "code": "IC599",
-      "students": 15,
+      "students": 18,
       "course": "MECANICA DE SOLIDOS II"
     },
     "professor": "CERMEÑO GARCIA, JULIO CESAR"
@@ -1935,6 +1948,19 @@
       "course": "MODULO DE AVANCE DEL PROYECTO II"
     },
     "professor": "SANCHEZ GARCIA, JUAN JOSE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDK",
+      "classroom": "A008",
+      "nrc": "117606",
+      "code": "I5851",
+      "students": 37,
+      "course": "MODULO DE AVANCE DEL PROYECTO III"
+    },
+    "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
   },
   {
     "data": {
@@ -2120,19 +2146,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A008",
-      "nrc": "125978",
-      "code": "I5836",
-      "students": 18,
-      "course": "PROCESOS DE SEPARACION I"
-    },
-    "professor": "ROSALES RIVERA, LUIS CARLOS"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDK",
@@ -2295,7 +2308,7 @@
       "classroom": "A002",
       "nrc": "67482",
       "code": "I6130",
-      "students": 26,
+      "students": 25,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "DELGADO CHAVEZ, ELEAZAR"
@@ -2555,7 +2568,7 @@
       "classroom": "A004",
       "nrc": "127490",
       "code": "I7415",
-      "students": 26,
+      "students": 25,
       "course": "QUIMICA BASICA"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -2568,7 +2581,7 @@
       "classroom": "A006",
       "nrc": "127490",
       "code": "I7415",
-      "students": 26,
+      "students": 25,
       "course": "QUIMICA BASICA"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
@@ -2646,7 +2659,7 @@
       "classroom": "A002",
       "nrc": "139348",
       "code": "IC601",
-      "students": 28,
+      "students": 29,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PULIDO GONZALEZ, HECTOR"
@@ -2659,7 +2672,7 @@
       "classroom": "A003",
       "nrc": "139349",
       "code": "IC601",
-      "students": 28,
+      "students": 29,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -2672,7 +2685,7 @@
       "classroom": "A001",
       "nrc": "139349",
       "code": "IC601",
-      "students": 28,
+      "students": 29,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
@@ -2685,7 +2698,7 @@
       "classroom": "A006",
       "nrc": "139352",
       "code": "IC601",
-      "students": 21,
+      "students": 22,
       "course": "QUIMICA EN LA INGENIERIA CIVIL"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -3231,7 +3244,7 @@
       "classroom": "D001",
       "nrc": "181916",
       "code": "IC633",
-      "students": 16,
+      "students": 20,
       "course": "SEMINARIO DE DISEÑO DE OBRA CIVIL"
     },
     "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -3413,7 +3426,7 @@
       "classroom": "",
       "nrc": "104553",
       "code": "I7447",
-      "students": 31,
+      "students": 32,
       "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
     },
     "professor": "ACEVES BOJORQUEZ, RAUL"
@@ -3426,7 +3439,7 @@
       "classroom": "",
       "nrc": "104553",
       "code": "I7447",
-      "students": 31,
+      "students": 32,
       "course": "SISTEMAS NEUMATICOS E HIDRAULICOS"
     },
     "professor": "ACEVES BOJORQUEZ, RAUL"
@@ -3954,7 +3967,7 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . . . V .",
+      "days": ". . I . V .",
       "building": "DEDK",
       "classroom": "A008",
       "nrc": "104042",

@@ -293,7 +293,7 @@
       "classroom": "A002",
       "nrc": "125208",
       "code": "I6123",
-      "students": 35,
+      "students": 36,
       "course": "INTRODUCCION A LA FISICA"
     },
     "professor": "RODRIGUEZ DOMINGUEZ, ALMA LETICIA"
@@ -319,7 +319,7 @@
       "classroom": "A002",
       "nrc": "202034",
       "code": "I5304",
-      "students": 16,
+      "students": 18,
       "course": "MECANICA"
     },
     "professor": "ALFARO GARCES, JUAN"
@@ -336,6 +336,19 @@
       "course": "METODOS MATEMATICOS DE LA FISICA"
     },
     "professor": "ACEVES DE LA CRUZ, FERMIN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "42494",
+      "code": "I5893",
+      "students": 6,
+      "course": "METODOS MATEMATICOS I"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
   },
   {
     "data": {
@@ -521,16 +534,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
+      "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDW",
       "classroom": "A002",
-      "nrc": "131850",
-      "code": "I5987",
-      "students": 20,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+      "nrc": "60833",
+      "code": "I7352",
+      "students": 24,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
+    "professor": "ZAMUDIO OJEDA, ADALBERTO"
   },
   {
     "data": {
@@ -547,16 +560,29 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDW",
       "classroom": "A002",
-      "nrc": "60833",
-      "code": "I7352",
-      "students": 24,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+      "nrc": "131850",
+      "code": "I5987",
+      "students": 22,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
     },
-    "professor": "ZAMUDIO OJEDA, ADALBERTO"
+    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "43705",
+      "code": "I6913",
+      "students": 18,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+    },
+    "professor": "VARGAS CARMONA, JORGE ALBERTO"
   },
   {
     "data": {

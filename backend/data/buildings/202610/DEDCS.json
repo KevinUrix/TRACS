@@ -7,7 +7,7 @@
       "classroom": "LFS07",
       "nrc": "136608",
       "code": "IC582",
-      "students": 19,
+      "students": 22,
       "course": "DINAMICA"
     },
     "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
@@ -124,7 +124,7 @@
       "classroom": "LFS07",
       "nrc": "42405",
       "code": "I6123",
-      "students": 31,
+      "students": 32,
       "course": "INTRODUCCION A LA FISICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
@@ -163,7 +163,7 @@
       "classroom": "LFS05",
       "nrc": "153202",
       "code": "IB081",
-      "students": 14,
+      "students": 15,
       "course": "LABORATORIO DE CARACTERIZACION DE MATERIALES I"
     },
     "professor": "MICHEL URIBE, CARLOS RAFAEL"
@@ -254,7 +254,7 @@
       "classroom": "LFS03",
       "nrc": "77624",
       "code": "I7351",
-      "students": 23,
+      "students": 22,
       "course": "LABORATORIO DE ELECTROMAGNETISMO"
     },
     "professor": "AVIÑA RAMIREZ, EDUARDO"
@@ -365,19 +365,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS06",
-      "nrc": "165492",
-      "code": "IF876",
-      "students": 10,
-      "course": "LABORATORIO DE ELECTROMAGNETISMO"
-    },
-    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1555",
       "days": "L . . . . .",
       "building": "DEDCS",
@@ -391,16 +378,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
       "building": "DEDCS",
-      "classroom": "LFS01",
-      "nrc": "183104",
+      "classroom": "LFS06",
+      "nrc": "165492",
       "code": "IF876",
-      "students": 20,
+      "students": 10,
       "course": "LABORATORIO DE ELECTROMAGNETISMO"
     },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
+    "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
   },
   {
     "data": {
@@ -414,6 +401,19 @@
       "course": "LABORATORIO DE ELECTROMAGNETISMO"
     },
     "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDCS",
+      "classroom": "LFS01",
+      "nrc": "183104",
+      "code": "IF876",
+      "students": 20,
+      "course": "LABORATORIO DE ELECTROMAGNETISMO"
+    },
+    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
   },
   {
     "data": {
@@ -540,7 +540,7 @@
       "classroom": "LFS06",
       "nrc": "118757",
       "code": "I6029",
-      "students": 24,
+      "students": 25,
       "course": "LABORATORIO DE FISICA III"
     },
     "professor": "CEJA ANDRADE, ISRAEL"
@@ -557,19 +557,6 @@
       "course": "LABORATORIO DE FISICA III"
     },
     "professor": "MORALES BAUTISTA, JACOB"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDCS",
-      "classroom": "LFS02",
-      "nrc": "183105",
-      "code": "I6029",
-      "students": 2,
-      "course": "LABORATORIO DE FISICA III"
-    },
-    "professor": "FRANCO HERNANDEZ, RAMIRO"
   },
   {
     "data": {
@@ -613,19 +600,6 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS02",
-      "nrc": "43554",
-      "code": "I7354",
-      "students": 21,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "DIAZ GUEVARA, JUAN JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDCS",
       "classroom": "LFS01",
@@ -638,16 +612,29 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
       "building": "DEDCS",
       "classroom": "LFS02",
-      "nrc": "42430",
-      "code": "I5988",
-      "students": 20,
+      "nrc": "43554",
+      "code": "I7354",
+      "students": 21,
       "course": "LABORATORIO DE MECANICA"
     },
-    "professor": "RAMOS LARIOS, GERARDO"
+    "professor": "DIAZ GUEVARA, JUAN JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDCS",
+      "classroom": "LFS01",
+      "nrc": "43559",
+      "code": "I7354",
+      "students": 21,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "VARGAS CARMONA, JORGE ALBERTO"
   },
   {
     "data": {
@@ -664,29 +651,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS02",
-      "nrc": "42428",
-      "code": "I5808",
-      "students": 23,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "NAVARRETE NAVARRETE, LUIS"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
+      "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDCS",
       "classroom": "LFS02",
-      "nrc": "61100",
-      "code": "I7354",
-      "students": 8,
+      "nrc": "42430",
+      "code": "I5988",
+      "students": 21,
       "course": "LABORATORIO DE MECANICA"
     },
-    "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
+    "professor": "RAMOS LARIOS, GERARDO"
   },
   {
     "data": {
@@ -703,13 +677,39 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDCS",
+      "classroom": "LFS02",
+      "nrc": "61100",
+      "code": "I7354",
+      "students": 8,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDCS",
-      "classroom": "LFS01",
-      "nrc": "42421",
+      "classroom": "LFS02",
+      "nrc": "42428",
       "code": "I5808",
-      "students": 21,
+      "students": 23,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "NAVARRETE NAVARRETE, LUIS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDCS",
+      "classroom": "LFS02",
+      "nrc": "133448",
+      "code": "I5988",
+      "students": 26,
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -729,13 +729,13 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDCS",
-      "classroom": "LFS02",
-      "nrc": "133448",
-      "code": "I5988",
-      "students": 26,
+      "classroom": "LFS01",
+      "nrc": "42421",
+      "code": "I5808",
+      "students": 21,
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -781,19 +781,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDCS",
-      "classroom": "LFS03",
-      "nrc": "194140",
-      "code": "I5988",
-      "students": 16,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "GAETA VERDIN, MARIO BOLIVAR"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DEDCS",
@@ -807,6 +794,19 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDCS",
+      "classroom": "LFS03",
+      "nrc": "194140",
+      "code": "I5988",
+      "students": 16,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "GAETA VERDIN, MARIO BOLIVAR"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". . . . V .",
       "building": "DEDCS",
@@ -817,19 +817,6 @@
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDCS",
-      "classroom": "LFS01",
-      "nrc": "43557",
-      "code": "I7354",
-      "students": 22,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "RAMOS LARIOS, GERARDO"
   },
   {
     "data": {
@@ -859,16 +846,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . . S",
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
       "building": "DEDCS",
-      "classroom": "LFS04",
-      "nrc": "202072",
-      "code": "I5988",
-      "students": 10,
+      "classroom": "LFS01",
+      "nrc": "43557",
+      "code": "I7354",
+      "students": 22,
       "course": "LABORATORIO DE MECANICA"
     },
-    "professor": "AVIÑA RAMIREZ, EDUARDO"
+    "professor": "RAMOS LARIOS, GERARDO"
   },
   {
     "data": {
@@ -895,6 +882,19 @@
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . . S",
+      "building": "DEDCS",
+      "classroom": "LFS04",
+      "nrc": "202072",
+      "code": "I5988",
+      "students": 10,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "AVIÑA RAMIREZ, EDUARDO"
   },
   {
     "data": {
@@ -930,10 +930,23 @@
       "classroom": "LFS01",
       "nrc": "77634",
       "code": "I7354",
-      "students": 21,
+      "students": 20,
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "NAVARRETE NAVARRETE, LUIS"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDCS",
+      "classroom": "LFS03",
+      "nrc": "77635",
+      "code": "I7354",
+      "students": 19,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "VARGAS CARMONA, JORGE ALBERTO"
   },
   {
     "data": {
@@ -1054,16 +1067,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
       "building": "DEDCS",
-      "classroom": "LFS08",
-      "nrc": "42435",
+      "classroom": "LFS06",
+      "nrc": "72268",
       "code": "I5998",
-      "students": 2,
+      "students": 11,
       "course": "LABORATORIO DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
     },
-    "professor": "IBARRA TORRES, JUAN CARLOS"
+    "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
   },
   {
     "data": {
@@ -1080,26 +1093,13 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDCS",
-      "classroom": "LFS06",
-      "nrc": "72268",
-      "code": "I5998",
-      "students": 10,
-      "course": "LABORATORIO DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
-    },
-    "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDCS",
       "classroom": "LFS06",
       "nrc": "172570",
       "code": "I5998",
-      "students": 17,
+      "students": 18,
       "course": "LABORATORIO DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
     },
     "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
@@ -1142,6 +1142,19 @@
       "course": "LABORATORIO DE SINTESIS DE MATERIALES"
     },
     "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDCS",
+      "classroom": "LFS07",
+      "nrc": "131849",
+      "code": "I5304",
+      "students": 30,
+      "course": "MECANICA"
+    },
+    "professor": "VARGAS CARMONA, JORGE ALBERTO"
   },
   {
     "data": {
@@ -1341,6 +1354,32 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDCS",
+      "classroom": "LFS06",
+      "nrc": "60839",
+      "code": "I7355",
+      "students": 22,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+    },
+    "professor": "VARGAS CARMONA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDCS",
+      "classroom": "LFS01",
+      "nrc": "153209",
+      "code": "I7355",
+      "students": 21,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+    },
+    "professor": "MACIAS AMBRIZ, ROGELIO JR."
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDCS",
       "classroom": "LFS01",
@@ -1411,7 +1450,7 @@
       "classroom": "LFS06",
       "nrc": "60834",
       "code": "I7352",
-      "students": 13,
+      "students": 14,
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
     "professor": "SANTAMARIA DOMINGUEZ, EDGAR IVAN"
@@ -1450,23 +1489,10 @@
       "classroom": "LFS04",
       "nrc": "153212",
       "code": "I7352",
-      "students": 22,
+      "students": 21,
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
     "professor": "GUTIERREZ DE VELASCO SANROMAN, GUILLERMO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS02",
-      "nrc": "159836",
-      "code": "I7352",
-      "students": 2,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
-    },
-    "professor": "GONZALEZ FIGUEROA, ARMANDO"
   },
   {
     "data": {

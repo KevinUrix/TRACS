@@ -524,19 +524,6 @@
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDZ2",
-      "classroom": "A006",
-      "nrc": "189645",
-      "code": "I5247",
-      "students": 39,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDZ2",
       "classroom": "A013",
       "nrc": "209707",
       "code": "IK892",
@@ -670,7 +657,7 @@
       "classroom": "A008",
       "nrc": "42534",
       "code": "I5799",
-      "students": 38,
+      "students": 37,
       "course": "PRECALCULO"
     },
     "professor": "SILOS VEGA, HECTOR XOLOTL"
@@ -885,19 +872,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDZ2",
-      "classroom": "A014",
-      "nrc": "172777",
-      "code": "IJ741",
-      "students": 6,
-      "course": "SEMINARIO DE INVESTIGACION"
-    },
-    "professor": "CAVAZOS GARDUÑO, ADRIANA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDZ2",
@@ -908,6 +882,19 @@
       "course": "SEMINARIO DE INVESTIGACION"
     },
     "professor": "AGUILAR USCANGA, BLANCA ROSA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ2",
+      "classroom": "A014",
+      "nrc": "172777",
+      "code": "IJ741",
+      "students": 6,
+      "course": "SEMINARIO DE INVESTIGACION"
+    },
+    "professor": "CAVAZOS GARDUÑO, ADRIANA"
   },
   {
     "data": {

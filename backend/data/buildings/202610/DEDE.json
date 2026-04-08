@@ -3751,7 +3751,7 @@
       "classroom": "A019",
       "nrc": "62961",
       "code": "I5821",
-      "students": 37,
+      "students": 38,
       "course": "INTRODUCCION A LOS FENOMENOS DE TRANSPORTE"
     },
     "professor": "CRUZ BARBA, LUIS EMILIO"
@@ -3790,7 +3790,7 @@
       "classroom": "A001",
       "nrc": "117637",
       "code": "I6174",
-      "students": 29,
+      "students": 28,
       "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
     },
     "professor": "GUTIERREZ MORALES, LIVIER AMALIA"
@@ -3803,7 +3803,7 @@
       "classroom": "A005",
       "nrc": "117637",
       "code": "I6174",
-      "students": 29,
+      "students": 28,
       "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
     },
     "professor": "GUTIERREZ MORALES, LIVIER AMALIA"
@@ -3816,7 +3816,7 @@
       "classroom": "A003",
       "nrc": "117637",
       "code": "I6174",
-      "students": 29,
+      "students": 28,
       "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
     },
     "professor": "GUTIERREZ MORALES, LIVIER AMALIA"
@@ -3998,7 +3998,7 @@
       "classroom": "LFB1",
       "nrc": "188396",
       "code": "I6176",
-      "students": 31,
+      "students": 30,
       "course": "LABORATORIO DE BIOLOGIA MOLECULAR Y GENETICA"
     },
     "professor": "MEDEROS TORRES, CLAUDIA VERONICA"
@@ -4011,7 +4011,7 @@
       "classroom": "A008",
       "nrc": "188396",
       "code": "I6176",
-      "students": 31,
+      "students": 30,
       "course": "LABORATORIO DE BIOLOGIA MOLECULAR Y GENETICA"
     },
     "professor": "MEDEROS TORRES, CLAUDIA VERONICA"
@@ -4499,32 +4499,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDE",
-      "classroom": "A013",
-      "nrc": "78700",
-      "code": "I5823",
-      "students": 33,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
-    },
-    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDE",
-      "classroom": "A014",
-      "nrc": "78700",
-      "code": "I5823",
-      "students": 33,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
-    },
-    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DEDE",
@@ -4577,16 +4551,29 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
       "building": "DEDE",
-      "classroom": "A015",
-      "nrc": "42459",
-      "code": "I5818",
-      "students": 8,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA I"
+      "classroom": "A013",
+      "nrc": "78700",
+      "code": "I5823",
+      "students": 33,
+      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
-    "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
+    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDE",
+      "classroom": "A014",
+      "nrc": "78700",
+      "code": "I5823",
+      "students": 33,
+      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
+    },
+    "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
   },
   {
     "data": {
@@ -4600,6 +4587,19 @@
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
     "professor": "SILVA JARA, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDE",
+      "classroom": "A015",
+      "nrc": "42459",
+      "code": "I5818",
+      "students": 8,
+      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA I"
+    },
+    "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
   },
   {
     "data": {
@@ -4694,19 +4694,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDE",
-      "classroom": "A016",
-      "nrc": "78701",
-      "code": "I5824",
-      "students": 11,
-      "course": "MECANICA DE FLUIDOS"
-    },
-    "professor": "ROBLES VASQUEZ, OSCAR"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DEDE",
@@ -4717,6 +4704,19 @@
       "course": "MECANICA DE FLUIDOS"
     },
     "professor": "FRANCO LEON, JOHSUEE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDE",
+      "classroom": "A016",
+      "nrc": "78701",
+      "code": "I5824",
+      "students": 11,
+      "course": "MECANICA DE FLUIDOS"
+    },
+    "professor": "ROBLES VASQUEZ, OSCAR"
   },
   {
     "data": {
@@ -4850,6 +4850,45 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDE",
+      "classroom": "A010",
+      "nrc": "117536",
+      "code": "I7554",
+      "students": 28,
+      "course": "MICROBIOLOGIA"
+    },
+    "professor": "GUERRA MARTINEZ, SUSANA OLIVIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDE",
+      "classroom": "A005",
+      "nrc": "117536",
+      "code": "I7554",
+      "students": 28,
+      "course": "MICROBIOLOGIA"
+    },
+    "professor": "GUERRA MARTINEZ, SUSANA OLIVIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDE",
+      "classroom": "A002",
+      "nrc": "117666",
+      "code": "I7554",
+      "students": 6,
+      "course": "MICROBIOLOGIA"
+    },
+    "professor": "GARAY MARTINEZ, LUZ EDUVIGES"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDE",
@@ -4870,19 +4909,6 @@
       "nrc": "76929",
       "code": "I6145",
       "students": 15,
-      "course": "MICROBIOLOGIA"
-    },
-    "professor": "GARAY MARTINEZ, LUZ EDUVIGES"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDE",
-      "classroom": "A002",
-      "nrc": "117666",
-      "code": "I7554",
-      "students": 6,
       "course": "MICROBIOLOGIA"
     },
     "professor": "GARAY MARTINEZ, LUZ EDUVIGES"
@@ -5149,6 +5175,32 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDE",
+      "classroom": "A011",
+      "nrc": "117658",
+      "code": "I6210",
+      "students": 31,
+      "course": "MICROBIOLOGIA INDUSTRIAL"
+    },
+    "professor": "RAMOS IBARRA, JOSE ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDE",
+      "classroom": "A011",
+      "nrc": "117658",
+      "code": "I6210",
+      "students": 31,
+      "course": "MICROBIOLOGIA INDUSTRIAL"
+    },
+    "professor": "RAMOS IBARRA, JOSE ROBERTO"
+  },
+  {
+    "data": {
       "schedule": "1500-1755",
       "days": ". M . . . .",
       "building": "DEDE",
@@ -5279,16 +5331,29 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDE",
+      "classroom": "A019",
+      "nrc": "42517",
+      "code": "I5849",
+      "students": 20,
+      "course": "MODULO DE AVANCE DEL PROYECTO I"
+    },
+    "professor": "GARCIA ENRIQUEZ, SALVADOR"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
-      "days": "L . . . . .",
+      "days": ". . . . V .",
       "building": "DEDE",
       "classroom": "A017",
-      "nrc": "117606",
-      "code": "I5851",
-      "students": 37,
-      "course": "MODULO DE AVANCE DEL PROYECTO III"
+      "nrc": "153936",
+      "code": "I5852",
+      "students": 35,
+      "course": "MODULO DE AVANCE DEL PROYECTO IV"
     },
-    "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
+    "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
   },
   {
     "data": {
@@ -5308,19 +5373,6 @@
       "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DEDE",
-      "classroom": "A019",
-      "nrc": "42517",
-      "code": "I5849",
-      "students": 20,
-      "course": "MODULO DE AVANCE DEL PROYECTO I"
-    },
-    "professor": "GARCIA ENRIQUEZ, SALVADOR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDE",
       "classroom": "A017",
       "nrc": "89952",
       "code": "I5850",
@@ -5328,19 +5380,6 @@
       "course": "MODULO DE AVANCE DEL PROYECTO II"
     },
     "professor": "ALMARAZ VEGA, ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDE",
-      "classroom": "A017",
-      "nrc": "153936",
-      "code": "I5852",
-      "students": 34,
-      "course": "MODULO DE AVANCE DEL PROYECTO IV"
-    },
-    "professor": "MARTIN DEL CAMPO CAMPOS, ANGELINA"
   },
   {
     "data": {
@@ -5357,19 +5396,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDE",
-      "classroom": "A017",
-      "nrc": "117603",
-      "code": "I5850",
-      "students": 6,
-      "course": "MODULO DE AVANCE DEL PROYECTO II"
-    },
-    "professor": "ALMARAZ VEGA, ERNESTO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDE",
@@ -5380,6 +5406,19 @@
       "course": "MODULO DE AVANCE DEL PROYECTO IV"
     },
     "professor": "MARTINEZ BERNAL, BRYAN GIOVANNY"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDE",
+      "classroom": "A017",
+      "nrc": "117603",
+      "code": "I5850",
+      "students": 6,
+      "course": "MODULO DE AVANCE DEL PROYECTO II"
+    },
+    "professor": "ALMARAZ VEGA, ERNESTO"
   },
   {
     "data": {
@@ -5402,7 +5441,7 @@
       "classroom": "A003",
       "nrc": "42520",
       "code": "I6135",
-      "students": 31,
+      "students": 30,
       "course": "MORFOLOGIA"
     },
     "professor": "VIRGEN MONTELONGO, MARIA"
@@ -5415,7 +5454,7 @@
       "classroom": "A004",
       "nrc": "42520",
       "code": "I6135",
-      "students": 31,
+      "students": 30,
       "course": "MORFOLOGIA"
     },
     "professor": "VIRGEN MONTELONGO, MARIA"
@@ -5787,6 +5826,32 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDE",
+      "classroom": "A017",
+      "nrc": "125978",
+      "code": "I5836",
+      "students": 18,
+      "course": "PROCESOS DE SEPARACION I"
+    },
+    "professor": "ROSALES RIVERA, LUIS CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDE",
+      "classroom": "A018",
+      "nrc": "125978",
+      "code": "I5836",
+      "students": 18,
+      "course": "PROCESOS DE SEPARACION I"
+    },
+    "professor": "ROSALES RIVERA, LUIS CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": ". . I . V .",
       "building": "DEDE",
       "classroom": "A019",
@@ -5961,7 +6026,7 @@
       "classroom": "A005",
       "nrc": "103808",
       "code": "I6170",
-      "students": 33,
+      "students": 32,
       "course": "QUIMICA Y TOXICOLOGIA FORENSE"
     },
     "professor": "MARTINEZ DELGADILLO, BARBARITA"
@@ -6026,7 +6091,7 @@
       "classroom": "A002",
       "nrc": "42637",
       "code": "I6136",
-      "students": 35,
+      "students": 34,
       "course": "SALUD Y SOCIEDAD"
     },
     "professor": "GALVAN ESPINOSA, ARGELIA MARISSA"
@@ -6039,7 +6104,7 @@
       "classroom": "A003",
       "nrc": "42637",
       "code": "I6136",
-      "students": 35,
+      "students": 34,
       "course": "SALUD Y SOCIEDAD"
     },
     "professor": "GALVAN ESPINOSA, ARGELIA MARISSA"
@@ -6416,7 +6481,7 @@
       "classroom": "A013",
       "nrc": "252581",
       "code": "V2340",
-      "students": 4,
+      "students": 2,
       "course": "SEMINARIO DE TESIS III"
     },
     "professor": "ZEPEDA MORALES, ADELAIDA SARA MINIA"
@@ -6923,7 +6988,7 @@
       "classroom": "A005",
       "nrc": "250369",
       "code": "I6173",
-      "students": 27,
+      "students": 25,
       "course": "SERVICIOS FARMACEUTICOS HOSPITALARIOS"
     },
     "professor": "DE ALMEIDA CUNHA, NELSON BRUNO"
@@ -6936,7 +7001,7 @@
       "classroom": "A006",
       "nrc": "250369",
       "code": "I6173",
-      "students": 27,
+      "students": 25,
       "course": "SERVICIOS FARMACEUTICOS HOSPITALARIOS"
     },
     "professor": "DE ALMEIDA CUNHA, NELSON BRUNO"
@@ -7339,7 +7404,7 @@
       "classroom": "A003",
       "nrc": "103790",
       "code": "I6167",
-      "students": 29,
+      "students": 28,
       "course": "TECNOLOGIA FARMACEUTICA II"
     },
     "professor": "ANGUIANO SEVILLA, LUIS ALBERTO"
@@ -7352,7 +7417,7 @@
       "classroom": "A005",
       "nrc": "103790",
       "code": "I6167",
-      "students": 29,
+      "students": 28,
       "course": "TECNOLOGIA FARMACEUTICA II"
     },
     "professor": "ANGUIANO SEVILLA, LUIS ALBERTO"
@@ -7365,7 +7430,7 @@
       "classroom": "A001",
       "nrc": "103790",
       "code": "I6167",
-      "students": 29,
+      "students": 28,
       "course": "TECNOLOGIA FARMACEUTICA II"
     },
     "professor": "ANGUIANO SEVILLA, LUIS ALBERTO"
@@ -7518,19 +7583,6 @@
       "schedule": "1300-1455",
       "days": ". . . . . S",
       "building": "DEDE",
-      "classroom": "A019",
-      "nrc": "139228",
-      "code": "I5880",
-      "students": 6,
-      "course": "TEMAS SELECTOS EN INGENIERIA QUIMICA II"
-    },
-    "professor": "MARTINEZ CARDENAS, CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . . S",
-      "building": "DEDE",
       "classroom": "A018",
       "nrc": "109801",
       "code": "I5879",
@@ -7538,6 +7590,19 @@
       "course": "TEMAS SELECTOS EN INGENIERIA QUIMICA I"
     },
     "professor": "ARELLANO MARTINEZ, MARTIN RIGOBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . . S",
+      "building": "DEDE",
+      "classroom": "A019",
+      "nrc": "139228",
+      "code": "I5880",
+      "students": 6,
+      "course": "TEMAS SELECTOS EN INGENIERIA QUIMICA II"
+    },
+    "professor": "MARTINEZ CARDENAS, CRISTINA"
   },
   {
     "data": {
@@ -7664,7 +7729,7 @@
       "classroom": "A005",
       "nrc": "117642",
       "code": "I6175",
-      "students": 25,
+      "students": 24,
       "course": "TOXICOLOGIA APLICADA"
     },
     "professor": "HERNANDEZ DUARTE, MARIA SONIA"
@@ -7690,7 +7755,7 @@
       "classroom": "A007",
       "nrc": "117644",
       "code": "I6175",
-      "students": 14,
+      "students": 13,
       "course": "TOXICOLOGIA APLICADA"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -7889,19 +7954,6 @@
       "course": "TRANSFERENCIA  DE CALOR Y MASA"
     },
     "professor": "FRANCO LEON, JOHSUEE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDE",
-      "classroom": "A018",
-      "nrc": "104042",
-      "code": "I5830",
-      "students": 36,
-      "course": "TRANSFERENCIA DE MASA"
-    },
-    "professor": "MUNGUIA MEDINA, SERGIO JAVIER"
   },
   {
     "data": {

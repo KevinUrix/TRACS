@@ -1,12 +1,21 @@
-// src/components/AccountConfigButton.js
 import { useNavigate, useLocation } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
 import './interfaz_calendar/calendar.css';
 
 export default function AccountConfigButton({ className = '' }) {
-
   const navigate = useNavigate();
   const location = useLocation();
+  const [scaleFix, setScaleFix] = useState(1);
+
+  useEffect(() => {
+    const adjustScale = () => {
+      const zoomLevel = window.devicePixelRatio || 1;
+      setScaleFix(zoomLevel < 1 ? 1 / zoomLevel : 1);
+    };
+    adjustScale();
+    window.addEventListener('resize', adjustScale);
+    return () => window.removeEventListener('resize', adjustScale);
+  }, []);
 
   const handleClick = () => {
     if (location.pathname === '/config') {
@@ -17,51 +26,52 @@ export default function AccountConfigButton({ className = '' }) {
   };
 
   const isInConfig = location.pathname === '/config';
+
+  const dynamicTop = scaleFix > 1.3 ? 'top-8' : 'top-0';
   
   return (
     <button
       onClick={handleClick}
-      className={`config-button mt-1 mr-7 text-white transition ${className}`}
-      title={isInConfig ? "Ir a inicio" : "Configuración de cuenta"}
+      className={`config-button mt-1 mr-7 text-white transition relative group flex items-center justify-center ${className}`}
     >
       {isInConfig ? (
         // Ícono de inicio
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-10 h-10 text-white"
+          className="w-11 h-11 text-white"
           fill="none"
-          viewBox="0 0 26 26"
+          viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={2.3}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3 9.75L12 3l9 6.75M4.5 10.5V21h15V10.5"
-          />
+          <g transform="translate(1.2 1.2) scale(0.9)">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 9.75L12 3l9 6.75M4.5 10.5V21h15V10.5" />
+          </g>
         </svg>
       ) : (
         // Ícono de configuración
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-10 h-10 text-white"
+          className="w-11 h-11 text-white"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          strokeWidth={2}
+          strokeWidth={2.1}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0a1.724 1.724 0 002.516.947 1.724 1.724 0 012.296.488c.33.456.453 1.036.326 1.586a1.724 1.724 0 00.947 2.516c.921.3.921 1.603 0 1.902a1.724 1.724 0 00-.947 2.516 1.724 1.724 0 01-.326 1.586 1.724 1.724 0 01-2.296.488 1.724 1.724 0 00-2.516.947c-.3.921-1.603.921-1.902 0a1.724 1.724 0 00-2.516-.947 1.724 1.724 0 01-2.296-.488 1.724 1.724 0 01-.326-1.586 1.724 1.724 0 00-.947-2.516c-.921-.3-.921-1.603 0-1.902a1.724 1.724 0 00.947-2.516 1.724 1.724 0 01.326-1.586 1.724 1.724 0 012.296-.488 1.724 1.724 0 002.516-.947z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-          />
+          <g transform="translate(2.4 2.4) scale(0.8)">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+          </g>
         </svg>
       )}
+
+      {/* Tooltip con tu posición original */}
+      <span 
+        className={`absolute right-12 ${dynamicTop} mb-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all z-50 pointer-events-none origin-bottom-right`}
+        style={{ transform: `scale(${scaleFix})` }}
+      >
+        {isInConfig ? 'Ir a inicio.' : 'Configuración de cuenta.'}
+      </span>
     </button>
   );
 }

@@ -1,9 +1,10 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
-import './interfaz_calendar/calendar.css'; // Importa el archivo de estilos CSS
+import './interfaz_calendar/calendar.css';
 import { toast } from 'react-toastify';
 import LoginLogoutButton from './LoginLogoutButton';
 import AccountConfigButton from './AccountConfigButton';
+import ReloadPage from './ReloadPage';
 
 export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setUserRole}) {
   const navigate = useNavigate();
@@ -31,13 +32,13 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
   const isActive = (target) => {
     const cur = normalizePath(location.pathname);
     const base = normalizePath(target);
-
     return cur === base || cur.startsWith(base + '/');
   };
 
   return (
     <>
       <nav className="navbar flex items-center justify-between px-6 bg-white shadow relative">
+        
         {/* Logo TRACS a la izquierda */}
         <div className="flex items-center flex-shrink-0">
           <Link to={linkTarget} className="navbar-brand">TRACS</Link>
@@ -59,7 +60,6 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
             </svg>
           </button>
         ) : (
-          // Mostrar botón de login directamente si no está logueado
           <div className="md:hidden">
             <LoginLogoutButton
               isLoggedIn={false}
@@ -69,9 +69,7 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           </div>
         )}
 
-        {/* Contenedor central y derecho - oculto en móvil */}
-        <div className="mr-15 hidden md:flex flex-1 justify-center items-center gap-8">
-          {/* Links centrados */}
+        <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-8">
           {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
             <div className="flex gap-6">
               <Link to="/calendar" className={`nav-link ${isActive('/calendar') ? 'active' : ''}`}>Calendario</Link>
@@ -85,10 +83,12 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           )}
         </div>
 
-        {/* Botón login/logout a la derecha extrema (oculto en móvil) */}
+        {/* Contenedor derecho */}
         <div className="hidden md:flex flex-shrink-0 items-center">
+          <ReloadPage/>
+          
           {isLoggedIn && <AccountConfigButton className="hidden md:flex" />}
-
+          
           <LoginLogoutButton
             isLoggedIn={isLoggedIn}
             handleLogout={handleLogout}
@@ -100,7 +100,6 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
         {/* Menú hamburguesa desplegado en móvil */}
         {menuOpen && (
           <div className="mobile-menu background-Selects">
-            {/* Links y botón logout/login */}
             {(userRole === 'superuser' || userRole === 'user' || userRole === 'tecnico') && (
               <>
                 <div className="menu-row">
@@ -132,13 +131,13 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
               </>
             )}
             {!isLoggedIn && (
-                  <div className="flex gap-6 pl-16">
-                    <LoginLogoutButton
-                      isLoggedIn={isLoggedIn}
-                      handleLogout={() => { handleLogout(); setMenuOpen(false); }}
-                      handleLoginRedirect={() => { handleLoginRedirect(); setMenuOpen(false); }}
-                    />
-                  </div>
+              <div className="flex gap-6 pl-16">
+                <LoginLogoutButton
+                  isLoggedIn={isLoggedIn}
+                  handleLogout={() => { handleLogout(); setMenuOpen(false); }}
+                  handleLoginRedirect={() => { handleLoginRedirect(); setMenuOpen(false); }}
+                />
+              </div>
             )}
           </div>
         )}

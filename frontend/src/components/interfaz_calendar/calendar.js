@@ -162,10 +162,11 @@ export default function Calendar() {
 
   /* ---------- CARGA DE HORARIOS ---------- */
   useEffect(() => {
-    if (!selectedCycle) return; 
+    if (!selectedCycle) return;
 
     setFullSchedule({});
 
+    const abortController = new AbortController();
     const cacheKey = `full_schedule_${selectedCycle}`;
     const cached = sessionStorage.getItem(cacheKey);
 
@@ -174,22 +175,23 @@ export default function Calendar() {
         const parsedCache = JSON.parse(cached);
         if (Object.keys(parsedCache).length > 0) {
           setFullSchedule(parsedCache);
-          console.log("Horario recuperado instantáneamente desde sessionStorage.");
+          console.log("Horario recuperado instantaneamente desde sessionStorage.");
           return;
         }
       } catch (e) {
-        console.warn("Caché corrupto, descargando nuevamente...");
+        console.warn("Cache corrupto, descargando nuevamente...");
       }
     }
 
     const fetchGlobalSchedule = async () => {
       try {
-        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}`);
+        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}`, { signal: abortController.signal });
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
 
         const result = await response.json();
-        const globalData = result.data || result; 
+        const globalData = result.data || result;
 
+        if (abortController.signal.aborted) return;
         setFullSchedule(globalData);
 
         sessionStorage.setItem(cacheKey, JSON.stringify(globalData));
@@ -202,14 +204,19 @@ export default function Calendar() {
         }
 
       } catch (error) {
+        if (error.name === 'AbortError') {
+          console.log('Fetch abortado por cambio de ciclo');
+          return;
+        }
         try {
           toast.error("Fallo en SIIAU, iniciando descarga de archivos locales...", { autoClose: 2000 });
           
-          const res = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}`);
+          const res = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}`, { signal: abortController.signal });
           if (!res.ok) throw new Error("Fallo al obtener respaldo local");
 
           const fallbackData = await res.json();
 
+          if (abortController.signal.aborted) return;
           setFullSchedule(fallbackData);
           sessionStorage.setItem(cacheKey, JSON.stringify(fallbackData));
 
@@ -220,16 +227,22 @@ export default function Calendar() {
             });
           }
 
-          console.log("Horario ensamblado desde archivos locales y guardado en Caché.");
+          console.log("Horario ensamblado desde archivos locales y guardado en Cache.");
 
         } catch (localErr) {
-          toast.error("Error crítico al obtener los horarios de todos los servidores.");
+          if (localErr.name === 'AbortError') {
+            console.log('Fetch local abortado por cambio de ciclo');
+            return;
+          }
+          toast.error("Error critico al obtener los horarios de forma local. Por favor, intente más tarde.", { autoClose: 3000 });
           setFullSchedule({});
         }
       }
     };
 
     fetchGlobalSchedule();
+
+    return () => abortController.abort();
   }, [selectedCycle]);
 
 

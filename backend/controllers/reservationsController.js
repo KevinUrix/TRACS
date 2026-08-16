@@ -12,6 +12,16 @@ const mapBuildingName = (name) => {
   return name;
 };
 
+const validateCycle = (cycle) => {
+  if (!cycle || typeof cycle !== 'string') return false;
+  return /^[A-Z0-9]{3,8}$/.test(cycle.trim());
+};
+
+const validateBuildingName = (building) => {
+  if (!building || typeof building !== 'string') return false;
+  return /^[A-Z0-9_]{2,10}$/.test(building.trim());
+};
+
 //
 // GUARDAR RESERVAS
 //
@@ -31,6 +41,14 @@ const saveReservation = async (req, res) => {
 
   if (!reservationData || !reservationData.course || !reservationData.professor || !cycle || !buildingName || !user) {
     return res.status(400).json({ error: 'Faltan datos obligatorios' });
+  }
+
+  if (!validateCycle(cycle)) {
+    return res.status(400).json({ error: 'Ciclo invalido' });
+  }
+
+  if (!validateBuildingName(buildingName)) {
+    return res.status(400).json({ error: 'Edificio invalido' });
   }
 
   try {
@@ -115,6 +133,15 @@ const saveReservation = async (req, res) => {
 const deleteReservation = async (req, res) => {
   const { cycle, buildingName, professor, schedule, date, user } = req.query;
   const mappedBuildingName = mapBuildingName(buildingName);
+  
+  if (!validateCycle(cycle)) {
+    return res.status(400).json({ error: 'Ciclo invalido' });
+  }
+
+  if (!validateBuildingName(buildingName)) {
+    return res.status(400).json({ error: 'Edificio invalido' });
+  }
+  
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
 
   try {
@@ -221,6 +248,14 @@ const updateReservation = async (req, res) => {
 
   if (!updatedData || !updatedData.course || !updatedData.professor || !cycle || !buildingName || !user) {
     return res.status(400).json({ error: 'Faltan datos obligatorios para la reserva' });
+  }
+
+  if (!validateCycle(cycle)) {
+    return res.status(400).json({ error: 'Ciclo invalido' });
+  }
+
+  if (!validateBuildingName(buildingName)) {
+    return res.status(400).json({ error: 'Edificio invalido' });
   }
 
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);
@@ -390,6 +425,14 @@ const getReservations = async (req, res) => {
 
   if (!cycle || !buildingName) {
     return res.status(400).json({ error: 'No se recibió el ciclo, el edificio o ambos' });
+  }
+  
+  if (!validateCycle(cycle)) {
+    return res.status(400).json({ error: 'Ciclo invalido' });
+  }
+
+  if (!validateBuildingName(buildingName)) {
+    return res.status(400).json({ error: 'Edificio invalido' });
   }
 
   const filePath = path.join(__dirname, `../data/reservations/${cycle}/${buildingName}.json`);

@@ -3,11 +3,20 @@ const path = require('path');
 const cache = require('../scraper/cache');
 const buildingsData = require('../config/buildings.json');
 
+const validateCycle = (cycle) => {
+  if (!cycle || typeof cycle !== 'string') return false;
+  return /^[A-Z0-9]{3,8}$/.test(cycle.trim());
+};
+
 const localSchedule = async (req, res) => {
   const { cycle } = req.query;
 
   if (!cycle) {
     return res.status(400).json({ error: 'No se recibió el ciclo' });
+  }
+
+  if (!validateCycle(cycle)) {
+    return res.status(400).json({ error: 'Ciclo inválido' });
   }
 
   const cacheKey = `local-schedule-all-${cycle}`;

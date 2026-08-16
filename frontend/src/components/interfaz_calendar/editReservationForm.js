@@ -62,7 +62,7 @@ export default function EditReservationForm({ reservation, onSave, onCancel, sel
     };
 
 
-  const [start, end] = schedule.split('-') || ['', ''];
+  const [start, end] = (schedule || '').split('-') || ['', ''];
   const formattedStart = formatTimeWithAMPM(start);
   const formattedEnd = formatTimeWithAMPM(end);
 

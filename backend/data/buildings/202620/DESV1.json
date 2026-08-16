@@ -1,0 +1,912 @@
+[
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "160017",
+      "code": "IC611",
+      "students": 37,
+      "course": "ANALISIS ESTRUCTURAL I"
+    },
+    "professor": "PORRAS ZARATE, IVAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . . S",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "212164",
+      "code": "V2314",
+      "students": 0,
+      "course": "BIOLOGIA CELULAR"
+    },
+    "professor": "MEZA RIOS, ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "160579",
+      "code": "IG366",
+      "students": 1,
+      "course": "CIBER-INFRAESTRUCTURA"
+    },
+    "professor": "ARANGUREN NAVARRO, ITZEL NIASANDIU"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A049",
+      "nrc": "189674",
+      "code": "IC626",
+      "students": 27,
+      "course": "CIMENTACIONES"
+    },
+    "professor": "VAZQUEZ RODRIGUEZ, MARIA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "118760",
+      "code": "I6040",
+      "students": 7,
+      "course": "CLINICA DE FORMACION ESPECIALIZANTES"
+    },
+    "professor": "KLIMOV, ANDREI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "118760",
+      "code": "I6040",
+      "students": 7,
+      "course": "CLINICA DE FORMACION ESPECIALIZANTES"
+    },
+    "professor": "KLIMOV, ANDREI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . . S",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "235562",
+      "code": "I6040",
+      "students": 24,
+      "course": "CLINICA DE FORMACION ESPECIALIZANTES"
+    },
+    "professor": "KEMP, SIMON NICHOLAS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . . S",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "235562",
+      "code": "I6040",
+      "students": 24,
+      "course": "CLINICA DE FORMACION ESPECIALIZANTES"
+    },
+    "professor": "KEMP, SIMON NICHOLAS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "95434",
+      "code": "I6025",
+      "students": 22,
+      "course": "CLINICA DE FORMACION FUNDAMENTAL"
+    },
+    "professor": "FRANCO HERNANDEZ, RAMIRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "95434",
+      "code": "I6025",
+      "students": 22,
+      "course": "CLINICA DE FORMACION FUNDAMENTAL"
+    },
+    "professor": "FRANCO HERNANDEZ, RAMIRO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "118761",
+      "code": "I6041",
+      "students": 39,
+      "course": "CLINICA DE FORMACION INTER O MULTIDISCIPLINAR"
+    },
+    "professor": "MENDEZ MALDONADO, GLORIA ARLETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "118761",
+      "code": "I6041",
+      "students": 39,
+      "course": "CLINICA DE FORMACION INTER O MULTIDISCIPLINAR"
+    },
+    "professor": "MENDEZ MALDONADO, GLORIA ARLETTE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "42314",
+      "code": "I6032",
+      "students": 0,
+      "course": "CLINICA TUTORIAL I"
+    },
+    "professor": "ZARATE GALVEZ, SARAI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "42316",
+      "code": "I6033",
+      "students": 2,
+      "course": "CLINICA TUTORIAL II"
+    },
+    "professor": "FRANCO HERNANDEZ, RAMIRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "60847",
+      "code": "I6034",
+      "students": 6,
+      "course": "CLINICA TUTORIAL III"
+    },
+    "professor": "ZAMUDIO OJEDA, ADALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "252519",
+      "code": "I6034",
+      "students": 24,
+      "course": "CLINICA TUTORIAL III"
+    },
+    "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "105698",
+      "code": "I6035",
+      "students": 17,
+      "course": "CLINICA TUTORIAL IV"
+    },
+    "professor": "MENDEZ MALDONADO, GLORIA ARLETTE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "118759",
+      "code": "I6036",
+      "students": 7,
+      "course": "CLINICA TUTORIAL V"
+    },
+    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "252520",
+      "code": "I6036",
+      "students": 16,
+      "course": "CLINICA TUTORIAL V"
+    },
+    "professor": "FRANCO HERNANDEZ, RAMIRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "160214",
+      "code": "IG423",
+      "students": 2,
+      "course": "COMPUTO CIENTIFICO"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "A049",
+      "nrc": "216590",
+      "code": "IG427",
+      "students": 2,
+      "course": "CONTROL DIGITAL"
+    },
+    "professor": "CRUZ ZAVALA, EMMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "172679",
+      "code": "IG463",
+      "students": 3,
+      "course": "DESARROLLO DE SISTEMAS EMBEBIDOS I"
+    },
+    "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1955",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A003",
+      "nrc": "215766",
+      "code": "I7728",
+      "students": 12,
+      "course": "DIAGNOSTICO DE NECESIDADES DE TECNOLOGIAS DE INFORMACION Y COMUNICACION"
+    },
+    "professor": "ARREOLA GONZALEZ, MAURICIO RODOLFO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "172684",
+      "code": "IG460",
+      "students": 3,
+      "course": "DISEÑO DE SISTEMAS VLSI"
+    },
+    "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "136324",
+      "code": "IB078",
+      "students": 1,
+      "course": "ESTRUCTURA CRISTALINA"
+    },
+    "professor": "MICHEL URIBE, CARLOS RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A049",
+      "nrc": "224381",
+      "code": "V2362",
+      "students": 1,
+      "course": "GEOTECNIA AMBIENTAL"
+    },
+    "professor": "OJEDA MAGAÑA, BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "166652",
+      "code": "I6799",
+      "students": 1,
+      "course": "IDENTIFICACION DE SISTEMAS"
+    },
+    "professor": "PEREZ CISNEROS, MARCO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "189168",
+      "code": "IC630",
+      "students": 20,
+      "course": "INGENIERIA SISMICA"
+    },
+    "professor": "PORRAS ZARATE, IVAN"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "38433",
+      "code": "I3288",
+      "students": 0,
+      "course": "INTRODUCCION A LA CIENCIA DE LOS ALIMENTOS"
+    },
+    "professor": "MIRAMONTES CORONA, CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-2055",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "38431",
+      "code": "I3287",
+      "students": 0,
+      "course": "INTRODUCCION A LA MICROBIOLOGIA"
+    },
+    "professor": "OROZCO HERNANDEZ, LAURA OFELIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "132016",
+      "code": "IC675",
+      "students": 0,
+      "course": "MECANICA"
+    },
+    "professor": "ZARATE GALVEZ, SARAI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "174229",
+      "code": "I6817",
+      "students": 0,
+      "course": "METODOLOGIA DE LA INVESTIGACION CIENTIFICA"
+    },
+    "professor": "PEÑA PEREZ NEGRON, ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . . . S",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "154463",
+      "code": "IF517",
+      "students": 0,
+      "course": "METODOS DE FISICA EXPERIMENTAL"
+    },
+    "professor": "GOMEZ ROSAS, GILBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "171992",
+      "code": "IC622",
+      "students": 25,
+      "course": "PLANEACION DE SISTEMAS"
+    },
+    "professor": "ALMAGUER AVILA, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "171993",
+      "code": "IC622",
+      "students": 32,
+      "course": "PLANEACION DE SISTEMAS"
+    },
+    "professor": "ALMAGUER AVILA, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0000-0033",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "42546",
+      "code": "I5801",
+      "students": 20,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "BUENROSTRO ARCEO, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "206615",
+      "code": "V0274",
+      "students": 0,
+      "course": "PROCESAMIENTO DIGITAL DE IMAGENES"
+    },
+    "professor": "ZALDIVAR NAVARRO, DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1755",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "223381",
+      "code": "IC636",
+      "students": 35,
+      "course": "PROYECTO MODULAR DE PLANEACION,CONSTRUCCION Y ADMINISTRACION DE OBRA CIVIL"
+    },
+    "professor": "GOMEZ TORRES, HECTOR GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "209879",
+      "code": "V1144",
+      "students": 14,
+      "course": "SEMINARIO DE AVANCE DE INVESTIGACION III"
+    },
+    "professor": "SANCHEZ SANCHEZ, OSCAR DIDIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "210890",
+      "code": "V1145",
+      "students": 8,
+      "course": "SEMINARIO DE AVANCE DE INVESTIGACION IV"
+    },
+    "professor": "VALDIVIA GONZALEZ, ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "A048",
+      "nrc": "204995",
+      "code": "V1143",
+      "students": 10,
+      "course": "SEMINARIO DE AVANCE DE INVESTIGACION II"
+    },
+    "professor": "SANCHEZ SANCHEZ, OSCAR DIDIER"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "117528",
+      "code": "I6984",
+      "students": 1,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION VI"
+    },
+    "professor": "BARCENA SOTO, MAXIMILIANO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1755",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "79458",
+      "code": "I6981",
+      "students": 5,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION III"
+    },
+    "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "A010",
+      "nrc": "102106",
+      "code": "I6982",
+      "students": 5,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION IV"
+    },
+    "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "187375",
+      "code": "IK679",
+      "students": 4,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
+    },
+    "professor": "ANAYA ESPARZA, LUIS MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "182091",
+      "code": "IK677",
+      "students": 6,
+      "course": "SEMINARIO DE AVANCE DE TESIS I"
+    },
+    "professor": "VILLAGRAN DE LA MORA, BLANCA ZUAMI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "227953",
+      "code": "V2143",
+      "students": 2,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO III"
+    },
+    "professor": "KLIMOV, ANDREI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "227953",
+      "code": "V2143",
+      "students": 2,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO III"
+    },
+    "professor": "KLIMOV, ANDREI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "215970",
+      "code": "V2142",
+      "students": 4,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO II"
+    },
+    "professor": "JARAMILLO PEREZ, VICTOR MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "215970",
+      "code": "V2142",
+      "students": 4,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO II"
+    },
+    "professor": "JARAMILLO PEREZ, VICTOR MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "209880",
+      "code": "V1105",
+      "students": 24,
+      "course": "SEMINARIO DE TESIS I"
+    },
+    "professor": "DIAZ GUERRERO, PRIMITIVO EMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A048",
+      "nrc": "210885",
+      "code": "V1106",
+      "students": 12,
+      "course": "SEMINARIO DE TESIS II"
+    },
+    "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . . S",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "76939",
+      "code": "I6163",
+      "students": 30,
+      "course": "SEMINARIO DE TUTORIA INTERMEDIA II"
+    },
+    "professor": "RAMIREZ GABRIEL, MA. ISABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "201921",
+      "code": "V1104",
+      "students": 0,
+      "course": "SEMINARIO INTERDISCIPLINAR"
+    },
+    "professor": "PALAFOX GONZALEZ, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "A047",
+      "nrc": "44500",
+      "code": "I6733",
+      "students": 11,
+      "course": "SEMINARIO INTERDISCIPLINARIO DE INVESTIGACION II"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "A048",
+      "nrc": "166742",
+      "code": "I6732",
+      "students": 1,
+      "course": "SEMINARIO INTERDISCIPLINARIO DE INVESTIGACION I"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "125247",
+      "code": "IB091",
+      "students": 0,
+      "course": "SEMINARIO MODULAR I"
+    },
+    "professor": "SANTANA ARANDA, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "153199",
+      "code": "IB092",
+      "students": 4,
+      "course": "SEMINARIO MODULAR II"
+    },
+    "professor": "GUILLEN BONILLA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "160185",
+      "code": "IG435",
+      "students": 2,
+      "course": "SISTEMAS DE CONTROL AUTOADAPTABLE Y ROBUSTO I"
+    },
+    "professor": "RUIZ VELAZQUEZ, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "A040",
+      "nrc": "87133",
+      "code": "I6804",
+      "students": 0,
+      "course": "SISTEMAS LINEALES"
+    },
+    "professor": "RUIZ VELAZQUEZ, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1955",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "A010",
+      "nrc": "79464",
+      "code": "I7013",
+      "students": 0,
+      "course": "TEMA SELECTOS EN BIOQUIMICA"
+    },
+    "professor": "CORDOVA LOPEZ, JESUS ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "133442",
+      "code": "I6769",
+      "students": 2,
+      "course": "TOPICOS DE PROCESAMIENTOS DE IMAGENES"
+    },
+    "professor": "CUEVAS JIMENEZ, ERIK VALDEMAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "146007",
+      "code": "I6787",
+      "students": 1,
+      "course": "TOPICOS SELECTOS DE AUTOMATAS"
+    },
+    "professor": "ALDANA LOPEZ, CARLOS IVAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "105580",
+      "code": "I6790",
+      "students": 0,
+      "course": "TOPICOS SELECTOS DE METODOS MATEMATICOS"
+    },
+    "professor": "CUEVAS JIMENEZ, ERIK VALDEMAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "A050",
+      "nrc": "160188",
+      "code": "IG521",
+      "students": 2,
+      "course": "TOPICOS SELECTOS DE SISTEMAS DE CONTROL I"
+    },
+    "professor": "NUÑO ORTEGA, EMMANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "145628",
+      "code": "I6807",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN GRAFICAS POR COMPUTADORA"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "83803",
+      "code": "I6808",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN MATEMATICAS AVANZADAS"
+    },
+    "professor": "OLIVA NAVARRO, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1855",
+      "days": ". . . . V .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "222819",
+      "code": "V0278",
+      "students": 2,
+      "course": "TOPICOS SELECTOS EN SISTEMAS INTELIGENTES"
+    },
+    "professor": "PEREZ CISNEROS, MARCO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "153203",
+      "code": "IB097",
+      "students": 12,
+      "course": "TUTORIA DE CIENCIA DE MATERIALES III"
+    },
+    "professor": "GILDO ORTIZ, LORENZO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "216234",
+      "code": "V2320",
+      "students": 2,
+      "course": "VIAS DE SEÑALIZACION Y TRANSDUCCION DE SEÑALES CELULARES"
+    },
+    "professor": "MACHADO SULBARAN, ANDREA CAROLINA"
+  }
+]

@@ -1,15 +1,18 @@
-const { scrapeData } = require('../scraper/schedules');
+const { scrapeData } = require('../scraper/schedules'); 
 
 const getSchedule = async (req, res) => {
-  const { cycle, buildingName } = req.query;
+  const { cycle } = req.query;
 
-  if (!cycle || !buildingName) {
-    return res.status(400).json({ error: "Faltan parámetros 'cycle' o 'buildingName'" });
+  if (!cycle) {
+    return res.status(400).json({ error: "Falta el parámetro 'cycle'" });
   }
 
   try {
-    const data = await scrapeData(cycle, buildingName);
-    return res.json({ [buildingName]: data });
+    const result = await scrapeData(cycle);
+    if (result.error) {
+        return res.status(500).json({ error: "Error al consultar SIIAU" });
+    }
+    return res.json({ data: result.data });
   } catch (error) {
     console.error('Error al obtener los datos:', error.message);
     return res.status(500).json({ error: "Error al obtener los datos" });

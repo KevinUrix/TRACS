@@ -85,7 +85,7 @@
       "classroom": "LC02",
       "nrc": "162746",
       "code": "IF882",
-      "students": 27,
+      "students": 26,
       "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -98,7 +98,7 @@
       "classroom": "LC02",
       "nrc": "162746",
       "code": "IF882",
-      "students": 27,
+      "students": 26,
       "course": "DISEÑO ASISTIDO PARA LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -332,7 +332,7 @@
       "classroom": "LC01",
       "nrc": "175273",
       "code": "IF891",
-      "students": 13,
+      "students": 14,
       "course": "FINANZAS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -345,7 +345,7 @@
       "classroom": "LC01",
       "nrc": "86189",
       "code": "I7440",
-      "students": 24,
+      "students": 26,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -358,7 +358,7 @@
       "classroom": "LC03",
       "nrc": "86189",
       "code": "I7440",
-      "students": 24,
+      "students": 26,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -527,7 +527,7 @@
       "classroom": "",
       "nrc": "104561",
       "code": "I7431",
-      "students": 20,
+      "students": 21,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS II"
     },
     "professor": "PEREZ RAMIREZ, JUAN ANGEL"
@@ -566,7 +566,7 @@
       "classroom": "",
       "nrc": "164133",
       "code": "I7431",
-      "students": 5,
+      "students": 4,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS II"
     },
     "professor": "DEL PUERTO FLORES, DUNSTANO"
@@ -592,7 +592,7 @@
       "classroom": "",
       "nrc": "84067",
       "code": "I7430",
-      "students": 19,
+      "students": 20,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS I"
     },
     "professor": "FRAUSTO CASTRO, LUIS FERNANDO"
@@ -644,7 +644,7 @@
       "classroom": "",
       "nrc": "154014",
       "code": "I7430",
-      "students": 19,
+      "students": 20,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS I"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -657,7 +657,7 @@
       "classroom": "",
       "nrc": "154016",
       "code": "I7430",
-      "students": 18,
+      "students": 19,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS I"
     },
     "professor": "ZUÑIGA HARO, PAVEL"
@@ -683,7 +683,7 @@
       "classroom": "",
       "nrc": "164507",
       "code": "I7430",
-      "students": 18,
+      "students": 19,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS I"
     },
     "professor": "VELEZ BARRAGAN, EDUARDO ENRIQUE"
@@ -787,7 +787,7 @@
       "classroom": "",
       "nrc": "126169",
       "code": "I7459",
-      "students": 14,
+      "students": 16,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
     },
     "professor": "GARCIA SANCHEZ, JORGE LUIS"
@@ -813,7 +813,7 @@
       "classroom": "",
       "nrc": "126170",
       "code": "I7459",
-      "students": 9,
+      "students": 10,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
     },
     "professor": "GARCIA SANCHEZ, JORGE LUIS"
@@ -846,6 +846,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "119785",
+      "code": "I7460",
+      "students": 21,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
+    },
+    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDS",
@@ -854,19 +867,6 @@
       "code": "I7459",
       "students": 22,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
-    },
-    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "119785",
-      "code": "I7460",
-      "students": 20,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
     },
     "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
   },
@@ -904,7 +904,7 @@
       "classroom": "",
       "nrc": "126176",
       "code": "I7459",
-      "students": 21,
+      "students": 24,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
     },
     "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
@@ -917,7 +917,7 @@
       "classroom": "",
       "nrc": "165430",
       "code": "I7460",
-      "students": 18,
+      "students": 19,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
@@ -937,19 +937,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . . S",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "163863",
-      "code": "I7459",
-      "students": 22,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
-    },
-    "professor": "VARGAS QUEZADA, MARCELINO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDS",
@@ -960,6 +947,19 @@
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . . S",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "163863",
+      "code": "I7459",
+      "students": 22,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
+    },
+    "professor": "VARGAS QUEZADA, MARCELINO"
   },
   {
     "data": {
@@ -1346,7 +1346,7 @@
       "classroom": "LC01",
       "nrc": "124760",
       "code": "I7384",
-      "students": 24,
+      "students": 25,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -1437,7 +1437,7 @@
       "classroom": "LC03",
       "nrc": "124767",
       "code": "I7389",
-      "students": 22,
+      "students": 21,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "GOMEZ PADILLA, ALEJANDRA"
@@ -1450,7 +1450,7 @@
       "classroom": "LC03",
       "nrc": "124767",
       "code": "I7389",
-      "students": 22,
+      "students": 21,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "GOMEZ PADILLA, ALEJANDRA"

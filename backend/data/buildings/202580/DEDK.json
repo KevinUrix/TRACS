@@ -67,19 +67,6 @@
   {
     "data": {
       "schedule": "0900-1255",
-      "days": "L . I . V .",
-      "building": "DEDK",
-      "classroom": "A008",
-      "nrc": "95283",
-      "code": "I3318",
-      "students": 10,
-      "course": "TECNOLOGIA DE PROCESOS DE CEREALES ()"
-    },
-    "professor": "BRIONES MARQUEZ, LUISA FERNANDA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1255",
       "days": ". M . J . .",
       "building": "DEDK",
       "classroom": "A009",
@@ -102,5 +89,18 @@
       "course": "TECNOLOGIA DE PROCESOS DE BEBIDAS Y CONFITERIA ()"
     },
     "professor": "DIAZ PARRA, DINORA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L . I . V .",
+      "building": "DEDK",
+      "classroom": "A008",
+      "nrc": "95283",
+      "code": "I3318",
+      "students": 10,
+      "course": "TECNOLOGIA DE PROCESOS DE CEREALES ()"
+    },
+    "professor": "BRIONES MARQUEZ, LUISA FERNANDA"
   }
 ]

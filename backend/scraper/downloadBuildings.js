@@ -1,9 +1,8 @@
 const { scrapeData } = require('./schedules');
-
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-// const http = require('http'); QUITEN LOS COMENTARIOS SI SE USA HTTP EN LUGAR DE HTTPS
+// const http = require('http'); // QUITEN LOS COMENTARIOS SI SE USA HTTP EN LUGAR DE HTTPS
 
 const getBuildings = () => {
   const filePath = path.join(__dirname, '../config/buildings.json');
@@ -14,8 +13,6 @@ const getBuildings = () => {
 const isSiiauAvailable = () => {
   return new Promise((resolve, reject) => {
     https.get('https://siiauescolar.siiau.udg.mx/wal/sspseca.forma_consulta', (res) => {
-    // http.get('http://consulta.siiau.udg.mx/wco/sspseca.forma_consulta', (res) => {
-
       if (res.statusCode === 200) {
         resolve(true);
       } else {
@@ -26,7 +23,6 @@ const isSiiauAvailable = () => {
     });
   });
 };
-
 
 const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../data/buildings/')) => {
   try {
@@ -44,60 +40,62 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
       empty: []
     };
 
+    console.log(`Descargando el paquete masivo para el ciclo ${cycle}...`);
+    
+    const fullPackageData = await scrapeData(cycle); 
+
+    // Si el scraper dice error: true, falló toda la descarga
+    if (!fullPackageData || fullPackageData.error) {
+      console.error(`Fallo crítico: No se pudo obtener el paquete completo.`);
+      return {
+        success: [],
+        failed: getBuildings().map(b => b.value),
+        skipped: [],
+        empty: []
+      };
+    }
+
+    const fullPackage = fullPackageData.data || {};
+
     for (const building of getBuildings()) {
+      const buildingName = building.value;
+
       try {
-        const data = await scrapeData(cycle, building.value, true);
-
-        if (data && typeof data === 'object' && data.error) {
-          console.warn(`Error explícito para ${building.value}`);
-          resultSummary.failed.push(building.value);
-          continue;
-        }
-
+        const data = fullPackage[buildingName];
         let actualData = [];
 
-        if (Array.isArray(data)) {
-          // Retorna plano directamente como array
+        if (data && Array.isArray(data)) {
           actualData = data;
-        } else if (Array.isArray(data?.data)) {
-          // Retorna como objeto con propiedad 'data'
-          actualData = data.data;
         }
 
-        // Verificar si hay datos útiles
-        if (!Array.isArray(actualData)) {
-          console.warn(`Datos corruptos para ${building.value}`);
-          resultSummary.skipped.push(building.value);
-          continue;
-        }
-        else if (actualData.length === 0) {
-          console.warn(`Datos vacíos para ${building.value}`);
-          resultSummary.empty.push(building.value);
+        if (actualData.length === 0) {
+          console.warn(`Datos vacíos para el edificio: ${buildingName}`);
+          resultSummary.empty.push(buildingName);
+        } else {
+          resultSummary.success.push(buildingName);
         }
 
-        const filePath = path.join(outputDir, `${building.value}.json`);
+        const filePath = path.join(outputDir, `${buildingName}.json`);
         fs.writeFileSync(filePath, JSON.stringify(actualData, null, 2), 'utf-8');
-        console.log(`Guardado: ${filePath}`);
-        resultSummary.success.push(building.value);
+        console.log(`Guardado individual: ${filePath}`);
+
       } catch (err) {
-        console.error(`Error en ${building.value}:`, err.message);
-        resultSummary.failed.push({ building, error: err.message });
+        console.error(`Error procesando el archivo para ${buildingName}:`, err.message);
+        resultSummary.failed.push({ building: buildingName, error: err.message });
       }
     }
 
     return resultSummary;
-  }
 
-  catch (err) {
-    console.error(`No se puede iniciar scraping: ${err.message}`);
+  } catch (err) {
+    console.error(`No se puede iniciar la descarga del paquete: ${err.message}`);
     return {
       success: [],
       failed: getBuildings().map(b => b.value),
       skipped: [],
       empty: []
-    }
-  };
-}
-
+    };
+  }
+};
 
 module.exports = { saveAllToFiles };

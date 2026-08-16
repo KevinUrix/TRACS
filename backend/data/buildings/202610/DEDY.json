@@ -105,32 +105,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDY",
-      "classroom": "A001",
-      "nrc": "43436",
-      "code": "I6936",
-      "students": 0,
-      "course": "BIOQUIMICA AVANZADA"
-    },
-    "professor": "PACHECO MOISES, FERMIN PAUL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1955",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "A001",
-      "nrc": "43436",
-      "code": "I6936",
-      "students": 0,
-      "course": "BIOQUIMICA AVANZADA"
-    },
-    "professor": "PACHECO MOISES, FERMIN PAUL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . I . V .",
       "building": "DEDY",
@@ -215,7 +189,7 @@
       "classroom": "",
       "nrc": "101267",
       "code": "H0767",
-      "students": 2,
+      "students": 1,
       "course": "DISEÑO Y MODELADO DE DISPOSITIVOS SEMICONDUCTORES"
     },
     "professor": "GUILLEN BONILLA, HECTOR"
@@ -319,7 +293,7 @@
       "classroom": "LQM02",
       "nrc": "104251",
       "code": "I7501",
-      "students": 9,
+      "students": 10,
       "course": "LABORATORIO DE ELECTROQUIMICA I"
     },
     "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
@@ -365,6 +339,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1155",
+      "days": "L . . . . .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "79478",
+      "code": "I7486",
+      "students": 20,
+      "course": "LABORATORIO DE FISICOQUIMICA I"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
       "schedule": "1700-1955",
       "days": ". . . J . .",
       "building": "DEDY",
@@ -378,16 +365,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1155",
-      "days": "L . . . . .",
+      "schedule": "1700-1955",
+      "days": ". M . . . .",
       "building": "DEDY",
       "classroom": "LQM02",
-      "nrc": "79478",
+      "nrc": "79479",
       "code": "I7486",
       "students": 20,
       "course": "LABORATORIO DE FISICOQUIMICA I"
     },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+    "professor": "MATA MUNGUIA, AIDE"
   },
   {
     "data": {
@@ -410,36 +397,10 @@
       "classroom": "LQM02",
       "nrc": "104246",
       "code": "I7503",
-      "students": 20,
+      "students": 21,
       "course": "LABORATORIO DE FISICOQUIMICA III"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1955",
-      "days": ". M . . . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "79479",
-      "code": "I7486",
-      "students": 20,
-      "course": "LABORATORIO DE FISICOQUIMICA I"
-    },
-    "professor": "MATA MUNGUIA, AIDE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1155",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "200181",
-      "code": "I7486",
-      "students": 10,
-      "course": "LABORATORIO DE FISICOQUIMICA I"
-    },
-    "professor": "GONZALEZ CRUZ, RICARDO"
   },
   {
     "data": {
@@ -466,6 +427,19 @@
       "course": "LABORATORIO DE FISICOQUIMICA III"
     },
     "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "200181",
+      "code": "I7486",
+      "students": 10,
+      "course": "LABORATORIO DE FISICOQUIMICA I"
+    },
+    "professor": "GONZALEZ CRUZ, RICARDO"
   },
   {
     "data": {
@@ -639,19 +613,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDY",
-      "classroom": "A001",
-      "nrc": "104275",
-      "code": "I6983",
-      "students": 2,
-      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION V"
-    },
-    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". . . . . S",
       "building": "DEDY",
       "classroom": "A001",
@@ -661,6 +622,19 @@
       "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION II"
     },
     "professor": "GOMEZ SALAZAR, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "A001",
+      "nrc": "104275",
+      "code": "I6983",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION V"
+    },
+    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
   },
   {
     "data": {

@@ -1,0 +1,1406 @@
+[
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "210801",
+      "code": "I9909",
+      "students": 19,
+      "course": "ACTUADORES"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "262341",
+      "code": "V6004",
+      "students": 14,
+      "course": "ANALISIS DE CIRCUITOS ELECTRICOS"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "43413",
+      "code": "I7274",
+      "students": 20,
+      "course": "AUTOMATIZACION"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "43411",
+      "code": "I7274",
+      "students": 16,
+      "course": "AUTOMATIZACION"
+    },
+    "professor": "CAMARENA MENDEZ, JOSE OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "43409",
+      "code": "I7274",
+      "students": 20,
+      "course": "AUTOMATIZACION"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "43417",
+      "code": "I7274",
+      "students": 20,
+      "course": "AUTOMATIZACION"
+    },
+    "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "122785",
+      "code": "I7587",
+      "students": 4,
+      "course": "CIRCUITOS ELECTRICOS"
+    },
+    "professor": "SALAS VALLE, JESUS DAVID"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "249833",
+      "code": "V3692",
+      "students": 24,
+      "course": "CIRCUITOS INTEGRADOS"
+    },
+    "professor": "BARBA TOSCANO, OSCAR FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "262074",
+      "code": "V3692",
+      "students": 23,
+      "course": "CIRCUITOS INTEGRADOS"
+    },
+    "professor": "BARBA TOSCANO, OSCAR FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "170036",
+      "code": "IB140",
+      "students": 15,
+      "course": "COMUNICACIONES OPTICAS II"
+    },
+    "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "171768",
+      "code": "I7262",
+      "students": 17,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "125003",
+      "code": "I7284",
+      "students": 7,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "RUIZ PALACIOS, MARIA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "182583",
+      "code": "I7284",
+      "students": 19,
+      "course": "DISEÑO DE TRANSCEPTORES"
+    },
+    "professor": "MARTINEZ SILVA, MARTIN JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "82694",
+      "code": "I7598",
+      "students": 3,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "125035",
+      "code": "I7598",
+      "students": 5,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "209574",
+      "code": "IN228",
+      "students": 20,
+      "course": "ELECTRONICA ANALOGICA"
+    },
+    "professor": "AGUIRRE RODRIGUEZ, NAHUM JUDA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "209575",
+      "code": "IN228",
+      "students": 6,
+      "course": "ELECTRONICA ANALOGICA"
+    },
+    "professor": "AGUIRRE RODRIGUEZ, NAHUM JUDA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "249806",
+      "code": "IN228",
+      "students": 15,
+      "course": "ELECTRONICA ANALOGICA"
+    },
+    "professor": "AGUIRRE RODRIGUEZ, NAHUM JUDA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "249807",
+      "code": "IN228",
+      "students": 15,
+      "course": "ELECTRONICA ANALOGICA"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "249808",
+      "code": "IN228",
+      "students": 20,
+      "course": "ELECTRONICA ANALOGICA"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "225739",
+      "code": "V3636",
+      "students": 20,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "225741",
+      "code": "V3636",
+      "students": 22,
+      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "262096",
+      "code": "V3650",
+      "students": 20,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "266490",
+      "code": "V3650",
+      "students": 1,
+      "course": "ELECTRONICA DE POTENCIA"
+    },
+    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . . S",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "225759",
+      "code": "V3929",
+      "students": 20,
+      "course": "ELECTRONICA DIGITAL"
+    },
+    "professor": "HERNANDEZ HERNANDEZ, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "225763",
+      "code": "V3929",
+      "students": 20,
+      "course": "ELECTRONICA DIGITAL"
+    },
+    "professor": "RIOS SALCEDO, SERGIO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "225764",
+      "code": "V3929",
+      "students": 20,
+      "course": "ELECTRONICA DIGITAL"
+    },
+    "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "125036",
+      "code": "IB128",
+      "students": 20,
+      "course": "ELECTRONICA INTEGRADA"
+    },
+    "professor": "BARRAGAN CAMPOS, ROBERTO CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "262281",
+      "code": "V3930",
+      "students": 20,
+      "course": "FUNDAMENTOS DE COMUNICACIONES ELECTRONICAS"
+    },
+    "professor": "RUIZ PALACIOS, MARIA SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "223232",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "223233",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "223234",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "223235",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "PLASCENCIA LOPEZ, JOSUE ADAIR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "223425",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "223426",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0800-1255",
+      "days": ". . . . . S",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "223427",
+      "code": "V3690",
+      "students": 16,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-1255",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "223428",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "223429",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GONZALEZ SANCHEZ, OSCAR ALAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "234469",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GALAVIZ LUGO, FLOR ANEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "252578",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "PLASCENCIA LOPEZ, JOSUE ADAIR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "252683",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "GALAVIZ LUGO, FLOR ANEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "252684",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "MAESTRO RUIZ, EDGAR ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "252685",
+      "code": "V3690",
+      "students": 20,
+      "course": "FUNDAMENTOS DE ELECTRONICA"
+    },
+    "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152624",
+      "code": "IC598",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152625",
+      "code": "IC598",
+      "students": 8,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152626",
+      "code": "IC598",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "HERNANDEZ URIBE, RUBEN ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152628",
+      "code": "IC598",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "MARQUEZ GUTIERREZ, MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152629",
+      "code": "IC598",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . J . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152630",
+      "code": "IC598",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "152631",
+      "code": "IC598",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "171968",
+      "code": "IC598",
+      "students": 5,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LHI01",
+      "nrc": "171969",
+      "code": "IC598",
+      "students": 12,
+      "course": "LABORATORIO DE HIDRAULICA I"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159496",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ GUTIERREZ, MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159497",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159498",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159499",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159500",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159501",
+      "code": "IC610",
+      "students": 13,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159502",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDN",
+      "classroom": "LHI02",
+      "nrc": "159503",
+      "code": "IC610",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA II"
+    },
+    "professor": "MARTINEZ ZARATE, NASHIELI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "165967",
+      "code": "IC617",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "166161",
+      "code": "IC617",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "166162",
+      "code": "IC617",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "166275",
+      "code": "IC617",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "166276",
+      "code": "IC617",
+      "students": 12,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "MORGADO CASTILLO, ROBERTO NESTOR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "166495",
+      "code": "IC617",
+      "students": 15,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "NUÑEZ RUELAS, GABRIEL ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "183129",
+      "code": "IC617",
+      "students": 11,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "LHI03",
+      "nrc": "183130",
+      "code": "IC617",
+      "students": 8,
+      "course": "LABORATORIO DE HIDRAULICA III"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104499",
+      "code": "I7450",
+      "students": 20,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1400-1555",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104500",
+      "code": "I7450",
+      "students": 17,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104501",
+      "code": "I7450",
+      "students": 20,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104502",
+      "code": "I7450",
+      "students": 22,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104503",
+      "code": "I7450",
+      "students": 22,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104504",
+      "code": "I7450",
+      "students": 18,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "104506",
+      "code": "I7450",
+      "students": 22,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "163864",
+      "code": "I7450",
+      "students": 22,
+      "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
+    },
+    "professor": "CEJA VILLANUEVA, ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77347",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77348",
+      "code": "I7445",
+      "students": 20,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77349",
+      "code": "I7445",
+      "students": 20,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77350",
+      "code": "I7445",
+      "students": 20,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77351",
+      "code": "I7445",
+      "students": 20,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77352",
+      "code": "I7445",
+      "students": 20,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, ABEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77353",
+      "code": "I7445",
+      "students": 13,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "",
+      "nrc": "77354",
+      "code": "I7445",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA DE FLUIDOS"
+    },
+    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "164965",
+      "code": "IB154",
+      "students": 10,
+      "course": "OPTOELECTRONICA"
+    },
+    "professor": "FLORES NUÑEZ, JORGE LUIS"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "262198",
+      "code": "V3736",
+      "students": 10,
+      "course": "OPTOELECTRONICA"
+    },
+    "professor": "QUIROGA ROJAS, JOSE VLADIMIR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "122802",
+      "code": "I7288",
+      "students": 18,
+      "course": "PROTOCOLOS DE COMUNICACIONES"
+    },
+    "professor": "MONTIEL MENA, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "160224",
+      "code": "IB156",
+      "students": 18,
+      "course": "RADIOMETRIA"
+    },
+    "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "225773",
+      "code": "V3732",
+      "students": 20,
+      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "225775",
+      "code": "V3732",
+      "students": 30,
+      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CARRILLO DIAZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "133339",
+      "code": "I9893",
+      "students": 20,
+      "course": "SEMINARIO DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "199609",
+      "code": "I9899",
+      "students": 19,
+      "course": "SEMINARIO DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "LANDA HORTA, DANIEL OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE06",
+      "nrc": "120485",
+      "code": "I9897",
+      "students": 20,
+      "course": "SEMINARIO DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "43433",
+      "code": "I7275",
+      "students": 20,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "43420",
+      "code": "I7275",
+      "students": 3,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "GOMEZ MORALES, LEOBARDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . . S",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "43427",
+      "code": "I7275",
+      "students": 16,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "43418",
+      "code": "I7275",
+      "students": 17,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "MATEOS ORTEGA, HECTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "154171",
+      "code": "I7290",
+      "students": 20,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "PACHECO PADILLA, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "59683",
+      "code": "I7281",
+      "students": 18,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "43425",
+      "code": "I7275",
+      "students": 20,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "154485",
+      "code": "I7290",
+      "students": 11,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "OCAMPO ARELLANO, OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE01",
+      "nrc": "91621",
+      "code": "I7271",
+      "students": 3,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
+    },
+    "professor": "GARCIA GUTIERREZ, VICTOR"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "78968",
+      "code": "I7273",
+      "students": 7,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "CASILLAS DE LA TORRE, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "194964",
+      "code": "I7273",
+      "students": 13,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "120476",
+      "code": "I7289",
+      "students": 20,
+      "course": "SISTEMAS DE COMUNICACIONES I"
+    },
+    "professor": "AVALOS ALVAREZ, OMAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "166376",
+      "code": "I7291",
+      "students": 15,
+      "course": "SISTEMAS DE COMUNICACIONES II"
+    },
+    "professor": "CARRASCO ALVAREZ, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "194957",
+      "code": "IL363",
+      "students": 18,
+      "course": "SISTEMAS DIGITALES"
+    },
+    "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "206129",
+      "code": "ET414",
+      "students": 0,
+      "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
+    },
+    "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
+  }
+]

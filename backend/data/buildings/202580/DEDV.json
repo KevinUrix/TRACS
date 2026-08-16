@@ -40,19 +40,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1355",
-      "days": "L M I J . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "175023",
-      "code": "IC591",
-      "students": 12,
-      "course": "ELECTROMAGNETISMO ()"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . I J . .",
       "building": "DEDV",
@@ -60,6 +47,19 @@
       "nrc": "135208",
       "code": "I5993",
       "students": 28,
+      "course": "ELECTROMAGNETISMO ()"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": "L M I J . .",
+      "building": "DEDV",
+      "classroom": "A016",
+      "nrc": "175023",
+      "code": "IC591",
+      "students": 12,
       "course": "ELECTROMAGNETISMO ()"
     },
     "professor": "ROSALIO CUEVAS, SAMUEL"

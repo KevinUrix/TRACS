@@ -33,7 +33,7 @@
       "classroom": "LM4",
       "nrc": "78971",
       "code": "I7280",
-      "students": 20,
+      "students": 19,
       "course": "CIRCUITOS DIGITALES"
     },
     "professor": "MAESTRO RUIZ, EDGAR ALBERTO"
@@ -46,7 +46,7 @@
       "classroom": "LM1",
       "nrc": "154519",
       "code": "I7597",
-      "students": 20,
+      "students": 19,
       "course": "ELECTROFISIOLOGIA MOLECULAR II"
     },
     "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
@@ -98,7 +98,7 @@
       "classroom": "LM4",
       "nrc": "122799",
       "code": "I7287",
-      "students": 7,
+      "students": 8,
       "course": "INSTRUMENTACION"
     },
     "professor": "GOMEZ MORALES, LEOBARDO"
@@ -111,7 +111,7 @@
       "classroom": "LM4",
       "nrc": "131840",
       "code": "I7287",
-      "students": 13,
+      "students": 12,
       "course": "INSTRUMENTACION"
     },
     "professor": "LUQUE CHANG, ALBERTO"
@@ -235,6 +235,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1255",
+      "days": ". . . . V .",
+      "building": "DEDM",
+      "classroom": "LM1",
+      "nrc": "78949",
+      "code": "ET333",
+      "students": 28,
+      "course": "INSTRUMENTACION MEDICA II"
+    },
+    "professor": "MORALES VALENCIA, JOSE ALEJANDRO"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDM",
@@ -280,7 +293,7 @@
       "classroom": "LM5",
       "nrc": "91621",
       "code": "I7271",
-      "students": 7,
+      "students": 8,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE REDES PARA CIRCUITOS ELECTRONICOS"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -316,10 +329,10 @@
       "schedule": "1500-1655",
       "days": "L . I . . .",
       "building": "DEDM",
-      "classroom": "LM3",
+      "classroom": "LM1",
       "nrc": "55439",
       "code": "ET357",
-      "students": 20,
+      "students": 18,
       "course": "TEMAS SELECTOS DE INGENIERIA BIOMEDICA II"
     },
     "professor": "MARQUEZ NORIEGO, MARIA INMACULADA"

@@ -111,7 +111,7 @@
       "classroom": "LCL01",
       "nrc": "87901",
       "code": "I6151",
-      "students": 32,
+      "students": 33,
       "course": "LABORATORIO DE MICROBIOLOGIA CLINICA"
     },
     "professor": "GUERRA MARTINEZ, SUSANA OLIVIA"
@@ -131,19 +131,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDH",
-      "classroom": "",
-      "nrc": "83662",
-      "code": "I7508",
-      "students": 17,
-      "course": "LABORATORIO DE QUIMICA ANALITICA II"
-    },
-    "professor": "GARCIA CASILLAS, LUIS ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDH",
@@ -154,6 +141,19 @@
       "course": "LABORATORIO DE QUIMICA ANALITICA I"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDH",
+      "classroom": "",
+      "nrc": "83662",
+      "code": "I7508",
+      "students": 17,
+      "course": "LABORATORIO DE QUIMICA ANALITICA II"
+    },
+    "professor": "GARCIA CASILLAS, LUIS ALBERTO"
   },
   {
     "data": {

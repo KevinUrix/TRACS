@@ -137,7 +137,7 @@
       "classroom": "A007",
       "nrc": "202055",
       "code": "I6171",
-      "students": 28,
+      "students": 29,
       "course": "ANALISIS MICROBIOLOGICOS"
     },
     "professor": "MENDOZA BERNARDO, MAGALI"
@@ -280,7 +280,7 @@
       "classroom": "A002",
       "nrc": "104238",
       "code": "I7493",
-      "students": 27,
+      "students": 26,
       "course": "BIOQUIMICA ESTRUCTURAL I"
     },
     "professor": "CORDOVA LOPEZ, JESUS ANTONIO"
@@ -293,7 +293,7 @@
       "classroom": "A004",
       "nrc": "104239",
       "code": "I7493",
-      "students": 1,
+      "students": 0,
       "course": "BIOQUIMICA ESTRUCTURAL I"
     },
     "professor": "VELAZQUEZ JUAREZ, GILBERTO"
@@ -358,7 +358,7 @@
       "classroom": "A010",
       "nrc": "202057",
       "code": "I6178",
-      "students": 20,
+      "students": 21,
       "course": "BIOTECNOLOGIA"
     },
     "professor": "BALDERAS LEON, IVAN"
@@ -462,7 +462,7 @@
       "classroom": "A004",
       "nrc": "38428",
       "code": "I3285",
-      "students": 25,
+      "students": 24,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -475,7 +475,7 @@
       "classroom": "A005",
       "nrc": "38428",
       "code": "I3285",
-      "students": 25,
+      "students": 24,
       "course": "FISICOQUIMICA"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
@@ -522,38 +522,12 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDF",
-      "classroom": "A009",
-      "nrc": "67949",
-      "code": "I3285",
-      "students": 24,
-      "course": "FISICOQUIMICA"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDF",
-      "classroom": "A005",
-      "nrc": "67949",
-      "code": "I3285",
-      "students": 24,
-      "course": "FISICOQUIMICA"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDF",
       "classroom": "A002",
       "nrc": "38448",
       "code": "I3301",
-      "students": 26,
+      "students": 28,
       "course": "FISICOQUIMICA DE LOS ALIMENTOS"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -566,7 +540,7 @@
       "classroom": "A009",
       "nrc": "38448",
       "code": "I3301",
-      "students": 26,
+      "students": 28,
       "course": "FISICOQUIMICA DE LOS ALIMENTOS"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -690,19 +664,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDF",
-      "classroom": "A002",
-      "nrc": "63392",
-      "code": "I5812",
-      "students": 29,
-      "course": "FISICOQUIMICA PARA INGENIEROS I"
-    },
-    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDF",
@@ -713,6 +674,19 @@
       "course": "FISICOQUIMICA PARA INGENIEROS II"
     },
     "professor": "SAAVEDRA AYALA, LUIS ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDF",
+      "classroom": "A002",
+      "nrc": "63392",
+      "code": "I5812",
+      "students": 30,
+      "course": "FISICOQUIMICA PARA INGENIEROS I"
+    },
+    "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
   },
   {
     "data": {
@@ -995,7 +969,7 @@
       "classroom": "A005",
       "nrc": "128716",
       "code": "I7553",
-      "students": 8,
+      "students": 7,
       "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
     },
     "professor": "PEÑA ORTIZ, MARIA OLIVIA"
@@ -1229,7 +1203,7 @@
       "classroom": "A007",
       "nrc": "152041",
       "code": "I6152",
-      "students": 36,
+      "students": 37,
       "course": "MICROBIOLOGIA APLICADA"
     },
     "professor": "FIERROS URIBE, DAMIAN"
@@ -1320,7 +1294,7 @@
       "classroom": "A007",
       "nrc": "89297",
       "code": "I3328",
-      "students": 25,
+      "students": 24,
       "course": "NORMATIVIDAD PARA ALIMENTOS"
     },
     "professor": "AMEZCUA LOPEZ, JESUS ALONSO"
@@ -1411,7 +1385,7 @@
       "classroom": "A003",
       "nrc": "79450",
       "code": "I7356",
-      "students": 20,
+      "students": 19,
       "course": "QUIMICA BASICA"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -1476,7 +1450,7 @@
       "classroom": "A005",
       "nrc": "42599",
       "code": "I6122",
-      "students": 33,
+      "students": 34,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -1489,7 +1463,7 @@
       "classroom": "A003",
       "nrc": "42599",
       "code": "I6122",
-      "students": 33,
+      "students": 34,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -1593,7 +1567,7 @@
       "classroom": "A005",
       "nrc": "42598",
       "code": "I6122",
-      "students": 29,
+      "students": 28,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -1606,7 +1580,7 @@
       "classroom": "A004",
       "nrc": "42598",
       "code": "I6122",
-      "students": 29,
+      "students": 28,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -1778,7 +1752,7 @@
       "students": 18,
       "course": "QUIMICA INORGANICA I"
     },
-    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
+    "professor": "DELGADO JAIME, MARIO ULISES"
   },
   {
     "data": {
@@ -1834,19 +1808,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDF",
-      "classroom": "A003",
-      "nrc": "42622",
-      "code": "I6124",
-      "students": 29,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDF",
@@ -1857,6 +1818,19 @@
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDF",
+      "classroom": "A003",
+      "nrc": "42622",
+      "code": "I6124",
+      "students": 29,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
   },
   {
     "data": {
@@ -1892,7 +1866,7 @@
       "classroom": "A003",
       "nrc": "112062",
       "code": "I6124",
-      "students": 28,
+      "students": 27,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -1931,7 +1905,7 @@
       "classroom": "A005",
       "nrc": "63404",
       "code": "I5805",
-      "students": 31,
+      "students": 32,
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "GONZALEZ CRUZ, RICARDO"
@@ -2230,7 +2204,7 @@
       "classroom": "A010",
       "nrc": "225524",
       "code": "I3299",
-      "students": 19,
+      "students": 18,
       "course": "SISTEMAS DE CALIDAD E INOCUIDAD"
     },
     "professor": "MUÑIZ FLORES, JORGE ADRIAN"

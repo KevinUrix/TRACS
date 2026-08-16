@@ -6,7 +6,7 @@ import { pastelColors } from './utils';
 import API_URL from '../../config/api';
 import SelectsLogic from './selectsLogic';
 import ReserveButton from './reserveButton';
-import './calendar.css'; // Importa el archivo de estilos CSS
+import './calendar.css'; 
 
 export default function Calendar() {
   const [selectedCycle, setSelectedCycle] = useState('');
@@ -21,110 +21,75 @@ export default function Calendar() {
   const [buildings, setBuildings] = useState([]);
   const [fullSchedule, setFullSchedule] = useState({});
   const [isRestored, setIsRestored] = useState(false);
+  
   const cellColorMapRef = useRef({});
-  const restoredStateRef = useRef(null);
-  
-  
-  const renderedCells = {}; // <<< Registra qué (hora, salón) ya se pintó
+  const renderedCells = {}; 
   const today = new Date();
-  const location = useLocation();
-  
   const decoded = getDecodedToken();
   const user = decoded?.username ?? null;
 
-
-  /* ---------- LIMPIAR COLORES - CADA REINICIO ---------- */
+  /* ---------- LIMPIAR COLORES ---------- */
   useEffect(() => {
     cellColorMapRef.current = {};
   }, []);
 
-
-  /* ---------- OBTENER ESTADOS LUEGO DE SER REDIRIGIDO ---------- */
+  /* ---------- LIMPIEZA DE SESSION STORAGE ---------- */
   useEffect(() => {
+    const handleRefresh = () => {
+      const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+      existingKeys.forEach(key => sessionStorage.removeItem(key));
+      
+      sessionStorage.removeItem('cached_cycles');
+    };
 
+    window.addEventListener('beforeunload', handleRefresh);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleRefresh);
+    };
+  }, []);
+
+  /* ---------- RECUPERACIÓN DE ESTADO ---------- */
+  useEffect(() => {
     const savedState = sessionStorage.getItem('reservationState');
-
     if (savedState) {
       const parsed = JSON.parse(savedState);
       setSelectedCycle(parsed.selectedCycle);
       setSelectedBuilding(parsed.selectedBuilding);
-
-      // Guardamos localmente para luego borrar sessionStorage cuando se apliquen
-      restoredStateRef.current = parsed;
-    } else {
-      setIsRestored(true); // nada que restaurar, podemos renderizar ya
     }
-  }, [location.state]);
+    setIsRestored(true); 
+  }, []);
 
-  // Efecto para eliminar sessionStorage cuando el estado se haya aplicado
+  /* ---------- GUARDADO DE ESTADO ---------- */
   useEffect(() => {
-    if (!restoredStateRef.current) return;
-
-    if (
-      selectedCycle === restoredStateRef.current.selectedCycle &&
-      selectedBuilding === restoredStateRef.current.selectedBuilding
-    ) {
-      sessionStorage.removeItem('reservationState');
-      restoredStateRef.current = null;
-      setIsRestored(true);
-    }
-  }, [selectedCycle, selectedBuilding]);
-
-
-  /* ---------- GUARDA ESTADOS ANTES DE CAMBIAR DE PÁGINA ---------- */
-  // Guarda el estado cada vez que cambie de la raíz a otra página
-  useEffect(() => {
-    const isOnRoot = location.pathname === '/calendar';
-    const isComplete = selectedCycle && selectedBuilding;
-
-    if (!isOnRoot || !isComplete) return;
-
-    sessionStorage.setItem('reservationState', JSON.stringify({
-      selectedCycle,
-      selectedBuilding,
-    }));
-  }, [selectedCycle, selectedBuilding, location.pathname]);
-  
-
-  // Guarda el estado antes de redirigirte a Google
-  const saveReservationState = () => {
     if (selectedCycle && selectedBuilding) {
       sessionStorage.setItem('reservationState', JSON.stringify({
         selectedCycle,
         selectedBuilding,
       }));
     }
+  }, [selectedCycle, selectedBuilding]);
+  
+  const saveReservationState = () => {
+    if (selectedCycle && selectedBuilding) {
+      sessionStorage.setItem('reservationState', JSON.stringify({ selectedCycle, selectedBuilding }));
+    }
   };
 
-/*   useEffect(() => {
-    // Verifica si en la URL está el parámetro "fromGoogle"
-    const params = new URLSearchParams(location.search);
-    if (params.get('fromGoogle') === 'true') {
-      toast.success('¡Sesión iniciada con Google! Ya puedes realizar tu reserva en Google Calendar.');
-      
-      // Limpia el parámetro de la URL para que no aparezca siempre
-      params.delete('fromGoogle');
-      window.history.replaceState({}, '', `${location.pathname}`);
-    }
-  }, [location]); */
-
-
-  // Obtiene el día de la semana (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
+  /* ---------- LÓGICA DE FECHAS ---------- */
   const dayOfWeek = today.getDay();
   const startOfWeek = new Date(today);
-  startOfWeek.setDate(today.getDate() - dayOfWeek); // Domingo anterior
+  startOfWeek.setDate(today.getDate() - dayOfWeek); 
 
   const endOfWeek = new Date(startOfWeek);
-  endOfWeek.setDate(startOfWeek.getDate() + 7); // Domingo siguiente
+  endOfWeek.setDate(startOfWeek.getDate() + 7); 
 
-  // Formatear a YYYY-MM-DD
   const startDateString = startOfWeek.toISOString().split('T')[0];
   const endDateString = endOfWeek.toISOString().split('T')[0];
 
   function isInThisWeek(dateString) {
     return dateString >= startDateString && dateString <= endDateString;
   }
-
   function isSameOrBeforeWeekStart(dateString) {
     return dateString <= endDateString;
   }
@@ -134,62 +99,165 @@ export default function Calendar() {
     return `${hour <= 12 ? hour : hour - 12}:00 ${hour < 12 ? 'AM' : 'PM'}`;
   });
 
+  /* ---------- CARGA DE EDIFICIOS ---------- */
+  useEffect(() => {
+    fetch(`${API_URL}/api/buildings`)
+      .then(response => response.json())
+      .then(data => {
+        const buildingsData = data.edifp || [];
+        const filteredBuildings = buildingsData.filter(b => b.value !== "DESV1" && b.value !== "DESV2");
+        const prioritized = filteredBuildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
+        const rest = filteredBuildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
+
+        setBuildings([...prioritized, ...rest]); 
+      })
+      .catch(error => {
+        toast.error("Se ha detectado un error en el servidor.");
+      });
+  }, []);
+
+  /* ---------- CARGA DE SALONES ---------- */
+  useEffect(() => {
+    if (selectedBuilding) {
+      fetch(`${API_URL}/api/classrooms?buildingName=${selectedBuilding}`)
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+          return response.json();
+        })
+        .then(data => {
+          const normalized = Array.isArray(data)
+            ? data.map(item => typeof item === 'string' ? { name: item, capacity: null } : item)
+            : [];
+          setClassrooms(normalized.map(x => x.name));
+          const capMap = {};
+          for (const x of normalized) capMap[x.name] = x.capacity ?? null;
+          setCapacities(capMap);
+        })
+        .catch(error => {
+          toast.error("No se encontraron salones. Por favor, reinicia la página.");
+        });
+    }
+  }, [selectedBuilding]);
+
+  /* ---------- CARGA DE RESERVAS ---------- */
   const fetchReservations = async () => {
     if (!selectedCycle || !selectedBuilding) return;
-  
-    const path = `${API_URL}/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`;
-  
     try {
-      const response = await fetch(path);
-    
+      const response = await fetch(`${API_URL}/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
       if (!response.ok) {
-        if (response.status === 404) {
-          console.warn(`No hay reservas guardadas para ${selectedBuilding} en el ciclo ${selectedCycle}.`);
-        } else if (response.status === 400) {
-          console.warn(`Error de parámetros: ${response.error}`);
-        } else {
-          console.error(`Error del servidor: ${response.error}`);
-        }
-    
         setReservations([]);
         return;
       }
-    
       const json = await response.json();
       setReservations(json.data || []);
     } catch (err) {
-      console.error("Error de red o formato:", err);
       setReservations([]);
     }  
   };
 
+  useEffect(() => {
+    fetchReservations();
+  }, [selectedCycle, selectedBuilding]);
 
-  // Creación de reservas
+
+  /* ---------- CARGA DE HORARIOS ---------- */
+  useEffect(() => {
+    if (!selectedCycle) return; 
+
+    setFullSchedule({});
+
+    const cacheKey = `full_schedule_${selectedCycle}`;
+    const cached = sessionStorage.getItem(cacheKey);
+
+    if (cached) {
+      try {
+        const parsedCache = JSON.parse(cached);
+        if (Object.keys(parsedCache).length > 0) {
+          setFullSchedule(parsedCache);
+          console.log("Horario recuperado instantáneamente desde sessionStorage.");
+          return;
+        }
+      } catch (e) {
+        console.warn("Caché corrupto, descargando nuevamente...");
+      }
+    }
+
+    const fetchGlobalSchedule = async () => {
+      try {
+        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}`);
+        if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
+
+        const result = await response.json();
+        const globalData = result.data || result; 
+
+        setFullSchedule(globalData);
+
+        sessionStorage.setItem(cacheKey, JSON.stringify(globalData));
+
+        const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+        if (existingKeys.length > 1) {
+          existingKeys.forEach(key => {
+            if (key !== cacheKey) sessionStorage.removeItem(key);
+          });
+        }
+
+      } catch (error) {
+        try {
+          toast.error("Fallo en SIIAU, iniciando descarga de archivos locales...", { autoClose: 2000 });
+          
+          const res = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}`);
+          if (!res.ok) throw new Error("Fallo al obtener respaldo local");
+
+          const fallbackData = await res.json();
+
+          setFullSchedule(fallbackData);
+          sessionStorage.setItem(cacheKey, JSON.stringify(fallbackData));
+
+          const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+          if (existingKeys.length > 1) {
+            existingKeys.forEach(key => {
+              if (key !== cacheKey) sessionStorage.removeItem(key);
+            });
+          }
+
+          console.log("Horario ensamblado desde archivos locales y guardado en Caché.");
+
+        } catch (localErr) {
+          toast.error("Error crítico al obtener los horarios de todos los servidores.");
+          setFullSchedule({});
+        }
+      }
+    };
+
+    fetchGlobalSchedule();
+  }, [selectedCycle]);
+
+
+  /* ---------- FILTRADO ---------- */
+  useEffect(() => {
+    if (!selectedBuilding || !fullSchedule || Object.keys(fullSchedule).length === 0) {
+      setSchedule([]);
+      return;
+    }
+    const buildingData = fullSchedule[selectedBuilding] || [];
+    setSchedule(buildingData);
+  }, [selectedBuilding, fullSchedule]);
+
+  /* ---------- CREAR RESERVA ---------- */
   const handleSaveReservation = async (reservationData) => {
     try {
-      // Verificación de autenticación, solo si se requiere Google Calendar
       if (String(reservationData.createInGoogleCalendar) === 'true') {
-        console.log('>> Se decidió CREAR evento en Google Calendar');
-  
         const authStatusRes = await fetch(`${API_URL}/api/google/status?user=${user}`);
         const authStatus = await authStatusRes.json();
   
         if (!authStatus.authenticated) {
-          toast.info('Redirigiéndote para iniciar sesión en Google...', {
-            autoClose: 1000,
-            closeOnClick: true,
-          });
+          toast.info('Redirigiéndote para iniciar sesión en Google...', { autoClose: 1000, closeOnClick: true });
           saveReservationState();
-          setTimeout(() => {
-            window.location.href = `${API_URL}/api/google/auth?user=${user}`;
-          }, 1300);
+          setTimeout(() => { window.location.href = `${API_URL}/api/google/auth?user=${user}`; }, 1300);
           return;
         }
-      } else {
-        console.log('>> NO se debe crear evento en Google Calendar');
       }
   
-      // Envío de reserva
       const response = await fetch(`${API_URL}/api/reservations?cycle=${selectedCycle}&buildingName=${selectedBuilding}&user=${user}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('token')}` },
@@ -199,358 +267,40 @@ export default function Calendar() {
       const result = await response.json();
   
       if (!response.ok) {
-        if (response.status === 409) {
-          alert('Ya existe una reserva para esta fecha, horario y aula.');
-        } else if (response.status === 500) {
-            toast.info('Tokens invalidos.\nRedirigiéndote para iniciar sesión en Google...', {
-            autoClose: 1000,
-            closeOnClick: true,
-          });
-          saveReservationState();
-          setTimeout(() => {
-            window.location.href = `${API_URL}/api/google/reauth?user=${user}`;
-          }, 1300);
+        if (response.status === 409) alert('Ya existe una reserva para esta fecha, horario y aula.');
+        else if (response.status === 500) {
+            toast.info('Tokens invalidos.\nRedirigiéndote para iniciar sesión en Google...', { autoClose: 1000, closeOnClick: true });
+            saveReservationState();
+            setTimeout(() => { window.location.href = `${API_URL}/api/google/reauth?user=${user}`; }, 1300);
         }
         else if (response.status === 403 || response.status === 401) {
           localStorage.clear();
           toast.error("Su sesión expiró. Inicie sesión nuevamente.",  {autoClose: 500});
-          setTimeout(() => {
-            window.location.href = `/login`;
-          }, 1000);
+          setTimeout(() => { window.location.href = `/login`; }, 1000);
         }
-        else {
-          console.error('Error desde el servidor:', result.error || 'Error desconocido');
-          alert(`Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
-        }
+        else alert(`Error al guardar la reserva: ${result.error || 'Error desconocido'}`);
         return;
       }
   
-      // console.log('>> Reserva guardada con éxito:', result);
       alert('Reserva guardada con éxito');
-  
-      // Refrescar reservas después del guardado
       fetchReservations();
     } catch (err) {
-      console.error('Error en el proceso de guardar reserva:', err);
       alert('Ocurrió un error al guardar la reserva. Revisa la consola.');
     }
   };
 
-  // Obtener edificios - Al cargar el componente
   useEffect(() => {
-    fetch(`${API_URL}/api/buildings`)
-      .then(response => response.json())
-      .then(data => {
-        const buildings = data.edifp || [];
-        // Filtra para que no tome en cuenta las clases virtuales
-        const filteredBuildings = buildings.filter(b => b.value !== "DESV1" && b.value !== "DESV2");
-        const prioritized = filteredBuildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
-        const rest = filteredBuildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
-
-        const newBuildingsOrder = [...prioritized, ...rest];
-        setBuildings(newBuildingsOrder); // Aquí cambia el orden
-      })
-      .catch(error => {
-        console.error("Error cargando los edificios:", error);
-        toast.error("Se ha detectado un error en el servidor.");
-      });
-  }, []);
-
-
-
-  useEffect(() => {
-    if (selectedBuilding) {
-      // Nombre del JSON dinámico según el edificio seleccionado
-      const buildingFile = `${API_URL}/api/classrooms?buildingName=${selectedBuilding}`;
-  
-      fetch(buildingFile)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.json();
-        })
-        .then(data => {
-          // Puede ser ["LFS01", ...] o [{name:"LFS01", capacity:30}, ...]
-          const normalized = Array.isArray(data)
-            ? data.map(item => typeof item === 'string'
-                ? { name: item, capacity: null }
-                : item)
-            : [];
-
-          // En caso de no tener cupos puestos no se mostrará nada
-          setClassrooms(normalized.map(x => x.name));
-
-          const capMap = {};
-          for (const x of normalized) capMap[x.name] = x.capacity ?? null;
-          setCapacities(capMap);
-        })
-        .catch(error => {
-          console.error("Error cargando los salones:", error);
-          toast.error("No se encontraron salones. Por favor, reinicia la página.");
-        });
-        
-    }
-  }, [selectedBuilding]);
-
-
-  useEffect(() => {
-    if (!selectedCycle || !selectedBuilding || isStatisticMode) return;
-  
-    const cacheKey = `schedule_${selectedCycle}_${selectedBuilding}`;
-    const schedulePrefixRegex = /^schedule_\d+_.+/;
-    
-    const loadLocalSchedule = async () => {
-      try {
-        const localResponse = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
-        if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
-        
-        const localData = await localResponse.json();
-  
-        if (Array.isArray(localData)) {
-          setSchedule(localData);
-          // BORRA SESSIONSTORAGE PARA QUE NO SE SOBRECARGUE
-          const keysWithPrefix = Object.keys(sessionStorage).filter(key => schedulePrefixRegex.test(key));
-
-          if (keysWithPrefix.length >= 10) {
-            keysWithPrefix.forEach(key => sessionStorage.removeItem(key));
-          }
-          sessionStorage.setItem(cacheKey, JSON.stringify(localData));
-          console.warn("Horario cargado desde archivo local.");
-        } else {
-          console.error("El archivo local no contiene un array válido:", localData);
-        }
-      } catch (error) {
-        if (!error.message.includes("Archivo local no encontrado")) {
-          toast.error("Error al cargar archivo local de respaldo. SIIAU no responde y no existen archivos del ciclo en el servidor.");
-        }
-        console.error("Error al cargar archivo local de respaldo.", error);
-        setSchedule([]);
-      }
-    };
-  
-    const fetchSchedule = async () => {
-      // Intentar obtener del caché
-      const cachedSchedule = sessionStorage.getItem(cacheKey);
-  
-      if (cachedSchedule) {
-        try {
-          const cachedData = JSON.parse(cachedSchedule);
-          if (Array.isArray(cachedData) && cachedData.length > 0) {
-            console.log("Usando caché para el horario");
-            setSchedule(cachedData);
-            return;
-          } else {
-            console.warn("El caché está vacío o no es un array, recargando datos...");
-          }
-        } catch (error) {
-          console.error("Error al parsear datos del caché:", error);
-          setSchedule([]);
-        }
-      }
-  
-      // Intentar obtener desde el backend
-      try {
-        const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}&buildingName=${selectedBuilding}`);
-        if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
-  
-        const data = await response.json();
-        
-        const scheduleEntry = data[selectedBuilding] || data;
-
-        // Manejar si es array directo
-        if (Array.isArray(scheduleEntry) && scheduleEntry.length > 0) {
-          setSchedule(scheduleEntry);
-          // BORRA SESSIONSTORAGE PARA QUE NO SE SOBRECARGUE
-          const keysWithPrefix = Object.keys(sessionStorage).filter(key => schedulePrefixRegex.test(key));
-
-          if (keysWithPrefix.length >= 10) {
-            keysWithPrefix.forEach(key => sessionStorage.removeItem(key));
-          }
-          sessionStorage.setItem(cacheKey, JSON.stringify(scheduleEntry));
-          console.log("Horario cargado desde el backend (array directo).");
-          return;
-        }
-
-        // Manejar si viene como { data: [...] }
-        if (Array.isArray(scheduleEntry?.data) && scheduleEntry?.data.length > 0 && !scheduleEntry?.error) {
-          setSchedule(scheduleEntry.data);
-          // BORRA SESSIONSTORAGE PARA QUE NO SE SOBRECARGUE
-          const keysWithPrefix = Object.keys(sessionStorage).filter(key => schedulePrefixRegex.test(key));
-
-          if (keysWithPrefix.length >= 10) {
-            keysWithPrefix.forEach(key => sessionStorage.removeItem(key));
-          }
-          sessionStorage.setItem(cacheKey, JSON.stringify(scheduleEntry.data));
-          console.log("Horario cargado desde el backend (objeto con .data).");
-          return;
-        }
-
-        console.warn("Respuesta vacía del backend. Cargando desde archivo local...");
-        await loadLocalSchedule();
-
-      } catch (error) {
-        console.error("Error al obtener datos desde el backend:", error);
-        await loadLocalSchedule();
-      }
-    };
-    fetchSchedule();
-  }, [selectedCycle, selectedBuilding, isStatisticMode]);
-
-
-  useEffect(() => {
-    if (!selectedCycle || !selectedBuilding) return;
-    fetchReservations();
-  }, [selectedCycle, selectedBuilding]);
-
-
-  //
-  // Fetch para obtener el número de alumnos
-  //
-  useEffect(() => {
-    if (!selectedCycle || !isStatisticMode || !selectedBuilding || buildings.length === 0) return;
-
-    const cacheKey = `full_schedule_${selectedCycle}`;
-    const cached = sessionStorage.getItem(cacheKey);
-
-    if (cached) {
-      try {
-        const parsed = JSON.parse(cached);
-        console.log("Usando caché para todos los edificios");
-        setFullSchedule(parsed);
-        return;
-      } catch (error) {
-        console.warn("Error al parsear caché de todos los edificios, recargando...");
-      }
-    }
-
-    const loadLocalSchedule = async (buildingName) => {
-      try {
-        const localResponse = await fetch(`${API_URL}/api/local-schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
-        if (!localResponse.ok) throw new Error(`Archivo local no encontrado: ${localResponse.status}`);
-
-        const localData = await localResponse.json();
-
-        if (Array.isArray(localData)) {
-          console.warn(`Horario cargado desde archivo local para ${buildingName}`);
-          return localData;
-        } else {
-          console.error("El archivo local no contiene un array válido:", localData);
-          return [];
-        }
-      } catch (error) {
-        console.error(`Error al cargar archivo local de respaldo para ${buildingName}:`, error);
-        return [];
-      }
-    };
-
-    const fetchAllBuildingsSchedules = async () => {
-      try {
-        const buildingValues = buildings.map(b => b.value);
-        const results = [];
-
-
-          for (const buildingName of buildingValues) {
-            try {
-              const response = await fetch(`${API_URL}/api/schedule?cycle=${selectedCycle}&buildingName=${buildingName}`);
-              if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
-
-              const data = await response.json();
-
-              if (data?.[buildingName]?.error === true) {
-                throw new Error(`Respuesta con error para ${buildingName}`);
-              }
-
-              let scheduleData = [];
-
-              // 1. Caso: es un array directo
-              if (Array.isArray(data)) {
-                scheduleData = data;
-              }
-              // 2. Caso: formato estándar { data: [...], error: false }
-              else if (Array.isArray(data?.data) && !data?.error) {
-                scheduleData = data.data;
-              }
-              // 3. Caso: { buildingName: [...] }
-              else if (data && Array.isArray(data[buildingName])) {
-                scheduleData = data[buildingName];
-                await new Promise(res => setTimeout(res, 50));
-              }
-              // 4. Caso: { buildingName: { data: [...], error: false } }
-              else if (data?.[buildingName]?.data && Array.isArray(data[buildingName].data)) {
-                scheduleData = data[buildingName].data;
-                await new Promise(res => setTimeout(res, 500));
-              }
-
-              if (Array.isArray(scheduleData) && scheduleData.length === 0) {
-                console.warn(`Horario vacío para ${buildingName}`);
-              }
-
-              results.push({ buildingName, data: scheduleData || []});
-            } catch (error) {
-              console.error(`Error al obtener datos desde el backend para ${buildingName}:`, error);
-              const fallbackData = await loadLocalSchedule(buildingName);
-              results.push({ buildingName, data: fallbackData || [] });
-            }
-          }
-
-        const allSchedules = results.reduce((acc, { buildingName, data }) => {
-          acc[buildingName] = data;
-          return acc;
-        }, {});
-
-        setFullSchedule(allSchedules);
-
-        // Codigo para que no se sobresature el sessionStorage
-        const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
-
-        if (existingKeys.length >= 2) {
-          existingKeys.forEach(key => sessionStorage.removeItem(key));
-        }
-
-        const allEmpty = !Object.values(allSchedules).some(arr => Array.isArray(arr) && arr.length > 0);
-        if (allEmpty) {
-          console.warn("Todos los horarios están vacíos. No se guardará en caché.");
-          return;
-        }
-
-        sessionStorage.setItem(cacheKey, JSON.stringify(allSchedules));
-        console.log("Horario cargado y guardado en caché");
-
-      } catch (error) {
-        console.error("Error al obtener horarios para todos los edificios:", error);
-        toast.error("Error al obtener horarios para todos los edificios. Favor de confirmar funcionamiento del servidor.");
-        setFullSchedule({});
-      }
-    };
-
-    fetchAllBuildingsSchedules();
-  }, [selectedCycle, isStatisticMode, buildings]);
-
-
-  useEffect(() => {
-    if (isStatisticMode) {
-      document.title = "TRACS - Conteo de Alumnos";
-    }
+    if (isStatisticMode) document.title = "TRACS - Conteo de Alumnos";
     else if (selectedBuilding) {
-      const displayName = {
-        DUCT1: "ALPHA",
-        DUCT2: "BETA",
-        DBETA: "CISCO"
-      }[selectedBuilding] || selectedBuilding;
-
+      const displayName = { DUCT1: "ALPHA", DUCT2: "BETA", DBETA: "CISCO" }[selectedBuilding] || selectedBuilding;
       document.title = `TRACS - ${displayName}`;
-    } else {
-      document.title = "TRACS";
-    }
+    } else document.title = "TRACS";
   }, [isStatisticMode, selectedBuilding]);
 
   return (
     <>
       <div className="calendar-container">
-        {/* <div className="main-content"> */}
         <div className="main-content background-image-container">
-          {/*<NavbarGlobal selectedCycle={selectedCycle} selectedBuilding={selectedBuilding} selectedDay={selectedDay}/>*/}
           <div className="select-content">
             <div className="background-Selects shadow-md z-2">
               <SelectsLogic
@@ -563,6 +313,7 @@ export default function Calendar() {
                 setIsStatisticMode={setIsStatisticMode}
                 isPrintMode={isPrintMode}
                 setIsPrintMode={setIsPrintMode}
+                fullSchedule={fullSchedule}
               />
             </div>
           </div>
@@ -676,7 +427,6 @@ export default function Calendar() {
 
                           return total + (parseInt(course.data.students || 0, 10) * hourSpan);
                         }
-
                         return total;
                       }, 0);
 
@@ -689,7 +439,6 @@ export default function Calendar() {
                         </td>
                       );
                     })}
-
                     {/* Total general del día */}
                     <td className="table-cell font-bold text-green-700 bg-gray-300">
                       {buildings.reduce((grandTotal, building) => {
@@ -712,7 +461,6 @@ export default function Calendar() {
 
                             return total + (parseInt(course.data.students || 0, 10) * hourSpan);
                           }
-
                           return total;
                         }, 0);
 
@@ -776,6 +524,7 @@ export default function Calendar() {
                             (isTemporalValid || isSiempreValid)
                           );
                         }) : null;
+
                         // Buscar si hay curso
                         const matchingCourse = schedule.find(scheduleItem => {
                           const [startTime, endTime] = scheduleItem.data.schedule.split('-');
@@ -798,10 +547,7 @@ export default function Calendar() {
                           [40, 150],
                           [200, 210],
                         ];
-
-                        const isForbidden = (h) =>
-                          forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
-
+                        const isForbidden = (h) => forbiddenHueRanges.some(([min, max]) => h >= min && h <= max);
                         const goldenAngle = 137.508;
                         let hue = 0;
 
@@ -809,7 +555,7 @@ export default function Calendar() {
                           const key = `${matchingCourse?.data?.course}|${matchingCourse?.professor}|${matchingCourse?.data?.nrc}|${matchingCourse?.data?.classroom}`;
 
                           if (cellColorMapRef.current[key]) {
-                            hue = cellColorMapRef.current[key]; // ya existe
+                            hue = cellColorMapRef.current[key];
                           } else {
                             const seed =
                               matchingCourse.data.course.length +
@@ -819,7 +565,6 @@ export default function Calendar() {
 
                             hue = seed % 360;
 
-                            // Usa Golden Angle hasta que encuentre un hue válido
                             let attempts = 0;
                             while (isForbidden(hue) && attempts < 10) {
                               hue = (hue + goldenAngle) % 360;
@@ -828,12 +573,10 @@ export default function Calendar() {
                             cellColorMapRef.current[key] = hue;
                           }
                         }
-                        /* Fin del coloreado de celdas */
 
                         let rowspan = 1;
                         let showReservation = false;
 
-                        // Solo cursos pueden tener rowspan > 1
                         if (matchingCourse) {
                           const [start, end] = matchingCourse.data.schedule.split('-');
                           const startHour = parseInt(start.substring(0, 2), 10);
@@ -841,17 +584,14 @@ export default function Calendar() {
                           
                           if (!isPrintMode) rowspan = endHour - startHour + 1;
 
-                          // Marcar horas ya renderizadas
                           for (let h = startHour; h <= endHour; h++) {
                             renderedCells[`${h}-${classroom}`] = true;
                           }
                         } else if (matchingReservation) {
-                          // Para reservas, verificar que no haya clase en ninguna hora del rango
                           const [resStart, resEnd] = matchingReservation.schedule.split('-');
                           const resStartHour = parseInt(resStart.substring(0, 2), 10);
                           const resEndHour = parseInt(resEnd.substring(0, 2), 10);
                           
-                          // Verificar que no haya clases en todo el rango de la reserva
                           const hasAnyClassInRange = schedule.some(course => {
                             const [courseStart, courseEnd] = course.data.schedule.split('-');
                             const courseStartHour = parseInt(courseStart.substring(0, 2), 10);
@@ -870,8 +610,8 @@ export default function Calendar() {
 
                           showReservation = !hasAnyClassInRange;
                         }
-                        return (
 
+                        return (
                           <td
                             key={index}
                             className={`table-cell font-semibold ${
@@ -926,7 +666,6 @@ export default function Calendar() {
             <a href={`/privacy`} className="hover:underline text-sm md:text-lg font-medium" target="_blank">Política de privacidad</a>
             <a href={`/terms`} className="hover:underline text-sm md:text-lg font-medium" target="_blank">Términos y condiciones</a>
           </div>
-
           <div className="hidden md:block text-right text-sm md:text-lg font-medium">
             © {new Date().getFullYear()} TRACS - Licenciado bajo MIT.
           </div>

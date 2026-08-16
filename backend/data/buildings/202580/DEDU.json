@@ -66,16 +66,16 @@
   },
   {
     "data": {
-      "schedule": "0800-1255",
+      "schedule": "1300-1755",
       "days": "L M I J V .",
       "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "175141",
-      "code": "I6909",
-      "students": 21,
+      "classroom": "A006",
+      "nrc": "115633",
+      "code": "I7421",
+      "students": 26,
       "course": "CALCULO DIFERENCIAL E INTEGRAL ()"
     },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+    "professor": "CORONA SANCHEZ, JUAN CARLOS"
   },
   {
     "data": {
@@ -92,16 +92,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1755",
+      "schedule": "0800-1255",
       "days": "L M I J V .",
       "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "115633",
-      "code": "I7421",
-      "students": 26,
+      "classroom": "A003",
+      "nrc": "175141",
+      "code": "I6909",
+      "students": 21,
       "course": "CALCULO DIFERENCIAL E INTEGRAL ()"
     },
-    "professor": "CORONA SANCHEZ, JUAN CARLOS"
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
   },
   {
     "data": {
@@ -157,19 +157,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1255",
-      "days": "L M I J V .",
-      "building": "DEDU",
-      "classroom": "A021",
-      "nrc": "134999",
-      "code": "I3284",
-      "students": 14,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS ()"
-    },
-    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
-  },
-  {
-    "data": {
       "schedule": "1200-1455",
       "days": "L M I J V .",
       "building": "DEDU",
@@ -180,6 +167,19 @@
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS ()"
     },
     "professor": "LOPEZ LOPEZ, ELKIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1255",
+      "days": "L M I J V .",
+      "building": "DEDU",
+      "classroom": "A021",
+      "nrc": "134999",
+      "code": "I3284",
+      "students": 14,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS ()"
+    },
+    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
   },
   {
     "data": {
@@ -287,19 +287,6 @@
   },
   {
     "data": {
-      "schedule": "0800-1155",
-      "days": "L M I J V .",
-      "building": "DEDU",
-      "classroom": "A004",
-      "nrc": "135006",
-      "code": "I7343",
-      "students": 37,
-      "course": "METODOS NUMERICOS ()"
-    },
-    "professor": "PANTOJA ESPINOZA, DELIAZAR"
-  },
-  {
-    "data": {
       "schedule": "1200-1555",
       "days": "L M I J V .",
       "building": "DEDU",
@@ -323,6 +310,19 @@
       "course": "METODOS NUMERICOS ()"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": "L M I J V .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "135006",
+      "code": "I7343",
+      "students": 37,
+      "course": "METODOS NUMERICOS ()"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
   },
   {
     "data": {

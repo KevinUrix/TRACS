@@ -378,19 +378,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDZ1",
-      "classroom": "A002",
-      "nrc": "49779",
-      "code": "I7420",
-      "students": 40,
-      "course": "CALCULO AVANZADO"
-    },
-    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
       "schedule": "1700-1755",
       "days": "L . I . . .",
       "building": "DEDZ1",
@@ -401,6 +388,19 @@
       "course": "CALCULO AVANZADO"
     },
     "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDZ1",
+      "classroom": "A002",
+      "nrc": "49779",
+      "code": "I7420",
+      "students": 40,
+      "course": "CALCULO AVANZADO"
+    },
+    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
   },
   {
     "data": {
@@ -1964,19 +1964,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDZ1",
-      "classroom": "A004",
-      "nrc": "111632",
-      "code": "I7353",
-      "students": 35,
-      "course": "MECANICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDZ1",
@@ -1987,6 +1974,19 @@
       "course": "MECANICA"
     },
     "professor": "AVIÑA RAMIREZ, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A004",
+      "nrc": "111632",
+      "code": "I7353",
+      "students": 35,
+      "course": "MECANICA"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
   },
   {
     "data": {
@@ -2789,7 +2789,7 @@
       "classroom": "A010",
       "nrc": "200070",
       "code": "IB067",
-      "students": 40,
+      "students": 41,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
@@ -3303,19 +3303,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDZ1",
-      "classroom": "",
-      "nrc": "213221",
-      "code": "V2141",
-      "students": 0,
-      "course": "SEMINARIO DE TESIS DE DOCTORADO I"
-    },
-    "professor": "SAINZ ABASCAL, ISABEL"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDZ1",
@@ -3329,29 +3316,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
       "building": "DEDZ1",
-      "classroom": "A012",
-      "nrc": "171941",
-      "code": "IG250",
-      "students": 6,
-      "course": "SEMINARIO DE TESIS DE MAESTRIA II"
+      "classroom": "",
+      "nrc": "213221",
+      "code": "V2141",
+      "students": 0,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO I"
     },
-    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDZ1",
-      "classroom": "A013",
-      "nrc": "171941",
-      "code": "IG250",
-      "students": 6,
-      "course": "SEMINARIO DE TESIS DE MAESTRIA II"
-    },
-    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
+    "professor": "SAINZ ABASCAL, ISABEL"
   },
   {
     "data": {
@@ -3378,6 +3352,32 @@
       "course": "SEMINARIO DE TESIS DE MAESTRIA I"
     },
     "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDZ1",
+      "classroom": "A012",
+      "nrc": "171941",
+      "code": "IG250",
+      "students": 6,
+      "course": "SEMINARIO DE TESIS DE MAESTRIA II"
+    },
+    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDZ1",
+      "classroom": "A013",
+      "nrc": "171941",
+      "code": "IG250",
+      "students": 6,
+      "course": "SEMINARIO DE TESIS DE MAESTRIA II"
+    },
+    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
   },
   {
     "data": {

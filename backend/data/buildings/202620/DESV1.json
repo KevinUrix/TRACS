@@ -534,6 +534,19 @@
   },
   {
     "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "A010",
+      "nrc": "102106",
+      "code": "I6982",
+      "students": 5,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION IV"
+    },
+    "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DESV1",
@@ -557,19 +570,6 @@
       "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION III"
     },
     "professor": "VELASCO RAMIREZ, SANDRA FABIOLA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DESV1",
-      "classroom": "A010",
-      "nrc": "102106",
-      "code": "I6982",
-      "students": 5,
-      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION IV"
-    },
-    "professor": "HERNANDEZ OLMOS, SAIRA LIZETTE"
   },
   {
     "data": {
@@ -904,7 +904,7 @@
       "classroom": "A001",
       "nrc": "216234",
       "code": "V2320",
-      "students": 2,
+      "students": 1,
       "course": "VIAS DE SEÑALIZACION Y TRANSDUCCION DE SEÑALES CELULARES"
     },
     "professor": "MACHADO SULBARAN, ANDREA CAROLINA"

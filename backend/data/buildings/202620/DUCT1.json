@@ -118,19 +118,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "200218",
-      "code": "IL365",
-      "students": 25,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DUCT1",
@@ -154,6 +141,19 @@
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . J . .",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "nrc": "200218",
+      "code": "IL365",
+      "students": 25,
+      "course": "ARQUITECTURA DE COMPUTADORAS"
+    },
+    "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
   },
   {
     "data": {
@@ -989,19 +989,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "210902",
-      "code": "V0731",
-      "students": 3,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "HERRERA LUJAN, ZOILA LILIANA"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DUCT1",
@@ -1028,16 +1015,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
       "building": "DUCT1",
-      "classroom": "LC02",
-      "nrc": "210903",
+      "classroom": "LC07",
+      "nrc": "210902",
       "code": "V0731",
-      "students": 28,
+      "students": 3,
       "course": "ESTRUCTURAS DE DATOS"
     },
-    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
+    "professor": "HERRERA LUJAN, ZOILA LILIANA"
   },
   {
     "data": {
@@ -1047,7 +1034,7 @@
       "classroom": "LC02",
       "nrc": "200222",
       "code": "IL354",
-      "students": 28,
+      "students": 29,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -1060,10 +1047,23 @@
       "classroom": "LC02",
       "nrc": "200222",
       "code": "IL354",
-      "students": 28,
+      "students": 29,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DUCT1",
+      "classroom": "LC02",
+      "nrc": "210903",
+      "code": "V0731",
+      "students": 28,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
   },
   {
     "data": {
@@ -1119,19 +1119,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC03",
-      "nrc": "200224",
-      "code": "IL354",
-      "students": 8,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "LUPERCIO CORONEL, RAMIRO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DUCT1",
@@ -1142,6 +1129,19 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DUCT1",
+      "classroom": "LC03",
+      "nrc": "200224",
+      "code": "IL354",
+      "students": 8,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "LUPERCIO CORONEL, RAMIRO"
   },
   {
     "data": {
@@ -1164,7 +1164,7 @@
       "classroom": "LC05",
       "nrc": "200226",
       "code": "IL354",
-      "students": 23,
+      "students": 22,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -2134,32 +2134,6 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC10",
-      "nrc": "187176",
-      "code": "IF906",
-      "students": 7,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "187176",
-      "code": "IF906",
-      "students": 7,
-      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
-    },
-    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DUCT1",
       "classroom": "LC06",
@@ -2185,16 +2159,29 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
       "building": "DUCT1",
-      "classroom": "LC05",
-      "nrc": "103965",
-      "code": "I7388",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION"
+      "classroom": "LC10",
+      "nrc": "187176",
+      "code": "IF906",
+      "students": 7,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
+    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC07",
+      "nrc": "187176",
+      "code": "IF906",
+      "students": 7,
+      "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
+    },
+    "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
   },
   {
     "data": {
@@ -2208,6 +2195,19 @@
       "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
     "professor": "GUTIERREZ RAMIREZ, FABIAN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DUCT1",
+      "classroom": "LC05",
+      "nrc": "103965",
+      "code": "I7388",
+      "students": 21,
+      "course": "LABORATORIO DE SIMULACION"
+    },
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
@@ -2864,19 +2864,6 @@
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "240854",
-      "code": "V0734",
-      "students": 26,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
       "classroom": "LC06",
       "nrc": "213175",
       "code": "IL370",
@@ -2888,12 +2875,12 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". . . . V .",
+      "days": "L . . . . .",
       "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "240857",
+      "classroom": "LC04",
+      "nrc": "240854",
       "code": "V0734",
-      "students": 22,
+      "students": 26,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -2913,6 +2900,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DUCT1",
+      "classroom": "LC07",
+      "nrc": "240857",
+      "code": "V0734",
+      "students": 22,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DUCT1",
@@ -2920,6 +2920,19 @@
       "nrc": "240859",
       "code": "V0734",
       "students": 28,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "DELGADO CASTAÑEDA, NOE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "nrc": "223601",
+      "code": "IL370",
+      "students": 40,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "DELGADO CASTAÑEDA, NOE"
@@ -2936,19 +2949,6 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "223601",
-      "code": "IL370",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "DELGADO CASTAÑEDA, NOE"
   },
   {
     "data": {

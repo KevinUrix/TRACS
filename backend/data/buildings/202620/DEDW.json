@@ -482,19 +482,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDW",
-      "classroom": "A002",
-      "nrc": "72625",
-      "code": "I6915",
-      "students": 21,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
-    },
-    "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDW",
@@ -505,6 +492,19 @@
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
     },
     "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "72625",
+      "code": "I6915",
+      "students": 21,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "MUÑOZ VILLEGAS, SUSANA"
   },
   {
     "data": {

@@ -716,19 +716,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "119781",
-      "code": "I7460",
-      "students": 20,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
-    },
-    "professor": "MORALES BELTRAN, JUAN RAMON"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDS",
@@ -739,6 +726,19 @@
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
     },
     "professor": "GARCIA SANCHEZ, JORGE LUIS"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "119781",
+      "code": "I7460",
+      "students": 20,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
+    },
+    "professor": "MORALES BELTRAN, JUAN RAMON"
   },
   {
     "data": {
@@ -794,19 +794,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "119785",
-      "code": "I7460",
-      "students": 20,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
-    },
-    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDS",
@@ -815,6 +802,19 @@
       "code": "I7459",
       "students": 20,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
+    },
+    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "119785",
+      "code": "I7460",
+      "students": 20,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
     },
     "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
   },

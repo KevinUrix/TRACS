@@ -600,6 +600,19 @@
   {
     "data": {
       "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "A015",
+      "nrc": "159378",
+      "code": "IB074",
+      "students": 14,
+      "course": "CARACTERIZACION DE MATERIALES II"
+    },
+    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDV",
       "classroom": "A007",
@@ -622,19 +635,6 @@
       "course": "CARACTERIZACION DE MATERIALES I"
     },
     "professor": "GILDO ORTIZ, LORENZO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A015",
-      "nrc": "159378",
-      "code": "IB074",
-      "students": 14,
-      "course": "CARACTERIZACION DE MATERIALES II"
-    },
-    "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
   },
   {
     "data": {
@@ -977,6 +977,19 @@
   {
     "data": {
       "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A012",
+      "nrc": "136608",
+      "code": "IC582",
+      "students": 20,
+      "course": "DINAMICA"
+    },
+    "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDV",
       "classroom": "A016",
@@ -999,19 +1012,6 @@
       "course": "DINAMICA"
     },
     "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "136608",
-      "code": "IC582",
-      "students": 20,
-      "course": "DINAMICA"
-    },
-    "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
   },
   {
     "data": {
@@ -1106,19 +1106,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "LC02",
-      "nrc": "43757",
-      "code": "I7516",
-      "students": 17,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "FIGUEROA MONTAÑO, ARTURO"
-  },
-  {
-    "data": {
       "schedule": "0800-1255",
       "days": ". . . J . .",
       "building": "DEDV",
@@ -1133,28 +1120,15 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
+      "days": ". . I . . .",
       "building": "DEDV",
-      "classroom": "A009",
-      "nrc": "108070",
-      "code": "I7342",
-      "students": 9,
+      "classroom": "LC02",
+      "nrc": "43757",
+      "code": "I7516",
+      "students": 17,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
-    "professor": "DIAZ CALDERA, LIZBETH"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A010",
-      "nrc": "108070",
-      "code": "I7342",
-      "students": 9,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "DIAZ CALDERA, LIZBETH"
+    "professor": "FIGUEROA MONTAÑO, ARTURO"
   },
   {
     "data": {
@@ -1181,6 +1155,32 @@
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "FIGUEROA MONTAÑO, ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "A009",
+      "nrc": "108070",
+      "code": "I7342",
+      "students": 9,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "DIAZ CALDERA, LIZBETH"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "A010",
+      "nrc": "108070",
+      "code": "I7342",
+      "students": 9,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "DIAZ CALDERA, LIZBETH"
   },
   {
     "data": {
@@ -1314,19 +1314,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A002",
-      "nrc": "104130",
-      "code": "I6010",
-      "students": 24,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
-    },
-    "professor": "LOPEZ LOPEZ, ELKIN"
-  },
-  {
-    "data": {
       "schedule": "1100-1155",
       "days": ". . . J . .",
       "building": "DEDV",
@@ -1340,29 +1327,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "251048",
+      "classroom": "A002",
+      "nrc": "104130",
       "code": "I6010",
-      "students": 2,
+      "students": 24,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
     },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "251048",
-      "code": "I6010",
-      "students": 2,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
-    },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
+    "professor": "LOPEZ LOPEZ, ELKIN"
   },
   {
     "data": {
@@ -1389,6 +1363,32 @@
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "A001",
+      "nrc": "251048",
+      "code": "I6010",
+      "students": 2,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
+    },
+    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "A007",
+      "nrc": "251048",
+      "code": "I6010",
+      "students": 2,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
+    },
+    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
   },
   {
     "data": {
@@ -1483,19 +1483,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "60810",
-      "code": "I7350",
-      "students": 36,
-      "course": "ELECTROMAGNETISMO"
-    },
-    "professor": "PONCE DUEÑAS, ALEJANDRO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -1509,16 +1496,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDV",
-      "classroom": "A005",
-      "nrc": "160207",
-      "code": "I5993",
-      "students": 19,
+      "classroom": "A012",
+      "nrc": "60810",
+      "code": "I7350",
+      "students": 36,
       "course": "ELECTROMAGNETISMO"
     },
-    "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
+    "professor": "PONCE DUEÑAS, ALEJANDRO"
   },
   {
     "data": {
@@ -1545,6 +1532,19 @@
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "ZAMUDIO OJEDA, ADALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "A005",
+      "nrc": "160207",
+      "code": "I5993",
+      "students": 19,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "VALTIERRA CARRANZA, IVAN FERNANDO"
   },
   {
     "data": {
@@ -3537,6 +3537,45 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "A014",
+      "nrc": "43549",
+      "code": "I7353",
+      "students": 35,
+      "course": "MECANICA"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A018",
+      "nrc": "42466",
+      "code": "I5807",
+      "students": 31,
+      "course": "MECANICA"
+    },
+    "professor": "BAUTISTA RICO, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A007",
+      "nrc": "132016",
+      "code": "IC675",
+      "students": 0,
+      "course": "MECANICA"
+    },
+    "professor": "ZARATE GALVEZ, SARAI"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -3560,45 +3599,6 @@
       "course": "MECANICA"
     },
     "professor": "SANTAMARIA DOMINGUEZ, EDGAR IVAN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A007",
-      "nrc": "132016",
-      "code": "IC675",
-      "students": 0,
-      "course": "MECANICA"
-    },
-    "professor": "ZARATE GALVEZ, SARAI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A018",
-      "nrc": "42466",
-      "code": "I5807",
-      "students": 31,
-      "course": "MECANICA"
-    },
-    "professor": "BAUTISTA RICO, FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A014",
-      "nrc": "43549",
-      "code": "I7353",
-      "students": 35,
-      "course": "MECANICA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
   },
   {
     "data": {
@@ -3667,19 +3667,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . . S",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "43552",
-      "code": "I7353",
-      "students": 9,
-      "course": "MECANICA"
-    },
-    "professor": "AVIÑA RAMIREZ, EDUARDO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -3703,6 +3690,19 @@
       "course": "MECANICA"
     },
     "professor": "VAZQUEZ BARRAGAN, NICOLAS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . . S",
+      "building": "DEDV",
+      "classroom": "A012",
+      "nrc": "43552",
+      "code": "I7353",
+      "students": 9,
+      "course": "MECANICA"
+    },
+    "professor": "AVIÑA RAMIREZ, EDUARDO"
   },
   {
     "data": {
@@ -3732,6 +3732,19 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A012",
+      "nrc": "42465",
+      "code": "I5807",
+      "students": 29,
+      "course": "MECANICA"
+    },
+    "professor": "PANTOJA GONZALEZ, DIEGO ARMANDO"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
@@ -3746,15 +3759,15 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . . . . .",
+      "days": ". . I . . .",
       "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "42465",
+      "classroom": "A016",
+      "nrc": "42464",
       "code": "I5807",
-      "students": 29,
+      "students": 9,
       "course": "MECANICA"
     },
-    "professor": "PANTOJA GONZALEZ, DIEGO ARMANDO"
+    "professor": "FLORES PEREZ, MARIO"
   },
   {
     "data": {
@@ -3794,19 +3807,6 @@
       "course": "MECANICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDV",
-      "classroom": "A016",
-      "nrc": "42464",
-      "code": "I5807",
-      "students": 9,
-      "course": "MECANICA"
-    },
-    "professor": "FLORES PEREZ, MARIO"
   },
   {
     "data": {
@@ -4590,19 +4590,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "43707",
-      "code": "I6917",
-      "students": 15,
-      "course": "ONDAS, FLUIDOS Y FISICA MOLECULAR"
-    },
-    "professor": "GARCIA LUNA, JOSE LUIS"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDV",
@@ -4613,6 +4600,19 @@
       "course": "ONDAS, FLUIDOS Y FISICA MOLECULAR"
     },
     "professor": "PALACIOS HERNANDEZ, EMILIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDV",
+      "classroom": "A012",
+      "nrc": "43707",
+      "code": "I6917",
+      "students": 15,
+      "course": "ONDAS, FLUIDOS Y FISICA MOLECULAR"
+    },
+    "professor": "GARCIA LUNA, JOSE LUIS"
   },
   {
     "data": {
@@ -5097,19 +5097,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A004",
-      "nrc": "200068",
-      "code": "IB067",
-      "students": 40,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "BACILIO NAVARRO, HECTOR MISAEL"
-  },
-  {
-    "data": {
       "schedule": "1500-1755",
       "days": ". . I . . .",
       "building": "DEDV",
@@ -5120,6 +5107,19 @@
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "AGUIAR BARRERA, MARTHA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "A004",
+      "nrc": "200068",
+      "code": "IB067",
+      "students": 40,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "BACILIO NAVARRO, HECTOR MISAEL"
   },
   {
     "data": {
@@ -5308,19 +5308,6 @@
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "159380",
-      "code": "IB089",
-      "students": 17,
-      "course": "PROPIEDADES DE LOS MATERIALES III"
-    },
-    "professor": "SANCHEZ MARTINEZ, ARACELI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDV",
       "classroom": "A006",
       "nrc": "153200",
       "code": "IB088",
@@ -5341,6 +5328,19 @@
       "course": "PROPIEDADES DE LOS MATERIALES II"
     },
     "professor": "BRAVO SANCHEZ, MARIELA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A008",
+      "nrc": "159380",
+      "code": "IB089",
+      "students": 17,
+      "course": "PROPIEDADES DE LOS MATERIALES III"
+    },
+    "professor": "SANCHEZ MARTINEZ, ARACELI"
   },
   {
     "data": {
@@ -5451,19 +5451,6 @@
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDV",
-      "classroom": "A001",
-      "nrc": "213221",
-      "code": "V2141",
-      "students": 0,
-      "course": "SEMINARIO DE TESIS DE DOCTORADO I"
-    },
-    "professor": "SAINZ ABASCAL, ISABEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDV",
       "classroom": "A007",
       "nrc": "193245",
       "code": "IH615",
@@ -5471,6 +5458,19 @@
       "course": "SEMINARIO DE TESIS DE DOCTORADO VII"
     },
     "professor": "PEREZ CENTENO, ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDV",
+      "classroom": "A001",
+      "nrc": "213221",
+      "code": "V2141",
+      "students": 0,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO I"
+    },
+    "professor": "SAINZ ABASCAL, ISABEL"
   },
   {
     "data": {
@@ -5760,6 +5760,19 @@
   },
   {
     "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDV",
+      "classroom": "A008",
+      "nrc": "42829",
+      "code": "I6003",
+      "students": 9,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE FISICA MODERNA"
+    },
+    "professor": "ROSALIO CUEVAS, SAMUEL"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDV",
@@ -5786,19 +5799,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDV",
-      "classroom": "A008",
-      "nrc": "42829",
-      "code": "I6003",
-      "students": 9,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE FISICA MODERNA"
-    },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DEDV",
@@ -5812,19 +5812,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDV",
-      "classroom": "A012",
-      "nrc": "213219",
-      "code": "I6003",
-      "students": 18,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE FISICA MODERNA"
-    },
-    "professor": "GARCIA LUNA, JOSE LUIS"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDV",
@@ -5835,6 +5822,19 @@
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ONDAS, FLUIDOS Y FISICA MOLECULAR"
     },
     "professor": "CRUZ GOMEZ, RAUL CANDELARIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDV",
+      "classroom": "A012",
+      "nrc": "213219",
+      "code": "I6003",
+      "students": 18,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE FISICA MODERNA"
+    },
+    "professor": "GARCIA LUNA, JOSE LUIS"
   },
   {
     "data": {
@@ -5864,19 +5864,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDV",
-      "classroom": "A017",
-      "nrc": "132857",
-      "code": "I5987",
-      "students": 7,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
-    },
-    "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DEDV",
@@ -5887,6 +5874,19 @@
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
     "professor": "SAINZ ABASCAL, ISABEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDV",
+      "classroom": "A017",
+      "nrc": "132857",
+      "code": "I5987",
+      "students": 7,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
+    },
+    "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
   },
   {
     "data": {

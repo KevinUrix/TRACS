@@ -40,19 +40,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "42250",
-      "code": "I5802",
-      "students": 9,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDR",
@@ -76,6 +63,19 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "42250",
+      "code": "I5802",
+      "students": 9,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
   },
   {
     "data": {
@@ -924,19 +924,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "212883",
-      "code": "V0713",
-      "students": 40,
-      "course": "METODOS NUMERICOS"
-    },
-    "professor": "RADILLO ENRIQUEZ, MARISOL"
-  },
-  {
-    "data": {
       "schedule": "0900-1255",
       "days": ". . . . V .",
       "building": "DEDR",
@@ -947,6 +934,19 @@
       "course": "METODOS NUMERICOS"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "212883",
+      "code": "V0713",
+      "students": 40,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "RADILLO ENRIQUEZ, MARISOL"
   },
   {
     "data": {
@@ -1484,19 +1484,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDR",
-      "classroom": "LC11",
-      "nrc": "59702",
-      "code": "I7267",
-      "students": 19,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
-    },
-    "professor": "LUQUE CHANG, ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDR",
       "classroom": "LC09",
@@ -1506,6 +1493,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
     "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDR",
+      "classroom": "LC11",
+      "nrc": "59702",
+      "code": "I7267",
+      "students": 19,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "LUQUE CHANG, ALBERTO"
   },
   {
     "data": {

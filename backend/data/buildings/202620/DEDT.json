@@ -1041,19 +1041,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A005",
-      "nrc": "125032",
-      "code": "I7262",
-      "students": 21,
-      "course": "DISEÑO DE INTERFACES"
-    },
-    "professor": "ESTRADA MARMOLEJO, RUBEN"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -1064,6 +1051,19 @@
       "course": "DISEÑO DE INTERFACES"
     },
     "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A005",
+      "nrc": "125032",
+      "code": "I7262",
+      "students": 21,
+      "course": "DISEÑO DE INTERFACES"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
   },
   {
     "data": {
@@ -2854,7 +2854,7 @@
       "classroom": "A017",
       "nrc": "200668",
       "code": "IL350",
-      "students": 11,
+      "students": 10,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "PONCE RUIZ, MARIA CRISTINA"
@@ -3316,16 +3316,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
       "building": "DEDT",
-      "classroom": "A009",
-      "nrc": "114818",
-      "code": "I9894",
-      "students": 37,
-      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+      "classroom": "A019",
+      "nrc": "120478",
+      "code": "I9892",
+      "students": 36,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
-    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+    "professor": "CARRION CORTES, JOSE MARIO"
   },
   {
     "data": {
@@ -3342,16 +3342,29 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
       "building": "DEDT",
-      "classroom": "A019",
-      "nrc": "120478",
-      "code": "I9892",
-      "students": 36,
-      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+      "classroom": "A009",
+      "nrc": "114818",
+      "code": "I9894",
+      "students": 37,
+      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
-    "professor": "CARRION CORTES, JOSE MARIO"
+    "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "153764",
+      "code": "I9894",
+      "students": 24,
+      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
+    },
+    "professor": "HERNANDEZ HERNANDEZ, HECTOR"
   },
   {
     "data": {
@@ -3378,19 +3391,6 @@
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "ESTRADA MARMOLEJO, RUBEN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . V .",
-      "building": "DEDT",
-      "classroom": "A002",
-      "nrc": "153764",
-      "code": "I9894",
-      "students": 24,
-      "course": "PROGRAMACION DE SISTEMAS RECONFIGURABLES"
-    },
-    "professor": "HERNANDEZ HERNANDEZ, HECTOR"
   },
   {
     "data": {
@@ -4551,19 +4551,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A017",
-      "nrc": "55448",
-      "code": "ET355",
-      "students": 0,
-      "course": "TOPICOS DE INGENIERIA BIOMEDICA VI"
-    },
-    "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -4587,6 +4574,19 @@
       "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
     },
     "professor": "CURIEL LOPEZ, FATIMA BELEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A017",
+      "nrc": "55448",
+      "code": "ET355",
+      "students": 0,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA VI"
+    },
+    "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
   },
   {
     "data": {

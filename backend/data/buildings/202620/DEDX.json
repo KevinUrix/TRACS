@@ -417,6 +417,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A019",
+      "nrc": "227125",
+      "code": "V0723",
+      "students": 35,
+      "course": "ALGORITMOS METAHEURISTICOS"
+    },
+    "professor": "BARAJAS GONZALEZ, EMILIO"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -440,19 +453,6 @@
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "227125",
-      "code": "V0723",
-      "students": 35,
-      "course": "ALGORITMOS METAHEURISTICOS"
-    },
-    "professor": "BARAJAS GONZALEZ, EMILIO"
   },
   {
     "data": {
@@ -976,19 +976,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A011",
-      "nrc": "240692",
-      "code": "V0718",
-      "students": 21,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "PEREZ ZARATE, ISAIAS EZEQUIEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -999,6 +986,19 @@
       "course": "BASES DE DATOS"
     },
     "professor": "HERNANDEZ CASAS, ANGEL TONATIUH"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDX",
+      "classroom": "A011",
+      "nrc": "240692",
+      "code": "V0718",
+      "students": 21,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "PEREZ ZARATE, ISAIAS EZEQUIEL"
   },
   {
     "data": {
@@ -1028,6 +1028,19 @@
   },
   {
     "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDX",
+      "classroom": "A010",
+      "nrc": "240725",
+      "code": "V0718",
+      "students": 26,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "AVIÑA MENDEZ, JOSE ANTONIO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -1041,16 +1054,16 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
       "building": "DEDX",
-      "classroom": "A010",
-      "nrc": "240725",
-      "code": "V0718",
-      "students": 26,
+      "classroom": "A020",
+      "nrc": "204858",
+      "code": "IL356",
+      "students": 17,
       "course": "BASES DE DATOS"
     },
-    "professor": "AVIÑA MENDEZ, JOSE ANTONIO"
+    "professor": "ARENAS YERENA, CARLOS DARIO"
   },
   {
     "data": {
@@ -1080,16 +1093,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
       "building": "DEDX",
-      "classroom": "A020",
-      "nrc": "204858",
+      "classroom": "A010",
+      "nrc": "204859",
       "code": "IL356",
-      "students": 17,
+      "students": 16,
       "course": "BASES DE DATOS"
     },
-    "professor": "ARENAS YERENA, CARLOS DARIO"
+    "professor": "GONZALEZ GARCIA, ALFREDO"
   },
   {
     "data": {
@@ -1103,19 +1116,6 @@
       "course": "BASES DE DATOS"
     },
     "professor": "MONTAÑEZ URIBE, ANGELES DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A010",
-      "nrc": "204859",
-      "code": "IL356",
-      "students": 16,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "GONZALEZ GARCIA, ALFREDO"
   },
   {
     "data": {
@@ -1990,19 +1990,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A010",
-      "nrc": "210901",
-      "code": "V0731",
-      "students": 28,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". . . . V .",
       "building": "DEDX",
@@ -2013,6 +2000,19 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A010",
+      "nrc": "210901",
+      "code": "V0731",
+      "students": 28,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
   },
   {
     "data": {
@@ -2029,6 +2029,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A011",
+      "nrc": "200222",
+      "code": "IL354",
+      "students": 29,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". . . . . S",
       "building": "DEDX",
@@ -2039,19 +2052,6 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A011",
-      "nrc": "200222",
-      "code": "IL354",
-      "students": 28,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
   },
   {
     "data": {
@@ -2100,23 +2100,10 @@
       "classroom": "A021",
       "nrc": "200226",
       "code": "IL354",
-      "students": 23,
+      "students": 22,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A009",
-      "nrc": "205729",
-      "code": "IL354",
-      "students": 25,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
   },
   {
     "data": {
@@ -2130,6 +2117,19 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDX",
+      "classroom": "A009",
+      "nrc": "205729",
+      "code": "IL354",
+      "students": 25,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
   },
   {
     "data": {
@@ -3673,7 +3673,7 @@
       "classroom": "A013",
       "nrc": "200665",
       "code": "IL350",
-      "students": 35,
+      "students": 36,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -3745,19 +3745,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1855",
-      "days": ". . . . . S",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "227382",
-      "code": "CU206",
-      "students": 35,
-      "course": "MINERIA DE DATOS"
-    },
-    "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
-  },
-  {
-    "data": {
       "schedule": "1600-1955",
       "days": ". . . . V .",
       "building": "DEDX",
@@ -3768,6 +3755,19 @@
       "course": "MINERIA DE DATOS"
     },
     "professor": "LUNA RETANA, GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1855",
+      "days": ". . . . . S",
+      "building": "DEDX",
+      "classroom": "A008",
+      "nrc": "227382",
+      "code": "CU206",
+      "students": 35,
+      "course": "MINERIA DE DATOS"
+    },
+    "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
   },
   {
     "data": {
@@ -3946,7 +3946,7 @@
       "classroom": "A021",
       "nrc": "200070",
       "code": "IB067",
-      "students": 40,
+      "students": 41,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
@@ -4044,19 +4044,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1155",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "153366",
-      "code": "IC686",
-      "students": 24,
-      "course": "PROGRAMACION APLICADA"
-    },
-    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDX",
@@ -4067,6 +4054,19 @@
       "course": "PROGRAMACION APLICADA"
     },
     "professor": "RODRIGUEZ VAZQUEZ, ALMA NAYELI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "153366",
+      "code": "IC686",
+      "students": 24,
+      "course": "PROGRAMACION APLICADA"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
   },
   {
     "data": {
@@ -4369,6 +4369,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDX",
+      "classroom": "A003",
+      "nrc": "193703",
+      "code": "IL352",
+      "students": 19,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "CAMACHO SANTILLAN, VERONICA"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -4392,19 +4405,6 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VEGA, SERGIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A003",
-      "nrc": "193703",
-      "code": "IL352",
-      "students": 19,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "CAMACHO SANTILLAN, VERONICA"
   },
   {
     "data": {
@@ -4564,19 +4564,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "227990",
-      "code": "IL352",
-      "students": 28,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
-  },
-  {
-    "data": {
       "schedule": "1100-1455",
       "days": ". . . . . S",
       "building": "DEDX",
@@ -4587,6 +4574,19 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VEGA, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "227990",
+      "code": "IL352",
+      "students": 28,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
   },
   {
     "data": {
@@ -5423,19 +5423,6 @@
   {
     "data": {
       "schedule": "0700-0755",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A010",
-      "nrc": "240854",
-      "code": "V0734",
-      "students": 26,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
       "days": ". . I . . .",
       "building": "DEDX",
       "classroom": "A009",
@@ -5449,12 +5436,12 @@
   {
     "data": {
       "schedule": "0700-0755",
-      "days": ". . I . . .",
+      "days": ". M . . . .",
       "building": "DEDX",
-      "classroom": "A011",
-      "nrc": "240857",
+      "classroom": "A010",
+      "nrc": "240854",
       "code": "V0734",
-      "students": 22,
+      "students": 26,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -5474,6 +5461,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A011",
+      "nrc": "240857",
+      "code": "V0734",
+      "students": 22,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
       "schedule": "1300-1355",
       "days": ". . . J . .",
       "building": "DEDX",
@@ -5481,6 +5481,19 @@
       "nrc": "240859",
       "code": "V0734",
       "students": 28,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "DELGADO CASTAÑEDA, NOE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A023",
+      "nrc": "223601",
+      "code": "IL370",
+      "students": 40,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "DELGADO CASTAÑEDA, NOE"
@@ -5497,19 +5510,6 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A023",
-      "nrc": "223601",
-      "code": "IL370",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "DELGADO CASTAÑEDA, NOE"
   },
   {
     "data": {
@@ -5553,6 +5553,19 @@
   {
     "data": {
       "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDX",
+      "classroom": "A009",
+      "nrc": "216572",
+      "code": "V0733",
+      "students": 40,
+      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
+    },
+    "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDX",
       "classroom": "A004",
@@ -5568,13 +5581,13 @@
       "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDX",
-      "classroom": "A009",
-      "nrc": "216572",
-      "code": "V0733",
+      "classroom": "A003",
+      "nrc": "204889",
+      "code": "IL369",
       "students": 40,
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
-    "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
+    "professor": "LARA LOPEZ, GRACIELA"
   },
   {
     "data": {
@@ -5588,19 +5601,6 @@
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A003",
-      "nrc": "204889",
-      "code": "IL369",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
-    },
-    "professor": "LARA LOPEZ, GRACIELA"
   },
   {
     "data": {

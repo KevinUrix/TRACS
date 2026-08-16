@@ -66,19 +66,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DUCT2",
-      "classroom": "LC04",
-      "nrc": "200205",
-      "code": "IL365",
-      "students": 26,
-      "course": "ARQUITECTURA DE COMPUTADORAS"
-    },
-    "professor": "MEZA ESPINOSA, JOSE JUAN"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DUCT2",
@@ -89,6 +76,19 @@
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "MORALES RAMIREZ, THELMA ISABEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "200205",
+      "code": "IL365",
+      "students": 26,
+      "course": "ARQUITECTURA DE COMPUTADORAS"
+    },
+    "professor": "MEZA ESPINOSA, JOSE JUAN"
   },
   {
     "data": {
@@ -326,6 +326,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DUCT2",
+      "classroom": "LC06",
+      "nrc": "260249",
+      "code": "V0718",
+      "students": 29,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
       "schedule": "0700-1055",
       "days": ". . . . . S",
       "building": "DUCT2",
@@ -346,19 +359,6 @@
       "nrc": "223209",
       "code": "IL356",
       "students": 28,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC06",
-      "nrc": "260249",
-      "code": "V0718",
-      "students": 29,
       "course": "BASES DE DATOS"
     },
     "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
@@ -469,19 +469,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC02",
-      "nrc": "210901",
-      "code": "V0731",
-      "students": 28,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DUCT2",
@@ -505,6 +492,19 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DUCT2",
+      "classroom": "LC02",
+      "nrc": "210901",
+      "code": "V0731",
+      "students": 28,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
   },
   {
     "data": {
@@ -534,19 +534,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . . S",
-      "building": "DUCT2",
-      "classroom": "LC07",
-      "nrc": "200224",
-      "code": "IL354",
-      "students": 8,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "LUPERCIO CORONEL, RAMIRO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DUCT2",
@@ -573,13 +560,26 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . . S",
+      "building": "DUCT2",
+      "classroom": "LC07",
+      "nrc": "200224",
+      "code": "IL354",
+      "students": 8,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "LUPERCIO CORONEL, RAMIRO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DUCT2",
       "classroom": "LC09",
       "nrc": "200226",
       "code": "IL354",
-      "students": 23,
+      "students": 22,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -596,32 +596,6 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
-  },
-  {
-    "data": {
-      "schedule": "1700-2055",
-      "days": "L . . . . .",
-      "building": "DUCT2",
-      "classroom": "LC04",
-      "nrc": "227958",
-      "code": "IL354",
-      "students": 26,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DUCT2",
-      "classroom": "LC08",
-      "nrc": "227958",
-      "code": "IL354",
-      "students": 26,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
   },
   {
     "data": {
@@ -648,6 +622,32 @@
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "ORTEGA SANCHEZ, NOE"
+  },
+  {
+    "data": {
+      "schedule": "1700-2055",
+      "days": "L . . . . .",
+      "building": "DUCT2",
+      "classroom": "LC04",
+      "nrc": "227958",
+      "code": "IL354",
+      "students": 26,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DUCT2",
+      "classroom": "LC08",
+      "nrc": "227958",
+      "code": "IL354",
+      "students": 26,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
   },
   {
     "data": {
@@ -1431,19 +1431,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1455",
-      "days": ". . . . V .",
-      "building": "DUCT2",
-      "classroom": "LC03",
-      "nrc": "204905",
-      "code": "V0716",
-      "students": 28,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DUCT2",
@@ -1470,16 +1457,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
       "building": "DUCT2",
-      "classroom": "LC07",
-      "nrc": "193710",
-      "code": "IL352",
-      "students": 25,
+      "classroom": "LC03",
+      "nrc": "204905",
+      "code": "V0716",
+      "students": 28,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
-    "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
+    "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
   },
   {
     "data": {
@@ -1493,6 +1480,19 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DUCT2",
+      "classroom": "LC07",
+      "nrc": "193710",
+      "code": "IL352",
+      "students": 25,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
   },
   {
     "data": {

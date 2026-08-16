@@ -3030,32 +3030,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDP",
-      "classroom": "A021",
-      "nrc": "178109",
-      "code": "IC631",
-      "students": 23,
-      "course": "INGENIERIA DE TRANSITO"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDP",
-      "classroom": "A020",
-      "nrc": "178109",
-      "code": "IC631",
-      "students": 23,
-      "course": "INGENIERIA DE TRANSITO"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDP",
@@ -3079,6 +3053,32 @@
       "course": "INGENIERIA DE TRANSITO"
     },
     "professor": "MORGADO CASTILLO, ROBERTO NESTOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDP",
+      "classroom": "A021",
+      "nrc": "178109",
+      "code": "IC631",
+      "students": 23,
+      "course": "INGENIERIA DE TRANSITO"
+    },
+    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A020",
+      "nrc": "178109",
+      "code": "IC631",
+      "students": 23,
+      "course": "INGENIERIA DE TRANSITO"
+    },
+    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
   },
   {
     "data": {
@@ -6749,52 +6749,52 @@
   {
     "data": {
       "schedule": "1600-1955",
-      "days": ". . . J . .",
+      "days": ". . I . . .",
       "building": "DEDP",
-      "classroom": "A017",
-      "nrc": "159521",
-      "code": "IC702",
-      "students": 36,
-      "course": "SISTEMAS DE INFORMACION GEOGRAFICA I"
+      "classroom": "A020",
+      "nrc": "165972",
+      "code": "IC718",
+      "students": 19,
+      "course": "SISTEMAS DE INFORMCION GEOGRAFICA II"
     },
     "professor": "GONZALEZ DE LUNA, CARLOS ALBERTO"
   },
   {
     "data": {
       "schedule": "2000-2055",
-      "days": ". . I . . .",
+      "days": ". . . J . .",
       "building": "DEDP",
-      "classroom": "A017",
-      "nrc": "159521",
-      "code": "IC702",
-      "students": 36,
-      "course": "SISTEMAS DE INFORMACION GEOGRAFICA I"
+      "classroom": "A020",
+      "nrc": "165972",
+      "code": "IC718",
+      "students": 19,
+      "course": "SISTEMAS DE INFORMCION GEOGRAFICA II"
     },
     "professor": "GONZALEZ DE LUNA, CARLOS ALBERTO"
   },
   {
     "data": {
       "schedule": "1600-1955",
-      "days": ". . I . . .",
+      "days": ". . . J . .",
       "building": "DEDP",
-      "classroom": "A020",
-      "nrc": "165972",
-      "code": "IC718",
-      "students": 19,
-      "course": "SISTEMAS DE INFORMCION GEOGRAFICA II"
+      "classroom": "A017",
+      "nrc": "159521",
+      "code": "IC702",
+      "students": 36,
+      "course": "SISTEMAS DE INFORMACION GEOGRAFICA I"
     },
     "professor": "GONZALEZ DE LUNA, CARLOS ALBERTO"
   },
   {
     "data": {
       "schedule": "2000-2055",
-      "days": ". . . J . .",
+      "days": ". . I . . .",
       "building": "DEDP",
-      "classroom": "A020",
-      "nrc": "165972",
-      "code": "IC718",
-      "students": 19,
-      "course": "SISTEMAS DE INFORMCION GEOGRAFICA II"
+      "classroom": "A017",
+      "nrc": "159521",
+      "code": "IC702",
+      "students": 36,
+      "course": "SISTEMAS DE INFORMACION GEOGRAFICA I"
     },
     "professor": "GONZALEZ DE LUNA, CARLOS ALBERTO"
   },
@@ -6982,6 +6982,32 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDP",
+      "classroom": "A020",
+      "nrc": "188718",
+      "code": "IC638",
+      "students": 1,
+      "course": "TEMAS ESPECIALES DE ESTRUCTURAS I"
+    },
+    "professor": "FRANCO ANAYA, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0800-0855",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A020",
+      "nrc": "188718",
+      "code": "IC638",
+      "students": 1,
+      "course": "TEMAS ESPECIALES DE ESTRUCTURAS I"
+    },
+    "professor": "FRANCO ANAYA, ROBERTO"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDP",
@@ -7009,32 +7035,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDP",
-      "classroom": "A020",
-      "nrc": "188718",
-      "code": "IC638",
-      "students": 1,
-      "course": "TEMAS ESPECIALES DE ESTRUCTURAS I"
-    },
-    "professor": "FRANCO ANAYA, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . I . . .",
-      "building": "DEDP",
-      "classroom": "A020",
-      "nrc": "188718",
-      "code": "IC638",
-      "students": 1,
-      "course": "TEMAS ESPECIALES DE ESTRUCTURAS I"
-    },
-    "professor": "FRANCO ANAYA, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDP",
       "classroom": "A011",
@@ -7057,32 +7057,6 @@
       "course": "TEMAS ESPECIALES EN CONSTRUCCION Y PLANEACION IV"
     },
     "professor": "BARBOZA NIÑO, LUIS ENRIQUE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDP",
-      "classroom": "A012",
-      "nrc": "183133",
-      "code": "IC655",
-      "students": 40,
-      "course": "TEMAS ESPECIALES EN CONSTRUCCION Y PLANEACION VI"
-    },
-    "professor": "SILVA GONZALEZ, JOSE ALFREDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDP",
-      "classroom": "A012",
-      "nrc": "183133",
-      "code": "IC655",
-      "students": 40,
-      "course": "TEMAS ESPECIALES EN CONSTRUCCION Y PLANEACION VI"
-    },
-    "professor": "SILVA GONZALEZ, JOSE ALFREDO"
   },
   {
     "data": {
@@ -7138,42 +7112,29 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
       "building": "DEDP",
-      "classroom": "A023",
-      "nrc": "235443",
-      "code": "IC658",
-      "students": 31,
-      "course": "TEMAS ESPECIALES EN GEOTECNIA III"
+      "classroom": "A012",
+      "nrc": "183133",
+      "code": "IC655",
+      "students": 40,
+      "course": "TEMAS ESPECIALES EN CONSTRUCCION Y PLANEACION VI"
     },
-    "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
+    "professor": "SILVA GONZALEZ, JOSE ALFREDO"
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDP",
-      "classroom": "A021",
-      "nrc": "235443",
-      "code": "IC658",
-      "students": 31,
-      "course": "TEMAS ESPECIALES EN GEOTECNIA III"
-    },
-    "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1755",
+      "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDP",
-      "classroom": "A016",
-      "nrc": "181934",
-      "code": "IC657",
-      "students": 35,
-      "course": "TEMAS ESPECIALES EN GEOTECNIA II"
+      "classroom": "A012",
+      "nrc": "183133",
+      "code": "IC655",
+      "students": 40,
+      "course": "TEMAS ESPECIALES EN CONSTRUCCION Y PLANEACION VI"
     },
-    "professor": "VAZQUEZ RODRIGUEZ, MARIA GUADALUPE"
+    "professor": "SILVA GONZALEZ, JOSE ALFREDO"
   },
   {
     "data": {
@@ -7200,6 +7161,45 @@
       "course": "TEMAS ESPECIALES EN GEOTECNIA IV"
     },
     "professor": "ALATORRE ZAMORA, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . . . V .",
+      "building": "DEDP",
+      "classroom": "A016",
+      "nrc": "181934",
+      "code": "IC657",
+      "students": 35,
+      "course": "TEMAS ESPECIALES EN GEOTECNIA II"
+    },
+    "professor": "VAZQUEZ RODRIGUEZ, MARIA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDP",
+      "classroom": "A023",
+      "nrc": "235443",
+      "code": "IC658",
+      "students": 31,
+      "course": "TEMAS ESPECIALES EN GEOTECNIA III"
+    },
+    "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . J . .",
+      "building": "DEDP",
+      "classroom": "A021",
+      "nrc": "235443",
+      "code": "IC658",
+      "students": 31,
+      "course": "TEMAS ESPECIALES EN GEOTECNIA III"
+    },
+    "professor": "RODRIGUEZ MEDINA, GUADALUPE ISABEL"
   },
   {
     "data": {
@@ -7242,32 +7242,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDP",
-      "classroom": "A013",
-      "nrc": "192684",
-      "code": "IC647",
-      "students": 5,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRASPORTE IV"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": "L . . . . .",
-      "building": "DEDP",
-      "classroom": "A017",
-      "nrc": "192684",
-      "code": "IC647",
-      "students": 5,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRASPORTE IV"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
       "schedule": "0900-0955",
       "days": "L . . . . .",
       "building": "DEDP",
@@ -7289,6 +7263,32 @@
       "code": "IC649",
       "students": 3,
       "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE VI"
+    },
+    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A013",
+      "nrc": "192684",
+      "code": "IC647",
+      "students": 5,
+      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRASPORTE IV"
+    },
+    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1200-1255",
+      "days": "L . . . . .",
+      "building": "DEDP",
+      "classroom": "A017",
+      "nrc": "192684",
+      "code": "IC647",
+      "students": 5,
+      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRASPORTE IV"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
   },

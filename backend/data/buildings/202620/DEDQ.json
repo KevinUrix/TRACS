@@ -3849,6 +3849,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A007",
+      "nrc": "153722",
+      "code": "IC579",
+      "students": 25,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "PONCE MACIAS, CAROLINA"
+  },
+  {
+    "data": {
       "schedule": "0800-0955",
       "days": ". . . . . S",
       "building": "DEDQ",
@@ -3862,13 +3875,13 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
       "building": "DEDQ",
-      "classroom": "A007",
-      "nrc": "153722",
+      "classroom": "A005",
+      "nrc": "179818",
       "code": "IC579",
-      "students": 25,
+      "students": 14,
       "course": "ETICA PROFESIONAL"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -3885,19 +3898,6 @@
       "course": "ETICA PROFESIONAL"
     },
     "professor": "MONZON, CESAR OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A005",
-      "nrc": "179818",
-      "code": "IC579",
-      "students": 14,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "PONCE MACIAS, CAROLINA"
   },
   {
     "data": {
@@ -3953,19 +3953,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A011",
-      "nrc": "43595",
-      "code": "I7381",
-      "students": 34,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "ORTEGA GUDIÑO, PEDRO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDQ",
@@ -3976,6 +3963,19 @@
       "course": "ETICA PROFESIONAL"
     },
     "professor": "MONZON, CESAR OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A011",
+      "nrc": "43595",
+      "code": "I7381",
+      "students": 34,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "ORTEGA GUDIÑO, PEDRO"
   },
   {
     "data": {
@@ -4720,19 +4720,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A004",
-      "nrc": "175273",
-      "code": "IF891",
-      "students": 14,
-      "course": "FINANZAS"
-    },
-    "professor": "PAEZ RIVAS, LAURA ESTELA"
-  },
-  {
-    "data": {
       "schedule": "1900-2055",
       "days": ". M . . . .",
       "building": "DEDQ",
@@ -4756,6 +4743,19 @@
       "course": "FINANZAS"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A004",
+      "nrc": "175273",
+      "code": "IF891",
+      "students": 14,
+      "course": "FINANZAS"
+    },
+    "professor": "PAEZ RIVAS, LAURA ESTELA"
   },
   {
     "data": {
@@ -5683,6 +5683,19 @@
   {
     "data": {
       "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDQ",
+      "classroom": "A010",
+      "nrc": "38450",
+      "code": "I3303",
+      "students": 20,
+      "course": "INGENIERIA DE COSTOS"
+    },
+    "professor": "PAEZ RIVAS, LAURA ESTELA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DEDQ",
       "classroom": "A004",
@@ -5705,19 +5718,6 @@
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDQ",
-      "classroom": "A010",
-      "nrc": "38450",
-      "code": "I3303",
-      "students": 20,
-      "course": "INGENIERIA DE COSTOS"
-    },
-    "professor": "PAEZ RIVAS, LAURA ESTELA"
   },
   {
     "data": {
@@ -5825,19 +5825,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDQ",
-      "classroom": "A020",
-      "nrc": "44626",
-      "code": "I7438",
-      "students": 26,
-      "course": "INGENIERIA DE COSTOS"
-    },
-    "professor": "ALDRETE CARRILLO, EDUARDO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DEDQ",
@@ -5861,6 +5848,19 @@
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDQ",
+      "classroom": "A020",
+      "nrc": "44626",
+      "code": "I7438",
+      "students": 26,
+      "course": "INGENIERIA DE COSTOS"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
   },
   {
     "data": {
@@ -6385,25 +6385,25 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": ". M . . . .",
+      "days": "L . . . . .",
       "building": "DEDQ",
-      "classroom": "A003",
-      "nrc": "163257",
-      "code": "I3584",
-      "students": 26,
+      "classroom": "A012",
+      "nrc": "136422",
+      "code": "I7580",
+      "students": 35,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "163257",
-      "code": "I3584",
-      "students": 26,
+      "classroom": "A012",
+      "nrc": "136422",
+      "code": "I7580",
+      "students": 35,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -6424,25 +6424,25 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": "L . . . . .",
+      "days": ". M . . . .",
       "building": "DEDQ",
-      "classroom": "A012",
-      "nrc": "136422",
-      "code": "I7580",
-      "students": 35,
+      "classroom": "A003",
+      "nrc": "163257",
+      "code": "I3584",
+      "students": 26,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
   },
   {
     "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
       "building": "DEDQ",
-      "classroom": "A012",
-      "nrc": "136422",
-      "code": "I7580",
-      "students": 35,
+      "classroom": "A009",
+      "nrc": "163257",
+      "code": "I3584",
+      "students": 26,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -7011,32 +7011,6 @@
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDQ",
-      "classroom": "A014",
-      "nrc": "103958",
-      "code": "I7387",
-      "students": 35,
-      "course": "INVESTIGACION DE OPERACIONES II"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A015",
-      "nrc": "103958",
-      "code": "I7387",
-      "students": 35,
-      "course": "INVESTIGACION DE OPERACIONES II"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDQ",
       "classroom": "A013",
       "nrc": "175270",
       "code": "IF896",
@@ -7057,6 +7031,32 @@
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A014",
+      "nrc": "103958",
+      "code": "I7387",
+      "students": 35,
+      "course": "INVESTIGACION DE OPERACIONES II"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A015",
+      "nrc": "103958",
+      "code": "I7387",
+      "students": 35,
+      "course": "INVESTIGACION DE OPERACIONES II"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
   },
   {
     "data": {
@@ -7177,32 +7177,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A013",
-      "nrc": "76990",
-      "code": "I7386",
-      "students": 31,
-      "course": "INVESTIGACION DE OPERACIONES I"
-    },
-    "professor": "GANDARA RODRIGUEZ, MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A013",
-      "nrc": "76990",
-      "code": "I7386",
-      "students": 31,
-      "course": "INVESTIGACION DE OPERACIONES I"
-    },
-    "professor": "GANDARA RODRIGUEZ, MANUEL"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDQ",
@@ -7226,6 +7200,32 @@
       "course": "INVESTIGACION DE OPERACIONES I"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A013",
+      "nrc": "76990",
+      "code": "I7386",
+      "students": 31,
+      "course": "INVESTIGACION DE OPERACIONES I"
+    },
+    "professor": "GANDARA RODRIGUEZ, MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1900-1955",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A013",
+      "nrc": "76990",
+      "code": "I7386",
+      "students": 31,
+      "course": "INVESTIGACION DE OPERACIONES I"
+    },
+    "professor": "GANDARA RODRIGUEZ, MANUEL"
   },
   {
     "data": {
@@ -8867,19 +8867,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDQ",
-      "classroom": "A022",
-      "nrc": "87350",
-      "code": "I7434",
-      "students": 35,
-      "course": "MECANICA DE MATERIALES"
-    },
-    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
-  },
-  {
-    "data": {
       "schedule": "1500-1755",
       "days": ". . . J . .",
       "building": "DEDQ",
@@ -8890,6 +8877,19 @@
       "course": "MECANICA DE MATERIALES"
     },
     "professor": "FRANCO ANAYA, ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDQ",
+      "classroom": "A022",
+      "nrc": "87350",
+      "code": "I7434",
+      "students": 35,
+      "course": "MECANICA DE MATERIALES"
+    },
+    "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
   },
   {
     "data": {
@@ -8998,32 +8998,6 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A017",
-      "nrc": "131802",
-      "code": "I7403",
-      "students": 27,
-      "course": "MERCADOTECNIA"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A013",
-      "nrc": "131802",
-      "code": "I7403",
-      "students": 27,
-      "course": "MERCADOTECNIA"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDQ",
       "classroom": "A06B",
@@ -9046,6 +9020,32 @@
       "course": "MERCADOTECNIA"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A017",
+      "nrc": "131802",
+      "code": "I7403",
+      "students": 27,
+      "course": "MERCADOTECNIA"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A013",
+      "nrc": "131802",
+      "code": "I7403",
+      "students": 27,
+      "course": "MERCADOTECNIA"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
   },
   {
     "data": {
@@ -9777,19 +9777,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1555",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A023",
-      "nrc": "137239",
-      "code": "IC572",
-      "students": 28,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "MUELA LOPEZ, MARIA CRISTINA"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDQ",
@@ -9800,6 +9787,19 @@
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1555",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A023",
+      "nrc": "137239",
+      "code": "IC572",
+      "students": 28,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
   },
   {
     "data": {
@@ -9972,32 +9972,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "65223",
-      "code": "I7378",
-      "students": 38,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "65223",
-      "code": "I7378",
-      "students": 38,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
       "schedule": "1500-1755",
       "days": "L . . . . .",
       "building": "DEDQ",
@@ -10021,6 +9995,32 @@
       "course": "PROCESOS DE MANUFACTURA"
     },
     "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "65223",
+      "code": "I7378",
+      "students": 38,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MACIAS RAMOS, JOSE APOLINAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "65223",
+      "code": "I7378",
+      "students": 38,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MACIAS RAMOS, JOSE APOLINAR"
   },
   {
     "data": {
@@ -10063,32 +10063,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A027",
-      "nrc": "65225",
-      "code": "I7378",
-      "students": 35,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "ZEPEDA SAHAGUN, CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A006",
-      "nrc": "65225",
-      "code": "I7378",
-      "students": 35,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "ZEPEDA SAHAGUN, CARLOS"
-  },
-  {
-    "data": {
       "schedule": "1800-2055",
       "days": "L . . . . .",
       "building": "DEDQ",
@@ -10112,6 +10086,32 @@
       "course": "PROCESOS DE MANUFACTURA"
     },
     "professor": "ACEVES BOJORQUEZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A027",
+      "nrc": "65225",
+      "code": "I7378",
+      "students": 35,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "ZEPEDA SAHAGUN, CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A006",
+      "nrc": "65225",
+      "code": "I7378",
+      "students": 35,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "ZEPEDA SAHAGUN, CARLOS"
   },
   {
     "data": {
@@ -10310,32 +10310,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "43566",
-      "code": "I7365",
-      "students": 40,
-      "course": "PSICOLOGIA INDUSTRIAL"
-    },
-    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "43566",
-      "code": "I7365",
-      "students": 40,
-      "course": "PSICOLOGIA INDUSTRIAL"
-    },
-    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDQ",
@@ -10359,6 +10333,32 @@
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "43566",
+      "code": "I7365",
+      "students": 40,
+      "course": "PSICOLOGIA INDUSTRIAL"
+    },
+    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "43566",
+      "code": "I7365",
+      "students": 40,
+      "course": "PSICOLOGIA INDUSTRIAL"
+    },
+    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
   },
   {
     "data": {
@@ -13183,32 +13183,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A002",
-      "nrc": "131795",
-      "code": "IC571",
-      "students": 35,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "NERI CORTES, CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A002",
-      "nrc": "131795",
-      "code": "IC571",
-      "students": 35,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "NERI CORTES, CRISTINA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DEDQ",
@@ -13232,6 +13206,32 @@
       "course": "TALLER DE REDACCION TECNICA"
     },
     "professor": "FRANCO SAPIEN, RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "131795",
+      "code": "IC571",
+      "students": 35,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "NERI CORTES, CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "131795",
+      "code": "IC571",
+      "students": 35,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "NERI CORTES, CRISTINA"
   },
   {
     "data": {

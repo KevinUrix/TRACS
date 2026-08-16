@@ -378,19 +378,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDF",
-      "classroom": "A005",
-      "nrc": "108074",
-      "code": "I7500",
-      "students": 22,
-      "course": "ELECTROQUIMICA I"
-    },
-    "professor": "CASILLAS SANTANA, NORBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDF",
@@ -401,6 +388,19 @@
       "course": "ELECTROQUIMICA I"
     },
     "professor": "GONZALEZ GUTIERREZ, ANA GABRIELA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDF",
+      "classroom": "A005",
+      "nrc": "108074",
+      "code": "I7500",
+      "students": 22,
+      "course": "ELECTROQUIMICA I"
+    },
+    "professor": "CASILLAS SANTANA, NORBERTO"
   },
   {
     "data": {
@@ -625,19 +625,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDF",
-      "classroom": "A002",
-      "nrc": "79438",
-      "code": "I5813",
-      "students": 25,
-      "course": "FISICOQUIMICA PARA INGENIEROS II"
-    },
-    "professor": "SAAVEDRA AYALA, LUIS ANTONIO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDF",
@@ -648,6 +635,19 @@
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "GONZALEZ IÑIGUEZ, KARLA JOSEFINA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDF",
+      "classroom": "A002",
+      "nrc": "79438",
+      "code": "I5813",
+      "students": 25,
+      "course": "FISICOQUIMICA PARA INGENIEROS II"
+    },
+    "professor": "SAAVEDRA AYALA, LUIS ANTONIO"
   },
   {
     "data": {
@@ -875,19 +875,6 @@
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDF",
-      "classroom": "A008",
-      "nrc": "117638",
-      "code": "I6174",
-      "students": 21,
-      "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
-    },
-    "professor": "NAVARRO HERNANDEZ, ROSA ELENA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDF",
       "classroom": "A003",
       "nrc": "63961",
       "code": "I5822",
@@ -895,6 +882,19 @@
       "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDF",
+      "classroom": "A008",
+      "nrc": "117638",
+      "code": "I6174",
+      "students": 21,
+      "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
+    },
+    "professor": "NAVARRO HERNANDEZ, ROSA ELENA"
   },
   {
     "data": {
@@ -1639,19 +1639,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . V .",
-      "building": "DEDF",
-      "classroom": "A005",
-      "nrc": "225122",
-      "code": "V3922",
-      "students": 10,
-      "course": "QUIMICA INORGANICA"
-    },
-    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
-  },
-  {
-    "data": {
       "schedule": "0900-0955",
       "days": ". . . . V .",
       "building": "DEDF",
@@ -1662,6 +1649,19 @@
       "course": "QUIMICA INORGANICA"
     },
     "professor": "PALACIOS JUAREZ, ROSALIA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . V .",
+      "building": "DEDF",
+      "classroom": "A005",
+      "nrc": "225122",
+      "code": "V3922",
+      "students": 10,
+      "course": "QUIMICA INORGANICA"
+    },
+    "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
   },
   {
     "data": {

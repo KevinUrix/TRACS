@@ -287,32 +287,6 @@
   },
   {
     "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "",
-      "nrc": "42418",
-      "code": "I5995",
-      "students": 13,
-      "course": "LABORATORIO DE ELECTROMAGNETISMO"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS04",
-      "nrc": "42418",
-      "code": "I5995",
-      "students": 13,
-      "course": "LABORATORIO DE ELECTROMAGNETISMO"
-    },
-    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . . J . .",
       "building": "DEDCS",
@@ -336,6 +310,32 @@
       "course": "LABORATORIO DE ELECTROMAGNETISMO"
     },
     "professor": "VARGAS CARMONA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1200-1255",
+      "days": ". . . . V .",
+      "building": "DEDCS",
+      "classroom": "",
+      "nrc": "42418",
+      "code": "I5995",
+      "students": 13,
+      "course": "LABORATORIO DE ELECTROMAGNETISMO"
+    },
+    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDCS",
+      "classroom": "LFS04",
+      "nrc": "42418",
+      "code": "I5995",
+      "students": 13,
+      "course": "LABORATORIO DE ELECTROMAGNETISMO"
+    },
+    "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
   },
   {
     "data": {
@@ -378,19 +378,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0955",
-      "days": ". . . J . .",
-      "building": "DEDCS",
-      "classroom": "LFS03",
-      "nrc": "77540",
-      "code": "I5995",
-      "students": 16,
-      "course": "LABORATORIO DE ELECTROMAGNETISMO"
-    },
-    "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDCS",
@@ -401,6 +388,19 @@
       "course": "LABORATORIO DE ELECTROMAGNETISMO"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . J . .",
+      "building": "DEDCS",
+      "classroom": "LFS03",
+      "nrc": "77540",
+      "code": "I5995",
+      "students": 16,
+      "course": "LABORATORIO DE ELECTROMAGNETISMO"
+    },
+    "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
   },
   {
     "data": {
@@ -625,19 +625,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDCS",
-      "classroom": "LFS02",
-      "nrc": "61100",
-      "code": "I7354",
-      "students": 13,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDCS",
@@ -651,16 +638,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
       "building": "DEDCS",
-      "classroom": "LFS01",
-      "nrc": "42421",
-      "code": "I5808",
-      "students": 15,
+      "classroom": "LFS02",
+      "nrc": "61100",
+      "code": "I7354",
+      "students": 13,
       "course": "LABORATORIO DE MECANICA"
     },
-    "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
+    "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
   },
   {
     "data": {
@@ -684,6 +671,19 @@
       "nrc": "133448",
       "code": "I5988",
       "students": 1,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDCS",
+      "classroom": "LFS01",
+      "nrc": "42421",
+      "code": "I5808",
+      "students": 15,
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "SALAZAR ZEPEDA, MARTIN HUGO"
@@ -729,6 +729,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDCS",
+      "classroom": "LFS01",
+      "nrc": "43556",
+      "code": "I7354",
+      "students": 20,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDCS",
@@ -755,16 +768,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
       "building": "DEDCS",
       "classroom": "LFS01",
-      "nrc": "43556",
+      "nrc": "43557",
       "code": "I7354",
       "students": 20,
       "course": "LABORATORIO DE MECANICA"
     },
-    "professor": "NAVARRO JIMENEZ, SILVANA GUADALUPE"
+    "professor": "RAMOS LARIOS, GERARDO"
   },
   {
     "data": {
@@ -781,16 +794,16 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
       "building": "DEDCS",
-      "classroom": "LFS01",
-      "nrc": "43557",
+      "classroom": "LFS03",
+      "nrc": "43555",
       "code": "I7354",
       "students": 20,
       "course": "LABORATORIO DE MECANICA"
     },
-    "professor": "RAMOS LARIOS, GERARDO"
+    "professor": "NAVARRETE NAVARRETE, LUIS"
   },
   {
     "data": {
@@ -804,19 +817,6 @@
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS03",
-      "nrc": "43555",
-      "code": "I7354",
-      "students": 20,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "NAVARRETE NAVARRETE, LUIS"
   },
   {
     "data": {
@@ -859,19 +859,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDCS",
-      "classroom": "LFS01",
-      "nrc": "159547",
-      "code": "I5808",
-      "students": 18,
-      "course": "LABORATORIO DE MECANICA"
-    },
-    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDCS",
@@ -882,6 +869,19 @@
       "course": "LABORATORIO DE MECANICA"
     },
     "professor": "VARGAS CARMONA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDCS",
+      "classroom": "LFS01",
+      "nrc": "159547",
+      "code": "I5808",
+      "students": 18,
+      "course": "LABORATORIO DE MECANICA"
+    },
+    "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
   },
   {
     "data": {
@@ -1327,19 +1327,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDCS",
-      "classroom": "LFS03",
-      "nrc": "60828",
-      "code": "I6915",
-      "students": 21,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
-    },
-    "professor": "MORENO CLOSE, ERIC ROLANDO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDCS",
@@ -1350,6 +1337,19 @@
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
     "professor": "PEREZ CENTENO, ARMANDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDCS",
+      "classroom": "LFS03",
+      "nrc": "60828",
+      "code": "I6915",
+      "students": 21,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "MORENO CLOSE, ERIC ROLANDO"
   },
   {
     "data": {

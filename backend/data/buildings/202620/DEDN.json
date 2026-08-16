@@ -1276,19 +1276,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDN",
-      "classroom": "LE04",
-      "nrc": "59683",
-      "code": "I7281",
-      "students": 18,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
-    },
-    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDN",
       "classroom": "LE04",
@@ -1298,6 +1285,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "59683",
+      "code": "I7281",
+      "students": 18,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
   },
   {
     "data": {

@@ -46,6 +46,21 @@ export default function Reports() {
     document.title = "TRACS - Reportes";
   }, []);
 
+  useEffect(() => {
+    const handleRefresh = () => {
+      const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+      existingKeys.forEach(key => sessionStorage.removeItem(key));
+
+      sessionStorage.removeItem('cached_cycles');
+    };
+
+    window.addEventListener('beforeunload', handleRefresh);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleRefresh);
+    };
+  }, []);
+  
   /* 
   isSaving es para que no se guarden dos reportes desde una misma modal, el problema es que si faltan o colocas datos incorrectos NO puedes volver a presionar el botón.
   */

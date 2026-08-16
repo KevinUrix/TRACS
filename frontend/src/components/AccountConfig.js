@@ -27,6 +27,21 @@ export default function AccountConfig() {
     document.title = "TRACS - Configuración";
   }, []);
 
+  useEffect(() => {
+    const handleRefresh = () => {
+      const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+      existingKeys.forEach(key => sessionStorage.removeItem(key));
+
+      sessionStorage.removeItem('cached_cycles');
+    };
+
+    window.addEventListener('beforeunload', handleRefresh);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleRefresh);
+    };
+  }, []);
+
   // Obtener datos del usuario al cargar el componente
   useEffect(() => {
     const fetchUserInfo = async () => {

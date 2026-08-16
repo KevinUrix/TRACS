@@ -33,6 +33,21 @@ export default function Crud() {
     document.title = "TRACS - CRUD";
   }, []);
 
+  useEffect(() => {
+    const handleRefresh = () => {
+      const existingKeys = Object.keys(sessionStorage).filter(key => key.startsWith("full_schedule_"));
+      existingKeys.forEach(key => sessionStorage.removeItem(key));
+
+      sessionStorage.removeItem('cached_cycles');
+    };
+
+    window.addEventListener('beforeunload', handleRefresh);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleRefresh);
+    };
+  }, []);
+
   const validBuildingField = (str, { allowSpaces = true } = {}) => {
     if (typeof str !== 'string') return false;
     if (str.startsWith(' ')) return false;
@@ -270,6 +285,13 @@ export default function Crud() {
         );
 
         toast.success("Edificio actualizado correctamente");
+        toast.warn("Es necesario que los usuarios recarguen la página para ver los horarios del edificio en el calendario.", { 
+          autoClose: 10000,
+          style: {
+            backgroundColor: '#e65100',
+            color: '#ffffff'
+          }
+        });
 
         const inputStr = await fetchClassroomsInput(cleanedBuildingData.value);
         if (inputStr !== null) {
@@ -432,6 +454,13 @@ export default function Crud() {
 
       setBuildings(prev => [...prev, { value: cleanValue, text: cleanText }]);
       toast.success("Edificio agregado correctamente");
+      toast.warn("Es necesario que los usuarios recarguen la página para ver los horarios del edificio en el calendario.", { 
+        autoClose: 10000,
+        style: {
+          backgroundColor: '#e65100',
+          color: '#ffffff'
+        }
+      });
 
       setLastCreatedBuilding(cleanValue);
       setShowAddModalBuilding(false);

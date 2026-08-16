@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import ProfessorSchedule from './professorSchedule';
 
@@ -8,6 +8,17 @@ export default function SearchProfessor({ selectedCycle, fullSchedule }) {
   const [showPopup, setShowPopup] = useState(false);
   const [isLoadingPopup, setIsLoadingPopup] = useState(false);
   const toastCooldown = useRef(false);
+  const [scaleFix, setScaleFix] = useState(1);
+
+  useEffect(() => {
+    const adjustScale = () => {
+      const zoomLevel = window.devicePixelRatio || 1;
+      setScaleFix(zoomLevel < 1 ? 1 / zoomLevel : 1);
+    };
+    adjustScale();
+    window.addEventListener('resize', adjustScale);
+    return () => window.removeEventListener('resize', adjustScale);
+  }, []);
 
   // Normalización estricta (igual a tu backend)
   const normalizeName = (name) => {
@@ -133,14 +144,21 @@ export default function SearchProfessor({ selectedCycle, fullSchedule }) {
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
         />
+        
         <button
           onClick={handleSearch}
-          className="search-button ml-2 p-2 rounded background-button5 text-white"
-          title="Buscar"
+          className="search-button relative group ml-2 p-2 rounded background-button5 text-white flex items-center justify-center"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/>
           </svg>
+          
+          <span 
+            className="absolute left-1/2 top-full mt-2 text-base font-medium bg-gray-700 text-white px-4 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:delay-500 z-50 pointer-events-none origin-top"
+            style={{ transform: `translateX(-50%) scale(${scaleFix})` }}
+          >
+            Buscar
+          </span>
         </button>
       </div>
 

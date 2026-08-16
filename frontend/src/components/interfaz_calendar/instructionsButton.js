@@ -1,7 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function InstructionsButton() {
   const [showInstructions, setShowInstructions] = useState(false);
+  const [scaleFix, setScaleFix] = useState(1);
+
+  useEffect(() => {
+    const adjustScale = () => {
+      const zoomLevel = window.devicePixelRatio || 1;
+      setScaleFix(zoomLevel < 1 ? 1 / zoomLevel : 1);
+    };
+    adjustScale();
+    window.addEventListener('resize', adjustScale);
+    return () => window.removeEventListener('resize', adjustScale);
+  }, []);
 
   const toggleInstructions = () => {
     setShowInstructions(!showInstructions);
@@ -28,7 +39,10 @@ export default function InstructionsButton() {
           </svg>
         </button>
 
-        <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10 span-info">
+        <span 
+          className="absolute left-1/2 top-full mt-2 text-base bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 span-info pointer-events-none origin-top"
+          style={{ transform: `translateX(-50%) scale(${scaleFix})` }}
+        >
           Instrucciones simples y créditos.
         </span>
       </div>
@@ -44,8 +58,8 @@ export default function InstructionsButton() {
             </ul>
             <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
             <h2 className="font-semibold">Creadores:</h2>
-            <p class="text-purple-600"> Kevin Uriel Gaona Padilla </p>
-            <p class="text-green-600"> Edgar Omar Monreal Zambrano </p>
+            <p className="text-purple-600"> Kevin Uriel Gaona Padilla </p>
+            <p className="text-green-600"> Edgar Omar Monreal Zambrano </p>
             <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
             
             <div className="flex justify-center">

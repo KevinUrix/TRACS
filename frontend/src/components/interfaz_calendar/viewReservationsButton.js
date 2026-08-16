@@ -31,11 +31,22 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
   const [showPopup, setShowPopup] = useState(false);
   const [filteredReservations, setFilteredReservations] = useState([]);
   const [selectedReservation, setSelectedReservation] = useState(null); // Nueva state para la reserva seleccionada
+  const [scaleFix, setScaleFix] = useState(1);
   
   const decoded = getDecodedToken();
   const userRole = decoded?.role ?? null; // Para obtener el rol de la cuenta.
   const user = decoded?.username ?? null; // Para obtener el usuario de la cuenta. 
   
+  useEffect(() => {
+    const adjustScale = () => {
+      const zoomLevel = window.devicePixelRatio || 1;
+      setScaleFix(zoomLevel < 1 ? 1 / zoomLevel : 1);
+    };
+    adjustScale();
+    window.addEventListener('resize', adjustScale);
+    return () => window.removeEventListener('resize', adjustScale);
+  }, []);
+
   useEffect(() => {
     if (Array.isArray(reservations)) {
       setFilteredReservations(reservations);
@@ -227,7 +238,10 @@ export default function ViewReservationsButton({ reservations, selectedCycle, se
         >
           <b>Ver reservas 📇</b>
         </button>
-        <span className="absolute left-1/2 translate-x-[-50%] top-full mt-2 text-sm bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-10 span-info">
+        <span 
+          className="absolute left-1/2 top-full mt-2 text-base bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 span-info pointer-events-none origin-top"
+          style={{ transform: `translateX(-50%) scale(${scaleFix})` }}
+        >
           Ver reservas filtradas por ciclo y edificio.
         </span>
       </div>

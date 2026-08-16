@@ -1,20 +1,47 @@
 import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
-import API_URL from '../../config/api';
 import ProfessorSchedule from './professorSchedule';
 
-export default function SearchProfessor({ selectedCycle, selectedBuilding, selectedDay }) {
+export default function SearchProfessor({ selectedCycle, fullSchedule }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredSchedule, setFilteredSchedule] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [isLoadingPopup, setIsLoadingPopup] = useState(false);
-  const toastCooldown = useRef(false)
+  const toastCooldown = useRef(false);
 
-  const handleSearch = async () => {
-    if (!selectedBuilding || !selectedCycle) {
-      toast.error('Debes seleccionar un ciclo y un edificio para realizar la búsqueda.');
+  // Normalización estricta (igual a tu backend)
+  const normalizeName = (name) => {
+    return name
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z\sñ]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  };
+
+  const matchesName = (fullName, normalizedQuery) => {
+    if (!normalizedQuery) return false;
+    return normalizedQuery
+      .split(' ')
+      .every(q => fullName.includes(q));
+  };
+
+  const handleSearch = () => {
+    if (!selectedCycle) {
+      toast.error('Debes seleccionar un ciclo para realizar la búsqueda.');
       return;
     }
+
+    if (!fullSchedule || Object.keys(fullSchedule).length === 0) {
+      if (!toastCooldown.current) {
+        toast.info('⏳ Obteniendo horarios... Intente de nuevo en unos segundos.', { autoClose: 3000 });
+        toastCooldown.current = true;
+        setTimeout(() => { toastCooldown.current = false; }, 3000);
+      }
+      return;
+    }
+
     if (!searchTerm.trim()) {
       setFilteredSchedule([]);
       setShowPopup(false);
@@ -22,49 +49,76 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
     }
 
     if (searchTerm.trim().length < 3) {
-      
       if (!toastCooldown.current) {
         toast.info('Escribe al menos 3 letras para buscar.');
         toastCooldown.current = true;
-        setTimeout(() => {
-          toastCooldown.current = false;
-        }, 2000);
+        setTimeout(() => { toastCooldown.current = false; }, 2000);
       }
       return;
     }
 
-    try {
-      setIsLoadingPopup(true);
-      const response = await fetch(`${API_URL}/api/search?name=${encodeURIComponent(searchTerm)}&cycle=${selectedCycle}&buildingName=${encodeURIComponent(selectedBuilding)}&day=${encodeURIComponent(selectedDay)}`);
-      setIsLoadingPopup(false);
+    setIsLoadingPopup(true);
+    
+    setTimeout(() => {
+      try {
+        const searchNormalized = normalizeName(searchTerm);
+        let matches = [];
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        if (response.status === 400) {
-          alert('Error de parámetros. Ingrese un valor válido para la búsqueda.');
-        } else {
-          toast.error(errorData.error || 'Error del servidor');
-        }
-        setFilteredSchedule([]);
-        setShowPopup(false);
-        return;
-      }
+        // Extraer todos los cursos que coinciden
+        Object.values(fullSchedule).forEach(buildingCourses => {
+          if (!Array.isArray(buildingCourses)) return;
 
-      const data = await response.json();
-      if (!Array.isArray(data)) {
-        setFilteredSchedule([]);
+          const profCourses = buildingCourses.filter(course => {
+            if (!course.professor) return false;
+            const normalizedFullName = normalizeName(course.professor);
+            return matchesName(normalizedFullName, searchNormalized);
+          });
+
+          matches.push(...profCourses);
+        });
+
+        // Lógica de ordenamiento (Igual a tu backend)
+        const dayPriority = { 'L': 1, 'M': 2, 'I': 3, 'J': 4, 'V': 5, 'S': 6, '.': 7 };
+
+        const getEarliestDayPriority = (daysStr) => {
+          if (!daysStr) return 7;
+          const days = daysStr.split(' ').filter(d => d !== '');
+          return days.reduce((min, d) => {
+            const pr = dayPriority[d] ?? 7;
+            return pr < min ? pr : min;
+          }, 7);
+        };
+
+        const getStartTime = (scheduleStr) => {
+          if (!scheduleStr) return 9999;
+          const [start] = scheduleStr.split('-');
+          return parseInt(start, 10);
+        };
+
+        matches.sort((a, b) => {
+          const aDayPr = getEarliestDayPriority(a.data.days || '');
+          const bDayPr = getEarliestDayPriority(b.data.days || '');
+
+          if (aDayPr !== bDayPr) {
+            return aDayPr - bDayPr;
+          }
+
+          const aStart = getStartTime(a.data.schedule);
+          const bStart = getStartTime(b.data.schedule);
+
+          return aStart - bStart;
+        });
+
+        setFilteredSchedule(matches);
         setShowPopup(true);
-        return;
+      } catch (error) {
+        console.error("Error al buscar el profesor:", error);
+        toast.error("Error al buscar el profesor.");
+        setFilteredSchedule([]);
+      } finally {
+        setIsLoadingPopup(false);
       }
-      setFilteredSchedule(data);
-      setShowPopup(true);
-    } catch (error) {
-      console.error("Error al buscar el profesor:", error);
-      toast.error("Error al buscar el profesor");
-      setFilteredSchedule([]);
-      setIsLoadingPopup(false);
-      setShowPopup(false);
-    }
+    }, 50);
   };
 
   return (
@@ -84,19 +138,8 @@ export default function SearchProfessor({ selectedCycle, selectedBuilding, selec
           className="search-button ml-2 p-2 rounded background-button5 text-white"
           title="Buscar"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/>
           </svg>
         </button>
       </div>

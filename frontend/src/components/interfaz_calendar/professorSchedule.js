@@ -13,7 +13,7 @@ const dayOrder = ['L', 'M', 'I', 'J', 'V', 'S', 'D'];
 
 export default function ProfessorSchedule({ professorSchedule, selectedCycle }) {
   if (!professorSchedule || professorSchedule.length === 0) {
-    return <p>No se encontraron horarios para este profesor {selectedCycle}.</p>;
+    return <p>No se encontraron horarios para este profesor durante el ciclo {selectedCycle}.</p>;
   }
 
   const groupedSchedules = professorSchedule.reduce((acc, course) => {

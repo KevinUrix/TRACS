@@ -10,7 +10,7 @@ const { initNotifier } = require('./utils/notifier');
 
 const scheduleRoutes = require('./routes/scheduleRoutes');
 const downloadRoutes = require('./routes/downloadRoutes');
-const searchRoutes = require('./routes/searchRoutes');
+// const searchRoutes = require('./routes/searchRoutes');
 const reservationsRoutes = require('./routes/reservationsRoutes')
 const classroomsRoutes = require('./routes/classroomsRoutes');
 const localScheduleRoutes = require( './routes/localScheduleRoutes');
@@ -55,7 +55,7 @@ app.use(express.json());
 // Rutas
 app.use(BASE_PATH_API, scheduleRoutes);
 app.use(BASE_PATH_API, downloadRoutes);
-app.use(BASE_PATH_API, searchRoutes);
+// app.use(BASE_PATH_API, searchRoutes);
 app.use(BASE_PATH_API, reservationsRoutes);
 app.use(BASE_PATH_API, classroomsRoutes);
 app.use(BASE_PATH_API, localScheduleRoutes);

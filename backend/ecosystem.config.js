@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "backend",
       script: "server.js",
-      node_args: "--max-old-space-size=512",
+      node_args: "--max-old-space-size=768",
     }
   ]
 }

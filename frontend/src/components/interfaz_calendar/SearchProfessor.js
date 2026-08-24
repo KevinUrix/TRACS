@@ -20,7 +20,7 @@ export default function SearchProfessor({ selectedCycle, fullSchedule }) {
     return () => window.removeEventListener('resize', adjustScale);
   }, []);
 
-  // Normalización estricta (igual a tu backend)
+  // Normalización estricta
   const normalizeName = (name) => {
     return name
       .toLowerCase()
@@ -88,7 +88,7 @@ export default function SearchProfessor({ selectedCycle, fullSchedule }) {
           matches.push(...profCourses);
         });
 
-        // Lógica de ordenamiento (Igual a tu backend)
+        // Lógica de ordenamiento
         const dayPriority = { 'L': 1, 'M': 2, 'I': 3, 'J': 4, 'V': 5, 'S': 6, '.': 7 };
 
         const getEarliestDayPriority = (daysStr) => {
@@ -163,13 +163,20 @@ export default function SearchProfessor({ selectedCycle, fullSchedule }) {
       </div>
 
       {(isLoadingPopup || showPopup) && (
-        <div className="popup-overlay" onClick={() => { if (!isLoadingPopup) setShowPopup(false); }}>
-          <div className="popup-content relative p-6 rounded-lg shadow-lg top-2" onClick={(e) => e.stopPropagation()}>
+        <div 
+          className="popup-overlay flex items-center justify-center fixed inset-0 bg-black bg-opacity-50" 
+          onClick={() => { if (!isLoadingPopup) setShowPopup(false); }}
+        >
+          <div 
+            className="popup-content relative p-6 rounded-lg shadow-lg" 
+            style={{ maxWidth: '1400px', width: '95%' }} 
+            onClick={(e) => e.stopPropagation()}
+          >
             {isLoadingPopup ? (
-              <p className="text-lg font-semibold text-center">Espere un momento . . . ⏳</p>
+              <p className="text-2xl font-semibold text-center">Espere un momento . . . ⏳</p>
             ) : (
               <>
-                <button className="close-popup" onClick={() => setShowPopup(false)}>✖</button>
+                <button className="close-popup absolute top-4 right-4" onClick={() => setShowPopup(false)}>✖</button>
                 <ProfessorSchedule professorSchedule={filteredSchedule} selectedCycle={selectedCycle} />
               </>
             )}

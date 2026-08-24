@@ -538,22 +538,41 @@ export default function Calendar() {
                           );
                         }) : null;
 
-                        // Buscar si hay curso
-                        const matchingCourse = schedule.find(scheduleItem => {
+                        /* --------------- Empalmes ---------------- */
+                        const dayCourses = schedule.filter(scheduleItem => {
+                          const days = scheduleItem.data.days.split(' ');
+                          return days.includes(selectedDay) && scheduleItem.data.classroom === classroom;
+                        });
+
+                        let matchingCourses = dayCourses.filter(scheduleItem => {
                           const [startTime, endTime] = scheduleItem.data.schedule.split('-');
                           const startHour = parseInt(startTime.substring(0, 2), 10);
                           const endHour = parseInt(endTime.substring(0, 2), 10);
-
-                          const days = scheduleItem.data.days.split(' ');
-                          const isCourseOnSelectedDay = days.includes(selectedDay); 
-
-                          return (
-                            currentHour >= startHour &&
-                            currentHour <= endHour &&
-                            scheduleItem.data.classroom === classroom &&
-                            isCourseOnSelectedDay
-                          );
+                          return currentHour >= startHour && currentHour <= endHour;
                         });
+
+                        if (matchingCourses.length > 0) {
+                          let keepExpanding = true;
+                          while (keepExpanding) {
+                            keepExpanding = false;
+                            
+                            const minH = Math.min(...matchingCourses.map(c => parseInt(c.data.schedule.split('-')[0].substring(0, 2), 10)));
+                            const maxH = Math.max(...matchingCourses.map(c => parseInt(c.data.schedule.split('-')[1].substring(0, 2), 10)));
+
+                            dayCourses.forEach(c => {
+                              const startH = parseInt(c.data.schedule.split('-')[0].substring(0, 2), 10);
+                              const endH = parseInt(c.data.schedule.split('-')[1].substring(0, 2), 10);
+
+                              if (startH <= maxH && endH >= minH && !matchingCourses.includes(c)) {
+                                matchingCourses.push(c);
+                                keepExpanding = true;
+                              }
+                            });
+                          }
+                        }
+
+                        const isOverlap = matchingCourses.length > 1;
+                        const matchingCourse = matchingCourses.length > 0 ? matchingCourses[0] : null;
                         
                         /* --------------- Coloreado de celdas ---------------- */
                         const forbiddenHueRanges = [
@@ -564,7 +583,7 @@ export default function Calendar() {
                         const goldenAngle = 137.508;
                         let hue = 0;
 
-                        if (matchingCourse) {
+                        if (matchingCourse && !isOverlap) {
                           const key = `${matchingCourse?.data?.course}|${matchingCourse?.professor}|${matchingCourse?.data?.nrc}|${matchingCourse?.data?.classroom}`;
 
                           if (cellColorMapRef.current[key]) {
@@ -590,14 +609,17 @@ export default function Calendar() {
                         let rowspan = 1;
                         let showReservation = false;
 
-                        if (matchingCourse) {
-                          const [start, end] = matchingCourse.data.schedule.split('-');
-                          const startHour = parseInt(start.substring(0, 2), 10);
-                          const endHour = parseInt(end.substring(0, 2), 10);
+                        if (matchingCourses.length > 0) {
+                          let maxEndHour = currentHour;
+                          matchingCourses.forEach(c => {
+                            const [start, end] = c.data.schedule.split('-');
+                            const endHour = parseInt(end.substring(0, 2), 10);
+                            if (endHour > maxEndHour) maxEndHour = endHour;
+                          });
                           
-                          if (!isPrintMode) rowspan = endHour - startHour + 1;
+                          if (!isPrintMode) rowspan = maxEndHour - currentHour + 1;
 
-                          for (let h = startHour; h <= endHour; h++) {
+                          for (let h = currentHour; h <= maxEndHour; h++) {
                             renderedCells[`${h}-${classroom}`] = true;
                           }
                         } else if (matchingReservation) {
@@ -629,14 +651,17 @@ export default function Calendar() {
                             key={index}
                             className={`table-cell font-semibold ${
                               showReservation ? 'reserved-cell' : (
+                                isOverlap ? 'overlap-cell text-white' : 
                                 matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'
                               )}`}
                             style={{
-                              backgroundColor: matchingCourse
-                                ? `hsl(${hue}, 50%, 46%)`
-                                : showReservation
-                                  ? '#0a304b'
-                                  : 'white'
+                              backgroundColor: isOverlap
+                                ? '#dc2626' // Rojo intenso - para empalmes
+                                : matchingCourse
+                                  ? `hsl(${hue}, 50%, 46%)`
+                                  : showReservation
+                                    ? '#0a304b'
+                                    : 'white'
                             }}
                             {...(!isPrintMode && rowspan > 1 ? { rowSpan: rowspan } : {})}
                           >
@@ -646,6 +671,47 @@ export default function Calendar() {
                                 <div className="course-name">{matchingReservation.code} {matchingReservation.course}</div>
                                 <div className="course-date">Fecha: {matchingReservation.date}</div>
                               </>
+                            ) : isOverlap ? (
+                              <div className="p-1 flex flex-col h-full w-full justify-center items-center text-center overflow-hidden">
+                                <div className={`font-bold text-red-900 bg-yellow-300 rounded flex justify-center items-center leading-none shadow-sm ${rowspan === 1 ? 'text-[10px] py-0.5 px-1 mb-1' : 'text-[13px] py-0.5 px-1.5 mb-2'}`}>
+                                ⚠️ EMPALME
+                              </div>
+                                {[...matchingCourses].sort((a, b) => {
+                                  const endA = parseInt(a.data.schedule.split('-')[1].substring(0, 2), 10);
+                                  const endB = parseInt(b.data.schedule.split('-')[1].substring(0, 2), 10);
+                                  return endA - endB;
+                                }).map((c, i) => {
+                                  const [start, end] = c.data.schedule.split('-');
+                                  return (
+                                    <div key={i} className={`flex flex-col items-center justify-center w-full min-w-0 gap-1 ${i > 0 ? 'mt-3 pt-3 border-t border-white/60' : ''}`}>
+                                      
+                                      <span className={`font-semibold text-white/90 leading-none ${rowspan > 1 ? 'text-[16px]' : 'text-[14px]'}`}>
+                                        {start.substring(0, 2)}:{start.substring(2, 4)} - {end.substring(0, 2)}:{end.substring(2, 4)}
+                                      </span>
+                                      {' '}
+                                      <span className={`font-bold leading-tight break-words whitespace-normal w-full ${rowspan > 1 ? 'text-[16px]' : 'text-[14px]'}`} title={c.professor}>
+                                        {c.professor}
+                                      </span>
+
+                                      {rowspan > 1 && (
+                                        <span className="text-[15px] leading-[1.1] line-clamp-2 w-full break-words whitespace-normal text-white/90" title={c.data.course}>
+                                          {c.data.course}
+                                        </span>
+                                      )}
+
+                                      <div className="flex flex-wrap justify-center items-center gap-1.5 w-full mt-0.5">
+                                        <span className={`font-bold bg-white/20 text-white px-1.5 rounded leading-none py-[3px] ${rowspan > 1 ? 'text-[14px]' : 'text-[12px]'}`}>
+                                          {c.data.code}
+                                        </span>
+                                        {' '}
+                                        <span className={`font-bold bg-white/20 text-white px-1.5 rounded leading-none py-[3px] ${rowspan > 1 ? 'text-[14px]' : 'text-[12px]'}`}>
+                                          {c.data.nrc}
+                                        </span>
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
                             ) : matchingCourse ? (
                               <>
                                 <div className="professor-name">{matchingCourse.professor}</div>

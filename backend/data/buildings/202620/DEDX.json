@@ -7,7 +7,7 @@
       "classroom": "A005",
       "nrc": "160713",
       "code": "I7607",
-      "students": 23,
+      "students": 24,
       "course": "ACONDICIONAMIENTO DE BIOSEÑALES Y BIOIMAGENES"
     },
     "professor": "BARAJAS GONZALEZ, EMILIO"
@@ -20,7 +20,7 @@
       "classroom": "A006",
       "nrc": "194919",
       "code": "IL349",
-      "students": 26,
+      "students": 32,
       "course": "ADMINISTRACION"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -33,7 +33,7 @@
       "classroom": "A007",
       "nrc": "194920",
       "code": "IL349",
-      "students": 33,
+      "students": 35,
       "course": "ADMINISTRACION"
     },
     "professor": "ZEPEDA GOMEZ, JOVAN RICARDO"
@@ -46,7 +46,7 @@
       "classroom": "A016",
       "nrc": "194923",
       "code": "IL349",
-      "students": 31,
+      "students": 36,
       "course": "ADMINISTRACION"
     },
     "professor": "VALDIVIA CHAVEZ, DULCE ANGELICA"
@@ -56,10 +56,10 @@
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDX",
-      "classroom": "A006",
+      "classroom": "A013",
       "nrc": "194926",
       "code": "IL349",
-      "students": 35,
+      "students": 34,
       "course": "ADMINISTRACION"
     },
     "professor": "FIGUEROA VEGA, LINKA VANESSA"
@@ -98,10 +98,36 @@
       "classroom": "A009",
       "nrc": "260263",
       "code": "V0724",
-      "students": 40,
+      "students": 39,
       "course": "ADMINISTRACION DE BASES DE DATOS"
     },
     "professor": "ALVAREZ CARREON, JESUS GILBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . V .",
+      "building": "DEDX",
+      "classroom": "A013",
+      "nrc": "267594",
+      "code": "V0724",
+      "students": 12,
+      "course": "ADMINISTRACION DE BASES DE DATOS"
+    },
+    "professor": "GUZMAN VAZQUEZ, ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDX",
+      "classroom": "A005",
+      "nrc": "235353",
+      "code": "V3635",
+      "students": 40,
+      "course": "ADMINISTRACION DE NEGOCIOS"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
   },
   {
     "data": {
@@ -111,7 +137,7 @@
       "classroom": "A005",
       "nrc": "235409",
       "code": "V3635",
-      "students": 40,
+      "students": 41,
       "course": "ADMINISTRACION DE NEGOCIOS"
     },
     "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
@@ -124,7 +150,7 @@
       "classroom": "A008",
       "nrc": "235409",
       "code": "V3635",
-      "students": 40,
+      "students": 41,
       "course": "ADMINISTRACION DE NEGOCIOS"
     },
     "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
@@ -163,7 +189,7 @@
       "classroom": "A006",
       "nrc": "193715",
       "code": "IL353",
-      "students": 36,
+      "students": 40,
       "course": "ADMINISTRACION DE PROYECTOS TECNOLOGICOS"
     },
     "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
@@ -176,7 +202,7 @@
       "classroom": "A007",
       "nrc": "193718",
       "code": "IL353",
-      "students": 35,
+      "students": 34,
       "course": "ADMINISTRACION DE PROYECTOS TECNOLOGICOS"
     },
     "professor": "HIDROGO NAVARRO, ALVARO NOE"
@@ -189,7 +215,7 @@
       "classroom": "A014",
       "nrc": "251298",
       "code": "IL353",
-      "students": 35,
+      "students": 33,
       "course": "ADMINISTRACION DE PROYECTOS TECNOLOGICOS"
     },
     "professor": "MENDOZA AYALA, IRVING EDGAR"
@@ -215,7 +241,7 @@
       "classroom": "A022",
       "nrc": "209855",
       "code": "IL378",
-      "students": 38,
+      "students": 37,
       "course": "ADMINISTRACION DE REDES"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -228,7 +254,7 @@
       "classroom": "A023",
       "nrc": "209855",
       "code": "IL378",
-      "students": 38,
+      "students": 37,
       "course": "ADMINISTRACION DE REDES"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -241,10 +267,23 @@
       "classroom": "A009",
       "nrc": "216482",
       "code": "IL378",
-      "students": 27,
+      "students": 29,
       "course": "ADMINISTRACION DE REDES"
     },
     "professor": "GARCIA RAMIREZ, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A016",
+      "nrc": "42247",
+      "code": "I5802",
+      "students": 32,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "ROMERO GASTELU, MARIA ELENA"
   },
   {
     "data": {
@@ -267,7 +306,7 @@
       "classroom": "A012",
       "nrc": "254887",
       "code": "IB056",
-      "students": 5,
+      "students": 9,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "RIOS MATA, DIANA NOHEMI"
@@ -280,8 +319,21 @@
       "classroom": "A021",
       "nrc": "154536",
       "code": "IF541",
-      "students": 0,
+      "students": 10,
       "course": "ALGEBRA LINEAL AVANZADA"
+    },
+    "professor": "ARANA DANIEL, NANCY GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A001",
+      "nrc": "138655",
+      "code": "I9878",
+      "students": 4,
+      "course": "ALGORITMIA"
     },
     "professor": "ARANA DANIEL, NANCY GUADALUPE"
   },
@@ -303,23 +355,10 @@
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDX",
-      "classroom": "A001",
-      "nrc": "138655",
-      "code": "I9878",
-      "students": 4,
-      "course": "ALGORITMIA"
-    },
-    "professor": "ARANA DANIEL, NANCY GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDX",
       "classroom": "A007",
       "nrc": "201936",
       "code": "V1136",
-      "students": 0,
+      "students": 8,
       "course": "ALGORITMOS BIO-INSPIRADOS"
     },
     "professor": "LOPEZ FRANCO, CARLOS ALBERTO"
@@ -371,7 +410,7 @@
       "classroom": "A018",
       "nrc": "227119",
       "code": "V0723",
-      "students": 35,
+      "students": 34,
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "PAREDES LOPEZ, ANGEL IGNACIO"
@@ -384,7 +423,7 @@
       "classroom": "A014",
       "nrc": "227122",
       "code": "V0723",
-      "students": 34,
+      "students": 35,
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "CONTRERAS GARCIA, GABRIEL"
@@ -410,20 +449,7 @@
       "classroom": "A022",
       "nrc": "227123",
       "code": "V0723",
-      "students": 35,
-      "course": "ALGORITMOS METAHEURISTICOS"
-    },
-    "professor": "BARAJAS GONZALEZ, EMILIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "227125",
-      "code": "V0723",
-      "students": 35,
+      "students": 36,
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "BARAJAS GONZALEZ, EMILIO"
@@ -436,7 +462,7 @@
       "classroom": "A019",
       "nrc": "260283",
       "code": "IL382",
-      "students": 33,
+      "students": 32,
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
@@ -449,10 +475,23 @@
       "classroom": "A007",
       "nrc": "260283",
       "code": "IL382",
-      "students": 33,
+      "students": 32,
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A019",
+      "nrc": "227125",
+      "code": "V0723",
+      "students": 37,
+      "course": "ALGORITMOS METAHEURISTICOS"
+    },
+    "professor": "BARAJAS GONZALEZ, EMILIO"
   },
   {
     "data": {
@@ -475,7 +514,7 @@
       "classroom": "A008",
       "nrc": "153342",
       "code": "I5906",
-      "students": 19,
+      "students": 20,
       "course": "ALMACENES DE DATOS (DATA WAREHOUSE)"
     },
     "professor": "VAZQUEZ CURIEL, ARMIDA GRISELDA"
@@ -501,7 +540,7 @@
       "classroom": "A010",
       "nrc": "204835",
       "code": "IL355",
-      "students": 28,
+      "students": 27,
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
@@ -514,7 +553,7 @@
       "classroom": "A021",
       "nrc": "204837",
       "code": "IL355",
-      "students": 39,
+      "students": 37,
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "ESPINOZA VALDEZ, AURORA"
@@ -579,7 +618,7 @@
       "classroom": "A019",
       "nrc": "204843",
       "code": "IL355",
-      "students": 25,
+      "students": 26,
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
@@ -592,7 +631,7 @@
       "classroom": "A004",
       "nrc": "204844",
       "code": "IL355",
-      "students": 28,
+      "students": 29,
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "LANDA HORTA, DANIEL OMAR"
@@ -605,7 +644,7 @@
       "classroom": "A002",
       "nrc": "204845",
       "code": "IL355",
-      "students": 28,
+      "students": 30,
       "course": "ANALISIS DE ALGORITMOS"
     },
     "professor": "MARTINEZ SOLTERO, ERASMO GABRIEL"
@@ -644,7 +683,7 @@
       "classroom": "A012",
       "nrc": "260285",
       "code": "V0741",
-      "students": 40,
+      "students": 42,
       "course": "ANALISIS FORENSE DIGITAL"
     },
     "professor": "SOTO SANCHEZ, JOSE DE JESUS"
@@ -657,7 +696,7 @@
       "classroom": "A006",
       "nrc": "260287",
       "code": "V0741",
-      "students": 32,
+      "students": 31,
       "course": "ANALISIS FORENSE DIGITAL"
     },
     "professor": "FRANCO LOPEZ VELARDE, EMMANUEL"
@@ -683,7 +722,7 @@
       "classroom": "A013",
       "nrc": "260292",
       "code": "V0725",
-      "students": 40,
+      "students": 39,
       "course": "ANALISIS Y VISUALIZACION DE LA INFORMACION"
     },
     "professor": "PEREZ PADILLA, NAYELI ARELI"
@@ -696,23 +735,10 @@
       "classroom": "A008",
       "nrc": "260293",
       "code": "V0725",
-      "students": 0,
+      "students": 13,
       "course": "ANALISIS Y VISUALIZACION DE LA INFORMACION"
     },
     "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
-  },
-  {
-    "data": {
-      "schedule": "1700-2055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A015",
-      "nrc": "180004",
-      "code": "IH421",
-      "students": 7,
-      "course": "APRENDIZAJE DE MAQUINA"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
   },
   {
     "data": {
@@ -729,29 +755,29 @@
   },
   {
     "data": {
+      "schedule": "1700-2055",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A015",
+      "nrc": "180004",
+      "code": "IH421",
+      "students": 7,
+      "course": "APRENDIZAJE DE MAQUINA"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDX",
       "classroom": "A016",
       "nrc": "209768",
       "code": "IL381",
-      "students": 33,
+      "students": 31,
       "course": "APRENDIZAJE MAQUINA"
     },
     "professor": "LOPEZ ARAMBURO, MARIA FERNANDA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A023",
-      "nrc": "223250",
-      "code": "IL381",
-      "students": 0,
-      "course": "APRENDIZAJE MAQUINA"
-    },
-    "professor": "ALANIS GARCIA, ALMA YOLANDA"
   },
   {
     "data": {
@@ -761,7 +787,7 @@
       "classroom": "A016",
       "nrc": "223251",
       "code": "IL381",
-      "students": 34,
+      "students": 35,
       "course": "APRENDIZAJE MAQUINA"
     },
     "professor": "EUSEBIO MARTIN, ESTEBAN"
@@ -774,7 +800,7 @@
       "classroom": "A011",
       "nrc": "223326",
       "code": "IL381",
-      "students": 34,
+      "students": 35,
       "course": "APRENDIZAJE MAQUINA"
     },
     "professor": "LOPEZ ARAMBURO, MARIA FERNANDA"
@@ -787,7 +813,7 @@
       "classroom": "A014",
       "nrc": "236030",
       "code": "IL381",
-      "students": 34,
+      "students": 35,
       "course": "APRENDIZAJE MAQUINA"
     },
     "professor": "PADILLA BECERRA, MARIA CRISTINA"
@@ -800,7 +826,7 @@
       "classroom": "A008",
       "nrc": "236063",
       "code": "IL381",
-      "students": 35,
+      "students": 36,
       "course": "APRENDIZAJE MAQUINA"
     },
     "professor": "BARAJAS GONZALEZ, EMILIO"
@@ -813,10 +839,10 @@
       "classroom": "A011",
       "nrc": "260294",
       "code": "IL381",
-      "students": 4,
+      "students": 5,
       "course": "APRENDIZAJE MAQUINA"
     },
-    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+    "professor": "MORENO LARA, QUENIRA JAANAI"
   },
   {
     "data": {
@@ -852,7 +878,7 @@
       "classroom": "A009",
       "nrc": "210914",
       "code": "I5629",
-      "students": 6,
+      "students": 7,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "PATIÑO RUIZ, ROBERTO"
@@ -865,7 +891,7 @@
       "classroom": "A002",
       "nrc": "200203",
       "code": "IL365",
-      "students": 14,
+      "students": 13,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "CASAS ORDAZ, ANGEL"
@@ -878,7 +904,7 @@
       "classroom": "A004",
       "nrc": "200204",
       "code": "IL365",
-      "students": 28,
+      "students": 29,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
@@ -904,7 +930,7 @@
       "classroom": "A018",
       "nrc": "200206",
       "code": "IL365",
-      "students": 12,
+      "students": 13,
       "course": "ARQUITECTURA DE COMPUTADORAS"
     },
     "professor": "MEZA ESPINOSA, JOSE JUAN"
@@ -914,7 +940,7 @@
       "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDX",
-      "classroom": "A017",
+      "classroom": "A001",
       "nrc": "200208",
       "code": "IL365",
       "students": 26,
@@ -969,7 +995,7 @@
       "classroom": "A011",
       "nrc": "235668",
       "code": "V0718",
-      "students": 21,
+      "students": 20,
       "course": "BASES DE DATOS"
     },
     "professor": "PEREZ ZARATE, ISAIAS EZEQUIEL"
@@ -995,7 +1021,7 @@
       "classroom": "A011",
       "nrc": "240692",
       "code": "V0718",
-      "students": 21,
+      "students": 20,
       "course": "BASES DE DATOS"
     },
     "professor": "PEREZ ZARATE, ISAIAS EZEQUIEL"
@@ -1054,26 +1080,13 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A020",
-      "nrc": "204858",
-      "code": "IL356",
-      "students": 17,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "ARENAS YERENA, CARLOS DARIO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDX",
       "classroom": "A010",
       "nrc": "240726",
       "code": "V0718",
-      "students": 18,
+      "students": 19,
       "course": "BASES DE DATOS"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
@@ -1086,23 +1099,23 @@
       "classroom": "A011",
       "nrc": "240726",
       "code": "V0718",
-      "students": 18,
+      "students": 19,
       "course": "BASES DE DATOS"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
       "building": "DEDX",
-      "classroom": "A010",
-      "nrc": "204859",
+      "classroom": "A020",
+      "nrc": "204858",
       "code": "IL356",
-      "students": 16,
+      "students": 19,
       "course": "BASES DE DATOS"
     },
-    "professor": "GONZALEZ GARCIA, ALFREDO"
+    "professor": "ARENAS YERENA, CARLOS DARIO"
   },
   {
     "data": {
@@ -1112,10 +1125,36 @@
       "classroom": "A001",
       "nrc": "240729",
       "code": "V0718",
-      "students": 28,
+      "students": 29,
       "course": "BASES DE DATOS"
     },
     "professor": "MONTAÑEZ URIBE, ANGELES DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A010",
+      "nrc": "204859",
+      "code": "IL356",
+      "students": 15,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "GONZALEZ GARCIA, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A017",
+      "nrc": "240731",
+      "code": "V0718",
+      "students": 28,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
   },
   {
     "data": {
@@ -1133,32 +1172,6 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A017",
-      "nrc": "240731",
-      "code": "V0718",
-      "students": 28,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A020",
-      "nrc": "240736",
-      "code": "V0718",
-      "students": 28,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDX",
       "classroom": "A003",
@@ -1168,6 +1181,19 @@
       "course": "BASES DE DATOS"
     },
     "professor": "ESTRADA GUZMAN, ELSA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A020",
+      "nrc": "240736",
+      "code": "V0718",
+      "students": 29,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
   },
   {
     "data": {
@@ -1190,7 +1216,7 @@
       "classroom": "A004",
       "nrc": "240686",
       "code": "IL356",
-      "students": 23,
+      "students": 21,
       "course": "BASES DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
@@ -1242,7 +1268,7 @@
       "classroom": "A022",
       "nrc": "117866",
       "code": "I7344",
-      "students": 26,
+      "students": 27,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "PUERTO COVARRUBIAS, ALMA PATRICIA"
@@ -1255,7 +1281,7 @@
       "classroom": "A015",
       "nrc": "43700",
       "code": "I6909",
-      "students": 0,
+      "students": 12,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
@@ -1272,19 +1298,6 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "ACEVES FERNANDEZ, ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A016",
-      "nrc": "251067",
-      "code": "I3281",
-      "students": 0,
-      "course": "CALCULO II"
-    },
-    "professor": "BONILLA MERCADO, VICTORINO"
   },
   {
     "data": {
@@ -1346,7 +1359,7 @@
       "classroom": "A019",
       "nrc": "240758",
       "code": "V0732",
-      "students": 39,
+      "students": 37,
       "course": "CALIDAD DEL SOFTWARE"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
@@ -1392,6 +1405,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDX",
+      "classroom": "A017",
+      "nrc": "236427",
+      "code": "V3688",
+      "students": 20,
+      "course": "CIENCIA Y SUSTENTABILIDAD"
+    },
+    "professor": "RIVERA TELLO, SERGIO IVAN"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -1424,7 +1450,7 @@
       "classroom": "A007",
       "nrc": "260296",
       "code": "V3688",
-      "students": 40,
+      "students": 28,
       "course": "CIENCIA Y SUSTENTABILIDAD"
     },
     "professor": "RETAMOZA VEGA, PATRICIA DEL ROSARIO"
@@ -1437,7 +1463,7 @@
       "classroom": "A022",
       "nrc": "266440",
       "code": "V5902",
-      "students": 0,
+      "students": 22,
       "course": "CIRCUITOS ELECTRONICOS"
     },
     "professor": "CANDELARIO GUZMAN, GUSTAVO"
@@ -1450,7 +1476,7 @@
       "classroom": "A005",
       "nrc": "223332",
       "code": "I5912",
-      "students": 31,
+      "students": 33,
       "course": "CLASIFICACION INTELIGENTE DE DATOS"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -1489,7 +1515,7 @@
       "classroom": "A019",
       "nrc": "260321",
       "code": "V0745",
-      "students": 29,
+      "students": 31,
       "course": "COMERCIO ELECTRONICO"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -1502,7 +1528,7 @@
       "classroom": "A023",
       "nrc": "260321",
       "code": "V0745",
-      "students": 29,
+      "students": 31,
       "course": "COMERCIO ELECTRONICO"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -1515,7 +1541,7 @@
       "classroom": "A001",
       "nrc": "260322",
       "code": "V0745",
-      "students": 15,
+      "students": 17,
       "course": "COMERCIO ELECTRONICO"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -1528,7 +1554,7 @@
       "classroom": "A011",
       "nrc": "260323",
       "code": "V0745",
-      "students": 28,
+      "students": 30,
       "course": "COMERCIO ELECTRONICO"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -1541,7 +1567,7 @@
       "classroom": "A009",
       "nrc": "260323",
       "code": "V0745",
-      "students": 28,
+      "students": 30,
       "course": "COMERCIO ELECTRONICO"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -1554,7 +1580,7 @@
       "classroom": "A018",
       "nrc": "216497",
       "code": "IL359",
-      "students": 26,
+      "students": 24,
       "course": "COMPILADORES"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
@@ -1580,7 +1606,7 @@
       "classroom": "A023",
       "nrc": "216499",
       "code": "IL359",
-      "students": 39,
+      "students": 40,
       "course": "COMPILADORES"
     },
     "professor": "AVIÑA MENDEZ, JOSE ANTONIO"
@@ -1593,7 +1619,7 @@
       "classroom": "A010",
       "nrc": "216499",
       "code": "IL359",
-      "students": 39,
+      "students": 40,
       "course": "COMPILADORES"
     },
     "professor": "AVIÑA MENDEZ, JOSE ANTONIO"
@@ -1619,7 +1645,7 @@
       "classroom": "A009",
       "nrc": "216501",
       "code": "IL359",
-      "students": 40,
+      "students": 39,
       "course": "COMPILADORES"
     },
     "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -1632,7 +1658,7 @@
       "classroom": "A003",
       "nrc": "216502",
       "code": "IL359",
-      "students": 15,
+      "students": 16,
       "course": "COMPILADORES"
     },
     "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -1645,7 +1671,7 @@
       "classroom": "A004",
       "nrc": "216502",
       "code": "IL359",
-      "students": 15,
+      "students": 16,
       "course": "COMPILADORES"
     },
     "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -1658,7 +1684,7 @@
       "classroom": "A006",
       "nrc": "260299",
       "code": "V0750",
-      "students": 35,
+      "students": 37,
       "course": "COMPUTACION EN FRONTERA"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -1671,7 +1697,7 @@
       "classroom": "A022",
       "nrc": "103850",
       "code": "I9900",
-      "students": 30,
+      "students": 25,
       "course": "CONTROL I"
     },
     "professor": "ALDANA LOPEZ, CARLOS IVAN"
@@ -1684,7 +1710,7 @@
       "classroom": "A022",
       "nrc": "178654",
       "code": "I9900",
-      "students": 34,
+      "students": 38,
       "course": "CONTROL I"
     },
     "professor": "FERNANDEZ MUJICA, JESUS HUMBERTO"
@@ -1697,7 +1723,7 @@
       "classroom": "A017",
       "nrc": "178654",
       "code": "I9900",
-      "students": 34,
+      "students": 38,
       "course": "CONTROL I"
     },
     "professor": "FERNANDEZ MUJICA, JESUS HUMBERTO"
@@ -1710,7 +1736,7 @@
       "classroom": "A017",
       "nrc": "124876",
       "code": "I9902",
-      "students": 33,
+      "students": 32,
       "course": "CONTROL II"
     },
     "professor": "VEGA MAGDALENO, GUSTAVO DANIEL"
@@ -1723,7 +1749,7 @@
       "classroom": "A017",
       "nrc": "216507",
       "code": "I9902",
-      "students": 34,
+      "students": 36,
       "course": "CONTROL II"
     },
     "professor": "VEGA MAGDALENO, GUSTAVO DANIEL"
@@ -1736,7 +1762,7 @@
       "classroom": "A004",
       "nrc": "145987",
       "code": "I9903",
-      "students": 40,
+      "students": 37,
       "course": "CONTROL III"
     },
     "professor": "CRUZ ZAVALA, EMMANUEL"
@@ -1762,7 +1788,7 @@
       "classroom": "A019",
       "nrc": "200264",
       "code": "I9904",
-      "students": 37,
+      "students": 34,
       "course": "CONTROL IV"
     },
     "professor": "RODRIGUEZ CASTELLANOS, DAVID ISRAEL"
@@ -1782,13 +1808,26 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A013",
+      "nrc": "251308",
+      "code": "V0749",
+      "students": 36,
+      "course": "DESARROLLO DE APLICACIONES WEB EN LA NUBE Y MOVILES"
+    },
+    "professor": "JIMENEZ RODRIGUEZ, MARIO"
+  },
+  {
+    "data": {
       "schedule": "1100-1455",
       "days": ". . . . . S",
       "building": "DEDX",
       "classroom": "A006",
       "nrc": "251309",
       "code": "V0749",
-      "students": 40,
+      "students": 41,
       "course": "DESARROLLO DE APLICACIONES WEB EN LA NUBE Y MOVILES"
     },
     "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
@@ -1814,7 +1853,7 @@
       "classroom": "A005",
       "nrc": "209856",
       "code": "IL384",
-      "students": 19,
+      "students": 23,
       "course": "DISEÑO DE VIDEO JUEGOS"
     },
     "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
@@ -1840,7 +1879,7 @@
       "classroom": "A004",
       "nrc": "223241",
       "code": "IL384",
-      "students": 40,
+      "students": 39,
       "course": "DISEÑO DE VIDEO JUEGOS"
     },
     "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
@@ -1892,7 +1931,7 @@
       "classroom": "A003",
       "nrc": "260479",
       "code": "V3693",
-      "students": 25,
+      "students": 22,
       "course": "ESTRUCTURA DE DATOS"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -1909,45 +1948,6 @@
       "course": "ESTRUCTURA DE DATOS I"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "266498",
-      "code": "V3693",
-      "students": 5,
-      "course": "ESTRUCTURA DE DATOS"
-    },
-    "professor": "GUERRERO CARLOS, ANA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A017",
-      "nrc": "266498",
-      "code": "V3693",
-      "students": 5,
-      "course": "ESTRUCTURA DE DATOS"
-    },
-    "professor": "GUERRERO CARLOS, ANA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A017",
-      "nrc": "266498",
-      "code": "V3693",
-      "students": 5,
-      "course": "ESTRUCTURA DE DATOS"
-    },
-    "professor": "GUERRERO CARLOS, ANA JAZMIN"
   },
   {
     "data": {
@@ -1996,7 +1996,7 @@
       "classroom": "A018",
       "nrc": "200220",
       "code": "IL354",
-      "students": 28,
+      "students": 29,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUERRERO CARLOS, ANA JAZMIN"
@@ -2016,26 +2016,13 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A001",
-      "nrc": "200221",
-      "code": "IL354",
-      "students": 0,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "LOPEZ GONZALEZ, GEHOVA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDX",
-      "classroom": "A011",
+      "classroom": "A004",
       "nrc": "200222",
       "code": "IL354",
-      "students": 29,
+      "students": 30,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -2048,7 +2035,7 @@
       "classroom": "A010",
       "nrc": "210903",
       "code": "V0731",
-      "students": 28,
+      "students": 26,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -2074,7 +2061,7 @@
       "classroom": "A022",
       "nrc": "210904",
       "code": "V0731",
-      "students": 28,
+      "students": 23,
       "course": "ESTRUCTURAS DE DATOS"
     },
     "professor": "ZAMORA RAMOS, VICTOR MANUEL"
@@ -2107,6 +2094,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDX",
+      "classroom": "A009",
+      "nrc": "205729",
+      "code": "IL354",
+      "students": 24,
+      "course": "ESTRUCTURAS DE DATOS"
+    },
+    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -2120,26 +2120,13 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A009",
-      "nrc": "205729",
-      "code": "IL354",
-      "students": 25,
-      "course": "ESTRUCTURAS DE DATOS"
-    },
-    "professor": "GUEVARA GALINDO, GILBERTO SIMON"
-  },
-  {
-    "data": {
       "schedule": "1700-2055",
       "days": "L . . . . .",
       "building": "DEDX",
       "classroom": "A008",
       "nrc": "59768",
       "code": "I5888",
-      "students": 1,
+      "students": 2,
       "course": "ESTRUCTURAS DE DATOS II"
     },
     "professor": "HERRERA LUJAN, ZOILA LILIANA"
@@ -2165,23 +2152,10 @@
       "classroom": "A005",
       "nrc": "189614",
       "code": "IL341",
-      "students": 40,
+      "students": 41,
       "course": "ETICA Y LEGISLACION"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A005",
-      "nrc": "193773",
-      "code": "LT251",
-      "students": 38,
-      "course": "EXPRESION ORAL Y ESCRITA"
-    },
-    "professor": "GUERRERO CONTRERAS, JOSE LUIS"
   },
   {
     "data": {
@@ -2191,7 +2165,7 @@
       "classroom": "A008",
       "nrc": "200646",
       "code": "LT251",
-      "students": 35,
+      "students": 37,
       "course": "EXPRESION ORAL Y ESCRITA"
     },
     "professor": "AVILA CARDENAS, KARLA"
@@ -2204,7 +2178,7 @@
       "classroom": "A008",
       "nrc": "223193",
       "code": "LT251",
-      "students": 36,
+      "students": 39,
       "course": "EXPRESION ORAL Y ESCRITA"
     },
     "professor": "GUERRERO CONTRERAS, JOSE LUIS"
@@ -2243,7 +2217,7 @@
       "classroom": "A005",
       "nrc": "204955",
       "code": "IL361",
-      "students": 40,
+      "students": 38,
       "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
     },
     "professor": "DE LEON LOPEZ, GLORIA"
@@ -2308,7 +2282,7 @@
       "classroom": "A022",
       "nrc": "266488",
       "code": "IL361",
-      "students": 39,
+      "students": 40,
       "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
     },
     "professor": "ALANIS GARCIA, ALMA YOLANDA"
@@ -2321,7 +2295,7 @@
       "classroom": "A021",
       "nrc": "266488",
       "code": "IL361",
-      "students": 39,
+      "students": 40,
       "course": "FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL"
     },
     "professor": "ALANIS GARCIA, ALMA YOLANDA"
@@ -2347,10 +2321,23 @@
       "classroom": "A010",
       "nrc": "200266",
       "code": "I5288",
-      "students": 24,
+      "students": 28,
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1400-1555",
+      "days": ". . . . . S",
+      "building": "DEDX",
+      "classroom": "A010",
+      "nrc": "200269",
+      "code": "I5288",
+      "students": 0,
+      "course": "FUNDAMENTOS DE PROGRAMACION"
+    },
+    "professor": "VAZQUEZ AVILA, JORGE"
   },
   {
     "data": {
@@ -2390,19 +2377,6 @@
       "course": "FUNDAMENTOS DE PROGRAMACION"
     },
     "professor": "SANCHEZ ESTRADA, JAIRO CAIN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "252216",
-      "code": "I5288",
-      "students": 0,
-      "course": "FUNDAMENTOS DE PROGRAMACION"
-    },
-    "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
   },
   {
     "data": {
@@ -2490,7 +2464,7 @@
       "classroom": "A008",
       "nrc": "252501",
       "code": "V3686",
-      "students": 18,
+      "students": 26,
       "course": "HISTORIA DE LA TECNOLOGIA  EL ARTE Y LA SOCIEDAD"
     },
     "professor": "FRANCO SAPIEN, RAFAEL"
@@ -2516,7 +2490,7 @@
       "classroom": "A004",
       "nrc": "252504",
       "code": "V3686",
-      "students": 40,
+      "students": 39,
       "course": "HISTORIA DE LA TECNOLOGIA  EL ARTE Y LA SOCIEDAD"
     },
     "professor": "CRUZ VERA, KARLA ADRIANA"
@@ -2685,7 +2659,7 @@
       "classroom": "A017",
       "nrc": "201894",
       "code": "V0714",
-      "students": 38,
+      "students": 40,
       "course": "HISTORIA DE LA TECNOLOGIA EL ARTE Y LA SOCIEDAD"
     },
     "professor": "AYALA MIRANDA, KARLA GUADALUPE"
@@ -2698,7 +2672,7 @@
       "classroom": "A002",
       "nrc": "201895",
       "code": "V0714",
-      "students": 39,
+      "students": 40,
       "course": "HISTORIA DE LA TECNOLOGIA EL ARTE Y LA SOCIEDAD"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -2724,7 +2698,7 @@
       "classroom": "A016",
       "nrc": "201897",
       "code": "V0714",
-      "students": 40,
+      "students": 41,
       "course": "HISTORIA DE LA TECNOLOGIA EL ARTE Y LA SOCIEDAD"
     },
     "professor": "LOPEZ EGUIARTE, ABRAHAM ISRAEL"
@@ -2763,7 +2737,7 @@
       "classroom": "A007",
       "nrc": "223237",
       "code": "V0709",
-      "students": 32,
+      "students": 34,
       "course": "INDUCCION A LA INGENIERIA"
     },
     "professor": "SILVA LANDEROS, JORGE"
@@ -2776,7 +2750,7 @@
       "classroom": "A012",
       "nrc": "223238",
       "code": "V0709",
-      "students": 32,
+      "students": 34,
       "course": "INDUCCION A LA INGENIERIA"
     },
     "professor": "SILVA LANDEROS, JORGE"
@@ -2815,7 +2789,7 @@
       "classroom": "A007",
       "nrc": "223576",
       "code": "V3684",
-      "students": 40,
+      "students": 39,
       "course": "INDUCCION UNIVERSITARIA"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -2841,7 +2815,7 @@
       "classroom": "A010",
       "nrc": "252255",
       "code": "V3684",
-      "students": 36,
+      "students": 42,
       "course": "INDUCCION UNIVERSITARIA"
     },
     "professor": "ROSALES MARTINEZ, JAVIER"
@@ -2867,7 +2841,7 @@
       "classroom": "A007",
       "nrc": "211882",
       "code": "V0730",
-      "students": 14,
+      "students": 16,
       "course": "INFORMATICA ADMINISTRATIVA"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -2880,7 +2854,7 @@
       "classroom": "A012",
       "nrc": "211885",
       "code": "V0730",
-      "students": 37,
+      "students": 41,
       "course": "INFORMATICA ADMINISTRATIVA"
     },
     "professor": "MALDONADO MERCADO, JOSE RUBEN"
@@ -2893,7 +2867,7 @@
       "classroom": "A014",
       "nrc": "211888",
       "code": "V0730",
-      "students": 36,
+      "students": 41,
       "course": "INFORMATICA ADMINISTRATIVA"
     },
     "professor": "IBARRA ESQUIVIAS, ALEJANDRA"
@@ -2919,7 +2893,7 @@
       "classroom": "A002",
       "nrc": "260602",
       "code": "V3639",
-      "students": 25,
+      "students": 24,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "FERNANDEZ MUJICA, JESUS HUMBERTO"
@@ -2932,7 +2906,7 @@
       "classroom": "A001",
       "nrc": "266834",
       "code": "V3639",
-      "students": 1,
+      "students": 9,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "ZALDIVAR NAVARRO, DANIEL"
@@ -2945,7 +2919,7 @@
       "classroom": "A020",
       "nrc": "266834",
       "code": "V3639",
-      "students": 1,
+      "students": 9,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "ZALDIVAR NAVARRO, DANIEL"
@@ -2958,7 +2932,7 @@
       "classroom": "A010",
       "nrc": "153769",
       "code": "I7285",
-      "students": 29,
+      "students": 30,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "OBREGON PULIDO, GUILLERMO"
@@ -2997,7 +2971,7 @@
       "classroom": "A020",
       "nrc": "210897",
       "code": "CB224",
-      "students": 33,
+      "students": 35,
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -3010,7 +2984,7 @@
       "classroom": "A020",
       "nrc": "210897",
       "code": "CB224",
-      "students": 33,
+      "students": 35,
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -3049,7 +3023,7 @@
       "classroom": "A018",
       "nrc": "216525",
       "code": "CB224",
-      "students": 33,
+      "students": 32,
       "course": "INGENIERIA DE SOFTWARE"
     },
     "professor": "ARREOLA GONZALEZ, MAURICIO RODOLFO"
@@ -3062,7 +3036,7 @@
       "classroom": "A017",
       "nrc": "59738",
       "code": "I5898",
-      "students": 12,
+      "students": 14,
       "course": "INGENIERIA DE SOFTWARE I"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -3075,7 +3049,7 @@
       "classroom": "A004",
       "nrc": "153358",
       "code": "I5900",
-      "students": 18,
+      "students": 21,
       "course": "INGENIERIA DE SOFTWARE II"
     },
     "professor": "CEDANO RODRIGUEZ, ALFREDO"
@@ -3088,7 +3062,7 @@
       "classroom": "A014",
       "nrc": "209761",
       "code": "V0717",
-      "students": 35,
+      "students": 41,
       "course": "INGENIERIA Y SUSTENTABILIDAD"
     },
     "professor": "CRUZ VERA, KARLA ADRIANA"
@@ -3101,7 +3075,7 @@
       "classroom": "A016",
       "nrc": "222594",
       "code": "V0719",
-      "students": 30,
+      "students": 40,
       "course": "INNOVACION TECNOLOGICA Y EMPRENDIMIENTO"
     },
     "professor": "DE LEON LOPEZ, GLORIA"
@@ -3114,7 +3088,7 @@
       "classroom": "A007",
       "nrc": "222595",
       "code": "V0719",
-      "students": 27,
+      "students": 31,
       "course": "INNOVACION TECNOLOGICA Y EMPRENDIMIENTO"
     },
     "professor": "DE LEON LOPEZ, GLORIA"
@@ -3127,7 +3101,7 @@
       "classroom": "A007",
       "nrc": "222596",
       "code": "V0719",
-      "students": 25,
+      "students": 40,
       "course": "INNOVACION TECNOLOGICA Y EMPRENDIMIENTO"
     },
     "professor": "DE LEON LOPEZ, GLORIA"
@@ -3140,7 +3114,7 @@
       "classroom": "A005",
       "nrc": "223195",
       "code": "V0719",
-      "students": 34,
+      "students": 40,
       "course": "INNOVACION TECNOLOGICA Y EMPRENDIMIENTO"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
@@ -3153,7 +3127,7 @@
       "classroom": "A012",
       "nrc": "193751",
       "code": "IL351",
-      "students": 35,
+      "students": 37,
       "course": "INNOVACION Y TECNOLOGIA"
     },
     "professor": "GARCIA DE LIRA, SONIA JAZMIN"
@@ -3166,7 +3140,7 @@
       "classroom": "A012",
       "nrc": "193752",
       "code": "IL351",
-      "students": 29,
+      "students": 34,
       "course": "INNOVACION Y TECNOLOGIA"
     },
     "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
@@ -3179,7 +3153,7 @@
       "classroom": "A015",
       "nrc": "133069",
       "code": "I7287",
-      "students": 10,
+      "students": 11,
       "course": "INSTRUMENTACION"
     },
     "professor": "VEGA MAGDALENO, GUSTAVO DANIEL"
@@ -3192,10 +3166,23 @@
       "classroom": "A008",
       "nrc": "133069",
       "code": "I7287",
-      "students": 10,
+      "students": 11,
       "course": "INSTRUMENTACION"
     },
     "professor": "VEGA MAGDALENO, GUSTAVO DANIEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDX",
+      "classroom": "A001",
+      "nrc": "55416",
+      "code": "ET335",
+      "students": 25,
+      "course": "INSTRUMENTACION MEDICA IV"
+    },
+    "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
   },
   {
     "data": {
@@ -3205,7 +3192,7 @@
       "classroom": "A015",
       "nrc": "124880",
       "code": "I7040",
-      "students": 7,
+      "students": 9,
       "course": "INTELIGENCIA ARTIFICIAL II"
     },
     "professor": "MORALES CASTAÑEDA, JUAN BERNARDO"
@@ -3218,7 +3205,7 @@
       "classroom": "A015",
       "nrc": "260314",
       "code": "V0752",
-      "students": 38,
+      "students": 40,
       "course": "INTERACCION ADAPTADA AL USUARIO"
     },
     "professor": "GUZMAN VAZQUEZ, ARTURO"
@@ -3231,7 +3218,7 @@
       "classroom": "A020",
       "nrc": "266489",
       "code": "V0752",
-      "students": 8,
+      "students": 6,
       "course": "INTERACCION ADAPTADA AL USUARIO"
     },
     "professor": "VALENCIA VILLALVAZO, JOSE MARTIN"
@@ -3244,7 +3231,7 @@
       "classroom": "A007",
       "nrc": "209757",
       "code": "IL367",
-      "students": 35,
+      "students": 34,
       "course": "INTERACCION HUMANO COMPUTADORA"
     },
     "professor": "ZEPEDA GOMEZ, JOVAN RICARDO"
@@ -3257,7 +3244,7 @@
       "classroom": "A002",
       "nrc": "223257",
       "code": "IL367",
-      "students": 24,
+      "students": 23,
       "course": "INTERACCION HUMANO COMPUTADORA"
     },
     "professor": "CONTRERAS GARCIA, GABRIEL"
@@ -3270,7 +3257,7 @@
       "classroom": "A013",
       "nrc": "236465",
       "code": "IL367",
-      "students": 1,
+      "students": 13,
       "course": "INTERACCION HUMANO COMPUTADORA"
     },
     "professor": "LOPEZ GONZALEZ, GEHOVA"
@@ -3283,7 +3270,7 @@
       "classroom": "A015",
       "nrc": "251315",
       "code": "IL367",
-      "students": 35,
+      "students": 37,
       "course": "INTERACCION HUMANO COMPUTADORA"
     },
     "professor": "ZEPEDA GOMEZ, JOVAN RICARDO"
@@ -3296,7 +3283,7 @@
       "classroom": "A002",
       "nrc": "216529",
       "code": "IL380",
-      "students": 35,
+      "students": 36,
       "course": "INTERCONEXION DE REDES"
     },
     "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -3322,7 +3309,7 @@
       "classroom": "A005",
       "nrc": "227266",
       "code": "V0748",
-      "students": 34,
+      "students": 33,
       "course": "INTERNET DE LAS COSAS"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -3335,7 +3322,7 @@
       "classroom": "A005",
       "nrc": "227268",
       "code": "V0748",
-      "students": 23,
+      "students": 30,
       "course": "INTERNET DE LAS COSAS"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -3348,7 +3335,7 @@
       "classroom": "A015",
       "nrc": "260319",
       "code": "V0748",
-      "students": 16,
+      "students": 19,
       "course": "INTERNET DE LAS COSAS"
     },
     "professor": "CONTRERAS GARCIA, GABRIEL"
@@ -3361,7 +3348,7 @@
       "classroom": "A018",
       "nrc": "260319",
       "code": "V0748",
-      "students": 16,
+      "students": 19,
       "course": "INTERNET DE LAS COSAS"
     },
     "professor": "CONTRERAS GARCIA, GABRIEL"
@@ -3374,7 +3361,7 @@
       "classroom": "A008",
       "nrc": "260320",
       "code": "V0748",
-      "students": 28,
+      "students": 35,
       "course": "INTERNET DE LAS COSAS"
     },
     "professor": "PEREZ PADILLA, NAYELI ARELI"
@@ -3439,36 +3426,10 @@
       "classroom": "A003",
       "nrc": "236086",
       "code": "IL374",
-      "students": 0,
+      "students": 1,
       "course": "LABORATORIO ABIERTO: PRUEBAS"
     },
     "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "236087",
-      "code": "IL374",
-      "students": 0,
-      "course": "LABORATORIO ABIERTO: PRUEBAS"
-    },
-    "professor": "CRUZ VERA, KARLA ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A021",
-      "nrc": "236088",
-      "code": "IL374",
-      "students": 0,
-      "course": "LABORATORIO ABIERTO: PRUEBAS"
-    },
-    "professor": "DOMINGUEZ BELTRAN, JAVIER LORENZO"
   },
   {
     "data": {
@@ -3491,7 +3452,7 @@
       "classroom": "A021",
       "nrc": "260626",
       "code": "V0721",
-      "students": 40,
+      "students": 41,
       "course": "LABORATORIO ABIERTO: CONSTRUCCION"
     },
     "professor": "MORALES RAMIREZ, THELMA ISABEL"
@@ -3504,7 +3465,7 @@
       "classroom": "A011",
       "nrc": "213217",
       "code": "IL372",
-      "students": 40,
+      "students": 43,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -3517,7 +3478,7 @@
       "classroom": "A021",
       "nrc": "213218",
       "code": "IL372",
-      "students": 42,
+      "students": 47,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -3530,7 +3491,7 @@
       "classroom": "A004",
       "nrc": "223602",
       "code": "IL372",
-      "students": 26,
+      "students": 32,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -3543,7 +3504,7 @@
       "classroom": "A002",
       "nrc": "227976",
       "code": "IL372",
-      "students": 32,
+      "students": 33,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -3556,7 +3517,7 @@
       "classroom": "A009",
       "nrc": "227977",
       "code": "IL372",
-      "students": 39,
+      "students": 44,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
@@ -3569,7 +3530,7 @@
       "classroom": "A010",
       "nrc": "240817",
       "code": "IL372",
-      "students": 10,
+      "students": 9,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "CRUZ VERA, KARLA ADRIANA"
@@ -3582,7 +3543,7 @@
       "classroom": "A004",
       "nrc": "252315",
       "code": "V0720",
-      "students": 35,
+      "students": 36,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "GIL RIVERA, RUBEN ADRIAN"
@@ -3595,7 +3556,7 @@
       "classroom": "A011",
       "nrc": "252318",
       "code": "V0720",
-      "students": 34,
+      "students": 37,
       "course": "LABORATORIO ABIERTO: DISEÑO"
     },
     "professor": "MORALES RAMIREZ, THELMA ISABEL"
@@ -3615,26 +3576,13 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDX",
-      "classroom": "A005",
-      "nrc": "193758",
-      "code": "IL350",
-      "students": 15,
-      "course": "LIDERAZGO Y EMPRENDIMIENTO"
-    },
-    "professor": "BARAJAS GONZALEZ, EMILIO"
-  },
-  {
-    "data": {
       "schedule": "1100-1455",
       "days": ". . . . V .",
       "building": "DEDX",
       "classroom": "A013",
       "nrc": "193767",
       "code": "IL350",
-      "students": 24,
+      "students": 26,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "MORGAN FRANCO, ROCIO DEL CARMEN"
@@ -3647,7 +3595,7 @@
       "classroom": "A013",
       "nrc": "193972",
       "code": "IL350",
-      "students": 22,
+      "students": 24,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "MORGAN FRANCO, ROCIO DEL CARMEN"
@@ -3660,7 +3608,7 @@
       "classroom": "A014",
       "nrc": "200664",
       "code": "IL350",
-      "students": 35,
+      "students": 36,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "ANDRADE DURAN, CARLOS ARMANDO"
@@ -3670,10 +3618,10 @@
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDX",
-      "classroom": "A013",
+      "classroom": "A006",
       "nrc": "200665",
       "code": "IL350",
-      "students": 36,
+      "students": 34,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -3686,7 +3634,7 @@
       "classroom": "A013",
       "nrc": "200671",
       "code": "IL350",
-      "students": 24,
+      "students": 28,
       "course": "LIDERAZGO Y EMPRENDIMIENTO"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -3725,7 +3673,7 @@
       "classroom": "A002",
       "nrc": "212884",
       "code": "V0713",
-      "students": 40,
+      "students": 41,
       "course": "METODOS NUMERICOS"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
@@ -3745,19 +3693,6 @@
   },
   {
     "data": {
-      "schedule": "1600-1955",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A007",
-      "nrc": "119882",
-      "code": "I5911",
-      "students": 16,
-      "course": "MINERIA DE DATOS"
-    },
-    "professor": "LUNA RETANA, GABRIELA"
-  },
-  {
-    "data": {
       "schedule": "1500-1855",
       "days": ". . . . . S",
       "building": "DEDX",
@@ -3768,6 +3703,19 @@
       "course": "MINERIA DE DATOS"
     },
     "professor": "HERNANDEZ ANDRADE, JORGE FAUSTO"
+  },
+  {
+    "data": {
+      "schedule": "1600-1955",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A007",
+      "nrc": "119882",
+      "code": "I5911",
+      "students": 16,
+      "course": "MINERIA DE DATOS"
+    },
+    "professor": "LUNA RETANA, GABRIELA"
   },
   {
     "data": {
@@ -3842,7 +3790,7 @@
       "classroom": "A002",
       "nrc": "227395",
       "code": "CU206",
-      "students": 35,
+      "students": 32,
       "course": "MINERIA DE DATOS"
     },
     "professor": "ROMAN GODINEZ, ISRAEL"
@@ -3855,7 +3803,7 @@
       "classroom": "A018",
       "nrc": "227395",
       "code": "CU206",
-      "students": 35,
+      "students": 32,
       "course": "MINERIA DE DATOS"
     },
     "professor": "ROMAN GODINEZ, ISRAEL"
@@ -3907,23 +3855,10 @@
       "classroom": "A022",
       "nrc": "204830",
       "code": "I9905",
-      "students": 29,
+      "students": 28,
       "course": "MODELADO Y SIMULACION DE SISTEMAS"
     },
     "professor": "FERNANDEZ MUJICA, JESUS HUMBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDX",
-      "classroom": "A013",
-      "nrc": "210480",
-      "code": "V1685",
-      "students": 1,
-      "course": "OPTICA FISICA"
-    },
-    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
   },
   {
     "data": {
@@ -3940,26 +3875,13 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A021",
-      "nrc": "200070",
-      "code": "IB067",
-      "students": 41,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "PANTOJA ESPINOZA, DELIAZAR"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDX",
       "classroom": "A003",
       "nrc": "200071",
       "code": "IB067",
-      "students": 40,
+      "students": 39,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "BERNAL TIRADO, ALFONSO"
@@ -3972,14 +3894,14 @@
       "classroom": "A013",
       "nrc": "153219",
       "code": "IB155",
-      "students": 14,
+      "students": 16,
       "course": "PROCESAMIENTO DE IMAGENES"
     },
     "professor": "SANTOS ARCE, STEWART RENE"
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1500-1555",
       "days": "L . . . . .",
       "building": "DEDX",
       "classroom": "A022",
@@ -3989,19 +3911,6 @@
       "course": "PROGRAMACION"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "113990",
-      "code": "I9887",
-      "students": 0,
-      "course": "PROGRAMACION"
-    },
-    "professor": "HERRERA LUJAN, ZOILA LILIANA"
   },
   {
     "data": {
@@ -4115,7 +4024,7 @@
       "classroom": "A021",
       "nrc": "153368",
       "code": "I7404",
-      "students": 39,
+      "students": 40,
       "course": "PROGRAMACION APLICADA"
     },
     "professor": "RODRIGUEZ VAZQUEZ, ALMA NAYELI"
@@ -4245,7 +4154,7 @@
       "classroom": "A001",
       "nrc": "213213",
       "code": "IL379",
-      "students": 18,
+      "students": 19,
       "course": "PROGRAMACION DE APLICACIONES DE REDES"
     },
     "professor": "GARCIA RAMIREZ, MIGUEL ANGEL"
@@ -4271,7 +4180,7 @@
       "classroom": "A001",
       "nrc": "252583",
       "code": "IL379",
-      "students": 35,
+      "students": 36,
       "course": "PROGRAMACION DE APLICACIONES DE REDES"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -4297,7 +4206,7 @@
       "classroom": "A020",
       "nrc": "210931",
       "code": "IL358",
-      "students": 24,
+      "students": 23,
       "course": "PROGRAMACION DE BAJO NIVEL"
     },
     "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
@@ -4336,7 +4245,7 @@
       "classroom": "A011",
       "nrc": "213214",
       "code": "IL385",
-      "students": 37,
+      "students": 40,
       "course": "PROGRAMACION DE GRAFICOS 3D"
     },
     "professor": "SILVA MARES, OSCAR GREGORIO"
@@ -4362,7 +4271,7 @@
       "classroom": "A020",
       "nrc": "223599",
       "code": "IL377",
-      "students": 40,
+      "students": 39,
       "course": "PROGRAMACION DE SISTEMAS AVANZADOS"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
@@ -4375,7 +4284,7 @@
       "classroom": "A003",
       "nrc": "193703",
       "code": "IL352",
-      "students": 19,
+      "students": 20,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "CAMACHO SANTILLAN, VERONICA"
@@ -4388,7 +4297,7 @@
       "classroom": "A002",
       "nrc": "204897",
       "code": "V0716",
-      "students": 35,
+      "students": 34,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VEGA, SERGIO"
@@ -4401,7 +4310,7 @@
       "classroom": "A011",
       "nrc": "204897",
       "code": "V0716",
-      "students": 35,
+      "students": 34,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VEGA, SERGIO"
@@ -4414,7 +4323,7 @@
       "classroom": "A020",
       "nrc": "204898",
       "code": "V0716",
-      "students": 28,
+      "students": 29,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "MARQUEZ FRAUSTO, TERESA GABRIELA"
@@ -4427,7 +4336,7 @@
       "classroom": "A002",
       "nrc": "193705",
       "code": "IL352",
-      "students": 21,
+      "students": 19,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "LOPEZ LOPEZ, LAURA"
@@ -4479,7 +4388,7 @@
       "classroom": "A003",
       "nrc": "193710",
       "code": "IL352",
-      "students": 25,
+      "students": 28,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
@@ -4492,7 +4401,7 @@
       "classroom": "A021",
       "nrc": "204909",
       "code": "V0716",
-      "students": 33,
+      "students": 32,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VEGA, SERGIO"
@@ -4518,7 +4427,7 @@
       "classroom": "A001",
       "nrc": "195135",
       "code": "IL352",
-      "students": 25,
+      "students": 26,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "MARQUEZ FRAUSTO, TERESA GABRIELA"
@@ -4531,7 +4440,7 @@
       "classroom": "A009",
       "nrc": "195136",
       "code": "IL352",
-      "students": 14,
+      "students": 13,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -4544,7 +4453,7 @@
       "classroom": "A011",
       "nrc": "195136",
       "code": "IL352",
-      "students": 14,
+      "students": 13,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -4557,23 +4466,10 @@
       "classroom": "A003",
       "nrc": "195143",
       "code": "IL352",
-      "students": 24,
+      "students": 22,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1455",
-      "days": ". . . . . S",
-      "building": "DEDX",
-      "classroom": "A001",
-      "nrc": "209875",
-      "code": "V0716",
-      "students": 38,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GOMEZ VEGA, SERGIO"
   },
   {
     "data": {
@@ -4583,10 +4479,23 @@
       "classroom": "A004",
       "nrc": "227990",
       "code": "IL352",
-      "students": 28,
+      "students": 26,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1100-1455",
+      "days": ". . . . . S",
+      "building": "DEDX",
+      "classroom": "A001",
+      "nrc": "209875",
+      "code": "V0716",
+      "students": 40,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "GOMEZ VEGA, SERGIO"
   },
   {
     "data": {
@@ -4596,7 +4505,7 @@
       "classroom": "A002",
       "nrc": "261065",
       "code": "V0716",
-      "students": 28,
+      "students": 27,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "MUÑOZ MENDOZA, LUIS FELIPE"
@@ -4622,7 +4531,7 @@
       "classroom": "A015",
       "nrc": "199890",
       "code": "IL362",
-      "students": 35,
+      "students": 36,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MARTINEZ SOLTERO, ERASMO GABRIEL"
@@ -4635,7 +4544,7 @@
       "classroom": "A018",
       "nrc": "199890",
       "code": "IL362",
-      "students": 35,
+      "students": 36,
       "course": "PROGRAMACION PARA INTERNET"
     },
     "professor": "MARTINEZ SOLTERO, ERASMO GABRIEL"
@@ -4648,7 +4557,7 @@
       "classroom": "A020",
       "nrc": "227458",
       "code": "IL360",
-      "students": 35,
+      "students": 31,
       "course": "PROGRAMACION PARALELA Y CONCURRENTE"
     },
     "professor": "MENDOZA AYALA, IRVING EDGAR"
@@ -4674,7 +4583,7 @@
       "classroom": "A014",
       "nrc": "236064",
       "code": "IL360",
-      "students": 35,
+      "students": 37,
       "course": "PROGRAMACION PARALELA Y CONCURRENTE"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -4687,7 +4596,7 @@
       "classroom": "A008",
       "nrc": "236064",
       "code": "IL360",
-      "students": 35,
+      "students": 37,
       "course": "PROGRAMACION PARALELA Y CONCURRENTE"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -4700,7 +4609,7 @@
       "classroom": "A017",
       "nrc": "236077",
       "code": "IL360",
-      "students": 35,
+      "students": 36,
       "course": "PROGRAMACION PARALELA Y CONCURRENTE"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -4713,7 +4622,7 @@
       "classroom": "A019",
       "nrc": "236077",
       "code": "IL360",
-      "students": 35,
+      "students": 36,
       "course": "PROGRAMACION PARALELA Y CONCURRENTE"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -4726,7 +4635,7 @@
       "classroom": "A015",
       "nrc": "252570",
       "code": "IL360",
-      "students": 35,
+      "students": 37,
       "course": "PROGRAMACION PARALELA Y CONCURRENTE"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -4739,7 +4648,7 @@
       "classroom": "A015",
       "nrc": "209759",
       "code": "IL375",
-      "students": 39,
+      "students": 36,
       "course": "PROGRAMACION PARALELA Y EN TIEMPO REAL"
     },
     "professor": "ZEPEDA GOMEZ, JOVAN RICARDO"
@@ -4752,7 +4661,7 @@
       "classroom": "A021",
       "nrc": "222597",
       "code": "IL375",
-      "students": 39,
+      "students": 40,
       "course": "PROGRAMACION PARALELA Y EN TIEMPO REAL"
     },
     "professor": "DE LEON LOPEZ, GLORIA"
@@ -4765,7 +4674,7 @@
       "classroom": "A012",
       "nrc": "236062",
       "code": "IL375",
-      "students": 39,
+      "students": 40,
       "course": "PROGRAMACION PARALELA Y EN TIEMPO REAL"
     },
     "professor": "GUTIERREZ COBIAN, ZEUS EMANUEL"
@@ -4778,7 +4687,7 @@
       "classroom": "A007",
       "nrc": "262047",
       "code": "V3697",
-      "students": 32,
+      "students": 30,
       "course": "PROGRAMACION ROBOTICA"
     },
     "professor": "PAREDES LOPEZ, ANGEL IGNACIO"
@@ -4791,10 +4700,36 @@
       "classroom": "A010",
       "nrc": "97745",
       "code": "I7610",
-      "students": 28,
+      "students": 29,
       "course": "PROTESIS Y ORTESIS"
     },
     "professor": "VELEZ PEREZ, HUGO ABRAHAM"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". . . J . .",
+      "building": "DEDX",
+      "classroom": "A023",
+      "nrc": "174840",
+      "code": "IH424",
+      "students": 8,
+      "course": "REALIDAD VIRTUAL"
+    },
+    "professor": "LARA LOPEZ, GRACIELA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1955",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A003",
+      "nrc": "174840",
+      "code": "IH424",
+      "students": 8,
+      "course": "REALIDAD VIRTUAL"
+    },
+    "professor": "LARA LOPEZ, GRACIELA"
   },
   {
     "data": {
@@ -4830,7 +4765,7 @@
       "classroom": "A004",
       "nrc": "204867",
       "code": "IL364",
-      "students": 40,
+      "students": 41,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -4856,7 +4791,7 @@
       "classroom": "A018",
       "nrc": "216551",
       "code": "IL364",
-      "students": 40,
+      "students": 39,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -4869,7 +4804,7 @@
       "classroom": "A023",
       "nrc": "216551",
       "code": "IL364",
-      "students": 40,
+      "students": 39,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
@@ -4882,7 +4817,7 @@
       "classroom": "A009",
       "nrc": "216556",
       "code": "IL364",
-      "students": 38,
+      "students": 37,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "ESQUIVEL GARCIA, SAUL"
@@ -4895,7 +4830,7 @@
       "classroom": "A001",
       "nrc": "216558",
       "code": "IL364",
-      "students": 35,
+      "students": 33,
       "course": "REDES DE COMPUTADORAS"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -4911,7 +4846,20 @@
       "students": 28,
       "course": "REDES DE COMPUTADORAS"
     },
-    "professor": "REYNOSO GOMEZ, BLANCA LORENA"
+    "professor": "ESCOBAR CUEVAS, HECTOR JOAQUIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A016",
+      "nrc": "223191",
+      "code": "IL383",
+      "students": 30,
+      "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
+    },
+    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
   },
   {
     "data": {
@@ -4928,39 +4876,13 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A016",
-      "nrc": "223191",
-      "code": "IL383",
-      "students": 35,
-      "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
-    },
-    "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A013",
-      "nrc": "227684",
-      "code": "IL383",
-      "students": 29,
-      "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
-    },
-    "professor": "EUSEBIO MARTIN, ESTEBAN"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDX",
       "classroom": "A022",
       "nrc": "235348",
       "code": "IL383",
-      "students": 35,
+      "students": 36,
       "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
@@ -4973,7 +4895,7 @@
       "classroom": "A015",
       "nrc": "235348",
       "code": "IL383",
-      "students": 35,
+      "students": 36,
       "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
@@ -4986,7 +4908,7 @@
       "classroom": "A014",
       "nrc": "262048",
       "code": "IL383",
-      "students": 35,
+      "students": 34,
       "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
     },
     "professor": "LOPEZ ARAMBURO, MARIA FERNANDA"
@@ -4999,7 +4921,7 @@
       "classroom": "A020",
       "nrc": "262049",
       "code": "IL383",
-      "students": 1,
+      "students": 3,
       "course": "REDES NEURONALES ARTIFICIALES Y APRENDIZAJE PROFUNDO"
     },
     "professor": "ALANIS GARCIA, ALMA YOLANDA"
@@ -5025,7 +4947,7 @@
       "classroom": "A015",
       "nrc": "145992",
       "code": "I9910",
-      "students": 35,
+      "students": 38,
       "course": "ROBOTICA MOVIL"
     },
     "professor": "HERNANDEZ BARRAGAN, JOSE DE JESUS"
@@ -5051,7 +4973,7 @@
       "classroom": "A006",
       "nrc": "140470",
       "code": "I7037",
-      "students": 1,
+      "students": 6,
       "course": "SEGURIDAD"
     },
     "professor": "VAZQUEZ CURIEL, ARMIDA GRISELDA"
@@ -5064,7 +4986,7 @@
       "classroom": "A012",
       "nrc": "140469",
       "code": "I5905",
-      "students": 6,
+      "students": 7,
       "course": "SEGURIDAD DE LA INFORMACION"
     },
     "professor": "MENDOZA AYALA, IRVING EDGAR"
@@ -5090,7 +5012,7 @@
       "classroom": "A012",
       "nrc": "262050",
       "code": "V0740",
-      "students": 18,
+      "students": 21,
       "course": "SEGURIDAD DEFENSIVA Y GESTION"
     },
     "professor": "RAZO GARCIA, REBECA"
@@ -5103,7 +5025,7 @@
       "classroom": "A012",
       "nrc": "223202",
       "code": "IL368",
-      "students": 36,
+      "students": 37,
       "course": "SEGURIDAD EN LA INFORMACION"
     },
     "professor": "JIMENEZ MORA, JOSE MANUEL"
@@ -5116,7 +5038,7 @@
       "classroom": "A001",
       "nrc": "236473",
       "code": "IL368",
-      "students": 37,
+      "students": 38,
       "course": "SEGURIDAD EN LA INFORMACION"
     },
     "professor": "HOYOS PEÑA, ENRIQUE"
@@ -5142,7 +5064,7 @@
       "classroom": "A013",
       "nrc": "235349",
       "code": "V0739",
-      "students": 30,
+      "students": 33,
       "course": "SEGURIDAD EN REDES E INFRAESTRUCTURA TECNOLOGICA"
     },
     "professor": "SOTO SANCHEZ, JOSE DE JESUS"
@@ -5155,7 +5077,7 @@
       "classroom": "A012",
       "nrc": "235350",
       "code": "V0739",
-      "students": 26,
+      "students": 35,
       "course": "SEGURIDAD EN REDES E INFRAESTRUCTURA TECNOLOGICA"
     },
     "professor": "SOTO SANCHEZ, JOSE DE JESUS"
@@ -5168,7 +5090,7 @@
       "classroom": "A012",
       "nrc": "262051",
       "code": "V0739",
-      "students": 15,
+      "students": 19,
       "course": "SEGURIDAD EN REDES E INFRAESTRUCTURA TECNOLOGICA"
     },
     "professor": "SOTO SANCHEZ, JOSE DE JESUS"
@@ -5220,7 +5142,7 @@
       "classroom": "A022",
       "nrc": "125015",
       "code": "I7286",
-      "students": 40,
+      "students": 41,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE CONTROL"
     },
     "professor": "OBREGON PULIDO, GUILLERMO"
@@ -5240,39 +5162,13 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A017",
-      "nrc": "125017",
-      "code": "I7286",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE CONTROL"
-    },
-    "professor": "FERNANDEZ MUJICA, JESUS HUMBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A022",
-      "nrc": "125017",
-      "code": "I7286",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INGENIERIA DE CONTROL"
-    },
-    "professor": "FERNANDEZ MUJICA, JESUS HUMBERTO"
-  },
-  {
-    "data": {
       "schedule": "0900-1255",
       "days": ". . . . V .",
       "building": "DEDX",
       "classroom": "A016",
       "nrc": "103849",
       "code": "I7039",
-      "students": 10,
+      "students": 9,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE INTELIGENCIA ARTIFICIAL I"
     },
     "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
@@ -5337,7 +5233,7 @@
       "classroom": "A011",
       "nrc": "209858",
       "code": "I7034",
-      "students": 4,
+      "students": 3,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS OPERATIVOS DE RED"
     },
     "professor": "RODRIGUEZ PIMIENTA, CRISTINA GUADALUPE"
@@ -5354,32 +5250,6 @@
       "course": "SEMINARIO DE TESIS I"
     },
     "professor": "FLORES NUÑEZ, JORGE LUIS"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "236084",
-      "code": "IL371",
-      "students": 0,
-      "course": "SEMINARIO INTEGRACION: COMUNICACION"
-    },
-    "professor": "DOMINGUEZ BELTRAN, JAVIER LORENZO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "261137",
-      "code": "IL371",
-      "students": 0,
-      "course": "SEMINARIO INTEGRACION: COMUNICACION"
-    },
-    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
   },
   {
     "data": {
@@ -5428,7 +5298,7 @@
       "classroom": "A009",
       "nrc": "213175",
       "code": "IL370",
-      "students": 39,
+      "students": 40,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "GARCIA DE LIRA, SONIA JAZMIN"
@@ -5441,7 +5311,7 @@
       "classroom": "A010",
       "nrc": "240854",
       "code": "V0734",
-      "students": 26,
+      "students": 24,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
@@ -5454,7 +5324,7 @@
       "classroom": "A001",
       "nrc": "213176",
       "code": "IL370",
-      "students": 41,
+      "students": 40,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "GARCIA DE LIRA, SONIA JAZMIN"
@@ -5493,7 +5363,7 @@
       "classroom": "A023",
       "nrc": "223601",
       "code": "IL370",
-      "students": 40,
+      "students": 41,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "DELGADO CASTAÑEDA, NOE"
@@ -5516,13 +5386,26 @@
       "schedule": "1300-1355",
       "days": ". . I . . .",
       "building": "DEDX",
-      "classroom": "A001",
+      "classroom": "A017",
       "nrc": "240863",
       "code": "V0734",
       "students": 28,
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A002",
+      "nrc": "228033",
+      "code": "IL370",
+      "students": 39,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
   },
   {
     "data": {
@@ -5539,16 +5422,16 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": "L . . . . .",
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
       "building": "DEDX",
-      "classroom": "A002",
-      "nrc": "228033",
-      "code": "IL370",
+      "classroom": "A004",
+      "nrc": "204888",
+      "code": "IL369",
       "students": 40,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
-    "professor": "AYALA HERNANDEZ, LUIS ERNESTO"
+    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {
@@ -5562,19 +5445,6 @@
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "204888",
-      "code": "IL369",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {
@@ -5597,7 +5467,7 @@
       "classroom": "A002",
       "nrc": "216573",
       "code": "V0733",
-      "students": 53,
+      "students": 52,
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -5610,7 +5480,7 @@
       "classroom": "A003",
       "nrc": "223205",
       "code": "V0733",
-      "students": 53,
+      "students": 48,
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "GUEVARA GALINDO, GILBERTO SIMON"
@@ -5675,10 +5545,23 @@
       "classroom": "A004",
       "nrc": "216576",
       "code": "V0733",
-      "students": 45,
+      "students": 47,
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "GUTIERREZ SALMERON, MARTHA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A005",
+      "nrc": "171773",
+      "code": "I7272",
+      "students": 17,
+      "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+    },
+    "professor": "CASILLAS ZAMORA, ANTONIO"
   },
   {
     "data": {
@@ -5688,7 +5571,7 @@
       "classroom": "A017",
       "nrc": "154537",
       "code": "IF542",
-      "students": 0,
+      "students": 10,
       "course": "SEÑALES Y SISTEMAS"
     },
     "professor": "CARRASCO ALVAREZ, ROBERTO"
@@ -5701,7 +5584,7 @@
       "classroom": "A019",
       "nrc": "154537",
       "code": "IF542",
-      "students": 0,
+      "students": 10,
       "course": "SEÑALES Y SISTEMAS"
     },
     "professor": "CARRASCO ALVAREZ, ROBERTO"
@@ -5740,7 +5623,7 @@
       "classroom": "A020",
       "nrc": "262053",
       "code": "V3931",
-      "students": 14,
+      "students": 15,
       "course": "SEÑALES Y SISTEMAS"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
@@ -5753,10 +5636,23 @@
       "classroom": "A013",
       "nrc": "262053",
       "code": "V3931",
-      "students": 14,
+      "students": 15,
       "course": "SEÑALES Y SISTEMAS"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDX",
+      "classroom": "A013",
+      "nrc": "262055",
+      "code": "V0726",
+      "students": 40,
+      "course": "SISTEMAS INTELIGENTES"
+    },
+    "professor": "VALDES LOPEZ, JULIO ESTEBAN"
   },
   {
     "data": {
@@ -5766,7 +5662,7 @@
       "classroom": "A012",
       "nrc": "159311",
       "code": "I9914",
-      "students": 35,
+      "students": 36,
       "course": "SISTEMAS INTELIGENTES II"
     },
     "professor": "GOMEZ AVILA, JAVIER ENRIQUE"
@@ -5782,7 +5678,7 @@
       "students": 30,
       "course": "SISTEMAS INTELIGENTES"
     },
-    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+    "professor": "MORENO LARA, QUENIRA JAANAI"
   },
   {
     "data": {
@@ -5795,7 +5691,7 @@
       "students": 28,
       "course": "SISTEMAS INTELIGENTES"
     },
-    "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+    "professor": "MORENO LARA, QUENIRA JAANAI"
   },
   {
     "data": {
@@ -5805,7 +5701,7 @@
       "classroom": "A012",
       "nrc": "227554",
       "code": "I9914",
-      "students": 26,
+      "students": 23,
       "course": "SISTEMAS INTELIGENTES II"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
@@ -5818,7 +5714,7 @@
       "classroom": "A017",
       "nrc": "262058",
       "code": "V0726",
-      "students": 40,
+      "students": 41,
       "course": "SISTEMAS INTELIGENTES"
     },
     "professor": "CONTRERAS GARCIA, GABRIEL"
@@ -5831,7 +5727,7 @@
       "classroom": "A023",
       "nrc": "153410",
       "code": "I9913",
-      "students": 35,
+      "students": 38,
       "course": "SISTEMAS INTELIGENTES I"
     },
     "professor": "RIOS ARRAÑAGA, JORGE DANIEL"
@@ -5844,7 +5740,7 @@
       "classroom": "A014",
       "nrc": "178652",
       "code": "I9915",
-      "students": 35,
+      "students": 34,
       "course": "SISTEMAS INTELIGENTES III"
     },
     "professor": "ALANIS GARCIA, ALMA YOLANDA"
@@ -5857,7 +5753,7 @@
       "classroom": "A011",
       "nrc": "146003",
       "code": "I9916",
-      "students": 33,
+      "students": 32,
       "course": "SISTEMAS INTELIGENTES IV"
     },
     "professor": "VILLASEÑOR PADILLA, CARLOS ALBERTO"
@@ -5896,7 +5792,7 @@
       "classroom": "A017",
       "nrc": "204877",
       "code": "IL366",
-      "students": 38,
+      "students": 39,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "ISLAS TOSKI, MIGUEL ANGEL ALEJANDRO"
@@ -5909,7 +5805,7 @@
       "classroom": "A021",
       "nrc": "204880",
       "code": "IL366",
-      "students": 28,
+      "students": 29,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
@@ -5948,7 +5844,7 @@
       "classroom": "A003",
       "nrc": "204883",
       "code": "IL366",
-      "students": 24,
+      "students": 27,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
@@ -5987,7 +5883,7 @@
       "classroom": "A023",
       "nrc": "228102",
       "code": "IL366",
-      "students": 33,
+      "students": 34,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "LUPERCIO CORONEL, RAMIRO"
@@ -6000,7 +5896,7 @@
       "classroom": "A017",
       "nrc": "228104",
       "code": "IL366",
-      "students": 28,
+      "students": 27,
       "course": "SISTEMAS OPERATIVOS"
     },
     "professor": "LANDA HORTA, DANIEL OMAR"
@@ -6013,7 +5909,7 @@
       "classroom": "A001",
       "nrc": "147573",
       "code": "I7033",
-      "students": 10,
+      "students": 20,
       "course": "SISTEMAS OPERATIVOS DE RED"
     },
     "professor": "MUÑOZ PIZANO, KARLA LIZETTE"
@@ -6026,7 +5922,7 @@
       "classroom": "A014",
       "nrc": "132020",
       "code": "I9911",
-      "students": 32,
+      "students": 29,
       "course": "SISTEMAS ROBOTICOS I"
     },
     "professor": "GOMEZ AVILA, JAVIER ENRIQUE"
@@ -6052,7 +5948,7 @@
       "classroom": "A012",
       "nrc": "138661",
       "code": "I9912",
-      "students": 5,
+      "students": 8,
       "course": "SISTEMAS ROBOTICOS II"
     },
     "professor": "LOPEZ GONZALEZ, GEHOVA"
@@ -6065,7 +5961,7 @@
       "classroom": "A002",
       "nrc": "138661",
       "code": "I9912",
-      "students": 5,
+      "students": 8,
       "course": "SISTEMAS ROBOTICOS II"
     },
     "professor": "LOPEZ GONZALEZ, GEHOVA"
@@ -6078,7 +5974,7 @@
       "classroom": "A013",
       "nrc": "164148",
       "code": "I9912",
-      "students": 35,
+      "students": 39,
       "course": "SISTEMAS ROBOTICOS II"
     },
     "professor": "HERNANDEZ BARRAGAN, JOSE DE JESUS"
@@ -6091,7 +5987,7 @@
       "classroom": "A007",
       "nrc": "204957",
       "code": "V0715",
-      "students": 19,
+      "students": 26,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -6117,7 +6013,7 @@
       "classroom": "A006",
       "nrc": "204960",
       "code": "V0715",
-      "students": 38,
+      "students": 40,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "GARCIA MANZO, RICARDO EMMANUEL"
@@ -6130,7 +6026,7 @@
       "classroom": "A008",
       "nrc": "206016",
       "code": "V0715",
-      "students": 38,
+      "students": 40,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -6143,7 +6039,7 @@
       "classroom": "A005",
       "nrc": "206286",
       "code": "V0715",
-      "students": 35,
+      "students": 38,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "ANDRADE DURAN, CARLOS ARMANDO"
@@ -6156,7 +6052,7 @@
       "classroom": "A014",
       "nrc": "206286",
       "code": "V0715",
-      "students": 35,
+      "students": 38,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "ANDRADE DURAN, CARLOS ARMANDO"
@@ -6169,7 +6065,7 @@
       "classroom": "A016",
       "nrc": "209806",
       "code": "V0715",
-      "students": 36,
+      "students": 38,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "CAMPOS SERRANO, EDUARDO ALBERTO"
@@ -6182,7 +6078,7 @@
       "classroom": "A014",
       "nrc": "209953",
       "code": "V0715",
-      "students": 4,
+      "students": 10,
       "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
     },
     "professor": "FRANCO SAPIEN, RAFAEL"
@@ -6202,13 +6098,26 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A021",
+      "nrc": "212537",
+      "code": "IG681",
+      "students": 5,
+      "course": "TEORIA DE GALOIS"
+    },
+    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDX",
       "classroom": "A004",
       "nrc": "210925",
       "code": "IL357",
-      "students": 40,
+      "students": 37,
       "course": "TEORIA DE LA COMPUTACION"
     },
     "professor": "ESPINOZA VALDEZ, AURORA"
@@ -6221,7 +6130,7 @@
       "classroom": "A020",
       "nrc": "210926",
       "code": "IL357",
-      "students": 40,
+      "students": 37,
       "course": "TEORIA DE LA COMPUTACION"
     },
     "professor": "TORRES RAMOS, SULEMA"
@@ -6260,7 +6169,7 @@
       "classroom": "A020",
       "nrc": "210929",
       "code": "IL357",
-      "students": 21,
+      "students": 19,
       "course": "TEORIA DE LA COMPUTACION"
     },
     "professor": "RODRIGUEZ ACOSTA, LUIS FERNANDO"
@@ -6273,7 +6182,7 @@
       "classroom": "A009",
       "nrc": "228150",
       "code": "IL357",
-      "students": 40,
+      "students": 38,
       "course": "TEORIA DE LA COMPUTACION"
     },
     "professor": "LOPEZ CISNEROS, JUAN JOSE"
@@ -6325,7 +6234,7 @@
       "classroom": "A005",
       "nrc": "201691",
       "code": "I9907",
-      "students": 22,
+      "students": 23,
       "course": "TEORIA DE SISTEMAS I"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -6403,7 +6312,7 @@
       "classroom": "A019",
       "nrc": "53884",
       "code": "CC420",
-      "students": 0,
+      "students": 11,
       "course": "TOPICOS SELECTOS DE INFORMATICA I"
     },
     "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
@@ -6429,7 +6338,7 @@
       "classroom": "A009",
       "nrc": "85703",
       "code": "I7025",
-      "students": 3,
+      "students": 6,
       "course": "TRADUCTORES DE LENGUAJES I"
     },
     "professor": "BECERRA ALVAREZ, EDWIN CHRISTIAN"
@@ -6442,7 +6351,7 @@
       "classroom": "A010",
       "nrc": "165797",
       "code": "I7027",
-      "students": 2,
+      "students": 5,
       "course": "TRADUCTORES DE LENGUAJES II"
     },
     "professor": "VALDES LOPEZ, JULIO ESTEBAN"
@@ -6494,7 +6403,7 @@
       "classroom": "A014",
       "nrc": "153417",
       "code": "I9917",
-      "students": 31,
+      "students": 33,
       "course": "VISION ROBOTICA"
     },
     "professor": "GOMEZ AVILA, JAVIER ENRIQUE"

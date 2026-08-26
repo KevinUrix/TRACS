@@ -1,58 +1,6 @@
 [
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "131911",
-      "code": "IC673",
-      "students": 0,
-      "course": "ALGEBRA"
-    },
-    "professor": "ABUNDIS SANCHEZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "137222",
-      "code": "IC577",
-      "students": 39,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "MARQUEZ BOBADILLA, JUAN MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A023",
-      "nrc": "153635",
-      "code": "IF497",
-      "students": 0,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "VERA SORIA, MARIA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A013",
-      "nrc": "153635",
-      "code": "IF497",
-      "students": 0,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "VERA SORIA, MARIA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -79,6 +27,32 @@
   },
   {
     "data": {
+      "schedule": "1000-1055",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "17912",
+      "code": "F0480",
+      "students": 7,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "VERA SORIA, MARIA GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "137222",
+      "code": "IC577",
+      "students": 39,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "MARQUEZ BOBADILLA, JUAN MANUEL"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -102,19 +76,6 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "42260",
-      "code": "I5802",
-      "students": 38,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "BACILIO NAVARRO, HECTOR MISAEL"
   },
   {
     "data": {
@@ -145,9 +106,48 @@
   {
     "data": {
       "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "42260",
+      "code": "I5802",
+      "students": 39,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "BACILIO NAVARRO, HECTOR MISAEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A015",
+      "nrc": "137224",
+      "code": "IC577",
+      "students": 13,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A005",
+      "nrc": "137224",
+      "code": "IC577",
+      "students": 13,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
       "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A003",
+      "classroom": "A002",
       "nrc": "197386",
       "code": "IB056",
       "students": 30,
@@ -183,29 +183,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A015",
-      "nrc": "137224",
-      "code": "IC577",
-      "students": 13,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "MENDOZA SANTOS, ROSA DELIA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
+      "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A005",
-      "nrc": "137224",
-      "code": "IC577",
-      "students": 13,
+      "classroom": "A012",
+      "nrc": "42252",
+      "code": "I5802",
+      "students": 40,
       "course": "ALGEBRA LINEAL"
     },
-    "professor": "MENDOZA SANTOS, ROSA DELIA"
+    "professor": "ACEVES FERNANDEZ, ELIZABETH"
   },
   {
     "data": {
@@ -232,32 +219,6 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "SANCHEZ NAJERA, ABEL ISAI"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A012",
-      "nrc": "42252",
-      "code": "I5802",
-      "students": 40,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "ACEVES FERNANDEZ, ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A013",
-      "nrc": "197388",
-      "code": "IB056",
-      "students": 40,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "VERA SORIA, FRANCISCO"
   },
   {
     "data": {
@@ -288,6 +249,32 @@
   {
     "data": {
       "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A013",
+      "nrc": "197388",
+      "code": "IB056",
+      "students": 40,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "VERA SORIA, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A017",
+      "nrc": "42247",
+      "code": "I5802",
+      "students": 32,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "ROMERO GASTELU, MARIA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDU",
       "classroom": "A011",
@@ -319,7 +306,7 @@
       "classroom": "A015",
       "nrc": "202032",
       "code": "IB056",
-      "students": 40,
+      "students": 39,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
@@ -332,7 +319,7 @@
       "classroom": "A007",
       "nrc": "202032",
       "code": "IB056",
-      "students": 40,
+      "students": 39,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
@@ -340,9 +327,22 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . I . . .",
+      "days": "L . . . . .",
       "building": "DEDU",
       "classroom": "A007",
+      "nrc": "42245",
+      "code": "I5802",
+      "students": 13,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "ELIZALDE CAMINO, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A008",
       "nrc": "42245",
       "code": "I5802",
       "students": 13,
@@ -358,7 +358,7 @@
       "classroom": "A011",
       "nrc": "202033",
       "code": "IB056",
-      "students": 40,
+      "students": 39,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "MENDOZA SANTOS, ROSA DELIA"
@@ -368,7 +368,7 @@
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDU",
-      "classroom": "A002",
+      "classroom": "A023",
       "nrc": "42259",
       "code": "I5802",
       "students": 30,
@@ -417,19 +417,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A011",
-      "nrc": "42254",
-      "code": "I5802",
-      "students": 4,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "ELIZALDE CAMINO, FERNANDO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . . . S",
       "building": "DEDU",
@@ -456,29 +443,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
       "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "209812",
-      "code": "IB056",
-      "students": 40,
+      "classroom": "A011",
+      "nrc": "42254",
+      "code": "I5802",
+      "students": 4,
       "course": "ALGEBRA LINEAL"
     },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A017",
-      "nrc": "209812",
-      "code": "IB056",
-      "students": 40,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
+    "professor": "ELIZALDE CAMINO, FERNANDO"
   },
   {
     "data": {
@@ -505,6 +479,32 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "209812",
+      "code": "IB056",
+      "students": 40,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A017",
+      "nrc": "209812",
+      "code": "IB056",
+      "students": 40,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "ESPINO ROJAS, NORMA ELVA"
   },
   {
     "data": {
@@ -566,7 +566,7 @@
       "classroom": "A018",
       "nrc": "224977",
       "code": "IB056",
-      "students": 40,
+      "students": 38,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "HERNANDEZ CORONA, GUSTAVO"
@@ -579,7 +579,7 @@
       "classroom": "A018",
       "nrc": "224977",
       "code": "IB056",
-      "students": 40,
+      "students": 38,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "HERNANDEZ CORONA, GUSTAVO"
@@ -748,7 +748,7 @@
       "classroom": "A005",
       "nrc": "224986",
       "code": "IB056",
-      "students": 20,
+      "students": 21,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "SANCHEZ NAJERA, ABEL ISAI"
@@ -761,7 +761,7 @@
       "classroom": "A004",
       "nrc": "224986",
       "code": "IB056",
-      "students": 20,
+      "students": 21,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "SANCHEZ NAJERA, ABEL ISAI"
@@ -774,7 +774,7 @@
       "classroom": "A011",
       "nrc": "184743",
       "code": "I5802",
-      "students": 26,
+      "students": 27,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "MEJIA MARIN, MARIA ESTHER"
@@ -787,7 +787,7 @@
       "classroom": "A011",
       "nrc": "184743",
       "code": "I5802",
-      "students": 26,
+      "students": 27,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "MEJIA MARIN, MARIA ESTHER"
@@ -800,7 +800,7 @@
       "classroom": "A011",
       "nrc": "224987",
       "code": "IB056",
-      "students": 40,
+      "students": 39,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "CASTILLO PEREZ, ALONSO"
@@ -813,7 +813,7 @@
       "classroom": "A010",
       "nrc": "252286",
       "code": "IB056",
-      "students": 40,
+      "students": 39,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
@@ -826,7 +826,7 @@
       "classroom": "A014",
       "nrc": "252287",
       "code": "IB056",
-      "students": 40,
+      "students": 42,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
@@ -852,7 +852,7 @@
       "classroom": "A018",
       "nrc": "254884",
       "code": "IB056",
-      "students": 40,
+      "students": 41,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
@@ -865,7 +865,7 @@
       "classroom": "A021",
       "nrc": "254884",
       "code": "IB056",
-      "students": 40,
+      "students": 41,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
@@ -878,7 +878,7 @@
       "classroom": "A020",
       "nrc": "254886",
       "code": "IB056",
-      "students": 25,
+      "students": 24,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "ELIZALDE CAMINO, FERNANDO"
@@ -891,7 +891,7 @@
       "classroom": "A021",
       "nrc": "254886",
       "code": "IB056",
-      "students": 25,
+      "students": 24,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "ELIZALDE CAMINO, FERNANDO"
@@ -904,23 +904,10 @@
       "classroom": "A023",
       "nrc": "254887",
       "code": "IB056",
-      "students": 5,
+      "students": 9,
       "course": "ALGEBRA LINEAL"
     },
     "professor": "RIOS MATA, DIANA NOHEMI"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A023",
-      "nrc": "77418",
-      "code": "I6000",
-      "students": 4,
-      "course": "ALGEBRA LINEAL II"
-    },
-    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
   },
   {
     "data": {
@@ -1054,6 +1041,19 @@
   },
   {
     "data": {
+      "schedule": "1600-1755",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A009",
+      "nrc": "178816",
+      "code": "IG675",
+      "students": 1,
+      "course": "ANALISIS MATEMATICO II"
+    },
+    "professor": "AVALOS RAMOS, CELIA"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDU",
@@ -1151,7 +1151,7 @@
       "classroom": "A009",
       "nrc": "154533",
       "code": "IF563",
-      "students": 0,
+      "students": 6,
       "course": "ANALISIS NUMERICO PARA ECUACIONES DIFERENCIALES"
     },
     "professor": "LICEA SALAZAR, JUAN ANTONIO"
@@ -1164,10 +1164,23 @@
       "classroom": "A013",
       "nrc": "77383",
       "code": "I3286",
-      "students": 33,
+      "students": 32,
       "course": "ANALISIS NUMERICO Y PROGRAMACION"
     },
     "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A015",
+      "nrc": "144461",
+      "code": "IC586",
+      "students": 20,
+      "course": "CALCULO AVANZADO"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
   },
   {
     "data": {
@@ -1249,6 +1262,19 @@
   },
   {
     "data": {
+      "schedule": "1200-1255",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A006",
+      "nrc": "49783",
+      "code": "I7420",
+      "students": 19,
+      "course": "CALCULO AVANZADO"
+    },
+    "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDU",
@@ -1272,19 +1298,6 @@
       "course": "CALCULO AVANZADO"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "49783",
-      "code": "I7420",
-      "students": 19,
-      "course": "CALCULO AVANZADO"
-    },
-    "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
   },
   {
     "data": {
@@ -1343,7 +1356,7 @@
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDU",
-      "classroom": "A015",
+      "classroom": "A018",
       "nrc": "144466",
       "code": "IC586",
       "students": 37,
@@ -1363,6 +1376,19 @@
       "course": "CALCULO AVANZADO"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A009",
+      "nrc": "94206",
+      "code": "I7420",
+      "students": 4,
+      "course": "CALCULO AVANZADO"
+    },
+    "professor": "LOPEZ CONTRERAS, NARDA LIZBET"
   },
   {
     "data": {
@@ -1408,7 +1434,7 @@
       "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A014",
+      "classroom": "A003",
       "nrc": "42294",
       "code": "I6009",
       "students": 5,
@@ -1437,7 +1463,7 @@
       "classroom": "A001",
       "nrc": "43539",
       "code": "I7344",
-      "students": 24,
+      "students": 25,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -1450,7 +1476,7 @@
       "classroom": "A006",
       "nrc": "43539",
       "code": "I7344",
-      "students": 24,
+      "students": 25,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -1463,7 +1489,7 @@
       "classroom": "A011",
       "nrc": "43535",
       "code": "I7344",
-      "students": 40,
+      "students": 39,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -1476,7 +1502,7 @@
       "classroom": "A005",
       "nrc": "43535",
       "code": "I7344",
-      "students": 40,
+      "students": 39,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "BACILIO NAVARRO, HECTOR MISAEL"
@@ -1489,7 +1515,7 @@
       "classroom": "A002",
       "nrc": "43538",
       "code": "I7344",
-      "students": 12,
+      "students": 11,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "MEJIA MARIN, MARIA ESTHER"
@@ -1502,10 +1528,36 @@
       "classroom": "A002",
       "nrc": "43538",
       "code": "I7344",
-      "students": 12,
+      "students": 11,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "MEJIA MARIN, MARIA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "43536",
+      "code": "I7344",
+      "students": 32,
+      "course": "CALCULO DIFERENCIAL"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "43536",
+      "code": "I7344",
+      "students": 32,
+      "course": "CALCULO DIFERENCIAL"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
   },
   {
     "data": {
@@ -1541,7 +1593,7 @@
       "classroom": "A005",
       "nrc": "152889",
       "code": "I7344",
-      "students": 22,
+      "students": 23,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "LOPEZ LOPEZ, ELKIN"
@@ -1554,10 +1606,36 @@
       "classroom": "A010",
       "nrc": "152889",
       "code": "I7344",
-      "students": 22,
+      "students": 23,
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "LOPEZ LOPEZ, ELKIN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDU",
+      "classroom": "A012",
+      "nrc": "193989",
+      "code": "IL344",
+      "students": 42,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A010",
+      "nrc": "193989",
+      "code": "IL344",
+      "students": 42,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "SANCHEZ ALVAREZ, MIGUEL"
   },
   {
     "data": {
@@ -1567,10 +1645,49 @@
       "classroom": "A022",
       "nrc": "42303",
       "code": "I5999",
-      "students": 40,
+      "students": 39,
       "course": "CALCULO DIFERENCIAL E INTEGRAL II"
     },
     "professor": "CORDOVA GONZALEZ, VERONICA ILIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "42301",
+      "code": "I5990",
+      "students": 19,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
+    },
+    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A015",
+      "nrc": "42301",
+      "code": "I5990",
+      "students": 19,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
+    },
+    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A009",
+      "nrc": "43701",
+      "code": "I6909",
+      "students": 16,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
   },
   {
     "data": {
@@ -1587,58 +1704,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A012",
-      "nrc": "193989",
-      "code": "IL344",
-      "students": 39,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A010",
-      "nrc": "193989",
-      "code": "IL344",
-      "students": 39,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SANCHEZ ALVAREZ, MIGUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDU",
-      "classroom": "A012",
-      "nrc": "204963",
-      "code": "V0710",
-      "students": 36,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "43701",
-      "code": "I6909",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDU",
@@ -1652,29 +1717,81 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
       "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "42301",
-      "code": "I5990",
-      "students": 18,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
+      "classroom": "A012",
+      "nrc": "204963",
+      "code": "V0710",
+      "students": 33,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
+    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
   },
   {
     "data": {
-      "schedule": "1100-1255",
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A002",
+      "nrc": "42295",
+      "code": "I5800",
+      "students": 20,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
       "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A015",
-      "nrc": "42301",
-      "code": "I5990",
-      "students": 18,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
+      "classroom": "A001",
+      "nrc": "42295",
+      "code": "I5800",
+      "students": 20,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "43700",
+      "code": "I6909",
+      "students": 12,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "193990",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "193990",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
   },
   {
     "data": {
@@ -1714,45 +1831,6 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "CORONA SANCHEZ, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A001",
-      "nrc": "43700",
-      "code": "I6909",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "VILLEGAS RUVALCABA, MARIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "193990",
-      "code": "IL344",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "193990",
-      "code": "IL344",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
   },
   {
     "data": {
@@ -1847,91 +1925,13 @@
   },
   {
     "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A018",
-      "nrc": "42296",
-      "code": "I5800",
-      "students": 30,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A018",
-      "nrc": "42296",
-      "code": "I5800",
-      "students": 30,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A018",
-      "nrc": "42296",
-      "code": "I5800",
-      "students": 30,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . . S",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "193992",
-      "code": "IL344",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "193992",
-      "code": "IL344",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "193992",
-      "code": "IL344",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDU",
       "classroom": "A001",
       "nrc": "205825",
       "code": "V0710",
-      "students": 17,
+      "students": 16,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
@@ -1964,6 +1964,84 @@
   },
   {
     "data": {
+      "schedule": "0800-0855",
+      "days": ". . . . . S",
+      "building": "DEDU",
+      "classroom": "A006",
+      "nrc": "193992",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "193992",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "193992",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A018",
+      "nrc": "42296",
+      "code": "I5800",
+      "students": 30,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A018",
+      "nrc": "42296",
+      "code": "I5800",
+      "students": 30,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A018",
+      "nrc": "42296",
+      "code": "I5800",
+      "students": 30,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
+  },
+  {
+    "data": {
       "schedule": "0900-0955",
       "days": ". . . . V .",
       "building": "DEDU",
@@ -2003,6 +2081,32 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDU",
+      "classroom": "A017",
+      "nrc": "42297",
+      "code": "I5800",
+      "students": 33,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "RADILLO ENRIQUEZ, MARISOL"
+  },
+  {
+    "data": {
+      "schedule": "1400-1455",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "42297",
+      "code": "I5800",
+      "students": 33,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "RADILLO ENRIQUEZ, MARISOL"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDU",
@@ -2029,39 +2133,13 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A017",
-      "nrc": "42297",
-      "code": "I5800",
-      "students": 32,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "RADILLO ENRIQUEZ, MARISOL"
-  },
-  {
-    "data": {
-      "schedule": "1400-1455",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A004",
-      "nrc": "42297",
-      "code": "I5800",
-      "students": 32,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "RADILLO ENRIQUEZ, MARISOL"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDU",
       "classroom": "A017",
       "nrc": "178828",
       "code": "I6909",
-      "students": 0,
+      "students": 17,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "SANTIAGO HERNANDEZ, ELOISA"
@@ -2074,75 +2152,10 @@
       "classroom": "A001",
       "nrc": "178828",
       "code": "I6909",
-      "students": 0,
+      "students": 17,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "SANTIAGO HERNANDEZ, ELOISA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1155",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A010",
-      "nrc": "193994",
-      "code": "IL344",
-      "students": 41,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A011",
-      "nrc": "193994",
-      "code": "IL344",
-      "students": 41,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A017",
-      "nrc": "88049",
-      "code": "I7421",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "88049",
-      "code": "I7421",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A005",
-      "nrc": "88049",
-      "code": "I7421",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
   },
   {
     "data": {
@@ -2212,28 +2225,41 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". . . J . .",
+      "days": "L . . . . .",
       "building": "DEDU",
-      "classroom": "A020",
-      "nrc": "193996",
-      "code": "IL344",
+      "classroom": "A017",
+      "nrc": "88049",
+      "code": "I7421",
       "students": 40,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "VILLEGAS RUVALCABA, MARIO"
+    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
   },
   {
     "data": {
-      "schedule": "1000-1055",
-      "days": ". . . . V .",
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A015",
-      "nrc": "193996",
-      "code": "IL344",
+      "classroom": "A007",
+      "nrc": "88049",
+      "code": "I7421",
       "students": 40,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
-    "professor": "VILLEGAS RUVALCABA, MARIO"
+    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A005",
+      "nrc": "88049",
+      "code": "I7421",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
   },
   {
     "data": {
@@ -2260,6 +2286,32 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A020",
+      "nrc": "193996",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A015",
+      "nrc": "193996",
+      "code": "IL344",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "VILLEGAS RUVALCABA, MARIO"
   },
   {
     "data": {
@@ -2308,7 +2360,7 @@
       "classroom": "A020",
       "nrc": "224993",
       "code": "V0710",
-      "students": 40,
+      "students": 38,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "JIMENEZ SERRANO, EDUVIGES"
@@ -2321,7 +2373,7 @@
       "classroom": "A022",
       "nrc": "224993",
       "code": "V0710",
-      "students": 40,
+      "students": 38,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "JIMENEZ SERRANO, EDUVIGES"
@@ -2344,7 +2396,7 @@
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDU",
-      "classroom": "A018",
+      "classroom": "A015",
       "nrc": "224997",
       "code": "V0710",
       "students": 40,
@@ -2373,7 +2425,7 @@
       "classroom": "A003",
       "nrc": "251038",
       "code": "V0710",
-      "students": 30,
+      "students": 29,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "HUERTA CISNEROS, FEDERICO ANTONIO"
@@ -2416,19 +2468,6 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VAZQUEZ HERNANDEZ, HUSAI"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "254854",
-      "code": "V0710",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
   },
   {
     "data": {
@@ -2487,7 +2526,7 @@
       "schedule": "1100-1155",
       "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A020",
+      "classroom": "A004",
       "nrc": "42304",
       "code": "I6121",
       "students": 40,
@@ -2568,7 +2607,7 @@
       "classroom": "A016",
       "nrc": "42306",
       "code": "I6121",
-      "students": 39,
+      "students": 38,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -2615,19 +2654,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A011",
-      "nrc": "213189",
-      "code": "I3277",
-      "students": 7,
-      "course": "CALCULO I"
-    },
-    "professor": "CORONA SANCHEZ, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDU",
       "classroom": "A011",
@@ -2646,23 +2672,10 @@
       "classroom": "A016",
       "nrc": "38422",
       "code": "I3281",
-      "students": 29,
+      "students": 28,
       "course": "CALCULO II"
     },
     "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A014",
-      "nrc": "38423",
-      "code": "I3281",
-      "students": 0,
-      "course": "CALCULO II"
-    },
-    "professor": "LUNA ARELLANO, MAYRA LORENA"
   },
   {
     "data": {
@@ -2672,7 +2685,7 @@
       "classroom": "A012",
       "nrc": "95192",
       "code": "I3281",
-      "students": 40,
+      "students": 41,
       "course": "CALCULO II"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
@@ -2822,19 +2835,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "93426",
-      "code": "I7345",
-      "students": 25,
-      "course": "CALCULO INTEGRAL"
-    },
-    "professor": "RIOS MATA, DIANA NOHEMI"
-  },
-  {
-    "data": {
       "schedule": "1300-1355",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -2880,7 +2880,7 @@
       "classroom": "A001",
       "nrc": "60930",
       "code": "I6001",
-      "students": 28,
+      "students": 27,
       "course": "CLINICA DE HABILIDADES BASICAS"
     },
     "professor": "MORENO GONZALEZ, CLAUDIA"
@@ -2893,7 +2893,7 @@
       "classroom": "A013",
       "nrc": "42336",
       "code": "I5874",
-      "students": 40,
+      "students": 39,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
@@ -2906,7 +2906,7 @@
       "classroom": "A013",
       "nrc": "42336",
       "code": "I5874",
-      "students": 40,
+      "students": 39,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
@@ -2919,7 +2919,7 @@
       "classroom": "A017",
       "nrc": "42337",
       "code": "I5874",
-      "students": 39,
+      "students": 37,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
@@ -2939,16 +2939,29 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1900-2055",
       "days": "L . . . . .",
       "building": "DEDU",
-      "classroom": "A001",
-      "nrc": "42334",
+      "classroom": "A016",
+      "nrc": "56869",
       "code": "I5874",
-      "students": 40,
+      "students": 27,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
-    "professor": "CORONA SANCHEZ, JUAN CARLOS"
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A016",
+      "nrc": "56869",
+      "code": "I5874",
+      "students": 27,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
   },
   {
     "data": {
@@ -2965,39 +2978,13 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A016",
-      "nrc": "56869",
-      "code": "I5874",
-      "students": 30,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "MUELA LOPEZ, MARIA CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A016",
-      "nrc": "56869",
-      "code": "I5874",
-      "students": 30,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "MUELA LOPEZ, MARIA CRISTINA"
-  },
-  {
-    "data": {
       "schedule": "0800-1155",
       "days": ". . . . V .",
       "building": "DEDU",
       "classroom": "A021",
       "nrc": "76040",
       "code": "I5874",
-      "students": 39,
+      "students": 35,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "GARIBAY LOPEZ, CECILIA"
@@ -3010,10 +2997,62 @@
       "classroom": "A023",
       "nrc": "95755",
       "code": "I5874",
-      "students": 26,
+      "students": 24,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "GARIBAY LOPEZ, CECILIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A017",
+      "nrc": "171759",
+      "code": "I7342",
+      "students": 40,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "171759",
+      "code": "I7342",
+      "students": 40,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A013",
+      "nrc": "163996",
+      "code": "I5874",
+      "students": 32,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A021",
+      "nrc": "163996",
+      "code": "I5874",
+      "students": 32,
+      "course": "DISEÑO DE EXPERIMENTOS"
+    },
+    "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
   },
   {
     "data": {
@@ -3043,32 +3082,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A013",
-      "nrc": "163996",
-      "code": "I5874",
-      "students": 30,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A021",
-      "nrc": "163996",
-      "code": "I5874",
-      "students": 30,
-      "course": "DISEÑO DE EXPERIMENTOS"
-    },
-    "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -3085,7 +3098,7 @@
       "schedule": "1700-1855",
       "days": ". . . J . .",
       "building": "DEDU",
-      "classroom": "A020",
+      "classroom": "A017",
       "nrc": "178835",
       "code": "I7342",
       "students": 40,
@@ -3101,7 +3114,7 @@
       "classroom": "A010",
       "nrc": "178833",
       "code": "I5874",
-      "students": 29,
+      "students": 33,
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "DIAZ CALDERA, LIZBETH"
@@ -3157,6 +3170,32 @@
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A006",
+      "nrc": "77428",
+      "code": "I7422",
+      "students": 40,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A006",
+      "nrc": "77428",
+      "code": "I7422",
+      "students": 40,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
   },
   {
     "data": {
@@ -3228,32 +3267,6 @@
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "77428",
-      "code": "I7422",
-      "students": 40,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "77428",
-      "code": "I7422",
-      "students": 40,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDU",
       "classroom": "A014",
       "nrc": "56883",
       "code": "I7346",
@@ -3278,28 +3291,15 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": "L . . . . .",
+      "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "56887",
-      "code": "I7346",
-      "students": 30,
+      "classroom": "A007",
+      "nrc": "178842",
+      "code": "I3284",
+      "students": 23,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
-    "professor": "SANTIAGO HERNANDEZ, ELOISA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "56887",
-      "code": "I7346",
-      "students": 30,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "SANTIAGO HERNANDEZ, ELOISA"
+    "professor": "ROBLERO MENDEZ, ELI VANNEY"
   },
   {
     "data": {
@@ -3317,41 +3317,28 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": ". . . . V .",
+      "days": "L . . . . .",
       "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "178842",
-      "code": "I3284",
-      "students": 22,
+      "classroom": "A003",
+      "nrc": "56887",
+      "code": "I7346",
+      "students": 29,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
-    "professor": "ROBLERO MENDEZ, ELI VANNEY"
+    "professor": "SANTIAGO HERNANDEZ, ELOISA"
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "197382",
-      "code": "IL347",
-      "students": 40,
-      "course": "ECUACIONES DIFERENCIALES"
+      "classroom": "A003",
+      "nrc": "56887",
+      "code": "I7346",
+      "students": 29,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
-    "professor": "CERVANTES LOMELI, ADRIAN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "197382",
-      "code": "IL347",
-      "students": 40,
-      "course": "ECUACIONES DIFERENCIALES"
-    },
-    "professor": "CERVANTES LOMELI, ADRIAN"
+    "professor": "SANTIAGO HERNANDEZ, ELOISA"
   },
   {
     "data": {
@@ -3361,7 +3348,20 @@
       "classroom": "A004",
       "nrc": "77432",
       "code": "I7422",
-      "students": 39,
+      "students": 40,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "FERNANDEZ LUNA, MA. GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "77432",
+      "code": "I7422",
+      "students": 40,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "FERNANDEZ LUNA, MA. GUADALUPE"
@@ -3378,6 +3378,32 @@
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "VAZQUEZ HERNANDEZ, HUSAI"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "197382",
+      "code": "IL347",
+      "students": 39,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "CERVANTES LOMELI, ADRIAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "197382",
+      "code": "IL347",
+      "students": 39,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "CERVANTES LOMELI, ADRIAN"
   },
   {
     "data": {
@@ -3446,16 +3472,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
+      "schedule": "1300-1555",
+      "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A018",
-      "nrc": "197384",
-      "code": "IL347",
-      "students": 31,
-      "course": "ECUACIONES DIFERENCIALES"
+      "classroom": "A022",
+      "nrc": "93273",
+      "code": "I7422",
+      "students": 40,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
-    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
+    "professor": "SOLIS RODRIGUEZ, JOSE"
   },
   {
     "data": {
@@ -3469,19 +3495,6 @@
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "ZERMEÑO RAMOS, RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1555",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "93273",
-      "code": "I7422",
-      "students": 40,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "SOLIS RODRIGUEZ, JOSE"
   },
   {
     "data": {
@@ -3569,7 +3582,7 @@
       "classroom": "A004",
       "nrc": "225008",
       "code": "IL347",
-      "students": 40,
+      "students": 39,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
@@ -3582,10 +3595,23 @@
       "classroom": "A004",
       "nrc": "225008",
       "code": "IL347",
-      "students": 40,
+      "students": 39,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . V .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "225009",
+      "code": "IL347",
+      "students": 38,
+      "course": "ECUACIONES DIFERENCIALES"
+    },
+    "professor": "SANCHEZ NAJERA, ABEL ISAI"
   },
   {
     "data": {
@@ -3615,26 +3641,13 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . V .",
-      "building": "DEDU",
-      "classroom": "A001",
-      "nrc": "225009",
-      "code": "IL347",
-      "students": 36,
-      "course": "ECUACIONES DIFERENCIALES"
-    },
-    "professor": "SANCHEZ NAJERA, ABEL ISAI"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDU",
       "classroom": "A024",
       "nrc": "225010",
       "code": "IL347",
-      "students": 27,
+      "students": 28,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -3644,10 +3657,10 @@
       "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A004",
+      "classroom": "A008",
       "nrc": "225010",
       "code": "IL347",
-      "students": 27,
+      "students": 28,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -3686,7 +3699,7 @@
       "classroom": "A015",
       "nrc": "251046",
       "code": "V0712",
-      "students": 40,
+      "students": 39,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
@@ -3699,7 +3712,7 @@
       "classroom": "A002",
       "nrc": "251047",
       "code": "V0712",
-      "students": 30,
+      "students": 31,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -3712,7 +3725,7 @@
       "classroom": "A002",
       "nrc": "251047",
       "code": "V0712",
-      "students": 30,
+      "students": 31,
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "VARGAS RODRIGUEZ, ELVIRA SUSANA"
@@ -3729,6 +3742,19 @@
       "course": "ECUACIONES DIFERENCIALES"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "42341",
+      "code": "I6010",
+      "students": 4,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
+    },
+    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
   },
   {
     "data": {
@@ -3759,32 +3785,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". . I . V .",
-      "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "42341",
-      "code": "I6010",
-      "students": 4,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
-    },
-    "professor": "GUTIERREZ IBARRA, LUIS GERARDO"
-  },
-  {
-    "data": {
-      "schedule": "1600-1855",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "144460",
-      "code": "IC682",
-      "students": 0,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "BONILLA MERCADO, VICTORINO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": ". . . J . .",
       "building": "DEDU",
       "classroom": "A008",
@@ -3803,7 +3803,7 @@
       "classroom": "A007",
       "nrc": "145839",
       "code": "IC682",
-      "students": 20,
+      "students": 21,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "FREGOSO BECERRA, EMILIA"
@@ -3836,32 +3836,6 @@
   },
   {
     "data": {
-      "schedule": "1400-1455",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A022",
-      "nrc": "56884",
-      "code": "I6910",
-      "students": 6,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "ROBLERO MENDEZ, ELI VANNEY"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A016",
-      "nrc": "56884",
-      "code": "I6910",
-      "students": 6,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "ROBLERO MENDEZ, ELI VANNEY"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDU",
@@ -3872,6 +3846,19 @@
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS Y MODELACION DE SISTEMAS"
     },
     "professor": "LOPEZ LOPEZ, ELKIN"
+  },
+  {
+    "data": {
+      "schedule": "1400-1455",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "56884",
+      "code": "I6910",
+      "students": 6,
+      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
+    },
+    "professor": "ROBLERO MENDEZ, ELI VANNEY"
   },
   {
     "data": {
@@ -3914,13 +3901,26 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A009",
+      "nrc": "160586",
+      "code": "IG694",
+      "students": 2,
+      "course": "ECUACIONES DIFERENCIALES PARCIALES"
+    },
+    "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
+  },
+  {
+    "data": {
       "schedule": "0800-0855",
       "days": ". . . . V .",
       "building": "DEDU",
       "classroom": "A024",
       "nrc": "165364",
       "code": "IF875",
-      "students": 35,
+      "students": 34,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
@@ -3933,7 +3933,7 @@
       "classroom": "A024",
       "nrc": "145639",
       "code": "IC591",
-      "students": 30,
+      "students": 29,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "GAETA VERDIN, MARIO BOLIVAR"
@@ -3953,6 +3953,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A021",
+      "nrc": "209678",
+      "code": "IC591",
+      "students": 27,
+      "course": "ELECTROMAGNETISMO"
+    },
+    "professor": "BAUTISTA RICO, FERNANDO"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -3967,19 +3980,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "83782",
-      "code": "I7347",
-      "students": 20,
-      "course": "ESTADISTICA"
-    },
-    "professor": "MARTINEZ VAZQUEZ, RICARDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDU",
       "classroom": "A004",
@@ -3989,6 +3989,19 @@
       "course": "ESTADISTICA"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A003",
+      "nrc": "83782",
+      "code": "I7347",
+      "students": 20,
+      "course": "ESTADISTICA"
+    },
+    "professor": "MARTINEZ VAZQUEZ, RICARDO"
   },
   {
     "data": {
@@ -4024,7 +4037,7 @@
       "classroom": "A005",
       "nrc": "159933",
       "code": "I7347",
-      "students": 5,
+      "students": 7,
       "course": "ESTADISTICA"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -4037,7 +4050,7 @@
       "classroom": "A008",
       "nrc": "89126",
       "code": "I9880",
-      "students": 28,
+      "students": 25,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "LUNA ARELLANO, MAYRA LORENA"
@@ -4050,7 +4063,7 @@
       "classroom": "A008",
       "nrc": "132759",
       "code": "I9880",
-      "students": 21,
+      "students": 24,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -4063,7 +4076,7 @@
       "classroom": "A011",
       "nrc": "132759",
       "code": "I9880",
-      "students": 21,
+      "students": 24,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -4076,7 +4089,7 @@
       "classroom": "A004",
       "nrc": "201951",
       "code": "I9880",
-      "students": 2,
+      "students": 8,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -4089,7 +4102,7 @@
       "classroom": "A001",
       "nrc": "201951",
       "code": "I9880",
-      "students": 2,
+      "students": 8,
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -4106,32 +4119,6 @@
       "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
     },
     "professor": "MACHUCA VERGARA, JESSICA JACQUELINE"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A004",
-      "nrc": "104154",
-      "code": "I5897",
-      "students": 0,
-      "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "104154",
-      "code": "I5897",
-      "students": 0,
-      "course": "ESTADISTICA Y PROCESOS ESTOCASTICOS"
-    },
-    "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
   },
   {
     "data": {
@@ -4174,13 +4161,26 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A002",
+      "nrc": "237222",
+      "code": "V3848",
+      "students": 20,
+      "course": "FENOMENOS ELECTROMAGNETICOS"
+    },
+    "professor": "PEREZ CENTENO, ARMANDO"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DEDU",
       "classroom": "A002",
       "nrc": "38419",
       "code": "I3279",
-      "students": 27,
+      "students": 28,
       "course": "FISICA I ( ESTATICA Y DINAMICA )"
     },
     "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
@@ -4245,7 +4245,7 @@
       "classroom": "A019",
       "nrc": "189669",
       "code": "IL340",
-      "students": 15,
+      "students": 18,
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "MACIAS AMBRIZ, ROGELIO JR."
@@ -4349,7 +4349,7 @@
       "classroom": "A018",
       "nrc": "252236",
       "code": "IL340",
-      "students": 32,
+      "students": 31,
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "MORENO CLOSE, ERIC ROLANDO"
@@ -4379,32 +4379,6 @@
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "ALANIS FUERTE, IVON"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A017",
-      "nrc": "42397",
-      "code": "I5921",
-      "students": 20,
-      "course": "FUNDAMENTOS DE GEOMETRIA"
-    },
-    "professor": "MONTES NAVARRO, MARIANA SARAHI"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "42397",
-      "code": "I5921",
-      "students": 20,
-      "course": "FUNDAMENTOS DE GEOMETRIA"
-    },
-    "professor": "MONTES NAVARRO, MARIANA SARAHI"
   },
   {
     "data": {
@@ -4450,7 +4424,7 @@
       "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A004",
+      "classroom": "A003",
       "nrc": "137236",
       "code": "IC680",
       "students": 6,
@@ -4460,42 +4434,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A001",
+      "classroom": "A002",
       "nrc": "77400",
       "code": "I5947",
       "students": 10,
       "course": "GEOMETRIA DIFERENCIAL"
     },
     "professor": "MADRIZ AGUILAR, JOSE EDGAR"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "131913",
-      "code": "IC674",
-      "students": 0,
-      "course": "GEOMETRIA EUCLIDIANA"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A002",
-      "nrc": "131913",
-      "code": "IC674",
-      "students": 0,
-      "course": "GEOMETRIA EUCLIDIANA"
-    },
-    "professor": "HERNANDEZ CEDILLO, TONANTZIN JUDITH"
   },
   {
     "data": {
@@ -4509,6 +4457,19 @@
       "course": "GEOMETRIA PROYECTIVA"
     },
     "professor": "LOPEZ ALCALA, MARITZA ELIZABETH"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A020",
+      "nrc": "178858",
+      "code": "IG716",
+      "students": 1,
+      "course": "INFERENCIA ESTADISTICA II"
+    },
+    "professor": "GUTIERREZ GONZALEZ, PORFIRIO"
   },
   {
     "data": {
@@ -4687,7 +4648,7 @@
       "classroom": "A022",
       "nrc": "189648",
       "code": "I5247",
-      "students": 40,
+      "students": 41,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "SANTIAGO HERNANDEZ, ELOISA"
@@ -4811,13 +4772,26 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A023",
+      "nrc": "201863",
+      "code": "I5247",
+      "students": 40,
+      "course": "LOGICA MATEMATICA"
+    },
+    "professor": "ELIZALDE CAMINO, FERNANDO"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . I . . .",
       "building": "DEDU",
       "classroom": "A013",
       "nrc": "201864",
       "code": "I5247",
-      "students": 36,
+      "students": 39,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "FLORES SANDOVAL, MIRIAM ILEANA"
@@ -4843,7 +4817,7 @@
       "classroom": "A007",
       "nrc": "252274",
       "code": "I5247",
-      "students": 33,
+      "students": 39,
       "course": "LOGICA MATEMATICA"
     },
     "professor": "ELIZALDE CAMINO, FERNANDO"
@@ -4999,7 +4973,7 @@
       "classroom": "A023",
       "nrc": "193981",
       "code": "IL345",
-      "students": 30,
+      "students": 31,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "GARCIA NAVA, DALMIRO"
@@ -5012,7 +4986,7 @@
       "classroom": "A003",
       "nrc": "193981",
       "code": "IL345",
-      "students": 30,
+      "students": 31,
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "GARCIA NAVA, DALMIRO"
@@ -5025,32 +4999,6 @@
       "classroom": "A012",
       "nrc": "205835",
       "code": "V0711",
-      "students": 40,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A021",
-      "nrc": "193982",
-      "code": "IL345",
-      "students": 40,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A005",
-      "nrc": "193982",
-      "code": "IL345",
       "students": 40,
       "course": "MATEMATICAS DISCRETAS"
     },
@@ -5097,6 +5045,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDU",
+      "classroom": "A003",
+      "nrc": "209746",
+      "code": "V0711",
+      "students": 30,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -5123,19 +5084,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "209746",
-      "code": "V0711",
-      "students": 30,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "VILLALOBOS JIMENEZ, SARA EDITH"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -5146,6 +5094,19 @@
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "MARTINEZ VAZQUEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
+      "building": "DEDU",
+      "classroom": "A002",
+      "nrc": "193988",
+      "code": "IL345",
+      "students": 10,
+      "course": "MATEMATICAS DISCRETAS"
+    },
+    "professor": "CORDOVA GONZALEZ, VERONICA ILIANA"
   },
   {
     "data": {
@@ -5175,19 +5136,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A002",
-      "nrc": "193988",
-      "code": "IL345",
-      "students": 10,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "CORDOVA GONZALEZ, VERONICA ILIANA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDU",
@@ -5211,19 +5159,6 @@
       "course": "MATEMATICAS DISCRETAS"
     },
     "professor": "ACEVES FERNANDEZ, ELIZABETH"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A023",
-      "nrc": "91267",
-      "code": "I9881",
-      "students": 0,
-      "course": "METODOS MATEMATICOS I"
-    },
-    "professor": "ANDRADE MELECIO, HUGO ARMANDO"
   },
   {
     "data": {
@@ -5253,19 +5188,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A024",
-      "nrc": "193251",
-      "code": "IL343",
-      "students": 35,
-      "course": "MECANICA"
-    },
-    "professor": "GUILLEN BONILLA, HECTOR"
-  },
-  {
-    "data": {
       "schedule": "0900-0955",
       "days": ". . I . . .",
       "building": "DEDU",
@@ -5279,16 +5201,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
       "building": "DEDU",
       "classroom": "A024",
-      "nrc": "43553",
-      "code": "I7353",
+      "nrc": "193251",
+      "code": "IL343",
       "students": 35,
       "course": "MECANICA"
     },
-    "professor": "ROSALIO CUEVAS, SAMUEL"
+    "professor": "GUILLEN BONILLA, HECTOR"
   },
   {
     "data": {
@@ -5324,7 +5246,7 @@
       "classroom": "A024",
       "nrc": "252013",
       "code": "IL343",
-      "students": 27,
+      "students": 29,
       "course": "MECANICA"
     },
     "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
@@ -5376,7 +5298,7 @@
       "classroom": "A020",
       "nrc": "252018",
       "code": "IL343",
-      "students": 27,
+      "students": 25,
       "course": "MECANICA"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
@@ -5389,7 +5311,7 @@
       "classroom": "A024",
       "nrc": "263659",
       "code": "IL343",
-      "students": 21,
+      "students": 20,
       "course": "MECANICA"
     },
     "professor": "VARGAS CARMONA, JORGE ALBERTO"
@@ -5461,32 +5383,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A013",
-      "nrc": "42507",
-      "code": "I5895",
-      "students": 2,
-      "course": "METODOS MATEMATICOS II"
-    },
-    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A013",
-      "nrc": "42507",
-      "code": "I5895",
-      "students": 2,
-      "course": "METODOS MATEMATICOS II"
-    },
-    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -5513,6 +5409,32 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A013",
+      "nrc": "42507",
+      "code": "I5895",
+      "students": 2,
+      "course": "METODOS MATEMATICOS II"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A013",
+      "nrc": "42507",
+      "code": "I5895",
+      "students": 2,
+      "course": "METODOS MATEMATICOS II"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+  },
+  {
+    "data": {
       "schedule": "1500-1855",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -5523,19 +5445,6 @@
       "course": "METODOS MATEMATICOS II"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A002",
-      "nrc": "91358",
-      "code": "I5895",
-      "students": 0,
-      "course": "METODOS MATEMATICOS II"
-    },
-    "professor": "MEJIA MARIN, MARIA ESTHER"
   },
   {
     "data": {
@@ -5558,7 +5467,7 @@
       "classroom": "A001",
       "nrc": "57237",
       "code": "I7020",
-      "students": 3,
+      "students": 5,
       "course": "METODOS MATEMATICOS III"
     },
     "professor": "CORTES NAVARRO, LAURA ESTHER"
@@ -5601,32 +5510,6 @@
       "course": "METODOS MATEMATICOS III"
     },
     "professor": "CERVANTES LOMELI, ADRIAN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A014",
-      "nrc": "57309",
-      "code": "I7020",
-      "students": 0,
-      "course": "METODOS MATEMATICOS III"
-    },
-    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "57309",
-      "code": "I7020",
-      "students": 0,
-      "course": "METODOS MATEMATICOS III"
-    },
-    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
   },
   {
     "data": {
@@ -5675,7 +5558,7 @@
       "classroom": "A019",
       "nrc": "94572",
       "code": "I7020",
-      "students": 4,
+      "students": 5,
       "course": "METODOS MATEMATICOS III"
     },
     "professor": "PLASCENCIA GARCIA, CRISTYAN JEOVANY"
@@ -5695,13 +5578,39 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A023",
+      "nrc": "212352",
+      "code": "V0713",
+      "students": 39,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A005",
+      "nrc": "212352",
+      "code": "V0713",
+      "students": 39,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDU",
       "classroom": "A020",
       "nrc": "90137",
       "code": "I7419",
-      "students": 34,
+      "students": 33,
       "course": "METODOS NUMERICOS"
     },
     "professor": "ESPINO ROJAS, NORMA ELVA"
@@ -5734,42 +5643,29 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDU",
-      "classroom": "A023",
-      "nrc": "212352",
+      "classroom": "A004",
+      "nrc": "212882",
       "code": "V0713",
-      "students": 39,
+      "students": 21,
       "course": "METODOS NUMERICOS"
     },
-    "professor": "MENDOZA SANTOS, ROSA DELIA"
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
-      "schedule": "0900-1055",
+      "schedule": "1700-1855",
       "days": ". . . J . .",
       "building": "DEDU",
-      "classroom": "A005",
-      "nrc": "212352",
+      "classroom": "A015",
+      "nrc": "212882",
       "code": "V0713",
-      "students": 39,
+      "students": 21,
       "course": "METODOS NUMERICOS"
     },
-    "professor": "MENDOZA SANTOS, ROSA DELIA"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "57174",
-      "code": "I7343",
-      "students": 36,
-      "course": "METODOS NUMERICOS"
-    },
-    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
+    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
@@ -5799,29 +5695,16 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
+      "schedule": "1900-2055",
+      "days": ". M . J . .",
       "building": "DEDU",
-      "classroom": "A004",
-      "nrc": "212882",
-      "code": "V0713",
-      "students": 16,
+      "classroom": "A006",
+      "nrc": "57174",
+      "code": "I7343",
+      "students": 38,
       "course": "METODOS NUMERICOS"
     },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A015",
-      "nrc": "212882",
-      "code": "V0713",
-      "students": 16,
-      "course": "METODOS NUMERICOS"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
   },
   {
     "data": {
@@ -5870,7 +5753,7 @@
       "classroom": "A008",
       "nrc": "212885",
       "code": "V0713",
-      "students": 26,
+      "students": 25,
       "course": "METODOS NUMERICOS"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
@@ -5883,10 +5766,23 @@
       "classroom": "A012",
       "nrc": "212885",
       "code": "V0713",
-      "students": 26,
+      "students": 25,
       "course": "METODOS NUMERICOS"
     },
     "professor": "ORTEGA CORDOVA, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "200062",
+      "code": "IL348",
+      "students": 40,
+      "course": "METODOS NUMERICOS"
+    },
+    "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
   },
   {
     "data": {
@@ -5926,19 +5822,6 @@
       "course": "METODOS NUMERICOS"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
-  },
-  {
-    "data": {
-      "schedule": "1900-2055",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "254972",
-      "code": "V0713",
-      "students": 0,
-      "course": "METODOS NUMERICOS"
-    },
-    "professor": "JIMENEZ SERRANO, EDUVIGES"
   },
   {
     "data": {
@@ -6013,7 +5896,7 @@
       "classroom": "A024",
       "nrc": "60825",
       "code": "I6917",
-      "students": 22,
+      "students": 21,
       "course": "ONDAS, FLUIDOS Y FISICA MOLECULAR"
     },
     "professor": "IBARRA TORRES, JUAN CARLOS"
@@ -6033,29 +5916,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDU",
-      "classroom": "A011",
-      "nrc": "95424",
-      "code": "I5799",
-      "students": 7,
-      "course": "PRECALCULO"
-    },
-    "professor": "MEJIA MARIN, MARIA ESTHER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
+      "schedule": "1000-1255",
       "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A001",
-      "nrc": "95424",
-      "code": "I5799",
-      "students": 7,
-      "course": "PRECALCULO"
+      "classroom": "A019",
+      "nrc": "73818",
+      "code": "I8102",
+      "students": 2,
+      "course": "PRACTICA PROFESIONAL Y SEMINARIO EN MATEMATICA EDUCATIVA I"
     },
-    "professor": "MEJIA MARIN, MARIA ESTHER"
+    "professor": "VERA SORIA, MARIA GUADALUPE"
   },
   {
     "data": {
@@ -6065,7 +5935,7 @@
       "classroom": "A018",
       "nrc": "189652",
       "code": "IG738",
-      "students": 41,
+      "students": 42,
       "course": "PRECALCULO"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
@@ -6078,10 +5948,49 @@
       "classroom": "A022",
       "nrc": "189652",
       "code": "IG738",
-      "students": 41,
+      "students": 42,
       "course": "PRECALCULO"
     },
     "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDU",
+      "classroom": "A011",
+      "nrc": "95424",
+      "code": "I5799",
+      "students": 9,
+      "course": "PRECALCULO"
+    },
+    "professor": "MEJIA MARIN, MARIA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "95424",
+      "code": "I5799",
+      "students": 9,
+      "course": "PRECALCULO"
+    },
+    "professor": "MEJIA MARIN, MARIA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "0700-1055",
+      "days": ". . . . . S",
+      "building": "DEDU",
+      "classroom": "A014",
+      "nrc": "189653",
+      "code": "IG738",
+      "students": 39,
+      "course": "PRECALCULO"
+    },
+    "professor": "HERNANDEZ CORONA, GUSTAVO"
   },
   {
     "data": {
@@ -6124,32 +6033,6 @@
   },
   {
     "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . . S",
-      "building": "DEDU",
-      "classroom": "A014",
-      "nrc": "189653",
-      "code": "IG738",
-      "students": 40,
-      "course": "PRECALCULO"
-    },
-    "professor": "HERNANDEZ CORONA, GUSTAVO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "197951",
-      "code": "IB120",
-      "students": 0,
-      "course": "PRECALCULO"
-    },
-    "professor": "RODRIGUEZ CASTRO, JORGE ALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -6160,6 +6043,19 @@
       "course": "PRECALCULO"
     },
     "professor": "MENDOZA SANTOS, ROSA DELIA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A012",
+      "nrc": "189657",
+      "code": "IG738",
+      "students": 32,
+      "course": "PRECALCULO"
+    },
+    "professor": "LUNA ARELLANO, MAYRA LORENA"
   },
   {
     "data": {
@@ -6195,7 +6091,7 @@
       "classroom": "A013",
       "nrc": "42532",
       "code": "I5799",
-      "students": 5,
+      "students": 7,
       "course": "PRECALCULO"
     },
     "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
@@ -6208,23 +6104,10 @@
       "classroom": "A006",
       "nrc": "42532",
       "code": "I5799",
-      "students": 5,
+      "students": 7,
       "course": "PRECALCULO"
     },
     "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A012",
-      "nrc": "189657",
-      "code": "IG738",
-      "students": 30,
-      "course": "PRECALCULO"
-    },
-    "professor": "LUNA ARELLANO, MAYRA LORENA"
   },
   {
     "data": {
@@ -6293,19 +6176,6 @@
   },
   {
     "data": {
-      "schedule": "0800-0855",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A004",
-      "nrc": "42536",
-      "code": "I5799",
-      "students": 40,
-      "course": "PRECALCULO"
-    },
-    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDU",
@@ -6319,23 +6189,23 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
+      "schedule": "0800-0855",
+      "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A007",
-      "nrc": "189662",
-      "code": "IG738",
+      "classroom": "A004",
+      "nrc": "42536",
+      "code": "I5799",
       "students": 40,
       "course": "PRECALCULO"
     },
-    "professor": "FERNANDEZ LUNA, MA. GUADALUPE"
+    "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
       "building": "DEDU",
-      "classroom": "A019",
+      "classroom": "A003",
       "nrc": "42535",
       "code": "I5799",
       "students": 20,
@@ -6345,13 +6215,52 @@
   },
   {
     "data": {
+      "schedule": "0800-0855",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A003",
+      "nrc": "42535",
+      "code": "I5799",
+      "students": 20,
+      "course": "PRECALCULO"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A022",
+      "nrc": "42535",
+      "code": "I5799",
+      "students": 20,
+      "course": "PRECALCULO"
+    },
+    "professor": "GONZALEZ RENDON, LUCIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A007",
+      "nrc": "189662",
+      "code": "IG738",
+      "students": 41,
+      "course": "PRECALCULO"
+    },
+    "professor": "FERNANDEZ LUNA, MA. GUADALUPE"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . I . . .",
       "building": "DEDU",
       "classroom": "A017",
       "nrc": "42539",
       "code": "I5799",
-      "students": 18,
+      "students": 19,
       "course": "PRECALCULO"
     },
     "professor": "MACIAS RAMOS, JOSE APOLINAR"
@@ -6364,10 +6273,36 @@
       "classroom": "A017",
       "nrc": "42539",
       "code": "I5799",
-      "students": 18,
+      "students": 19,
       "course": "PRECALCULO"
     },
     "professor": "MACIAS RAMOS, JOSE APOLINAR"
+  },
+  {
+    "data": {
+      "schedule": "1200-1455",
+      "days": ". . . . . S",
+      "building": "DEDU",
+      "classroom": "A005",
+      "nrc": "42537",
+      "code": "I5799",
+      "students": 5,
+      "course": "PRECALCULO"
+    },
+    "professor": "GARCIA SANCHEZ, FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "1800-1955",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "42537",
+      "code": "I5799",
+      "students": 5,
+      "course": "PRECALCULO"
+    },
+    "professor": "GARCIA SANCHEZ, FERNANDO"
   },
   {
     "data": {
@@ -6397,29 +6332,16 @@
   },
   {
     "data": {
-      "schedule": "1200-1455",
-      "days": ". . . . . S",
-      "building": "DEDU",
-      "classroom": "A005",
-      "nrc": "42537",
-      "code": "I5799",
-      "students": 4,
-      "course": "PRECALCULO"
-    },
-    "professor": "GARCIA SANCHEZ, FERNANDO"
-  },
-  {
-    "data": {
-      "schedule": "1800-1955",
-      "days": ". . . . V .",
+      "schedule": "0900-0955",
+      "days": ". M . . . .",
       "building": "DEDU",
       "classroom": "A004",
-      "nrc": "42537",
+      "nrc": "42540",
       "code": "I5799",
-      "students": 4,
+      "students": 20,
       "course": "PRECALCULO"
     },
-    "professor": "GARCIA SANCHEZ, FERNANDO"
+    "professor": "GONZALEZ RENDON, LUCIA"
   },
   {
     "data": {
@@ -6429,7 +6351,7 @@
       "classroom": "A011",
       "nrc": "201865",
       "code": "IG738",
-      "students": 8,
+      "students": 9,
       "course": "PRECALCULO"
     },
     "professor": "MEJIA MARIN, MARIA ESTHER"
@@ -6488,6 +6410,19 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . V .",
+      "building": "DEDU",
+      "classroom": "A020",
+      "nrc": "42533",
+      "code": "I5799",
+      "students": 7,
+      "course": "PRECALCULO"
+    },
+    "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDU",
@@ -6511,32 +6446,6 @@
       "course": "PRECALCULO"
     },
     "professor": "PANTOJA ESPINOZA, DELIAZAR"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . V .",
-      "building": "DEDU",
-      "classroom": "A020",
-      "nrc": "42533",
-      "code": "I5799",
-      "students": 5,
-      "course": "PRECALCULO"
-    },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A020",
-      "nrc": "42533",
-      "code": "I5799",
-      "students": 5,
-      "course": "PRECALCULO"
-    },
-    "professor": "ESPINO ROJAS, NORMA ELVA"
   },
   {
     "data": {
@@ -6566,29 +6475,16 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . . S",
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
       "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "46849",
-      "code": "MT101",
-      "students": 3,
+      "classroom": "A014",
+      "nrc": "201873",
+      "code": "IG738",
+      "students": 40,
       "course": "PRECALCULO"
     },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . I . . .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "46849",
-      "code": "MT101",
-      "students": 3,
-      "course": "PRECALCULO"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+    "professor": "CORONA SANCHEZ, JUAN CARLOS"
   },
   {
     "data": {
@@ -6628,6 +6524,32 @@
       "course": "PRECALCULO"
     },
     "professor": "ABUNDIS SANCHEZ, MIGUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . . S",
+      "building": "DEDU",
+      "classroom": "A008",
+      "nrc": "46849",
+      "code": "MT101",
+      "students": 4,
+      "course": "PRECALCULO"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDU",
+      "classroom": "A006",
+      "nrc": "46849",
+      "code": "MT101",
+      "students": 4,
+      "course": "PRECALCULO"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
   },
   {
     "data": {
@@ -6728,7 +6650,7 @@
       "classroom": "A014",
       "nrc": "225018",
       "code": "IG738",
-      "students": 26,
+      "students": 37,
       "course": "PRECALCULO"
     },
     "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
@@ -6780,7 +6702,7 @@
       "classroom": "A017",
       "nrc": "252266",
       "code": "IG738",
-      "students": 40,
+      "students": 41,
       "course": "PRECALCULO"
     },
     "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
@@ -6829,7 +6751,7 @@
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDU",
-      "classroom": "A015",
+      "classroom": "A018",
       "nrc": "252268",
       "code": "IG738",
       "students": 40,
@@ -6897,7 +6819,7 @@
       "classroom": "A021",
       "nrc": "252326",
       "code": "IG738",
-      "students": 40,
+      "students": 38,
       "course": "PRECALCULO"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
@@ -6969,23 +6891,23 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "164003",
-      "code": "IF877",
-      "students": 30,
-      "course": "PROBABILIDAD"
-    },
-    "professor": "GARCIA NAVA, DALMIRO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDU",
       "classroom": "A023",
+      "nrc": "77423",
+      "code": "I7348",
+      "students": 40,
+      "course": "PROBABILIDAD"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A020",
       "nrc": "77423",
       "code": "I7348",
       "students": 40,
@@ -7009,6 +6931,19 @@
   {
     "data": {
       "schedule": "0800-1055",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A011",
+      "nrc": "251060",
+      "code": "I7348",
+      "students": 40,
+      "course": "PROBABILIDAD"
+    },
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "0800-1055",
       "days": ". . I . . .",
       "building": "DEDU",
       "classroom": "A023",
@@ -7018,6 +6953,32 @@
       "course": "PROBABILIDAD"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A008",
+      "nrc": "112240",
+      "code": "IB067",
+      "students": 39,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "VERA SORIA, FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDU",
+      "classroom": "A008",
+      "nrc": "112240",
+      "code": "IB067",
+      "students": 39,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "VERA SORIA, FRANCISCO"
   },
   {
     "data": {
@@ -7040,36 +7001,10 @@
       "classroom": "A005",
       "nrc": "43712",
       "code": "I6920",
-      "students": 27,
+      "students": 25,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
-    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "112240",
-      "code": "IB067",
-      "students": 40,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "VERA SORIA, FRANCISCO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "112240",
-      "code": "IB067",
-      "students": 40,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "VERA SORIA, FRANCISCO"
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
   },
   {
     "data": {
@@ -7079,7 +7014,7 @@
       "classroom": "A012",
       "nrc": "178862",
       "code": "IB067",
-      "students": 39,
+      "students": 40,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "SANTIAGO HERNANDEZ, ELOISA"
@@ -7092,7 +7027,7 @@
       "classroom": "A022",
       "nrc": "137240",
       "code": "IC572",
-      "students": 33,
+      "students": 34,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "JIMENEZ SERRANO, EDUVIGES"
@@ -7138,13 +7073,39 @@
   },
   {
     "data": {
+      "schedule": "1000-1055",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "43716",
+      "code": "I6920",
+      "students": 40,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "MARTINEZ VAZQUEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A021",
+      "nrc": "200066",
+      "code": "IB067",
+      "students": 24,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DEDU",
       "classroom": "A017",
       "nrc": "216305",
       "code": "IF108",
-      "students": 40,
+      "students": 39,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "RAMOS PULIDO, SOFIA"
@@ -7177,16 +7138,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
+      "schedule": "0800-1055",
+      "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A021",
-      "nrc": "200066",
-      "code": "IB067",
-      "students": 20,
+      "classroom": "A006",
+      "nrc": "43717",
+      "code": "I6920",
+      "students": 40,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
-    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
+    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
   },
   {
     "data": {
@@ -7216,26 +7177,13 @@
   },
   {
     "data": {
-      "schedule": "0800-1055",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A006",
-      "nrc": "43717",
-      "code": "I6920",
-      "students": 40,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDU",
       "classroom": "A006",
       "nrc": "43718",
       "code": "I6920",
-      "students": 37,
+      "students": 40,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "GARIBAY LOPEZ, CECILIA"
@@ -7248,10 +7196,36 @@
       "classroom": "A001",
       "nrc": "43718",
       "code": "I6920",
-      "students": 37,
+      "students": 40,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "GARIBAY LOPEZ, CECILIA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDU",
+      "classroom": "A006",
+      "nrc": "141325",
+      "code": "I5801",
+      "students": 29,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A016",
+      "nrc": "141325",
+      "code": "I5801",
+      "students": 29,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
   },
   {
     "data": {
@@ -7274,7 +7248,7 @@
       "classroom": "A008",
       "nrc": "43715",
       "code": "I6920",
-      "students": 13,
+      "students": 15,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "JIMENEZ SERRANO, EDUVIGES"
@@ -7287,10 +7261,36 @@
       "classroom": "A008",
       "nrc": "43715",
       "code": "I6920",
-      "students": 13,
+      "students": 15,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "JIMENEZ SERRANO, EDUVIGES"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A001",
+      "nrc": "200070",
+      "code": "IB067",
+      "students": 40,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDU",
+      "classroom": "A004",
+      "nrc": "200070",
+      "code": "IB067",
+      "students": 40,
+      "course": "PROBABILIDAD Y ESTADISTICA"
+    },
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
   },
   {
     "data": {
@@ -7300,7 +7300,7 @@
       "classroom": "A016",
       "nrc": "201875",
       "code": "IB067",
-      "students": 40,
+      "students": 39,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
@@ -7313,7 +7313,7 @@
       "classroom": "A022",
       "nrc": "201875",
       "code": "IB067",
-      "students": 40,
+      "students": 39,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "ASCENCIO ESCAMILLA, JUANA ADRIANA"
@@ -7326,7 +7326,7 @@
       "classroom": "A022",
       "nrc": "201876",
       "code": "IB067",
-      "students": 40,
+      "students": 39,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "ACEVES FERNANDEZ, ELIZABETH"
@@ -7388,7 +7388,7 @@
       "schedule": "1700-2055",
       "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A002",
+      "classroom": "A003",
       "nrc": "251034",
       "code": "IB067",
       "students": 30,
@@ -7430,7 +7430,7 @@
       "classroom": "A016",
       "nrc": "252282",
       "code": "IB067",
-      "students": 40,
+      "students": 41,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "VERA SORIA, FRANCISCO"
@@ -7443,7 +7443,7 @@
       "classroom": "A011",
       "nrc": "252283",
       "code": "IB067",
-      "students": 40,
+      "students": 41,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "BERNAL TIRADO, ALFONSO"
@@ -7467,12 +7467,12 @@
       "days": ". . . . V .",
       "building": "DEDU",
       "classroom": "A009",
-      "nrc": "171665",
-      "code": "IG670",
-      "students": 0,
-      "course": "SEMINARIO DE AVANCES DE TESIS III"
+      "nrc": "225026",
+      "code": "IK125",
+      "students": 1,
+      "course": "SEMINARIO DE AVANCE DE TESIS V"
     },
-    "professor": "BOCARDO GASPAR, MIRIAM"
+    "professor": "ZALDIVAR CORICHI, LUIS ANGEL"
   },
   {
     "data": {
@@ -7508,49 +7508,36 @@
       "classroom": "A007",
       "nrc": "141262",
       "code": "I9886",
-      "students": 39,
+      "students": 40,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "CORTES NAVARRO, LAURA ESTHER"
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
       "building": "DEDU",
-      "classroom": "A019",
-      "nrc": "123584",
-      "code": "I9882",
-      "students": 0,
-      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS I"
-    },
-    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A019",
-      "nrc": "123584",
-      "code": "I9882",
-      "students": 0,
-      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS I"
-    },
-    "professor": "HERNANDEZ ARELLANO, ANGELICA FABIOLA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . . .",
-      "building": "DEDU",
-      "classroom": "A013",
-      "nrc": "141291",
+      "classroom": "A021",
+      "nrc": "193186",
       "code": "I9886",
-      "students": 0,
+      "students": 40,
       "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
-    "professor": "JIMENEZ SERRANO, EDUVIGES"
+    "professor": "CORTES NAVARRO, LAURA ESTHER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDU",
+      "classroom": "A005",
+      "nrc": "193186",
+      "code": "I9886",
+      "students": 40,
+      "course": "SEMINARIO DE PROBLEMAS DE METODOS MATEMATICOS III"
+    },
+    "professor": "CORTES NAVARRO, LAURA ESTHER"
   },
   {
     "data": {
@@ -7567,16 +7554,16 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
+      "schedule": "0700-1055",
+      "days": ". . . . V .",
       "building": "DEDU",
-      "classroom": "A017",
-      "nrc": "42721",
-      "code": "I5896",
-      "students": 0,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS II"
+      "classroom": "A016",
+      "nrc": "57629",
+      "code": "I7021",
+      "students": 8,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
-    "professor": "PAREDES AGUILA, IRMA YOLANDA"
+    "professor": "PANTOJA ESPINOZA, DELIAZAR"
   },
   {
     "data": {
@@ -7586,7 +7573,7 @@
       "classroom": "A020",
       "nrc": "57680",
       "code": "I7021",
-      "students": 4,
+      "students": 5,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "HERNANDEZ CORONA, GUSTAVO"
@@ -7599,7 +7586,7 @@
       "classroom": "A004",
       "nrc": "57426",
       "code": "I7021",
-      "students": 1,
+      "students": 0,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
@@ -7690,7 +7677,7 @@
       "classroom": "A004",
       "nrc": "93837",
       "code": "I5949",
-      "students": 22,
+      "students": 21,
       "course": "SEMINARIO DEL MODULO DE GEOMETRIA Y TOPOLOGIA"
     },
     "professor": "GARCIA CHAN, NESTOR"
@@ -7750,19 +7737,6 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A005",
-      "nrc": "57747",
-      "code": "I5956",
-      "students": 10,
-      "course": "TALLER DE ANALISIS MATEMATICO II"
-    },
-    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDU",
       "classroom": "A019",
@@ -7772,6 +7746,19 @@
       "course": "TALLER DE ANALISIS MATEMATICO I"
     },
     "professor": "MUNIVE LIMA, ISIDRO HUMBERTO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDU",
+      "classroom": "A005",
+      "nrc": "57747",
+      "code": "I5956",
+      "students": 10,
+      "course": "TALLER DE ANALISIS MATEMATICO II"
+    },
+    "professor": "VAZQUEZ HERNANDEZ, HUSAI"
   },
   {
     "data": {
@@ -7820,7 +7807,7 @@
       "classroom": "A002",
       "nrc": "42819",
       "code": "I5922",
-      "students": 28,
+      "students": 26,
       "course": "TALLER DE FUNDAMENTOS DE GEOMETRIA"
     },
     "professor": "MONTES NAVARRO, MARIANA SARAHI"
@@ -7879,19 +7866,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDU",
-      "classroom": "A019",
-      "nrc": "57315",
-      "code": "I5933",
-      "students": 0,
-      "course": "TALLER DE TEORIA DE ECUACIONES DIFERENCIALES ORDINARIAS I"
-    },
-    "professor": "URENDA CAZARES, ERNESTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDU",
@@ -7931,19 +7905,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "42833",
-      "code": "I5929",
-      "students": 0,
-      "course": "TALLER DE TEORIA DEL CALCULO I"
-    },
-    "professor": "MARQUEZ SOSA, SAUL RENE"
-  },
-  {
-    "data": {
       "schedule": "1000-1255",
       "days": ". . . . V .",
       "building": "DEDU",
@@ -7957,19 +7918,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "137245",
-      "code": "I5961",
-      "students": 14,
-      "course": "TEORIA DE ECUACIONES DIFERENCIALES PARCIALES"
-    },
-    "professor": "HERNANDEZ MAGDALENO, ALFONSO MANUEL"
-  },
-  {
-    "data": {
       "schedule": "1900-1955",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -7980,19 +7928,6 @@
       "course": "TEORIA DE ECUACIONES DIFERENCIALES PARCIALES"
     },
     "professor": "HERNANDEZ MAGDALENO, ALFONSO MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDU",
-      "classroom": "A019",
-      "nrc": "122674",
-      "code": "I5932",
-      "students": 0,
-      "course": "TEORIA DE ECUACIONES DIFERENCIALES ORDINARIAS I"
-    },
-    "professor": "URENDA CAZARES, ERNESTO"
   },
   {
     "data": {
@@ -8035,32 +7970,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A003",
-      "nrc": "89666",
-      "code": "I5941",
-      "students": 0,
-      "course": "TEORIA DE GRUPOS"
-    },
-    "professor": "GARCIA SANDOVAL, ANDRES"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A008",
-      "nrc": "89666",
-      "code": "I5941",
-      "students": 0,
-      "course": "TEORIA DE GRUPOS"
-    },
-    "professor": "GARCIA SANDOVAL, ANDRES"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDU",
@@ -8084,19 +7993,6 @@
       "course": "TEORIA DE LA PROBABILIDAD Y ESTADISTICA MATEMATICA"
     },
     "professor": "DIAZ CALDERA, LIZBETH"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . J . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "42864",
-      "code": "I5928",
-      "students": 0,
-      "course": "TEORIA DEL CALCULO I"
-    },
-    "professor": "MARQUEZ SOSA, SAUL RENE"
   },
   {
     "data": {
@@ -8132,7 +8028,7 @@
       "classroom": "A008",
       "nrc": "77771",
       "code": "I6018",
-      "students": 34,
+      "students": 36,
       "course": "TERMODINAMICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
@@ -8165,19 +8061,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "164473",
-      "code": "I5982",
-      "students": 0,
-      "course": "TOPICOS SELECTOS DE ALGEBRA"
-    },
-    "professor": "MATA GUTIERREZ, OSBALDO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDU",
@@ -8204,42 +8087,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1155",
-      "days": ". . I . . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "104153",
-      "code": "I5975",
-      "students": 0,
-      "course": "TOPICOS SELECTOS DE SISTEMAS DINAMICOS"
-    },
-    "professor": "BECERRA LOPEZ, FERNANDO IGNACIO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDU",
       "classroom": "A014",
       "nrc": "87800",
       "code": "I5948",
-      "students": 5,
+      "students": 7,
       "course": "TOPOLOGIA"
     },
     "professor": "MACIAS SANDOVAL, OMAR VLADIMIR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDU",
-      "classroom": "A009",
-      "nrc": "136328",
-      "code": "IB096",
-      "students": 0,
-      "course": "TUTORIA DE CIENCIA DE MATERIALES II"
-    },
-    "professor": "CISNEROS LOPEZ, ERICK OMAR"
   },
   {
     "data": {
@@ -8288,7 +8145,7 @@
       "classroom": "A024",
       "nrc": "166375",
       "code": "I3283",
-      "students": 35,
+      "students": 40,
       "course": "FISICA II ( ELECTROMAGNETISMO,OPTICA Y ACUSTICA )"
     },
     "professor": "SANTIAGO HERNANDEZ, ALBERTO"

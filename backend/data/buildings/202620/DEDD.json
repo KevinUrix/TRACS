@@ -1,6 +1,32 @@
 [
   {
     "data": {
+      "schedule": "1100-1355",
+      "days": ". M . . . .",
+      "building": "DEDD",
+      "classroom": "LFS20",
+      "nrc": "159379",
+      "code": "IB082",
+      "students": 13,
+      "course": "LABORATORIO DE CARACTERIZACION DE MATERIALES II"
+    },
+    "professor": "CISNEROS LOPEZ, ERICK OMAR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDD",
+      "classroom": "LFS19",
+      "nrc": "164464",
+      "code": "IB083",
+      "students": 10,
+      "course": "LABORATORIO DE ENSAYE DE MATERIALES"
+    },
+    "professor": "CISNEROS LOPEZ, ERICK OMAR"
+  },
+  {
+    "data": {
       "schedule": "0900-1155",
       "days": ". . I . . .",
       "building": "DEDD",
@@ -20,7 +46,7 @@
       "classroom": "LMF01",
       "nrc": "76933",
       "code": "I6146",
-      "students": 25,
+      "students": 26,
       "course": "LABORATORIO DE PARASITOLOGIA"
     },
     "professor": "GOMEZ SANCHEZ, MA. GLORIA"
@@ -33,7 +59,7 @@
       "classroom": "LMF01",
       "nrc": "76934",
       "code": "I6146",
-      "students": 29,
+      "students": 31,
       "course": "LABORATORIO DE PARASITOLOGIA"
     },
     "professor": "CAMARILLO MIRANDA, ADRIANA LORENA"
@@ -59,7 +85,7 @@
       "classroom": "LMF01",
       "nrc": "124868",
       "code": "I6146",
-      "students": 29,
+      "students": 31,
       "course": "LABORATORIO DE PARASITOLOGIA"
     },
     "professor": "RODRIGUEZ ARREOLA, ARIANA"
@@ -72,7 +98,7 @@
       "classroom": "LMF01",
       "nrc": "152039",
       "code": "I6146",
-      "students": 29,
+      "students": 31,
       "course": "LABORATORIO DE PARASITOLOGIA"
     },
     "professor": "RODRIGUEZ ARREOLA, ARIANA"

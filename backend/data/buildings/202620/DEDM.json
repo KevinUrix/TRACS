@@ -1,6 +1,19 @@
 [
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "60799",
+      "code": "I7588",
+      "students": 13,
+      "course": "ANALISIS DEL MOVIMIENTO"
+    },
+    "professor": "OSUNA CARRASCO, LAURA PAULINA"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDM",
@@ -14,13 +27,26 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "115248",
+      "code": "I7594",
+      "students": 13,
+      "course": "BIOMATERIALES"
+    },
+    "professor": "HERNANDEZ MONTELONGO, ROSAURA"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDM",
       "classroom": "LM2",
       "nrc": "104763",
       "code": "I7279",
-      "students": 5,
+      "students": 6,
       "course": "CIRCUITOS ANALOGICOS II"
     },
     "professor": "GARCIA GUTIERREZ, VICTOR"
@@ -46,10 +72,23 @@
       "classroom": "LM3",
       "nrc": "266442",
       "code": "V5902",
-      "students": 0,
+      "students": 12,
       "course": "CIRCUITOS ELECTRONICOS"
     },
     "professor": "CANDELARIO GUZMAN, GUSTAVO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM5",
+      "nrc": "78978",
+      "code": "I7283",
+      "students": 26,
+      "course": "DISEÑO DE TARJETAS DE EVALUACION"
+    },
+    "professor": "ESTRADA MARMOLEJO, RUBEN"
   },
   {
     "data": {
@@ -59,23 +98,10 @@
       "classroom": "LM5",
       "nrc": "97739",
       "code": "I7598",
-      "students": 4,
+      "students": 5,
       "course": "DISPOSITIVOS ELECTRONICOS"
     },
     "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM3",
-      "nrc": "154519",
-      "code": "I7597",
-      "students": 35,
-      "course": "ELECTROFISIOLOGIA MOLECULAR II"
-    },
-    "professor": "DE LA TORRE VALDOVINOS, BRANIFF"
   },
   {
     "data": {
@@ -85,7 +111,7 @@
       "classroom": "LM4",
       "nrc": "249809",
       "code": "IN228",
-      "students": 11,
+      "students": 12,
       "course": "ELECTRONICA ANALOGICA"
     },
     "professor": "CARRILLO DIAZ, RAUL"
@@ -98,23 +124,10 @@
       "classroom": "LM4",
       "nrc": "159475",
       "code": "I7599",
-      "students": 15,
+      "students": 19,
       "course": "ELECTRONICA INTEGRADA"
     },
     "professor": "CHAVARIN FAJARDO, ANGEL GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM5",
-      "nrc": "266452",
-      "code": "V5907",
-      "students": 40,
-      "course": "ESTRUCTURAS DE LOS SISTEMAS BIOLOGICOS"
-    },
-    "professor": "MENDIZABAL RUIZ, ADRIANA PATRICIA"
   },
   {
     "data": {
@@ -150,7 +163,7 @@
       "classroom": "LM3",
       "nrc": "82672",
       "code": "I7602",
-      "students": 11,
+      "students": 12,
       "course": "INSTALACIONES Y SEGURIDAD RADIOLOGICA"
     },
     "professor": "OCHOA RAMIREZ, BENJAMIN"
@@ -176,7 +189,7 @@
       "classroom": "LM4",
       "nrc": "122799",
       "code": "I7287",
-      "students": 12,
+      "students": 13,
       "course": "INSTRUMENTACION"
     },
     "professor": "GOMEZ MORALES, LEOBARDO"
@@ -196,29 +209,29 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "266448",
+      "code": "V5904",
+      "students": 0,
+      "course": "INSTRUMENTACION E INSTALACION HOSPITALARIA"
+    },
+    "professor": "OCHOA RAMIREZ, BENJAMIN"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". . . J . .",
       "building": "DEDM",
       "classroom": "LM3",
       "nrc": "99098",
       "code": "I7604",
-      "students": 5,
+      "students": 7,
       "course": "INSTRUMENTACION E INSTALACION QUIRURGICA"
     },
     "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDM",
-      "classroom": "LM3",
-      "nrc": "89615",
-      "code": "ET334",
-      "students": 0,
-      "course": "INSTRUMENTACION MEDICA III"
-    },
-    "professor": "QUIROZ PEREZ, ERIKA LIZETH"
   },
   {
     "data": {
@@ -228,7 +241,7 @@
       "classroom": "LM3",
       "nrc": "55416",
       "code": "ET335",
-      "students": 0,
+      "students": 25,
       "course": "INSTRUMENTACION MEDICA IV"
     },
     "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
@@ -248,26 +261,13 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": "L . I . V .",
-      "building": "DEDM",
-      "classroom": "LM3",
-      "nrc": "266431",
-      "code": "V5900",
-      "students": 40,
-      "course": "LEGISLACION Y SEGURIDAD HOSPITALARIA"
-    },
-    "professor": "ORTIZ CALOCA, MANUEL MAURICIO ARTURO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDM",
       "classroom": "LM2",
       "nrc": "174259",
       "code": "IH392",
-      "students": 8,
+      "students": 9,
       "course": "PROCESAMIENTO DE BIOSEÑALES"
     },
     "professor": "SALIDO RUIZ, RICARDO ANTONIO"
@@ -280,10 +280,23 @@
       "classroom": "LM4",
       "nrc": "78959",
       "code": "I7272",
-      "students": 13,
+      "students": 14,
       "course": "SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM3",
+      "nrc": "210420",
+      "code": "V1684",
+      "students": 7,
+      "course": "SISTEMAS DE MEDICION"
+    },
+    "professor": "GARCIA TORALES, GUILLERMO"
   },
   {
     "data": {
@@ -293,7 +306,7 @@
       "classroom": "LM3",
       "nrc": "55439",
       "code": "ET357",
-      "students": 0,
+      "students": 6,
       "course": "TEMAS SELECTOS DE INGENIERIA BIOMEDICA II"
     },
     "professor": "MARQUEZ NORIEGO, MARIA INMACULADA"
@@ -306,7 +319,7 @@
       "classroom": "LM3",
       "nrc": "143461",
       "code": "ET353",
-      "students": 0,
+      "students": 11,
       "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
     },
     "professor": "RIVERA TELLO, SERGIO IVAN"
@@ -319,7 +332,7 @@
       "classroom": "LM3",
       "nrc": "165123",
       "code": "ET353",
-      "students": 0,
+      "students": 8,
       "course": "TOPICOS DE INGENIERIA BIOMEDICA IV"
     },
     "professor": "RIVERA TELLO, SERGIO IVAN"
@@ -345,10 +358,36 @@
       "classroom": "LM2",
       "nrc": "53867",
       "code": "CC417",
-      "students": 0,
+      "students": 3,
       "course": "TOPICOS SELECTOS DE COMPUTACION I"
     },
     "professor": "MUNGUIA ALCALA, RODRIGO FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDM",
+      "classroom": "LM5",
+      "nrc": "251071",
+      "code": "IL933",
+      "students": 0,
+      "course": "TOPICOS SELECTOS DE ESTADÍSTICA EN EDUCACION"
+    },
+    "professor": "OROZCO RODRIGUEZ, CLAUDIA MARGARITA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDM",
+      "classroom": "LM2",
+      "nrc": "212215",
+      "code": "V1169",
+      "students": 4,
+      "course": "TOPICOS SELECTOS EN ROBOTICA MOVIL"
+    },
+    "professor": "LOPEZ FRANCO, CARLOS ALBERTO"
   },
   {
     "data": {

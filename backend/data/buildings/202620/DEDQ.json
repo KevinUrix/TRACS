@@ -7,7 +7,7 @@
       "classroom": "A005",
       "nrc": "43585",
       "code": "I7370",
-      "students": 40,
+      "students": 41,
       "course": "ADMINISTRACION"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -20,7 +20,7 @@
       "classroom": "A005",
       "nrc": "43585",
       "code": "I7370",
-      "students": 40,
+      "students": 41,
       "course": "ADMINISTRACION"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -33,7 +33,7 @@
       "classroom": "A003",
       "nrc": "43589",
       "code": "I7370",
-      "students": 28,
+      "students": 30,
       "course": "ADMINISTRACION"
     },
     "professor": "SOLLANO GARCIA, CESAR FRANCISCO"
@@ -46,7 +46,7 @@
       "classroom": "A011",
       "nrc": "43589",
       "code": "I7370",
-      "students": 28,
+      "students": 30,
       "course": "ADMINISTRACION"
     },
     "professor": "SOLLANO GARCIA, CESAR FRANCISCO"
@@ -111,7 +111,7 @@
       "classroom": "A007",
       "nrc": "43581",
       "code": "I7370",
-      "students": 14,
+      "students": 13,
       "course": "ADMINISTRACION"
     },
     "professor": "HUERTA OROZCO, ROBERTO"
@@ -124,7 +124,7 @@
       "classroom": "A007",
       "nrc": "43581",
       "code": "I7370",
-      "students": 14,
+      "students": 13,
       "course": "ADMINISTRACION"
     },
     "professor": "HUERTA OROZCO, ROBERTO"
@@ -137,7 +137,7 @@
       "classroom": "A006",
       "nrc": "43578",
       "code": "I7370",
-      "students": 40,
+      "students": 41,
       "course": "ADMINISTRACION"
     },
     "professor": "VARGAS RAMOS, EDNA MARIA LUISA"
@@ -150,7 +150,7 @@
       "classroom": "A005",
       "nrc": "43578",
       "code": "I7370",
-      "students": 40,
+      "students": 41,
       "course": "ADMINISTRACION"
     },
     "professor": "VARGAS RAMOS, EDNA MARIA LUISA"
@@ -163,7 +163,7 @@
       "classroom": "A002",
       "nrc": "43584",
       "code": "I7370",
-      "students": 23,
+      "students": 24,
       "course": "ADMINISTRACION"
     },
     "professor": "SOLLANO GARCIA, CESAR FRANCISCO"
@@ -176,7 +176,7 @@
       "classroom": "A007",
       "nrc": "43584",
       "code": "I7370",
-      "students": 23,
+      "students": 24,
       "course": "ADMINISTRACION"
     },
     "professor": "SOLLANO GARCIA, CESAR FRANCISCO"
@@ -241,7 +241,7 @@
       "classroom": "A002",
       "nrc": "43580",
       "code": "I7370",
-      "students": 21,
+      "students": 24,
       "course": "ADMINISTRACION"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -254,7 +254,7 @@
       "classroom": "A001",
       "nrc": "43580",
       "code": "I7370",
-      "students": 21,
+      "students": 24,
       "course": "ADMINISTRACION"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -319,7 +319,7 @@
       "classroom": "A005",
       "nrc": "93316",
       "code": "I7370",
-      "students": 13,
+      "students": 14,
       "course": "ADMINISTRACION"
     },
     "professor": "SOLLANO GARCIA, CESAR FRANCISCO"
@@ -332,10 +332,36 @@
       "classroom": "A005",
       "nrc": "93316",
       "code": "I7370",
-      "students": 13,
+      "students": 14,
       "course": "ADMINISTRACION"
     },
     "professor": "SOLLANO GARCIA, CESAR FRANCISCO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "153715",
+      "code": "I7370",
+      "students": 40,
+      "course": "ADMINISTRACION"
+    },
+    "professor": "HUERTA NIETO, LUISA GRACIELA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "153715",
+      "code": "I7370",
+      "students": 40,
+      "course": "ADMINISTRACION"
+    },
+    "professor": "HUERTA NIETO, LUISA GRACIELA"
   },
   {
     "data": {
@@ -345,7 +371,7 @@
       "classroom": "A010",
       "nrc": "157907",
       "code": "IF884",
-      "students": 2,
+      "students": 5,
       "course": "ADMINISTRACION DE CAPITAL HUMANO"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -358,7 +384,7 @@
       "classroom": "A06B",
       "nrc": "157907",
       "code": "IF884",
-      "students": 2,
+      "students": 5,
       "course": "ADMINISTRACION DE CAPITAL HUMANO"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -371,7 +397,7 @@
       "classroom": "A011",
       "nrc": "180291",
       "code": "IF886",
-      "students": 24,
+      "students": 35,
       "course": "ADMINISTRACION DE CENTROS DE DISTRIBUCION"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -384,7 +410,7 @@
       "classroom": "A015",
       "nrc": "180291",
       "code": "IF886",
-      "students": 24,
+      "students": 35,
       "course": "ADMINISTRACION DE CENTROS DE DISTRIBUCION"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -397,7 +423,7 @@
       "classroom": "A001",
       "nrc": "180294",
       "code": "IF886",
-      "students": 22,
+      "students": 21,
       "course": "ADMINISTRACION DE CENTROS DE DISTRIBUCION"
     },
     "professor": "LEON RANGEL, ALVARO"
@@ -410,23 +436,10 @@
       "classroom": "A008",
       "nrc": "180294",
       "code": "IF886",
-      "students": 22,
+      "students": 21,
       "course": "ADMINISTRACION DE CENTROS DE DISTRIBUCION"
     },
     "professor": "LEON RANGEL, ALVARO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A007",
-      "nrc": "187167",
-      "code": "IF902",
-      "students": 20,
-      "course": "ADMINISTRACION DE LA CADENA DE SUMINISTRO"
-    },
-    "professor": "GONZALEZ BRAVO, RAFAEL"
   },
   {
     "data": {
@@ -436,7 +449,7 @@
       "classroom": "A013",
       "nrc": "187167",
       "code": "IF902",
-      "students": 20,
+      "students": 30,
       "course": "ADMINISTRACION DE LA CADENA DE SUMINISTRO"
     },
     "professor": "GONZALEZ BRAVO, RAFAEL"
@@ -449,7 +462,7 @@
       "classroom": "A031",
       "nrc": "187168",
       "code": "IF902",
-      "students": 22,
+      "students": 33,
       "course": "ADMINISTRACION DE LA CADENA DE SUMINISTRO"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -462,7 +475,7 @@
       "classroom": "A014",
       "nrc": "187168",
       "code": "IF902",
-      "students": 22,
+      "students": 33,
       "course": "ADMINISTRACION DE LA CADENA DE SUMINISTRO"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -657,7 +670,7 @@
       "classroom": "A002",
       "nrc": "65143",
       "code": "I3311",
-      "students": 10,
+      "students": 28,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GOMEZ SANCHEZ, ROGELIO VICENTE"
@@ -670,7 +683,7 @@
       "classroom": "A002",
       "nrc": "65143",
       "code": "I3311",
-      "students": 10,
+      "students": 28,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GOMEZ SANCHEZ, ROGELIO VICENTE"
@@ -683,7 +696,7 @@
       "classroom": "A011",
       "nrc": "138575",
       "code": "I3311",
-      "students": 34,
+      "students": 35,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -696,7 +709,7 @@
       "classroom": "A011",
       "nrc": "138575",
       "code": "I3311",
-      "students": 34,
+      "students": 35,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -709,7 +722,7 @@
       "classroom": "A002",
       "nrc": "260159",
       "code": "I3311",
-      "students": 32,
+      "students": 35,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -722,7 +735,7 @@
       "classroom": "A002",
       "nrc": "260159",
       "code": "I3311",
-      "students": 32,
+      "students": 35,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -761,7 +774,7 @@
       "classroom": "A06B",
       "nrc": "159333",
       "code": "I6919",
-      "students": 15,
+      "students": 16,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -774,7 +787,7 @@
       "classroom": "A06B",
       "nrc": "159333",
       "code": "I6919",
-      "students": 15,
+      "students": 16,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -787,7 +800,7 @@
       "classroom": "A010",
       "nrc": "65187",
       "code": "I5810",
-      "students": 12,
+      "students": 17,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "CERPA CEJA, GUILLERMO"
@@ -800,7 +813,7 @@
       "classroom": "A011",
       "nrc": "65187",
       "code": "I5810",
-      "students": 12,
+      "students": 17,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "CERPA CEJA, GUILLERMO"
@@ -813,7 +826,7 @@
       "classroom": "A011",
       "nrc": "83786",
       "code": "I5810",
-      "students": 12,
+      "students": 30,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -826,7 +839,7 @@
       "classroom": "A011",
       "nrc": "83786",
       "code": "I5810",
-      "students": 12,
+      "students": 30,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -839,7 +852,7 @@
       "classroom": "A06B",
       "nrc": "91160",
       "code": "I5810",
-      "students": 17,
+      "students": 35,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -852,7 +865,7 @@
       "classroom": "A06B",
       "nrc": "91160",
       "code": "I5810",
-      "students": 17,
+      "students": 35,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -891,7 +904,7 @@
       "classroom": "A008",
       "nrc": "154471",
       "code": "I5810",
-      "students": 20,
+      "students": 27,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -904,7 +917,7 @@
       "classroom": "A014",
       "nrc": "154471",
       "code": "I5810",
-      "students": 20,
+      "students": 27,
       "course": "ADMINISTRACION DE RECURSOS HUMANOS"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -969,7 +982,7 @@
       "classroom": "A005",
       "nrc": "260119",
       "code": "I3321",
-      "students": 8,
+      "students": 10,
       "course": "AGRONEGOCIOS"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -982,7 +995,7 @@
       "classroom": "A016",
       "nrc": "260119",
       "code": "I3321",
-      "students": 8,
+      "students": 10,
       "course": "AGRONEGOCIOS"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -1034,7 +1047,7 @@
       "classroom": "A006",
       "nrc": "65188",
       "code": "I6487",
-      "students": 16,
+      "students": 21,
       "course": "ANALISIS CONTABLE"
     },
     "professor": "GALLO GUTIERREZ, ELISA"
@@ -1047,7 +1060,7 @@
       "classroom": "A006",
       "nrc": "65188",
       "code": "I6487",
-      "students": 16,
+      "students": 21,
       "course": "ANALISIS CONTABLE"
     },
     "professor": "GALLO GUTIERREZ, ELISA"
@@ -1060,7 +1073,7 @@
       "classroom": "A002",
       "nrc": "117474",
       "code": "I7385",
-      "students": 38,
+      "students": 39,
       "course": "ANALISIS DE DECISIONES"
     },
     "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
@@ -1073,7 +1086,7 @@
       "classroom": "A002",
       "nrc": "117474",
       "code": "I7385",
-      "students": 38,
+      "students": 39,
       "course": "ANALISIS DE DECISIONES"
     },
     "professor": "CANDELAS HERNANDEZ, OMAR HUNAB-KU"
@@ -1200,26 +1213,13 @@
       "schedule": "1200-1255",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A009",
+      "classroom": "A031",
       "nrc": "188413",
       "code": "I7385",
       "students": 35,
       "course": "ANALISIS DE DECISIONES"
     },
     "professor": "FUENTES FIGUEROA, EDGAR"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A028",
-      "nrc": "255800",
-      "code": "V4025",
-      "students": 7,
-      "course": "ANALISIS DE ESTRUCTURA Y COMPOSICION"
-    },
-    "professor": "BLANCO ALONSO, OSCAR"
   },
   {
     "data": {
@@ -1242,7 +1242,7 @@
       "classroom": "A029",
       "nrc": "166155",
       "code": "IC612",
-      "students": 23,
+      "students": 24,
       "course": "ANALISIS ESTRUCTURAL II"
     },
     "professor": "MENDEZ GARCIA, JAHAZIEL"
@@ -1255,10 +1255,23 @@
       "classroom": "A026",
       "nrc": "166155",
       "code": "IC612",
-      "students": 23,
+      "students": 24,
       "course": "ANALISIS ESTRUCTURAL II"
     },
     "professor": "MENDEZ GARCIA, JAHAZIEL"
+  },
+  {
+    "data": {
+      "schedule": "1800-2055",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A028",
+      "nrc": "183116",
+      "code": "IC612",
+      "students": 37,
+      "course": "ANALISIS ESTRUCTURAL II"
+    },
+    "professor": "SANTOS PRECIADO, JUAN CARLOS"
   },
   {
     "data": {
@@ -1385,7 +1398,7 @@
       "classroom": "A029",
       "nrc": "117493",
       "code": "I7380",
-      "students": 28,
+      "students": 26,
       "course": "ASEGURAMIENTO Y ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "SANTOS MIGUEL, DONOVAN"
@@ -1398,7 +1411,7 @@
       "classroom": "A001",
       "nrc": "117493",
       "code": "I7380",
-      "students": 28,
+      "students": 26,
       "course": "ASEGURAMIENTO Y ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "SANTOS MIGUEL, DONOVAN"
@@ -1411,7 +1424,7 @@
       "classroom": "A06B",
       "nrc": "153110",
       "code": "I7380",
-      "students": 26,
+      "students": 27,
       "course": "ASEGURAMIENTO Y ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -1424,7 +1437,7 @@
       "classroom": "A004",
       "nrc": "153110",
       "code": "I7380",
-      "students": 26,
+      "students": 27,
       "course": "ASEGURAMIENTO Y ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -1437,7 +1450,7 @@
       "classroom": "A008",
       "nrc": "178540",
       "code": "I7380",
-      "students": 35,
+      "students": 36,
       "course": "ASEGURAMIENTO Y ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -1450,7 +1463,7 @@
       "classroom": "A007",
       "nrc": "178540",
       "code": "I7380",
-      "students": 35,
+      "students": 36,
       "course": "ASEGURAMIENTO Y ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -1489,7 +1502,7 @@
       "classroom": "A029",
       "nrc": "38458",
       "code": "I3337",
-      "students": 12,
+      "students": 11,
       "course": "BIOLOGIA MOLECULAR"
     },
     "professor": "AVALOS SALGADO, FELIPE ALEXIS"
@@ -1519,45 +1532,6 @@
       "course": "CALCULO DIFERENCIAL"
     },
     "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A031",
-      "nrc": "43812",
-      "code": "I7421",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SALDIVAR OROZCO, EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A025",
-      "nrc": "43812",
-      "code": "I7421",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SALDIVAR OROZCO, EMMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1600-1655",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A025",
-      "nrc": "43812",
-      "code": "I7421",
-      "students": 0,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "SALDIVAR OROZCO, EMMANUEL"
   },
   {
     "data": {
@@ -1593,23 +1567,10 @@
       "classroom": "A008",
       "nrc": "254857",
       "code": "V0710",
-      "students": 31,
+      "students": 33,
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "GODINEZ DIETRICH, GABRIEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A015",
-      "nrc": "38423",
-      "code": "I3281",
-      "students": 0,
-      "course": "CALCULO II"
-    },
-    "professor": "LUNA ARELLANO, MAYRA LORENA"
   },
   {
     "data": {
@@ -1632,7 +1593,7 @@
       "classroom": "A008",
       "nrc": "190619",
       "code": "IF905",
-      "students": 23,
+      "students": 35,
       "course": "CALIDAD DE LA CADENA DE SUMINISTRO"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -1642,10 +1603,10 @@
       "schedule": "0900-0955",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A002",
+      "classroom": "A027",
       "nrc": "190619",
       "code": "IF905",
-      "students": 23,
+      "students": 35,
       "course": "CALIDAD DE LA CADENA DE SUMINISTRO"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -1658,7 +1619,7 @@
       "classroom": "A028",
       "nrc": "190620",
       "code": "IF905",
-      "students": 10,
+      "students": 12,
       "course": "CALIDAD DE LA CADENA DE SUMINISTRO"
     },
     "professor": "CAMACHO HERNANDEZ, HECTOR ALBERTO"
@@ -1671,7 +1632,7 @@
       "classroom": "A029",
       "nrc": "190620",
       "code": "IF905",
-      "students": 10,
+      "students": 12,
       "course": "CALIDAD DE LA CADENA DE SUMINISTRO"
     },
     "professor": "CAMACHO HERNANDEZ, HECTOR ALBERTO"
@@ -1905,7 +1866,7 @@
       "classroom": "A013",
       "nrc": "153111",
       "code": "I6488",
-      "students": 35,
+      "students": 36,
       "course": "CALIDAD TOTAL"
     },
     "professor": "LOPEZ CERPA, AMELIA NAYELI"
@@ -1918,7 +1879,7 @@
       "classroom": "A013",
       "nrc": "153111",
       "code": "I6488",
-      "students": 35,
+      "students": 36,
       "course": "CALIDAD TOTAL"
     },
     "professor": "LOPEZ CERPA, AMELIA NAYELI"
@@ -1970,7 +1931,7 @@
       "classroom": "A021",
       "nrc": "77340",
       "code": "I7441",
-      "students": 24,
+      "students": 25,
       "course": "CINEMATICA Y DINAMICA DE MAQUINAS"
     },
     "professor": "LARA RODRIGUEZ, GERARDO"
@@ -2048,7 +2009,7 @@
       "classroom": "A019",
       "nrc": "104566",
       "code": "I7428",
-      "students": 30,
+      "students": 31,
       "course": "CIRCUITOS ELECTRICOS II"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
@@ -2061,7 +2022,7 @@
       "classroom": "A019",
       "nrc": "104566",
       "code": "I7428",
-      "students": 30,
+      "students": 31,
       "course": "CIRCUITOS ELECTRICOS II"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
@@ -2100,7 +2061,7 @@
       "classroom": "A007",
       "nrc": "89707",
       "code": "I3325",
-      "students": 30,
+      "students": 34,
       "course": "COMERCIO EXTERIOR"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -2113,7 +2074,7 @@
       "classroom": "A004",
       "nrc": "89707",
       "code": "I3325",
-      "students": 30,
+      "students": 34,
       "course": "COMERCIO EXTERIOR"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -2126,7 +2087,7 @@
       "classroom": "A004",
       "nrc": "170046",
       "code": "I3325",
-      "students": 16,
+      "students": 24,
       "course": "COMERCIO EXTERIOR"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -2139,7 +2100,7 @@
       "classroom": "A001",
       "nrc": "170046",
       "code": "I3325",
-      "students": 16,
+      "students": 24,
       "course": "COMERCIO EXTERIOR"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -2152,7 +2113,7 @@
       "classroom": "A005",
       "nrc": "42322",
       "code": "I6184",
-      "students": 38,
+      "students": 39,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
@@ -2162,10 +2123,10 @@
       "schedule": "0900-0955",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A027",
+      "classroom": "A002",
       "nrc": "42322",
       "code": "I6184",
-      "students": 38,
+      "students": 39,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
@@ -2178,7 +2139,7 @@
       "classroom": "A006",
       "nrc": "42318",
       "code": "I6184",
-      "students": 9,
+      "students": 12,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "VACA MADRIGAL, EDUARDO"
@@ -2191,7 +2152,7 @@
       "classroom": "A031",
       "nrc": "42318",
       "code": "I6184",
-      "students": 9,
+      "students": 12,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "VACA MADRIGAL, EDUARDO"
@@ -2204,7 +2165,7 @@
       "classroom": "A010",
       "nrc": "42321",
       "code": "I6184",
-      "students": 38,
+      "students": 39,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -2217,7 +2178,7 @@
       "classroom": "A010",
       "nrc": "42321",
       "code": "I6184",
-      "students": 38,
+      "students": 39,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -2334,7 +2295,7 @@
       "classroom": "A016",
       "nrc": "83607",
       "code": "I6184",
-      "students": 13,
+      "students": 33,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "HUERTA OROZCO, ROBERTO"
@@ -2347,7 +2308,7 @@
       "classroom": "A006",
       "nrc": "83607",
       "code": "I6184",
-      "students": 13,
+      "students": 33,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "HUERTA OROZCO, ROBERTO"
@@ -2386,7 +2347,7 @@
       "classroom": "A012",
       "nrc": "147812",
       "code": "I6184",
-      "students": 15,
+      "students": 19,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "GARCIA CAZARES, JEANNETTE"
@@ -2399,7 +2360,7 @@
       "classroom": "A006",
       "nrc": "147812",
       "code": "I6184",
-      "students": 15,
+      "students": 19,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "GARCIA CAZARES, JEANNETTE"
@@ -2409,10 +2370,10 @@
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDQ",
-      "classroom": "A013",
+      "classroom": "A001",
       "nrc": "174312",
       "code": "I6184",
-      "students": 38,
+      "students": 39,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
@@ -2422,10 +2383,10 @@
       "schedule": "0800-0855",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A013",
+      "classroom": "A004",
       "nrc": "174312",
       "code": "I6184",
-      "students": 38,
+      "students": 39,
       "course": "COMPORTAMIENTO HUMANO EN LAS ORGANIZACIONES"
     },
     "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
@@ -2451,7 +2412,7 @@
       "classroom": "A016",
       "nrc": "122755",
       "code": "I3322",
-      "students": 22,
+      "students": 35,
       "course": "CONTABILIDAD"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -2464,7 +2425,7 @@
       "classroom": "A030",
       "nrc": "122755",
       "code": "I3322",
-      "students": 22,
+      "students": 35,
       "course": "CONTABILIDAD"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -2555,7 +2516,7 @@
       "classroom": "A011",
       "nrc": "90242",
       "code": "I7371",
-      "students": 24,
+      "students": 23,
       "course": "CONTROL DE ALMACENES E INVENTARIOS"
     },
     "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
@@ -2568,7 +2529,7 @@
       "classroom": "A011",
       "nrc": "90242",
       "code": "I7371",
-      "students": 24,
+      "students": 23,
       "course": "CONTROL DE ALMACENES E INVENTARIOS"
     },
     "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
@@ -2633,7 +2594,7 @@
       "classroom": "A012",
       "nrc": "65191",
       "code": "I6489",
-      "students": 11,
+      "students": 12,
       "course": "CONTROL ESTADISTICO DE LA CALIDAD"
     },
     "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
@@ -2646,7 +2607,7 @@
       "classroom": "A011",
       "nrc": "65191",
       "code": "I6489",
-      "students": 11,
+      "students": 12,
       "course": "CONTROL ESTADISTICO DE LA CALIDAD"
     },
     "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
@@ -2789,7 +2750,7 @@
       "classroom": "A011",
       "nrc": "35659",
       "code": "I6494",
-      "students": 38,
+      "students": 39,
       "course": "DESARROLLO ORGANIZACIONAL"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -2802,7 +2763,7 @@
       "classroom": "A002",
       "nrc": "35659",
       "code": "I6494",
-      "students": 38,
+      "students": 39,
       "course": "DESARROLLO ORGANIZACIONAL"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -2867,7 +2828,7 @@
       "classroom": "A025",
       "nrc": "250286",
       "code": "I6177",
-      "students": 28,
+      "students": 27,
       "course": "DESARROLLO SUSTENTABLE"
     },
     "professor": "ANGUIANO SEVILLA, LUIS ALBERTO"
@@ -2919,7 +2880,7 @@
       "classroom": "A008",
       "nrc": "90130",
       "code": "I7408",
-      "students": 38,
+      "students": 37,
       "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
     },
     "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
@@ -2932,7 +2893,7 @@
       "classroom": "A008",
       "nrc": "90130",
       "code": "I7408",
-      "students": 38,
+      "students": 37,
       "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
     },
     "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
@@ -2971,7 +2932,7 @@
       "classroom": "A031",
       "nrc": "178100",
       "code": "IC627",
-      "students": 34,
+      "students": 35,
       "course": "DISEÑO DE ESTRUCTURAS DE ACERO I"
     },
     "professor": "SANTOS PRECIADO, JUAN CARLOS"
@@ -3010,7 +2971,7 @@
       "classroom": "A028",
       "nrc": "266468",
       "code": "V3691",
-      "students": 28,
+      "students": 30,
       "course": "DISEÑO DE PLANOS"
     },
     "professor": "PEREZ ORTIZ, CHRISTIAN FARID"
@@ -3179,7 +3140,7 @@
       "classroom": "A017",
       "nrc": "179816",
       "code": "IC694",
-      "students": 22,
+      "students": 29,
       "course": "ECOLOGIA DEL PAISAJE"
     },
     "professor": "BRISEÑO ZARATE, LUIS ALBERTO"
@@ -3192,7 +3153,7 @@
       "classroom": "A016",
       "nrc": "179816",
       "code": "IC694",
-      "students": 22,
+      "students": 29,
       "course": "ECOLOGIA DEL PAISAJE"
     },
     "professor": "BRISEÑO ZARATE, LUIS ALBERTO"
@@ -3205,7 +3166,7 @@
       "classroom": "A031",
       "nrc": "162752",
       "code": "IF883",
-      "students": 37,
+      "students": 38,
       "course": "ECONOMIA DEL TRANSPORTE"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -3218,7 +3179,7 @@
       "classroom": "A031",
       "nrc": "162752",
       "code": "IF883",
-      "students": 37,
+      "students": 38,
       "course": "ECONOMIA DEL TRANSPORTE"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -3231,7 +3192,7 @@
       "classroom": "A007",
       "nrc": "162753",
       "code": "IF883",
-      "students": 10,
+      "students": 15,
       "course": "ECONOMIA DEL TRANSPORTE"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -3244,7 +3205,7 @@
       "classroom": "A031",
       "nrc": "162753",
       "code": "IF883",
-      "students": 10,
+      "students": 15,
       "course": "ECONOMIA DEL TRANSPORTE"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -3277,26 +3238,13 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "72282",
-      "code": "I7346",
-      "students": 0,
-      "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
-    },
-    "professor": "FIGUEROA VELARDE, VALERIA"
-  },
-  {
-    "data": {
       "schedule": "1600-1855",
       "days": ". . . . V .",
       "building": "DEDQ",
       "classroom": "A026",
       "nrc": "144459",
       "code": "IC585",
-      "students": 27,
+      "students": 28,
       "course": "ECUACIONES DIFERENCIALES ORDINARIAS"
     },
     "professor": "SOLIS RODRIGUEZ, JOSE"
@@ -3335,7 +3283,7 @@
       "classroom": "A028",
       "nrc": "145641",
       "code": "IC591",
-      "students": 30,
+      "students": 29,
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "GONZALEZ FIGUEROA, ARMANDO"
@@ -3365,32 +3313,6 @@
       "course": "ELECTROMAGNETISMO"
     },
     "professor": "DE LA ROSA ZAMBRANO, HECTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A022",
-      "nrc": "145589",
-      "code": "I7565",
-      "students": 0,
-      "course": "ELECTRONICA INDUSTRIAL"
-    },
-    "professor": "ROMAN LOPEZ, CRISTIAN EMANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A024",
-      "nrc": "145589",
-      "code": "I7565",
-      "students": 0,
-      "course": "ELECTRONICA INDUSTRIAL"
-    },
-    "professor": "ROMAN LOPEZ, CRISTIAN EMANUEL"
   },
   {
     "data": {
@@ -3452,7 +3374,7 @@
       "classroom": "A022",
       "nrc": "72884",
       "code": "I7373",
-      "students": 32,
+      "students": 33,
       "course": "ELEMENTOS DE NEUMATICA E HIDRAULICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -3465,7 +3387,7 @@
       "classroom": "A022",
       "nrc": "72884",
       "code": "I7373",
-      "students": 32,
+      "students": 33,
       "course": "ELEMENTOS DE NEUMATICA E HIDRAULICA"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
@@ -3524,13 +3446,39 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A030",
+      "nrc": "167475",
+      "code": "IF894",
+      "students": 34,
+      "course": "EMPAQUE,ENVASE Y EMBALAJE"
+    },
+    "professor": "LEON RANGEL, ALVARO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A030",
+      "nrc": "167475",
+      "code": "IF894",
+      "students": 34,
+      "course": "EMPAQUE,ENVASE Y EMBALAJE"
+    },
+    "professor": "LEON RANGEL, ALVARO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". M . . . .",
       "building": "DEDQ",
       "classroom": "A015",
       "nrc": "167476",
       "code": "IF894",
-      "students": 9,
+      "students": 33,
       "course": "EMPAQUE,ENVASE Y EMBALAJE"
     },
     "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
@@ -3543,7 +3491,7 @@
       "classroom": "A010",
       "nrc": "167476",
       "code": "IF894",
-      "students": 9,
+      "students": 33,
       "course": "EMPAQUE,ENVASE Y EMBALAJE"
     },
     "professor": "TRINIDAD VALDERRAMA, HECTOR MANUEL"
@@ -3660,7 +3608,7 @@
       "classroom": "A014",
       "nrc": "93265",
       "code": "I7359",
-      "students": 33,
+      "students": 32,
       "course": "ERGONOMIA"
     },
     "professor": "LOZANO GONZALEZ, ALEJANDRO"
@@ -3673,7 +3621,7 @@
       "classroom": "A014",
       "nrc": "93265",
       "code": "I7359",
-      "students": 33,
+      "students": 32,
       "course": "ERGONOMIA"
     },
     "professor": "LOZANO GONZALEZ, ALEJANDRO"
@@ -3748,7 +3696,7 @@
       "schedule": "1200-1255",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A031",
+      "classroom": "A009",
       "nrc": "216443",
       "code": "I7359",
       "students": 35,
@@ -3829,7 +3777,7 @@
       "classroom": "A026",
       "nrc": "144939",
       "code": "IB079",
-      "students": 11,
+      "students": 12,
       "course": "ESTRUCTURA ELECTRONICA EN LOS MATERIALES"
     },
     "professor": "BRAVO SANCHEZ, MARIELA"
@@ -3852,10 +3800,23 @@
       "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "43594",
+      "code": "I7381",
+      "students": 35,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDQ",
       "classroom": "A007",
       "nrc": "153722",
       "code": "IC579",
-      "students": 25,
+      "students": 24,
       "course": "ETICA PROFESIONAL"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -3875,6 +3836,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A010",
+      "nrc": "43593",
+      "code": "I7381",
+      "students": 30,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "MONZON, CESAR OCTAVIO"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": ". M . . . .",
       "building": "DEDQ",
@@ -3888,16 +3862,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
       "building": "DEDQ",
-      "classroom": "A010",
-      "nrc": "43593",
+      "classroom": "A006",
+      "nrc": "43592",
       "code": "I7381",
-      "students": 28,
+      "students": 36,
       "course": "ETICA PROFESIONAL"
     },
-    "professor": "MONZON, CESAR OCTAVIO"
+    "professor": "FIGUEROA VEGA, LINKA VANESSA"
   },
   {
     "data": {
@@ -3907,23 +3881,10 @@
       "classroom": "A007",
       "nrc": "188194",
       "code": "IC579",
-      "students": 29,
+      "students": 30,
       "course": "ETICA PROFESIONAL"
     },
     "professor": "NERI CORTES, CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A006",
-      "nrc": "43592",
-      "code": "I7381",
-      "students": 35,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "FIGUEROA VEGA, LINKA VANESSA"
   },
   {
     "data": {
@@ -3946,10 +3907,23 @@
       "classroom": "A012",
       "nrc": "43598",
       "code": "I7381",
-      "students": 30,
+      "students": 32,
       "course": "ETICA PROFESIONAL"
     },
     "professor": "MONZON, CESAR OCTAVIO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A011",
+      "nrc": "43595",
+      "code": "I7381",
+      "students": 33,
+      "course": "ETICA PROFESIONAL"
+    },
+    "professor": "ORTEGA GUDIÑO, PEDRO"
   },
   {
     "data": {
@@ -3963,19 +3937,6 @@
       "course": "ETICA PROFESIONAL"
     },
     "professor": "MONZON, CESAR OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A011",
-      "nrc": "43595",
-      "code": "I7381",
-      "students": 34,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "ORTEGA GUDIÑO, PEDRO"
   },
   {
     "data": {
@@ -4024,7 +3985,7 @@
       "classroom": "A012",
       "nrc": "65204",
       "code": "I7381",
-      "students": 35,
+      "students": 37,
       "course": "ETICA PROFESIONAL"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -4037,7 +3998,7 @@
       "classroom": "A006",
       "nrc": "65202",
       "code": "I7381",
-      "students": 38,
+      "students": 39,
       "course": "ETICA PROFESIONAL"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -4102,7 +4063,7 @@
       "classroom": "A015",
       "nrc": "103975",
       "code": "I7392",
-      "students": 19,
+      "students": 20,
       "course": "EVALUACION ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -4115,7 +4076,7 @@
       "classroom": "A015",
       "nrc": "103975",
       "code": "I7392",
-      "students": 19,
+      "students": 20,
       "course": "EVALUACION ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -4180,7 +4141,7 @@
       "classroom": "A016",
       "nrc": "103978",
       "code": "I7392",
-      "students": 35,
+      "students": 36,
       "course": "EVALUACION ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -4193,7 +4154,7 @@
       "classroom": "A017",
       "nrc": "103978",
       "code": "I7392",
-      "students": 35,
+      "students": 36,
       "course": "EVALUACION ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -4232,7 +4193,7 @@
       "classroom": "A003",
       "nrc": "237221",
       "code": "V3847",
-      "students": 15,
+      "students": 18,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PEREZ ALVAREZ, JONATAN"
@@ -4245,7 +4206,7 @@
       "classroom": "A002",
       "nrc": "237221",
       "code": "V3847",
-      "students": 15,
+      "students": 18,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PEREZ ALVAREZ, JONATAN"
@@ -4258,7 +4219,7 @@
       "classroom": "A009",
       "nrc": "237221",
       "code": "V3847",
-      "students": 15,
+      "students": 18,
       "course": "FENOMENOS TERMICOS"
     },
     "professor": "PEREZ ALVAREZ, JONATAN"
@@ -4297,7 +4258,7 @@
       "classroom": "A013",
       "nrc": "90447",
       "code": "I7405",
-      "students": 36,
+      "students": 37,
       "course": "FILOSOFIA Y CIENCIA"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -4310,7 +4271,7 @@
       "classroom": "A014",
       "nrc": "90447",
       "code": "I7405",
-      "students": 36,
+      "students": 37,
       "course": "FILOSOFIA Y CIENCIA"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -4323,7 +4284,7 @@
       "classroom": "A028",
       "nrc": "84437",
       "code": "I7405",
-      "students": 38,
+      "students": 40,
       "course": "FILOSOFIA Y CIENCIA"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -4336,7 +4297,7 @@
       "classroom": "A012",
       "nrc": "84437",
       "code": "I7405",
-      "students": 38,
+      "students": 40,
       "course": "FILOSOFIA Y CIENCIA"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -4401,7 +4362,7 @@
       "classroom": "A009",
       "nrc": "170655",
       "code": "I7405",
-      "students": 40,
+      "students": 41,
       "course": "FILOSOFIA Y CIENCIA"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -4414,7 +4375,7 @@
       "classroom": "A008",
       "nrc": "170655",
       "code": "I7405",
-      "students": 40,
+      "students": 41,
       "course": "FILOSOFIA Y CIENCIA"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -4427,7 +4388,7 @@
       "classroom": "A013",
       "nrc": "65192",
       "code": "I6491",
-      "students": 26,
+      "students": 27,
       "course": "FINANZA"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -4440,7 +4401,7 @@
       "classroom": "A013",
       "nrc": "65192",
       "code": "I6491",
-      "students": 26,
+      "students": 27,
       "course": "FINANZA"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -4453,7 +4414,7 @@
       "classroom": "A016",
       "nrc": "94946",
       "code": "I6491",
-      "students": 36,
+      "students": 37,
       "course": "FINANZA"
     },
     "professor": "GALLO GUTIERREZ, ELISA"
@@ -4466,7 +4427,7 @@
       "classroom": "A016",
       "nrc": "94946",
       "code": "I6491",
-      "students": 36,
+      "students": 37,
       "course": "FINANZA"
     },
     "professor": "GALLO GUTIERREZ, ELISA"
@@ -4518,7 +4479,7 @@
       "classroom": "A001",
       "nrc": "118037",
       "code": "I6491",
-      "students": 11,
+      "students": 12,
       "course": "FINANZA"
     },
     "professor": "OCHOA CURIEL, JOSE GABRIEL"
@@ -4531,7 +4492,7 @@
       "classroom": "A014",
       "nrc": "118037",
       "code": "I6491",
-      "students": 11,
+      "students": 12,
       "course": "FINANZA"
     },
     "professor": "OCHOA CURIEL, JOSE GABRIEL"
@@ -4570,7 +4531,7 @@
       "classroom": "A025",
       "nrc": "141678",
       "code": "I6491",
-      "students": 34,
+      "students": 35,
       "course": "FINANZA"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -4583,7 +4544,7 @@
       "classroom": "A015",
       "nrc": "141678",
       "code": "I6491",
-      "students": 34,
+      "students": 35,
       "course": "FINANZA"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -4622,7 +4583,7 @@
       "classroom": "A016",
       "nrc": "147806",
       "code": "I6491",
-      "students": 22,
+      "students": 25,
       "course": "FINANZA"
     },
     "professor": "GUTIERREZ DELGADO, MARTHA ELENA"
@@ -4635,7 +4596,7 @@
       "classroom": "A015",
       "nrc": "147806",
       "code": "I6491",
-      "students": 22,
+      "students": 25,
       "course": "FINANZA"
     },
     "professor": "GUTIERREZ DELGADO, MARTHA ELENA"
@@ -4648,7 +4609,7 @@
       "classroom": "A002",
       "nrc": "159842",
       "code": "I6491",
-      "students": 20,
+      "students": 22,
       "course": "FINANZA"
     },
     "professor": "OCHOA CURIEL, JOSE GABRIEL"
@@ -4661,10 +4622,36 @@
       "classroom": "A031",
       "nrc": "159842",
       "code": "I6491",
-      "students": 20,
+      "students": 22,
       "course": "FINANZA"
     },
     "professor": "OCHOA CURIEL, JOSE GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A027",
+      "nrc": "76960",
+      "code": "I3323",
+      "students": 26,
+      "course": "FINANZAS"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A005",
+      "nrc": "76960",
+      "code": "I3323",
+      "students": 26,
+      "course": "FINANZAS"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
   },
   {
     "data": {
@@ -4694,29 +4681,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1155",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A027",
-      "nrc": "76960",
-      "code": "I3323",
-      "students": 27,
-      "course": "FINANZAS"
-    },
-    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
+      "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DEDQ",
-      "classroom": "A005",
-      "nrc": "76960",
-      "code": "I3323",
-      "students": 27,
+      "classroom": "A004",
+      "nrc": "175273",
+      "code": "IF891",
+      "students": 14,
       "course": "FINANZAS"
     },
-    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+    "professor": "PAEZ RIVAS, LAURA ESTELA"
   },
   {
     "data": {
@@ -4746,19 +4720,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A004",
-      "nrc": "175273",
-      "code": "IF891",
-      "students": 14,
-      "course": "FINANZAS"
-    },
-    "professor": "PAEZ RIVAS, LAURA ESTELA"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDQ",
@@ -4782,6 +4743,19 @@
       "course": "FISICA DE MATERIA CONDENSADA"
     },
     "professor": "GORIN, THOMAS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A027",
+      "nrc": "42377",
+      "code": "I6002",
+      "students": 29,
+      "course": "FISICA MODERNA"
+    },
+    "professor": "SILOS VEGA, HECTOR XOLOTL"
   },
   {
     "data": {
@@ -4817,7 +4791,7 @@
       "classroom": "A003",
       "nrc": "93337",
       "code": "I7440",
-      "students": 18,
+      "students": 24,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "FRANCO SAPIEN, RAFAEL"
@@ -4830,7 +4804,7 @@
       "classroom": "A003",
       "nrc": "93337",
       "code": "I7440",
-      "students": 18,
+      "students": 24,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "FRANCO SAPIEN, RAFAEL"
@@ -4843,7 +4817,7 @@
       "classroom": "A012",
       "nrc": "84268",
       "code": "I7440",
-      "students": 12,
+      "students": 35,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -4856,7 +4830,7 @@
       "classroom": "A027",
       "nrc": "84268",
       "code": "I7440",
-      "students": 12,
+      "students": 35,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -4869,7 +4843,7 @@
       "classroom": "A007",
       "nrc": "89354",
       "code": "I7440",
-      "students": 9,
+      "students": 32,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -4882,7 +4856,7 @@
       "classroom": "A007",
       "nrc": "89354",
       "code": "I7440",
-      "students": 9,
+      "students": 32,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -4921,7 +4895,7 @@
       "classroom": "A016",
       "nrc": "92298",
       "code": "I7440",
-      "students": 9,
+      "students": 21,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -4934,7 +4908,7 @@
       "classroom": "A016",
       "nrc": "92298",
       "code": "I7440",
-      "students": 9,
+      "students": 21,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "MARQUEZ FRAUSTO, LUIS ANTONIO"
@@ -4947,7 +4921,7 @@
       "classroom": "A008",
       "nrc": "92519",
       "code": "I7440",
-      "students": 20,
+      "students": 29,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -4960,7 +4934,7 @@
       "classroom": "A001",
       "nrc": "92519",
       "code": "I7440",
-      "students": 20,
+      "students": 29,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -4973,7 +4947,7 @@
       "classroom": "A012",
       "nrc": "153117",
       "code": "I7440",
-      "students": 24,
+      "students": 30,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
@@ -4986,7 +4960,7 @@
       "classroom": "A06B",
       "nrc": "153117",
       "code": "I7440",
-      "students": 24,
+      "students": 30,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
@@ -4999,7 +4973,7 @@
       "classroom": "A002",
       "nrc": "154475",
       "code": "I7440",
-      "students": 16,
+      "students": 33,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
@@ -5012,7 +4986,7 @@
       "classroom": "A002",
       "nrc": "154475",
       "code": "I7440",
-      "students": 16,
+      "students": 33,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
@@ -5025,7 +4999,7 @@
       "classroom": "A007",
       "nrc": "180101",
       "code": "I7440",
-      "students": 20,
+      "students": 23,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "GALLEGOS COVARRUBIAS, BELINDA"
@@ -5038,7 +5012,7 @@
       "classroom": "A018",
       "nrc": "131686",
       "code": "I7577",
-      "students": 14,
+      "students": 17,
       "course": "FUENTES ALTERNAS DE ENERGIA"
     },
     "professor": "LOPEZ ORNELAS, ARMANDO"
@@ -5064,7 +5038,7 @@
       "classroom": "A016",
       "nrc": "189668",
       "code": "IL340",
-      "students": 37,
+      "students": 38,
       "course": "FUNDAMENTOS DE FISICA"
     },
     "professor": "VAZQUEZ INZUNZA, CARLOS DANIEL"
@@ -5129,7 +5103,7 @@
       "classroom": "A001",
       "nrc": "43747",
       "code": "I7393",
-      "students": 40,
+      "students": 41,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5142,7 +5116,7 @@
       "classroom": "A001",
       "nrc": "43747",
       "code": "I7393",
-      "students": 40,
+      "students": 41,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5207,7 +5181,7 @@
       "classroom": "A006",
       "nrc": "84097",
       "code": "I7393",
-      "students": 39,
+      "students": 40,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5220,7 +5194,7 @@
       "classroom": "A001",
       "nrc": "84097",
       "code": "I7393",
-      "students": 39,
+      "students": 40,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5233,7 +5207,7 @@
       "classroom": "A005",
       "nrc": "86536",
       "code": "I7393",
-      "students": 24,
+      "students": 23,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5246,7 +5220,7 @@
       "classroom": "A003",
       "nrc": "86536",
       "code": "I7393",
-      "students": 24,
+      "students": 23,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5272,7 +5246,7 @@
       "classroom": "A001",
       "nrc": "154473",
       "code": "I7393",
-      "students": 36,
+      "students": 38,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "GARCIA JAUREGUI, ESTHER"
@@ -5285,7 +5259,7 @@
       "classroom": "A005",
       "nrc": "154473",
       "code": "I7393",
-      "students": 36,
+      "students": 38,
       "course": "GESTION AMBIENTAL"
     },
     "professor": "GARCIA JAUREGUI, ESTHER"
@@ -5298,7 +5272,7 @@
       "classroom": "A026",
       "nrc": "162750",
       "code": "IF885",
-      "students": 25,
+      "students": 28,
       "course": "GESTION Y DIRECCION DE EMPRESAS"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -5311,7 +5285,7 @@
       "classroom": "A008",
       "nrc": "162751",
       "code": "IF885",
-      "students": 27,
+      "students": 29,
       "course": "GESTION Y DIRECCION DE EMPRESAS"
     },
     "professor": "VACA MADRIGAL, EDUARDO"
@@ -5324,7 +5298,7 @@
       "classroom": "A031",
       "nrc": "162751",
       "code": "IF885",
-      "students": 27,
+      "students": 29,
       "course": "GESTION Y DIRECCION DE EMPRESAS"
     },
     "professor": "VACA MADRIGAL, EDUARDO"
@@ -5337,7 +5311,7 @@
       "classroom": "A009",
       "nrc": "187165",
       "code": "IF901",
-      "students": 22,
+      "students": 25,
       "course": "GESTION Y EVALUACION DE PROYECTOS"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -5350,7 +5324,7 @@
       "classroom": "A009",
       "nrc": "187165",
       "code": "IF901",
-      "students": 22,
+      "students": 25,
       "course": "GESTION Y EVALUACION DE PROYECTOS"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -5363,7 +5337,7 @@
       "classroom": "A027",
       "nrc": "187166",
       "code": "IF901",
-      "students": 25,
+      "students": 24,
       "course": "GESTION Y EVALUACION DE PROYECTOS"
     },
     "professor": "BERNAL CASILLAS, JOSE DE JESUS"
@@ -5376,7 +5350,7 @@
       "classroom": "A028",
       "nrc": "187166",
       "code": "IF901",
-      "students": 25,
+      "students": 24,
       "course": "GESTION Y EVALUACION DE PROYECTOS"
     },
     "professor": "BERNAL CASILLAS, JOSE DE JESUS"
@@ -5389,7 +5363,7 @@
       "classroom": "A06B",
       "nrc": "187171",
       "code": "IC603",
-      "students": 31,
+      "students": 34,
       "course": "HERRAMIENTAS DEL EMPRENDEDOR"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -5402,7 +5376,7 @@
       "classroom": "A003",
       "nrc": "187171",
       "code": "IC603",
-      "students": 31,
+      "students": 34,
       "course": "HERRAMIENTAS DEL EMPRENDEDOR"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -5415,7 +5389,7 @@
       "classroom": "A011",
       "nrc": "187172",
       "code": "IC603",
-      "students": 34,
+      "students": 35,
       "course": "HERRAMIENTAS DEL EMPRENDEDOR"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -5428,7 +5402,7 @@
       "classroom": "A028",
       "nrc": "187172",
       "code": "IC603",
-      "students": 34,
+      "students": 35,
       "course": "HERRAMIENTAS DEL EMPRENDEDOR"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -5467,7 +5441,7 @@
       "classroom": "A008",
       "nrc": "187174",
       "code": "IC603",
-      "students": 32,
+      "students": 35,
       "course": "HERRAMIENTAS DEL EMPRENDEDOR"
     },
     "professor": "MORELOS VELAZQUEZ, MARIA GUADALUPE"
@@ -5480,7 +5454,7 @@
       "classroom": "A002",
       "nrc": "187174",
       "code": "IC603",
-      "students": 32,
+      "students": 35,
       "course": "HERRAMIENTAS DEL EMPRENDEDOR"
     },
     "professor": "MORELOS VELAZQUEZ, MARIA GUADALUPE"
@@ -5519,7 +5493,7 @@
       "classroom": "A029",
       "nrc": "170592",
       "code": "IF919",
-      "students": 16,
+      "students": 26,
       "course": "HIGIENE Y SEGURIDAD INDUSTRIAL EN LA LOGISTICA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -5532,7 +5506,7 @@
       "classroom": "A016",
       "nrc": "170592",
       "code": "IF919",
-      "students": 16,
+      "students": 26,
       "course": "HIGIENE Y SEGURIDAD INDUSTRIAL EN LA LOGISTICA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -5545,7 +5519,7 @@
       "classroom": "A030",
       "nrc": "170593",
       "code": "IF919",
-      "students": 9,
+      "students": 14,
       "course": "HIGIENE Y SEGURIDAD INDUSTRIAL EN LA LOGISTICA"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5558,7 +5532,7 @@
       "classroom": "A030",
       "nrc": "170593",
       "code": "IF919",
-      "students": 9,
+      "students": 14,
       "course": "HIGIENE Y SEGURIDAD INDUSTRIAL EN LA LOGISTICA"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5571,7 +5545,7 @@
       "classroom": "A029",
       "nrc": "132854",
       "code": "I6187",
-      "students": 20,
+      "students": 22,
       "course": "HIGIENE Y SEGURIDAD INDUSTRIAL"
     },
     "professor": "BUENROSTRO ARCEO, ROSALIA"
@@ -5584,7 +5558,7 @@
       "classroom": "A031",
       "nrc": "252498",
       "code": "V3686",
-      "students": 40,
+      "students": 39,
       "course": "HISTORIA DE LA TECNOLOGIA  EL ARTE Y LA SOCIEDAD"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -5623,7 +5597,7 @@
       "classroom": "A025",
       "nrc": "187179",
       "code": "IC604",
-      "students": 19,
+      "students": 25,
       "course": "IMPACTO AMBIENTAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -5636,7 +5610,7 @@
       "classroom": "A002",
       "nrc": "187180",
       "code": "IC604",
-      "students": 20,
+      "students": 23,
       "course": "IMPACTO AMBIENTAL"
     },
     "professor": "GARCIA JAUREGUI, ESTHER"
@@ -5662,7 +5636,7 @@
       "classroom": "A021",
       "nrc": "154861",
       "code": "I7425",
-      "students": 15,
+      "students": 16,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
@@ -5675,7 +5649,7 @@
       "classroom": "A021",
       "nrc": "154861",
       "code": "I7425",
-      "students": 15,
+      "students": 16,
       "course": "INGENIERIA DE CONTROL"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
@@ -5688,7 +5662,7 @@
       "classroom": "A010",
       "nrc": "38450",
       "code": "I3303",
-      "students": 20,
+      "students": 29,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -5727,7 +5701,7 @@
       "classroom": "A001",
       "nrc": "16756",
       "code": "I3303",
-      "students": 4,
+      "students": 22,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -5740,7 +5714,7 @@
       "classroom": "A008",
       "nrc": "16756",
       "code": "I3303",
-      "students": 4,
+      "students": 22,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -5753,7 +5727,7 @@
       "classroom": "A026",
       "nrc": "154305",
       "code": "CB221",
-      "students": 18,
+      "students": 19,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "ORTIZ MARTINEZ, EDGAR MANUEL"
@@ -5766,7 +5740,7 @@
       "classroom": "A017",
       "nrc": "154305",
       "code": "CB221",
-      "students": 18,
+      "students": 19,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "ORTIZ MARTINEZ, EDGAR MANUEL"
@@ -5779,7 +5753,7 @@
       "classroom": "A011",
       "nrc": "154306",
       "code": "CB221",
-      "students": 35,
+      "students": 36,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -5792,7 +5766,7 @@
       "classroom": "A028",
       "nrc": "154306",
       "code": "CB221",
-      "students": 35,
+      "students": 36,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -5805,7 +5779,7 @@
       "classroom": "A031",
       "nrc": "154307",
       "code": "CB221",
-      "students": 17,
+      "students": 30,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -5818,33 +5792,7 @@
       "classroom": "A016",
       "nrc": "154307",
       "code": "CB221",
-      "students": 17,
-      "course": "INGENIERIA DE COSTOS"
-    },
-    "professor": "PAEZ RIVAS, LAURA ESTELA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A030",
-      "nrc": "154308",
-      "code": "CB221",
-      "students": 8,
-      "course": "INGENIERIA DE COSTOS"
-    },
-    "professor": "PAEZ RIVAS, LAURA ESTELA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A012",
-      "nrc": "154308",
-      "code": "CB221",
-      "students": 8,
+      "students": 30,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -5857,10 +5805,36 @@
       "classroom": "A020",
       "nrc": "44626",
       "code": "I7438",
-      "students": 26,
+      "students": 28,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A030",
+      "nrc": "154308",
+      "code": "CB221",
+      "students": 14,
+      "course": "INGENIERIA DE COSTOS"
+    },
+    "professor": "PAEZ RIVAS, LAURA ESTELA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A012",
+      "nrc": "154308",
+      "code": "CB221",
+      "students": 14,
+      "course": "INGENIERIA DE COSTOS"
+    },
+    "professor": "PAEZ RIVAS, LAURA ESTELA"
   },
   {
     "data": {
@@ -5870,7 +5844,7 @@
       "classroom": "A024",
       "nrc": "160084",
       "code": "I7438",
-      "students": 25,
+      "students": 28,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "REYNOSO HARO, DIEGO"
@@ -5883,7 +5857,7 @@
       "classroom": "A005",
       "nrc": "44814",
       "code": "ID306",
-      "students": 0,
+      "students": 33,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -5896,7 +5870,7 @@
       "classroom": "A005",
       "nrc": "44814",
       "code": "ID306",
-      "students": 0,
+      "students": 33,
       "course": "INGENIERIA DE COSTOS"
     },
     "professor": "PAEZ RIVAS, LAURA ESTELA"
@@ -6085,6 +6059,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDQ",
+      "classroom": "A023",
+      "nrc": "72238",
+      "code": "I7390",
+      "students": 38,
+      "course": "INGENIERIA DE LOS MATERIALES"
+    },
+    "professor": "LOPEZ ALVAREZ, MIGUEL ANGEL"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DEDQ",
@@ -6111,19 +6098,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDQ",
-      "classroom": "A018",
-      "nrc": "72239",
-      "code": "I7390",
-      "students": 38,
-      "course": "INGENIERIA DE LOS MATERIALES"
-    },
-    "professor": "GUERRERO DE LEON, JESUS ALONSO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . J . .",
       "building": "DEDQ",
@@ -6134,6 +6108,19 @@
       "course": "INGENIERIA DE LOS MATERIALES"
     },
     "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDQ",
+      "classroom": "A018",
+      "nrc": "72239",
+      "code": "I7390",
+      "students": 39,
+      "course": "INGENIERIA DE LOS MATERIALES"
+    },
+    "professor": "GUERRERO DE LEON, JESUS ALONSO"
   },
   {
     "data": {
@@ -6182,7 +6169,7 @@
       "classroom": "A009",
       "nrc": "76971",
       "code": "I7361",
-      "students": 34,
+      "students": 33,
       "course": "INGENIERIA DE METODOS"
     },
     "professor": "HERNANDEZ GARZA, LUZ KARINA"
@@ -6195,7 +6182,7 @@
       "classroom": "A010",
       "nrc": "76972",
       "code": "I7361",
-      "students": 32,
+      "students": 36,
       "course": "INGENIERIA DE METODOS"
     },
     "professor": "LOZANO GONZALEZ, ALEJANDRO"
@@ -6333,6 +6320,19 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A007",
+      "nrc": "87261",
+      "code": "I7394",
+      "students": 34,
+      "course": "INGENIERIA ECONOMICA"
+    },
+    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDQ",
       "classroom": "A008",
@@ -6364,7 +6364,7 @@
       "classroom": "A008",
       "nrc": "154474",
       "code": "I7394",
-      "students": 37,
+      "students": 38,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -6381,32 +6381,6 @@
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A012",
-      "nrc": "136422",
-      "code": "I7580",
-      "students": 35,
-      "course": "INGENIERIA ECONOMICA"
-    },
-    "professor": "ALDRETE CARRILLO, EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A012",
-      "nrc": "136422",
-      "code": "I7580",
-      "students": 35,
-      "course": "INGENIERIA ECONOMICA"
-    },
-    "professor": "ALDRETE CARRILLO, EDUARDO"
   },
   {
     "data": {
@@ -6449,13 +6423,26 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
       "building": "DEDQ",
-      "classroom": "A016",
-      "nrc": "163258",
-      "code": "I3584",
-      "students": 33,
+      "classroom": "A012",
+      "nrc": "136422",
+      "code": "I7580",
+      "students": 35,
+      "course": "INGENIERIA ECONOMICA"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A012",
+      "nrc": "136422",
+      "code": "I7580",
+      "students": 35,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "ALDRETE CARRILLO, EDUARDO"
@@ -6489,12 +6476,25 @@
   {
     "data": {
       "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDQ",
+      "classroom": "A016",
+      "nrc": "163258",
+      "code": "I3584",
+      "students": 33,
+      "course": "INGENIERIA ECONOMICA"
+    },
+    "professor": "ALDRETE CARRILLO, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDQ",
       "classroom": "A017",
       "nrc": "165470",
       "code": "I5848",
-      "students": 33,
+      "students": 34,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -6507,7 +6507,7 @@
       "classroom": "A017",
       "nrc": "165470",
       "code": "I5848",
-      "students": 33,
+      "students": 34,
       "course": "INGENIERIA ECONOMICA"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
@@ -6533,7 +6533,7 @@
       "classroom": "A025",
       "nrc": "252791",
       "code": "V6008",
-      "students": 40,
+      "students": 41,
       "course": "INGENIERIA EN LOGISTICA Y TRANSPORTE"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -6546,7 +6546,7 @@
       "classroom": "A005",
       "nrc": "252791",
       "code": "V6008",
-      "students": 40,
+      "students": 41,
       "course": "INGENIERIA EN LOGISTICA Y TRANSPORTE"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -6559,7 +6559,7 @@
       "classroom": "A005",
       "nrc": "260137",
       "code": "V6008",
-      "students": 33,
+      "students": 38,
       "course": "INGENIERIA EN LOGISTICA Y TRANSPORTE"
     },
     "professor": "GARCIA CASILLAS, STEPHANIE"
@@ -6572,7 +6572,7 @@
       "classroom": "A031",
       "nrc": "181912",
       "code": "IC630",
-      "students": 35,
+      "students": 36,
       "course": "INGENIERIA SISMICA"
     },
     "professor": "SANTOS PRECIADO, JUAN CARLOS"
@@ -6598,7 +6598,7 @@
       "classroom": "A022",
       "nrc": "252524",
       "code": "V3640",
-      "students": 13,
+      "students": 12,
       "course": "INSTALACIONES ELECTRICAS DE BAJA Y MEDIA TENSION"
     },
     "professor": "FRAUSTO CASTRO, LUIS FERNANDO"
@@ -6611,7 +6611,7 @@
       "classroom": "A019",
       "nrc": "119772",
       "code": "I7443",
-      "students": 34,
+      "students": 36,
       "course": "INSTALACIONES ELECTRICAS E ILUMINACION"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
@@ -6650,7 +6650,7 @@
       "classroom": "A001",
       "nrc": "43531",
       "code": "I7340",
-      "students": 30,
+      "students": 32,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -6663,7 +6663,7 @@
       "classroom": "A010",
       "nrc": "43531",
       "code": "I7340",
-      "students": 30,
+      "students": 32,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -6676,7 +6676,7 @@
       "classroom": "A007",
       "nrc": "43530",
       "code": "I7340",
-      "students": 40,
+      "students": 41,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -6689,7 +6689,7 @@
       "classroom": "A014",
       "nrc": "43530",
       "code": "I7340",
-      "students": 40,
+      "students": 41,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -6754,7 +6754,7 @@
       "classroom": "A013",
       "nrc": "145547",
       "code": "I7340",
-      "students": 40,
+      "students": 41,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -6767,7 +6767,7 @@
       "classroom": "A017",
       "nrc": "145547",
       "code": "I7340",
-      "students": 40,
+      "students": 41,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "JARAMILLO GONZALEZ, GERARDO"
@@ -6806,7 +6806,7 @@
       "classroom": "A001",
       "nrc": "200757",
       "code": "I7340",
-      "students": 23,
+      "students": 21,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -6819,7 +6819,7 @@
       "classroom": "A016",
       "nrc": "200757",
       "code": "I7340",
-      "students": 23,
+      "students": 21,
       "course": "INTRODUCCION A LA INGENIERIA INDUSTRIAL"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -6832,7 +6832,7 @@
       "classroom": "A025",
       "nrc": "43544",
       "code": "I7349",
-      "students": 6,
+      "students": 7,
       "course": "INTRODUCCION A LAS MATEMATICAS DISCRETAS"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -6871,7 +6871,7 @@
       "classroom": "A024",
       "nrc": "90994",
       "code": "I7341",
-      "students": 38,
+      "students": 39,
       "course": "INTRODUCCION DE CIRCUITOS ELECTRICOS"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -6897,7 +6897,7 @@
       "classroom": "A024",
       "nrc": "83944",
       "code": "I7341",
-      "students": 35,
+      "students": 36,
       "course": "INTRODUCCION DE CIRCUITOS ELECTRICOS"
     },
     "professor": "MIRANDA PANDURO, CESAR RAUL"
@@ -6910,7 +6910,7 @@
       "classroom": "A019",
       "nrc": "86212",
       "code": "I7341",
-      "students": 34,
+      "students": 35,
       "course": "INTRODUCCION DE CIRCUITOS ELECTRICOS"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
@@ -6923,7 +6923,7 @@
       "classroom": "A019",
       "nrc": "86212",
       "code": "I7341",
-      "students": 34,
+      "students": 35,
       "course": "INTRODUCCION DE CIRCUITOS ELECTRICOS"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
@@ -6936,7 +6936,7 @@
       "classroom": "A018",
       "nrc": "154013",
       "code": "I7341",
-      "students": 35,
+      "students": 36,
       "course": "INTRODUCCION DE CIRCUITOS ELECTRICOS"
     },
     "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
@@ -6962,7 +6962,7 @@
       "classroom": "A029",
       "nrc": "167469",
       "code": "IF892",
-      "students": 32,
+      "students": 34,
       "course": "INVESTIGACION APLICADA A LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "LOPEZ CERPA, AMELIA NAYELI"
@@ -6975,7 +6975,7 @@
       "classroom": "A029",
       "nrc": "167469",
       "code": "IF892",
-      "students": 32,
+      "students": 34,
       "course": "INVESTIGACION APLICADA A LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "LOPEZ CERPA, AMELIA NAYELI"
@@ -6988,7 +6988,7 @@
       "classroom": "A030",
       "nrc": "167470",
       "code": "IF892",
-      "students": 34,
+      "students": 36,
       "course": "INVESTIGACION APLICADA A LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -7001,7 +7001,7 @@
       "classroom": "A030",
       "nrc": "167470",
       "code": "IF892",
-      "students": 34,
+      "students": 36,
       "course": "INVESTIGACION APLICADA A LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -7014,7 +7014,7 @@
       "classroom": "A013",
       "nrc": "175270",
       "code": "IF896",
-      "students": 34,
+      "students": 33,
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7027,7 +7027,7 @@
       "classroom": "A014",
       "nrc": "175270",
       "code": "IF896",
-      "students": 34,
+      "students": 33,
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7040,7 +7040,7 @@
       "classroom": "A014",
       "nrc": "103958",
       "code": "I7387",
-      "students": 35,
+      "students": 36,
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -7053,7 +7053,7 @@
       "classroom": "A015",
       "nrc": "103958",
       "code": "I7387",
-      "students": 35,
+      "students": 36,
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "VERA GOMEZ, MARIA DEL CARMEN"
@@ -7079,7 +7079,7 @@
       "classroom": "A015",
       "nrc": "103960",
       "code": "I7387",
-      "students": 38,
+      "students": 39,
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7092,7 +7092,7 @@
       "classroom": "A015",
       "nrc": "103960",
       "code": "I7387",
-      "students": 38,
+      "students": 39,
       "course": "INVESTIGACION DE OPERACIONES II"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7310,7 +7310,7 @@
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDQ",
-      "classroom": "A001",
+      "classroom": "A013",
       "nrc": "140282",
       "code": "I7386",
       "students": 29,
@@ -7365,7 +7365,7 @@
       "classroom": "A017",
       "nrc": "153265",
       "code": "I7386",
-      "students": 31,
+      "students": 34,
       "course": "INVESTIGACION DE OPERACIONES I"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7378,7 +7378,7 @@
       "classroom": "A017",
       "nrc": "153265",
       "code": "I7386",
-      "students": 31,
+      "students": 34,
       "course": "INVESTIGACION DE OPERACIONES I"
     },
     "professor": "GANDARA RODRIGUEZ, MANUEL"
@@ -7411,32 +7411,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A013",
-      "nrc": "76977",
-      "code": "I7364",
-      "students": 35,
-      "course": "LEGISLACION"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A006",
-      "nrc": "76977",
-      "code": "I7364",
-      "students": 35,
-      "course": "LEGISLACION"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDQ",
@@ -7460,6 +7434,32 @@
       "course": "LEGISLACION"
     },
     "professor": "PONCE MACIAS, CAROLINA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A013",
+      "nrc": "76977",
+      "code": "I7364",
+      "students": 35,
+      "course": "LEGISLACION"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A006",
+      "nrc": "76977",
+      "code": "I7364",
+      "students": 35,
+      "course": "LEGISLACION"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
   },
   {
     "data": {
@@ -7547,7 +7547,7 @@
       "classroom": "A014",
       "nrc": "76981",
       "code": "I7364",
-      "students": 17,
+      "students": 18,
       "course": "LEGISLACION"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -7560,7 +7560,7 @@
       "classroom": "A015",
       "nrc": "76981",
       "code": "I7364",
-      "students": 17,
+      "students": 18,
       "course": "LEGISLACION"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -7573,7 +7573,7 @@
       "classroom": "A031",
       "nrc": "153122",
       "code": "I7364",
-      "students": 29,
+      "students": 28,
       "course": "LEGISLACION"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -7586,7 +7586,7 @@
       "classroom": "A016",
       "nrc": "153122",
       "code": "I7364",
-      "students": 29,
+      "students": 28,
       "course": "LEGISLACION"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -7599,7 +7599,7 @@
       "classroom": "A007",
       "nrc": "180302",
       "code": "IF888",
-      "students": 19,
+      "students": 28,
       "course": "LEGISLACION ADUANERA Y DE TRANSPORTE"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -7612,7 +7612,7 @@
       "classroom": "A007",
       "nrc": "180302",
       "code": "IF888",
-      "students": 19,
+      "students": 28,
       "course": "LEGISLACION ADUANERA Y DE TRANSPORTE"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -7625,7 +7625,7 @@
       "classroom": "A009",
       "nrc": "180303",
       "code": "IF888",
-      "students": 26,
+      "students": 35,
       "course": "LEGISLACION ADUANERA Y DE TRANSPORTE"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -7638,7 +7638,7 @@
       "classroom": "A009",
       "nrc": "180303",
       "code": "IF888",
-      "students": 26,
+      "students": 35,
       "course": "LEGISLACION ADUANERA Y DE TRANSPORTE"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -7690,7 +7690,7 @@
       "classroom": "A011",
       "nrc": "42443",
       "code": "TS291",
-      "students": 35,
+      "students": 34,
       "course": "LIDERAZGO"
     },
     "professor": "FIGUEROA VEGA, LINKA VANESSA"
@@ -7703,7 +7703,7 @@
       "classroom": "A011",
       "nrc": "42443",
       "code": "TS291",
-      "students": 35,
+      "students": 34,
       "course": "LIDERAZGO"
     },
     "professor": "FIGUEROA VEGA, LINKA VANESSA"
@@ -7716,7 +7716,7 @@
       "classroom": "A014",
       "nrc": "79046",
       "code": "I7406",
-      "students": 20,
+      "students": 22,
       "course": "LIDERAZGO"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -7729,7 +7729,7 @@
       "classroom": "A014",
       "nrc": "79046",
       "code": "I7406",
-      "students": 20,
+      "students": 22,
       "course": "LIDERAZGO"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -7755,7 +7755,7 @@
       "classroom": "A015",
       "nrc": "79049",
       "code": "I7406",
-      "students": 33,
+      "students": 34,
       "course": "LIDERAZGO"
     },
     "professor": "GARCIA CAZARES, JEANNETTE"
@@ -7768,7 +7768,7 @@
       "classroom": "A015",
       "nrc": "79049",
       "code": "I7406",
-      "students": 33,
+      "students": 34,
       "course": "LIDERAZGO"
     },
     "professor": "GARCIA CAZARES, JEANNETTE"
@@ -7807,7 +7807,7 @@
       "classroom": "A016",
       "nrc": "79053",
       "code": "I7406",
-      "students": 35,
+      "students": 34,
       "course": "LIDERAZGO"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -7820,7 +7820,7 @@
       "classroom": "A011",
       "nrc": "79053",
       "code": "I7406",
-      "students": 35,
+      "students": 34,
       "course": "LIDERAZGO"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -7963,7 +7963,7 @@
       "classroom": "A017",
       "nrc": "153267",
       "code": "I7406",
-      "students": 16,
+      "students": 19,
       "course": "LIDERAZGO"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -8002,7 +8002,7 @@
       "classroom": "A014",
       "nrc": "228741",
       "code": "IF916",
-      "students": 30,
+      "students": 31,
       "course": "LIDERAZGO Y COACHING"
     },
     "professor": "VARGAS RAMOS, EDNA MARIA LUISA"
@@ -8015,7 +8015,7 @@
       "classroom": "A012",
       "nrc": "228741",
       "code": "IF916",
-      "students": 30,
+      "students": 31,
       "course": "LIDERAZGO Y COACHING"
     },
     "professor": "VARGAS RAMOS, EDNA MARIA LUISA"
@@ -8028,7 +8028,7 @@
       "classroom": "A014",
       "nrc": "86760",
       "code": "I3327",
-      "students": 14,
+      "students": 30,
       "course": "LIDERAZGO Y EMPRENDURISMO"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -8041,7 +8041,7 @@
       "classroom": "A014",
       "nrc": "86760",
       "code": "I3327",
-      "students": 14,
+      "students": 30,
       "course": "LIDERAZGO Y EMPRENDURISMO"
     },
     "professor": "GONZALEZ BRAVO, RICARDO"
@@ -8054,7 +8054,7 @@
       "classroom": "A028",
       "nrc": "187169",
       "code": "IF903",
-      "students": 16,
+      "students": 22,
       "course": "LOGISTICA INTERNACIONAL"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -8067,7 +8067,7 @@
       "classroom": "A007",
       "nrc": "187169",
       "code": "IF903",
-      "students": 16,
+      "students": 22,
       "course": "LOGISTICA INTERNACIONAL"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -8080,7 +8080,7 @@
       "classroom": "A027",
       "nrc": "187170",
       "code": "IF903",
-      "students": 30,
+      "students": 31,
       "course": "LOGISTICA INTERNACIONAL"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -8093,7 +8093,7 @@
       "classroom": "A027",
       "nrc": "187170",
       "code": "IF903",
-      "students": 30,
+      "students": 31,
       "course": "LOGISTICA INTERNACIONAL"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -8106,7 +8106,7 @@
       "classroom": "A014",
       "nrc": "175277",
       "code": "IF895",
-      "students": 32,
+      "students": 35,
       "course": "LOGISTICA DE APROVISIONAMIENTO"
     },
     "professor": "SANTOS MIGUEL, DONOVAN"
@@ -8119,7 +8119,7 @@
       "classroom": "A014",
       "nrc": "175277",
       "code": "IF895",
-      "students": 32,
+      "students": 35,
       "course": "LOGISTICA DE APROVISIONAMIENTO"
     },
     "professor": "SANTOS MIGUEL, DONOVAN"
@@ -8132,7 +8132,7 @@
       "classroom": "A005",
       "nrc": "175278",
       "code": "IF895",
-      "students": 13,
+      "students": 30,
       "course": "LOGISTICA DE APROVISIONAMIENTO"
     },
     "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
@@ -8171,7 +8171,7 @@
       "classroom": "A017",
       "nrc": "180308",
       "code": "IF897",
-      "students": 11,
+      "students": 15,
       "course": "LOGISTICA DE LA PRODUCCION"
     },
     "professor": "DIAZ GONZALEZ, JOSE LUIS"
@@ -8184,7 +8184,7 @@
       "classroom": "A030",
       "nrc": "183977",
       "code": "IF908",
-      "students": 15,
+      "students": 20,
       "course": "LOGISTICA INVERSA"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -8197,7 +8197,7 @@
       "classroom": "A016",
       "nrc": "183977",
       "code": "IF908",
-      "students": 15,
+      "students": 20,
       "course": "LOGISTICA INVERSA"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -8210,7 +8210,7 @@
       "classroom": "A010",
       "nrc": "183978",
       "code": "IF908",
-      "students": 23,
+      "students": 27,
       "course": "LOGISTICA INVERSA"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -8223,7 +8223,7 @@
       "classroom": "A015",
       "nrc": "183978",
       "code": "IF908",
-      "students": 23,
+      "students": 27,
       "course": "LOGISTICA INVERSA"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -8236,7 +8236,7 @@
       "classroom": "A004",
       "nrc": "95189",
       "code": "I7375",
-      "students": 17,
+      "students": 18,
       "course": "LOGISTICA Y CADENA DE SUMINISTRO"
     },
     "professor": "OLVERA PEREZ, ELSIE NOEMI"
@@ -8249,7 +8249,7 @@
       "classroom": "A004",
       "nrc": "95189",
       "code": "I7375",
-      "students": 17,
+      "students": 18,
       "course": "LOGISTICA Y CADENA DE SUMINISTRO"
     },
     "professor": "OLVERA PEREZ, ELSIE NOEMI"
@@ -8288,7 +8288,7 @@
       "classroom": "A009",
       "nrc": "84004",
       "code": "I7375",
-      "students": 34,
+      "students": 35,
       "course": "LOGISTICA Y CADENA DE SUMINISTRO"
     },
     "professor": "GONZALEZ BRAVO, RAFAEL"
@@ -8366,7 +8366,7 @@
       "classroom": "A008",
       "nrc": "159353",
       "code": "I7375",
-      "students": 35,
+      "students": 37,
       "course": "LOGISTICA Y CADENA DE SUMINISTRO"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -8379,7 +8379,7 @@
       "classroom": "A008",
       "nrc": "159353",
       "code": "I7375",
-      "students": 35,
+      "students": 37,
       "course": "LOGISTICA Y CADENA DE SUMINISTRO"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -8431,7 +8431,7 @@
       "classroom": "A008",
       "nrc": "162749",
       "code": "IF887",
-      "students": 23,
+      "students": 38,
       "course": "MANEJO DE MATERIALES EN LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -8444,7 +8444,7 @@
       "classroom": "A007",
       "nrc": "162749",
       "code": "IF887",
-      "students": 23,
+      "students": 38,
       "course": "MANEJO DE MATERIALES EN LA LOGISTICA Y TRANSPORTE"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -8457,7 +8457,7 @@
       "classroom": "A015",
       "nrc": "177357",
       "code": "IF920",
-      "students": 32,
+      "students": 35,
       "course": "MANEJO Y SEGURIDAD DE LA CARGA"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
@@ -8470,7 +8470,7 @@
       "classroom": "A031",
       "nrc": "177357",
       "code": "IF920",
-      "students": 32,
+      "students": 35,
       "course": "MANEJO Y SEGURIDAD DE LA CARGA"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
@@ -8483,23 +8483,10 @@
       "classroom": "A019",
       "nrc": "249966",
       "code": "V3642",
-      "students": 13,
+      "students": 12,
       "course": "MAQUINAS ELECTRICAS"
     },
     "professor": "SOTELO CASTAÑON, JULIAN"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": "L . I . . .",
-      "building": "DEDQ",
-      "classroom": "",
-      "nrc": "249967",
-      "code": "V3642",
-      "students": 30,
-      "course": "MAQUINAS ELECTRICAS"
-    },
-    "professor": "PEREZ RAMIREZ, JUAN ANGEL"
   },
   {
     "data": {
@@ -8561,7 +8548,7 @@
       "classroom": "A021",
       "nrc": "104507",
       "code": "I7452",
-      "students": 29,
+      "students": 28,
       "course": "MAQUINAS HIDRAULICAS"
     },
     "professor": "LARA RODRIGUEZ, GERARDO"
@@ -8600,7 +8587,7 @@
       "classroom": "A020",
       "nrc": "126135",
       "code": "I7454",
-      "students": 33,
+      "students": 35,
       "course": "MAQUINAS TERMICAS II"
     },
     "professor": "LOPEZ ORNELAS, ARMANDO"
@@ -8613,7 +8600,7 @@
       "classroom": "A019",
       "nrc": "126135",
       "code": "I7454",
-      "students": 33,
+      "students": 35,
       "course": "MAQUINAS TERMICAS II"
     },
     "professor": "LOPEZ ORNELAS, ARMANDO"
@@ -8626,7 +8613,7 @@
       "classroom": "A018",
       "nrc": "126136",
       "code": "I7454",
-      "students": 33,
+      "students": 36,
       "course": "MAQUINAS TERMICAS II"
     },
     "professor": "LOPEZ ORNELAS, ARMANDO"
@@ -8685,19 +8672,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1455",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A027",
-      "nrc": "254923",
-      "code": "IL345",
-      "students": 0,
-      "course": "MATEMATICAS DISCRETAS"
-    },
-    "professor": "CERVANTES LOMELI, ADRIAN"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDQ",
@@ -8730,7 +8704,7 @@
       "classroom": "A026",
       "nrc": "205814",
       "code": "IL343",
-      "students": 32,
+      "students": 33,
       "course": "MECANICA"
     },
     "professor": "CAMELO AVEDOY, VLADIMIR"
@@ -8743,7 +8717,7 @@
       "classroom": "A011",
       "nrc": "252004",
       "code": "IL343",
-      "students": 32,
+      "students": 34,
       "course": "MECANICA"
     },
     "professor": "MORENO CLOSE, ERIC ROLANDO"
@@ -8756,7 +8730,7 @@
       "classroom": "A028",
       "nrc": "252017",
       "code": "IL343",
-      "students": 35,
+      "students": 33,
       "course": "MECANICA"
     },
     "professor": "RODRIGUEZ SOTO, RAMON DANIEL"
@@ -8769,7 +8743,7 @@
       "classroom": "A007",
       "nrc": "252017",
       "code": "IL343",
-      "students": 35,
+      "students": 33,
       "course": "MECANICA"
     },
     "professor": "RODRIGUEZ SOTO, RAMON DANIEL"
@@ -8782,7 +8756,7 @@
       "classroom": "A003",
       "nrc": "255864",
       "code": "IL343",
-      "students": 29,
+      "students": 30,
       "course": "MECANICA"
     },
     "professor": "SAINZ ABASCAL, ISABEL"
@@ -8795,7 +8769,7 @@
       "classroom": "A008",
       "nrc": "255864",
       "code": "IL343",
-      "students": 29,
+      "students": 30,
       "course": "MECANICA"
     },
     "professor": "SAINZ ABASCAL, ISABEL"
@@ -8834,7 +8808,7 @@
       "classroom": "A011",
       "nrc": "263661",
       "code": "IL343",
-      "students": 34,
+      "students": 33,
       "course": "MECANICA"
     },
     "professor": "ALANIS FUERTE, IVON"
@@ -8860,23 +8834,10 @@
       "classroom": "A024",
       "nrc": "263666",
       "code": "IL343",
-      "students": 32,
+      "students": 33,
       "course": "MECANICA"
     },
     "professor": "RAMIREZ YAÑEZ, ALEJANDRO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1755",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A028",
-      "nrc": "214201",
-      "code": "V2374",
-      "students": 0,
-      "course": "MECANICA DE MATERIALES"
-    },
-    "professor": "FRANCO ANAYA, ROBERTO"
   },
   {
     "data": {
@@ -8890,6 +8851,19 @@
       "course": "MECANICA DE MATERIALES"
     },
     "professor": "HERRERA VALDIVIA, ANGEL JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1755",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A028",
+      "nrc": "214201",
+      "code": "V2374",
+      "students": 2,
+      "course": "MECANICA DE MATERIALES"
+    },
+    "professor": "FRANCO ANAYA, ROBERTO"
   },
   {
     "data": {
@@ -8938,36 +8912,10 @@
       "classroom": "A027",
       "nrc": "202054",
       "code": "I6028",
-      "students": 10,
+      "students": 12,
       "course": "MECANICA DEL MEDIO CONTINUO"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A030",
-      "nrc": "167467",
-      "code": "IF890",
-      "students": 32,
-      "course": "MERCADOTECNIA"
-    },
-    "professor": "GONZALEZ GUTIERREZ, RAUL"
-  },
-  {
-    "data": {
-      "schedule": "0800-0855",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A029",
-      "nrc": "167467",
-      "code": "IF890",
-      "students": 32,
-      "course": "MERCADOTECNIA"
-    },
-    "professor": "GONZALEZ GUTIERREZ, RAUL"
   },
   {
     "data": {
@@ -8997,26 +8945,26 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDQ",
-      "classroom": "A06B",
-      "nrc": "167468",
+      "classroom": "A030",
+      "nrc": "167467",
       "code": "IF890",
-      "students": 22,
+      "students": 32,
       "course": "MERCADOTECNIA"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
   },
   {
     "data": {
-      "schedule": "1600-1655",
+      "schedule": "0800-0855",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A06B",
-      "nrc": "167468",
+      "classroom": "A029",
+      "nrc": "167467",
       "code": "IF890",
-      "students": 22,
+      "students": 32,
       "course": "MERCADOTECNIA"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -9046,6 +8994,32 @@
       "course": "MERCADOTECNIA"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A06B",
+      "nrc": "167468",
+      "code": "IF890",
+      "students": 22,
+      "course": "MERCADOTECNIA"
+    },
+    "professor": "GONZALEZ GUTIERREZ, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A06B",
+      "nrc": "167468",
+      "code": "IF890",
+      "students": 22,
+      "course": "MERCADOTECNIA"
+    },
+    "professor": "GONZALEZ GUTIERREZ, RAUL"
   },
   {
     "data": {
@@ -9094,7 +9068,7 @@
       "classroom": "A009",
       "nrc": "159354",
       "code": "I7403",
-      "students": 32,
+      "students": 33,
       "course": "MERCADOTECNIA"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -9107,7 +9081,7 @@
       "classroom": "A030",
       "nrc": "159354",
       "code": "I7403",
-      "students": 32,
+      "students": 33,
       "course": "MERCADOTECNIA"
     },
     "professor": "GONZALEZ GUTIERREZ, RAUL"
@@ -9133,7 +9107,7 @@
       "classroom": "A012",
       "nrc": "254973",
       "code": "V0713",
-      "students": 40,
+      "students": 41,
       "course": "METODOS NUMERICOS"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
@@ -9146,7 +9120,7 @@
       "classroom": "A012",
       "nrc": "254973",
       "code": "V0713",
-      "students": 40,
+      "students": 41,
       "course": "METODOS NUMERICOS"
     },
     "professor": "GONZALEZ SOLIS, FERNANDO RENAN"
@@ -9159,7 +9133,7 @@
       "classroom": "A025",
       "nrc": "38459",
       "code": "PT129",
-      "students": 33,
+      "students": 34,
       "course": "MICROBIOLOGIA DE LOS ALIMENTOS"
     },
     "professor": "CHAVARIN SALAZAR, DANIEL IGNACIO"
@@ -9172,7 +9146,7 @@
       "classroom": "A025",
       "nrc": "260140",
       "code": "V6075",
-      "students": 22,
+      "students": 35,
       "course": "MODELADO DE PROCESOS LOGISTICOS"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -9185,7 +9159,7 @@
       "classroom": "A025",
       "nrc": "260140",
       "code": "V6075",
-      "students": 22,
+      "students": 35,
       "course": "MODELADO DE PROCESOS LOGISTICOS"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -9224,23 +9198,10 @@
       "classroom": "A006",
       "nrc": "260142",
       "code": "V6075",
-      "students": 4,
+      "students": 35,
       "course": "MODELADO DE PROCESOS LOGISTICOS"
     },
     "professor": "GUTIERREZ RAMIREZ, FABIAN ISRAEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A023",
-      "nrc": "225487",
-      "code": "V2328",
-      "students": 2,
-      "course": "NANOMEDICINA Y BIOTECNOLOGIA"
-    },
-    "professor": "ZAMUDIO OJEDA, ADALBERTO"
   },
   {
     "data": {
@@ -9289,7 +9250,7 @@
       "classroom": "A014",
       "nrc": "131805",
       "code": "I7473",
-      "students": 37,
+      "students": 39,
       "course": "PLANEACION ESTRATEGICA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -9302,7 +9263,7 @@
       "classroom": "A012",
       "nrc": "131805",
       "code": "I7473",
-      "students": 37,
+      "students": 39,
       "course": "PLANEACION ESTRATEGICA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -9393,7 +9354,7 @@
       "classroom": "A026",
       "nrc": "103954",
       "code": "I7376",
-      "students": 35,
+      "students": 34,
       "course": "PLANEACION Y CONTROL DE LA PRODUCCION I"
     },
     "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
@@ -9406,7 +9367,7 @@
       "classroom": "A025",
       "nrc": "103954",
       "code": "I7376",
-      "students": 35,
+      "students": 34,
       "course": "PLANEACION Y CONTROL DE LA PRODUCCION I"
     },
     "professor": "VILLALOBOS PEREZ, ADRIAN ISAAC"
@@ -9465,39 +9426,13 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "159356",
-      "code": "I7376",
-      "students": 26,
-      "course": "PLANEACION Y CONTROL DE LA PRODUCCION I"
-    },
-    "professor": "ULLOA GODINEZ, HECTOR HUGO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "159356",
-      "code": "I7376",
-      "students": 26,
-      "course": "PLANEACION Y CONTROL DE LA PRODUCCION I"
-    },
-    "professor": "ULLOA GODINEZ, HECTOR HUGO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDQ",
       "classroom": "A06B",
       "nrc": "117471",
       "code": "I7377",
-      "students": 17,
+      "students": 18,
       "course": "PLANEACION Y CONTROL DE LA PRODUCCION II"
     },
     "professor": "DIAZ GONZALEZ, JOSE LUIS"
@@ -9536,7 +9471,7 @@
       "classroom": "A006",
       "nrc": "117473",
       "code": "I7377",
-      "students": 38,
+      "students": 39,
       "course": "PLANEACION Y CONTROL DE LA PRODUCCION II"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -9549,7 +9484,7 @@
       "classroom": "A006",
       "nrc": "117473",
       "code": "I7377",
-      "students": 38,
+      "students": 39,
       "course": "PLANEACION Y CONTROL DE LA PRODUCCION II"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -9666,7 +9601,7 @@
       "classroom": "A026",
       "nrc": "175280",
       "code": "IF899",
-      "students": 33,
+      "students": 35,
       "course": "PLANEACION,DISEÑO E INSTALACION DE CEDIS"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -9679,7 +9614,7 @@
       "classroom": "A010",
       "nrc": "175280",
       "code": "IF899",
-      "students": 33,
+      "students": 35,
       "course": "PLANEACION,DISEÑO E INSTALACION DE CEDIS"
     },
     "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
@@ -9692,7 +9627,7 @@
       "classroom": "A010",
       "nrc": "44764",
       "code": "ID401",
-      "students": 0,
+      "students": 35,
       "course": "PLANTAS Y PROCESOS INDUSTRIALES"
     },
     "professor": "ESPARZA RAMOS, RUBEN IGNACIO"
@@ -9705,7 +9640,7 @@
       "classroom": "A005",
       "nrc": "44764",
       "code": "ID401",
-      "students": 0,
+      "students": 35,
       "course": "PLANTAS Y PROCESOS INDUSTRIALES"
     },
     "professor": "ESPARZA RAMOS, RUBEN IGNACIO"
@@ -9718,10 +9653,23 @@
       "classroom": "A007",
       "nrc": "44761",
       "code": "ID401",
-      "students": 0,
+      "students": 40,
       "course": "PLANTAS Y PROCESOS INDUSTRIALES"
     },
     "professor": "CISNEROS GARCIA, CHRISTIAN URIEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "42533",
+      "code": "I5799",
+      "students": 7,
+      "course": "PRECALCULO"
+    },
+    "professor": "ESPINO ROJAS, NORMA ELVA"
   },
   {
     "data": {
@@ -9731,7 +9679,7 @@
       "classroom": "A019",
       "nrc": "252266",
       "code": "IG738",
-      "students": 40,
+      "students": 41,
       "course": "PRECALCULO"
     },
     "professor": "PIÑUELAS CASTRO, LUIS MANUEL"
@@ -9744,7 +9692,7 @@
       "classroom": "A010",
       "nrc": "179814",
       "code": "IC690",
-      "students": 24,
+      "students": 35,
       "course": "PREVENCION POR RIESGOS AMBIENTALES"
     },
     "professor": "BRISEÑO ZARATE, LUIS ALBERTO"
@@ -9757,23 +9705,10 @@
       "classroom": "A005",
       "nrc": "179814",
       "code": "IC690",
-      "students": 24,
+      "students": 35,
       "course": "PREVENCION POR RIESGOS AMBIENTALES"
     },
     "professor": "BRISEÑO ZARATE, LUIS ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "77423",
-      "code": "I7348",
-      "students": 40,
-      "course": "PROBABILIDAD"
-    },
-    "professor": "PANTOJA ESPINOZA, DELIAZAR"
   },
   {
     "data": {
@@ -9783,10 +9718,10 @@
       "classroom": "A023",
       "nrc": "43712",
       "code": "I6920",
-      "students": 27,
+      "students": 25,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
-    "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
+    "professor": "MUELA LOPEZ, MARIA CRISTINA"
   },
   {
     "data": {
@@ -9796,7 +9731,7 @@
       "classroom": "A023",
       "nrc": "137239",
       "code": "IC572",
-      "students": 28,
+      "students": 29,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "MUELA LOPEZ, MARIA CRISTINA"
@@ -9809,10 +9744,62 @@
       "classroom": "A030",
       "nrc": "200069",
       "code": "IB067",
-      "students": 40,
+      "students": 39,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "RAMIREZ MORENO, BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
+      "building": "DEDQ",
+      "classroom": "A017",
+      "nrc": "76954",
+      "code": "I6493",
+      "students": 34,
+      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "1000-1055",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A007",
+      "nrc": "76954",
+      "code": "I6493",
+      "students": 34,
+      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "76955",
+      "code": "I6493",
+      "students": 37,
+      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "76955",
+      "code": "I6493",
+      "students": 37,
+      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
   },
   {
     "data": {
@@ -9868,6 +9855,32 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A005",
+      "nrc": "145552",
+      "code": "I6493",
+      "students": 35,
+      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A003",
+      "nrc": "145552",
+      "code": "I6493",
+      "students": 35,
+      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": "L . . . . .",
       "building": "DEDQ",
@@ -9900,7 +9913,7 @@
       "classroom": "A031",
       "nrc": "166259",
       "code": "I6493",
-      "students": 15,
+      "students": 18,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -9913,7 +9926,7 @@
       "classroom": "A031",
       "nrc": "166259",
       "code": "I6493",
-      "students": 15,
+      "students": 18,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -9926,7 +9939,7 @@
       "classroom": "A015",
       "nrc": "166260",
       "code": "I6493",
-      "students": 6,
+      "students": 5,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -9939,7 +9952,7 @@
       "classroom": "A006",
       "nrc": "166260",
       "code": "I6493",
-      "students": 6,
+      "students": 5,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -9952,7 +9965,7 @@
       "classroom": "A008",
       "nrc": "166261",
       "code": "I6493",
-      "students": 17,
+      "students": 18,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -9965,10 +9978,36 @@
       "classroom": "A008",
       "nrc": "166261",
       "code": "I6493",
-      "students": 17,
+      "students": 18,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "65223",
+      "code": "I7378",
+      "students": 38,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MACIAS RAMOS, JOSE APOLINAR"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "65223",
+      "code": "I7378",
+      "students": 38,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MACIAS RAMOS, JOSE APOLINAR"
   },
   {
     "data": {
@@ -9999,38 +10038,12 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "65223",
-      "code": "I7378",
-      "students": 38,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "65223",
-      "code": "I7378",
-      "students": 38,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MACIAS RAMOS, JOSE APOLINAR"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". . . . V .",
       "building": "DEDQ",
       "classroom": "A013",
       "nrc": "65224",
       "code": "I7378",
-      "students": 38,
+      "students": 39,
       "course": "PROCESOS DE MANUFACTURA"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -10043,7 +10056,7 @@
       "classroom": "A013",
       "nrc": "65224",
       "code": "I7378",
-      "students": 38,
+      "students": 39,
       "course": "PROCESOS DE MANUFACTURA"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -10052,6 +10065,19 @@
     "data": {
       "schedule": "0700-0855",
       "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A020",
+      "nrc": "104543",
+      "code": "I7453",
+      "students": 21,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MEDINA ALVARADO, ELVIRA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
       "building": "DEDQ",
       "classroom": "A020",
       "nrc": "104543",
@@ -10115,32 +10141,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "65226",
-      "code": "I7378",
-      "students": 8,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MIRANDA PANDURO, CESAR RAUL"
-  },
-  {
-    "data": {
-      "schedule": "1900-1955",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "65226",
-      "code": "I7378",
-      "students": 8,
-      "course": "PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MIRANDA PANDURO, CESAR RAUL"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". . I . . .",
       "building": "DEDQ",
@@ -10167,13 +10167,39 @@
   },
   {
     "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "65226",
+      "code": "I7378",
+      "students": 8,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MIRANDA PANDURO, CESAR RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1900-1955",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A009",
+      "nrc": "65226",
+      "code": "I7378",
+      "students": 8,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "MIRANDA PANDURO, CESAR RAUL"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDQ",
       "classroom": "A007",
       "nrc": "92310",
       "code": "I7378",
-      "students": 34,
+      "students": 33,
       "course": "PROCESOS DE MANUFACTURA"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -10186,7 +10212,7 @@
       "classroom": "A007",
       "nrc": "92310",
       "code": "I7378",
-      "students": 34,
+      "students": 33,
       "course": "PROCESOS DE MANUFACTURA"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -10290,7 +10316,7 @@
       "classroom": "A021",
       "nrc": "260126",
       "code": "V3694",
-      "students": 41,
+      "students": 42,
       "course": "PROTOTIPOS ELECTROMECANICOS"
     },
     "professor": "HERNANDEZ DE LEON, JOSE ESTEBAN"
@@ -10303,10 +10329,36 @@
       "classroom": "A023",
       "nrc": "260126",
       "code": "V3694",
-      "students": 41,
+      "students": 42,
       "course": "PROTOTIPOS ELECTROMECANICOS"
     },
     "professor": "HERNANDEZ DE LEON, JOSE ESTEBAN"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "43566",
+      "code": "I7365",
+      "students": 39,
+      "course": "PSICOLOGIA INDUSTRIAL"
+    },
+    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A001",
+      "nrc": "43566",
+      "code": "I7365",
+      "students": 39,
+      "course": "PSICOLOGIA INDUSTRIAL"
+    },
+    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
   },
   {
     "data": {
@@ -10336,39 +10388,13 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "43566",
-      "code": "I7365",
-      "students": 40,
-      "course": "PSICOLOGIA INDUSTRIAL"
-    },
-    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "43566",
-      "code": "I7365",
-      "students": 40,
-      "course": "PSICOLOGIA INDUSTRIAL"
-    },
-    "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDQ",
       "classroom": "A001",
       "nrc": "43563",
       "code": "I7365",
-      "students": 40,
+      "students": 41,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "ONTIVEROS CASTAÑEDA, PERLA ESPERANZA"
@@ -10381,7 +10407,7 @@
       "classroom": "A001",
       "nrc": "43563",
       "code": "I7365",
-      "students": 40,
+      "students": 41,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "ONTIVEROS CASTAÑEDA, PERLA ESPERANZA"
@@ -10420,7 +10446,7 @@
       "classroom": "A001",
       "nrc": "43567",
       "code": "I7365",
-      "students": 16,
+      "students": 17,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -10433,7 +10459,7 @@
       "classroom": "A001",
       "nrc": "43567",
       "code": "I7365",
-      "students": 16,
+      "students": 17,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -10472,7 +10498,7 @@
       "classroom": "A002",
       "nrc": "43564",
       "code": "I7365",
-      "students": 25,
+      "students": 26,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
@@ -10485,7 +10511,7 @@
       "classroom": "A002",
       "nrc": "43564",
       "code": "I7365",
-      "students": 25,
+      "students": 26,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "PRADO JIMENEZ, STEPHANIE DAPHNE"
@@ -10498,7 +10524,7 @@
       "classroom": "A001",
       "nrc": "43569",
       "code": "I7365",
-      "students": 33,
+      "students": 34,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "GOMEZ SANCHEZ, ROGELIO VICENTE"
@@ -10511,7 +10537,7 @@
       "classroom": "A001",
       "nrc": "43569",
       "code": "I7365",
-      "students": 33,
+      "students": 34,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "GOMEZ SANCHEZ, ROGELIO VICENTE"
@@ -10524,7 +10550,7 @@
       "classroom": "A002",
       "nrc": "43562",
       "code": "I7365",
-      "students": 40,
+      "students": 41,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -10537,7 +10563,7 @@
       "classroom": "A002",
       "nrc": "43562",
       "code": "I7365",
-      "students": 40,
+      "students": 41,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -10550,7 +10576,7 @@
       "classroom": "A008",
       "nrc": "72235",
       "code": "I7365",
-      "students": 14,
+      "students": 16,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "ONTIVEROS CASTAÑEDA, PERLA ESPERANZA"
@@ -10563,7 +10589,7 @@
       "classroom": "A016",
       "nrc": "72235",
       "code": "I7365",
-      "students": 14,
+      "students": 16,
       "course": "PSICOLOGIA INDUSTRIAL"
     },
     "professor": "ONTIVEROS CASTAÑEDA, PERLA ESPERANZA"
@@ -10609,6 +10635,32 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . . . .",
+      "building": "DEDQ",
+      "classroom": "A031",
+      "nrc": "154018",
+      "code": "I7462",
+      "students": 33,
+      "course": "REDES ELECTRICAS"
+    },
+    "professor": "VARGAS QUEZADA, MARCELINO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A030",
+      "nrc": "154018",
+      "code": "I7462",
+      "students": 33,
+      "course": "REDES ELECTRICAS"
+    },
+    "professor": "VARGAS QUEZADA, MARCELINO"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDQ",
@@ -10641,7 +10693,7 @@
       "classroom": "A017",
       "nrc": "228755",
       "code": "IF921",
-      "students": 16,
+      "students": 20,
       "course": "RESPONSABILIDAD SOCIAL EMPRESARIAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -10654,7 +10706,7 @@
       "classroom": "A011",
       "nrc": "228755",
       "code": "IF921",
-      "students": 16,
+      "students": 20,
       "course": "RESPONSABILIDAD SOCIAL EMPRESARIAL"
     },
     "professor": "OROZCO DUEÑAS, JOSE DE JESUS"
@@ -10680,7 +10732,7 @@
       "classroom": "A014",
       "nrc": "76984",
       "code": "I7366",
-      "students": 38,
+      "students": 39,
       "course": "SEGURIDAD E HIGIENE INDUSTRIAL"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -10693,7 +10745,7 @@
       "classroom": "A014",
       "nrc": "76984",
       "code": "I7366",
-      "students": 38,
+      "students": 39,
       "course": "SEGURIDAD E HIGIENE INDUSTRIAL"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -10784,7 +10836,7 @@
       "classroom": "A005",
       "nrc": "76988",
       "code": "I7366",
-      "students": 33,
+      "students": 34,
       "course": "SEGURIDAD E HIGIENE INDUSTRIAL"
     },
     "professor": "ZEPEDA SAHAGUN, CARLOS"
@@ -10797,7 +10849,7 @@
       "classroom": "A005",
       "nrc": "76988",
       "code": "I7366",
-      "students": 33,
+      "students": 34,
       "course": "SEGURIDAD E HIGIENE INDUSTRIAL"
     },
     "professor": "ZEPEDA SAHAGUN, CARLOS"
@@ -10823,7 +10875,7 @@
       "classroom": "A019",
       "nrc": "223260",
       "code": "IL368",
-      "students": 39,
+      "students": 40,
       "course": "SEGURIDAD EN LA INFORMACION"
     },
     "professor": "SOTO SANCHEZ, JOSE DE JESUS"
@@ -10836,7 +10888,7 @@
       "classroom": "A003",
       "nrc": "124759",
       "code": "I7384",
-      "students": 19,
+      "students": 18,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "ARMENDARIZ HERRERA, SAUL"
@@ -10849,7 +10901,7 @@
       "classroom": "A003",
       "nrc": "124759",
       "code": "I7384",
-      "students": 19,
+      "students": 18,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "ARMENDARIZ HERRERA, SAUL"
@@ -10862,7 +10914,7 @@
       "classroom": "A004",
       "nrc": "124760",
       "code": "I7384",
-      "students": 26,
+      "students": 27,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -10888,7 +10940,7 @@
       "classroom": "A06B",
       "nrc": "124762",
       "code": "I7384",
-      "students": 13,
+      "students": 14,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CASTILLO CRUZ, CLAUDIA"
@@ -10901,7 +10953,7 @@
       "classroom": "A06B",
       "nrc": "124762",
       "code": "I7384",
-      "students": 13,
+      "students": 14,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CASTILLO CRUZ, CLAUDIA"
@@ -10914,7 +10966,7 @@
       "classroom": "A004",
       "nrc": "148001",
       "code": "I7384",
-      "students": 24,
+      "students": 27,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CAMACHO HERNANDEZ, HECTOR ALBERTO"
@@ -10927,7 +10979,7 @@
       "classroom": "A004",
       "nrc": "148002",
       "code": "I7384",
-      "students": 27,
+      "students": 28,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -10940,7 +10992,7 @@
       "classroom": "A003",
       "nrc": "159361",
       "code": "I7384",
-      "students": 28,
+      "students": 30,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CAMACHO HERNANDEZ, HECTOR ALBERTO"
@@ -10966,7 +11018,7 @@
       "classroom": "A004",
       "nrc": "189694",
       "code": "I7384",
-      "students": 16,
+      "students": 15,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CASTILLO CRUZ, CLAUDIA"
@@ -10979,7 +11031,7 @@
       "classroom": "A004",
       "nrc": "189694",
       "code": "I7384",
-      "students": 16,
+      "students": 15,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CASTILLO CRUZ, CLAUDIA"
@@ -11148,7 +11200,7 @@
       "classroom": "A004",
       "nrc": "159363",
       "code": "I7396",
-      "students": 18,
+      "students": 19,
       "course": "SEMINARIO DE EVALUACION DE PROYECTOS"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -11161,7 +11213,7 @@
       "classroom": "A014",
       "nrc": "159363",
       "code": "I7396",
-      "students": 18,
+      "students": 19,
       "course": "SEMINARIO DE EVALUACION DE PROYECTOS"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -11226,7 +11278,7 @@
       "classroom": "A003",
       "nrc": "124763",
       "code": "I7379",
-      "students": 14,
+      "students": 13,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -11239,7 +11291,7 @@
       "classroom": "A003",
       "nrc": "124763",
       "code": "I7379",
-      "students": 14,
+      "students": 13,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "PEREZ VILLALPANDO, MARLENE ALEJANDRA"
@@ -11278,7 +11330,7 @@
       "classroom": "A004",
       "nrc": "124765",
       "code": "I7379",
-      "students": 20,
+      "students": 18,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "ROMERO SANTOS, JOSE LUIS"
@@ -11291,7 +11343,7 @@
       "classroom": "A003",
       "nrc": "124765",
       "code": "I7379",
-      "students": 20,
+      "students": 18,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "ROMERO SANTOS, JOSE LUIS"
@@ -11343,7 +11395,7 @@
       "classroom": "A06B",
       "nrc": "154747",
       "code": "I7379",
-      "students": 23,
+      "students": 24,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -11356,7 +11408,7 @@
       "classroom": "A004",
       "nrc": "159365",
       "code": "I7379",
-      "students": 22,
+      "students": 23,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "SERRATOS MACIAS, MARCO ANTONIO"
@@ -11369,7 +11421,7 @@
       "classroom": "A004",
       "nrc": "159365",
       "code": "I7379",
-      "students": 22,
+      "students": 23,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "SERRATOS MACIAS, MARCO ANTONIO"
@@ -11395,23 +11447,10 @@
       "classroom": "A06B",
       "nrc": "198683",
       "code": "I7379",
-      "students": 21,
+      "students": 20,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "GONZALEZ BRAVO, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A023",
-      "nrc": "225514",
-      "code": "V2336",
-      "students": 2,
-      "course": "SEMINARIO DE INVESTIGACION III"
-    },
-    "professor": "MEZA CANALES, IVAN DAVID"
   },
   {
     "data": {
@@ -11421,7 +11460,7 @@
       "classroom": "A004",
       "nrc": "190623",
       "code": "IF909",
-      "students": 0,
+      "students": 17,
       "course": "SEMINARIO DE LOGISTICA"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -11434,7 +11473,7 @@
       "classroom": "A004",
       "nrc": "190624",
       "code": "IF909",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE LOGISTICA"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -11447,7 +11486,7 @@
       "classroom": "A030",
       "nrc": "190624",
       "code": "IF909",
-      "students": 0,
+      "students": 21,
       "course": "SEMINARIO DE LOGISTICA"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -11460,7 +11499,7 @@
       "classroom": "A004",
       "nrc": "124768",
       "code": "I7389",
-      "students": 24,
+      "students": 23,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -11473,7 +11512,7 @@
       "classroom": "A004",
       "nrc": "124768",
       "code": "I7389",
-      "students": 24,
+      "students": 23,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -11486,7 +11525,7 @@
       "classroom": "A06B",
       "nrc": "124769",
       "code": "I7389",
-      "students": 18,
+      "students": 19,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -11499,7 +11538,7 @@
       "classroom": "A06B",
       "nrc": "124769",
       "code": "I7389",
-      "students": 18,
+      "students": 19,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -11538,7 +11577,7 @@
       "classroom": "A06B",
       "nrc": "145568",
       "code": "I7389",
-      "students": 17,
+      "students": 16,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -11551,7 +11590,7 @@
       "classroom": "A06B",
       "nrc": "145568",
       "code": "I7389",
-      "students": 17,
+      "students": 16,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -11616,7 +11655,7 @@
       "classroom": "A003",
       "nrc": "159367",
       "code": "I7389",
-      "students": 23,
+      "students": 24,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "BRAMBILA LOZA, KARLA ELIZABETH"
@@ -11694,7 +11733,7 @@
       "classroom": "A003",
       "nrc": "190627",
       "code": "IF910",
-      "students": 0,
+      "students": 18,
       "course": "SEMINARIO DE TRANSPORTE"
     },
     "professor": "GOMEZ PADILLA, ALEJANDRA"
@@ -11707,7 +11746,7 @@
       "classroom": "A003",
       "nrc": "190627",
       "code": "IF910",
-      "students": 0,
+      "students": 18,
       "course": "SEMINARIO DE TRANSPORTE"
     },
     "professor": "GOMEZ PADILLA, ALEJANDRA"
@@ -11720,7 +11759,7 @@
       "classroom": "A004",
       "nrc": "190628",
       "code": "IF910",
-      "students": 0,
+      "students": 19,
       "course": "SEMINARIO DE TRANSPORTE"
     },
     "professor": "GONZALEZ BRAVO, RAFAEL"
@@ -11902,7 +11941,7 @@
       "classroom": "A022",
       "nrc": "43832",
       "code": "I7464",
-      "students": 31,
+      "students": 33,
       "course": "SEMINARIO MODULAR I"
     },
     "professor": "LOPEZ DE ALBA, CARLOS ALBERTO"
@@ -11967,7 +12006,7 @@
       "classroom": "A019",
       "nrc": "136365",
       "code": "I7472",
-      "students": 22,
+      "students": 24,
       "course": "SEMINARIO MODULAR IX"
     },
     "professor": "LOPEZ DE ALBA, CARLOS ALBERTO"
@@ -11980,7 +12019,7 @@
       "classroom": "A024",
       "nrc": "104528",
       "code": "I7469",
-      "students": 35,
+      "students": 36,
       "course": "SEMINARIO MODULAR VI"
     },
     "professor": "CARRILLO CASTILLO, JOSE NIEVES"
@@ -11993,7 +12032,7 @@
       "classroom": "A021",
       "nrc": "104531",
       "code": "I7469",
-      "students": 0,
+      "students": 1,
       "course": "SEMINARIO MODULAR VI"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
@@ -12006,7 +12045,7 @@
       "classroom": "A022",
       "nrc": "126154",
       "code": "I7471",
-      "students": 30,
+      "students": 32,
       "course": "SEMINARIO MODULAR VIII"
     },
     "professor": "SOTELO CASTAÑON, JULIAN"
@@ -12058,7 +12097,7 @@
       "classroom": "A008",
       "nrc": "190615",
       "code": "IF503",
-      "students": 9,
+      "students": 21,
       "course": "SERVICIO LOGISTICO AL CLIENTE"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -12071,7 +12110,7 @@
       "classroom": "A007",
       "nrc": "190615",
       "code": "IF503",
-      "students": 9,
+      "students": 21,
       "course": "SERVICIO LOGISTICO AL CLIENTE"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -12084,7 +12123,7 @@
       "classroom": "A028",
       "nrc": "180311",
       "code": "IF898",
-      "students": 19,
+      "students": 22,
       "course": "SISTEMA DE COSTEO EN OPERACIONES LOGISTICAS"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -12097,7 +12136,7 @@
       "classroom": "A029",
       "nrc": "180311",
       "code": "IF898",
-      "students": 19,
+      "students": 22,
       "course": "SISTEMA DE COSTEO EN OPERACIONES LOGISTICAS"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -12266,7 +12305,7 @@
       "classroom": "A026",
       "nrc": "134054",
       "code": "I6108",
-      "students": 23,
+      "students": 21,
       "course": "SISTEMAS DINAMICOS CLASICOS Y CAOS"
     },
     "professor": "GORIN, THOMAS"
@@ -12344,7 +12383,7 @@
       "classroom": "A007",
       "nrc": "89302",
       "code": "I6191",
-      "students": 35,
+      "students": 34,
       "course": "TALLER DE COMUNICACION ORAL Y ESCRITA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -12357,7 +12396,7 @@
       "classroom": "A001",
       "nrc": "89302",
       "code": "I6191",
-      "students": 35,
+      "students": 34,
       "course": "TALLER DE COMUNICACION ORAL Y ESCRITA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -12370,7 +12409,7 @@
       "classroom": "A006",
       "nrc": "153139",
       "code": "I6191",
-      "students": 31,
+      "students": 32,
       "course": "TALLER DE COMUNICACION ORAL Y ESCRITA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -12383,7 +12422,7 @@
       "classroom": "A006",
       "nrc": "153139",
       "code": "I6191",
-      "students": 31,
+      "students": 32,
       "course": "TALLER DE COMUNICACION ORAL Y ESCRITA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -12409,7 +12448,7 @@
       "classroom": "A009",
       "nrc": "131784",
       "code": "IC574",
-      "students": 35,
+      "students": 36,
       "course": "TALLER DE CULTURA"
     },
     "professor": "PONCE MACIAS, CAROLINA"
@@ -12500,7 +12539,7 @@
       "classroom": "A016",
       "nrc": "131792",
       "code": "IC573",
-      "students": 11,
+      "students": 13,
       "course": "TALLER DE DEPORTES"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -12513,7 +12552,7 @@
       "classroom": "A026",
       "nrc": "131793",
       "code": "IC573",
-      "students": 21,
+      "students": 22,
       "course": "TALLER DE DEPORTES"
     },
     "professor": "MONTES GONZALEZ, ROBERTO"
@@ -12526,7 +12565,7 @@
       "classroom": "A013",
       "nrc": "154476",
       "code": "I6192",
-      "students": 26,
+      "students": 27,
       "course": "TALLER DE DESARROLLO HUMANO"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -12539,7 +12578,7 @@
       "classroom": "A012",
       "nrc": "154476",
       "code": "I6192",
-      "students": 26,
+      "students": 27,
       "course": "TALLER DE DESARROLLO HUMANO"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -12591,20 +12630,7 @@
       "classroom": "A027",
       "nrc": "170043",
       "code": "IC576",
-      "students": 33,
-      "course": "TALLER DE EMPRENDIMIENTO"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A007",
-      "nrc": "170044",
-      "code": "IC576",
-      "students": 19,
+      "students": 34,
       "course": "TALLER DE EMPRENDIMIENTO"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -12617,7 +12643,7 @@
       "classroom": "A004",
       "nrc": "157915",
       "code": "IC685",
-      "students": 31,
+      "students": 32,
       "course": "TALLER DE EMPRENDURISMO"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -12630,7 +12656,7 @@
       "classroom": "A009",
       "nrc": "43810",
       "code": "I7418",
-      "students": 28,
+      "students": 29,
       "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
     },
     "professor": "NERI CORTES, CRISTINA"
@@ -12643,7 +12669,7 @@
       "classroom": "A009",
       "nrc": "43810",
       "code": "I7418",
-      "students": 28,
+      "students": 29,
       "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
     },
     "professor": "NERI CORTES, CRISTINA"
@@ -12734,7 +12760,7 @@
       "classroom": "A023",
       "nrc": "43808",
       "code": "I7418",
-      "students": 14,
+      "students": 17,
       "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
     },
     "professor": "SALDAÑA CHAIRES, NESTOR ARTURO"
@@ -12747,7 +12773,7 @@
       "classroom": "A006",
       "nrc": "43808",
       "code": "I7418",
-      "students": 14,
+      "students": 17,
       "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
     },
     "professor": "SALDAÑA CHAIRES, NESTOR ARTURO"
@@ -12790,6 +12816,19 @@
       "course": "TALLER DE EXPRESION ORAL Y ESCRITA"
     },
     "professor": "VARGAS RAMOS, EDNA MARIA LUISA"
+  },
+  {
+    "data": {
+      "schedule": "1200-1255",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "157916",
+      "code": "IC684",
+      "students": 33,
+      "course": "TALLER DE FORMACION INTEGRAL"
+    },
+    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
   },
   {
     "data": {
@@ -12903,7 +12942,7 @@
       "classroom": "A003",
       "nrc": "141688",
       "code": "I7395",
-      "students": 20,
+      "students": 21,
       "course": "TALLER DE INVESTIGACION"
     },
     "professor": "LOPEZ CERPA, AMELIA NAYELI"
@@ -12916,7 +12955,7 @@
       "classroom": "A003",
       "nrc": "141688",
       "code": "I7395",
-      "students": 20,
+      "students": 21,
       "course": "TALLER DE INVESTIGACION"
     },
     "professor": "LOPEZ CERPA, AMELIA NAYELI"
@@ -13111,7 +13150,7 @@
       "classroom": "A012",
       "nrc": "157913",
       "code": "IC575",
-      "students": 10,
+      "students": 11,
       "course": "TALLER DE LABOR SOCIAL"
     },
     "professor": "RODRIGUEZ GARCIA, MANUEL"
@@ -13183,32 +13222,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDQ",
-      "classroom": "A009",
-      "nrc": "43573",
-      "code": "I7367",
-      "students": 45,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A001",
-      "nrc": "43573",
-      "code": "I7367",
-      "students": 45,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDQ",
@@ -13235,29 +13248,29 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . . . . .",
+      "schedule": "0900-1055",
+      "days": ". . . . V .",
       "building": "DEDQ",
-      "classroom": "A023",
-      "nrc": "43575",
+      "classroom": "A009",
+      "nrc": "43573",
       "code": "I7367",
-      "students": 40,
+      "students": 46,
       "course": "TALLER DE REDACCION TECNICA"
     },
-    "professor": "SALDAÑA CHAIRES, NESTOR ARTURO"
+    "professor": "FRANCO SAPIEN, RAFAEL"
   },
   {
     "data": {
-      "schedule": "1700-1755",
+      "schedule": "1000-1055",
       "days": ". . I . . .",
       "building": "DEDQ",
-      "classroom": "A027",
-      "nrc": "43575",
+      "classroom": "A001",
+      "nrc": "43573",
       "code": "I7367",
-      "students": 40,
+      "students": 46,
       "course": "TALLER DE REDACCION TECNICA"
     },
-    "professor": "SALDAÑA CHAIRES, NESTOR ARTURO"
+    "professor": "FRANCO SAPIEN, RAFAEL"
   },
   {
     "data": {
@@ -13284,6 +13297,32 @@
       "course": "TALLER DE REDACCION TECNICA"
     },
     "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A023",
+      "nrc": "43575",
+      "code": "I7367",
+      "students": 39,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "SALDAÑA CHAIRES, NESTOR ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A027",
+      "nrc": "43575",
+      "code": "I7367",
+      "students": 39,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "SALDAÑA CHAIRES, NESTOR ARTURO"
   },
   {
     "data": {
@@ -13340,58 +13379,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDQ",
-      "classroom": "A005",
-      "nrc": "131799",
-      "code": "IC571",
-      "students": 18,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A003",
-      "nrc": "131799",
-      "code": "IC571",
-      "students": 18,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDQ",
-      "classroom": "A002",
-      "nrc": "131800",
-      "code": "IC571",
-      "students": 14,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DEDQ",
-      "classroom": "A002",
-      "nrc": "131800",
-      "code": "IC571",
-      "students": 14,
-      "course": "TALLER DE REDACCION TECNICA"
-    },
-    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDQ",
       "classroom": "A022",
@@ -13418,12 +13405,38 @@
   {
     "data": {
       "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "131800",
+      "code": "IC571",
+      "students": 14,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DEDQ",
+      "classroom": "A002",
+      "nrc": "131800",
+      "code": "IC571",
+      "students": 14,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDQ",
       "classroom": "A023",
       "nrc": "145555",
       "code": "I7367",
-      "students": 34,
+      "students": 36,
       "course": "TALLER DE REDACCION TECNICA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -13436,7 +13449,7 @@
       "classroom": "A021",
       "nrc": "145555",
       "code": "I7367",
-      "students": 34,
+      "students": 36,
       "course": "TALLER DE REDACCION TECNICA"
     },
     "professor": "CARREON CARBAJAL, DULCE MARIA"
@@ -13508,13 +13521,39 @@
   },
   {
     "data": {
+      "schedule": "1200-1255",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A005",
+      "nrc": "195064",
+      "code": "I5942",
+      "students": 20,
+      "course": "TEORIA DE ANILLOS Y CAMPOS"
+    },
+    "professor": "MATA GUTIERREZ, OSBALDO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDQ",
+      "classroom": "A016",
+      "nrc": "195064",
+      "code": "I5942",
+      "students": 20,
+      "course": "TEORIA DE ANILLOS Y CAMPOS"
+    },
+    "professor": "MATA GUTIERREZ, OSBALDO"
+  },
+  {
+    "data": {
       "schedule": "1300-1655",
       "days": ". . . . V .",
       "building": "DEDQ",
       "classroom": "A029",
       "nrc": "133677",
       "code": "I6048",
-      "students": 29,
+      "students": 31,
       "course": "TEORIA DE CAMPOS"
     },
     "professor": "MARTINEZ MERINO, ALDO APARICIO"
@@ -13553,7 +13592,7 @@
       "classroom": "A015",
       "nrc": "228786",
       "code": "I6492",
-      "students": 2,
+      "students": 35,
       "course": "TEORIA DE DECISIONES"
     },
     "professor": "MACIAS RAMOS, JOSE APOLINAR"
@@ -13566,7 +13605,7 @@
       "classroom": "A012",
       "nrc": "228786",
       "code": "I6492",
-      "students": 2,
+      "students": 35,
       "course": "TEORIA DE DECISIONES"
     },
     "professor": "MACIAS RAMOS, JOSE APOLINAR"
@@ -13579,7 +13618,7 @@
       "classroom": "A024",
       "nrc": "122711",
       "code": "I7449",
-      "students": 28,
+      "students": 29,
       "course": "TEORIA ELECTROMAGNETICA PARA MAQUINAS"
     },
     "professor": "SANTAMARIA DOMINGUEZ, EDGAR IVAN"
@@ -13592,7 +13631,7 @@
       "classroom": "A028",
       "nrc": "77771",
       "code": "I6018",
-      "students": 34,
+      "students": 36,
       "course": "TERMODINAMICA"
     },
     "professor": "RODRIGUEZ RANGEL, MARINA SOFIA"
@@ -13722,7 +13761,7 @@
       "classroom": "A010",
       "nrc": "157905",
       "code": "IF889",
-      "students": 3,
+      "students": 19,
       "course": "TIPOLOGIA DEL PRODUCTO"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -13735,7 +13774,7 @@
       "classroom": "A010",
       "nrc": "157905",
       "code": "IF889",
-      "students": 3,
+      "students": 19,
       "course": "TIPOLOGIA DEL PRODUCTO"
     },
     "professor": "HUESCA PEREZ, JESUS HECTOR"
@@ -13748,7 +13787,7 @@
       "classroom": "A020",
       "nrc": "142334",
       "code": "I7572",
-      "students": 21,
+      "students": 19,
       "course": "TOPICOS AVANZADOS DE DISEÑO MECANICO"
     },
     "professor": "CARRILLO CASTILLO, JOSE NIEVES"
@@ -13787,7 +13826,7 @@
       "classroom": "A017",
       "nrc": "188196",
       "code": "IF914",
-      "students": 11,
+      "students": 18,
       "course": "TOPICOS SELECTOS DE LOGISTICA Y TRANSPORTE"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -13800,7 +13839,7 @@
       "classroom": "A017",
       "nrc": "188196",
       "code": "IF914",
-      "students": 11,
+      "students": 18,
       "course": "TOPICOS SELECTOS DE LOGISTICA Y TRANSPORTE"
     },
     "professor": "RECIO COLMENARES, JESUS ANTONIO"
@@ -13826,7 +13865,7 @@
       "classroom": "A029",
       "nrc": "250375",
       "code": "I6175",
-      "students": 30,
+      "students": 31,
       "course": "TOXICOLOGIA APLICADA"
     },
     "professor": "DE ALMEIDA CUNHA, NELSON BRUNO"
@@ -13852,7 +13891,7 @@
       "classroom": "A028",
       "nrc": "175276",
       "code": "IF900",
-      "students": 4,
+      "students": 8,
       "course": "TRAFICO Y SISTEMAS DE TRANSPORTE"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
@@ -13865,7 +13904,7 @@
       "classroom": "A007",
       "nrc": "175276",
       "code": "IF900",
-      "students": 4,
+      "students": 8,
       "course": "TRAFICO Y SISTEMAS DE TRANSPORTE"
     },
     "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
@@ -13921,18 +13960,5 @@
       "course": "TRANSFERENCIA DE CALOR"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDQ",
-      "classroom": "A030",
-      "nrc": "137201",
-      "code": "I6219",
-      "students": 16,
-      "course": "VIROLOGIA"
-    },
-    "professor": "CARRILLO BALLESTEROS, FRANCISCO JOSUE"
   }
 ]

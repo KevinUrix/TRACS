@@ -1,6 +1,19 @@
 [
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "77418",
+      "code": "I6000",
+      "students": 4,
+      "course": "ALGEBRA LINEAL II"
+    },
+    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDW",
@@ -59,7 +72,7 @@
       "classroom": "A001",
       "nrc": "42305",
       "code": "I6121",
-      "students": 22,
+      "students": 25,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "MARQUEZ SOSA, SAUL RENE"
@@ -72,10 +85,23 @@
       "classroom": "A001",
       "nrc": "42305",
       "code": "I6121",
-      "students": 22,
+      "students": 25,
       "course": "CALCULO DIFERENCIAL INTEGRAL"
     },
     "professor": "MARQUEZ SOSA, SAUL RENE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "213189",
+      "code": "I3277",
+      "students": 7,
+      "course": "CALCULO I"
+    },
+    "professor": "CORONA SANCHEZ, JUAN CARLOS"
   },
   {
     "data": {
@@ -98,23 +124,10 @@
       "classroom": "A001",
       "nrc": "42326",
       "code": "I6007",
-      "students": 15,
+      "students": 20,
       "course": "COMPUTO CIENTIFICO II"
     },
     "professor": "MUÑOZ VILLEGAS, SUSANA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDW",
-      "classroom": "A002",
-      "nrc": "178800",
-      "code": "I6007",
-      "students": 11,
-      "course": "COMPUTO CIENTIFICO II"
-    },
-    "professor": "GASCA ORTIZ, TZITLALI"
   },
   {
     "data": {
@@ -137,7 +150,7 @@
       "classroom": "A002",
       "nrc": "105693",
       "code": "I6021",
-      "students": 16,
+      "students": 17,
       "course": "DISEÑO Y EVALUACION DE RECURSOS EDUCATIVOS"
     },
     "professor": "ALMAGUER MEDINA, JAIME FRANCISCO"
@@ -202,7 +215,7 @@
       "classroom": "A002",
       "nrc": "144939",
       "code": "IB079",
-      "students": 11,
+      "students": 12,
       "course": "ESTRUCTURA ELECTRONICA EN LOS MATERIALES"
     },
     "professor": "BRAVO SANCHEZ, MARIELA"
@@ -222,19 +235,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . V .",
-      "building": "DEDW",
-      "classroom": "A002",
-      "nrc": "252334",
-      "code": "IL340",
-      "students": 34,
-      "course": "FUNDAMENTOS DE FISICA"
-    },
-    "professor": "CORRAL ESCOBEDO, LUIS JOSE HERMINIO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDW",
@@ -248,29 +248,29 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "267691",
+      "code": "V3684",
+      "students": 0,
+      "course": "INDUCCION UNIVERSITARIA"
+    },
+    "professor": "ROSALES MARTINEZ, JAVIER"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDW",
       "classroom": "A002",
       "nrc": "125208",
       "code": "I6123",
-      "students": 30,
+      "students": 29,
       "course": "INTRODUCCION A LA FISICA"
     },
     "professor": "RODRIGUEZ DOMINGUEZ, ALMA LETICIA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDW",
-      "classroom": "A001",
-      "nrc": "201863",
-      "code": "I5247",
-      "students": 40,
-      "course": "LOGICA MATEMATICA"
-    },
-    "professor": "ELIZALDE CAMINO, FERNANDO"
   },
   {
     "data": {
@@ -280,7 +280,7 @@
       "classroom": "A002",
       "nrc": "202034",
       "code": "I5304",
-      "students": 6,
+      "students": 14,
       "course": "MECANICA"
     },
     "professor": "ALFARO GARCES, JUAN"
@@ -293,10 +293,23 @@
       "classroom": "A002",
       "nrc": "263659",
       "code": "IL343",
-      "students": 21,
+      "students": 20,
       "course": "MECANICA"
     },
     "professor": "VARGAS CARMONA, JORGE ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "263664",
+      "code": "IL343",
+      "students": 27,
+      "course": "MECANICA"
+    },
+    "professor": "SILOS VEGA, HECTOR XOLOTL"
   },
   {
     "data": {
@@ -306,7 +319,7 @@
       "classroom": "A002",
       "nrc": "263665",
       "code": "IL343",
-      "students": 29,
+      "students": 30,
       "course": "MECANICA"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -319,7 +332,7 @@
       "classroom": "A002",
       "nrc": "263665",
       "code": "IL343",
-      "students": 29,
+      "students": 30,
       "course": "MECANICA"
     },
     "professor": "VAZQUEZ FLETES, ROBERTO CARLOS"
@@ -332,7 +345,7 @@
       "classroom": "A002",
       "nrc": "109269",
       "code": "I6012",
-      "students": 19,
+      "students": 20,
       "course": "MECANICA TEORICA"
     },
     "professor": "MENDEZ BERMUDEZ, JOSE GUILLERMO"
@@ -345,14 +358,27 @@
       "classroom": "A002",
       "nrc": "197327",
       "code": "I6023",
-      "students": 20,
+      "students": 21,
       "course": "METODOS MATEMATICOS DE LA FISICA"
     },
     "professor": "ACEVES DE LA CRUZ, FERMIN"
   },
   {
     "data": {
-      "schedule": "0800-0955",
+      "schedule": "1300-1455",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "171815",
+      "code": "I5996",
+      "students": 14,
+      "course": "ONDAS, FLUIDOS Y FISICA MOLECULAR"
+    },
+    "professor": "ZARATE GALVEZ, SARAI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
       "days": ". . I . . .",
       "building": "DEDW",
       "classroom": "A001",
@@ -378,42 +404,29 @@
   },
   {
     "data": {
-      "schedule": "0800-1055",
-      "days": ". M . . . .",
-      "building": "DEDW",
-      "classroom": "A001",
-      "nrc": "251060",
-      "code": "I7348",
-      "students": 40,
-      "course": "PROBABILIDAD"
-    },
-    "professor": "MUELA LOPEZ, MARIA CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DEDW",
-      "classroom": "A001",
-      "nrc": "43716",
-      "code": "I6920",
-      "students": 40,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "MARTINEZ VAZQUEZ, RICARDO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDW",
       "classroom": "A001",
       "nrc": "200066",
       "code": "IB067",
-      "students": 20,
+      "students": 24,
       "course": "PROBABILIDAD Y ESTADISTICA"
     },
     "professor": "SANDOVAL ARRAYGA, CARLOS JOHNNATAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "188220",
+      "code": "IK123",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
+    },
+    "professor": "GUTIERREZ ROBLES, JOSE ALBERTO"
   },
   {
     "data": {
@@ -423,7 +436,7 @@
       "classroom": "A001",
       "nrc": "57734",
       "code": "I7021",
-      "students": 4,
+      "students": 5,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE METODOS MATEMATICOS III"
     },
     "professor": "OLIVARES PEREZ, MARIA ELENA"
@@ -488,7 +501,7 @@
       "classroom": "A002",
       "nrc": "131850",
       "code": "I5987",
-      "students": 1,
+      "students": 9,
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE MECANICA"
     },
     "professor": "ARREDONDO BRAVO, MARTHA GUADALUPE"
@@ -534,13 +547,26 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". M . . . .",
+      "building": "DEDW",
+      "classroom": "A001",
+      "nrc": "195064",
+      "code": "I5942",
+      "students": 20,
+      "course": "TEORIA DE ANILLOS Y CAMPOS"
+    },
+    "professor": "MATA GUTIERREZ, OSBALDO"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDW",
       "classroom": "A002",
       "nrc": "77769",
       "code": "I7293",
-      "students": 1,
+      "students": 2,
       "course": "TEORIA ELECTROMAGNETICA"
     },
     "professor": "ROSALIO CUEVAS, SAMUEL"

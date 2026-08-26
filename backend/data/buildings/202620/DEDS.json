@@ -4,10 +4,23 @@
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDS",
+      "classroom": "LC01",
+      "nrc": "187167",
+      "code": "IF902",
+      "students": 30,
+      "course": "ADMINISTRACION DE LA CADENA DE SUMINISTRO"
+    },
+    "professor": "GONZALEZ BRAVO, RAFAEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDS",
       "classroom": "LC03",
       "nrc": "153107",
       "code": "I6487",
-      "students": 9,
+      "students": 14,
       "course": "ANALISIS CONTABLE"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -20,7 +33,7 @@
       "classroom": "LC01",
       "nrc": "153107",
       "code": "I6487",
-      "students": 9,
+      "students": 14,
       "course": "ANALISIS CONTABLE"
     },
     "professor": "HERNANDEZ GARZA, YURIDIA NOEMI"
@@ -183,45 +196,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "167475",
-      "code": "IF894",
-      "students": 30,
-      "course": "EMPAQUE,ENVASE Y EMBALAJE"
-    },
-    "professor": "LEON RANGEL, ALVARO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "LC02",
-      "nrc": "167475",
-      "code": "IF894",
-      "students": 30,
-      "course": "EMPAQUE,ENVASE Y EMBALAJE"
-    },
-    "professor": "LEON RANGEL, ALVARO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . . V .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "43594",
-      "code": "I7381",
-      "students": 35,
-      "course": "ETICA PROFESIONAL"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDS",
@@ -267,7 +241,7 @@
       "classroom": "LC01",
       "nrc": "86189",
       "code": "I7440",
-      "students": 14,
+      "students": 35,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -280,7 +254,7 @@
       "classroom": "LC03",
       "nrc": "86189",
       "code": "I7440",
-      "students": 14,
+      "students": 35,
       "course": "FORMACION EMPRESARIAL"
     },
     "professor": "ARREOLA CASTAÑEDA, ALBERTO"
@@ -293,23 +267,10 @@
       "classroom": "LC01",
       "nrc": "162750",
       "code": "IF885",
-      "students": 25,
+      "students": 28,
       "course": "GESTION Y DIRECCION DE EMPRESAS"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "87261",
-      "code": "I7394",
-      "students": 34,
-      "course": "INGENIERIA ECONOMICA"
-    },
-    "professor": "VERA GOMEZ, MARIA DEL CARMEN"
   },
   {
     "data": {
@@ -423,7 +384,7 @@
       "classroom": "",
       "nrc": "104556",
       "code": "I7431",
-      "students": 18,
+      "students": 19,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS II"
     },
     "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
@@ -475,7 +436,7 @@
       "classroom": "",
       "nrc": "163858",
       "code": "I7431",
-      "students": 10,
+      "students": 8,
       "course": "LABORATORIO DE CIRCUITOS ELECTRICOS II"
     },
     "professor": "DEL PUERTO FLORES, DUNSTANO"
@@ -716,19 +677,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "126169",
-      "code": "I7459",
-      "students": 16,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
-    },
-    "professor": "GARCIA SANCHEZ, JORGE LUIS"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". . . . V .",
       "building": "DEDS",
@@ -739,6 +687,19 @@
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . I . . .",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "126169",
+      "code": "I7459",
+      "students": 16,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
+    },
+    "professor": "GARCIA SANCHEZ, JORGE LUIS"
   },
   {
     "data": {
@@ -787,23 +748,10 @@
       "classroom": "",
       "nrc": "119784",
       "code": "I7460",
-      "students": 20,
+      "students": 21,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
     },
     "professor": "MORALES BELTRAN, JUAN RAMON"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "126173",
-      "code": "I7459",
-      "students": 20,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
-    },
-    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
   },
   {
     "data": {
@@ -815,6 +763,19 @@
       "code": "I7460",
       "students": 20,
       "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
+    },
+    "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "126173",
+      "code": "I7459",
+      "students": 20,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS II"
     },
     "professor": "GUTIERREZ CASTRO, MARCO ANGEL"
   },
@@ -885,19 +846,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "",
-      "nrc": "165431",
-      "code": "I7460",
-      "students": 20,
-      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
-    },
-    "professor": "MORALES BELTRAN, JUAN RAMON"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . . . . S",
       "building": "DEDS",
@@ -911,13 +859,26 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDS",
+      "classroom": "",
+      "nrc": "165431",
+      "code": "I7460",
+      "students": 20,
+      "course": "LABORATORIO DE MAQUINAS ELECTRICAS I"
+    },
+    "professor": "MORALES BELTRAN, JUAN RAMON"
+  },
+  {
+    "data": {
       "schedule": "0900-0955",
       "days": ". . I . . .",
       "building": "DEDS",
       "classroom": "LC02",
       "nrc": "180299",
       "code": "IF904",
-      "students": 3,
+      "students": 4,
       "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
     },
     "professor": "ANGUIANO PIZANO, JUAN SIMON"
@@ -1034,7 +995,7 @@
       "classroom": "",
       "nrc": "163879",
       "code": "I7458",
-      "students": 11,
+      "students": 10,
       "course": "LABORATORIO DE SISTEMAS DE CONTROL SECUENCIAL"
     },
     "professor": "PEREZ RAMIREZ, JUAN ANGEL"
@@ -1086,7 +1047,7 @@
       "classroom": "LC01",
       "nrc": "153267",
       "code": "I7406",
-      "students": 16,
+      "students": 19,
       "course": "LIDERAZGO"
     },
     "professor": "AREVALO RODRIGUEZ, SALVADOR"
@@ -1099,7 +1060,7 @@
       "classroom": "LC03",
       "nrc": "175278",
       "code": "IF895",
-      "students": 13,
+      "students": 30,
       "course": "LOGISTICA DE APROVISIONAMIENTO"
     },
     "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
@@ -1112,7 +1073,7 @@
       "classroom": "LC01",
       "nrc": "180308",
       "code": "IF897",
-      "students": 11,
+      "students": 15,
       "course": "LOGISTICA DE LA PRODUCCION"
     },
     "professor": "DIAZ GONZALEZ, JOSE LUIS"
@@ -1125,7 +1086,7 @@
       "classroom": "LC03",
       "nrc": "188414",
       "code": "IF915",
-      "students": 9,
+      "students": 10,
       "course": "MACROECONOMIA"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -1138,7 +1099,7 @@
       "classroom": "LC03",
       "nrc": "188414",
       "code": "IF915",
-      "students": 9,
+      "students": 10,
       "course": "MACROECONOMIA"
     },
     "professor": "LOPEZ MOGUEL, MARIA DEL ROSARIO"
@@ -1223,6 +1184,32 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDS",
+      "classroom": "LC01",
+      "nrc": "159356",
+      "code": "I7376",
+      "students": 27,
+      "course": "PLANEACION Y CONTROL DE LA PRODUCCION I"
+    },
+    "professor": "ULLOA GODINEZ, HECTOR HUGO"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . I . . .",
+      "building": "DEDS",
+      "classroom": "LC01",
+      "nrc": "159356",
+      "code": "I7376",
+      "students": 27,
+      "course": "PLANEACION Y CONTROL DE LA PRODUCCION I"
+    },
+    "professor": "ULLOA GODINEZ, HECTOR HUGO"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDS",
@@ -1255,65 +1242,13 @@
       "classroom": "LC01",
       "nrc": "117471",
       "code": "I7377",
-      "students": 17,
+      "students": 18,
       "course": "PLANEACION Y CONTROL DE LA PRODUCCION II"
     },
     "professor": "DIAZ GONZALEZ, JOSE LUIS"
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . . V .",
-      "building": "DEDS",
-      "classroom": "LC03",
-      "nrc": "76954",
-      "code": "I6493",
-      "students": 34,
-      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
-      "schedule": "1000-1055",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "LC03",
-      "nrc": "76954",
-      "code": "I6493",
-      "students": 34,
-      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "76955",
-      "code": "I6493",
-      "students": 33,
-      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . I . . .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "76955",
-      "code": "I6493",
-      "students": 33,
-      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DEDS",
@@ -1334,32 +1269,6 @@
       "nrc": "76956",
       "code": "I6493",
       "students": 30,
-      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "145552",
-      "code": "I6493",
-      "students": 35,
-      "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
-    },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
-      "days": ". . . J . .",
-      "building": "DEDS",
-      "classroom": "LC01",
-      "nrc": "145552",
-      "code": "I6493",
-      "students": 35,
       "course": "PROBLEMAS SOCIOECONOMICOS Y POLITICOS DE MEXICO"
     },
     "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
@@ -1398,7 +1307,7 @@
       "classroom": "LC01",
       "nrc": "124760",
       "code": "I7384",
-      "students": 26,
+      "students": 27,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -1411,7 +1320,7 @@
       "classroom": "LC03",
       "nrc": "148002",
       "code": "I7384",
-      "students": 27,
+      "students": 28,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "HUERTA CHAVEZ, IRMA ALICIA"
@@ -1424,7 +1333,7 @@
       "classroom": "LC03",
       "nrc": "159361",
       "code": "I7384",
-      "students": 28,
+      "students": 30,
       "course": "SEMINARIO DE ADMINISTRACION DE LA CALIDAD"
     },
     "professor": "CAMACHO HERNANDEZ, HECTOR ALBERTO"
@@ -1437,7 +1346,7 @@
       "classroom": "LC03",
       "nrc": "153729",
       "code": "I7379",
-      "students": 23,
+      "students": 22,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -1450,7 +1359,7 @@
       "classroom": "LC03",
       "nrc": "153729",
       "code": "I7379",
-      "students": 23,
+      "students": 22,
       "course": "SEMINARIO DE INGENIERIA EN PRODUCCION Y MANUFACTURA"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -1476,7 +1385,7 @@
       "classroom": "LC03",
       "nrc": "190623",
       "code": "IF909",
-      "students": 0,
+      "students": 17,
       "course": "SEMINARIO DE LOGISTICA"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -1515,7 +1424,7 @@
       "classroom": "LC03",
       "nrc": "159367",
       "code": "I7389",
-      "students": 23,
+      "students": 24,
       "course": "SEMINARIO DE OPTIMIZACION"
     },
     "professor": "BRAMBILA LOZA, KARLA ELIZABETH"
@@ -1541,7 +1450,7 @@
       "classroom": "LC01",
       "nrc": "190628",
       "code": "IF910",
-      "students": 0,
+      "students": 19,
       "course": "SEMINARIO DE TRANSPORTE"
     },
     "professor": "GONZALEZ BRAVO, RAFAEL"
@@ -1554,7 +1463,7 @@
       "classroom": "LC01",
       "nrc": "153138",
       "code": "I7369",
-      "students": 9,
+      "students": 10,
       "course": "SEMINARIO DEL ESTUDIO DEL TRABAJO"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -1567,7 +1476,7 @@
       "classroom": "LC01",
       "nrc": "153138",
       "code": "I7369",
-      "students": 9,
+      "students": 10,
       "course": "SEMINARIO DEL ESTUDIO DEL TRABAJO"
     },
     "professor": "HUERTA NIETO, LUISA GRACIELA"
@@ -1580,7 +1489,7 @@
       "classroom": "LC03",
       "nrc": "159370",
       "code": "I7369",
-      "students": 24,
+      "students": 23,
       "course": "SEMINARIO DEL ESTUDIO DEL TRABAJO"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -1593,7 +1502,7 @@
       "classroom": "LC01",
       "nrc": "159370",
       "code": "I7369",
-      "students": 24,
+      "students": 23,
       "course": "SEMINARIO DEL ESTUDIO DEL TRABAJO"
     },
     "professor": "ARAUJO ACEVES, GREGORIO"
@@ -1613,16 +1522,42 @@
   },
   {
     "data": {
-      "schedule": "1200-1255",
+      "schedule": "1000-1055",
+      "days": ". . I . . .",
+      "building": "DEDS",
+      "classroom": "LC03",
+      "nrc": "170044",
+      "code": "IC576",
+      "students": 19,
+      "course": "TALLER DE EMPRENDIMIENTO"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDS",
+      "classroom": "LC01",
+      "nrc": "131799",
+      "code": "IC571",
+      "students": 18,
+      "course": "TALLER DE REDACCION TECNICA"
+    },
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
       "days": ". . . J . .",
       "building": "DEDS",
       "classroom": "LC01",
-      "nrc": "157916",
-      "code": "IC684",
-      "students": 33,
-      "course": "TALLER DE FORMACION INTEGRAL"
+      "nrc": "131799",
+      "code": "IC571",
+      "students": 18,
+      "course": "TALLER DE REDACCION TECNICA"
     },
-    "professor": "SALDAÑA CASTILLON, EMMANUEL PABLO"
+    "professor": "FLORES ARELLANO, FERNANDO JAVIER"
   },
   {
     "data": {

@@ -7,7 +7,7 @@
       "classroom": "",
       "nrc": "117634",
       "code": "I6153",
-      "students": 28,
+      "students": 27,
       "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
     },
     "professor": "GARCIA LEMUS, CUAUHTEMOC RAUL"
@@ -20,7 +20,7 @@
       "classroom": "",
       "nrc": "117635",
       "code": "I6153",
-      "students": 28,
+      "students": 27,
       "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
     },
     "professor": "MACIAS LAMAS, ADRIANA MACARIA"
@@ -33,7 +33,7 @@
       "classroom": "",
       "nrc": "170501",
       "code": "I6153",
-      "students": 28,
+      "students": 30,
       "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
     },
     "professor": "GONZALEZ CRUZ, ANDONY DAVID"
@@ -46,7 +46,7 @@
       "classroom": "",
       "nrc": "188397",
       "code": "I6153",
-      "students": 28,
+      "students": 27,
       "course": "ANALISIS DE FARMACOS Y MEDICAMENTOS"
     },
     "professor": "GONZALEZ CRUZ, ANDONY DAVID"
@@ -72,7 +72,7 @@
       "classroom": "A002",
       "nrc": "189496",
       "code": "IL637",
-      "students": 0,
+      "students": 3,
       "course": "BIOQUIMICA AVANZADA"
     },
     "professor": "PACHECO MOISES, FERMIN PAUL"
@@ -124,7 +124,7 @@
       "classroom": "A001",
       "nrc": "266466",
       "code": "IL644",
-      "students": 2,
+      "students": 3,
       "course": "ELECTROQUIMICA MODULAR I"
     },
     "professor": "CASILLAS SANTANA, NORBERTO"
@@ -137,7 +137,7 @@
       "classroom": "",
       "nrc": "158563",
       "code": "H0739",
-      "students": 0,
+      "students": 6,
       "course": "ESTRUCTURA Y CARACTERIZACION DE MATERIALES"
     },
     "professor": "SOTO GARCIA, VICTOR MANUEL"
@@ -150,7 +150,7 @@
       "classroom": "A002",
       "nrc": "189499",
       "code": "IL639",
-      "students": 2,
+      "students": 7,
       "course": "ESTRUCTURA Y PROPIEDADES DE LOS MATERIALES"
     },
     "professor": "CARBAJAL ARIZAGA, GREGORIO GUADALUPE"
@@ -163,10 +163,36 @@
       "classroom": "A001",
       "nrc": "189499",
       "code": "IL639",
-      "students": 2,
+      "students": 7,
       "course": "ESTRUCTURA Y PROPIEDADES DE LOS MATERIALES"
     },
     "professor": "CARBAJAL ARIZAGA, GREGORIO GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDY",
+      "classroom": "LQM03",
+      "nrc": "117542",
+      "code": "I7553",
+      "students": 13,
+      "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDY",
+      "classroom": "LQM03",
+      "nrc": "117542",
+      "code": "I7553",
+      "students": 13,
+      "course": "INTRODUCCION AL ANALISIS FISICOQUIMICO DE AGUAS"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
   },
   {
     "data": {
@@ -261,19 +287,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1155",
-      "days": "L . . . . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "79478",
-      "code": "I7486",
-      "students": 19,
-      "course": "LABORATORIO DE FISICOQUIMICA I"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
       "schedule": "1000-1255",
       "days": ". . . . V .",
       "building": "DEDY",
@@ -300,16 +313,16 @@
   },
   {
     "data": {
-      "schedule": "1300-1555",
-      "days": ". . . . V .",
+      "schedule": "0900-1155",
+      "days": "L . . . . .",
       "building": "DEDY",
       "classroom": "LQM02",
-      "nrc": "93076",
-      "code": "I7502",
-      "students": 20,
-      "course": "LABORATORIO DE FISICOQUIMICA II"
+      "nrc": "79478",
+      "code": "I7486",
+      "students": 19,
+      "course": "LABORATORIO DE FISICOQUIMICA I"
     },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
   },
   {
     "data": {
@@ -326,16 +339,29 @@
   },
   {
     "data": {
-      "schedule": "1700-1955",
-      "days": "L . . . . .",
+      "schedule": "1300-1555",
+      "days": ". . . . V .",
       "building": "DEDY",
-      "classroom": "",
-      "nrc": "79479",
-      "code": "I7486",
+      "classroom": "LQM02",
+      "nrc": "93076",
+      "code": "I7502",
       "students": 20,
-      "course": "LABORATORIO DE FISICOQUIMICA I"
+      "course": "LABORATORIO DE FISICOQUIMICA II"
     },
-    "professor": "MATA MUNGUIA, AIDE"
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "200184",
+      "code": "I7502",
+      "students": 5,
+      "course": "LABORATORIO DE FISICOQUIMICA II"
+    },
+    "professor": "MORAN SALAZAR, RENE GUADALUPE"
   },
   {
     "data": {
@@ -345,7 +371,7 @@
       "classroom": "LQM02",
       "nrc": "200181",
       "code": "I7486",
-      "students": 15,
+      "students": 14,
       "course": "LABORATORIO DE FISICOQUIMICA I"
     },
     "professor": "GONZALEZ CRUZ, RICARDO"
@@ -365,26 +391,13 @@
   },
   {
     "data": {
-      "schedule": "0900-1155",
-      "days": ". M . . . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "200184",
-      "code": "I7502",
-      "students": 2,
-      "course": "LABORATORIO DE FISICOQUIMICA II"
-    },
-    "professor": "MORAN SALAZAR, RENE GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1200-1455",
       "days": ". . . . . S",
       "building": "DEDY",
       "classroom": "LQM03",
       "nrc": "104257",
       "code": "I7511",
-      "students": 5,
+      "students": 20,
       "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "CASILLAS LOPEZ, ANGELA RAMONA"
@@ -397,7 +410,7 @@
       "classroom": "LQM03",
       "nrc": "104258",
       "code": "I7511",
-      "students": 5,
+      "students": 9,
       "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "GARCIA CASILLAS, LUIS ALBERTO"
@@ -410,7 +423,7 @@
       "classroom": "LQM05",
       "nrc": "117495",
       "code": "I7511",
-      "students": 4,
+      "students": 11,
       "course": "LABORATORIO DE INSTRUMENTACION QUIMICA ANALITICA I"
     },
     "professor": "GARCIA CASILLAS, LUIS ALBERTO"
@@ -436,7 +449,7 @@
       "classroom": "",
       "nrc": "136789",
       "code": "H0738",
-      "students": 0,
+      "students": 6,
       "course": "MATEMATICAS PARA MATERIALES"
     },
     "professor": "RUELAS LEPE, RUBEN"
@@ -475,7 +488,7 @@
       "classroom": "",
       "nrc": "103942",
       "code": "H0740",
-      "students": 0,
+      "students": 6,
       "course": "PROPIEDADES DE MATERIALES I"
     },
     "professor": "GONZALEZ ALBARRAN, MARCO AURELIO"
@@ -514,10 +527,23 @@
       "classroom": "LQM03",
       "nrc": "249884",
       "code": "I6130",
-      "students": 25,
+      "students": 24,
       "course": "QUIMICA ANALITICA II"
     },
     "professor": "GIL MARISCAL, LORENA ARACELI"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "A001",
+      "nrc": "266412",
+      "code": "V4204",
+      "students": 6,
+      "course": "QUIMICA BIOLOGICA AVANZADA"
+    },
+    "professor": "PACHECO MOISES, FERMIN PAUL"
   },
   {
     "data": {
@@ -527,7 +553,7 @@
       "classroom": "A002",
       "nrc": "189494",
       "code": "IL635",
-      "students": 1,
+      "students": 5,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "CORTES LLAMAS, SARA ANGELICA"
@@ -540,10 +566,23 @@
       "classroom": "A002",
       "nrc": "189494",
       "code": "IL635",
-      "students": 1,
+      "students": 5,
       "course": "QUIMICA INORGANICA"
     },
     "professor": "CORTES LLAMAS, SARA ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "266417",
+      "code": "V4213",
+      "students": 3,
+      "course": "SEMINARIO DE APLICACION  SOCIAL DEL CONOCIMIENTO"
+    },
+    "professor": "GONZALEZ ORTIZ, LUIS JAVIER"
   },
   {
     "data": {
@@ -553,10 +592,36 @@
       "classroom": "A002",
       "nrc": "249891",
       "code": "V4206",
-      "students": 4,
+      "students": 5,
       "course": "SEMINARIO DE AVANCE  DE PROYECTO DE INVESTIGACION  I"
     },
     "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . . . .",
+      "building": "DEDY",
+      "classroom": "A001",
+      "nrc": "104275",
+      "code": "I6983",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCE DE PROYECTO DE INVESTIGACION V"
+    },
+    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "A002",
+      "nrc": "06607",
+      "code": "F0305",
+      "students": 6,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
+    },
+    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
   },
   {
     "data": {
@@ -574,19 +639,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "A002",
-      "nrc": "06607",
-      "code": "F0305",
-      "students": 6,
-      "course": "SEMINARIO DE AVANCE DE TESIS III"
-    },
-    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDY",
       "classroom": "A002",
@@ -599,26 +651,13 @@
   },
   {
     "data": {
-      "schedule": "1200-1255",
-      "days": ". . . . V .",
-      "building": "DEDY",
-      "classroom": "A001",
-      "nrc": "137243",
-      "code": "I5950",
-      "students": 0,
-      "course": "SEMINARIO DEL MODULO DE CALCULO"
-    },
-    "professor": "MARQUEZ SOSA, SAUL RENE"
-  },
-  {
-    "data": {
       "schedule": "1100-1455",
       "days": ". . I . . .",
       "building": "DEDY",
       "classroom": "",
       "nrc": "164317",
       "code": "H0746",
-      "students": 0,
+      "students": 4,
       "course": "SEMINARIO DI"
     },
     "professor": "SANTANA ARANDA, MIGUEL ANGEL"
@@ -670,7 +709,7 @@
       "classroom": "",
       "nrc": "17949",
       "code": "H0742",
-      "students": 0,
+      "students": 6,
       "course": "SEMINARIO I"
     },
     "professor": "CHAVEZ AGUILAR, JORGE MANUEL"
@@ -709,7 +748,7 @@
       "classroom": "",
       "nrc": "08374",
       "code": "H0744",
-      "students": 6,
+      "students": 7,
       "course": "SEMINARIO III"
     },
     "professor": "BRAVO BARCENAS, DAVID ISRAEL"
@@ -748,7 +787,7 @@
       "classroom": "",
       "nrc": "137200",
       "code": "I6166",
-      "students": 10,
+      "students": 12,
       "course": "TECNOLOGIA FARMACEUTICA I"
     },
     "professor": "SANCHEZ REYES, JULIAN ALFREDO"
@@ -761,7 +800,7 @@
       "classroom": "",
       "nrc": "103788",
       "code": "I6167",
-      "students": 25,
+      "students": 26,
       "course": "TECNOLOGIA FARMACEUTICA II"
     },
     "professor": "GUEVARA MARTINEZ, SANTIAGO JOSE"
@@ -774,7 +813,7 @@
       "classroom": "",
       "nrc": "202056",
       "code": "I6167",
-      "students": 14,
+      "students": 13,
       "course": "TECNOLOGIA FARMACEUTICA II"
     },
     "professor": "AVALOS SALGADO, FELIPE ALEXIS"
@@ -787,7 +826,7 @@
       "classroom": "",
       "nrc": "250372",
       "code": "I6167",
-      "students": 25,
+      "students": 30,
       "course": "TECNOLOGIA FARMACEUTICA II"
     },
     "professor": "ANAYA DAVALOS, ADRIANA"
@@ -808,12 +847,25 @@
   {
     "data": {
       "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDY",
+      "classroom": "A001",
+      "nrc": "266416",
+      "code": "V4243",
+      "students": 1,
+      "course": "TEMAS  SELECTOS EN BIOQUIMICA"
+    },
+    "professor": "CORDOVA LOPEZ, JESUS ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDY",
       "classroom": "A002",
       "nrc": "197422",
       "code": "IL666",
-      "students": 0,
+      "students": 3,
       "course": "TEMAS SELECTOS EN FISICOQUIMICA I"
     },
     "professor": "ZUÑIGA GUTIERREZ, BERNARDO ANTONIO"
@@ -826,10 +878,23 @@
       "classroom": "A002",
       "nrc": "197422",
       "code": "IL666",
-      "students": 0,
+      "students": 3,
       "course": "TEMAS SELECTOS EN FISICOQUIMICA I"
     },
     "professor": "ZUÑIGA GUTIERREZ, BERNARDO ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "266413",
+      "code": "V4238",
+      "students": 2,
+      "course": "TEMAS SELECTOS EN FISICOQUIMICA"
+    },
+    "professor": "DIAMANTI, AIKATERINI"
   },
   {
     "data": {
@@ -839,10 +904,23 @@
       "classroom": "A002",
       "nrc": "209802",
       "code": "IL658",
-      "students": 0,
+      "students": 1,
       "course": "TEMAS SELECTOS EN QUIMICA ORGANICA I"
     },
     "professor": "MANRIQUEZ GONZALEZ, RICARDO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "A001",
+      "nrc": "252702",
+      "code": "V4237",
+      "students": 1,
+      "course": "TEMAS SELECTOS EN QUIMICA TEORICA"
+    },
+    "professor": "FLORES MORENO, ROBERTO"
   },
   {
     "data": {
@@ -875,26 +953,13 @@
       "schedule": "0900-1055",
       "days": "L . I . . .",
       "building": "DEDY",
-      "classroom": "",
+      "classroom": "A001",
       "nrc": "236201",
       "code": "V4202",
-      "students": 0,
+      "students": 2,
       "course": "TERMODINAMICA QUMICA AVANZADA"
     },
-    "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1200-1255",
-      "days": ". M . . . .",
-      "building": "DEDY",
-      "classroom": "A001",
-      "nrc": "144537",
-      "code": "I5979",
-      "students": 2,
-      "course": "TOPICOS SELECTOS DE OPTIMIZACION"
-    },
-    "professor": "PALAFOX GONZALEZ, ABEL"
+    "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
   },
   {
     "data": {

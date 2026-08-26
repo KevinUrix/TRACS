@@ -33,7 +33,7 @@
       "classroom": "LE04",
       "nrc": "43413",
       "code": "I7274",
-      "students": 20,
+      "students": 22,
       "course": "AUTOMATIZACION"
     },
     "professor": "MATEOS ORTEGA, HECTOR"
@@ -72,7 +72,7 @@
       "classroom": "LE05",
       "nrc": "43417",
       "code": "I7274",
-      "students": 20,
+      "students": 19,
       "course": "AUTOMATIZACION"
     },
     "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -111,7 +111,7 @@
       "classroom": "LE05",
       "nrc": "262074",
       "code": "V3692",
-      "students": 23,
+      "students": 22,
       "course": "CIRCUITOS INTEGRADOS"
     },
     "professor": "BARBA TOSCANO, OSCAR FRANCISCO"
@@ -137,7 +137,7 @@
       "classroom": "LE01",
       "nrc": "171768",
       "code": "I7262",
-      "students": 17,
+      "students": 16,
       "course": "DISEÑO DE INTERFACES"
     },
     "professor": "ESTRADA MARMOLEJO, RUBEN"
@@ -176,7 +176,7 @@
       "classroom": "LE06",
       "nrc": "82694",
       "code": "I7598",
-      "students": 3,
+      "students": 7,
       "course": "DISPOSITIVOS ELECTRONICOS"
     },
     "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -189,7 +189,7 @@
       "classroom": "LE01",
       "nrc": "125035",
       "code": "I7598",
-      "students": 5,
+      "students": 6,
       "course": "DISPOSITIVOS ELECTRONICOS"
     },
     "professor": "VILLEGAS GONZALEZ, JOSE MARTIN"
@@ -215,7 +215,7 @@
       "classroom": "LE01",
       "nrc": "209575",
       "code": "IN228",
-      "students": 6,
+      "students": 12,
       "course": "ELECTRONICA ANALOGICA"
     },
     "professor": "AGUIRRE RODRIGUEZ, NAHUM JUDA"
@@ -228,7 +228,7 @@
       "classroom": "LE02",
       "nrc": "249806",
       "code": "IN228",
-      "students": 15,
+      "students": 18,
       "course": "ELECTRONICA ANALOGICA"
     },
     "professor": "AGUIRRE RODRIGUEZ, NAHUM JUDA"
@@ -293,7 +293,7 @@
       "classroom": "LE05",
       "nrc": "262096",
       "code": "V3650",
-      "students": 20,
+      "students": 18,
       "course": "ELECTRONICA DE POTENCIA"
     },
     "professor": "MATEOS ORTEGA, HECTOR"
@@ -306,7 +306,7 @@
       "classroom": "LE02",
       "nrc": "266490",
       "code": "V3650",
-      "students": 1,
+      "students": 22,
       "course": "ELECTRONICA DE POTENCIA"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -319,7 +319,7 @@
       "classroom": "LE03",
       "nrc": "225759",
       "code": "V3929",
-      "students": 20,
+      "students": 19,
       "course": "ELECTRONICA DIGITAL"
     },
     "professor": "HERNANDEZ HERNANDEZ, HECTOR"
@@ -332,7 +332,7 @@
       "classroom": "LE03",
       "nrc": "225763",
       "code": "V3929",
-      "students": 20,
+      "students": 22,
       "course": "ELECTRONICA DIGITAL"
     },
     "professor": "RIOS SALCEDO, SERGIO ARTURO"
@@ -345,7 +345,7 @@
       "classroom": "LE03",
       "nrc": "225764",
       "code": "V3929",
-      "students": 20,
+      "students": 19,
       "course": "ELECTRONICA DIGITAL"
     },
     "professor": "CORDOVA SOLTERO, HECTOR JAVIER"
@@ -371,7 +371,7 @@
       "classroom": "LE05",
       "nrc": "262281",
       "code": "V3930",
-      "students": 20,
+      "students": 21,
       "course": "FUNDAMENTOS DE COMUNICACIONES ELECTRONICAS"
     },
     "professor": "RUIZ PALACIOS, MARIA SUSANA"
@@ -456,13 +456,13 @@
   },
   {
     "data": {
-      "schedule": "0800-1255",
+      "schedule": "0800-1155",
       "days": ". . . . . S",
       "building": "DEDN",
       "classroom": "LE06",
       "nrc": "223427",
       "code": "V3690",
-      "students": 16,
+      "students": 26,
       "course": "FUNDAMENTOS DE ELECTRONICA"
     },
     "professor": "PACHECO PADILLA, LUIS MANUEL"
@@ -527,7 +527,7 @@
       "classroom": "LE02",
       "nrc": "252683",
       "code": "V3690",
-      "students": 20,
+      "students": 21,
       "course": "FUNDAMENTOS DE ELECTRONICA"
     },
     "professor": "GALAVIZ LUGO, FLOR ANEL"
@@ -553,7 +553,7 @@
       "classroom": "LE02",
       "nrc": "252685",
       "code": "V3690",
-      "students": 20,
+      "students": 21,
       "course": "FUNDAMENTOS DE ELECTRONICA"
     },
     "professor": "CHAVEZ MARTINEZ, EHECATL JOEL"
@@ -683,7 +683,7 @@
       "classroom": "LHI02",
       "nrc": "159496",
       "code": "IC610",
-      "students": 15,
+      "students": 16,
       "course": "LABORATORIO DE HIDRAULICA II"
     },
     "professor": "MARQUEZ GUTIERREZ, MANUEL"
@@ -748,7 +748,7 @@
       "classroom": "LHI02",
       "nrc": "159501",
       "code": "IC610",
-      "students": 13,
+      "students": 14,
       "course": "LABORATORIO DE HIDRAULICA II"
     },
     "professor": "MARQUEZ SOTO, ABEL"
@@ -774,7 +774,7 @@
       "classroom": "LHI02",
       "nrc": "159503",
       "code": "IC610",
-      "students": 15,
+      "students": 16,
       "course": "LABORATORIO DE HIDRAULICA II"
     },
     "professor": "MARTINEZ ZARATE, NASHIELI"
@@ -865,7 +865,7 @@
       "classroom": "LHI03",
       "nrc": "183129",
       "code": "IC617",
-      "students": 11,
+      "students": 12,
       "course": "LABORATORIO DE HIDRAULICA III"
     },
     "professor": "CEJA VILLANUEVA, ARACELI"
@@ -917,7 +917,7 @@
       "classroom": "",
       "nrc": "104501",
       "code": "I7450",
-      "students": 20,
+      "students": 21,
       "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
     },
     "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
@@ -956,7 +956,7 @@
       "classroom": "",
       "nrc": "104504",
       "code": "I7450",
-      "students": 18,
+      "students": 19,
       "course": "LABORATORIO DE MAQUINAS HIDRAULICA"
     },
     "professor": "MARQUEZ SOTO, ABEL"
@@ -1008,7 +1008,7 @@
       "classroom": "",
       "nrc": "77348",
       "code": "I7445",
-      "students": 20,
+      "students": 21,
       "course": "LABORATORIO DE MECANICA DE FLUIDOS"
     },
     "professor": "MARQUEZ SOTO, ABEL"
@@ -1089,7 +1089,20 @@
       "students": 18,
       "course": "LABORATORIO DE MECANICA DE FLUIDOS"
     },
-    "professor": "ZAMORA QUINTANA, LAURA ANGELICA"
+    "professor": "GUERRERO JIMENEZ, JUAN PABLO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE05",
+      "nrc": "153236",
+      "code": "IB151",
+      "students": 12,
+      "course": "OPTICA ELECTROMAGNETICA"
+    },
+    "professor": "SANTIAGO HERNANDEZ, ALBERTO"
   },
   {
     "data": {
@@ -1099,7 +1112,7 @@
       "classroom": "LE04",
       "nrc": "164965",
       "code": "IB154",
-      "students": 10,
+      "students": 11,
       "course": "OPTOELECTRONICA"
     },
     "professor": "FLORES NUÑEZ, JORGE LUIS"
@@ -1112,10 +1125,23 @@
       "classroom": "LE03",
       "nrc": "262198",
       "code": "V3736",
-      "students": 10,
+      "students": 14,
       "course": "OPTOELECTRONICA"
     },
     "professor": "QUIROGA ROJAS, JOSE VLADIMIR"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE03",
+      "nrc": "43397",
+      "code": "I7266",
+      "students": 18,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
   },
   {
     "data": {
@@ -1125,7 +1151,7 @@
       "classroom": "LE06",
       "nrc": "122802",
       "code": "I7288",
-      "students": 18,
+      "students": 17,
       "course": "PROTOCOLOS DE COMUNICACIONES"
     },
     "professor": "MONTIEL MENA, RICARDO"
@@ -1138,7 +1164,7 @@
       "classroom": "LE03",
       "nrc": "160224",
       "code": "IB156",
-      "students": 18,
+      "students": 16,
       "course": "RADIOMETRIA"
     },
     "professor": "BRAVO MEDINA, MANUEL SALVADOR BEETHOVEN"
@@ -1155,19 +1181,6 @@
       "course": "REDES PARA CIRCUITOS ELECTRONICOS"
     },
     "professor": "LANDA HORTA, DANIEL OMAR"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . J . .",
-      "building": "DEDN",
-      "classroom": "LE03",
-      "nrc": "225775",
-      "code": "V3732",
-      "students": 30,
-      "course": "REDES PARA CIRCUITOS ELECTRONICOS"
-    },
-    "professor": "CARRILLO DIAZ, RAUL"
   },
   {
     "data": {
@@ -1216,7 +1229,7 @@
       "classroom": "LE05",
       "nrc": "43433",
       "code": "I7275",
-      "students": 20,
+      "students": 17,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "MATEOS ORTEGA, HECTOR"
@@ -1229,7 +1242,7 @@
       "classroom": "LE05",
       "nrc": "43420",
       "code": "I7275",
-      "students": 3,
+      "students": 2,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "GOMEZ MORALES, LEOBARDO"
@@ -1242,7 +1255,7 @@
       "classroom": "LE05",
       "nrc": "43427",
       "code": "I7275",
-      "students": 16,
+      "students": 18,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "MATEOS ORTEGA, HECTOR"
@@ -1255,36 +1268,10 @@
       "classroom": "LE05",
       "nrc": "43418",
       "code": "I7275",
-      "students": 17,
+      "students": 18,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "MATEOS ORTEGA, HECTOR"
-  },
-  {
-    "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . V .",
-      "building": "DEDN",
-      "classroom": "LE01",
-      "nrc": "154171",
-      "code": "I7290",
-      "students": 20,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
-    },
-    "professor": "PACHECO PADILLA, LUIS MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDN",
-      "classroom": "LE04",
-      "nrc": "43425",
-      "code": "I7275",
-      "students": 20,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
-    },
-    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
   },
   {
     "data": {
@@ -1301,13 +1288,26 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "43425",
+      "code": "I7275",
+      "students": 20,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
+    },
+    "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . I . . .",
       "building": "DEDN",
       "classroom": "LE01",
       "nrc": "154485",
       "code": "I7290",
-      "students": 11,
+      "students": 10,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SISTEMAS DE COMUNICACIONES I"
     },
     "professor": "OCAMPO ARELLANO, OCTAVIO"
@@ -1333,7 +1333,7 @@
       "classroom": "LE04",
       "nrc": "78968",
       "code": "I7273",
-      "students": 7,
+      "students": 11,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "CASILLAS DE LA TORRE, SERGIO"
@@ -1346,7 +1346,7 @@
       "classroom": "LE03",
       "nrc": "194964",
       "code": "I7273",
-      "students": 13,
+      "students": 14,
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
     },
     "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
@@ -1372,7 +1372,7 @@
       "classroom": "LE02",
       "nrc": "166376",
       "code": "I7291",
-      "students": 15,
+      "students": 14,
       "course": "SISTEMAS DE COMUNICACIONES II"
     },
     "professor": "CARRASCO ALVAREZ, ROBERTO"
@@ -1385,22 +1385,9 @@
       "classroom": "LE05",
       "nrc": "194957",
       "code": "IL363",
-      "students": 18,
+      "students": 17,
       "course": "SISTEMAS DIGITALES"
     },
     "professor": "HIGASHI MINAMI, SERGIO RAMON ITSUO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDN",
-      "classroom": "LE02",
-      "nrc": "206129",
-      "code": "ET414",
-      "students": 0,
-      "course": "TOPICOS SELECTOS EN SISTEMAS DIGITALES"
-    },
-    "professor": "CERON RAMIREZ, FRANCISCO JAVIER"
   }
 ]

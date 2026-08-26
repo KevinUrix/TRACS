@@ -1,32 +1,6 @@
 [
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "153715",
-      "code": "I7370",
-      "students": 40,
-      "course": "ADMINISTRACION"
-    },
-    "professor": "HUERTA NIETO, LUISA GRACIELA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "153715",
-      "code": "I7370",
-      "students": 40,
-      "course": "ADMINISTRACION"
-    },
-    "professor": "HUERTA NIETO, LUISA GRACIELA"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDJ",
@@ -46,7 +20,7 @@
       "classroom": "A001",
       "nrc": "57559",
       "code": "I3294",
-      "students": 26,
+      "students": 27,
       "course": "ANALISIS DE ALIMENTOS"
     },
     "professor": "TREJO PEREA, NESTOR ALFREDO"
@@ -59,7 +33,7 @@
       "classroom": "A001",
       "nrc": "57559",
       "code": "I3294",
-      "students": 26,
+      "students": 27,
       "course": "ANALISIS DE ALIMENTOS"
     },
     "professor": "TREJO PEREA, NESTOR ALFREDO"
@@ -85,7 +59,7 @@
       "classroom": "A001",
       "nrc": "38448",
       "code": "I3301",
-      "students": 25,
+      "students": 27,
       "course": "FISICOQUIMICA DE LOS ALIMENTOS"
     },
     "professor": "ESCOBAR HERNANDEZ, DANIEL"
@@ -111,7 +85,7 @@
       "classroom": "A001",
       "nrc": "127742",
       "code": "I6131",
-      "students": 27,
+      "students": 32,
       "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
     },
     "professor": "CORTES ORTEGA, JORGE ALBERTO"
@@ -124,7 +98,7 @@
       "classroom": "A001",
       "nrc": "127742",
       "code": "I6131",
-      "students": 27,
+      "students": 32,
       "course": "FISICOQUIMICA II PARA FARMACEUTICOS"
     },
     "professor": "CORTES ORTEGA, JORGE ALBERTO"
@@ -150,7 +124,7 @@
       "classroom": "A001",
       "nrc": "42385",
       "code": "I5812",
-      "students": 25,
+      "students": 26,
       "course": "FISICOQUIMICA PARA INGENIEROS I"
     },
     "professor": "CORTES ORTEGA, JORGE ALBERTO"
@@ -176,7 +150,7 @@
       "classroom": "",
       "nrc": "43728",
       "code": "I6924",
-      "students": 16,
+      "students": 15,
       "course": "LABORATORIO DE QUIMICA GENERAL II"
     },
     "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
@@ -222,7 +196,7 @@
   },
   {
     "data": {
-      "schedule": "0955-1155",
+      "schedule": "0900-1155",
       "days": ". . I . . .",
       "building": "DEDJ",
       "classroom": "LQM02",
@@ -436,7 +410,7 @@
       "classroom": "A001",
       "nrc": "42591",
       "code": "I5803",
-      "students": 15,
+      "students": 16,
       "course": "QUIMICA GENERAL I"
     },
     "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
@@ -505,18 +479,5 @@
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDJ",
-      "classroom": "A001",
-      "nrc": "43754",
-      "code": "I7487",
-      "students": 0,
-      "course": "SEMINARIO DE INDUCCION"
-    },
-    "professor": "GOMEZ MARQUEZ, CAROLINA ELIZABETH"
   }
 ]

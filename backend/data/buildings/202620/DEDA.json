@@ -20,7 +20,7 @@
       "classroom": "SPB01",
       "nrc": "205093",
       "code": "V0456",
-      "students": 3,
+      "students": 6,
       "course": "BIOMATERIALES FUNCIONALES AVANZADOS"
     },
     "professor": "TORRES RENDON, JOSE GUILLERMO"
@@ -92,19 +92,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1259",
-      "days": ". . . . V .",
-      "building": "DEDA",
-      "classroom": "SPB-02",
-      "nrc": "199566",
-      "code": "V0468",
-      "students": 6,
-      "course": "SEMINARIO DE AVANCE DE TESIS I"
-    },
-    "professor": "TORRES RENDON, JOSE GUILLERMO"
-  },
-  {
-    "data": {
       "schedule": "0900-1059",
       "days": ". . . J . .",
       "building": "DEDA",
@@ -115,6 +102,19 @@
       "course": "SEMINARIO DE AVANCE DE TESIS II"
     },
     "professor": "GARCIA ENRIQUEZ, SALVADOR"
+  },
+  {
+    "data": {
+      "schedule": "1100-1259",
+      "days": ". . . . V .",
+      "building": "DEDA",
+      "classroom": "SPB-02",
+      "nrc": "199566",
+      "code": "V0468",
+      "students": 6,
+      "course": "SEMINARIO DE AVANCE DE TESIS I"
+    },
+    "professor": "TORRES RENDON, JOSE GUILLERMO"
   },
   {
     "data": {
@@ -157,13 +157,13 @@
   },
   {
     "data": {
-      "schedule": "1100-1259",
-      "days": "L . . . . .",
+      "schedule": "1300-1459",
+      "days": ". . . . V .",
       "building": "DEDA",
       "classroom": "SPB-02",
       "nrc": "199568",
       "code": "V0465",
-      "students": 0,
+      "students": 4,
       "course": "TOPICOS SELECTOS EN CIENCIA Y TECNOLOGIA DE BIOMATERIALES LIGNOCELULOSICOS SUSTENTABLES"
     },
     "professor": "SILVA GUZMAN, JOSE ANTONIO"

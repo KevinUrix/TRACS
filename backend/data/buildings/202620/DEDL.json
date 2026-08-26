@@ -20,7 +20,7 @@
       "classroom": "LC01",
       "nrc": "43825",
       "code": "I7429",
-      "students": 12,
+      "students": 13,
       "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
     },
     "professor": "NARANJO LOPEZ, JULIO"
@@ -80,13 +80,26 @@
   {
     "data": {
       "schedule": "1300-1455",
-      "days": ". . . J . .",
+      "days": ". . I . . .",
       "building": "DEDL",
       "classroom": "",
-      "nrc": "160083",
-      "code": "I7429",
-      "students": 17,
-      "course": "DIBUJO INDUSTRIAL ASISTIDO POR COMPUTADORA"
+      "nrc": "104511",
+      "code": "I7442",
+      "students": 16,
+      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
+    },
+    "professor": "AGUILAR ROSALES, JOEL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": "L . . . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104511",
+      "code": "I7442",
+      "students": 16,
+      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
     },
     "professor": "AGUILAR ROSALES, JOEL"
   },
@@ -102,6 +115,19 @@
       "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
     },
     "professor": "CARRILLO CASTILLO, JOSE NIEVES"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "119766",
+      "code": "I7442",
+      "students": 17,
+      "course": "DISEÑO DE ELEMENTOS DE MAQUINAS"
+    },
+    "professor": "AGUILAR ROSALES, JOEL"
   },
   {
     "data": {
@@ -124,10 +150,23 @@
       "classroom": "LC01",
       "nrc": "142333",
       "code": "I7568",
-      "students": 17,
+      "students": 19,
       "course": "DISEÑO Y MANUFACTURA CAD-CAM"
     },
     "professor": "RUELAS LEPE, RUBEN"
+  },
+  {
+    "data": {
+      "schedule": "1200-1455",
+      "days": ". . I . . .",
+      "building": "DEDL",
+      "classroom": "LM07",
+      "nrc": "171784",
+      "code": "IC606",
+      "students": 25,
+      "course": "INTRODUCCION A LAS INSTALACIONES ELECTRICAS"
+    },
+    "professor": "MARQUEZ SOTO, MANUEL ALEJANDRO"
   },
   {
     "data": {
@@ -137,7 +176,7 @@
       "classroom": "EM03",
       "nrc": "165965",
       "code": "IC615",
-      "students": 9,
+      "students": 10,
       "course": "LABORATORIO DE CONCRETO"
     },
     "professor": "ROSAS TORRES, MARTHA LETICIA"
@@ -163,7 +202,7 @@
       "classroom": "EM03",
       "nrc": "166494",
       "code": "IC615",
-      "students": 15,
+      "students": 16,
       "course": "LABORATORIO DE CONCRETO"
     },
     "professor": "GALLARDO SANCHEZ, MANUEL ALBERTO"
@@ -353,19 +392,6 @@
   {
     "data": {
       "schedule": "0700-0955",
-      "days": "L . . . . .",
-      "building": "DEDL",
-      "classroom": "LM01",
-      "nrc": "88556",
-      "code": "I7383",
-      "students": 10,
-      "course": "LABORATORIO DE METROLOGIA"
-    },
-    "professor": "AVALOS VERGARA, FERNANDO DANIEL"
-  },
-  {
-    "data": {
-      "schedule": "0700-0955",
       "days": ". . . . . S",
       "building": "DEDL",
       "classroom": "LM02",
@@ -423,7 +449,7 @@
       "classroom": "EM04",
       "nrc": "171985",
       "code": "IC619",
-      "students": 15,
+      "students": 16,
       "course": "LABORATORIO DE PAVIMENTOS"
     },
     "professor": "GOMEZ TORRES, HECTOR GUILLERMO"
@@ -436,7 +462,7 @@
       "classroom": "EM04",
       "nrc": "171986",
       "code": "IC619",
-      "students": 15,
+      "students": 17,
       "course": "LABORATORIO DE PAVIMENTOS"
     },
     "professor": "MARTINEZ ZARATE, NASHIELI"
@@ -449,7 +475,7 @@
       "classroom": "EM04",
       "nrc": "171987",
       "code": "IC619",
-      "students": 15,
+      "students": 17,
       "course": "LABORATORIO DE PAVIMENTOS"
     },
     "professor": "SILVA GONZALEZ, JOSE ALFREDO"
@@ -479,19 +505,6 @@
       "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
     },
     "professor": "MIRANDA PANDURO, CESAR RAUL"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDL",
-      "classroom": "",
-      "nrc": "104516",
-      "code": "I7451",
-      "students": 0,
-      "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
-    },
-    "professor": "MEDINA ALVARADO, ELVIRA"
   },
   {
     "data": {
@@ -553,7 +566,7 @@
       "classroom": "",
       "nrc": "104521",
       "code": "I7451",
-      "students": 17,
+      "students": 18,
       "course": "LABORATORIO DE PROCESOS DE MANUFACTURA"
     },
     "professor": "ACEVES BOJORQUEZ, RAUL"
@@ -657,7 +670,7 @@
       "classroom": "EM01",
       "nrc": "152648",
       "code": "IC592",
-      "students": 14,
+      "students": 15,
       "course": "LABORATORIO DE SUELOS I"
     },
     "professor": "VAZQUEZ ORTIZ, CARLOS ALEJANDRO"
@@ -735,7 +748,7 @@
       "classroom": "EM02",
       "nrc": "159510",
       "code": "IC595",
-      "students": 15,
+      "students": 16,
       "course": "LABORATORIO DE SUELOS II"
     },
     "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
@@ -748,7 +761,7 @@
       "classroom": "EM02",
       "nrc": "159511",
       "code": "IC595",
-      "students": 15,
+      "students": 16,
       "course": "LABORATORIO DE SUELOS II"
     },
     "professor": "RAMOS IGLESIAS, JESUS DE JESUS"
@@ -787,10 +800,49 @@
       "classroom": "LM02",
       "nrc": "136375",
       "code": "I7563",
-      "students": 15,
+      "students": 16,
       "course": "MANUFACTURA AVANZADA"
     },
     "professor": "LOPEZ ARAMBURO, LORENA"
+  },
+  {
+    "data": {
+      "schedule": "0700-0955",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "126137",
+      "code": "I7454",
+      "students": 20,
+      "course": "MAQUINAS TERMICAS II"
+    },
+    "professor": "FIGUEROA VELARDE, VALERIA"
+  },
+  {
+    "data": {
+      "schedule": "1000-1255",
+      "days": ". . . J . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104536",
+      "code": "I7453",
+      "students": 25,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "RODRIGUEZ DE ANDA, EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDL",
+      "classroom": "",
+      "nrc": "104536",
+      "code": "I7453",
+      "students": 25,
+      "course": "PROCESOS DE MANUFACTURA"
+    },
+    "professor": "RODRIGUEZ DE ANDA, EDUARDO"
   },
   {
     "data": {
@@ -800,7 +852,7 @@
       "classroom": "",
       "nrc": "136378",
       "code": "I7566",
-      "students": 5,
+      "students": 7,
       "course": "ROBOTICA INDUSTRIAL"
     },
     "professor": "HERNANDEZ DE LEON, JOSE ESTEBAN"

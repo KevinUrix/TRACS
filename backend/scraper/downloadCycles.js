@@ -20,7 +20,7 @@ const saveCyclesToFile = async (outputDir = path.join(__dirname, '../data'), fil
     }
 
     fs.writeFileSync(filePath, JSON.stringify(cycles, null, 2), 'utf-8');
-    console.log(`Ciclos guardados en: ${filePath}`);
+    console.log(`Ciclos descargados y guardados en cache`);
     await cache.set('cycles', cycles);
     return { success: true };
   } catch (err) {

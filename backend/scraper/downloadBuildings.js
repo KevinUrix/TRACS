@@ -1,4 +1,5 @@
 const { scrapeData } = require('./schedules');
+const cache = require('../scraper/cache');
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
@@ -77,13 +78,18 @@ const saveAllToFiles = async (cycle, outputDirBase = path.join(__dirname, '../da
 
         const filePath = path.join(outputDir, `${buildingName}.json`);
         fs.writeFileSync(filePath, JSON.stringify(actualData, null, 2), 'utf-8');
-        console.log(`Guardado individual: ${filePath}`);
+        console.log(`Guardado individual de ${buildingName}`);
 
       } catch (err) {
         console.error(`Error procesando el archivo para ${buildingName}:`, err.message);
         resultSummary.failed.push({ building: buildingName, error: err.message });
       }
     }
+
+    const cacheKey = `local-schedule-all-${cycle}`;
+
+    await cache.set(cacheKey, fullPackage, 14400); // Guardamos por 4 horas
+    console.log(`Horarios descargados y guardados en cache.`);
 
     return resultSummary;
 

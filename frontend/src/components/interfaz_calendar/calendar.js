@@ -1,5 +1,5 @@
 import { getDecodedToken } from '../../utils/auth';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
@@ -27,6 +27,55 @@ export default function Calendar() {
   const today = new Date();
   const decoded = getDecodedToken();
   const user = decoded?.username ?? null;
+
+  /* ---------- LÓGICA DE EMPALMES DEL PROFESOR ---------- */
+  const professorSchedulesThisDay = useMemo(() => {
+    if (!fullSchedule || Object.keys(fullSchedule).length === 0) return new Map();
+    
+    const profMap = new Map();
+    
+    Object.values(fullSchedule).flat().forEach(c => {
+      if (!c || !c.data || !c.data.days || !c.professor || c.professor === 'Desconocido' || c.professor === '') return;
+      
+      if (c.data.days.split(' ').includes(selectedDay)) {
+        if (!profMap.has(c.professor)) {
+          profMap.set(c.professor, []);
+        }
+        profMap.get(c.professor).push(c);
+      }
+    });
+    
+    return profMap;
+  }, [fullSchedule, selectedDay]);
+
+  const getProfessorOverlaps = (courseToVerify) => {
+    if (!courseToVerify || !courseToVerify.professor || courseToVerify.professor === 'Desconocido' || courseToVerify.professor === '') return [];
+    
+    const [start, end] = courseToVerify.data.schedule.split('-');
+    const cSH = parseInt(start.substring(0, 2), 10);
+    const cEH = parseInt(end.substring(0, 2), 10);
+
+    const overlapsMap = new Map();
+    const profCourses = professorSchedulesThisDay.get(courseToVerify.professor) || [];
+
+    profCourses.forEach(otherC => {
+      if (otherC.data.building === courseToVerify.data.building && 
+          otherC.data.classroom === courseToVerify.data.classroom) {
+        return;
+      }
+
+      const [otherStart, otherEnd] = otherC.data.schedule.split('-');
+      const oSH = parseInt(otherStart.substring(0, 2), 10);
+      const oEH = parseInt(otherEnd.substring(0, 2), 10);
+      
+      if (cSH <= oEH && cEH >= oSH) {
+        const uniqueKey = `${otherC.data.building}-${otherC.data.classroom}-${otherC.data.nrc}`;
+        overlapsMap.set(uniqueKey, otherC);
+      }
+    });
+
+    return Array.from(overlapsMap.values());
+  };
 
   /* ---------- LIMPIAR COLORES ---------- */
   useEffect(() => {
@@ -419,7 +468,6 @@ export default function Calendar() {
                     );
                   })}
                   <tr key="total-row">
-                    <td className="table-cell font-bold" title='Número total de alumnos multiplicado por las horas de sus clases. No representa alumnos únicos.'>Total por día</td>
                     {buildings.map((building, index) => {
                       const scheduleForBuilding = fullSchedule[building.value] || [];
                       const seen = new Set();
@@ -518,7 +566,6 @@ export default function Calendar() {
                           );
                         });
 
-                        // Buscar reservas que aplican a esta hora (sin clases)
                         const matchingReservation = !hasClassThisHour ? reservations.find(res => {
                           const [startTime, endTime] = res.schedule.split('-');
                           const startHour = parseInt(startTime.substring(0, 2), 10);
@@ -571,8 +618,21 @@ export default function Calendar() {
                           }
                         }
 
-                        const isOverlap = matchingCourses.length > 1;
+                        const isRoomOverlap = matchingCourses.length > 1;
                         const matchingCourse = matchingCourses.length > 0 ? matchingCourses[0] : null;
+
+                        let cellHasProfOverlap = false;
+                        const profOverlapsMap = new Map();
+
+                        matchingCourses.forEach(c => {
+                          const overlaps = getProfessorOverlaps(c);
+                          if (overlaps.length > 0) {
+                            cellHasProfOverlap = true;
+                            profOverlapsMap.set(c.data.nrc, overlaps);
+                          }
+                        });
+
+                        const isAnyOverlap = isRoomOverlap || cellHasProfOverlap;
                         
                         /* --------------- Coloreado de celdas ---------------- */
                         const forbiddenHueRanges = [
@@ -583,7 +643,7 @@ export default function Calendar() {
                         const goldenAngle = 137.508;
                         let hue = 0;
 
-                        if (matchingCourse && !isOverlap) {
+                        if (matchingCourse && !isAnyOverlap) {
                           const key = `${matchingCourse?.data?.course}|${matchingCourse?.professor}|${matchingCourse?.data?.nrc}|${matchingCourse?.data?.classroom}`;
 
                           if (cellColorMapRef.current[key]) {
@@ -651,12 +711,12 @@ export default function Calendar() {
                             key={index}
                             className={`table-cell font-semibold ${
                               showReservation ? 'reserved-cell' : (
-                                isOverlap ? 'overlap-cell text-white' : 
+                                isAnyOverlap ? 'overlap-cell text-white' : 
                                 matchingCourse ? `occupied-cell course-color-${(matchingCourse.data.course.length % 15) + 1}` : 'empty-cell'
                               )}`}
                             style={{
-                              backgroundColor: isOverlap
-                                ? '#dc2626' // Rojo intenso - para empalmes
+                              backgroundColor: isAnyOverlap
+                                ? '#dc2626'
                                 : matchingCourse
                                   ? `hsl(${hue}, 50%, 46%)`
                                   : showReservation
@@ -671,17 +731,25 @@ export default function Calendar() {
                                 <div className="course-name">{matchingReservation.code} {matchingReservation.course}</div>
                                 <div className="course-date">Fecha: {matchingReservation.date}</div>
                               </>
-                            ) : isOverlap ? (
+                            ) : isAnyOverlap ? (
                               <div className="p-1 flex flex-col h-full w-full justify-center items-center text-center overflow-hidden">
+                                
                                 <div className={`font-bold text-red-900 bg-yellow-300 rounded flex justify-center items-center leading-none shadow-sm ${rowspan === 1 ? 'text-[10px] py-0.5 px-1 mb-1' : 'text-[13px] py-0.5 px-1.5 mb-2'}`}>
-                                ⚠️ EMPALME
-                              </div>
+                                  {isRoomOverlap 
+                                    ? (matchingCourses.every(c => c.professor === matchingCourses[0].professor) 
+                                        ? '⚠️ EMPALME PROF. (MISMA AULA)' 
+                                        : '⚠️ EMPALME') 
+                                    : '⚠️ EMPALME PROF.'}
+                                </div>
+
                                 {[...matchingCourses].sort((a, b) => {
                                   const endA = parseInt(a.data.schedule.split('-')[1].substring(0, 2), 10);
                                   const endB = parseInt(b.data.schedule.split('-')[1].substring(0, 2), 10);
                                   return endA - endB;
                                 }).map((c, i) => {
                                   const [start, end] = c.data.schedule.split('-');
+                                  const pOverlaps = profOverlapsMap.get(c.data.nrc) || [];
+
                                   return (
                                     <div key={i} className={`flex flex-col items-center justify-center w-full min-w-0 gap-1 ${i > 0 ? 'mt-3 pt-3 border-t border-white/60' : ''}`}>
                                       
@@ -699,7 +767,7 @@ export default function Calendar() {
                                         </span>
                                       )}
 
-                                      <div className="flex flex-wrap justify-center items-center gap-1.5 w-full mt-0.5">
+                                      <div className="flex flex-wrap justify-center items-center gap-1.5 w-full mt-0.5 mb-1">
                                         <span className={`font-bold bg-white/20 text-white px-1.5 rounded leading-none py-[3px] ${rowspan > 1 ? 'text-[14px]' : 'text-[12px]'}`}>
                                           {c.data.code}
                                         </span>
@@ -708,6 +776,37 @@ export default function Calendar() {
                                           {c.data.nrc}
                                         </span>
                                       </div>
+
+                                      {pOverlaps.length > 0 && (
+                                        <div className={`mt-0.5 w-[95%] bg-yellow-300 text-red-900 leading-tight font-bold py-1 px-1 rounded flex flex-col items-center text-center shadow-sm ${rowspan > 1 ? 'text-[11px]' : 'text-[9px]'}`}>
+                                          <span className="border-b border-red-900/30 w-full mb-0.5 pb-0.5">También en:</span>
+                                          {pOverlaps.map((po, idx) => {
+                                            const [poStart, poEnd] = (po.data?.schedule || "0000-0000").split('-');
+                                            
+                                            return (
+                                              <div key={idx} className={`w-full flex flex-col items-center ${idx > 0 ? 'mt-1.5 pt-1.5 border-t border-red-900/20' : ''}`}>
+                                                <span className="w-full block font-extrabold text-red-800 leading-none mb-0.5">
+                                                  {poStart.substring(0, 2)}:{poStart.substring(2, 4)} - {poEnd.substring(0, 2)}:{poEnd.substring(2, 4)}
+                                                  {' '}
+                                                </span>
+                                                <span className="w-full block leading-none mb-0.5">
+                                                  {po.data.building === "SIN EDIFICIO"
+                                                    ? "SIN EDIFICIO"
+                                                    : `${po.data.building || '?'}-${po.data.classroom}`}
+                                                </span>
+                                                <span className="w-full block font-extrabold opacity-90 leading-none">
+                                                  {po.data.code} | {po.data.nrc}
+                                                </span>
+                                                {rowspan > 1 && (
+                                                  <span className="w-full block font-semibold leading-[1.05] mt-0.5 break-words whitespace-normal line-clamp-2" title={po.data.course}>
+                                                    {po.data.course}
+                                                  </span>
+                                                )}
+                                              </div>
+                                            );
+                                          })}
+                                        </div>
+                                      )}
                                     </div>
                                   );
                                 })}

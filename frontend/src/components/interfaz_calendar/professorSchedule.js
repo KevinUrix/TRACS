@@ -177,7 +177,9 @@ export default function ProfessorSchedule({ professorSchedule, selectedCycle }) 
                                           </span>
 
                                           <span className="text-[14px] font-bold text-blue-800 leading-none">
-                                            {c.data.building} - {c.data.classroom}
+                                            {c.data.building === "SIN EDIFICIO"
+                                              ? "SIN EDIFICIO"
+                                              : `${c.data.building} - ${c.data.classroom}`}
                                           </span>
                                         </div>
                                       </div>

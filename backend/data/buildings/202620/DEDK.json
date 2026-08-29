@@ -186,7 +186,7 @@
       "schedule": "1700-1855",
       "days": ". . . J . .",
       "building": "DEDK",
-      "classroom": "A011",
+      "classroom": "A012",
       "nrc": "65856",
       "code": "I3309",
       "students": 19,
@@ -209,6 +209,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". . I . V .",
+      "building": "DEDK",
+      "classroom": "A011",
+      "nrc": "62947",
+      "code": "I3291",
+      "students": 26,
+      "course": "BALANCES DE MATERIA Y ENERGIA"
+    },
+    "professor": "SANCHEZ DIAZ, JUAN CARLOS"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDK",
@@ -228,19 +241,6 @@
       "classroom": "A011",
       "nrc": "42271",
       "code": "I5817",
-      "students": 26,
-      "course": "BALANCES DE MATERIA Y ENERGIA"
-    },
-    "professor": "SANCHEZ DIAZ, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". . I . V .",
-      "building": "DEDK",
-      "classroom": "A011",
-      "nrc": "62947",
-      "code": "I3291",
       "students": 26,
       "course": "BALANCES DE MATERIA Y ENERGIA"
     },
@@ -1470,19 +1470,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . V .",
-      "building": "DEDK",
-      "classroom": "A008",
-      "nrc": "94772",
-      "code": "I5828",
-      "students": 20,
-      "course": "INTRODUCCION A LA BIOTECNOLOGIA"
-    },
-    "professor": "ESCALANTE GARCIA, ZAZIL YADEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDK",
@@ -1493,6 +1480,19 @@
       "course": "INTRODUCCION A LA BIOTECNOLOGIA"
     },
     "professor": "SNELL CASTRO, RAUL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . I . V .",
+      "building": "DEDK",
+      "classroom": "A008",
+      "nrc": "94772",
+      "code": "I5828",
+      "students": 20,
+      "course": "INTRODUCCION A LA BIOTECNOLOGIA"
+    },
+    "professor": "ESCALANTE GARCIA, ZAZIL YADEL"
   },
   {
     "data": {
@@ -1743,19 +1743,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A013",
-      "nrc": "62964",
-      "code": "I5820",
-      "students": 14,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA II"
-    },
-    "professor": "ALCARAZ GONZALEZ, VICTOR"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDK",
@@ -1766,6 +1753,19 @@
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
     },
     "professor": "SILVA JARA, JORGE MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "A013",
+      "nrc": "62964",
+      "code": "I5820",
+      "students": 14,
+      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA II"
+    },
+    "professor": "ALCARAZ GONZALEZ, VICTOR"
   },
   {
     "data": {
@@ -2484,19 +2484,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDK",
-      "classroom": "A006",
-      "nrc": "79447",
-      "code": "I6132",
-      "students": 22,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "VELAZQUEZ JUAREZ, GILBERTO"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDK",
@@ -2978,32 +2965,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDK",
-      "classroom": "A004",
-      "nrc": "42621",
-      "code": "I6124",
-      "students": 31,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDK",
-      "classroom": "A003",
-      "nrc": "42621",
-      "code": "I6124",
-      "students": 31,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
       "schedule": "1000-1055",
       "days": ". . . . V .",
       "building": "DEDK",
@@ -3027,6 +2988,32 @@
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDK",
+      "classroom": "A004",
+      "nrc": "42621",
+      "code": "I6124",
+      "students": 31,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDK",
+      "classroom": "A003",
+      "nrc": "42621",
+      "code": "I6124",
+      "students": 31,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
@@ -3563,6 +3550,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DEDK",
+      "classroom": "A009",
+      "nrc": "38456",
+      "code": "I3320",
+      "students": 15,
+      "course": "TECNOLOGIA DE PROCESOS DE FRUTAS Y VEGETALES"
+    },
+    "professor": "MARTINEZ PRECIADO, ALMA HORTENSIA"
+  },
+  {
+    "data": {
       "schedule": "0900-1255",
       "days": ". M . . . .",
       "building": "DEDK",
@@ -3586,19 +3586,6 @@
       "course": "TECNOLOGIA DE PROCESOS DE CEREALES"
     },
     "professor": "SANCHEZ PEÑA, MARIA JUDITH"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDK",
-      "classroom": "A009",
-      "nrc": "38456",
-      "code": "I3320",
-      "students": 15,
-      "course": "TECNOLOGIA DE PROCESOS DE FRUTAS Y VEGETALES"
-    },
-    "professor": "MARTINEZ PRECIADO, ALMA HORTENSIA"
   },
   {
     "data": {

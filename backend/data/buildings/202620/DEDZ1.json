@@ -27,19 +27,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A007",
-      "nrc": "42252",
-      "code": "I5802",
-      "students": 40,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "ACEVES FERNANDEZ, ELIZABETH"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . I . . .",
       "building": "DEDZ1",
@@ -63,6 +50,19 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "GODINEZ DIETRICH, GABRIEL"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DEDZ1",
+      "classroom": "A007",
+      "nrc": "42252",
+      "code": "I5802",
+      "students": 40,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "ACEVES FERNANDEZ, ELIZABETH"
   },
   {
     "data": {
@@ -430,19 +430,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1755",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A007",
-      "nrc": "137232",
-      "code": "IC681",
-      "students": 2,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . . J . .",
       "building": "DEDZ1",
@@ -469,6 +456,32 @@
   },
   {
     "data": {
+      "schedule": "1500-1755",
+      "days": "L . . . . .",
+      "building": "DEDZ1",
+      "classroom": "A007",
+      "nrc": "137232",
+      "code": "IC681",
+      "students": 2,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "BELTRAN AGUIRRE, FABIOLA DEL CARMEN"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . I . . .",
+      "building": "DEDZ1",
+      "classroom": "A005",
+      "nrc": "205823",
+      "code": "V0710",
+      "students": 40,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL"
+    },
+    "professor": "CORONA SANCHEZ, JUAN CARLOS"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDZ1",
@@ -492,19 +505,6 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "VILLEGAS RUVALCABA, MARIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . I . . .",
-      "building": "DEDZ1",
-      "classroom": "A005",
-      "nrc": "205823",
-      "code": "V0710",
-      "students": 40,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "CORONA SANCHEZ, JUAN CARLOS"
   },
   {
     "data": {
@@ -3017,19 +3017,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDZ1",
-      "classroom": "A010",
-      "nrc": "152797",
-      "code": "I5806",
-      "students": 27,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
-  },
-  {
-    "data": {
       "schedule": "0700-0755",
       "days": ". . . . V .",
       "building": "DEDZ1",
@@ -3040,6 +3027,19 @@
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "HERRERA HERRERA, PEDRO ARTURO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDZ1",
+      "classroom": "A010",
+      "nrc": "152797",
+      "code": "I5806",
+      "students": 27,
+      "course": "QUIMICA ORGANICA II"
+    },
+    "professor": "VERDUZCO NAVARRO, ILSE PAULINA"
   },
   {
     "data": {
@@ -3173,32 +3173,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDZ1",
-      "classroom": "A012",
-      "nrc": "164289",
-      "code": "IG249",
-      "students": 8,
-      "course": "SEMINARIO DE TESIS DE MAESTRIA I"
-    },
-    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDZ1",
-      "classroom": "A012",
-      "nrc": "164289",
-      "code": "IG249",
-      "students": 8,
-      "course": "SEMINARIO DE TESIS DE MAESTRIA I"
-    },
-    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". M . . . .",
       "building": "DEDZ1",
@@ -3222,6 +3196,32 @@
       "course": "SEMINARIO DE TESIS DE MAESTRIA II"
     },
     "professor": "RIVERA RESENDIZ, LAURA PATRICIA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDZ1",
+      "classroom": "A012",
+      "nrc": "164289",
+      "code": "IG249",
+      "students": 8,
+      "course": "SEMINARIO DE TESIS DE MAESTRIA I"
+    },
+    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDZ1",
+      "classroom": "A012",
+      "nrc": "164289",
+      "code": "IG249",
+      "students": 8,
+      "course": "SEMINARIO DE TESIS DE MAESTRIA I"
+    },
+    "professor": "QUIÑONES GALVAN, JOSE GUADALUPE"
   },
   {
     "data": {

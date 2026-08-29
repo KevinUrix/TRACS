@@ -14,6 +14,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "181849",
+      "code": "IK865",
+      "students": 1,
+      "course": "BIOCATALIZADORES"
+    },
+    "professor": "SOLIS PACHECO, JOSUE RAYMUNDO"
+  },
+  {
+    "data": {
       "schedule": "1100-1155",
       "days": ". . . . . S",
       "building": "DESV1",
@@ -378,6 +391,19 @@
   },
   {
     "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "A001",
+      "nrc": "38433",
+      "code": "I3288",
+      "students": 0,
+      "course": "INTRODUCCION A LA CIENCIA DE LOS ALIMENTOS"
+    },
+    "professor": "MIRAMONTES CORONA, CARMEN"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": ". M . J . .",
       "building": "DESV1",
@@ -427,19 +453,6 @@
       "course": "PLANEACION DE SISTEMAS"
     },
     "professor": "ALMAGUER AVILA, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0000-0033",
-      "days": "L . . . . .",
-      "building": "DESV1",
-      "classroom": "A001",
-      "nrc": "42546",
-      "code": "I5801",
-      "students": 24,
-      "course": "PROBABILIDAD Y ESTADISTICA"
-    },
-    "professor": "BUENROSTRO ARCEO, ROSALIA"
   },
   {
     "data": {
@@ -573,32 +586,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . . . .",
-      "building": "DESV1",
-      "classroom": "",
-      "nrc": "215970",
-      "code": "V2142",
-      "students": 4,
-      "course": "SEMINARIO DE TESIS DE DOCTORADO II"
-    },
-    "professor": "JARAMILLO PEREZ, VICTOR MANUEL"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DESV1",
-      "classroom": "",
-      "nrc": "215970",
-      "code": "V2142",
-      "students": 4,
-      "course": "SEMINARIO DE TESIS DE DOCTORADO II"
-    },
-    "professor": "JARAMILLO PEREZ, VICTOR MANUEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DESV1",
@@ -622,6 +609,32 @@
       "course": "SEMINARIO DE TESIS DE DOCTORADO III"
     },
     "professor": "KLIMOV, ANDREI"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "215970",
+      "code": "V2142",
+      "students": 4,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO II"
+    },
+    "professor": "JARAMILLO PEREZ, VICTOR MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "215970",
+      "code": "V2142",
+      "students": 4,
+      "course": "SEMINARIO DE TESIS DE DOCTORADO II"
+    },
+    "professor": "JARAMILLO PEREZ, VICTOR MANUEL"
   },
   {
     "data": {
@@ -713,6 +726,19 @@
       "course": "SEMINARIO INTERDISCIPLINARIO DE INVESTIGACION I"
     },
     "professor": "GALVEZ RODRIGUEZ, JORGE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DESV1",
+      "classroom": "",
+      "nrc": "125247",
+      "code": "IB091",
+      "students": 0,
+      "course": "SEMINARIO MODULAR I"
+    },
+    "professor": "SANTANA ARANDA, MIGUEL ANGEL"
   },
   {
     "data": {

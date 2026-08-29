@@ -872,6 +872,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". M . . . .",
+      "building": "DEDE",
+      "classroom": "",
+      "nrc": "181849",
+      "code": "IK865",
+      "students": 1,
+      "course": "BIOCATALIZADORES"
+    },
+    "professor": "SOLIS PACHECO, JOSUE RAYMUNDO"
+  },
+  {
+    "data": {
       "schedule": "1100-1259",
       "days": "L . I . . .",
       "building": "DEDE",
@@ -4811,19 +4824,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDE",
-      "classroom": "A019",
-      "nrc": "104034",
-      "code": "I5823",
-      "students": 29,
-      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
-    },
-    "professor": "SILVA JARA, JORGE MANUEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDE",
@@ -4834,6 +4834,19 @@
       "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA I"
     },
     "professor": "NUÑO DONLUCAS, SERGIO MANUEL"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . J . .",
+      "building": "DEDE",
+      "classroom": "A019",
+      "nrc": "104034",
+      "code": "I5823",
+      "students": 29,
+      "course": "MATEMATICAS APLICADAS A LA INGENIERIA QUIMICA III"
+    },
+    "professor": "SILVA JARA, JORGE MANUEL"
   },
   {
     "data": {
@@ -6046,19 +6059,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L M . . . .",
-      "building": "DEDE",
-      "classroom": "",
-      "nrc": "43846",
-      "code": "I6834",
-      "students": 0,
-      "course": "QUIMICA DE LOS ALIMENTOS"
-    },
-    "professor": "ESTRADA GIRON, YOKIUSHIRDHILGILMARA"
-  },
-  {
-    "data": {
       "schedule": "1800-1955",
       "days": ". . . . V .",
       "building": "DEDE",
@@ -6345,19 +6345,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1259",
-      "days": ". M . . . .",
-      "building": "DEDE",
-      "classroom": "SPB03",
-      "nrc": "228058",
-      "code": "V0473",
-      "students": 2,
-      "course": "SEMINARIO DE AVANCE DE TESIS VI"
-    },
-    "professor": "LOMELI RAMIREZ, MARIA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "1300-1459",
       "days": ". M . . . .",
       "building": "DEDE",
@@ -6368,6 +6355,19 @@
       "course": "SEMINARIO DE AVANCE DE TESIS IV"
     },
     "professor": "GUTIERREZ ORTEGA, JOSE ANTONIO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1259",
+      "days": ". M . . . .",
+      "building": "DEDE",
+      "classroom": "SPB03",
+      "nrc": "228058",
+      "code": "V0473",
+      "students": 2,
+      "course": "SEMINARIO DE AVANCE DE TESIS VI"
+    },
+    "professor": "LOMELI RAMIREZ, MARIA GUADALUPE"
   },
   {
     "data": {
@@ -6453,38 +6453,12 @@
       "days": ". . . . V .",
       "building": "DEDE",
       "classroom": "",
-      "nrc": "195262",
-      "code": "IL990",
-      "students": 8,
-      "course": "SEMINARIO DE INVESTIGACION EN INGENIERIA QUIMICA II"
-    },
-    "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDE",
-      "classroom": "",
       "nrc": "211039",
       "code": "IM029",
       "students": 3,
       "course": "SEMINARIO DE INVESTIGACION EN INGENIERIA QUIMICA VI"
     },
     "professor": "MENDIZABAL MIJARES, EDUARDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
-      "building": "DEDE",
-      "classroom": "A018",
-      "nrc": "193969",
-      "code": "IL989",
-      "students": 4,
-      "course": "SEMINARIO DE INVESTIGACION EN INGENIERIA QUIMICA I"
-    },
-    "professor": "GARCIA SANDOVAL, JUAN PAULO"
   },
   {
     "data": {
@@ -6504,6 +6478,19 @@
       "schedule": "1100-1255",
       "days": ". . . . V .",
       "building": "DEDE",
+      "classroom": "A018",
+      "nrc": "193969",
+      "code": "IL989",
+      "students": 4,
+      "course": "SEMINARIO DE INVESTIGACION EN INGENIERIA QUIMICA I"
+    },
+    "professor": "GARCIA SANDOVAL, JUAN PAULO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
+      "building": "DEDE",
       "classroom": "",
       "nrc": "193119",
       "code": "IM027",
@@ -6515,28 +6502,28 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". . . J . .",
+      "days": ". . . . V .",
       "building": "DEDE",
-      "classroom": "A021",
-      "nrc": "03064",
-      "code": "F0267",
-      "students": 4,
-      "course": "SEMINARIO DE PROCESOS BIOTECNOLOGICOS IV"
+      "classroom": "",
+      "nrc": "195262",
+      "code": "IL990",
+      "students": 8,
+      "course": "SEMINARIO DE INVESTIGACION EN INGENIERIA QUIMICA II"
     },
-    "professor": "DELGADO SAUCEDO, JORGE IVAN"
+    "professor": "FIGUEROA OCHOA, EDGAR BENJAMIN"
   },
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . . . . .",
+      "days": ". M . . . .",
       "building": "DEDE",
-      "classroom": "",
-      "nrc": "139220",
-      "code": "F0264",
-      "students": 3,
-      "course": "SEMINARIO DE PROCESOS BIOTECNOLOGICOS I"
+      "classroom": "A021",
+      "nrc": "165712",
+      "code": "F0265",
+      "students": 9,
+      "course": "SEMINARIO DE PROCESOS BIOTECNOLOGICOS II"
     },
-    "professor": "MARTINEZ PRECIADO, ALMA HORTENSIA"
+    "professor": "SOLIS PACHECO, JOSUE RAYMUNDO"
   },
   {
     "data": {
@@ -6554,15 +6541,28 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". M . . . .",
+      "days": "L . . . . .",
+      "building": "DEDE",
+      "classroom": "",
+      "nrc": "139220",
+      "code": "F0264",
+      "students": 3,
+      "course": "SEMINARIO DE PROCESOS BIOTECNOLOGICOS I"
+    },
+    "professor": "MARTINEZ PRECIADO, ALMA HORTENSIA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
       "building": "DEDE",
       "classroom": "A021",
-      "nrc": "165712",
-      "code": "F0265",
-      "students": 9,
-      "course": "SEMINARIO DE PROCESOS BIOTECNOLOGICOS II"
+      "nrc": "03064",
+      "code": "F0267",
+      "students": 4,
+      "course": "SEMINARIO DE PROCESOS BIOTECNOLOGICOS IV"
     },
-    "professor": "SOLIS PACHECO, JOSUE RAYMUNDO"
+    "professor": "DELGADO SAUCEDO, JORGE IVAN"
   },
   {
     "data": {
@@ -6748,6 +6748,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDE",
+      "classroom": "A005",
+      "nrc": "42802",
+      "code": "I6161",
+      "students": 26,
+      "course": "SEMINARIO DE TUTORIA INICIAL III"
+    },
+    "professor": "ANAYA DAVALOS, ADRIANA"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": ". . . J . .",
       "building": "DEDE",
@@ -6761,16 +6774,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
+      "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDE",
-      "classroom": "A005",
-      "nrc": "42802",
-      "code": "I6161",
-      "students": 26,
-      "course": "SEMINARIO DE TUTORIA INICIAL III"
+      "classroom": "A008",
+      "nrc": "76904",
+      "code": "I6159",
+      "students": 15,
+      "course": "SEMINARIO DE TUTORIA INICIAL I"
     },
-    "professor": "ANAYA DAVALOS, ADRIANA"
+    "professor": "FIERROS URIBE, DAMIAN"
   },
   {
     "data": {
@@ -6800,29 +6813,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . I . . .",
-      "building": "DEDE",
-      "classroom": "A008",
-      "nrc": "76904",
-      "code": "I6159",
-      "students": 15,
-      "course": "SEMINARIO DE TUTORIA INICIAL I"
-    },
-    "professor": "FIERROS URIBE, DAMIAN"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
+      "schedule": "1100-1255",
+      "days": ". . . . V .",
       "building": "DEDE",
       "classroom": "A003",
-      "nrc": "91022",
-      "code": "I6160",
-      "students": 31,
-      "course": "SEMINARIO DE TUTORIA INICIAL II"
+      "nrc": "124998",
+      "code": "I6161",
+      "students": 29,
+      "course": "SEMINARIO DE TUTORIA INICIAL III"
     },
-    "professor": "OROZCO HERNANDEZ, LAURA OFELIA"
+    "professor": "VENEGAS RUIZ, BEATRIZ"
   },
   {
     "data": {
@@ -6839,16 +6839,16 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . . V .",
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
       "building": "DEDE",
       "classroom": "A003",
-      "nrc": "124998",
-      "code": "I6161",
-      "students": 29,
-      "course": "SEMINARIO DE TUTORIA INICIAL III"
+      "nrc": "91022",
+      "code": "I6160",
+      "students": 31,
+      "course": "SEMINARIO DE TUTORIA INICIAL II"
     },
-    "professor": "VENEGAS RUIZ, BEATRIZ"
+    "professor": "OROZCO HERNANDEZ, LAURA OFELIA"
   },
   {
     "data": {
@@ -6878,19 +6878,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDE",
-      "classroom": "A004",
-      "nrc": "84483",
-      "code": "I6164",
-      "students": 31,
-      "course": "SEMINARIO DE TUTORIA INTERMEDIA III"
-    },
-    "professor": "VENEGAS RUIZ, BEATRIZ"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDE",
@@ -6901,6 +6888,19 @@
       "course": "SEMINARIO DE TUTORIA INTERMEDIA II"
     },
     "professor": "VILLASEÑOR GARCIA, MARIA MARTHA"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDE",
+      "classroom": "A004",
+      "nrc": "84483",
+      "code": "I6164",
+      "students": 31,
+      "course": "SEMINARIO DE TUTORIA INTERMEDIA III"
+    },
+    "professor": "VENEGAS RUIZ, BEATRIZ"
   },
   {
     "data": {
@@ -6930,19 +6930,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDE",
-      "classroom": "A007",
-      "nrc": "88746",
-      "code": "I6164",
-      "students": 29,
-      "course": "SEMINARIO DE TUTORIA INTERMEDIA III"
-    },
-    "professor": "CARDONA CAMPOS, MARCELA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDE",
@@ -6953,6 +6940,19 @@
       "course": "SEMINARIO DE TUTORIA INTERMEDIA I"
     },
     "professor": "MEDEROS TORRES, CLAUDIA VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDE",
+      "classroom": "A007",
+      "nrc": "88746",
+      "code": "I6164",
+      "students": 29,
+      "course": "SEMINARIO DE TUTORIA INTERMEDIA III"
+    },
+    "professor": "CARDONA CAMPOS, MARCELA"
   },
   {
     "data": {
@@ -7671,19 +7671,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1355",
-      "days": ". . I . . .",
-      "building": "DEDE",
-      "classroom": "A021",
-      "nrc": "03069",
-      "code": "F0262",
-      "students": 4,
-      "course": "TEMAS SELECTOS EN BIOTECNOLOGIA"
-    },
-    "professor": "RIVAS LOAIZA, JUAN ANTONIO"
-  },
-  {
-    "data": {
       "schedule": "1300-1555",
       "days": "L . . . . .",
       "building": "DEDE",
@@ -7694,6 +7681,19 @@
       "course": "TEMAS SELECTOS EN BIOTECNOLOGIA BIOMEDICA"
     },
     "professor": "LUZ MARTINEZ, BEATRIZ ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1355",
+      "days": ". . I . . .",
+      "building": "DEDE",
+      "classroom": "A021",
+      "nrc": "03069",
+      "code": "F0262",
+      "students": 4,
+      "course": "TEMAS SELECTOS EN BIOTECNOLOGIA"
+    },
+    "professor": "RIVAS LOAIZA, JUAN ANTONIO"
   },
   {
     "data": {
@@ -7713,19 +7713,6 @@
       "schedule": "1300-1455",
       "days": ". . . . . S",
       "building": "DEDE",
-      "classroom": "A018",
-      "nrc": "109801",
-      "code": "I5879",
-      "students": 15,
-      "course": "TEMAS SELECTOS EN INGENIERIA QUIMICA I"
-    },
-    "professor": "ARELLANO MARTINEZ, MARTIN RIGOBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . . . S",
-      "building": "DEDE",
       "classroom": "A019",
       "nrc": "139228",
       "code": "I5880",
@@ -7733,6 +7720,19 @@
       "course": "TEMAS SELECTOS EN INGENIERIA QUIMICA II"
     },
     "professor": "GARCIA SANDOVAL, JUAN PAULO"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". . . . . S",
+      "building": "DEDE",
+      "classroom": "A018",
+      "nrc": "109801",
+      "code": "I5879",
+      "students": 15,
+      "course": "TEMAS SELECTOS EN INGENIERIA QUIMICA I"
+    },
+    "professor": "ARELLANO MARTINEZ, MARTIN RIGOBERTO"
   },
   {
     "data": {

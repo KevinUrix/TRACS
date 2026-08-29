@@ -66,32 +66,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDW",
-      "classroom": "A001",
-      "nrc": "42305",
-      "code": "I6121",
-      "students": 25,
-      "course": "CALCULO DIFERENCIAL INTEGRAL"
-    },
-    "professor": "MARQUEZ SOSA, SAUL RENE"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . . V .",
-      "building": "DEDW",
-      "classroom": "A001",
-      "nrc": "42305",
-      "code": "I6121",
-      "students": 25,
-      "course": "CALCULO DIFERENCIAL INTEGRAL"
-    },
-    "professor": "MARQUEZ SOSA, SAUL RENE"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDW",
@@ -482,19 +456,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDW",
-      "classroom": "A002",
-      "nrc": "60833",
-      "code": "I7352",
-      "students": 20,
-      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
-    },
-    "professor": "ZAMUDIO OJEDA, ADALBERTO"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . J . .",
       "building": "DEDW",
@@ -518,6 +479,19 @@
       "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
     },
     "professor": "MUÑOZ VILLEGAS, SUSANA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDW",
+      "classroom": "A002",
+      "nrc": "60833",
+      "code": "I7352",
+      "students": 20,
+      "course": "TALLER DE RESOLUCION DE PROBLEMAS DE ELECTROMAGNETISMO"
+    },
+    "professor": "ZAMUDIO OJEDA, ADALBERTO"
   },
   {
     "data": {

@@ -66,19 +66,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1255",
-      "days": ". . . . V .",
-      "building": "DEDN",
-      "classroom": "LE05",
-      "nrc": "43417",
-      "code": "I7274",
-      "students": 19,
-      "course": "AUTOMATIZACION"
-    },
-    "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
-  },
-  {
-    "data": {
       "schedule": "0700-1055",
       "days": ". . . . V .",
       "building": "DEDN",
@@ -177,6 +164,19 @@
       "nrc": "82694",
       "code": "I7598",
       "students": 7,
+      "course": "DISPOSITIVOS ELECTRONICOS"
+    },
+    "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE02",
+      "nrc": "97739",
+      "code": "I7598",
+      "students": 5,
       "course": "DISPOSITIVOS ELECTRONICOS"
     },
     "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
@@ -360,6 +360,19 @@
       "code": "IB128",
       "students": 20,
       "course": "ELECTRONICA INTEGRADA"
+    },
+    "professor": "BARRAGAN CAMPOS, ROBERTO CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDN",
+      "classroom": "LE07",
+      "nrc": "210795",
+      "code": "V1693",
+      "students": 2,
+      "course": "ESPECTROMETRIA"
     },
     "professor": "BARRAGAN CAMPOS, ROBERTO CARLOS"
   },
@@ -1119,19 +1132,6 @@
   },
   {
     "data": {
-      "schedule": "0700-1055",
-      "days": ". . . . V .",
-      "building": "DEDN",
-      "classroom": "LE03",
-      "nrc": "262198",
-      "code": "V3736",
-      "students": 14,
-      "course": "OPTOELECTRONICA"
-    },
-    "professor": "QUIROGA ROJAS, JOSE VLADIMIR"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDN",
@@ -1276,19 +1276,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDN",
-      "classroom": "LE04",
-      "nrc": "59683",
-      "code": "I7281",
-      "students": 18,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
-    },
-    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". M . J . .",
       "building": "DEDN",
       "classroom": "LE04",
@@ -1298,6 +1285,19 @@
       "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE AUTOMATIZACION"
     },
     "professor": "CONCHAS CEDANO, ROBIN FERNANDO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDN",
+      "classroom": "LE04",
+      "nrc": "59683",
+      "code": "I7281",
+      "students": 18,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE CIRCUITOS DIGITALES"
+    },
+    "professor": "GUTIERREZ GARCIA, JUAN CARLOS"
   },
   {
     "data": {
@@ -1340,16 +1340,16 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
+      "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDN",
-      "classroom": "LE03",
-      "nrc": "194964",
-      "code": "I7273",
-      "students": 14,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE SENSORES Y ACONDICIONAMIENTO DE SEÑALES"
+      "classroom": "LE07",
+      "nrc": "225780",
+      "code": "V1687",
+      "students": 1,
+      "course": "SEMINARIO DE TESIS II"
     },
-    "professor": "TORRES LOPEZ, ALFREDO NETZAHUALCOYOTL"
+    "professor": "RODRIGUEZ BETANCOURTT, VERONICA MARIA"
   },
   {
     "data": {

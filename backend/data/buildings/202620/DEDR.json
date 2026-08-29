@@ -27,19 +27,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": "L . I . . .",
-      "building": "DEDR",
-      "classroom": "A003",
-      "nrc": "42250",
-      "code": "I5802",
-      "students": 9,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DEDR",
@@ -63,6 +50,19 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "ESPINO ROJAS, NORMA ELVA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . I . . .",
+      "building": "DEDR",
+      "classroom": "A003",
+      "nrc": "42250",
+      "code": "I5802",
+      "students": 9,
+      "course": "ALGEBRA LINEAL"
+    },
+    "professor": "REAL GUERRERO, MARIA DEL SOCORRO"
   },
   {
     "data": {
@@ -102,32 +102,6 @@
       "course": "ALGEBRA LINEAL"
     },
     "professor": "MENDOZA SANTOS, ROSA DELIA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "224978",
-      "code": "IB056",
-      "students": 34,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A001",
-      "nrc": "224978",
-      "code": "IB056",
-      "students": 34,
-      "course": "ALGEBRA LINEAL"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
@@ -248,19 +222,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . I . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "42301",
-      "code": "I5990",
-      "students": 19,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
-    },
-    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDR",
@@ -271,6 +232,19 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "ZAMARRIPA RODRIGUEZ, JOSE CARLOS"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDR",
+      "classroom": "A002",
+      "nrc": "42301",
+      "code": "I5990",
+      "students": 19,
+      "course": "CALCULO DIFERENCIAL E INTEGRAL I"
+    },
+    "professor": "MARTINEZ CASILLAS, CLAUDIA VERONICA"
   },
   {
     "data": {
@@ -310,19 +284,6 @@
       "course": "CALCULO DIFERENCIAL E INTEGRAL"
     },
     "professor": "ANDRADE MELECIO, HUGO ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . . S",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "193993",
-      "code": "IL344",
-      "students": 11,
-      "course": "CALCULO DIFERENCIAL E INTEGRAL"
-    },
-    "professor": "ELIZALDE CAMINO, FERNANDO"
   },
   {
     "data": {
@@ -427,6 +388,19 @@
       "course": "DISEÑO DE EXPERIMENTOS"
     },
     "professor": "GUZMAN SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": ". M . J . .",
+      "building": "DEDR",
+      "classroom": "LC10",
+      "nrc": "264986",
+      "code": "I6749",
+      "students": 1,
+      "course": "DISEÑO Y APLICACION DE DISPOSITIVOS RECONFIGURABLES"
+    },
+    "professor": "GARCIA ARREOLA, ALICIA"
   },
   {
     "data": {
@@ -1148,19 +1122,6 @@
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "225017",
-      "code": "IG738",
-      "students": 40,
-      "course": "PRECALCULO"
-    },
-    "professor": "RODRIGUEZ CASTRO, JORGE ALBERTO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . . . .",
-      "building": "DEDR",
       "classroom": "A002",
       "nrc": "252271",
       "code": "IG738",
@@ -1168,32 +1129,6 @@
       "course": "PRECALCULO"
     },
     "professor": "ALVAREZ ASCENCIO, LUIS GUSTAVO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". M . . . .",
-      "building": "DEDR",
-      "classroom": "A002",
-      "nrc": "252321",
-      "code": "IG738",
-      "students": 40,
-      "course": "PRECALCULO"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DEDR",
-      "classroom": "A004",
-      "nrc": "252321",
-      "code": "IG738",
-      "students": 40,
-      "course": "PRECALCULO"
-    },
-    "professor": "VALDIVIA BAUTISTA, SANDRA MINERVA"
   },
   {
     "data": {
@@ -1298,6 +1233,19 @@
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "RAMOS GUILLEN, JOSE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0800-1155",
+      "days": ". . . . V .",
+      "building": "DEDR",
+      "classroom": "LC10",
+      "nrc": "262255",
+      "code": "V3751",
+      "students": 6,
+      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
+    },
+    "professor": "LOMELI BARAJAS, MIRYAM"
   },
   {
     "data": {
@@ -1444,19 +1392,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDR",
-      "classroom": "LC05",
-      "nrc": "132019",
-      "code": "I9906",
-      "students": 24,
-      "course": "SEMINARIO DE PROBLEMAS DE MODELADO Y SIMULACION DE SISTEMAS"
-    },
-    "professor": "RUZ CANUL, MARIO ANTONIO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDR",
@@ -1467,6 +1402,19 @@
       "course": "SEMINARIO DE PROBLEMAS DE CONTROL I"
     },
     "professor": "RODRIGUEZ CASTELLANOS, DAVID ISRAEL"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDR",
+      "classroom": "LC05",
+      "nrc": "132019",
+      "code": "I9906",
+      "students": 24,
+      "course": "SEMINARIO DE PROBLEMAS DE MODELADO Y SIMULACION DE SISTEMAS"
+    },
+    "professor": "RUZ CANUL, MARIO ANTONIO"
   },
   {
     "data": {
@@ -1497,19 +1445,6 @@
   {
     "data": {
       "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDR",
-      "classroom": "LC09",
-      "nrc": "44613",
-      "code": "I7269",
-      "students": 24,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
-    },
-    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDR",
       "classroom": "LC11",
@@ -1525,13 +1460,13 @@
       "schedule": "1100-1255",
       "days": ". M . J . .",
       "building": "DEDR",
-      "classroom": "LC06",
-      "nrc": "59761",
-      "code": "I7267",
-      "students": 19,
-      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS EMBEBIDOS"
+      "classroom": "LC09",
+      "nrc": "44613",
+      "code": "I7269",
+      "students": 24,
+      "course": "SEMINARIO DE SOLUCION DE PROBLEMAS DE PROGRAMACION DE SISTEMAS RECONFIGURABLES"
     },
-    "professor": "GARCIA ARREOLA, ALICIA"
+    "professor": "DE LA PEÑA SALAZAR, RENE ARMANDO"
   },
   {
     "data": {
@@ -1653,7 +1588,7 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": ". . . J . .",
+      "days": ". M . J . .",
       "building": "DEDR",
       "classroom": "LC05",
       "nrc": "212211",

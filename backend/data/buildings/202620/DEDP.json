@@ -2172,6 +2172,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": ". M . . . .",
+      "building": "DEDP",
+      "classroom": "A023",
+      "nrc": "252240",
+      "code": "IL340",
+      "students": 30,
+      "course": "FUNDAMENTOS DE FISICA"
+    },
+    "professor": "MORALES BAUTISTA, JACOB"
+  },
+  {
+    "data": {
       "schedule": "1100-1255",
       "days": ". . . J . .",
       "building": "DEDP",
@@ -2500,7 +2513,7 @@
       "schedule": "0700-0855",
       "days": ". . . . V .",
       "building": "DEDP",
-      "classroom": "A021",
+      "classroom": "A019",
       "nrc": "159493",
       "code": "IC609",
       "students": 35,
@@ -5240,19 +5253,6 @@
   },
   {
     "data": {
-      "schedule": "1400-1455",
-      "days": ". . . J . .",
-      "building": "DEDP",
-      "classroom": "A021",
-      "nrc": "172007",
-      "code": "IC726",
-      "students": 0,
-      "course": "PROYECTO MODULAR DE GEOMATICA"
-    },
-    "professor": "DIAZ VERA, ADALBERTO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDP",
@@ -5354,6 +5354,19 @@
       "course": "QUIMICA DE LOS ALIMENTOS I"
     },
     "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A012",
+      "nrc": "199979",
+      "code": "IK687",
+      "students": 2,
+      "course": "QUIMICA INSTRUMENTAL"
+    },
+    "professor": "NOA PEREZ, MARIO"
   },
   {
     "data": {
@@ -7086,6 +7099,32 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": "L . . . . .",
+      "building": "DEDP",
+      "classroom": "A012",
+      "nrc": "188419",
+      "code": "IC659",
+      "students": 35,
+      "course": "TEMAS ESPECIALES EN GEOTECNIA IV"
+    },
+    "professor": "ALATORRE ZAMORA, MIGUEL ANGEL"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A014",
+      "nrc": "188419",
+      "code": "IC659",
+      "students": 35,
+      "course": "TEMAS ESPECIALES EN GEOTECNIA IV"
+    },
+    "professor": "ALATORRE ZAMORA, MIGUEL ANGEL"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": ". M . . . .",
       "building": "DEDP",
@@ -7122,32 +7161,6 @@
       "course": "TEMAS ESPECIALES EN GEOTECNIA II"
     },
     "professor": "VAZQUEZ RODRIGUEZ, MARIA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . . . . .",
-      "building": "DEDP",
-      "classroom": "A012",
-      "nrc": "188419",
-      "code": "IC659",
-      "students": 35,
-      "course": "TEMAS ESPECIALES EN GEOTECNIA IV"
-    },
-    "professor": "ALATORRE ZAMORA, MIGUEL ANGEL"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . I . . .",
-      "building": "DEDP",
-      "classroom": "A014",
-      "nrc": "188419",
-      "code": "IC659",
-      "students": 35,
-      "course": "TEMAS ESPECIALES EN GEOTECNIA IV"
-    },
-    "professor": "ALATORRE ZAMORA, MIGUEL ANGEL"
   },
   {
     "data": {
@@ -7190,16 +7203,29 @@
   },
   {
     "data": {
-      "schedule": "1600-1855",
-      "days": ". M . . . .",
+      "schedule": "0900-0955",
+      "days": "L . . . . .",
       "building": "DEDP",
-      "classroom": "A022",
-      "nrc": "188420",
-      "code": "IC645",
-      "students": 36,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE II"
+      "classroom": "A012",
+      "nrc": "181925",
+      "code": "IC649",
+      "students": 3,
+      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE VI"
     },
-    "professor": "LIMON COVARRUBIAS, PEDRO"
+    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDP",
+      "classroom": "A014",
+      "nrc": "181925",
+      "code": "IC649",
+      "students": 3,
+      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE VI"
+    },
+    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
   },
   {
     "data": {
@@ -7229,29 +7255,16 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": "L . . . . .",
+      "schedule": "1600-1855",
+      "days": ". M . . . .",
       "building": "DEDP",
-      "classroom": "A012",
-      "nrc": "181925",
-      "code": "IC649",
-      "students": 3,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE VI"
+      "classroom": "A022",
+      "nrc": "188420",
+      "code": "IC645",
+      "students": 36,
+      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE II"
     },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
-      "building": "DEDP",
-      "classroom": "A014",
-      "nrc": "181925",
-      "code": "IC649",
-      "students": 3,
-      "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE VI"
-    },
-    "professor": "ORNELAS HERNANDEZ, JOSE DE JESUS"
+    "professor": "LIMON COVARRUBIAS, PEDRO"
   },
   {
     "data": {

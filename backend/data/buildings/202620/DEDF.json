@@ -888,19 +888,6 @@
       "schedule": "1500-1655",
       "days": ". . . J . .",
       "building": "DEDF",
-      "classroom": "A003",
-      "nrc": "63961",
-      "code": "I5822",
-      "students": 24,
-      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
-    },
-    "professor": "QUEROL MORFIN, SANTIAGO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDF",
       "classroom": "A008",
       "nrc": "117638",
       "code": "I6174",
@@ -908,6 +895,19 @@
       "course": "LABORATORIO DE ANALISIS QUIMICO CLINICO"
     },
     "professor": "NAVARRO HERNANDEZ, ROSA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDF",
+      "classroom": "A003",
+      "nrc": "63961",
+      "code": "I5822",
+      "students": 24,
+      "course": "LABORATORIO DE ANALISIS QUIMICO INSTRUMENTAL PARA INGENIEROS"
+    },
+    "professor": "QUEROL MORFIN, SANTIAGO"
   },
   {
     "data": {
@@ -1340,19 +1340,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DEDF",
-      "classroom": "A004",
-      "nrc": "79447",
-      "code": "I6132",
-      "students": 22,
-      "course": "QUIMICA ANALITICA III"
-    },
-    "professor": "VELAZQUEZ JUAREZ, GILBERTO"
-  },
-  {
-    "data": {
       "schedule": "0800-0855",
       "days": ". . . . V .",
       "building": "DEDF",
@@ -1665,19 +1652,6 @@
   },
   {
     "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDF",
-      "classroom": "",
-      "nrc": "38417",
-      "code": "I3278",
-      "students": 0,
-      "course": "QUIMICA INORGANICA"
-    },
-    "professor": "PALACIOS JUAREZ, ROSALIA"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": ". . I . V .",
       "building": "DEDF",
@@ -1688,6 +1662,19 @@
       "course": "QUIMICA INORGANICA"
     },
     "professor": "RIVERA ENRIQUEZ, CLAUDIA ELENA"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDF",
+      "classroom": "",
+      "nrc": "38417",
+      "code": "I3278",
+      "students": 0,
+      "course": "QUIMICA INORGANICA"
+    },
+    "professor": "PALACIOS JUAREZ, ROSALIA"
   },
   {
     "data": {
@@ -2068,19 +2055,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDF",
-      "classroom": "A010",
-      "nrc": "235878",
-      "code": "I6161",
-      "students": 30,
-      "course": "SEMINARIO DE TUTORIA INICIAL III"
-    },
-    "professor": "AYALA MIRANDA, KARLA GUADALUPE"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDF",
@@ -2091,6 +2065,19 @@
       "course": "SEMINARIO DE TUTORIA INICIAL I"
     },
     "professor": "AGUILAR VEGA, IVAN"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDF",
+      "classroom": "A010",
+      "nrc": "235878",
+      "code": "I6161",
+      "students": 30,
+      "course": "SEMINARIO DE TUTORIA INICIAL III"
+    },
+    "professor": "AYALA MIRANDA, KARLA GUADALUPE"
   },
   {
     "data": {

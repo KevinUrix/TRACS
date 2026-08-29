@@ -534,6 +534,19 @@
   },
   {
     "data": {
+      "schedule": "1300-1455",
+      "days": ". . . J . .",
+      "building": "DEDI",
+      "classroom": "A008",
+      "nrc": "90585",
+      "code": "I7508",
+      "students": 18,
+      "course": "LABORATORIO DE QUIMICA ANALITICA II"
+    },
+    "professor": "GUDIÑO GUZMAN, BERNARDO"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
       "days": "L . . . . .",
       "building": "DEDI",
@@ -1184,19 +1197,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "42591",
-      "code": "I5803",
-      "students": 16,
-      "course": "QUIMICA GENERAL I"
-    },
-    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . J . .",
       "building": "DEDI",
@@ -1207,6 +1207,19 @@
       "course": "QUIMICA GENERAL I"
     },
     "professor": "QUEROL MORFIN, SANTIAGO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "42591",
+      "code": "I5803",
+      "students": 16,
+      "course": "QUIMICA GENERAL I"
+    },
+    "professor": "MONTAÑO ALTAMIRANO, AGUSTIN ISRAEL"
   },
   {
     "data": {
@@ -1288,6 +1301,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDI",
+      "classroom": "A004",
+      "nrc": "42610",
+      "code": "I6126",
+      "students": 32,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDI",
@@ -1314,32 +1340,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDI",
-      "classroom": "A004",
-      "nrc": "42610",
-      "code": "I6126",
-      "students": 32,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-0955",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42605",
-      "code": "I5804",
-      "students": 27,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "RIOS DONATO, NELY"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": "L . . . V .",
       "building": "DEDI",
@@ -1363,6 +1363,45 @@
       "course": "QUIMICA GENERAL II"
     },
     "professor": "LOMELI ROSALES, DIEGO ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-0955",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "42605",
+      "code": "I5804",
+      "students": 27,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "RIOS DONATO, NELY"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDI",
+      "classroom": "A005",
+      "nrc": "42604",
+      "code": "I5804",
+      "students": 24,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "FLORES MEJIA, JORGE"
+  },
+  {
+    "data": {
+      "schedule": "1300-1355",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A005",
+      "nrc": "42604",
+      "code": "I5804",
+      "students": 24,
+      "course": "QUIMICA GENERAL II"
+    },
+    "professor": "FLORES MEJIA, JORGE"
   },
   {
     "data": {
@@ -1428,32 +1467,6 @@
       "course": "QUIMICA GENERAL II"
     },
     "professor": "SOLTERO SANCHEZ, JAZMIN DEL ROCIO"
-  },
-  {
-    "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "42604",
-      "code": "I5804",
-      "students": 24,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "FLORES MEJIA, JORGE"
-  },
-  {
-    "data": {
-      "schedule": "1300-1355",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A005",
-      "nrc": "42604",
-      "code": "I5804",
-      "students": 24,
-      "course": "QUIMICA GENERAL II"
-    },
-    "professor": "FLORES MEJIA, JORGE"
   },
   {
     "data": {
@@ -1717,6 +1730,19 @@
   },
   {
     "data": {
+      "schedule": "0700-0755",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A001",
+      "nrc": "63510",
+      "code": "I6124",
+      "students": 27,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDI",
@@ -1756,16 +1782,29 @@
   },
   {
     "data": {
-      "schedule": "0700-0755",
-      "days": ". . . . V .",
+      "schedule": "1700-1855",
+      "days": ". M . J . .",
       "building": "DEDI",
-      "classroom": "A001",
-      "nrc": "63510",
+      "classroom": "A006",
+      "nrc": "72219",
       "code": "I6124",
-      "students": 27,
+      "students": 24,
       "course": "QUIMICA ORGANICA I"
     },
-    "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
+  },
+  {
+    "data": {
+      "schedule": "1700-1755",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A006",
+      "nrc": "72219",
+      "code": "I6124",
+      "students": 24,
+      "course": "QUIMICA ORGANICA I"
+    },
+    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
@@ -1792,32 +1831,6 @@
       "course": "QUIMICA ORGANICA I"
     },
     "professor": "FIGUEROA RODRIGUEZ, ANA VIANEY"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "72219",
-      "code": "I6124",
-      "students": 24,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
-  },
-  {
-    "data": {
-      "schedule": "1700-1755",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A006",
-      "nrc": "72219",
-      "code": "I6124",
-      "students": 24,
-      "course": "QUIMICA ORGANICA I"
-    },
-    "professor": "SOLTERO SANCHEZ, ALMA LUZ ANGELICA"
   },
   {
     "data": {
@@ -1938,19 +1951,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1555",
-      "days": ". . . . V .",
-      "building": "DEDI",
-      "classroom": "A002",
-      "nrc": "42630",
-      "code": "I6129",
-      "students": 32,
-      "course": "QUIMICA ORGANICA II"
-    },
-    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
-  },
-  {
-    "data": {
       "schedule": "1600-1655",
       "days": ". . . . V .",
       "building": "DEDI",
@@ -1987,6 +1987,19 @@
       "course": "QUIMICA ORGANICA II"
     },
     "professor": "TORRES TOLENTINO, JOSE GUADALUPE"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . . . V .",
+      "building": "DEDI",
+      "classroom": "A002",
+      "nrc": "42630",
+      "code": "I6129",
+      "students": 32,
+      "course": "QUIMICA ORGANICA II"
+    },
+    "professor": "SAN JUAN FARFAN, ROBERTO EDUARDO"
   },
   {
     "data": {

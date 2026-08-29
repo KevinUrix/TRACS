@@ -326,6 +326,19 @@
   },
   {
     "data": {
+      "schedule": "1700-1855",
+      "days": "L . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC10",
+      "nrc": "262886",
+      "code": "V0744",
+      "students": 13,
+      "course": "BIOINFORMATICA Y BIOLOGIA COMPUTACIONAL AVANZADOS"
+    },
+    "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
+  },
+  {
+    "data": {
       "schedule": "0700-1055",
       "days": ". . . . . S",
       "building": "DUCT1",
@@ -1964,19 +1977,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . . J . .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "260627",
-      "code": "V0721",
-      "students": 32,
-      "course": "LABORATORIO ABIERTO: CONSTRUCCION"
-    },
-    "professor": "MORALES RAMIREZ, THELMA ISABEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DUCT1",
@@ -2000,6 +2000,19 @@
       "course": "LABORATORIO ABIERTO: CONSTRUCCION"
     },
     "professor": "DELGADO CASTAÑEDA, NOE"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . . J . .",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "nrc": "260627",
+      "code": "V0721",
+      "students": 32,
+      "course": "LABORATORIO ABIERTO: CONSTRUCCION"
+    },
+    "professor": "MORALES RAMIREZ, THELMA ISABEL"
   },
   {
     "data": {
@@ -2173,32 +2186,6 @@
   {
     "data": {
       "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "180300",
-      "code": "IF904",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1555",
-      "days": ". . I . . .",
-      "building": "DUCT1",
-      "classroom": "LC07",
-      "nrc": "180300",
-      "code": "IF904",
-      "students": 21,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
       "days": ". . . . V .",
       "building": "DUCT1",
       "classroom": "LC10",
@@ -2221,6 +2208,32 @@
       "course": "LABORATORIO DE SIMULACION PARA LA LOGISTICA"
     },
     "professor": "GUZMAN CUELLAR, CLAUDIA VERONICA"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "nrc": "180300",
+      "code": "IF904",
+      "students": 21,
+      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
+    },
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
+      "schedule": "1500-1555",
+      "days": ". . I . . .",
+      "building": "DUCT1",
+      "classroom": "LC07",
+      "nrc": "180300",
+      "code": "IF904",
+      "students": 21,
+      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
+    },
+    "professor": "TORRES BARAJAS, FRANCISCO JAVIER"
   },
   {
     "data": {
@@ -2890,19 +2903,6 @@
       "schedule": "0700-0855",
       "days": "L . . . . .",
       "building": "DUCT1",
-      "classroom": "LC06",
-      "nrc": "213175",
-      "code": "IL370",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DUCT1",
       "classroom": "LC04",
       "nrc": "240854",
       "code": "V0734",
@@ -2910,6 +2910,19 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DUCT1",
+      "classroom": "LC06",
+      "nrc": "213175",
+      "code": "IL370",
+      "students": 40,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {
@@ -2952,19 +2965,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1155",
-      "days": ". . . . V .",
-      "building": "DUCT1",
-      "classroom": "LC04",
-      "nrc": "223601",
-      "code": "IL370",
-      "students": 41,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "DELGADO CASTAÑEDA, NOE"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . . . . .",
       "building": "DUCT1",
@@ -2975,6 +2975,19 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1155",
+      "days": ". . . . V .",
+      "building": "DUCT1",
+      "classroom": "LC04",
+      "nrc": "223601",
+      "code": "IL370",
+      "students": 41,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "DELGADO CASTAÑEDA, NOE"
   },
   {
     "data": {

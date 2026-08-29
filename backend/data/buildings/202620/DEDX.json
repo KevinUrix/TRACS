@@ -456,6 +456,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DEDX",
+      "classroom": "A019",
+      "nrc": "227125",
+      "code": "V0723",
+      "students": 37,
+      "course": "ALGORITMOS METAHEURISTICOS"
+    },
+    "professor": "BARAJAS GONZALEZ, EMILIO"
+  },
+  {
+    "data": {
       "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -479,19 +492,6 @@
       "course": "ALGORITMOS METAHEURISTICOS"
     },
     "professor": "RUZ CANUL, MARIO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DEDX",
-      "classroom": "A019",
-      "nrc": "227125",
-      "code": "V0723",
-      "students": 37,
-      "course": "ALGORITMOS METAHEURISTICOS"
-    },
-    "professor": "BARAJAS GONZALEZ, EMILIO"
   },
   {
     "data": {
@@ -1015,19 +1015,6 @@
   },
   {
     "data": {
-      "schedule": "1900-2055",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A011",
-      "nrc": "240692",
-      "code": "V0718",
-      "students": 20,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "PEREZ ZARATE, ISAIAS EZEQUIEL"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -1038,6 +1025,19 @@
       "course": "BASES DE DATOS"
     },
     "professor": "MARISCAL LUGO, LUIS FELIPE"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". M . . . .",
+      "building": "DEDX",
+      "classroom": "A011",
+      "nrc": "240692",
+      "code": "V0718",
+      "students": 20,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "PEREZ ZARATE, ISAIAS EZEQUIEL"
   },
   {
     "data": {
@@ -1145,6 +1145,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A011",
+      "nrc": "204860",
+      "code": "IL356",
+      "students": 28,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": "L . . . . .",
       "building": "DEDX",
@@ -1158,13 +1171,13 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
+      "schedule": "1500-1655",
+      "days": "L . . . . .",
       "building": "DEDX",
-      "classroom": "A011",
-      "nrc": "204860",
-      "code": "IL356",
-      "students": 28,
+      "classroom": "A020",
+      "nrc": "240736",
+      "code": "V0718",
+      "students": 29,
       "course": "BASES DE DATOS"
     },
     "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
@@ -1181,19 +1194,6 @@
       "course": "BASES DE DATOS"
     },
     "professor": "ESTRADA GUZMAN, ELSA"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A020",
-      "nrc": "240736",
-      "code": "V0718",
-      "students": 29,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "SALDIVAR ZALDIVAR, AXEL DANIEL"
   },
   {
     "data": {
@@ -2458,19 +2458,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "252501",
-      "code": "V3686",
-      "students": 26,
-      "course": "HISTORIA DE LA TECNOLOGIA  EL ARTE Y LA SOCIEDAD"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDX",
@@ -2588,32 +2575,6 @@
   },
   {
     "data": {
-      "schedule": "0700-0855",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "260304",
-      "code": "V3686",
-      "students": 40,
-      "course": "HISTORIA DE LA TECNOLOGIA  EL ARTE Y LA SOCIEDAD"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "260305",
-      "code": "V3686",
-      "students": 38,
-      "course": "HISTORIA DE LA TECNOLOGIA  EL ARTE Y LA SOCIEDAD"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
-  },
-  {
-    "data": {
       "schedule": "1300-1455",
       "days": ". . . . V .",
       "building": "DEDX",
@@ -2624,19 +2585,6 @@
       "course": "HISTORIA DE LA TECNOLOGIA EL ARTE Y LA SOCIEDAD"
     },
     "professor": "VENTURA MUÑOZ, MINERVA GUADALUPE"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": ". M . . . .",
-      "building": "DEDX",
-      "classroom": "A008",
-      "nrc": "201891",
-      "code": "V0714",
-      "students": 40,
-      "course": "HISTORIA DE LA TECNOLOGIA EL ARTE Y LA SOCIEDAD"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
   },
   {
     "data": {
@@ -4278,19 +4226,6 @@
   },
   {
     "data": {
-      "schedule": "1500-1655",
-      "days": ". . . J . .",
-      "building": "DEDX",
-      "classroom": "A003",
-      "nrc": "193703",
-      "code": "IL352",
-      "students": 20,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "CAMACHO SANTILLAN, VERONICA"
-  },
-  {
-    "data": {
       "schedule": "1900-2055",
       "days": ". M . . . .",
       "building": "DEDX",
@@ -4314,6 +4249,19 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VEGA, SERGIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
+      "days": ". . . J . .",
+      "building": "DEDX",
+      "classroom": "A003",
+      "nrc": "193703",
+      "code": "IL352",
+      "students": 20,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "CAMACHO SANTILLAN, VERONICA"
   },
   {
     "data": {
@@ -5132,7 +5080,7 @@
       "students": 10,
       "course": "SEMINARIO DE PROYECTO FINAL"
     },
-    "professor": "HERNANDEZ MONTELONGO, ROSAURA"
+    "professor": "JIMENEZ RODRIGUEZ, MARIO"
   },
   {
     "data": {
@@ -5254,6 +5202,19 @@
   {
     "data": {
       "schedule": "1500-1655",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "261137",
+      "code": "IL371",
+      "students": 0,
+      "course": "SEMINARIO INTEGRACION: COMUNICACION"
+    },
+    "professor": "BECERRA VELAZQUEZ, VIOLETA DEL ROCIO"
+  },
+  {
+    "data": {
+      "schedule": "1500-1655",
       "days": ". . I . . .",
       "building": "DEDX",
       "classroom": "A010",
@@ -5293,19 +5254,6 @@
   {
     "data": {
       "schedule": "0700-0755",
-      "days": ". . I . . .",
-      "building": "DEDX",
-      "classroom": "A009",
-      "nrc": "213175",
-      "code": "IL370",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0755",
       "days": ". M . . . .",
       "building": "DEDX",
       "classroom": "A010",
@@ -5315,6 +5263,19 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "SANCHEZ ROMERO, CARLOS ALBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0755",
+      "days": ". . I . . .",
+      "building": "DEDX",
+      "classroom": "A009",
+      "nrc": "213175",
+      "code": "IL370",
+      "students": 40,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {
@@ -5357,19 +5318,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": "L . . . . .",
-      "building": "DEDX",
-      "classroom": "A023",
-      "nrc": "223601",
-      "code": "IL370",
-      "students": 41,
-      "course": "SEMINARIO INTEGRACION: DESARROLLO"
-    },
-    "professor": "DELGADO CASTAÑEDA, NOE"
-  },
-  {
-    "data": {
       "schedule": "1200-1255",
       "days": ". . I . . .",
       "building": "DEDX",
@@ -5380,6 +5328,19 @@
       "course": "SEMINARIO INTEGRACION: DESARROLLO"
     },
     "professor": "LOPEZ ARCE DELGADO, JORGE ERNESTO"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": "L . . . . .",
+      "building": "DEDX",
+      "classroom": "A023",
+      "nrc": "223601",
+      "code": "IL370",
+      "students": 41,
+      "course": "SEMINARIO INTEGRACION: DESARROLLO"
+    },
+    "professor": "DELGADO CASTAÑEDA, NOE"
   },
   {
     "data": {
@@ -5423,19 +5384,6 @@
   {
     "data": {
       "schedule": "0700-0855",
-      "days": ". . . . V .",
-      "building": "DEDX",
-      "classroom": "A004",
-      "nrc": "204888",
-      "code": "IL369",
-      "students": 40,
-      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
-    },
-    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
       "days": ". M . . . .",
       "building": "DEDX",
       "classroom": "A009",
@@ -5445,6 +5393,19 @@
       "course": "SEMINARIO INTEGRACION: PROTOCOLO"
     },
     "professor": "GUTIERREZ HERNANDEZ, ALFREDO"
+  },
+  {
+    "data": {
+      "schedule": "0700-0855",
+      "days": ". . . . V .",
+      "building": "DEDX",
+      "classroom": "A004",
+      "nrc": "204888",
+      "code": "IL369",
+      "students": 40,
+      "course": "SEMINARIO INTEGRACION: PROTOCOLO"
+    },
+    "professor": "GARCIA DE LIRA, SONIA JAZMIN"
   },
   {
     "data": {
@@ -6072,19 +6033,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". . I . V .",
-      "building": "DEDX",
-      "classroom": "A014",
-      "nrc": "209953",
-      "code": "V0715",
-      "students": 10,
-      "course": "TECNOLOGIA Y RETOS DE LAS SOCIEDADES"
-    },
-    "professor": "FRANCO SAPIEN, RAFAEL"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": ". . I . . .",
       "building": "DEDX",
@@ -6296,7 +6244,7 @@
       "schedule": "0900-1155",
       "days": ". . . . V .",
       "building": "DEDX",
-      "classroom": "A018",
+      "classroom": "",
       "nrc": "205029",
       "code": "V1128",
       "students": 2,

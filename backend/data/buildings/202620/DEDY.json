@@ -287,19 +287,6 @@
   },
   {
     "data": {
-      "schedule": "1000-1255",
-      "days": ". . . . V .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "104245",
-      "code": "I7503",
-      "students": 16,
-      "course": "LABORATORIO DE FISICOQUIMICA III"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
       "schedule": "1700-1955",
       "days": ". . . J . .",
       "building": "DEDY",
@@ -313,6 +300,19 @@
   },
   {
     "data": {
+      "schedule": "1000-1255",
+      "days": ". . . . V .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "104245",
+      "code": "I7503",
+      "students": 16,
+      "course": "LABORATORIO DE FISICOQUIMICA III"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
       "schedule": "0900-1155",
       "days": "L . . . . .",
       "building": "DEDY",
@@ -321,19 +321,6 @@
       "code": "I7486",
       "students": 19,
       "course": "LABORATORIO DE FISICOQUIMICA I"
-    },
-    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
-  },
-  {
-    "data": {
-      "schedule": "1400-1655",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "104246",
-      "code": "I7503",
-      "students": 20,
-      "course": "LABORATORIO DE FISICOQUIMICA III"
     },
     "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
   },
@@ -352,6 +339,19 @@
   },
   {
     "data": {
+      "schedule": "1400-1655",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "104246",
+      "code": "I7503",
+      "students": 20,
+      "course": "LABORATORIO DE FISICOQUIMICA III"
+    },
+    "professor": "SAHAGUN AGUILAR, LUIS OCTAVIO"
+  },
+  {
+    "data": {
       "schedule": "0900-1155",
       "days": ". M . . . .",
       "building": "DEDY",
@@ -365,19 +365,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1155",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "LQM02",
-      "nrc": "200181",
-      "code": "I7486",
-      "students": 14,
-      "course": "LABORATORIO DE FISICOQUIMICA I"
-    },
-    "professor": "GONZALEZ CRUZ, RICARDO"
-  },
-  {
-    "data": {
       "schedule": "1500-1755",
       "days": "L . . . . .",
       "building": "DEDY",
@@ -388,6 +375,19 @@
       "course": "LABORATORIO DE FISICOQUIMICA III"
     },
     "professor": "PALACIOS SANCHEZ, MARIA DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "0900-1155",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "LQM02",
+      "nrc": "200181",
+      "code": "I7486",
+      "students": 14,
+      "course": "LABORATORIO DE FISICOQUIMICA I"
+    },
+    "professor": "GONZALEZ CRUZ, RICARDO"
   },
   {
     "data": {
@@ -612,19 +612,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1255",
-      "days": ". . . J . .",
-      "building": "DEDY",
-      "classroom": "A002",
-      "nrc": "06607",
-      "code": "F0305",
-      "students": 6,
-      "course": "SEMINARIO DE AVANCE DE TESIS III"
-    },
-    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . . . .",
       "building": "DEDY",
@@ -635,6 +622,19 @@
       "course": "SEMINARIO DE AVANCE DE TESIS I"
     },
     "professor": "RENTERIA URQUIZA, MAITE"
+  },
+  {
+    "data": {
+      "schedule": "1100-1255",
+      "days": ". . . J . .",
+      "building": "DEDY",
+      "classroom": "A002",
+      "nrc": "06607",
+      "code": "F0305",
+      "students": 6,
+      "course": "SEMINARIO DE AVANCE DE TESIS III"
+    },
+    "professor": "RAMIREZ ANGUIANO, ANA CRISTINA"
   },
   {
     "data": {
@@ -859,6 +859,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "",
+      "nrc": "266413",
+      "code": "V4238",
+      "students": 2,
+      "course": "TEMAS SELECTOS EN FISICOQUIMICA"
+    },
+    "professor": "DIAMANTI, AIKATERINI"
+  },
+  {
+    "data": {
       "schedule": "1500-1655",
       "days": "L . . . . .",
       "building": "DEDY",
@@ -882,19 +895,6 @@
       "course": "TEMAS SELECTOS EN FISICOQUIMICA I"
     },
     "professor": "ZUÑIGA GUTIERREZ, BERNARDO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDY",
-      "classroom": "",
-      "nrc": "266413",
-      "code": "V4238",
-      "students": 2,
-      "course": "TEMAS SELECTOS EN FISICOQUIMICA"
-    },
-    "professor": "DIAMANTI, AIKATERINI"
   },
   {
     "data": {
@@ -924,6 +924,19 @@
   },
   {
     "data": {
+      "schedule": "0900-1055",
+      "days": "L . I . . .",
+      "building": "DEDY",
+      "classroom": "A001",
+      "nrc": "236201",
+      "code": "V4202",
+      "students": 2,
+      "course": "TERMODINAMICA QUMICA AVANZADA"
+    },
+    "professor": "OROZCO GUAREÑO, EULOGIO"
+  },
+  {
+    "data": {
       "schedule": "1300-1455",
       "days": ". M . . . .",
       "building": "DEDY",
@@ -947,19 +960,6 @@
       "course": "TERMODINAMICA QUIMICA AVANZADA"
     },
     "professor": "OROZCO GUAREÑO, EULOGIO"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
-      "days": "L . I . . .",
-      "building": "DEDY",
-      "classroom": "A001",
-      "nrc": "236201",
-      "code": "V4202",
-      "students": 2,
-      "course": "TERMODINAMICA QUMICA AVANZADA"
-    },
-    "professor": "GUERRERO RAMIREZ, LUIS GUILLERMO"
   },
   {
     "data": {

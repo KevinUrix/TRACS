@@ -873,19 +873,6 @@
   {
     "data": {
       "schedule": "0900-1055",
-      "days": "L . . . . .",
-      "building": "DLAQ",
-      "classroom": "LF02",
-      "nrc": "180299",
-      "code": "IF904",
-      "students": 4,
-      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
-    },
-    "professor": "ANGUIANO PIZANO, JUAN SIMON"
-  },
-  {
-    "data": {
-      "schedule": "0900-1055",
       "days": ". M . . . .",
       "building": "DLAQ",
       "classroom": "LF02",
@@ -908,6 +895,19 @@
       "course": "LABORATORIO DE SIMULACION"
     },
     "professor": "OLVERA PEREZ, ELSIE NOEMI"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": "L . . . . .",
+      "building": "DLAQ",
+      "classroom": "LF02",
+      "nrc": "180299",
+      "code": "IF904",
+      "students": 4,
+      "course": "LABORATORIO DE SIMULACION PARA EL TRANSPORTE"
+    },
+    "professor": "ANGUIANO PIZANO, JUAN SIMON"
   },
   {
     "data": {

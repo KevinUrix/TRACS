@@ -27,6 +27,19 @@
   },
   {
     "data": {
+      "schedule": "1000-1355",
+      "days": ". . . . V .",
+      "building": "DEDM",
+      "classroom": "LM2",
+      "nrc": "174258",
+      "code": "IH375",
+      "students": 12,
+      "course": "BIOESTADISTICA"
+    },
+    "professor": "BORRAYO CARBAJAL, ERNESTO"
+  },
+  {
+    "data": {
       "schedule": "0700-0855",
       "days": "L . I . . .",
       "building": "DEDM",
@@ -89,19 +102,6 @@
       "course": "DISEÑO DE TARJETAS DE EVALUACION"
     },
     "professor": "ESTRADA MARMOLEJO, RUBEN"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDM",
-      "classroom": "LM5",
-      "nrc": "97739",
-      "code": "I7598",
-      "students": 5,
-      "course": "DISPOSITIVOS ELECTRONICOS"
-    },
-    "professor": "ARREDONDO Y OLIVA, MARTHA ADRIANA"
   },
   {
     "data": {
@@ -258,6 +258,19 @@
       "course": "INSTRUMENTACION PARA SISTEMAS FOTONICOS"
     },
     "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
+  },
+  {
+    "data": {
+      "schedule": "1600-1655",
+      "days": "L . . . . .",
+      "building": "DEDM",
+      "classroom": "LM2",
+      "nrc": "264988",
+      "code": "I6780",
+      "students": 1,
+      "course": "METODOS DE SINCRONIZACION"
+    },
+    "professor": "SOLIS PERALES, GUALBERTO CELESTINO"
   },
   {
     "data": {

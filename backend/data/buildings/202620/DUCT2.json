@@ -339,6 +339,19 @@
   },
   {
     "data": {
+      "schedule": "1500-1655",
+      "days": ". M . J . .",
+      "building": "DUCT2",
+      "classroom": "LC06",
+      "nrc": "260249",
+      "code": "V0718",
+      "students": 29,
+      "course": "BASES DE DATOS"
+    },
+    "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
+  },
+  {
+    "data": {
       "schedule": "0700-1055",
       "days": ". . . . . S",
       "building": "DUCT2",
@@ -359,19 +372,6 @@
       "nrc": "223209",
       "code": "IL356",
       "students": 30,
-      "course": "BASES DE DATOS"
-    },
-    "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
-  },
-  {
-    "data": {
-      "schedule": "1500-1655",
-      "days": ". M . J . .",
-      "building": "DUCT2",
-      "classroom": "LC06",
-      "nrc": "260249",
-      "code": "V0718",
-      "students": 29,
       "course": "BASES DE DATOS"
     },
     "professor": "QUINTANILLA MORENO, FRANCISCO JAVIER"
@@ -1444,19 +1444,6 @@
   },
   {
     "data": {
-      "schedule": "1100-1455",
-      "days": ". . . . V .",
-      "building": "DUCT2",
-      "classroom": "LC03",
-      "nrc": "204905",
-      "code": "V0716",
-      "students": 28,
-      "course": "PROGRAMACION ESTRUCTURADA"
-    },
-    "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
-  },
-  {
-    "data": {
       "schedule": "0900-1055",
       "days": "L . . . . .",
       "building": "DUCT2",
@@ -1483,16 +1470,16 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". . I . . .",
+      "schedule": "1100-1455",
+      "days": ". . . . V .",
       "building": "DUCT2",
-      "classroom": "LC07",
-      "nrc": "193710",
-      "code": "IL352",
+      "classroom": "LC03",
+      "nrc": "204905",
+      "code": "V0716",
       "students": 28,
       "course": "PROGRAMACION ESTRUCTURADA"
     },
-    "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
+    "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
   },
   {
     "data": {
@@ -1506,6 +1493,19 @@
       "course": "PROGRAMACION ESTRUCTURADA"
     },
     "professor": "GOMEZ VALDIVIA, JAIME ROBERTO"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". . I . . .",
+      "building": "DUCT2",
+      "classroom": "LC07",
+      "nrc": "193710",
+      "code": "IL352",
+      "students": 28,
+      "course": "PROGRAMACION ESTRUCTURADA"
+    },
+    "professor": "LOPEZ LUQUIN, JESUS ANTONIO"
   },
   {
     "data": {
@@ -2273,5 +2273,31 @@
       "course": "TEMAS ESPECIALES EN SISTEMAS DE COMUNICACION Y TRANSPORTE I"
     },
     "professor": "VAZQUEZ DE LEON, MARIA DEL SOL"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . . V .",
+      "building": "DUCT2",
+      "classroom": "LC03",
+      "nrc": "166619",
+      "code": "IH439",
+      "students": 20,
+      "course": "TOPICO DE INDUSTRIA I"
+    },
+    "professor": "JIMENEZ RODRIGUEZ, MARIO"
+  },
+  {
+    "data": {
+      "schedule": "1700-1855",
+      "days": ". . . J . .",
+      "building": "DUCT2",
+      "classroom": "LC10",
+      "nrc": "72275",
+      "code": "ET351",
+      "students": 10,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA II"
+    },
+    "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
   }
 ]

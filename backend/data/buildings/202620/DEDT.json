@@ -378,19 +378,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A011",
-      "nrc": "262886",
-      "code": "V0744",
-      "students": 13,
-      "course": "BIOINFORMATICA Y BIOLOGIA COMPUTACIONAL AVANZADOS"
-    },
-    "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
-  },
-  {
-    "data": {
       "schedule": "0700-0855",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -1197,19 +1184,6 @@
   },
   {
     "data": {
-      "schedule": "1700-1855",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A008",
-      "nrc": "121528",
-      "code": "I7436",
-      "students": 20,
-      "course": "ELECTRONICA ANALOGICA Y DIGITAL"
-    },
-    "professor": "GUILLEN BONILLA, JOSE TRINIDAD"
-  },
-  {
-    "data": {
       "schedule": "1100-1255",
       "days": "L . I . . .",
       "building": "DEDT",
@@ -1389,19 +1363,6 @@
       "course": "ELECTRONICA DIGITAL"
     },
     "professor": "CAMPOS VILLARREAL, RODRIGO ANTONIO"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A016",
-      "nrc": "267655",
-      "code": "V3929",
-      "students": 30,
-      "course": "ELECTRONICA DIGITAL"
-    },
-    "professor": "CARRILLO DIAZ, RAUL"
   },
   {
     "data": {
@@ -3446,19 +3407,6 @@
   },
   {
     "data": {
-      "schedule": "0900-1055",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A006",
-      "nrc": "59783",
-      "code": "I7266",
-      "students": 24,
-      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
-    },
-    "professor": "GARCIA ARREOLA, ALICIA"
-  },
-  {
-    "data": {
       "schedule": "1700-1855",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -3469,19 +3417,6 @@
       "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
     },
     "professor": "PATIÑO RUIZ, ROBERTO"
-  },
-  {
-    "data": {
-      "schedule": "0800-1155",
-      "days": ". . . . V .",
-      "building": "DEDT",
-      "classroom": "A001",
-      "nrc": "262255",
-      "code": "V3751",
-      "students": 6,
-      "course": "PROGRAMACION DE SISTEMAS EMBEBIDOS"
-    },
-    "professor": "LOMELI BARAJAS, MIRYAM"
   },
   {
     "data": {
@@ -4213,19 +4148,6 @@
   },
   {
     "data": {
-      "schedule": "1300-1455",
-      "days": "L . I . . .",
-      "building": "DEDT",
-      "classroom": "A007",
-      "nrc": "252871",
-      "code": "V6002",
-      "students": 20,
-      "course": "SISTEMAS DE MEDICION"
-    },
-    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
-  },
-  {
-    "data": {
       "schedule": "1500-1655",
       "days": ". M . J . .",
       "building": "DEDT",
@@ -4236,6 +4158,19 @@
       "course": "SISTEMAS DE MEDICION"
     },
     "professor": "MORA NUÑEZ, AZAEL DE JESUS"
+  },
+  {
+    "data": {
+      "schedule": "1300-1455",
+      "days": "L . I . . .",
+      "building": "DEDT",
+      "classroom": "A007",
+      "nrc": "252871",
+      "code": "V6002",
+      "students": 20,
+      "course": "SISTEMAS DE MEDICION"
+    },
+    "professor": "BELTRAN GONZALEZ, ANUAR BENJAMIN"
   },
   {
     "data": {
@@ -4552,19 +4487,6 @@
   {
     "data": {
       "schedule": "1700-1855",
-      "days": ". . . J . .",
-      "building": "DEDT",
-      "classroom": "A013",
-      "nrc": "72275",
-      "code": "ET351",
-      "students": 10,
-      "course": "TOPICOS DE INGENIERIA BIOMEDICA II"
-    },
-    "professor": "BONILLA CARRANZA, JOSE LUIS DAVID"
-  },
-  {
-    "data": {
-      "schedule": "1700-1855",
       "days": ". M . J . .",
       "building": "DEDT",
       "classroom": "A010",
@@ -4574,32 +4496,6 @@
       "course": "TOPICOS DE INGENIERIA BIOMEDICA VI"
     },
     "professor": "CASTELLANOS ALVARADO, ESTELA ADRIANA"
-  },
-  {
-    "data": {
-      "schedule": "0700-0855",
-      "days": "L . . . . .",
-      "building": "DEDT",
-      "classroom": "A002",
-      "nrc": "133338",
-      "code": "ET352",
-      "students": 13,
-      "course": "TOPICOS DE INGENIERIA BIOMEDICA III"
-    },
-    "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
-  },
-  {
-    "data": {
-      "schedule": "1100-1255",
-      "days": ". M . J . .",
-      "building": "DEDT",
-      "classroom": "A018",
-      "nrc": "72273",
-      "code": "ET340",
-      "students": 29,
-      "course": "TOPICOS DE INGENIERIA BIOMEDICA"
-    },
-    "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
   },
   {
     "data": {
@@ -4616,6 +4512,19 @@
   },
   {
     "data": {
+      "schedule": "1100-1255",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A018",
+      "nrc": "72273",
+      "code": "ET340",
+      "students": 29,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA"
+    },
+    "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
+  },
+  {
+    "data": {
       "schedule": "1900-2055",
       "days": ". M . . . .",
       "building": "DEDT",
@@ -4629,8 +4538,21 @@
   },
   {
     "data": {
+      "schedule": "0700-0855",
+      "days": "L . . . . .",
+      "building": "DEDT",
+      "classroom": "A002",
+      "nrc": "133338",
+      "code": "ET352",
+      "students": 13,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA III"
+    },
+    "professor": "RAMIREZ ANGULO, ROBERTO CARLOS"
+  },
+  {
+    "data": {
       "schedule": "1700-1855",
-      "days": "L . I . . .",
+      "days": "L . . . . .",
       "building": "DEDT",
       "classroom": "A016",
       "nrc": "165122",
@@ -4639,6 +4561,32 @@
       "course": "TOPICOS DE INGENIERIA BIOMEDICA"
     },
     "professor": "GONZALEZ ORTEGA, ELENA"
+  },
+  {
+    "data": {
+      "schedule": "1900-2055",
+      "days": ". . . J . .",
+      "building": "DEDT",
+      "classroom": "A016",
+      "nrc": "165122",
+      "code": "ET340",
+      "students": 12,
+      "course": "TOPICOS DE INGENIERIA BIOMEDICA"
+    },
+    "professor": "GONZALEZ ORTEGA, ELENA"
+  },
+  {
+    "data": {
+      "schedule": "0900-1055",
+      "days": ". M . J . .",
+      "building": "DEDT",
+      "classroom": "A006",
+      "nrc": "53886",
+      "code": "CC420",
+      "students": 8,
+      "course": "TOPICOS SELECTOS DE INFORMATICA I"
+    },
+    "professor": "ZALDIVAR NAVARRO, DANIEL"
   },
   {
     "data": {
@@ -4716,7 +4664,7 @@
       "students": 9,
       "course": "TOPICOS SELECTOS EN INTELIGENCIA ARTIFICIAL"
     },
-    "professor": "FAUSTO MARTINEZ, FERNANDO ABRAHAM"
+    "professor": "RODRIGUEZ VAZQUEZ, ALMA NAYELI"
   },
   {
     "data": {

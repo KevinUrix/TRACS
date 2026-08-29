@@ -12,7 +12,7 @@ export default function BuildingSelect({ selectedBuilding, onChange }) {
       .then((data) => {
         const buildings = data.edifp || [];
         // Filtra para que no tome en cuenta las clases virtuales
-        const filteredBuildings = buildings.filter(b => b.value !== "DESV1" && b.value !== "DESV2");
+        const filteredBuildings = buildings.filter(b => b.value !== "DESV1" && b.value !== "DESV2" && b.value !== "SIN EDIFICIO");
         const prioritized = filteredBuildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
         const rest = filteredBuildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
         setBuilding([...prioritized, ...rest]);

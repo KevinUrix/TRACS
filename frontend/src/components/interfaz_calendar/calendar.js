@@ -105,7 +105,7 @@ export default function Calendar() {
       .then(response => response.json())
       .then(data => {
         const buildingsData = data.edifp || [];
-        const filteredBuildings = buildingsData.filter(b => b.value !== "DESV1" && b.value !== "DESV2");
+        const filteredBuildings = buildingsData.filter(b => b.value !== "DESV1" && b.value !== "DESV2" && b.value !== "SIN EDIFICIO");
         const prioritized = filteredBuildings.filter(b => b.value === "DUCT1" || b.value === "DUCT2");
         const rest = filteredBuildings.filter(b => b.value !== "DUCT1" && b.value !== "DUCT2");
 

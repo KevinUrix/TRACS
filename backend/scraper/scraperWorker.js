@@ -33,13 +33,15 @@ const extractAllData = ($) => {
                     .toArray()
                     .map(cell => $(cell).text().trim())
                     .filter(text => {
-                        if (!text) return false;
+                        if (text === '') return true; 
+                        
                         const inRange = Number(text) >= 0 && Number(text) <= 9 && text.length <= 2 && text.startsWith('0');
                         return !inRange && !datePattern.test(text);
                     });
 
-                if (cells.length >= 3 && cells[0] && cells[2]) {
-                    const buildingName = cells[2]; 
+                if (cells.length >= 2 && cells[0]) {
+                    const buildingName = cells[2] || 'SIN EDIFICIO'; 
+                    const classroom = cells[3] || ''; 
                     
                     if (!groupedResults[buildingName]) {
                         groupedResults[buildingName] = [];
@@ -48,9 +50,9 @@ const extractAllData = ($) => {
                     groupedResults[buildingName].push({
                         data: {
                             schedule: cells[0],
-                            days: cells[1],
+                            days: cells[1] || '',
                             building: buildingName,
-                            classroom: cells[3] || '',
+                            classroom: classroom,
                             nrc,
                             code,
                             students,

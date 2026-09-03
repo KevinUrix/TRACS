@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import LoginLogoutButton from './LoginLogoutButton';
 import AccountConfigButton from './AccountConfigButton';
 import ReloadPage from './ReloadPage';
+import CreditsButton from './CreditsButton';
 
 export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setUserRole}) {
   const navigate = useNavigate();
@@ -44,7 +45,6 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           <Link to={linkTarget} className="navbar-brand">TRACS</Link>
         </div>
 
-        {/* Botón hamburguesa para pantallas pequeñas */}
         {isLoggedIn ? (
           <button
             className="hamburger md:hidden focus:outline-none"
@@ -60,7 +60,8 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
             </svg>
           </button>
         ) : (
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <CreditsButton />
             <LoginLogoutButton
               isLoggedIn={false}
               handleLogout={handleLogout}
@@ -83,9 +84,10 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
           )}
         </div>
 
-        {/* Contenedor derecho */}
         <div className="hidden md:flex flex-shrink-0 items-center">
           <ReloadPage/>
+
+          <CreditsButton />
           
           {isLoggedIn && <AccountConfigButton className="hidden md:flex" />}
           
@@ -95,7 +97,6 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
             handleLoginRedirect={handleLoginRedirect}
           />
         </div>
-
 
         {/* Menú hamburguesa desplegado en móvil */}
         {menuOpen && (
@@ -128,6 +129,8 @@ export default function NavbarGlobal({ isLoggedIn, setIsLoggedIn, userRole, setU
                     Configuración
                   </Link>
                 )}
+
+                <CreditsButton variant="navLink" onClickCallback={() => setMenuOpen(false)} />
               </>
             )}
             {!isLoggedIn && (

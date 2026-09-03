@@ -43,32 +43,100 @@ export default function InstructionsButton() {
           className="absolute left-1/2 top-full mt-2 text-base bg-gray-700 text-white px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 span-info pointer-events-none origin-top"
           style={{ transform: `translateX(-50%) scale(${scaleFix})` }}
         >
-          Instrucciones simples y créditos.
+          Instrucciones de uso
         </span>
       </div>
 
       {showInstructions && (
-        <div className="fixed inset-0 instructions-button bg-opacity-50 flex justify-center items-center z-50">
-          <div className="p-6 bg-white border rounded-lg shadow-lg max-w-xs custom-shadow-border">
-            <h2 className="font-semibold">Instrucciones de uso:</h2>
-            <ul className="list-disc list-inside">
-              <li>Selecciona un ciclo.</li>
-              <li>Selecciona un edificio.</li>
-              <li>Elige el día de la semana.</li>
-            </ul>
-            <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
-            <h2 className="font-semibold">Creadores:</h2>
-            <p className="text-purple-600"> Kevin Uriel Gaona Padilla </p>
-            <p className="text-green-600"> Edgar Omar Monreal Zambrano </p>
-            <hr style={{ margin: '10px 0', borderTop: '1px solid #aaa' }} />
-            
-            <div className="flex justify-center">
-              <button
-                onClick={toggleInstructions}
-                className="mt-4 px-4 py-2 background-button6 text-white rounded-md"
-              >
-                Cerrar
-              </button>
+        <div className="fixed inset-0 instructions-button bg-black/50 z-50">
+          <div className="absolute top-[84px] bottom-[40px] left-0 right-0 flex justify-center items-center px-4 py-4">
+            <div className="p-6 bg-white border rounded-lg shadow-lg w-full max-w-2xl max-h-full overflow-y-auto">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Instrucciones de uso
+              </h2>
+
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6">
+                <h3 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                  Antes de empezar
+                </h3>
+                <p className="text-sm text-gray-600 mb-2">
+                  Para utilizar casi todas las funciones del sistema, primero <strong>debes seleccionar</strong>:
+                </p>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 mb-3">
+                  <li><strong>Ciclo</strong></li>
+                  <li><strong>Edificio</strong></li>
+                </ul>
+                <p className="text-sm text-gray-600 bg-gray-200/50 inline-block px-2 py-1 rounded">
+                  <em>Nota: La única excepción es la <strong>búsqueda de profesores</strong>, que puedes usar luego de seleccionar el ciclo.</em>
+                </p>
+              </div>
+
+              {/* Calendario */}
+              <div className="mb-5">
+                <h3 className="font-semibold text-gray-800">
+                  📅 Calendario
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Una vez seleccionados el ciclo y edificio, elige un día de la semana para consultar su horario correspondiente.
+                </p>
+              </div>
+
+              {/* Búsqueda */}
+              <div className="mb-5">
+                <h3 className="font-semibold text-gray-800">
+                  🔎 Búsqueda de profesores
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Escribe el nombre del profesor (mínimo 3 letras) y presiona <strong>Enter</strong> o haz clic en el botón de búsqueda.
+                </p>
+              </div>
+
+              {/* Reservas */}
+              <div className="mb-5">
+                <h3 className="font-semibold text-gray-800">
+                  📇 Ver reservas
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Utiliza el ciclo y edificio seleccionados previamente para consultar el estado de las reservas.
+                </p>
+              </div>
+
+              {/* Conteo */}
+              <div className="mb-5">
+                <h3 className="font-semibold text-gray-800">
+                  📊 Conteo de alumnos
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Consulta la suma total de alumnos inscritos en todas las clases del día que tengas seleccionado.
+                </p>
+              </div>
+
+              {/* Imprimir */}
+              <div>
+                <h3 className="font-semibold text-gray-800">
+                  🖨️ Imprimir tabla
+                </h3>
+                <p className="text-sm text-gray-600 mb-2">
+                  Abre la pantalla de impresión con el horario del día y edificio seleccionados. Las celdas combinadas se separarán automáticamente para la impresión. 
+                </p>
+                <p className="text-sm text-gray-600 mb-2">
+                  Tras imprimir, el botón cambiará a <strong>"Unir celdas 🗓️"</strong>; presiónalo para restaurar el formato original en tu pantalla.
+                </p>
+                <p className="text-sm text-gray-500 italic">
+                  * Durante el <strong>Conteo de alumnos</strong>, el botón también abre la impresión, pero no requiere unir celdas después.
+                </p>
+              </div>
+
+              <hr className="my-5" />
+
+              <div className="flex justify-center">
+                <button
+                  onClick={toggleInstructions}
+                  className="px-6 py-2 background-button6 text-white font-medium rounded-md shadow-sm"
+                >
+                  Entendido
+                </button>
+              </div>
             </div>
           </div>
         </div>

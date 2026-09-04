@@ -1,6 +1,26 @@
 [
-  "LBQ01",
-  "LCL01",
-  "LMI01",
-  "LMS01"
+  {
+    "name": "LBQ01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LCL01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LMI01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LMS01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  }
 ]

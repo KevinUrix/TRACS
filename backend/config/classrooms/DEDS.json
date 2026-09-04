@@ -1,6 +1,26 @@
 [
-  "A002",
-  "LC01",
-  "LC02",
-  "LC03"
+  {
+    "name": "A002",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LC01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LC02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LC03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  }
 ]

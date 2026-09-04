@@ -1,40 +1,74 @@
 [
   {
-    "name": "EM01"
+    "name": "EM01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "EM02"
+    "name": "EM02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "EM03"
+    "name": "EM03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "EM04"
+    "name": "EM04",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC01",
-    "capacity": "25"
+    "capacity": "25",
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LM01"
+    "name": "LM01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LM02"
+    "name": "LM02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LM03"
+    "name": "LM03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LM04"
+    "name": "LM04",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LM05"
+    "name": "LM05",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LM06",
-    "capacity": "20"
+    "capacity": "20",
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LM07"
+    "name": "LM07",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   }
 ]

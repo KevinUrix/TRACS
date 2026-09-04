@@ -1,7 +1,32 @@
 [
-  "A001",
-  "A002",
-  "LIQO1",
-  "LIQ02",
-  "LIQ03"
+  {
+    "name": "A001",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "A002",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LIQO1",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LIQ02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LIQ03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  }
 ]

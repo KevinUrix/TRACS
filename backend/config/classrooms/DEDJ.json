@@ -1,6 +1,8 @@
 [
   {
     "name": "A001",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   }
 ]

@@ -1,6 +1,8 @@
 [
   {
     "name": "LC01",
-    "capacity": "44"
+    "capacity": "44",
+    "isAccessible": false,
+    "services": []
   }
 ]

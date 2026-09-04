@@ -1,4 +1,14 @@
 [
-  "LEQ01",
-  "LMF01"
+  {
+    "name": "LEQ01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LMF01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  }
 ]

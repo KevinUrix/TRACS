@@ -1,122 +1,200 @@
 [
   {
     "name": "A001",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A002",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A003",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A004",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A005",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A006",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A007",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A008",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A009",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A010",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "A010B"
+    "name": "A010B",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A011",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A012",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A013",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A014",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A014B",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A015",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A016",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A017",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A018",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A019",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A020",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "A021"
+    "name": "A021",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LFB1"
+    "name": "LFB1",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LQ01"
+    "name": "LQ01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LQ02"
+    "name": "LQ02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LQ03"
+    "name": "LQ03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LQ04"
+    "name": "LQ04",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "LQ05"
+    "name": "LQ05",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "SPA01"
+    "name": "SPA01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "SPA2"
+    "name": "SPA2",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "SPB02"
+    "name": "SPB02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
-    "name": "SPB03"
+    "name": "SPB03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   }
 ]

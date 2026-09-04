@@ -1,37 +1,56 @@
 [
   {
-    "name": "A001"
+    "name": "A001",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A002",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A003",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A004",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A005",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A007",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A008",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A009",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "A010",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   }
 ]

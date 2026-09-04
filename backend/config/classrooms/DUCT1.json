@@ -1,42 +1,62 @@
 [
   {
     "name": "LC01",
-    "capacity": "40"
+    "capacity": "40",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC02",
-    "capacity": "30"
+    "capacity": "30",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC03",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC04",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC05",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC06",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC07",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC08",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC09",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   },
   {
     "name": "LC10",
-    "capacity": "28"
+    "capacity": "28",
+    "isAccessible": false,
+    "services": []
   }
 ]

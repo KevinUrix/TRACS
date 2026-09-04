@@ -1,4 +1,14 @@
 [
-  "SPB-02",
-  "SPB01"
+  {
+    "name": "SPB02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "SPB01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  }
 ]

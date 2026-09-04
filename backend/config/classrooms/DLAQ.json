@@ -1,5 +1,20 @@
 [
-  "LF01",
-  "LF02",
-  "LF03"
+  {
+    "name": "LF01",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LF02",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  },
+  {
+    "name": "LF03",
+    "capacity": null,
+    "isAccessible": false,
+    "services": []
+  }
 ]

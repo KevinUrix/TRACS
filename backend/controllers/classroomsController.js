@@ -4,8 +4,8 @@ const path = require('path');
 const getClassrooms = async (req, res) => {
   const { buildingName } = req.query;
 
-  if (!buildingName) {
-    return res.status(400).json({ error: 'No se recibió el edificio' });
+  if (!buildingName || !/^[a-zA-Z0-9_-]+$/.test(buildingName)) {
+    return res.status(400).json({ error: 'Edificio inválido' });
   }
 
   const filePath = path.join(__dirname, `../config/classrooms/${buildingName}.json`);
@@ -21,61 +21,62 @@ const getClassrooms = async (req, res) => {
   }
 };
 
-
 const saveClassrooms = async (req, res) => {
   try {
-    const { buildingName, classrooms } = req.query;
-    if (!buildingName || classrooms == null) {
-      return res.status(400).json({ error: 'No se recibió el edificio' });
+    const { buildingName } = req.query;
+    const { classrooms } = req.body;
+
+    if (!buildingName || !/^[a-zA-Z0-9_-]+$/.test(buildingName)) {
+      return res.status(400).json({ error: 'Edificio inválido' });
+    }
+
+    if (!classrooms || !Array.isArray(classrooms)) {
+      return res.status(400).json({ error: 'Formato de salones inválido o vacío' });
     }
 
     const dir = path.join(__dirname, '../config/classrooms');
     const filePath = path.join(dir, `${buildingName}.json`);
     await fs.mkdir(dir, { recursive: true });
 
-    const tokens = classrooms.trim().split(/\s+/).filter(Boolean);
+    const hourFormatRegex = /^\d{4}-\d{4}$/; 
 
-    const byName = new Map();
-    for (const raw of tokens) {
-      const cleaned = raw.replace(/[^a-zA-Z0-9:\s]/g, '');
-      if (!cleaned) continue;
+    const resultObjs = classrooms.map(room => {
+      const rawName = typeof room === 'string' ? room : (room.name || '');
+      const name = rawName.replace(/[^a-zA-Z0-9]/g, '');
+      
+      const capDigits = room.capacity ? String(room.capacity).replace(/[^0-9]/g, '') : '';
+      const capacity = capDigits === '' ? null : capDigits;
 
-      const [nameRaw, capRawRaw = ''] = cleaned.split(':');
-      const name = (nameRaw || '').replace(/[^a-zA-Z0-9]/g, '');
-      if (!name) continue;
-
-      const capDigits = capRawRaw.replace(/[^0-9]/g, '');
-      const hasColon = cleaned.includes(':');
-
-      // Reglas:
-      // - "LC01" (sin : ) -> capacity = null (remueve cupo si existía)
-      // - "LC01:" (vacío) -> capacity = null (remueve cupo)
-      // - "LC01:10"       -> capacity = "10"
-      // - "LC01:0"        -> capacity = "0" (válido)
-      let capacity = null;
-      if (hasColon) {
-        capacity = capDigits === '' ? null : capDigits;
-      } else {
-        capacity = null; // sin ":" -> Sin cupos
+      let isAccessible = false;
+      if (room.isAccessible === true) {
+        isAccessible = true;
+      } else if (room.isAccessible && typeof room.isAccessible === 'object' && !Array.isArray(room.isAccessible)) {
+        isAccessible = {};
+        const validDays = ['L', 'M', 'I', 'J', 'V', 'S'];
+        
+        for (const [day, hours] of Object.entries(room.isAccessible)) {
+          if (validDays.includes(day)) {
+            if (Array.isArray(hours)) {
+              const validHours = hours.filter(h => typeof h === 'string' && hourFormatRegex.test(h.trim()));
+              if (validHours.length > 0) {
+                isAccessible[day] = validHours.map(h => h.trim());
+              }
+            } else if (typeof hours === 'string' && hourFormatRegex.test(hours.trim())) {
+              isAccessible[day] = [hours.trim()];
+            }
+          }
+        }
+        if (Object.keys(isAccessible).length === 0) {
+          isAccessible = false;
+        }
       }
 
-      byName.set(name, capacity);
-    }
+      const services = Array.isArray(room.services) ? room.services : [];
 
-    const resultObjs = [];
-    let anyCaps = false;
-    for (const [name, capacity] of byName.entries()) {
-      if (capacity !== null) {
-        resultObjs.push({ name, capacity }); // guarda objeto con capacidad
-        anyCaps = true;
-      } else {
-        resultObjs.push({ name }); // sin capacidad
-      }
-    }
+      return { name, capacity, isAccessible, services };
+    }).filter(room => room.name !== '');
 
-    const toSave = anyCaps ? resultObjs : resultObjs.map(x => x.name);
-
-    await fs.writeFile(filePath, JSON.stringify(toSave, null, 2), 'utf8');
+    await fs.writeFile(filePath, JSON.stringify(resultObjs, null, 2), 'utf8');
     return res.status(200).json({ message: 'Salones guardados correctamente' });
   } catch (error) {
     console.error('Error al guardar los salones:', error.message);
@@ -83,8 +84,36 @@ const saveClassrooms = async (req, res) => {
   }
 };
 
+const resetAccessibility = async (req, res) => {
+  const { buildingName } = req.query;
 
-module.exports = {
-  getClassrooms,
-  saveClassrooms
+  if (!buildingName || !/^[a-zA-Z0-9_-]+$/.test(buildingName)) {
+    return res.status(400).json({ error: 'Edificio inválido' });
+  }
+
+  const filePath = path.join(__dirname, `../config/classrooms/${buildingName}.json`);
+
+  try {
+    const data = await fs.readFile(filePath, 'utf8');
+    const classrooms = JSON.parse(data);
+
+    const updatedClassrooms = classrooms.map(room => {
+      const name = typeof room === 'string' ? room : (room.name || '');
+      return {
+        name,
+        capacity: room.capacity || null,
+        isAccessible: false,
+        services: room.services || []
+      };
+    });
+
+    await fs.writeFile(filePath, JSON.stringify(updatedClassrooms, null, 2), 'utf8');
+
+    return res.status(200).json({ message: `Accesibilidad removida para todos los salones de ${buildingName}` });
+  } catch (error) {
+    console.error(`Error al restablecer la accesibilidad de ${buildingName}:`, error.message);
+    return res.status(500).json({ error: 'No se pudo restablecer la accesibilidad' });
+  }
 };
+
+module.exports = { getClassrooms, saveClassrooms, resetAccessibility };

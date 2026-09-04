@@ -1,12 +1,23 @@
 import { getDecodedToken } from '../../utils/auth';
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { pastelColors } from './utils';
 import API_URL from '../../config/api';
 import SelectsLogic from './selectsLogic';
 import ReserveButton from './reserveButton';
+import ClassroomServices from './classroomServices';
+import { Accessibility } from 'lucide-react';
+
 import './calendar.css'; 
+
+const dayToLetter = {
+  'Lunes': 'L',
+  'Martes': 'M',
+  'Miércoles': 'I',
+  'Jueves': 'J',
+  'Viernes': 'V',
+  'Sábado': 'S'
+};
 
 export default function Calendar() {
   const [selectedCycle, setSelectedCycle] = useState('');
@@ -14,6 +25,8 @@ export default function Calendar() {
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const [classrooms, setClassrooms] = useState([]);
   const [capacities, setCapacities] = useState([]);
+  const [accessibility, setAccessibility] = useState({});
+  const [servicesMap, setServicesMap] = useState({});
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
   const [isStatisticMode, setIsStatisticMode] = useState(false);
@@ -175,12 +188,24 @@ export default function Calendar() {
         })
         .then(data => {
           const normalized = Array.isArray(data)
-            ? data.map(item => typeof item === 'string' ? { name: item, capacity: null } : item)
+            ? data.map(item => typeof item === 'string' ? { name: item, capacity: null, isAccessible: false, services: [] } : item)
             : [];
+          
           setClassrooms(normalized.map(x => x.name));
+          
           const capMap = {};
-          for (const x of normalized) capMap[x.name] = x.capacity ?? null;
+          const accMap = {};
+          const srvMap = {};
+          
+          for (const x of normalized) {
+            capMap[x.name] = x.capacity ?? null;
+            accMap[x.name] = x.isAccessible ?? false;
+            srvMap[x.name] = Array.isArray(x.services) ? x.services : [];
+          }
+          
           setCapacities(capMap);
+          setAccessibility(accMap);
+          setServicesMap(srvMap);
         })
         .catch(error => {
           toast.error("No se encontraron salones. Por favor, reinicia la página.");
@@ -396,22 +421,53 @@ export default function Calendar() {
                     : 
                   classrooms.map((classroom, index) => {
                     const cap = capacities?.[classroom];
+                    const accData = accessibility?.[classroom];
+                    let isAccessible = false;
+                    const currentDayLetter = dayToLetter[selectedDay] || selectedDay.charAt(0);
+
+                    if (accData === true) {
+                      isAccessible = true; 
+                    } else if (accData && typeof accData === 'object') {
+                      isAccessible = !!accData[currentDayLetter];
+                    }
+                    
+                    const servicesList = servicesMap?.[classroom] || [];
+                    const hasIcons = isAccessible || servicesList.length > 0;
+                    const titleParts = [];
+
+                    if (isAccessible) titleParts.push('♿ Aula Accesible');
+
+                    if (cap != null) titleParts.push(`Capacidad: ${cap} estudiantes`);
+                    else titleParts.push('Capacidad no definida');
+
+                    if (servicesList.length > 0) {
+                      titleParts.push(
+                        `Servicios: ${servicesList
+                          .map(service => service.charAt(0).toUpperCase() + service.slice(1))
+                          .join(', ')}`
+                      );
+                    }
+
+                    
                     return (
                       <th
                         key={index}
                         className={`table-cell print-col-${Math.floor(index / 9)}`}
-                        title={cap != null ? `Capacidad: ${cap} estudiantes` : 'Capacidad no definida'}
+                        title={titleParts.join('\n')}
+                        style={{ backgroundColor: isAccessible ? '#dbeafe' : undefined }}
                       >
-                        {cap != null ? (
-                          <>
-                            {classroom}
-                            <br />
-                            <span style={{ fontWeight: 'normal' }}>
-                              Capacidad: {cap} estudiantes
-                            </span>
-                          </>
+                        {classroom}
+                        
+                        {hasIcons ? (
+                          <ClassroomServices services={servicesList} isAccessible={isAccessible} />
                         ) : (
-                          classroom
+                          cap != null && <br />
+                        )}
+                        
+                        {cap != null && (
+                          <span style={{ fontWeight: 'normal' }}>
+                            Capacidad: {cap} estudiantes
+                          </span>
                         )}
                       </th>
                     );
@@ -539,10 +595,35 @@ export default function Calendar() {
 
                   if (period === 'PM' && currentHour !== 12) currentHour += 12;
                   if (period === 'AM' && currentHour === 12) currentHour = 0;
+                  
+
+                  // Verifica si algún salón tiene accesibilidad en X hora y día
+                  let isHourAccessible = false;
+                  const currentDayLetter = dayToLetter[selectedDay] || selectedDay.charAt(0);
+
+                  classrooms.forEach(classroom => {
+                    const accData = accessibility?.[classroom];
+                    if (accData === true) {
+                      isHourAccessible = true;
+                    } else if (accData && typeof accData === 'object' && accData[currentDayLetter]) {
+                      const inRange = accData[currentDayLetter].some(timeRange => {
+                        const [start, end] = timeRange.split('-');
+                        const startH = parseInt(start.substring(0, 2), 10);
+                        const endH = parseInt(end.substring(0, 2), 10);
+                        return currentHour >= startH && currentHour <= endH;
+                      });
+                      if (inRange) isHourAccessible = true;
+                    }
+                  });
 
                   return (
                     <tr key={hour} className="table-row">
-                      <td className="table-cell">{hour}</td>
+                      <td 
+                        className="table-cell" 
+                        style={{ backgroundColor: isHourAccessible ? '#dbeafe' : undefined }}
+                      >
+                        {hour}
+                      </td>
                       
                       {classrooms.map((classroom, index) => {
                         const cellKey = `${currentHour}-${classroom}`;
@@ -550,6 +631,10 @@ export default function Calendar() {
                         // No renderizar si ya se pintó por rowspan
                         if (!isPrintMode && renderedCells[cellKey]) return null;
 
+                        const accDataClass = accessibility?.[classroom];
+                        const currentDayLetter = dayToLetter[selectedDay] || selectedDay.charAt(0);
+                        let isThisClassAccessible = false;
+                        
                         // Buscar si hay reserva
                         const hasClassThisHour = schedule.some(course => {
                           const [courseStart, courseEnd] = course.data.schedule.split('-');
@@ -621,7 +706,36 @@ export default function Calendar() {
                         const isRoomOverlap = matchingCourses.length > 1;
                         const matchingCourse = matchingCourses.length > 0 ? matchingCourses[0] : null;
 
+                        // Evalua accesibilidad de la clase o reserva
+                        let eventStartHour = null;
+                        let eventEndHour = null;
+
+                        if (matchingCourse) {
+                          const [cStart, cEnd] = matchingCourse.data.schedule.split('-');
+                          // En modo impresión, evaluamos solo la hora actual de la celda
+                          eventStartHour = isPrintMode ? currentHour : parseInt(cStart.substring(0, 2), 10);
+                          eventEndHour = isPrintMode ? currentHour : parseInt(cEnd.substring(0, 2), 10);
+                        } else if (matchingReservation) {
+                          const [rStart, rEnd] = matchingReservation.schedule.split('-');
+                          eventStartHour = isPrintMode ? currentHour : parseInt(rStart.substring(0, 2), 10);
+                          eventEndHour = isPrintMode ? currentHour : parseInt(rEnd.substring(0, 2), 10);
+                        }
+
+                        if (eventStartHour !== null && eventEndHour !== null) {
+                          if (accDataClass === true) {
+                            isThisClassAccessible = true;
+                          } else if (accDataClass && typeof accDataClass === 'object' && accDataClass[currentDayLetter]) {
+                            isThisClassAccessible = accDataClass[currentDayLetter].some(timeRange => {
+                              const [aStart, aEnd] = timeRange.split('-');
+                              const aStartHour = parseInt(aStart.substring(0, 2), 10);
+                              const aEndHour = parseInt(aEnd.substring(0, 2), 10);
+                              return eventStartHour <= aEndHour && eventEndHour >= aStartHour;
+                            });
+                          }
+                        }
+
                         let cellHasProfOverlap = false;
+
                         const profOverlapsMap = new Map();
 
                         matchingCourses.forEach(c => {
@@ -730,6 +844,11 @@ export default function Calendar() {
                                 <div className="professor-name">{matchingReservation.professor}</div>
                                 <div className="course-name">{matchingReservation.code} {matchingReservation.course}</div>
                                 <div className="course-date">Fecha: {matchingReservation.date}</div>
+                                {isThisClassAccessible && (
+                                  <div className="flex justify-center mt-0.5 drop-shadow-sm text-white" title="Horario accesible">
+                                    <Accessibility className="w-[35px] h-[35px]" />
+                                  </div>
+                                )}
                               </>
                             ) : isAnyOverlap ? (
                               <div className="p-1 flex flex-col h-full w-full justify-center items-center text-center overflow-hidden">
@@ -816,6 +935,11 @@ export default function Calendar() {
                                 <div className="professor-name">{matchingCourse.professor}</div>
                                 <div className="course-name">{matchingCourse.data.code} {matchingCourse.data.course}</div>
                                 <div className="course-students">Alumnos: {matchingCourse.data.students}</div>
+                                {isThisClassAccessible && (
+                                  <div className="flex justify-center mt-0.5 drop-shadow-sm text-white" title="Horario accesible">
+                                    <Accessibility className="w-[35px] h-[35px]" />
+                                  </div>
+                                )}
                               </>
                             ) : (
                               <ReserveButton

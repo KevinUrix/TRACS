@@ -105,11 +105,11 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
 
       {isModalOpen && (
         <div 
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-60 transition-opacity p-4"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-70 transition-opacity p-4"
           onClick={handleClose}
         >
           <div 
-            className="bg-gray-800 text-white p-6 md:p-8 rounded-xl shadow-2xl max-w-lg w-full relative transform transition-all flex flex-col max-h-[95vh]"
+            className="bg-[#111827] border border-gray-700/50 text-white p-6 md:p-8 rounded-xl shadow-2xl max-w-lg w-full relative transform transition-all flex flex-col max-h-[95vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -122,28 +122,29 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
             </button>
 
             <div className="text-center flex-shrink-0">
-              <h2 className="text-2xl font-bold mb-2">Créditos de TRACS</h2>
-              <div className="w-16 h-1 bg-blue-500 mx-auto mb-6 rounded-full"></div>
+              <h2 className="text-2xl font-bold mb-2 text-gray-200">Créditos de TRACS</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-[#612937] via-[#351b51] to-[#254da7] mx-auto mb-6 rounded-full shadow-sm"></div>
             </div>
               
             <div className="space-y-5 text-left overflow-y-auto pr-2 custom-scrollbar">
               
               {/* VERSIÓN 2.x.x (Actualidad) */}
-              <div className="bg-gray-700 bg-opacity-40 p-4 rounded-lg border border-gray-600">
-                <h3 className="text-lg font-bold text-white border-b border-gray-600 pb-2 mb-3 flex items-center justify-between">
-                  <span>Versión 2.x.x <span className="text-sm font-normal text-blue-300 ml-1">(Actualidad)</span></span>
+              <div className="bg-[#1f2937] p-4 rounded-lg border border-gray-700/50 shadow-inner">
+                <h3 className="text-lg font-bold text-gray-200 border-b border-gray-700/50 pb-2 mb-3 flex items-center justify-between">
+                  <span>Versión 2.x.x <span className="text-sm font-normal text-blue-400 ml-1">(Actualidad)</span></span>
                 </h3>
                 
                 <div className="space-y-3">
                   <div>
                     <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Dirigido por</span>
-                    <p className="text-gray-200 mt-0.5">Georgina Villalpando Alvarez</p>
+                    <p className="text-gray-300 mt-0.5 text-base">Georgina Villalpando Alvarez</p>
                   </div>
                   
+                  {/* DESARROLLADOR */}
                   <div>
                     <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Desarrollado por</span>
-                    <div className="flex items-center justify-between mt-1 bg-gray-800 bg-opacity-50 p-2 rounded">
-                      <span className="text-gray-200 text-sm font-medium">Edgar Omar Monreal Zambrano</span>
+                    <div className="flex items-center justify-between mt-1 bg-[#111827] p-2 rounded border border-gray-700/30">
+                      <span className="text-gray-300 font-medium text-base">Edgar Omar Monreal Zambrano</span>
                       <div className="flex gap-1.5 ml-3">
                         <IconFrontend />
                         <IconBackend />
@@ -157,15 +158,15 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
               </div>
 
               {/* VERSIÓN 0.x.x - 1.x.x */}
-              <div className="bg-gray-700 bg-opacity-40 p-4 rounded-lg border border-gray-600">
-                <h3 className="text-lg font-bold text-gray-300 border-b border-gray-600 pb-2 mb-3">
+              <div className="bg-[#1f2937] p-4 rounded-lg border border-gray-700/50 shadow-inner">
+                <h3 className="text-lg font-bold text-gray-200 border-b border-gray-700/50 pb-2 mb-3">
                   Versión 0.x.x - 1.x.x
                 </h3>
                 
                 <div className="space-y-3">
                   <div>
                     <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Dirigido por</span>
-                    <p className="text-gray-300 mt-0.5">Georgina Villalpando Alvarez</p>
+                    <p className="text-gray-300 mt-0.5 text-base">Georgina Villalpando Alvarez</p>
                   </div>
                   
                   <div>
@@ -173,8 +174,8 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
                     
                     {/* DESARROLLADORES */}
                     <div className="flex flex-col gap-2 mt-1">
-                      <div className="flex items-center justify-between bg-gray-800 bg-opacity-50 p-2 rounded">
-                        <span className="text-gray-300 text-sm">Edgar Omar Monreal Zambrano</span>
+                      <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
+                        <span className="text-gray-300 text-base">Edgar Omar Monreal Zambrano</span>
                         <div className="flex gap-1.5 ml-3">
                           <IconFrontend />
                           <IconBackend />
@@ -184,8 +185,8 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
                         </div>
                       </div>
                       
-                      <div className="flex items-center justify-between bg-gray-800 bg-opacity-50 p-2 rounded">
-                        <span className="text-gray-300 text-sm">Kevin Uriel Gaona Padilla</span>
+                      <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
+                        <span className="text-gray-300 text-base">Kevin Uriel Gaona Padilla</span>
                         <div className="flex gap-1.5 ml-3">
                           <IconFrontend />
                           <IconArchitecture />
@@ -197,9 +198,9 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
                 </div>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-gray-700">
+              <div className="mt-4 pt-4 border-t border-gray-700/50">
                 <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-2 text-center">Áreas de Contribución</span>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-gray-300">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-gray-300">
                   <div className="flex items-center gap-2 justify-center"><IconFrontend /> Frontend</div>
                   <div className="flex items-center gap-2 justify-center"><IconBackend /> Backend</div>
                   <div className="flex items-center gap-2 justify-center"><IconJS /> Lógica</div>
@@ -210,7 +211,7 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
 
             </div>
 
-            <div className="mt-6 pt-4 border-t border-gray-700 text-center flex-shrink-0">
+            <div className="mt-6 pt-4 border-t border-gray-700/50 text-center flex-shrink-0">
               <p className="text-xs text-gray-500">
                 © {new Date().getFullYear()} TRACS - CUCEI. <br/>
                 Distribuido bajo la Licencia MIT.<br/>

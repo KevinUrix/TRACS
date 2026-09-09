@@ -27,6 +27,7 @@ export default function Calendar() {
   const [capacities, setCapacities] = useState([]);
   const [accessibility, setAccessibility] = useState({});
   const [servicesMap, setServicesMap] = useState({});
+  const [floorsMap, setFloorsMap] = useState({});
   const [schedule, setSchedule] = useState([]);
   const [reservations, setReservations] = useState([]);
   const [isStatisticMode, setIsStatisticMode] = useState(false);
@@ -196,16 +197,19 @@ export default function Calendar() {
           const capMap = {};
           const accMap = {};
           const srvMap = {};
+          const floorMap = {};
           
           for (const x of normalized) {
             capMap[x.name] = x.capacity ?? null;
             accMap[x.name] = x.isAccessible ?? false;
             srvMap[x.name] = Array.isArray(x.services) ? x.services : [];
+            floorMap[x.name] = x.floor || '';
           }
           
           setCapacities(capMap);
           setAccessibility(accMap);
           setServicesMap(srvMap);
+          setFloorsMap(floorMap);
         })
         .catch(error => {
           toast.error("No se encontraron salones. Por favor, reinicia la página.");
@@ -440,6 +444,9 @@ export default function Calendar() {
                     if (cap != null) titleParts.push(`Capacidad: ${cap} estudiantes`);
                     else titleParts.push('Capacidad no definida');
 
+                    const floor = floorsMap?.[classroom];
+                    if (floor) titleParts.push(`Piso: ${floor}`);
+
                     if (servicesList.length > 0) {
                       titleParts.push(
                         `Servicios: ${servicesList
@@ -457,15 +464,27 @@ export default function Calendar() {
                         style={{ backgroundColor: isAccessible ? '#dbeafe' : undefined }}
                       >
                         {classroom}
-                        
-                        {hasIcons ? (
-                          <ClassroomServices services={servicesList} isAccessible={isAccessible} />
-                        ) : (
-                          cap != null && <br />
+
+                        {floor && floor.trim() !== '' && (
+                          <span style={{ fontWeight: 'normal', display: 'block' }}>
+                            Piso: {floor}
+                          </span>
                         )}
-                        
+
+                        {hasIcons && (
+                          <ClassroomServices
+                            services={servicesList}
+                            isAccessible={isAccessible}
+                          />
+                        )}
+
                         {cap != null && (
-                          <span style={{ fontWeight: 'normal' }}>
+                          <span
+                            style={{
+                              fontWeight: 'normal',
+                              display: 'block'
+                            }}
+                          >
                             Capacidad: {cap} estudiantes
                           </span>
                         )}

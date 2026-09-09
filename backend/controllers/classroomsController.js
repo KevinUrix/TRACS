@@ -71,9 +71,16 @@ const saveClassrooms = async (req, res) => {
         }
       }
 
-      const services = Array.isArray(room.services) ? room.services : [];
+      const validServicesList = ['aire', 'proyector', 'pantalla', 'audio', 'ventilador', 'red', 'computadora', 'pintarron', 'enchufe'];
+      
+      const services = Array.isArray(room.services) 
+        ? room.services.filter(s => typeof s === 'string' && validServicesList.includes(s.toLowerCase().trim()))
+        : [];
 
-      return { name, capacity, isAccessible, services };
+      const validFloors = ['PB', '1', '2', '3'];
+      const floor = validFloors.includes(String(room.floor)) ? String(room.floor) : '';
+
+      return { name, capacity, isAccessible, services, floor };
     }).filter(room => room.name !== '');
 
     await fs.writeFile(filePath, JSON.stringify(resultObjs, null, 2), 'utf8');
@@ -103,7 +110,8 @@ const resetAccessibility = async (req, res) => {
         name,
         capacity: room.capacity || null,
         isAccessible: false,
-        services: room.services || []
+        services: room.services || [],
+        floor: room.floor || ''
       };
     });
 

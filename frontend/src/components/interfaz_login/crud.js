@@ -116,8 +116,8 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
       }
       const data = await res.json();
       setClassrooms((Array.isArray(data) ? data : []).map(c => typeof c === 'string' 
-        ? { name: c, capacity: null, isAccessible: false, services: [] } 
-        : { name: c.name || '', capacity: c.capacity || null, isAccessible: c.isAccessible ?? false, services: c.services || [] }
+        ? { name: c, capacity: null, isAccessible: false, services: [], floor: '' } 
+        : { name: c.name || '', capacity: c.capacity || null, isAccessible: c.isAccessible ?? false, services: c.services || [], floor: c.floor || '' }
       ));
     } catch {
       toast.error('No se pudieron cargar los salones del edificio.');
@@ -128,10 +128,10 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
     setOriginalName(c ? c.name : null);
     const emptyDays = () => ({ L: { active: false, start: '', end: '' }, M: { active: false, start: '', end: '' }, I: { active: false, start: '', end: '' }, J: { active: false, start: '', end: '' }, V: { active: false, start: '', end: '' }, S: { active: false, start: '', end: '' } });
     
-    let defaultForm = { name: '', capacity: '', accessToggle: false, accessMode: 'dias', days: emptyDays(), services: [] };
+    let defaultForm = { name: '', capacity: '', accessToggle: false, accessMode: 'dias', days: emptyDays(), services: [], floor: '' };
     
     if (c) {
-      defaultForm = { ...defaultForm, name: c.name, capacity: c.capacity ? String(c.capacity) : '', accessToggle: !!c.isAccessible, accessMode: c.isAccessible === true ? 'siempre' : 'dias', services: c.services || [] };
+      defaultForm = { ...defaultForm, name: c.name, capacity: c.capacity ? String(c.capacity) : '', accessToggle: !!c.isAccessible, accessMode: c.isAccessible === true ? 'siempre' : 'dias', services: c.services || [], floor: c.floor || '' };
       if (c.isAccessible && typeof c.isAccessible === 'object') {
         Object.keys(c.isAccessible).forEach(day => {
           if (defaultForm.days[day]) {
@@ -152,6 +152,9 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
     const cleanName = form.name.trim();
     if (!cleanName) return toast.error("El nombre del salón es obligatorio.");
     if (classrooms.some(c => c.name === cleanName && c.name !== originalName)) return toast.error("Ya existe un salón con ese nombre en este edificio.");
+    
+    const validFloors = ['', 'PB', '1', '2', '3'];
+    if (!validFloors.includes(form.floor)) return toast.error("El piso seleccionado no es válido o ha sido alterado.");
 
     let isAccessible = false;
     if (form.accessToggle) {
@@ -171,7 +174,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
       }
     }
 
-    const updated = { name: cleanName, capacity: form.capacity.trim() || null, isAccessible, services: form.services };
+    const updated = { name: cleanName, capacity: form.capacity.trim() || null, isAccessible, services: form.services, floor: form.floor };
     setClassrooms(prev => originalName ? prev.map(c => c.name === originalName ? updated : c) : [...prev, updated]);
     setView('list');
   };
@@ -313,6 +316,16 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
                   <button type="button" onClick={() => setForm({...form, services: form.services.length > 4 ? [] : SERVICES_MAP.map(s => s.id)})} className="text-sm font-bold text-purple-600 hover:text-purple-800">
                     {form.services.length > 4 ? 'Deseleccionar todos' : 'Seleccionar todos'}
                   </button>
+                </div>
+                <div className="mb-5 pb-5 border-b border-gray-200">
+                  <label className="block text-gray-700 font-medium mb-1">Piso</label>
+                  <select value={form.floor} onChange={e => setForm({...form, floor: e.target.value})} className="w-full md:w-1/2 p-2 border rounded bg-white">
+                    <option value="" disabled>Seleccione una opción</option>
+                    <option value="PB">PB</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {SERVICES_MAP.map(srv => (

@@ -277,7 +277,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
                 <p className="text-gray-700 text-lg">Salones: <strong>{classrooms.length}</strong></p>
                 <button onClick={() => openForm()} className="bg-indigo-700 text-white px-4 py-2 rounded hover:bg-indigo-800 font-medium">+ Agregar salón</button>
               </div>
-              <div className="bg-white rounded-lg shadow border border-gray-200">
+              <div className="bg-white rounded-lg shadow border border-gray-200 overflow-x-auto">
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-purple-100 text-purple-900">
                     <tr><th className="py-3 px-4 text-left">Salón</th><th className="py-3 px-4 text-left">Capacidad</th><th className="py-3 px-4 text-left">Accesibilidad</th><th className="py-3 px-4 text-center">Acciones</th></tr>
@@ -288,7 +288,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
                         <td className="py-3 px-4 font-medium">{c.name}</td>
                         <td className="py-3 px-4 text-gray-600">{c.capacity || <span className="italic text-gray-400">N/D</span>}</td>
                         <td className="py-3 px-4 text-gray-600">{c.isAccessible === false ? 'No accesible' : c.isAccessible === true ? 'Siempre' : 'Días específicos'}</td>
-                        <td className="py-3 px-4 text-center flex justify-center gap-2">
+                        <td className="py-3 px-4 text-center flex flex-wrap justify-center gap-2">
                           <button onClick={() => openForm(c)} className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm">✏️ Editar</button>
                           <button onClick={() => setDeleteTarget(c)} className="background-eliminar text-white px-3 py-1.5 rounded text-sm">🗑️ Eliminar</button>
                         </td>

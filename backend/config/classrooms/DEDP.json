@@ -9,7 +9,11 @@
   {
     "name": "A002",
     "capacity": "40",
-    "isAccessible": false,
+    "isAccessible": {
+      "J": [
+        "1500-1655"
+      ]
+    },
     "services": [],
     "floor": ""
   },

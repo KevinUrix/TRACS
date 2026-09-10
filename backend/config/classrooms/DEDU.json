@@ -2,28 +2,47 @@
   {
     "name": "A001",
     "capacity": "40",
-    "isAccessible": false,
+    "isAccessible": {
+      "L": [
+        "1500-1655"
+      ],
+      "M": [
+        "1500-1655"
+      ]
+    },
     "services": [],
     "floor": ""
   },
   {
     "name": "A002",
     "capacity": "30",
-    "isAccessible": false,
+    "isAccessible": {
+      "V": [
+        "1100-1255"
+      ]
+    },
     "services": [],
     "floor": ""
   },
   {
     "name": "A003",
     "capacity": "30",
-    "isAccessible": false,
+    "isAccessible": {
+      "I": [
+        "0900-1055"
+      ]
+    },
     "services": [],
     "floor": ""
   },
   {
     "name": "A004",
     "capacity": "40",
-    "isAccessible": false,
+    "isAccessible": {
+      "I": [
+        "1500-1655"
+      ]
+    },
     "services": [],
     "floor": ""
   },

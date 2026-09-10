@@ -3,7 +3,15 @@
     "name": "LC01",
     "capacity": "44",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "PB"
   }
 ]

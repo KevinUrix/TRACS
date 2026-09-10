@@ -3,70 +3,150 @@
     "name": "LC01",
     "capacity": "40",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "pantalla",
+      "red",
+      "computadora",
+      "pintarron",
+      "enchufe",
+      "ventilador"
+    ],
+    "floor": "PB"
   },
   {
     "name": "LC02",
     "capacity": "30",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe",
+      "ventilador"
+    ],
+    "floor": "PB"
   },
   {
     "name": "LC03",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe",
+      "ventilador"
+    ],
+    "floor": "1"
   },
   {
     "name": "LC04",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "1"
   },
   {
     "name": "LC05",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "1"
   },
   {
     "name": "LC06",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "1"
   },
   {
     "name": "LC07",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "2"
   },
   {
     "name": "LC08",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "2"
   },
   {
     "name": "LC09",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "2"
   },
   {
     "name": "LC10",
     "capacity": "28",
     "isAccessible": false,
-    "services": [],
-    "floor": ""
+    "services": [
+      "aire",
+      "computadora",
+      "ventilador",
+      "pintarron",
+      "pantalla",
+      "red",
+      "enchufe"
+    ],
+    "floor": "2"
   }
 ]

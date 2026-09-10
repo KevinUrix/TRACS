@@ -2,7 +2,20 @@
   {
     "name": "A001",
     "capacity": "40",
-    "isAccessible": false,
+    "isAccessible": {
+      "L": [
+        "0900-1055"
+      ],
+      "M": [
+        "1700-1855"
+      ],
+      "J": [
+        "1700-1855"
+      ],
+      "V": [
+        "1200-1255"
+      ]
+    },
     "services": [],
     "floor": ""
   },
@@ -16,14 +29,22 @@
   {
     "name": "A003",
     "capacity": "39",
-    "isAccessible": false,
+    "isAccessible": {
+      "J": [
+        "1100-1255"
+      ]
+    },
     "services": [],
     "floor": ""
   },
   {
     "name": "A004",
     "capacity": "39",
-    "isAccessible": false,
+    "isAccessible": {
+      "M": [
+        "1100-1255"
+      ]
+    },
     "services": [],
     "floor": ""
   },

@@ -2,7 +2,11 @@
   {
     "name": "A001",
     "capacity": "30",
-    "isAccessible": false,
+    "isAccessible": {
+      "V": [
+        "1100-1255"
+      ]
+    },
     "services": [],
     "floor": ""
   },

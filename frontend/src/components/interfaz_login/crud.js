@@ -102,7 +102,15 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
   const [showResetConfirm, setShowResetConfirm] = useState(false);
 
   useEffect(() => {
-    if (building) loadClassrooms();
+    if (building) {
+      setView('list');
+      setForm(null);
+      setOriginalName(null);
+      setDeleteTarget(null);
+      setShowResetConfirm(false);
+      setClassrooms([]);
+      loadClassrooms();
+    }
   }, [building]);
 
   const loadClassrooms = async () => {
@@ -121,6 +129,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
       ));
     } catch {
       toast.error('No se pudieron cargar los salones del edificio.');
+      handleClose();
     }
   };
 
@@ -222,7 +231,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
         throw new Error();
       }
       toast.success('Salones guardados correctamente.');
-      onClose();
+      handleClose();
     } catch {
       toast.error('Error al guardar los salones.');
     }
@@ -245,12 +254,20 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
 
   if (!building) return null;
 
+  const handleClose = () => {
+    setView('list');
+    setForm(null);
+    setOriginalName(null);
+    setClassrooms([]);
+    onClose();
+  };
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg shadow-xl flex flex-col w-full max-w-4xl max-h-[90vh] custom-shadow-border-reports">
         <div className="p-4 border-b flex justify-between items-center bg-gray-50 rounded-t-lg">
           <h2 className="text-2xl font-bold text-purple-900">Administración de Salones - {building.value}</h2>
-          {view === 'list' && <button onClick={onClose} className="text-gray-500 hover:text-gray-800 text-2xl font-bold px-2">&times;</button>}
+          {view === 'list' && <button onClick={handleClose} className="text-gray-500 hover:text-gray-800 text-2xl font-bold px-2">&times;</button>}
         </div>
 
         <div className="flex-1 overflow-y-auto p-6 bg-gray-100">
@@ -402,7 +419,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
             <>
               <button onClick={() => setShowResetConfirm(true)} className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 font-medium">Restablecer accesibilidad</button>
               <div className="flex gap-3">
-                <button onClick={onClose} className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 font-medium">Cancelar</button>
+                <button onClick={handleClose} className="px-4 py-2 bg-gray-300 text-gray-800  rounded hover:bg-gray-400 font-medium">Cancelar</button>
                 <button onClick={saveAllToBackend} className="px-6 py-2 background-aplicar text-white rounded font-medium">Guardar</button>
               </div>
             </>
@@ -410,7 +427,7 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
             <div className="flex w-full justify-between items-center">
               {originalName ? <button onClick={() => setDeleteTarget(form)} className="px-4 py-2 text-red-600 font-medium hover:bg-red-50 rounded">Eliminar salón</button> : <div />}
               <div className="flex gap-3">
-                <button onClick={() => setView('list')} className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 font-medium">Cancelar</button>
+                <button onClick={() => { setView('list'); setForm(null); setOriginalName(null); }} className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 font-medium">Cancelar</button>
                 <button onClick={saveLocalForm} className="px-6 py-2 background-aplicar text-white rounded font-medium">{originalName ? 'Agregar cambios' : 'Agregar salón'}</button>
               </div>
             </div>
@@ -543,6 +560,9 @@ export default function Crud() {
         method: 'DELETE', headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       if (res.ok) {
+        if (activeBuildingForClassrooms?.value === deleteBuilding.value) {
+            setActiveBuildingForClassrooms(null);
+        }
         setBuildings(prev => prev.filter(b => b.value !== deleteBuilding.value));
         toast.success('Edificio eliminado.');
       } else if (!handleAuthError(res, navigate)) toast.error('Fallo al eliminar edificio');

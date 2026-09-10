@@ -126,7 +126,15 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
 
   const openForm = (c = null) => {
     setOriginalName(c ? c.name : null);
-    const emptyDays = () => ({ L: { active: false, start: '', end: '' }, M: { active: false, start: '', end: '' }, I: { active: false, start: '', end: '' }, J: { active: false, start: '', end: '' }, V: { active: false, start: '', end: '' }, S: { active: false, start: '', end: '' } });
+    
+    const emptyDays = () => ({ 
+      L: { active: false, intervals: [{ start: '', end: '' }] }, 
+      M: { active: false, intervals: [{ start: '', end: '' }] }, 
+      I: { active: false, intervals: [{ start: '', end: '' }] }, 
+      J: { active: false, intervals: [{ start: '', end: '' }] }, 
+      V: { active: false, intervals: [{ start: '', end: '' }] }, 
+      S: { active: false, intervals: [{ start: '', end: '' }] } 
+    });
     
     let defaultForm = { name: '', capacity: '', accessToggle: false, accessMode: 'dias', days: emptyDays(), services: [], floor: '' };
     
@@ -137,8 +145,10 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
           if (defaultForm.days[day]) {
             const hours = c.isAccessible[day];
             if (hours && hours.length > 0) {
-              const { start, end } = hours[0] === '0000-2355' ? { start: '', end: '' } : toUiTime(hours[0]);
-              defaultForm.days[day] = { active: true, start, end };
+              defaultForm.days[day].active = true;
+              defaultForm.days[day].intervals = hours.map(h => {
+                return h === '0000-2355' ? { start: '', end: '' } : toUiTime(h);
+              });
             }
           }
         });
@@ -162,12 +172,33 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
       else {
         isAccessible = {};
         let hasActiveDays = false;
+        
         for (const [day, d] of Object.entries(form.days)) {
           if (d.active) {
-            if (!d.start || !d.end) return toast.error(`Debes seleccionar hora de inicio y fin para el día ${DAYS_MAP[day]}.`);
-            if (d.start >= d.end) return toast.error(`La hora inicial debe ser menor a la final en el día ${DAYS_MAP[day]}.`);
-            hasActiveDays = true;
-            isAccessible[day] = [toBackendTime(d.start, d.end)];
+            const validIntervals = [];
+            
+            for (let i = 0; i < d.intervals.length; i++) {
+              const interval = d.intervals[i];
+              if (!interval.start || !interval.end) return toast.error(`Debes seleccionar hora de inicio y fin para el día ${DAYS_MAP[day]}.`);
+              if (interval.start >= interval.end) return toast.error(`La hora inicial debe ser menor a la final en el día ${DAYS_MAP[day]}.`);
+            }
+
+            for (let i = 0; i < d.intervals.length; i++) {
+              for (let j = i + 1; j < d.intervals.length; j++) {
+                const intA = d.intervals[i];
+                const intB = d.intervals[j];
+                
+                if (intA.start < intB.end && intB.start < intA.end) {
+                  return toast.error(`Los horarios seleccionados para el día ${DAYS_MAP[day]} se sobreponen.`);
+                }
+              }
+              validIntervals.push(toBackendTime(d.intervals[i].start, d.intervals[i].end));
+            }
+
+            if (validIntervals.length > 0) {
+              hasActiveDays = true;
+              isAccessible[day] = validIntervals;
+            }
           }
         }
         if (!hasActiveDays) return toast.error("Debes seleccionar al menos un día válido.");
@@ -285,22 +316,48 @@ const ClassroomManager = ({ building, onClose, navigate }) => {
                     {form.accessMode === 'dias' && (
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
                         {['L', 'M', 'I', 'J', 'V', 'S'].map(day => (
-                          <div key={day} className={`flex items-center justify-between p-3 border rounded-md transition ${form.days[day].active ? 'bg-white border-purple-300' : 'bg-transparent border-gray-300 opacity-70'}`}>
-                            <label className="flex items-center space-x-3 font-medium w-32 cursor-pointer select-none">
-                              <input type="checkbox" checked={form.days[day].active} onChange={e => setForm({...form, days: {...form.days, [day]: {...form.days[day], active: e.target.checked}}})} className="w-4 h-4 text-purple-600 rounded" />
-                              <span>{DAYS_MAP[day]}</span>
-                            </label>
-                            <div className="flex items-center space-x-2">
-                              <select disabled={!form.days[day].active} value={form.days[day].start} onChange={e => setForm({...form, days: {...form.days, [day]: {...form.days[day], start: e.target.value}}})} className="border p-1.5 rounded-md text-sm w-24 text-center">
-                                <option value="" disabled>--:--</option>
-                                {Array.from({ length: 14 }, (_, i) => { const h = (i+7).toString().padStart(2,'0'); return <option key={`${h}:00`} value={`${h}:00`}>{h}:00</option>; })}
-                              </select>
-                              <span className="text-purple-400 font-bold mx-1">-</span>
-                              <select disabled={!form.days[day].active} value={form.days[day].end} onChange={e => setForm({...form, days: {...form.days, [day]: {...form.days[day], end: e.target.value}}})} className="border p-1.5 rounded-md text-sm w-24 text-center">
-                                <option value="" disabled>--:--</option>
-                                {Array.from({ length: 14 }, (_, i) => { const h = (i+7).toString().padStart(2,'0'); return <option key={`${h}:55`} value={`${h}:55`}>{h}:55</option>; })}
-                              </select>
+                          <div key={day} className={`flex flex-col p-3 border rounded-md transition ${form.days[day].active ? 'bg-white border-purple-300' : 'bg-transparent border-gray-300 opacity-70'}`}>
+                            
+                            <div className="flex items-center justify-between mb-2">
+                              <label className="flex items-center space-x-3 font-medium w-32 cursor-pointer select-none">
+                                <input type="checkbox" checked={form.days[day].active} onChange={e => setForm({...form, days: {...form.days, [day]: {...form.days[day], active: e.target.checked}}})} className="w-4 h-4 text-purple-600 rounded" />
+                                <span>{DAYS_MAP[day]}</span>
+                              </label>
+                              {form.days[day].active && (
+                                <button type="button" onClick={() => setForm({...form, days: {...form.days, [day]: {...form.days[day], intervals: [...form.days[day].intervals, { start: '', end: '' }]}}})} className="text-xs font-bold text-purple-600 hover:text-purple-800 bg-purple-100 px-2 py-1 rounded">
+                                  + Agregar hora
+                                </button>
+                              )}
                             </div>
+
+                            {/* Intervalos */}
+                            {form.days[day].intervals.map((interval, idx) => (
+                              <div key={idx} className="flex items-center justify-between space-x-2 mt-2">
+                                <div className="flex items-center space-x-2">
+                                  <select disabled={!form.days[day].active} value={interval.start} onChange={e => {
+                                    const newInt = [...form.days[day].intervals]; newInt[idx].start = e.target.value;
+                                    setForm({...form, days: {...form.days, [day]: {...form.days[day], intervals: newInt}}});
+                                  }} className="border p-1.5 rounded-md text-sm w-24 text-center">
+                                    <option value="" disabled>--:--</option>
+                                    {Array.from({ length: 14 }, (_, i) => { const h = (i+7).toString().padStart(2,'0'); return <option key={`${h}:00`} value={`${h}:00`}>{h}:00</option>; })}
+                                  </select>
+                                  <span className="text-purple-400 font-bold mx-1">-</span>
+                                  <select disabled={!form.days[day].active} value={interval.end} onChange={e => {
+                                    const newInt = [...form.days[day].intervals]; newInt[idx].end = e.target.value;
+                                    setForm({...form, days: {...form.days, [day]: {...form.days[day], intervals: newInt}}});
+                                  }} className="border p-1.5 rounded-md text-sm w-24 text-center">
+                                    <option value="" disabled>--:--</option>
+                                    {Array.from({ length: 14 }, (_, i) => { const h = (i+7).toString().padStart(2,'0'); return <option key={`${h}:55`} value={`${h}:55`}>{h}:55</option>; })}
+                                  </select>
+                                </div>
+                                {form.days[day].intervals.length > 1 && (
+                                  <button type="button" onClick={() => {
+                                    const newInt = form.days[day].intervals.filter((_, i) => i !== idx);
+                                    setForm({...form, days: {...form.days, [day]: {...form.days[day], intervals: newInt}}});
+                                  }} className="text-red-500 hover:text-red-700 font-bold px-2" title="Eliminar horario">×</button>
+                                )}
+                              </div>
+                            ))}
                           </div>
                         ))}
                       </div>

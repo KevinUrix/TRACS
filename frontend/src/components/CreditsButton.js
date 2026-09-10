@@ -31,6 +31,11 @@ const IconArchitecture = () => (
   </svg>
 );
 
+const IconOriginal = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" title="Sistema / Idea Original" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-green-400">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+  </svg>
+);
 
 export default function CreditsButton({ className = '', variant = 'icon' }) {
   const [scaleFix, setScaleFix] = useState(1);
@@ -121,9 +126,14 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
               </svg>
             </button>
 
-            <div className="text-center flex-shrink-0">
+            <div className="text-center flex-shrink-0 mb-4">
               <h2 className="text-2xl font-bold mb-2 text-gray-200">Créditos de TRACS</h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#612937] via-[#351b51] to-[#254da7] mx-auto mb-6 rounded-full shadow-sm"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-[#612937] via-[#351b51] to-[#254da7] mx-auto mb-5 rounded-full shadow-sm"></div>
+              
+              <div className="mb-2">
+                <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-1">Dirigido por</span>
+                <span className="text-gray-300 text-lg font-medium">Georgina Villalpando Alvarez</span>
+              </div>
             </div>
               
             <div className="space-y-5 text-left overflow-y-auto pr-2 custom-scrollbar">
@@ -131,19 +141,13 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
               {/* VERSIÓN 2.x.x (Actualidad) */}
               <div className="bg-[#1f2937] p-4 rounded-lg border border-gray-700/50 shadow-inner">
                 <h3 className="text-lg font-bold text-gray-200 border-b border-gray-700/50 pb-2 mb-3 flex items-center justify-between">
-                  <span>Versión 2.x.x <span className="text-sm font-normal text-blue-400 ml-1">(Actualidad)</span></span>
+                  <span>TRACS: Versión 2.x.x <span className="text-sm font-normal text-blue-400 ml-1">(Actualidad)</span></span>
                 </h3>
                 
-                <div className="space-y-3">
-                  <div>
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Dirigido por</span>
-                    <p className="text-gray-300 mt-0.5 text-base">Georgina Villalpando Alvarez</p>
-                  </div>
-                  
-                  {/* DESARROLLADOR */}
-                  <div>
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Desarrollado por</span>
-                    <div className="flex items-center justify-between mt-1 bg-[#111827] p-2 rounded border border-gray-700/30">
+                <div>
+                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Desarrollado por</span>
+                  <div className="flex flex-col gap-2 mt-1">
+                    <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
                       <span className="text-gray-300 font-medium text-base">Edgar Omar Monreal Zambrano</span>
                       <div className="flex gap-1.5 ml-3">
                         <IconFrontend />
@@ -160,38 +164,52 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
               {/* VERSIÓN 0.x.x - 1.x.x */}
               <div className="bg-[#1f2937] p-4 rounded-lg border border-gray-700/50 shadow-inner">
                 <h3 className="text-lg font-bold text-gray-200 border-b border-gray-700/50 pb-2 mb-3">
-                  Versión 0.x.x - 1.x.x
+                  TRACS: Versión 0.x.x - 1.x.x
                 </h3>
                 
-                <div className="space-y-3">
-                  <div>
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Dirigido por</span>
-                    <p className="text-gray-300 mt-0.5 text-base">Georgina Villalpando Alvarez</p>
-                  </div>
-                  
-                  <div>
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Desarrollado por</span>
+                <div>
+                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Desarrollado por</span>
+                  <div className="flex flex-col gap-2 mt-1">
                     
-                    {/* DESARROLLADORES */}
-                    <div className="flex flex-col gap-2 mt-1">
-                      <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
-                        <span className="text-gray-300 text-base">Edgar Omar Monreal Zambrano</span>
-                        <div className="flex gap-1.5 ml-3">
-                          <IconFrontend />
-                          <IconBackend />
-                          <IconJS />
-                          <IconArchitecture />
-                          <IconServer />
-                        </div>
+                    <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
+                      <span className="text-gray-300 text-base">Edgar Omar Monreal Zambrano</span>
+                      <div className="flex gap-1.5 ml-3">
+                        <IconFrontend />
+                        <IconBackend />
+                        <IconJS />
+                        <IconArchitecture />
+                        <IconServer />
                       </div>
-                      
-                      <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
-                        <span className="text-gray-300 text-base">Kevin Uriel Gaona Padilla</span>
-                        <div className="flex gap-1.5 ml-3">
-                          <IconFrontend />
-                          <IconArchitecture />
-                          <IconJS />
-                        </div>
+                    </div>
+                    
+                    <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
+                      <span className="text-gray-300 text-base">Kevin Uriel Gaona Padilla</span>
+                      <div className="flex gap-1.5 ml-3">
+                        <IconFrontend />
+                        <IconArchitecture />
+                        <IconJS />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* SISTEMA ORIGINAL */}
+              <div className="bg-[#1f2937] p-4 rounded-lg border border-gray-700/50 shadow-inner">
+                <h3 className="text-lg font-bold text-gray-200 border-b border-gray-700/50 pb-2 mb-3">
+                  Sistema Original
+                </h3>
+                
+                <div>
+                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Desarrollado por</span>
+                  <div className="flex flex-col gap-2 mt-1">
+                    <div className="flex items-center justify-between bg-[#111827] p-2 rounded border border-gray-700/30">
+                      <span className="text-gray-300 text-base">Miguel Angel Gómez González</span>
+                      <div className="flex gap-1.5 ml-3">
+                        <IconOriginal />
+                        <IconFrontend />
+                        <IconBackend />
+                        <IconJS />
                       </div>
                     </div>
                   </div>
@@ -200,12 +218,13 @@ export default function CreditsButton({ className = '', variant = 'icon' }) {
 
               <div className="mt-4 pt-4 border-t border-gray-700/50">
                 <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-2 text-center">Áreas de Contribución</span>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-gray-300">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm text-gray-300">
                   <div className="flex items-center gap-2 justify-center"><IconFrontend /> Frontend</div>
                   <div className="flex items-center gap-2 justify-center"><IconBackend /> Backend</div>
                   <div className="flex items-center gap-2 justify-center"><IconJS /> Lógica</div>
                   <div className="flex items-center gap-2 justify-center"><IconArchitecture /> Arquitectura</div>
                   <div className="flex items-center gap-2 justify-center"><IconServer /> Servidor</div>
+                  <div className="flex items-center gap-2 justify-center"><IconOriginal /> Idea Original</div>
                 </div>
               </div>
 

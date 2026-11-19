@@ -67,7 +67,7 @@ export default function InstructionsButton() {
                   <li><strong>Edificio</strong></li>
                 </ul>
                 <p className="text-sm text-gray-600 bg-gray-200/50 inline-block px-2 py-1 rounded">
-                  <em>Nota: La única excepción es la <strong>búsqueda de profesores</strong>, que puedes usar luego de seleccionar el ciclo.</em>
+                  <em>Nota: La única excepción es la <strong>búsqueda de maestros y materias</strong>, que puedes usar luego de seleccionar el ciclo.</em>
                 </p>
               </div>
 
@@ -84,11 +84,17 @@ export default function InstructionsButton() {
               {/* Búsqueda */}
               <div className="mb-5">
                 <h3 className="font-semibold text-gray-800">
-                  🔎 Búsqueda de profesores
+                  🔎 Búsqueda de maestros y materias
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Escribe el nombre del profesor (mínimo 3 letras) y presiona <strong>Enter</strong> o haz clic en el botón de búsqueda.
+                  Escribe el nombre del maestro (mínimo 3 letras) y presiona <strong>Enter</strong> o haz clic en el botón de búsqueda.
                 </p>
+                <p className="text-sm text-gray-600">
+                  Cambia la opción de búsqueda y escribe la clave de la materia exacta y presiona <strong>Enter</strong> o haz clic en el botón de búsqueda.
+                </p>
+                <strong className="text-sm text-gray-600">
+                  El cambio de búsqueda se realiza seleccionando la opción deseada en el menú desplegable. Por defecto, la búsqueda es por maestro.
+                </strong>
               </div>
 
               {/* Reservas */}
